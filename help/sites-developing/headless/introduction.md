@@ -1,0 +1,60 @@
+---
+title: Headless-Entwicklung für AEM 6.5 Sites
+description: Erfahren Sie, wie die leistungsstarken Headless-Funktionen von AEM 6.5 wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API zusammenarbeiten, um Ihnen die zentrale Verwaltung Ihrer Erlebnisse und deren kanalübergreifende Bereitstellung zu ermöglichen.
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin,Architect,Data Architect,Developer
+source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+workflow-type: tm+mt
+source-wordcount: '507'
+ht-degree: 100%
+
+---
+
+# Headless-Entwicklung für AEM 6.5 Sites {#headless-development}
+
+Erfahren Sie, wie die leistungsstarken Headless-Funktionen von AEM 6.5 wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API zusammenarbeiten, um Ihnen die zentrale Verwaltung Ihrer Erlebnisse und deren kanalübergreifende Bereitstellung zu ermöglichen.
+
+## Übersicht {#overview}
+
+Die Headless-Implementierung wird immer wichtiger, wenn es darum geht, Erlebnisse für Ihr Zielgruppe überall und unabhängig vom Kanal bereitzustellen.
+
+Die Headless-Implementierung verzichtet auf das Seiten- und Komponenten-Management, wie es bei Full-Stack- und Hybrid-Lösungen üblich ist, und konzentriert sich auf die Erstellung kanalneutraler, wiederverwendbarer Inhaltsfragmente und deren kanalübergreifende Bereitstellung. Es handelt sich um ein modernes und dynamisches Entwicklungsmuster zur Implementierung von Web-Erlebnissen.
+
+![AEM-Implementierungsmodelle](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
+
+## Vergleich von Headful und Headless {#headful-headless}
+
+Dieses Dokument konzentriert sich auf das vollständige Headless-Implementierungsmodell von AEM. In AEM muss die Entscheidung zwischen Headful und Headless aber keine Entweder-oder-Entscheidung sein. Headless-Funktionen können verwendet werden, um Content zu verwalten und für verschiedene Endpunkte bereitzustellen sowie um Inhaltserstellern gleichzeitig die Bearbeitung von Single Page Applications zu ermöglichen. Alles in AEM.
+
+>[!TIP]
+>
+>Weitere Informationen finden Sie im Dokument [Headful und Headless in AEM](/help/sites-developing/headful-headless.md).
+
+## AEM 6.5 und Headless {#aem-headless}
+
+AEM 6.5 ist ein flexibles Tool für das Headless-Implementierungsmodell, das drei leistungsstarke Services bietet:
+
+1. Inhaltsmodelle
+   * Inhaltsmodelle sind strukturierte Darstellungen von Inhalten.
+   * Diese werden von Informationsarchitekten im Inhaltsfragmentmodell-Editor in AEM definiert.
+   * Inhaltsmodelle dienen als Grundlage für Inhaltsfragmente.
+1. Inhaltsfragmente
+   * Inhaltsfragmente sind Instanziierungen von Inhaltsmodellen.
+   * Diese werden von Inhaltsautoren mit dem Inhaltsfragment-Editor in AEM erstellt.
+   * Sie werden in AEM Assets gespeichert und in der Administrator-Benutzeroberfläche von Assets verwaltet.
+1. Inhalts-API für die Bereitstellung
+   * Die AEM-GraphQL-API unterstützt die Bereitstellung von Inhaltsfragmenten.
+   * Die AEM Assets-REST-API unterstützt CRUD-Vorgänge für Inhaltsfragmente.
+   * Die direkte Bereitstellung von Inhalten ist auch mit dem [JSON-Export der Kernkomponenten für Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=de) möglich.
+
+## Erste Schritte mit AEM Headless {#first-steps}
+
+Für die ersten Schritte mit AEM Headless-Funktionen stehen verschiedene Ressourcen zur Verfügung. Sie sind für verschiedene Nutzungsszenarien vorgesehen, bieten jedoch alle einen umfassenden Überblick über AEM Headless-Funktionen.
+
+| Ressource | Beschreibung | Typ | Zielgruppe | Schätzung Zeit |
+|---|---|---|---|---|
+| [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) | **Benutzer, die noch nicht mit AEM- und Headless**-Technologien vertraut sind, erhalten hier eine umfassende Einführung in AEM und seine Headless-Funktionen, von der Theorie des Headless-Systems bis zum Go-Live Ihres ersten Headless-Projekts. | -Anleitung | Entwickler, die noch **nicht mit AEM und Headless vertraut** sind | 1 Stunde |
+| [Erste Schritte mit Headless](/help/sites-developing/headless/getting-started/introduction.md) | **Erfahrene AEM-Anwender**, die eine kurze Zusammenfassung der wichtigsten AEM-Headless-Funktionen benötigen, sollten sich diesen Schnellstart-Überblick ansehen. | Schnellstart | Entwickler, Administratoren **mit AEM-Erfahrung** | 20 Minuten |
+| [Praktisches Tutorial für die ersten Schritte mit AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=de) | **Wenn Sie einen praxisnahen Ansatz bevorzugen und mit AEM vertraut sind**: dieses Tutorial steigt direkt in die Erstellung eines einfachen Headless-Projekts ein. | Tutorial | Entwickler | 2 Stunden |
+| [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de) | Diese Ressourcensammlung wird für **neue** sowie für **erfahrene** Entwickelnde bereitgestellt. | Ressourcensammlung | Entwickelnde | |
