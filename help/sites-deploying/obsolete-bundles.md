@@ -8,59 +8,97 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 34693070f2fcb5b468c72118cd5d5fc26d6d9dd0
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 100%
+source-wordcount: '191'
+ht-degree: 15%
 
 ---
 
 # Liste der nach dem Upgrade deinstallierten veralteten Bundles{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
->[!NOTE]
->
->Wenn Sie diese Bundles für Ihren Code benötigen, fordern Sie vom Adobe-Support ein Kompatibilitätspaket für den betroffenen Bereich an. 
+Beim Upgrade auf AEM 6.5.2025 werden die folgenden Bundles automatisch deinstalliert, je nachdem, von welcher Version des AEM 6.5 Service Packs das Upgrade erfolgt ist:
 
-Beim Upgrade auf AEM 6.3 werden folgende Bundles automatisch deinstalliert, je nachdem, von welcher AEM-Version das Upgrade erfolgt:
+* com.adobe.cq.social.cq-social-activitystreams
+* com.adobe.cq.social.cq-social-as-provider
+* com.adobe.cq.social.cq-social-badging-api
+* com.adobe.cq.social.cq-social-badging-basic-impl
+* com.adobe.cq.social.cq-social-badging-impl
+* com.adobe.cq.social.cq-social-calendar-api
+* com.adobe.cq.social.cq-social-calendar-impl
+* com.adobe.cq.social.cq-social-commons-oauth
+* com.adobe.cq.social.cq-social-commons
+* com.adobe.cq.social.cq-social-console
+* com.adobe.cq.social.cq-social-content-fragments-impl
+* com.adobe.cq.social.cq-social-enablement-api
+* com.adobe.cq.social.cq-social-enablement-impl
+* com.adobe.cq.social.cq-social-filelibrary
+* com.adobe.cq.social.cq-social-forum
+* com.adobe.cq.social.cq-social-gamification-api
+* com.adobe.cq.social.cq-social-gamification-impl
+* com.adobe.cq.social.cq-social-graph-api
+* com.adobe.cq.social.cq-social-graph-impl
+* com.adobe.cq.social.cq-social-group
+* com.adobe.cq.social.cq-social-handlebars
+* com.adobe.cq.social.cq-social-ideation-api
+* com.adobe.cq.social.cq-social-ideation-impl
+* com.adobe.cq.social.cq-social-jcr-provider-common
+* com.adobe.cq.social.cq-social-jcr-provider
+* com.adobe.cq.social.cq-social-journal
+* com.adobe.cq.social.cq-social-livefyre
+* com.adobe.cq.social.cq-social-members-api
+* com.adobe.cq.social.cq-social-members-impl
+* com.adobe.cq.social.cq-social-messaging-api
+* com.adobe.cq.social.cq-social-messaging-impl
+* com.adobe.cq.social.cq-social-moderation-spamdetector-core
+* com.adobe.cq.social.cq-social-moderation
+* com.adobe.cq.social.cq-social-ms-provider
+* com.adobe.cq.social.cq-social-notifications-api
+* com.adobe.cq.social.cq-social-notifications-channels-web
+* com.adobe.cq.social.cq-social-notifications-impl
+* com.adobe.cq.social.cq-social-qna
+* com.adobe.cq.social.cq-social-rdb-provider
+* com.adobe.cq.social.cq-social-reporting-management
+* com.adobe.cq.social.cq-social-review
+* com.adobe.cq.social.cq-social-scf-api
+* com.adobe.cq.social.cq-social-scf-impl
+* com.adobe.cq.social.cq-social-scoring-api
+* com.adobe.cq.social.cq-social-scoring-basic-impl
+* com.adobe.cq.social.cq-social-scoring-impl
+* com.adobe.cq.social.cq-social-serviceusers-api
+* com.adobe.cq.social.cq-social-serviceusers-impl
+* com.adobe.cq.social.cq-social-srp-api
+* com.adobe.cq.social.cq-social-srp-impl
+* com.adobe.cq.social.cq-social-tally
+* com.adobe.cq.social.cq-social-translation
+* com.adobe.cq.social.cq-social-ugc-search-collections
+* com.adobe.cq.social.cq-social-ugcbase-api
+* com.adobe.cq.social.cq-social-ugcbase-impl
+* com.adobe.cq.social.cq-social-user-ugc-management
+* com.adobe.cq.sample.we.retail.core
+* com.adobe.cq.screens.dcc
+* com.adobe.cq.screens.mq.activemq
+* com.adobe.cq.screens.mq.core
+* com.adobe.cq.screens
+* com.adobe.cq.screens.sessions
+* com.adobe.granite.socketio
+* org.apache.jackrabbit.jackrabbit-api (durch neuere Version ersetzt org.apache.jackrabbit.oak-jackrabbit-api)
+* com.adobe.cq.commerce.cq-commerce-core
+* com.adobe.cq.commerce.cq-commerce-pim
+* com.adobe.cq.commerce.cq-commerce-social
+* org.apache.servicemix.bundles.abdera-parser
+* org.apache.servicemix.bundles.jdom
+* com.day.cq.dam.cq-dam-pim
+* com.day.cq.dam.cq-dam-rating
+* org.apache.commons.io (durch neuere Version org.apache.commons.commons-io ersetzt)
+* com.adobe.granite.crx-explorer
+* org.apache.jackrabbit.oak-solr-osgi
+* com.adobe.cq.cq-searchpromote-integration
 
-**AEM 6.1:**
+Die folgenden Bundles sind nicht in einer neuen AEM 6.5.2025-Instanz enthalten. Nach dem Upgrade befinden sich diese Pakete möglicherweise im inaktiven Status. Sie können manuell entfernt werden:
 
-* org.eclipse.equinox.region, Version 1.1.0.v20120522-1841, aktiv
-* org.apache.sling.installer.factory.subsystems, Version 1.0.0, aktiv
-* org.apache.aries.subsystem.core, Version 1.2.0, aktiv
-* org.apache.aries.subsystem.api, Version 1.1.0, aktiv
-* org.apache.felix.resolver, Version 1.0.0, aktiv
-* org.osgi.service.subsystem.region.context.0, Version 1.0.0, aktiv
-* com.adobe.cq.cq-creativecloud-cloudims, Version 0.0.10, aktiv
-* com.adobe.cq.cq-creativecloud-commons, Version 0.0.8, aktiv
-* com.adobe.cq.cq-creativecloud-filesync, Version 0.0.12, installiert
-* com.adobe.cq.cq-creativecloud-storage, Version 0.0.8, installiert
-* biz.aQute.bndlib, Version 1.43.0, aktiv
-* com.day.cq.dam.commons.nekohtml, Version 0.9.5, aktiv
-* com.day.cq.mcm.cq-mcm-silverpop-integration, Version 1.2.2, aktiv
-
-**AEM 6.0:**
-
-* org.apache.sling.discovery.impl, Version 1.1.6, aktiv
-* com.adobe.granite.installer.patch, Version 0.4.0, aktiv
-* biz.aQute.bndlib, Version 1.43.0, aktiv
-* com.day.cq.cq-jobs-core, Version 5.4.0, aktiv
-* com.day.cq.cq-opensocial, Version 5.7.2, aktiv
-* com.day.cq.cq-pinauthhandler, Version 1.1.2, aktiv
-* com.day.cq.dam.commons.nekohtml, Version 0.9.5, aktiv
-* com.day.cq.mcm.cq-mcm-silverpop-integration, Version 1.1.6, aktiv
-* com.day.cq.wcm.cq-wcm-mobile-phonegap-build-integration, Version 5.7.18, aktiv
-
-**CQ 5.6.1:**
-
-* biz.aQute.bndlib, Version 1.43.0, aktiv
-* com.day.cq.cq-pinauthhandler, Version 1.0.0, aktiv
-* com.day.cq.dam.commons.nekohtml, Version 0.9.5, aktiv
-* com.day.crx.crxde-support, Version 2.3.14, installiert
-* com.day.cq.mcm.cq-mcm-silverpop-integration, Version 1.0.2, aktiv
-
-**CQ 5.6.0:**
-
-* com.day.cq.cq-pinauthhandler, Version 1.0.0, aktiv
-* com.day.cq.dam.commons.nekohtml, Version 0.9.5, aktiv
-* com.day.crx.crxde-support, Version 2.3.14, installiert
+* org.apache.sling.atom.taglib
+* com.github.jknack.handlebars
+* com.adobe.granite.osgi.wrapper.guava
+* com.adobe.cq.core.wcm.components.core (kann durch eine mit AEM 6.5 LTS kompatible Version ersetzt werden)
+* com.adobe.cq.core.wcm.components.extension.contentfragment.bundle (kann durch eine mit AEM 6.5 LTS kompatible Version ersetzt werden)

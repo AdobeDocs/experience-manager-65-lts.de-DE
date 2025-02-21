@@ -4,117 +4,97 @@ description: Erfahren Sie, wie Sie Instanzen von AEM aktualisieren, die über An
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 28701105452c347c5470fdb582d783e7aef1adb0
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 100%
+source-wordcount: '477'
+ht-degree: 20%
 
 ---
 
-# Schritte zur Aktualisierung von Installationen auf Anwendungs-Servern{#upgrade-steps-for-application-server-installations}
+# Schritte zur Aktualisierung von Installationen auf Anwendungs-Servern {#upgrade-steps-for-application-server-installations}
 
-In diesem Abschnitt wird das Verfahren beschrieben, das zum Aktualisieren von AEM für Anwendungs-Server-Installationen befolgt werden muss.
+>[!NOTE]
+>
+>Auf dieser Seite wird das Upgrade-Verfahren für AEM 6.5 LTS war on WLP (WebSphere Liberty) beschrieben.
 
-In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungs-Server verwendet. Zudem wird vorausgesetzt, dass Sie bereits eine funktionierende AEM-Version installiert haben. In dieser Anleitung wird die Aktualisierung von **AEM 6.4 auf 6.5** beschrieben.
+## Schritte vor der Aktualisierung {#pre-upgrade-steps}
 
-1. Starten Sie zunächst TomCat. In den meisten Fällen können Sie hierzu das Startskript `./catalina.sh` über den folgenden Befehl am Terminal ausführen.
+Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführen. Weitere Informationen finden Sie unter [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) und [Wartungsaufgaben vor einer Aktualisierung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md). Stellen Sie außerdem sicher, dass Ihr System die Anforderungen für AEM 6.5 LTS erfüllt. Erfahren Sie, wie Analyzer Ihnen dabei helfen kann, die Komplexität Ihres Upgrades zu schätzen, und lernen Sie außerdem Planen des Upgrades kennen ([Planung des Upgrades](/help/sites-deploying/upgrade-planning.md)).
 
-   ```shell
-   $CATALINA_HOME/bin/catalina.sh start
-   ```
+### Migrationsvoraussetzungen {#migration-prerequisites}
 
-1. Wenn AEM 6.4 bereits installiert ist, müssen Sie sicherstellen, dass die Bundles ordnungsgemäß funktionieren, indem Sie Folgendes aufrufen:
+* **Erforderliche Mindestversion für Java**: Vergewissern Sie sich, dass IBM Sumeru JRE 17 auf Ihrem WLP-Server installiert ist.
 
-   ```shell
-   https://<serveraddress:port>/cq/system/console/bundles
-   ```
+### Durchführen des Upgrades {#performing-the-upgrade}
 
-1. Heben Sie als Nächstes über TomCat App Manager (`http://serveraddress:serverport/manager/html`) die Bereitstellung von AEM 6.4 auf.
-
-1. Migrieren Sie das Repository nun mithilfe des crx2oak-Migrations-Tools. Laden Sie dazu die neueste Version von crx2oak von [diesem Speicheror](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/) herunter.
+1. Erstellen Sie eine Sicherungskopie Ihrer Instanz, bevor Sie mit einer Aktualisierung beginnen.
+1. Identifizieren Sie, ob Sie ein In-Place-Upgrade oder ein Sidegrade benötigen, je nach der Version des verwendeten WLP-Servers. Wenn Ihr aktueller WLP-Server Servlet 6 unterstützt, können Sie ein In-Place-Upgrade durchführen und mit dieser Dokumentation fortfahren. Andernfalls müssen Sie Sidegrade durchführen. Für das Sidegrade folgen Sie bitte dem Link Inhaltsmigration mit Oak-Upgrade-Dokumentation - [ hinzufügen]
+1. Halten Sie die AEM-Instanz an. Dies kann in der Regel mithilfe dieses Befehls erfolgen:
 
    ```shell
-   SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -jar crx2oak.jar --load-profile segment-fds
+   <path-to-wlp-directory>/bin/server stop server_name
    ```
-
-1. Löschen Sie die erforderlichen Eigenschaften in der Datei sling.properties folgendermaßen:
-
-   1. Öffnen Sie die unter `crx-quickstart/launchpad/sling.properties` gespeicherte Datei.
-   1. Entfernen Sie die folgenden Eigenschaften und speichern Sie die Datei:
-
-      1. `sling.installer.dir`
-
-      1. `felix.cm.dir`
-
-      1. `granite.product.version`
-
-      1. `org.osgi.framework.system.packages`
-
-      1. `osgi-core-packages`
-
-      1. `osgi-compendium-services`
-
-      1. `jre-*`
-
-      1. `sling.run.mode.install.options`
 
 1. Entfernen Sie die nicht mehr benötigten Dateien und Ordner. Insbesondere müssen Sie die folgenden Elemente entfernen:
 
-   * Den **launchpad/startup-Ordner**. Sie können ihn löschen, indem Sie am Terminal den folgenden Befehl ausführen: `rm -rf crx-quickstart/launchpad/startup`
+   * Die `cq-quickstart-65.war` aus dem Ordner `dropins` und dem erweiterten Ordner befinden sich normalerweise unter `<path-to-aem-server>/dropins/cq-quickstart-65.war` bzw. `<path-to-aem-server>/apps/expanded/cq-quickstart-65.war`
+   * Der `launchpad/startup`. Sie können ihn löschen, indem Sie am Terminal den folgenden Befehl ausführen, vorausgesetzt, Sie befinden sich im Ordner „server“:
 
-   * Die Datei **base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
-
-   * Die Datei **BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
-
-   * Entfernen Sie die Datei **sling.options.file**, indem Sie folgenden Befehl ausführen: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
-
-1. Erstellen Sie nun den Knoten- und Datenspeicher, der mit AEM 6.5 verwendet wird. Sie können zu diesem Zweck unter `crx-quickstart\install` zwei Dateien mit den folgenden Namen erstellen:
-
-   * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
-   * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
-
-   Diese beiden Dateien konfigurieren AEM so, dass ein TarMK-Knotenspeicher und ein Dateidatenspeicher verwendet werden.
-
-1. Bearbeiten Sie die Konfigurationsdateien, um sie einsatzbereit zu machen. Im Einzelnen:
-
-   * Fügen Sie die folgende Zeile zu `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` hinzu:
-
-     `customBlobStore=true`
-
-   * Fügen Sie dann die folgenden Zeilen zu `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` hinzu:
-
-     ```
-     path=./crx-quickstart/repository/datastore
-     minRecordLength=4096
+     ```shell
+     rm -rf crx-quickstart/launchpad/startup
      ```
 
-1. Ändern Sie nun die Ausführungsmodi in der WAR-Datei für AEM 6.5. Erstellen Sie dafür zunächst einen temporären Ordner, in dem die WAR-Datei für AEM 6.5 gespeichert wird. Der Name des Ordners in diesem Beispiel lautet `temp`. Extrahieren Sie nach dem Kopieren der WAR-Datei deren Inhalte im temporären Ordner:
+   * Die `base.jar`. Sie können dies tun, indem Sie die folgenden Befehle ausführen:
 
+     ```shell
+     find crx-quickstart/launchpad -type f -name 
+     "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \;
+     ```
+
+   * Die Datei `BootstrapCommandFile_timestamp.txt`:
+
+     ```shell
+     rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt
+     ```
+
+   * Entfernen Sie die `sling.options`-Datei, indem Sie Folgendes ausführen:
+
+     ```shell
+     find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \; 
+     ```
+
+   * Entfernen Sie die `sling.bootstrap.txt`:
+
+     ```shell
+     rm -rf crx-quickstart/launchpad/sling_bootstrap.txt
+     ```
+
+1. Erstellen Sie eine Sicherung der `sling.properties`-Datei (normalerweise in `crx-quickstart/conf/` vorhanden) und löschen Sie sie
+1. **Ändern Sie in der `server.xml`-Datei die Version des Servlets** 6.0).
+1. Überprüfen Sie die Startparameter für den AEM-Server und stellen Sie sicher, dass Sie die Parameter entsprechend Ihren Systemanforderungen aktualisieren. Weitere Informationen finden [ unter ](/help/sites-deploying/custom-standalone-install.md) eigenständige Installation
+1. Installieren Sie Java 17 und stellen Sie sicher, dass es korrekt installiert ist, indem Sie Folgendes ausführen:
+
+   ```shell
+   java -version
    ```
-   jar xvf aem-quickstart-6.5.0.war
+
+1. Laden Sie das neue WAR 6.5 LTS von Software Distribution herunter und kopieren Sie es in den Dropins-Ordner unter: `/<path-to-aem-server>/dropins/`
+1. AEM-Instanz starten: Dies kann normalerweise mithilfe dieses Befehls erfolgen:
+
+   ```shell
+   <path-to-wlp-directory>/bin/server start server_name
    ```
 
-1. Wechseln Sie nach dem Extrahieren der Inhalte zum Ordner **WEB-INF** und bearbeiten Sie die Datei web.xml, um die Ausführungsmodi zu ändern. Suchen Sie nach der Zeichenfolge `sling.run.modes`, um ihre Position in der XML-Datei zu bestimmen. Wenn Sie sie gefunden haben, ändern Sie die Ausführungsmodi in der nächsten Code-Zeile, die standardmäßig auf author gesetzt ist:
+1. Wenn Sie benutzerdefinierte Änderungen in `sling.properties` haben, befolgen Sie bitte die folgenden Anweisungen:
 
-   ```bash
-   <param-value >author</param-value>
-   ```
+   1. Beenden Sie die AEM-Instanz, indem Sie `<path-to-wlp-directory>/bin/server stop server_name` ausführen
+   1. Wenden Sie Ihre benutzerdefinierten `sling.properties` auf die neu generierte `sling.properties` an (indem Sie auf die in Schritt 6 erstellte Sicherungsdatei verweisen)
+   1. AEM-Instanz starten. Dies kann in der Regel durch Ausführen von Folgendem geschehen: `<path-to-wlp-directory>/bin/server start server_name`
 
-1. Ändern Sie den oben genannten „author“-Wert und legen Sie die Ausführungsmodi folgendermaßen fest: `author,crx3,crx3tar`. Der endgültige Code-Block sollte wie folgt aussehen:
+## Bereitstellen einer aktualisierten Code-Basis {#deploy-upgraded-codebase}
 
-   ```
-   <init-param>
-   <param-name>sling.run.modes</param-name>
-   <param-value>author,crx3,crx3tar</param-value>
-   </init-param>
-   <load-on-startup>100</load-on-startup>
-   </servlet>
-   ```
+Sobald die ersetzende Aktualisierung abgeschlossen ist, sollte die aktualisierte Code-Basis bereitgestellt werden. Die Schritte zum Aktualisieren der Code-Basis, sodass sie in der Zielversion von AEM funktioniert, finden Sie auf der Seite [Aktualisieren von Codes und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) .
 
-1. Erstellen Sie die JAR-Datei erneut mit den geänderten Inhalten:
+## Durchführen von Prüfungen und Fehlerbehebungen nach einem Upgrade {#perform-post-upgrade-checks-and-troubleshooting}
 
-   ```bash
-   jar cvf aem65.war
-   ```
-
-1. Stellen Sie schließlich die neue war-Datei in TomCat bereit.
+Weitere Informationen [ Sie unter „Prüfungen und ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md) nach einem Upgrade“.

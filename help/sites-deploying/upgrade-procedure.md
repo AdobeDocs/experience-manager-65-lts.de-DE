@@ -10,10 +10,10 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6a06ad15782b5cff7978547d005aaa312a837647
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 100%
+source-wordcount: '833'
+ht-degree: 98%
 
 ---
 
@@ -114,7 +114,7 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 
 ![mongo-secondaries](assets/mongo-secondaries.jpg)
 
-1. Erstellen Sie neue 6.5-Autoreninstanzen, die mit der upgegradeten Mongo-Instanz verbunden sind.
+1. Erstellen Sie neue 6.5.2025-Autoreninstanzen, die mit der upgegradeten Mongo-Instanz verbunden sind.
 
 1. Erstellen Sie die MongoDB-Knoten neu, die aus dem Cluster entfernt wurden.
 
