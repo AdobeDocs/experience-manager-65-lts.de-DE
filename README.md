@@ -1,13 +1,13 @@
 ---
-source-git-commit: 61cbd7d51fc0c434adde7f805c37b81c81ad2bfb
+source-git-commit: 8c01084831774686c0b02578dfd03e159ce01b50
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 64%
 
 ---
-# Dokumentation zu Adobe Experience Manager 6.5 2025
+# Dokumentation zu Adobe Experience Manager 6.5 LTS
 
-Dies ist das Repository für die Dokumentation zu Adobe Experience Manager 6.5 2025. Diese Dokumentation behandelt die Installation, Verwaltung, Verwendung durch Authoring und die Anpassung von AEM 6.5 2025.
+Dies ist das Repository für die Dokumentation zu Adobe Experience Manager 6.5 LTS. Diese Dokumentation behandelt die Installation, Verwaltung, Verwendung der Authoring-Funktion und die Anpassung von AEM 6.5 LTS.
 
 Ihre Beiträge zur Dokumentation sind willkommen. Sehen Sie sich die folgenden Ressourcen an:
 
