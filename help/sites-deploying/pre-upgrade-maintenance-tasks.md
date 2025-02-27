@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 108e1b3d840287e3d694242d934d0fbe4606801c
+source-git-commit: 2eb9307f37098ee9f57ba9383600f74a5e3b2501
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1187'
 ht-degree: 83%
 
 ---
@@ -26,7 +26,6 @@ Bevor Sie mit dem Upgrade beginnen, ist es wichtig, die folgenden Wartungsaufgab
 * [Erstellen der quickstart.properties-Datei](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
 * [Konfigurieren von Workflow- und Auditprotokoll-Löschung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
 * [Installieren, Konfigurieren und Ausführen der Aufgaben vor dem Upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
-* [Deaktivieren von benutzerdefinierten Anmeldemodulen](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-login-modules)
 * [Entfernen von Updates aus dem /install-Verzeichnis](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#remove-updates-install-directory)
 * [Beenden aller Cold-Standby-Instanzen](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#stop-tarmk-coldstandby-instance)
 * [Deaktivieren von benutzerdefinierten geplanten Aufträgen](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-scheduled-jobs)
@@ -146,6 +145,10 @@ Deaktivieren Sie alle geplanten OSGi-Aufträge, die im Anwendungs-Code enthalten
 >Dieser Schritt ist nur für TarMK-Installationen erforderlich.
 
 Falls Sie TarMK verwenden, sollten Sie vor dem Upgrade eine Offline-Revisionsbereinigung durchführen. Dadurch werden die Repository-Migration und die nachfolgenden Upgrade-Aufgaben wesentlich schneller ausgeführt. Dies wiederum unterstützt die erfolgreiche Online-Revisionsbereinigung nach dem Upgrade. Informationen zum Ausführen der Offline-Revisionsbereinigung finden Sie unter [Durchführen der Offline-Revisionsbereinigung](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
+
+## Durchführen der Datenspeicherbereinigung {#execute-datastore-garbage-collection}
+
+Nachdem Sie die Revisionsbereinigung auf crx3-Instanzen ausgeführt haben, sollten Sie die Datenspeicherbereinigung ausführen, um alle nicht referenzierten Blobs im Datenspeicher zu entfernen. Anweisungen finden Sie in der Dokumentation zur [Datenspeicherbereinigung](/help/sites-administering/data-store-garbage-collection.md).
 
 ## Rotieren von Protokolldateien {#rotate-log-files}
 
