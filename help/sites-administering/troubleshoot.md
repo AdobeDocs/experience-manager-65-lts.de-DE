@@ -9,9 +9,9 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '484'
 ht-degree: 100%
 
 ---
@@ -61,13 +61,6 @@ Die folgende Tabelle bietet einen Überblick über Probleme, die Admins beheben 
  </tbody>
 </table>
 
-## Installationsprobleme {#installation-issues}
-
-Siehe [Häufige Installationsprobleme](/help/sites-deploying/troubleshooting.md#common-installation-issues) für Informationen zu den folgenden Fehlerbehebungsszenarien:
-
-* Ein Doppelklick auf die JAR-Datei für den Schnellstart zeigt keine Wirkung oder öffnet die JAR-Datei mit einem anderen Programm (z. B. Archiv-Manager).
-* Bei Applikationen, die auf CRX ausgeführt werden, treten Fehler wegen unzureichendem Speicherplatz auf.
-* Der AEM-Begrüßungsbildschirm wird nach einem Doppelklick auf den AEM-Schnellstart nicht im Browser angezeigt.
 
 ## Methoden zur Fehlerbehebung in der Analyse {#methods-for-troubleshooting-analysis}
 

@@ -9,9 +9,9 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 1a942dc471cde14fa3b811b31e54644e199f8738
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1759'
 ht-degree: 100%
 
 ---
@@ -43,7 +43,6 @@ Nachdem Sie sich mit diesen Grundlagen vertraut gemacht haben, finden Sie auf de
 * [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md)
 * [Benutzerdefinierte Standalone-Installation](/help/sites-deploying/custom-standalone-install.md)
 * [Anwendungsserver-Installation](/help/sites-deploying/application-server-install.md)
-* [Fehlerbehebung](/help/sites-deploying/troubleshooting.md)
 * [Start und Stopp über die Befehlszeile](/help/sites-deploying/command-line-start-and-stop.md)
 * [Konfiguration](/help/sites-deploying/configuring.md)
 * [Aktualisieren auf AEM 6.5](/help/sites-deploying/upgrade.md)
@@ -295,7 +294,6 @@ Der obige Abschnitt sollte Ihnen ein gutes Verständnis der Grundlagen zur AEM-I
 * [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md)
 * [Benutzerdefinierte Standalone-Installation](/help/sites-deploying/custom-standalone-install.md)
 * [Anwendungsserver-Installation](/help/sites-deploying/application-server-install.md)
-* [Fehlerbehebung](/help/sites-deploying/troubleshooting.md)
 * [Start und Stopp über die Befehlszeile](/help/sites-deploying/command-line-start-and-stop.md)
 * [Konfiguration](/help/sites-deploying/configuring.md)
 * [Aktualisieren auf AEM 6.5](/help/sites-deploying/upgrade.md)
