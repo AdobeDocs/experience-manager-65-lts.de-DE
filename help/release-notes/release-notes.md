@@ -1,9 +1,9 @@
 ---
 title: Aktuelle Versionshinweise für Adobe Experience Manager 6.5 LTS
 description: Dies sind die aktuellen Versionshinweise für Adobe Experience Manager 6.5 LTS.
-source-git-commit: baa7e84c30117645d6a2e4ef8d8e182a9dd73321
+source-git-commit: 54f3f3019dcceda4307160aa2126c37835f6626e
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '783'
 ht-degree: 40%
 
 ---
@@ -37,17 +37,13 @@ Quickstart verwendet Eclipse Jetty 11.0.x als Servlet-Engine.
 * Um eine optimale Leistung zu erzielen, überschreiben Sie die GC-Standardwerte mit anderen Werten. Weitere Informationen finden Sie im Abschnitt [Installieren und Aktualisieren](/help/sites-deploying/custom-standalone-install.md).
 * Wartungs-Updates für Java™ 17 werden von Adobe für die Verwendung durch Kunden in AEM-bezogenen Projekten verteilt, wenn sie nicht von Oracle öffentlich verfügbar sind.
 
-#### Java™-Entwicklung {#java-development}
+#### UberJar-Verpackung {#uber-jar-packaging}
 
-* Es gibt jetzt [zwei Versionen des UberJar](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies), eine empfohlene Version mit öffentlichen Schnittstellen, die nicht als veraltet gekennzeichnet sind, und eine Version, die nur Schnittstellen enthält, die als veraltet gekennzeichnet sind.
+* Es gibt einen geringfügigen Unterschied in der Uberjar-Verpackung von AEM 6.5 LTS. Weitere Informationen finden [siehe](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version-update-the-aem-uber-jar-version).
 
 #### Aktualisierung {#upgrade}
 
 * Weitere Informationen zum Upgrade-Verfahren finden Sie unter [Dokumentation zu Upgrades](/help/sites-deploying/upgrade.md).
-
-#### Repository {#repository}
-
-* Die Grundlage von Adobe Experience Manager 6.5 LTS basiert auf aktualisierten Versionen des OSGi-basierten Frameworks (Apache Sling und Apache Felix) und dem Java™ Content Repository Apache Jackrabbit Oak 1.68.0.
 
 ## Installieren und Aktualisieren {#install-update}
 
@@ -98,13 +94,17 @@ In diesem Abschnitt werden Funktionen aufgeführt, die aus AEM 6.5 LTS entfernt 
 | Assets | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` wurde entfernt. | Verwenden Sie die hinzugefügte alternative API-`com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()`. | 6,5 LTS GA |
 | Granite | Paket `com.adobe.granite.socketio` wird entfernt. | Kein Ersatz verfügbar. | 6,5 LTS GA |
 | Granite | `com.adobe.granite.crx-explorer` wird nicht unterstützt. | Kein Ersatz verfügbar. | 6,5 LTS GA |
+| Granite | `crx2oak` wird nicht unterstützt. | Wählen Sie die entsprechende Version von [oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6,5 LTS GA |
+| Adobe | `com.adobe.cq.cq-searchpromote-integration` wird nicht unterstützt. | Kein Ersatz verfügbar. | 6,5 LTS GA |
 | Guave | Alle Guava-Abhängigkeiten werden jetzt in AEM entfernt, und daher ist das `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002`-Bundle nicht Teil von AEM. | Kunden können Guava selbst hinzufügen, wenn sie von Guava abhängig sind, oder Guava-Code durch Java-Sammlungen oder andere Alternativen ersetzen, sofern möglich. | 6,5 LTS GA |
 | We.Retail | Die Beispiel-Site „We-Retail“ wird nicht unterstützt. | Kein Ersatz verfügbar. | 6,5 LTS GA |
 | Open Source | `oak-solr-osgi` Paket wird nicht unterstützt. | Kein Ersatz verfügbar. | 6,5 LTS GA |
 | Open Source | `org.apache.servicemix.bundles.abdera-parser`, `org.apache.servicemix.bundles.jdom` und `org.apache.sling.atom.taglib` werden nicht unterstützt. | Kein Ersatz verfügbar. | 6,5 LTS GA |
-| Open Source | `org.apache.commons.io packages` werden jetzt aus `org.apache.commons.commons-io` exportiert. | Keine Änderung erforderlich. | 6,5 LTS GA |
+| Open Source | `org.apache.commons.io` Pakete werden jetzt aus `org.apache.commons.commons-io` exportiert. | Keine Änderung erforderlich. | 6,5 LTS GA |
 | Open Source | `javax.mail` Pakete werden aus dem `com.sun.javax.mail` Bundle exportiert. | Keine Änderung erforderlich. | 6,5 LTS GA |
 | Open Source | `org.apache.jackrabbit.api` Pakete werden jetzt aus dem `org.apache.jackrabbit.oak-jackrabbit-api`-Bundle exportiert. | Keine Änderung erforderlich. | 6,5 LTS GA |
+| Open Source | `com.github.jknack.handlebars` wird nicht unterstützt | Relevante Version [auswählen](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6,5 LTS GA |
+
 
 ## Eingeschränkte Websites{#restricted-sites}
 
