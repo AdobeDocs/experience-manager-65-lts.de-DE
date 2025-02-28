@@ -1,9 +1,9 @@
 ---
 title: Aktuelle Versionshinweise für Adobe Experience Manager 6.5 LTS
 description: Dies sind die aktuellen Versionshinweise für Adobe Experience Manager 6.5 LTS.
-source-git-commit: 54f3f3019dcceda4307160aa2126c37835f6626e
+source-git-commit: 6a69d4e143c54b22127a1e1ff3546898fcdd0b2d
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '796'
 ht-degree: 40%
 
 ---
@@ -59,7 +59,6 @@ Die vollständige Matrix der unterstützten Plattformen, einschließlich der Sup
 >
 >Java™ 17 ist die empfohlene Version für AEM 6.5 LTS.
 
-
 ## Veraltete und entfernte Funktionen {#deprecated-and-removed-features}
 
 Adobe evaluiert fortlaufend Produktfunktionen, um ältere Features zu überarbeiten oder durch modernere Alternativen zu ersetzen und so den Nutzen für die Kunden insgesamt zu verbessern, wobei stets auf Abwärtskompatibilität geachtet wird.
@@ -92,6 +91,7 @@ In diesem Abschnitt werden Funktionen aufgeführt, die aus AEM 6.5 LTS entfernt 
 | Screens | Screens wird nicht unterstützt. | Kein Ersatz verfügbar. | 6,5 LTS GA |
 | Assets | `dam-pim` und `dam-rating` werden nicht unterstützt, da Pakete von Social Media abhängig sind. | Kein Ersatz verfügbar. | 6,5 LTS GA |
 | Assets | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` wurde entfernt. | Verwenden Sie die hinzugefügte alternative API-`com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()`. | 6,5 LTS GA |
+| Portal | AEM Portal Director wird nicht unterstützt. | Kein Ersatz verfügbar. | 6,5 LTS GA |
 | Granite | Paket `com.adobe.granite.socketio` wird entfernt. | Kein Ersatz verfügbar. | 6,5 LTS GA |
 | Granite | `com.adobe.granite.crx-explorer` wird nicht unterstützt. | Kein Ersatz verfügbar. | 6,5 LTS GA |
 | Granite | `crx2oak` wird nicht unterstützt. | Wählen Sie die entsprechende Version von [oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6,5 LTS GA |
@@ -104,7 +104,6 @@ In diesem Abschnitt werden Funktionen aufgeführt, die aus AEM 6.5 LTS entfernt 
 | Open Source | `javax.mail` Pakete werden aus dem `com.sun.javax.mail` Bundle exportiert. | Keine Änderung erforderlich. | 6,5 LTS GA |
 | Open Source | `org.apache.jackrabbit.api` Pakete werden jetzt aus dem `org.apache.jackrabbit.oak-jackrabbit-api`-Bundle exportiert. | Keine Änderung erforderlich. | 6,5 LTS GA |
 | Open Source | `com.github.jknack.handlebars` wird nicht unterstützt | Relevante Version [auswählen](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6,5 LTS GA |
-
 
 ## Eingeschränkte Websites{#restricted-sites}
 
