@@ -5,9 +5,9 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 055e99ec1c202acacae1be55b48e828f2634b0f4
+source-git-commit: e77dfbdbe5d540590f7552ddd07f5f7b10f7b41e
 workflow-type: tm+mt
-source-wordcount: '3291'
+source-wordcount: '3044'
 ht-degree: 96%
 
 ---
@@ -127,15 +127,7 @@ Es gibt verschiedene Optionen zum Bereitstellen des Repositorys von Adobe Experi
 >
 >Die Adobe-Kundenunterstützung hilft beim Qualifizieren von Problemen, die mit der Verwendung von MongoDB mit AEM in Zusammenhang stehen.
 >
->Weitere Informationen finden Sie auf der Seite für [MongoDB für Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
-
->[!NOTE]
->
->Unterstützte relationale Datenbanken wie oben aufgeführt sind Software von Drittanbietern und sind nicht im AEM-Lizenzierungspaket enthalten.
->
->Um AEM 6.5 mit einer unterstützten relationalen Datenbank ausführen zu können, ist ein separater Support-Vertrag mit einem Datenbankanbieter erforderlich. Die Adobe-Kundenunterstützung hilft beim Qualifizieren von Problemen, die mit der Verwendung von relationalen Datenbanken mit AEM 6.5 in Zusammenhang stehen.
->
->**Die meisten relationalen Datenbanken werden derzeit in Level-R auf AEM 6.5 unterstützt, das mit Support-Kriterien und einem Support-Programm geliefert wird, wie in der obigen Beschreibung zu Level-R angegeben.**
+>Weitere Informationen finden Sie auf der Seite von [MongoDB für Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 
 ### Servlet-Engines/Anwendungs-Server {#servlet-engines-application-servers}
 
@@ -146,10 +138,9 @@ Die mindestens erforderliche Servlet-API-Version ist Servlet 3.1. Darüber hinau
 | Plattform | Unterstützungsebene |
 |---|---|
 | **Integrierte Schnellstart-Servlet-Engine (Jetty 11.0.x)** | A: Unterstützt |
-| Kontinuierliche Bereitstellung für IBM® WebSphere®-Anwendungsserver (LibertyProfile) mit Web Profile 24.0.0.7 und IBM® Sumeru open JRE® 17 | R: Eingeschränkte Unterstützung für neue Verträge `[2]` |
-| Apache Tomcat 10.1.x | R: Eingeschränkte Unterstützung für neue Verträge `[2]` |
+| Kontinuierliche Bereitstellung für IBM® WebSphere®-Anwendungsserver (LibertyProfile) mit Web Profile 24.0.0.7 und IBM® Sumeru open JRE® 17 | R: Eingeschränkte Unterstützung für neue Verträge `[1]` |
+| Apache Tomcat 11.0.x | R: Eingeschränkte Unterstützung für neue Verträge `[1]` |
 
-1. Wird für Bereitstellungen mit AEM Forms empfohlen.
 1. Der Start von AEM 6.5-Bereitstellungen auf Anwendungs-Servern wird nun eingeschränkt unterstützt. Bestehende Kunden können auf AEM 6.5 aktualisieren und weiterhin Anwendungs-Server verwenden. Für neue Kundinnen und Kunden werden Support-Kriterien und ein Support-Programm zur Verfügung gestellt, wie oben in der Beschreibung zu Level-R angegeben.
 
 ### Server-Betriebssysteme {#server-operating-systems}
@@ -174,21 +165,6 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
    >* zlib.x86-64 (1.2.7-17)
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
-
-1. Produktionsimplementierungen von Microsoft® Windows werden für Kundinnen und Kunden unterstützt, die ein Upgrade auf 6.5 durchführen, sowie für die Nutzung außerhalb der Produktion. Neue Bereitstellungen erfolgen auf Anfrage für AEM Sites und Assets.
-1. AEM Forms wird auf Microsoft Windows® Server ohne die Einschränkungen von Support-Level R unterstützt.
-1. AEM Forms unterstützt Microsoft® Windows Server 2016 nicht mehr.
-
->[!NOTE]
->
->Wenn Sie AEM Forms 6.5 installieren, stellen Sie sicher, dass Sie die folgenden 32-Bit-Versionen von Microsoft® Visual C++ Redistributable installiert haben.
->
->* Microsoft® Visual C++ 2008 Redistributable
->* Microsoft® Visual C++ 2010 Redistributable
->* Microsoft® Visual C++ 2012 Redistributable
->* Microsoft® Visual C++ 2013 Redistributable
->* Microsoft® Visual C++ 2019 (VC14.28 oder höher) Redistributable
-
 
 ### Virtuelle und Cloud-Computing-Umgebungen {#virtual-cloud-computing-environments}
 
@@ -296,18 +272,6 @@ Die AEM-Benutzeroberfläche ist für größere Bildschirme (normalerweise Notebo
 ### Unterstützte Browser für Websites {#supported-browsers-for-websites}
 
 Im Allgemeinen hängt die Browser-Unterstützung für mit AEM Sites gerenderte Websites von der Implementierung der AEM-Seitenvorlagen, dem Design und der Komponentenausgabe ab und wird daher von der Partei kontrolliert, die diese Teile implementiert.
-
-### WebDAV-Clients {#webdav-clients}
-
-**Microsoft® Windows 7+**
-
-Um eine erfolgreiche Verbindung mit Microsoft® Windows 7+ zu einer AEM-Instanz herzustellen, die nicht mit SSL gesichert ist, muss unter Windows die Standardauthentifizierung über ein ungesichertes Netzwerk aktiviert sein. Dies erfordert eine Änderung in der Windows-Registrierung des WebClient:
-
-1. Suchen Sie den Registrierungsunterschlüssel:
-
-   * HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters
-
-1. Fügen Sie diesem Unterschlüssel den Registrierungseintrag „BasicAuthLevel“ mit dem Wert 2 oder mehr hinzu.
 
 ## Zusätzliche Hinweise zu Platform {#additional-platform-notes}
 
