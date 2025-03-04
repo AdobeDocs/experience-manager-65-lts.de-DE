@@ -9,10 +9,10 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ee5f1f68f6f961ba0a18296eaf198ebe8671b226
+source-git-commit: 09b297721b08ef428f1ac8a26fec38d5a8bd34fd
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 92%
+source-wordcount: '1200'
+ht-degree: 80%
 
 ---
 
@@ -20,28 +20,24 @@ ht-degree: 92%
 
 ## Prüfungen nach einem Upgrade {#post-upgrade-checks}
 
-Nach einem [ersetzenden Upgrade](/help/sites-deploying/in-place-upgrade.md) sollten folgende Schritte durchgeführt werden, um das Upgrade abzuschließen. Es wird davon ausgegangen, dass AEM mit dem JAR 6.5.2025 gestartet und die aktualisierte Code-Basis bereitgestellt wurde.
+Nach einem [ersetzenden Upgrade](/help/sites-deploying/in-place-upgrade.md) sollten folgende Schritte durchgeführt werden, um das Upgrade abzuschließen. Es wird davon ausgegangen, dass AEM mit dem AEM 6.5 LTS-JAR gestartet und die aktualisierte Code-Basis bereitgestellt wurde.
 
-* [Überprüfen der Protokolle auf ein erfolgreiches Upgrade](#main-pars-header-290365562)
+* [Überprüfen der Protokolle auf ein erfolgreiches Upgrade](#verify-logs-for-upgrade-success)
 
-* [Überprüfen von OSGi-Paketen](#main-pars-header-1637350649)
+* [Überprüfen von OSGi-Paketen](#verify-osgi-bundles)
 
-* [Überprüfen der Oak-Version](#main-pars-header-1293049773)
+* [Überprüfen der Oak-Version](#verify-oak-version)
 
-* [Überprüfen des Ordners „PreUpgradeBackup“](#main-pars-header-988995987)
+* [Erstüberprüfung von Seiten](#initial-validation-of-pages)
 
-* [Erstüberprüfung von Seiten](#main-pars-header-20827371)
-* [Anwenden von AEM Service Packs](#main-pars-header-215142387)
+* [Überprüfen der Konfigurationen für die geplante Wartung](#verify-scheduled-maintenance-configurations)
 
-* [Migrieren von AEM-Funktionen](#main-pars-header-1434457709)
+* [Aktivieren von Replikationsagenten](#enable-replication-agents)
 
-* [Überprüfen der Konfigurationen für die geplante Wartung](#main-pars-header-1552730183)
+* [Aktivieren von benutzerdefinierten geplanten Aufträgen](#enable-custom-scheduled-jobs)
 
-* [Aktivieren von Replikationsagenten](#main-pars-header-823243751)
+* [Ausführen des Testplans](#execute-test-plan)
 
-* [Aktivieren von benutzerdefinierten geplanten Aufträgen](#main-pars-header-244535083)
-
-* [Ausführen des Testplans](#main-pars-header-1167972233)
 
 ### Überprüfen der Protokolle auf ein erfolgreiches Upgrade {#verify-logs-for-upgrade-success}
 
@@ -68,7 +64,7 @@ Navigieren Sie zur OSGi-Konsole unter `/system/console/bundles` und überprüfen
 
 ### Überprüfen der Oak-Version {#verify-oak-version}
 
-Nach dem Upgrade sollte ersichtlich sein, dass die Oak-Version auf Version **.1.68.0 aktualisiert**. Um die Oak-Version zu überprüfen, navigieren Sie zur OSGi-Konsole und suchen Sie nach der entsprechenden Version der Oak-Bundles: Oak Core, Oak Commons, Oak Segment Tar.
+Nach dem Upgrade sollte ersichtlich sein, dass die Oak-Version auf Version **1.68.1-B002** aktualisiert wurde. Um die Oak-Version zu überprüfen, navigieren Sie zur OSGi-Konsole und suchen Sie nach der entsprechenden Version der Oak-Bundles: Oak Core, Oak Commons, Oak Segment Tar.
 
 ### Erstüberprüfung von Seiten {#initial-validation-of-pages}
 
@@ -88,10 +84,6 @@ Wenn Sie einen Dateidatenspeicher verwenden, stellen Sie sicher, dass die Aufgab
 
 Wenn Sie MongoMK oder das neue TarMK-Segmentformat verwenden, stellen Sie sicher, dass die Aufgabe „Revisionsbereinigung“ aktiviert ist und zur Liste für die tägliche Wartung hinzugefügt wurde. Anweisungen hierzu finden Sie unter [Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md).
 
-### Ausführen des Testplans {#execute-test-plan}
-
-Führen Sie einen detaillierten Testplan durch, wie unter [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) im Abschnitt **Testverfahren** beschrieben.
-
 ### Aktivieren von Replikationsagenten {#enable-replication-agents}
 
 Wenn eine Veröffentlichungsumgebung vollständig upgegradet und überprüft wurde, aktivieren Sie die Replikationsagenten in der Autorenumgebung. Vergewissern Sie sich, dass die Agenten eine Verbindung mit den jeweiligen Veröffentlichungsinstanzen herstellen können. Siehe [Upgrade-Verfahren](/help/sites-deploying/upgrade-procedure.md) für weitere Informationen zur Reihenfolge der Ereignisse.
@@ -100,19 +92,21 @@ Wenn eine Veröffentlichungsumgebung vollständig upgegradet und überprüft wur
 
 Zu diesem Zeitpunkt können alle geplanten Aufträge, die Teil der Codebasis sind, aktiviert werden.
 
-## Analysieren von Upgrade-Problemen {#analyzing-issues-with-upgrade}
+### Ausführen des Testplans {#execute-test-plan}
 
-Dieser Abschnitt enthält einige Problemszenarien, die möglicherweise im Zuge des Upgrades auf AEM 6.5.2025 auftreten.
+Führen Sie einen detaillierten Testplan aus, wie in [Aktualisieren von Code und Anpassungen **Abschnitt „Testverfahren** definiert](/help/sites-deploying/upgrading-code-and-customizations.md#testing-procedure-testing-procedure).
 
-Diese Szenarien sollen dabei helfen, die Grundursache der mit der Aktualisierung im Zusammenhang stehenden Probleme zu identifizieren. Ferner sollen sie dazu beitragen, projekt- oder produktspezifische Probleme zu ermitteln.
+## Analysieren von Upgrade-Problemen {#analyzing-issues-with-the-upgrade}
 
-### Fehlerhafte Aktualisierung von Paketen  {#packages-and-bundles-fail-to-update-}
+Dieser Abschnitt enthält einige Problemszenarien, die möglicherweise im Zuge des Upgrades auf AEM 6.5 LTS auftreten.
+
+### Fehlerhafte Aktualisierung von Paketen  {#packages-and-bundles-fail-to-update}
 
 Wenn Pakete während des Upgrades nicht installiert werden können, werden die darin enthaltenen Pakete ebenfalls nicht aktualisiert. Diese Kategorie von Problemen geht auf eine Fehlkonfiguration des Datenspeichers zurück.  Sie werden auch als **ERROR**- und **WARN**-Meldungen in der Datei error.log angezeigt. Da in den meisten dieser Fälle die Standardanmeldung möglicherweise nicht funktioniert, können Sie CRXDE direkt verwenden, um die Konfigurationsprobleme zu untersuchen und zu finden.
 
 ### Upgrade wurde nicht ausgeführt {#the-upgrade-did-not-run}
 
-Stellen Sie vor Beginn der vorbereitenden Schritte sicher, dass zuerst die **Quellinstanz** ausgeführt wird. Verwenden Sie hierzu den Java™-Befehl „-jar aem-quickstart.jar“. Dieser Schritt ist notwendig, um zu gewährleisten, dass die Datei „quickstart.properties“ ordnungsgemäß generiert wird. Fehlt diese Datei, wird das Upgrade nicht durchgeführt. Alternativ dazu können Sie im Installationsordner der Quellinstanz unter `crx-quickstart/conf` prüfen, ob die Datei vorhanden ist. Außerdem muss sie beim Starten von AEM für das Upgrade mit dem Java™-Befehl „-jar aem-quickstart.jar“ ausgeführt werden. Beim Starten mit einem Startskript wird AEM nicht im Upgrade-Modus gestartet.
+Bevor Sie mit den vorbereitenden Schritten beginnen, stellen Sie sicher, dass Sie zuerst die **Quellinstanz** ausführen, indem Sie sie mit dem `java -jar aem-quickstart.jar` Befehl ausführen. Dieser Schritt ist notwendig, um zu gewährleisten, dass die Datei „quickstart.properties“ ordnungsgemäß generiert wird. Fehlt diese Datei, wird das Upgrade nicht durchgeführt. Alternativ dazu können Sie im Installationsordner der Quellinstanz unter `crx-quickstart/conf` prüfen, ob die Datei vorhanden ist. Außerdem muss AEM beim Starten des Upgrades mit dem Befehl `java -jar <aem-quickstart-6.5-LTS.jar>` ausgeführt werden. Beim Starten mit einem Startskript wird AEM nicht im Upgrade-Modus gestartet.
 
 ### Einige AEM-Pakete wechseln nicht in den aktiven Status {#some-aem-bundles-are-not-switching-to-the-active-state}
 
@@ -120,13 +114,13 @@ Wenn Bundles nicht starten, prüfen Sie diese auf nicht erfüllte Abhängigkeite
 
 Wenn dieses Problem auftritt, jedoch auf eine fehlerhafte Paketinstallation zurückzuführen ist, wodurch Pakete nicht aktualisiert werden, werden diese für die neue Version als inkompatibel angesehen. Weitere Informationen über die entsprechende Fehlerbehebung finden Sie oben unter **Fehlerhafte Aktualisierung von Pakete**.
 
-Es wird außerdem empfohlen, die Bundle-Liste einer neuen AEM 6.5.2025-Instanz mit der upgegradeten zu vergleichen, um nicht upgegradete Bundles zu erkennen. Dadurch kann der Bereich der zu suchenden Elemente in der Datei `error.log` eingegrenzt werden.
+Es wird außerdem empfohlen, die Bundle-Liste einer neuen AEM 6.5 LTS-Instanz mit der upgegradeten zu vergleichen, um nicht upgegradete Bundles zu erkennen. Dadurch kann der Bereich der zu suchenden Elemente in der Datei `error.log` eingegrenzt werden.
 
 ### Benutzerdefinierte Pakete wechseln nicht in den aktiven Status {#custom-bundles-not-switching-to-the-active-state}
 
-Wenn Ihre benutzerdefinierten Bundles nicht in den aktiven Status wechseln, liegt dies höchstwahrscheinlich an Code, der die geänderte API nicht importiert. Dies führt oftmals zu nicht erfüllten Abhängigkeiten.
+Falls Ihre benutzerdefinierten Bundles nicht in den aktiven Status wechseln, liegt dies höchstwahrscheinlich an Code, der keine geänderte API importiert. Dies führt oftmals zu nicht erfüllten Abhängigkeiten.
 
-Es empfiehlt sich zudem, zu überprüfen, ob die Änderung, die das Problem verursacht hat, nötig war, und sie zurückzusetzen, wenn dies nicht der Fall ist. Überprüfen Sie zudem, ob die Version des Paketexports unter Beachtung einer strengen semantischen Versionierung mehr als nötig erhöht wurde.
+Es empfiehlt sich außerdem zu überprüfen, ob die Änderung, die das Problem verursacht hat, erforderlich war, und sie zurückzusetzen, wenn dies nicht der Fall ist. Überprüfen Sie zudem, ob die Version des Paketexports unter Beachtung einer strengen semantischen Versionierung mehr als nötig erhöht wurde.
 
 ### Analysieren der Dateien „error.log“ und „upgrade.log“ {#analyzing-the-error.log-and-upgrade.log}
 
@@ -150,4 +144,4 @@ In einigen Fällen können Fehler auch in WARN-Meldungen gefunden werden, da gü
 
 ### Kontaktaufnahme mit dem Adobe-Support {#contacting-adobe-support}
 
-Wenn Sie die Empfehlungen auf dieser Seite befolgt haben und weiterhin Fehler auftreten, wenden Sie sich an den Adobe-Support. Um dem Supportteam so viele Informationen wie möglich für Ihren Fall bereitzustellen, fügen Sie Ihrer Support-Anfrage die Datei „upgrade.log“ für das Upgrade hinzu.
+Wenn Sie die Empfehlungen auf dieser Seite befolgt haben und weiterhin Fehler auftreten, wenden Sie sich an den Adobe-Support. Um dem Supportmitarbeiter für Ihren Fall so viele Informationen wie möglich bereitzustellen, fügen Sie die `error.log`- und `upgrade.log` aus Ihrem Upgrade hinzu.
