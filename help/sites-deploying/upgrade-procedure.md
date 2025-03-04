@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6a06ad15782b5cff7978547d005aaa312a837647
+source-git-commit: ae78421de75518894f3996829e554acd9003a6d1
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '820'
 ht-degree: 98%
 
 ---
@@ -100,7 +100,6 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 1. Starten Sie die primäre Autoreninstanz neu, um sicherzustellen, dass diese richtig neu gestartet wird.
 1. Deaktivieren Sie die Replikationsagenten auf der primären Autoreninstanz.
 1. Führen Sie auf der primären Autoreninstanz die [Wartungsaufgaben vor einem Upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) aus.
-1. Falls erforderlich, aktualisieren Sie MongoDB auf der primären Mongo-Instanz mit WiredTiger auf Version 3.2.
 
 ### Ausführen des Upgrades {#Upgrade-execution-1}
 
@@ -114,7 +113,7 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 
 ![mongo-secondaries](assets/mongo-secondaries.jpg)
 
-1. Erstellen Sie neue 6.5.2025-Autoreninstanzen, die mit der upgegradeten Mongo-Instanz verbunden sind.
+1. Erstellen Sie neue AEM 6.5 LTS-Autoreninstanzen, die mit der upgegradeten Mongo-Instanz verbunden sind.
 
 1. Erstellen Sie die MongoDB-Knoten neu, die aus dem Cluster entfernt wurden.
 
