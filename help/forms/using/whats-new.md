@@ -7,7 +7,7 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Release Information
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 93%
@@ -24,7 +24,7 @@ ht-degree: 93%
 
 ## Was in Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0) enthalten ist
 
-Experience Manager 6.5.19.0 enthält neue Funktionen, wichtige von Kundschaft angeforderte Verbesserungen, Fehlerkorrekturen sowie Leistungs-, Stabilitäts- und Sicherheitsverbesserungen, die seit der ersten Verfügbarkeit von 6.5 im April 2019 veröffentlicht wurden. [Installieren Sie dieses Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html) auf Experience Manager 6.5.
+Experience Manager 6.5.19.0 enthält neue Funktionen, wichtige von Kundschaft angeforderte Verbesserungen, Fehlerkorrekturen sowie Leistungs-, Stabilitäts- und Sicherheitsverbesserungen, die seit der ersten Verfügbarkeit von 6.5 im April 2019 veröffentlicht wurden. [Installieren Sie dieses Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html) auf Experience Manager 6.5.
 
 ### Neue Funktionen
 
@@ -60,12 +60,12 @@ Die 64-Bit-Iteration von XMLFM führt zu verbesserter Performance, Skalierbarkei
 
 ## Fehlerbehebungen
 
-Die Version enthält außerdem Fehlerbehebungen für mehr als 20 Probleme, die von Kundinnen und Kunden gemeldet wurden. Eine detaillierte Liste der im Service Pack enthaltenen Fehlerbehebungen finden Sie in den [Versionshinweisen](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/release-notes.html?lang=en#forms-6519)
+Die Version enthält außerdem Fehlerbehebungen für mehr als 20 Probleme, die von Kundinnen und Kunden gemeldet wurden. Eine detaillierte Liste der im Service Pack enthaltenen Fehlerbehebungen finden Sie in den [Versionshinweisen](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html?lang=en#forms-6519)
 
 
 ## Installieren des Service Packs
 
-Das Service Pack enthält neue Funktionen und Fehlerkorrekturen für AEM Forms on JEE und AEM Forms on OSGi. Die Installationsanweisungen haben sich gegenüber vorherigen Service Packs geändert. Installationsanweisungen finden Sie unter [Installationsanweisungen für das AEM Forms Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
+Das Service Pack enthält neue Funktionen und Fehlerkorrekturen für AEM Forms on JEE und AEM Forms on OSGi. Die Installationsanweisungen haben sich gegenüber vorherigen Service Packs geändert. Installationsanweisungen finden Sie unter [Installationsanweisungen für das AEM Forms Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
 
 
 

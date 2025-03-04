@@ -4,7 +4,7 @@ description: Die Gültigkeit von Reader Extensions-Zertifikaten und ihre Auswirk
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 99%
@@ -72,7 +72,7 @@ A. Ja, dasselbe Acrobat Reader Extensions-Zertifikat kann in mehreren Umgebungen
 
 **F. Wie kann ich die auf ein PDF-Dokument angewendeten Verwendungsrechte überprüfen?**
 
-A. Sie können die [getDocumentUsageRights](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=en#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)-API zum Abrufen der Informationen zu den auf ein PDF-Dokument angewendeten Nutzungsrechten verwenden.
+A. Sie können die [getDocumentUsageRights](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=en#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)-API zum Abrufen der Informationen zu den auf ein PDF-Dokument angewendeten Nutzungsrechten verwenden.
 
 **F. Wie ändere ich das Kennwort einer Acrobat Reader Extensions-Zertifikatdatei?**
 
@@ -96,7 +96,7 @@ You can choose one of the following paths to apply latest certificates:
 Updating the certificates requires using actions available on AEM Forms administrator console and Reader Extension APIs provided by AEM Forms. The document is intended for users and administrators with knowledge of using Adobe Experience Manger Forms APIs. Before you start, ensure that: 
 
 * the user has administrator rights on underlying AEM Forms environment. 
-* the user has setup the [development environment](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/devtools/howto-projects-eclipse.html) and has access to it.
+* the user has setup the [development environment](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/devtools/howto-projects-eclipse.html) and has access to it.
 * [obtain the certificates](#obtain-the-certificates).
 
 

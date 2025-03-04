@@ -4,7 +4,7 @@ description: Schritte zur Integration von Salesforce-Integration mit AEM Forms m
 solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 99%
@@ -69,4 +69,4 @@ Tun Sie Folgendes, bevor Sie die Kommunikation zwischen einer Salesforce-Anwendu
 1. Klicken Sie auf **[!UICONTROL Verbindung testen]**.
 1. Wenn die Verbindung erfolgreich hergestellt wurde, klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**.
 
-Nun können Sie das [Formulardatenmodell erstellen](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/form-data-model/create-form-data-models.html?lang=en), um die konfigurierte Datenquelle in Ihre adaptiven Formulare zu integrieren.
+Nun können Sie das [Formulardatenmodell erstellen](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/form-data-model/create-form-data-models.html?lang=en), um die konfigurierte Datenquelle in Ihre adaptiven Formulare zu integrieren.

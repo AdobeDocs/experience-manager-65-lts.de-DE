@@ -6,7 +6,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: eded255b54ff83f60f73cece8824c778d3a87680
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 99%
@@ -174,4 +174,4 @@ Wenn eine Benutzerin oder ein Benutzer ohne die erforderlichen Berechtigungen f�
 
 CQ bietet einen Mechanismus zum Außerkraftsetzen der standardmäßigen 404-Handler-JSP.
 
-Detaillierte Informationen zum Anpassen der Seite für den Fehler-Handler finden Sie unter [Anpassen von Seiten, die im Fehler-Handler angezeigt werden](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/platform/customizing-errorhandler-pages.html?lang=en) in der Dokumentation zu Adobe Experience Manager.
+Detaillierte Informationen zum Anpassen der Seite für den Fehler-Handler finden Sie unter [Anpassen von Seiten, die im Fehler-Handler angezeigt werden](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html?lang=en) in der Dokumentation zu Adobe Experience Manager.

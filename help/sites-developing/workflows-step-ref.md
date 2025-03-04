@@ -9,7 +9,7 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '3227'
 ht-degree: 99%
@@ -186,7 +186,7 @@ Die **ODER-Teilung** erstellt eine Verzweigung im Workflow, nach der nur eine de
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [Schritt ODER-Teilung](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable).
+>Weitere Informationen finden Sie unter [Schritt ODER-Teilung](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable).
 
 ![Verzweigung mithilfe der ODER-Teilung](assets/variables_orsplit_new.png)
 

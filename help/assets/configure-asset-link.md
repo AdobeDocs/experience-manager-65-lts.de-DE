@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 238ff31ed4e5e833a14cb64e3eae75377038a857
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '3059'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ Implementieren Sie die folgenden Aufgaben, um Experience Manager Assets für die
 
 1. Um lizenzierte Creative Cloud-Benutzer zu Benutzern von Experience Manager zuzuordnen, verwalten Sie dies über die [Benutzerzugriffssteuerung](#user-access).
 
-1. Erstellen Sie einen [benutzerdefinierten Abfrageindex](#create-custom-index), konfigurieren Sie [FPO-Ausgabedarstellungen](/help/assets/configure-fpo-renditions.md) für InDesign, konfigurieren Sie die [Adobe Stock-Integration](/help/assets/aem-assets-adobe-stock.md) und konfigurieren Sie die [visuelle oder Ähnlichkeitssuche](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/search-assets.html#configvisualsearch).
+1. Erstellen Sie einen [benutzerdefinierten Abfrageindex](#create-custom-index), konfigurieren Sie [FPO-Ausgabedarstellungen](/help/assets/configure-fpo-renditions.md) für InDesign, konfigurieren Sie die [Adobe Stock-Integration](/help/assets/aem-assets-adobe-stock.md) und konfigurieren Sie die [visuelle oder Ähnlichkeitssuche](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch).
 
 ## Voraussetzungen und Unterstützung für verschiedene Funktionen {#prerequisites}
 
@@ -85,7 +85,7 @@ So konfigurieren Sie Experience Manager manuell:
 
    Um jede `Client ID` hinzuzufügen, klicken Sie auf `+`. Klicken Sie auf **[!UICONTROL Speichern]**, nachdem Sie alle IDs hinzugefügt haben.
 
-1. Überprüfen Sie in der Konfiguration von **[!UICONTROL Adobe Granite OAuth Application and Provider]** die vorhandenen **[!UICONTROL Adobe Granite OAuth Application and Provider]**-Instanzen. Wenn Sie eine Instanz mit einem `Config ID`-Wert von `ims` finden, verwenden Sie diese für die Anweisungen in diesem Verfahren. Klicken Sie andernfalls auf `+`, um eine Konfigurationsinstanz zu erstellen. Legen Sie die folgenden Eigenschaftswerte fest und klicken Sie auf **[!UICONTROL Speichern]**.
+1. Überprüfen Sie in der Konfiguration von **[!UICONTROL Adobe Granite OAuth Application and Provider]** die vorhandenen Instanzen von **[!UICONTROL Adobe Granite OAuth Application and Provider]**. Wenn Sie eine Instanz mit einem `Config ID`-Wert von `ims` finden, verwenden Sie diese für die Anweisungen in diesem Verfahren. Klicken Sie andernfalls auf `+`, um eine Konfigurationsinstanz zu erstellen. Legen Sie die folgenden Eigenschaftswerte fest und klicken Sie auf **[!UICONTROL Speichern]**.
 
    * [!UICONTROL Client-ID]: Nicht ändern
    * [!UICONTROL Client-Geheimnis]: Nicht ändern
@@ -130,7 +130,7 @@ Eine zusätzliche Konfiguration ist nur erforderlich, wenn Sie verschiedene Adob
 1. Eine betriebsbereite Experience Manager-Instanz mit für AAL konfigurierter Bearer-Authentifizierung.
 1. Installieren Sie das folgende Paket (Service Pack 11) auf Ihrer Experience Manager 6.5-Instanz.
 
-   [Experience Manager-6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip) herunterladen
+   [Herunterladen von Experience Manager 6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
 
 1. Wenden Sie sich an den [!UICONTROL Kunden-Support], um die Client-ID und den geheimen Schlüssel für die Bearer-Authentifizierung Ihrer IMS-Organisation zu erhalten.
 
@@ -242,7 +242,7 @@ In Experience Manager 6.4 und Experience Manager 6.5 können Admins Workflows ko
 
 Die Konfiguration ist beispielsweise für Fachanwender und Marketingexperten nützlich, um einen benutzerdefinierten Workflow für einige bestimmte Ordner zu erstellen. So können z. B. alle Assets aus dem Fotoshooting einer Agentur mit einem Wasserzeichen versehen werden, oder alle von einem Freiberufler hochgeladenen Assets können verarbeitet werden, um bestimmte Ausgabedarstellungen zu erstellen.
 
-Weitere Informationen auch zur Konfiguration von Experience Manager finden Sie unter [Automatisches Ausführen von Workflows für Assets](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets).
+Weitere Informationen auch zur Konfiguration von Experience Manager finden Sie unter [Automatisches Ausführen von Workflows für Assets](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets).
 
 
 ## Erstellen eines benutzerdefinierten Index in Experience Manager 6.4.x-Versionen {#create-custom-index}
@@ -260,7 +260,7 @@ Experience Manager enthält Indizes, die für Abfragen verwendet werden. Erstell
 
 ## Konfigurieren der visuellen oder Ähnlichkeitssuche {#configure-visual-similarity-search}
 
-Mit der Funktion „Visuelle Suche“ können Sie über das Bedienfeld „Adobe Asset Link“ im AEM Assets-Repository nach visuell ähnlichen Assets suchen. Diese Funktion ist ab Version 6.5.0 verfügbar, und es werden nur die indizierten Assets durchsucht. Weitere Informationen finden Sie unter [Konfigurieren der visuellen Suche](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/using/search-assets.html#configvisualsearch).
+Mit der Funktion „Visuelle Suche“ können Sie über das Bedienfeld „Adobe Asset Link“ im AEM Assets-Repository nach visuell ähnlichen Assets suchen. Diese Funktion ist ab Version 6.5.0 verfügbar, und es werden nur die indizierten Assets durchsucht. Weitere Informationen finden Sie unter [Konfigurieren der visuellen Suche](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch).
 
 ## Erzeugen von FPO (For Placement Only)-Ausgabedarstellungen (also nur für die Platzierung) für Adobe InDesign {#fpo-renditions}
 

@@ -8,7 +8,7 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 99%
@@ -179,7 +179,7 @@ Es wird empfohlen, das Produktionssystem zu klonen und den Offline-Index mithilf
 
 ### Vorbereiten eines Runbooks und Testlauf {#prepare-a-runbook-and-trial-run}
 
-Es wird empfohlen, ein [Runbook](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) vorzubereiten und einige Testläufe durchzuführen, bevor das Upgrade in der Produktion ausgeführt wird.
+Es wird empfohlen, ein [Runbook](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) vorzubereiten und einige Testläufe durchzuführen, bevor das Upgrade in der Produktion ausgeführt wird.
 
 ### doc-traversal-mode mit Offline-Indizierung {#doc-traversal-mode-with-offline-indexing}
 
