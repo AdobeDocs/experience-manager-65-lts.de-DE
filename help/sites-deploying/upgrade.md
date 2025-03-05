@@ -9,7 +9,7 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 598d6eecbdd3887c41a36a14daa215e2e8e6e09a
+source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 34%
@@ -52,4 +52,4 @@ Für ein einfacheres Verständnis der in diesen Verfahren verwendeten AEM-Instan
 
 Foundation Layer unterstützt jetzt Java 17 mit den neuesten Open-Source-Bundles von Apache Sling, Felix und Jackrabbit Oak. Darüber hinaus wurde die Paketerstellung des AEM 6.5 LTS uber-jar geändert. Darüber hinaus wurden einige ältere Funktionen aus AEM 6.5 LTS entfernt. Weitere Informationen finden Sie unter [Versionshinweise](/help/release-notes/release-notes.md#whats-new-what-s-new) und [Liste der nach dem Upgrade deinstallierten veralteten Bundles](/help/sites-deploying/obsolete-bundles.md)
 
-AEM 6.5 LTS legt großen Wert auf die Abwärtskompatibilität der Funktionen und verfügt über ein Analyzer-Tool. Unter [Bewertung der Komplexität des Upgrades mit dem AEM Analyzer](/help/sites-deploying/pattern-detector.md) finden Sie eine Bewertung der Komplexität zu Beginn [Planung des Upgrades](/help/sites-deploying/upgrade-planning.md).
+AEM 6.5 LTS legt großen Wert auf die Abwärtskompatibilität der Funktionen und verfügt über ein Analyzer-Tool. Unter [Bewertung der Komplexität des Upgrades mit dem AEM Analyzer](/help/sites-deploying/aem-analyzer.md) finden Sie eine Bewertung der Komplexität zu Beginn [Planung des Upgrades](/help/sites-deploying/upgrade-planning.md).

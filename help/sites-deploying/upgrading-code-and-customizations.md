@@ -10,10 +10,10 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 3d4e458e4c96c547b94c08d100271ca6cf96f707
+source-git-commit: da061097fd57135bde149b41a12ab78cad5761d6
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 51%
+source-wordcount: '1012'
+ht-degree: 52%
 
 ---
 
@@ -26,11 +26,11 @@ Bei der Planung eines Upgrades müssen die folgenden Bereiche einer Implementier
 
 ## Übersicht {#overview}
 
-1. **AEM Analyzer** - Führen Sie AEM Analyzer aus, wie auf der Seite [Bewerten der Aktualisierungskomplexität mit AEM Analyzer](/help/sites-deploying/pattern-detector.md) definiert. Sie erhalten einen AEM Analyzer-Bericht, der weitere Details zu Bereichen enthält, die zusätzlich zu den nicht verfügbaren APIs/Bundles in der Zielversion von AEM behandelt werden müssen. Der AEM Analyzer-Bericht liefert einen Hinweis auf alle Inkompatibilitäten in Ihrem Code. Wenn keine vorhanden ist, ist Ihre Bereitstellung mit AEM 6.5 LTS kompatibel. Sie können für die Verwendung von AEM 6.5 LTS weiterhin eine neue Entwicklung durchführen, diese benötigen Sie jedoch nicht nur aus Kompatibilitätsgründen.
-1. **Entwickeln einer Code-Basis für 6.5 LTS**- Erstellen Sie eine dedizierte Verzweigung oder ein dediziertes Repository für die Code-Basis der AEM-Zielversion. Planen Sie zu aktualisierende Code-Bereiche mithilfe der Informationen aus der Kompatibilität vor dem Upgrade.
-1. **Kompilieren mit 6.5 LTS Uber jar**- Aktualisieren Sie die POMs der Code-Basis, um auf AEM 6.5 LTS uber jar zu verweisen, und kompilieren Sie Code dagegen.
-1. **Bereitstellung in der 6.5 LTS-Umgebung** - Eine neue Instanz von AEM 6.5 LTS (Autor und Veröffentlichung) sollte in einer Entwicklungs-/QS-Umgebung eingerichtet werden. Stellen Sie die aktualisierte Code-Basis und ein repräsentatives Inhaltsbeispiel (aus der aktuellen Produktion) bereit.
-1. **QS-Validierung und Fehlerbehebung** - Die Anwendung muss auf der Autoren- und Veröffentlichungsinstanz von AEM 6.5 LTS mit QS validiert werden. Alle gefundenen Fehler sollten behoben und in die AEM 6.5 LTS Code-Basis übertragen werden. Wiederholen Sie den Entwicklungszyklus bei Bedarf, bis alle Fehler behoben sind.
+1. **AEM Analyzer** - Führen Sie AEM Analyzer aus, wie in der Upgrade-Planung und auf der Seite &quot;[ der Upgrade-Komplexität mit AEM Analyzer“ ](/help/sites-deploying/aem-analyzer.md) beschrieben. Sie erhalten einen AEM Analyzer-Bericht, der weitere Details zu Bereichen enthält, die zusätzlich zu den nicht verfügbaren APIs/Bundles in der Zielversion von AEM behandelt werden müssen. Der AEM Analyzer-Bericht liefert einen Hinweis auf alle Inkompatibilitäten in Ihrem Code. Wenn keine vorhanden ist, ist Ihre -Bereitstellung bereits mit 6.5 LTS kompatibel. Sie können für die Verwendung der 6.5 LTS-Funktionen weiterhin neue Entwicklungsschritte ausführen. Aus bloßen Kompatibilitätsgründen ist dies jedoch nicht erforderlich.
+1. **Entwickeln einer Code-Basis für 6.5 LTS**- Erstellen Sie eine dedizierte Verzweigung oder ein dediziertes Repository für die Code-Basis der Zielversion. Nutzen Sie bei der Kompatibilitätsprüfung die vor dem Upgrade erfassten Daten, um die Code-Bereiche zu planen, die aktualisiert werden sollen.
+1. **Kompilieren mit 6.5 LTS Uber jar**- Aktualisieren Sie die POMs der Code-Basis so, dass sie auf 6.5.2025 uber jar verweisen, und kompilieren Sie Code dagegen.
+1. **Bereitstellung in der 6.5 LTS-Umgebung** - Eine neue Instanz von AEM 6.5 LTS (Autor und Veröffentlichung) sollte in einer Entwicklungs-/QS-Umgebung bereitgestellt werden. Stellen Sie die aktualisierte Code-Basis und ein repräsentatives Inhaltsbeispiel (aus der aktuellen Produktion) bereit.
+1. **QS-Validierung und Fehlerbehebung** - Die Anwendung muss auf der Autoren- und Veröffentlichungsinstanz vom 6.5.2025 mit QS validiert werden. Alle gefundenen Fehler sollten behoben und in die 6.5 LTS Code-Basis übertragen werden. Wiederholen Sie den Entwicklungszyklus bei Bedarf, bis alle Fehler behoben sind.
 
 Bevor Sie mit dem Upgrade fortfahren, sollten Sie über eine stabile Anwendungs-Code-Basis verfügen, die sorgfältig gegen AEM 6.5 LTS getestet wurde.
 
