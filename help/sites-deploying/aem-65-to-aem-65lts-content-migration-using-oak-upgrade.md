@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie mithilfe des Oak-Upgrade-Tools Inhalte von AE
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 8798c608ea168d753be2a08b25a0d0d344b0fef6
+source-git-commit: ef25b11163ca727a9fa99799b713085e594ff520
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 0%
@@ -20,9 +20,9 @@ Dieses Dokument enthält eine umfassende Anleitung zum Aktualisieren von Adobe E
 
 Stellen Sie vor Beginn der Migration sicher, dass die folgenden Anforderungen erfüllt sind:
 
-1. Java-Kompatibilität: AEM 6.5 LTS muss installiert und für die Ausführung mit Java 17 konfiguriert sein. Starten Sie nach der Einrichtung die AEM-Instanz und stellen Sie sicher, dass alle Bundles aktiv sind und ohne Probleme ausgeführt werden
+1. Java-Kompatibilität: AEM 6.5 LTS muss installiert und für die Ausführung mit Java™ 17 konfiguriert sein. Starten Sie nach der Einrichtung die AEM-Instanz und stellen Sie sicher, dass alle Bundles aktiv sind und ohne Probleme ausgeführt werden
 1. Systemressourcen: Stellen Sie sicher, dass ausreichend Speicherplatz und Arbeitsspeicher für beide Repositorys während des Migrationsprozesses verfügbar sind
-1. Oak-Upgrade-Tool: Laden Sie die `oak-upgrade`-JAR-Datei aus dem [offiziellen Maven-Repository](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) herunter. Stellen Sie sicher, dass die Version mit der in AEM 6.5 LTS verwendeten Oak-Core-Version übereinstimmt. Das Oak-Upgrade-Tool läuft auf Oracle Java 11 oder höher
+1. Oak-Upgrade-Tool: Laden Sie die `oak-upgrade`-JAR-Datei aus dem [offiziellen Maven-Repository](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) herunter. Stellen Sie sicher, dass die Version mit der in AEM 6.5 LTS verwendeten Oak-Core-Version übereinstimmt. Das Oak-Upgrade-Tool läuft auf Oracle® Java™ 11 oder höher
 
 ## Schrittweiser Migrationsprozess {#step-by-step-migration-process}
 
