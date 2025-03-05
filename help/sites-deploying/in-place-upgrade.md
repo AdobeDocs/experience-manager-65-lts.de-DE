@@ -5,10 +5,10 @@ topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
+source-git-commit: c3df47efd4b13dcd8061e5cdac32a75fbf36df4b
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 52%
+source-wordcount: '538'
+ht-degree: 47%
 
 ---
 
@@ -16,23 +16,27 @@ ht-degree: 52%
 
 >[!NOTE]
 >
->Auf dieser Seite wird das Upgrade-Verfahren für AEM 6.5 LTS beschrieben. Wenn Sie eine Installation haben, die auf einem Anwendungs-Server bereitgestellt wird, lesen Sie [Upgrade-Schritte für Anwendungs-Server-Installationen](/help/sites-deploying/app-server-upgrade.md).
+>Auf dieser Seite wird das Verfahren für das In-Place-Upgrade für AEM 6.5 LTS beschrieben. Wenn Sie eine Installation haben, die auf einem Anwendungs-Server bereitgestellt wird, lesen Sie [Upgrade-Schritte für Anwendungs-Server-Installationen](/help/sites-deploying/app-server-upgrade.md).
 
 ## Schritte vor der Aktualisierung {#pre-upgrade-steps}
 
-Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführen. Weitere Informationen finden Sie unter [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) und [Wartungsaufgaben vor einer Aktualisierung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md). Stellen Sie außerdem sicher, dass Ihr System die Anforderungen für AEM 6.5 LTS erfüllt. Erfahren Sie, wie Analyzer Sie bei der Schätzung der Komplexität Ihres Upgrades unterstützen kann, und lesen Sie den Abschnitt Upgrade-Umfang und -Anforderungen von [Planung des Upgrades](/help/sites-deploying/upgrade-planning.md) für weitere Informationen.
+Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführen. Weitere Informationen finden Sie unter [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) und [Wartungsaufgaben vor einer Aktualisierung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md). Stellen Sie außerdem sicher, dass Ihr System die [Anforderungen für AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md) erfüllt, und lesen Sie [Überlegungen zur Upgrade-](/help/sites-deploying/upgrade-planning.md) und wie [Analyzer](/help/sites-deploying/pattern-detector.md) Ihnen bei der Schätzung der Komplexität helfen kann.
 
 <!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## Migrationsvoraussetzungen {#migration-prerequisites}
 
-* **Erforderliche Java-Mindestversion:** Stellen Sie sicher, dass Oracle JRE 17 auf Ihrem System installiert ist.
+* **Erforderliche Java-Mindestversion:** Stellen Sie sicher, dass Oracle Java™ 17 auf Ihrem System installiert ist.
 
 ## Vorbereitung der „AEM Quickstart“-JAR-Datei {#prep-quickstart-file}
 
+1. Herunterladen der neuen JAR-Datei für AEM 6.5 LTS
+
+1. [Bestimmen des korrekten Befehls zum Starten des Upgrades](/help/sites-deploying/in-place-upgrade.md#determining-the-correct-upgrade-start-command-determining-the-correct-upgrade-start-command)
+
 1. Instanz anhalten, wenn sie gerade ausgeführt wird
 
-1. Laden Sie die neue JAR-Datei für AEM 6.5 LTS herunter und ersetzen Sie damit die alte Datei außerhalb des `crx-quickstart`
+1. Verwenden Sie die neue AEM 6.5 LTS-JAR-Datei, um die alte JAR-Datei außerhalb des `crx-quickstart` zu ersetzen
 
 1. Erstellen Sie ein Backup der `sling.properties`-Datei (normalerweise im `crx-quickstart/conf/` vorhanden) und löschen Sie sie dann
 
@@ -175,7 +179,7 @@ Starten Sie nun die AEM-Instanz mit dem neuen Befehl, der anhand der Information
 
 >[!NOTE]
 >
->Die Unterstützung für einige Java 8/11-Argumente wurde in Java 17 entfernt. Weitere Informationen finden Sie unter Überlegungen zu Java-Argumenten für AEM 6.5 LTS (Link-Stub).
+>Die Unterstützung für einige Java 8/11-Argumente wurde in Java 17 entfernt. Weitere Informationen finden Sie unter [Oracle Java™ 17-](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) und [Überlegungen zu Java&amp;trade-Argumenten für AEM 6.5 LTS](https://git.corp.adobe.com/AdobeDocs/experience-manager-65-lts.en/blob/main/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
 
 Um das Upgrade auszuführen, ist es wichtig, AEM mithilfe der JAR-Datei zu starten, um die Instanz aufzurufen.
 
@@ -193,10 +197,10 @@ Beachten Sie, dass der Start von AEM über das Startskript das Upgrade nicht sta
    /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.5.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
-1. Passen Sie den Befehl an, indem Sie den Pfad zur vorhandenen JAR-Datei (in diesem Fall `crx-quickstart/app/aem-quickstart*.jar`) mit der neuen JAR ersetzen, welche dem Ordner `crx-quickstart` gleichgeordnet ist. Wenn wir unseren vorherigen Befehl als Beispiel heranziehen, würde unser Befehl folgendermaßen lauten:
+1. Ändern Sie den Befehl, indem Sie den Pfad zur vorhandenen JAR-Datei (in diesem Fall `crx-quickstart/app/aem-quickstart*.jar`) durch die neue LTS-JAR-Datei für AEM 6.5 ersetzen, die dem `crx-quickstart` gleichgeordnet ist. Wenn wir unseren vorherigen Befehl als Beispiel heranziehen, würde unser Befehl folgendermaßen lauten:
 
    ```shell
-   /usr/bin/java -server -Xmx4096m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.6.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
+   /usr/bin/java -server -Xmx4096m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar <AEM-6.5-LTS.jar> -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
    Dadurch wird sichergestellt, dass alle richtigen Speichereinstellungen, benutzerdefinierten Ausführungsmodi und anderen Umgebungsparametern für das Upgrade angewendet werden. Nach Abschluss des Upgrades kann die Instanz bei zukünftigen Starts vom Startskript gestartet werden.
