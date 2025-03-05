@@ -3,10 +3,10 @@ title: Der universelle Editor
 description: Erfahren Sie mehr über die Flexibilität des universellen Editors und darüber, wie er Ihre Headless-Erlebnisse mit AEM 6.5 unterstützen kann.
 feature: Developing
 role: Developer
-source-git-commit: 229fdd9f17bdeb1c4cc1a1ba064d285169dc1cbc
+source-git-commit: 1f4024310858c6973681c079439ae82834cf716f
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 20%
+source-wordcount: '1264'
+ht-degree: 23%
 
 ---
 
@@ -33,6 +33,18 @@ Der universelle Editor ist ein Service, der mit AEM zusammenarbeitet, um Inhalte
 * Der universelle Editor-Dienst, der auf demselben Host wie Dispatcher ausgeführt wird, schreibt Änderungen zurück in die AEM-Autoreninstanz.
 
 ![Autorenfluss mit dem universellen Editor](assets/author-flow.png)
+
+## Voraussetzungen {#requirements}
+
+Der universelle Editor wird unterstützt von:
+
+* AEM 6.5 LTS
+   * Sowohl On-Premise- als auch AMS-Hosting werden unterstützt.
+* [AEM 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (Service Pack 21 oder 22 plus ein Feature Pack)
+   * Sowohl On-Premise- als auch AMS-Hosting werden unterstützt.
+* [AEM as a Cloud Service](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (Version `2023.8.13099` oder höher)
+
+Dieses Dokument konzentriert sich auf die Unterstützung von AEM 6.5 LTS für den universellen Editor.
 
 ## Einrichtung {#setup}
 
@@ -96,7 +108,7 @@ Das Feature Pack installiert eine Reihe neuer Pakete, für die eine zusätzliche
    * Geben Sie im Feld **Universal Editor Opening Mapping** (Universeller Editor – Zuordnung zum Öffnen) die Pfade an, für die der universelle Editor geöffnet wird.
    * Geben Sie im Feld **Sling:resourceTypes which shall be opened by Universal Editor** (sling:resourceTypes, die vom universellen Editor geöffnet werden sollen) eine Liste der Ressourcen an, die direkt vom universellen Editor geöffnet werden.
 1. Klicken Sie auf **Speichern**.
-1. Überprüfen Sie Ihre [Externalizer](/help/sites-developing/externalizer.md)Konfiguration und stellen Sie sicher, dass Sie zumindest die lokale Umgebung sowie die Autoren- und Veröffentlichungsumgebung wie im folgenden Beispiel festgelegt haben.
+1. Überprüfen Sie Ihre [Externalizer-Konfiguration](/help/sites-developing/externalizer.md) und stellen Sie sicher, dass Sie zumindest die lokale Umgebung sowie die Autoren- und Veröffentlichungsumgebung wie im folgenden Beispiel festgelegt haben.
 
    ```text
    "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
