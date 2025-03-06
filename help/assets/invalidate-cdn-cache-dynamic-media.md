@@ -9,10 +9,10 @@ role: User, Admin
 feature: CDN Cache
 solution: Experience Manager, Experience Manager Assets
 exl-id: bce11a49-bbbe-4dda-8144-7f135bb666d9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '1372'
-ht-degree: 100%
+source-wordcount: '1277'
+ht-degree: 99%
 
 ---
 
@@ -21,18 +21,11 @@ ht-degree: 100%
 Dynamic Media-Assets werden vom CDN (Content Delivery Network) zwischengespeichert, um eine schnelle Bereitstellung an Ihre Kunden zu ermöglichen. Wenn Sie diese Assets aktualisieren, wollen Sie jedoch, dass die Änderungen auf Ihrer Website sofort wirksam werden. Durch Löschen oder Invalidierung des CDN-Cache können Sie von Dynamic Media bereitgestellte Assets schnell aktualisieren. Anstatt darauf warten zu müssen, dass der Cache mit einem TTL-Wert (Time To Live) abläuft (Standardwert: 10 Stunden), können Sie in Dynamic Media eine Anfrage senden, damit der Cache innerhalb von Minuten abläuft.
 
 
-
->[!IMPORTANT]
->
->Die folgenden Schritte gelten nur für den Dynamic Media-Scene7-Modus in Adobe Experience Manager 6.5, Service Pack 6 (Experience Manager 6.5.6) oder höher. Für diese CDN-Funktion zum Ungültigmachen müssen Sie das im Lieferumfang von Adobe Experience Manager – Dynamic Media enthaltene vorkonfigurierte CDN verwenden. Andere benutzerdefinierte CDN werden von dieser Funktion nicht unterstützt.<br>Wenn Sie Dynamic Media in Experience Manager 6.5, Service Pack 5 (Experience Manager 6.5.5) oder früher verwenden, führen Sie die Schritte unter [Invalidierung des CDN-Cache über Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md) aus.
-
-<!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
-
 **So machen Sie den Inhalt im CDN-Cache für Dynamic Media-Assets ungültig:**
 
 *Teil 1 von 2: Erstellen einer Vorlage für die CDN-Invalidierung*
 
-1. Navigieren Sie in Experience Manager 6.5.6 oder höher zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN-Invalidierung]**.
+1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN-Invalidierung]**.
 
    ![CDN-Validierungsfunktion](/help/assets/assets-dm/cdn-invalidation-template2.png)
 

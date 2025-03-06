@@ -1,18 +1,14 @@
 ---
 title: Generierung eines Nachweises für adaptive Formulare
 description: In diesem Artikel erfahren Sie, wie Sie einen Nachweis (Document of Record, DoR) für adaptive Formulare erstellen können.
-content-type: reference
-topic-tags: adaptive_forms, develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4307'
-ht-degree: 99%
+source-wordcount: '4283'
+ht-degree: 100%
 
 ---
 
@@ -31,11 +27,6 @@ ht-degree: 99%
 Nachdem Ihre Kunden ein Formular gesendet haben, möchten sie im Allgemeinen einen Beleg (in gedruckter Form oder im Dokumentformat) über die eingegebenen Informationen behalten, um später darauf Bezug nehmen zu können. Dies wird als Datensatzdokument bezeichnet.
 
 In diesem Artikel erfahren Sie, wie Sie ein Datensatzdokument für adaptive Formulare oder adaptive Formularfragmente erstellen können.
-
->[!NOTE]
->
-> Die Unterstützung zum Anpassen Ihrer adaptiven Formularfragmente und ihrer Felder im Editor für adaptive Formulare wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt.
-
 
 >[!NOTE]
 >

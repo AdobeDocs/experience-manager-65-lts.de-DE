@@ -9,10 +9,10 @@ thumbnail: 39476.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 100%
+source-wordcount: '765'
+ht-degree: 92%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Die Entwicklung von AEM Commerce-Projekten auf der Grundlage des Commerce Integration Framework (CIF) für AEM folgt denselben Regeln und Best Practices wie andere AEM Projekte. Sehen Sie sich zuerst die folgenden Artikel an:
 
-- [AEM 6.5-Entwickleranleitung](/help/sites-developing/getting-started.md)
+- [AEM-Benutzerhandbuch für Entwickler](/help/sites-developing/getting-started.md)
 - [Grundlegende AEM-Konzepte](/help/sites-developing/the-basics.md)
 - [AEM-Entwicklung – Richtlinien und Best Practices](/help/sites-developing/dev-guidelines-bestpractices.md)
 - [Erstellen von AEM-Projekten mit Apache Maven](/help/sites-developing/ht-projects-maven.md)
@@ -31,17 +31,16 @@ Für die Arbeit mit CIF-Projekten wird eine lokale Entwicklungsumgebung empfohle
 
 >[!NOTE]
 >
->Die folgenden Anweisungen helfen Ihnen beim Einrichten einer lokalen AEM-Entwicklungsumgebung für AEM Commerce mithilfe von CIF und mit Schwerpunkt auf AEM 6.5. Wenn Sie AEM as a Cloud Service verwenden, lesen Sie die Dokumentation zu [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=de).
+>Die folgenden Anweisungen helfen Ihnen beim Einrichten einer lokalen AEM-Entwicklungsumgebung für AEM Commerce mithilfe von CIF (wobei der Fokus auf AEM 6.5 LTS liegt). Wenn Sie AEM as a Cloud Service verwenden, lesen Sie die Dokumentation zu [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=de).
 
-Das AEM Commerce-Add-on für AEM 6.5 alias. Das CIF-Add-on steht auch für die lokale Entwicklung zur Verfügung und wird als AEM-Paket bereitgestellt. Sie können es über [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) als Feature Pack herunterladen.
+Das als CIF-Add-on bezeichnete AEM Commerce-Add-on für AEM ist auch für die lokale Entwicklung verfügbar und wird als AEM-Paket bereitgestellt. Sie können es über [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) als Feature Pack herunterladen.
 
 ### Erforderliche Software
 
 Folgendes sollte lokal installiert werden:
 
-- Lokales AEM 6.5
-- [AEM 6.5 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 7 oder höher
-- [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
+- Lokales AEM 6.5 LTS
+- [Java 17](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 oder höher)
 - [Node LTS](https://nodejs.org/de/)
 - [npm 6+](https://www.npmjs.com/)
@@ -58,8 +57,6 @@ Das CIF-Add-on kann über [Software Distribution](https://experience.adobe.com/#
 ### Lokales Setup
 
 Für die lokale CIF-Projektentwicklung mit dem AEM und dem CIF-Add-on gehen Sie wie folgt vor:
-
-1. Laden Sie AEM Version 6.5 herunter und installieren Sie das AEM 6.5 Service Pack. Das AEM 6.5 Service Pack 7 ist erforderlich. Adobe empfiehlt jedoch, das letzte verfügbare Service Pack zu installieren.
 
 1. Entpacken Sie die AEM.jar, um den `crx-quickstart`-Ordner zu erstellen, und führen Sie Folgendes aus:
 

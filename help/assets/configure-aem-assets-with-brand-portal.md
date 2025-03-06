@@ -10,10 +10,10 @@ role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 22a2428d-3ebd-4368-983e-d140f99de2dd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 97%
+source-wordcount: '675'
+ht-degree: 89%
 
 ---
 
@@ -68,11 +68,11 @@ Sie benötigen Folgendes, um AEM Assets mit Brand Portal zu konfigurieren:
 
 [Herunterladen und Installieren des aktuellen AEM Service Pack](#servicepack)
 
-### Herunterladen und Installieren von AEM 6.5 {#aemquickstart}
+### Herunterladen und Installieren von AEM 6.5 LTS {#aemquickstart}
 
-Es wird empfohlen, AEM 6.5 zu verwenden, um eine AEM Autoreninstanz einzurichten. Wenn Sie AEM nicht eingerichtet haben, laden Sie es von den folgenden Speicherorten herunter:
+Es wird empfohlen, AEM 6.5 LTS zu verwenden, um eine AEM-Autoreninstanz einzurichten. Wenn Sie AEM nicht eingerichtet haben, laden Sie es von den folgenden Speicherorten herunter:
 
-* Wenn Sie bereits Kundin oder Kunde von AEM sind, laden Sie AEM 6.5 von der [Adobe-Lizenzierungs-Website](https://licensing.adobe.com) herunter.
+* Wenn Sie bereits ein AEM-Kunde sind, laden Sie AEM 6.5 LTS von der [Adobe-Lizenzierungs-Website herunter](https://licensing.adobe.com).
 
 * Wenn Sie ein Adobe-Partner sind, fordern Sie AEM 6.5 über das [Adobe Partner Training-Programm](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) an.
 
@@ -80,7 +80,7 @@ Anweisungen zum Einrichten einer AEM-Autoreninstanz finden Sie nach dem Herunter
 
 ### Herunterladen und Installieren des neuesten AEM Service Packs {#servicepack}
 
-Detaillierte Anweisungen finden Sie in den aktuellen [Versionshinweisen zu AEM 6.5 Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html).
+Detaillierte Anweisungen finden Sie in den aktuellen Versionshinweisen zum [AEM 6.5 LTS Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html).
 
 **Wenden Sie sich an den Adobe-Support**, wenn Sie das neueste AEM-Paket oder Service Pack nicht finden können.
 

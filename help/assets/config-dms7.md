@@ -1,19 +1,14 @@
 ---
 title: Konfigurieren des Dynamic Media-Scene7-Modus
 description: Erfahren Sie mehr über die Konfiguration des Dynamic Media-Scene7-Modus.
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
 role: User, Admin
 mini-toc-levels: 4
 feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 98bd0c24-6c5e-4b96-a3aa-a3e4ef802baf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '6507'
+source-wordcount: '6491'
 ht-degree: 99%
 
 ---
@@ -132,7 +127,7 @@ Weitere Informationen finden Sie unter [Installieren des Feature Pack 18912 für
 
    * **[!UICONTROL Assets veröffentlichen]** – Sie können zwischen den folgenden drei Optionen wählen:
       * **[!UICONTROL Sofort]** bedeutet, dass das System hochgeladene Assets aufnimmt und umgehend die URL/den Link zur Einbettung bereitstellt. Zum Veröffentlichen von Assets ist kein Benutzereingriff erforderlich.
-      * **[!UICONTROL Bei Aktivierung]** bedeutet, dass Sie das Asset zuerst explizit veröffentlichen müssen, bevor eine URL/ein Link zur Einbettung bereitgestellt wird.<br><!-- CQDOC-17478, Added March 9, 2021-->Ab Experience Manager 6.5.8 spiegelt die Experience Manager-Veröffentlichungsinstanz nur im Veröffentlichungsmodus **[!UICONTROL Bei Aktivierung]** genaue Werte für Dynamic Media-Metadaten wie `dam:scene7Domain` und `dam:scene7FileStatus` wider. Um diese Funktion zu aktivieren, installieren Sie Service Pack 8 und starten Sie dann Experience Manager neu. Wechseln Sie zum Sling Config Manager. Suchen Sie die Konfiguration für `Scene7ActivationJobConsumer Component` oder erstellen Sie eine neue. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Replizieren von Metadaten nach der Dynamic Media-Veröffentlichung]** und klicken Sie dann auf **[!UICONTROL Speichern]**.
+      * **[!UICONTROL Bei Aktivierung]** bedeutet, dass Sie das Asset zuerst explizit veröffentlichen müssen, bevor eine URL/ein Link zur Einbettung bereitgestellt wird.<br><!-- CQDOC-17478, Added March 9, 2021-->Ab Experience Manager 6.5.8 spiegelt die Experience Manager-Veröffentlichungsinstanz nur im Veröffentlichungsmodus **[!UICONTROL Bei Aktivierung]** genaue Werte für Dynamic Media-Metadaten wie `dam:scene7Domain` und `dam:scene7FileStatus` wider. Wechseln Sie zum Sling Config Manager. Suchen Sie die Konfiguration für `Scene7ActivationJobConsumer Component` oder erstellen Sie eine neue. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Replizieren von Metadaten nach der Dynamic Media-Veröffentlichung]** und klicken Sie dann auf **[!UICONTROL Speichern]**.
 
         ![Kontrollkästchen „Replizieren von Metadaten nach der Dynamic Media-Veröffentlichung“](assets-dm/replicate-metadata-setting.png)
 
@@ -250,7 +245,7 @@ Im Modus „Dynamic Media – Scene7“ beträgt die Standardgröße der Asset-U
 
 Wenn Sie diese Funktion verwenden möchten, beachten Sie die folgenden Voraussetzungen und Punkte:
 
-* Im Dynamic Media-Scene7-Modus müssen Sie Experience Manager 6.5 mit Service Pack 6.5.4.0 oder höher ausführen.
+* Im Scene7-Modus von Dynamic Media müssen Sie Experience Manager 6.5 LTS ausführen.
 * Diese Funktion zum Hochladen großer Dateien wird nur für [*Managed Services*](https://business.adobe.com/de/products/experience-manager/managed-services.html)-Kunden unterstützt.
 * Stellen Sie sicher, dass Ihre Experience Manager-Instanz mit Amazon S3 oder Microsoft® Azure Blob Storage konfiguriert ist.
 

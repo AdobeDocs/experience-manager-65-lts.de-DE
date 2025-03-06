@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie IMS-Integrationen für AEM einrichten.
 feature: Security
 role: Admin
 exl-id: 05ba39fc-4b53-43c0-9a9f-7da3293b1ca2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 100%
+source-wordcount: '397'
+ht-degree: 95%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Mit der [Adobe Developer Console](https://developer.adobe.com/console) können Kundinnen und Kunden von Adobe Anmeldedaten generieren, die den Zugriff auf verschiedene APIs ermöglichen. Dabei können sie unter verschiedenen Anmeldedatentypen wählen, von OAuth Server-zu-Server bis zu Single-Page-App. Der Anmeldedatentyp „Service-Konto (JWT)“, wurde mit Service Pack 20 zugunsten der OAuth Server-zu-Server-Anmeldedaten eingestellt. Diese Änderung kann mithilfe eines Hotfixes, den Sie [herunterladen](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip) können, auf ältere Service Packs, beginnend mit Service Pack 11 bis hin zu Service Pack 20, zurückportiert werden.
+>Mit der [Adobe Developer Console](https://developer.adobe.com/console) können Kundinnen und Kunden von Adobe Anmeldedaten generieren, die den Zugriff auf verschiedene APIs ermöglichen. Dabei können sie unter verschiedenen Anmeldedatentypen wählen, von OAuth Server-zu-Server bis zu Single-Page-App. Der Berechtigungstyp Dienstkonto (JWT) wird jetzt zugunsten der OAuth Server-zu-Server-Anmeldeinformationen nicht mehr unterstützt.
 
 Adobe Experience Manager (AEM) kann mit vielen anderen Adobe-Lösungen integriert werden. Zum Beispiel Adobe Target, Adobe Analytics und vielen weiteren.
 

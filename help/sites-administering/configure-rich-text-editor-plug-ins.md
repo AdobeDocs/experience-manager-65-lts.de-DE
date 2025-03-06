@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: f185c622-1681-4221-a082-cac71d6b510b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4391'
+source-wordcount: '4381'
 ht-degree: 100%
 
 ---
@@ -286,10 +286,6 @@ Geben Sie dann die Speicherorte für die Stylesheets an, auf die Sie verweisen m
 
 Autorinnen und Autoren, die AEM verwenden, um japanische Sprachinhalte zu erstellen, können einen Stil auf Zeichen anwenden, um Zeilenumbrüche dort zu vermeiden, wo sie nicht erforderlich sind. Dadurch können Autorinnen und Autoren die Sätze an der gewünschten Position umbrechen lassen. Der Stil dieser Funktion basiert auf der CSS-Klasse, die im CSS-Stylesheet vordefiniert ist.
 
->[!NOTE]
->
->Für diese Funktion ist mindestens AEM 6.5 Service Pack 1 erforderlich.
-
 Führen Sie folgende Schritte aus, um den Stil zu erstellen, den Autoren auf japanischen Text anwenden können:
 
 1. Erstellen Sie einen neuen Knoten unter dem Stile-Knoten. Siehe [Festlegen eines neuen Stils](#stylesindropdown).
@@ -351,17 +347,17 @@ Aktivieren Sie zunächst das paraformat-Plug-in:
 
 >[!NOTE]
 >
->Wenn das Plug-in nicht weiter konfiguriert ist, werden die folgenden Standardformate aktiviert:
+Wenn das Plug-in nicht weiter konfiguriert ist, werden die folgenden Standardformate aktiviert:
 >
->* Absatz ( `<p>`)
->* Überschrift 1 ( `<h1>`)
->* Überschrift 2 ( `<h2>`)
->* Überschrift 3 ( `<h3>`)
+* Absatz ( `<p>`)
+* Überschrift 1 ( `<h1>`)
+* Überschrift 2 ( `<h2>`)
+* Überschrift 3 ( `<h3>`)
 >
 
 >[!CAUTION]
 >
->Entfernen Sie beim Konfigurieren der Absatzformate des RTE nicht das Absatz-Tag &lt;p> als Formatierungsoption. Wenn das Tag `<p>` entfernt wird, kann die Inhaltsautorin bzw. der Inhaltsautor die Option **Absatzformate** selbst dann nicht auswählen, wenn zusätzliche Formate konfiguriert sind.
+Entfernen Sie beim Konfigurieren der Absatzformate des RTE nicht das Absatz-Tag &lt;p> als Formatierungsoption. Wenn das Tag `<p>` entfernt wird, kann die Inhaltsautorin bzw. der Inhaltsautor die Option **Absatzformate** selbst dann nicht auswählen, wenn zusätzliche Formate konfiguriert sind.
 
 ### Angeben der verfügbaren Absatzformate {#paraformatsindropdown}
 
@@ -398,7 +394,7 @@ Absatzformate werden wie folgt zur Auswahl bereitgestellt:
 
 >[!CAUTION]
 >
->Die Standardformate (`<p>`, `<h1>`, `<h2>` und `<h3>`) werden entfernt, wenn Sie benutzerdefinierte Formate definieren. Da `<p>` das Standardformat ist, müssen Sie dieses Format neu erstellen.
+Die Standardformate (`<p>`, `<h1>`, `<h2>` und `<h3>`) werden entfernt, wenn Sie benutzerdefinierte Formate definieren. Da `<p>` das Standardformat ist, müssen Sie dieses Format neu erstellen.
 
 ## Konfigurieren von Sonderzeichen {#spchar}
 
@@ -408,7 +404,7 @@ Sie können den RTE aber auch so konfigurieren, dass Ihre eigene Auswahl an Zeic
 
 >[!CAUTION]
 >
->Durch das Hinzufügen eigener Sonderzeichen wird die Standardauswahl überschrieben. Definieren Sie bei Bedarf diese Zeichen in Ihrer eigenen Auswahl (neu).
+Durch das Hinzufügen eigener Sonderzeichen wird die Standardauswahl überschrieben. Definieren Sie bei Bedarf diese Zeichen in Ihrer eigenen Auswahl (neu).
 
 ### Definieren einzelner Zeichen {#definesinglechar}
 
@@ -459,12 +455,10 @@ Sobald die Eigenschaft gespeichert wurde, wird das entsprechende Zeichen in CRXD
 1. Fügen Sie unter diesem Knoten (der entsprechend dem Sonderzeichenbereich benannt wurde) die folgenden beiden Eigenschaften hinzu:
 
    * **Name** `rangeStart`
-
      **Typ** `Long`
      **Wert:** Die [Unicode](https://unicode.org/)-Darstellung (Dezimalzahl) der ersten Zeichen des Bereichs
 
    * **Name** `rangeEnd`
-
      **Typ** `Long`
      **Wert:** Die [Unicode](https://unicode.org/)-Darstellung (Dezimalzahl) des letzten Zeichens des Bereichs
 
@@ -484,11 +478,11 @@ Stile werden in der Regel auf Text angewendet, es kann jedoch auch ein separater
 
 >[!NOTE]
 >
->Sie können Stile für Tabellen und Zellen nur für die klassische Benutzeroberfläche definieren.
+Sie können Stile für Tabellen und Zellen nur für die klassische Benutzeroberfläche definieren.
 
 >[!NOTE]
 >
->Das Kopieren und Einfügen von Tabellen in oder aus der RTE-Komponente ist Browser-abhängig. Es wird nicht standardmäßig für alle Browser unterstützt. Je nach Tabellenstruktur und Browser kann es zu unterschiedlichen Ergebnissen kommen. Wenn Sie beispielsweise eine Tabelle in eine RTE-Komponente in Mozilla Firefox in der klassischen und in der Touch-optimierten Benutzeroberfläche kopieren und einfügen, bleibt das Layout der Tabelle nicht erhalten.
+Das Kopieren und Einfügen von Tabellen in oder aus der RTE-Komponente ist Browser-abhängig. Es wird nicht standardmäßig für alle Browser unterstützt. Je nach Tabellenstruktur und Browser kann es zu unterschiedlichen Ergebnissen kommen. Wenn Sie beispielsweise eine Tabelle in eine RTE-Komponente in Mozilla Firefox in der klassischen und in der Touch-optimierten Benutzeroberfläche kopieren und einfügen, bleibt das Layout der Tabelle nicht erhalten.
 
 1. Navigieren Sie innerhalb Ihrer Komponente zum Knoten `<rtePlugins-node>/table`. Erstellen Sie die Knoten, falls diese noch nicht vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
 1. Erstellen Sie die `features`-Eigenschaft für den Knoten `table`:
@@ -499,13 +493,13 @@ Stile werden in der Regel auf Text angewendet, es kann jedoch auch ein separater
 
    >[!NOTE]
    >
-   >Wenn Sie nicht alle Tabellenfunktionen aktivieren möchten, erstellen Sie die `features`-Eigenschaft wie folgt:
+   Wenn Sie nicht alle Tabellenfunktionen aktivieren möchten, erstellen Sie die `features`-Eigenschaft wie folgt:
    >
-   >* **Typ** `String[]`
+   * **Typ** `String[]`
    >
-   >* **Wert** Nach Bedarf einen oder beide der folgenden Werte:
-   >* `table` – um die Bearbeitung von Tabelleneigenschaften zuzulassen, einschließlich der Stile.
-   >* `cellprops` – um die Bearbeitung von Zelleneigenschaften zuzulassen, einschließlich der Stile.
+   * **Wert** Nach Bedarf einen oder beide der folgenden Werte:
+   * `table` – um die Bearbeitung von Tabelleneigenschaften zuzulassen, einschließlich der Stile.
+   * `cellprops` – um die Bearbeitung von Zelleneigenschaften zuzulassen, einschließlich der Stile.
 
 1. Definieren Sie den Speicherort von CSS-Stylesheets, um auf diese verweisen zu können. Siehe [Festlegen des Stylesheet-Speicherorts](#locationofstylesheet), da dieser derselbe wie bei der Definition der [Textstile](#textstyles) ist. Der Speicherort wurde möglicherweise bereits beim Definieren anderer Stile definiert.
 1. Erstellen Sie unter dem Knoten `table` die folgenden neuen Knoten (nach Bedarf):
@@ -567,7 +561,7 @@ Wenn das Plug-in „Rechtschreibprüfung“ aktiviert haben, verwendet der RTE W
 
 >[!NOTE]
 >
->Die Meldung `Spell checking failed` wird angezeigt, wenn versucht wird, eine Überprüfung für eine Sprache durchzuführen, die nicht installiert ist. Diese Standardwörterbücher finden Sie zusammen mit den entsprechenden ReadMe-Dateien unter `/libs/cq/spellchecker/dictionaries`. Diese Dateien sollten nicht geändert werden.
+Die Meldung `Spell checking failed` wird angezeigt, wenn versucht wird, eine Überprüfung für eine Sprache durchzuführen, die nicht installiert ist. Diese Standardwörterbücher finden Sie zusammen mit den entsprechenden ReadMe-Dateien unter `/libs/cq/spellchecker/dictionaries`. Diese Dateien sollten nicht geändert werden.
 
 Eine standardmäßige AEM-Installation beinhaltet die Wörterbücher für amerikanisches Englisch (`en_us`) und britisches Englisch (`en_gb`). Gehen Sie wie folgt vor, um ggf. weitere Wörterbücher hinzuzufügen.
 
@@ -582,16 +576,16 @@ Eine standardmäßige AEM-Installation beinhaltet die Wörterbücher für amerik
 
    >[!CAUTION]
    >
-   >Nur Wörterbücher im `MySpell`-Format für OpenOffice.org v2.0.1 bzw. frühere Versionen werden unterstützt. Da es sich bei den Wörterbüchern jetzt um Archivdateien handelt, wird empfohlen, das Archiv nach dem Herunterladen zu überprüfen.
+   Nur Wörterbücher im `MySpell`-Format für OpenOffice.org v2.0.1 bzw. frühere Versionen werden unterstützt. Da es sich bei den Wörterbüchern jetzt um Archivdateien handelt, wird empfohlen, das Archiv nach dem Herunterladen zu überprüfen.
 
 1. Suchen Sie die `.aff`- und `.dic`-Dateien. Der Dateiname sollte nur Kleinbuchstaben aufweisen. Zum Beispiel `de_de.aff` und `de_de.dic`.
 1. Laden Sie die `.aff`- und die `.dic`-Dateien in das Repository unter `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
 >
->Die RTE-Rechtschreibprüfung ist nur auf Abruf verfügbar. Sie wird nicht automatisch ausgeführt, wenn Sie beginnen, Text einzugeben. Aktivieren Sie die Rechtschreibprüfung, indem Sie in der Symbolleiste auf [!UICONTROL Rechtschreibprüfung] klicken. Der RTE überprüft die Rechtschreibung der Wörter und markiert falsch geschriebene Wörter.
+Die RTE-Rechtschreibprüfung ist nur auf Abruf verfügbar. Sie wird nicht automatisch ausgeführt, wenn Sie beginnen, Text einzugeben. Aktivieren Sie die Rechtschreibprüfung, indem Sie in der Symbolleiste auf [!UICONTROL Rechtschreibprüfung] klicken. Der RTE überprüft die Rechtschreibung der Wörter und markiert falsch geschriebene Wörter.
 >
->Wenn Sie eine Änderung annehmen, die die Rechtschreibprüfung vorschlägt, ändert sich der Status des Textes und das falsch geschriebene Wort ist nicht länger markiert. Klicken Sie erneut auf die Schaltfläche „Rechtschreibprüfung“, um die Rechtschreibprüfung auszuführen.
+Wenn Sie eine Änderung annehmen, die die Rechtschreibprüfung vorschlägt, ändert sich der Status des Textes und das falsch geschriebene Wort ist nicht länger markiert. Klicken Sie erneut auf die Schaltfläche „Rechtschreibprüfung“, um die Rechtschreibprüfung auszuführen.
 
 ## Konfigurieren der Verlaufsgröße für die Aktionen „Rückgängig“ und „Wiederholen“ {#undohistory}
 
@@ -627,7 +621,7 @@ Wenn die Einzugsfunktion aktiviert ist (Standardeinstellung), können Sie die Ei
 
 >[!NOTE]
 >
->Diese Einzugsgröße wird nur auf Absätze (Blöcke) des Texts angewendet. Sie wirkt sich nicht auf den Einzug von tatsächlichen Listen aus.
+Diese Einzugsgröße wird nur auf Absätze (Blöcke) des Texts angewendet. Sie wirkt sich nicht auf den Einzug von tatsächlichen Listen aus.
 
 1. Navigieren Sie innerhalb Ihrer Komponente zum Knoten `<rtePlugins-node>/lists`. Erstellen Sie diese Knoten, falls sie nicht bereits vorhanden sind. Weitere Informationen finden Sie unter [Aktivieren von Plug-ins](#activateplugin).
 1. Erstellen Sie im Knoten `lists` den Parameter `indentSize`:
@@ -640,7 +634,7 @@ Wenn die Einzugsfunktion aktiviert ist (Standardeinstellung), können Sie die Ei
 
 >[!NOTE]
 >
->Diese Option ist nur anwendbar, wenn der RTE in einem Dialogfeld verwendet wird (nicht bei Bearbeitung im Kontext in der klassischen Benutzeroberfläche).
+Diese Option ist nur anwendbar, wenn der RTE in einem Dialogfeld verwendet wird (nicht bei Bearbeitung im Kontext in der klassischen Benutzeroberfläche).
 
 Sie können die Höhe des bearbeitbaren Bereichs definieren, der innerhalb des Komponenten-Dialogfelds angezeigt wird:
 
@@ -652,7 +646,7 @@ Sie können die Höhe des bearbeitbaren Bereichs definieren, der innerhalb des K
 
    >[!NOTE]
    >
-   >Dies wirkt sich nicht auf die Höhe des Dialogfelds aus.
+   Dies wirkt sich nicht auf die Höhe des Dialogfelds aus.
 
 1. Speichern Sie die Änderungen.
 
@@ -673,13 +667,13 @@ Um zu konfigurieren, wie Links in AEM von einem anderen Programm aus hinzugefüg
 
    >[!NOTE]
    >
-   >Der Knoten `../items/text` hat die Eigenschaft:
+   Der Knoten `../items/text` hat die Eigenschaft:
    >
-   >* **Name** `xtype`
-   >* **Typ** `String`
-   >* **Wert** `richtext`
+   * **Name** `xtype`
+   * **Typ** `String`
+   * **Wert** `richtext`
    >
-   >Der Speicherort des Knotens `../items/text` kann je nach Struktur des Dialogfelds variieren. Nachfolgend sehen Sie zwei Beispiele: `/apps/myProject>/components/text/dialog/items/text` und `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
+   Der Speicherort des Knotens `../items/text` kann je nach Struktur des Dialogfelds variieren. Nachfolgend sehen Sie zwei Beispiele: `/apps/myProject>/components/text/dialog/items/text` und `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. Erstellen Sie unter `htmlRules` einen neuen Knoten.
 

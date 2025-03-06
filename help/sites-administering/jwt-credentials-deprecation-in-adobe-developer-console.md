@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: 7b6b02fd-fcb2-45ae-a239-e0c68de2bcbb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 100%
+source-wordcount: '352'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ In den folgenden Abschnitten werden die Szenarien aufgeführt, in denen Kundinne
 
 **Aktion**: Migrieren Sie Ihre Konfiguration, da AEM jetzt OAuth-Anmeldedaten unterstützt.
 
-**Relevante AEM-Versionen**: Adobe Managed Services (Service Pack 21 und höher).
+**Relevante AEM-**: Adobe Managed Services.
 
 Kundinnen und Kunden von AEM können AEM verwenden, um Integrationen mit allen anderen Adobe-Lösungen zu konfigurieren. Zum Beispiel Adobe Target, Adobe Analytics und vielen weiteren.
 
@@ -44,6 +44,6 @@ Unter [Einrichten von IMS-Integrationen für AEM](/help/sites-administering/sett
 
 **Aktion**: Bestätigen Sie, wann diese von JWT-Anmeldedaten zu OAuth-Anmeldedaten migriert werden können.
 
-**Relevante AEM-Versionen**: Adobe Managed Services (Service Pack 21 und höher).
+**Relevante AEM-**: Adobe Managed Services.
 
 Kundinnen und Kunden erstellen Adobe Developer Console-Projekte, damit sie die [Cloud Manager-APIs](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/) aufrufen können. Die Anmeldedaten im Adobe Developer-Projekt sollten in den OAuth-Server-zu-Server-Anmeldedatentyp migriert werden, bevor die veralteten JWT-Anmeldedaten im Januar 2025 ablaufen.

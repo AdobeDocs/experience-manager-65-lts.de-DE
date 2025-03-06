@@ -1,18 +1,13 @@
 ---
 title: Bereitstellen von Dynamic Media-Assets
 description: Erfahren Sie, wie Sie Dynamic Media-Assets wie Videos und Bilder auf Ihren Web-Seiten bereitstellen.
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
 role: User, Admin
 feature: Asset Management,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: b91173b4-f1d1-4aad-97d2-782bc8aeaeab
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 47b82956b41c3f78bed5ae220c7e993ce29e0385
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '313'
 ht-degree: 100%
 
 ---
@@ -42,9 +37,7 @@ Weitere Informationen finden Sie in den folgenden Themen:
 * [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Bereitstellen optimierter Bilder für eine responsive Website](/help/assets/responsive-site.md)
 * [Bereitstellung von Inhalten per HTTP/2](/help/assets/http2.md)
-* [Invalidierung des CDN-Caches mithilfe von Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [Verwenden von Regelsätzen zum Konvertieren von URLs](/help/assets/using-rulesets-to-transform-urls.md)
-
 
 ## Bereitstellung von Dynamic Media-Assets über HTTP/2 {#http-delivery-of-dynamic-media-assets}
 
