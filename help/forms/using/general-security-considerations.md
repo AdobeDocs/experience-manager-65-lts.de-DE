@@ -8,7 +8,8 @@ docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 5d0ba475-06be-47fd-8ea2-9160c2d86b07
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1030'
 ht-degree: 100%
@@ -30,7 +31,7 @@ Verwenden Sie die Links in diesem Abschnitt, um anbieterspezifische Sicherheitsi
 Berücksichtigen Sie bei der Absicherung Ihres Betriebssystems sorgfältig die vom Hersteller Ihres Betriebssystems beschriebenen Maßnahmen, einschließlich der folgenden:
 
 * Definieren und Steuern von Benutzenden, Rollen und Berechtigungen
-* Überwachungsprotokolle und Prüfprotokolle
+* Überwachungsprotokolle und Audit-Protokolle
 * Entfernen unnötiger Dienste und Anwendungen
 * Sichern von Dateien
 

@@ -8,7 +8,8 @@ docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 4009c85e-cb8a-4bed-a6ff-7c76fe78a47f
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 100%
@@ -170,5 +171,5 @@ Um die Leistung zu verbessern, können Sie die Antiviren-Software anweisen, die 
 >
 >* Wenn Sie einen anderen Speicherort für den Ordner des globalen Dokumentenspeichers und den temporären Ordner verwenden, öffnen Sie AdminUI`https://'[server]:[port]'/adminui`, navigieren Sie zu **Startseite > Einstellungen > Core-System > Core-Konfigurationen**, um den verwendeten Speicherort zu bestätigen.
 >
->* Wenn der AEM Forms-Server auch nach dem Ausschließen der vorgeschlagenen Verzeichnisse langsam ist, schließen Sie die ausführbare Java™-Datei (java.exe) ebenfalls aus.
+* Wenn der AEM Forms-Server auch nach dem Ausschließen der vorgeschlagenen Verzeichnisse langsam ist, schließen Sie die ausführbare Java™-Datei (java.exe) ebenfalls aus.
 >

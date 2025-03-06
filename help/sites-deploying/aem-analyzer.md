@@ -6,13 +6,13 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2645745a83477509bac81cb5e122eabc44db3961
+exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 23%
 
 ---
-
 
 # Bewerten der Aktualisierungskomplexität mit dem AEM Analyzer {#assessing-the-upgrade-complexity-with-the-aem-analyzer}
 
@@ -235,8 +235,3 @@ Die für den AEM Analyzer-Bericht verbleibende Gültigkeitsdauer wird in der Sei
 
 * Manchmal wird beim Entfernen-Vorgang möglicherweise die Benachrichtigung angezeigt: *„Einige Pfade wurden nicht erfolgreich entfernt. Bitte die Protokolle überprüfen und erneut versuchen.*&quot;. Wenn die Pfade jedoch tatsächlich entfernt wurden, können Sie diese Nachricht ignorieren
 * Ebenso kann der Paketvorgang mit folgendem Fehler fehlschlagen: „Fehler *beim Ausführen des gewünschten Vorgangs, bitte die Protokolle überprüfen und erneut versuchen.*&quot;. Dies ist wahrscheinlich auf den Ablauf der Sitzung zurückzuführen. In solchen Fällen sollte das Problem durch Wiederholen des Vorgangs behoben werden.
-
-
-
-
-

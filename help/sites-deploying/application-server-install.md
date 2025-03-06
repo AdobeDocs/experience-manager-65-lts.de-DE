@@ -8,7 +8,8 @@ topic-tags: deploying
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
+exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 100%
@@ -246,4 +247,3 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
    * Benennen Sie AEM.war-Datei in „ROOT.war“ um, wenn Sie sie als Stamm-Web-Anwendung bereitstellen möchten. Benennen Sie sie in „aemauthor.war“ um, wenn Sie „aemauthor“ als Kontextstamm verwenden möchten.
    * Kopieren Sie sie in den Tomcat-Ordner „webapps“.
    * Warten Sie, bis AEM installiert ist.
-

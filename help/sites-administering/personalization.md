@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 2a406ca2870e241539819ae62c6a14904ee71211
+exl-id: 558cf29b-34f4-4ead-b8d6-67ef8aaa5dc5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1528'
 ht-degree: 100%
@@ -166,4 +167,3 @@ Mit AEM werden verschiedene Komponenten für die Personalisierung bereitgestellt
 | Abmelden | Gibt den derzeit angemeldeten Benutzer an und stellt einen Link zum Abmelden zur Verfügung. |
 | Tag-Cloud | Eine Tag-Cloud zeigt eine grafisch dargestellte Auswahl der Tags auf Ihrer Website |
 | Teaser | Ein auf einer Hauptseite angezeigtes Stück Inhalt (für gewöhnlich ein Bild), das Benutzer zum Zugriff auf den darunterliegenden Inhalt „überreden“ soll. |
-

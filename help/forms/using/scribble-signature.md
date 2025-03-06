@@ -9,7 +9,8 @@ docset: aem65
 feature: Forms Designer,Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: b364d618-57fa-4e43-a1cd-049b7313e6a6
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 100%
@@ -71,7 +72,7 @@ Wenn Sie beim Erstellen der Freihand-Signatur auf das Geolocation-Symbol klicken
 
 >[!NOTE]
 >
->Das Einbetten der geografischen Informationen ist auf einem iPad obligatorisch.
+Das Einbetten der geografischen Informationen ist auf einem iPad obligatorisch.
 
 Auf einem iPad wird das Geolocation-Symbol standardmäßig nicht angezeigt. Die geografischen Informationen werden automatisch eingebettet, wenn Sie auf **OK** klicken.
 

@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 33b531c0-8fda-4649-bad1-d28c58a160e0
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 100%
@@ -47,7 +48,7 @@ Desktop-Benutzern stehen bei der Verwendung von [Konsolen](/help/sites-authoring
 
 >[!NOTE]
 >
->Die Tastaturbefehle des Editors sind immer aktiv, unabhängig davon, ob die [Tastaturbefehle der Konsole deaktiviert sind](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+Die Tastaturbefehle des Editors sind immer aktiv, unabhängig davon, ob die [Tastaturbefehle der Konsole deaktiviert sind](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## Betriebssystemspezifische Modifikatortasten {#os-specific-modifier-keys}
 

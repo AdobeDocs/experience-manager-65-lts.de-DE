@@ -6,7 +6,8 @@ contentOwner: Rick Brough
 solution: Experience Manager, Experience Manager Assets
 role: User, Admin
 feature: Collaboration,Dynamic Media Classic
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: ee098fae-cc6f-4c6e-8475-1737134543df
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1014'
 ht-degree: 100%
@@ -160,4 +161,3 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
    * Informieren Sie sich über die On-Demand-Webinar-Serie von Adobe, die Sie bei der Entwicklung Ihrer Rich-Media-Strategie unterstützt.
    * Lesen Sie mehr über wichtige Rich-Media-Nutzungsszenarien und die entsprechenden Adobe-Lösungen.
    * ... und vieles mehr!
-
