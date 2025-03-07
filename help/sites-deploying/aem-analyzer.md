@@ -2,14 +2,13 @@
 title: Bewerten der Aktualisierungskomplexität mit dem AEM Analyzer
 description: Erfahren Sie, wie Sie mit dem AEM Analyzer die Komplexität Ihres Upgrades bewerten können.
 topic-tags: upgrading
-content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6b846e456466492f4be2c1e5a1f6b3913ae4dab4
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2069'
 ht-degree: 23%
 
 ---
@@ -38,13 +37,13 @@ Weitere Informationen zu den Kategorien sowie möglichen Auswirkungen und Lösun
 
 ## Verfügbarkeit {#analyzer-availability}
 
-Der AEM Analyzer kann als ZIP-Datei vom [Software Distribution-Portal) heruntergeladen ](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html). Sie können das Paket über [Package Manager](/help/sites-administering/package-manager.md) auf Ihrer AEM-Quellinstanz installieren.
+Der AEM Analyzer kann als ZIP-Datei vom [Software Distribution-Portal) heruntergeladen ](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html). Sie können das Paket über [Package Manager](/help/sites-administering/package-manager.md) auf Ihrer AEM-Quellinstanz installieren.
 
 ## Wichtige Überlegungen zur Verwendung von AEM Analyzer {#important-considerations-for-using-aem-analyzer}
 
 Im folgenden Abschnitt finden Sie wichtige Überlegungen zur Ausführung von AEM Analyzer:
 
-* Der Analyzer-Bericht basiert auf der Ausgabe des AEM [Musterdetektors](/help/sites-deploying/pattern-detector.md). Die von Analyzer verwendete Version des Musterdetektors ist im Installationspaket von AEM Analyzer enthalten
+* Der Analyzer-Bericht wird mit der Ausgabe des AEM-Musterdetektors erstellt. Die von Analyzer verwendete Version des Musterdetektors ist im Installationspaket von AEM Analyzer enthalten
 * AEM Analyzer kann nur vom Benutzer **Admin** oder einem Benutzer in der Gruppe **Administratoren** ausgeführt werden
 * Analyzer wird auf AEM-Instanzen mit Version 6.5 und höher unterstützt.
 

@@ -1,18 +1,14 @@
 ---
 title: Ausführungsmodi
 description: Erfahren Sie, wie Sie Ihre AEM-Instanz mithilfe von Ausführungsmodi für bestimmte Zwecke anpassen können.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: configuring
-content-type: reference
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b21555f2-bc07-4653-a5da-966b9aa7ea1f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3370d62eafb9339a9f9c638f3fb2e2ce0f14d9ec
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 100%
+source-wordcount: '679'
+ht-degree: 96%
 
 ---
 
@@ -38,18 +34,14 @@ Installations-Ausführungsmodi sind vordefiniert:
 
 * `author`
 * `publish`
-* `samplecontent`
-* `nosamplecontent`
 
 Jeweils zwei Paare von Ausführungsmodi schließen einander gegenseitig aus. Sie können beispielsweise:
 
 * entweder `author` oder `publish` definieren, aber nicht beide gleichzeitig;
 
-* `author` mit `samplecontent` oder `nosamplecontent` (aber nicht beiden) kombinieren.
-
 >[!CAUTION]
 >
->Bei Verwendung eines der oben genannten Ausführungsmodi (author, publish, samplecontent, nosamplecontent) definiert der während der Installation verwendete Wert den Ausführungsmodus für die *gesamte Lebensdauer* der Installation.
+>Bei Verwendung eines der oben genannten Ausführungsmodi (author, publish) definiert der während der Installation verwendete Wert den Ausführungsmodus für die *(gesamte Lebensdauer* dieser Installation.
 >
 >Bei diesen Ausführungsmodi können Sie diese Werte nach der Installation *nicht* ändern.
 
@@ -68,16 +60,6 @@ Sie können auch eigene, benutzerdefinierte Ausführungsmodi erstellen. Diese k�
 * nach Bedarf ...
 
 Benutzerdefinierte Ausführungsmodi können auch bei jedem Start ausgewählt werden.
-
-## Verwenden von samplecontent und nosamplecontent {#using-samplecontent-and-nosamplecontent}
-
-Mit diesen Modi können Sie die Verwendung von Beispielinhalten steuern. Der Beispielinhalt wird vor der Erstellung des Schnellstarts definiert und kann Pakete, Konfigurationen usw. umfassen:
-
-* Mit dem Ausführungsmodus `samplecontent` wird dieser Inhalt installiert (Standardmodus). 
-
-* Mit dem Modus `nosamplecontent` wird der Beispielinhalt nicht installiert.
-
-Der Ausführungsmodus nosamplecontent wurde für Produktionsinstallationen entwickelt.
 
 ## Definieren von Konfigurationseigenschaften für einen Ausführungsmodus {#defining-configuration-properties-for-a-run-mode}
 

@@ -5,7 +5,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 2a5d9026-49bc-4766-bcbe-38d834c14f72
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 82af7ee5b3665dcc33b47e05c8580e9981728888
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 17%
@@ -22,7 +22,7 @@ ht-degree: 17%
 
 Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführen. Weitere Informationen finden Sie unter [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) und [Wartungsaufgaben vor einer Aktualisierung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md). Stellen Sie außerdem sicher, dass Ihr System die [Anforderungen für AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md) erfüllt.
 
-Überprüfen Sie [Planung des Upgrades](/help/sites-deploying/upgrade-planning.md) und wie Sie mit dem [AEM Analyzer](/help/sites-deploying/pattern-detector.md) die Komplexität eines Upgrades von AEM abschätzen können.
+Überprüfen Sie [Planung des Upgrades](/help/sites-deploying/upgrade-planning.md) und wie Sie mit dem [AEM Analyzer](/help/sites-deploying/aem-analyzer.md) die Komplexität eines Upgrades von AEM abschätzen können.
 
 ### Migrationsvoraussetzungen {#migration-prerequisites}
 
@@ -82,7 +82,7 @@ Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführe
    java -version
    ```
 
-1. Überprüfen Sie die Startparameter für den AEM-Server und stellen Sie sicher, dass Sie die Parameter entsprechend Ihren Anforderungen aktualisieren. Weitere Informationen finden [ unter ](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations) zu Java 17
+1. Überprüfen Sie die Startparameter für den AEM-Server und stellen Sie sicher, dass Sie die Parameter entsprechend Ihren Anforderungen aktualisieren. Weitere Informationen finden [ unter ](/help/sites-deploying/custom-standalone-install.md#java-considerations) zu Java 17.
 1. Laden Sie den neuen 6.5 LTS-WAR herunter und kopieren Sie ihn in den Dropins-Ordner unter: `/<path-to-aem-server>/dropins/`
 1. AEM-Instanz starten: Dies kann normalerweise mithilfe dieses Befehls erfolgen:
 

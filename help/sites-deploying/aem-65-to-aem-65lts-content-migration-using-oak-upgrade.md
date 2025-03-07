@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8c4ffb0e-b4dc-4a81-ac43-723754cbc0de
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9bf502146a309cd0d91f2aaa1778d5b550d424a8
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -87,3 +87,5 @@ Die einfachste Möglichkeit, dieses Problem zu beheben, besteht darin, den Quell
 Die Warnung kann auch ignoriert werden, aber in diesem Fall wird das Repository beim ersten Start vollständig neu indiziert. Es kann ein langer Prozess sein, besonders für den großen Fall. Das Repository ist erst verwendbar, wenn der Neuindizierungsprozess abgeschlossen ist. Verwenden Sie die Option `--skip-checkpoints` , um die Warnung zu unterdrücken.
 
 Sie können das Repository auch offline neu indizieren, bevor Sie AEM mit [Offline-Neuindizierung](/help/sites-deploying/upgrade-offline-reindexing.md) starten.
+
+Weitere Informationen zum Oak-Upgrade-Tool und zur erweiterten Verwendung finden Sie in der [offiziellen Dokumentation](https://jackrabbit.apache.org/oak/docs/migration.html).
