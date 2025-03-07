@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 9cc83733-630a-4846-bd9e-72fd76a3286d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '2410'
-ht-degree: 99%
+source-wordcount: '2337'
+ht-degree: 97%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 99%
 
 ## Übersicht {#overview}
 
-Die AEM Forms-App ermöglicht die Synchronisierung adaptiver Formulare, mobiler Formulare sowie von Formularsätzen auf Mobilgeräten je nach Ihrem Server. Sie können Workflows definieren, die [formularzentrierte Workflows auf OSGi](/help/forms/using/aem-forms-workflow.md) oder Formular-Workflows auf JEE sind. Angenommen, Sie führen eine Bank und nutzen AEM Forms für die Verwaltung von Kundschafts-Anträgen und der Kommunikation mit der Kundschaft. Ihre Kundinnen und Kunden füllen ein Formular aus und übermitteln es zur Prüfung. Wenn Sie das Formular für Mobilgeräte aktivieren, können es Ihre Kundinnen und Kunden in der AEM Forms-App ausfüllen. Sie können darüber hinaus den Überprüfungs-Workflow verwalten, indem Sie das Überprüfungsformular für Mobilgeräte aktivieren. Ihre Außendienstmitarbeitenden können ein Mobilgerät zum Kundenstandort mitnehmen, die Details überprüfen und das Formular übermitteln. Die AEM Forms-App wird mit dem AEM Forms-Server synchronisiert und ruft die Formulare ab, die für Mobilgeräte aktiviert wurden. Wenn die App offline ist, speichert sie die Daten lokal.
+Die AEM Forms-App ermöglicht die Synchronisierung adaptiver Formulare, mobiler Formulare sowie von Formularsätzen auf Mobilgeräten je nach Ihrem Server. Sie können Workflows definieren, die [Forms-zentrierte Workflows unter OSGi](/help/forms/using/aem-forms-workflow.md) <!--or Forms workflows on JEE--> sind. Angenommen, Sie führen eine Bank und nutzen AEM Forms für die Verwaltung von Kundschafts-Anträgen und der Kommunikation mit der Kundschaft. Ihre Kundinnen und Kunden füllen ein Formular aus und übermitteln es zur Prüfung. Wenn Sie das Formular für Mobilgeräte aktivieren, können es Ihre Kundinnen und Kunden in der AEM Forms-App ausfüllen. Sie können darüber hinaus den Überprüfungs-Workflow verwalten, indem Sie das Überprüfungsformular für Mobilgeräte aktivieren. Ihre Außendienstmitarbeitenden können ein Mobilgerät zum Kundenstandort mitnehmen, die Details überprüfen und das Formular übermitteln. Die AEM Forms-App wird mit dem AEM Forms-Server synchronisiert und ruft die Formulare ab, die für Mobilgeräte aktiviert wurden. Wenn die App offline ist, speichert sie die Daten lokal.
 
 Der Quellcode der AEM Forms-App ist für Kunden über die Software Distribution verfügbar. Das Paket mit dem Quell-Code steht in Software Distribution zur Verfügung als `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
@@ -61,9 +61,13 @@ Formular in der AEM Forms-App synchronisieren
 
 Wenn das Formular veröffentlicht ist, synchronisiert sich die App mit dem Server und ruft das Formular ab. Um mehrere Formulare zu synchronisieren, wählen Sie in der Authoring-Instanz mehrere Formulare in Forms Manager und dann **[!UICONTROL Mit AEM Forms-App synchronisieren]** aus.
 
-## Unterstützung für Mobilgeräte {#mobile-device-support}
+<!--
 
-Siehe [AEM Forms-App (vorher bekannt als Mobile Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+## Mobile device support {#mobile-device-support}
+
+See [AEM Forms app (previously known as Mobile Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+
+-->
 
 ## Hauptfunktionen der AEM Forms-App {#key-features-of-aem-forms-app}
 
@@ -71,7 +75,7 @@ Siehe [AEM Forms-App (vorher bekannt als Mobile Workspace)](/help/forms/using/ae
 
 Sie können Ihre App mit dem AEM Forms-Server synchronisieren und auf Ihrem Mobilgerät Formulare bearbeiten.
 
-Auf einem AEM Forms-Server können Sie ein Formular einem Startpunkt in einem Workbench-Vorgang und einer AEM Inbox-Anwendung zuordnen. Einer AEM-Posteingangs-Anwendung kann ein adaptives Formular zugeordnet werden. Einem Startpunkt kann ein adaptives Formular, ein HTML5-Formular oder ein Formularsatz zugeordnet werden. Es ist möglich, einen Startpunkt als Aufgabe zu senden oder die Aufgabe als Entwurf zu speichern. Weitere Informationen zu den Unterschieden zwischen einer AEM Inbox-Anwendung und einem Startpunkt finden Sie unter [Aktionen und Funktionen formularzentrierter AEM-Workflows auf OSGi- und AEM Forms-JEE-Workflows](capabilities-osgi-jee-workflows.md).
+Auf einem AEM Forms-Server können Sie ein Formular einem Startpunkt in einem Workbench-Vorgang und einer AEM Inbox-Anwendung zuordnen. Einer AEM-Posteingangs-Anwendung kann ein adaptives Formular zugeordnet werden. Einem Startpunkt kann ein adaptives Formular, ein HTML5-Formular oder ein Formularsatz zugeordnet werden. Ein Startpunkt kann als Aufgabe übermittelt oder die Aufgabe kann als Entwurf gespeichert werden. <!--For more information on differences between an AEM Inbox application and a startpoint see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 Bei AEM Forms-Servern ohne AEM Forms Workflow werden Formulare, für die die Synchronisierung in der App aktiviert ist, in der AEM Forms-App gerendert. Formulare sind auf der Registerkarte „Formulare“ der App verfügbar und können gesendet oder als Entwurf gespeichert werden. In der App werden adaptive und mobile Formulare unterstützt.
 
@@ -122,7 +126,7 @@ Weitere Informationen finden Sie unter [Verwenden der automatischen Speicherung 
 
 ## Unterschiede zwischen den Funktionen von AEM Inbox und AEM Forms-App {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Zwei der bekanntesten Möglichkeiten zum Starten eines formularbasierten Workflows sind der [AEM-Posteingang](/help/forms/using/manage-applications-inbox.md) und die Mobile App von AEM Forms. Die Funktionen von AEM Inbox und AEM Forms-App sind jedoch unterschiedlich. Der AEM-Posteingang funktioniert nur mit [formularzentrierten Workflows](/help/forms/using/aem-forms-workflow.md), während die AEM Forms-App sowohl mit formularzentrierten Workflows als auch mit der Prozessverwaltung verwendet werden kann. Weitere Informationen zu den Unterschieden zwischen den Funktionen des AEM-Posteingangs und der Mobile App von AEM Forms finden Sie unter [Aktionen und Funktionen von formularbasierten AEM-Workflows auf OSGi und AEM Forms-JEE-Workflows](capabilities-osgi-jee-workflows.md).
+Zwei der bekanntesten Möglichkeiten zum Starten eines formularbasierten Workflows sind der [AEM-Posteingang](/help/forms/using/manage-applications-inbox.md) und die Mobile App von AEM Forms. Die Funktionen von AEM Inbox und AEM Forms-App sind jedoch unterschiedlich. Der AEM-Posteingang funktioniert nur mit [Forms-zentrierten Workflows](/help/forms/using/aem-forms-workflow.md) während die AEM Forms-App sowohl mit Forms-zentrierten Workflows als auch mit der Prozessverwaltung funktioniert. <!--For more information on differences between AEM Inbox and AEM Forms app capabilities, see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 ## Unterstützte Formulare {#supported-forms}
 
