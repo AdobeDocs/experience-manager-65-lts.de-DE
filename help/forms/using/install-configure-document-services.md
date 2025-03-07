@@ -6,7 +6,7 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '5660'
 ht-degree: 99%
@@ -74,8 +74,8 @@ Bevor Sie mit der Installation und Konfiguration der AEM Forms-Dokumentendienste
 
 * Die Client-Software, die von PDF Generator für die Konvertierung unter Microsoft® Windows und Linux® benötigt wird, wird installiert:
 
-   * **Microsoft® Windows**: [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) oder [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) installieren
-   * **Linuxx®**: [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) installieren
+   * **Microsoft® Windows**: **Microsoft® Office** oder **Apache OpenOffice** installieren
+   * **Linuxx®**: **Apache OpenOffice** installieren
 
 >[!NOTE]
 >
@@ -654,7 +654,7 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
 
 +++ Adobe Acrobat
 
-* Stellen Sie sicher, dass nur [unterstützte Versionen](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von Microsoft® Office (32 Bit) und Adobe Acrobat installiert sind und Dialogfelder, die sich öffnen, abgebrochen werden.
+* Stellen Sie sicher, dass nur [unterstützte Versionen](/help/sites-deploying/technical-requirements.md) von Microsoft® Office (32 Bit) und Adobe Acrobat installiert sind und Dialogfelder, die sich öffnen, abgebrochen werden.
 * Stellen Sie sicher, dass der Adobe Acrobat Update Service deaktiviert ist.
 * Stellen Sie sicher, dass die Batch-Datei [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) mit Administratorrechten ausgeführt wurde.
 * Stellen Sie sicher, dass in der PDF-Konfigurationsoberfläche ein Benutzer von PDF Generator hinzugefügt wird.
@@ -667,7 +667,7 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
 
 **Microsoft® Windows**
 
-* Stellen Sie sicher, dass die [unterstützte 32-Bit-Version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von Microsoft® Office installiert ist und für keine der Anwendungen Dialogfelder offen sind.
+* Stellen Sie sicher, dass die [unterstützte 32-Bit-Version](/help/sites-deploying/technical-requirements.md) von Microsoft® Office installiert ist und für keine der Anwendungen Dialogfelder offen sind.
 * Stellen Sie sicher, dass in der PDF-Konfigurationsoberfläche ein Benutzer von PDF Generator hinzugefügt wird.
 * Stellen Sie sicher, dass der PDF Generator-Benutzer Mitglied der Administratorgruppe ist und dass für den Benutzer die Berechtigung zum [Ersetzen eines Tokens auf Prozessebene](#grant-the-replace-a-process-level-token-privilege) besteht.
 * Stellen Sie sicher, dass der Benutzer in der Benutzeroberfläche von PDF Generator konfiguriert ist und die folgenden Aktionen ausführt:
@@ -681,7 +681,7 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
 
 **Linux®**
 
-* Installieren Sie die [unterstützte Version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von OpenOffice. AEM Forms unterstützt sowohl 32-Bit- als auch 64-Bit-Versionen. Öffnen Sie nach der Installation alle OpenOffice-Programme, schließen Sie alle Dialogfelder und schließen Sie die Programme wieder. Öffnen Sie die Programme erneut und stellen Sie sicher, dass beim Öffnen eines OpenOffice-Programms kein Dialogfeld angezeigt wird.
+* Installieren Sie die unterstützte Version von OpenOffice. AEM Forms unterstützt sowohl 32-Bit- als auch 64-Bit-Versionen. Öffnen Sie nach der Installation alle OpenOffice-Programme, schließen Sie alle Dialogfelder und schließen Sie die Programme wieder. Öffnen Sie die Programme erneut und stellen Sie sicher, dass beim Öffnen eines OpenOffice-Programms kein Dialogfeld angezeigt wird.
 
 * Erstellen Sie eine Umgebungsvariable `OpenOffice_PATH` und legen Sie sie so fest, dass sie auf die OpenOffice-Installation verweist, die in der [Konsole](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) oder dem dt-Profil (Device Tree, Gerätestrukturprofil) festgelegt ist.
 * Sollten bei der Installation von OpenOffice Probleme auftreten, stellen Sie sicher, dass die für die OpenOffice-Installation erforderlichen [32-Bit-Bibliotheken](#extrarequirements) zur Verfügung stehen.
