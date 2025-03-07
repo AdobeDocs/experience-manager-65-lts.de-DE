@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: f65f9e94-0837-48d1-a565-cfb880963790
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e7fc1120d12160ba866ceaddd087fc9acdfcd51d
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '754'
 ht-degree: 100%
 
 ---
@@ -87,10 +87,6 @@ Nachfolgend finden Sie eine Liste mit Empfehlungen der Produkt-Management-Abteil
   </tr>
  </tbody>
 </table>
-
-### Häufig gestellte Fragen (FAQ) {#faq}
-
-Weitere Einzelheiten finden Sie im Knowledgebase-Artikel [Seitenbearbeitung mit der Touch-optimierten Benutzeroberfläche – Häufig gestellte Fragen (FAQ)](https://helpx.adobe.com/de/experience-manager/kb/index/touchui_faq.html), inklusive Informationen zur geplanten Entfernung der klassischen Benutzeroberfläche.
 
 ### Festlegen der Benutzeroberfläche {#selecting-your-ui}
 
