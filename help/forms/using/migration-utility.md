@@ -1,31 +1,26 @@
 ---
 title: Migration der Assets und Dokumente von AEM Forms
-description: Mit dem Migrationsdienstprogramm können Sie Adobe Experience Manager (AEM) Forms-Assets und -Dokumente aus AEM 6.3 Forms oder früheren Versionen in AEM 6.4 Forms migrieren.
+description: Mit dem Migrationsdienstprogramm können Sie Adobe Experience Manager (AEM) Forms-Assets und -Dokumente von AEM 6.5.22.0 Forms zu AEM 6.5 Forms LTS migrieren.
 content-type: reference
-topic-tags: correspondence-management, installing
-geptopics: SG_AEMFORMS/categories/jee
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-content-strategy: max-2018
-docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 636f7b61-549e-45c7-ab21-94bb90db2b22
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1723'
-ht-degree: 99%
+source-wordcount: '1698'
+ht-degree: 91%
 
 ---
 
 # Migration der Assets und Dokumente von AEM Forms{#migrate-aem-forms-assets-and-documents}
 
-Das Migrationsdienstprogramm konvertiert die [Assets von adaptiven Formularen](../../forms/using/introduction-forms-authoring.md), [Cloud-Konfigurationen](/help/sites-developing/extending-cloud-config.md) und [Correspondence Management-Assets](/help/forms/using/cm-overview.md) von dem in früheren Versionen verwendeten Format in das in Adobe Experience Manager (AEM) 6.5 Forms verwendete Format. Wenn Sie das Migrationsdienstprogramm ausführen, werden folgende Elemente migriert:
+Das Migrationsdienstprogramm konvertiert die [Adaptive Forms-Assets](../../forms/using/introduction-forms-authoring.md), [Cloud-Konfigurationen](/help/sites-developing/extending-cloud-config.md) und [Correspondence Management-Assets](/help/forms/using/cm-overview.md) von dem in früheren Versionen verwendeten Format in das in Adobe Experience Manager (AEM) 6.5 LTS Forms verwendete Format. Wenn Sie das Migrationsdienstprogramm ausführen, werden folgende Elemente migriert:
 
 * Benutzerdefinierte Komponenten für adaptive Formulare
 * Adaptive Formulare und Correspondence Management-Vorlagen
 * Cloud-Konfigurationen
-* Assets für Correspondence Management und adaptive Formulare
+* Correspondence Management und adaptive Forms-Assets
 
 >[!NOTE]
 >
@@ -33,11 +28,11 @@ Das Migrationsdienstprogramm konvertiert die [Assets von adaptiven Formularen](.
 
 ## Migrationsansatz {#approach-to-migration}
 
-Sie können ein [Upgrade](../../forms/using/upgrade.md) auf die neueste Version von AEM Forms 6.5 von AEM Forms 6.4, 6.3 oder 6.2 oder eine Neuinstallation durchführen. Je nachdem, ob Sie die vorherige Installation aktualisiert oder eine Neuinstallation durchgeführt haben, müssen Sie einen der folgenden Schritte ausführen:
+Sie können [Upgrade](../../forms/using/upgrade.md) auf [AEM Forms 6.5 LTS von AEM Forms 6.5.22.0](/help/forms/using/upgrade-forms-osgi.md) aus durchführen. Je nachdem, ob Sie die vorherige Installation aktualisiert oder eine Neuinstallation durchgeführt haben, müssen Sie einen der folgenden Schritte ausführen:
 
 **Wenn eine ersetzende Aktualisierung erfolgt**
 
-Wenn Sie ein ersetzendes Upgrade durchgeführt haben, verfügt die aktualisierte Instanz bereits über die Assets und Dokumente. Bevor Sie die Assets und Dokumente verwenden können, müssen Sie jedoch das [AEMFD-Kompatibilitätspaket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) installieren (enthält das Correspondence-Management-Kompatibilitätspaket).
+Wenn Sie ein [In-Place-Upgrade](/help/sites-deploying/in-place-upgrade.md) durchgeführt haben, verfügt die upgegradete Instanz bereits über die Assets und Dokumente. Bevor Sie jedoch die Assets und Dokumente verwenden können, müssen Sie das [AEMFD-Kompatibilitätspaket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) installieren (enthält das Correspondence-Management-Kompatibilitätspaket).
 
 Dann müssen Sie die Assets und Dokumente aktualisieren, indem Sie das [Migrationsprogramm ausführen](#runningmigrationutility).
 
@@ -62,7 +57,7 @@ Für Correspondence Management-Assets:
 * Der Status „Veröffentlichungsbereit“ wird seit AEM 6.1 Forms nicht mehr unterstützt, sodass alle Assets mit dem Status „Veröffentlichungsbereit“ den Status „Geändert“ erhalten.
 * Da die Benutzeroberfläche auf AEM Forms 6.3 aktualisiert wird, sind die Schritte für die Anpassung ebenfalls unterschiedlich. Wiederholen Sie die Anpassung, wenn Sie von einer älteren Version als 6.3 migrieren.
 * Layout-Fragmente werden von `/content/apps/cm/layouts/fragmentlayouts/1001` nach `/content/apps/cm/modules/fragmentlayouts` verschoben. Der Datenwörterbuchverweis in Assets zeigt Pfad des Datenwörterbuchs anstatt dessen Namens an.
-* Alle Tabulatorzeichen, die für die Ausrichtung in Textmodulen verwendet werden, müssen angepasst werden. Weitere Informationen finden Sie unter [Correspondence Management: Anordnen von Text mit Tabulatorabständen](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html).
+* Alle Tabulatorräume, die für die Ausrichtung in Textmodulen verwendet werden, müssen neu angepasst werden. <!--For more information, see [Correspondence Management - Using tab spacing for arranging text](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html)-->.
 * Die Asset Composer-Konfigurationen ändern sich zu Correspondence Management-Konfigurationen.
 * Assets werden in Ordner mit einem Namen wie „Existing Text“ oder „Existing List“ verschoben.
 

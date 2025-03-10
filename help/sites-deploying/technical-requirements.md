@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '3044'
-ht-degree: 96%
+source-wordcount: '3064'
+ht-degree: 95%
 
 ---
 
@@ -150,12 +150,11 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
 
 | **Plattform** | **Unterstützungsebene** |
 |---|---|
-| **Linux®, basierend auf der Red Hat®-Verteilung** | A: Unterstützt `[1]` `[3]` |
-| Linux®, auf Basis der Debian-Verteilung einschl. Ubuntu | A: Unterstützt `[1]` `[2]` |
+| **Linux®, basierend auf der Red Hat®-Verteilung** | A: Unterstützt `[1]` `[2]` |
+| Linux®, auf Basis der Debian-Verteilung einschl. Ubuntu | A: Unterstützt `[1]` |
 | Linux®, auf Basis der SUSE®-Verteilung | A: Unterstützt `[1]` |
 
-1. Linux®-Kernel 5. x und 6. x umfasst Derivate der Red Hat-Verteilung, einschließlich Red Hat® Enterprise Linux®, CentOS, Oracle Linux und Amazon Linux®. Die Add-on-Funktionen von AEM Forms werden nur unter CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 und Red Hat® Enterprise Linux® 9 unterstützt.
-1. AEM Forms wird auf Ubuntu 20.04 LTS unterstützt.
+1. Linux®-Kernel 5. x und 6. x umfasst Derivate der Red Hat®-Distribution, einschließlich Red Hat® Enterprise Linux®, CentOS, Oracle Linux® und Amazon Linux®.
 1. Die Linux®-Verteilung wird von Adobe Managed Services unterstützt.
 
    >[!NOTE]
@@ -166,6 +165,8 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
    >* zlib.x86-64 (1.2.7-17)
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
+   >* glibc-locale.x86_64 (2.17 oder später)
+
 
 ### Virtuelle und Cloud-Computing-Umgebungen {#virtual-cloud-computing-environments}
 
@@ -434,10 +435,12 @@ Windows x86:
 >Zusätzlich gilt Folgendes:
 >
 >* PDF Generator erfordert die 32-Bit-Version der [klassischen Acrobat 2020-Version 20.004.30006](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) oder der Acrobat 2017-Version 17.011.30078, um die Konvertierung durchzuführen.
->* PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt®.
->* PDF Generator unterstützt nur die 32-Bit-Einzelhandelsversion von Microsoft® Office Professional Plus und andere für die Konvertierung unter einem Windows-Betriebssystem erforderliche Software.
+>* PDF Generator unterstützt nur die 32-Bit-Einzelhandelsversion von Microsoft® Office Professional Plus und andere für die Konvertierung erforderliche Software.
+>* Die Microsoft® Office Professional Plus-Installation kann eine Einzelhandels- oder MAK/KMS/AD-basierte Mengenlizenzierung verwenden.
+>* Wenn eine Microsoft® Office-Installation aus irgendeinem Grund deaktiviert oder unlizenziert wird, z. B. weil eine Installation mit Volumenlizenz einen KMS-Host nicht innerhalb eines bestimmten Zeitraums finden kann, können Konvertierungen fehlschlagen, bis die Installation neu lizenziert und reaktiviert wird.
 >* PDF Generator unterstützt 32-Bit- und 64-Bit-Versionen von OpenOffice unter dem Linux®-Betriebssystem.
 >* PDF Generator unterstützt nicht Microsoft® Office 365.
+>* PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt®.
 >* Die Funktionen von OCR PDF, PDF optimieren und PDF erstellen werden nur unter Windows unterstützt.
 >* Eine Version von Acrobat ist im Lieferumfang von AEM Forms enthalten, um die PDF Generator-Funktionalität zu aktivieren. Die gebündelte Version sollte während der Laufzeit der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur programmatisch mit AEM Forms zugänglich sein. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung für Ihre Bereitstellung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* Der PDF Generator-Service unterstützt nicht Microsoft® Windows 10.

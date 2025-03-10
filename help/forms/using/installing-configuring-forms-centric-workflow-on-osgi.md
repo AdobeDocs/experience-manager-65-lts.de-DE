@@ -7,10 +7,10 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,AEM Forms on OSGi
 exl-id: 4b316ade-4431-41fc-bb8a-7262a17fb456
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1624'
-ht-degree: 99%
+source-wordcount: '1551'
+ht-degree: 98%
 
 ---
 
@@ -28,9 +28,7 @@ AEM Forms ist eine leistungsstarke Plattform der Enterprise-Klasse. Formularzent
 
 >[!NOTE]
 >
->Mit formularzentrierten Workflows in OSGi können Sie schnell Workflows für verschiedene Aufgaben auf dem OSGi-Stapel erstellen und bereitstellen, ohne die komplette Prozessverwaltungsfunktion auf dem JEE-Stapel zu installieren. In diesem [Vergleich](capabilities-osgi-jee-workflows.md) der formularbasierten AEM-Workflows unter OSGi mit dem Process Management auf JEE erfahren Sie mehr über die Unterschiede und Gemeinsamkeiten der Funktionen.
->
->Wenn Sie sich nach dem Vergleich für die Installation der Process Management-Funktionen auf dem JEE-Stapel entscheiden, finden Sie unter [Installieren oder Aktualisieren von AEM Forms auf JEE](/help/forms/using/introduction-aem-forms.md) detaillierte Informationen zum Installieren und Konfigurieren des JEE-Stapels und der Process Management-Funktionen.
+>Mit Forms-zentrierten Workflows unter OSGi können Sie schnell Workflows für verschiedene Aufgaben auf dem OSGi-Stack erstellen und bereitstellen<!--, without having to install the full-fledged Process Management capability on JEE stack-->.<!-- See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE to learn the difference and similarities in the capabilities.--><!--After the comparison, If you choose to install the Process Management capability on JEE stack, see [Install or Upgrade AEM Forms on JEE](/help/forms/using/introduction-aem-forms.md) for detailed information about installing and configuring JEE stack and the Process Management capabilities.-->
 
 ## Bereitstellungstopologie {#deployment-topology}
 
