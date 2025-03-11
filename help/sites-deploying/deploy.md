@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 57302061656ebf37a49041753dd5eb34e7ba22ef
 workflow-type: tm+mt
-source-wordcount: '1759'
-ht-degree: 100%
+source-wordcount: '1221'
+ht-degree: 93%
 
 ---
 
@@ -38,21 +38,21 @@ Inhalt dieser Seite:
    * [Entpacktes Installationsverzeichnis](#unpacked-install-directory)
    * [Starten und Anhalten](#starting-and-stopping)
 
-Nachdem Sie sich mit diesen Grundlagen vertraut gemacht haben, finden Sie auf den folgenden Unterseiten komplexere und ausführlichere Informationen:
+<!-- Once you have familiarized yourself with these basics, you can find in more advanced and detailed information in the following subpages:
 
-* [Technische Anforderungen](/help/sites-deploying/technical-requirements.md)
-* [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md)
-* [Benutzerdefinierte Standalone-Installation](/help/sites-deploying/custom-standalone-install.md)
-* [Anwendungsserver-Installation](/help/sites-deploying/application-server-install.md)
-* [Start und Stopp über die Befehlszeile](/help/sites-deploying/command-line-start-and-stop.md)
-* [Konfiguration](/help/sites-deploying/configuring.md)
-* [Aktualisieren auf AEM 6.5](/help/sites-deploying/upgrade.md)
-* [Artikel mit Anleitungen für die Konfiguration](/help/sites-deploying/ht-deploy.md)
-* [Web-Konsole](/help/sites-deploying/web-console.md)
-* [Fehlerbehebung bei Replikationsproblemen](/help/sites-deploying/troubleshoot-rep.md)
+* [Technical Requirements](/help/sites-deploying/technical-requirements.md)
+* [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
+* [Custom Standalone Install](/help/sites-deploying/custom-standalone-install.md)
+* [Application Server Install](/help/sites-deploying/application-server-install.md)
+* [Command Line Start and Stop](/help/sites-deploying/command-line-start-and-stop.md)
+* [Configuring](/help/sites-deploying/configuring.md)
+* [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
+* [Configuration How-To Articles](/help/sites-deploying/ht-deploy.md)
+* [Web Console](/help/sites-deploying/web-console.md)
+* [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
 * [Best Practices](/help/sites-deploying/best-practices.md)
-* [Einführung in die AEM-Plattform](/help/sites-deploying/platform.md)
-* [Leistungsrichtlinien](/help/sites-deploying/performance-guidelines.md)
+* [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
+* [Performance Guidelines](/help/sites-deploying/performance-guidelines.md) -->
 
 ## Grundlegende Konzepte {#basic-concepts}
 
@@ -79,7 +79,7 @@ Der AEM-Server ist **Java-basiert** und kann auf den meisten Betriebssystemen au
 
 >[!NOTE]
 >
->Die Funktion „Adaptive Formulare“, verfügbar im AEM 6.5-Schnellstart, dient nur zu Kennenlern- und Evaluierungszwecken.  Für die Verwendung in der Produktion muss eine gültige Lizenz für AEM Forms erworben werden, da für die Funktion „Adaptive Formulare“ eine Lizenzierung erforderlich ist.
+>Die Funktion „Adaptive Forms&quot;, die in AEM 6.5 LTS QuickStart verfügbar ist, ist nur für Explorations- und Auswertungszwecke konzipiert. Für die Verwendung in der Produktion muss eine gültige Lizenz für AEM Forms erworben werden, da für die Funktion „Adaptive Formulare“ eine Lizenzierung erforderlich ist.
 
 ### Typische Bereitstellungsszenarien {#typical-deployment-scenarios}
 
@@ -102,37 +102,23 @@ In den folgenden Abschnitten werden beide Szenarien beschrieben:
 
 ### On-Premise {#on-premise}
 
-Sie können AEM auf Servern in Ihrer Unternehmensumgebung installieren. Typische Installationsinstanzen umfassen: Bereitstellungs-, Test- und Veröffentlichungsumgebungen. Unter [Erste Schritte](/help/sites-deploying/deploy.md#getting%20started) finden Sie grundlegende Informationen darüber, wie Sie die AEM-Software erhalten, um sie lokal zu installieren.
+Sie können AEM auf Servern in Ihrer Unternehmensumgebung installieren. Typische Installationsinstanzen umfassen: Bereitstellungs-, Test- und Veröffentlichungsumgebungen. Unter [Erste Schritte](#getting-started) finden Sie grundlegende Informationen darüber, wie Sie die AEM-Software erhalten, um sie lokal zu installieren.
 
-Weitere Informationen zu typischen On-Premise-Bereitstellungen erhalten Sie unter [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md).
+<!-- To learn more about the typical on-premises deployments, see [Recommended Deployments](/help/sites-deploying/recommended-deploys.md). -->
 
 ### Managed Services mit Cloud Manager {#managed-services-using-cloud-manager}
 
-AEM Managed Services ist eine Komplettlösung für das Management digitaler Erlebnisse. Sie bietet die Vorteile einer Lösung zur Erlebnisbereitstellung in der Cloud unter Beibehaltung aller Vorteile hinsichtlich Kontrolle, Sicherheit und Personalisierung einer On-Premise-Bereitstellung. AEM Managed Services ermöglicht Kunden schnellere Launches, indem sie in der Cloud bereitstellen und dabei auf die Best Practices und die Unterstützung von Adobe vertrauen können. Unternehmen und Anwenderinnen bzw. Anwender im Geschäftsbereich können Kundinnen und Kunden in kürzester Zeit ansprechen, Marktanteile steigern und sich auf die Erstellung innovativer Marketing-Kampagnen konzentrieren, während die IT-Abteilung entlastet wird.
-
-Mit AEM Managed Services können Kundinnen und Kunden die folgenden Vorteile erzielen:
-
-**Schnellere Markteinführungszeiten:** Dank der flexiblen Cloud-Infrastruktur von Adobe Managed Services können Organisationen erfolgreiche digitale Erlebnisse schnell planen, starten und optimieren. Adobe verwaltet die Cloud-Architektur, ohne dass zusätzliches Kapital, Hardware oder Software erforderlich ist. Die Adobe-Fachleute für Kundenlösungen helfen bei der AEM-Architektur, der Bereitstellung, der Anpassung für die Verbindung mit Back-End-Anwendungen und den Best Practices für die Inbetriebnahme.
-
-**Höhere Leistung:** Bietet zuverlässige digitale Erlebnisse für Ihr Unternehmen mit vier Service-Verfügbarkeitsoptionen: 99,5 %, 99,9 %, 99,95 % und 99,99 %. Außerdem ermöglicht es eine automatische Sicherung und Modelle zur Multimodus-Notfallwiederherstellung und hilft so, Sicherheit und kontinuierliche Verwaltung sicherzustellen.
-
-**Optimierte IT-Kosten:** Proaktive Unterstützung und Know-how helfen Unternehmen, über neue Entwicklungen von AEM auf dem Laufenden zu bleiben. Adobe Platinum Maintenance und Support ist bei neuen Bereitstellungen von AMS Enterprise/Basic automatisch enthalten und bietet technisches Know-how und operative Erfahrung, um Unternehmen bei der Verwaltung ihrer unternehmenskritischen Anwendungen zu helfen. Kostenlose grundlegende Analytics- oder Target-Funktionen bieten zusätzlichen Mehrwert für mittelständische Unternehmen mit begrenztem Bedarf hinsichtlich Analysen und Personalisierung.
-
-**Oberste Sicherheit:** Stellt physische, Netzwerk- und Datensicherheit auf Unternehmensniveau sicher, indem Kunden-Applikationen in einer Einrichtung mit beschränktem Zugang, hinter Firewall-Systemen oder in einer virtuellen, privaten Cloud, gehostet werden. Es beinhaltet virtuelle Maschinen für Einzelmandanten mit robuster Datenspeicherverschlüsselung, Virenschutz und Datenisolierung.
-
-**Cloud Manager**: Cloud Manager, Teil von Adobe Experience Manager Managed Services, bietet ein Selbstbedienungsportal, das es Organisationen besser ermöglicht, Adobe Experience Manager in der Cloud selbst zu verwalten. Es enthält eine moderne kontinuierliche Integration und eine kontinuierliche Bereitstellungs-Pipeline (CI/CD), die IT-Teams und Implementierungspartner dazu nutzen können, die Geschwindigkeit der Lieferung von Personalisierungen oder Aktualisierungen zu erhöhen, ohne bei der Leistung oder Sicherheit Abstriche zu machen. Cloud Manager ist nur für Kundinnen und Kunden von Adobe Managed Services verfügbar.
-
-Weitere Informationen zu Cloud Manager und den zugehörigen Ressourcen finden Sie im [**Benutzerhandbuch zu Cloud Manager**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=de).
+<i>Wird in Kürze bekannt gegeben.</i>
 
 ## Erste Schritte {#getting-started}
 
 ### Voraussetzungen {#prerequisites}
 
-Während Produktionsinstanzen für gewöhnlich auf dedizierten Computern ausgeführt werden, auf denen wiederum offiziell unterstützte Betriebssysteme ausgeführt werden (siehe [Technische Anforderungen](/help/sites-deploying/technical-requirements.md)), kann der Experience Manager-Server tatsächlich auf jedem System ausgeführt werden, das [**Java™ Standard Edition 8**](https://www.oracle.com/java/technologies/downloads/#java8) unterstützt.
+Während Produktionsinstanzen für gewöhnlich auf dedizierten Computern ausgeführt werden, auf denen wiederum offiziell unterstützte Betriebssysteme ausgeführt werden (siehe [Technische Anforderungen](/help/sites-deploying/technical-requirements.md)), kann der Experience Manager-Server tatsächlich auf jedem System ausgeführt werden, das [**Java™ Standard Edition 17**](https://www.oracle.com/java/technologies/downloads/#java17) unterstützt.
 
 Um sich mit AEM vertraut zu machen bzw. um die Entwicklung auf AEM vorzunehmen, wird häufig eine auf Ihrem lokalen Computer installierte Instanz verwendet, auf der Apple OS X oder Desktop-Versionen von Microsoft® Windows oder Linux® ausgeführt werden.
 
-Client-seitig funktioniert AEM mit allen modernen Browsern (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome **51+** **, Firefox **47+, **Safari** 8+) unter Desktop- und Tablet-Betriebssystemen. Details finden Sie unter [Unterstützte Clientplattformen](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
+Client-seitig funktioniert AEM mit allen modernen Browsern (**Microsoft® Edge**, **Chrome **51+** **, **Firefox **47+, **Safari** 8+) sowohl auf Desktop- als auch auf Tablet-Betriebssystemen. Details finden Sie unter [Unterstützte Clientplattformen](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
 
 ### Abrufen der Software {#getting-the-software}
 
@@ -140,9 +126,9 @@ Kunden mit einem gültigen Wartungs- und Supportvertrag sollten eine E-Mail-Bena
 
 Das AEM-Software-Paket steht in zwei Formen zur Verfügung:
 
-* **cq-quickstart-6.5.0.jar:** Eine eigenständige, ausführbare *JAR*-Datei, die alles enthält, was für die Einrichtung und Ausführung benötigt wird.
+* **CQ AEM 6.5 LTS.jar** Eine eigenständige ausführbare *jar*-Datei, die alles enthält, was Sie zum Ausführen benötigen.
 
-* **cq-quickstart-6.5.0.war:** Eine *WAR*-Datei für die Bereitstellung auf dem Anwendungsserver eines Drittanbieters.
+* **CQ AEM 6.5 LTS WAR:** Eine *war*-Datei zur Bereitstellung auf einem Anwendungsserver eines Drittanbieters.
 
 Im folgenden Abschnitt wird die **eigenständige Installation** beschrieben. Weitere Informationen zum Installieren von AEM auf einem Anwendungs-Server finden Sie unter [Anwendungs-Server-Installation](/help/sites-deploying/application-server-install.md).
 
@@ -164,18 +150,18 @@ Im folgenden Abschnitt wird die **eigenständige Installation** beschrieben. Wei
 
    ```shell
    <aem-install>/
-       cq-quickstart-6.5.0.jar
+       <aem-65-lts>.jar
        license.properties
    ```
 
    Wenn Sie keine Datei `license.properties` bereitstellen, leitet AEM Ihren Browser beim Start zu einem **Begrüßungsbildschirm** um, wo Sie Ihren Lizenzschlüssel eingeben können. Sie müssen einen gültigen Lizenzschlüssel von Adobe anfordern, wenn Sie noch nicht über einen verfügen.
 
-1. Doppelklicken Sie zum Starten der Instanz in einer GUI-Umgebung einfach auf die Datei **`cq-quickstart-6.5.0.jar`**.
+1. Doppelklicken Sie zum Starten der Instanz in einer GUI-Umgebung einfach auf die Datei **`<aem-65-lts>.jar`**.
 
    Alternativ können Sie AEM über die Befehlszeile starten:
 
    ```shell
-       java -Xmx1024M -jar cq-quickstart-6.5.0.jar
+       java -Xmx1024M -jar <aem-65-lts>.jar
    ```
 
 AEM braucht ein paar Minuten, um die JAR-Datei zu entpacken, sich selbst zu installieren und zu starten. Das obige Verfahren führt zu:
@@ -217,7 +203,7 @@ Diese zwei Instanzen würden Sie beispielsweise installieren in:
 Weitere Informationen über das Anpassen Ihrer Installation finden Sie unter:
 
 * [Benutzerdefinierte Standalone-Installation](/help/sites-deploying/custom-standalone-install.md)
-* [Ausführungsmodi](/help/sites-deploying/configure-runmodes.md)
+<!-- * [Run Modes](/help/sites-deploying/configure-runmodes.md) -->
 
 ### Entpacktes Installationsverzeichnis {#unpacked-install-directory}
 
@@ -226,7 +212,7 @@ Wenn die JAR-Datei für den Schnellstart erstmals gestartet wird, entpackt sie s
 ```xml
 <aem-install>/
     license.properties
-    cq-quickstart-6.5.0.jar
+    <aem-65-lts>.jar
     crx-quickstart/
         app/
         bin/
@@ -279,28 +265,28 @@ AEM startet und leitet Ihren Webbrowser automatisch zur entsprechenden Seite um.
 `https://localhost:4502/`
 
 ![Anmeldebildschirm](assets/screen_shot_2019-04-08at83533am.png)
+<!-- 
+After you are logged in, you have access to AEM. For more information, depending on your role, see the following:
 
-Nach der Anmeldung haben Sie Zugriff auf AEM. Weitere Informationen finden Sie je nach Ihrer Rolle hier:
+* [Authoring](/help/sites-authoring/first-steps.md)
+* [Administering](/help/sites-administering/home.md)
+* [Developing](/help/sites-developing/getting-started.md)
+* [Managing](/help/managing/best-practices.md)
 
-* [Authoring –](/help/sites-authoring/first-steps.md)
-* [Verwalten](/help/sites-administering/home.md)
-* [Entwickeln](/help/sites-developing/getting-started.md)
-* [Verwaltung](/help/managing/best-practices.md)
+## Advanced Deployment {#advanced-deployment}
 
-## Erweiterte Bereitstellung {#advanced-deployment}
+The above section should give you a good understanding of the basics of AEM installation. However, installing a full production system of AEM can involve considerably more complexity. For full coverage of advanced installation see the following subpages:
 
-Der obige Abschnitt sollte Ihnen ein gutes Verständnis der Grundlagen zur AEM-Installation vermitteln. Die Installation eines vollständigen Produktionssystems von AEM kann jedoch erheblich komplexer sein. In den folgenden Unterseiten wird die erweiterte Installation vollständig abgedeckt:
-
-* [Technische Anforderungen](/help/sites-deploying/technical-requirements.md)
-* [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md)
-* [Benutzerdefinierte Standalone-Installation](/help/sites-deploying/custom-standalone-install.md)
-* [Anwendungsserver-Installation](/help/sites-deploying/application-server-install.md)
-* [Start und Stopp über die Befehlszeile](/help/sites-deploying/command-line-start-and-stop.md)
-* [Konfiguration](/help/sites-deploying/configuring.md)
-* [Aktualisieren auf AEM 6.5](/help/sites-deploying/upgrade.md)
-* [Artikel mit Anleitungen für die Konfiguration](/help/sites-deploying/ht-deploy.md)
-* [Web-Konsole](/help/sites-deploying/web-console.md)
-* [Fehlerbehebung bei Replikationsproblemen](/help/sites-deploying/troubleshoot-rep.md)
+* [Technical Requirements](/help/sites-deploying/technical-requirements.md)
+* [Recommended Deployments](/help/sites-deploying/recommended-deploys.md)
+* [Custom Standalone Install](/help/sites-deploying/custom-standalone-install.md)
+* [Application Server Install](/help/sites-deploying/application-server-install.md)
+* [Command Line Start and Stop](/help/sites-deploying/command-line-start-and-stop.md)
+* [Configuring](/help/sites-deploying/configuring.md)
+* [Upgrading to AEM 6.5](/help/sites-deploying/upgrade.md)
+* [Configuration How-To Articles](/help/sites-deploying/ht-deploy.md)
+* [Web Console](/help/sites-deploying/web-console.md)
+* [Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)
 * [Best Practices](/help/sites-deploying/best-practices.md)
-* [Einführung in die AEM-Plattform](/help/sites-deploying/platform.md)
-* [Leistungsrichtlinien](/help/sites-deploying/performance-guidelines.md)
+* [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
+* [Performance Guidelines](/help/sites-deploying/performance-guidelines.md) -->

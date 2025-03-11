@@ -9,10 +9,10 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 114a77bc-0b7e-49ce-bca1-e5195b4884dc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3cbc2ddd4ff448278e678d1a73c4ee7ba3af56f4
 workflow-type: tm+mt
-source-wordcount: '5696'
-ht-degree: 100%
+source-wordcount: '5139'
+ht-degree: 98%
 
 ---
 
@@ -78,18 +78,15 @@ Es empfiehlt sich deswegen, eine Festplatte zu wählen, die mindestens zwei- ode
 
 ## Vollständiger und Tail-Komprimierungsmodus  {#full-and-tail-compaction-modes}
 
-Mit **AEM 6.5** werden **zwei neue Modi** für die **Komprimierungsphase** des Online-Revisionsbereinigungsprozesses eingeführt:
+**AEM 6.5 LTS** verfügt über **zwei Modi** für die **Komprimierungs**-Phase des Online-Revisionsbereinigungsprozesses:
 
-* Der Modus für die **vollständige Komprimierung** schreibt alle Segmente und TAR-Dateien im gesamten Repository neu. Die nachfolgende Bereinigungsphase kann somit die maximale Menge an Speicherabfall im Repository entfernen. Da die vollständige Komprimierung sich auf das gesamte Repository auswirkt, ist dafür eine beträchtliche Menge an Systemressourcen und Zeit erforderlich. Die vollständige Komprimierung entspricht der Komprimierungsphase in AEM 6.3.
+* Der Modus für die **vollständige Komprimierung** schreibt alle Segmente und TAR-Dateien im gesamten Repository neu. Die nachfolgende Bereinigungsphase kann somit die maximale Menge an Speicherabfall im Repository entfernen. Da die vollständige Komprimierung das gesamte Repository betrifft, ist ein beträchtlicher Aufwand an Systemressourcen und Zeit für ihren Abschluss erforderlich.
 * Der Modus **Tail-Komprimierung** schreibt nur die aktuellsten Segmente und TAR-Dateien im Repository neu. Die neuesten Segmente und TAR-Dateien sind diejenigen, die seit der letzten vollständigen oder Tail-Komprimierung hinzugefügt wurden. Die nachfolgende Bereinigungsphase kann daher nur den im aktuellen Teil des im Repository enthaltenen Speicherabfall entfernen. Da die Tail-Komprimierung nur einen Teil des Repositorys betrifft, benötigt sie erheblich weniger Systemressourcen und Zeit als eine vollständige Komprimierung.
 
 Diese Komprimierungsmodi stellen einen Kompromiss zwischen Effizienz und Ressourcenverbrauch dar: Die Tail-Komprimierung ist zwar weniger effektiv, hat dafür aber weniger Auswirkungen auf den normalen Systembetrieb. Die vollständige Komprimierung ist effektiver, hat aber auch wesentlich größere Auswirkungen auf den normalen Systembetrieb.
 
-AEM 6.5 bietet bei der Komprimierung außerdem einen effizienteren Mechanismus für die Deduplizierung des Inhalts, was den Speicherbedarf des Repositorys weiter verringert.
+AEM 6.5 LTS verfügt während der Komprimierung über einen effizienten Deduplizierungsmechanismus für Inhalte, der den Speicherbedarf des Repositorys weiter verringert.
 
-Die beiden folgenden Diagramme enthalten die Ergebnisse aus internen Laborversuchen, die die Reduzierung der durchschnittlichen Ausführungszeiten und des durchschnittlichen Festplattenspeicherbedarfs in AEM 6.5 im Vergleich zu AEM 6.3 aufzeigen:
-
-![onrc-duration-6_4vs63](assets/onrc-duration-6_4vs63.png) ![segmentstore-6_4vs63](assets/segmentstore-6_4vs63.png)
 
 ### Konfigurieren der vollständigen und Tail-Komprimierung {#how-to-configure-full-and-tail-compaction}
 
@@ -108,7 +105,7 @@ Beachten Sie außerdem Folgendes:
 Beachten Sie bei der Verwendung der neuen Komprimierungsmodi Folgendes:
 
 * Sie können die Eingabe/Ausgabe-Aktivität (I/O) überwachen, z. B.: I/O-Vorgänge, CPU wartet auf IO, Commit-Warteschlangengröße. Auf diese Weise können Sie feststellen, ob das System I/O-gebunden wird und eine Vergrößerung erforderlich ist.
-* Der `RevisionCleanupTaskHealthCheck` zeigt den Gesamtzustand der Online-Revisionsbereinigung. Es funktioniert genauso wie in AEM 6.3 und unterscheidet nicht zwischen vollständiger und Tail-Komprimierung.
+* Die `RevisionCleanupTaskHealthCheck` zeigt den Gesamtzustand der Online-Revisionsbereinigung an.
 * Die Protokollmeldungen enthalten relevante Informationen über die Komprimierungsmodi. Wenn beispielsweise die Online-Revisionsbereinigung beginnt, wird in den entsprechenden Protokollmeldungen der Komprimierungsmodus angegeben. In einigen seltenen Fällen kehrt das System außerdem zur vollständigen Komprimierung zurück, wenn eine Tail-Komprimierung geplant war. Die Protokollmeldungen zeigen diese Änderung an. Die folgenden Protokollbeispiele zeigen den Komprimierungsmodus und den Wechsel von der Tail-Komprimierung zur vollständigen Komprimierung an:
 
 ```
@@ -123,83 +120,6 @@ Manchmal verzögert der Wechsel zwischen dem Tail- und dem vollständigen Kompri
 **Es empfiehlt sich, eine Festplatte zu wählen, die mindestens zwei- oder dreimal so groß ist wie die ursprünglich geschätzte Repository-Größe.**
 
 ## Häufig gestellte Fragen zur Online-Revisionsbereinigung {#online-revision-cleanup-frequently-asked-questions}
-
-### Aspekte der AEM 6.5-Aktualisierung {#aem-upgrade-considerations}
-
-<table style="table-layout:auto">
- <tbody>
-  <tr>
-   <td>Fragen </td>
-   <td>Antworten</td>
-  </tr>
-  <tr>
-   <td>Was muss ich beachten, wenn ich auf AEM 6.5 aktualisiere?</td>
-   <td><p>Das Persistenzformat von TarMK ändert sich mit AEM 6.5. Für diese Änderungen ist keine proaktive Migration erforderlich. Vorhandene Repositorys durchlaufen eine parallele Migration, die für Benutzende transparent ist. Der Migrationsprozess wird initiiert, wenn AEM 6.5 (oder zugehörige Tools) zum ersten Mal auf das Repository zugreifen.</p> <p><strong>Nachdem die Migration zum Persistenzformat von AEM 6.5 initiiert wurde, kann das Repository nicht mehr in das Persistenzformat von AEM 6.3 zurückgesetzt werden.</strong></p> </td>
-  </tr>
- </tbody>
-</table>
-
-### Migrieren zum Oak-Segment-TAR {#migrating-to-oak-segment-tar}
-
-<table style="table-layout:auto">
- <tbody>
-  <tr>
-   <td><strong>Fragen</strong></td>
-   <td><strong>Antworten</strong></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Warum muss ich das Repository migrieren?</strong></td>
-   <td><p>In AEM 6.3 mussten Änderungen am Speicherformat durchgeführt werden, um insbesondere die Leistung und die Effektivität der Online-Revisionsbereinigung zu verbessern. Diese Änderungen sind nicht abwärtskompatibel, und Repositorys, die mit dem alten Oak-Segment (AEM 6.2 und früher) erstellt wurden, müssen migriert werden.</p> <p>Weitere Vorteile der Änderung des Speicherformats:</p>
-    <ul>
-     <li>Bessere Skalierbarkeit (optimierte Segmentgröße).</li>
-     <li>Schnellere <a href="/help/sites-administering/data-store-garbage-collection.md" target="_blank">Datenspeicherbereinigung</a>.<br /> </li>
-     <li>Grundlage für zukünftige Verbesserungen.</li>
-    </ul> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Wird das vorherige TAR-Format weiterhin unterstützt?</strong></td>
-   <td>Nur das neue Oak Segment Tar wird von AEM 6.3 oder höher unterstützt.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Ist die Migration des Inhalts immer obligatorisch?</strong></td>
-   <td>Ja. Wenn Sie nicht mit einer neuen Instanz beginnen, müssen Sie den Inhalt immer migrieren.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Kann ich auf 6.3 oder höher aktualisieren und die Migration zu einem späteren Zeitpunkt durchführen (zum Beispiel in einem anderen Wartungsfenster)?</strong></td>
-   <td>Nein, wie oben beschrieben, ist die Migration obligatorisch.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Kann die Ausfallzeit für die Migration vermieden werden?</strong></td>
-   <td>Nein. Dies ist ein einmaliger Aufwand, der nicht auf einer laufenden Instanz ausgeführt werden kann.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Was passiert, wenn ich versehentlich das falsche Repository-Format verwende?</strong></td>
-   <td>Wenn Sie versuchen, das Oak-Segment-Modul mit einem Oak-Segment-Tar-Repository auszuführen (oder umgekehrt), schlägt der Start mit dem Fehler <em>IllegalStateException</em> und der Meldung fehl, dass das Segmentformat ungültig ist. Es werden jedoch keine Daten beschädigt.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Müssen die Suchindizes neu indiziert werden? </strong></td>
-   <td>Nein. Bei der Migration vom Oak-Segment-Format zum Oak-Segment-Tar-Format findet eine Änderung des Container-Formats statt. Die enthaltenen Daten sind davon nicht betroffen und werden nicht geändert.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Wie kann ich den während und nach der Migration erforderlichen Speicherplatz am besten berechnen?</strong></td>
-   <td>Die Migration entspricht der Neuerstellung des Segmentspeichers in dem neuen Format. Auf Basis dieser Annahme können Sie den zusätzlich für die Migration erforderlichen Festplattenspeicher berechnen. Nach der Migration kann der alte Segmentspeicher gelöscht werden, um Speicherplatz zurückzugewinnen.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Wie kann ich die Dauer der Migration am besten abschätzen?</strong></td>
-   <td>Die Migrationsleistung kann erheblich verbessert werden, wenn vor der Migration eine <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup">Offline-Revisionsbereinigung</a> durchgeführt wird. Allen Kunden wird empfohlen, diese als Voraussetzung für die Aktualisierung auszuführen. Im Allgemeinen sollte die Dauer der Migration der Dauer der Aufgabe zur Bereinigung der Offline-Revision ähnlich sein, vorausgesetzt, dass die Aufgabe zur Bereinigung der Offline-Revision vor der Migration ausgeführt wurde.</td>
-   <td> </td>
-  </tr>
- </tbody>
-</table>
 
 ### Ausführen der Online-Revisionsbereinigung {#running-online-revision-cleanup}
 
@@ -243,11 +163,6 @@ Manchmal verzögert der Wechsel zwischen dem Tail- und dem vollständigen Kompri
   <tr>
    <td><strong>Haben Autoren- und Veröffentlichungsumgebungen in der Regel verschiedene Fenster für die Online-Revisionsbereinigung?</strong></td>
    <td>Dies hängt von den Arbeitszeiten und den Traffic-Mustern der Online-Präsenz für Kunden ab. Die Wartungsfenster sollten außerhalb der Hauptproduktionszeiten liegen, um die Bereinigung so effizient wie möglich durchzuführen. Bei mehreren AEM-Veröffentlichungsinstanzen (TarMK-Farm) empfiehlt es sich, die Wartungsfenster für die Online-Revisionsbereinigung zu staffeln.</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Müssen vor dem Ausführen der Online-Revisionsbereinigung irgendwelche Voraussetzungen erfüllt sein?</strong></td>
-   <td><p>Die Online-Revisionsbereinigung ist nur mit AEM 6.3 und höheren Versionen verfügbar. Wenn Sie daher eine ältere Version von AEM verwenden, müssen Sie zum neuen <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Oak-Segment-Tar</a> migrieren.</p> </td>
    <td> </td>
   </tr>
   <tr>

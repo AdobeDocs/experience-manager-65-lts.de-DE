@@ -3,7 +3,6 @@ title: Gestalten von Stilen für Adobe Experience Manager CIF-Kernkomponenten
 description: Erfahren Sie, wie Sie Stile für Adobe Experience Manager CIF-Kernkomponenten gestalten können.  In diesem Tutorial wird beschrieben, wie sich Client-seitige Bibliotheken (auch clientlibs genannt) zum Bereitstellen und Verwalten von CSS- und JavaScript-Dateien für eine Adobe Experience Manager (AEM) Commerce-Implementierung verwenden lassen. Zudem wird in dem Tutorial erläutert, wie sich das ui.frontend-Modul und ein webpack-Projekt in den End-to-End-Build-Prozess integrieren lassen.
 sub-product: Commerce
 topics: Development
-version: Cloud Service
 doc-type: tutorial
 feature: Commerce Integration Framework
 kt: 3456
@@ -11,7 +10,7 @@ thumbnail: 3456-style-cif.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 92689d52-6485-4cd5-a04f-4738096a0dba
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d571dc696e42bae873cd58f2e7f321bd3002f42e
 workflow-type: tm+mt
 source-wordcount: '2338'
 ht-degree: 100%
