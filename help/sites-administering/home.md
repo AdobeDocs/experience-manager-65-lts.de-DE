@@ -1,20 +1,20 @@
 ---
-title: AEM 6.5-Administratorenanleitung
-description: Erfahren Sie mehr über die Verwaltung von AEM 6.5. Diese Handbücher decken Site-Funktionen, Bereitstellungsvorgänge, Sicherheitsfunktionen, Personalisierung, Integration und mehr ab.
+title: Benutzerhandbuch für AEM 6.5 LTS-Administratoren
+description: Informationen zur Verwaltung von AEM 6.5 LTS. Diese Handbücher behandeln Site-Funktionen, Bereitstellungsvorgänge, Sicherheitsfunktionen, Personalisierung, Integration und mehr.
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 1ef575fc-5fc4-43ca-978e-911118dad438
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3db401e19e0d819760acb3b470d0beda2c16dc5d
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 100%
+source-wordcount: '67'
+ht-degree: 25%
 
 ---
 
-# AEM 6.5-Administratorenanleitung
+# Benutzerhandbuch für AEM 6.5 LTS-Administratoren
 
-Erfahren Sie mehr über die Verwaltung von AEM 6.5. Diese Handbücher decken Site-Funktionen, Bereitstellungsvorgänge, Sicherheitsfunktionen, Personalisierung, Integration und mehr ab.
+Informationen zur Verwaltung von AEM 6.5 LTS. Diese Handbücher behandeln Site-Funktionen, Bereitstellungsvorgänge, Sicherheitsfunktionen, Personalisierung, Integration und mehr.
 
 ## Wichtige Artikel zur Verwaltung
 
