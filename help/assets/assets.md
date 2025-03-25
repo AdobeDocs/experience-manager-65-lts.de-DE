@@ -1,6 +1,6 @@
 ---
 title: Einführung in  [!DNL Adobe Experience Manager Assets]
-description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets in Experience Manager. In diesen Handbüchern werden Best Practices, Barrierefreiheitsfunktionen und die Verwendung von AEM 6.5 LTS-Assets beschrieben.
+description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets in Experience Manager. In diesen Handbüchern werden Best Practices, Barrierefreiheitsfunktionen und die Verwendung von AEM 6.5 LTS-Assets beschrieben.
 hide: true
 feature: Asset Management
 role: Leader, Architect, User
@@ -9,7 +9,7 @@ exl-id: 2f2eb576-4924-4314-b348-c4b290a57fe3
 source-git-commit: aafd340d9ef03f9bf12ed23aad5eb03dc055af38
 workflow-type: tm+mt
 source-wordcount: '902'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
