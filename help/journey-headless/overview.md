@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Developing,Content Fragments
 role: Admin, Developer
 exl-id: 77f797c8-d8ed-42ea-ad5f-988d976e0ce5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7e1d05c2c6bda15632d49aaecfd931238ae25e79
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -48,7 +48,7 @@ Die folgenden Dokumentations-Touren sind für Headless-Themen verfügbar.
 |---|---|---|
 | [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) | Erfahren Sie mehr über Headless-Technologien, was sie für das Benutzererlebnis bedeuten, wie AEM Headless-Modelle unterstützt und wie Sie Ihr eigenes Headless-Entwicklungsprojekt von A bis Z implementieren können. | Entwickler |
 | [Headless-Übersetzungs-Tour](/help/journey-headless/translation/overview.md) | Erfahren Sie mehr über Headless-Technologien, darüber, warum sie in Ihrem Projekt verwendet werden können und wie Sie Übersetzungsprojekte in AEM von A bis Z erstellen und aktualisieren. | Übersetzungsspezialisten |
-| [Headless-Authoring-Tour](/help/journey-headless/author/overview.md) | Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistungsstarken und flexiblen Headless-Funktionen von AEM und deren Möglichkeiten. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Projekt Inhalte modellieren können. | Architekten |
-| [Headless-Architekten-Tour](/help/journey-headless/architect/overview.md) | Beginnen Sie hier mit einer Einführung in die leistungsstarken, flexiblen, Headless-Funktionen von Adobe Experience Manager as a Cloud Service und erfahren Sie, wie Sie Inhalte für Ihr Projekt modellieren können. | Ersteller und Autoren von Inhalten |
+| [Headless-Architekten-Tour](/help/journey-headless/architect/overview.md) | Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistungsstarken und flexiblen Headless-Funktionen von AEM und deren Möglichkeiten. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Projekt Inhalte modellieren können. | Architekten |
+| [Headless-Authoring-Tour](/help/journey-headless/author/overview.md) | Beginnen Sie hier mit einer Einführung in die leistungsstarken, flexiblen, Headless-Funktionen von Adobe Experience Manager as a Cloud Service und erfahren Sie, wie Sie Inhalte für Ihr Projekt erstellen. | Ersteller und Autoren von Inhalten |
 
 Freuen Sie sich auf [neue Touren, mit denen wir künftig auf weitere Rollen eingehen.](/help/journey-documentation/home.md#journeys)
