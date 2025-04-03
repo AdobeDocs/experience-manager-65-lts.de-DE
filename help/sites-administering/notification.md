@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 3ef72c05-1301-402e-94ce-49fbaf26fb98
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: aff6c41e13293a1c83eca226354f5c16cff18d99
 workflow-type: tm+mt
-source-wordcount: '2149'
-ht-degree: 99%
+source-wordcount: '2147'
+ht-degree: 98%
 
 ---
 
@@ -83,7 +83,7 @@ Gehen Sie wie folgt vor, um den Knoten in den Quellordnern des Inhaltspakets zu 
 
 ## Konfigurieren des E-Mail-Benachrichtigungsdiensts für Workflows {#configuring-the-workflow-email-notification-service}
 
-Wenn Sie E-Mail-Benachrichtigungen durch den Workflow erhalten, werden sowohl die E-Mail-Adresse als auch das Host-URL-Präfix auf Standardwerte gesetzt. Sie können diese Werte ändern, indem Sie den **Day CQ-E-Mail-Benachrichtigungsdienst für Workflows** in der Web-Konsole konfigurieren. Falls Sie dies tun, wird empfohlen, die Änderung im Repository beizubehalten.
+Wenn Sie E-Mail-Benachrichtigungen durch den Workflow erhalten, werden sowohl die E-Mail-Adresse als auch das Host-URL-Präfix auf Standardwerte gesetzt. Sie können diese Werte ändern, indem Sie den **Day CQ-E-Mail-Benachrichtigungsdienst für Workflows** in der Web-Konsole konfigurieren. In diesem Fall müssen Sie die Änderung im Repository beibehalten.
 
 Die Standardkonfiguration sieht in der Web-Konsole wie folgt aus:
 
