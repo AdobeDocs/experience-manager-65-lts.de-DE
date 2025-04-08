@@ -1,6 +1,6 @@
 ---
-title: Speicherelemente in AEM 6.5
-description: Erfahren Sie mehr über die in AEM 6.5 verfügbaren Implementierungen des Knotenspeichers und über die Pflege des Repositorys.
+title: Speicherelemente in AEM 6.5 LTS
+description: Erfahren Sie mehr über die in AEM 6.5 LTS verfügbaren Knotenspeicher-Implementierungen und die Wartung des Repositorys.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -10,35 +10,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: e51842b5-fa91-42d2-a490-5a7e867dada7
-source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 92%
+source-wordcount: '712'
+ht-degree: 75%
 
 ---
 
-# Speicherelemente in AEM 6.5{#storage-elements-in-aem}
+# Speicherelemente in AEM 6.5 LTS{#storage-elements-in-aem}
 
 Dieser Artikel behandelt Folgendes:
 
-* [Überblick über Speicher in AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
+* [Überblick über Speicher in AEM 6.5 LTS](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
 * [Warten von Repositorys](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)
 
-## Überblick über Speicher in AEM 6 {#overview-of-storage-in-aem}
+## Überblick über Speicher in AEM 6.5 LTS {#overview-of-storage-in-aem}
 
-Eine der wichtigsten Änderungen in AEM 6 sind die Innovationen auf Repository-Ebene.
+Eine der wichtigsten Änderungen in AEM 6.5 LTS sind die Neuerungen auf Repository-Ebene.
 
-Derzeit stehen in AEM 6 zwei Knotenspeicher zur Verfügung: der TAR-Speicher und der MongoDB-Speicher.
+Derzeit stehen in AEM 6.5 LTS zwei Knotenspeicher zur Verfügung: der TAR-Speicher und der MongoDB-Speicher.
 
 ### Tar-Speicher {#tar-storage}
 
 #### Ausführen einer neu installierten AEM-Instanz mit TAR-Speicher {#running-a-freshly-installed-aem-instance-with-tar-storage}
 
->[!CAUTION]
->
->Die PID für den Segment-Knotenspeicher wurde von org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService in früheren Versionen von AEM 6 auf org.apache.jackrabbit.oak.segment.SegmentNodeStoreService in AEM 6.3 geändert. Stellen Sie sicher, dass die erforderlichen Konfigurationsanpassungen vorgenommen werden, damit die Änderungen übernommen werden.
-
-Standardmäßig verwendet AEM 6 den TAR-Speicher zum Speichern von Knoten und Binärdateien mit den Standardkonfigurationsoptionen. Sie können die Speichereinstellungen manuell wie folgt konfigurieren:
+Standardmäßig verwendet AEM 6.5 LTS den TAR-Speicher zum Speichern von Knoten und Binärdateien. Dabei werden die Standardkonfigurationsoptionen verwendet. Sie können die Speichereinstellungen manuell wie folgt konfigurieren:
 
 1. Laden Sie die Schnellstart-JAR-Datei für AEM 6.5 LTS herunter und legen Sie sie in einem neuen Ordner ab.
 1. Entpacken Sie AEM durch Ausführen:
@@ -47,7 +43,7 @@ Standardmäßig verwendet AEM 6 den TAR-Speicher zum Speichern von Knoten und Bi
 
 1. Erstellen Sie den Ordner `crx-quickstart\install` im Installationsverzeichnis.
 
-1. Erstellen Sie die Datei `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` im neu erstellten Ordner.
+1. Erstellen Sie die Datei `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` im neu erstellten Ordner.
 
 1. Bearbeiten Sie die Datei, um die Konfigurationsoptionen festzulegen. Die folgenden Optionen sind für den Segmentknotenspeicher verfügbar, der die Grundlage für TAR-Speicherimplementierung von AEM bildet:
 
@@ -57,6 +53,10 @@ Standardmäßig verwendet AEM 6 den TAR-Speicher zum Speichern von Knoten und Bi
 1. Starten Sie AEM.
 
 ### Mongo-Speicher {#mongo-storage}
+
+>[!NOTE]
+>
+>Die minimal unterstützte Version von Mongo ist Mongo 6.
 
 #### Ausführen einer neu installierten AEM-Instanz mit Mongo-Speicher {#running-a-freshly-installed-aem-instance-with-mongo-storage}
 
@@ -71,12 +71,12 @@ AEM 6.5 LTS kann mithilfe des folgenden Verfahrens für die Ausführung mit Mong
 1. Erstellen Sie den Ordner `crx-quickstart\install` im Installationsverzeichnis.
 1. Konfigurieren Sie den Knotenspeicher. Erstellen Sie dazu eine Konfigurationsdatei mit dem Namen der Konfiguration, die Sie im Verzeichnis `crx-quickstart\install` verwenden möchten.
 
-   Der Document-Knotenspeicher (auf dem die Implementierung von MongoDB-Speicher in AEM basiert) verwendet die Datei `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`.
+   Der Document-Knotenspeicher (auf dem die Implementierung von MongoDB-Speicher in AEM basiert) verwendet die Datei `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`.
 
 1. Bearbeiten Sie die Datei, um die gewünschten Konfigurationsoptionen festzulegen. Die folgenden Optionen sind verfügbar:
 
    * `mongouri`: Die für die Verbindung mit der Mongo-Datenbank erforderliche [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/). Standard: `mongodb://localhost:27017`
-   * `db`: Name der Mongo-Datenbank. Standardmäßig wird bei AEM 6-Installationen **aem-author** als Datenbankname verwendet.
+   * `db`: Name der Mongo-Datenbank. Standardmäßig wird bei AEM 6.5 LTS-Installationen **aem-author** als Datenbankname verwendet.
    * `cache`: Die Cachegröße in Megabyte. Dieser Wert verteilt sich auf die verschiedenen in DocumentNodeStore verwendeten Caches. Der Standardwert lautet 256.
    * `changesSize`: Größe (in MB) der begrenzten Sammlung, die in Mongo zum Caching unterschiedlicher Ausgaben verwendet wird. Der Standardwert lautet 256.
    * `customBlobStore`: Boolescher Wert, der angibt, dass ein benutzerdefinierter Datenspeicher verwendet wird. Der Standardwert lautet „false“.

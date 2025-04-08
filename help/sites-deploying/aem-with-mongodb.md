@@ -12,14 +12,18 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: b87199e70b4fefc345c86eabbe89054d4b240e95
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '6217'
-ht-degree: 99%
+source-wordcount: '5965'
+ht-degree: 98%
 
 ---
 
 # Adobe Experience Manager mit MongoDB{#aem-with-mongodb}
+
+>[!NOTE]
+>
+>Die minimal unterstützte Version von Mongo ist Mongo 6.
 
 Dieser Artikel soll das Wissen über Aufgaben und Überlegungen verbessern, die für die erfolgreiche Bereitstellung von AEM (Adobe Experience Manager) mit MongoDB erforderlich sind.
 
@@ -74,8 +78,6 @@ Um den Lese- und Schreibdurchsatz für optimale Leistung ohne vorzeitige horizon
 
 ### RAM {#ram}
 
-MongoDB-Versionen 2.6 und 3.0, die die MMAP-Speicher-Engine verwenden, erfordern, dass der Arbeitssatz der Datenbank und deren Indizes in den Arbeitsspeicher passen.
-
 Unzureichender Arbeitsspeicher führt zu einer deutlichen Leistungsminderung. Die Größe des Workflows und der Datenbank hängt stark von der Anwendung ab. Während einige Schätzungen vorgenommen werden können, ist die zuverlässigste Methode, den erforderlichen Arbeitsspeicher zu bestimmen, die AEM-Anwendung zu erstellen und Lasttests durchzuführen.
 
 Um den Lasttestvorgang zu unterstützen, kann das folgende Verhältnis zwischen dem Arbeitssatz und der gesamten Datenbankgröße angenommen werden:
@@ -85,11 +87,9 @@ Um den Lasttestvorgang zu unterstützen, kann das folgende Verhältnis zwischen 
 
 Diese Verhältnisse bedeuten, dass für SSD-Bereitstellungen 200 GB RAM für eine 2 TB große Datenbank erforderlich sind.
 
-Die gleichen Einschränkungen gelten für das WiredTiger-Speichermodul in MongoDB 3.0, aber die Korrelation zwischen Arbeitsset, RAM und Seitenfehlern ist nicht so stark. WiredTiger verwendet die Speicherzuordnung nicht auf die gleiche Weise wie die MMAP-Speicher-Engine.
-
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung der WiredTiger-Speicher-Engine für AEM 6.1-Bereitstellungen, die MongoDB 3.0 verwenden.
+>Adobe empfiehlt die Verwendung der WiredTiger-Speicher-Engine für AEM 6.5 LTS-Bereitstellungen, die MongoDB 6 oder höher verwenden.
 
 ### Datenspeicher {#data-store}
 
@@ -235,8 +235,6 @@ Es wird empfohlen, eine persistente Cache-Konfiguration für MongoDB-Bereitstell
 
 ### Betriebssystemunterstützung {#operating-system-support}
 
-MongoDB 2.6 nutzt ein Speichermodul mit Speicherzuordnung, das auf einige Aspekte der Verwaltung der Betriebssystemebene zwischen RAM und Datenträger empfindlich reagiert. Die Abfrage- und Leseleistung der MongoDB-Instanz beruht darauf, langsame I/O-Vorgänge, die häufig als Seitenfehler bezeichnet werden, zu vermeiden oder zu beseitigen. Bei diesen Problemen handelt es sich um Seitenfehler, die insbesondere für den Prozess `mongod` gelten. Verwechseln Sie sie nicht mit Seitenfehlern auf Betriebssystemebene.
-
 Für einen schnellen Betrieb sollte die MongoDB-Datenbank nur auf Daten zugreifen, die sich bereits im RAM befinden. Die Daten, auf die sie zugreifen muss, bestehen aus Indizes und Daten. Diese Sammlung von Indizes und Daten wird als Arbeitssatz bezeichnet. Wenn der Arbeitssatz größer als der verfügbare RAM ist, muss MongoDB diese Daten von der Festplatte auslagern, was I/O-Kosten verursacht, und andere Daten, die bereits im Speicher sind, entfernen. Wenn die Entfernung dazu führt, dass Daten von der Festplatte neu geladen werden, dominieren Seitenfehler und die Leistung sinkt. Bei einem dynamischen und variablen Arbeitssatz tritt bei Support-Vorgängen eine größere Anzahl von Seitenfehlern auf.
 
 MongoDB läuft auf verschiedenen Betriebssystemen, einschließlich einer Vielzahl von Linux®-Versionen, Windows und macOS. Siehe [https://docs.mongodb.com/manual/installation/#supported-platforms](https://docs.mongodb.com/manual/installation/#supported-platforms) für weitere Details. Je nach Wahl Ihres Betriebssystems bietet MongoDB verschiedene Empfehlungen auf Betriebssystemebene. Diese sind unter [https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration](https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration) dokumentiert und werden hier lediglich zusammengefasst.
@@ -246,7 +244,6 @@ MongoDB läuft auf verschiedenen Betriebssystemen, einschließlich einer Vielzah
 * Deaktivieren Sie transparente Hugepages und Defragmentierung. Siehe [Transparente Huge Pages Einstellungen](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) für weitere Informationen.
 * [Passen Sie die Einstellungen für readahead](https://docs.mongodb.com/manual/administration/production-notes/#readahead) auf den Geräten an, auf denen Ihre Datenbankdateien gespeichert werden, sodass Sie zu Ihrem Anwendungsfall passen.
 
-   * Wenn Ihr Arbeitssatz größer als der verfügbare Arbeitsspeicher und das Muster für den Dokumentzugriff zufällig ist, müssen Sie readahead für die MMAPv1-Speicher-Engine eventuell auf 32 oder 16 herabsetzen. Evaluieren Sie verschiedene Einstellungen, damit Sie einen optimalen Wert finden können, der den residierenden Speicher maximiert und die Anzahl der Seitenfehler verringert.
    * Für die WiredTiger-Speicher-Engine setzen Sie readahead auf 0, unabhängig von der Art des Speichermediums (Spinning, SSD, etc.). Verwenden Sie im Allgemeinen die empfohlene readahead-Einstellung, es sei denn, Tests zeigen einen messbaren, wiederholbaren und zuverlässigen Nutzen in einem höheren readahead-Wert. [Der professionelle Support von MongoDB](https://docs.mongodb.com/manual/administration/production-notes/#readahead) kann Sie beim Konfigurieren von readahead mit anderen Werten unterstützen.
 
 * Deaktivieren Sie das angepasste Tool, wenn Sie RHEL 7 / CentOS 7 in einer virtuellen Umgebung ausführen.
@@ -358,11 +355,13 @@ Informationen zum Anpassen der Größe des internen WiredTiger-Cache finden Sie 
 
 ### NUMA {#numa}
 
-NUMA (Non-Uniform Memory Access) ermöglicht es einem Kernel zu verwalten, wie Speicher den Prozessorkernen zugeordnet wird. Obwohl dieser Prozess versucht, den Speicherzugriff für die Kerne zu beschleunigen, um sicherzustellen, dass sie auf die benötigten Daten zugreifen können, beeinträchtigt NUMA MMAP und führt zusätzliche Latenzzeiten ein, da Lesevorgänge nicht vorhergesagt werden können. Daher muss NUMA für den `mongod`-Prozess auf allen fähigen Betriebssystemen deaktiviert werden.
+NUMA (Non-Uniform Memory Access) ermöglicht es einem Kernel zu verwalten, wie Speicher den Prozessorkernen zugeordnet wird.
 
 Im Wesentlichen ist in einer NUMA-Architektur der Speicher mit den CPUs verbunden und die CPUs sind mit einem Bus verbunden. In einer SMP- oder UMA-Architektur ist der Speicher mit dem Bus verbunden und wird von den CPUs gemeinsam genutzt. Wenn ein Thread Speicher auf einer NUMA-CPU zuweist, wird er gemäß einer Richtlinie zugewiesen. Standardmäßig wird Speicher zugeordnet, der an die lokale CPU des Threads angebunden ist, es sei denn, es ist keine freie vorhanden. In einem solchen Fall wird dann Speicher von einer freien CPU verwendet, allerdings mit höherem Aufwand. Nach der Zuordnung wechselt der Speicher nicht mehr zwischen den CPUs. Die Zuordnung erfolgt anhand einer Richtlinie, die vom übergeordneten Thread vererbt wird. Letztendlich ist dies der Thread, über den der Prozess gestartet wurde.
 
-In vielen Datenbanken, die den Computer als eine mehrfache, einheitliche Speicherarchitektur betrachten, führt dieses Szenario dazu, dass die anfängliche CPU zuerst voll wird und die sekundäre CPU erst später gefüllt wird. Dies gilt insbesondere dann, wenn ein zentraler Thread für die Zuordnung von Speicherpuffern verantwortlich ist. Zur Lösung muss mithilfe des folgenden Befehls die NUMA-Richtlinie des Haupt-Threads geändert werden, mit dem der `mongod`-Prozess gestartet wird:
+Das Ausführen von MongoDB auf einem System mit NUMA (Non-Uniform Memory Access) kann zu einer Reihe von Betriebsproblemen führen, darunter langsame Leistung über einen bestimmten Zeitraum, die Unfähigkeit, den gesamten verfügbaren RAM zu verwenden, und eine hohe Nutzung der Systemprozesse.
+
+Zur Lösung muss mithilfe des folgenden Befehls die NUMA-Richtlinie des Haupt-Threads geändert werden, mit dem der `mongod`-Prozess gestartet wird:
 
 ```shell
 numactl --interleaved=all <mongod> -f config
@@ -676,10 +675,6 @@ Allgemeine Informationen zur MongoDB-Leistung finden Sie unter [Analysieren der 
 Die gleichzeitige Verwendung mehrerer AEM Instanzen mit einer einzigen Datenbank wird von MongoMK zwar unterstützt, parallele Installationen jedoch nicht.
 
 Um dieses Problem zu umgehen, führen Sie zuerst die Installation mit nur einer Instanz aus und fügen Sie erst nach deren Abschluss weitere hinzu.
-
-### Länge des Seitennamens {#page-name-length}
-
-Wenn AEM auf einer MongoMK-Persistenz-Manager-Bereitstellung ausgeführt wird, sind [Seitennamen auf 150 Zeichen beschränkt](/help/sites-authoring/managing-pages.md).
 
 >[!NOTE]
 >

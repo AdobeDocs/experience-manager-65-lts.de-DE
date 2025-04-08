@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6
+title: Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6.5 LTS
 description: Erfahren Sie, wie Knotenspeicher bzw. Datenspeicher konfiguriert werden und wie eine automatische Bereinigung des Datenspeichers durchgeführt wird.
 content-type: reference
 topic-tags: deploying
@@ -10,14 +10,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '3461'
-ht-degree: 100%
+source-wordcount: '3330'
+ht-degree: 94%
 
 ---
 
-# Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6 {#configuring-node-stores-and-data-stores-in-aem}
+# Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6.5 LTS{#configuring-node-stores-and-data-stores-in-aem}
 
 ## Einführung {#introduction}
 
@@ -46,19 +46,10 @@ Führen Sie die folgenden Schritte aus, um sowohl den Knotenspeicher als auch de
 
 ## Knotenspeicher-Konfigurationen {#node-store-configurations}
 
->[!CAUTION]
->
->Neuere Versionen von Oak nutzen ein neues Benennungsschema und Format für OSGi-Konfigurationsdateien. Das neue Benennungsschema setzt voraus, dass die Konfigurationsdatei mit **.config** benannt wird. Das neue Format erfordert die Eingabe von Werten. Weitere Informationen finden Sie unter [Apache Sling-Bereitstellungsmodell und Apache SlingStart –Standardkonfigurationsformat](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
->
->Wenn Sie von einer älteren Oak-Version aktualisieren, stellen Sie sicher, dass Sie zunächst den Ordner `crx-quickstart/install` sichern. Stellen Sie nach dem Upgrade den Inhalt des Ordners in der aktualisierten Installation wieder her und ändern Sie die Erweiterung der Konfigurationsdateien von **.cfg** zu **.config**.
-
 ### Segmentknotenspeicher {#segment-node-store}
 
-Der Segmentknotenspeicher ist die Grundlage für die Adobe-AEM6-TarMK-Implementierung. Zur Konfiguration wird die PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` verwendet.
+Der Segmentknotenspeicher ist die Grundlage für die TarMK-Implementierung von Adobe in AEM 6.5 LTS. Zur Konfiguration wird die PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` verwendet.
 
->[!CAUTION]
->
->Die PID für den Segment-Knotenspeicher hat sich von `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` in AEM 6 zu `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` in AEM 6.3 geändert. Stellen Sie sicher, dass Sie die erforderlichen Konfigurationsanpassungen vornehmen, um diese Änderung widerzuspiegeln.
 
 Sie können die folgenden Optionen konfigurieren:
 
@@ -86,7 +77,7 @@ Der Dokumentenknotenspeicher bildet die Grundlage der AEM-MongoMK-Implementierun
 
 * `mongouri`: Die für die Verbindung zur Mongo-Datenbank erforderliche [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/). Standard: `mongodb://localhost:27017`
 
-* `db`: Name der Mongo-Datenbank. Der Standardwert ist **Oak** ``. However, new AEM 6 installations use **aem-author** `` als standardmäßigen Datenbanknamen.
+* `db`: Name der Mongo-Datenbank. Der Standardwert lautet **aem-author**.
 
 * `cache`: Cache-Größe in MB. Dieser Wert verteilt sich auf die verschiedenen in DocumentNodeStore verwendeten Caches. Standard: `256`
 
@@ -143,9 +134,9 @@ AEM kann so konfiguriert werden, dass Daten im Simple Storage Service (S3) von A
 
 >[!NOTE]
 >
->AEM 6.5 unterstützt das Speichern von Daten in Amazon S3. Die Unterstützung wird jedoch nicht auf das Speichern von Daten auf anderen Plattformen ausgeweitet, deren Anbieter möglicherweise eigene Implementierungen der Amazon S3-APIs haben.
+>AEM 6.5 LTS unterstützt das Speichern von Daten in Amazon S3. Die Unterstützung wird jedoch nicht auf das Speichern von Daten in anderen Plattformen erweitert, deren Anbieter möglicherweise über eigene Implementierungen der S3-APIs von Amazon verfügen.
 
-Zur Aktivierung der S3-Datenspeicherfunktionalität muss ein Feature Pack mit dem S3-Datenspeicher-Connector heruntergeladen und installiert werden. Gehen Sie zum [Adobe-Repository](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) und laden Sie die neueste Version der 1.10.x-Versionen des Feature Packs herunter (z. B. com.adobe.granite.oak.s3connector-1.10.0.zip). Darüber hinaus müssen Sie auch das neueste AEM Service Pack herunterladen und installieren, das auf der Seite [Versionshinweise zu AEM 6.5](/help/release-notes/release-notes.md) aufgeführt ist.
+Zur Aktivierung der S3-Datenspeicherfunktionalität muss ein Feature Pack mit dem S3-Datenspeicher-Connector heruntergeladen und installiert werden. Gehen Sie zum [Adobe-Repository](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) und laden Sie die neueste Version der 1.60.x-Versionen des Feature Packs herunter (z. B. com.adobe.granite.oak.s3connector-1.60.2.zip). Außerdem müssen Sie das neueste AEM Service Pack herunterladen und installieren, das auf der Seite [Versionshinweise zu AEM 6.5 LTS](/help/release-notes/release-notes.md) aufgeführt ist.
 
 >[!NOTE]
 >
@@ -189,9 +180,9 @@ Nach dem Download können Sie den S3-Connector wie folgt installieren und konfig
 1. Bearbeiten Sie die Datei und fügen Sie die für Ihre Einrichtung erforderlichen Konfigurationsoptionen hinzu.
 1. Starten Sie AEM.
 
-## Aktualisieren auf eine neue Version des 1.10.x S3-Connectors {#upgrading-to-a-new-version-of-the-s-connector}
+## Aktualisieren auf eine neue Version des 1.60.x S3-Connectors {#upgrading-to-a-new-version-of-the-s-connector}
 
-Wenn Sie auf eine neue Version des 1.10.x S3-Connectors aktualisieren (z. B. von 1.10.0 auf 1.10.4), führen Sie die folgenden Schritte aus:
+Gehen Sie wie folgt vor, um auf eine neue Version des S3-Connectors 1.60.x zu aktualisieren:
 
 1. Halten Sie die AEM-Instanz an.
 
@@ -205,7 +196,7 @@ Wenn Sie auf eine neue Version des 1.10.x S3-Connectors aktualisieren (z. B. vo
    >
    >Die oben aufgeführten Dateinamen dienen nur zu Veranschaulichungszwecken.
 
-1. Laden Sie die neueste Version des Feature Packs 1.10.x aus dem [Adobe-Repository](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) herunter.
+1. Laden Sie die neueste Version des Feature Packs 1.60.x von der [Software Distribution.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/s3-connector/6-5-lts/com.adobe.granite.oak.s3connector-1.60.2.zip)
 1. Entpacken Sie den Inhalt in einen anderen Ordner und navigieren Sie dann zu `jcr_root/libs/system/install/15`.
 1. Kopieren Sie die JAR-Dateien nach **&lt;aem-install>**/crx-quickstart/install/15 im AEM-Installationsverzeichnis.
 1. Starten Sie AEM und überprüfen Sie die Funktionsweise des Connectors.
@@ -413,7 +404,7 @@ Die folgenden Schritte sind erforderlich, um nicht binäre Replikationen mit S3 
 
 AEM kann so konfiguriert werden, dass Daten im Microsoft® Azure Storage-Dienst gespeichert werden. Zur Konfiguration wird die PID `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` verwendet.
 
-Zur Aktivierung der Datenspeicherfunktionalität von Azure muss ein Feature Pack mit dem Azure-Connector heruntergeladen und installiert werden. Gehen Sie zum [Adobe-Repository](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) und laden Sie die neueste der 1.6.x-Versionen des Feature Packs herunter (z. B. com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+Zur Aktivierung der Datenspeicherfunktionalität von Azure muss ein Feature Pack mit dem Azure-Connector heruntergeladen und installiert werden. Gehen Sie zu [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/azure-connector/6-5-lts/com.adobe.granite.oak.azureblobconnector-1.9.16.zip) und laden Sie die neueste Version der 1.9.x-Versionen des Feature Packs herunter (z. B. com.adobe.granite.oak.azureblobconnector-1.9.16.zip).
 
 >[!NOTE]
 >
