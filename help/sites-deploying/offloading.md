@@ -11,10 +11,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c0b285b7-3b20-4412-88b8-04de4a703f42
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
 workflow-type: tm+mt
-source-wordcount: '2318'
-ht-degree: 99%
+source-wordcount: '2323'
+ht-degree: 98%
 
 ---
 
@@ -80,9 +80,9 @@ Für jede Instanz des Clusters werden verschiedene topologiebezogene Eigenschaft
 * Die Aufgabenthemen, für die die Instanz zum Auslagern registriert ist.
 * Die Aufgabenthemen, die die Instanz verarbeitet.
 
-1. Klicken Sie in der Touch-Benutzeroberfläche auf die Registerkarte „Tools“. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
-1. Klicken Sie im Bereich „Granite-Vorgänge“ auf „Browser-Abladung“.
-1. Klicken Sie im Navigationsbereich auf „Topologie-Browser“.
+1. Klicken Sie in der Touch-Benutzeroberfläche auf die Registerkarte „Tools“. ([http://localhost:4502/aem/start.html](http://localhost:4502/aem/start.html))
+1. Um die Abladung anzuzeigen, klicken Sie im Abschnitt Bereitstellung auf Kachel Abladung .
+1. Um die Topologie anzuzeigen, klicken Sie im Abschnitt Bereitstellung auf Topologie .
 
    Die Cluster, die an der Topologie beteiligt sind, werden angezeigt.
 
@@ -100,7 +100,7 @@ Sie können auch die Web-Konsole zum Anzeigen von Topologie-Informationen verwen
 Gehen Sie wie folgt vor, um die Seite „Topology Management“ der Web-Konsole zu öffnen:
 
 1. Öffnen Sie die Web-Konsole in Ihrem Browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
-1. Klicken Sie auf das Hauptmenü > „Topologieverwaltung“.
+1. Klicken Sie auf Sling > Topology Management.
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
