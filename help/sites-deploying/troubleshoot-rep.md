@@ -12,10 +12,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '1224'
-ht-degree: 100%
+source-wordcount: '1221'
+ht-degree: 96%
 
 ---
 
@@ -33,8 +33,7 @@ Es gibt verschiedene Gründe, warum eine Replikation fehlschlägt. Dieser Artike
 
 **Werden beim Klicken auf die Schaltfläche „Aktivieren“ irgendwelche Replikationen ausgelöst? Falls NICHT, gehen Sie wie folgt vor:**
 
-1. Wechseln Sie zu /crx/explorer und melden Sie sich als Admin an.
-1. Öffnen Sie „Content Explorer“
+1. Navigieren Sie zu /crx/de/index.jsp und melden Sie sich als Administrator an.
 1. Überprüfen Sie, ob der Knoten „/bin/replicate“ oder „/bin/replicate.json“ vorhanden ist. Falls er vorhanden ist, löschen Sie den Knoten und speichern Sie die Änderung.
 
 **Werden die Replikationen in den Warteschlangen der Replikationsagenten gespeichert?**
@@ -76,12 +75,12 @@ Wechseln Sie zu /etc/replication/agents.author.html und klicken Sie dann auf die
 In manchen Fällen ist es hilfreich, wenn die gesamte Replikationsprotokollierung auf DEBUG-Ebene in separaten Protokolldateien erfolgen soll. Gehen Sie hierfür wie folgt vor:
 
 1. Wechseln Sie zu https://host:port/system/console/configMgr und melden Sie sich als Admin an.
-1. Suchen Sie nach der Apache Sling Logging Logger-Factory-Konfiguration und erstellen Sie eine Instanz, indem Sie auf die **+**-Schaltfläche rechts neben der Factory-Konfiguration klicken. Dadurch wird eine neue Logging Logger-Konfiguration erstellt.
+1. Suchen Sie nach der Apache Sling Logging Logger-Konfiguration und erstellen Sie eine Instanz, indem Sie auf die Schaltfläche **+** rechts neben der Werkskonfiguration klicken. Dadurch wird eine neue Logging Logger-Konfiguration erstellt.
 1. Richten Sie die Konfiguration wie folgt ein:
 
    * Protokollierungsebene: DEBUG
-   * Pfad der Protokolldatei: logs/replication.log
-   * Kategorien: com.day.cq.replication
+   * Protokolldatei: logs/replication.log
+   * Logger: com.day.cq.replication
 
 1. Wenn Sie annehmen, dass das Problem in irgendeiner Weise mit „sling eventing/jobs“ verknüpft ist, können Sie auch dieses Java™-Paket unter „categories:org.apache.sling.event“ hinzufügen.
 

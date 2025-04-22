@@ -12,10 +12,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '3286'
-ht-degree: 100%
+source-wordcount: '3287'
+ht-degree: 99%
 
 ---
 
@@ -60,18 +60,26 @@ Die Rückwärtsreplikation nutzt einen Agenten in der Veröffentlichungsumgebung
 
 ### Replikation – vorkonfiguriert {#replication-out-of-the-box}
 
-Am Beispiel der we-retail-Website, die Teil der Standardinstallation von AEM ist, kann die Replikation illustriert werden.
+Erstellen Sie eine Seite, indem Sie [Erstellen und Organisieren von Seiten](/help/sites-authoring/managing-pages.md) folgen.
 
 Um diesem Beispiel zu folgen und die standardmäßigen Replikationsagenten zu verwenden, müssen Sie [AEM installieren](/help/sites-deploying/deploy.md) und dabei Folgendes konfigurieren:
 
+
 * die Autorenumgebung an Port `4502`
 * die Veröffentlichungsumgebung an Port `4503`
+
+Diese Replikation wird von der Autorenumgebung aus durch folgende Komponente durchgeführt:
+
+* **Standardagent („publish“)**
+Dieser Agent repliziert Inhalte in die standardmäßige Veröffentlichungsinstanz.
+Der Zugriff auf entsprechende Details (Konfiguration und Protokolle) ist über die Tools-Konsole der Autorenumgebung oder
+  `http://localhost:4502/etc/replication/agents.author/publish.html`.
 
 >[!NOTE]
 >
 >Standardmäßig aktiviert:
 >
->* Agenten für Autor: Standardagent („publish“)
+>* Agenten für Autor : Falls nicht, stellen Sie sicher, dass der Standardagent („publish„) aktiviert ist, bevor Sie fortfahren.
 >
 >Standardmäßig deaktiviert (ab AEM 6.1):
 >
@@ -84,19 +92,13 @@ Um diesem Beispiel zu folgen und die standardmäßigen Replikationsagenten zu ve
 #### Replikation (von der Autoren- in die Veröffentlichungsinstanz) {#replication-author-to-publish}
 
 1. Navigieren Sie zur Support-Seite in der Autorenumgebung.
-   **https://localhost:4502/content/we-retail/us/en/experience.html** `<pi>`
+   **https://localhost:4502/content/site1/test.html** `<pi>`
 1. Bearbeiten Sie die Seite, um neuen Text hinzuzufügen.
 1. **Aktivieren Sie die Seite**, um die Änderungen zu veröffentlichen.
 1. Öffnen Sie die Support-Seite in der Veröffentlichungsumgebung:
-   **https://localhost:4503/content/we-retail/us/en/experience.html**
+   **https://localhost:4503/content/site1/test.html**
 1. Nun können Sie die Änderungen sehen, die Sie in der Autorenumgebung eingegeben haben.
 
-Diese Replikation wird von der Autorenumgebung aus durch folgende Komponente durchgeführt:
-
-* **Standardagent („publish“)**
-Dieser Agent repliziert Inhalte in die standardmäßige Veröffentlichungsinstanz.
-Der Zugriff auf entsprechende Details (Konfiguration und Protokolle) ist über die Tools-Konsole der Autorenumgebung oder
-  `https://localhost:4502/etc/replication/agents.author/publish.html` möglich.
 
 #### Replikationsagenten – vorkonfiguriert {#replication-agents-out-of-the-box}
 
@@ -108,7 +110,7 @@ Dient zum Replizieren von der Autoren- in die Veröffentlichungsinstanz.
 * Dispatcher Flush
 Dient zum Verwalten des Dispatcher-Caches. Weitere Informationen finden Sie unter [Invalidieren des Dispatcher-Cache aus der Autorenumgebung](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de#invalidating-dispatcher-cache-from-the-authoring-environment) und [Invalidieren des Dispatcher-Cache von einer Veröffentlichungsinstanz](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de#invalidating-dispatcher-cache-from-a-publishing-instance).
 
-* [Rückwärtsreplikation](#reverse-replication-publish-to-author)
+* [Rückwärtsreplikation](#configuring-reverse-replication)
 Dient zum Replizieren von der Veröffentlichungs- in die Autoreninstanz. Die Rückwärtsreplikation wird nicht für Communities-Funktionen wie Foren, Blogs und Kommentare verwendet. Sie ist effektiv deaktiviert, da der Postausgang nicht aktiviert ist. Für die Rückwärtsreplikation ist eine benutzerdefinierte Konfiguration erforderlich.
 
 * Statischer Agent
