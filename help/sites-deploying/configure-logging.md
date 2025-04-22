@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 86613671-dacd-487e-b6ff-88365289e591
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b76c11f28fab1be574142d73c13ea9555143bf9a
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '636'
 ht-degree: 100%
 
 ---
@@ -41,10 +41,6 @@ Die Konfiguration [Apache Sling Logging Configuration](/help/sites-deploying/osg
 * Anzahl der aufzubewahrenden Versionen
 * Versionsrotation; entweder maximale Größe oder Zeitintervall
 * Format zum Schreiben der Protokollmeldungen
-
->[!NOTE]
->
->In diesem [Knowledgebase-Artikel](https://helpx.adobe.com/de/experience-manager/kb/HowToRotateRequestAndAccessLog.html) wird das Rotieren von request.log- und access.log-Dateien erläutert.
 
 ## Logger und Writer für einzelne Dienste {#loggers-and-writers-for-individual-services}
 
