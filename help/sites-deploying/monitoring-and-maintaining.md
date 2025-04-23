@@ -12,10 +12,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '5792'
-ht-degree: 100%
+source-wordcount: '5601'
+ht-degree: 99%
 
 ---
 
@@ -60,10 +60,6 @@ Häufig wird ein vollständiges Backup in regelmäßigen Abständen durchgeführ
 >Tests bei der Implementierung von Backups Ihrer Produktionsinstanzen *müssen* vorgenommen werden, um sicherzustellen, dass Sie die Sicherung erfolgreich wiederherstellen können.
 >
 >Ohne diese Prüfung ist das Backup womöglich nutzlos (im schlimmsten Fall).
-
->[!NOTE]
->
->Weitere Informationen zur Backup-Leistung finden Sie im Abschnitt [Backup-Leistung](/help/sites-deploying/configuring-performance.md#backup-performance).
 
 ### Erstellen eines Backups Ihrer installierten Software {#backing-up-your-software-installation}
 
@@ -652,11 +648,6 @@ Einige dieser Tools hängen von Ihrem Betriebssystem ab.
    <td><p>Verwendungszweck: jconsole</p> <p>Siehe <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html">JConsole</a> und <a href="#monitoring-performance-using-jconsole">Leistungsüberwachung mit JConsole</a>.</p> <p><strong>Hinweis:</strong> Bei JDK 1.8 ist JConsole durch Plug-ins erweiterbar; z. B. Top oder TDA (Thread Dump Analyzer).</p> </td>
   </tr>
   <tr>
-   <td>Java™ VisualVM</td>
-   <td>Beobachten von JVM-Metriken, Threads, Speicher und Profilen.</td>
-   <td><p>Verwendungszweck: visualvm oder visualvm<br /> </p> <p>Siehe <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/">visualvm</a> und <a href="#monitoring-performance-using-j-visualvm">Leistungsüberwachung mit (J)VisualVM</a>.</p> <p><strong>Hinweis</strong>: Bei JDK 1.8 ist VisualVM durch Plug-ins erweiterbar. VisualVM wird nach JDK 9 eingestellt. Verwenden Sie stattdessen den Java™ Flight Recorder.</p> </td>
-  </tr>
-  <tr>
    <td>truss/strace, lsof</td>
    <td>Detaillierte Kernel-Aufruf- und Prozessanalyse (UNIX®).</td>
    <td>Unix-/Linux-Befehle.</td>
@@ -924,31 +915,6 @@ Der Tool-Befehl `jconsole` ist bei JDK verfügbar.
 
    Jetzt können Sie andere Optionen auswählen.
 
-### Leistungsüberwachung mit (J)VisualVM {#monitoring-performance-using-j-visualvm}
-
-Ab JDK 6 ist der Tool-Befehl `visualvm` verfügbar. Nachdem Sie ein JDK installiert haben, können Sie Folgendes tun:
-
-1. Starten Sie Ihre AEM-Instanz.
-
-   >[!NOTE]
-   >
-   >Wenn Sie Java™ 5 verwenden, können Sie das Argument `-Dcom.sun.management.jmxremote` zur Java-Befehlszeile hinzufügen, mit der Ihre JVM gestartet wird. JMX ist bei Java™ 6 standardmäßig aktiviert.
-
-1. Führen Sie einen der beiden Befehle aus:
-
-   * `jvisualvm`: im Ordner „bin“ von JDK 1.6 (getestete Version)
-   * `visualvm`: kann von [VisualVM](https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/) heruntergeladen werden (allerneueste Version)
-
-1. Klicken Sie in der `Local`-Anwendung zweimal auf `com.day.crx.quickstart.Main`. Folgender Überblick wird standardmäßig angezeigt:
-
-   ![chlimage_1-2](assets/chlimage_1-2.png)
-
-   Danach können Sie weitere Optionen auswählen, einschließlich „Überwachen“:
-
-   ![chlimage_1-3](assets/chlimage_1-3.png)
-
-Sie können dieses Tool zum Generieren von Thread-Dumps und Heap-Dump Speicherabbildern verwenden. Diese Informationen werden oft vom technischen Support-Team angefordert.
-
 ### Informationserfassung {#information-collection}
 
 Wenn Sie möglichst viel über Ihre Installation wissen, kann Ihnen dies unter Umständen helfen, herauszufinden, was zu einer Änderung der Leistung geführt haben könnte und ob diese Änderungen sich begründen lassen. Erfassen Sie diese Metriken in regelmäßigen Abständen, damit Sie signifikante Änderungen direkt sehen.
@@ -1102,16 +1068,11 @@ Im Folgenden finden Sie eine Liste mit Vorschlägen, was Sie überprüfen sollte
 >* [Thread-Dumps](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=de)
 >* [Analyse von Speicherproblemen](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=de)
 >* [Analyse mit dem integrierten Profiler](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=de)
->* [Analyse langsamer und blockierter Prozesse](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
 ### CPU bei 100 % {#cpu-at}
 
-Wenn die CPU Ihres Systems ständig zu 100 % ausgelastet ist, lesen Sie Folgendes:
-
-* Die Wissensdatenbank:
-
-   * [Analysieren langsamer und blockierter Prozesse](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+Wenn die CPU Ihres Systems ständig zu 100 % ausgeführt wird, überprüfen Sie die AEM-Protokolle und verwenden Sie Tools wie top, htop oder jstack, um Threads mit hoher CPU-Dichte zu identifizieren. Analysieren Sie Thread-Dumps auf unendliche Schleifen, blockierte Threads oder übermäßige Speicherbereinigung.
 
 ### Unzureichender Speicher {#out-of-memory}
 
@@ -1145,20 +1106,17 @@ Wenn Ihrem System der Festplattenspeicher ausgeht oder Sie feststellen, dass die
 * Wissensdatenbank:
 
    * [Zu viele geöffnete Dateien](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=de)
-   * [Journal verbraucht zu viel Festplattenspeicher](https://helpx.adobe.com/de/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Regelmäßige Leistungsbeeinträchtigung {#regular-performance-degradation}
 
 Wenn sich die Leistung Ihrer Instanz nach jedem Neustart (manchmal eine Woche oder später) verschlechtert, kann Folgendes überprüft werden:
 
 * [Unzureichender Speicher](#outofmemory)
-* Die Wissensdatenbank:
-
-   * [Nicht beendete Sitzungen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeUnclosedSessions.html)
+* [Nicht beendete Sitzungen](/help/sites-administering/troubleshoot.md#checking-for-unclosed-jcr-sessions-checking-for-unclosed-jcr-sessions)
 
 ### JVM-Optimierung {#jvm-tuning}
 
-Die Java™ Virtual Machine (JVM) hat sich im Hinblick auf die Optimierung verbessert (insbesondere seit Java™ 7). Daher ist es oft sinnvoll, eine angemessene, feste JVM-Größe anzugeben und die Standardwerte zu verwenden.
+Die Java™ Virtual Machine (JVM) wurde im Hinblick auf die Optimierung verbessert. Daher ist es oft sinnvoll, eine angemessene, feste JVM-Größe anzugeben und die Standardwerte zu verwenden.
 
 Wenn die Standardeinstellungen nicht geeignet sind, ist es wichtig, eine Methode zur Überwachung und Bewertung der GC-Leistung festzulegen. Tun Sie dies, bevor Sie versuchen, die JVM zu optimieren. Dieser Prozess kann Überwachungsfaktoren beinhalten, darunter Heap-Größe, Algorithmus und andere Aspekte.
 
@@ -1189,12 +1147,6 @@ Oder mit JConsole:
   ```
 
 * Stellen Sie dann mit JConsole eine Verbindung zu JVM her. Sehen Sie sich Folgendes an:
-  ` [https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)`
+  ` [https://docs.oracle.com/en/java/javase/17/management/using-jconsole.html](https://docs.oracle.com/en/java/javase/17/management/using-jconsole.html)`
 
 Hier können Sie sehen, wie viel Arbeitsspeicher belegt ist, welche GC-Algorithmen verwendet werden, wie lange ihre Ausführung dauert und welche Auswirkung dieser Prozess auf die Anwendungsleistung hat. Ohne dies ist jede Optimierung unsystematisch und willkürlich.
-
->[!NOTE]
->
->Informationen zu VM von Oracle finden Sie unter:
->
->[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)

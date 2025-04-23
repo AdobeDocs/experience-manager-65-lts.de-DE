@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: In der Dokumentation zu Adobe Experience Manager 6.5 LTS erfahren Sie, wie diese funktioniert und was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '6797'
-ht-degree: 93%
+source-wordcount: '6795'
+ht-degree: 94%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 93%
    + [Einstellung der JWT-Anmeldedaten in Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [Einrichten von IMS-Integrationen für AEM](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Sites {#sites}
-   + Erstellung {#authoring}
+   + Authoring {#authoring}
       + Wesentliche Aufgaben, Tools und Konzepte für das Authoring in AEM {#essentials}
          + [Erste Schritte für Autoren](/help/sites-authoring/first-steps.md)
          + [Bearbeiten von Seiten](/help/sites-authoring/page-authoring.md)
@@ -62,7 +62,7 @@ ht-degree: 93%
          + [Ihr Posteingang](/help/sites-authoring/inbox.md)
          + [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
          + [Auswahl der Benutzeroberfläche](/help/sites-authoring/select-ui.md)
-      + Erstellung {#authoring}
+      + Authoring {#authoring}
          + [Autorenumgebung und Tools](/help/sites-authoring/author-environment-tools.md)
          + [Anmerkungen beim Bearbeiten einer Seite](/help/sites-authoring/annotations.md)
          + [Erstellen und Organisieren von Seiten](/help/sites-authoring/managing-pages.md)
@@ -1094,13 +1094,13 @@ ht-degree: 93%
       + [Drittanbieterlösung für den Handel](/help/commerce/cif/integrating/third-party.md)
    + AEM-Storefront {#storefront}
       + [Erste Schritte](/help/commerce/cif/getting-started.md)
-      + Erstellung {#authoring}
+      + Authoring {#authoring}
          + [Commerce-Erlebnisse](/help/commerce/cif/authoring/authoring-commerce-experiences.md)
          + [Produkt-Cockpit](/help/commerce/cif/authoring/product-cockpit.md)
          + [Anreicherung von Produktdaten mit zugehörigen Inhalten](/help/commerce/cif/authoring/enrich-product-associated-content.md)
          + [Produktempfehlungen](/help/commerce/cif/authoring/product-recommendations.md)
       + Verwalten {#administering}
-         + [Multi-Store-Setup](/help/commerce/cif/configuring/multi-store-setup.md)
+         + [Multi-Store-Einrichtung](/help/commerce/cif/configuring/multi-store-setup.md)
          + [Verwendung mehrerer Vorlagen](/help/commerce/cif/configuring/multi-template-usage.md)
          + [Konfigurieren von URLs für SEO](/help/commerce/cif/configuring/advanced-url-configuration.md)
          + [Zwischenspeicheroptionen](/help/commerce/cif/configuring/caching.md)
@@ -1238,7 +1238,7 @@ ht-degree: 93%
                + [So legen Sie alles zusammen](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/put-it-all-together.html)
                + [Live-Schalten Ihres Headless-Programms](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/go-live.html)
                + [Optional – Erstellen von Single Page Applications (SPAs) mit AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html)
-            + Headless-Inhaltsarchitekten-Journey {#architect}
+            + Tour für Architektinnen und Architekten von Headless-Inhalten {#architect}
                + [Überblick über die AEM Headless-Inhaltsarchitekten-Tour](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html)
                + [Inhaltsmodellierung für Headless mit AEM – Einführung](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html)
                + [Lernen Sie die Grundlagen der Inhaltsmodellierung für Headless mit AEM kennen](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/basics.html)
@@ -1427,8 +1427,7 @@ ht-degree: 93%
          + [Überwachung und Wartung der AEM-Instanz](/help/sites-deploying/monitoring-and-maintaining.md)
          + [Abladen von Aufträgen](/help/sites-deploying/offloading.md)
          + [Ressourcenzuordnung](/help/sites-deploying/resource-mapping.md)
-         + [Konsistenz- und Ausnahmeprüfungen](/help/sites-deploying/consistency-check.md)
-         + [Leistungsrichtlinien](/help/sites-deploying/performance-guidelines.md)
+         + [Konsistenz- und Durchlaufprüfungen](/help/sites-deploying/consistency-check.md)
          + [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md)
          + [Handbuch zur Leistung von Assets](/help/sites-deploying/assets-performance-sizing.md)
          + [Artikel mit Anleitungen für die Konfiguration](/help/sites-deploying/ht-deploy.md)

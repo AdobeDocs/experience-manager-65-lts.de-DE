@@ -11,18 +11,16 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '6470'
-ht-degree: 99%
+source-wordcount: '5052'
+ht-degree: 100%
 
 ---
 
 # Leistungsoptimierung {#performance-optimization}
 
 >[!NOTE]
->
->Allgemeine Richtlinien zur Leistung finden Sie auf der Seite [Leistungsrichtlinien](/help/sites-deploying/performance-guidelines.md).
 >
 >Weitere Informationen zur Fehlerbehebung und zur Behebung von Leistungsproblemen finden Sie unter [Leistungsstruktur](/help/sites-deploying/performance-tree.md).
 >
@@ -203,10 +201,6 @@ Bei der Leistungsoptimierung sollten bestimmte Regeln beachtet werden:
 
 Bestimmte Aspekte von AEM (bzw. des zugrunde liegenden Repositorys) können so konfiguriert werden, dass die Leistung optimiert wird. Im Folgenden werden Möglichkeiten und Vorschläge beschrieben. Überprüfen Sie zuerst, ob und wie Sie die beschriebene Funktionalität verwenden können, bevor Sie Änderungen vornehmen.
 
->[!NOTE]
->
->Siehe [Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html).
-
 ### Suchindizierung {#search-indexing}
 
 Ab AEM 6.0 verwendet Adobe Experience Manager eine Oak-basierte Repository-Architektur.
@@ -224,6 +218,7 @@ Wenn beispielsweise Bilder (oder DAM-Assets im Allgemeinen) hochgeladen werden, 
 
 Die Workflow-Engine verwendet Apache Sling-Vorgangswarteschlangen für die Verarbeitung und Planung der Arbeitselemente. Die folgenden Auftragswarteschlangendienste wurden standardmäßig in der Apache Sling Job Queue Configuration Service Factory zur Verarbeitung von Workflow-Aufgaben erstellt:
 
+<!-- TODO: Change the reference to 6.5 LTS javadocs -->
 * Granite Workflow-Warteschlange: Für die meisten Workflow-Schritte, wie diejenigen zur Verarbeitung von DAM-Assets, wird der Granite Workflow-Warteschlangendienst verwendet.
 * Granite Workflow Auftragswarteschlange für externe Prozesse: Dieser Dienst wird für spezielle externe Workflow-Schritte verwendet, die typischerweise für die Kontaktaufnahme mit einem externen System und die Abfrage von Ergebnissen verwendet werden. Beispielsweise wird der Schritt „InDesign Medien-Extraktionsvorgang“ als externer Prozess implementiert. Die Workflow-Engine verwendet die externe Warteschlange zur Verarbeitung der Abfrage. (Siehe [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
@@ -462,7 +457,6 @@ Für Lastgenerierung, Leistungsüberwachung und/oder Ergebnisanalyse stehen eine
 
 * [JMeter](https://jmeter.apache.org/)
 * [Load Runner](https://www.microfocus.com/de-de/portfolio/performance-engineering/overview)
-* [InfraRED](https://www.infraredsoftware.com/)
 * [Java™ Interactive Profile](https://jiprof.sourceforge.net/)
 
 Führen Sie nach der Optimierung erneut einen Test durch, um die Auswirkung zu bestätigen.
@@ -642,87 +636,3 @@ Um sicherzustellen, dass Dateien ordnungsgemäß zwischengespeichert werden, bef
 
 * Stellen Sie sicher, dass Dateien immer die richtige Erweiterung haben.
 * Verwenden Sie möglichst keine allgemeinen Dateibereitstellungsskripts mit URLs wie `download.jsp?file=2214`. Um URLs zu verwenden, die die Dateispezifikation enthalten, schreiben Sie das Skript neu. Im vorherigen Beispiel lautet diese Neufassung `download.2214.pdf`.
-
-## Leistung bei der Sicherung {#backup-performance}
-
-In diesem Abschnitt werden mehrere Benchmarks vorgestellt, mit denen die Leistung von AEM-Sicherungen und die Auswirkungen der Sicherungsaktivität auf die Anwendungsleistung bewertet wird. Die AEM-Sicherung stellt eine beträchtliche Belastung des laufenden Betriebs dar. Wir messen diese Belastung ebenso wie die Auswirkungen der Einstellungen der Sicherungsverzögerung, mit denen versucht wird, diese Auswirkungen abzufedern. Ziel ist es, einige Referenzdaten über die erwartete Leistung von Backups in realistischen Konfigurationen und Mengen von Produktionsdaten bereitzustellen und Anleitungen zur Schätzung der Sicherungszeiten für geplante Systeme zu geben.
-
-### Referenzumgebung {#reference-environment}
-
-#### Physikalisches System {#physical-system}
-
-Die in diesem Dokument berichteten Ergebnisse stammen aus Benchmarks, die in einer Referenzumgebung mit der folgenden Konfiguration ausgeführt wurden. Diese Konfiguration ähnelt einer typischen Produktionsumgebung in einem Rechenzentrum:
-
-* HP ProLiant DL380 G6, 8 CPUs x 2,533 GHz
-* Serial angeschlossene SCSI-Laufwerke mit 300 GB, 10.000 RPM
-* Hardware-RAID-Controller; acht Laufwerke in einem RAID0+5-Array
-* VMware Image CPU x 2 Intel Xeon® E5540 mit 2,53 GHz
-* Red Hat® Linux® 2.6.18-194.el5; Java™ 1.6.0_29
-* Einzelne Authoring-Instanz
-
-Das Festplatten-Subsystem auf diesem Server ist schnell und entspricht einer Hochleistungs-RAID-Konfiguration, die etwa auf einem Produktions-Server verwendet wird. Die Backup-Leistung kann abhängig von der Festplattenleistung sein, und die Ergebnisse in dieser Umgebung spiegeln die Leistung mit einer schnellen RAID-Konfiguration wider. Das VMware-Bild ist so konfiguriert, dass es über ein einzelnes großes Festplattenvolumen verfügt, das sich physisch im lokalen Festplattenspeicher auf dem RAID-Array befindet.
-
-Durch die AEM-Konfiguration werden das Repository und der Datenspeicher auf demselben logischen Datenträger wie das Betriebssystem und die AEM-Software platziert. Das Zielverzeichnis für Backups befindet sich ebenfalls in diesem logischen Dateisystem.
-
-#### Datenvolumen {#data-volumes}
-
-Die folgende Tabelle zeigt die Größe der Datenvolumen, die in den Backup-Benchmarks verwendet werden. Zunächst wird der anfängliche Baseline-Inhalt installiert, dann werden zusätzliche bekannte Datenmengen hinzugefügt, um die Größe des gesicherten Inhalts zu erhöhen. Backups werden in bestimmten Schritten erstellt, um einen starken Inhaltszuwachs und die Menge zu repräsentieren, die an einem Tag produziert wird. Die Verteilung von Inhalten (Seiten, Bilder, Tags) basiert in etwa auf einer realistischen Zusammensetzung von Produktion und Assets. Seiten, Bilder und Tags sind auf maximal 800 untergeordnete Seiten beschränkt. Jede Seite enthält Titel-, Flash-, Text-/Bild-, Video-, Diashow-, Formular-, Tabellen-, Cloud- und Karussellkomponenten. Bilder werden aus einem Pool von 400 Dateien mit einer Größe von 37 KB bis 594 KB hochgeladen.
-
-| Inhalt | Knoten | Seiten | Bilder | Tags |
-|---|---|---|---|---|
-| Basisinstallation | 69 610 | 562 | 256 | 237 |
-| Kleiner Inhalt für inkrementelle Sicherung |  | +100 | +2 | +2 |
-| Großer Inhalt für vollständige Sicherung |  | +10 000 | +100 | +100 |
-
-Das Sicherungs-Benchmark wird mit den zusätzlichen Inhalten, die bei jeder Iteration hinzugefügt werden, wiederholt.
-
-#### Benchmark-Szenarios {#benchmark-scenarios}
-
-Die Backup-Benchmarks decken zwei Hauptszenarien ab: Sicherungen, wenn das System stark ausgelastet ist, und Sicherungen, wenn das System inaktiv ist. Obwohl allgemein empfohlen wird, Sicherungen möglichst bei inaktivem AEM-System durchzuführen, gibt es Situationen, in denen die Sicherung bei laufendem Betrieb durchgeführt werden muss.
-
-* **Leerlaufzustand**: Sicherungen werden ohne andere Aktivität auf AEM durchgeführt.
-* **Laufender Betrieb**: Sicherungen werden durchgeführt, während das System zu 80 % mit Online-Prozessen ausgelastet ist. Die Sicherungsverzögerung variiert, um die Auswirkung auf die Last zu ermitteln.
-
-Die Sicherungszeiten und die Größe der resultierenden Sicherung können den AEM-Serverprotokollen entnommen werden. Es wird empfohlen, Sicherungen zu Zeiten zu planen, wenn AEM inaktiv ist, z. B. in der Nacht. Dieses Szenario ist für den empfohlenen Ansatz repräsentativ.
-
-Die Last besteht aus erstellten Seiten, gelöschten Seiten, Durchläufen und Abfragen mit der größten Last, die durch Seitendurchläufe und Abfragen verursacht werden. Durch das Hinzufügen und Entfernen zu vieler Seiten wird die Arbeitsbereichsgröße kontinuierlich erhöht und das Abschließen von Backups verhindert. Die Verteilung des Ladevorgangs, den das Skript verwendet, beträgt 75 % Seitendurchläufe, 24 % Abfragen und 1 % Seitenerstellungen (einzelne Ebene ohne verschachtelte Unterseiten). Die größte Anzahl an durchschnittlichen Transaktionen pro Sekunde in einem inaktiven System wird mit vier gleichzeitigen Threads erzielt, wie sie auch beim Testen von Sicherungen unter Last verwendet werden.
-
-Die Auswirkung von Last auf die Sicherungsleistung kann geschätzt werden, indem die Differenz zwischen der Leistung mit Anwendungslast und der Leistung ohne Anwendungslast errechnet wird. Die Auswirkungen der Sicherung auf den Anwendungsdurchsatz werden ermittelt, indem der Szenario-Durchsatz in Transaktionen pro Stunde mit und ohne gleichzeitiges Backup verglichen wird und Backups mit unterschiedlichen Einstellungen für „Backup-Verzögerung“ ausgeführt werden.
-
-* **Verzögerungseinstellung** – In verschiedenen Szenarien wurde die Einstellung für die Sicherungsverzögerung ebenfalls geändert, indem Werte von 10 Millisekunden (Standard), 1 Millisekunden und 0 Millisekunden verwendet wurden, um zu untersuchen, wie sich diese Einstellung auf die Leistung von Backups auswirkte.
-* **Backup-Typ**: Alle Backups waren externe Sicherungen des Repositorys in einem Sicherungsverzeichnis ohne Komprimierung, außer in einem Fall, bei dem zu Vergleichszwecken der TAR-Befehl direkt angewendet wurde. Da inkrementelle Sicherungen nicht in eine ZIP-Datei geschrieben werden können oder wenn die vorherige vollständige Sicherung eine ZIP-Datei ist, wird in Produktionssituationen meist die Sicherungsverzeichnismethode verwendet.
-
-### Zusammenfassung der Ergebnisse {#summary-of-results}
-
-#### Sicherungsdauer und Durchsatz {#backup-time-and-throughput}
-
-Als Hauptergebnis dieser Benchmarks kann gezeigt werden, wie die Sicherungsdauer je nach Sicherungstyp und Datenmenge variiert. Die folgende Grafik zeigt die Backup-Zeit unter Verwendung der standardmäßigen Backup-Konfiguration als eine Funktion der Gesamtzahl von Seiten.
-
-![chlimage_1-81](assets/chlimage_1-81.png)
-
-Die Backup-Zeiten in einer inaktiven Instanz sind relativ konsistent und liegen im Durchschnitt bei 0,608 MB pro Sekunde, unabhängig davon, ob es sich um vollständige oder inkrementelle Backups handelt (siehe Diagramm unten). Die Backup-Zeit ist lediglich eine Funktion der Datenmenge, die gesichert wird. Die Zeit für den Abschluss einer vollständigen Sicherung steigt deutlich mit der Gesamtzahl der Seiten. Die Zeit, um ein inkrementelles Backup durchzuführen, steigt ebenfalls mit der Gesamtanzahl der Seiten, jedoch mit einer wesentlich geringeren Geschwindigkeit. Die Dauer der inkrementellen Sicherung ist aufgrund der relativ geringen Menge an zu sichernden Daten viel kürzer.
-
-Die Größe der erzeugten Sicherung ist entscheidend für die Sicherungsdauer. Die folgende Grafik zeigt die benötigte Zeit in Abhängigkeit von der endgültigen Backup-Größe.
-
-![chlimage_1-82](assets/chlimage_1-82.png)
-
-Dieses Diagramm zeigt, dass sowohl inkrementelle als auch vollständige Backups einem einfachen Größe-vs-Zeit-Muster folgen, das von Adobe als Durchsatz gemessen werden kann. Die Backup-Zeiten in einer inaktiven Instanz sind relativ konsistent und erreichen im Durchschnitt 0,61 MB pro Sekunde, unabhängig davon, ob es sich in der Benchmark-Umgebung um vollständige oder inkrementelle Backups handelt.
-
-#### Backup-Verzögerung {#backup-delay}
-
-Der Parameter für die Backup-Verzögerung wird bereitgestellt, um zu begrenzen, in welchem Umfang Backups zu Problemen bei Produktions-Workloads führen können. Der Parameter gibt eine Wartezeit in Millisekunden an, die Datei um Datei in den Backup-Vorgang integriert wird. Der Gesamteffekt hängt zum Teil von der Größe der betroffenen Dateien ab. Die Messung der Backup-Leistung in MB/s bietet eine vernünftige Möglichkeit, die Auswirkungen einer Verzögerung auf das Backup zu vergleichen.
-
-* Das gleichzeitige Ausführen eines Backups mit regulärer Anwendungslast hat negative Auswirkungen auf den Durchsatz bei normaler Auslastung.
-* Die Auswirkungen können leicht (bis zu 5 %) oder signifikant sein und einen Rückgang des Durchsatzes von bis zu 75 % verursachen. Dies hängt wahrscheinlich am meisten von der Anwendung ab.
-* Die Sicherung stellt keine große Last für die CPU dar. Prozessorintensive Produktionsaufgaben werden deshalb durch die Sicherung weniger stark beeinträchtigt als I/O-intensive Aufgaben.
-
-![chlimage_1-83](assets/chlimage_1-83.png)
-
-Zum Vergleich: der Durchsatz, der mithilfe einer Dateisystemsicherung („TAR“) ermittelt wurde, um dieselben Repository-Dateien zu sichern. Die Leistung des TAR-Backups ist vergleichbar, ist jedoch höher als die Sicherung mit einer Verzögerung von null. Durch die Festlegung einer geringen Verzögerung wird der Backup-Durchsatz erheblich reduziert, und die Standardverzögerung von 10 Millisekunden führt zu einem deutlich geringeren Durchsatz. In Situationen, in denen Sicherungen geplant werden können, wenn die allgemeine Anwendungsnutzung gering ist oder die Anwendung inaktiv sein kann, reduzieren Sie die Verzögerung unter den Standardwert, damit das Backup schneller fortgesetzt werden kann.
-
-Die tatsächlichen Auswirkungen des Durchsatzes einer laufenden Sicherung hängen von den Anwendungs- und Infrastrukturdetails ab. Die Auswahl des Verzögerungswerts sollte durch empirische Analyse der Anwendung erfolgen, sollte jedoch so klein wie möglich sein, damit Backups so schnell wie möglich abgeschlossen werden können. Da es nur eine schwache Korrelation zwischen der Auswahl des Verzögerungswerts und den Auswirkungen auf den Anwendungsdurchsatz gibt, sollte die Wahl der Verzögerung kürzere Backup-Zeiten bevorzugen, um die Gesamtauswirkungen von Backups zu minimieren. Ein Backup, das acht Stunden dauert, aber den Durchsatz um -20 % beeinflusst, hat wahrscheinlich eine größere Gesamtwirkung als ein Backup, das zwei Stunden dauert, aber den Durchsatz um -30 % beeinflusst.
-
-### Verweise {#references}
-
-* [Verwaltung – Sichern und Wiederherstellen](/help/sites-administering/backup-and-restore.md)
-* [Verwaltung – Kapazität und Volumen ](/help/managing/best-practices-further-reference.md#capacity-and-volume)
