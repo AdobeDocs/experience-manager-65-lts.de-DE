@@ -11,10 +11,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: a7a8a20a-e513-43df-80b7-1e6daf957f20
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
 source-wordcount: '1380'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ Oak-run unterstützt Indizierungs-Anwendungsfälle über die Befehlszeile, ohne 
 
 Die übergreifenden Vorteile bei der Verwendung des oak-run.jar-Befehls „index“ für die Verwaltung von Oak-Indizes:
 
-1. Der Oak-run-Befehl „index“ bietet ein neues Indizierungs-Tool-Set für AEM 6.4.
+1. Der Befehl &quot;Oak-run index“ bietet seit AEM 6.4 ein neues Indizierungs-Tool.
 1. Oak-run verkürzt die Neuindizierungszeit, was sich insbesondere bei größeren Repositorys auszahlt.
 1. Oak-run verringert den Ressourcenverbrauch während der Neuindizierung in AEM, was die Gesamtleistung des Systems verbessert.
 1. Oak-run bietet eine bandexterne Neuindizierung und unterstützt damit Szenarios, in denen die Produktion verfügbar sein muss und keine Wartungs- oder Ausfallzeiten eingeplant werden können.

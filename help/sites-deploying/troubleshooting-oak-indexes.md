@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1375'
 ht-degree: 100%
 
 ---
@@ -52,10 +52,6 @@ Ein erzwungenes Herunterfahren führt dazu, dass AEM die asynchrone Indizierung 
 1. Warten Sie etwa 45 Minuten, bis AEM normale asynchrone Indizierungsvorgänge wieder aufnehmen kann.
 
 ## Thread-Pool überlastet {#thread-pool-overloaded}
-
->[!NOTE]
->
->Stellen Sie bei AEM 6.1 sicher, dass [AEM 6.1 CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de) installiert ist.
 
 In Ausnahmefällen kann der Thread-Pool, der zur Verwaltung der asynchronen Indizierung verwendet wird, überlastet werden. Um den Indizierungsvorgang zu isolieren, kann ein Thread-Pool konfiguriert werden, um zu verhindern, dass andere AEM-Vorgänge die Fähigkeit von Oak beeinträchtigen, Inhalte rechtzeitig zu indizieren. Gehen Sie in solchen Fällen wie folgt vor:
 

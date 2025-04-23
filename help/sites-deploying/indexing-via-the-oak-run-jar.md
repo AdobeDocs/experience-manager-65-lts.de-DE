@@ -10,10 +10,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: a6344463-7796-4ee3-8b2e-b3bfd2aec99a
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Oak-run unterstützt alle Indizierungsszenarien über die Befehlszeile und muss nicht auf der JMX-Ebene ausgeführt werden.  Vorteile des Oak-run-Ansatzes:
 
-1. Bietet ein neues Toolset zur Indizierung für AEM 6.4.
+1. Dies ist ein neues Indizierungs-Tool seit AEM 6.4
 1. Verringert die für die Neuindizierung erforderliche Zeit, was bei größeren Repositorys von Vorteil ist.
 1. Verringert den Ressourcenverbrauch während der Neuindizierung in AEM, was die Systemleistung für andere AEM-Aktivitäten verbessert.
 1. Oak-run bietet bandexternen Support: Wenn die Produktionsbedingungen keine Ausführung der Neuindizierung auf Produktionsinstanzen erlauben, kann für die Neuindizierung eine geklonte Umgebung genutzt werden, um eine kritische Leistungsbeeinträchtigung zu vermeiden.
@@ -64,7 +64,7 @@ Dieses Diagramm ist eine Entscheidungsbaumstruktur für die Verwendung der versc
 
 ### Textvorextraktion für SegmentNodeStore und DocumentNodeStore {#textpre-extraction}
 
-Die [Textvorextraktion](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (eine Funktion, die mit AEM 6.3 eingeführt wurde) kann genutzt werden, um die Zeit für die Neuindizierung zu verkürzen. Die Textvorextraktion kann mit allen Neuindizierungsansätzen verwendet werden.
+[Textvorextraktion](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (eine Funktion, die seit AEM 6.3 existiert) kann verwendet werden, um die Zeit für die Neuindizierung zu verkürzen. Die Textvorextraktion kann mit allen Neuindizierungsansätzen verwendet werden.
 
 Abhängig vom `oak-run.jar`-Indizierungsansatz, müssen, wie im Diagramm unten dargestellt, auf beiden Seiten des Schrittes zur Durchführung der Neuindizierung verschiedene Schritte ausgeführt werden.
 
