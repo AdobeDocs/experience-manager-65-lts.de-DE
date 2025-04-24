@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: e337b682a0ee2b35940671991bd82b30d9d50128
 workflow-type: tm+mt
-source-wordcount: '3064'
-ht-degree: 95%
+source-wordcount: '2961'
+ht-degree: 94%
 
 ---
 
@@ -128,7 +128,7 @@ Es gibt verschiedene Optionen zum Bereitstellen des Repositorys von Adobe Experi
 >
 >Die Adobe-Kundenunterstützung hilft beim Qualifizieren von Problemen, die mit der Verwendung von MongoDB mit AEM in Zusammenhang stehen.
 >
->Weitere Informationen finden Sie auf der Seite von [MongoDB für Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+>Weitere Informationen finden Sie auf der [Seite von MongoDB für Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 
 ### Servlet-Engines/Anwendungs-Server {#servlet-engines-application-servers}
 
@@ -153,13 +153,14 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
 | **Linux®, basierend auf der Red Hat®-Verteilung** | A: Unterstützt `[1]` `[2]` |
 | Linux®, auf Basis der Debian-Verteilung einschl. Ubuntu | A: Unterstützt `[1]` |
 | Linux®, auf Basis der SUSE®-Verteilung | A: Unterstützt `[1]` |
+| Microsoft® Windows Server 2022 | R: Unterstützt |
 
 1. Linux®-Kernel 5. x und 6. x umfasst Derivate der Red Hat®-Distribution, einschließlich Red Hat® Enterprise Linux®, CentOS, Oracle Linux® und Amazon Linux®.
 1. Die Linux®-Verteilung wird von Adobe Managed Services unterstützt.
 
    >[!NOTE]
    >
-   >Für Linux-basierte Server (OSGI- und JEE-Stack) erfordert das AEM Forms-Add-on Laufzeitabhängigkeiten, z. B.:
+   >Für Linux-basierte Server erfordert das AEM Forms-Add-on Laufzeitabhängigkeiten wie:
    >* glibc.x86_64 (2.17-196)
    >* libX11.x86_64 (1.6.7-4)
    >* zlib.x86-64 (1.2.7-17)
@@ -386,15 +387,7 @@ Windows x86:
    <td>XPS, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF und DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html">Klassischer Modus von Acrobat 2017</a> neueste Version (nicht mehr unterstützt)</td>
-   <td>XPS, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF und DWF</td>
-  </tr>
-  <tr>
    <td>Microsoft® Office 2019</td>
-   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF und TXT</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Office 2016 (nicht mehr unterstützt)</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF und TXT</td>
   </tr>
   <tr>
@@ -402,29 +395,13 @@ Windows x86:
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016 (nicht mehr unterstützt)<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft® Publisher 2019<br /> </td>
    <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2016 (nicht mehr unterstützt)<br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Project 2016 (nicht mehr unterstützt)<br /> </td>
-   <td>MPP</td>
   </tr>
   <tr>
    <td>OpenOffice 4.1.10</td>
    <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF und TXT</td>
   </tr>
-  <tr>
-   <td>OpenOffice 4.1.2 (nicht mehr unterstützt)</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF und TXT</td>
-  </tr>  
  </tbody>
 </table>
 
@@ -461,7 +438,7 @@ Windows x86:
 * Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC
 * Administratorrechte für die Installation von Designer
 * Microsoft Visual C++ 2019 (VC 14.28 oder höher) 32-Bit-Runtime für die 32-Bit-Version von AEM Forms Designer
-* Microsoft Visual C++ 2019 (VC 14.28 oder höher) 64-Bit-Laufzeitumgebung für die 64-Bit-Version von AEM Forms Designer (sowohl für OSGi- als auch JEE-Stack)
+* Microsoft Visual C++ 2019 (VC 14.28 oder höher) 64-Bit-Laufzeit für 64-Bit-AEM Forms Designer
 
 [Installieren und Konfigurieren von AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)
 
