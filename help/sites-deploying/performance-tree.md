@@ -11,10 +11,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c83fcf96-cc45-40a0-9a50-c60406096de1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 100%
+source-wordcount: '1075'
+ht-degree: 98%
 
 ---
 
@@ -154,7 +154,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr>
    <td><strong>Schritt 19</strong></td>
    <td>CPU-Auslastung 100 %</td>
-   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de</a></td>
+   <td>Siehe <a href="/help/sites-deploying/monitoring-and-maintaining.md#cpu-at">CPU unter 100%</a></td>
   </tr>
   <tr>
    <td><strong>Schritt 20</strong></td>
@@ -288,7 +288,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr>
    <td><strong>Schritte 45<br /> und 47</strong><br /> </td>
    <td>Verwendung von HTTP/2</td>
-   <td>Weitere Informationen finden Sie in der Gem-Sitzung für die Schritte 37, 38 und 39 und in <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">diesem</a> Forumsbeitrag zur HTTP/2-Unterstützung.<br /> </td>
+   <td>Weitere Informationen finden Sie in der Gem-Sitzung für die Schritte 37, 38 und 39.<br /> </td>
   </tr>
   <tr>
    <td><strong>Schritt 49</strong></td>

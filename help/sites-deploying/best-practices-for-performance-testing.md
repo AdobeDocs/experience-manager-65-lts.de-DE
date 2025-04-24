@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1762'
 ht-degree: 99%
 
 ---
@@ -63,7 +63,6 @@ Auf dem Markt ist eine Vielzahl von Tools für Leistungstests erhältlich. Stell
 
 * **Load Runner** ist ein Enterprise-Produkt für Auslastungstests. Eine kostenlose Evaluierungsversion ist verfügbar. Weitere Informationen finden Sie unter [https://www.microfocus.com/de-de/portfolio/performance-engineering/overview](https://www.microfocus.com/de-de/portfolio/performance-engineering/overview).
 
-* Website-Belastungstests-Tools wie [Vercara](https://vercara.com/website-performance-management) können ebenfalls verwendet werden.
 * Beim Testen mobiler oder responsiver Websites muss ein separater Satz von Tools verwendet werden. Diese drosseln die Netzwerkbrandbreite, um langsamere mobile Verbindungen wie 3G oder EDGE zu simulieren. Zu den gängigeren Tools gehören:
 
    * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** mit einer benutzerfreundlichen Oberfläche und einer relativ niedrigen Ebene im Netzwerk-Stack. Es sind OS X- und iOS-Versionen verfügbar.
@@ -108,21 +107,18 @@ Auf Systemen mit MongoDB-Backends stellt AEM mehrere [JMX](/help/sites-administe
 
 * Die MBean **Konsolidierte Cache-Statistiken**. Sie können wie folgt direkt darauf zugreifen:
 
-`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
+`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DConsolidated+Cache+statistics%2Ctype%3DConsolidatedCacheStats`
 
 Für den Cache mit der Bezeichnung **Document-Diff** sollte die Trefferrate bei einem Wert von über `.90` liegen. Wenn die Trefferrate unter 90 % fällt, müssen Sie wahrscheinlich die Konfiguration `DocumentNodeStoreService` ändern. Der Produktsupport von Adobe kann Ihnen optimale Einstellungen für Ihre Umgebung empfehlen.
 
 * Die Mbean **Oak-Repository-Statistiken**. Sie können wie folgt direkt darauf zugreifen:
 
-`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
+`https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DOak+Repository+Statistics%2Ctype%3DRepositoryStats`
 
 Im Abschnitt **ObservationQueueMaxLength** wird die Anzahl der Ereignisse in der Oak-Beobachtungswarteschlange während der letzten Stunden, Minuten, Sekunden und Wochen angezeigt. Suchen Sie im Abschnitt „per hour“ nach der größten Anzahl von Ereignissen pro Stunde. Vergleichen Sie diese Zahl mit der Einstellung `oak.observation.queue-length`. Wenn die höchste für die Beobachtungswarteschlange angezeigte Anzahl die Einstellung `queue-length` übersteigt:
 
-1. Erstellen Sie eine Datei mit dem Namen `com.adobe.granite.repository.impl.SlingRepositoryManager.cfg`, die den Parameter `oak.observation.queue‐length=50000` enthält.
+1. Erstellen Sie eine Datei mit dem Namen `com.adobe.granite.repository.impl.SlingRepositoryManager.config`, die den Parameter `oak.observation.queue‐length=50000` enthält.
 1. Platzieren Sie sie im Ordner „/crx-­‐quickstart/install“.
-
->[!NOTE]
->Siehe [AEM 6.x | Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html)
 
 Die Standardeinstellung ist 10.000, aber für die meisten Bereitstellungen ist eine Anhebung auf 20.000 oder 50.000 erforderlich.
 
@@ -134,7 +130,7 @@ Der wichtigste Teil einer Bereitstellung, der Belastungstests unterzogen werden 
 
 Die Leistung der Website kann mithilfe automatisierter Test-Tools von Drittanbietern überprüft werden. Über diese Tools können Sie die Schritte aufzeichnen, die Benutzerinnen und Benutzer auf der Website durchführen, und viele dieser Sitzungen gleichzeitig ausführen, um die für eine Produktions-Website typische Auslastung zu simulieren.
 
-Die meisten Produktions-Websites verfügen über Optimierungsfunktionen wie Dispatcher-Caching und ein Netzwerk für die Inhaltsbereitstellung. Stellen Sie beim Testen sicher, dass diese Optimierungen auch für die Testumgebung verfügbar sind. Überwachen Sie nicht nur die Reaktionszeiten der Endbenutzerinnen und -benutzer, sondern behalten Sie auch die Systemmetriken auf den Veröffentlichungs-Servern und Dispatchern im Auge, um sicherzustellen, dass das System nicht durch Hardware-Ressourcen eingeschränkt wird.
+Die meisten Produktions-Websites verfügen über Optimierungsfunktionen wie Dispatcher-Caching und ein Content Delivery Network. Stellen Sie beim Testen sicher, dass diese Optimierungen auch für die Testumgebung verfügbar sind. Überwachen Sie nicht nur die Reaktionszeiten der Endbenutzerinnen und -benutzer, sondern behalten Sie auch die Systemmetriken auf den Veröffentlichungs-Servern und Dispatchern im Auge, um sicherzustellen, dass das System nicht durch Hardware-Ressourcen eingeschränkt wird.
 
 Auf einem System, das keine umfassende Personalisierung erfordert, sollte der Dispatcher die meisten Anforderungen zwischenspeichern. Daher sollte die Belastungskurve für die Publishing-Instanz relativ flach bleiben. Wenn ein hohes Maß an Personalisierung erforderlich ist, wird empfohlen, Technologien wie iFrames oder AJAX-Anforderungen für personalisierte Inhalte zu verwenden, um ein Maximum an Dispatcher-Caching zuzulassen.
 
@@ -150,10 +146,9 @@ Nach dem Ausführen von Leistungstests auf der Authoring-Instanz müssen alle fe
 * Prüfen Sie das Fehlerprotokoll auf Fehler oder Warnungen. Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md).
 * Überwachen Sie die Hardware-Ressourcen des Systems, z. B. Speicher- und CPU-Auslastung oder E/A-Vorgänge von Festplatten bzw. Netzwerk. Diese Ressourcen sind häufig die Ursachen für Leistungsengpässe.
 * Optimieren Sie die Architektur der Seiten und ihre Adressierung, um die Verwendung von URL-Parametern zu minimieren, damit ein Höchstmaß an Zwischenspeicherung ermöglicht wird.
-* Befolgen Sie die Dokumentationen [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) und [Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html).
-
+* Befolgen Sie die [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md).
 * Wenn beim Bearbeiten bestimmter Seiten oder Komponenten in Authoring-Instanzen Probleme auftreten, sehen Sie sich die fragliche Seite mithilfe des Entwicklermodus der Touch-optimierten Benutzeroberfläche an. Dadurch erhalten Sie eine Aufschlüsselung der einzelnen Inhaltsbereiche auf der Seite und ihrer Ladezeiten.
-* Minimieren Sie alle JS- und CSS-Dateien auf der Site. Siehe diesen [Blogpost](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
+* Minimieren Sie alle JS- und CSS-Dateien auf der Site.
 * Entfernen Sie eingebettete CSS- und JS-Elemente aus den Komponenten. Diese sollten in den Client-seitigen Bibliotheken enthalten und minimiert sein, um die Anzahl der zum Rendern der Seite benötigten Anfragen zu minimieren.
 * Verwenden Sie Browser-Tools wie den Chrome-Tab „Netzwerk“, um die Server-Anfragen zu überprüfen und festzustellen, welche am längsten dauern.
 

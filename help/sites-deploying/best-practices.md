@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4f830ee9-e0e3-48df-b67d-709258cb1991
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '374'
 ht-degree: 100%
 
 ---
@@ -71,10 +71,6 @@ Spezifische Dokumente werden in den folgenden Tabellen beschrieben und verlinkt.
 </table>
 
 ## Benutzeroberfläche {#ui}
-
-Best Practices für die Benutzeroberfläche werden hier beschrieben: 
-
-[Empfehlungen für Kunden zur Benutzeroberfläche](/help/sites-deploying/ui-recommendations.md)
 
 AEM verfügt derzeit über zwei Benutzeroberflächen: die klassische und die Touch-optimierte Benutzeroberfläche in derselben Version. Daher müssen sich Kunden während der Projektimplementierung für die Nutzung der einen oder anderen entscheiden. Dieses Dokument soll bei der Entscheidungsfindung behilflich sein.
 

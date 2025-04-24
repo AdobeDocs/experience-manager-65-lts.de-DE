@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e9b26de3-6e14-4187-8f25-6e56ee3092a7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '611'
 ht-degree: 100%
 
 ---
@@ -100,10 +100,6 @@ Beachten Sie bei der Migration die folgenden wichtigen Unterschiede zwischen der
 </table>
 
 Das heißt, dass die Migration eines Bereichs Ihrer Benutzeroberfläche von der klassischen Benutzeroberfläche zur Touch-optimierten Benutzeroberfläche die Portierung eines *ExtJS-Widgets* zu einer *Sling-Komponente* bedeutet. Um dies zu vereinfachen, basiert die Touch-optimierte Benutzeroberfläche auf dem Granite-UI-Framework, das bereits einige Sling-Komponenten für die Benutzeroberfläche bereitstellt (als Granite-UI-Komponenten bezeichnet).
-
-Bevor Sie beginnen, überprüfen Sie den Status und die zugehörigen Empfehlungen:
-
-* [Empfehlungen für Kunden zur Benutzeroberfläche](/help/sites-deploying/ui-recommendations.md)
 
 Die Grundlagen der Entwicklung der Touch-optimierten Benutzeroberfläche bieten ein solides Fundament:
 
