@@ -11,10 +11,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 49225f9f-d09e-4ab6-9e29-b47ba41e8889
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: d9bb95b41f065ced60ceef6eb6f2c08ebf115d2d
 workflow-type: tm+mt
 source-wordcount: '1213'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -75,9 +75,9 @@ In der folgenden Legende werden Bereiche mit möglichen Leistungsproblemen samt 
 
 **Temporäres Dateisystem** Ein langsames lokales Dateisystem kann zu Problemen mit der interaktiven Leistung führen. Dies gilt insbesondere für Suchvorgänge, da Suchindizes auf der lokalen Festplatte gespeichert werden. Zudem können Probleme bei der Asset-Verarbeitung auftreten, sofern der Befehlszeilenprozess verwendet wird.
 
-**AEM-DAM Produktsuche** Probleme mit der interaktiven Leistung, die häufig bei Suchvorgängen auftreten, sind auf eine hohe CPU-Auslastung aufgrund einer zu großen Anzahl gleichzeitiger Benutzender oder andere CPU-intensive Prozesse in derselben Instanz zurückzuführen. Durch den Wechsel von virtuellen Maschinen zu dedizierten Maschinen und das Sicherstellen, dass keine weiteren Dienste auf dem Rechner ausgeführt werden, kann die Leistung verbessert werden. Wenn eine hohe CPU-Last durch Asset-Verarbeitung und viele gleichzeitige Benutzende verursacht wird, empfiehlt Day das Hinzufügen weiterer Cluster-Knoten.
+**AEM-DAM Produktsuche** Probleme mit der interaktiven Leistung, die häufig bei Suchvorgängen auftreten, sind auf eine hohe CPU-Auslastung aufgrund einer zu großen Anzahl gleichzeitiger Benutzender oder andere CPU-intensive Prozesse in derselben Instanz zurückzuführen. Durch den Wechsel von virtuellen Maschinen zu dedizierten Maschinen und das Sicherstellen, dass keine weiteren Dienste auf dem Rechner ausgeführt werden, kann die Leistung verbessert werden. Wenn eine hohe CPU-Auslastung aufgrund von Asset-Verarbeitung und vielen gleichzeitigen Benutzenden verursacht wird, empfiehlt Adobe das Hinzufügen zusätzlicher Cluster-Knoten.
 
-**AEM-DAM Workflow** Lang laufende Workflow-Prozesse während der Asset-Aufnahme führen zu Leistungsproblemen bei der Asset-Verarbeitung. Abhängig vom Typ der verarbeiteten Assets kann dies auf eine Überauslastung der CPU hindeuten. Day empfiehlt, die Anzahl der anderen auf dem System ausgeführten Prozesse zu reduzieren und die Anzahl der verfügbaren CPUs durch Hinzufügen von Cluster-Knoten zu erhöhen.
+**AEM-DAM Workflow** Lang laufende Workflow-Prozesse während der Asset-Aufnahme führen zu Leistungsproblemen bei der Asset-Verarbeitung. Abhängig vom Typ der verarbeiteten Assets kann dies auf eine Überauslastung der CPU hindeuten. Adobe empfiehlt, die Anzahl der anderen auf dem System ausgeführten Prozesse zu reduzieren und die Anzahl der verfügbaren CPUs durch Hinzufügen von Cluster-Knoten zu erhöhen.
 
 **NAS Connectivity** Eine unzureichende Netzwerkkonnektivität zum NAS verursacht Probleme mit der interaktiven Leistung, weil der Zugriff auf neue Knoten während der Asset-Verarbeitung aufgrund der Netzwerklatenz verlangsamt wird. Außerdem wirkt sich ein langsamer Netzwerkdurchsatz nicht nur negativ auf den Durchsatz aus, sondern auch auf die Leistung bei der Asset-Verarbeitung, denn Ausgabedarstellungen werden langsamer geladen und gespeichert.
 
