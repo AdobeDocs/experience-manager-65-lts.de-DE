@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 438d383aa7a08334d9977411fd37395f89133834
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 98%
+source-wordcount: '1567'
+ht-degree: 95%
 
 ---
 
@@ -21,6 +21,13 @@ Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem besti
    * zum Rückgängigmachen einer Änderung an einer Seite
 * Vergleichen der aktuellen Version einer Seite mit einer früheren Version:
    * zum Hervorheben der Unterschiede im Text und in Bildern
+
+>[!NOTE]
+>
+>Im AEM-Repository wird nur der Inhalt versioniert. Dynamische Ressourcen wie Code, CSS und JavaScript werden nicht versioniert.
+>
+>* Beim Anzeigen von Versionen wird der Inhalt mit dem aktuellen Code, CSS und JavaScript des Repositorys angezeigt.
+>* Beim Wiederherstellen von Versionen wird nur der Inhalt wiederhergestellt und der aktuelle Code, CSS und JavaScript des Repositorys werden darauf angewendet.
 
 ## Erstellen einer neuen Version {#creating-a-new-version}
 
