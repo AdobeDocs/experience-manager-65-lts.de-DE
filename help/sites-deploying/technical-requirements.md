@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: e337b682a0ee2b35940671991bd82b30d9d50128
+source-git-commit: 45b0c2c3a2cf1e3d55ad9184878cb8ebc3add672
 workflow-type: tm+mt
-source-wordcount: '2961'
+source-wordcount: '2955'
 ht-degree: 94%
 
 ---
@@ -153,7 +153,8 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
 | **Linux®, basierend auf der Red Hat®-Verteilung** | A: Unterstützt `[1]` `[2]` |
 | Linux®, auf Basis der Debian-Verteilung einschl. Ubuntu | A: Unterstützt `[1]` |
 | Linux®, auf Basis der SUSE®-Verteilung | A: Unterstützt `[1]` |
-| Microsoft® Windows Server 2022 | R: Unterstützt |
+
+<!--| Microsoft&reg; Windows Server 2022 |R: Supported|-->
 
 1. Linux®-Kernel 5. x und 6. x umfasst Derivate der Red Hat®-Distribution, einschließlich Red Hat® Enterprise Linux®, CentOS, Oracle Linux® und Amazon Linux®.
 1. Die Linux®-Verteilung wird von Adobe Managed Services unterstützt.
