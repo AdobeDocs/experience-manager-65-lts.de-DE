@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
+source-git-commit: 262b73813a0e1ccb9c45a4e099461d4dd8eccd00
 workflow-type: tm+mt
-source-wordcount: '3287'
+source-wordcount: '3270'
 ht-degree: 99%
 
 ---
@@ -347,8 +347,6 @@ Diese Einstellungen werden verwendet, um Auslöser für die automatisierte Repli
   Ist diese Option aktiviert, erzwingt der Agent keine Versionierung aktivierter Seiten.
 
 ## Konfigurieren von Replikationsagenten {#configuring-your-replication-agents}
-
-Weitere Informationen zum Verbinden von Replikationsagenten mit der Veröffentlichungsinstanz über MSSL finden Sie unter [Replizieren mit bidirektionaler SSL-Kommunikation](/help/sites-deploying/mssl-replication.md).
 
 ### Konfigurieren der Replikationsagenten über die Autorenumgebung {#configuring-your-replication-agents-from-the-author-environment}
 

@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
+source-git-commit: 262b73813a0e1ccb9c45a4e099461d4dd8eccd00
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '927'
 ht-degree: 96%
 
 ---
@@ -59,16 +59,6 @@ Wechseln Sie zu /etc/replication/agents.author.html und klicken Sie dann auf die
    1. Geben Sie die folgende Abfrage in das Feld „Abfrage“ ein: /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job) order by @slingevent:created
    1. Klicken Sie auf „Suchen“. 
    1. Die in den Ergebnissen ganz oben angezeigten Elemente sind die aktuellen Sling-Eventing-Aufträge. Klicken Sie auf die einzelnen Aufträge, um nach den unterbrochenen Replikationen zu suchen, die mit dem oben in der Warteschlange Angezeigten übereinstimmen.
-
-1. Möglicherweise liegt ein Problem mit den Auftragswarteschlangen des Sling-Eventing-Frameworks vor. Versuchen Sie, das Bundle „org.apache.sling.event“ in „/system/console“ neu zu starten.
-1. Möglicherweise ist die Auftragsverarbeitung deaktiviert. Dies kann in der Felix-Konsole auf der Registerkarte „Sling Eventing“ überprüft werden. Prüfen Sie, ob Folgendes angezeigt wird: „Apache Sling Eventing (JOB PROCESSING IS DISABLED!“)
-
-   * Ist dies der Fall, überprüfen Sie auf der Registerkarte „Configuration“ der Felix-Konsole den Apache Sling Job Event Handler. Möglicherweise ist das Kontrollkästchen für „Job Processing Enabled“ deaktiviert. Falls es aktiviert ist und weiter „Job Processing Disabled“ angezeigt wird, überprüfen Sie, ob unter „/apps/system/config“ eine Überlagerung vorhanden ist, die die Auftragsverarbeitung deaktiviert. Versuchen Sie, einen „osgi:config“-Knoten für „jobmanager.enabled“ zu erstellen, dessen boolescher Wert auf „true“ gesetzt ist, und vergewissern Sie sich erneut, ob die Aktivierung gestartet wurde und keine Aufträge mehr in der Warteschlange vorhanden sind.
-
-1. Möglicherweise ist auch der Status der Konfiguration „DefaultJobManager“ inkonsistent. Dies kann vorkommen, wenn die Konfiguration „Apache Sling Job Event Handler“ über die OSGi-Konsole manuell geändert wird (z. B. durch Deaktivieren und erneutes Aktivieren der Eigenschaft „Job Processing Enabled“ (Auftragsverarbeitung aktiviert) und Speichern der Konfiguration).
-
-   * Dies führt dazu, dass der Status der unter „crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config“ gespeicherten Konfiguration für „DefaultJobManager“ inkonsistent wird. Obwohl die Eigenschaft „Apache Sling Job Event Handler“ anzeigt, dass „Job Processing Enabled“ (Jobverarbeitung aktiviert) aktiviert ist, wird auf der Registerkarte „Sling Eventing“ die Meldung „JOB PROCESSING IS DISABLED“ (Auftragsverarbeitung ist deaktiviert) angezeigt und die Replikation funktioniert nicht.
-   * Navigieren Sie zur Konfigurationsseite der OSGi-Konsole und löschen Sie die Konfiguration „Apache Sling Job Event Handler“, um dieses Problem zu beheben. Starten Sie dann den Primärknoten des Clusters neu, um den Status der Konfiguration wieder konsistent zu machen. Damit sollte das Problem behoben sein und die Replikation sollte wieder funktionieren.
 
 **Erstellen einer „replication.log“-Datei**
 
