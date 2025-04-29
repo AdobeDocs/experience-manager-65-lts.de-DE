@@ -8,13 +8,11 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-hide: true
-hidefromtoc: true
 exl-id: 3ffa7c80-ce59-41cf-bb50-c6caf77d9baa
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 09f3d38e9f9c7f882d8b03dcf86db68cb8885a08
 workflow-type: tm+mt
-source-wordcount: '4520'
-ht-degree: 100%
+source-wordcount: '4196'
+ht-degree: 98%
 
 ---
 
@@ -145,7 +143,7 @@ Folgende Werte werden empfohlen:
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-In AEM 6.3 sind die beiden oben stehenden Parameter standardmäßig vorkonfiguriert und können über die OSGi QueryEngineSettings beibehalten werden.
+Ab AEM 6.3 sind die beiden oben genannten Parameter vorkonfiguriert und können über die OSGi QueryEngineSettings beibehalten werden.
 
 Weitere Informationen finden Sie unter: [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
@@ -168,20 +166,6 @@ Lucene-Indizes wurden in Oak 1.0.9 eingeführt und bieten einige Optimierungsvar
 * Da Lucene-Indizes asynchron sind, können sie keine Eindeutigkeitseinschränkungen erzwingen. Sofern erforderlich, muss ein Eigenschaftenindex angelegt werden.
 
 Im Allgemeinen wird empfohlen, Lucene-Indizes zu verwenden, es sei denn, es besteht eine zwingende Notwendigkeit, Eigenschaftenindizes zu verwenden, damit Sie von höherer Leistung und Flexibilität profitieren können.
-
-### Solr-Indizierung {#solr-indexing}
-
-AEM unterstützt zudem standardmäßig die Solr-Indizierung. Diese dient zur Unterstützung der Volltextsuche, kann aber auch für beliebige JCR-Abfragen verwendet werden. Solr sollte in Betracht gezogen werden, wenn die CPU-Kapazität der AEM-Instanzen nicht für die benötigte Anzahl an Anfragen in suchintensiven Bereitstellungen wie suchgesteuerten Websites mit einer hohen Anzahl gleichzeitiger Benutzerinnen und Benutzer ausreicht. Solr kann auch in einem Crawler-basierten Ansatz implementiert werden, um einige der hochmodernen Funktionen dieser Plattform nutzen zu können.
-
-Solr-Indizes können so konfiguriert werden, dass sie eingebettet auf dem AEM-Server für Entwicklungsumgebungen ausgeführt werden, oder sie können auf eine Remote-Instanz abgeladen werden, um die Suchskalierbarkeit in der Produktions- und Staging-Umgebung zu verbessern. Zwar wird die Skalierbarkeit durch Abladen von Suchvorgängen optimiert, allerdings führt dies zu Latenzzeiten, und deshalb wird von einem solchen Vorgehen, sofern nicht erforderlich, abgeraten. Weitere Informationen zum Konfigurieren einer Solr-Integration und zum Erstellen von Solr-Indizes finden Sie in der [Dokumentation zu Oak-Abfragen und -Indizierung](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
-
->[!NOTE]
->
->Der integrierte Solr-Suchansatz ermöglicht es, die Indizierung auf einen Solr-Server auszulagern. Wenn die hochmodernen Funktionen des Solr-Servers über einen Crawler-basierten Ansatz verwendet werden, sind zusätzliche Konfigurationsvorgänge erforderlich.
-
-Der Nachteil dieses Ansatzes besteht darin, dass AEM-Abfragen zwar standardmäßig ACLs respektieren und so Ergebnisse verbergen, auf die Benutzende keinen Zugriff haben, jedoch die Externalisierung der Suche auf einen Solr-Server diese Funktion nicht unterstützt. Wenn Suchvorgänge auf eine solche Art und Weise externalisiert werden sollen, muss besonders darauf geachtet werden, dass den Benutzerinnen und Benutzern nur die für sie vorgesehenen Ergebnisse angezeigt werden.
-
-Mögliche Anwendungsfälle, in denen dieser Ansatz sinnvoll sein kann, sind etwa Fälle, in denen Suchdaten aus mehreren Quellen aggregiert werden müssen. Angenommen, Sie verfügen über eine auf AEM gehostete Site und über eine zweite, auf einer Drittanbieterplattform gehostete Site.  Solr könnte so konfiguriert werden, dass der Inhalt beider Sites durchsucht und in einem aggregierten Index gespeichert wird. Dies würde Site-übergreifende Suchvorgänge ermöglichen.
 
 ### Design-Überlegungen {#design-considerations}
 
@@ -216,7 +200,7 @@ Beim Entfernen eines Index in einer MongoDB-Instanz verhält sich der Löschaufw
 
 ### JCR-Abfrage-Schnellübersicht {#jcrquerycheatsheet}
 
-Um die Erstellung effizienter JCR-Abfragen und Indexdefinitionen zu unterstützen, kann die [JCR-Abfrage-Schnellübersicht](assets/JCR_query_cheatsheet-v1.1.pdf) heruntergeladen und während der Entwicklung als Referenz verwendet werden. Sie enthält Beispielabfragen für QueryBuilder, XPath und SQL-2, die mehrere Szenarien abdecken, welche sich hinsichtlich der Abfrageleistung unterschiedlich verhalten. Sie enthält auch Empfehlungen zum Erstellen oder Anpassen von Oak-Indizes. Der Inhalt dieser Schnellübersicht gilt für AEM 6.5 und AEM as a Cloud Service.
+Um die Erstellung effizienter JCR-Abfragen und Indexdefinitionen zu unterstützen, kann die [JCR-Abfrage-Schnellübersicht](assets/JCR_query_cheatsheet-v1.1.pdf) heruntergeladen und während der Entwicklung als Referenz verwendet werden. Sie enthält Beispielabfragen für QueryBuilder, XPath und SQL-2, die mehrere Szenarien abdecken, welche sich hinsichtlich der Abfrageleistung unterschiedlich verhalten. Sie enthält auch Empfehlungen zum Erstellen oder Anpassen von Oak-Indizes. Der Inhalt dieser Schnellübersicht gilt für AEM 6.5, AEM 6.5 LTS und AEM as a Cloud Service.
 
 ## Neuindizierung {#re-indexing}
 
@@ -380,7 +364,7 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 
 >[!NOTE]
 >
->In AEM 6.5 ist [oak-run.jar die EINZIGE unterstützte Methode](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) für die Neuindizierung von MongoMK- oder RDBMK-Repositorys.
+>In AEM 6.5 LTS ist [oak-run.jar die EINZIGE unterstützte Methode](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) für die Neuindizierung von MongoMK- oder RDBMK-Repositorys.
 
 #### Neuindizieren von Eigenschaftenindizes {#re-indexing-property-indexes}
 
