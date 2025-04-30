@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d1475168-6625-4d27-9c3b-01e415c2f398
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1930'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -315,7 +315,7 @@ Wenn die Einblenden/Ausblenden-Konfiguration ungültig ist, wird die Konfigurati
 
 ### Entwicklung von Skripten zur Verwendung mit Formularen {#developing-scripts-for-use-with-forms}
 
-Weitere Informationen über die API-Elemente, die Sie zur Erstellung von Skripten verwenden können, finden Sie in den [javadocs zu Formularen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
+Weitere Informationen über die API-Elemente, die Sie zur Erstellung von Skripten verwenden können, finden Sie in den [javadocs zu Formularen](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
 
 Sie können dies z. B. verwenden, um einen Dienst aufzurufen, bevor das Formular übermittelt wird, und den Dienst abbrechen, wenn es fehlschlägt:
 

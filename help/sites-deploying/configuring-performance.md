@@ -9,10 +9,10 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '5052'
+ht-degree: 99%
 
 ---
 
@@ -218,7 +218,7 @@ Die Workflow-Engine verwendet Apache Sling-Vorgangswarteschlangen für die Verar
 
 <!-- TODO: Change the reference to 6.5 LTS javadocs -->
 * Granite Workflow-Warteschlange: Für die meisten Workflow-Schritte, wie diejenigen zur Verarbeitung von DAM-Assets, wird der Granite Workflow-Warteschlangendienst verwendet.
-* Granite Workflow Auftragswarteschlange für externe Prozesse: Dieser Dienst wird für spezielle externe Workflow-Schritte verwendet, die typischerweise für die Kontaktaufnahme mit einem externen System und die Abfrage von Ergebnissen verwendet werden. Beispielsweise wird der Schritt „InDesign Medien-Extraktionsvorgang“ als externer Prozess implementiert. Die Workflow-Engine verwendet die externe Warteschlange zur Verarbeitung der Abfrage. (Siehe [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
+* Granite Workflow Auftragswarteschlange für externe Prozesse: Dieser Dienst wird für spezielle externe Workflow-Schritte verwendet, die typischerweise für die Kontaktaufnahme mit einem externen System und die Abfrage von Ergebnissen verwendet werden. Beispielsweise wird der Schritt „InDesign Medien-Extraktionsvorgang“ als externer Prozess implementiert. Die Workflow-Engine verwendet die externe Warteschlange zur Verarbeitung der Abfrage. (Siehe [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
 Konfigurieren Sie diese Dienste, um die maximale Anzahl der parallel ausgeführten Workflow-Prozesse zu beschränken.
 

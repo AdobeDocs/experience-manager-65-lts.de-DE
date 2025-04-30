@@ -9,7 +9,7 @@ feature: Adaptive Forms,Foundation Components,Acrobat Sign
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: fdf95738-3075-43d6-9d51-64c83cf0f0b7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '2071'
 ht-degree: 99%
@@ -42,7 +42,7 @@ Für die Integration von [!DNL Adobe Sign] in AEM [!DNL Forms] benötigen Sie Fo
 
 * Ein gültiges [Adobe Sign-Entwicklerkonto.](https://acrobat.adobe.com/de/de/why-adobe/developer-form.html)
 * Einen AEM [!DNL Forms]-Server, auf dem [SSL aktiviert](/help/sites-administering/ssl-by-default.md) ist.
-* Eine [Adobe Sign API-Anwendung](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
+* Eine [Adobe Sign API-Anwendung](https://developer.adobe.com/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 * Anmeldeinformationen (Client-ID und Client Secret) der [!DNL Adobe Sign]-API-Anwendung.
 * Entfernen Sie bei der Neukonfiguration die vorhandene [!DNL Adobe Sign]-Konfiguration sowohl aus der Autoren- als auch aus der Veröffentlichungsinstanz.
 * Verwenden Sie [identische Schlüssel](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed) für Autoren- und Veröffentlichungsinstanzen.
@@ -112,7 +112,7 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
    * widget_write
    * workflow_read
 
-   Schritt-für-Schritt-Anleitungen zum Konfigurieren der OAuth-Einstellungen für ein [!DNL Adobe Sign]-Programm und zum Abrufen der Schlüssel finden Sie in der Entwicklerdokumentation unter [Konfigurieren von OAuth-Einstellungen für die Anwendung](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md).
+   Schritt-für-Schritt-Anleitungen zum Konfigurieren der OAuth-Einstellungen für ein [!DNL Adobe Sign]-Programm und zum Abrufen der Schlüssel finden Sie in der Entwicklerdokumentation unter [Konfigurieren von OAuth-Einstellungen für die Anwendung](https://developer.adobe.com/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md).
 
    ![OAuth Config](assets/oauthconfig_new.png)
 

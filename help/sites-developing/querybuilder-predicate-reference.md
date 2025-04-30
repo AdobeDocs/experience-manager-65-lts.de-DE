@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2313'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -267,7 +267,7 @@ Es unterstützt die Facettenextraktion und bietet zwei Buckets für Haupt- und U
 
 ### memberOf {#memberof}
 
-Sucht Objekte, die Mitglieder einer bestimmten [Sling-Ressourcensammlung](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) sind.
+Sucht Objekte, die Mitglieder einer bestimmten [Sling-Ressourcensammlung](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) sind.
 
 Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen. Facettenextraktion wird nicht unterstützt.
 

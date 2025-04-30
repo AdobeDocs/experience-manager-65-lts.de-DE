@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: a3595673-8d43-4ef2-a00e-ec8aa8d9cb55
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -188,7 +188,7 @@ Im [Abschnitt „Sicherheit“](/help/sites-administering/security.md) finden Si
 
 ### Link-Auswahlmechanismus {#link-selection-mechanism}
 
-In `/libs/cq/core/components/welcome/welcome.jsp` wird [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html) genutzt, das eine Abfrage auf Knoten mit folgender Eigenschaft durchführt:
+In `/libs/cq/core/components/welcome/welcome.jsp` wird [ConsoleUtil](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ConsoleUtil.html) genutzt, das eine Abfrage auf Knoten mit folgender Eigenschaft durchführt:
 
 * `jcr:mixinTypes` mit dem Wert: `cq:Console`
 

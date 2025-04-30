@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 2a94ea8d-2919-4f30-be31-ce559493805d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ Mit Client-Bibliotheken können Sie die Standardimplementierung um neue Funktion
 >
 >* Verwenden und Erstellen von [Client-Bibliotheken](/help/sites-developing/clientlibs.md).
 >* Verwenden und Erstellen von [Überlagerungen](/help/sites-developing/overlays.md).
->* [Granite](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+>* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
 >
 
 
@@ -150,7 +150,7 @@ Anpassen von Spalten in der Listenansicht:
 
 1. Optional:
 
-   * Falls Sie zusätzliche Daten hinzufügen möchten, müssen Sie einen [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) mit einer
+   * Falls Sie zusätzliche Daten hinzufügen möchten, müssen Sie einen [PageInforProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) mit einer
      `pageInfoProviderType`-Eigenschaft schreiben.
 
    Ein Beispiel sehen Sie im unten (aus GitHub) angehängten Class-Bundle.

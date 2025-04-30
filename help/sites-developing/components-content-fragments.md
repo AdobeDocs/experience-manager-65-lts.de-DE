@@ -11,10 +11,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Content Fragments
 role: Developer
 exl-id: 2196af09-8053-49c3-8a23-caf03bb9a39d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '932'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -131,4 +131,4 @@ Die Standardkonfiguration verwendet folgende Transformatoren:
 * `transformer-cfm-parfilter` – filtert unerwünschte Absätze heraus, wenn ein Absatzbereich angegeben wurde (wie bei der Inhaltsfragmentkomponente möglich)
 * `transformer-cfm-assetprocessor` – wird intern zum Abrufen einer Liste der Assets verwendet, die im Fragment eingebettet sind
 
-Der Rendervorgang wird über [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) verfügbar gemacht und kann bei Bedarf (zum Beispiel) von benutzerdefinierten Komponenten genutzt werden.
+Der Rendervorgang wird über [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) verfügbar gemacht und kann bei Bedarf (zum Beispiel) von benutzerdefinierten Komponenten genutzt werden.

@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: fe3735ff-5c9b-4eb8-bf1d-f2189ec7e26f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3251'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -391,7 +391,7 @@ Um beispielsweise den Namen der aktuellen Seite abzurufen, können Sie in Ihrem 
 
 S`tring pageName = currentPage.getName();`
 
-Dabei ist „currentPage“ das aktuelle Seitenobjekt. Weitere Informationen zum Bearbeiten von Seitenobjekten finden Sie in den [Java™-Docs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
+Dabei ist „currentPage“ das aktuelle Seitenobjekt. Weitere Informationen zum Bearbeiten von Seitenobjekten finden Sie in den [Java™-Docs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Seiten-Manager** Der Seiten-Manager ist eine Schnittstelle, die Methoden für Vorgänge auf Seitenebene bereitstellt.
 
@@ -399,7 +399,7 @@ Um beispielsweise die Seite abzurufen, in der eine Ressource enthalten ist, kön
 
 Page myPage = pageManager.getContainingPage(myResource);
 
-Dabei ist „pageManager“ das Seiten-Manager-Objekt und „myResource“ ein Ressourcenobjekt. Weitere Informationen zu den vom Seiten-Manager bereitgestellten Methoden finden Sie in den [Java™-Docs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
+Dabei ist „pageManager“ das Seiten-Manager-Objekt und „myResource“ ein Ressourcenobjekt. Weitere Informationen zu den vom Seiten-Manager bereitgestellten Methoden finden Sie in den [Java™-Docs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Struktur innerhalb des Repositorys {#structure-within-the-repository}
 

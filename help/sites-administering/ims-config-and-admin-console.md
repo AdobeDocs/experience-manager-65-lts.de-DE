@@ -9,7 +9,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 63f42a35-fbd5-4b1b-bba1-1bdcfd23dd33
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '1601'
 ht-degree: 98%
@@ -104,7 +104,7 @@ Wenn die Benutzersynchronisierung ausgeführt wird, ruft das Tool eine Liste der
 
 Mit dem Tool können Systemadmins Benutzergruppen im Verzeichnis der Kundschaft Produktkonfigurationen und Benutzergruppen in der [!DNL Admin Console] zuordnen. Die neue UST-Version ermöglicht außerdem die dynamische Erstellung von Benutzergruppen in der [!DNL Admin Console].
 
-Um die Benutzersynchronisierung einzurichten, muss die Organisation Anmeldeinformationen erstellen. Die Schritte hierfür sind dieselben wie bei der [[!DNL User Management] -API](https://www.adobe.io/apis/cloudplatform/usermanagement/docs/setup.html).
+Um die Benutzersynchronisierung einzurichten, muss die Organisation Anmeldeinformationen erstellen. Die Schritte hierfür sind dieselben wie bei der [[!DNL User Management] -API](https://developer.adobe.com/apis/cloudplatform/usermanagement/docs/setup.html).
 
 ![image2018-9-23_13-36-56](assets/image2018-9-23_13-36-56.png)
 

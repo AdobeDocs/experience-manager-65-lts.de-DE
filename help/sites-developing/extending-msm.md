@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2444'
 ht-degree: 99%
@@ -43,8 +43,8 @@ Auf dieser Seite erfahren Sie, wie Sie die Funktionen von Multi Site Manager erw
 
 Multi Site Manager umfasst die folgenden Pakete:
 
-* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
-* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
+* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
+* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
 Die wichtigsten MSM-API-Objekte interagieren wie folgt (siehe auch [Verwendete Begriffe](/help/sites-administering/msm.md#terms-used)):
 
@@ -103,8 +103,8 @@ Die wichtigsten MSM-API-Objekte interagieren wie folgt (siehe auch [Verwendete B
 
 Erstellen Sie benutzerdefinierte Synchronisierungsaktionen zur Verwendung mit Ihren Rollout-Konfigurationen. Wenn die [installierten Aktionen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) Ihre spezifischen Anwendungsanforderungen nicht erfüllen, können Sie eine Synchronisierungsaktion erstellen. Erstellen Sie dazu zwei Klassen:
 
-* eine Implementierung der Schnittstelle [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html), die die Aktion ausführt
-* eine OSGi-Komponente, die die Schnittstelle [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) implementiert und Instanzen der Klasse `LiveAction` erstellt.
+* eine Implementierung der Schnittstelle [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveAction.html), die die Aktion ausführt
+* eine OSGi-Komponente, die die Schnittstelle [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) implementiert und Instanzen der Klasse `LiveAction` erstellt.
 
 `LiveActionFactory` erstellt Instanzen der Klasse `LiveAction` für eine bestimmte Konfiguration:
 
@@ -127,7 +127,7 @@ Mit dem `LiveAction`-Konfigurationsknoten im Repository können Sie Informatione
 
 Beispielsweise muss eine `LiveAction` den Namen eines Blueprint-Autors speichern. Eine Eigenschaft des Konfigurationsknotens umfasst den Eigenschaftsnamen der Blueprint-Seite, in der die Informationen gespeichert werden. Zur Laufzeit ruft die `LiveAction` den Eigenschaftsnamen von der Konfiguration ab und erhält dann den Eigenschaftswert.
 
-Der Parameter der Methode [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) ist ein `Resource`-Objekt. Dieses `Resource`-Objekt repräsentiert den Knoten `cq:LiveSyncAction` für diese Live-Aktion in der Rollout-Konfiguration; siehe: [Erstellen einer Rollout-Konfiguration](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Wie bei Konfigurationsknoten gewohnt, sollten Sie ihn an ein `ValueMap`-Objekt anpassen:
+Der Parameter der Methode [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) ist ein `Resource`-Objekt. Dieses `Resource`-Objekt repräsentiert den Knoten `cq:LiveSyncAction` für diese Live-Aktion in der Rollout-Konfiguration; siehe: [Erstellen einer Rollout-Konfiguration](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Wie bei Konfigurationsknoten gewohnt, sollten Sie ihn an ein `ValueMap`-Objekt anpassen:
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -145,9 +145,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 Die folgenden Objekte sind als Parameter der `execute`-Methode vom `LiveAction`-Objekt verfügbar:
 
-* ein [`Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html)-Objekt, das die Quelle der Live Copy repräsentiert
+* ein [`Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/Resource.html)-Objekt, das die Quelle der Live Copy repräsentiert
 * ein `Resource`-Objekt, das das Ziel der Live Copy repräsentiert
-* das [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html)-Objekt für die Live Copy
+* das [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html)-Objekt für die Live Copy
 * Der Wert `autoSave` gibt an, ob die `LiveAction` am Repository vorgenommene Änderungen speichern soll.
 
 * Der Wert für das Zurücksetzen legt den Rollout-Modus für das Zurücksetzen fest.
@@ -164,7 +164,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->Die `Resource`-Argumente können `null`- oder `Resources`-Objekte sein, die sich nicht an `Node`-Objekte anpassen, z. B. [`NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html)-Objekte.
+>Die `Resource`-Argumente können `null`- oder `Resources`-Objekte sein, die sich nicht an `Node`-Objekte anpassen, z. B. [`NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/api/resource/NonExistingResource.html)-Objekte.
 
 ## Erstellen einer neuen Rollout-Konfiguration {#creating-a-new-rollout-configuration}
 

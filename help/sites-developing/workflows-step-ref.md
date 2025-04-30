@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e82d97c2-c26a-48df-9210-47dc017c68c8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3227'
 ht-degree: 99%
@@ -87,7 +87,7 @@ Mit der **UND-Teilung** wird der Workflow unterteilt und beide Verzweigungen we
 
 So konfigurieren Sie die Aufspaltung:
 
-* Bearbeiten Sie die **UND-Verzweigungs-Eigenschaften**:
+* Bearbeiten Sie die **UND-Teilungs-Eigenschaften**:
 
    * **Name der Teilung**: Fügen Sie zur Erläuterung einen Namen ein.
    * Wählen Sie die Anzahl der erforderlichen Verzweigungen aus. 2, 3, 4 oder 5.
@@ -427,7 +427,7 @@ Erstellen Sie einen OSGi-Dienst oder ein ECMAScript, das Benutzer bzw. Benutzeri
 
 * **OSGi-Dienst**
 
-  Dienste müssen die Schnittstelle [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) implementieren. Die Schnittstelle definiert die folgenden Mitglieder:
+  Dienste müssen die Schnittstelle [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) implementieren. Die Schnittstelle definiert die folgenden Mitglieder:
 
    * `SERVICE_PROPERTY_LABEL`-Feld: Geben Sie in diesem Feld den Namen der Teilnehmerauswahl an. Der Name wird in einer Liste der verfügbaren Teilnehmerauswahlen in den Eigenschaften **Dynamischer Teilnehmer – Schritt** angezeigt.
 

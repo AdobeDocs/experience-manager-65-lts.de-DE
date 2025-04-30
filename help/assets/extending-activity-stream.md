@@ -6,10 +6,10 @@ role: Developer
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 44604607-e49d-469c-a6f1-dedbcd657d65
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -59,4 +59,4 @@ Die Einstellungen für die Assets-Ereignisaufzeichnung können über die [Web-Ko
 
 ## Lesen aufgezeichneter Ereignisse {#reading-recorded-events}
 
-Die aufgezeichneten Ereignisse werden als Aktivitäten gespeichert. Sie können sie programmgesteuert über die [ActivityManager-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html) lesen.
+Die aufgezeichneten Ereignisse werden als Aktivitäten gespeichert. Sie können sie programmgesteuert über die [ActivityManager-API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/activitystreams/ActivityManager.html) lesen.

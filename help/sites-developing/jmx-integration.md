@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ca929fe7-8393-42df-983d-e2005d8434ac
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1621'
 ht-degree: 98%
@@ -38,11 +38,11 @@ Neben der Verwaltungsschnittstelle definiert die Schnittstelle auch die Schnitts
 
 ### Verwenden von Anmerkungen für die Angabe von MBean-Daten {#using-annotations-to-provide-mbean-information}
 
-Das Paket [com.adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) bietet mehrere Anmerkungen und Klassen für die einfache Bereitstellung von MBean-Metadaten für die JMX-Konsole. Verwenden Sie diese Anmerkungen und Klassen, anstatt Daten direkt zum MBeanInfo-Objekt des MBean hinzuzufügen.
+Das Paket [com.adobe.granite.jmx.annotation](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) bietet mehrere Anmerkungen und Klassen für die einfache Bereitstellung von MBean-Metadaten für die JMX-Konsole. Verwenden Sie diese Anmerkungen und Klassen, anstatt Daten direkt zum MBeanInfo-Objekt des MBean hinzuzufügen.
 
 **Anmerkungen**
 
-Fügen Sie Anmerkungen zur Verwaltungsschnittstelle hinzu, um MBean-Metadaten anzugeben. Die Daten werden in der JMX-Konsole für jede bereitgestellte Implementierungsklasse angezeigt. Folgende Anmerkungen sind verfügbar (vollständige Informationen finden Sie in den [com.adobe.granite.jmx.annotation JavaDocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
+Fügen Sie Anmerkungen zur Verwaltungsschnittstelle hinzu, um MBean-Metadaten anzugeben. Die Daten werden in der JMX-Konsole für jede bereitgestellte Implementierungsklasse angezeigt. Folgende Anmerkungen sind verfügbar (vollständige Informationen finden Sie in den [com.adobe.granite.jmx.annotation JavaDocs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
 
 * **Beschreibung:** Eine Beschreibung der MBean-Klasse oder -Methode. Wenn diese Anmerkung bei der Deklaration der Klasse genutzt wird, wird die Beschreibung für das MBean auf der JMX-Konsolenseite angezeigt. Wenn sie bei einer Methode verwendet wird, wird die Beschreibung als Hover-Text für das entsprechende Attribut bzw. den entsprechenden Vorgang angezeigt.
 * **Impact:** Die Auswirkung einer Methode. Gültige Parameterwerte sind die Felder, die von [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html) definiert werden.

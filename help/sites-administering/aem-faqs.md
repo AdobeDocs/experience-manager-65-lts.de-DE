@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: b2e73e28-fa34-436d-8a20-848d353e3b8c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 98%
@@ -105,9 +105,9 @@ AEM bietet verschiedene Methoden zum Anpassen von Konsolen und der Seitenbearbei
 
 #### Was ist der Unterschied zwischen CoralUI 2- und CoralUI 3-basierten Komponenten? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
-Für Coral3 wurde ein neuer Satz Sling-Komponenten der Granite-Benutzeroberflächen-Foundation erstellt, die sich unter [/libs/granite/ui/components/coral/foundation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html)Es gibt einen Satz für CoralUI 2-basierte Komponenten und einen Satz für CoralUI 3-basierte Komponenten. Bei dem neuen Satz handelt es sich nicht nur um eine eingefügte Kopie des alten Satzes, sondern dieser wird vielmehr bereinigt (z. B. Optimierung, Entfernung veralteter Funktionen). Daher wird empfohlen, dass eine Seite entweder nur CoralUI 3-basierte oder nur CoralUI 2-basierte Sätze verwendet.
+Für Coral3 wurde ein neuer Satz Sling-Komponenten der Granite-Benutzeroberflächen-Foundation erstellt, die sich unter [/libs/granite/ui/components/coral/foundation](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html)Es gibt einen Satz für CoralUI 2-basierte Komponenten und einen Satz für CoralUI 3-basierte Komponenten. Bei dem neuen Satz handelt es sich nicht nur um eine eingefügte Kopie des alten Satzes, sondern dieser wird vielmehr bereinigt (z. B. Optimierung, Entfernung veralteter Funktionen). Daher wird empfohlen, dass eine Seite entweder nur CoralUI 3-basierte oder nur CoralUI 2-basierte Sätze verwendet.
 
-Ausführliche Informationen finden Sie im [Migrationsleitfaden für CoralUI 3-basierte Komponenten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
+Ausführliche Informationen finden Sie im [Migrationsleitfaden für CoralUI 3-basierte Komponenten](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
 
 #### Anpassen der Suchkomponente in AEM Assets {#how-to-customize-the-search-component-in-aem-assets}
 

@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Security
 role: Developer
 exl-id: abc2747f-cfd8-4ee1-bbc0-5ad89beb383a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '392'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ Es ist wichtig, dass Sie diese Konfiguration an Ihre eigenen Sicherheitsanforder
 
 >[!NOTE]
 >
->Adobe empfiehlt, immer mit der [von AEM bereitgestellten XSSAPI](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html) auf die XSS-Schutz-API zuzugreifen.
+>Adobe empfiehlt, immer mit der [von AEM bereitgestellten XSSAPI](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/xss/XSSAPI.html) auf die XSS-Schutz-API zuzugreifen.
 
 Auch kann eine Firewall in der Web-Anwendung wie [mod_security für Apache](https://www.modsecurity.org) die Sicherheit der Bereitstellungsumgebung zuverlässig und zentral steuern und diese vor bisher unerkannten Cross-Site-Scripting-Angriffen schützen.
 

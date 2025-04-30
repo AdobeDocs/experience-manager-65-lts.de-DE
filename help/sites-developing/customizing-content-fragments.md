@@ -8,10 +8,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments
 role: Developer
 exl-id: 705bffea-ef70-40b5-81d8-b130d3908073
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '2687'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -242,7 +242,7 @@ Inhaltsfragmente können mit folgenden Frameworks integriert werden:
 
 Sie können die Server-seitige API für den Zugriff auf Inhaltsfragmente verwenden, siehe:
 
-[com.adobe.cq.dam.cfm](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
+[com.adobe.cq.dam.cfm](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
 
 >[!CAUTION]
 >
@@ -252,7 +252,7 @@ Sie können die Server-seitige API für den Zugriff auf Inhaltsfragmente verwend
 
 Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
-* **Fragmentvorlage** ([FragmentTemplate](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
+* **Fragmentvorlage** ([FragmentTemplate](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
   Verwenden Sie `FragmentTemplate.createFragment()` zum Erstellen eines neuen Fragments.
 
@@ -295,7 +295,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
       * Abrufen grundlegender Daten (Name, Titel, Beschreibung)
 
-* **Inhaltsfragment** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Inhaltsfragment** ([ContentFragment](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
   Mit dieser Schnittstelle können Sie abstrakt mit einem Inhaltsfragment arbeiten.
 
@@ -327,7 +327,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
   Folgende Schnittstellen stehen für die Hauptelemente eines Fragments:
 
-   * **Inhaltselement** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Inhaltselement** ([ContentElement](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Abrufen grundlegender Daten (Name, Titel, Beschreibung)
       * Abrufen/Festlegen von Inhalten
@@ -341,7 +341,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
 
       * Tastaturbefehl zum Auflösen von Varianten (Anwenden zusätzlicher implementierungsspezifischer Ausweich-Logik, falls die angegebene Variante für ein Element nicht verfügbar ist)
 
-   * **Inhaltsvariante** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **Inhaltsvariante** ([ContentVariation](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Abrufen grundlegender Daten (Name, Titel, Beschreibung)
       * Abrufen/Festlegen von Inhalten

@@ -6,10 +6,10 @@ role: Admin, Architect
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
 exl-id: 8de16e9d-40b6-49d2-9e6b-1aba13137d78
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '824'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -81,7 +81,7 @@ Ein Proxy-Worker ist ein Prozessor, der für die Verarbeitung von Aufträgen und
 
 ### Client-API {#client-api}
 
-[`JobService`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) ist als OSGi-Dienst verfügbar, der Methoden zur Erstellung und Entfernung von Aufträgen und dem Abruf von Ergebnissen aus den Aufträgen bereitstellt. Die Standardimplementierung des Service (`JobServiceImpl`) verwendet den HTTP-Client für die Kommunikation mit dem Remote-Proxy-Servlet.
+[`JobService`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html) ist als OSGi-Dienst verfügbar, der Methoden zur Erstellung und Entfernung von Aufträgen und dem Abruf von Ergebnissen aus den Aufträgen bereitstellt. Die Standardimplementierung des Service (`JobServiceImpl`) verwendet den HTTP-Client für die Kommunikation mit dem Remote-Proxy-Servlet.
 
 Nachstehend finden Sie ein Beispiel für die API-Verwendung:
 
@@ -107,10 +107,10 @@ Nachstehend finden Sie ein Beispiel für die API-Verwendung:
 
 ### Cloud Service-Konfigurationen {#cloud-service-configurations}
 
-<!-- TBD: Cannot find com.day.cq.dam.api.proxy at https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
+<!-- TBD: Cannot find com.day.cq.dam.api.proxy at https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
 >[!NOTE]
 >
->Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
+>Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 -->
 
 Proxy- und Proxy-Worker-Konfigurationen sind über Cloud-Service-Konfigurationen verfügbar, die in der **Tools**-Konsole von [!DNL Assets] verfügbar sind oder unter `/etc/cloudservices/proxy`. Von jedem Proxy-Worker wird erwartet, dass er einen Knoten unter `/etc/cloudservices/proxy` für Worker-spezifische Konfigurationsdetails (z. B. `/etc/cloudservices/proxy/workername`) hinzufügt.

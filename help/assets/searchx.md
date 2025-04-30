@@ -6,7 +6,7 @@ role: Developer
 feature: Search
 solution: Experience Manager, Experience Manager Assets
 exl-id: 92efe52b-8fa5-4006-bd68-2472b4ba04f6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 100%
@@ -52,7 +52,7 @@ Sie können zusätzliche Suchregisterkarten hinzufügen, indem Sie sie in der Ad
 
 [!DNL Experience Manager]-Entwicklerinnen und -Entwickler können neben den bereits vorhandenen Prädikaten auch eigene Prädikate erstellen. Hierfür können sie die [QueryBuilder-API](/help/sites-developing/querybuilder-api.md) verwenden.
 
-Um benutzerdefinierte Eigenschaften erstellen zu können, benötigen Sie Grundlagenkenntnisse über das [Widget-Framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?lang=de).
+Um benutzerdefinierte Eigenschaften erstellen zu können, benötigen Sie Grundlagenkenntnisse über das [Widget-Framework](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html).
 
 Es sich als Best Practice erwiesen, eine vorhandene Eigenschaft zu kopieren und anzupassen. Beispieleigenschaften finden Sie unter **/libs/cq/search/components/predicates**.
 

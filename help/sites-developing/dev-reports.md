@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '5177'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -107,7 +107,7 @@ Jede Spalte ist eine Instanz der [`columnbase`-Komponente](#column-base-componen
 Die Abfrage:
 
 * ist als Teil der [`reportbase`](#report-base)-Komponente definiert.
-* basiert auf dem [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/QueryBuilder.html).
+* basiert auf dem [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html).
 * ruft die Daten ab, die als Grundlage für den Bericht dienen. Jede Zeile des Ergebnissatzes (der Tabelle) ist an einen Knoten gebunden, der von der Abfrage zurückgegeben wird. Aus diesem Datensatz werden dann spezifische Informationen für [einzelne Spalten](#column-base-component) extrahiert.
 
 * Dies besteht meist aus:

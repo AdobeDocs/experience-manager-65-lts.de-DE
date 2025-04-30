@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6fb6e522-fb81-4ba2-90b2-aad68f8bfa9e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1247'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ Mit dem Sling Resource Merger werden die Überlagerungs-/Überschreibungsressour
 
 >[!CAUTION]
 >
->Der Sling Resource Merger und zugehörige Methoden können nur mit [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) verwendet werden. Das bedeutet auch, dass er nur für die standardmäßige Touch-optimierte Benutzeroberfläche geeignet ist: Insbesondere auf diese Art und Weise definierte Überschreibungen sind nur für das Touch-fähige Dialogfeld einer Komponente geeignet.
+>Der Sling Resource Merger und zugehörige Methoden können nur mit [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html) verwendet werden. Das bedeutet auch, dass er nur für die standardmäßige Touch-optimierte Benutzeroberfläche geeignet ist: Insbesondere auf diese Art und Weise definierte Überschreibungen sind nur für das Touch-fähige Dialogfeld einer Komponente geeignet.
 >
 >Überlagerungen/Überschreibungen für andere Bereiche (einschließlich anderer Aspekte einer Touch-fähigen Komponente oder der klassischen Benutzeroberfläche) umfassen das Kopieren des entsprechenden Knotens und der entsprechenden Struktur aus dem Original dahin, wo die Anpassung definiert wird.
 

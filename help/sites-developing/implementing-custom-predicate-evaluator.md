@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: 5c98915c-e516-4505-9f9e-76f4509ba581
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -55,7 +55,7 @@ Dabei wird eine allgemeinere Sucheinschränkung (z. B. „width > 200“) einer
 
 >[!NOTE]
 >
->Weitere Informationen zum `PredicateEvaluator` und zum Paket `com.day.cq.search` finden Sie in der [Java™-Dokumentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/search/package-summary.html).
+>Weitere Informationen zum `PredicateEvaluator` und zum Paket `com.day.cq.search` finden Sie in der [Java™-Dokumentation](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/search/package-summary.html).
 
 ### Implementieren eines benutzerdefinierten Prädikat-Auswerters für Replikationsmetadaten {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -140,7 +140,7 @@ Das `cq-search`-Projekt beinhaltet die abstrakte Klasse `AbstractPredicateEvalua
 
 >[!NOTE]
 >
->Im folgenden Abschnitt wird erläutert, wie Sie einen `Xpath`-Ausdruck zum Filtern von Daten erstellen. Eine andere Option ist das Implementieren einer `includes`-Methode, bei der Daten auf Zeilenbasis ausgewählt werden. Weitere Informationen finden Sie in der [Java™-Dokumentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29).
+>Im folgenden Abschnitt wird erläutert, wie Sie einen `Xpath`-Ausdruck zum Filtern von Daten erstellen. Eine andere Option ist das Implementieren einer `includes`-Methode, bei der Daten auf Zeilenbasis ausgewählt werden. Weitere Informationen finden Sie in der [Java™-Dokumentation](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29).
 
 1. Erstellen Sie eine Java™-Klasse zum Erweitern von `com.day.cq.search.eval.AbstractPredicateEvaluator`.
 1. Kommentieren Sie die Klasse mit einer `@Component` wie

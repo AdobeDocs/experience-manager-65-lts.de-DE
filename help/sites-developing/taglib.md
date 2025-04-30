@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Tagging
 role: Developer
 exl-id: 15f30571-7129-402c-98be-270a142c4cbb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2452'
 ht-degree: 100%
@@ -38,7 +38,7 @@ Die globale Seite deklariert zudem die [Sling-Bibliothek](/help/sites-developing
 
 ### &lt;ui:includeClientLib> {#ui-includeclientlib}
 
-Das Tag `<ui:includeClientLib>` enthält eine AEM-HTML-Client-Bibliothek, bei der es sich um eine JS-, CSS- oder Design-Bibliothek handeln kann. Wenn mehrere verschiedene Typen enthalten sind, wie etwa JS und CSS, muss dieses Tag mehrfach in JSP verwendet werden. Dieses Tag ist ein praktischer Wrapper für die Service-Schnittstelle ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
+Das Tag `<ui:includeClientLib>` enthält eine AEM-HTML-Client-Bibliothek, bei der es sich um eine JS-, CSS- oder Design-Bibliothek handeln kann. Wenn mehrere verschiedene Typen enthalten sind, wie etwa JS und CSS, muss dieses Tag mehrfach in JSP verwendet werden. Dieses Tag ist ein praktischer Wrapper für die Service-Schnittstelle ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
 
 Es weist folgende Attribute auf:
 

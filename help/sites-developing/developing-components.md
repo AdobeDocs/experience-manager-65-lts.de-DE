@@ -11,10 +11,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ff9c9e25-13a8-4ca7-a347-1da1352ef223
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3200'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -110,13 +110,13 @@ Um das [Bearbeitungsverhalten einer Komponente zu konfigurieren](/help/sites-dev
 
 ## Konfigurieren des Vorschauverhaltens {#configuring-the-preview-behavior}
 
-Der [WCM-Modus](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html)-Cookie wird beim Wechsel in den **Vorschaumodus** gesetzt, auch wenn die Seite nicht aktualisiert wird.
+Der [WCM-Modus](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html)-Cookie wird beim Wechsel in den **Vorschaumodus** gesetzt, auch wenn die Seite nicht aktualisiert wird.
 
 Komponenten mit einem Rendering, die für den WCM-Modus empfindlich sind, müssen so definiert werden, dass sie sich selbst aktualisieren und sich dann auf den Wert des Cookies verlassen.
 
 >[!NOTE]
 >
->In der Touch-optimierten Benutzeroberfläche werden nur die Werte `EDIT` und `PREVIEW` für den [WCM-Modus](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html)-Cookie verwendet.
+>In der Touch-optimierten Benutzeroberfläche werden nur die Werte `EDIT` und `PREVIEW` für den [WCM-Modus](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html)-Cookie verwendet.
 
 ## Erstellen und Konfigurieren eines Dialogfelds {#creating-and-configuring-a-dialog}
 

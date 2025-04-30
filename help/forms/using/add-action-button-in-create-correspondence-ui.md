@@ -9,10 +9,10 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '1854'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -321,7 +321,7 @@ Das Bearbeiten der Aktion/der Schaltfläche beim Klicken auf die Aktion/Schaltfl
       '</div>';
       ```
 
-### Fügen Sie den LiveCycle-Prozess hinzu, um die Aktion <span class="acrolinxCursorMarker"> zu aktivieren</code>Handhabung {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Fügen Sie den LiveCycle-Prozess hinzu, um die Aktion <span class="acrolinxCursorMarker"> zu aktivieren</code> {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 Aktivieren Sie in diesem Szenario die folgenden Komponenten, die ein Teil der angehängten Datei „components.zip“ sind:
 
@@ -424,11 +424,11 @@ Weitere Informationen finden Sie unter [Verbinden von AEM Forms mit Adobe LiveCy
    >
    >Jedes Mal, wenn Sie Änderungen auf Server-Seite vornehmen, müssen Sie den LiveCycle-Server neu starten.
 
-   Die Datei „DSCSample.jar“ verwendet die renderLetter-API. Weitere Informationen zur renderLetter-API finden Sie unter [Benutzeroberfläche „LetterRenderService“](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
+   Die Datei „DSCSample.jar“ verwendet die renderLetter-API. Weitere Informationen zur renderLetter-API finden Sie unter [Benutzeroberfläche „LetterRenderService“](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### Importieren von DSC in LiveCycle {#import-dsc-to-livecyle}
 
-Die Datei „DSCSample.jar“ verwendet die renderLetter-API, um ein Schreiben als PDF-Bytes aus XML-Daten zu generieren, die von DSC als Eingabe gegeben werden. Weitere Informationen zur renderLetter- und anderen APIs finden Sie unter [Brief-Render-Dienst](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
+Die Datei „DSCSample.jar“ verwendet die renderLetter-API, um ein Schreiben als PDF-Bytes aus XML-Daten zu generieren, die von DSC als Eingabe gegeben werden. Weitere Informationen zur renderLetter- und anderen APIs finden Sie unter [Brief-Render-Dienst](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Starten Sie Workbench und melden Sie sich an.
 1. Wählen Sie **Fenster > Ansicht anzeigen > Komponenten**. Die Komponentenansicht wird in Workbench ES2 hinzugefügt.

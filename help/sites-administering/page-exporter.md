@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 997637d5-1627-4102-8b7c-a0cfd871a7b2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '997'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -64,7 +64,7 @@ Wählen Sie die erforderliche Vorlage für Ihre Website aus und bestätigen Sie 
 
 ## Erstellen einer Seiten-Export-Tool-Konfiguration für Ihre Website {#creating-a-page-exporter-configuration-for-your-site}
 
-Das Seiten-Export-Tool basiert auf dem [Inhaltssynchronisierungs-Framework](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Die Konfigurationen, die im Dialogfeld **Seiteneigenschaften** verfügbar sind, sind Exportvorlagen, die die erforderlichen Abhängigkeiten für eine Seite definieren.
+Das Seiten-Export-Tool basiert auf dem [Inhaltssynchronisierungs-Framework](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html). Die Konfigurationen, die im Dialogfeld **Seiteneigenschaften** verfügbar sind, sind Exportvorlagen, die die erforderlichen Abhängigkeiten für eine Seite definieren.
 
 Wenn ein Seitenexport ausgelöst wird, wird auf die Exportvorlage verwiesen. Der Seitenpfad und der Designpfad werden dynamisch angewendet. Anschließend wird die ZIP-Datei erstellt, indem die Standardfunktion zur Inhaltssynchronisierung genutzt wird.
 
@@ -108,7 +108,7 @@ Wenn Ihre Vorlage konfiguriert ist, stellen Sie sie zur Verfügung:
 
 ### Konfigurationsknoten für das Seiten-Export-Tool {#page-exporter-configuration-nodes}
 
-Die Vorlage besteht aus einer Knotenstruktur, da sie das [Content Sync-Framework](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html) verwendet. Jeder Knoten verfügt über die Eigenschaft `type`, die eine spezifische Aktion beim Erstellungsprozess der ZIP-Datei definiert.
+Die Vorlage besteht aus einer Knotenstruktur, da sie das [Content Sync-Framework](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/package-summary.html) verwendet. Jeder Knoten verfügt über die Eigenschaft `type`, die eine spezifische Aktion beim Erstellungsprozess der ZIP-Datei definiert.
 
 <!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
@@ -178,14 +178,14 @@ Benutzerdefinierte Konfigurationen sind ebenfalls möglich.
 As you may have noticed in the node structure, the **Geometrixx** page export template has a `logo` node with a `type` property set to `image`. This is a special configuration type that has been created to copy the image logo to the zip file. 
 -->
 
-Um bestimmte Anforderungen zu erfüllen, implementieren Sie einen [benutzerdefinierten Update-Handler](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
+Um bestimmte Anforderungen zu erfüllen, implementieren Sie einen [benutzerdefinierten Update-Handler](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
 <!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## Programmatisches Exportieren einer Seite {#programmatically-exporting-a-page}
 
-Um eine Seite programmatisch zu exportieren, können Sie den OSGi-Dienst [PageExporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) nutzen. Mit diesem Dienst können Sie:
+Um eine Seite programmatisch zu exportieren, können Sie den OSGi-Dienst [PageExporter](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) nutzen. Mit diesem Dienst können Sie:
 
 * eine Seite exportieren und in die HTTP-Servlet-Antwort schreiben
 * eine Seite exportieren und die ZIP-Datei an einem bestimmten Ort speichern

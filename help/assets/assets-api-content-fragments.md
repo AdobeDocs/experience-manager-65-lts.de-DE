@@ -6,10 +6,10 @@ role: Developer
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1902'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -261,7 +261,7 @@ Die Verwendung unterscheidet sich je nachdem, ob Sie eine AEM-Autoren- oder Ver�
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie in der [API-Referenz](/help/assets/assets-api-content-fragments.md#api-reference). Besonders interessant: [Adobe Experience Manager Assets API – Inhaltsfragmente](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
+>Weitere Informationen finden Sie in der [API-Referenz](/help/assets/assets-api-content-fragments.md#api-reference). Besonders interessant: [Adobe Experience Manager Assets API – Inhaltsfragmente](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html).
 
 ### Lesen/Bereitstellen {#read-delivery}
 
@@ -385,7 +385,7 @@ Wird zurückgegeben, wenn:
 
 Hier finden Sie detaillierte API-Referenzen:
 
-* [Adobe Experience Manager Assets API – Inhaltsfragmente](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API – Inhaltsfragmente](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [Assets-HTTP-API](/help/assets/mac-api-assets.md)
 
    * [Verfügbare Funktionen](/help/assets/mac-api-assets.md#assets)

@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 743645c5-b4c9-45ff-a130-0bf72aa6e6f2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '4919'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -523,9 +523,9 @@ Im Rahmen dieser Übung ordnet Sling diese URLs dem Skript /apps/mywebsite/compo
 
 1. Kopieren Sie den folgenden Code nach `navimage.png.java.`. Der Code erweitert die Klasse „AbstractImageServlet“:
 
-   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) erstellt ein ImageContext-Objekt, das die Eigenschaften der aktuellen Ressource speichert.
+   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) erstellt ein ImageContext-Objekt, das die Eigenschaften der aktuellen Ressource speichert.
    * Die übergeordnete Seite der Ressource wird aus dem ImageContext-Objekt extrahiert. Dann werden der Seitentitel und der Untertitel abgerufen.
-   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html?lang=de) wird verwendet, um das Bild aus der Datei „navimage_bg.jpg“ des Site-Designs, dem Seitentitel und dem Seitenuntertitel zu generieren.
+   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/ImageHelper.html) wird verwendet, um das Bild aus der Datei „navimage_bg.jpg“ des Site-Designs, dem Seitentitel und dem Seitenuntertitel zu generieren.
 
    ```java
    package apps.mywebsite.components.contentpage;

@@ -10,10 +10,10 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2224'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ Ab AEM 6.1 werden Benutzerdaten bei aktivierter Benutzersynchronisierung automa
 
 ## Sling Distribution {#sling-distribution}
 
-Die Benutzerdaten werden zusammen mit den zugehörigen [Zugriffssteuerungslisten](/help/sites-administering/security.md) (Access Control Lists, ACLs) im [Oak-Core](/help/sites-deploying/platform.md), der Ebene unter Oak JCR, gespeichert und über die [Oak-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/jackrabbit/oak/api/package-tree.html) aufgerufen. Im Falle unregelmäßiger Aktualisierungen ist es sinnvoll, Benutzerdaten mit anderen Veröffentlichungsinstanzen per [Sling Content Distribution](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (Sling-Distribution) zu synchronisieren.
+Die Benutzerdaten werden zusammen mit den zugehörigen [Zugriffssteuerungslisten](/help/sites-administering/security.md) (Access Control Lists, ACLs) im [Oak-Core](/help/sites-deploying/platform.md), der Ebene unter Oak JCR, gespeichert und über die [Oak-API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-tree.html) aufgerufen. Im Falle unregelmäßiger Aktualisierungen ist es sinnvoll, Benutzerdaten mit anderen Veröffentlichungsinstanzen per [Sling Content Distribution](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (Sling-Distribution) zu synchronisieren.
 
 Eine Benutzersynchronisierung mit Sling Distribution weist im Vergleich zur herkömmlichen Replikation folgende Vorteile auf:
 
