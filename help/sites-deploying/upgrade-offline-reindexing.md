@@ -164,7 +164,7 @@ Die Verwendung des `--doc-traversal-mode`-Parameters ist bei MongoMK-Installatio
 
 Im Falle von MongoMK kann dieser Prozess beschleunigt werden, wenn dieser Schritt in einer Instanz ausgeführt wird, die näher an der MongoDB-Instanz liegt. Wenn er auf demselben Computer ausgeführt wird, kann ein zu großer Netzwerk-Overhead vermieden werden.
 
-Weitere technische Details finden Sie in der [Oak-run-Dokumentation zur Indizierung](Https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
+Weitere technische Details finden Sie in der [Oak-run-Dokumentation zur Indizierung](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
 
 ### Importieren von Indizes {#importing-indexes}
 

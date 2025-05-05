@@ -65,6 +65,7 @@ Weitere Informationen zu [Best Practices für die Organisation Ihrer digitalen A
    * Video-Assets vorab anzeigen und veröffentlichen
 
       * Zeigen Sie das Quellvideo und die kodierten Ausgabedarstellungen des Videos zusammen mit den zugehörigen Miniaturen an:
+
         [Vorschau von Videos anzeigen](managing-video-assets.md#upload-and-preview-video-assets) oder [Vorschau von Assets anzeigen](previewing-assets.md)
         [Videoausgabedarstellungen anzeigen](video-renditions.md)
         [Verwalten von Videoausgabedarstellungen](manage-assets.md#managing-renditions)
@@ -75,9 +76,11 @@ Weitere Informationen zu [Best Practices für die Organisation Ihrer digitalen A
    * Arbeiten mit Videometadaten
 
       * So zeigen Sie die Eigenschaften einer kodierten Videoausgabedarstellung (beispielsweise Framerate, Audio- und Video-Bitrate und Codec) an:
+
         [Anzeigen der Eigenschaften von Videoausgabedarstellungen](video-renditions.md)
 
       * So bearbeiten Sie die Eigenschaften von Videos, beispielsweise Titel, Beschreibung, Tags und benutzerdefinierte Metadatenfelder:
+
         [Bearbeiten von Videoeigenschaften](manage-assets.md#editing-properties)
 
       * [Verwalten von Metadaten für digitale Assets](metadata.md)
@@ -102,9 +105,11 @@ Weitere Informationen zu [Best Practices für die Organisation Ihrer digitalen A
    * Wenn Sie das Web-Content-Management-System eines Drittanbieters verwenden, können Sie Videos mit Web-Seiten verknüpfen oder darin einbetten.
 
       * Integrieren von Videos mithilfe der URL:
+
         [Verknüpfen von URLs mit Ihrer Web-Anwendung](linking-urls-to-yourwebapplication.md).
 
       * Integrieren von Videos mithilfe von Einbettungs-Code auf einer Website:
+
         [Einbetten des Video-Viewers auf einer Web-Seite](embed-code.md).
 
    * [Erzeugen von Videoberichten](#viewing-video-reports).

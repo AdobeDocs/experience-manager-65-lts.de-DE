@@ -103,8 +103,8 @@ Diese Ordner sich vom Typ `nt:folder` und sollten das entsprechende Bundle entha
 Wenn Sie Konfigurationen für mehrere Ausführungsmodi definiert haben, müssen Sie definieren, welcher beim Start verwendet werden soll. Es gibt mehrere Methoden, um festzulegen, welcher Ausführungsmodus verwendet werden soll. Die Reihenfolge der Auflösung lautet:
 
 1. [Systemeigenschaften (](#using-a-system-property-in-the-start-script)
-1. [](#using-the-sling-properties-file)
-1. [](#using-the-r-option)
+1. [&#128279;](#using-the-sling-properties-file)
+1. [&#128279;](#using-the-r-option)
 1. [Erkennung von Dateinamen ](#filename-detection-renaming-the-jar-file)
 
 Wenn Sie einen Anwendungsserver verwenden, können Sie auch [den Ausführungsmodus in web.xml](#defining-the-run-mode-in-web-xml-with-application-server) definieren.
@@ -123,7 +123,7 @@ Mit der Datei `sling.properties` können Sie den erforderlichen Ausführungsmodu
 
 ### Verwenden der -r-Option {#using-the-r-option}
 
-Beim Ausführen des Schnellstarts können Sie mit der `-r`-Option einen benutzerdefinierten Ausführungsmodus aktivieren. Beispielsweise können Sie folgenden Befehl verwenden, um eine AEM-Instanz mit dem dev-Ausführungsmodus zu starten. ``
+Beim Ausführen des Schnellstarts können Sie mit der `-r`-Option einen benutzerdefinierten Ausführungsmodus aktivieren. Beispielsweise können Sie folgenden Befehl verwenden, um eine AEM-Instanz mit dem dev-Ausführungsmodus zu starten. &grave;&grave;
 
 ```shell
 java -jar cq-56-p4545.jar -r dev
