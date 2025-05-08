@@ -104,9 +104,11 @@ Die von Benutzenden oder Systemadmins festgelegten Einstellungen können bei der
 * Beim Bearbeiten von Seiten:
 
    * Die Verwendung des klassischen Editors wird erzwungen, wenn die Seite über eine URL aufgerufen wird, die `cf#` enthält. Beispiel:
+
      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * Die Verwendung des Touch-optimierten Editors wird erzwungen, wenn `/editor.html` in der URL verwendet oder ein Touch-Gerät genutzt wird. Beispiel:
+
      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Jede erzwungene Einstellung ist temporär und nur für die aktuelle Browser-Sitzung gültig.

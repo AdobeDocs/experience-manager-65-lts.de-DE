@@ -284,6 +284,7 @@ Sie können Widget-Daten in der Workflow-Payload oder in den Metadaten des Arbei
 * **Daten mit der Payload speichern**
 
    * Um Widget-Daten als Eigenschaft der Workflow-Payload zu speichern, verwenden Sie folgendes Format für den Wert der name-Eigenschaft des Widget-Knotens:
+
      `./jcr:content/nodename`
 
    * Die Daten werden in der `nodename`-Eigenschaft des Payload-Knotens gespeichert. Wenn der Knoten diese Eigenschaft nicht enthält, wird die Eigenschaft erstellt.
@@ -292,6 +293,7 @@ Sie können Widget-Daten in der Workflow-Payload oder in den Metadaten des Arbei
 * **Speichern von Daten mit dem Arbeitselement**
 
    * Um Widget-Daten als Eigenschaft der Metadaten des Arbeitselements zu speichern, verwenden Sie das folgende Format für den Wert der name-Eigenschaft:
+
      `nodename`
 
    * Die Daten werden in der `nodename`-Eigenschaft der `metadata` des Arbeitselements gespeichert. Die Daten werden beibehalten, wenn das Dialogfeld anschließend mit derselben Payload verwendet wird.

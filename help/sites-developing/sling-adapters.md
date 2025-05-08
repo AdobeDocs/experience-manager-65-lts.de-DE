@@ -338,7 +338,7 @@ Adaption von **[Template](https://developer.adobe.com/experience-manager/referen
 
 #### Sicherheit {#security}
 
-Adaption von **Authorizable**, **User und **Group** für:
+Adaption von **Authorizable**, **User und &#x200B;** Group** für:
 
 | [Node](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Gibt den Stammknoten des Benutzers/der Gruppe zurück. |
 |---|---|

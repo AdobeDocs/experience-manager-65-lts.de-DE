@@ -425,6 +425,7 @@ Zum Konfigurieren der Replikation von Inhalten für eine weitere Veröffentlichu
    * Führen Sie auf der Registerkarte **Transport** folgende Schritte aus:
 
       * Geben Sie den erforderlichen URI für die neue Veröffentlichungsinstanz ein, z. B. ist
+
         `https://localhost:4504/bin/receive` möglich.
 
       * Geben Sie das Site-spezifische Benutzerkonto für die Replikation ein.
@@ -468,6 +469,7 @@ Die Installation umfasst Standardagenten. Es müssen jedoch trotzdem gewisse Kon
    * Führen Sie auf der Registerkarte **Transport** folgende Schritte aus:
 
       * Geben Sie den erforderlichen URI für die neue Veröffentlichungsinstanz ein, z. B. ist
+
         `https://localhost:80/dispatcher/invalidate.cache` möglich.
 
       * Geben Sie das Site-spezifische Benutzerkonto für die Replikation ein.

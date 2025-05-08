@@ -303,9 +303,11 @@ Wenn die Sling-ID einer Veröffentlichungsinstanz der Sling-ID einer anderen Ver
    * Suchen und löschen Sie die Datei *sling.id.file*
 
       * Beispiel für ein Linux®-System:
+
         `rm -i $(find . -type f -name sling.id.file)`
 
       * Beispiel für ein Windows-System:
+
         `use windows explorer and search for *sling.id.file*`
 
 1. Starten Sie die Veröffentlichungsinstanz.
