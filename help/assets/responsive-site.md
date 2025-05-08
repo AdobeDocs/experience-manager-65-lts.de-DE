@@ -47,7 +47,7 @@ Siehe auch [Verknüpfen von URLs mit Ihrer Web-Anwendung](linking-urls-to-yourwe
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
 1. Wählen Sie im Dialogfeld **[!UICONTROL Responsive Bilder einbetten]** den responsiven Code-Text aus und fügen Sie ihn in Ihre Website ein, um auf das responsive Asset zuzugreifen.
-1. Bearbeiten Sie die Standard-Breakpoints im Embed-Code direkt im Code so, dass sie denen der responsiven Website entsprechen. Testen Sie außerdem die verschiedenen Bildauflösungen bei verschiedenen Seiten-Breakpoints.
+1. Bearbeiten Sie die Standard-Breakpoints im Einbettungs-Code direkt im Code so, dass sie denen der responsiven Website entsprechen. Testen Sie außerdem die verschiedenen Bildauflösungen bei verschiedenen Seiten-Breakpoints.
 
 ## Bereitstellen von Dynamic Media-Assets mit HTTP/2 {#using-http-to-delivery-your-dynamic-media-assets}
 

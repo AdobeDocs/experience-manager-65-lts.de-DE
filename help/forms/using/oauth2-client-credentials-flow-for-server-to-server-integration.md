@@ -8,11 +8,11 @@ exl-id: 56b4a767-1210-47f3-b022-766b0dda9943
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '402'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
-# Integration von Salesforce mithilfe des OAuth 2.0-Client-Anmeldedatenflusses {#configure-salesforce-with-ouath-2.0-client-credential}
+# Integration von Salesforce mithilfe des OAuth 2.0-Flusses der Client-Anmeldeinformationen  {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |

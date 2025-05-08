@@ -65,7 +65,7 @@ Adobe Campaign Standard enthält standardmäßig einen `aemserver`-Benutzer, den
 
 Ihr `aemserver`-Benutzer verfügt jetzt über die erforderlichen Berechtigungen, damit AEM ihn für die Kommunikation mit Adobe Campaign verwenden kann.
 
-Bevor AEM jedoch den `aemserver`-Benutzer verwenden kann, muss sein Kennwort festgelegt sein. Dies kann nicht über Adobe Campaign erfolgen. Es muss von einer Support-Fachkraft von Adobe durchgeführt werden. [Senden Sie ein Ticket an die Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-tab=home&amp;lang=de#support), um das Zurücksetzen des `aemserver`-Kennworts anzufordern. Wenn Sie das Kennwort von der Adobe-Kundenunterstützung erhalten haben, bewahren Sie es an einem sicheren Ort auf.
+Bevor AEM jedoch den `aemserver`-Benutzer verwenden kann, muss sein Kennwort festgelegt sein. Dies kann nicht über Adobe Campaign erfolgen. Es muss von einer Support-Fachkraft von Adobe durchgeführt werden. [Senden Sie ein Ticket an die Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-tab=home&amp;lang=de#support), um das Zurücksetzen des `aemserver`-Kennworts anzufordern. Wenn Sie das Kennwort von der Adobe-Kundenunterstützung erhalten haben, bewahren Sie es an einem sicheren Ort auf.
 
 ## Überprüfen der Option „AEMResourceTypeFilter“ in Campaign {#resource-type-filter}
 
@@ -201,7 +201,7 @@ Sie haben den Externalizer konfiguriert, und Adobe Campaign kann nun auf Ihre In
 
 >[!NOTE]
 >
->Die Veröffentlichungsinstanz muss vom Adobe Campaign-Server aus erreichbar sein. Falls sie auf `localhost:4503` oder einen anderen Server verweist, den Adobe Campaign nicht erreichen kann, werden Bilder von AEM nicht auf der Adobe Campaign-Konsole angezeigt.
+Die Veröffentlichungsinstanz muss vom Adobe Campaign-Server aus erreichbar sein. Falls sie auf `localhost:4503` oder einen anderen Server verweist, den Adobe Campaign nicht erreichen kann, werden Bilder von AEM nicht auf der Adobe Campaign-Konsole angezeigt.
 
 ## Konfigurieren des Benutzers „campaign-remote“ in AEM {#campaign-remote-user}
 

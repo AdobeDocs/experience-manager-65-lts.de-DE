@@ -39,7 +39,7 @@ In diesem Abschnitt wird beschrieben, wie Viewer-Vorgaben erstellt, bearbeitet u
 
 Alle standardmäßigen Viewer unterstützen den Zugriff auf die Tastatur.
 
-Weitere Informationen finden Sie unter [Tastaturzugriff und Navigation](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility).
+Weitere Informationen finden Sie unter [Tastaturzugriff und Navigation](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility).
 
 ## Viewer-Vorgaben verwalten {#managing-viewer-presets-1}
 
@@ -55,7 +55,7 @@ Sie können Viewer-Vorgaben in Adobe Experience Manager hinzufügen, bearbeiten,
 
 Unterschiedliche Web-Seiten haben unterschiedliche Anforderungen. Mitunter möchten Sie vielleicht, dass eine Web-Seite über einen Link verfügt, der den HTML5-Viewer in einem separaten Browser-Fenster öffnet. In anderen Fällen kann es aber auch erforderlich sein, den HTML5-Viewer direkt auf der Host-Seite einzubetten. In letzterem Fall kann die Web-Seite ein statisches Layout aufweisen. Oder sie kann „responsiv“ sein und auf verschiedenen Geräten oder bei verschieden großen Browser-Fenstern anders angezeigt werden. Um all diese Anforderungen zu berücksichtigen, unterstützen sämtliche vordefinierten, standardmäßig vorhandenen HTML5-Viewer, die mit Dynamic Media bereitgestellt werden, sowohl statische als auch responsive Web-Seiten.
 
-Weitere Informationen [ Einbetten responsiver Viewer auf Web](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library)Seiten finden Sie unter „Bibliothek responsiver Bilder“ .
+Weitere Informationen [ Einbetten responsiver Viewer auf Web](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library)Seiten finden Sie unter „Bibliothek responsiver Bilder“ .
 
 >[!NOTE]
 >
@@ -440,13 +440,13 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
      Der Visual Editor zeigt Ihnen, wie sich eine bestimmte Eigenschaft auf einen Stil auswirkt. Legen Sie eine beliebige Eigenschaft fest oder passen Sie sie an, um zu sehen, wie sie sich auf den Viewer auswirkt. Verwenden Sie dazu das Beispiel links vom Editor.
 
-     Die CSS-Stileigenschaften für alle Viewer-Vorgabetypen werden im Abschnitt „Anpassen des *`<viewer name>`*-Viewers“ in den Hilfethemen im [Viewers-Referenzhandbuch](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources) beschrieben. Wenn Sie z. B. eine Viewer-Vorgabe vom Typ `Mixed_Media` erstellen, finden Sie im Thema zum [Anpassen von Viewern für gemischte Medien](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer) eine Aufstellung und Beschreibung jeder Eigenschaft.
+     Die CSS-Stileigenschaften für alle Viewer-Vorgabetypen werden im Abschnitt „Anpassen des *`<viewer name>`*-Viewers“ in den Hilfethemen im [Viewers-Referenzhandbuch](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources) beschrieben. Wenn Sie z. B. eine Viewer-Vorgabe vom Typ `Mixed_Media` erstellen, finden Sie im Thema zum [Anpassen von Viewern für gemischte Medien](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer) eine Aufstellung und Beschreibung jeder Eigenschaft.
 
    * Wenn Stileinstellungen in einer separaten CSS-Datei definiert sind, können Sie die CSS-Datei in AEM Assets hochladen. Wählen **[!UICONTROL CSS importieren]** aus dem Pulldown **[!UICONTROL Menü „Ausgewählter]**&quot; aus. Scrollen Sie bei Bedarf im Visual Editor nach oben, um die hochgeladene CSS-Datei zu finden und sie mit der Viewer-Vorgabe zu verknüpfen.
 
      Beim Importieren einer CSS-Datei überprüft der Visual Editor, ob CSS die korrekten Viewer-Markierungen verwendet. Wenn Sie etwa einen Zoom-Viewer erstellen, müssen alle CSS-Regeln, die Sie importieren, mit dem zugehörigen Viewer-Klassennamen `.s7mixedmediaviewer` (definiert in einem übergeordneten Viewer-Element) festgelegt werden.
 
-     Sie können beliebige, selbst definierte CSS-Dateien importieren, solange diese die CSS-Markierungen für den jeweiligen Viewer ordnungsgemäß definieren. (CSS-Markierungen werden im Hilfethema „Anpassen *&lt;Viewer-Name>*-Viewers“ im [Viewers-Referenzhandbuch“ ](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources). Wenn Sie beispielsweise über CSS-Markierungen für den Zoom-Viewer lesen möchten, finden Sie weitere Informationen unter [Anpassen des Zoom-Viewers](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer).) Es ist jedoch möglich, dass der visuelle Editor einige CSS-Werte nicht versteht. In diesem Fall versucht der Visual Editor, die Fehler zu überschreiben, damit CSS nach wie vor verwendet werden kann.
+     Sie können beliebige, selbst definierte CSS-Dateien importieren, solange diese die CSS-Markierungen für den jeweiligen Viewer ordnungsgemäß definieren. (CSS-Markierungen werden im Hilfethema „Anpassen *&lt;Viewer-Name>*-Viewers“ im [Viewers-Referenzhandbuch“ ](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources). Wenn Sie beispielsweise über CSS-Markierungen für den Zoom-Viewer lesen möchten, finden Sie weitere Informationen unter [Anpassen des Zoom-Viewers](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer).) Es ist jedoch möglich, dass der visuelle Editor einige CSS-Werte nicht versteht. In diesem Fall versucht der visuelle Editor, die Fehler zu überschreiben, damit CSS nach wie vor verwendet werden kann.
 
    >[!NOTE]
    >
@@ -472,7 +472,7 @@ Beispiel: Beim *VideoPlayer*-Typ können Sie unter **[!UICONTROL Modifikatoren]*
 
    Viele Komponenten im Visual Editor sind mit einer detaillierten Beschreibung verknüpft. Diese Beschreibungen werden in blauen Feldern angezeigt, wenn Sie eine Komponente zum Anzeigen der mit ihr verknüpften Parameter einblenden.
 
-   Einige Viewer-Typen verfügen über Komponenten, mit denen Sie Befehle zum Image Serving in einem **[!UICONTROL IS-Befehl]**-Textfeld angeben können. Eine Liste der verfügbaren Befehle finden Sie in der [Image Serving API-Referenz](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home).
+   Einige Viewer-Typen verfügen über Komponenten, mit denen Sie Befehle zum Image Serving in einem **[!UICONTROL IS-Befehl]**-Textfeld angeben können. Eine Liste der verfügbaren Befehle finden Sie in der [Image Serving API-Referenz](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home).
 
    >[!NOTE]
    >

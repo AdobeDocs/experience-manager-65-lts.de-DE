@@ -8,7 +8,7 @@ exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 0afd255ec5c9d3db37f2f059782b35052761b1cf
 workflow-type: tm+mt
 source-wordcount: '801'
-ht-degree: 40%
+ht-degree: 48%
 
 ---
 
@@ -81,7 +81,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 
 | Bereich | Funktion | Ersatz | Version (SP) |
 |---|---|---|---|
-| Sites | [SPA-Editor](/help/sites-developing/spa-overview.md) | Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind: <br>- der [universelle Editor](/help/sites-developing/universal-editor/introduction.md) zur visuellen Bearbeitung<br>- der [Inhaltsfragment-Editor](/help/assets/content-fragments/content-fragments-managing.md) zur formularbasierten Bearbeitung | 6,5 LTS GA |
+| Sites | [SPA-Editor](/help/sites-developing/spa-overview.md) | Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind: <br>- der [universelle Editor](/help/sites-developing/universal-editor/introduction.md) zur visuellen Bearbeitung<br>- der [Inhaltsfragment-Editor](/help/assets/content-fragments/content-fragments-managing.md) zur formularbasierten Bearbeitung | 6.5 LTS GA |
 
 ### Entfernte Funktionen {#removed-features}
 
@@ -89,24 +89,24 @@ In diesem Abschnitt werden Funktionen aufgeführt, die aus AEM 6.5 LTS entfernt 
 
 | Bereich | Funktion | Ersatz | Version (SP) |
 |--- |--- |--- |--- |
-| Commerce  | AEM CIF Classic wird nicht unterstützt. | Sie sollten zu [AEM CIF](/help/commerce/cif/migration.md) migrieren. | 6,5 LTS GA |
-| Lösungen | Social Media/Communities wird nicht unterstützt. | Kein Ersatz verfügbar. | 6,5 LTS GA |
-| Screens | Screens wird nicht unterstützt. | Kein Ersatz verfügbar. | 6,5 LTS GA |
-| Assets | `dam-pim` und `dam-rating` werden nicht unterstützt, da Pakete von Social Media abhängig sind. | Kein Ersatz verfügbar. | 6,5 LTS GA |
-| Assets | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` wurde entfernt. | Verwenden Sie die hinzugefügte alternative API-`com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()`. | 6,5 LTS GA |
-| Portal | AEM Portal Director wird nicht unterstützt. | Kein Ersatz verfügbar. | 6,5 LTS GA |
-| Granite | Paket `com.adobe.granite.socketio` wird entfernt. | Kein Ersatz verfügbar. | 6,5 LTS GA |
-| Granite | `com.adobe.granite.crx-explorer` wird nicht unterstützt. | Kein Ersatz verfügbar. | 6,5 LTS GA |
-| Granite | `crx2oak` wird nicht unterstützt. | Wählen Sie die entsprechende Version von [oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6,5 LTS GA |
-| Adobe | `com.adobe.cq.cq-searchpromote-integration` wird nicht unterstützt. | Kein Ersatz verfügbar. | 6,5 LTS GA |
-| Guave | Alle Guava-Abhängigkeiten werden jetzt in AEM entfernt, und daher ist das `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002`-Bundle nicht Teil von AEM. | Kunden können Guava selbst hinzufügen, wenn sie von Guava abhängig sind, oder Guava-Code durch Java-Sammlungen oder andere Alternativen ersetzen, sofern möglich. | 6,5 LTS GA |
-| We.Retail | Die Beispiel-Site „We-Retail“ wird nicht unterstützt. | Kein Ersatz verfügbar. | 6,5 LTS GA |
-| Open Source | `oak-solr-osgi` Paket wird nicht unterstützt. | Kein Ersatz verfügbar. | 6,5 LTS GA |
-| Open Source | `org.apache.servicemix.bundles.abdera-parser`, `org.apache.servicemix.bundles.jdom` und `org.apache.sling.atom.taglib` werden nicht unterstützt. | Kein Ersatz verfügbar. | 6,5 LTS GA |
-| Open Source | `org.apache.commons.io` Pakete werden jetzt aus `org.apache.commons.commons-io` exportiert. | Keine Änderung erforderlich. | 6,5 LTS GA |
-| Open Source | `javax.mail` Pakete werden aus dem `com.sun.javax.mail` Bundle exportiert. | Keine Änderung erforderlich. | 6,5 LTS GA |
-| Open Source | `org.apache.jackrabbit.api` Pakete werden jetzt aus dem `org.apache.jackrabbit.oak-jackrabbit-api`-Bundle exportiert. | Keine Änderung erforderlich. | 6,5 LTS GA |
-| Open Source | `com.github.jknack.handlebars` wird nicht unterstützt | Relevante Version [auswählen](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6,5 LTS GA |
+| Commerce  | AEM CIF Classic wird nicht unterstützt. | Sie sollten zu [AEM CIF](/help/commerce/cif/migration.md) migrieren. | 6.5 LTS GA |
+| Lösungen | Social Media/Communities wird nicht unterstützt. | Kein Ersatz verfügbar. | 6.5 LTS GA |
+| Screens | Screens wird nicht unterstützt. | Kein Ersatz verfügbar. | 6.5 LTS GA |
+| Assets | `dam-pim` und `dam-rating` werden nicht unterstützt, da Pakete von Social Media abhängig sind. | Kein Ersatz verfügbar. | 6.5 LTS GA |
+| Assets | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` wurde entfernt. | Verwenden Sie die hinzugefügte alternative API-`com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()`. | 6.5 LTS GA |
+| Portal | AEM Portal Director wird nicht unterstützt. | Kein Ersatz verfügbar. | 6.5 LTS GA |
+| Granite | Paket `com.adobe.granite.socketio` wird entfernt. | Kein Ersatz verfügbar. | 6.5 LTS GA |
+| Granite | `com.adobe.granite.crx-explorer` wird nicht unterstützt. | Kein Ersatz verfügbar. | 6.5 LTS GA |
+| Granite | `crx2oak` wird nicht unterstützt. | Wählen Sie die entsprechende Version von [oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6.5 LTS GA |
+| Adobe | `com.adobe.cq.cq-searchpromote-integration` wird nicht unterstützt. | Kein Ersatz verfügbar. | 6.5 LTS GA |
+| Guave | Alle Guava-Abhängigkeiten werden jetzt in AEM entfernt, und daher ist das `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002`-Bundle nicht Teil von AEM. | Kunden können Guava selbst hinzufügen, wenn sie von Guava abhängig sind, oder Guava-Code durch Java-Sammlungen oder andere Alternativen ersetzen, sofern möglich. | 6.5 LTS GA |
+| We.Retail | Die Beispiel-Site „We-Retail“ wird nicht unterstützt. | Kein Ersatz verfügbar. | 6.5 LTS GA |
+| Open Source | `oak-solr-osgi` Paket wird nicht unterstützt. | Kein Ersatz verfügbar. | 6.5 LTS GA |
+| Open Source | `org.apache.servicemix.bundles.abdera-parser`, `org.apache.servicemix.bundles.jdom` und `org.apache.sling.atom.taglib` werden nicht unterstützt. | Kein Ersatz verfügbar. | 6.5 LTS GA |
+| Open Source | `org.apache.commons.io` Pakete werden jetzt aus `org.apache.commons.commons-io` exportiert. | Keine Änderung erforderlich. | 6.5 LTS GA |
+| Open Source | `javax.mail` Pakete werden aus dem `com.sun.javax.mail` Bundle exportiert. | Keine Änderung erforderlich. | 6.5 LTS GA |
+| Open Source | `org.apache.jackrabbit.api` Pakete werden jetzt aus dem `org.apache.jackrabbit.oak-jackrabbit-api`-Bundle exportiert. | Keine Änderung erforderlich. | 6.5 LTS GA |
+| Open Source | `com.github.jknack.handlebars` wird nicht unterstützt | Relevante Version [auswählen](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6.5 LTS GA |
 
 ## Eingeschränkte Websites{#restricted-sites}
 

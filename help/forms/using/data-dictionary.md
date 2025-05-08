@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: b73b3adc-e12c-47a8-9342-6214128b72ff
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3842'
-ht-degree: 100%
+source-wordcount: '3836'
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Ein Datenwörterbuch ist eine unabhängige Darstellung von Metadaten, die die zu
 
 Ein Datenwörterbuch besteht aus Datenwörterbuchelementen (DDEs), von denen es drei Typen gibt: Elemente des Typs „Simple“, „Composite“ und „Collection“. Primitive-DDEs sind primitive Elemente wie Zeichenfolgen, Zahlen, Daten und boolesche Werte, die Informationen wie z. B. den Ortsnamen enthalten. Ein Composite-DDE enthält andere DDEs, die vom Typ „Primitive“, „Composite“ oder „Collection“ sein können. Das kann z. B. eine Adresse sein, die aus einer Straße, einer Stadt, einem Bezirk, einem Land und einer Postleitzahl besteht. Eine Sammlung ist eine Liste ähnlicher Simple- oder Composite-DDEs. Beispiel: eine Kundin oder ein Kunde mit mehreren Standorten oder unterschiedlichen Abrechnungs- und Versandadressen.
 
-Das Correspondence Management verwendet Backend- sowie kunden- und empfängerspezifische Daten, die zur Erstellung unterschiedlicher Kundenkorrespondenzen gemäß der Datenwörterbuchstruktur gespeichert sind. Beispielsweise kann ein Dokument mit einer freundlichen Anrede erstellt werden, wie „Lieber {Vorname}“, „Herr“ {Nachname}&quot;.
+Das Correspondence Management verwendet Backend- sowie kunden- und empfängerspezifische Daten, die zur Erstellung unterschiedlicher Kundenkorrespondenzen gemäß der Datenwörterbuchstruktur gespeichert sind. Beispielsweise kann ein Dokument mit benutzerfreundlichen Namen wie „Sehr geehrter {First Name}&quot;, „Herr {Last Name}&quot; erstellt werden.
 
 In der Regel müssen Geschäftsbenutzer keine Kenntnisse über Metadatendarstellungen wie XSD (XML-Schema) und Java-Klassen haben. Sie müssen allerdings in der Regel Zugriff auf diese Datenstrukturen und Attribute haben, um Lösungen erstellen zu können.
 
@@ -342,7 +342,7 @@ In der folgenden Tabelle sind die allgemeinen Attribute aufgeführt, die mit ein
 
 Ein Datenwörterbuch kann auch berechnete Elemente enthalten. Ein berechnetes Datenwörterbuchelement ist immer mit einem Ausdruck verknüpft. Der Ausdruck wird geprüft, um den Wert eines Datenwörterbuchelements zur Laufzeit abzurufen. Ein berechneter DDE-Wert ist eine Funktion anderer DDE-Werte oder -Literale. Standardmäßig werden JSP Expression Language(EL)-Ausdrücke unterstützt. Die EL-Ausdrücke verwenden ${ }-Zeichen, und gültige Ausdrücke können Literale, Operatoren, Variablen (Datenwörterbuchelement-Verweise) und Funktionsaufrufe enthalten. Beim Verweisen auf ein Datenwörterbuchelement im Ausdruck wird der DDE-Verweisname verwendet. Der Verweisname ist für jedes Datenwörterbuchelement in einem Datenwörterbuch eindeutig.
 
-Ein berechneter DDE PersonFullName kann mit einem EL-Verkettungsausdruck wie „${PersonFirstName} ${PersonLastName}“ verknüpft werden.
+Ein berechneter DDE PersonFullName kann einem EL-Verkettungsausdruck wie ${PersonFirstName} ${PersonLastName} zugeordnet werden.
 
 ## Datentypzuordnung zwischen XSD und Datenwörterbuch {#data-type-mapping-between-xsd-and-data-dictionary-br}
 

@@ -11,7 +11,7 @@ hide: true
 source-git-commit: 96d94c843d1912abd91577b3373e38bd9fd9ed6c
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 88%
    + [Adobe Campaign-Komponenten](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
    + [Targeting von Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
    + [Erstellen von Adobe Campaign-Formularen in AEM](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md)
-+ Assets: Inhaltserstellung in der klassischen Benutzeroberfläche {#assets}
++ Inhaltserstellung für Assets in der klassischen Benutzeroberfläche {#assets}
    + [Arbeiten mit Assets](/help/sites-classic-ui-authoring/classicui-assets.md)
    + [Bereitstellen von Dynamic Media-Assets](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
    + [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)

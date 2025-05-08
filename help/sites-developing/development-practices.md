@@ -39,7 +39,7 @@ Dinge wie Einzüge und Leerräume erscheinen möglicherweise nicht wichtig, aber
 
 ### Auf hohe Testabdeckung abzielen  {#aim-for-high-test-coverage}
 
-Je größer eine Projektimplementierung wird, desto mehr Zeit ist auch erforderlich, um sie zu testen. Ohne entsprechende Testabdeckung kann das Test-Team nicht skalieren und die Entwickelnden kommen irgendwann vor lauter Bugs nicht mehr hinterher.
+Je größer eine Projektimplementierung wird, desto mehr Zeit ist auch erforderlich, um sie zu testen. Ohne entsprechende Testabdeckung kann das Test-Team nicht skalieren und die Entwickelnden kommen irgendwann vor lauter Fehlern nicht mehr hinterher.
 
 Entwickelnde sollten Test Driven Development (TDD) praktizieren und fehlschlagende Einheitstests vor dem Produktions-Code schreiben, der ihre Anforderungen erfüllt. Die Qualitätssicherung sollte einen automatisierten Satz von Abnahmeprüfungen erstellen, um sicherzustellen, dass das System von einer hohen Ebene aus wie erwartet funktioniert.
 

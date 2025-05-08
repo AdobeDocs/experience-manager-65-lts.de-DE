@@ -28,7 +28,7 @@ Für die Entwicklung Ihrer JCR-, Apache Sling- oder Adobe Experience Manager (AE
    * Eine integrierte Entwicklungsumgebung. Zum Beispiel [Eclipse](/help/sites-developing/howto-projects-eclipse.md) oder [IntelliJ](/help/sites-developing/ht-intellij.md).
    * Ein Build-Tool. Zum Beispiel [Apache Maven](/help/sites-developing/ht-projects-maven.md).
    * FileVault, das von Adobe entwickelt wurde, um ein Repository auf ein Dateisystem abzubilden, ein Versionskontrollsystem. Zum Beispiel Subversion.
-   * Ein Bug-Tracker-System. Zum Beispiel Jira.
+   * Ein Fehler-Tracking-System. Zum Beispiel Jira.
    * Ein zentrales System zur Verwaltung von Abhängigkeiten. Zum Beispiel Apache Archiva.
    * Und ein System zur Automatisierung von Builds. Zum Beispiel Apache Continuum.
 

@@ -10,7 +10,7 @@ exl-id: de3cd0ad-0b18-4d9a-8c6b-72cc16149cfc
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '195'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 90%
 
 ## Problem
 
-Nach dem Upgrade auf AEM Forms Service Pack 6.5.21.0 kann der `PaperCapture`-Service keine OCR-Vorgänge (Optical Character Recognition) für PDF-Dateien ausführen. Der Dienst generiert keine Ausgabe in Form einer PDF oder einer Protokolldatei. 
+Nach der Aktualisierung auf AEM Forms Service Pack 6.5.21.0 kann der `PaperCapture`-Dienst keine OCR-Vorgänge (optische Zeichenerkennung) mehr für PDFs durchführen. Der Dienst generiert keine Ausgabe in Form einer PDF oder einer Protokolldatei. 
 
 ## Gilt für
 
@@ -32,10 +32,8 @@ Diese Lösung gilt für:
 1. Extrahieren und kopieren Sie den Inhalt des heruntergeladenen Ordners.
 1. Navigieren Sie für die entsprechenden Anwendungs-Server zu den unten angegebenen Pfaden:
    * **JBoss**:
-
      `..\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\PaperCaptureSvc`
    * **WebLogic**:
-
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`
    * **WebSphere**:\
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`

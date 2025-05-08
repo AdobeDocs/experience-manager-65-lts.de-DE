@@ -60,7 +60,7 @@ Weitere Informationen zur Verwaltung von DSGVO-Anfragen von betroffenen Personen
 
 ## ContextHub {#contexthub}
 
-AEM bietet mit [ContextHub](/help/sites-developing/contexthub.md) eine optionale Datenebene. Dadurch werden besucherspezifische Daten im Browser beibehalten, die für eine regelbasierte Personalisierung verwendet werden können.
+AEM bietet mit [ContextHub](/help/sites-developing/contexthub.md) eine optionale Datenschicht. Dadurch werden besucherspezifische Daten im Browser beibehalten, die für eine regelbasierte Personalisierung verwendet werden können.
 
 Standardmäßig werden diese Besucherdaten nicht in AEM gespeichert. AEM sendet Regeln an die Datenschicht, um im Browser Personalisierungsentscheidungen zu treffen.
 

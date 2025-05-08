@@ -12,8 +12,8 @@ role: Admin, User, Developer
 exl-id: 21afdc66-0b27-4c73-9cb4-1efd5c0aefae
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 100%
+source-wordcount: '644'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Unterstützter Ausdruck für Date Picture-Klausel:
 * date.medium{}
 * date.full{}
 * date.short{}
-* date{date Picture Clause symbols}
+* Datum{date Picture Clause symbols}
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Unterstützte Ausdrücke für die numerische Picture-Klausel in **HTML-Formular
 * num.decimal{}
 * num.currency{}
 * num.percent{}
-* num{Numeric Picture Clause Symbols}
+* Anzahl{Numeric Picture Clause Symbols}
 
 <table>
  <tbody>
@@ -207,7 +207,7 @@ Unterstützte Ausdrücke für die numerische Picture-Klausel in **HTML-Formular
 
 HTML5-Formulare unterstützen die folgenden Text-Picture-Klauselausdrücke:
 
-* text{text Picture clause symbols}
+* Text{text Picture clause symbols}
 
 | **Symbol** | **Interpretation** |
 |---|---|

@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: aed65a14-2b4f-45ac-8b20-fdb08b3c9038
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 100%
+source-wordcount: '781'
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ Die Operatoren, die zur Verwendung in Ausdrücken verfügbar sind, sind in der o
 Im Folgenden finden Sie einige häufig verwendete JSP EL-Beispiele, die Sie in Ihrer Correspondence Management-Lösung verwenden können:
 
 * Addieren zweier Zahlen: ${number1 + number2}
-* Verketten zweier Zeichenketten: ${str1} ${str2}
+* Verketten zweier Zeichenketten: ${str1} ${str2}
 * Vergleichen zwei Zahlen: ${age &lt; 18}
 
 Weitere Informationen finden Sie in der [JSP-EL-Spezifikation](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). Der Client-seitige Expression Manager unterstützt nicht alle Variablen und Funktionen in der JSP-EL-Spezifikation. Dabei gilt:

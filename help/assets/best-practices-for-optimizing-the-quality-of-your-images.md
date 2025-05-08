@@ -12,7 +12,7 @@ exl-id: 30038003-e307-46d1-b5f9-624d98a672a7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1497'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -88,7 +88,7 @@ Erhöhen Sie den Wert schrittweise von 1,75 auf maximal 4. Wenn die Scharfzeichn
 
 Belassen Sie die Einstellung des Parameters „monochrome“ auf 0.
 
-### Best Practices für JPEG-Komprimierung (`&qlt=`) {#best-practices-for-jpeg-compression-qlt}
+### Best Practices für die JPEG-Komprimierung (`&qlt=`) {#best-practices-for-jpeg-compression-qlt}
 
 * Dieser Parameter steuert die Qualität der JPG-Kodierung. Ein höherer Wert führt zu einer höheren Bildqualität, aber auch zu einer größeren Datei. Ein niedrigerer Wert dagegen bedeutet eine niedrigere Bildqualität, aber auch eine kleinere Datei. Der Bereich für diesen Parameter liegt zwischen 0 und 100.
 * Um die Qualität zu optimieren, setzen Sie den Parameterwert nicht auf 100. Die Unterschiede zwischen einer Einstellung von 90 oder 95 und 100 sind fast nicht wahrnehmbar, aber die Einstellung 100 erhöht die Größe der Bilddatei unnötigerweise. Um die Qualität zu optimieren, aber zu vermeiden, dass Bilddateien zu groß werden, setzen Sie daher den Wert von `qlt= value` auf 90 oder 95.
@@ -101,7 +101,7 @@ Belassen Sie die Einstellung des Parameters „monochrome“ auf 0.
 
 Verwenden Sie als Best Practice für die JPG-Komprimierung `&qlt=85,0`.
 
-## Best Practices für die JPEG-Skalierung (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
+## Best Practices für die Dimensionierung in JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
 jpegSize ist ein nützlicher Parameter, wenn Sie garantieren möchten, dass ein Bild eine bestimmte Größe für die Bereitstellung an Geräten mit begrenztem Speicher nicht übersteigt.
 

@@ -293,7 +293,6 @@ Siehe auch [Hinzufügen von Imagemaps](/help/assets/image-maps.md).
    * Wählen Sie **[!UICONTROL Hyperlink]** aus.
 
       * Wenn Sie Experience Manager Sites-Kunde sind, klicken Sie auf das Symbol zur Website-Auswahl (Ordner), um zu einer URL zu gehen.
-
         >[!NOTE]
         >
         >Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.

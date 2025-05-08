@@ -12,8 +12,8 @@ role: Admin
 exl-id: 448715f1-ccec-4fb8-92d7-b7458cf9e6d4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6081'
-ht-degree: 99%
+source-wordcount: '6067'
+ht-degree: 98%
 
 ---
 
@@ -154,7 +154,7 @@ Zur Unterstützung automatisierter Implementierungen und Konfigurationsbereitste
 
 Beim Start wird die Systemeigenschaft **com.day.cq.portet.config** ausgelesen, sodass die aktuelle Umgebung erkannt werden kann. Normalerweise lautet der Wert dieser Eigenschaft **dev**, **prod**, **test**.  Wenn keine Umgebung festgelegt ist, werden keine Konfigurationen ausgelesen.
 
-Ist eine Umgebung festgelegt, wird im Klassenpfad unter **com/day/cq/portlet/{umg}.config** nach einer Konfigurationsdatei gesucht, wobei **umg** durch den tatsächlichen Wert für die Umgebung ersetzt wird. Diese Datei sollte alle Konfigurationsdateien für diese Umgebung auflisten. Diese Dateien werden relativ zum Speicherort der Konfigurationsdatei durchsucht. Wenn die Datei beispielsweise eine Zeile `my.service.xml,` enthält, wird diese Datei aus dem Klassenpfad unter `com/day/cq/portlet/my.service.config.` gelesen. Der Name der Datei besteht aus der Persistenz-ID des Service, gefolgt von **.config**. Im vorherigen Beispiel ist die Persistenz-ID **my.service**. Das Format der Konfigurationsdatei entspricht dem Format, das vom Apache Sling OSGi-Installationsprogramm verwendet wird.
+Ist eine Umgebung festgelegt, wird im Klassenpfad unter **com/day/cq/portlet/{env}.config nach einer Konfigurationsdatei gesucht** wobei **env** durch den tatsächlichen Wert für die Umgebung ersetzt wird. Diese Datei sollte alle Konfigurationsdateien für diese Umgebung auflisten. Diese Dateien werden relativ zum Speicherort der Konfigurationsdatei durchsucht. Wenn die Datei beispielsweise eine Zeile `my.service.xml,` enthält, wird diese Datei aus dem Klassenpfad unter `com/day/cq/portlet/my.service.config.` gelesen. Der Name der Datei besteht aus der Persistenz-ID des Service, gefolgt von **.config**. Im vorherigen Beispiel ist die Persistenz-ID **my.service**. Das Format der Konfigurationsdatei entspricht dem Format, das vom Apache Sling OSGi-Installationsprogramm verwendet wird.
 
 Dies bedeutet, dass für jede Umgebung eine entsprechende Konfigurationsdatei hinzugefügt werden muss. Eine Konfiguration, die auf alle Umgebungen angewendet werden soll, muss in all diesen Dateien eingegeben werden – wenn sie nur für eine Umgebung bestimmt ist, wird sie nur in diese Datei eingegeben. Dieser Mechanismus gewährleistet die vollständige Kontrolle darüber, welche Konfiguration in welcher Umgebung ausgelesen wird.
 
@@ -215,7 +215,7 @@ So konfigurieren Sie einen Replikationsagenten für das Portal:
    ![screen_shot_2012-02-15at42515pm](assets/screen_shot_2012-02-15at42515pm.png)
 
 1. Geben Sie in das Feld **HTTP-Methode** den Befehl **GET** ein.
-1. Klicken Sie im Feld **HTTP-Kopfzeilen** auf das **+**-Symbol, um einen neuen Eintrag hinzuzufügen, und geben Sie dann **Path: {path}** ein.
+1. Klicken Sie im Feld **HTTP** Kopfzeilen“ auf **+**, um einen neuen Eintrag hinzuzufügen, und geben Sie dann **Path:{path}** ein.
 1. Klicken Sie ggf. auf die Registerkarte **Proxy** und geben Sie die Proxy-Informationen für den Agenten ein.
 1. Klicken Sie auf **OK**, um die Änderungen zu speichern.
 1. Klicken Sie zum Testen der Verbindung auf den Link **Verbindung testen**. Es wird eine Protokollmeldung angezeigt, die angibt, ob der Replikationstest erfolgreich war. Beispiel:
@@ -508,7 +508,7 @@ In HTML können Sie die folgenden Platzhalter verwenden, die beim Rendern durch 
 | {id} | CSS-ID der Schaltfläche. |
 | {url} | URL für das Ziel der Schaltfläche. |
 | {text} | Beschriftung der Schaltfläche. |
-| {onclick} | Die JavaScript-Funktion **onclick** (enthält {url}). |
+| {onclick} | JavaScript **onclick**-Funktion (enthält {url}). |
 
 Beispiel einer Datei „button.html“:
 

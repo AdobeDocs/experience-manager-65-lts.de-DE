@@ -301,7 +301,7 @@ Sie können ein vorhandenes Videocodierungsprofil bearbeiten, um auf erweiterte 
    <td><code>audioBitrateCustom</code></td>
    <td>Setzen Sie den Wert auf <code>true</code>, um eine konstante Bit-Rate für den Audio-Stream zu erzwingen, sofern dies vom Audio-Codec unterstützt wird.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>Der Standardwert ist <code>false</code>.</p> <p>Empfohlener Wert für DASH oder HLS ist <code>false</code>.</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>Der Standardwert ist <code>false</code>.</p> <p>Empfohlener Wert für DASH oder HLS: <code>false</code>.</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>

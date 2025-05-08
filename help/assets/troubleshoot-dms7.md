@@ -130,7 +130,7 @@ Falls Sie Probleme mit Bildern und Sets haben, sehen Sie sich die folgende Anlei
    <td>Warten Sie, bis das Asset vom Workflow abgerufen wurde.</td>
   </tr>
   <tr>
-   <td>Bilder oder Sets zeigen weder die Viewer-URL noch den eingebetteten Code an</td>
+   <td>Bilder oder Sets zeigen weder die Viewer-URL noch den Einbettungs-Code an</td>
    <td>Überprüfen Sie, ob die Viewer-Vorgabe veröffentlicht wurde.</td>
    <td><p>Wechseln Sie zu <strong>Tools</strong> &gt; <strong>Assets</strong> &gt; <strong>Viewer-Vorgaben</strong> und veröffentlichen Sie die Viewer-Vorgabe.</p> </td>
   </tr>

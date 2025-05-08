@@ -101,7 +101,7 @@ Schlägt ein Workflow fehl, ermöglicht Ihnen AEM mit der **Fehler-Konsole** die
 * **Verlauf öffnen**
 Die Details des Workflow-Verlaufs werden angezeigt.
 
-* **Schritt erneut ausführen** – Führt die Instanz der Komponente „Script Step“ erneut aus. Verwenden Sie den Befehl „Schritt erneut ausführen“, nachdem Sie die Ursache des ursprünglichen Fehlers behoben haben. Wiederholen Sie zum Beispiel den Schritt nach der Behebung eines Bugs in dem Skript, das vom Prozessschritt ausgeführt wird.
+* **Schritt erneut ausführen** – Führt die Instanz der Komponente „Script Step“ erneut aus. Verwenden Sie den Befehl „Schritt erneut ausführen“, nachdem Sie die Ursache des ursprünglichen Fehlers behoben haben. Wiederholen Sie zum Beispiel den Schritt nach der Behebung eines Fehlers in dem Skript, das vom Prozessschritt ausgeführt wird.
 * **Beenden** – Beendet den Workflow, wenn der Fehler eine nicht mit dem Workflow zu vereinbarende Situation verursacht hat. So kann der Workflow beispielsweise von Umgebungsbedingungen abhängen, wie etwa von Informationen im Repository, die nicht mehr für die Workflow-Instanz gelten.
 * **Beenden und erneut versuchen** – Dies hat ähnliche Auswirkungen wie **Beenden**, außer dass eine neue Workflow-Instanz mit der ursprünglichen Payload und Beschreibung sowie dem ursprünglichen Titel gestartet wird.
 

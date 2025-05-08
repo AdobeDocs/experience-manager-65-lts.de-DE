@@ -82,7 +82,6 @@ Inhaltsfragmente mit strukturierten Inhalten (d. h. basierend auf einem Inhalts
 * Alle Inhalte werden im Knoten `jcr:content/data` des Assets gespeichert:
 
    * Die Elementdaten werden im primären Unterknoten gespeichert:
-
      `jcr:content/data/master`
 
    * Varianten werden in einem Unterknoten gespeichert, der den Namen der Variante hat:

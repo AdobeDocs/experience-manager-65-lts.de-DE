@@ -72,14 +72,14 @@ Wenn Sie beim Erstellen der Freihand-Signatur auf das Geolocation-Symbol klicken
 
 >[!NOTE]
 >
->Das Einbetten der geografischen Informationen ist auf einem iPad obligatorisch.
+Das Einbetten der geografischen Informationen ist auf einem iPad obligatorisch.
 
 Auf einem iPad wird das Geolocation-Symbol standardmäßig nicht angezeigt. Die geografischen Informationen werden automatisch eingebettet, wenn Sie auf **OK** klicken.
 
 Diese Einstellung kann auf iPads geändert werden, indem in den init-Parametern des Feldes der Wert des Parameters `geoLocManadatoryOnIpad` auf `0` gesetzt wird.
 
 * Wenn die Angabe geografischer Informationen obligatorisch ist, wird den Benutzenden ein kleinerer Bereich zum Zeichnen angezeigt. Der Text mit den geografischen Informationen wird außerhalb dieses Bereichs hinzugefügt, wenn die Benutzenden auf das Symbol **OK** klicken.
-* In anderen Fällen wird ihnen der komplette Bereich, in dem gezeichnet werden kann, angezeigt. Wenn die Person sich dazu entscheidet, geografische Informationen hinzuzufügen, wird die Größe des Bereichs angepasst, um den entsprechenden Text einfügen zu können.
+* In anderen Fällen wird ihnen der komplette Bereich, in dem gezeichnet werden kann, angezeigt. Wenn die Person sich dazu entscheidet, geografische Informationen einzubetten, wird die Größe des Bereichs angepasst, um den entsprechenden Text einfügen zu können.
 
 ### Löschen einer Signatur {#clearing-a-signature}
 

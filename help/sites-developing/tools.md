@@ -48,11 +48,11 @@ Die folgenden Tools stehen zur Verfügung. Eine wichtige Angelegenheit ist jedoc
 
 **Bugzilla**
 
-Ein Bugtracker, der Ihren eigenen Anforderungen entsprechend konfiguriert werden kann.
+Ein Fehler-Tracking, das Ihren eigenen Anforderungen entsprechend konfiguriert werden kann.
 
 **Tabellen**
 
-Tabellen sind zwar nicht als Bugtracker gedacht, werden aber oft als solche *miss* braucht, da sie leicht verständlich sind und viele Benutzer Erfahrung mit ihrer Verwendung haben.
+Tabellen sind zwar nicht für das Fehler-Tracking gedacht, werden aber oft als solche *miss* braucht, da sie leicht verständlich sind und viele Benutzer Erfahrung mit ihrer Verwendung haben.
 
 Wenn Tabellen als Tracker verwendet werden, dann:
 
@@ -63,4 +63,4 @@ Wenn Tabellen als Tracker verwendet werden, dann:
 * sollten sie allen Projektmitgliedern zugänglich sein.
 * dürfen Kopien verteilt werden, falls Sicherheit ein Anliegen ist (oft in großen Unternehmen) und ein gemeinsamer Zugriff nicht möglich ist, solange alle verstehen, dass es sich bei den Tabellen um Kopien handelt, die nicht aktualisiert werden können.
 
-Auch für das Tracking von Bugs und Funktionsanforderungen sind proprietäre Tools vorhanden.
+Auch für das Tracking von Fehlern und Funktionsanforderungen sind proprietäre Tools vorhanden.

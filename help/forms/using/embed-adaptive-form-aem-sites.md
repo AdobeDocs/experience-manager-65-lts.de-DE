@@ -48,7 +48,7 @@ Wenn eine Sites-Seite eine statische Vorlage verwendet, müssen Sie sie im Absat
 
 Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation mithilfe der AEM Forms-Container-Komponente:
 
-1. Öffnen Sie im Bearbeitungsmodus die AEM Sites-Seite, in die Sie ein adaptives Formular oder interaktive Kommunikation einfügen möchten.
+1. Öffnen Sie im Bearbeitungsmodus die AEM Sites-Seite, in die Sie ein adaptives Formular oder interaktive Kommunikation einbetten möchten.
 1. Ziehen Sie die AEM Forms-Container-Komponente aus dem Komponenten-Browser auf die Seite.
 
    Alternativ dazu können Sie im Assets-Browser nach einem adaptiven Formular suchen und es dann per Drag-and-drop auf die Sites-Seite ziehen. Dadurch wird das Formular in einen AEM Forms-Container eingebettet.

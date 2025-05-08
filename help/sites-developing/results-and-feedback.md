@@ -30,4 +30,4 @@ Unabhängig davon, welche Methode oder welches Tool Sie verwenden, sollten die g
 
 * Sie sollten folgende Eigenschaften nicht aufweisen:
 
-   * Durch Tracking-Informationen erweitert – weder Bugs noch neue Funktionen oder Folgeaktionen.  Diese Informationen sollten an einer anderen Stelle aufgezeichnet werden. Dazu stehen wiederum viele Tools zur Verfügung.
+   * Durch Tracking-Informationen erweitert – weder Fehler noch neue Funktionen oder Folgeaktionen.  Diese Informationen sollten an einer anderen Stelle aufgezeichnet werden. Dazu stehen wiederum viele Tools zur Verfügung.

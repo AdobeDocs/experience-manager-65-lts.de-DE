@@ -13,7 +13,7 @@ exl-id: cafc7120-114e-487a-8b81-9c695318731e
 source-git-commit: a061c19dcb883b94ee61be21459c46e21eaf696a
 workflow-type: tm+mt
 source-wordcount: '2791'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -139,7 +139,7 @@ In früheren Versionen befanden sich Client-Bibliotheksordner unter `/etc/client
 >
 >Um Code besser von Inhalt und Konfiguration zu isolieren, empfiehlt es sich, Client-Bibliotheken unter `/apps` zu platzieren und über `/etc.clientlibs` mithilfe der `allowProxy`-Eigenschaft freizulegen.
 
-Damit auf die Client-Bibliotheken unter `/apps` zugegriffen werden kann, wird ein Proxy-Servlet verwendet. Die ACLs werden weiterhin im Client-Bibliotheksordner erzwungen, aber das Servlet ermöglicht, dass der Content über `/etc.clientlibs/` gelesen wird, wenn die `allowProxy`-Eigenschaft auf `true` gesetzt ist.
+Damit die Client-Bibliotheken unter `/apps` zugänglich sind, wird ein Proxy-Servlet verwendet. Die ACLs werden weiterhin im Client-Bibliotheksordner erzwungen, aber das Servlet ermöglicht, dass der Inhalt über `/etc.clientlibs/` gelesen wird, wenn die `allowProxy`-Eigenschaft auf `true` gesetzt ist.
 
 Eine statische Ressource kann nur über den Proxy abgerufen werden, wenn sie sich unter einer Ressource unter dem Client-Bibliotheksordner befindet.
 

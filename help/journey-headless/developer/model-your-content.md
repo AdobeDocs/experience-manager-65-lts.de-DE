@@ -249,7 +249,7 @@ Nachdem das Fragment erstellt wurde, können Sie es im Inhaltsfragmenteditor öf
 
 ### Erstellen von Inhaltsfragmenten {#creating-content-fragments}
 
-Nach Auswahl des entsprechenden Modells wird ein Inhaltsfragment zur Bearbeitung im Inhaltsfragment-Editor geöffnet:
+Nach Auswahl des entsprechenden Modells wird ein Inhaltsfragment zur Bearbeitung im Inhaltsfragmenteditor geöffnet:
 
 ![Inhaltsfragmente-Editor](assets/cfm-editor.png)
 

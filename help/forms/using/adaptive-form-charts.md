@@ -9,8 +9,8 @@ role: User, Developer
 exl-id: 0860f059-d599-4f87-9611-e7fe1c6bc059
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2005'
-ht-degree: 100%
+source-wordcount: '2001'
+ht-degree: 97%
 
 ---
 
@@ -63,7 +63,7 @@ Auf der Registerkarte „Allgemein“ können Sie die folgenden Eigenschaften ko
 * **Y-Achse > Funktion verwenden**: Gibt die statistische Funktion an, die für die Berechnung der Werte auf der y-Achse zu verwenden ist.  In diesem Beispiel wird der Betrag aus jeder Kategorie zusammengerechnet und der berechnete Wert wird auf der y-Achse abgebildet.  Wählen Sie also die Option „Summe“ aus der Dropdown-Liste „Funktion verwenden“.  Weitere Informationen zu den Funktionen finden Sie unter „Verwenden von Funktionen im Diagramm“.
 * **Legendenposition:** Legt die Position der Legende in Bezug auf das Diagramm fest. Die verfügbaren Optionen sind rechts, links, oben und unten.
 * **Legende anzeigen**: Zeigt eine Legende für das Diagramm an, wenn aktiviert.
-* **QuickInfo**: Gibt das Format an, in dem die QuickInfo beim Bewegen der Maus über einen Datenpunkt in der Grafik angezeigt wird. Der Standardwert ist **\${x}(\${y})**. Je nach Diagrammtyp werden die Variablen **\${x}** und **\${y}** dynamisch durch die entsprechenden Werte für die x-Achse und y-Achse ersetzt und in der QuickInfo angezeigt, wenn Sie den Mauszeiger über einen Punkt, ein Segment oder einen Balken im Diagramm bewegen. Wie im folgenden Beispiel wird die QuickInfo als **Einzelhandel(5870)** angezeigt, wenn Sie den Mauszeiger in die Spalte Einzelhandelsgeschäfte halten. Wenn Sie die QuickInfo deaktivieren möchten, lassen Sie das Feld „Quickinfo“ leer. Diese Option ist nicht auf Linien- und Bereichsdiagramme anwendbar.
+* **QuickInfo**: Gibt das Format an, in dem die QuickInfo beim Bewegen der Maus über einen Datenpunkt in der Grafik angezeigt wird. Der Standardwert ist **\${x}(\${y})**. Je nach Diagrammtyp werden die Variablen **\${x}** und **\${y}** dynamisch durch die entsprechenden Werte für die X- und Y-Achse ersetzt und in der QuickInfo angezeigt, wenn Sie die Maus über einen Punkt, ein Segment oder einen Balken in der Quickinfo bewegen. Wie im folgenden Beispiel wird die QuickInfo als **Einzelhandel(5870)** angezeigt, wenn Sie den Mauszeiger in die Spalte Einzelhandelsgeschäfte halten. Wenn Sie die QuickInfo deaktivieren möchten, lassen Sie das Feld „Quickinfo“ leer. Diese Option ist nicht auf Linien- und Bereichsdiagramme anwendbar.
 * **Spezifische Diagrammkonfigurationen**: Neben den allgemeinen Konfigurationen sind die folgenden spezifischen Diagrammkonfigurationen verfügbar:
 * **Innerer Radius**: Für Ringdiagramme verfügbar, um den Radius (in Pixeln) für den inneren Kreis des Diagramms anzugeben.
 * **Linienfarbe**: Verfügbar für Linien-, Linien- und Punkt- sowie Bereichsdiagramme, um den hexadezimalen Farbwert für die Linie im Diagramm anzugeben.

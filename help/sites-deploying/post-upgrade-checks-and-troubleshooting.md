@@ -123,7 +123,7 @@ Falls Ihre benutzerdefinierten Bundles nicht in den aktiven Status wechseln, lie
 
 Es empfiehlt sich außerdem zu überprüfen, ob die Änderung, die das Problem verursacht hat, erforderlich war, und sie zurückzusetzen, wenn dies nicht der Fall ist. Überprüfen Sie zudem, ob die Version des Paketexports unter Beachtung einer strengen semantischen Versionierung mehr als nötig erhöht wurde.
 
-### Analysieren der Dateien „error.log“ und „upgrade.log“ {#analyzing-the-error.log-and-upgrade.log}
+### Analysieren der Dateien „error.log“ und „upgrade.log“   {#analyzing-the-error.log-and-upgrade.log}
 
 In den meisten Situationen müssen die Protokolle auf Fehler untersucht werden, um die Ursache eines Problems zu ermitteln. Bei Upgrades ist es jedoch ebenfalls erforderlich, Abhängigkeitsfehler zu überwachen, da alte Bundles möglicherweise nicht ordnungsgemäß aktualisiert werden.
 

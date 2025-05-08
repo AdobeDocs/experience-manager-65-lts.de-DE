@@ -13,7 +13,7 @@ exl-id: 22cfa2bc-04af-49e6-b9b1-51112c96ba23
 source-git-commit: c759cb6830810b0b822cd66f8a29cbcf4f2851eb
 workflow-type: tm+mt
 source-wordcount: '892'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 88%
 
 Launches helfen Ihnen, Inhalte für eine künftige Version effizient zu entwickeln.
 
-Ein *Launch* wird erstellt, um Ihnen Änderungen zur Vorbereitung auf eine zukünftige Veröffentlichung zu ermöglichen und gleichzeitig die aktuellen Seiten zu pflegen. Das bedeutet, dass Sie effektiv zwei Versionen gleichzeitig bearbeiten: Seiten, die derzeit veröffentlicht sind, und eine Version dieser Seiten, die zu einem späteren Zeitpunkt veröffentlicht werden sollen. Sobald diese Zeit gekommen ist, können Sie die Originalseiten ersetzen und die neue Version veröffentlichen.
+Ein *Launch* wird erstellt, damit Sie Änderungen zur Vorbereitung auf spätere Veröffentlichungen vornehmen und gleichzeitig die aktuellen Seiten pflegen können. Das bedeutet, dass Sie tatsächlich zwei Versionen gleichzeitig bearbeiten: Seiten, die derzeit veröffentlicht sind, und eine Version dieser Seiten, die zu einem späteren Zeitpunkt veröffentlicht werden soll. Wenn es so weit ist, können Sie die Originalseiten ersetzen und die neue Version veröffentlichen.
 
-Erstellen Sie einen *Launch* und leiten Sie Ihre *Launch*-Seiten nach deren Bearbeitung und Aktualisierung *Weiterleiten* wieder an die *Source weiter*. Sie können dann diese *Source*-Seiten aktivieren (oberste Ebene). Durch die Weiterleitung wird der Launch-Inhalt wieder auf die Quellseiten kopiert und kann entweder manuell oder automatisch ausgeführt werden (abhängig von den Feldern, die beim Erstellen und Bearbeiten des Launches festgelegt wurden).
+Erstellen Sie einen *Launch* und leiten Sie Ihre *Launch*-Seiten nach deren Bearbeitung und Aktualisierung wieder an die *Quelle* *zurück*. Sie können dann diese *Quellseiten* (oberste Ebene) aktivieren. Durch die Weiterleitung wird der Launch-Inhalt wieder auf die Quellseiten kopiert und kann entweder manuell oder automatisch ausgeführt werden (abhängig von den Feldern, die beim Erstellen und Bearbeiten des Launches festgelegt wurden).
 
 Beispiel: Die saisonalen Produktseiten in Ihrem Online-Shop werden einmal pro Quartal aktualisiert, damit die präsentierten Produkte der aktuellen Saison entsprechen. Zur Vorbereitung auf die nächste Quartals-Aktualisierung können Sie einen Launch der relevanten Web-Seiten erstellen. Während des Quartals werden die folgenden Änderungen in der Launch-Kopie gesammelt:
 

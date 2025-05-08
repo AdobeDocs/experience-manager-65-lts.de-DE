@@ -33,7 +33,7 @@ Um ein interaktives Video mit Shopping-Funktion in Aktion zu sehen, wählen Sie 
 
 * Wählen Sie die Miniatur aus, wenn Sie das Video anhalten und die Schnellansicht des Produkts öffnen möchten. Sie können beispielsweise im Video auf das KitchenAid-Miniaturbild klicken, um eine 360-Grad-Rotationsansicht des Mixers anzuzeigen, oder heranzoomen, um die Details des Mixers zu sehen.
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=de. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![Ein Frame aus einem interaktiven Video mit Shopping-Funktion](assets/chlimage_1-126.png) *Ein Frame aus einem interaktiven Video mit Shopping-Funktion.*
 
@@ -86,8 +86,8 @@ Siehe [Hochladen eines Videos und der zugehörigen Miniatur-Assets](#uploading-a
    >Das MXF-Videoformat wird noch nicht für die Verwendung mit interaktiven Videos in Dynamic Media unterstützt.
 
 1. **Hinzufügen von Interaktivität zum Video**: Fügen Sie dem Video mindestens ein Zeitsegment hinzu. Verknüpfen Sie dann Miniaturen mit diesen Zeitsegmenten. Weisen Sie jeder Miniatur eine Aktion wie einen Hyperlink, eine Schnellansicht oder ein Experience Fragment zu.
-(Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Experience Manager Sites.)
-Veröffentlichen Sie abschließend die interaktiven Video-Assets. Durch das Veröffentlichen wird der Integrations-Code oder die URL erstellt, die Sie schließlich kopieren und auf die Landingpage Ihrer Website anwenden. Siehe [Hinzufügen von Interaktivität zum Video](#adding-interactivity-to-your-video).
+(Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihre interaktiven Inhalte über Links mit relativen URLs verfügen, insbesondere über Links zu Seiten in Experience Manager Sites.)
+Schließen Sie den Vorgang ab, indem Sie die interaktiven Video-Assets veröffentlichen. Durch das Veröffentlichen wird der Einbettungs-Code oder die URL erstellt, die Sie schließlich kopieren und auf die Landingpage Ihrer Website anwenden. Siehe [Hinzufügen von Interaktivität zum Video](#adding-interactivity-to-your-video).
 Siehe [Veröffentlichen von Assets](/help/assets/publishing-dynamicmedia-assets.md).
 
 1. **Hinzufügen eines interaktiven Videos zu Ihrer Website oder Ihrer Website in Experience Manager**: Wenn Sie Experience Manager Sites, Experience Manager eCommerce oder beides verwenden, können Sie das interaktive Video zu einer Web-Seite hinzufügen. Ziehen Sie die interaktive Medienkomponente auf die Seite im Experience Manager. Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
@@ -497,7 +497,7 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
    >
    >Beim Speichern des interaktiven Videos wird automatisch eine zugehörige `.vtt`-Datei gespeichert. Die `.vtt`-Datei wird im Ordner `_VTT` gespeichert. Dieser befindet sich im Stamm von **[!UICONTROL Assets]**. Die Datei und der Ordner sind erforderlich, damit das interaktive Video auf Ihrer Website richtig wiedergegeben werden kann. Daher sollten Sie weder den Ordner `_VTT` noch dessen Inhalte verschieben, bearbeiten oder löschen.
 
-1. Veröffentlichen des interaktiven Videos Durch das Veröffentlichen wird der Integrations-Code oder die URL erstellt, die Sie schließlich kopieren und auf die Website-Oberfläche einfügen.
+1. Veröffentlichen des interaktiven Videos Durch das Veröffentlichen wird der Einbettungs-Code oder die URL erstellt, die Sie schließlich kopieren und auf die Website-Oberfläche einfügen.
 
    Wenn Sie die Interaktivität mit Schnellansichten hinzugefügt haben, verwenden Sie nur den Einbettungs-Code. Wenn Sie die Interaktivität mit per Hyperlink verbundenen Web-Seiten hinzugefügt haben, können Sie auch die veröffentlichte URL verwenden. Beachten Sie jedoch, dass die URL-basierte Verknüpfungsmethode nicht möglich ist, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
 
@@ -526,8 +526,8 @@ Siehe [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/
 Wenn Sie die Interaktivität mit Schnellansichten hinzugefügt haben, verwenden Sie nur den Einbettungs-Code. Wenn Sie die Interaktivität mit per Hyperlink verbundenen Web-Seiten hinzugefügt haben, können Sie auch die veröffentlichte URL verwenden. Beachten Sie jedoch, dass die URL-basierte Verknüpfungsmethode nicht möglich ist, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
 
 1. Ermitteln Sie im Web-Seiten-Code des Ziels, wo sich das statische Video befindet.
-1. Entfernen Sie das statische Video und ersetzen Sie den Code durch den kopierten Integrations-Code oder die URL, den bzw. die Sie wie besehen aus Experience Manager-Assets kopiert haben.
-Der kopierte Integrations-Code wird für eine responsive Umgebung festgelegt. Daher wird der Bereich automatisch angepasst, der zuvor vom statischen Video belegt war.
+1. Entfernen Sie das statische Video und ersetzen Sie den Code durch den kopierten Einbettungs-Code oder die URL, den bzw. die Sie wie besehen aus Experience Manager-Assets kopiert haben.
+Der kopierte Einbettungs-Code wird für eine responsive Umgebung festgelegt. Daher wird der Bereich automatisch angepasst, der zuvor vom statischen Video belegt war.
 
 >[!NOTE]
 >
@@ -659,27 +659,27 @@ Der Prozess der Erstellung der Schnellansichts-URL ist im Prinzip das Gegenteil 
   <tbody>
   <tr>
     <td><p>Einzelne SKU, befindet sich in der Abfragezeichenfolge.</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td>Einzelne SKU, befindet sich im URL-Pfad.</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td><p>SKU und Kategorie-ID in der Abfragezeichenfolge.</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   </tbody>
 </table>

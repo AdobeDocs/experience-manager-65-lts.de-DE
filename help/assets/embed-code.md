@@ -52,7 +52,7 @@ Siehe [Bereitstellen optimierter Bilder für eine responsive Website](responsive
 1. Wählen Sie in der linken Leiste den Namen einer Viewer-Vorgabe aus. Die Viewer-Vorgabe wird auf das Asset angewendet.
 1. Klicken Sie auf **[!UICONTROL Einbetten]**.
 1. Kopieren Sie im Dialogfeld **[!UICONTROL Einbettungs-Code]** den gesamten Code in die Zwischenablage und klicken Sie dann auf **[!UICONTROL Schließen]**.
-1. Fügen Sie den Integrations-Code in die Web-Seiten ein.
+1. Fügen Sie den Einbettungs-Code in die Web-Seiten ein.
 
 ## Verwenden von HTTP/2 zur Bereitstellung von Dynamic Media-Assets   {#using-http-to-deliver-your-dynamic-media-assets}
 

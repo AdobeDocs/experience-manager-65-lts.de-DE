@@ -265,7 +265,7 @@ Beachten Sie Folgendes: `%3B` ist die UTF-8-Codierung für `;`, und `%3D` ist di
 
 ## Caching persistierter Abfragen {#caching-persisted-queries}
 
-Persistierte Abfragen werden empfohlen, da sie auf der [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)- und CDN-Ebene zwischengespeichert werden können, was letztendlich die Leistung der anfragenden Client-Anwendung verbessert.
+Persistierte Abfragen werden empfohlen, da sie auf der [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)- und CDN-Ebene (Content Delivery Network) zwischengespeichert werden können, was letztendlich die Leistung der anfragenden Client-Anwendung verbessert.
 
 Standardmäßig macht AEM zwischengespeicherte Inhalte, die auf einer TTL (Time To Live)-Definition basieren, ungültig. Diese TTLs können durch die folgenden Parameter definiert werden. Auf diese Parameter kann auf verschiedene Weise zugegriffen werden, wobei die Namen je nach verwendetem Mechanismus variieren:
 

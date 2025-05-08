@@ -8,7 +8,7 @@ exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
 source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
 source-wordcount: '10487'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,6 @@ Weitere Informationen zu [Best Practices für die Organisation Ihrer digitalen A
    * Video-Assets vorab anzeigen und veröffentlichen
 
       * Zeigen Sie das Quellvideo und die kodierten Ausgabedarstellungen des Videos zusammen mit den zugehörigen Miniaturen an:
-
         [Vorschau von Videos anzeigen](managing-video-assets.md#upload-and-preview-video-assets) oder [Vorschau von Assets anzeigen](previewing-assets.md)
         [Videoausgabedarstellungen anzeigen](video-renditions.md)
         [Verwalten von Videoausgabedarstellungen](manage-assets.md#managing-renditions)
@@ -76,11 +75,9 @@ Weitere Informationen zu [Best Practices für die Organisation Ihrer digitalen A
    * Arbeiten mit Videometadaten
 
       * So zeigen Sie die Eigenschaften einer kodierten Videoausgabedarstellung (beispielsweise Framerate, Audio- und Video-Bitrate und Codec) an:
-
         [Anzeigen der Eigenschaften von Videoausgabedarstellungen](video-renditions.md)
 
       * So bearbeiten Sie die Eigenschaften von Videos, beispielsweise Titel, Beschreibung, Tags und benutzerdefinierte Metadatenfelder:
-
         [Bearbeiten von Videoeigenschaften](manage-assets.md#editing-properties)
 
       * [Verwalten von Metadaten für digitale Assets](metadata.md)
@@ -105,11 +102,9 @@ Weitere Informationen zu [Best Practices für die Organisation Ihrer digitalen A
    * Wenn Sie das Web-Content-Management-System eines Drittanbieters verwenden, können Sie Videos mit Web-Seiten verknüpfen oder darin einbetten.
 
       * Integrieren von Videos mithilfe der URL:
-
         [Verknüpfen von URLs mit Ihrer Web-Anwendung](linking-urls-to-yourwebapplication.md).
 
       * Integrieren von Videos mithilfe von Einbettungs-Code auf einer Website:
-
         [Einbetten des Video-Viewers auf einer Web-Seite](embed-code.md).
 
    * [Erzeugen von Videoberichten](#viewing-video-reports).
@@ -134,7 +129,7 @@ Die Logik, mit der Video-Player bestimmen, welches kodierte Video wiedergegeben 
 
 Detaillierte technische Informationen zum Algorithmus finden Sie unter [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
 
-Für die Verwaltung von einzelnen Videos und adaptiven Videosets wird Folgendes unterstützt:
+Für das Verwalten von einzelnen Videos und adaptiven Videosets wird Folgendes unterstützt:
 
 * Laden Sie Videos in verschiedenen unterstützten Formaten hoch und kodieren Sie sie für die Wiedergabe auf mehreren Bildschirmen in MP4 H.264. Sie können vordefinierte adaptive Videovorgaben oder einzelne Videokodierungsvorgaben verwenden bzw. Ihre eigene Kodierung anpassen, um die Qualität und Größe der Videos zu steuern.
 
@@ -157,7 +152,7 @@ Welche Windows-Geräte dieses Videoformat unterstützen, können Sie hier einseh
    * Viewer für gemischte Medien, die sowohl Video- als auch Bildinhalte kombinieren
 
 * Konfigurieren von Video-Playern entsprechend Ihren Branding-Anforderungen
-* Integrieren von Videos in Websites, mobile Sites oder Mobile Apps mit einer einfachen URL oder mit Integrations-Code
+* Integrieren von Videos in Websites, mobile Sites oder Mobile Apps mit einer einfachen URL oder mit Einbettungs-Code
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
@@ -284,7 +279,7 @@ Der Workflow für die **Dynamic Media-Videokodierung** kodiert Videos, wenn Dyna
 
 <!-- DEAD The following are best-practice tips for encoding source video files.
 
-For advice about video encoding, see [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_de).
+For advice about video encoding, see [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en).
 
 * [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en). -->
 
@@ -475,14 +470,14 @@ Verwenden Sie das [Adobe Dynamic Media-Viewer-Referenzhandbuch](https://experien
 
 1. Navigieren Sie zu einem veröffentlichten Video-Asset.
 1. Wählen Sie links oben auf der Seite des Assets aus der Dropdown-Liste die Option **[!UICONTROL Viewer]** aus.
-1. Wählen Sie eine Video-Viewer-Vorgabe aus und kopieren Sie den Integrations-Code.
-1. Suchen Sie im Integrations-Code die folgende Zeile:
+1. Wählen Sie eine Video-Viewer-Vorgabe aus und kopieren Sie den Einbettungs-Code.
+1. Suchen Sie im Einbettungs-Code die folgende Zeile:
 
    `videoViewer.setParam("config2", "<value>");`
 
    Der Parameter `config2` aktiviert die Verfolgung in HTML5-Viewern. Er ist außerdem eine firmenspezifische Vorgabe, die die Konfigurationsinformationen für Videoberichte und kundenspezifische Adobe Analytics-Konfigurationen enthält.
 
-   Den richtigen Wert für den Parameter „config2“ finden Sie sowohl im **[!UICONTROL Integrations-Code]** als auch in der Funktion **[!UICONTROL URL kopieren]**. Der in der URL des Befehls **[!UICONTROL URL kopieren]** zu suchende Parameter ist `&config2=<value>`. Der Wert lautet fast immer `companypreset`, kann aber in einigen Fällen auch `companypreset-1`, `companypreset-2` usw. lauten.
+   Den richtigen Wert für den Parameter „config2“ finden Sie sowohl im **[!UICONTROL Einbettungs-Code]** als auch in der Funktion **[!UICONTROL URL kopieren]**. Der in der URL des Befehls **[!UICONTROL URL kopieren]** zu suchende Parameter ist `&config2=<value>`. Der Wert lautet fast immer `companypreset`, kann aber in einigen Fällen auch `companypreset-1`, `companypreset-2` usw. lauten.
 
 1. Fügen Sie im benutzerspezifischen Video-Viewer-Code „AppMeasurementBridge.jsp“ wie folgt zur Viewer-Seite hinzu:
 
@@ -799,7 +794,7 @@ Verdeckte Untertitel ermöglichen auch einen besseren Zugang für Personen, die 
 
 Weitere Informationen finden Sie unter [Barrierefreiheit in Dynamic Media](/help/assets/accessibility-dm.md).
 
-Dynamic Media konvertiert Untertiteldateien in das JSON-Format (JavaScript Object Notation). Diese Konvertierung bedeutet, dass Sie den JSON-Text als verborgenes, aber vollständiges Transkript des Videos einfügen können. Suchmaschinen können dann den Inhalt durchsuchen und indizieren, damit Kundinnen und Kunden die Videos leichter finden können und zusätzliche Detailinformationen zum Videoinhalt erhalten.
+Dynamic Media konvertiert Untertiteldateien in das JSON-Format (JavaScript Object Notation). Diese Konvertierung bedeutet, dass Sie den JSON-Text als verborgenes, aber vollständiges Transkript des Videos einbetten können. Suchmaschinen können dann den Inhalt durchsuchen und indizieren, damit Kundinnen und Kunden die Videos leichter finden können und zusätzliche Detailinformationen zum Videoinhalt erhalten.
 
 Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie unter [Bereitstellen statischer Inhalte (keine Bilder)](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api).
 

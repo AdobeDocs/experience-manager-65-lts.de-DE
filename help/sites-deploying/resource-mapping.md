@@ -12,8 +12,8 @@ role: Admin
 exl-id: 90558227-c2c2-4130-9031-03efda5b1d94
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '507'
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ den
 
 aus, zur Umleitung der Anfrage
 
-`https://localhost:4503/welcome` &grave;&grave;
+`https://localhost:4503/welcome` ``
 
 an:
 

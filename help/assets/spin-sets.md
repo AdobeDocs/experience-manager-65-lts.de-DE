@@ -77,7 +77,7 @@ Führen Sie die folgenden Schritte aus, um sich schnell mit der Arbeit mit Rotat
 
 1. [Veröffentlichen Sie ein Rotationsset](/help/assets/publishing-dynamicmedia-assets.md).
 
-   Beim Veröffentlichen eines Rotationssets wird die URL- und Integrationszeichenfolge aktiviert. Außerdem müssen Sie [die Viewer-Vorgabe veröffentlichen](/help/assets/managing-viewer-presets.md).
+   Beim Veröffentlichen eines Rotationssets wird die URL- und Einbettungszeichenfolge aktiviert. Außerdem müssen Sie [die Viewer-Vorgabe veröffentlichen](/help/assets/managing-viewer-presets.md).
 
 1. [Verknüpfen Sie URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md) oder [betten Sie den Video- oder Bild-Viewer ein](/help/assets/embed-code.md).
 

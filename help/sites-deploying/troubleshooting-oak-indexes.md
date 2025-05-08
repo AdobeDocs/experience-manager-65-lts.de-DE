@@ -11,8 +11,8 @@ role: Admin
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1375'
+ht-degree: 100%
 
 ---
 
@@ -124,7 +124,7 @@ Gehen Sie wie folgt vor, um einen blockierten Neuindizierungsprozess zu identifi
 1. Wenn Sie alle in Schritt 1 genannten Informationen erfasst haben, starten Sie AEM neu.
 
    * Ein Neustart von AEM kann das Problem lösen, wenn eine hohe gleichzeitige Belastung vorliegt (Überlauf der Beobachtungswarteschlange o. ä.).
-   * Wenn ein Neustart das Problem nicht behebt, wenden Sie sich an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?lang=de&amp;support-solution=General&amp;support-tab=home#support) und geben Sie alle in Schritt 1 erfassten Informationen an.
+   * Wenn ein Neustart das Problem nicht behebt, wenden Sie sich an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?lang=de&amp;support-solution=General&amp;support-tab=home#support) und geben Sie alle in Schritt 1 erfassten Informationen an.
 
 ## Sicheres Abbrechen der asynchronen Neuindizierung {#safely-aborting-asynchronous-re-indexing}
 
