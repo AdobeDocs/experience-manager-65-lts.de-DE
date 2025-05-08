@@ -153,7 +153,7 @@ Konfigurieren Sie nun den E-Mail-Dienst auf dem aktuellen JEE-Server, indem Sie 
 
    >[!NOTE]
    >
-   > Weitere Informationen zu den Aufgabenbenachrichtigungen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   > Weitere Informationen zu den Aufgabenbenachrichtigungen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=de#create-an-email-endpoint-for-the-complete-task-service).
 
 ## So konfigurieren Sie den E-Mail-Endpunkt {#configure_email_endpoint}
 
@@ -167,7 +167,7 @@ Konfigurieren Sie nun den E-Mail-Dienst auf dem aktuellen JEE-Server, indem Sie 
 
    >[!NOTE]
    >
-   > Um weitere Informationen zur Konfiguration von E-Mail-Endpunkten zu erhalten, klicken Sie auf [E-Mail-Endpunkt konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html).
+   > Um weitere Informationen zur Konfiguration von E-Mail-Endpunkten zu erhalten, klicken Sie auf [E-Mail-Endpunkt konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=de).
 
 ## Fehlerbehebung {#troubleshooting}
 

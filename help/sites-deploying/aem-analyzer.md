@@ -102,7 +102,7 @@ Das Format des Berichts lautet:
 
 >[!NOTE]
 >
->Weitere Informationen zu den einzelnen Kategorien finden Sie unter [Musterdetektorkategorien](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/aso).
+>Weitere Informationen zu den einzelnen Kategorien finden Sie unter [Musterdetektorkategorien](https://experienceleague.adobe.com/de/docs/experience-manager-pattern-detection/table-of-contents/aso).
 
 Um die Wichtigkeitsstufen zu verstehen, folgen Sie der folgenden Tabelle:
 

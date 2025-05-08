@@ -52,7 +52,7 @@ Die folgenden Eigenschaftswerte werden in der vom Opt-in-Assistenten erstellten 
 >* Bessere Implementierungsoptionen für Single Page Applications (SPA)
 >* „AT.js“ enthält die Komponenten, die in „target.js“ enthalten waren, weshalb kein Aufruf mehr an die Zielgruppe erfolgt.
 
-<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=de -->
 
 ### Bereitgestellte Target-Framework-Eigenschaften {#provisioned-target-framework-properties}
 
@@ -115,7 +115,7 @@ Die Target-Bibliotheksdatei [AT.js](https://developer.adobe.com/target/implement
 >
 Sie können im Dropdown-Menü **Client-Bibliothek** die Datei „AT.js“ oder „mbox.js“ auswählen.
 
-<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=de -->
 
 ### Erstellen einer Target-Cloud-Konfiguration {#creating-a-target-cloud-configuration}
 
