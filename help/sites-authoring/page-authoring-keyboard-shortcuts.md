@@ -42,13 +42,13 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 
 >[!NOTE]
 >
->&amp;ast; Sobald der Benutzer mit der Seite im Vorschaumodus interagiert, ist der Tastaturbefehl `Ctrl-Shift-m` nicht mehr verfügbar. Es muss auf die obere Editorleiste geklickt oder wieder in den Bearbeitungsmodus gewechselt werden, damit der Tastaturbefehl erneut verfügbar wird.
+>&ast; Sobald der Benutzer mit der Seite im Vorschaumodus interagiert, ist der Tastaturbefehl `Ctrl-Shift-m` nicht mehr verfügbar. Es muss auf die obere Editorleiste geklickt oder wieder in den Bearbeitungsmodus gewechselt werden, damit der Tastaturbefehl erneut verfügbar wird.
 
 Desktop-Benutzern stehen bei der Verwendung von [Konsolen](/help/sites-authoring/keyboard-shortcuts.md) ebenfalls verschiedene Tastaturbefehle zur Verfügung.
 
 >[!NOTE]
 >
-Die Tastaturbefehle des Editors sind immer aktiv, unabhängig davon, ob die [Tastaturbefehle der Konsole deaktiviert sind](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+>Die Tastaturbefehle des Editors sind immer aktiv, unabhängig davon, ob die [Tastaturbefehle der Konsole deaktiviert sind](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## Betriebssystemspezifische Modifikatortasten {#os-specific-modifier-keys}
 
