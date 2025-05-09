@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 45b0c2c3a2cf1e3d55ad9184878cb8ebc3add672
+source-git-commit: 3e7947935e9632ff6f5a68c2104896e01f52a3ed
 workflow-type: tm+mt
-source-wordcount: '2955'
+source-wordcount: '2961'
 ht-degree: 94%
 
 ---
@@ -93,7 +93,7 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen der Java™ Vi
 | Oracle Java™ SE 17 JDK | A: Unterstützt `[1]` |
 | IBM® Semeru J9 VM - Build 17.0.13.0 | A: Unterstützt `[2]` |
 
-1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14, Java™ 15m Java™ 16 sind Nicht-LTS-Versionen von Oracle (siehe Roadmap für den Oracle Java™ SE-Support[&#128279;](https://www.oracle.com/technetwork/java/eol-135779.html)).  Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java™. Der Support und die Bereitstellung des Oracle Java™ SE JDK, einschließlich aller Wartungsupdates von LTS-Versionen, werden von Adobe direkt für alle AEM-Kundinnen und -Kunden unterstützt, die die Oracle Java™ SE-Technologie nutzen. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14, Java™ 15m Java™ 16 sind Nicht-LTS-Versionen von Oracle (siehe Roadmap für den Oracle Java™ SE-Support](https://www.oracle.com/technetwork/java/eol-135779.html)). [ Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java™. Der Support und die Bereitstellung des Oracle Java™ SE JDK, einschließlich aller Wartungsupdates von LTS-Versionen, werden von Adobe direkt für alle AEM-Kundinnen und -Kunden unterstützt, die die Oracle Java™ SE-Technologie nutzen. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
    **Diese Version unterstützt Oracle Java™ 17.**
 
 1. Die IBM® JRE wird nur zusammen mit WebSphere Application Server unterstützt.
@@ -153,8 +153,7 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
 | **Linux®, basierend auf der Red Hat®-Verteilung** | A: Unterstützt `[1]` `[2]` |
 | Linux®, auf Basis der Debian-Verteilung einschl. Ubuntu | A: Unterstützt `[1]` |
 | Linux®, auf Basis der SUSE®-Verteilung | A: Unterstützt `[1]` |
-
-<!--| Microsoft&reg; Windows Server 2022 |R: Supported|-->
+| Microsoft® Windows Server 2022 | R: Unterstützt |
 
 1. Linux®-Kernel 5. x und 6. x umfasst Derivate der Red Hat®-Distribution, einschließlich Red Hat® Enterprise Linux®, CentOS, Oracle Linux® und Amazon Linux®.
 1. Die Linux®-Verteilung wird von Adobe Managed Services unterstützt.
