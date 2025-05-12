@@ -30,7 +30,7 @@ Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführe
 
 ### Durchführen des Upgrades {#performing-the-upgrade}
 
-In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungs-Server verwendet. Zudem wird vorausgesetzt, dass Sie bereits eine funktionierende AEM-Version installiert haben. In dieser Anleitung wird die Aktualisierung von AEM Version **.6.5 auf****6.5 LTS** beschrieben.
+In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungs-Server verwendet. Zudem wird vorausgesetzt, dass Sie bereits eine funktionierende AEM-Version installiert haben. In dieser Anleitung wird die Aktualisierung von AEM Version **.6.5 auf**&#x200B;**6.5 LTS** beschrieben.
 
 1. Wenn AEM 6.5 bereits bereitgestellt ist, überprüfen Sie, ob die Bundles ordnungsgemäß funktionieren, indem Sie Folgendes aufrufen: *`https://<serveraddress:port>/system/console/bundles`*
 1. Beenden Sie als Nächstes AEM 6.5. Dies kann über den Tomcat App Manager unter folgender Adresse durchgeführt werden: *`https://<serveraddress:port>/manager/html`*
