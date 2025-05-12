@@ -7,10 +7,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
 workflow-type: tm+mt
-source-wordcount: '1532'
-ht-degree: 97%
+source-wordcount: '1539'
+ht-degree: 95%
 
 ---
 
@@ -44,11 +44,11 @@ Beachten Sie beim Umbenennen der Quickstart-JAR-Datei die folgenden Regeln:
 >
 >Sie können die Portnummer auch ändern, indem Sie die Option `-port` im Startbefehl verwenden.
 
-### Besonderheiten von Java 17 {#java-considerations}
+### Überlegungen zu Java 17/Java 21 {#java-considerations}
 
-Wenn Sie Oracle Java 17 ausführen, müssen Ihrer Befehlszeile beim Starten von AEM zusätzliche Schalter hinzugefügt werden.
+Wenn Sie Oracle Java 17 oder Java 21 ausführen, müssen Ihrer Befehlszeile beim Starten von AEM zusätzliche Schalter hinzugefügt werden.
 
-Nachfolgend finden Sie ein Beispiel dafür, wie die zusätzlichen JVM-Parameter aussehen sollten, wenn Sie AEM auf Java 17 starten:
+Nachfolgend finden Sie ein Beispiel dafür, wie die zusätzlichen JVM-Parameter aussehen sollten, wenn Sie AEM auf Java 17/Java 21 starten:
 
 ```shell
 -XX:+UseG1GC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.lang=org.apache.sling.commons.threads -Djdk.util.zip.disableZip64ExtraFieldValidation=true

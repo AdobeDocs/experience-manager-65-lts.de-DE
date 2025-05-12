@@ -5,9 +5,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 2a5d9026-49bc-4766-bcbe-38d834c14f72
-source-git-commit: 82af7ee5b3665dcc33b47e05c8580e9981728888
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '499'
 ht-degree: 17%
 
 ---
@@ -26,7 +26,7 @@ Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführe
 
 ### Migrationsvoraussetzungen {#migration-prerequisites}
 
-* **Erforderliche Java-Version**: Vergewissern Sie sich, dass Sie IBM® Sumeru JRE 17 auf Ihrem WLP-Server installiert haben.
+* **Erforderliche Java-Version**: Vergewissern Sie sich, dass Sie IBM® Sumeru JRE 17/21 auf Ihrem WLP-Server installiert haben.
 
 ### Durchführen des Upgrades {#performing-the-upgrade}
 
@@ -76,13 +76,13 @@ Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführe
 
 1. Erstellen Sie eine Sicherung der `sling.properties`-Datei (normalerweise in `crx-quickstart/conf/` vorhanden) und löschen Sie sie
 1. **Ändern Sie in der `server.xml`-Datei die Version des Servlets** 6.0).
-1. Installieren Sie Java 17 und stellen Sie sicher, dass es korrekt installiert ist, indem Sie Folgendes ausführen:
+1. Installieren Sie Java 17/Java 21 und stellen Sie sicher, dass es korrekt installiert ist, indem Sie Folgendes ausführen:
 
    ```shell
    java -version
    ```
 
-1. Überprüfen Sie die Startparameter für den AEM-Server und stellen Sie sicher, dass Sie die Parameter entsprechend Ihren Anforderungen aktualisieren. Weitere Informationen finden [ unter ](/help/sites-deploying/custom-standalone-install.md#java-considerations) zu Java 17.
+1. Überprüfen Sie die Startparameter für den AEM-Server und stellen Sie sicher, dass Sie die Parameter entsprechend Ihren Anforderungen aktualisieren. Weitere Informationen finden Sie [Überlegungen zu Java 17 ](/help/sites-deploying/custom-standalone-install.md#java-considerations) Java 21 .
 1. Laden Sie den neuen 6.5 LTS-WAR herunter und kopieren Sie ihn in den Dropins-Ordner unter: `/<path-to-aem-server>/dropins/`
 1. AEM-Instanz starten: Dies kann normalerweise mithilfe dieses Befehls erfolgen:
 

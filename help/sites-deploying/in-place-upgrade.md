@@ -6,10 +6,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: db9bf14ec9fefcbafb7b6d749de966e97c54abda
+source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 47%
+source-wordcount: '544'
+ht-degree: 46%
 
 ---
 
@@ -27,7 +27,7 @@ Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführe
 
 ## Migrationsvoraussetzungen {#migration-prerequisites}
 
-* **Erforderliche Java-Mindestversion:** Stellen Sie sicher, dass Oracle Java™ 17 auf Ihrem System installiert ist.
+* **Erforderliche Mindestversion für Java:** Vergewissern Sie sich, dass Oracle Java™ 17/21 auf Ihrem System installiert ist.
 
 ## Vorbereitung der „AEM Quickstart“-JAR-Datei {#prep-quickstart-file}
 
@@ -180,7 +180,7 @@ Starten Sie nun die AEM-Instanz mit dem neuen Befehl, der anhand der Information
 
 >[!NOTE]
 >
->Die Unterstützung für einige Java 8/11-Argumente wurde in Java 17 entfernt. Weitere Informationen finden Sie unter [Oracle Java™ 17-](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) und [Überlegungen zu Java&amp;trade-Argumenten für AEM 6.5 LTS](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
+>Die Unterstützung für einige der Java 8/11-Argumente wurde in Java 17/21 entfernt. Siehe [Oracle Java™ 17-Dokumente](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html), [Oracle Java™ 21-Dokumente](https://docs.oracle.com/en/java/javase/21/docs/specs/man/java.html) und [Überlegungen zu Java&amp;trade-Argumenten für AEM 6.5 LTS](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
 
 Um das Upgrade auszuführen, ist es wichtig, AEM mithilfe der JAR-Datei zu starten, um die Instanz aufzurufen.
 
