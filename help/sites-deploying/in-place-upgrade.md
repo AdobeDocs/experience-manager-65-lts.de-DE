@@ -6,10 +6,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+source-git-commit: 9e58e4c993929f792bd71bf70b3e64719e761b7f
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 46%
+source-wordcount: '578'
+ht-degree: 43%
 
 ---
 
@@ -47,7 +47,7 @@ Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführe
    java -Xmx4096m -jar aem-quickstart.jar -unpack
    ```
 
-1. Der Befehl „unpack“ generiert eine neue `sling.properties`-Datei unter dem `crx-quickstart/conf/`. Sie können Ihre benutzerdefinierten Änderungen jetzt auf die neu generierte `sling.properties`-Datei anwenden.
+1. Wenn benutzerdefinierte sling.properties angewendet werden müssen, erstellen Sie eine neue lokale AEM-Instanz und rufen Sie die Datei sling.properties aus dem Verzeichnis crx-quickstart/conf ab. Wenden Sie die erforderlichen benutzerdefinierten Änderungen auf diese Datei an und kopieren Sie sie dann in den Ordner „crx-quickstart/conf“ der AEM-Instanz, die aktualisiert wird. Wenn keine benutzerdefinierten Eigenschaften vorhanden sind, kann dieser Schritt übersprungen werden.
 
 <!-- Alexandru: drafting temporarily
 
