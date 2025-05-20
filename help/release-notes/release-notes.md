@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+source-git-commit: 8f6d152ceeae12cdadd0096e114584ce2a63a2ac
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 45%
+source-wordcount: '927'
+ht-degree: 40%
 
 ---
 
@@ -107,6 +107,24 @@ In diesem Abschnitt werden Funktionen aufgeführt, die aus AEM 6.5 LTS entfernt 
 | Open Source | `javax.mail` Pakete werden aus dem `com.sun.javax.mail` Bundle exportiert. | Keine Änderung erforderlich. | 6.5 LTS GA |
 | Open Source | `org.apache.jackrabbit.api` Pakete werden jetzt aus dem `org.apache.jackrabbit.oak-jackrabbit-api`-Bundle exportiert. | Keine Änderung erforderlich. | 6.5 LTS GA |
 | Open Source | `com.github.jknack.handlebars` wird nicht unterstützt | Relevante Version [auswählen](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6.5 LTS GA |
+
+## Bekannte Probleme {#known-issues}
+
+### Dispatcher-Verbindungsfehler mit Funktion „Nur SSL“ {#ssl-only-feature}
+
+Bei der Aktivierung der Funktion „Nur SSL“ in AEM-Bereitstellungen gibt es ein bekanntes Problem, das die Verbindung zwischen dem Dispatcher und der AEM-Instanz beeinträchtigt. Nach Aktivierung dieser Funktion können Konsistenzprüfungen fehlschlagen und die Kommunikation zwischen Dispatcher- und AEM-Instanzen kann unterbrochen werden.
+
+**Impact:**
+* Systemdiagnosefehler mit HTTP 500-Antwort-Codes
+* Beschädigter Traffic zwischen Dispatcher- und AEM-Instanzen
+* Inhalte können nicht ordnungsgemäß über den Dispatcher bereitgestellt werden
+
+**Betroffene Umgebungen:**
+* AEM-Bereitstellungen mit Dispatcher-Konfigurationen
+* Systeme, bei denen die Funktion „Nur SSL“ aktiviert wurde
+
+**Lösung:**
+Wenn dieses Problem auftritt, wenden Sie sich an den Adobe-Support. Zur Lösung dieses Problems ist ein [ (cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.0.zip)) verfügbar. Versuchen Sie nicht, nur SSL-Funktionen zu aktivieren, bis Sie den erforderlichen Hotfix angewendet haben.
 
 ## Eingeschränkte Websites{#restricted-sites}
 
