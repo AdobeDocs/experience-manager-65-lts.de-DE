@@ -1,14 +1,14 @@
 ---
 title: Aktuelle Versionshinweise für Adobe Experience Manager 6.5 LTS
-description: Dies sind die aktuellen Versionshinweise für Adobe Experience Manager 6.5 LTS.
+description: Aktuelle Versionsinformationen zu Adobe Experience Manager 6.5 LTS finden Sie.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 8f6d152ceeae12cdadd0096e114584ce2a63a2ac
+source-git-commit: abba652bb5d7eb9b5f902ce99c07f2186e313173
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 40%
+source-wordcount: '1016'
+ht-degree: 30%
 
 ---
 
@@ -32,17 +32,17 @@ Die folgende Liste bietet eine Übersicht und die nachfolgenden Seiten enthalten
 
 Die Plattform von [!DNL Adobe Experience Manager] 6.5 LTS basiert auf aktualisierten Versionen des OSGi-basierten Frameworks (Apache Sling und Apache Felix) und dem Java™ Content Repository Apache Jackrabbit Oak 1.68.x.
 
-Quickstart verwendet Eclipse Jetty 11.0.x als Servlet-Engine.
+Eclipse Jetty 11.0.x wird als Servlet-Engine für den Schnellstart verwendet.
 
 #### Java™-Unterstützung  {#java-support}
 
 * Unterstützung für Java™ 17 und Java™ 21.
-* Um eine optimale Leistung zu erzielen, überschreiben Sie die GC-Standardwerte mit anderen Werten. Weitere Informationen finden Sie im Abschnitt [Installieren und Aktualisieren](/help/sites-deploying/custom-standalone-install.md).
-* Wartungs-Updates für Java™ 17 und Java™ 21 werden von Adobe zur Verwendung durch Kunden in AEM-bezogenen Projekten bereitgestellt, sofern sie nicht in Oracle öffentlich verfügbar sind.
+* Um eine optimale Leistung zu erzielen, überschreiben Sie die standardmäßigen GC-Werte mit anderen Werten. Weitere Informationen finden Sie im Abschnitt [Installieren und Aktualisieren](/help/sites-deploying/custom-standalone-install.md).
+* Adobe verteilt Wartungs-Updates für Java™ 17 und Java™ 21 für die Verwendung durch Kunden in AEM-bezogenen Projekten, sofern diese nicht in Oracle öffentlich verfügbar sind.
 
 #### UberJar-Verpackung {#uber-jar-packaging}
 
-* Es gibt einen geringfügigen Unterschied in der Uberjar-Verpackung von AEM 6.5 LTS. Weitere Informationen finden Sie unter [Aktualisieren der Uber Jar-Version von AEM](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
+* Es gibt einen geringfügigen Unterschied beim Verpacken von Uberjar in AEM 6.5 LTS. Weitere Informationen finden Sie unter [Aktualisieren der Uber Jar-Version von AEM](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
 
 #### Aktualisierung {#upgrade}
 
@@ -52,7 +52,7 @@ Quickstart verwendet Eclipse Jetty 11.0.x als Servlet-Engine.
 
 Informationen zu Setup-Anforderungen finden Sie unter [Installationsanweisungen](/help/sites-deploying/custom-standalone-install.md).
 
-Detaillierte Anweisungen finden Sie unter [Dokumentation zu Upgrades](/help/sites-deploying/upgrade.md).
+Detaillierte Anweisungen finden Sie unter [Upgrade-Dokumentation](/help/sites-deploying/upgrade.md).
 
 ## Unterstützte Plattformen {#supported-platforms}
 
@@ -64,18 +64,19 @@ Die vollständige Matrix der unterstützten Plattformen, einschließlich der Sup
 
 ## Veraltete und entfernte Funktionen {#deprecated-and-removed-features}
 
-Adobe evaluiert fortlaufend Produktfunktionen, um ältere Features zu überarbeiten oder durch modernere Alternativen zu ersetzen und so den Nutzen für die Kunden insgesamt zu verbessern, wobei stets auf Abwärtskompatibilität geachtet wird.
+Adobe überprüft kontinuierlich die Produktfunktionen, um den Kundenwert zu verbessern, indem ältere Funktionen modernisiert oder ersetzt werden. Diese Änderungen werden mit größter Sorgfalt vorgenommen, um Abwärtskompatibilität zu gewährleisten.
 
 Für die Bekanntgabe der bevorstehenden Entfernung oder Ersetzung von Adobe Experience Manager (AEM)-Funktionen gelten die folgenden Regeln:
 
 1. Zunächst wird angekündigt, dass die betreffende Funktion veraltet ist. Obwohl diese Funktionen veraltet sind, sind sie weiterhin verfügbar, sie werden jedoch nicht weiter verbessert.
-1. Das Entfernen veralteter Funktionen erfolgt frühestens mit Einführung der nächsten Hauptversion. Das geplante Datum für die Entfernung wird später bekannt gegeben.
+1. Das Entfernen veralteter Funktionen erfolgt frühestens mit Einführung der nächsten Hauptversion. Das tatsächliche Zieldatum für die Entfernung soll später bekannt gegeben werden.
 
 Dieser Prozess räumt Kunden mindestens einen Veröffentlichungszyklus ein, um ihre Implementierung an eine neue Version oder die Nachfolgeversion einer veralteten Funktion anzupassen, bevor die Funktion tatsächlich entfernt wird.
 
 ### Veraltete Funktionen {#deprecated-features}
 
-In diesem Abschnitt werden Funktionen aufgeführt, die seit AEM 6.5 LTS als veraltet gekennzeichnet wurden. Im Allgemeinen werden Funktionen, deren Entfernung in einer zukünftigen Version geplant ist, zuerst als veraltet gekennzeichnet und es wird eine Alternative bereitgestellt.
+In diesem Abschnitt werden Funktionen aufgeführt, die Adobe in AEM 6.5 LTS nicht mehr unterstützt. In der Regel werden Funktionen von Adobe verworfen, bevor sie in einer zukünftigen Version entfernt werden, und es wird eine Alternative bereitgestellt.
+
 
 Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Implementierung nutzen, und die Änderung ihrer Implementierung zu planen, um die bereitgestellte Alternative nutzen zu können.
 
@@ -89,9 +90,9 @@ In diesem Abschnitt werden Funktionen aufgeführt, die aus AEM 6.5 LTS entfernt 
 
 | Bereich | Funktion | Ersatz | Version (SP) |
 |--- |--- |--- |--- |
-| Commerce  | AEM CIF Classic wird nicht unterstützt. | Sie sollten zu [AEM CIF](/help/commerce/cif/migration.md) migrieren. | 6.5 LTS GA |
+| Commerce  | AEM CIF Classic wird nicht unterstützt. | Migrieren Sie zu [AEM CIF](/help/commerce/cif/migration.md). | 6.5 LTS GA |
 | Lösungen | Social Media/Communities wird nicht unterstützt. | Kein Ersatz verfügbar. | 6.5 LTS GA |
-| Screens | Screens wird nicht unterstützt. | Kein Ersatz verfügbar. | 6.5 LTS GA |
+| Screens | Screens werden nicht unterstützt. | Kein Ersatz verfügbar. | 6.5 LTS GA |
 | Assets | `dam-pim` und `dam-rating` werden nicht unterstützt, da Pakete von Social Media abhängig sind. | Kein Ersatz verfügbar. | 6.5 LTS GA |
 | Assets | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` wurde entfernt. | Verwenden Sie die hinzugefügte alternative API-`com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()`. | 6.5 LTS GA |
 | Portal | AEM Portal Director wird nicht unterstützt. | Kein Ersatz verfügbar. | 6.5 LTS GA |
@@ -106,20 +107,37 @@ In diesem Abschnitt werden Funktionen aufgeführt, die aus AEM 6.5 LTS entfernt 
 | Open Source | `org.apache.commons.io` Pakete werden jetzt aus `org.apache.commons.commons-io` exportiert. | Keine Änderung erforderlich. | 6.5 LTS GA |
 | Open Source | `javax.mail` Pakete werden aus dem `com.sun.javax.mail` Bundle exportiert. | Keine Änderung erforderlich. | 6.5 LTS GA |
 | Open Source | `org.apache.jackrabbit.api` Pakete werden jetzt aus dem `org.apache.jackrabbit.oak-jackrabbit-api`-Bundle exportiert. | Keine Änderung erforderlich. | 6.5 LTS GA |
-| Open Source | `com.github.jknack.handlebars` wird nicht unterstützt | Relevante Version [auswählen](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6.5 LTS GA |
+| Open Source | `com.github.jknack.handlebars` wird nicht unterstützt | Wählen Sie die entsprechende [Version](https://mvnrepository.com/artifact/com.github.jknack/handlebars) | 6.5 LTS GA |
 
 ## Bekannte Probleme {#known-issues}
 
+### Problem mit dem JSP-Skriptpaket in AEM 6.5.21-6.5.23 und AEM 6.5 LTS GA**
+
+AEM 6.5.21, 6.5.22, 6.5.23 und AEM 6.5 LTS GA werden mit dem `org.apache.sling.scripting.jsp:2.6.0`-Bundle ausgeliefert, das ein bekanntes Problem enthält. Das Problem tritt in der Regel bei hoher Auslastung auf, wenn die AEM-Instanz viele gleichzeitige Anfragen verarbeitet.
+
+Wenn dieses Problem auftritt, kann eine der folgenden Ausnahmen in den Fehlerprotokollen neben Verweisen auf `org.apache.sling.scripting.jsp:2.6.0` angezeigt werden:
+
+* `java.io.IOException: classFile.delete() failed`
+* `java.io.IOException: tmpFile.renameTo(classFile) failed`
+* `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
+* `java.io.FileNotFoundException`
+
+Wenn dieser Fehler auftritt, besteht die einzige Wiederherstellungsmethode darin, die AEM-Instanz neu zu starten.
+
+Wenden Sie sich an den Kunden-Support von Adobe und referenzieren Sie diese Versionshinweise für eine Lösung.
+
 ### Dispatcher-Verbindungsfehler mit Funktion „Nur SSL“ {#ssl-only-feature}
 
-Bei der Aktivierung der Funktion „Nur SSL“ in AEM-Bereitstellungen gibt es ein bekanntes Problem, das die Verbindung zwischen dem Dispatcher und der AEM-Instanz beeinträchtigt. Nach Aktivierung dieser Funktion können Konsistenzprüfungen fehlschlagen und die Kommunikation zwischen Dispatcher- und AEM-Instanzen kann unterbrochen werden.
+Bei der Aktivierung der Funktion „Nur SSL“ in AEM-Bereitstellungen gibt es ein bekanntes Problem, das die Verbindung zwischen der Dispatcher- und der AEM-Instanz beeinträchtigt. Nach Aktivierung dieser Funktion können Konsistenzprüfungen fehlschlagen und die Kommunikation zwischen Dispatcher- und AEM-Instanzen kann unterbrochen werden.
 
 **Impact:**
+
 * Systemdiagnosefehler mit HTTP 500-Antwort-Codes
 * Beschädigter Traffic zwischen Dispatcher- und AEM-Instanzen
-* Inhalte können nicht ordnungsgemäß über den Dispatcher bereitgestellt werden
+* Inhalte können nicht ordnungsgemäß über die Dispatcher bereitgestellt werden
 
 **Betroffene Umgebungen:**
+
 * AEM-Bereitstellungen mit Dispatcher-Konfigurationen
 * Systeme, bei denen die Funktion „Nur SSL“ aktiviert wurde
 
