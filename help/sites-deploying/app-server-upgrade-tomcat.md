@@ -5,10 +5,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 7f8de16f-9e9a-4d37-9978-d26c496b911c
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 17%
+source-wordcount: '478'
+ht-degree: 16%
 
 ---
 
@@ -26,11 +26,11 @@ Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführe
 ### Migrationsvoraussetzungen {#migration-prerequisites}
 
 * **Erforderliche Java-Version**: Vergewissern Sie sich, dass Oracle® JRE 17/21 auf Ihrem Tomcat-Server installiert ist.
-* **Tomcat-Server**: Die für 6.5 LTS erforderliche Tomcat-Server-Version ist **11.0.x**.
+* **Tomcat-Server**: Die unterstützten Versionen von Tomcat-Server für AEM 6.5 LTS sind **10.0.x** und **10.1.x**.
 
 ### Durchführen des Upgrades {#performing-the-upgrade}
 
-In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungs-Server verwendet. Zudem wird vorausgesetzt, dass Sie bereits eine funktionierende AEM-Version installiert haben. In dieser Anleitung wird die Aktualisierung von AEM Version **.6.5 auf**&#x200B;**6.5 LTS** beschrieben.
+In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungs-Server verwendet. Zudem wird vorausgesetzt, dass Sie bereits eine funktionierende AEM-Version installiert haben. In dieser Anleitung wird die Aktualisierung von AEM Version **.6.5 auf****6.5 LTS** beschrieben.
 
 1. Wenn AEM 6.5 bereits bereitgestellt ist, überprüfen Sie, ob die Bundles ordnungsgemäß funktionieren, indem Sie Folgendes aufrufen: *`https://<serveraddress:port>/system/console/bundles`*
 1. Beenden Sie als Nächstes AEM 6.5. Dies kann über den Tomcat App Manager unter folgender Adresse durchgeführt werden: *`https://<serveraddress:port>/manager/html`*

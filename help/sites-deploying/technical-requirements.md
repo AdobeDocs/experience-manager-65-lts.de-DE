@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 296810c9fda3a0aa093154562884bd5c0c482d44
+source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2981'
 ht-degree: 94%
 
 ---
@@ -95,7 +95,7 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen der Java™ Vi
 | IBM® Semeru J9 VM - Build 17.0.13.0 | A: Unterstützt `[2]` |
 | IBM® Semeru J9 VM - Build 21.0.6.0 | A: Unterstützt `[2]` |
 
-1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14, Java™ 15m Java™ 16 sind Nicht-LTS-Versionen von Oracle (siehe Roadmap für den Oracle Java™ SE-Support[&#128279;](https://www.oracle.com/technetwork/java/eol-135779.html)).  Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java™. Der Support und die Bereitstellung des Oracle Java™ SE JDK, einschließlich aller Wartungsupdates von LTS-Versionen, werden von Adobe direkt für alle AEM-Kundinnen und -Kunden unterstützt, die die Oracle Java™ SE-Technologie nutzen. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14, Java™ 15m Java™ 16 sind Nicht-LTS-Versionen von Oracle (siehe Roadmap für den Oracle Java™ SE-Support](https://www.oracle.com/technetwork/java/eol-135779.html)). [ Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java™. Der Support und die Bereitstellung des Oracle Java™ SE JDK, einschließlich aller Wartungsupdates von LTS-Versionen, werden von Adobe direkt für alle AEM-Kundinnen und -Kunden unterstützt, die die Oracle Java™ SE-Technologie nutzen. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
    **Diese Version unterstützt Oracle Java™ 17 und Oracle Java™ 21.**
 
 1. Die IBM® JRE wird nur zusammen mit WebSphere Application Server unterstützt.
@@ -142,7 +142,7 @@ Die mindestens erforderliche Servlet-API-Version ist Servlet 3.1. Darüber hinau
 |---|---|
 | **Integrierte Schnellstart-Servlet-Engine (Jetty 11.0.x)** | A: Unterstützt |
 | Kontinuierliche Bereitstellung für IBM® WebSphere® Application Server (LibertyProfile) mit Web Profile 24.0.0.7 und IBM® Sumeru open JRE® 17/21 | R: Eingeschränkte Unterstützung für neue Verträge `[1]` |
-| Apache Tomcat 11.0.x | R: Eingeschränkte Unterstützung für neue Verträge `[1]` |
+| Apache Tomcat 10.0.x/10.1.x | R: Eingeschränkte Unterstützung für neue Verträge `[1]` |
 
 1. Der Start von AEM 6.5-Bereitstellungen auf Anwendungs-Servern wird nun eingeschränkt unterstützt. Bestehende Kunden können auf AEM 6.5 aktualisieren und weiterhin Anwendungs-Server verwenden. Für neue Kundinnen und Kunden werden Support-Kriterien und ein Support-Programm zur Verfügung gestellt, wie oben in der Beschreibung zu Level-R angegeben.
 
@@ -389,7 +389,7 @@ Windows x86:
    <td>XPS, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF und DWF</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2019</td>
+   <td>Microsoft® Office 2019</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF und TXT</td>
   </tr>
   <tr>
