@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 02b9f90dc9ef504f04a9b1f692358089d4626094
+source-git-commit: 2a83d6d4f25a866eacd87d6e2a4318b99c158ea0
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1002'
 ht-degree: 31%
 
 ---
@@ -122,9 +122,7 @@ Wenn dieses Problem auftritt, kann eine der folgenden Ausnahmen in den Fehlerpro
 * `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
 * `java.io.FileNotFoundException`
 
-Wenn dieser Fehler auftritt, besteht die einzige Wiederherstellungsmethode darin, die AEM-Instanz neu zu starten.
-
-Wenden Sie sich an den Kunden-Support von Adobe und referenzieren Sie diese Versionshinweise für eine Lösung.
+Zur Lösung dieses Problems ist ein [ (cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip)) verfügbar.
 
 ### Dispatcher-Verbindungsfehler mit Funktion „Nur SSL“ {#ssl-only-feature}
 
@@ -142,7 +140,7 @@ Bei der Aktivierung der Funktion „Nur SSL“ in AEM-Bereitstellungen gibt es e
 * Systeme, bei denen die Funktion „Nur SSL“ aktiviert wurde
 
 **Lösung:**
-Wenn dieses Problem auftritt, wenden Sie sich an den Adobe-Support. Zur Lösung dieses Problems ist ein [ (cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.0.zip)) verfügbar. Versuchen Sie nicht, nur SSL-Funktionen zu aktivieren, bis Sie den erforderlichen Hotfix angewendet haben.
+Wenn dieses Problem auftritt, wenden Sie sich an den Adobe-Support. Zur Lösung dieses Problems ist ein [ (cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip)) verfügbar. Versuchen Sie nicht, nur SSL-Funktionen zu aktivieren, bis Sie den erforderlichen Hotfix angewendet haben.
 
 ## Eingeschränkte Websites{#restricted-sites}
 
