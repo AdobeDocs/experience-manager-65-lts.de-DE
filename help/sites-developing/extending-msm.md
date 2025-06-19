@@ -208,12 +208,15 @@ Die neue Rollout-Konfiguration steht dann zur Verfügung, wenn Sie die Rollout-K
 
 1. Fügen Sie diesem Knoten die folgenden Eigenschaften hinzu:
    * **Name**: `jcr:title`
+
      **Typ**: `String`
      **Wert**: Ein bezeichnender Titel, der in der Benutzeroberfläche angezeigt wird.
    * **Name**: `jcr:description`
+
      **Typ**: `String`
      **Wert**: Eine optionale Beschreibung.
    * **Name**: `cq:trigger`
+
      **Typ**: `String`
      **Wert**: Der zu verwendende [Rollout-Trigger](/help/sites-administering/msm-sync.md#rollout-triggers). Die folgenden Optionen stehen zur Auswahl:
       * `rollout`
@@ -686,6 +689,7 @@ Ob für eine Seiteneigenschaft ein Rollout durchgeführt werden muss und daher b
       * **Typ**: `String`
 
       * **Wert**: speichert den Namen der betroffenen Eigenschaft (und ist vergleichbar mit dem Wert der Eigenschaft `name`; z. B.
+
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Wenn `cq-msm-lockable` definiert wurde, interagiert das Öffnen oder Schließen der Kettenverbindung mit MSM wie folgt:
