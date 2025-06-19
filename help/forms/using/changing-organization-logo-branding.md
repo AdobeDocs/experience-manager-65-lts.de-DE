@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 3aa4aca3-3c94-4936-ba9c-484bbb196256
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 98%
+source-wordcount: '115'
+ht-degree: 100%
 
 ---
 
@@ -28,9 +28,7 @@ Das Unternehmenslogo wird in der linken oberen Ecke des AEM Forms Workspace-Fens
 
    >[!NOTE]
    >
-   >Weitere Informationen finden Sie unter [WebDAV-Zugriff](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/webdav-access.html?lang=en).
-
-   [WebDAV-Zugriff](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/webdav-access.html?lang=en)
+   >Weitere Informationen finden Sie unter [WebDAV-Zugriff](/help/sites-administering/webdav-access.md).
 
 1. Erstellen Sie einen Verweis auf das neue Logo im Stylesheet bei „/apps/ws/css/newStyle.css“, indem Sie folgenden Stil hinzufügen.
 

@@ -1,17 +1,14 @@
 ---
 title: Formularzentrierte Workflows in OSGi – Schritt-Referenz
 description: Der formularzentrierte Workflow in OSGi-Schritten ermöglicht eine schnelle Erstellung von auf adaptiven Formularen basierenden Workflows.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: publish
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
 exl-id: 13d84b04-dab6-453f-bc0d-62a5f557c4f2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '7640'
-ht-degree: 100%
+source-wordcount: '7604'
+ht-degree: 99%
 
 ---
 
@@ -19,14 +16,14 @@ ht-degree: 100%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=de) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference) |
 | AEM 6.5 | Dieser Artikel |
 
 Mit Workflow-Modelle können Sie eine Business-Logik in einen automatisierten, sich wiederholenden Prozess umwandeln. Anhand eines Modells können Sie eine Reihe von Schritten definieren und ausführen. Sie können auch Modelleigenschaften definieren, um beispielsweise festzulegen, ob es sich um einen Übergangs-Workflow oder einen Workflow mit mehreren Ressourcen handelt. Sie können [verschiedene AEM-Workflow-Schritte in ein Modell aufnehmen, um die Business-Logik zu erzielen](/help/sites-developing/workflows-models.md#extending-aem).
 
 ## Forms Workflow-Schritte {#forms-workflow-steps}
 
-In Forms Workflow-Schritten werden AEM Forms-spezifische Vorgänge in einem AEM-Workflow durchgeführt. Diese Schritte ermöglichen eine schnelle Erstellung von auf adaptiven Formularen basierenden, Forms-zentrierten Workflows in OSGi. Diese Workflows können für die Entwicklung grundlegender Überprüfungs- und Genehmigungs-Workflows sowie interner und firmenübergreifender Geschäftsprozesse verwendet werden. Sie können die Forms Workflow-Schritte außerdem verwenden, um Dokumentendienste zu starten, Signatur-Workflows mit Adobe Sign zu integrieren und andere AEM Forms-Vorgänge auszuführen. Sie benötigen das [AEM Forms-Add-on](https://www.adobe.com/go/learn_aemforms_documentation_63_de), um diese Schritte in einem Workflow zu verwenden.
+In Forms Workflow-Schritten werden AEM Forms-spezifische Vorgänge in einem AEM-Workflow durchgeführt. Diese Schritte ermöglichen eine schnelle Erstellung von auf adaptiven Formularen basierenden, Forms-zentrierten Workflows in OSGi. Diese Workflows können für die Entwicklung grundlegender Überprüfungs- und Genehmigungs-Workflows sowie interner und firmenübergreifender Geschäftsprozesse verwendet werden. Sie können Forms Workflow-Schritte auch verwenden, um Document Services zu starten, mit dem Signatur-Workflow von Adobe Sign zu integrieren und andere AEM Forms-Vorgänge auszuführen.
 
 Durch Forms-zentrierte Workflow-Schritte werden AEM Forms-spezifische Vorgänge in einem AEM-Workflow ausgeführt. Diese Schritte ermöglichen eine schnelle Erstellung von auf adaptiven Formularen basierenden, Forms-zentrierten Workflows in OSGi. Diese Workflows können für die Entwicklung grundlegender Überprüfungs- und Genehmigungs-Workflows, interner und Firewall-übergreifender Geschäftsprozesse verwendet werden.
 
@@ -89,7 +86,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Beispi
    * **Layout-Vorlage speichern mit:** Layout-Vorlage unter Verwendung eines Pfads speichern, der relativ zur Payload ist, oder in einer Variablen vom Datentyp Dokument speichern. Die [Layout-Vorlage](../../forms/using/layout-design-details.md) verweist auf eine XDP-Datei, die Sie mit Forms Designer erstellen. Diese Option ist nur verfügbar, wenn Sie in der Dropdown-Liste „Typ“ die Option „Benutzeroberfläche des interaktiven Kommunikationsagenten“ auswählen.
 
 * **Beauftragter > Optionen zuweisen:** Geben Sie die Methode an, mit der die Aufgabe einem Benutzer zugewiesen werden soll. Sie können die Aufgabe dynamisch einem Benutzer oder einer Gruppe zuweisen, indem Sie das Skript „Teilnehmerauswahl“ verwenden oder die Aufgabe einem bestimmten AEM-Benutzer oder einer bestimmten Gruppe zuweisen.
-* **Teilnehmerauswahl**: Die Option ist verfügbar, wenn im Feld „Optionen zuweisen“ die Option **Dynamisch an einen Benutzer bzw. eine Gruppe** ausgewählt ist. Sie können ein ECMAScript oder einen Service verwenden, um einen Benutzer oder eine Gruppe dynamisch auszuwählen. Weitere Informationen finden Sie unter [Dynamisches Zuweisen eines Workflows zu Benutzenden](https://helpx.adobe.com/de/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) und [Erstellen eines benutzerdefinierten Schritts „Dynamischer Teilnehmer in Adobe Experience Manager“.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&amp;CID=RedirectAEMCommunityKautuk)
+* **Teilnehmerauswahl**: Die Option ist verfügbar, wenn im Feld „Optionen zuweisen“ die Option **Dynamisch an einen Benutzer bzw. eine Gruppe** ausgewählt ist. Sie können ein ECMAScript oder einen Dienst verwenden, um einen Benutzer oder eine Gruppe dynamisch auszuwählen.
 
 * **Teilnehmer:** Das Feld ist verfügbar, wenn die Option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** im Feld **Teilnehmerauswahl** ausgewählt ist. In diesem Feld können Sie Benutzende oder Gruppen für die Option „RandomParticipantChooser“ auswählen.
 

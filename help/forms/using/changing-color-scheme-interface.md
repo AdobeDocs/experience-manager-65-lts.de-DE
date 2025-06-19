@@ -1,18 +1,14 @@
 ---
 title: Ändern des Farbschemas der Benutzeroberfläche
 description: So ändern Sie das selektiv das Farbschema der Benutzeroberfläche von AEM Forms Workspace.
-contentOwner: robhagat
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: f15ead5f-d48c-401c-98c5-b58f93776f82
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 99%
+source-wordcount: '208'
+ht-degree: 100%
 
 ---
 
@@ -31,7 +27,7 @@ So aktualisieren Sie die Navigationsleiste am oberen Rand von AEM Forms Workspac
 
    >[!NOTE]
    >
-   >Weitere Informationen finden Sie unter [WebDAV-Zugriff](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/webdav-access.html?lang=en).
+   >Weitere Informationen finden Sie unter [WebDAV-Zugriff](/help/sites-administering/webdav-access.md).
 
 1. Verweisen Sie auf das neue Hintergrundbild in „/apps/ws/css/newStyle.css“, indem Sie den folgenden Stil hinzufügen.
 
