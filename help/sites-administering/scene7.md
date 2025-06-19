@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 9f879ab6-6806-4e94-836c-0a7813940914
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '5425'
+source-wordcount: '5405'
 ht-degree: 100%
 
 ---
@@ -424,10 +424,6 @@ Bevor Sie Assets auf Dynamic Media Classic pushen können, ohne sie zu veröffen
 1. [Richten Sie eine sichere Vorschau für Ihr Dynamic Media Classic-Konto ein](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=de).
 
 Diese Schritte sind die gleichen, die Sie ausführen würden, um ein sicheres Test-Setup in Dynamic Media Classic zu erstellen.
-
->[!NOTE]
->
->Wenn Ihre Installationsumgebung ein UNIX®-64-Bit-Betriebssystem ist, finden Sie weitere Konfigurationsoptionen, die Sie festlegen müssen, unter [https://helpx.adobe.com/de/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/de/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 
 #### Bekannte Beschränkungen für das Pushen von Assets im unveröffentlichten Status  {#known-limitations-for-pushing-assets-in-unpublished-state}
 

@@ -10,7 +10,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '2224'
 ht-degree: 99%
@@ -33,7 +33,7 @@ Ab AEM 6.1 werden Benutzerdaten bei aktivierter Benutzersynchronisierung automa
 
 ## Sling Distribution {#sling-distribution}
 
-Die Benutzerdaten werden zusammen mit den zugehörigen [Zugriffssteuerungslisten](/help/sites-administering/security.md) (Access Control Lists, ACLs) im [Oak-Core](/help/sites-deploying/platform.md), der Ebene unter Oak JCR, gespeichert und über die [Oak-API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-tree.html) aufgerufen. Im Falle unregelmäßiger Aktualisierungen ist es sinnvoll, Benutzerdaten mit anderen Veröffentlichungsinstanzen per [Sling Content Distribution](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (Sling-Distribution) zu synchronisieren.
+Die Benutzerdaten werden zusammen mit den zugehörigen [Zugriffssteuerungslisten](/help/sites-administering/security.md) (Access Control Lists, ACLs) im [Oak-Core](/help/sites-deploying/platform.md), der Ebene unter Oak JCR, gespeichert und über die [Oak-API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/oak/api/package-summary.html) aufgerufen. Im Falle unregelmäßiger Aktualisierungen ist es sinnvoll, Benutzerdaten mit anderen Veröffentlichungsinstanzen per [Sling Content Distribution](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (Sling-Distribution) zu synchronisieren.
 
 Eine Benutzersynchronisierung mit Sling Distribution weist im Vergleich zur herkömmlichen Replikation folgende Vorteile auf:
 
@@ -77,7 +77,7 @@ Sobald die Benutzersynchronisierung aktiviert wurde, werden nur neu erstellte Be
 
 * [AEM-Plattform-Updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de)
 
-### 1. Apache Sling Distribution Agent – Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}
+### &#x200B;1. Apache Sling Distribution Agent – Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}
 
 **Aktivieren der Benutzersynchronisierung**
 
@@ -98,7 +98,7 @@ Vergewissern Sie sich, dass unter `name` der Eintrag **`socialpubsync`** angegeb
 
 ![Apache Sling Distribution Agent](assets/chlimage_1-20.png)
 
-### 2. Erstellen autorisierter Benutzer {#createauthuser}
+### &#x200B;2. Erstellen autorisierter Benutzer {#createauthuser}
 
 **Konfigurieren von Berechtigungen**
 
@@ -152,7 +152,7 @@ Siehe auch
 * [Verwalten von Zugriffsrechten](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * Fehlerbehebungsabschnitt [Ausnahme bei Änderungsvorgang während Antwortverarbeitung](#modify-operation-exception-during-response-processing).
 
-### 3. Adobe Granite Distribution – Encrypted Password Transport Secret Provider {#adobegraniteencpasswrd}
+### &#x200B;3. Adobe Granite Distribution – Encrypted Password Transport Secret Provider {#adobegraniteencpasswrd}
 
 **Konfigurieren von Berechtigungen**
 
@@ -175,7 +175,7 @@ Vergewissern Sie sich, dass unter `property name` der Eintrag **`socialpubsync-p
 
 ![Encrypted Password Transport Secret Provider](assets/chlimage_1-22.png)
 
-### 4. Apache Sling Distribution Agent – Queue Agents Factory {#apache-sling-distribution-agent-queue-agents-factory}
+### &#x200B;4. Apache Sling Distribution Agent – Queue Agents Factory {#apache-sling-distribution-agent-queue-agents-factory}
 
 **Aktivieren der Benutzersynchronisierung**
 
@@ -198,7 +198,7 @@ Vergewissern Sie sich, dass unter `Name` der Eintrag `socialpubsync-reverse` ang
 
 ![Queue Agents Factory](assets/chlimage_1-23.png)
 
-### 5. Adobe Social Sync – Diff Observer Factory {#diffobserver}
+### &#x200B;5. Adobe Social Sync – Diff Observer Factory {#diffobserver}
 
 **Aktivieren der Gruppensynchronisierung**
 
@@ -220,7 +220,7 @@ Vergewissern Sie sich, dass unter `Name` der Eintrag `socialpubsync-reverse` ang
 
 ![Diff Observer Factory](assets/screen-shot_2019-05-24at090809.png)
 
-### 6. Apache Sling Distribution Trigger – Scheduled Triggers Factory {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### &#x200B;6. Apache Sling Distribution Trigger – Scheduled Triggers Factory {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 **(Optional) Bearbeiten des Abrufintervalls**
 
@@ -248,7 +248,7 @@ Standardmäßig werden Änderungen autorenseitig alle 30 Sekunden abgerufen. So 
 
 Die Standardkonfiguration gilt für eine einzelne Veröffentlichungsinstanz. Da durch die Benutzersynchronisierung mehrere Veröffentlichungsinstanzen, etwa für eine Veröffentlichungs-Farm, synchronisiert werden sollen, müssen die zusätzlichen Veröffentlichungsinstanzen der Sync Agents Factory hinzugefügt werden.
 
-### 7. Apache Sling Distribution Agent – Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory-1}
+### &#x200B;7. Apache Sling Distribution Agent – Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory-1}
 
 **Hinzufügen von Veröffentlichungsinstanzen:**
 
@@ -280,7 +280,7 @@ Es sollte für jede Veröffentlichungsinstanz einen Importer-Endpunkt geben. Bei
 
 * Wählen Sie `Save` aus.
 
-### 8. Eindeutige Sling-ID {#unique-sling-id}
+### &#x200B;8. Eindeutige Sling-ID {#unique-sling-id}
 
 >[!CAUTION]
 >
@@ -303,11 +303,9 @@ Wenn die Sling-ID einer Veröffentlichungsinstanz der Sling-ID einer anderen Ver
    * Suchen und löschen Sie die Datei *sling.id.file*
 
       * Beispiel für ein Linux®-System:
-
         `rm -i $(find . -type f -name sling.id.file)`
 
       * Beispiel für ein Windows-System:
-
         `use windows explorer and search for *sling.id.file*`
 
 1. Starten Sie die Veröffentlichungsinstanz.

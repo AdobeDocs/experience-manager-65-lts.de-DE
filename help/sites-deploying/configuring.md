@@ -1,18 +1,14 @@
 ---
 title: Grundlegende Konfigurationskonzepte
 description: Erfahren Sie, wie Sie Adobe Experience Manager für Ihre eigenen spezifischen Anforderungen konfigurieren können.
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: configuring
-content-type: reference
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 338ea82e-c248-4118-9d42-e268d6396e65
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2093'
-ht-degree: 100%
+source-wordcount: '2085'
+ht-degree: 98%
 
 ---
 
@@ -184,7 +180,7 @@ Weitere Informationen zur Konfiguration finden Sie unter [Dispatcher](https://ex
 
 ### Konfigurieren von AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
-Mit der Veröffentlichung der AEM-Dokumentendienste und AEM-Dokumentsicherheit hat AEM jetzt die Möglichkeit, mithilfe der LiveCycle-Dokumentendienste ein XFA-Formular zu rendern, ein Dokument in das PDF-Format zu konvertieren und ein Dokument durch eine Richtlinie zu schützen. Weitere Informationen finden Sie unter [AEM LiveCycle Connector](https://helpx.adobe.com/de/livecycle/help/aem/aem-livecycle-connector.html).
+Mit der Veröffentlichung der AEM Doc Services und AEM Doc Security verfügt AEM nun über die Möglichkeit, die LiveCycle Doc Services aufzurufen, um ein XFA-Formular zu rendern, ein Dokument in PDF zu konvertieren und ein Dokument durch eine Richtlinie zu schützen.
 
 ### Abladung von Vorgängen und Topologieverwaltung {#job-offloading-and-topology-administration}
 

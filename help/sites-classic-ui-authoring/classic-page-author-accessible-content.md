@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 1ea2f849-ef36-47bf-ac3a-49d1984efca5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7d1ab7984bc890aa4f079357061f44784a3bd1fe
 workflow-type: tm+mt
-source-wordcount: '9070'
-ht-degree: 100%
+source-wordcount: '9057'
+ht-degree: 99%
 
 ---
 
@@ -328,12 +328,11 @@ Dieses Erfolgskriterium entspricht dem Erfolgskriterium zu [Untertitel (aufgezei
 
 Befolgen Sie die Anleitungen, die oben unter [Untertitel (voraufgezeichnet)](#captions-pre-recorded) genannt wurden. Da die Medien live übermittelt werden, muss die Bereitstellung der Untertitel so schnell wie möglich erfolgen und sofort auf das reagieren, was passiert. Daher sollten Sie Tools für die Echtzeit-Untertitelung oder für „Sprache in Text“ in Erwägung ziehen.
 
-Detaillierte Anweisungen dazu würden den Rahmen dieses Dokuments sprengen, doch in den folgenden Ressourcen finden Sie nützliche Informationen:
+Detaillierte Anweisungen würden den Rahmen dieses Dokuments sprengen, doch die folgende Ressource bietet hilfreiche Informationen:
 
 * [WebAIM: Echtzeit-Untertitelung](https://webaim.org/techniques/captions/realtime)
-* [AccessIT (University of Washington): Können Untertitel automatisch über die Spracherkennung erstellt werden?](https://www.washington.edu/doit/programs/accessit?1209)
 
-#### Weitere Informationen: Untertitel (Live) (1.2.4)     {#more-information-captions-live}
+#### Weitere Informationen: Untertitel (Live) (1.2.4)       {#more-information-captions-live}
 
 * [Erfolgskriterien 1.2.4 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html)
 * [Erfolgskriterien 1.2.4 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-real-time-captions)

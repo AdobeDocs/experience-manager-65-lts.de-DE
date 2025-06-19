@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e82d97c2-c26a-48df-9210-47dc017c68c8
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3226'
 ht-degree: 99%
 
 ---
@@ -187,7 +187,7 @@ Die **ODER-Teilung** erstellt eine Verzweigung im Workflow, nach der nur eine de
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [Schritt ODER-Teilung](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable).
+>Weitere Informationen finden Sie unter [Schritt ODER-Teilung](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable).
 
 ![Verzweigung mithilfe der ODER-Teilung](assets/variables_orsplit_new.png)
 
@@ -284,7 +284,6 @@ Sie können Widget-Daten in der Workflow-Payload oder in den Metadaten des Arbei
 * **Daten mit der Payload speichern**
 
    * Um Widget-Daten als Eigenschaft der Workflow-Payload zu speichern, verwenden Sie folgendes Format für den Wert der name-Eigenschaft des Widget-Knotens:
-
      `./jcr:content/nodename`
 
    * Die Daten werden in der `nodename`-Eigenschaft des Payload-Knotens gespeichert. Wenn der Knoten diese Eigenschaft nicht enthält, wird die Eigenschaft erstellt.
@@ -293,7 +292,6 @@ Sie können Widget-Daten in der Workflow-Payload oder in den Metadaten des Arbei
 * **Speichern von Daten mit dem Arbeitselement**
 
    * Um Widget-Daten als Eigenschaft der Metadaten des Arbeitselements zu speichern, verwenden Sie das folgende Format für den Wert der name-Eigenschaft:
-
      `nodename`
 
    * Die Daten werden in der `nodename`-Eigenschaft der `metadata` des Arbeitselements gespeichert. Die Daten werden beibehalten, wenn das Dialogfeld anschließend mit derselben Payload verwendet wird.

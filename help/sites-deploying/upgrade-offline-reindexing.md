@@ -9,10 +9,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 0001c874-7468-4750-a377-03156674f4b9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 99%
+source-wordcount: '1305'
+ht-degree: 100%
 
 ---
 
@@ -164,7 +164,7 @@ Die Verwendung des `--doc-traversal-mode`-Parameters ist bei MongoMK-Installatio
 
 Im Falle von MongoMK kann dieser Prozess beschleunigt werden, wenn dieser Schritt in einer Instanz ausgeführt wird, die näher an der MongoDB-Instanz liegt. Wenn er auf demselben Computer ausgeführt wird, kann ein zu großer Netzwerk-Overhead vermieden werden.
 
-Weitere technische Details finden Sie in der [Oak-run-Dokumentation zur Indizierung](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
+Weitere technische Details finden Sie in der [Oak-run-Dokumentation zur Indizierung](Https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
 
 ### Importieren von Indizes {#importing-indexes}
 
@@ -180,7 +180,7 @@ Es wird empfohlen, das Produktionssystem zu klonen und den Offline-Index mithilf
 
 ### Vorbereiten eines Runbooks und Testlauf {#prepare-a-runbook-and-trial-run}
 
-Es wird empfohlen, ein [Runbook](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) vorzubereiten und einige Testläufe durchzuführen, bevor das Upgrade in der Produktion ausgeführt wird.
+Es wird empfohlen, ein [Runbook](/help/sites-deploying/upgrade-planning.md#building-the-upgrade-and-rollback-runbook) vorzubereiten und einige Testläufe durchzuführen, bevor das Upgrade in der Produktion ausgeführt wird.
 
 ### doc-traversal-mode mit Offline-Indizierung {#doc-traversal-mode-with-offline-indexing}
 

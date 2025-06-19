@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '2444'
 ht-degree: 99%
@@ -43,8 +43,8 @@ Auf dieser Seite erfahren Sie, wie Sie die Funktionen von Multi Site Manager erw
 
 Multi Site Manager umfasst die folgenden Pakete:
 
-* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
-* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
+* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/package-summary.html)
+* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/commons/package-summary.html)
 
 Die wichtigsten MSM-API-Objekte interagieren wie folgt (siehe auch [Verwendete Begriffe](/help/sites-administering/msm.md#terms-used)):
 
@@ -208,15 +208,12 @@ Die neue Rollout-Konfiguration steht dann zur Verfügung, wenn Sie die Rollout-K
 
 1. Fügen Sie diesem Knoten die folgenden Eigenschaften hinzu:
    * **Name**: `jcr:title`
-
      **Typ**: `String`
      **Wert**: Ein bezeichnender Titel, der in der Benutzeroberfläche angezeigt wird.
    * **Name**: `jcr:description`
-
      **Typ**: `String`
      **Wert**: Eine optionale Beschreibung.
    * **Name**: `cq:trigger`
-
      **Typ**: `String`
      **Wert**: Der zu verwendende [Rollout-Trigger](/help/sites-administering/msm-sync.md#rollout-triggers). Die folgenden Optionen stehen zur Auswahl:
       * `rollout`
@@ -689,7 +686,6 @@ Ob für eine Seiteneigenschaft ein Rollout durchgeführt werden muss und daher b
       * **Typ**: `String`
 
       * **Wert**: speichert den Namen der betroffenen Eigenschaft (und ist vergleichbar mit dem Wert der Eigenschaft `name`; z. B.
-
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Wenn `cq-msm-lockable` definiert wurde, interagiert das Öffnen oder Schließen der Kettenverbindung mit MSM wie folgt:

@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie IMS-Integrationen für AEM einrichten.
 feature: Security
 role: Admin
 exl-id: 05ba39fc-4b53-43c0-9a9f-7da3293b1ca2
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 95%
@@ -50,11 +50,11 @@ Weitere Informationen zu dieser Konfiguration finden Sie in der Dokumentation zu
 
 * Erstellen von neuen OAuth-Anmeldedaten:
 
-   * [OAuth-Implementierungshandbuch für Server-zu-Server-Anmeldedaten](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+   * [OAuth-Implementierungshandbuch für Server-zu-Server-Anmeldedaten](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
 * Migration von vorhandenen JWT-Anmeldedaten zu OAuth-Anmeldedaten:
 
-   * [Migration von JWT-Anmeldedaten (Service Account) zu OAuth-Server-zu-Server-Anmeldedaten](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
+   * [Migration von JWT-Anmeldedaten (Service Account) zu OAuth-Server-zu-Server-Anmeldedaten](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration?lang=de)
 
 Zum Beispiel:
 
@@ -68,7 +68,7 @@ So erstellen Sie eine neue Adobe IMS-Integration mithilfe von OAuth:
 
 1. Wählen Sie **Erstellen** aus.
 
-1. Schließen Sie die Konfiguration basierend auf Details aus der [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/) ab. Zum Beispiel:
+1. Schließen Sie die Konfiguration basierend auf Details aus der [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) ab. Zum Beispiel:
 
    ![Erstellen einer OAuth-Konfiguration](assets/ims-create-oauth-configuration.png)
 

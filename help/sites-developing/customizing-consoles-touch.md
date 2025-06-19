@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 2a94ea8d-2919-4f30-be31-ce559493805d
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 99%
@@ -64,7 +64,7 @@ Beispielsweise können die folgenden Speicherorte innerhalb der `/libs`-Struktur
 
 >[!NOTE]
 >
->Weitere Tipps und Informationen zu Tools finden Sie im Knowledge-Base-Artikel [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/kb/troubleshooting-aem-touchui-issues.html).
+>Weitere Tipps und Informationen zu Tools finden Sie im Knowledge-Base-Artikel [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935).
 
 ## Anpassen der Standardansicht für eine Konsole {#customizing-the-default-view-for-a-console}
 
@@ -151,7 +151,6 @@ Anpassen von Spalten in der Listenansicht:
 1. Optional:
 
    * Falls Sie zusätzliche Daten hinzufügen möchten, müssen Sie einen [PageInforProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) mit einer
-
      `pageInfoProviderType`-Eigenschaft schreiben.
 
    Ein Beispiel sehen Sie im unten (aus GitHub) angehängten Class-Bundle.

@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: f9b3df58-c94b-4143-aeec-85ff031bac2e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '519'
 ht-degree: 99%
 
 ---
@@ -26,11 +26,11 @@ Der App Builder bietet Kunden eine Möglichkeit, Adobe Experience Manager in ver
 * Erweiterbarkeit der Hauptdienste: Erweiterung der Kernanwendungsfunktionen durch Erweiterung des Standardverhaltens um benutzerdefinierte Funktionen und Geschäftslogik.
 * Benutzererlebnis-Erweiterbarkeit: Erweitern Sie das Kernerlebnis, um Geschäftsanforderungen zu unterstützen oder kundenspezifische digitale Eigenschaften, Storefronts und Back-Office-Apps zu erstellen.
 
-App Builder steht seit Sommer 2020 für Unternehmenskunden und -partner über die Entwicklervorschau von Adobe zur Verfügung. Die allgemeine Verfügbarkeit von App Builder ist für Dezember 2021 geplant. Adobe lädt Entwicklerinnen und Entwickler dazu ein, App Builder über unser [Testprogramm](https://developer.adobe.com/app-builder/trial/) von Adobe auszuprobieren.
+App Builder steht seit Sommer 2020 für Unternehmenskunden und -partner über die Entwicklervorschau von Adobe zur Verfügung. Die allgemeine Verfügbarkeit von App Builder ist für Dezember 2021 geplant. Adobe lädt Entwicklerinnen und Entwickler dazu ein, App Builder über unser [Testprogramm](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/set-up#access-and-credentials) von Adobe auszuprobieren.
 
 >[!NOTE]
 >
->Für Kundinnen und Kunden von AEM as a Cloud Service, die App Builder verwenden möchten, siehe [Erweiterung von Adobe Experience Manager als Cloud Service mit Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/app-builder.html).
+>Für Kundinnen und Kunden von AEM as a Cloud Service, die App Builder verwenden möchten, siehe [Erweiterung von Adobe Experience Manager als Cloud Service mit Adobe Developer App Builder](/help/sites-developing/app-builder.md).
 
 ## Architektur {#architecture}
 
@@ -45,13 +45,13 @@ Die folgende Abbildung zeigt, wie eine auf App Builder aufbauende Standardanwend
 
 ![Architektur](assets/appbuilder-architecture.jpg)
 
-Weitere Informationen zur App Builder-Architektur finden Sie unter [Überblick über die Architektur](https://developer.adobe.com/app-builder/docs/guides/).
+Weitere Informationen zur App Builder-Architektur finden Sie unter [Überblick über die Architektur](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview).
 
 ## Erste Schritte mit dem App Builder {#additional-resources}
 
 Um die ersten Schritte mit App Builder zu erleichtern, wurde für den Einstieg eine Reihe von Dokumentationen erstellt:
 
-* [App Builder – Erste Schritte](https://developer.adobe.com/app-builder/docs/getting_started/)
+* [App Builder – Erste Schritte](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app)
 
 ## Weiteres Lernen mit Dokumentation {#appbuilder-documentation}
 

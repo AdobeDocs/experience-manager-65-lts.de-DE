@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 79551cfa77420fae965ecac8060fd2005beff558
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1363'
 ht-degree: 93%
 
 ---
@@ -233,10 +233,6 @@ Wenn die JAR-Datei für den Schnellstart erstmals gestartet wird, entpackt sie s
 Wenn die Instanz über die Benutzeroberfläche installiert wurde, werden automatisch ein Browser-Fenster und ein Desktop-Anwendungsfenster geöffnet, in denen der Host und Port der Instanz sowie ein Ein-/Aus-Schalter angezeigt werden:
 
 ![Startbildschirm](assets/screen_shot_.png)
-
->[!NOTE]
->
->Wenn Sie Symlinks verwenden, sehen Sie sich den Artikel [Probleme mit Symlink](https://helpx.adobe.com/de/experience-manager/kb/changing-symlink.html) an.
 
 ### Starten und Anhalten {#starting-and-stopping}
 

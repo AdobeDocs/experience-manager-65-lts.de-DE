@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 49225f9f-d09e-4ab6-9e29-b47ba41e8889
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1205'
 ht-degree: 96%
 
 ---
@@ -105,7 +105,3 @@ Die folgenden Leistungsoptimierungen wurden bisher in Projekten angewendet:
 
 * Generieren selektiver Ausgabedarstellungen: Generieren Sie nur die von Ihnen benötigten Ausgabedarstellungen, indem Sie dem Workflow für die Asset-Verarbeitung Bedingungen hinzufügen, damit aufwendigere Ausgabedarstellungen nur für ausgewählte Assets erzeugt werden.
 * Zwischen Instanzen freigegebener Datenspeicher: Wenn nicht genügend Festplattenspeicher vorhanden ist, kann sich hierdurch die Menge des benötigten Speicherplatzes deutlich reduzieren. Dies ist allerdings mit einem höheren Konfigurationsaufwand und dem Verlust der automatischen Datenspeicherbereinigung verbunden.
-
-## Weiterführende Literatur {#further-reading}
-
-* [Analysieren von langsamen und blockierten Prozessen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
