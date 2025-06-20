@@ -5,12 +5,13 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 89bab7e3-f688-4c95-8571-08477e737bc8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4817296c00e094a65744a896d798e429d3ab6c7d
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 100%
+source-wordcount: '1701'
+ht-degree: 98%
 
 ---
+
 
 # Veröffentlichen von Seiten {#publishing-pages}
 
@@ -25,13 +26,13 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten Datum/Zeitpunkt 
 >Bestimmte Begriffe im Zusammenhang mit Publishing sind leicht zu verwechseln:
 >
 >* **Veröffentlichen/Veröffentlichung rückgängig machen**
->  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
+>  >  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
 >
 >* **Aktivieren/Deaktivieren**
->  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
+>  >  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
 >
 >* **Replizieren/Replikation**
->  Dies sind technische Begriffe, die für die Verschiebung von Daten (z. B. Seiteninhalten, Dateien, Code, Benutzerkommentaren) zwischen Umgebungen verwendet werden, etwa beim Veröffentlichen oder Zurückreplizieren von Benutzerkommentaren.
+>  >  Dies sind technische Begriffe, die für die Verschiebung von Daten (z. B. Seiteninhalten, Dateien, Code, Benutzerkommentaren) zwischen Umgebungen verwendet werden, etwa beim Veröffentlichen oder Zurückreplizieren von Benutzerkommentaren.
 
 ## Unzureichende Berechtigungen {#insufficient-privileges}
 
@@ -196,6 +197,10 @@ So veröffentlichen Sie mit „Veröffentlichung verwalten“ eine Seite bzw. ma
    Klicken Sie auf **Veröffentlichen** oder **Später veröffentlichen**, um die Veröffentlichung abzuschließen.
 
    ![chlimage_1-4](assets/chlimage_1-4.png)
+
+>[!TIP]
+>
+>Bei der Planung von Inhalten für die Veröffentlichung werden Inhalte repliziert und Veröffentlichungs-Workflows berücksichtigt. Wenn Sie bereits veröffentlichte Inhalte vorübergehend ausblenden möchten, ohne die Veröffentlichung rückgängig zu machen, sollten Sie [**Einschaltzeit** und **Ausschaltzeit** in den Seiteneigenschaften verfügbar machen.](/help/sites-authoring/editing-page-properties.md#on-time)
 
 ## Veröffentlichen von Seiten rückgängig machen {#unpublishing-pages}
 
