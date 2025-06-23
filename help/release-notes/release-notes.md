@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 2a83d6d4f25a866eacd87d6e2a4318b99c158ea0
+source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 31%
+source-wordcount: '1019'
+ht-degree: 34%
 
 ---
 
@@ -53,6 +53,10 @@ Eclipse Jetty 11.0.x wird als Servlet-Engine für den Schnellstart verwendet.
 Informationen zu Setup-Anforderungen finden Sie unter [Installationsanweisungen](/help/sites-deploying/custom-standalone-install.md).
 
 Detaillierte Anweisungen finden Sie unter [Upgrade-Dokumentation](/help/sites-deploying/upgrade.md).
+
+>[!NOTE]
+>
+> Für neue AEM 6.5 LTS-Installationen müssen Indexdefinitionen separat installiert werden. Weitere Informationen finden Sie [diesem](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
 
 ## Unterstützte Plattformen {#supported-platforms}
 
@@ -113,7 +117,7 @@ In diesem Abschnitt werden Funktionen aufgeführt, die aus AEM 6.5 LTS entfernt 
 
 ### Problem mit dem JSP-Skriptpaket in AEM 6.5.21-6.5.23 und AEM 6.5 LTS GA
 
-AEM 6.5.21, 6.5.22, 6.5.23 und AEM 6.5 LTS GA werden mit dem `org.apache.sling.scripting.jsp:2.6.0`-Bundle ausgeliefert, das ein bekanntes Problem enthält. Das Problem tritt in der Regel bei hoher Auslastung auf, wenn die AEM-Instanz viele gleichzeitige Anfragen verarbeitet.
+AEM 6.5.21, 6.5.22, 6.5.23 und AEM 6.5 LTS GA werden mit dem `org.apache.sling.scripting.jsp:2.6.0`-Bundle ausgeliefert, das ein bekanntes Problem enthält. Das Problem tritt in der Regel bei hoher Auslastung auf, wenn die AEM-Instanz viele Anfragen gleichzeitig verarbeitet.
 
 Wenn dieses Problem auftritt, kann eine der folgenden Ausnahmen in den Fehlerprotokollen neben Verweisen auf `org.apache.sling.scripting.jsp:2.6.0` angezeigt werden:
 
