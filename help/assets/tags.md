@@ -2,16 +2,11 @@
 title: Integrieren von Dynamic Media Viewers mit Adobe Analytics und Experience Platform Tags
 description: Erfahren Sie mehr über die Dynamic Media Viewers-Erweiterung für Experience Platform Tags und Dynamic Media Viewers 5.13. Sie ermöglicht es Kunden von Adobe Analytics und Experience Platform Tags, für Dynamic Media Viewers in ihrer Experience Platform Tags-Konfiguration spezifische Ereignisse und Daten zu verwenden.
 mini-toc-levels: 3
-contentOwner: Rick Brough
-topic-tags: dynamic-media
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-content-type: reference
-docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 solution: Experience Manager, Experience Manager Assets
 exl-id: 3aea14f7-052d-4f23-b65d-e648623146e7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e38c229bd535ae6f2b058058b1a595cd9b4ddcdc
 workflow-type: tm+mt
 source-wordcount: '6663'
 ht-degree: 100%
@@ -68,7 +63,7 @@ Ein Datenelement in Experience Platform Tags ist eine benannte Eigenschaft, dere
 
 Optionen, die für eine Datenelementdefinition verfügbar sind, hängen von der Liste der Erweiterungen ab, die in der Experience Platform Tags-Eigenschaft installiert sind. Die Erweiterung „Core“ ist vorinstalliert und in jeder Konfiguration standardmäßig verfügbar. Mit der Erweiterung „Core“ können Sie ein Datenelement definieren, dessen Wert aus Cookies, JavaScript-Code, Abfragezeichenfolgen und vielen anderen Quellen stammen kann.
 
-Für das Tracking mit Adobe Analytics müssen mehrere zusätzliche Erweiterungen wie unter [Installation und Einrichtung von Erweiterungen](#installing-and-setup-of-extensions) beschrieben installiert werden. Die Dynamic Media Viewers-Erweiterung bietet die Möglichkeit, ein Datenelement zu definieren, dessen Wert ein Argument des Dynamic Media Viewers-Ereignisses ist. Beispielsweise können Sie auf den Viewer-Typ oder den Asset-Namen, der vom Viewer beim Laden gemeldet wird, auf den Zoom-Faktor, der beim Zoomen durch Endbenutzer gemeldet wird, und vieles mehr verweisen.
+Für das Tracking mit Adobe Analytics müssen mehrere zusätzliche Erweiterungen wie unter [Installation und Einrichtung von Erweiterungen](#installing-and-setup-of-extensions) beschrieben installiert werden. Die Dynamic Media Viewers-Erweiterung bietet die Möglichkeit, ein Datenelement zu definieren, dessen Wert ein Argument des Dynamic Viewer-Ereignisses ist. Beispielsweise können Sie auf den Viewer-Typ oder den Asset-Namen, der vom Viewer beim Laden gemeldet wird, auf den Zoom-Faktor, der beim Zoomen durch Endbenutzer gemeldet wird, und vieles mehr verweisen.
 
 Die Dynamic Media Viewers-Erweiterung sorgt dafür, dass die Werte der Datenelemente automatisch auf dem neuesten Stand sind.
 
@@ -508,7 +503,7 @@ Nachdem Sie Experience Platform Tags konfiguriert haben, werden für die Integra
 
 1. Beginnen Sie, indem Sie über die Experience Cloud-[Startseite](https://experience.adobe.com/#/home) auf Experience Platform Tags zugreifen. Klicken Sie in der Menüleiste auf das Symbol **[!UICONTROL Lösungen]** (eine Matrix mit drei mal drei Punkten) oben rechts auf der Seite und klicken Sie dann auf **[!UICONTROL Tags]**.
 
-   Alternativ können Sie [Experience Platform Tags direkt öffnen](https://launch.adobe.com/).
+   Alternativ können Sie [Experience Platform Tags direkt öffnen](https://experienceleague.adobe.com/de/docs/experience-platform/tags/home).
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 

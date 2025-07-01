@@ -2,17 +2,14 @@
 title: Wie werden Designs für adaptive Formulare erstellt oder angepasst?
 description: Erfahren Sie, wie Sie mithilfe von BEM-Spezifikationen Designs für Kernkomponenten adaptiver Formulare erstellen oder anpassen können.
 keywords: Design der Kernkomponenten für adaptive Formulare erstellen, neues Design erstellen, Design anpassen, neues Design hochladen, Design in Formularen verwenden, Design löschen, Design in AEM 6.5-Formularen erstellen
-contentOwner: Khushwant Singh
-topic-tags: Adaptive Forms
-docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 59b54622-55c4-4526-b584-c08bbd1d08bb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7eddd03e7b1256f2f2b54bdd92672d5a1e4440d1
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 99%
+source-wordcount: '1938'
+ht-degree: 100%
 
 ---
 
@@ -81,7 +78,7 @@ Das Anpassen eines Designs bezieht sich auf den Prozess der Änderung und Person
 
 * Installieren Sie die neueste Version von [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven ist ein Tool zur Automatisierung von Builds, das häufig für Java™-Projekte verwendet wird. Durch die Installation der neuesten Version stellen Sie sicher, dass Sie über die erforderlichen Abhängigkeiten für die Design-Anpassung verfügen.
 
-* Erfahren Sie, wie Sie eine [Client-Bibliothek in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/clientlibs.html) erstellen. AEM stellt Client-Bibliotheken zur Verfügung, mit denen Sie Ihren Client-seitigen Code im Repository speichern, in Kategorien organisieren und definieren können, wann und wie jede Code-Kategorie dem Client bereitgestellt werden soll.
+* Erfahren Sie, wie Sie eine [Client-Bibliothek in Adobe Experience Manager](/help/sites-developing/clientlibs.md) erstellen. AEM stellt Client-Bibliotheken zur Verfügung, mit denen Sie Ihren Client-seitigen Code im Repository speichern, in Kategorien organisieren und definieren können, wann und wie jede Code-Kategorie dem Client bereitgestellt werden soll.
 
 * Installieren Sie einen Nur-Text-Editor. Beispielsweise Microsoft® Visual Studio Code. Die Verwendung eines Texteditors wie Microsoft® Visual Studio Code bietet eine benutzerfreundliche Umgebung zum Bearbeiten und Ändern von Design-Dateien.
 
@@ -111,7 +108,7 @@ Das Erstellen oder Anpassen eines Designs ist ein mehrstufiger Prozess. Führen 
 
 Die Beispiele in diesem Dokument basieren auf dem **Canvas**-Design, aber Sie können jedes beliebige Design klonen und es mit denselben Anweisungen anpassen. Diese Anweisungen gelten für jedes Design, sodass Sie Designs entsprechend Ihren spezifischen Anforderungen ändern können.
 
-#### 1. Klonen Sie das Git-Repository des Designs {#clone-git-repo-of-theme}
+#### &#x200B;1. Klonen Sie das Git-Repository des Designs {#clone-git-repo-of-theme}
 
 Um ein Design für die auf Kernkomponenten-basierten adaptiven Formulare zu klonen, wählen Sie eines der folgenden Designs:
 
@@ -141,7 +138,7 @@ Führen Sie die folgenden Anweisungen aus, um ein Design zu klonen:
 
 Nach erfolgreicher Ausführung des Befehls haben Sie eine lokale Kopie des Designs auf Ihrem Rechner im Ordner `aem-forms-theme-canvas` zur Verfügung.
 
-#### 2. Passen Sie das Design an {#customize-the-theme}
+#### &#x200B;2. Passen Sie das Design an {#customize-the-theme}
 
 Sie haben die Möglichkeit, einzelne Komponenten anzupassen oder Änderungen auf Design-Ebene vorzunehmen, indem Sie die globalen Variablen eines Designs verwenden. Die Änderung globaler Variablen hat einen kaskadierenden Effekt auf alle einzelnen Komponenten. Sie können beispielsweise globale Variablen verwenden, um die Rahmenfarbe aller Komponenten in einem adaptiven Formular zu ändern, oder eine dynamische Füllfarbe auf Aktionsaufruf-Schaltflächen (CTA) anzuwenden. Sie haben folgende Möglichkeiten:
 
@@ -190,7 +187,7 @@ Sie können auch die Schriftart, Farbe, Größe und andere CSS-Eigenschaften bes
 >
 > Wenn ein Stil sowohl auf Design- als auch auf Komponentenebene definiert ist, hat der auf Komponentenebene definierte Stil Priorität.
 
-#### 3. Bereiten Sie das Design für die Bereitstellung vor. {#generate-the-clientlib}
+#### &#x200B;3. Bereiten Sie das Design für die Bereitstellung vor. {#generate-the-clientlib}
 
 Um ein Design in einer AEM-Instanz bereitzustellen, muss es in eine Client-Bibliothek konvertiert werden. Führen Sie die folgenden Schritte aus, um das Design in eine Client-Bibliothek zu konvertieren:
 
@@ -215,7 +212,7 @@ Um ein Design in einer AEM-Instanz bereitzustellen, muss es in eine Client-Bibli
 
    ![Client-Bibliotheksspeicherort](/help/forms/using/assets/adaptiveform.theme.easel.png)
 
-#### 4. Bereitstellen des Designs in einer lokalen Umgebung {#deploy-the-theme-on-a-local-environment}
+#### &#x200B;4. Bereitstellen des Designs in einer lokalen Umgebung {#deploy-the-theme-on-a-local-environment}
 
 Gehen Sie wie folgt vor, um das Design in Ihrer lokalen Entwicklungs- oder Testumgebung bereitzustellen:
 
@@ -266,7 +263,7 @@ An Adaptive Form with the selected theme is created.
 The selected theme is applied to the Adaptive Form. 
 -->
 
-#### 5. Bereitstellen eines Designs in Ihrer Produktionsumgebung {#deploy-theme}
+#### &#x200B;5. Bereitstellen eines Designs in Ihrer Produktionsumgebung {#deploy-theme}
 
 Nachdem Sie das Design in Ihrer lokalen Entwicklungsumgebung erfolgreich getestet haben, können Sie mit der Bereitstellung des Designs in Ihren Produktionsumgebungen fortfahren, einschließlich der Autoren- und der Veröffentlichungsinstanz. Führen Sie die folgenden Schritte aus, um das Design in Ihren Produktionsumgebungen bereitzustellen:
 

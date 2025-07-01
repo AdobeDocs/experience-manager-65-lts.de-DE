@@ -2,18 +2,14 @@
 title: Erstellen eines adaptiven Formulars
 description: Erfahren Sie, wie Sie ein adaptives Formular mit [!DNL Experience Manager Forms] erstellen können. Adaptive Formulare sind responsive HTML5-Formulare, mit denen die Informationserfassung und -verarbeitung optimiert wird. Vertiefen Sie Ihre Kenntnisse über die Erstellung adaptiver Formulare auf der Grundlage eines Formulardatenmodells und eines XML- oder JSON-Schemas.
 Keywords: create adaptive form core component, create core component based adaptive form, creare adaptive form
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-contentOwner: Khushwant Singh
-topic-tags: Adaptive Forms
-docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: eb857ab1-ab1b-4c77-af3b-4507f53a8241
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 254366c95c1aa1e3f5ba01441741a8dc1cfed42c
 workflow-type: tm+mt
-source-wordcount: '1794'
-ht-degree: 99%
+source-wordcount: '1793'
+ht-degree: 100%
 
 ---
 
@@ -57,12 +53,12 @@ Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## Erstellen eines adaptiven Formulars {#create-an-adaptive-form}
 
-1. Melden Sie sich bei Ihrer lokalen [AEM-Autoreninstanz](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/deploy.html?lang=en#author-and-publish-installs) an.
+1. Melden Sie sich bei Ihrer lokalen [AEM-Autoreninstanz](/help/sites-deploying/deploy.md#author-and-publish-installs) an.
 
 1. Geben Sie Ihre Anmeldedaten auf der Experience Manager-Anmeldeseite ein. Wenn Sie sich angemeldet haben, wählen Sie in der oberen linken Ecke **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** aus.
 

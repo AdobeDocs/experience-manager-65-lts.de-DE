@@ -6,10 +6,10 @@ feature: Authoring
 solution: Experience Manager Sites,Experience Manager Assets
 role: Admin
 exl-id: 9bb1ff8b-5fcb-44df-8c45-2306e127410d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6e6e04a2532f812596f00557b5d3dc4dccdab66d
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 99%
+source-wordcount: '267'
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 
 Adobe Experience Manager Fluid Experiences nutzt die leistungsstarken Funktionen von AEM Sites, AEM Dynamic Media und AEM Assets, um eine robuste Lösung für die Headless-Content-Bereitstellung zu bieten.
 
-AEM Fluid Experiences unterscheidet sich vom klassischen AEM insofern, als nur die Headless-Bereitstellung möglich ist. Headful-Inhaltserstellung und -Bereitstellung sowie die starke AEM-Unterstützung für hybride Anwendungen sind im Rahmen der [vollständigen Lösungen AEM Sites, Assets und Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-65-lts/user-guide/home.html) verfügbar.
+AEM Fluid Experiences unterscheidet sich vom klassischen AEM insofern, als nur die Headless-Bereitstellung möglich ist. Headful-Inhaltserstellung und -Bereitstellung sowie die starke Unterstützung von AEM für hybride Anwendungen sind im Rahmen der vollständigen Lösungen AEM Sites, Assets und Dynamic Media verfügbar.
 
 In den folgenden Tabellen sind die Funktionen von AEM Fluid Experiences mit einem Link zur entsprechenden Support-Dokumentation aufgeführt.
 

@@ -1,15 +1,14 @@
 ---
 title: Integration von  [!DNL Assets]  mit  [!DNL InDesign Server]
 description: Erfahren Sie mehr über die Integration von  [!DNL Adobe Experience Manager Assets]  mit  [!DNL Adobe InDesign Server].
-contentOwner: AG
 role: Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: f0db5ec6-45ea-418e-ae5f-e6e307a40a38
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 8489976fbcee595ee8230c530597523e7cd0f6b7
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 100%
+source-wordcount: '1548'
+ht-degree: 98%
 
 ---
 
@@ -21,11 +20,11 @@ ht-degree: 100%
 * Einen Proxy Worker zum Definieren und Verwalten einer bestimmten Aufgabe.
 Diese Aufgaben können unterschiedlichster Art sein, beispielsweise die Nutzung von [!DNL InDesign Server] zur Verarbeitung von Dateien.
 
-Um Dateien, die Sie mit [!DNL Adobe InDesign] erstellt haben, vollständig in [!DNL Experience Manager Assets] zu laden, wird ein Proxy verwendet. Dieser verwendet einen Proxy Worker für die Kommunikation mit dem [!DNL Adobe InDesign Server], auf dem [Skripte](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) ausgeführt werden, um Metadaten zu extrahieren und verschiedene Ausgabedarstellungen für [!DNL Experience Manager Assets] zu generieren. Der Proxy Worker ermöglicht die bidirektionale Kommunikation zwischen [!DNL InDesign Server]-Instanzen und den [!DNL Experience Manager]-Instanzen in einer Cloud-Konfiguration.
+Um Dateien, die Sie mit [!DNL Adobe InDesign] erstellt haben, vollständig in [!DNL Experience Manager Assets] zu laden, wird ein Proxy verwendet. Dieser verwendet einen Proxy Worker für die Kommunikation mit dem [!DNL Adobe InDesign Server], auf dem [Skripte](https://helpx.adobe.com/indesign/using/scripting.html) ausgeführt werden, um Metadaten zu extrahieren und verschiedene Ausgabedarstellungen für [!DNL Experience Manager Assets] zu generieren. Der Proxy Worker ermöglicht die bidirektionale Kommunikation zwischen [!DNL InDesign Server]-Instanzen und den [!DNL Experience Manager]-Instanzen in einer Cloud-Konfiguration.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] gibt es als zwei separate Angebote. Das [Adobe InDesign](https://www.adobe.com/de/products/indesign.html)-Desktop-Programm, das zum Entwerfen von Seiten-Layouts für den Druck und die digitale Distribution verwendet wird. [Adobe InDesign Server](https://www.adobe.com/de/products/indesignserver.html) ermöglicht die programmgesteuerte automatisierte Erstellung von Dokumenten, die auf denen basieren, die Sie mit [!DNL InDesign] entworfen haben. Es fungiert als Dienst, der eine Schnittstelle zu seiner [ExtendScript](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)-Engine bietet. Die Skripte werden in [!DNL ExtendScript] geschrieben, das [!DNL JavaScript] ähnelt. Weitere Informationen zu [!DNL InDesign]-Skripten finden Sie unter [https://www.adobe.com/devnet/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>[!DNL Adobe InDesign] gibt es als zwei separate Angebote. Das [Adobe InDesign](https://www.adobe.com/de/products/indesign.html)-Desktop-Programm, das zum Entwerfen von Seiten-Layouts für den Druck und die digitale Distribution verwendet wird. [Adobe InDesign Server](https://www.adobe.com/de/products/indesignserver.html) ermöglicht die programmgesteuerte automatisierte Erstellung von Dokumenten, die auf denen basieren, die Sie mit [!DNL InDesign] entworfen haben. Es fungiert als Dienst, der eine Schnittstelle zu seiner [ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html)-Engine bietet. Die Skripte werden in [!DNL ExtendScript] geschrieben, was [!DNL JavaScript] ähnelt.
 
 ## So funktioniert die Extraktion {#how-the-extraction-works}
 
@@ -50,7 +49,7 @@ Dieses Befehlsskript führt folgende Aktionen aus:
 
    >[!NOTE]
    >
-   >IDML ist ein XML-basiertes Format, das alle Inhalte der [!DNL InDesign]-Datei aufbereitet. Es wird als komprimiertes Paket mit [ZIP](https://www.techterms.com/definition/zip)-Komprimierung gespeichert. Weitere Informationen finden Sie unter [InDesign Interchange Formats INX and IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
+   >IDML ist ein XML-basiertes Format, das alle Inhalte der [!DNL InDesign]-Datei aufbereitet. Es wird als komprimiertes Paket mit [ZIP](https://www.techterms.com/definition/zip)-Komprimierung gespeichert. Weitere Informationen finden Sie unter [InDesign Interchange Formats INX and IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&seqNum=8).
 
    >[!CAUTION]
    >
@@ -94,22 +93,22 @@ Um den [!DNL InDesign Server] für die Verwendung mit [!DNL Experience Manager] 
 
 [!DNL Experience Manager Assets] verfügt über den vorkonfigurierten Workflow **[!UICONTROL DAM-Update-Asset]**, der mehrere Prozessschritte speziell für [!DNL InDesign] umfasst:
 
-* [Extrahierung von Medien](#media-extraction)
-* [Extrahierung von Seiten  ](#page-extraction)
+* [Extraktion von Medien](#media-extraction)
+* [Extraktion von Seiten  ](#page-extraction)
 
 Dieser Workflow wird mit Standardwerten konfiguriert, die für Ihr Setup in den verschiedenen Autoreninstanzen angepasst werden können. (Dies ist ein Standard-Workflow. Deshalb finden Sie weitere Information unter [Bearbeiten eines Workflows](/help/sites-developing/workflows-models.md#configuring-a-workflow-step).) Wenn Sie die Standardwerte (einschließlich SOAP-Port) verwenden, ist keine Konfiguration erforderlich.
 
 Nach Abschluss des Setups löst das Hochladen von [!DNL InDesign]-Dateien in [!DNL Experience Manager Assets] (mithilfe einer der üblichen Methoden) den Workflow für die Verarbeitung des Assets und Vorbereitung der verschiedenen Ausgabedarstellungen aus. Testen Sie Ihre Konfiguration, indem Sie eine INDD-Datei in [!DNL Experience Manager Assets] hochladen und auf diese Weise überprüfen, ob IDS verschiedene Ausgabedarstellungen unter `<*your_asset*>.indd/Renditions` erstellt.
 
-#### Extrahierung von Medien {#media-extraction}
+#### Extraktion von Medien {#media-extraction}
 
 Dieser Schritt steuert die Extrahierung von Medien aus der INDD-Datei.
 
-Anpassungen können Sie im Schritt **[!UICONTROL Extrahierung von Medien]** auf der Registerkarte **[!UICONTROL Argumente]** vornehmen.
+Anpassungen können Sie im Schritt **[!UICONTROL Extraktion von Medien]** auf der Registerkarte **[!UICONTROL Argumente]** vornehmen.
 
-![Argumente und Skriptpfade zum Extrahieren von Medien](assets/media_extraction_arguments_scripts.png)
+![Argumente und Skriptpfade zur Extraktion von Medien](assets/media_extraction_arguments_scripts.png)
 
-Argumente und Skriptpfade zum Extrahieren von Medien
+Argumente und Skriptpfade zur Extraktion von Medien
 
 * **ExtendScript-Bibliothek**: Dies ist eine einfache HTTP-GET/POST-Methodenbibliothek, die von anderen Skripten benötigt wird.
 
@@ -123,20 +122,20 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 >
 >Ändern Sie nicht die ExtendScript-Bibliothek. Diese Bibliothek bietet die HTTP-Funktionen, die für die Kommunikation mit Sling erforderlich sind. Diese Einstellung legt die Bibliothek fest, die zur Verwendung an [!DNL InDesign Server] gesendet werden soll.
 
-Das Skript `ThumbnailExport.jsx`, das vom Workflow-Schritt „Extrahierung von Medien“ ausgeführt wird, generiert eine Miniaturansicht im JPG-Format. Diese Ausgabedarstellung wird vom Workflow-Schritt „Miniaturansichten verarbeiten“ dazu verwendet, die für [!DNL Experience Manager] erforderlichen statischen Ausgabedarstellungen zu rendern.
+Das Skript `ThumbnailExport.jsx`, das vom Workflow-Schritt „Extraktion von Medien“ ausgeführt wird, generiert eine Miniaturansicht im JPG-Format. Diese Ausgabedarstellung wird vom Workflow-Schritt „Miniaturansichten verarbeiten“ dazu verwendet, die für [!DNL Experience Manager] erforderlichen statischen Ausgabedarstellungen zu rendern.
 
 Sie können den Workflow-Schritt „Miniaturansichten verarbeiten“ so konfigurieren, dass statische Darstellungen in verschiedenen Größen generiert werden. Stellen Sie sicher, dass Sie die Voreinstellungen nicht entfernen, da sie für die Benutzeroberfläche von [!DNL Experience Manager Assets] erforderlich sind. Abschließend entfernt der Workflow-Schritt „Bildvorschau-Wiedergabe löschen“ die JPG-Miniaturansicht, da sie nicht mehr benötigt wird.
 
-#### Extrahierung von Seiten {#page-extraction}
+#### Extraktion von Seiten {#page-extraction}
 
-Dabei wird eine [!DNL Experience Manager]-Seite aus den extrahierten Elementen erstellt. Das Extrahieren von Daten aus einem Ausgabeformat (aktuell HTML oder IDML) erfolgt mithilfe eines Extrahierungs-Handlers. Diese Daten werden verwendet, um eine Seite mit PageBuilder zu erstellen.
+Dabei wird eine [!DNL Experience Manager]-Seite aus den extrahierten Elementen erstellt. Die Extraktion von Daten aus einem Ausgabeformat (aktuell HTML oder IDML) erfolgt mithilfe eines Extraktions-Handlers. Diese Daten werden verwendet, um eine Seite mit PageBuilder zu erstellen.
 
-Anpassungen können Sie im Schritt **[!UICONTROL Extrahierung von Seiten]** auf der Registerkarte **[!UICONTROL Argumente]** vornehmen.
+Anpassungen können Sie im Schritt **[!UICONTROL Extraktion von Seiten]** auf der Registerkarte **[!UICONTROL Argumente]** vornehmen.
 
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
-* **Handler zur Extrahierung von Seite**: Wählen Sie in der Dropdown-Liste den zu verwendenden Handler aus. Ein Extrahierungs-Handler arbeitet mit einem bestimmten Ausgabeformat, das mit einem entsprechenden `RenditionPicker` ausgewählt wird (siehe `ExtractionHandler`-API). Bei einer standardmäßigen [!DNL Experience Manager]-Installation sind folgende Optionen verfügbar:
-   * IDML-Export-Extrahierungs-Handler: Bearbeitet die `IDML`-Ausgabedarstellung, die im Schritt „MediaExtract“ generiert wurde.
+* **Handler zur Extraktion von Seite**: Wählen Sie in der Dropdown-Liste den zu verwendenden Handler aus. Ein Extraktions-Handler arbeitet mit einem bestimmten Ausgabeformat, das mit einem entsprechenden `RenditionPicker` ausgewählt wird (siehe `ExtractionHandler`-API). Bei einer standardmäßigen [!DNL Experience Manager]-Installation sind folgende Optionen verfügbar:
+   * IDML-Export-Extraktions-Handler: Bearbeitet die `IDML`-Ausgabedarstellung, die im Schritt „MediaExtract“ generiert wurde.
 
 * **Seitenname**: Geben Sie den Namen an, den Sie der resultierenden Datei zuweisen möchten. Wenn Sie das Feld leer lassen, wird als Name „Seite“ gewählt (oder eine Ableitung, falls „Seite“ bereits vorhanden ist).
 

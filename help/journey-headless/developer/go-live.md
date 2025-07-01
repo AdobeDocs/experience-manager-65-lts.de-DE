@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 exl-id: 8837e7cd-c949-46cc-9c39-3c7a82cc1daf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 84ef35149332330e040b8d94cae151708e3c6829
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1801'
 ht-degree: 99%
 
 ---
@@ -217,7 +217,7 @@ Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem opt
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [AEM-Entwicklerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/the-basics.html)
+* [AEM-Entwicklerhandbuch](/help/sites-developing/the-basics.md)
 
 * [WKND-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de)
 
@@ -227,7 +227,7 @@ Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem opt
 
    * [Steuern eines CDN-Cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de#controlling-a-cdn-cache)
 
-   * Konfigurieren des [CDN Rewriters](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/osgi-configuration-settings.html) (*suchen Sie nach CDN Rewriter*)
+   * Konfigurieren des [CDN Rewriters](/help/sites-deploying/osgi-configuration-settings.md) (*suchen Sie nach CDN Rewriter*)
 
 * [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
 * [AEM-Entwicklerportal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)

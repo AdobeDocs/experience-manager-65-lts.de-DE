@@ -6,10 +6,10 @@ role: Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 110b7175-d398-40ff-886e-5817a1df0ec9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ce0da5056e0821c94eb06a05c663a3939b37f940
 workflow-type: tm+mt
-source-wordcount: '3059'
-ht-degree: 99%
+source-wordcount: '3056'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Implementieren Sie die folgenden Aufgaben, um Experience Manager Assets für die
 
 1. Um lizenzierte Creative Cloud-Benutzer zu Benutzern von Experience Manager zuzuordnen, verwalten Sie dies über die [Benutzerzugriffssteuerung](#user-access).
 
-1. Erstellen Sie einen [benutzerdefinierten Abfrageindex](#create-custom-index), konfigurieren Sie [FPO-Ausgabedarstellungen](/help/assets/configure-fpo-renditions.md) für InDesign, konfigurieren Sie die [Adobe Stock-Integration](/help/assets/aem-assets-adobe-stock.md) und konfigurieren Sie die [visuelle oder Ähnlichkeitssuche](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch).
+1. Erstellen Sie einen [benutzerdefinierten Abfrageindex](#create-custom-index), konfigurieren Sie [FPO-Ausgabedarstellungen](/help/assets/configure-fpo-renditions.md) für InDesign, konfigurieren Sie die [Adobe Stock-Integration](/help/assets/aem-assets-adobe-stock.md) und konfigurieren Sie die [visuelle oder Ähnlichkeitssuche](/help/assets/search-assets.md#configvisualsearch).
 
 ## Voraussetzungen und Unterstützung für verschiedene Funktionen {#prerequisites}
 
@@ -243,8 +243,7 @@ In Experience Manager 6.4 und Experience Manager 6.5 können Admins Workflows ko
 
 Die Konfiguration ist beispielsweise für Fachanwender und Marketingexperten nützlich, um einen benutzerdefinierten Workflow für einige bestimmte Ordner zu erstellen. So können z. B. alle Assets aus dem Fotoshooting einer Agentur mit einem Wasserzeichen versehen werden, oder alle von einem Freiberufler hochgeladenen Assets können verarbeitet werden, um bestimmte Ausgabedarstellungen zu erstellen.
 
-Weitere Informationen auch zur Konfiguration von Experience Manager finden Sie unter [Automatisches Ausführen von Workflows für Assets](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets).
-
+Weitere Informationen auch zur Konfiguration von Experience Manager finden Sie unter [Automatisches Ausführen von Workflows für Assets](/help/assets/assets-workflow.md#auto-execute-workflow-on-some-assets).
 
 ## Erstellen eines benutzerdefinierten Index in Experience Manager 6.4.x-Versionen {#create-custom-index}
 
@@ -261,7 +260,7 @@ Experience Manager enthält Indizes, die für Abfragen verwendet werden. Erstell
 
 ## Konfigurieren der visuellen oder Ähnlichkeitssuche {#configure-visual-similarity-search}
 
-Mit der Funktion „Visuelle Suche“ können Sie über das Bedienfeld „Adobe Asset Link“ im AEM Assets-Repository nach visuell ähnlichen Assets suchen. Diese Funktion ist ab Version 6.5.0 verfügbar, und es werden nur die indizierten Assets durchsucht. Weitere Informationen finden Sie unter [Konfigurieren der visuellen Suche](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/search-assets.html#configvisualsearch).
+Mit der Funktion „Visuelle Suche“ können Sie über das Bedienfeld „Adobe Asset Link“ im AEM Assets-Repository nach visuell ähnlichen Assets suchen. Diese Funktion ist ab Version 6.5.0 verfügbar, und es werden nur die indizierten Assets durchsucht. Weitere Informationen finden Sie unter [Konfigurieren der visuellen Suche](/help/assets/search-assets.md#configvisualsearch).
 
 ## Erzeugen von FPO (For Placement Only)-Ausgabedarstellungen (also nur für die Platzierung) für Adobe InDesign {#fpo-renditions}
 

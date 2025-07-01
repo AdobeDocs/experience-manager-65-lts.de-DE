@@ -10,10 +10,10 @@ role: Admin, User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 4db457d2-fefb-410d-8e74-58147f52bbd3
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 4ce7de628810e13f96361c0b253ef12850985ade
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 93%
+source-wordcount: '624'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 93%
 
 ## Was in Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0) enthalten ist
 
-Experience Manager 6.5.19.0 enthält neue Funktionen, wichtige von Kundschaft angeforderte Verbesserungen, Fehlerkorrekturen sowie Leistungs-, Stabilitäts- und Sicherheitsverbesserungen, die seit der ersten Verfügbarkeit von 6.5 im April 2019 veröffentlicht wurden. [Installieren Sie dieses Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html) auf Experience Manager 6.5.
+Experience Manager 6.5.19.0 enthält neue Funktionen, wichtige von Kundschaft angeforderte Verbesserungen, Fehlerkorrekturen sowie Leistungs-, Stabilitäts- und Sicherheitsverbesserungen, die seit der ersten Verfügbarkeit von 6.5 im April 2019 veröffentlicht wurden.
 
 ### Neue Funktionen
 
@@ -60,17 +60,14 @@ Sie können [adaptive Formularfragmente und ihre Felder im Editor für adaptive 
 Die 64-Bit-Iteration von XMLFM führt zu verbesserter Performance, Skalierbarkeit und Speicherverwaltung. Dies ist der erste native 64-Bit-Dienst, der Server-seitig bereitgestellt wird. Durch die Nutzung seiner inhärenten Fähigkeit, auf deutlich größere Speicherressourcen im Vergleich zu seinem 32-Bit-Gegenstück zuzugreifen, ermöglicht XMLFM 64-Bit die nahtlose Handhabung größerer Rendering-Workloads. Dieser Meilenstein stellt nicht nur einen Performance-Sprung dar, sondern führt auch wichtige Verbesserungen am nativen Service-Framework innerhalb des AEM Forms-Servers ein. Mit diesem Update wird der AEM Forms-Server für die nahtlose Unterstützung nativer 64-Bit-Dienste ausgestattet.
 
 
-
 ## Fehlerbehebungen
 
-Die Version enthält außerdem Fehlerbehebungen für mehr als 20 Probleme, die von Kundinnen und Kunden gemeldet wurden. Eine detaillierte Liste der im Service Pack enthaltenen Fehlerbehebungen finden Sie in den [Versionshinweisen](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html?lang=en#forms-6519)
+Die Version enthält außerdem Fehlerbehebungen für mehr als 20 Probleme, die von Kundinnen und Kunden gemeldet wurden. Eine detaillierte Liste der im Service Pack enthaltenen Fehlerbehebungen finden Sie in den [Versionshinweisen](/help/release-notes/release-notes.md)
 
 
 ## Installieren des Service Packs
 
-Das Service Pack enthält neue Funktionen und Fehlerkorrekturen für AEM Forms on JEE und AEM Forms on OSGi. Die Installationsanweisungen haben sich gegenüber vorherigen Service Packs geändert. Installationsanweisungen finden Sie unter [Installationsanweisungen für das AEM Forms Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
-
-
+Das Service Pack enthält neue Funktionen und Fehlerkorrekturen für AEM Forms on JEE und AEM Forms on OSGi. Die Installationsanweisungen enthalten Änderungen im Vergleich zu vorherigen Service Packs. Installationsanweisungen finden Sie unter [Installationsanweisungen für das AEM Forms Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
 
 
 
@@ -134,7 +131,7 @@ There are several improvements in the Web channel layout auto-generated using th
 
 ### Use Adobe Sign's cloud-based digital signatures in Adaptive Forms {#use-adobe-sign-s-cloud-based-digital-signatures-in-adaptive-forms}
 
-[Cloud-based digital signatures](https://helpx.adobe.com/de/sign/kb/digital-certificate-providers.html) or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can now [sign an Adaptive Form](../../forms/using/working-with-adobe-sign.md) with Cloud-based digital signatures.
+[Cloud-based digital signatures](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can now [sign an Adaptive Form](../../forms/using/working-with-adobe-sign.md) with Cloud-based digital signatures.
 
 #### Embed an Adaptive Form or Interactive Communication in AEM Sites Single Page Applications {#embed-an-adaptive-form-or-interactive-communcation-in-aem-sites-single-page-applications}
 

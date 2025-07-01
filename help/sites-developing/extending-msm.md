@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: c033a676eb746befd43803d1ae00c564890cb945
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2422'
 ht-degree: 99%
 
 ---
@@ -30,10 +30,6 @@ Auf dieser Seite erfahren Sie, wie Sie die Funktionen von Multi Site Manager erw
 >[!NOTE]
 >
 >Wir empfehlen, diese Seite in Verbindung mit [Wiederverwenden von Inhalten: Multi Site Manager](/help/sites-administering/msm.md) zu lesen.
->
->Die folgenden Abschnitte der Sites-Repository-Neustrukturierung könnten ebenfalls von Interesse sein:
->* [Blueprint-Konfigurationen für den Multi-Site-Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
->* [Rollout-Konfigurationen für den Multi-Site-Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
 
 >[!CAUTION]
 >
@@ -208,15 +204,12 @@ Die neue Rollout-Konfiguration steht dann zur Verfügung, wenn Sie die Rollout-K
 
 1. Fügen Sie diesem Knoten die folgenden Eigenschaften hinzu:
    * **Name**: `jcr:title`
-
      **Typ**: `String`
      **Wert**: Ein bezeichnender Titel, der in der Benutzeroberfläche angezeigt wird.
    * **Name**: `jcr:description`
-
      **Typ**: `String`
      **Wert**: Eine optionale Beschreibung.
    * **Name**: `cq:trigger`
-
      **Typ**: `String`
      **Wert**: Der zu verwendende [Rollout-Trigger](/help/sites-administering/msm-sync.md#rollout-triggers). Die folgenden Optionen stehen zur Auswahl:
       * `rollout`
@@ -689,7 +682,6 @@ Ob für eine Seiteneigenschaft ein Rollout durchgeführt werden muss und daher b
       * **Typ**: `String`
 
       * **Wert**: speichert den Namen der betroffenen Eigenschaft (und ist vergleichbar mit dem Wert der Eigenschaft `name`; z. B.
-
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Wenn `cq-msm-lockable` definiert wurde, interagiert das Öffnen oder Schließen der Kettenverbindung mit MSM wie folgt:

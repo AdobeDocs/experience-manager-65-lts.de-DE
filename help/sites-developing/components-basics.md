@@ -1,18 +1,13 @@
 ---
 title: Adobe Experience Manager-Komponenten – Grundlagen
 description: Wenn Sie neue Komponenten entwickeln, müssen Sie die Grundlagen ihrer Struktur und Konfiguration kennen.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: components
-content-type: reference
-legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
-source-git-commit: 013c9155817811913963ca514f7a6369b338d487
+source-git-commit: a0fe5bbfe93719641118521c6861bcb2cca76d60
 workflow-type: tm+mt
-source-wordcount: '4834'
+source-wordcount: '4819'
 ht-degree: 100%
 
 ---
@@ -312,7 +307,7 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>Wenn diese Eigenschaft festgelegt ist, dient sie als Zellen-ID. Weitere Informationen finden Sie im Artikel <a href="https://helpx.adobe.com/de/experience-manager/kb/DesigneCellId.html">Erstellung von Design-Zellen-IDs</a> in der Wissensdatenbank.<br /> </td>
+   <td>Wenn diese Eigenschaft festgelegt ist, dient sie als Zellen-ID.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>

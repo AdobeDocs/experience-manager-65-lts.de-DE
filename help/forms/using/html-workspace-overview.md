@@ -1,17 +1,13 @@
 ---
 title: Arbeiten mit AEM Forms Workspace
 description: Dieser kurze Überblick über die Prozess-Workflows beschreibt die ersten, Schritte mit AEM Forms Workspace.
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: forms-workspace
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 exl-id: 7374797f-4154-402b-bb59-075134763c58
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 823923ab074bae1705cc1991e4079897e4c5cac8
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '980'
 ht-degree: 100%
 
 ---
@@ -133,8 +129,4 @@ Sie können einen Großteil der Benutzeroberfläche sowie Hauptfunktionen wie Sc
 
 Für neue Prozesse werden XDP-Formulare standardmäßig auf dem Desktop im PDF- und auf Tablets im HTML-Format wiedergegeben. Es ist möglich, ein XDP-Formular immer im HTML-Format zu rendern. Weitere Informationen finden Sie unter [Neue Render- und Sendedienste](/help/forms/using/new-render-submit-service.md).
 
-Die [Mobile Forms](https://helpx.adobe.com/de/livecycle/help/mobile-forms/introduction.html)-Funktion, die [Profile](https://helpx.adobe.com/de/livecycle/help/mobile-forms/creating-profile.html) nutzt, ermöglicht die HTML-Ausgabedarstellung von XDP-Formularen. „Render New HTML Form (neu)“ nutzt standardmäßig das Profil `default.html`, das Sie ändern können. Sie können darüber hinaus benutzerdefinierte Änderungen hinzufügen, die erfolgen, bevor das XDP-Formular im HTML-Format gerendert wird.
-
-## AEM Forms Workspace-App {#aem-forms-workspace-app}
-
-Um auf einem Mobilgerät an Ihren Geschäftsprozessen zu arbeiten, können Sie die für AEM Forms angebotene AEM Forms-Workspace-App verwenden. Weitere Informationen finden Sie unter [Überblick über die AEM Forms Workspace-App](https://helpx.adobe.com/de/livecycle/help/mobile-workspace/mobile-workspace-overview.html).
+Die [Mobile Forms](/help/forms/using/introduction.md)-Funktion, die [Profile](/help/forms/using/custom-profile.md) nutzt, ermöglicht die HTML-Ausgabedarstellung von XDP-Formularen. „Render New HTML Form (neu)“ nutzt standardmäßig das Profil `default.html`, das Sie ändern können. Sie können darüber hinaus benutzerdefinierte Änderungen hinzufügen, die erfolgen, bevor das XDP-Formular im HTML-Format gerendert wird.

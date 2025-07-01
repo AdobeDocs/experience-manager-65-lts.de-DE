@@ -9,9 +9,9 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 2fcdc5df5a4b901c177d8e4158663c6b09793146
 workflow-type: tm+mt
-source-wordcount: '5052'
+source-wordcount: '5054'
 ht-degree: 99%
 
 ---
@@ -425,7 +425,7 @@ Bei der Konzeption dieser Tests sollte beachtet werden, dass nicht alle Szenarie
 
 | Fehlerszenario | Fehlertyp | Anzahl der Benutzer | Tx/Sek (erwartet) | Tx/Sek (getestet) | Beschreibung |
 |---|---|---|---|---|---|
-| Überlastung der Suchkomponente | Suche mit einem globalen Platzhalter (Sternchen) | 10 | 1 |  | Es wird nur nach &ast;&ast;&ast; gesucht. |
+| Überlastung der Suchkomponente | Suche mit einem globalen Platzhalter (Sternchen) | 10 | 1 |  | Es wird nur nach &amp;ast;&amp;ast;&amp;ast; gesucht. |
 |   | Stoppwort | 20 | 2 |  | Suchen nach einem Stoppwort. |
 |   | Leere Zeichenfolge | 10 | 1 |  | Suchen nach einer leeren Zeichenfolge. |
 |   | Sonderzeichen | 10 | 1 |  | Suchen nach Sonderzeichen. |
@@ -454,7 +454,7 @@ Alle vorgenommenen Optimierungen müssen auf folgende Bedingungen hin getestet w
 Für Lastgenerierung, Leistungsüberwachung und/oder Ergebnisanalyse stehen eine Reihe von Tools zur Verfügung. Einige dieser Tools umfassen Folgendes:
 
 * [JMeter](https://jmeter.apache.org/)
-* [Load Runner](https://www.microfocus.com/de-de/portfolio/performance-engineering/overview)
+* [OpenText Professional Performance Engineering](https://www.opentext.com/products/professional-performance-engineering).
 * [Java™ Interactive Profile](https://jiprof.sourceforge.net/)
 
 Führen Sie nach der Optimierung erneut einen Test durch, um die Auswirkung zu bestätigen.

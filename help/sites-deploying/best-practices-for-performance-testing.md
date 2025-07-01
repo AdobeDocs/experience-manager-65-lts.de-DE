@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 4087a6f44bd87e3f841feb09220a9ea34ec1dc1c
 workflow-type: tm+mt
-source-wordcount: '1762'
-ht-degree: 99%
+source-wordcount: '1765'
+ht-degree: 98%
 
 ---
 
@@ -59,7 +59,7 @@ Auf dem Markt ist eine Vielzahl von Tools für Leistungstests erhältlich. Stell
 * AEM bietet vorkonfigurierte Tools, um problematische Abfragen, Anforderungen und Fehlermeldungen schnell anzuzeigen. Weitere Informationen finden Sie im Abschnitt [Diagnose-Tools](/help/sites-administering/operations-dashboard.md#diagnosis-tools) der Dokumentation zum Vorgangs-Dashboard.
 * Apache bietet ein Produkt namens **JMeter** an, das Leistungs- und Belastungstests sowie eine Überprüfung des Funktionsverhaltens ermöglicht. Es handelt sich um eine Open-Source-Software, die kostenlos verwendet werden kann, aber eine kleinere Funktion hat als Unternehmensprodukte und eine stärkere Lernkurve aufweist. JMeter können Sie auf der Apache-Website unter [https://jmeter.apache.org/](https://jmeter.apache.org/) herunterladen.
 
-* **Load Runner** ist ein Enterprise-Produkt für Auslastungstests. Eine kostenlose Evaluierungsversion ist verfügbar. Weitere Informationen finden Sie unter [https://www.microfocus.com/de-de/portfolio/performance-engineering/overview](https://www.microfocus.com/de-de/portfolio/performance-engineering/overview).
+* **Load Runner** ist ein Enterprise-Produkt für Auslastungstests. Eine kostenlose Evaluierungsversion ist verfügbar. Weitere Informationen finden Sie unter &quot;[ Professional Performance Engineering](https://www.opentext.com/products/professional-performance-engineering).
 
 * Beim Testen mobiler oder responsiver Websites muss ein separater Satz von Tools verwendet werden. Diese drosseln die Netzwerkbrandbreite, um langsamere mobile Verbindungen wie 3G oder EDGE zu simulieren. Zu den gängigeren Tools gehören:
 

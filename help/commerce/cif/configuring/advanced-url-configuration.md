@@ -11,9 +11,9 @@ thumbnail: 34350.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 5f6171f8-20ca-4c31-a99f-a5bc07a63baf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e4cf6ae3392cef2ffd7e8fff3226b50c95f5a248
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '803'
 ht-degree: 99%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->Suchmaschinenoptimierung (SEO) ist zu einem wichtigen Thema für viele Marketer geworden. Deshalb müssen SEO-Thematiken bei vielen AEM-Projekten berücksichtigt werden. Weitere Informationen finden Sie unter [Best Practices für SEO und URL-Verwaltung](https://experienceleague.adobe.com/docs/experience-manager-65-lts/managing/managing-further-reference/seo-and-url-management.html).
+>Suchmaschinenoptimierung (SEO) ist zu einem wichtigen Thema für viele Marketer geworden. Deshalb müssen SEO-Thematiken bei vielen AEM-Projekten berücksichtigt werden. Weitere Informationen finden Sie unter [Best Practices für SEO und URL-Verwaltung](/help/managing/seo-and-url-management.md).
 
 Die [AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) ermöglichen erweiterte Konfigurationen zum Anpassen der URLs für Produkt- und Kategorieseiten. Bei vielen Implementierungen werden diese URLs zwecks Suchmaschinen-Optimierung (Search Engine Optimization, SEO) angepasst. Im folgenden Video wird beschrieben, wie Sie den `UrlProvider`-Service und die Funktionen der [Sling-Zuordnung](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) konfigurieren können, um die URLs für Produkt- und Kategorieseiten anzupassen.
 
->[!VIDEO](https://video.tv.adobe.com/v/38581/?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## Konfiguration {#configuration}
 
@@ -110,5 +110,5 @@ Das Projekt [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-
 ## Zusätzliche Ressourcen
 
 * [Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM-Ressourcenzuordnung](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/resource-mapping.html)
+* [AEM-Ressourcenzuordnung](/help/sites-deploying/resource-mapping.md)
 * [Sling-Zuordnungen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
