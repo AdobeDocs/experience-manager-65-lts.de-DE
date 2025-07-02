@@ -1,19 +1,15 @@
 ---
 title: Digitales Signieren und Zertifizieren von Dokumenten
 description: Verwenden Sie den Signatur-Dienst, um einem PDF-Dokument digitale Signaturfelder hinzuzufügen oder sie zu löschen, die Namen von Signaturfeldern in einem PDF-Dokument abzurufen, Signaturfelder zu ändern, PDF-Dokumente digital zu signieren, PDF-Dokumente zu zertifizieren, digitale Signaturen in einem PDF-Dokument zu validieren, alle in einem PDF-Dokument enthaltenen digitalen Signaturen zu validieren oder eine digitale Signatur aus einem Signaturfeld zu entfernen.
-contentOwner: admin
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: operations
 role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 30ed51ad-4f69-41eb-9fca-d29d644aa4ba
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9a11887b6bb8446772e5a41246da1023f40ce507
 workflow-type: tm+mt
-source-wordcount: '16917'
+source-wordcount: '16909'
 ht-degree: 99%
 
 ---
@@ -403,9 +399,9 @@ Um ein Signaturfeld zu ändern, weisen Sie seinem Feldsperre- oder Seed-Wert-Wö
 Die folgenden Seed-Wert-Wörterbuchwerte können festgelegt werden:
 
 * **Sperrprüfung**: Gibt an, ob eine Sperrprüfung durchgeführt wird, wenn eine Signatur auf das Signaturfeld angewendet wird.
-* **Zertifikatoptionen**: Weist dem Seed-Wert-Wörterbuch des Zertifikats Werte zu. Bevor Sie Zertifikatoptionen angeben, sollten Sie sich mit einem Seed-Wert-Wörterbuch des Zertifikats vertraut machen. (Siehe [PDF-Verweis](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf).)
+* **Zertifikatoptionen**: Weist dem Seed-Wert-Wörterbuch des Zertifikats Werte zu. Bevor Sie Zertifikatoptionen angeben, sollten Sie sich mit einem Seed-Wert-Wörterbuch des Zertifikats vertraut machen.
 * **Digest-Optionen**: Weist Digest-Algorithmen zu, die zum Signieren verwendet werden. Gültige Werte sind SHA1, SHA256, SHA384, SHA512 und RIPEMD160.
-* **Filter**: Gibt den Filter an, der mit dem Signaturfeld verwendet wird. Sie können beispielsweise den Adobe.PPKLite-Filter verwenden. (Siehe [PDF-Verweis](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf).)
+* **Filter**: Gibt den Filter an, der mit dem Signaturfeld verwendet wird. Sie können beispielsweise den Filter Adobe.PPKLite verwenden.
 * **Flag-Optionen**: Gibt die Markierungswerte an, die mit diesem Signaturfeld verbunden sind. Ein Wert von 1 bedeutet, dass ein Unterzeichner nur die angegebenen Werte für den Eintrag verwenden darf. Ein Wert von 0 bedeutet, dass andere Werte zulässig sind. Hier sind die Bit-Positionen:
 
    * **1 (Filter):** Der Signatur-Handler, der zum Signieren des Signaturfeldes verwendet werden soll

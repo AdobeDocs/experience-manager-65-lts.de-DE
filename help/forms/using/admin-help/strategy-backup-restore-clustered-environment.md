@@ -1,19 +1,15 @@
 ---
 title: Strategie für Sicherung und Wiederherstellung in einer Cluster-Umgebung
 description: Wenn Ihre AEM Forms-Implementierung zusätzliche benutzerdefinierte Daten in einer anderen Datenbank speichert, müssen Sie eine Strategie implementieren, um diese Daten zu sichern und sicherzustellen, dass sie mit den AEM Forms-Daten synchronisiert bleiben.
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 1b7e0c532ab46346059de01cee4a1adecf3a0a13
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1391'
 ht-degree: 100%
 
 ---
@@ -53,7 +49,7 @@ In diesem Thema werden die folgenden Strategien zum Sichern von AEM Forms-Cluste
    1. Sichern Sie alle Dateien eines beliebigen sekundären Cluster-Knotens, einschließlich der Unterordner.
    1. Sichern Sie Repository/System-ID jedes Clusterknotens separat.
 
-   Ausführliche Anweisungen finden Sie unter [Sichern und Wiederherstellen](https://helpx.adobe.com/de/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   Ausführliche Anweisungen finden Sie unter [Sichern und Wiederherstellen](/help/sites-administering/backup-and-restore.md).
 
 1. Sichern Sie alle anderen Daten, z. B. Kundenschriftarten.
 1. Starten Sie das Cluster erneut.
@@ -72,7 +68,7 @@ In diesem Thema werden die folgenden Strategien zum Sichern von AEM Forms-Cluste
    1. Sichern Sie alle Dateien eines beliebigen sekundären Cluster-Knotens, einschließlich der Unterordner.
    1. Sichern Sie Repository/System.id jedes Clusterknotens separat.
 
-   Ausführliche Anweisungen finden Sie unter [Sichern und Wiederherstellen](https://helpx.adobe.com/de/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   Ausführliche Anweisungen finden Sie unter [Sichern und Wiederherstellen](/help/sites-administering/backup-and-restore.md).
 
 1. Sichern Sie alle anderen Daten, z. B. Kundenschriftarten.
 1. Starten Sie das Cluster erneut.
@@ -178,15 +174,15 @@ Führen Sie die folgenden Schritte aus, wenn der gesamte Cluster aufgrund von Fe
 
 ## Sichern und Wiederherstellen des Veröffentlichungsknotens der Correspondence Management Solution {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-Der Veröffentlichungsknoten hat in einer Cluster-Umgebung keine Primär-/Sekundärbeziehung.. Sie können eine Sicherung eines beliebigen Publish-Knotens mit [Sichern und Wiederherstellen](https://helpx.adobe.com/de/experience-manager/kb/CRXBackupAndRestoreProcedure.html) durchführen.
+Der Veröffentlichungsknoten hat in einer Cluster-Umgebung keine Primär-/Sekundärbeziehung.. Sie können eine Sicherung eines beliebigen Publish-Knotens mit [Sichern und Wiederherstellen](/help/sites-administering/backup-and-restore.md) durchführen.
 
 ### Wiederherstellen eines einzelnen Veröffentlichungsknotens {#recover-a-single-publisher-node}
 
 1. Beenden Sie den Knoten, der wiederhergestellt werden muss, und führen Sie keine Publishing-Aktivität durch, bis der Knoten wieder aktiv ist.
-1. Stellen Sie den Publish-Knoten mithilfe von [Wiederherstellen des Backups](https://helpx.adobe.com/de/experience-manager/kb/CRXBackupAndRestoreProcedure.html) wieder her.
+1. Stellen Sie den Publish-Knoten mithilfe von [Wiederherstellen des Backups](/help/sites-administering/backup-and-restore.md) wieder her.
 
 ### Wiederherstellen eines Clusters {#recover-a-cluster}
 
 1. Beenden Sie den Cluster.
-1. Stellen Sie den Publish-Knoten mithilfe von [Wiederherstellen des Backups](https://helpx.adobe.com/de/experience-manager/kb/CRXBackupAndRestoreProcedure.html) wieder her.
+1. Stellen Sie den Publish-Knoten mithilfe von [Wiederherstellen des Backups](/help/sites-administering/backup-and-restore.md) wieder her.
 1. Starten Sie den primären Knoten und anschließend den sekundären Knoten des Author-Clusters.

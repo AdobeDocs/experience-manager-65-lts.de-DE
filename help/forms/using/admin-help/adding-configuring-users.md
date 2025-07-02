@@ -1,18 +1,16 @@
 ---
 title: Hinzufügen und Konfigurieren von Benutzenden
 description: Mit den Benutzerverwaltungs-Einstellungen in der Administration Console können Sie Benutzende erstellen oder löschen sowie weitere Benutzereinstellungen konfigurieren.
-contentOwner: admin
-geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: b3f8e1d6-3e6e-4b2c-8528-3346bbda3396
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9dcdf84b70a3b0ea6fb332cd2cf8ccf1d4476489
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 99%
+source-wordcount: '1713'
+ht-degree: 100%
 
 ---
 
@@ -40,10 +38,6 @@ Wenn Sie Benutzer bzw. Benutzerinnen erstellen, können Sie diese zu Gruppen hin
 
 1. (Optional) Um dem Benutzer Rollen zuzuweisen, klicken Sie auf **[!UICONTROL Rollen suchen]**, markieren Sie die Kontrollkästchen der zuzuweisenden Rollen und klicken dann auf **[!UICONTROL OK]**.
 1. Klicken Sie auf **[!UICONTROL Beenden]**.
-
-   >[!NOTE]
-   >
-   >Wenn ein Anmeldeproblem auftritt, lesen Sie [AEM Forms on JEE-Benutzeranmeldung schlägt auf AEM Forms on OSGi fehl](https://helpx.adobe.com/de/aem-forms/kb/AEM-users-fails-to-login.html).
 
 ## Benutzereinstellungen {#user-settings}
 
@@ -170,11 +164,11 @@ Wenn eine Benutzerin oder ein Benutzer ohne die erforderlichen Berechtigungen f�
 * Lösung „Correspondence Management“
 * AEM Forms Workspace
 
-  ***Hinweis &#x200B;**: Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.*
+  ***Hinweis **: Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.*
 
 * Forms Manager
 * Prozessberichterstellung
 
 CQ bietet einen Mechanismus zum Außerkraftsetzen der standardmäßigen 404-Handler-JSP.
 
-Detaillierte Informationen zum Anpassen der Seite für den Fehler-Handler finden Sie unter [Anpassen von Seiten, die im Fehler-Handler angezeigt werden](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html?lang=en) in der Dokumentation zu Adobe Experience Manager.
+Detaillierte Informationen zum Anpassen der Seite für den Fehler-Handler finden Sie unter [Anpassen von Seiten, die im Fehler-Handler angezeigt werden](/help/sites-developing/customizing-errorhandler-pages.md) in der Dokumentation zu Adobe Experience Manager.

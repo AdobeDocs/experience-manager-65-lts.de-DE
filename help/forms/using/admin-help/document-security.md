@@ -1,21 +1,16 @@
 ---
 title: Was ist Document Security?
 description: Erfahren Sie, wie Sie mit Document Security vordefinierte Vertraulichkeitseinstellungen mühelos erstellen, speichern und auf Dokumente anwenden.
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5e7fe85e-3c7f-4a37-8f65-5c0ad4bbd66c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 32da9c3f13cb1eba130e96e03ab97617d18e1486
 workflow-type: tm+mt
-source-wordcount: '3219'
-ht-degree: 99%
+source-wordcount: '3218'
+ht-degree: 100%
 
 ---
 
@@ -26,7 +21,7 @@ Document Security stellt sicher, dass nur autorisierte Benutzerinnen und Benutze
 * Adobe PDF-Dateien
 * Microsoft® Word-, Excel- und PowerPoint-Dateien
 
-Weitere Informationen zum Schutz unterstützter Dokumenttypen durch Richtlinien finden Sie unter [Zusätzliche Informationen zu Document Security](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/use-document-security/document-security-offerings.html?lang=en).
+Weitere Informationen zum Schutz unterstützter Dokumenttypen durch Richtlinien finden Sie unter [Zusätzliche Informationen zu Document Security](/help/forms/using/document-security-offerings.md).
 
 Mit Document Security können Sie vordefinierte Vertraulichkeitseinstellungen einfach erstellen, speichern und auf Ihre Dokumente anwenden. Um zu verhindern, dass Informationen über Ihren Einflussbereich hinaus verbreitet werden, können Sie auch überwachen und kontrollieren, wie die Empfängerinnen und Empfänger Ihre Dokumente verwenden, nachdem Sie sie verteilt haben.
 

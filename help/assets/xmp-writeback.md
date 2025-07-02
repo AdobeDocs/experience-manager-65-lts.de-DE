@@ -1,15 +1,14 @@
 ---
 title: XMP-Writeback zu Ausgabedarstellungen
 description: Die Funktion „XMP Writeback“ kopiert die Metadatenänderungen in alle oder nur in bestimmte Ausgabedarstellungen des Assets.
-contentOwner: AG
 role: User, Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e3972784-9ded-4da8-b90c-ec2da9c3297a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 863ec2b6d8a6e22705c2f48a4f7bbb76fa34f7c7
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '780'
 ht-degree: 100%
 
 ---
@@ -19,7 +18,7 @@ ht-degree: 100%
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=de) |
-| AEM 6.5 | Dieser Artikel |
+| AEM 6.5 LTS | Dieser Artikel |
 
 Die XMP-Writeback-Funktion in [!DNL Adobe Experience Manager Assets] repliziert Änderungen von Metadaten in den Ausgabedarstellungen des Original-Assets. Wenn Sie die Metadaten für ein Asset aus Assets heraus ändern oder das Asset hochladen, werden die Änderungen zuerst im Metadaten-Knoten in der Asset-Hierarchie gespeichert.
 
@@ -69,8 +68,6 @@ Führen Sie folgende Schritte aus, damit die Funktion „XMP Writeback“ Metada
 Die Metadatenänderungen werden in die Ausgabeformate „thumbnail.140.100.png“ und „thumbnail.319.319.png“ des Elements und nicht auf die anderen Ausgabeformate übertragen.
 
 >[!NOTE]
->
->Informationen zu Problemen bezüglich XMP-Writeback unter 64-Bit-Linux finden Sie unter [XMP-Writeback unter 64-Bit-RedHat Linux aktivieren](https://helpx.adobe.com/de/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 >
 >Informationen zu den unterstützten Plattformen finden Sie unter [Voraussetzungen für XMP-Metadaten-Writeback](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 

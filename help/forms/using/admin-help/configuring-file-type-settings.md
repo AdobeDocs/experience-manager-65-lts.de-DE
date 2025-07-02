@@ -10,10 +10,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9d4681c0b184cc7769a8da20a4c50d420e1137c7
 workflow-type: tm+mt
-source-wordcount: '6200'
-ht-degree: 100%
+source-wordcount: '6185'
+ht-degree: 99%
 
 ---
 
@@ -88,7 +88,7 @@ Erstellen oder bearbeiten Sie eine Dateitypeinstellung, um anzugeben, wie das Pr
 
 1. Klicken Sie nach dem Eingeben der Informationen in alle Abschnitte auf **[!UICONTROL Speichern]** oder **[!UICONTROL Speichern unter]** und geben Sie einen Namen für die Einstellung ein.
 
-Die Unterstützung verschiedener Dateitypen kann angepasst werden. (Siehe [Hinzufügen der Unterstützung für weitere native Dateiformate](https://help.adobe.com/de_DE/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html) in [Programmieren mit AEM Forms).](https://www.adobe.com/go/learn_lc_programming_11_de)
+Die Unterstützung verschiedener Dateitypen kann angepasst werden.
 
 ## Ändern der Standardeinstellungen {#change-the-default-settings}
 

@@ -1,16 +1,15 @@
 ---
 title: Unterstützte Dateiformate und MIME-Typen
 description: Von  [!DNL Assets] und [!DNL Dynamic Media] unterstützte Dateiformate und MIME-Typen und die für die jeweiligen Formate unterstützten Funktionen.
-contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e48f7950-1b6e-4896-8abc-523552e42ed9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2a328b703d691a23ca46a4171624a4184a8392dd
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1554'
 ht-degree: 100%
 
 ---
@@ -105,7 +104,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt:
 | DOCX | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
 | ODT | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| HTML | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| HTML  | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
 | RTF | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
 | TXT | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
 | XLS | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
@@ -285,7 +284,7 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 | PICT | ✓ | − | − | − | − | − |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Drehung](/help/assets/spin-sets.md) |
 | PSD ‡ | ✓ | − | − | − | − | − |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Drehung](/help/assets/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Spin](/help/assets/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
 
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
@@ -301,8 +300,6 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 ## Dynamic Media – Nicht unterstützte Rasterbildformate {#unsupported-image-formats-dynamic-media}
 
 Die folgende Liste beschreibt die Untertypen von Rasterbild-Dateiformaten, die nicht *in Dynamic Media unterstützt werden*.
-
-Siehe auch den Artikel [Erkennung nicht unterstützter Dateiformate für Dynamic Media](https://helpx.adobe.com/de/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html) in der Wissensdatenbank.
 
 * PNG-Dateien mit einer IDAT-Blockgröße größer als 100 MB.
 * PSB-Dateien.
