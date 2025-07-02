@@ -9,7 +9,7 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7da165ac-2039-4ac8-810d-fbe6f771453a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: c03b3e3e4526530715718b68804ac26d2562bdb8
 workflow-type: tm+mt
 source-wordcount: '2372'
 ht-degree: 100%
@@ -31,7 +31,7 @@ Adaptive Formulare bieten einen praktischen Mechanismus, mit dem Formularsegment
 
 >[!NOTE]
 >
-> Mit dem [Konfigurationsdialogfeld und dem Design-Dialogfeld der Formularfragment-Komponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html?lang=de) können Sie Ihre Fragmente ganz einfach an die Bedürfnisse der Benutzenden anpassen.
+> Mit dem [Konfigurationsdialogfeld und dem Design-Dialogfeld der Formularfragment-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment) können Sie Ihre Fragmente ganz einfach an die Bedürfnisse der Benutzenden anpassen.
 
 ## Erstellen eines Fragments {#create-a-fragment}
 

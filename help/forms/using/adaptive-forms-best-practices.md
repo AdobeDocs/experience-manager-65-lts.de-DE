@@ -1,15 +1,12 @@
 ---
 title: Best Practices für die Arbeit mit adaptiven Formularen
 description: Das Dokument erläutert bewährte Verfahren zur Einrichtung eines AEM Forms-Projekts, zur Entwicklung adaptiver Formulare und zur Optimierung der Leistung für AEM Forms-Systeme.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: author
-feature: Adaptive Forms,Foundation Components,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: b87629fa-85a9-4024-963a-4761bc093e62
-source-git-commit: fef6317a0faf8d7324a83a36a3b441bbda66f970
+source-git-commit: d0529c8bce32e192cbbc7686f14825df57762363
 workflow-type: tm+mt
-source-wordcount: '5536'
+source-wordcount: '5535'
 ht-degree: 99%
 
 ---
@@ -99,7 +96,7 @@ Weitere Informationen finden Sie unter [Erstellen eines adaptiven Formulars](/he
 
 ### Erstellen von Formularvorlagen
 
-Sie können ein adaptives Formular mithilfe der in **Konfigurations-Browser** aktivierten Formularvorlagen erstellen. Informationen zum Aktivieren der Formularvorlagen finden Sie unter [Erstellen einer adaptiven Formularvorlage](https://experienceleague.adobe.com/de/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
+Sie können ein adaptives Formular mithilfe der in **Konfigurations-Browser** aktivierten Formularvorlagen erstellen. Informationen zum Aktivieren der Formularvorlagen finden Sie unter [Erstellen einer adaptiven Formularvorlage](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
 
 Die Formularvorlagen können auch aus Paketen mit adaptiven Formularen, die auf einem anderen Autoren-Computer erstellt werden, hochgeladen werden. Formularvorlagen werden durch die Installation von [aemforms-references-* packages](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) verfügbar gemacht. Zu den empfohlenen Best Practices gehören:
 
@@ -328,8 +325,8 @@ Einige Best Practices zum Konfigurieren von AEM für eine bessere Gesamtleistung
 * Speichern Sie keine `/content/forms/af/`- und `/content/dam/formsanddocuments/*`-Pfade im Cache. Detaillierte Informationen zum Konfigurieren der Zwischenspeicherung adaptiver Formulare finden Sie unter [Zwischenspeichern adaptiver Formulare](/help/forms/using/configure-adaptive-forms-cache.md).
 
 * Aktivieren Sie HTML über das Webserver-Komprimierungsmodul. Weitere Informationen finden Sie im Abschnitt [Leistungsoptimierung des AEM Forms-Servers](/help/forms/using/performance-tuning-aem-forms.md).
-* Erhöhen Sie die Aufrufe per Anfragekonfiguration für große Formulare. Siehe [Optimieren der Leistung von großen und komplexen Formularen](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms).
-* Erstellen Sie [benutzerdefinierte, vom Fehler-Handler angezeigte Fehlerseiten](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html).
+* Erhöhen Sie die Aufrufe per Anfragekonfiguration für große Formulare. Siehe [Optimieren der Leistung von großen und komplexen Formularen](#optimizing-performance-of-large-and-complex-forms).
+* Erstellen Sie [benutzerdefinierte, vom Fehler-Handler angezeigte Fehlerseiten](/help/sites-developing/customizing-errorhandler-pages.md).
 * Sichere AEM Forms-Server.
 
    * Verwenden Sie `nosamplecontent`-Laufzeitmodus unter, um sicherzustellen, dass die Anwendung keine Beispielinhalte und Beispielbenutzer enthält, die auf dem Produktionsserver bereitgestellt werden. Siehe [Ausführen von AEM im produktionsfertigen Modus](/help/sites-administering/production-ready.md).
@@ -366,11 +363,11 @@ Eine der größten Herausforderungen für Unternehmen besteht im Umgang mit pers
 
 Der AEM Forms-Regeleditor bietet eine visuelle Benutzeroberfläche zum Erstellen und Verwalten von Regeln, wodurch sich der Programmieraufwand deutlich reduziert. Dies kann insbesondere für Business-Anwenderinnen und Business-Anwender oder Formularentwicklerinnen und Formularentwickler nützlich sein, die möglicherweise keine größeren Programmierkenntnisse besitzen, aber Geschäftsregeln in den Formularen definieren und verwalten müssen. Hier werden einige Anwendungsfälle besprochen, in denen der Regeleditor Folgendes ermöglicht:
 
-* &#x200B;<!-- Allows you --> Definieren von Geschäftsregeln für Ihre Formulare, ohne dass eine umfangreiche Programmierung erforderlich ist.
-* &#x200B;<!-- Use the Rule Editor when you need --> Implementieren von Bedingungslogik in Ihren Formularen. Dazu gehören das Ein- oder Ausblenden von Formularelementen, das Ändern von Feldwerten basierend auf bestimmten Bedingungen oder das dynamische Ändern des Verhaltens Ihrer Formulare.
-* &#x200B;<!--When you want --> Durchsetzen von Datenvalidierungsregeln bei Formularübermittlungen. Der Regeleditor kann hier zum Definieren von Validierungsbedingungen verwendet werden.
-* &#x200B;<!-- When you need --> Integrieren Ihrer Formulare in externe Datenquellen (Formulardatenmodell) oder Dienste. Der Regeleditor kann hier beim Definieren von Regeln zum Abrufen, Anzeigen oder Bearbeiten von Daten während Formularinteraktionen helfen.
-* &#x200B;<!-- If you want -->Erstellen dynamischer und interaktiver Formulare, die auf Benutzeraktionen reagieren. Mit dem Regeleditor können Sie hier Regeln definieren, die das Verhalten von Formularelementen in Echtzeit steuern.
+* <!-- Allows you --> Definieren von Geschäftsregeln für Ihre Formulare, ohne dass eine umfangreiche Programmierung erforderlich ist.
+* <!-- Use the Rule Editor when you need --> Implementieren von Bedingungslogik in Ihren Formularen. Dazu gehören das Ein- oder Ausblenden von Formularelementen, das Ändern von Feldwerten basierend auf bestimmten Bedingungen oder das dynamische Ändern des Verhaltens Ihrer Formulare.
+* <!--When you want --> Durchsetzen von Datenvalidierungsregeln bei Formularübermittlungen. Der Regeleditor kann hier zum Definieren von Validierungsbedingungen verwendet werden.
+* <!-- When you need --> Integrieren Ihrer Formulare in externe Datenquellen (Formulardatenmodell) oder Dienste. Der Regeleditor kann hier beim Definieren von Regeln zum Abrufen, Anzeigen oder Bearbeiten von Daten während Formularinteraktionen helfen.
+* <!-- If you want -->Erstellen dynamischer und interaktiver Formulare, die auf Benutzeraktionen reagieren. Mit dem Regeleditor können Sie hier Regeln definieren, die das Verhalten von Formularelementen in Echtzeit steuern.
 
 Der Regeleditor ist sowohl für Foundation-Komponenten als auch für Kernkomponenten von AEM Forms verfügbar.
 

@@ -1,16 +1,13 @@
 ---
 title: Dokumentfragmente in AEM
 description: Dokumentfragmente wie Text, Listen, Bedingungen und Layout-Fragmente ermöglichen es Ihnen in Correspondence Management, die statischen, dynamischen und wiederholbaren Komponenten der Kundenkorrespondenz zu bilden.
-topic-tags: correspondence-management
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ece49f03-e711-439f-9c2d-6308fe2998ae
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4f2374a48687d39f7d365e09d9055edf583e2c20
 workflow-type: tm+mt
-source-wordcount: '6905'
+source-wordcount: '6895'
 ht-degree: 100%
 
 ---
@@ -91,10 +88,6 @@ Die Lösung „Correspondence Management“ unterstützt zwei Arten von dynamisc
    Sie können den Text direkt aus dem MS Word-Dokument in ein bearbeitbares Textmodul kopieren. Die Formatierung (wie Liste mit Aufzählungszeichen, Schriftart und Textfarbe) wird im Textmodul beibehalten.
 
    ![pastetexttextmodule](assets/pastetexttextmodule.png)
-
-   >[!NOTE]
-   >
-   >Die Formatierung des eingefügten Textes hat jedoch einige[ Einschränkungen](https://helpx.adobe.com/de/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
 1. Fügen Sie bei Bedarf Sonderzeichen in das Dokumentfragment ein. Beispielsweise können Sie über die Sonderzeichenpalette die folgenden Zeichen einfügen:
 

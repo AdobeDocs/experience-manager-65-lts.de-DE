@@ -1,18 +1,15 @@
 ---
 title: Aktivieren von AEM, um durch Document Security geschützte PDF-Dokumente zu durchsuchen
 description: Erfahren Sie, wie Sie die native AEM-Suche aktivieren, um eine Volltextsuche in DRM-geschützten PDF-Dokumenten durchzuführen.
-content-type: reference
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 noindex: true
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5e9d3f3c-8fc4-4d01-9f1e-62d3c29ab9e5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: cd6caaf9de907488db14df2a6396fa60efa2d42c
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 100%
+source-wordcount: '664'
+ht-degree: 98%
 
 ---
 
@@ -49,7 +46,7 @@ Eine sichere Verbindung ermöglicht den nahtlosen Informationsfluss zwischen AE
 
 ### Konfigurieren von AEM Forms Client SDK Bundle mit gegenseitiger Authentifizierung  {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
 
-1. Aktivieren Sie die gegenseitige Authentifizierung für AEM Forms auf JEE.  Weitere Informationen finden Sie unter [CAC und gegenseitige Authentifizierung](https://helpx.adobe.com/de/livecycle/kb/cac-mutual-authentication.html).
+1. Aktivieren der gegenseitigen Authentifizierung für AEM Forms on JEE.
 1. Öffnen Sie AEM Configuration Manager und melden Sie sich als Admin an.  Die Standard-URL lautet https://&lt;serverName>:&lt;port>/lc/system/console/configMgr.
 1. Öffnen Sie das AEM Forms Client SDK Bundle.  Geben Sie Werte für die folgenden Eigenschaften an:
 

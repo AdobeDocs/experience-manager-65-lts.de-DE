@@ -7,7 +7,7 @@ feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, Developer
 exl-id: 708a4ab2-ca66-445d-8d69-bcf12fd5158a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3239416a53382a9f683f90dacd91b40ac20e9f50
 workflow-type: tm+mt
 source-wordcount: '1840'
 ht-degree: 100%
@@ -31,7 +31,7 @@ Sie können ein Fragment mehrmals zu einem Dokument hinzufügen und die Datenbin
 
 >[!NOTE]
 >
-> Mit dem [Konfigurationsdialogfeld und dem Design-Dialogfeld der Formularfragment-Komponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html?lang=de) können Sie Ihre Fragmente ganz einfach an die Bedürfnisse der Benutzenden anpassen.
+> Mit dem [Konfigurationsdialogfeld und dem Design-Dialogfeld der Formularfragment-Komponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment) können Sie Ihre Fragmente ganz einfach an die Bedürfnisse der Benutzenden anpassen.
 
 
 ## Erstellen eines Formularfragments {#create-a-fragment}

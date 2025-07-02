@@ -6,10 +6,10 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: a163598d-0a6e-45a8-b3b2-1f260007952b
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: f21858421f2e84643fab1add5116b033cb6dd122
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 99%
+source-wordcount: '956'
+ht-degree: 98%
 
 ---
 
@@ -30,9 +30,7 @@ Dieser Artikel enthält detaillierte Anweisungen zum Einrichten und Bereitstelle
 
 ## Voraussetzungen {#prerequisites}
 
-Vor der Aktivierung von Kernkomponenten für adaptive Formulare in der AEM 6.5 Forms-Umgebung:
-
-* [Nehmen Sie ein Upgrade auf AEM 6.5 Forms Service Pack 16 (6.5.16.0) oder höher vor](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html).
+Vor der Aktivierung der Kernkomponenten von Adaptive Forms in einer AEM 6.5 LTS Forms-Umgebung:
 
 * Installieren Sie die neueste Version von [Apache Maven](https://maven.apache.org/download.cgi).
 

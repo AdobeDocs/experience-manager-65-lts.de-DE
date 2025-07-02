@@ -1,16 +1,13 @@
 ---
 title: Texte in interaktiver Kommunikation
 description: 'Erstellen und Bearbeiten von Textdokumentfragmenten für interaktive Kommunikationen: Text ist eine der vier Arten von Dokumentfragmenten, die zum Erstellen von interaktive Kommunikationen verwendet werden. Die anderen drei sind Bedingungen, Listen und Layout-Fragmente.'
-topic-tags: interactive-communications
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: ca18b9f4-9d06-4b15-81dd-68a6821e2e3e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 6db207b08535c063e41b333054561036481e8db9
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2464'
 ht-degree: 100%
 
 ---
@@ -238,10 +235,6 @@ Sie können Textabsätze in ein bearbeitbares Textdokumentfragment kopieren. Bei
 Sie können den Text direkt aus dem Microsoft® Word-Dokument in ein bearbeitbares Textdokumentfragment kopieren. Die Formatierung wie Aufzählungsliste, Schriftart oder Textfarbe bleibt im Textdokumentfragment erhalten.
 
 ![pastetexteditablemodule-1](assets/pastetexteditablemodule-1.png)
-
->[!NOTE]
->
->Die Formatierung des eingefügten Textes hat jedoch einige[ Einschränkungen](https://helpx.adobe.com/de/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
 ## Einfügen von Sonderzeichen in Text {#special}
 
