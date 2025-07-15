@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
+source-git-commit: 2c2e8defbaab13a31beeb7c6978af5da19535e70
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 34%
+source-wordcount: '1074'
+ht-degree: 32%
 
 ---
 
@@ -130,18 +130,21 @@ Zur Lösung dieses Problems ist ein [ (cq-6.5.lts.0-hotfix-NPR-42640](https://ex
 
 ### Dispatcher-Verbindungsfehler mit Funktion „Nur SSL“ {#ssl-only-feature}
 
-Bei der Aktivierung der Funktion „Nur SSL“ in AEM-Bereitstellungen gibt es ein bekanntes Problem, das die Verbindung zwischen der Dispatcher- und der AEM-Instanz beeinträchtigt. Nach Aktivierung dieser Funktion können Konsistenzprüfungen fehlschlagen und die Kommunikation zwischen Dispatcher- und AEM-Instanzen kann unterbrochen werden.
+Bei der Aktivierung der Funktion „Nur SSL“ in AEM-Bereitstellungen gibt es ein bekanntes Problem, das die Verbindung zwischen der Dispatcher- und der AEM-Instanz beeinträchtigt. Nach Aktivierung dieser Funktion können Konsistenzprüfungen fehlschlagen und die Kommunikation zwischen Dispatcher- und AEM-Instanzen kann unterbrochen werden. Dieses Problem tritt insbesondere auf, wenn Kundinnen und Kunden versuchen, eine Verbindung über `https + IP` von der Dispatcher zu AEM-Instanzen herzustellen, und steht im Zusammenhang mit SNI-Validierungsproblemen (Server Name Indication).
 
 **Impact:**
 
-* Systemdiagnosefehler mit HTTP 500-Antwort-Codes
+* Systemdiagnosefehler mit HTTP 400-Antwort-Codes
 * Beschädigter Traffic zwischen Dispatcher- und AEM-Instanzen
 * Inhalte können nicht ordnungsgemäß über die Dispatcher bereitgestellt werden
+* Verbindungsfehler bei Verwendung von HTTPS mit IP-Adressen in der Dispatcher-Konfiguration
+* HTTP 400 „Ungültige SNI“-Fehler bei der Verbindung über HTTPS + IP
 
 **Betroffene Umgebungen:**
 
 * AEM-Bereitstellungen mit Dispatcher-Konfigurationen
 * Systeme, bei denen die Funktion „Nur SSL“ aktiviert wurde
+* Dispatcher-Konfigurationen mit `https + IP` Verbindungsmethode zu AEM-Instanzen
 
 **Lösung:**
 Wenn dieses Problem auftritt, wenden Sie sich an den Adobe-Support. Zur Lösung dieses Problems ist ein [ (cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip)) verfügbar. Versuchen Sie nicht, nur SSL-Funktionen zu aktivieren, bis Sie den erforderlichen Hotfix angewendet haben.
