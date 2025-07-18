@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '2918'
-ht-degree: 100%
+source-wordcount: '2919'
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ Wenn eine Benutzerin oder ein Benutzer zum ersten Mal auf eine Konsole zugreift,
 
 Klicken Sie auf **Weiter**, um zur nächsten Seite des Überblicks zu wechseln. Klicken Sie zum Schließen auf **Schließen** oder auf eine beliebige Stelle außerhalb des Dialogfelds „Überblick“.
 
-Der Überblick wird bei Ihrem nächsten Zugriff auf eine Konsole wieder gestartet, es sei denn, Sie haben alle Folien angesehen oder die Option **Nicht mehr anzeigen** aktiviert.
+Der Überblick wird bei Ihrem nächsten Zugriff auf eine Konsole neu gestartet, es sei denn, Sie haben alle Folien angesehen oder die Option **Nicht mehr anzeigen** aktiviert.
 
 ## Globale Navigation {#global-navigation}
 
@@ -558,13 +558,14 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
 **Verweise** zeigen Verbindungen zur ausgewählten Ressource an. In der **Sites**-Konsole wird zum Beispiel folgendes für [Verweise](/help/sites-authoring/author-environment-tools.md#showingpagereferences) für Seiten angezeigt:
 
+* [Blueprints](/help/sites-administering/msm.md)
 * [Launches](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live Copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [Sprachkopien](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Inhaltsverweise:
 
-   * Links von anderen Seiten zur ausgewählten Seite
-   * Inhalte, die von der Referenzkomponente an die ausgewählte Seite geliehen oder verliehen wurden, oder beides.
+   * Direkte Links von anderen Seiten zur ausgewählten Seite
+   * Inhalte, die von der Referenzkomponente der ausgewählten Seite geliehen, verliehen oder beidem hinzugefügt wurden
 
 ![bh-28](assets/bh-28.png)
 

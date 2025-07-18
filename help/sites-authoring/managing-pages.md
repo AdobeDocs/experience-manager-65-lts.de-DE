@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '2416'
-ht-degree: 99%
+source-wordcount: '2476'
+ht-degree: 96%
 
 ---
 
@@ -187,7 +187,7 @@ Sobald Sie eine Seite erstellt und geöffnet haben, können Sie [Inhalte mithilf
 
 Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstellen, bevor Sie mit der Erstellung von Inhalten beginnen können:
 
-1. Öffnen Sie die Sites-Konsole, (z. B. [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content).).
+1. Öffnen Sie die Sites-Konsole (z. B. [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
 1. Navigieren Sie zum Speicherort, an dem Sie die neue Seite erstellen möchten.
 1. Öffnen Sie das Dropdown-Menü über **Erstellen** in der Symbolleiste und wählen Sie **Seite** aus der Liste aus:
 
@@ -326,7 +326,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
    Dadurch wird der Assistent zum Verschieben von Seiten geöffnet.
 
-1. Im Schritt **Umbenennung** des Assistenten haben Sie folgende Möglichkeiten:
+1. Der Schritt **Umbenennen** des Assistenten liefert **Informationen** zur Seite einschließlich Erstellungsdatum, Pfad und Anzahl der direkten Verweise. Von hier aus haben Sie folgende Möglichkeiten:
 
    * Geben Sie den Namen an, den die Seite nach dem Verschieben aufweisen soll, und klicken Sie dann auf **Weiter**, um den Vorgang fortzusetzen.
 
@@ -365,7 +365,8 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
    >[!NOTE]
    >
-   >Wenn die Seite weder verknüpft ist noch darauf verwiesen wurde, ist dieser Schritt nicht verfügbar.
+   >* Wenn die Seite weder verknüpft ist noch darauf verwiesen wurde, ist dieser Schritt nicht verfügbar.
+   >* Dieser Schritt listet sowohl direkte als auch indirekte Referenzen auf. Dies kann sich von der Menge unterscheiden, die im **Umbenennen** des Assistenten sowie von den in der Leiste „Verweise“ gemeldeten Verweisen gemeldet wird, die beide aus Leistungsgründen nur direkte Verweise melden.
 
    ![caop-09](assets/caop-09.png)
 
