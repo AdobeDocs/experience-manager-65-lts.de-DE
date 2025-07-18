@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 34678cae-3c7f-4c9f-b7b6-c1dd4e0758ad
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 100%
+source-wordcount: '1072'
+ht-degree: 97%
 
 ---
+
 
 # Best Practices für E-Mail-Vorlagen {#best-practices-for-email-templates}
 
@@ -45,7 +47,7 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
 
 >[!NOTE]
 >
->Wenn Sie eine E-Mail-Vorlage für Adobe Campaign erstellen, müssen Sie die Eigenschaft **acMapping** mit dem Wert **mapRecipient** in den Knoten **jcr:content** der Vorlage aufnehmen. Wenn Sie dies nicht tun, können Sie die Adobe Campaign-Vorlage in **Seiteneigenschaften** von Experience Manager nicht auswählen (das Feld ist deaktiviert).
+>Beim Erstellen einer E-Mail-Vorlage für Adobe Campaign müssen Sie die Eigenschaft **acMapping** mit dem Wert **mapRecipient** im **jcr:content** der Vorlage einbeziehen. Wenn Sie dies nicht tun, können Sie die Adobe Campaign-Vorlage in **Seiteneigenschaften** von Experience Manager nicht auswählen (das Feld ist deaktiviert).
 
 ## Vorlage/Seitenkomponente {#template-page-component}
 
