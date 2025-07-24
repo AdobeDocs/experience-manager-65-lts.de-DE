@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: d69e5dccb5583ad310a52128e4bd534fc90cd186
 workflow-type: tm+mt
-source-wordcount: '2960'
+source-wordcount: '2970'
 ht-degree: 94%
 
 ---
@@ -95,7 +95,7 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen der Java™ Vi
 | IBM® Semeru J9 VM - Build 17.0.13.0 | A: Unterstützt `[2]` |
 | IBM® Semeru J9 VM - Build 21.0.6.0 | A: Unterstützt `[2]` |
 
-1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14, Java™ 15m Java™ 16 sind Nicht-LTS-Versionen von Oracle (siehe Roadmap für den Oracle Java™ SE-Support[&#128279;](https://www.oracle.com/technetwork/java/eol-135779.html)).  Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java™. Der Support und die Bereitstellung des Oracle Java™ SE JDK, einschließlich aller Wartungsupdates von LTS-Versionen, werden von Adobe direkt für alle AEM-Kundinnen und -Kunden unterstützt, die die Oracle Java™ SE-Technologie nutzen. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14, Java™ 15m Java™ 16 sind Nicht-LTS-Versionen von Oracle (siehe Roadmap für den Oracle Java™ SE-Support[). ](https://www.oracle.com/technetwork/java/eol-135779.html) Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java™. Der Support und die Bereitstellung des Oracle Java™ SE JDK, einschließlich aller Wartungsupdates von LTS-Versionen, werden von Adobe direkt für alle AEM-Kundinnen und -Kunden unterstützt, die die Oracle Java™ SE-Technologie nutzen. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
    **Diese Version unterstützt Oracle Java™ 17 und Oracle Java™ 21.**
 
 1. Die IBM® JRE wird nur zusammen mit WebSphere Application Server unterstützt.
@@ -111,7 +111,9 @@ Es gibt verschiedene Optionen zum Bereitstellen des Repositorys von Adobe Experi
 | Speichern von Binärdateien in TAR-Dateien im Dateisystem `[1]` | Binärdateien | Z: Wird nicht für die Produktion unterstützt |
 | Amazon S3 | Binärdateien | A: Unterstützt |
 | Microsoft® Azure Blob Storage | Binärdateien | A: Unterstützt |
-| MongoDB Enterprise 6.0 und 7.0 | Repository | A: Unterstützt `[3, 4]` |
+| MongoDB Enterprise 8.0 | Repository | A: Unterstützt `[3, 4]` |
+| MongoDB Enterprise 7.0 | Repository | A: Unterstützt `[3, 4]` |
+| MongoDB Enterprise 6.0 | Repository | A: Unterstützt `[3, 4]` |
 | **Apache Lucene (Schnellstart integriert)** | Suchdienst | A: Unterstützt |
 
 1. „Dateisystem“ umfasst den POSIX-konformen Blockspeicher. Dazu gehört auch die Netzwerkspeichertechnologie. Beachten Sie, dass die Leistung des Dateisystems variieren und die Gesamtleistung beeinflussen kann. Führen Sie Lasttests für AEM mit dem Netzwerk-/Remote-Dateisystem durch.
