@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: d69e5dccb5583ad310a52128e4bd534fc90cd186
+source-git-commit: 925a53bbf8a8ec28a8b3e5000bf83437ab18f513
 workflow-type: tm+mt
 source-wordcount: '2970'
 ht-degree: 94%
@@ -111,9 +111,9 @@ Es gibt verschiedene Optionen zum Bereitstellen des Repositorys von Adobe Experi
 | Speichern von Binärdateien in TAR-Dateien im Dateisystem `[1]` | Binärdateien | Z: Wird nicht für die Produktion unterstützt |
 | Amazon S3 | Binärdateien | A: Unterstützt |
 | Microsoft® Azure Blob Storage | Binärdateien | A: Unterstützt |
-| MongoDB Enterprise 8.0 | Repository | A: Unterstützt `[3, 4]` |
-| MongoDB Enterprise 7.0 | Repository | A: Unterstützt `[3, 4]` |
-| MongoDB Enterprise 6.0 | Repository | A: Unterstützt `[3, 4]` |
+| MongoDB Enterprise 8.0 | Repository | A: Unterstützt `[2, 3]` |
+| MongoDB Enterprise 7.0 | Repository | A: Unterstützt `[2, 3]` |
+| MongoDB Enterprise 6.0 | Repository | A: Unterstützt `[2, 3]` |
 | **Apache Lucene (Schnellstart integriert)** | Suchdienst | A: Unterstützt |
 
 1. „Dateisystem“ umfasst den POSIX-konformen Blockspeicher. Dazu gehört auch die Netzwerkspeichertechnologie. Beachten Sie, dass die Leistung des Dateisystems variieren und die Gesamtleistung beeinflussen kann. Führen Sie Lasttests für AEM mit dem Netzwerk-/Remote-Dateisystem durch.
