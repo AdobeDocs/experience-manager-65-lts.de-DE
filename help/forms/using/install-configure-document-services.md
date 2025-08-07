@@ -6,9 +6,9 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: 2534fb5af913603b69597e7be713156b427a1094
+source-git-commit: 29b6cd70a59e3a90cd081ba09c98bd015a7426fc
 workflow-type: tm+mt
-source-wordcount: '10213'
+source-wordcount: '10247'
 ht-degree: 56%
 
 ---
@@ -243,6 +243,12 @@ Der Installationsprozess für die Installation von Adobe Acrobat Pro DC für Mic
 * **Lizenztyp**: Einzelhandels- oder Volumenlizenz
 * **Bereitstellungstyp**: Ein Benutzer oder mehrere Benutzer
 
+>[!VIDEO](https://video.tv.adobe.com/v/3469669)
+
+>[!NOTE]
+>
+>Das Video zeigt den Installationsprozess für eine Einzelhandelslizenz - Konfiguration für einen einzelnen Benutzer. Für andere Bereitstellungsszenarien (Einzelhandel - Mehrere Benutzer, Volumenlizenz - Einzelbenutzer oder Volumenlizenz - Mehrere Benutzer) verwenden Sie die spezifischen Anweisungen von Schritt 9 auf den entsprechenden Registerkarten unten, um einen ordnungsgemäßen Serverstart und eine ordnungsgemäße Lizenzaktivierung für Ihren Bereitstellungstyp sicherzustellen.
+
 Jede Registerkarte enthält maßgeschneiderte Anweisungen, die für Ihr spezifisches Setup optimiert sind. So vermeiden Sie Konfigurationsprobleme und stellen eine ordnungsgemäße Lizenzierung sicher.
 
 >[!BEGINTABS]
@@ -311,7 +317,7 @@ Greifen Sie mithilfe der entsprechenden -Methode auf den Server zu, auf dem AEM 
 
 1. Öffnen Sie die Windows-Systemsteuerung.
 2. Navigieren Sie zu **Einstellungen** und öffnen Sie **Apps**.
-3. Adobe Acrobat Suchen Sie **&#x200B;**&#x200B;in der Liste der installierten Programme
+3. Adobe Acrobat Suchen Sie **** in der Liste der installierten Programme
 4. Wählen Sie **Deinstallieren** und befolgen Sie die Anweisungen, um die Anwendung zu entfernen. Starten Sie bei Aufforderung den Server neu
 5. Stellen Sie sicher, dass alle klassischen Versionen des Programms deinstalliert sind. Verwenden Sie das [Adobe Acrobat Cleaner-Tool](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) falls erforderlich, um eine vollständige Entfernung durchzuführen.
 
@@ -461,7 +467,7 @@ Greifen Sie mithilfe der entsprechenden -Methode auf den Server zu, auf dem AEM 
 
 1. Öffnen Sie die Windows-Systemsteuerung.
 2. Navigieren Sie zu **Einstellungen** und öffnen Sie **Apps**.
-3. Adobe Acrobat Suchen Sie **&#x200B;**&#x200B;in der Liste der installierten Programme
+3. Adobe Acrobat Suchen Sie **** in der Liste der installierten Programme
 4. Wählen Sie **Deinstallieren** und befolgen Sie die Anweisungen, um die Anwendung zu entfernen. Starten Sie bei Aufforderung den Server neu
 5. Stellen Sie sicher, dass alle klassischen Versionen des Programms deinstalliert sind. Verwenden Sie das [Adobe Acrobat Cleaner-Tool](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) falls erforderlich, um eine vollständige Entfernung durchzuführen.
 
@@ -617,7 +623,7 @@ Greifen Sie mithilfe der entsprechenden -Methode auf den Server zu, auf dem AEM 
 
 1. Öffnen Sie die Windows-Systemsteuerung.
 2. Navigieren Sie zu **Einstellungen** und öffnen Sie **Apps**.
-3. Adobe Acrobat Suchen Sie **&#x200B;**&#x200B;in der Liste der installierten Programme
+3. Adobe Acrobat Suchen Sie **** in der Liste der installierten Programme
 4. Wählen Sie **Deinstallieren** und befolgen Sie die Anweisungen, um die Anwendung zu entfernen. Starten Sie bei Aufforderung den Server neu
 5. Stellen Sie sicher, dass alle klassischen Versionen des Programms deinstalliert sind. Verwenden Sie das [Adobe Acrobat Cleaner-Tool](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) falls erforderlich, um eine vollständige Entfernung durchzuführen.
 
@@ -692,7 +698,7 @@ Nachdem Sie die vorherige Version deinstalliert haben, müssen Sie eine kompatib
 Führen Sie nach Abschluss aller Prozesse einen Schnellaktionstest durch, um zu bestätigen, dass die Installation gültig ist:
 
 1. Verwenden Sie Remote Desktop (RDP), um sich beim -Server anzumelden und den AEM Forms-Server mithilfe von Services zu starten.
-2. Verwenden Sie Remotedesktop (RDP), um sich beim Server anzumelden und den AEM Forms-Server mit Windows-Diensten zu starten. Sobald der Server ausgeführt wird, schließen Sie nicht einfach das RDP-Fenster. Melden Sie sich stattdessen ordnungsgemäß ab, indem Sie sich vom Benutzer abmelden. Dadurch wird sichergestellt, dass die Sitzung sauber endet, während der Service im Hintergrund weiter ausgeführt wird.
+2. Sobald der Server ausgeführt wird, schließen Sie nicht einfach das RDP-Fenster. Melden Sie sich stattdessen ordnungsgemäß ab, indem Sie sich vom Benutzer abmelden. Dadurch wird sichergestellt, dass die Sitzung sauber endet, während der Service im Hintergrund weiter ausgeführt wird.
 
 ###### Schritt 10: Testen des PDF Generator-Service
 
@@ -774,7 +780,7 @@ Greifen Sie mithilfe der entsprechenden -Methode auf den Server zu, auf dem AEM 
 
 1. Öffnen Sie die Windows-Systemsteuerung.
 2. Navigieren Sie zu **Einstellungen** und öffnen Sie **Apps**.
-3. Adobe Acrobat Suchen Sie **&#x200B;**&#x200B;in der Liste der installierten Programme
+3. Adobe Acrobat Suchen Sie **** in der Liste der installierten Programme
 4. Wählen Sie **Deinstallieren** und befolgen Sie die Anweisungen, um die Anwendung zu entfernen. Starten Sie bei Aufforderung den Server neu
 5. Stellen Sie sicher, dass alle klassischen Versionen des Programms deinstalliert sind. Verwenden Sie das [Adobe Acrobat Cleaner-Tool](https://helpx.adobe.com/acrobat/kb/remove-reader-dc-acrobat-dc.html) falls erforderlich, um eine vollständige Entfernung durchzuführen.
 
@@ -1409,7 +1415,7 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
       #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
       ```
 
- +++
++++
 
 +++ PDF Generator (PDFG)-Benutzer kann nicht hinzugefügt werden
 
@@ -1450,7 +1456,6 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
          adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=&lt;Absolute path to prov.xml>]
          
          ```
-
      
    * Serialisieren Sie das Paket nach Volumen (serialisieren Sie die vorhandene Installation mit der Datei „prov.xml“ und der neuen Seriennummer erneut): Führen Sie den folgenden Befehl aus dem PRTK-Installationsordner als Administrator aus, um die bereitgestellten Pakete auf Client-Computern zu serialisieren und zu aktivieren:
 
@@ -1458,8 +1463,8 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
          adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
          
          ```
-
-     * Verwenden Sie für Großinstallationen den [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html), um frühere Versionen von Reader und Acrobat zu entfernen. Passen Sie das Installationsprogramm an und stellen Sie es auf allen Computern in Ihrem Unternehmen bereit.
+     
+* Verwenden Sie für Großinstallationen den [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html), um frühere Versionen von Reader und Acrobat zu entfernen. Passen Sie das Installationsprogramm an und stellen Sie es auf allen Computern in Ihrem Unternehmen bereit.
 
 +++
 
