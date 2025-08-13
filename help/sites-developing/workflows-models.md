@@ -147,7 +147,7 @@ Sie können das **Verhalten** von Workflow-Schritten über das Dialogfeld **Schr
 
 1. So öffnen Sie das Dialogfeld **Schritt-Eigenschaften** für einen Schritt:
 
-   * Klicken Sie auf den **-Schritt im Workflow-Modell und wählen Sie in der Komponenten-Symbolleiste die Option **Konfigurieren** aus.
+   * Klicken Sie auf den **-Schritt im Workflow-Modell und wählen Sie in der Komponenten-Symbolleiste die Option &#x200B;** Konfigurieren** aus.
 
    * Doppelklicken Sie auf den Schritt.
 

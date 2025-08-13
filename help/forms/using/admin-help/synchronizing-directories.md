@@ -77,7 +77,7 @@ Sie können das User Management so konfigurieren, dass regelmäßige Prüfungen 
 1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Benutzerverwaltung“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
 1. Geben Sie unter „Synch Finisher Cron Expression“ einen Cron-Ausdruck ein, der das Intervall, in dem User Management die fehlgeschlagenen Synchronisierungen erneut auszuführen versucht, angibt. Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Vorgangsplanungssystem Quartz, Version 1.4.0.
 
-   Der Standardwert ist 0 0/13 &amp;ast; ? &amp;ast;, was bedeutet, dass die Prüfung alle 13 Minuten durchgeführt wird.
+   Der Standardwert ist 0 0/13 &ast; ? &ast;, was bedeutet, dass die Prüfung alle 13 Minuten durchgeführt wird.
 
 ## Manuelles Synchronisieren von Verzeichnissen {#manually-synchronize-directories}
 

@@ -60,7 +60,7 @@ Weitere Informationen [ Einbetten responsiver Viewer auf Web](https://experience
 >[!NOTE]
 >
 >Veröffentlichen Sie alle vorkonfigurierten Viewer, bevor Sie sie zum ersten Mal verwenden.
->>Siehe [Veröffentlichen von Viewer-Vorgaben].(#publishing-viewer-presets)
+>&#x200B;>Siehe [Veröffentlichen von Viewer-Vorgaben].(#publishing-viewer-presets)
 
 ### Systemkompatibilität der Viewer-Vorgaben {#viewer-preset-system-compatibility}
 
@@ -163,10 +163,10 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
 >[!NOTE]
 >
 >Alle vorkonfigurierten Viewer-Vorgaben in Dynamic Media sind bereits aktiviert. Sie müssen sie allerdings noch veröffentlichen.
->>Siehe [Veröffentlichen von Viewer-Vorgaben](#publishing-viewer-presets).
+>&#x200B;>Siehe [Veröffentlichen von Viewer-Vorgaben](#publishing-viewer-presets).
 >
 >Alle neuen Viewer-Vorgaben, die Sie erstellen und hinzufügen, müssen aktiviert *und* veröffentlicht werden.
->>Siehe [Aktivieren oder Deaktivieren von Viewer-Vorgaben](#activating-or-deactivating-viewer-presets) und [Veröffentlichen von Viewer-Vorgaben](#publishing-viewer-presets).
+>&#x200B;>Siehe [Aktivieren oder Deaktivieren von Viewer-Vorgaben](#activating-or-deactivating-viewer-presets) und [Veröffentlichen von Viewer-Vorgaben](#publishing-viewer-presets).
 
 <table>
  <tbody>

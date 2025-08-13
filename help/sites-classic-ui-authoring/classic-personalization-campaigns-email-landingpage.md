@@ -31,7 +31,7 @@ Um eine effektive Newsletter-Landingpage zu erstellen, müssen Sie Folgendes tun
 >[!NOTE]
 >
 >Adobe plant nicht, diese Funktionen (Lead- und Listenverwaltung) weiter auszubauen.
->>Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+>&#x200B;>Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
 ## Erstellen einer Liste für den Newsletter {#creating-a-list-for-the-newsletter}
 

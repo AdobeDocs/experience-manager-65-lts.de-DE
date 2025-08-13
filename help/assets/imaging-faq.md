@@ -336,9 +336,9 @@ Aus diesem Header geht Folgendes hervor:
 >**X-Adobe-Smart-Imaging = -1, WebP bereitgestellt**
 >
 >Wenn `X-Adobe-Smart-Imaging` den Wert -1 hat und WebP weiterhin bereitgestellt wird, ist die intelligente Bildbearbeitung aktiv. Die Größenvorteile wurden jedoch aufgrund von veraltetem Cache nicht berechnet. Sie können `cache=update` (nur einmal) in der URL des Bildes verwenden, um dieses Problem zu beheben.
->>Beispiel für die Verwendung des Modifikators:
->>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->>Um den gesamten Cache ungültig zu machen, müssen Sie einen Support-Fall erstellen.
+>&#x200B;>Beispiel für die Verwendung des Modifikators:
+>&#x200B;>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>&#x200B;>Um den gesamten Cache ungültig zu machen, müssen Sie einen Support-Fall erstellen.
 
 +++
 

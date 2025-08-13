@@ -21,7 +21,7 @@ ht-degree: 95%
 >[!NOTE]
 >
 >Adobe plant nicht, diese Funktionen (Lead- und Listenverwaltung) weiter auszubauen.
->>Es wird empfohlen, [Adobe Campaign und dessen AEM-Integration](/help/sites-administering/campaign.md) zu verwenden.
+>&#x200B;>Es wird empfohlen, [Adobe Campaign und dessen AEM-Integration](/help/sites-administering/campaign.md) zu verwenden.
 
 Benutzer können über die Komponente **Formular** auf einer AEM-Web-Seite gebeten werden, Mailing-Listen eines **E-Mail-Dienstanbieters** zu abonnieren. Damit Sie eine AEM-Seite mit einem Abonnementformular erstellen können, das für die Anmeldung bei Mailing-Listen Ihres E-Mail-Diensts konfiguriert ist, müssen Sie die entsprechende Dienstkonfiguration auf die AEM-Seite anwenden, die der potenzielle Abonnent besuchen wird.
 

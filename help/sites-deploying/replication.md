@@ -85,7 +85,7 @@ Der Zugriff auf entsprechende Details (Konfiguration und Protokolle) ist über d
 >* Agenten bei Veröffentlichung: Rückwärtsreplikation („outbox“)
 >
 >Der Status des Agenten oder der Warteschlange kann mithilfe der **Tools-Konsole** überprüft werden.
->>Weitere Informationen finden Sie unter [Überwachen der Replikationsagenten](#monitoring-your-replication-agents).
+>&#x200B;>Weitere Informationen finden Sie unter [Überwachen der Replikationsagenten](#monitoring-your-replication-agents).
 
 #### Replikation (von der Autoren- in die Veröffentlichungsinstanz) {#replication-author-to-publish}
 

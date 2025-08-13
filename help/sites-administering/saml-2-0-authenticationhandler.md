@@ -68,7 +68,7 @@ Die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf 
 >[!NOTE]
 >
 >Dieser Ort wird nur verwendet, wenn das Cookie `request-path` nicht festgelegt ist. Wenn Sie eine Seite unterhalb des konfigurierten Pfads ohne gültiges Anmelde-Token anfordern, wird der angeforderte Pfad in einem Cookie gespeichert
->>und der Browser wird nach erfolgreicher Authentifizierung erneut an diesen Ort weitergeleitet.
+>&#x200B;>und der Browser wird nach erfolgreicher Authentifizierung erneut an diesen Ort weitergeleitet.
 
 **Benutzer-ID-Attribut** Der Name des Attributs, das die Benutzer-ID enthält, die zur Authentifizierung und Erstellung des Benutzers im CRX-Repository verwendet wird.
 
