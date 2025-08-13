@@ -12,8 +12,8 @@ role: Admin
 exl-id: 448715f1-ccec-4fb8-92d7-b7458cf9e6d4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6067'
-ht-degree: 98%
+source-wordcount: '6065'
+ht-degree: 97%
 
 ---
 
@@ -398,9 +398,9 @@ Einige Funktionen des Portlets werden durch Berechtigungen geschützt. Benutzend
 
 * „toolbar“: Dies ist die allgemeine Berechtigung zum Anzeigen/Verwenden der Symbolleiste im Portlet.
 * „prefs“: Wenn Benutzende über diese Berechtigung verfügen, können sie die Voreinstellungen des Portlets anzeigen/ändern.
-* „cq-author:edit“: Mit dieser Berechtigung können Benutzende die Bearbeitungsansicht des Inhalts aufrufen.
-* „cq-author:preview“: Mit dieser Berechtigung können Benutzende die Vorschau anzeigen.
-* „cq-author:siteadmin“: Mit dieser Berechtigung können Benutzende die Site-Admin in AEM öffnen.
+* „cq-author:edit&quot; : Mit dieser Berechtigung kann der Benutzer die Bearbeitungsansicht des Inhalts aufrufen.
+* „cq-author:preview&quot; : Mit dieser Berechtigung kann der Benutzer die Vorschau sehen.
+* „cq-author:siteadmin&quot; : Mit dieser Berechtigung kann der Benutzer den SiteAdmin in AEM öffnen.
 
 Der beste Ansatz zur Verwaltung der Berechtigungen besteht darin, Portalrollen zu verwenden und diesen Berechtigungen Rollen zuzuweisen. Dies kann über eine OSGi-Konfiguration erfolgen. Der „Day Portal Director Privilege Manager“ kann mit einer Reihe von Rollen für jede Berechtigung konfiguriert werden. Wenn Benutzende über eine der Rollen verfügen, haben sie die entsprechende Berechtigung.
 
@@ -730,7 +730,7 @@ Nutzen Sie die Portlet-Komponente zum Einfügen eines Portlet-Fensters auf Ihrer
 
 Um auf von AEM WCM bereitgestellte Inhalte zuzugreifen, muss der Portal-Server mit dem AEM Portal Director Portlet ausgestattet werden. Dazu installieren und konfigurieren Sie das Portlet und fügen es der Portal-Seite hinzu, indem Sie die in diesem Abschnitt beschriebenen Schritte ausführen.
 
-Standardmäßig stellt das Portlet eine Verbindung zur Veröffentlichungsinstanz unter localhost:4503 und zur Autoreninstanz unter localhost:4502 her. Diese Werte können während der Bereitstellung des Portlets geändert werden. Der Portal-Director ist als Inhalt im Repository unter /libs/portal/directory verfügbar. Laden Sie die WAR-Datei der Anwendung vor der Verwendung herunter.
+Standardmäßig stellt das Portlet eine Verbindung zur Veröffentlichungsinstanz unter localhost :4503 zur Autoreninstanz unter localhost:4502 her. Diese Werte können während der Bereitstellung des Portlets geändert werden. Der Portal-Director ist als Inhalt im Repository unter /libs/portal/directory verfügbar. Laden Sie die WAR-Datei der Anwendung vor der Verwendung herunter.
 
 ### Herunterladen der WAR-Datei {#downloading-the-war-file}
 

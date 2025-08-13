@@ -24,7 +24,7 @@ Verwenden Sie xgettext-maven-plugin, um Zeichenfolgen, die übersetzt werden mü
 * JavaScript-Quelldateien
 * XML-Darstellungen von SVN-Ressourcen (JCR-Knoten)
 
-## Konfigurieren der Zeichenfolgenextrahierung {#configuring-string-extraction}
+## Konfigurieren der Zeichenfolgenextraktion {#configuring-string-extraction}
 
 Konfigurieren Sie, wie das xgettext-maven-plugin-Tool Zeichenfolgen für Ihr Projekt extrahiert.
 

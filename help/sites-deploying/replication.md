@@ -12,8 +12,8 @@ role: Admin
 exl-id: b840d970-9365-4df3-8467-e34abd940074
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '3270'
-ht-degree: 99%
+source-wordcount: '3276'
+ht-degree: 98%
 
 ---
 
@@ -85,7 +85,7 @@ Der Zugriff auf entsprechende Details (Konfiguration und Protokolle) ist über d
 >* Agenten bei Veröffentlichung: Rückwärtsreplikation („outbox“)
 >
 >Der Status des Agenten oder der Warteschlange kann mithilfe der **Tools-Konsole** überprüft werden.
->Weitere Informationen finden Sie unter [Überwachen der Replikationsagenten](#monitoring-your-replication-agents).
+>>Weitere Informationen finden Sie unter [Überwachen der Replikationsagenten](#monitoring-your-replication-agents).
 
 #### Replikation (von der Autoren- in die Veröffentlichungsinstanz) {#replication-author-to-publish}
 
@@ -425,7 +425,6 @@ Zum Konfigurieren der Replikation von Inhalten für eine weitere Veröffentlichu
    * Führen Sie auf der Registerkarte **Transport** folgende Schritte aus:
 
       * Geben Sie den erforderlichen URI für die neue Veröffentlichungsinstanz ein, z. B. ist
-
         `https://localhost:4504/bin/receive` möglich.
 
       * Geben Sie das Site-spezifische Benutzerkonto für die Replikation ein.
@@ -469,7 +468,6 @@ Die Installation umfasst Standardagenten. Es müssen jedoch trotzdem gewisse Kon
    * Führen Sie auf der Registerkarte **Transport** folgende Schritte aus:
 
       * Geben Sie den erforderlichen URI für die neue Veröffentlichungsinstanz ein, z. B. ist
-
         `https://localhost:80/dispatcher/invalidate.cache` möglich.
 
       * Geben Sie das Site-spezifische Benutzerkonto für die Replikation ein.

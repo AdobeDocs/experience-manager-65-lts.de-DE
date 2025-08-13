@@ -23,7 +23,7 @@ Für die Asset-Verarbeitung verwendet [!DNL Experience Manager] Workflows. Workf
 
 ## In [!DNL Experience Manager] verfügbare Standard-Workflows {#default-workflows}
 
-Standardmäßig werden alle hochgeladenen Assets mit dem Workflow [!UICONTROL DAM-Update-Asset] verarbeitet. Der Workflow wird für jedes hochgeladene Asset ausgeführt und führt grundlegende Aufgaben des Asset-Managements wie Generieren der Ausgabedarstellung, Zurückschreiben der Metadaten, Extrahieren von Seiten und Medien sowie Transkodieren durch.
+Standardmäßig werden alle hochgeladenen Assets mit dem Workflow [!UICONTROL DAM-Update-Asset] verarbeitet. Der Workflow wird für jedes hochgeladene Asset ausgeführt und führt grundlegende Aufgaben des Asset-Managements wie Generieren der Ausgabedarstellung, Zurückschreiben der Metadaten, Extraktion von Seiten und Medien sowie Transkodieren durch.
 
 Die standardmäßig verfügbaren Workflow-Modelle finden Sie unter **[!UICONTROL Tools > Workflow > Modelle]** in [!DNL Experience Manager].
 

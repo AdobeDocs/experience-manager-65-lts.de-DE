@@ -44,9 +44,9 @@ In diesem Abschnitt wird von einer Topologie mit einem Autorenserver ausgegangen
 
 ![upgrade-preparation-author](assets/upgrade-preparation-author.png)
 
-1. Beenden Sie die Inhaltserstellung.
+1. Stoppen Sie die Inhaltserstellung.
 
-1. Beenden Sie die Standby-Instanz.
+1. Stoppen Sie die Standby-Instanz.
 
 1. Deaktivieren Sie Replikationsagenten auf der Autoreninstanz.
 
@@ -93,9 +93,9 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 
 ![mongo-upgrade_prep](assets/mongo-upgrade_prep.jpg)
 
-1. Beenden Sie die Inhaltserstellung.
+1. Stoppen Sie die Inhaltserstellung.
 1. Erstellen Sie einen Klon des Datenspeichers als Backup.
-1. Beenden Sie alle AEM-Autoreninstanzen bis auf eine, die als primäre Autoreninstanz fungiert.
+1. Stoppen Sie alle AEM-Autoreninstanzen bis auf eine, die als primäre Autoreninstanz fungiert.
 1. Entfernen Sie alle MongoDB-Knoten aus dem Replikationssatz bis auf einen, der als primäre Mongo-Instanz fungiert.
 1. Aktualisieren Sie die Datei `DocumentNodeStoreService.cfg` auf der primären Autoreninstanz, dem einzigen Mitglied des Replikationssatzes.
 1. Starten Sie die primäre Autoreninstanz neu, um sicherzustellen, dass diese richtig neu gestartet wird.
@@ -154,7 +154,7 @@ In diesem Abschnitt wird von einer Topologie mit zwei TarMK-Veröffentlichungsin
 
 ![upgrade-publish2](assets/upgrade-publish2.png)
 
-1. Beenden Sie den Traffic an die Veröffentlichungsinstanz 2 im Lastenausgleich.
+1. Stoppen Sie den Traffic an die Veröffentlichungsinstanz 2 im Lastenausgleich.
 1. Führen Sie die [Wartungsaufgaben vor einem Upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) auf der Veröffentlichungsinstanz 2 aus.
 1. Führen Sie ein [In-Place-Upgrade](/help/sites-deploying/in-place-upgrade.md) auf der Veröffentlichungsinstanz 2 aus.
 1. Aktualisieren Sie das Dispatcher- oder Web-Modul, *falls erforderlich*.
@@ -169,8 +169,8 @@ In diesem Abschnitt wird von einer Topologie mit zwei TarMK-Veröffentlichungsin
 ![upgrade-publish1](assets/upgrade-publish1.png)
 
 1. Aktivieren Sie Traffic an die Veröffentlichungsinstanz 2.
-1. Beenden Sie Traffic an die Veröffentlichungsinstanz 1.
-1. Beenden Sie die Veröffentlichungsinstanz 1.
+1. Stoppen Sie Traffic an die Veröffentlichungsinstanz 1.
+1. Stoppen Sie die Veröffentlichungsinstanz 1.
 1. Ersetzen Sie die Veröffentlichungsinstanz 1 durch eine Kopie der Veröffentlichungsinstanz 2.
 1. Aktualisieren Sie das Dispatcher- oder Web-Modul, *falls erforderlich*.
 1. Leeren Sie den Dispatcher-Cache der Veröffentlichungsinstanz 1.

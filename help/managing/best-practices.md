@@ -12,8 +12,8 @@ role: Admin,Architect,Data Architect,Developer,Leader
 exl-id: 8f8883d8-4e2b-4ba0-bd83-414a96e7d382
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3214'
-ht-degree: 100%
+source-wordcount: '3212'
+ht-degree: 98%
 
 ---
 
@@ -66,7 +66,7 @@ Jede Phase enthält ihre eigenen Milestones. Für jede [Rolle](#persona) werden 
 
 >[!NOTE]
 >
->Es gibt keine direkte 1:1-Beziehung zwischen den einzelnen erforderlichen Dokumenten und zu erbringenden Leistungen.
+>Es besteht keine direkte 1:1-Beziehung zwischen den einzelnen erforderlichen Dokumenten und den zu erbringenden Leistungen.
 
 ### Vorbereitung {#preparation}
 
@@ -239,7 +239,7 @@ Die Entwicklungsplanung ist der Schlüssel, um zu gewährleisten, dass das Proje
 
   Vor der Entwicklung sollten alle Unterstützungsprozesse erstellt werden, die zur Bereitstellung, zur Veröffentlichung, zum Testen und zur Meldung von Problemen notwendig sind.
 
-  Informationen finden Sie auch im [Adobe Support-Portal](https://experienceleague.adobe.com/de?lang=de&amp;support-solution=General&amp;support-tab=home#support).
+  Informationen finden Sie auch im [Adobe Support-Portal](https://experienceleague.adobe.com/?lang=de&support-solution=General&support-tab=home#support).
 
 ### Betriebsplanung und Betrieb {#operations-planning-and-operations}
 
@@ -579,7 +579,7 @@ Die Leitung der Sicherheit:
 
 Die Checklisten enthalten die **erforderlichen Dokumente** und **Ergebnisse** für jeden Milestone.
 
-* Es besteht keine 1:1-Beziehung zwischen diesen beiden Aspekten. So kann beispielsweise eine Gruppe erforderlicher Dokumente in nur einer zu erbringenden Leistung münden.
+* Es gibt keine 1:1-Beziehung zwischen diesen. Beispielsweise kann eine Gruppe erforderlicher Dokumente zu einer einzigen Leistung führen.
 * Die zu erbringende Leistung einer Rolle kann ein erforderliches Dokument für eine andere Rolle während desselben Meilensteins sein.
 
 ### Erforderliche Dokumente {#required-documents}

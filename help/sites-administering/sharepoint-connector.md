@@ -11,8 +11,8 @@ role: Admin
 exl-id: 3f8ec723-2705-4ce5-8cb2-e7e6bfe94512
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 100%
+source-wordcount: '1504'
+ht-degree: 95%
 
 ---
 
@@ -112,7 +112,7 @@ Legen Sie die SharePoint Server-URL fest, um Ihr SharePoint-Repository JCR-konfo
 
 Führen Sie die folgenden Schritte aus, um die URL der SharePoint-Server-Instanz sowie erweiterte Optionen festzulegen:
 
-1. Navigieren Sie zur OSGi-Verwaltungskonsole: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
+1. http://localhost Navigieren Sie zur OSGi-Verwaltungskonsole: [:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
 1. Suchen Sie nach dem Bundle **Day JCR Connector for Microsoft Sharepoint**.
 1. Bearbeiten der Konfigurationswerte.
 1. Legen Sie den Wert von **Workspaces** auf die SharePoint Server-URL fest.
@@ -157,7 +157,7 @@ Vergewissern Sie sich nach dem Konfigurieren des Connectors, dass Folgendes erf�
 
 Gehen Sie wie folgt vor, um die SharePoint-Assets mit AEM zu synchronisieren:
 
-1. Navigieren Sie zur OSGi-Verwaltungskonsole: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
+1. http://localhost Navigieren Sie zur OSGi-Verwaltungskonsole: [:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
 1. Suchen Sie nach dem Dienst „Default DAMAssetSynchronization“.
 1. Bearbeiten der Konfigurationswerte.
 1. Legen Sie den Benutzernamen und das dazugehörige Kennwort der Person fest, die Zugriff auf die SharePoint-Site hat.
@@ -165,7 +165,7 @@ Gehen Sie wie folgt vor, um die SharePoint-Assets mit AEM zu synchronisieren:
 
 Aktivieren des (standardmäßig deaktivierten) DAM-Synchronisierungsdienstes:
 
-1. Navigieren Sie zu den Komponenten der OSGi-Web-Konsole: [http://localhost:4502/system/console/component](http://localhost:4502/system/console/components)
+1. Navigieren Sie zu den Komponenten der OSGi-Web-Konsole: [http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
 1. Suchen Sie nach „com.day.cq.dam.jcrconnectors.impl.AssetSynchronizationService“.
 1. Klicken Sie auf „Aktivieren“.
 
@@ -198,7 +198,7 @@ Der JCR-Connector für Microsoft SharePoint 2010 und Microsoft SharePoint 2013
 
 **Konfigurieren der formularbasierten Authentifizierung**
 
-Navigieren Sie zu: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
+Wechseln Sie zu: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
 1. Klicken Sie auf „OSGi“ > „Konfiguration“.
 1. Suchen Sie nach „Day JCR Connector for Microsoft Sharepoint“
@@ -209,7 +209,7 @@ Navigieren Sie zu: [http://localhost:4502/system/console/bundles](http://localho
 **Konfigurieren der Standardauthentifizierung (Windows)**
 
 1. [Deaktivieren Sie die Token-Authentifizierung](#disable-token-authentication).
-1. Navigieren Sie zu: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
+1. Navigieren Sie zu [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
 1. Klicken Sie auf „OSGi“ > „Konfiguration“.
 1. Suchen Sie nach **Day JCR Connector for Microsoft Sharepoint**.
 1. Klicken Sie auf `Edit the configuration values`.
@@ -222,7 +222,7 @@ Sie können auch die Connector-Erweiterung zur Authentifizierung verwenden, um e
 
 Erstellen von Benutzenden in AEM
 
-1. Melden Sie sich unter http://localhost:9502/ als Admin an.
+1. Melden Sie sich mit :9502 Admin-Benutzer bei http://localhost/an.
 1. Klicken Sie auf „Tools“.
 1. Klicken Sie auf „Sicherheit“.
 1. Klicken Sie auf „Benutzer“.

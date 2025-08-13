@@ -55,7 +55,7 @@ In den folgenden Schritten wird davon ausgegangen, dass es sich bei den neuen lo
 
 >[!NOTE]
 >
->Den Browser-Sprachschema-Code Ihres Browsers finden. Öffnen Sie `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
+>Den Browser-Gebietsschema-Code Ihres Browsers finden. Öffnen Sie `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
 
 ![collapsing_panels_image](assets/collapsing_panels_image.png)
 

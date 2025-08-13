@@ -11,14 +11,14 @@ role: Admin, User, Developer
 exl-id: 074b0cb2-b060-4180-ab16-ff8f7a4ee625
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 100%
+source-wordcount: '1340'
+ht-degree: 99%
 
 ---
 
 # Starten von Prozessen {#starting-processes}
 
-In AEM Forms Workspace werden Prozesse aufgrund der vom Administrator oder Prozessentwickler festgelegten Kategorien organisiert. Sie können häufig verwendete Prozesse auch in der Kategorie „Favoriten“ platzieren, um den Zugriff zu erleichtern.
+In AEM Forms Workspace werden Prozesse aufgrund der vom Administrator oder Prozess-Design festgelegten Kategorien organisiert. Sie können häufig verwendete Prozesse auch in der Kategorie „Favoriten“ platzieren, um den Zugriff zu erleichtern.
 
 Beim Starten eines Prozesses müssen Sie eventuell ein Formular ausfüllen, um einen von AEM Forms gesteuerten Geschäftsprozess zu starten. Wenn ein Formular den vorbereitenden Datenprozess verwendet, können einige Informationen in einem leeren Formular zuvor ausgefüllt werden, wenn ein neuer Prozess initiiert wird.
 

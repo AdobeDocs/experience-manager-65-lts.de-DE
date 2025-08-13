@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 3081dedf-ba92-4205-af67-930524719e60
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 100%
+source-wordcount: '684'
+ht-degree: 92%
 
 ---
 
@@ -63,13 +63,13 @@ Der Wert des agentFolder-DDE wird aus dem CMUserRoot-Konfigurationsparameter fü
 
    1. Klicken Sie auf den von Ihnen erstellten neuen Ordner (hier: `JohnDoe`). In Content Explorer wird der Inhalt des Ordners abgeblendet angezeigt.
 
-   1. Doppelklicken Sie auf die Eigenschaften **jcr:content**, legen Sie als Typ **nt:resource** fest und klicken Sie dann auf das grüne Häkchen, um den Eintrag zu speichern.
+   1. Doppelklicken Sie auf die **jcr:content**-Eigenschaft, legen Sie als Typ **nt:resource** fest und klicken Sie dann auf das grüne Häkchen, um den Eintrag zu speichern.
 
-      Wenn die Eigenschaft nicht vorhanden ist, erstellen Sie zuerst eine Eigenschaft mit dem Namen „jcr:content“. 
+      Wenn die Eigenschaft nicht vorhanden ist, erstellen Sie zunächst eine Eigenschaft mit dem Namen jcr:content.
 
-      ![Eigenschaft „jcr:content“](assets/3_jcrcontentntresource.png)
+      ![jcr:content-Eigenschaft](assets/3_jcrcontentntresource.png)
 
-      Zu den Untereigenschaften von „jcr:content“ gehört die abgeblendet dargestellte Eigenschaft „jcr:data“. Doppelklicken Sie auf „jcr:data“. Die Eigenschaft wird bearbeitbar und die Schaltfläche „Datei wählen“ wird im entsprechenden Eintrag angezeigt. Klicken Sie auf **Datei wählen** und wählen Sie die Bilddatei aus, die Sie als Logo benutzen möchten. Für die Bilddatei wird keine Erweiterung benötigt.
+      Zu den Untereigenschaften von jcr:content gehört jcr:data, das abgeblendet ist. Doppelklicken Sie auf jcr:data. Die Eigenschaft wird bearbeitbar und die Schaltfläche „Datei wählen“ wird im entsprechenden Eintrag angezeigt. Klicken Sie auf **Datei wählen** und wählen Sie die Bilddatei aus, die Sie als Logo benutzen möchten. Für die Bilddatei wird keine Erweiterung benötigt.
 
       ![JCR-Daten](assets/5_jcrdata.png)
 

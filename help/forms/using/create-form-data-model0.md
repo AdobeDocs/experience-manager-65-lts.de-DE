@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: ecbfe24e-7662-48a7-9b46-37949f59050e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2684'
-ht-degree: 100%
+source-wordcount: '2688'
+ht-degree: 95%
 
 ---
 
@@ -126,7 +126,7 @@ Gehen Sie folgendermaßen vor, um Ihre MySQL-Datenbank zu konfigurieren:
 
 1. Konfigurieren der MySQL-Datenbank als Datenquelle:
 
-   1. Wechseln zur AEM-Web-Konsole unter [http://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+   1. Wechseln Sie zur AEM-Web-Konsole unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
    1. Suchen Sie die Konfiguration **Apache Sling Connection Pooled DataSource**. Wählen Sie die Konfiguration aus, um sie im Bearbeitungsmodus zu öffnen.
    1. Geben Sie im Konfigurationsdialog die folgenden Details an:
 
@@ -245,7 +245,7 @@ Führen Sie die folgenden Schritte durch, um untergeordnete berechnete Eigenscha
 
 ### Hinzufügen von Verknüpfungen zwischen Datenmodellobjekten {#add-associations-between-data-model-objects}
 
-Nachdem die Datenmodellobjekte definiert wurden, können Sie Verknüpfungen zwischen ihnen erstellen. Die Zuordnung kann 1:1 oder 1:n sein. Beispielsweise können einem Mitarbeitenden mehrere abhängige Elemente zugeordnet sein. Dies wird als Eins-zu-Viele-Verknüpfung bezeichnet und in der Form 1:n auf der Linie dargestellt, die die zugeordneten Datenmodellobjekte verbindet. Wenn jedoch eine Verknüpfung einen eindeutigen Mitarbeiternamen für eine gegebene Mitarbeiter-ID zurückgibt, wird dies als Eins-zu-Eins-Verknüpfung bezeichnet.
+Nachdem die Datenmodellobjekte definiert wurden, können Sie Verknüpfungen zwischen ihnen erstellen. Die Zuordnung kann 1:1 oder 1:n sein. Beispielsweise können einem Mitarbeitenden mehrere abhängige Elemente zugeordnet sein. Dies wird als Eins-zu-Viele-Verknüpfung bezeichnet und in der :n 1 auf der Linie dargestellt, die die zugeordneten Datenmodellobjekte verbindet. Wenn jedoch eine Verknüpfung einen eindeutigen Mitarbeiternamen für eine gegebene Mitarbeiter-ID zurückgibt, wird dies als Eins-zu-Eins-Verknüpfung bezeichnet.
 
 Wenn Sie verknüpfte Datenmodellobjekte in einer Datenquelle einem Formulardatenmodell hinzufügen, werden ihre Verknüpfungen beibehalten und mit Pfeillinien verbunden angezeigt.
 
@@ -253,8 +253,8 @@ Erstellen Sie basierend auf dem Anwendungsfall die folgenden Verknüpfungen zwis
 
 | Verknüpfung | Datenmodellobjekte |
 |---|---|
-| 1:n | customer:calls (mehrere Anrufe können einem Kunden oder einer Kundin in einer monatlichen Rechnung zugeordnet werden) |
-| 1:1 | customer:bills (eine Rechnung ist einem Kunden oder einer Kundin für einen bestimmten Monat zugeordnet) |
+| 1 :n | Kunde:calls (Mehrere Anrufe können einem Kunden in einer monatlichen Rechnung zugeordnet werden) |
+| 1 :1 | Kunde:bills (eine Rechnung ist einem Kunden für einen bestimmten Monat zugeordnet) |
 
 Führen Sie die folgenden Schritte aus, um Verknüpfungen zwischen Datenmodellobjekten zu erstellen:
 
@@ -290,11 +290,11 @@ Für jede im Datenmodellobjekt „customer“ verfügbare Mobilfunknummer stehen
 
    ![Argumentzuordnung hinzufügen](assets/add_argument_association_new.png)
 
-1. Wählen Sie **Fertig**, um eine 1:n-Verknüpfung zwischen den Datenmodellobjekten „customer“ und „calls“ zu erstellen.
+1. Wählen Sie **Fertig** aus, um eine 1:n-Verknüpfung zwischen Datenmodellobjekten „customer“ und „calls“ zu erstellen.
 
-   Nachdem Sie eine Zuordnung zwischen Kunden- und Anrufdatenmodellobjekten erstellt haben, erstellen Sie eine 1:1-Verknüpfung zwischen den Datenmodellobjekten „customer“ und „bills“.
+   Nachdem Sie eine Verknüpfung zwischen Datenmodellobjekten „customer“ und „calls“ erstellt haben, erstellen Sie eine 1:1-Verknüpfung zwischen den Datenmodellobjekten „customer“ und „bills“.
 
-1. Aktivieren Sie das Kontrollkästchen am oberen Rand des Datenmodellobjekts **customer**, um es auszuwählen, und wählen Sie **Zuordnung hinzufügen**. Der Eigenschaftsbereich **Verknüpfung hinzufügen** wird geöffnet.
+1. Aktivieren Sie das Kontrollkästchen am oberen Rand des Datenmodellobjekts **customer**, um es auszuwählen, und wählen Sie **Verknüpfung hinzufügen** aus. Der Eigenschaftsbereich **Verknüpfung hinzufügen** wird geöffnet.
 1. Im Bereich **Verknüpfung hinzufügen**:
 
    * Geben Sie einen Titel für die Verknüpfung ein. Dies ist ein optionales Feld.

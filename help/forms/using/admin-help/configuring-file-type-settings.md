@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
 source-git-commit: 9d4681c0b184cc7769a8da20a4c50d420e1137c7
 workflow-type: tm+mt
-source-wordcount: '6185'
-ht-degree: 99%
+source-wordcount: '6180'
+ht-degree: 98%
 
 ---
 
@@ -128,7 +128,7 @@ Die folgenden Optionen bestimmen, wie Bilddateien in PDF konvertiert werden. Anw
 
 **OCR verwenden:** Gibt an, ob die optische Zeichenerkennung (Optical Character Recognition, OCR) auf die PDF-Datei angewendet werden soll. Mit OCR-Software können Sie den Text in einer PDF-Datei durchsuchen, korrigieren und kopieren.
 
-***Hinweis &#x200B;**: Die OCR PDF-Funktion (durchsuchbare PDF) wird nur unter Microsoft Windows unterstützt.*
+***Hinweis **: Die OCR PDF-Funktion (durchsuchbare PDF) wird nur unter Microsoft Windows unterstützt.*
 
 **Primäre OCR-Sprache:** Die von der OCR-Engine zum Erkennen der Zeichen zu verwendende Sprache.
 
@@ -261,17 +261,17 @@ Anweisungen zum Zugriff auf diese Einstellung finden Sie unter [Erstellen oder B
 
    >[!NOTE]
    >
-   >*Wenn Sie die Einbettung für einige Schriftarten aufheben möchten, von denen Untergruppen im Dokument eingebettet sind, setzen Sie das Symbol „+“ vor den Namen der Schriftart. Beispiel: „+Helvetica“.*
+   >*Wenn Sie die Einbettung für einige Schriftarten aufheben möchten, von denen Teilmengen im Dokument eingebettet sind, setzen Sie das Symbol „+“ vor den Namen der Schriftart. Beispiel: „+Helvetica“.*
 
-1. Wenn Sie lediglich die verwendeten Untergruppen der eingebetteten Schriftarten einbetten möchten, wählen Sie **Alle eingebetteten Schriftarten in Untergruppe zusammenfassen**.
-
-   >[!NOTE]
-   >
-   >*Wenn Sie diese Option in Kombination mit **Einbettung für einige Schriftarten aufheben**&#x200B;verwenden, ist die Einbettung für die Schriftarten in der Liste **Schriftarten für die Aufhebung der Einbettung hinzufügen**&#x200B;weiterhin vollständig aufgehoben.*
+1. Wenn Sie lediglich die verwendeten Teilmengen der eingebetteten Schriftarten einbetten möchten, wählen Sie **Alle eingebetteten Schriftarten in Teilmenge zusammenfassen**.
 
    >[!NOTE]
    >
-   >*Die Schrifteinbettung in Untergruppen ist eine Vorgehensweise für die Einbettung eines Teils einer Schriftart. Eine Schriftartuntergruppe enthält nur die im Dokument verwendeten Zeichen.*
+   >*Wenn Sie diese Option in Kombination mit **Einbettung für einige Schriftarten aufheben**verwenden, ist die Einbettung für die Schriftarten in der Liste **Schriftarten für die Aufhebung der Einbettung hinzufügen**weiterhin vollständig aufgehoben.*
+
+   >[!NOTE]
+   >
+   >*Die Schrifteinbettung in Untergruppen ist eine Vorgehensweise für die Einbettung eines Teils einer Schriftart. Eine Schriftartteilmenge enthält nur die im Dokument verwendeten Zeichen.*
 
 ### Transparenz {#transparency}
 
@@ -418,7 +418,7 @@ Diese Optionen bestimmen, wie Microsoft Excel-Dateien konvertiert werden. Anweis
 
 **Dateinamenerweiterungen**: Legt die Dateinamenerweiterungen für Dateitypen fest (durch Kommas getrennt), die für diese Anwendung akzeptiert werden. Der Standardwert lautet `xls,xlsx`. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
 
-**PDF/A-1a-kompatible Datei erstellen**: Erzwingt die Verwendung der Adobe PDF-Einstellung „PDF/A-1b:2005(RGB)“.
+**PDF/A-1a-kompatible Datei erstellen**: Erzwingt die Verwendung der Einstellung &quot;PDF/A-1b:2005 RGB Adobe PDF&quot;.
 
 **Lesezeichen zu Adobe PDF hinzufügen**: Konvertiert Namen von Excel-Arbeitsblättern in Lesezeichen. Standardmäßig ist diese Option aktiviert.
 
@@ -472,7 +472,7 @@ Diese Optionen bestimmen, wie Microsoft PowerPoint-Dateien konvertiert werden. A
 
 **[!UICONTROL Ausgeblendete Folien in PDF-Seiten konvertieren]**: Konvertiert ausgeblendete Folien.
 
-**[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt die Verwendung der Adobe PDF-Einstellung „PDF/A-1b:2005 RGB“. Einige PowerPoint-Funktionen werden bei der Erstellung einer PDF-Datei nicht konvertiert. Wenn eine PowerPoint-Transition in Acrobat keine äquivalente Transition aufweist, wird eine ähnliche Transition ersetzt. Wenn sich mehrere Animationseffekte in derselben Folie befinden, wird ein einzelner Effekt verwendet. Seitenübergänge und Aufzählungszeichen werden konvertiert.
+**[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt die Verwendung der Einstellung &quot;PDF/A-1b:2005 RGB Adobe PDF&quot;. Einige PowerPoint-Funktionen werden bei der Erstellung einer PDF-Datei nicht konvertiert. Wenn eine PowerPoint-Transition in Acrobat keine äquivalente Transition aufweist, wird eine ähnliche Transition ersetzt. Wenn sich mehrere Animationseffekte in derselben Folie befinden, wird ein einzelner Effekt verwendet. Seitenübergänge und Aufzählungszeichen werden konvertiert.
 
 ## Microsoft Project-Einstellungen (nur Windows) {#microsoft-project-settings-windows-only}
 
@@ -482,7 +482,7 @@ Diese Optionen bestimmen, wie Microsoft-Projektdateien konvertiert werden. Anwei
 
 1. **[!UICONTROL Dokumentinformationen konvertieren]**: Fügt Dokumentinformationen aus dem Dialogfeld „Eigenschaften“ der Quelldatei hinzu, einschließlich Titel, Thema, Autor, Schlüsselwörtern, Manager, Unternehmen, Kategorie und Kommentaren. Standardmäßig ist diese Option aktiviert.
 1. **[!UICONTROL Quelldatei an Adobe PDF anfügen]**: Fügt die Quelldatei der PDF-Datei als Anlage hinzu.
-1. **[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt die Verwendung der Adobe PDF-Einstellung „PDF/A-1b:2005(RGB)“.
+1. **[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt die Verwendung der Einstellung &quot;PDF/A-1b:2005 RGB Adobe PDF&quot;.
 1. **[!UICONTROL Makros automatisch ausführen]**: Führt vor dem Konvertieren des Dokuments alle Makros im Microsoft Project-Dokument aus (z. B. ein Makro, das die aktuelle Uhrzeit einfügt).
 
 ## Microsoft Word-Einstellungen (nur Windows) {#microsoft-word-settings-windows-only}
@@ -503,7 +503,7 @@ Diese Optionen bestimmen, wie Microsoft Word-Dateien konvertiert werden. Anweisu
 
 **[!UICONTROL Eingabehilfe und Umfließen mit Adobe PDF mit Tags aktivieren]**: Bettet Tags in die PDF-Datei ein. Standardmäßig ist diese Option aktiviert.
 
-**[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt, falls ausgewählt, die Verwendung der Adobe PDF-Einstellung „PDF/A-1b:2005(RGB)“.
+**[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt die Verwendung der Einstellung &quot;PDF/A-1b:2005 RGB Adobe PDF&quot;, falls ausgewählt.
 
 **[!UICONTROL Makros automatisch ausführen]**: Führt vor dem Konvertieren des Dokuments alle Makros im Word-Dokument aus (z. B. als ein Makro, das die aktuelle Uhrzeit einfügt).
 
@@ -545,7 +545,7 @@ Wenn ein Microsoft Word-Formatvorlagenname ein Komma (,) oder ein Gleichheitszei
 
 **Ebenenbedienfeld öffnen, wenn es in Adobe Acrobat angezeigt wird**: Öffnet, falls Visio-Ebenen nicht reduziert werden, ein Fenster, in dem Sie die Ebenen angeben können, die in der PDF-Dateien beibehalten werden, wenn sie mithilfe von Acrobat geöffnet werden. Standardmäßig ist diese Option aktiviert.
 
-**PDF/A-1b-kompatible Datei erstellen**: Erzwingt die Verwendung der Adobe PDF-Einstellung „PDF/A-1b:2005 (RGB)“.
+**PDF/A-1b-kompatible Datei erstellen**: Erzwingt die Verwendung der Adobe PDF-Einstellung PDF/A-1b:2005 (RGB).
 
 **Kommentare in Adobe PDF-Kommentare konvertieren**: Konvertiert Visio-Notizen in PDF-Kommentare.
 

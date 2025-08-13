@@ -11,8 +11,8 @@ role: Admin
 exl-id: e085b4f2-b5f1-4036-bbd5-b719b4ac0c1a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 100%
+source-wordcount: '2663'
+ht-degree: 98%
 
 ---
 
@@ -290,14 +290,14 @@ Im vorherigen Beispiel ist `/content/we-retail/language-masters/en` die globale 
 >
 >Die Diagramme und Beschreibungen in diesem Abschnitt stellen Momentaufnahmen der potenziellen Live Copies dar. Sie erheben keinen Anspruch auf Vollständigkeit, stellen jedoch einen Überblick bereit, um bestimmte Merkmale hervorzuheben.
 
-Beim erstmaligen Erstellen einer Live Copy werden die ausgewählten Quellseiten 1:1 in der Live Copy wiedergegeben. Danach können neue Ressourcen (Seiten und/oder Absätze) auch direkt innerhalb der Live Copy erstellt werden. Daher ist es hilfreich, sich dieser Varianten und ihrer Auswirkungen auf die Synchronisierung bewusst zu sein. Mögliche Kompositionen umfassen:
+Beim erstmaligen Erstellen einer Live Copy werden die ausgewählten Quellseiten 1::1 in der Live Copy wiedergegeben. Danach können neue Ressourcen (Seiten und/oder Absätze) auch direkt innerhalb der Live Copy erstellt werden. Daher ist es hilfreich, sich dieser Varianten und ihrer Auswirkungen auf die Synchronisierung bewusst zu sein. Mögliche Kompositionen umfassen:
 
 * [Live Copy mit Live Copy-fremden Seiten](#live-copy-with-non-live-copy-pages)
 * [Verschachtelte Live Copies](#nested-live-copies)
 
 Die grundlegende Form einer Live Copy verfügt über:
 
-* Live Copy-Seiten, die die ausgewählten Quellseiten 1:1 wiedergeben
+* Live Copy-Seiten, die die ausgewählten Quellseiten 1::1 widerspiegeln.
 * eine Konfigurationsdefinition
 * eine für jede Ressource definierte Live-Beziehung, die Folgendes bewerkstelligt:
 

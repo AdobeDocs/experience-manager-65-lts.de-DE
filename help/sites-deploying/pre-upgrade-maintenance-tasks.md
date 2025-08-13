@@ -12,8 +12,8 @@ role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
 source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1116'
+ht-degree: 80%
 
 ---
 
@@ -28,7 +28,7 @@ Bevor Sie mit dem Upgrade beginnen, ist es wichtig, die folgenden Wartungsaufgab
 * [Konfigurieren von Workflow- und Auditprotokoll-Löschung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
 * [Installieren, Konfigurieren und Ausführen der Aufgaben vor dem Upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
 * [Entfernen von Updates aus dem /install-Verzeichnis](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#remove-updates-install-directory)
-* [Beenden aller Cold-Standby-Instanzen](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#stop-tarmk-coldstandby-instance)
+* [Stoppen aller Cold-Standby-Instanzen](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#stop-tarmk-coldstandby-instance)
 * [Deaktivieren von benutzerdefinierten geplanten Aufträgen](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#disable-custom-scheduled-jobs)
 * [Durchführen der Offline-Revisionsbereinigung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-offline-revision-cleanup)
 * [Durchführen der Datenspeicherbereinigung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#execute-datastore-garbage-collection)
@@ -64,7 +64,7 @@ Wartungsaufgaben vor einem Upgrade, die bisher manuell durchgeführt werden muss
 
 Die OSGi-Komponente `PreUpgradeTasksMBean` ist mit einer Liste von Wartungsaufgaben vor dem Upgrade vorkonfiguriert, die gleichzeitig ausgeführt werden können. Sie können die Aufgaben mit den nachfolgenden Schritten konfigurieren:
 
-1. Navigieren Sie zur Web-Konsole unter *https://Server-Adresse:Serverport/system/console/configMgr*.
+1. Navigieren Sie zur Web-Konsole unter *https://serveraddress:serverport/system/console/configMgr*
 
 1. Suchen Sie nach „**preupgradetasks**“ und klicken Sie auf die erste übereinstimmende Komponente. Der vollständige Name der Komponenten lautet `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`.
 
@@ -95,7 +95,7 @@ Auf die Funktion für verwaltete Beans kann über die [JMX-Konsole](/help/sites-
 
 Sie können wie folgt auf die MBeans zugreifen:
 
-1. Wechseln Sie zur JMX-Konsole unter *https://Server-Adresse:Serverport/system/console/jmx*.
+1. Wechseln Sie zur JMX-Konsole unter *https://serveraddress:serverport/system/console/jmx*
 1. Suchen Sie nach **PreUpgradeTasks** und klicken Sie auf das Ergebnis.
 
 1. Wählen Sie im Bereich **Operations** eine Methode und im daraufhin angezeigten Fenster **Invoke** aus.
@@ -128,9 +128,9 @@ Nachfolgend finden Sie eine Liste aller verfügbaren Methoden, die von `PreUpgra
 
 Entfernen Sie alle Service Packs, Feature Packs oder Hotfixes, die im lokalen Dateisystem im Verzeichnis `crx-quickstart/install` bereitgestellt wurden. Dadurch wird verhindert, dass nach Abschluss der Aktualisierung versehentlich alte Hotfixes und Service Packs zusätzlich zur neuen AEM-Version installiert werden.
 
-## Beenden aller Cold-Standby-Instanzen {#stop-tarmk-coldstandby-instance}
+## Stoppen aller Cold-Standby-Instanzen {#stop-tarmk-coldstandby-instance}
 
-Wenn Sie TarMK-Cold-Standby verwenden, beenden Sie alle Cold-Standby-Instanzen. Dies garantiert eine effiziente Möglichkeit, bei Problemen im Upgrade wieder online zu gehen. Nach erfolgreichem Upgrade müssen die Cold-Standby-Instanzen auf Basis der aktualisierten primären Instanzen neu erstellt werden.
+Wenn Sie TarMK-Cold-Standby verwenden, stoppen Sie alle Cold-Standby-Instanzen. Dies garantiert eine effiziente Möglichkeit, bei Problemen im Upgrade wieder online zu gehen. Nach erfolgreichem Upgrade müssen die Cold-Standby-Instanzen auf Basis der aktualisierten primären Instanzen neu erstellt werden.
 
 ## Deaktivieren von benutzerdefinierten geplanten Aufträgen {#disable-custom-scheduled-jobs}
 

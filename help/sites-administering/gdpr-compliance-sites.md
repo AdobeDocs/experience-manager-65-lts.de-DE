@@ -77,7 +77,7 @@ Der Site-Eigentümer oder die Site-Eigentümerin muss eine Opt-out-Komponente ge
 Diese Richtlinien sehen eine standardmäßige Opt-in-Implementierung vor. Deshalb müssen Website-Besuchende klar zustimmen, bevor personenbezogene Daten im Persistenzspeicher des Browsers (auf Client-Seite) abgelegt werden.
 
 * Die Opt-out-Komponente sollte immer dann integriert werden, wenn die ContextHub-Komponente vorhanden ist.
-* Die Datenschutz-bezogenen Bedingungen für die Website müssen den Website-Besuchenden angezeigt werden, um ihnen Folgendes zu ermöglichen:
+* Die DSGVO-bezogenen Bedingungen für die Website müssen den Website-Besuchenden angezeigt werden, um ihnen Folgendes zu ermöglichen:
 
    * Akzeptieren der Bedingungen
    * Ablehnen der Bedingungen

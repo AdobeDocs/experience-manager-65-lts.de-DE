@@ -12,8 +12,8 @@ role: User
 exl-id: 281d8bd3-d6f2-42f8-8d77-b138f0ea5aae
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 100%
+source-wordcount: '1417'
+ht-degree: 98%
 
 ---
 
@@ -91,7 +91,7 @@ Beachten Sie die Eigenschaft „Name“ für dieses Feld. Sie hat den Wert
 
 `./jcr:content/par/text/text`
 
-Dies ist der Name der Eigenschaft, in die der Inhalt dieses Feldes geschrieben wird, wenn die Grundlage für die Erstellung einer neuen Seite verwendet wird. Die Eigenschaft wird als relativer Pfad zu dem Knoten angegeben, der die zu erstellende Seite repräsentiert. Sie gibt den Eigenschaftstext unter dem Knotentext an, der sich unter dem par-Knoten befindet, der wiederum ein untergeordnetes Element des Knotens jcr:content unter dem Seitenknoten ist.
+Dies ist der Name der Eigenschaft, in die der Inhalt dieses Feldes geschrieben wird, wenn die Grundlage für die Erstellung einer neuen Seite verwendet wird. Die Eigenschaft wird als relativer Pfad zu dem Knoten angegeben, der die zu erstellende Seite repräsentiert. Sie gibt den Eigenschaftstext unter dem Knotentext an, der sich unter dem par-Knoten befindet, der wiederum ein untergeordnetes Element des jcr:content-Knotens unter dem Seitenknoten ist.
 
 Dies definiert den Speicherort des Inhaltsspeichers für den Text, der in dieses Feld eingegeben wird. Für diesen Inhalt müssen jedoch zwei weitere Eigenschaften angegeben werden:
 

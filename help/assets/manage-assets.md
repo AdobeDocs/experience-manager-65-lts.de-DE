@@ -91,7 +91,7 @@ Die Option [!UICONTROL Pause] wird nicht angezeigt, wenn eine Datei, die größe
 
 Um die Größenbegrenzung zu ändern, konfigurieren Sie die Eigenschaft `chunkUploadMinFileSize` des Knotens `fileupload` im CRX-Repository, das unter `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` verfügbar ist.
 
-Wenn Sie auf **[!UICONTROL Anhalten]** klicken, wird stattdessen die Option **[!UICONTROL Play]** angezeigt. Um den Upload fortzusetzen, klicken Sie auf **[!UICONTROL Play]**.
+Wenn Sie auf **[!UICONTROL Anhalten]** klicken, wird stattdessen die Option **[!UICONTROL Wiedergabe]** angezeigt. Um den Upload fortzusetzen, klicken Sie auf **[!UICONTROL Play]**.
 
 Um einen laufenden Upload abzubrechen, klicken Sie auf „Schließen“ (`X`) neben der Fortschrittsleiste. Wenn Sie den Upload abbrechen, löscht [!DNL Assets] den teilweise hochgeladenen Teil des Assets.
 
@@ -148,13 +148,13 @@ Schließen Sie keine Sonderzeichen in die Erweiterungen der Asset-Dateinamen ein
 
 Darüber hinaus zeigt die [!DNL Assets]-Benutzeroberfläche das zuletzt hochgeladene Asset oder den Ordner an, den Sie zuerst erstellt haben.
 
-Wenn Sie den Upload abbrechen, bevor die Dateien hochgeladen sind, unterbricht [!DNL Assets] den Upload der aktuellen Datei und aktualisiert den Inhalt. Dateien, die bereits hochgeladen wurden, werden jedoch nicht gelöscht.
+Wenn Sie den Upload abbrechen, bevor die Dateien hochgeladen sind, stoppt [!DNL Assets] den Upload der aktuellen Datei und aktualisiert den Inhalt. Dateien, die bereits hochgeladen wurden, werden jedoch nicht gelöscht.
 
 Das Dialogfeld für den Upload-Fortschritt in [!DNL Assets] zeigt die Anzahl der erfolgreich hochgeladenen Dateien und die der Dateien an, die nicht hochgeladen werden konnten.
 
 ### Serielle Uploads {#serialuploads}
 
-Das gleichzeitige Hochladen einer Vielzahl von Assets verbraucht erhebliche E/A-Ressourcen, was sich negativ auf die Leistung Ihrer [!DNL Assets]-Bereitstellung auswirken kann. Insbesondere bei einer langsamen Internetverbindung erhöht sich die Ladezeit aufgrund einer Auslastungsspitze beim Festplatten-E/A erheblich. Von Ihrem Webbrowser können weitere Einschränkungen auferlegt werden, die die Anzahl der POST-Anfragen betreffen, die [!DNL Assets] für gleichzeitige Asset-Uploads verarbeiten kann. Fehler oder ein vorzeitiger Abbruch des Upload-Vorgangs können die Folge sein. Es kann also vorkommen, dass in [!DNL Experience Manager Assets] bei der Erfassung großer Dateienmengen einige Dateien verloren gehen oder der Erfassungsvorgang insgesamt nicht ausgeführt werden kann.
+Das gleichzeitige Hochladen einer Vielzahl von Assets verbraucht erhebliche E/A-Ressourcen, was sich negativ auf die Leistung Ihrer [!DNL Assets]-Bereitstellung auswirken kann. Insbesondere bei einer langsamen Internetverbindung erhöht sich die Ladezeit aufgrund einer Auslastungsspitze beim Festplatten-E/A erheblich. Von Ihrem Webbrowser können weitere Einschränkungen auferlegt werden, die die Anzahl der POST-Anfragen betreffen, die [!DNL Assets] für gleichzeitige Asset-Uploads verarbeiten kann. Fehler oder ein vorzeitiges Ende des Upload-Vorgangs können die Folge sein. Es kann also vorkommen, dass in [!DNL Experience Manager Assets] bei der Erfassung großer Dateienmengen einige Dateien verloren gehen oder der Erfassungsvorgang insgesamt nicht ausgeführt werden kann.
 
 Um diese Situation zu vermeiden, gibt es die Möglichkeit, Ladevorgänge im Stapelmodus seriell durchzuführen. Dabei werden in die Assets nicht gleichzeitig, sondern einzeln nacheinander von [!DNL Assets] erfasst.
 
@@ -170,7 +170,7 @@ Dynamic Media ermöglicht das stapelweise Hochladen von Assets über FTP-Server.
 
 >[!NOTE]
 >
->Um Assets über FTP im Modus „Dynamic Media – Scene7“ hochzuladen, installieren Sie Feature Pack 18912 auf den [!DNL Experience Manager]-Autoreninstanzen. Wenden Sie sich an den [Adobe-Support](https://experienceleague.adobe.com/de?support-solution=General&amp;lang=de#support), um auf FP-18912 zugreifen zu können, und schließen Sie das Setup Ihres FTP-Kontos ab. Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für die Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md).
+>Um Assets über FTP im Modus „Dynamic Media – Scene7“ hochzuladen, installieren Sie Feature Pack 18912 auf den [!DNL Experience Manager]-Autoreninstanzen. Wenden Sie sich an den [Adobe-Support](https://experienceleague.adobe.com/?support-solution=General&lang=de#support), um auf FP-18912 zugreifen zu können, und schließen Sie das Setup Ihres FTP-Kontos ab. Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für die Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md).
 >
 >Die in [!DNL Experience Manager] angegebenen Upload-Einstellungen werden ignoriert, wenn Sie FTP zum Hochladen von Assets verwenden. Stattdessen werden Dateiverarbeitungsregeln, wie in Dynamic Media Classic definiert, verwendet.    
 
@@ -340,11 +340,11 @@ Wenn Sie viele Assets in Adobe Experience Manager hochladen, erhöhen sich die E
 
 Sie können ZIP-Archive wie jedes andere unterstützte Asset hochladen. Für ZIP-Dateien gelten dieselben Regeln für Dateinamen. Mit [!DNL Experience Manager] können Sie ein ZIP-Archiv in einen DAM-Speicherort extrahieren. Wenn die Aktivdateien nicht die Erweiterung ZIP haben, aktivieren Sie die Dateityperkennung über den Inhalt.
 
-Wählen Sie jeweils ein ZIP-Archiv aus, klicken Sie auf **[!UICONTROL Archiv extrahieren]** und wählen Sie einen Zielordner aus. Wählen Sie eine Option für den Umgang mit eventuellen Konflikten aus. Wenn die Assets in der ZIP-Datei bereits im Zielordner vorhanden sind, können Sie eine der folgenden Optionen auswählen: Extrahieren überspringen, vorhandene Dateien ersetzen, beide Assets durch Umbenennen behalten oder neue Version erstellen.
+Wählen Sie jeweils ein ZIP-Archiv aus, klicken Sie auf **[!UICONTROL Archiv extrahieren]** und wählen Sie einen Zielordner aus. Wählen Sie eine Option für den Umgang mit eventuellen Konflikten aus. Wenn die Assets in der ZIP-Datei bereits im Zielordner vorhanden sind, können Sie eine der folgenden Optionen auswählen: Extraktion überspringen, vorhandene Dateien ersetzen, beide Assets durch Umbenennen behalten oder neue Version erstellen.
 
-Nach Abschluss des Extrahierungsvorgangs erhalten Sie von [!DNL Experience Manager] eine Benachrichtigung im Benachrichtigungsbereich. Während [!DNL Experience Manager] das ZIP-Archiv extrahiert, können Sie ohne Unterbrechung des Extrahierungsvorgangs mit Ihrer Arbeit fortfahren.
+Nach Abschluss des Extraktionsvorgangs erhalten Sie von [!DNL Experience Manager] eine Benachrichtigung im Benachrichtigungsbereich. Während [!DNL Experience Manager] das ZIP-Archiv extrahiert, können Sie ohne Unterbrechung des Extraktionsvorgangs mit Ihrer Arbeit fortfahren.
 
-![Benachrichtigung über die ZIP-Dateiextrahierung](assets/Zip-extraction-notification.png)
+![Benachrichtigung über die ZIP-Dateiextraktion](assets/Zip-extraction-notification.png)
 
 Die Funktion hat einige Einschränkungen:
 
@@ -485,7 +485,7 @@ So verschieben Sie Assets oder Ordner:
 
    * Geben Sie nach dem Verschieben den Namen für das Asset an. Klicken Sie anschließend auf **[!UICONTROL Weiter]**, um fortzufahren.
 
-   * Klicken Sie auf **[!UICONTROL Abbrechen]**, um den Vorgang abzubrechen.
+   * Klicken Sie auf **[!UICONTROL Abbrechen]**, um den Vorgang zu stoppen.
 
    >[!NOTE]
    >
@@ -507,7 +507,7 @@ So verschieben Sie Assets oder Ordner:
    * Aktivieren/deaktivieren Sie in der Spalte **[!UICONTROL Anpassen]** Verweise auf die Assets.
    * Klicken Sie auf **[!UICONTROL Zurück]**, um zum Bildschirm **[!UICONTROL Ziel auswählen]** zurückzukehren.
 
-   * Klicken Sie auf **[!UICONTROL Abbrechen]**, um den Verschiebevorgang abzubrechen.
+   * Klicken Sie auf **[!UICONTROL Abbrechen]**, um den Verschiebevorgang zu stoppen.
 
    Wenn Sie die Verweise nicht aktualisieren, verweisen sie weiterhin auf den alten Asset-Pfad. Wenn Sie die Verweise aktualisieren, werden sie an den neuen Asset-Pfad angepasst.
 
@@ -615,7 +615,7 @@ Spezifische Informationen für [!DNL Dynamic Media], siehe [Veröffentlichen von
 
 1. Wenn ein Asset beim Veröffentlichen auf andere Assets verweist, werden seine Referenzen im Assistenten aufgelistet. Es werden nur die Verweise angezeigt, die seit der letzten Veröffentlichung entweder rückgängig gemacht oder geändert wurden. Wählen Sie die Referenzen aus, die Sie veröffentlichen möchten.
 
-1. Wenn beim Rückgängigmachen der Veröffentlichung ein Asset auf andere Assets verweist, wählen Sie die Referenzen, deren Veröffentlichung Sie aufheben möchten. Klicken Sie auf **[!UICONTROL Veröffentlichung aufheben]**. Klicken Sie im Bestätigungsdialog auf **[!UICONTROL Abbrechen]**, um die Aktion abzubrechen, oder klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**, um zu bestätigen, dass die Veröffentlichung der Assets zum angegebenen Datum aufgehoben werden soll.
+1. Wenn beim Rückgängigmachen der Veröffentlichung ein Asset auf andere Assets verweist, wählen Sie die Referenzen, deren Veröffentlichung Sie aufheben möchten. Klicken Sie auf **[!UICONTROL Veröffentlichung aufheben]**. Klicken Sie im Bestätigungsdialog auf **[!UICONTROL Abbrechen]**, um die Aktion zu stoppen, oder klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**, um zu bestätigen, dass die Veröffentlichung der Assets zum angegebenen Datum aufgehoben werden soll.
 
 Machen Sie sich mit den folgenden Einschränkungen und Tipps im Zusammenhang mit dem Veröffentlichen oder Rückgängigmachen der Veröffentlichung von Assets oder Ordnern vertraut:
 

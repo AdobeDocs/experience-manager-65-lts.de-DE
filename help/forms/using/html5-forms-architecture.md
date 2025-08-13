@@ -12,8 +12,8 @@ role: Admin, User, Developer
 exl-id: e57d51de-9d98-4b20-8180-22fa81fad4fd
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1976'
-ht-degree: 100%
+source-wordcount: '1971'
+ht-degree: 97%
 
 ---
 
@@ -27,11 +27,11 @@ Die HTML5-Formularfunktionen werden als Paket innerhalb der eingebetteten AEM-In
 
 ### Über das Sling Framework {#using-sling-framework}
 
-[Apache Sling](https://sling.apache.org/) ist ressourcenzentriert. Es verwendet eine Anfrage-URL, um die Ressource zuerst aufzulösen. Jede Ressource verfügt über die Eigenschaft **sling:resourceType** (oder **sling:resourceSuperType**). Basierend auf dieser Eigenschaft, der Anfragemethode und den Eigenschaften der Anfrage-URL wird dann ein Sling-Skript ausgewählt, um die Anfrage zu verarbeiten. Dieses Sling-Skript kann ein JSP oder ein Servlet sein. Im Falle von HTML5-Formulare dienen **Profil**-Knoten als Sling-Ressourcen, und der **Profil-Renderer** dient als Sling-Skript, das die Anforderung bearbeitet, das mobile Formular mit einem bestimmten Profil zu rendern. Ein **Profil-Renderer** ist ein JSP, das Parameter aus einer Anforderung ausliest und den Forms OSGi-Dienst aufruft.
+[Apache Sling](https://sling.apache.org/) ist ressourcenzentriert. Es verwendet eine Anfrage-URL, um die Ressource zuerst aufzulösen. Jede Ressource verfügt über die **sling:resourceType** (oder **sling:resourceSuperType**). Basierend auf dieser Eigenschaft, der Anfragemethode und den Eigenschaften der Anfrage-URL wird dann ein Sling-Skript ausgewählt, um die Anfrage zu verarbeiten. Dieses Sling-Skript kann ein JSP oder ein Servlet sein. Im Falle von HTML5-Formulare dienen **Profil**-Knoten als Sling-Ressourcen, und der **Profil-Renderer** dient als Sling-Skript, das die Anforderung bearbeitet, das mobile Formular mit einem bestimmten Profil zu rendern. Ein **Profil-Renderer** ist ein JSP, das Parameter aus einer Anforderung ausliest und den Forms OSGi-Dienst aufruft.
 
 Weitere Informationen über REST-Endpunkte und unterstützte Anforderungsparameter finden Sie unter [Rendern einer Formularvorlage](/help/forms/using/rendering-form-template.md).
 
-Wenn Benutzende eine Anfrage von einem Client-Gerät wie einem iOS- oder Android™-Browser starten, löst Sling zuerst den Profilknoten auf Basis der Anfrage-URL auf. Von diesem Profilknoten aus werden **sling:resourceSuperType** und **sling:resourceType** gelesen, um alle verfügbaren Skripte zu ermitteln, die diese Formular-Render-Anfrage verarbeiten können. Anschließend werden Sling-Anfrageselektoren zusammen mit der Anfragemethode verwendet, um das Skript zu identifizieren, das für die Verarbeitung dieser Anfrage am besten geeignet ist. Sobald die Anfrage ein Profil-Renderer-JSP erreicht, ruft das JSP den Forms OSGi-Dienst auf.
+Wenn Benutzende eine Anfrage von einem Client-Gerät wie einem iOS- oder Android™-Browser starten, löst Sling zuerst den Profilknoten auf Basis der Anfrage-URL auf. Von diesem Profilknoten aus werden &quot;**&quot;:resourceSuperType** &quot;**&quot;:resourceType**, um alle verfügbaren Skripte zu ermitteln, die diese Formular-Render-Anfrage verarbeiten können. Anschließend werden Sling-Anfrageselektoren zusammen mit der Anfragemethode verwendet, um das Skript zu identifizieren, das für die Verarbeitung dieser Anfrage am besten geeignet ist. Sobald die Anfrage ein Profil-Renderer-JSP erreicht, ruft das JSP den Forms OSGi-Dienst auf.
 
 Weitere Informationen zur Sling-Skriptauflösung finden Sie unter [AEM Sling-Spickzettel](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de) oder [Apache Sling-URL-Zerlegung](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html).
 
@@ -172,7 +172,7 @@ Profile sind die Ressourcenknoten in Sling, die ein Formular oder eine Familie v
 
 #### Profil-Renderer {#profile-renderers}
 
-Der Profilknoten hat eine Eigenschaft **Sling: resourceSuperType** mit dem Wert **xfaforms/profile**. Diese Eigenschaft sendet intern Anforderungen an das Sling-Skript für Profilknoten im Ordner **/libs/xfaforms/profile**. Diese Skripte sind JSP-Seiten, die als Container für die Zusammenfügung der HTML-Formulare und der erforderlichen JS/CSS-Artefakte dienen. Die Seiten enthalten Verweise auf:
+Der Profilknoten hat eine -Eigenschaft **sling:resourceSuperType** mit dem Wert **xfaforms/profile**. Diese Eigenschaft sendet intern Anforderungen an das Sling-Skript für Profilknoten im Ordner **/libs/xfaforms/profile**. Diese Skripte sind JSP-Seiten, die als Container für die Zusammenfügung der HTML-Formulare und der erforderlichen JS/CSS-Artefakte dienen. Die Seiten enthalten Verweise auf:
 
 * **xfaforms.I18N.&lt;locale>**: Diese Bibliothek enthält lokalisierte Daten.
 * **xfaforms.profile**: Diese Bibliothek enthält die Implementierung für XFA Scripting und für die Layout-Engine.

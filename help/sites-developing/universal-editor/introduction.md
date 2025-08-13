@@ -6,8 +6,8 @@ role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
 source-git-commit: 1529d3309a07aecaab29198f30e752ad00c53fab
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 26%
+source-wordcount: '1190'
+ht-degree: 20%
 
 ---
 
@@ -95,7 +95,7 @@ Der universelle Editor beruht auf einer Reihe von Services, die konfiguriert wer
 1. Suchen Sie **Universal Editor URL Service** in der Liste und klicken Sie auf **Edit the configuration values** (Konfigurationswerte bearbeiten).
 1. Legen Sie fest, für welche Inhaltspfade oder `sling:resourceTypes` der universelle Editor geöffnet werden soll.
    * Geben Sie im Feld **Universal Editor Opening Mapping** (Universeller Editor – Zuordnung zum Öffnen) die Pfade an, für die der universelle Editor geöffnet wird.
-   * Geben Sie im Feld **Sling:resourceTypes which shall be opened by Universal Editor** (sling:resourceTypes, die vom universellen Editor geöffnet werden sollen) eine Liste der Ressourcen an, die direkt vom universellen Editor geöffnet werden.
+   * Geben Sie im Feld **Sling:resourceTypes, das vom universellen Editor geöffnet werden soll** eine Liste der Ressourcen an, die direkt vom universellen Editor geöffnet werden.
 1. Klicken Sie auf **Speichern**.
 1. Überprüfen Sie Ihre [Externalizer-Konfiguration](/help/sites-developing/externalizer.md) und stellen Sie sicher, dass Sie zumindest die lokale Umgebung sowie die Autoren- und Veröffentlichungsumgebung wie im folgenden Beispiel festgelegt haben.
 
@@ -108,7 +108,7 @@ Der universelle Editor beruht auf einer Reihe von Services, die konfiguriert wer
 Sobald diese Konfigurationsschritte abgeschlossen sind, öffnet AEM den universellen Editor für Seiten in der folgenden Reihenfolge.
 
 1. AEM prüft die Zuordnungen unter `Universal Editor Opening Mapping`. Wenn sich der Inhalt unter einem der dort definierten Pfade befindet, wird der universelle Editor dafür geöffnet.
-1. Bei Inhalten, die nicht unter den in `Universal Editor Opening Mapping` definierten Pfaden enthalten sind, prüft AEM, ob der `resourceType` des Inhalts zu den unter **Sling:resourceTypes which shall be opened by Universal Editor** (sling:resourceTypes, die vom universellen Editor geöffnet werden sollen) definierten gehört. Wenn der Inhalt einem dieser Typen entspricht, wird dafür der universelle Editor unter `${author}${path}.html` geöffnet.
+1. Für Inhalte, die nicht unter in `Universal Editor Opening Mapping` definierten Pfaden enthalten sind, prüft AEM, ob die `resourceType` der Inhalte mit denen übereinstimmen, die in **Sling:resourceTypes definiert sind, das vom universellen Editor geöffnet** soll. Wenn die Inhalte mit einem dieser Typen übereinstimmen, wird der universelle Editor unter `${author}${path}.html` geöffnet.
 1. Andernfalls öffnet AEM den Seiteneditor.
 
 Die folgenden Variablen stehen zur Definition Ihrer Zuordnungen unter `Universal Editor Opening Mapping` zur Verfügung.
@@ -137,7 +137,7 @@ Nachdem AEM aktualisiert und konfiguriert wurde, können Sie einen lokalen unive
 1. Installieren Sie Node.js Version >=20.
 1. Laden Sie den neuesten universellen Editor-Service von [Software Distribution](https://experienceleague.adobe.com/de/docs/experience-cloud/software-distribution/home) herunter und entpacken Sie ihn.
 1. Konfigurieren des universellen Editor-Dienstes über Umgebungsvariablen oder `.env` Datei.
-   * [Weitere Informationen finden Sie in der Dokumentation zum universellen Editor von AEM as a Cloud Service.](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
+   * [Weitere Informationen finden Sie in der Dokumentation zum universellen Editor von AEM as a Cloud Service.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * Beachten Sie, dass Sie möglicherweise die Option `UES_MAPPING` verwenden müssen, wenn eine interne IP-Umschreibung erforderlich ist.
 1. Führen Sie `universal-editor-service.cjs` aus.
 
@@ -156,7 +156,7 @@ Wenn AEM konfiguriert ist und ein lokaler universeller Editor-Dienst ausgeführt
 
    >[!NOTE]
    >
-   >8080 ist der Standard-Port. Wenn Sie dies mit dem `UES_PORT` Parameter in [Ihrer `.env`-Datei](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service) geändert haben, müssen Sie den Port-Wert hier entsprechend anpassen.
+   >8080 ist der Standard-Port. Wenn Sie dies mit dem `UES_PORT` Parameter in [Ihrer `.env`-Datei](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service) geändert haben, müssen Sie den Port-Wert hier entsprechend anpassen.
 
 1. Starten Sie Apache neu.
 
@@ -164,7 +164,7 @@ Wenn AEM konfiguriert ist und ein lokaler universeller Editor-Dienst ausgeführt
 
 Wenn AEM aktualisiert wurde und ein lokaler universeller Editor-Dienst ausgeführt wird, können Sie mit der Bearbeitung von Headless-Inhalten mit dem universellen Editor beginnen.
 
-Ihre App muss jedoch so instrumentiert sein, dass sie den universellen Editor nutzen kann. Dazu gehören Meta-Tags, die den Editor anweisen, wie und wo der Inhalt beibehalten werden soll. Weitere Informationen zu dieser Instrumentierung finden Sie unter [Dokumentation zum universellen Editor für AEM as a Cloud Service.](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)
+Ihre App muss jedoch so instrumentiert sein, dass sie den universellen Editor nutzen kann. Dazu gehören Meta-Tags, die den Editor anweisen, wie und wo der Inhalt beibehalten werden soll. Weitere Informationen zu dieser Instrumentierung finden Sie unter [Dokumentation zum universellen Editor für AEM as a Cloud Service.](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)
 
 Beachten Sie, dass bei Verwendung der Dokumentation für den universellen Editor mit AEM as a Cloud Service die folgenden Änderungen mit AEM 6.5 LTS gelten.
 
@@ -184,7 +184,7 @@ Beachten Sie, dass bei Verwendung der Dokumentation für den universellen Editor
 
 >[!TIP]
 >
->Eine ausführliche Anleitung für Entwicklerinnen und Entwickler, die mit dem universellen Editor beginnen, finden Sie im Dokument [Übersicht über den universellen Editor für AEM-](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview)) in der AEM as a Cloud Service-Dokumentation. Beachten Sie dabei die erforderlichen Änderungen, die für die AEM 6.5 LTS-Unterstützung erforderlich sind, wie in diesem Abschnitt erwähnt.
+>Eine ausführliche Anleitung für Entwicklerinnen und Entwickler, die mit dem universellen Editor beginnen, finden Sie im Dokument [Übersicht über den universellen Editor für AEM-](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview)) in der AEM as a Cloud Service-Dokumentation. Beachten Sie dabei die erforderlichen Änderungen, die für die AEM 6.5 LTS-Unterstützung erforderlich sind, wie in diesem Abschnitt erwähnt.
 
 ## Unterschiede zwischen AEM 6.5 LTS und AEM as a Cloud Service {#differences}
 

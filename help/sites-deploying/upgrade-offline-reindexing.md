@@ -47,7 +47,7 @@ Außerdem ist dies die Reihenfolge der Schritte, wie sie in dem Ansatz beschrieb
 
 Um eine vollständige Indizierung in AEM zu ermöglichen, wird Text aus Binärdateien wie PDF extrahiert und dem Index hinzugefügt. Dies ist in der Regel ein aufwendiger Schritt im Indizierungsprozess. Die Textextraktion ist ein Optimierungsschritt, der insbesondere für die Neuindizierung von Asset-Repositorys empfohlen wird, da in diesen eine große Anzahl von Binärdateien gespeichert ist.
 
-![offline-reindexing-upgrade-text-extract](assets/offline-reindexing-upgrade-text-extraction.png)
+![offline-reindexing-upgrade-text-extraction](assets/offline-reindexing-upgrade-text-extraction.png)
 
 Text aus im System gespeicherten Binärdateien kann mit dem Oak-run-Tool und der Bibliothek tika extrahiert werden. Vor dem Upgrade kann ein Klon des Produktionssystems erstellt werden, der für diesen Textextraktionsprozess verwendet werden kann. Dieser Prozess erstellt dann den Textspeicher, indem er die folgenden Schritte durchläuft:
 

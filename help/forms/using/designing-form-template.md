@@ -32,7 +32,7 @@ Die meisten Schritte um die Entwicklung einer Formularvorlage, wie Schemabindung
 
 #### Anzeigen als HTML-Vorschau {#preview-html}
 
-Die HTML-Vorschau-Registerkarte wurde im Design-Modus für Entwicklerinnen und Entwickler von Formularen hinzugefügt, um eine Vorschau von Formularen im HTML5-Format während des Entwurfsprozesses zu ermöglichen. Weitere Informationen dazu, wie Sie diese Funktion in AEM Forms Designer aktivieren und konfigurieren, finden Sie unter [HTML-Vorschau](../../forms/using/preview-xdp-forms-html.md).
+Die HTML-Vorschau-Registerkarte wurde im Design-Modus für Designerinnen und Designer von Formularen hinzugefügt, um eine Vorschau von Formularen im HTML5-Format während des Entwurfsprozesses zu ermöglichen. Weitere Informationen dazu, wie Sie diese Funktion in AEM Forms Designer aktivieren und konfigurieren, finden Sie unter [HTML-Vorschau](../../forms/using/preview-xdp-forms-html.md).
 
 #### Scribble-Signatur {#scribble-signature}
 

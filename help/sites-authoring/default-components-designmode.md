@@ -112,7 +112,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    ![screen_shot_2018-03-22at103113-1](assets/screen_shot_2018-03-22at103113-1.png)
 
-1. Klicken Sie auf eine Komponente mit einem blauen Rahmen. In diesem Beispiel ist eine Hero-Bildkomponente ausgewählt.
+1. Klicken Sie auf eine Komponente mit einem blauen Rahmen. In diesem Beispiel ist eine Hero-Image-Komponente ausgewählt.
 
    ![screen_shot_2018-03-22at103434](assets/screen_shot_2018-03-22at103434.png)
 

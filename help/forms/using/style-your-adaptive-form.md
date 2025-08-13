@@ -8,8 +8,8 @@ role: Admin, User, Developer
 exl-id: 5b3beaa6-ca0a-454e-85ee-c3653dd423fe
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 100%
+source-wordcount: '2058'
+ht-degree: 98%
 
 ---
 
@@ -175,7 +175,7 @@ Kopf- und Fußzeile bieten ein konsistentes und unverwechselbares Erscheinungsbi
 
 ### Gestalten der Datenerfassungskomponente und Anwenden eines Hintergrunds auf das adaptive Formular {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
-Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten zu erfassen,  zum Beispiel ein Textfeld und ein numerisches Feld. Sie können für alle Datenerfassungskomponenten einen identischen Stil bereitstellen oder jeder Komponente einen eigenen Stil zuweisen.  In diesem Lernprogramm wird ein identischer Stil auf numerische Felder (Kunden-ID, Postleitzahl) und Textfelder (Kunden-ID, Name, Lieferadresse, Status, E-Mail) angewendet. So gestalten Sie die Datenerfassungskomponenten:
+Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten zu erfassen,  zum Beispiel ein Textfeld und ein numerisches Feld. Sie können für alle Datenerfassungskomponenten einen identischen Stil bereitstellen oder jeder Komponente einen eigenen Stil zuweisen.  In diesem Lernprogramm wird ein identischer Stil auf numerische Felder (Kunden-ID, Postleitzahl) und Textfelder (Kunden-ID, Name, Versandadresse, Status, E-Mail) angewendet. So gestalten Sie die Datenerfassungskomponenten:
 
 1. Wählen Sie das Feld **[!UICONTROL Kunden-ID]** und dann die Option **[!UICONTROL Feld-Widget]**. Legen Sie die folgenden Eigenschaften fest und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 

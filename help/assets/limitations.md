@@ -27,7 +27,7 @@ Dieses Thema enthält die folgenden Abschnitte:
 
 ## Best Practices und durchgesetzte Grenzwerte in Dynamic Media für Asset-Typen {#best-practice-enforced-limits}
 
-Wenn Sie ein Rotationsset oder Bildset erstellen oder PDFs zur Seitenextrahierung hochladen, empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Grenzwerte durch:
+Wenn Sie ein Rotationsset oder Bildset erstellen oder PDFs zur Seitenextraktion hochladen, empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Grenzwerte durch:
 
 | Asset – Art des Grenzwerts | Best Practice | Erzwungene Begrenzung |
 | --- | --- | --- |

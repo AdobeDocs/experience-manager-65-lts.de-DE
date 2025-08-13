@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: c499432d-6aa4-481f-821d-bd2f9b7a911d
 source-git-commit: 90f1b2ca07bec5a3be6c312a5f048abaa088df16
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 100%
+source-wordcount: '502'
+ht-degree: 95%
 
 ---
 
@@ -44,7 +44,7 @@ Sie haben verschiedene Möglichkeiten, das Ergebnis des Musterdetektors zu prüf
 
 * **Über die Felix Inventory-Konsole:** 
 
-1. Navigieren Sie unter *https://Server-Adresse:Serverport/system/console/configMgr* zur AEM-Web-Konsole.
+1. Navigieren Sie zur AEM-Web-Konsole unter *https://serveraddress:serverport/system/console/configMgr*
 1. Wählen Sie **Status - Musterdetektor** aus, wie im Bild unten dargestellt:
 
    ![screen-shot-2018-2-5pattern-detektor](assets/screenshot-2018-2-5pattern-detector.png)
@@ -111,7 +111,7 @@ Mit der Ausgabe:
     "code": "ECU",
     "type": "extraneous.content.usage",
     "detective": "ContentAccessDetector",
-    "moreInfo": "https://www.adobe.com/go/aem6_ECU_de"
+    "moreInfo": "https://www.adobe.com/go/aem6_ECU"
   },
   "item": {
     "id": "a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f",
@@ -215,7 +215,7 @@ Mit dem Musterdetektor können Sie derzeit Folgendes überprüfen:
 * Überschreibungen von Sling-Ressourcentypen und -Supertypen (mit Inhaltsüberlagerungen für Suchpfade)
 * Definitionen von Oak-Indizes (Kompatibilität)
 * VLT-Pakete (Überverwendung)
-* Kompatibilität mit rep:User-Knoten (im Kontext der OAuth-Konfiguration)
+* Rep:User-Knotenkompatibilität (im Kontext der OAuth-Konfiguration)
 
 >[!NOTE]
 >

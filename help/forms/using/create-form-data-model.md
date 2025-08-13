@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: 12f99159-d252-44a5-8daa-938640360445
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 100%
+source-wordcount: '1547'
+ht-degree: 97%
 
 ---
 
@@ -57,7 +57,7 @@ Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
 1. Installieren Sie den JDBC-Treiber für die [!DNL MySQL]-Datenbank als OSGi-Bundle:
 
    1. Laden Sie das [!DNL MySQL] JDBC-Treiber-OSGi-Bundle von `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html` herunter. <!-- This URL is an insecure link but using https is not possible -->
-   1. Melden Sie sich bei der AEM [!DNL Forms]-Autoreninstanz als Administrator an und wechseln Sie zu den AEM-Web-Konsole-Bundles. Die Standard-URL lautet [http://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
+   1. Melden Sie sich bei der AEM [!DNL Forms]-Autoreninstanz als Administrator an und wechseln Sie zu den AEM-Web-Konsole-Bundles. Die Standard-URL lautet [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. Wählen Sie **[!UICONTROL Installieren/Aktualisieren]** aus. Ein Dialogfeld [!UICONTROL Bundles hochladen/installieren] wird angezeigt.
 
@@ -65,7 +65,7 @@ Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
 
 1. Konfigurieren Sie die [!DNL MySQL]-Datenbank als Datenquelle:
 
-   1. Wechseln Sie zu AEM-Web-Konsole unter [http://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+   1. Wechseln Sie zur AEM-Web-Konsole unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
    1. Suchen Sie die Konfiguration **Apache Sling Connection Pooled DataSource**. Wählen Sie die Konfiguration aus, um sie im Bearbeitungsmodus zu öffnen.
    1. Geben Sie im Konfigurationsdialog die folgenden Details an:
 
@@ -83,7 +83,7 @@ Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
 
       >[!NOTE]
       >
-      >AEM Forms unterstützt keine NT-Authentifizierung für [!DNL MySQL]. Wechseln Sie zur AEM-Web-Konsole unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) und suchen Sie nach „Apache Sling Connection Pooled Datasource“. Legen Sie für die Eigenschaft „JDBC-Verbindungs-URI“ den Wert von „integratedSecurity“ auf „False“ fest und verwenden Sie den erstellten Benutzernamen und das erstellte Kennwort für die Verbindung mit der [!DNL MySQL]-Datenbank.
+      >AEM Forms unterstützt keine NT-Authentifizierung für [!DNL MySQL]. Wechseln Sie zur AEM-Web-Konsole unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) und suchen Sie nach „Apache Sling Connection Pooled Datasource“. Legen Sie für die Eigenschaft „JDBC-Verbindungs-URI“ den Wert von „integratedSecurity“ auf „False“ fest und verwenden Sie den erstellten Benutzernamen und das erstellte Kennwort für die Verbindung mit der [!DNL MySQL]-Datenbank.
 
       * **Test on Borrow**: Aktivieren Sie die Option **[!UICONTROL Test on Borrow]**.
       * **Test on Return:** Aktivieren Sie die Option **[!UICONTROL Test on Return.]**
@@ -180,7 +180,7 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
       * **Titel**: Geben Sie den Titel des Dienstes an. Zum Beispiel: Versandadresse abrufen.
       * **Beschreibung**: Geben Sie eine Beschreibung an, die eine detaillierte Funktionsweise des Dienstes enthält. Beispiel:
 
-        Dieser Dienst ruft die Lieferadresse und andere Kundendaten aus der [!DNL MySQL]-Datenbank ab.
+        Dieser Dienst ruft die Versandadresse und andere Kundendaten aus der [!DNL MySQL]-Datenbank ab.
 
       * **Ausgabemodellobjekt**: Wählen Sie ein Schema mit Kundendaten. Beispiel:
 
@@ -200,7 +200,7 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
       * **Titel**: Geben Sie den Titel des Dienstes an. Beispiel: Versandadresse aktualisieren.
       * **Beschreibung**: Geben Sie eine Beschreibung an, die eine detaillierte Funktionsweise des Dienstes enthält. Beispiel:
 
-        Dieser Service aktualisiert die Lieferadresse und die zugehörigen Felder in der MySQL-Datenbank
+        Dieser Service aktualisiert die Versandadresse und die zugehörigen Felder in der MySQL-Datenbank
 
       * **Eingabemodellobjekt**: Wählen Sie ein Schema mit Kundendaten. Beispiel:
 

@@ -12,8 +12,8 @@ role: Developer
 exl-id: 20a8e6d7-dab5-476a-9235-0abca3da5ff3
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4896'
-ht-degree: 100%
+source-wordcount: '4886'
+ht-degree: 98%
 
 ---
 
@@ -57,16 +57,16 @@ Erstellen Sie eine Client-Bibliothek wie folgt:
 
    * name=&quot;clientlib&quot;
    * jcr:mixinTypes=&quot;[mix:lockable]&quot;
-   * jcr:primaryType=&quot;cq:ClientLibraryFolder&quot;
-   * sling:resourceType=&quot;widgets/clientlib&quot;
+   * jcr:primaryType=„cq:ClientLibraryFolder&quot;
+   * sling:resourceType=„widgets/clientlib“
    * categories=&quot;[&lt;category-name>]&quot;
    * dependencies=&quot;[cq.widgets]&quot;
 
    `Note: <category-name> is the name of the custom library (for example, "cq.extjstraining") and is used to include the library on the page.`
 
-1. Erstellen Sie unterhalb von `clientlib` die Ordner `css` und `js` (nt:folder).
+1. Erstellen `clientlib` unten die Ordner `css` und `js` (nt:folder).
 
-1. Erstellen Sie unterhalb von `clientlib` die Dateien `css.txt` und `js.txt` (nt:files). Diese TXT-Dateien listen die Dateien auf, die in der Bibliothek enthalten sind.
+1. Erstellen `clientlib` unten die `css.txt` und `js.txt` Dateien (nt:files). Diese TXT-Dateien listen die Dateien auf, die in der Bibliothek enthalten sind.
 
 1. Bearbeiten Sie die Datei `js.txt`: Sie muss mit „`#base=js`“ beginnen, worauf eine Liste der Dateien folgen muss, die vom CQ-Client-Bibliotheksdienst aggregiert werden sollen, z. B.:
 
@@ -103,7 +103,7 @@ wenn `<category-nameX>` der Name der Client-seitigen Bibliothek ist.
 * um nur JavaScript-Code einzuschließen:
   `<ui:includeClientLib js="<category-name>"/>`
 
-Weitere Informationen finden Sie in der Beschreibung des Tags [&lt;ui:includeClientLib>](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
+Weitere Informationen finden Sie in der Beschreibung des Tags [&lt;ui:includeClientLib>](/help/sites-developing/taglib.md#lt-ui-includeclientlib) .
 
 Manchmal sollte eine Client-Bibliothek nur im Authoring-Modus verfügbar sein und im Publishing-Modus ausgeschlossen werden. Dies lässt sich wie folgt erreichen:
 
@@ -663,11 +663,11 @@ Die „Test“-Spaltenzellen können bearbeitet werden, da sie mit einem Editor 
 * `store` ist ` [CQ.Ext.data.GroupingStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)`-Objekt:
    * Es ruft seine Daten ab, indem es das unter „`/bin/querybuilder.json`“ registrierte Servlet mit einigen Parametern zum Filtern der Abfrage aufruft.
    * Es basiert auf dem vorher definierten `reader`.
-   * Die Tabelle wird anhand der Spalte „**jcr:path**“ in aufsteigender Reihenfolge definiert.
+   * Die Tabelle wird anhand der Spalte &quot;**jcr:path**&quot; in aufsteigender Reihenfolge definiert
 * `gridPanel` ist ein ` [CQ.Ext.grid.EditorGridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)`-Objekt, das bearbeitet werden kann:
    * Es basiert auf dem vordefinierten `store` und auf dem Spaltenmodell `cm`.
    * Nur eine Zeile kann jeweils ausgewählt werden:
      `sm: new [CQ.Ext.grid.RowSelectionModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
    * Der `afteredit`-Listener stellt sicher, dass nach der Bearbeitung einer Zelle in der „**Test**“-Spalte Folgendes passiert:
-      * Die Eigenschaft „`test`“ des Knotens an dem durch die Spalte „**jcr:path**“ definierten Pfad wird im Repository mit dem Wert der Zelle festgelegt.
+      * Die Eigenschaft &quot;`test`&quot; des Knotens an dem durch die Spalte &quot;**jcr“ definierten Pfad:path** im Repository mit dem Wert der Zelle festgelegt
       * Wenn der POST erfolgreich ist, wird der Wert dem `store`-Objekt hinzugefügt, andernfalls wird er abgelehnt.

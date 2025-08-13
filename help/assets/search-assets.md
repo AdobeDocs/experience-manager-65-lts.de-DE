@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 3511e07b-f6d0-435a-aa80-55357d3dccf5
 source-git-commit: df4b8b9c80734917569c40d01ea5789e16bfb4e3
 workflow-type: tm+mt
-source-wordcount: '5645'
-ht-degree: 100%
+source-wordcount: '5635'
+ht-degree: 99%
 
 ---
 
@@ -125,7 +125,7 @@ Sie können die Relevanz von Keywords für bestimmte Assets verbessern, um die a
 
 So können Sie das Ranking bestimmter Assets in den Keywords für das jeweilige Keyword erhöhen. Siehe Beispielvideo unten. Weitere Informationen finden Sie unter [Suchen in [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=de).
 
->[!VIDEO](https://video.tv.adobe.com/v/3444068/?quality=6&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Video: Erfahren Sie, wie Suchergebnisse ihren Rang erhalten und wie der Rang beeinflusst werden kann.*
 
@@ -163,17 +163,17 @@ Anhand exakter Werte bestimmter Metadatenfelder wie Titel, Beschreibung und Erst
 
 | Metadatenfeld | Facettenwert und Nutzung |
 |---|---|
-| Titel | title:John |
-| Ersteller | creator:John |
-| Speicherort | location:NA |
+| Titel | Titel:John |
+| Ersteller | Ersteller:John |
+| Speicherort | Standort:NA |
 | Beschreibung | description:&quot;Sample Image&quot; |
 | Erstellungswerkzeug | creatortool:&quot;Adobe Photoshop&quot; |
 | Urheberrechtsbesitzer | copyrightowner:&quot;Adobe Systems&quot; |
-| Mitarbeiter | contributor:John |
+| Mitarbeiter | Mitwirkender:John |
 | Nutzungsbedingungen | usageterms:„CopyRights Reserved“ |
-| Erstellt | created:YYYY-MM-DDTHH |
-| Ablaufdatum | expires:YYYY-MM-DDTHH |
-| Einschaltzeit | ontime:YYYY-MM-DDTHH |
+| Erstellt | Erstellt:YYYY-MM-DDTHH |
+| Ablaufdatum | Läuft ab:YYYY-MM-DDTHH |
+| Einschaltzeit | rechtzeitig:YYYY-MM-DDTHH |
 | Ausschaltzeit | offtime:YYYY-MM-DDTHH |
 | Zeitraum (expires dateontime,offtime) | facet field : lowerbound.upperbound |
 | Pfad | /content/dam/&lt;folder name> |
@@ -181,9 +181,9 @@ Anhand exakter Werte bestimmter Metadatenfelder wie Titel, Beschreibung und Erst
 | Betreff | subject:„Training“ |
 | Tags | tags:„Location And Travel“ |
 | Typ | type:&quot;image\png&quot; |
-| Bildbreite | width:lowerbound.upperbound |
-| Bildhöhe | height:lowerbound.upperbound |
-| Person | person:John |
+| Bildbreite | Breite:lowerbound..upperbound |
+| Bildhöhe | Höhe:lowerbound..upperbound |
+| Person | Person :John |
 
 Die Eigenschaften `path`, `limit`, `size` und `orderby` können nicht mit dem Operator `OR` mit einer anderen Eigenschaft kombiniert werden.
 
@@ -248,7 +248,7 @@ Sie können die folgenden Anfrageparameter in einer URL übergeben, um den Asset
 
 | Name | Werte | Beispiel | Zweck |
 |---|---|---|---|
-| resource suffix (B) | Ordnerpfad als Ressourcensuffix in der URL: [https://localhost:4502/aem/assetpicker.html/&lt;Ordnerpfad>](https://localhost:4502/aem/assetpicker.html) | Zum Starten des Asset-Wählers mit einem bestimmten Ordner, z. B. mit ausgewähltem Ordner `/content/dam/we-retail/en/activities`, sollte die URL wie folgt aussehen: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Wenn beim Starten des Asset-Wählers ein bestimmter Ordner ausgewählt sein soll, können Sie ihn als Ressourcensuffix übergeben. |
+| resource suffix (B) | Ordnerpfad als Ressourcensuffix in der URL: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Zum Starten des Asset-Wählers mit einem bestimmten Ordner, z. B. `/content/dam/we-retail/en/activities` als ausgewähltem Ordner, sollte die URL wie folgt aussehen: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Wenn beim Starten des Asset-Wählers ein bestimmter Ordner ausgewählt sein soll, können Sie ihn als Ressourcensuffix übergeben. |
 | `mode` | single, multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | Im Modus „multiple“ können Sie mit dem Asset-Wähler mehrere Assets gleichzeitig auswählen. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Verwenden Sie diese Parameter, um den Asset-Wähler als Granite-Dialogfeld zu öffnen. Diese Option ist nur relevant, wenn Sie den Asset-Wähler per Granite-Pfadfeld starten und als pickerSrc-URL konfigurieren. |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Verwenden Sie diese Option, um den Stammordner für den Asset-Wähler anzugeben. In diesem Fall können Sie mit dem Asset-Wähler nur untergeordnete Assets (direkt/indirekt) unter dem Stammordner auswählen. |

@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '1902'
-ht-degree: 99%
+source-wordcount: '1901'
+ht-degree: 98%
 
 ---
 
@@ -344,7 +344,7 @@ Wird zurückgegeben, wenn:
   Nachfolgend finden Sie allgemeine Szenarien, in denen dieser Fehlerstatus in Kombination mit der Fehlermeldung (monospace) zurückgegeben wird:
 
    * Übergeordneter Ordner ist nicht vorhanden (wenn ein Inhaltsfragment per `POST` erstellt wurde)
-   * Es wird kein Inhaltsfragmentmodell bereitgestellt (cq:model fehlt), es kann nicht gelesen werden (aufgrund eines ungültigen Pfads oder eines Berechtigungsproblems) oder es gibt kein gültiges Fragmentmodell:
+   * Es wird kein Inhaltsfragmentmodell bereitgestellt (CQ:model fehlt), es kann nicht gelesen werden (aufgrund eines ungültigen Pfads oder eines Berechtigungsproblems) oder es gibt kein gültiges Fragmentmodell:
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`

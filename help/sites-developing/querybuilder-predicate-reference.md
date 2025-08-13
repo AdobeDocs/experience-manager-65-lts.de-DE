@@ -11,8 +11,8 @@ role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '2313'
-ht-degree: 99%
+source-wordcount: '2321'
+ht-degree: 97%
 
 ---
 
@@ -481,7 +481,7 @@ Der Name „root“ wird in Abfragen nie verwendet, er ist implizit.
 
    * **selective**:
 
-     Nur in `p.properties` angegebene Eigenschaften. Dies ist eine mit Leerzeichen getrennte (verwenden Sie „+“ in URLs) Liste relativer Pfade. Wenn der relative Pfad eine Tiefe > 1 aufweist, werden sie als untergeordnete Objekte angezeigt. Die spezielle Eigenschaft „jcr:path“ umfasst den Pfad des Treffers.
+     Nur in `p.properties` angegebene Eigenschaften. Dabei handelt es sich um eine mit Leerzeichen getrennte (verwenden Sie &quot;+&quot; in URLs) Liste relativer Pfade. Wenn der relative Pfad eine Tiefe >1 aufweist, werden sie als untergeordnete Elemente angezeigt. Die spezielle jcr:path-Eigenschaft umfasst den Pfad des Treffers.
 
 ### savedquery {#savedquery}
 

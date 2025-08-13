@@ -13,8 +13,8 @@ role: User,Admin,Architect,Developer
 exl-id: b47591ac-10ff-4b87-b75d-68ed635ceca8
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 100%
+source-wordcount: '437'
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ Jede Spalte zeigt einen Wert für den aktuellen Berichtszeitraum an und zeigt da
 >
 >Um den Aktualisierungszeitraum zu ändern, [konfigurieren Sie das Importintervall](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Öffnen Sie die **Sites-Konsole**, z. B. [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content).
+1. Öffnen Sie die **Sites**-Konsole, z. B. [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
 1. Klicken Sie ganz rechts in der Symbolleiste (rechte obere Ecke) auf das Symbol zur Auswahl der **Listenansicht** (das angezeigte Symbol hängt von der [aktuellen Ansicht](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) ab).
 
 1. Klicken Sie erneut ganz rechts in der Symbolleiste (rechte obere Ecke) auf das Symbol und wählen Sie dann **Einstellungen anzeigen** aus. Das Dialogfeld **Spalten konfigurieren** öffnet sich. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie den Vorgang mit **Aktualisieren**.

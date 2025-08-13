@@ -73,7 +73,7 @@ Für AEM 6.5 LTS gibt es wieder zwei Arten von Uber Jars:
 
 **Hauptunterschied: AEM 6.5 vs. AEM 6.5 LTS Uber Jars**
 
-* Wenn in AEM 6.5 sowohl öffentliche als auch veraltete APIs benötigt werden, können Sie eine einzige JAR-Datei zum Einschließen verwenden, die in Ihrer `pom.xml`-Datei `uber-jar-6.5.x-apis-with-deprecations.jar` wird.
+* Wenn in AEM 6.5 sowohl öffentliche als auch veraltete APIs benötigt werden, können Sie eine einzige JAR-Datei zum Einschließen verwenden, die in Ihrer `uber-jar-6.5.x-apis-with-deprecations.jar`-Datei `pom.xml` wird.
 * Wenn Sie in AEM 6.5 LTS sowohl öffentliche als auch veraltete APIs benötigen, müssen Sie zwei separate JARs einbeziehen, `uber-jar-6.6.x-apis.jar` für öffentliche APIs und `uber-jar-6.6.x-deprecated-apis.jar` für veraltete APIs.
 
 **Maven-Koordinaten für veraltete APIs in Jar**

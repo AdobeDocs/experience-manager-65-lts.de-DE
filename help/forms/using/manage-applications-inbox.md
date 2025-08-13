@@ -8,7 +8,7 @@ exl-id: 5454ee3d-45fb-4ed2-b2f2-1fa9e2460759
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
 source-wordcount: '1066'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -148,4 +148,4 @@ Der Eigentümerin bzw. dem Eigentümer eines Workflow-Modells können die Elemen
 
 1. [Erstellen Sie einen Eigenschaftsindex und weisen Sie ihm „true“ zu](/help/sites-deploying/queries-and-indexing.md#the-property-index).
 
-1. Nachdem Sie Indizes in CRX DE konfiguriert oder über ein Paket bereitgestellt haben, indizieren Sie das Repository erneut.
+1. Nachdem Sie in CRX DE Indizes konfiguriert oder über ein Paket bereitgestellt haben, indizieren Sie das Repository erneut.

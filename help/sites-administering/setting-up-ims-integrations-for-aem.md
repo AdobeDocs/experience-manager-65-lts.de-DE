@@ -54,7 +54,7 @@ Weitere Informationen zu dieser Konfiguration finden Sie in der Dokumentation zu
 
 * Migration von vorhandenen JWT-Anmeldedaten zu OAuth-Anmeldedaten:
 
-   * [Migration von JWT-Anmeldedaten (Service Account) zu OAuth-Server-zu-Server-Anmeldedaten](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration?lang=de)
+   * [Migration von JWT-Anmeldedaten (Service Account) zu OAuth-Server-zu-Server-Anmeldedaten](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
 
 Zum Beispiel:
 

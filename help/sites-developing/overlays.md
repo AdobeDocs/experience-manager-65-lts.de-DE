@@ -11,8 +11,8 @@ role: Developer
 exl-id: d8fe6fb6-8ede-4fa7-95da-adee313bf768
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 100%
+source-wordcount: '585'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ Seit Einführung von AEM 6.0 wurden Änderungen an der Implementierung und Verwe
 
       * Rekonstruieren Sie die entsprechende `/libs`-Struktur unter `/apps`.
 
-        Dies erfordert keine 1:1-Kopie, der [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) wird verwendet, um die erforderlichen Originaldefinitionen zu vergleichen. Sling Resource Merger stellt Dienste für den Zugriff auf und die Zusammenführung von Ressourcen mittels Diff(Differenzierungs)-Mechanismen bereit.
+        Dies erfordert keine 1::1-Kopie, der [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) wird verwendet, um die erforderlichen Originaldefinitionen zu vergleichen. Sling Resource Merger stellt Dienste für den Zugriff auf und die Zusammenführung von Ressourcen mittels Diff(Differenzierungs)-Mechanismen bereit.
 
       * Nehmen Sie etwaige Änderungen unter `/apps` vor.
 

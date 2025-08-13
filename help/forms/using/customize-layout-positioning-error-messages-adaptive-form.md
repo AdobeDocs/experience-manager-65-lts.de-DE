@@ -11,8 +11,8 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 9347f22a-166f-4403-9ca9-c29139384b2b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 100%
+source-wordcount: '520'
+ht-degree: 97%
 
 ---
 
@@ -55,7 +55,7 @@ Indem Sie ein Design im Design-Editor erstellen, können Sie das Layout aller Fe
 1. Kopieren Sie ein Feld-Layout vom Knoten „/libs/fd/af/layouts/field“ (z. B. „defaultFieldLayout“) in den Knoten „/apps“ (z. B. „/apps/af-field-layout“).
 1. Benennen Sie den kopierten Knoten und die Datei „defaultFieldLayout.jsp“ um. Beispielsweise in „errorOnRight.jsp“. 
 
-1. Ändern Sie die Werte der Eigenschaften „qtip“ und „jcr:description“ des kopierten Knotens. Ändern Sie z. B. den Wert der Eigenschaften in „Error On Right“ 
+1. Ändern Sie den Wert der Eigenschaften „qtip“ und &quot;:descriptionjcr)“ des kopierten Knotens. Ändern Sie z. B. den Wert der Eigenschaften in „Error On Right“ 
 
 1. Um neue Stile und Verhaltensweisen hinzuzufügen, erstellen Sie eine Client-Bibliothek unter dem Knoten „/etc“.
 

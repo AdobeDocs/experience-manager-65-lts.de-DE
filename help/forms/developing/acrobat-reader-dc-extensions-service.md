@@ -12,8 +12,8 @@ hidefromtoc: true
 exl-id: a8ec523c-b304-41ba-9980-8ba84e076c7d
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 100%
+source-wordcount: '302'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Die folgenden Schnellstarts sind für den Service für Acrobat Reader DC-Erweiterungen verfügbar.
 
-[Kurzanleitung (SOAP-Modus): Anwenden von Verwendungsrechten mithilfe der Java-API](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[Schnellstart (SOAP-Modus)](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [Entfernen von Verwendungsrechten aus PDF-Dokumenten](#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
@@ -33,7 +33,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 >
 >Die Kurzanleitungen für die Programmierung mit AEM Forms basieren auf dem Forms Server-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem, z. B. UNIX, verwenden, ersetzen Sie die Windows-spezifischen Pfade durch Pfade, die von dem jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungs-Server verwenden, müssen Sie ebenfalls sicherstellen, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Kurzanleitung (SOAP-Modus): Anwenden von Verwendungsrechten mithilfe der Java-API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
+## Schnellstart (SOAP-Modus):Applying Verwendungsrechte unter Verwendung der Java-API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
 Im folgenden Java-Code-Beispiel werden Verwendungsrechte auf ein PDF-Dokument mit dem Namen *Loan.pdf* angewendet. Das PDF-Dokument mit aktivierten Rechten wird als PDF-Datei mit dem Namen *LoanUsageRights.pdf* gespeichert. Die folgenden Verwendungsrechte werden auf dieses PDF-Dokument angewendet: `enabledComments`, `enabledFormFillIn` und `enabledDigitalSignatures`. (Siehe [Anwenden von Verwendungsrechten auf PDF-Dokumente](/help/forms/developing/assigning-usage-rights.md).)
 

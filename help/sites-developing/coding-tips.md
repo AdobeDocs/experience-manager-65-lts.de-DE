@@ -11,8 +11,8 @@ role: Developer
 exl-id: e431a240-45a2-4222-b854-32b90e5cd100
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 100%
+source-wordcount: '856'
+ht-degree: 98%
 
 ---
 
@@ -79,7 +79,7 @@ Alle Zeichenfolgen, die nicht autorenseitig bereitgestellt werden, sollten in ei
 
 ### Ressourcenpfade zur Sicherheit maskieren {#escape-resource-paths-for-safety}
 
-Zwar sollten Pfade im JCR keine Leerzeichen enthalten, aber der Code sollte nicht fehlschlagen, wenn Leerzeichen vorhanden sind. Jackrabbit stellt eine Text-Hilfsklasse mit den Methoden *escape()* und *escapePath()* bereit. Für JSPs stellt die Granite-Benutzeroberfläche die Funktion *granite:encodeURIPath() EL* bereit.
+Zwar sollten Pfade im JCR keine Leerzeichen enthalten, aber der Code sollte nicht fehlschlagen, wenn Leerzeichen vorhanden sind. Jackrabbit stellt eine Text-Hilfsklasse mit den Methoden *escape()* und *escapePath()* bereit. Für JSPs stellt die Granite-Benutzeroberfläche eine Funktion *granite:encodeURIPath() EL* bereit.
 
 ### Zur Absicherung vor Cross-Site-Scripting-Angriffen die XSS-API und/oder HTL nutzen {#use-the-xss-api-and-or-htl-to-protect-against-cross-site-scripting-attacks}
 

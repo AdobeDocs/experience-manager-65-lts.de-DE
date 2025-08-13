@@ -11,8 +11,8 @@ role: Admin
 exl-id: c86f66b3-6471-4fb6-81d6-3c0a4dcbe200
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 100%
+source-wordcount: '1008'
+ht-degree: 97%
 
 ---
 
@@ -189,7 +189,7 @@ Von Workflows verarbeitete Daten werden im von Adobe bereitgestellten Speicher (
 
 Auf der Ebene des Workflow-Modells wird ein Flag bereitgestellt, das angibt, dass das Modell (und seine Laufzeitinstanzen) über eine externe Datenspeicherung von Metadaten verfügt. Workflow-Variablen werden in JCR nicht für die Workflow-Instanzen der Modelle persistiert, die für die externe Speicherung markiert sind.
 
-Die Eigenschaft *userMetadataPersistenceEnabled* wird im *jcr:content-Knoten* des Workflow-Modells gespeichert. Dieses Flag wird in Workflow-Metadaten als *cq:userMetaDataCustomPersistenceEnabled* beibehalten.
+Die Eigenschaft *userMetadataPersistenceEnabled* wird im *jcr:content-Knoten* Workflow-Modells gespeichert. Dieses Flag wird in Workflow-Metadaten als *cq:userMetaDataCustomPersistenceEnabled* beibehalten.
 
 Die folgende Illustration zeigt, wie Sie die Hervorhebung in einem Workflow festlegen.
 

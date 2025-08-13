@@ -13,7 +13,7 @@ exl-id: 015def31-c7de-42b3-8218-1284afcb6921
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 96%
+ht-degree: 90%
 
 ---
 
@@ -54,7 +54,7 @@ Wechseln Sie zu /etc/replication/agents.author.html und klicken Sie dann auf die
    1. Klicken Sie im oberen Menü auf „Tools“.
    1. Klicken Sie auf die Lupenschaltfläche.
    1. Wählen Sie „XPath“ als Typ aus.
-   1. Geben Sie die folgende Abfrage in das Feld „Abfrage“ ein: /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job) order by @slingevent:created
+   1. Geben Sie in das Feld „Abfrage“ diese Abfrage /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job) order by @slingevent ein:created
    1. Klicken Sie auf „Suchen“. 
    1. Die in den Ergebnissen ganz oben angezeigten Elemente sind die aktuellen Sling-Eventing-Aufträge. Klicken Sie auf die einzelnen Aufträge, um nach den unterbrochenen Replikationen zu suchen, die mit dem oben in der Warteschlange Angezeigten übereinstimmen.
 
@@ -62,7 +62,7 @@ Wechseln Sie zu /etc/replication/agents.author.html und klicken Sie dann auf die
 
 In manchen Fällen ist es hilfreich, wenn die gesamte Replikationsprotokollierung auf DEBUG-Ebene in separaten Protokolldateien erfolgen soll. Gehen Sie hierfür wie folgt vor:
 
-1. Wechseln Sie zu https://host:port/system/console/configMgr und melden Sie sich als Admin an.
+1. Navigieren Sie zu https://host:port/system/console/configMgr und melden Sie sich als Administrator an.
 1. Suchen Sie nach der Apache Sling Logging Logger-Konfiguration und erstellen Sie eine Instanz, indem Sie auf die Schaltfläche **+** rechts neben der Werkskonfiguration klicken. Dadurch wird eine neue Logging Logger-Konfiguration erstellt.
 1. Richten Sie die Konfiguration wie folgt ein:
 
@@ -70,7 +70,7 @@ In manchen Fällen ist es hilfreich, wenn die gesamte Replikationsprotokollierun
    * Protokolldatei: logs/replication.log
    * Logger: com.day.cq.replication
 
-1. Wenn Sie annehmen, dass das Problem in irgendeiner Weise mit „sling eventing/jobs“ verknüpft ist, können Sie auch dieses Java™-Paket unter „categories:org.apache.sling.event“ hinzufügen.
+1. Wenn Sie den Verdacht haben, dass das Problem mit Sling Eventing/Jobs in Verbindung steht, können Sie dieses Java™-Paket auch unter categories.:org.sling.event hinzufügen
 
 ## Anhalten der Warteschlange des Replikationsagenten  {#pausing-replication-agent-queue}
 

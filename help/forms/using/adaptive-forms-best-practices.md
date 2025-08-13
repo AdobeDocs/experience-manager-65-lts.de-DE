@@ -96,7 +96,7 @@ Weitere Informationen finden Sie unter [Erstellen eines adaptiven Formulars](/he
 
 ### Erstellen von Formularvorlagen
 
-Sie können ein adaptives Formular mithilfe der in **Konfigurations-Browser** aktivierten Formularvorlagen erstellen. Informationen zum Aktivieren der Formularvorlagen finden Sie unter [Erstellen einer adaptiven Formularvorlage](https://experienceleague.adobe.com/de/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
+Sie können ein adaptives Formular mithilfe der in **Konfigurations-Browser** aktivierten Formularvorlagen erstellen. Informationen zum Aktivieren der Formularvorlagen finden Sie unter [Erstellen einer adaptiven Formularvorlage](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
 
 Die Formularvorlagen können auch aus Paketen mit adaptiven Formularen, die auf einem anderen Autoren-Computer erstellt werden, hochgeladen werden. Formularvorlagen werden durch die Installation von [aemforms-references-* packages](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) verfügbar gemacht. Zu den empfohlenen Best Practices gehören:
 
@@ -361,13 +361,13 @@ Eine der größten Herausforderungen für Unternehmen besteht im Umgang mit pers
 
 <!--The AEM Forms Rule Editor offers predefined functions for defining rules in adaptive forms without extensive programming. It facilitates the implementation of conditional logic, data validation, and integration with external sources. This visual interface is especially valuable for business users and form designers, enabling them to create dynamic and complex rules with ease, here we discusss few use cases where rule editor allows you to:-->
 
-Der AEM Forms-Regeleditor bietet eine visuelle Benutzeroberfläche zum Erstellen und Verwalten von Regeln, wodurch sich der Programmieraufwand deutlich reduziert. Dies kann insbesondere für Business-Anwenderinnen und Business-Anwender oder Formularentwicklerinnen und Formularentwickler nützlich sein, die möglicherweise keine größeren Programmierkenntnisse besitzen, aber Geschäftsregeln in den Formularen definieren und verwalten müssen. Hier werden einige Anwendungsfälle besprochen, in denen der Regeleditor Folgendes ermöglicht:
+Der AEM Forms-Regeleditor bietet eine visuelle Benutzeroberfläche zum Erstellen und Verwalten von Regeln, wodurch sich der Programmieraufwand deutlich reduziert. Dies kann insbesondere für Business-Anwenderinnen und Business-Anwender oder Formular-Designerinnen und -Designer nützlich sein, die möglicherweise keine größeren Programmierkenntnisse besitzen, aber Geschäftsregeln in den Formularen definieren und verwalten müssen. Hier werden einige Anwendungsfälle besprochen, in denen der Regeleditor Folgendes ermöglicht:
 
-* &#x200B;<!-- Allows you --> Definieren von Geschäftsregeln für Ihre Formulare, ohne dass eine umfangreiche Programmierung erforderlich ist.
-* &#x200B;<!-- Use the Rule Editor when you need --> Implementieren von Bedingungslogik in Ihren Formularen. Dazu gehören das Ein- oder Ausblenden von Formularelementen, das Ändern von Feldwerten basierend auf bestimmten Bedingungen oder das dynamische Ändern des Verhaltens Ihrer Formulare.
-* &#x200B;<!--When you want --> Durchsetzen von Datenvalidierungsregeln bei Formularübermittlungen. Der Regeleditor kann hier zum Definieren von Validierungsbedingungen verwendet werden.
-* &#x200B;<!-- When you need --> Integrieren Ihrer Formulare in externe Datenquellen (Formulardatenmodell) oder Dienste. Der Regeleditor kann hier beim Definieren von Regeln zum Abrufen, Anzeigen oder Bearbeiten von Daten während Formularinteraktionen helfen.
-* &#x200B;<!-- If you want -->Erstellen dynamischer und interaktiver Formulare, die auf Benutzeraktionen reagieren. Mit dem Regeleditor können Sie hier Regeln definieren, die das Verhalten von Formularelementen in Echtzeit steuern.
+* <!-- Allows you --> Definieren von Geschäftsregeln für Ihre Formulare, ohne dass eine umfangreiche Programmierung erforderlich ist.
+* <!-- Use the Rule Editor when you need --> Implementieren von Bedingungslogik in Ihren Formularen. Dazu gehören das Ein- oder Ausblenden von Formularelementen, das Ändern von Feldwerten basierend auf bestimmten Bedingungen oder das dynamische Ändern des Verhaltens Ihrer Formulare.
+* <!--When you want --> Durchsetzen von Datenvalidierungsregeln bei Formularübermittlungen. Der Regeleditor kann hier zum Definieren von Validierungsbedingungen verwendet werden.
+* <!-- When you need --> Integrieren Ihrer Formulare in externe Datenquellen (Formulardatenmodell) oder Dienste. Der Regeleditor kann hier beim Definieren von Regeln zum Abrufen, Anzeigen oder Bearbeiten von Daten während Formularinteraktionen helfen.
+* <!-- If you want -->Erstellen dynamischer und interaktiver Formulare, die auf Benutzeraktionen reagieren. Mit dem Regeleditor können Sie hier Regeln definieren, die das Verhalten von Formularelementen in Echtzeit steuern.
 
 Der Regeleditor ist sowohl für Foundation-Komponenten als auch für Kernkomponenten von AEM Forms verfügbar.
 

@@ -11,7 +11,7 @@ role: Developer
 exl-id: 6c54197f-86da-41bd-93e6-ee78ece91013
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '933'
 ht-degree: 99%
 
 ---
@@ -498,7 +498,7 @@ Der Dienst wendet das kumulierte Ergebnis aller Filter an.  Beispielsweise werd
 
 Gehen Sie beispielsweise zum Konfigurieren des Diensts mithilfe von CRXDE Lite wie folgt vor:
 
-1. Öffnen Sie CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. http://localhost Öffnen Sie CRXDE Lite ([:4502/crx/de](http://localhost:4502/crx/de)).
 1. Erstellen Sie im Ordner „config“ Ihrer Anwendung einen Knoten:
 
    * Name: `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`

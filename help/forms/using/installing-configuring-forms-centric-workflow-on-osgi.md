@@ -127,7 +127,7 @@ Einige der Konfigurationen von AEM Forms sind obligatorisch und andere optional.
 
 Führen Sie sowohl auf der Autor- als auch auf der Veröffentlichungsinstanz folgende Schritte zum Boot-Delegate der Bibliotheken aus:
 
-1. Beenden Sie die zugrunde liegenden AEM-Instanz.
+1. Stoppen Sie die zugrunde liegende AEM-Instanz.
 1. Öffnen Sie die Datei „[AEM-Installationsverzeichnis]\crx-quickstart\conf\sling.properties“ zur Bearbeitung.
 
    Wenn Sie AEM mit „[AEM-Installationsverzeichnis]\crx-quickstart\bin\start.bat“ gestartet haben, bearbeiten Sie die Datei „sling.properties“ unter [AEM_root]\crx-quickstart\.

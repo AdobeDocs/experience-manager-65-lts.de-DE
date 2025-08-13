@@ -11,8 +11,8 @@ role: Developer
 exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '5177'
-ht-degree: 99%
+source-wordcount: '5166'
+ht-degree: 96%
 
 ---
 
@@ -48,9 +48,9 @@ Für die mit AEM bereitgestellten Standardberichte gilt Folgendes:
 >In den hier aufgeführten Beispielen und Definitionen wird die folgende Notation verwendet:
 >
 >* Jede Zeile definiert einen Knoten oder eine Eigenschaft, wobei:
->  `N:<name> [<nodeType>]` : einen Knoten mit dem Namen `<*name*>` und des Knotentyps `<*nodeType*>`*beschreibt.*
->  `P:<name> [<propertyType]` : eine Eigenschaft mit dem Namen `<*name*>` und des Eigenschaftentyps `<*propertyType*>` beschreibt.
->  `P:<name> = <value>` : eine Eigenschaft mit dem Namen `<name>` beschreibt, deren Wert auf `<value>` festgelegt sein muss.
+>  >  `N:<name> [<nodeType>]` : einen Knoten mit dem Namen `<*name*>` und des Knotentyps `<*nodeType*>`*beschreibt.*
+>  >  `P:<name> [<propertyType]` : eine Eigenschaft mit dem Namen `<*name*>` und des Eigenschaftentyps `<*propertyType*>` beschreibt.
+>  >  `P:<name> = <value>` : eine Eigenschaft mit dem Namen `<name>` beschreibt, deren Wert auf `<value>` festgelegt sein muss.
 >
 >* Die Einrückung veranschaulicht die hierarchischen Abhängigkeiten zwischen den Knoten.
 >* Durch „|“ getrennte Elemente kennzeichnen eine Liste möglicher Elemente wie Typen oder Namen; `String|String[]` bedeutet beispielsweise, dass die Eigenschaft entweder „String“ oder „String[]“ lauten kann.
@@ -122,7 +122,7 @@ Die Abfrage:
 
      Diese werden angewendet, um den (anfänglichen) Ergebnissatz zu generieren. Sie umfassen u. a. Einschränkungen hinsichtlich des Knotentyps oder Eigenschaftsbeschränkungen.
 
-**Entscheidend hierbei ist, dass jeder einzelne im Ergebnissatz der Abfrage zurückgegebene Knoten verwendet wird, um eine einzelne Zeile im Bericht zu generieren (es handelt sich also um eine 1:1-Beziehung).**
+**Der zentrale Punkt hierbei ist, dass jeder einzelne Knoten, der in der Ergebnismenge der Abfrage zurückgegeben wird, verwendet wird, um eine einzelne Zeile im Bericht zu generieren (also eine 1::1-Beziehung).**
 
 Die Entwickelnden müssen sicherstellen, dass die für einen Bericht definierte Abfrage eine für diesen Bericht geeignete Knotengruppe zurückgibt. Der Knoten selbst muss jedoch nicht alle erforderlichen Informationen enthalten. Diese können auch von über- und/oder untergeordneten Knoten abgeleitet werden. Beispielsweise wählt die für den [Benutzerbericht](/help/sites-administering/reporting.md#user-report) verwendete Abfrage Knoten auf Basis des Knotentyps aus (in diesem Fall `rep:user`). Die meisten Spalten dieses Berichts beziehen ihre Daten jedoch nicht direkt von diesen Knoten, sondern vom Unterknoten `profile`..
 
@@ -530,8 +530,8 @@ N:definitions
 
   Der entsprechende Werteextraktor (der hier unter Kontrolle ist):
 
-   * Er prüft, ob eine jcr:lastModified-Eigenschaft verfügbar ist. Falls ja, verwendet er sie.
-   * Wenn keine jcr:lastModified-Eigenschaft verfügbar ist, wird stattdessen der Inhalt von „jcr:created“ verwendet.
+   * Überprüft, ob eine jcr:lastModified-Eigenschaft verfügbar ist, und verwendet sie, falls ja.
+   * Wenn keine jcr:lastModified-Eigenschaft verfügbar ist, wird stattdessen der Inhalt von :createdjcr) verwendet.
 
 * `subPath`
 
@@ -636,7 +636,7 @@ N:definitions
 
       * `propertyName` (optional)
 
-        Definiert den Namen der Eigenschaft, die für die Auflösung des Werts verwendet werden soll. Wenn kein Wert angegeben ist, wird der Standardwert *jcr:title* (der Seitentitel) verwendet. Für den Resolver `page` bedeutet dies, dass der Pfad zuerst zum Seitenpfad, dann weiter zum Seitentitel aufgelöst wird.
+        Definiert den Namen der Eigenschaft, die für die Auflösung des Werts verwendet werden soll. Wenn kein Wert angegeben ist, wird der Standardwert *jcr:title* (der Seitentitel) verwendet. Für den `page` Resolver bedeutet dies, dass der Pfad zuerst zum Seitenpfad, dann weiter zum Seitentitel aufgelöst wird.
 
    * `path`
 
@@ -693,7 +693,7 @@ N:data
 
 **Seite**
 
-Löst einen Pfadwert zur Eigenschaft „jcr:description“ des Knotens „jcr:content“ (untergeordnet) der entsprechenden Seite auf.
+Löst einen Pfadwert zur Eigenschaft „jcr:description&quot; im jcr:content-Knoten (untergeordneten Knoten) der entsprechenden Seite auf.
 
 Siehe `/libs/cq/reporting/components/compreport/pagecol/definitions/data`.
 
@@ -815,7 +815,7 @@ Derzeit sind die folgenden Datentypformatierer verfügbar:
 
    * `duration`
 
-     Die Dauer ist die Zeitspanne zwischen zwei definierten Terminen. Beispiel: Beginn und Ende einer Workflow-Aktion, die eine Stunde gedauert hat – sie hat am 13.02.11 um 11:23 Uhr begonnen und endete eine Stunde später am 13.02.11 um 12:23 Uhr.
+     Die Dauer ist die Zeitspanne zwischen zwei definierten Terminen. Beispiel: Beginn und Ende einer Workflow-Aktion, die eine Stunde gedauert hat - sie hat am 2/13/11, 11:23h begonnen und endete eine Stunde später am 2/13/11, 12:23h.
 
      Der Formatierer konvertiert einen numerischen Wert (interpretiert als Millisekunden) in eine Dauerzeichenfolge, z. B. wird `30000` als * `30s`* formatiert.
 
@@ -1297,7 +1297,7 @@ Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht de
 
    >[!NOTE]
    >
-   >In diesem Beispiel liegen keine Definitionen von `N:data` und `P:clientFilter` vor. Das liegt daran, dass der vom Server empfangene Wert 1:1 zurückgegeben wird – dies ist das Standardverhalten.
+   >In diesem Beispiel liegen keine Definitionen von `N:data` und `P:clientFilter` vor. Der Grund dafür ist, dass der vom Server empfangene Wert 1::1 zurückgegeben wird - dies ist das Standardverhalten.
    >
    >Dies entspricht den Definitionen:
    >

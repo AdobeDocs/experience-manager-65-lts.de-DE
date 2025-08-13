@@ -8,8 +8,8 @@ role: Admin
 exl-id: 5511817e-dcf8-463d-8e62-cbbef64ad162
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2817'
-ht-degree: 99%
+source-wordcount: '2816'
+ht-degree: 98%
 
 ---
 
@@ -145,7 +145,7 @@ Der [RTE-Bearbeitungsmodus (und die Benutzeroberfläche)](#editingmodes), den Si
 
 Konfigurieren Sie die folgenden Eigenschaften, die nur im Dialogfeld-Bearbeitungsmodus in der Touch-optimierten Benutzeroberfläche verfügbar sind:
 
-* `useFixedInlineToolbar`: Legen Sie diese boolesche Eigenschaft, die im RTE-Knoten (einer mit „sling:resourceType=`cq/gui/components/authoring/dialog/richtext`“) definiert ist, auf `True` fest, um die RTE-Symbolleiste zu fixieren.
+* `useFixedInlineToolbar`: Setzen Sie diese auf dem RTE-Knoten definierte boolesche Eigenschaft (eine mit sling:resourceType= `cq/gui/components/authoring/dialog/richtext`) auf `True`, damit die RTE-Symbolleiste fixiert wird, anstatt sie frei beweglich zu machen.
 
   Wenn diese Eigenschaft auf „true“ gesetzt ist, wird die Rich-Text-Bearbeitung standardmäßig beim Ereignis „foundation-contentloaded“ gestartet.
 

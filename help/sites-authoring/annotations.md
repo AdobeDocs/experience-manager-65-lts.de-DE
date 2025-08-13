@@ -72,7 +72,7 @@ Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeit
 
    >[!NOTE]
    >
-   >Um das Hinzufügen von Anmerkungen zu beenden (und zur Anzeige zurückzukehren), klicken Sie links in der oberen Symbolleiste auf das Abbrechen-Symbol (x-Symbol in einem weißen Kreis).
+   >Um das Hinzufügen von Anmerkungen zu stoppen (und zur Anzeige zurückzukehren), klicken Sie links in der oberen Symbolleiste auf das Abbrechen-Symbol (x-Symbol in einem weißen Kreis).
 
 1. Klicken Sie auf die erforderliche Komponente (Komponenten, denen eine Anmerkung hinzugefügt werden kann, sind mit einem blauen Rahmen gekennzeichnet), um die Anmerkung hinzuzufügen und das Dialogfeld zu öffnen:
 

@@ -8,7 +8,7 @@ exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
 source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
 source-wordcount: '2476'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -187,7 +187,7 @@ Sobald Sie eine Seite erstellt und geöffnet haben, können Sie [Inhalte mithilf
 
 Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstellen, bevor Sie mit der Erstellung von Inhalten beginnen können:
 
-1. Öffnen Sie die Sites-Konsole (z. B. [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
+1. Öffnen Sie die Sites-Konsole (z. B. [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
 1. Navigieren Sie zum Speicherort, an dem Sie die neue Seite erstellen möchten.
 1. Öffnen Sie das Dropdown-Menü über **Erstellen** in der Symbolleiste und wählen Sie **Seite** aus der Liste aus:
 
@@ -366,7 +366,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
    >[!NOTE]
    >
    >* Wenn die Seite weder verknüpft ist noch darauf verwiesen wurde, ist dieser Schritt nicht verfügbar.
-   >* Dieser Schritt listet sowohl direkte als auch indirekte Referenzen auf. Dies kann sich von der Menge unterscheiden, die im **Umbenennen** des Assistenten sowie von den in der Leiste „Verweise“ gemeldeten Verweisen gemeldet wird, die beide aus Leistungsgründen nur direkte Verweise melden.
+   >* Dieser Schritt listet sowohl direkte als auch indirekte Verweise auf. Die Anzahl kann sich von der Anzahl unterscheiden, die im Schritt **Umbenennen** des Assistenten sowie in der Leiste „Verweise“ gemeldet wurde, da diese beiden Optionen aus Leistungsgründen nur direkte Verweise melden.
 
    ![caop-09](assets/caop-09.png)
 
@@ -398,7 +398,7 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
 
 >[!NOTE]
 >
->Für die asynchrone Seitenverschiebung ist AEM 6.5.3.0 oder höher erforderlich.
+>Für die Verarbeitung asynchroner Seitenverschiebungen ist AEM 6.5.3.0 oder höher erforderlich.
 
 ### Löschen einer Seite {#deleting-a-page}
 

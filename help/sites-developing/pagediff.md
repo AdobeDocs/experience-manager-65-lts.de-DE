@@ -12,8 +12,8 @@ role: Developer
 exl-id: 74ac70c9-a774-4b35-b285-3feb425dac3a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 100%
+source-wordcount: '379'
+ht-degree: 96%
 
 ---
 
@@ -60,4 +60,4 @@ Es gibt jedoch mehrere Einschränkungen, die von den Entwickelnden berücksichti
 
 >[!NOTE]
 >
->Der Seitenvergleich funktioniert nur für Komponenten mit gültigen Knoten des Typs „cq:editConfig“.
+>Der Seitenvergleich funktioniert nur für Komponenten mit gültigen cq:editConfig-Knoten.

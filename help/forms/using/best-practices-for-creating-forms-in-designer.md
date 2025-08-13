@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: 0f9d0b66-d6e4-475a-8727-c1de1a1e1bb0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '11687'
-ht-degree: 100%
+source-wordcount: '11685'
+ht-degree: 99%
 
 ---
 
@@ -461,7 +461,7 @@ Schließlich muss sichergestellt werden, dass das skriptgesteuerte Verhalten ebe
 
 ## Verantwortungsvoller Umgang mit Farben{#use-color-responsibly}
 
-Beim Entwerfen von Formularen für Barrierefreiheit sind einige zusätzliche Richtlinien für die Verwendung von Farben zu beachten. Entwicklerinnen und Entwickler verwenden Farben, um das Erscheinungsbild von Formularen zu verbessern, indem sie verschiedene Formularkomponenten hervorheben. Eine unsachgemäße Verwendung von Farben kann jedoch dazu führen, dass Informationen in Ihrem Formular für Menschen mit Behinderungen schlecht oder gar nicht lesbar sind.
+Beim Entwerfen von Formularen für Barrierefreiheit sind einige zusätzliche Richtlinien für die Verwendung von Farben zu beachten. Designerinnen und Designer verwenden Farben, um das Erscheinungsbild von Formularen zu verbessern, indem sie verschiedene Formularkomponenten hervorheben. Eine unsachgemäße Verwendung von Farben kann jedoch dazu führen, dass Informationen in Ihrem Formular für Menschen mit Behinderungen schlecht oder gar nicht lesbar sind.
 
 ### Vermitteln von Informationen nicht ausschließlich mit Farben
 
@@ -511,8 +511,8 @@ Empfehlungen zur Verwendung von Farben:
    * 2.2 Stellen Sie sicher, dass die Kombinationen aus Vordergrund- und Hintergrundfarben einen ausreichenden Kontrast bieten, wenn sie von einer Person mit Farbenblindheit oder auf einem Schwarzweißbildschirm angezeigt werden. [Priorität 2 für Bilder, Priorität 3 für Text] (P2).
 * WCAG 2.0
    * 1.4.1 Verwendung von Farben: Farben werden nicht als einziges visuelles Mittel eingesetzt, um Informationen zu vermitteln, eine Aktion zu kennzeichnen, eine Antwort einzuholen oder ein visuelles Element zu unterscheiden. (Stufe A)
-   * 1.4.3 Kontrast (Minimum): Die visuelle Darstellung von Text und Bildern von Text hat ein Kontrastverhältnis von mindestens 4,5:1 mit folgenden Ausnahmen: (Stufe AA)
-   * 1.4.6 Kontrast (Erweitert): Die visuelle Darstellung von Text und Abbildungen von Text hat ein Kontrastverhältnis von mindestens 7:1, mit den folgenden Ausnahmen: (Stufe AAA)
+   * 1.4.3 Kontrast (Minimum): Die visuelle Darstellung von Text und Bildern von Text hat ein Kontrastverhältnis von mindestens 4,5 :1, mit folgenden Ausnahmen: (Level AA)
+   * 1.4.6 Kontrast (verbessert): Die visuelle Darstellung von Text und Bildern von Text hat ein Kontrastverhältnis von mindestens 7:1, mit folgenden Ausnahmen: (Level AAA)
 
 
 ## Bereitstellen von Überschriftzellen für Tabellen{#provide-heading-cells}

@@ -11,8 +11,8 @@ role: Developer
 exl-id: eb47f730-ac26-47a0-9bd7-3b7e94c79ecd
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 100%
+source-wordcount: '416'
+ht-degree: 92%
 
 ---
 
@@ -46,7 +46,7 @@ Servlets sollten auf Basis von Ressourcentypen anstelle von Pfaden definiert wer
 
 ### Vermeiden der Definition neuer Knotentypen {#avoid-defining-new-node-types}
 
-Knotentypen setzen auf einer niedrigen Ebene der Infrastrukturschicht an und die meisten Anforderungen können erfüllt werden, indem ein „sling:resourceType“ verwendet wird, der einem Knotentyp „nt:unstructured“, „oak:Unstructured“, „sling:Folder“ oder „cq:Page“ zugewiesen ist. Knotentypen entsprechen dem Schema im Repository, wobei sich das Ändern von Knotentypen im weiteren Verlauf als kostspielig erweisen kann.
+Knotentypen funktionieren auf einer niedrigen Ebene in der Infrastrukturschicht und die meisten Anforderungen können erfüllt werden, indem ein sling:resourceType verwendet wird, das einem Knotentyp „nt:unstructured&quot;, „oak:Unstructured&quot;, „sling:Folder&quot; oder „cq:Page zugewiesen. Knotentypen entsprechen dem Schema im Repository, wobei sich das Ändern von Knotentypen im weiteren Verlauf als kostspielig erweisen kann.
 
 ### Einhalten Sie Namenskonventionen im JCR {#adhere-to-naming-conventions-in-the-jcr}
 

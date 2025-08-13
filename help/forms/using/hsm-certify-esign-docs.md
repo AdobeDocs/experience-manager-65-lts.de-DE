@@ -35,7 +35,7 @@ Adobe Experience Manager Forms kann in einem HSM oder E-Token gespeicherte Berec
 
 Standardmäßig ist der DocAssurance-Dienst nicht aktiviert. Führen Sie zum Aktivieren des Dienstes folgende Schritte durch:
 
-1. Beenden Sie die Autoreninstanz Ihrer AEM Forms-Umgebung.
+1. Stoppen Sie die Autoreninstanz Ihrer AEM Forms-Umgebung.
 
 1. Öffnen Sie die Datei „[AEM_root]\crx-quickstart\conf\sling.properties“ zur Bearbeitung.
 

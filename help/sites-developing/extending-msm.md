@@ -12,8 +12,8 @@ role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
 source-git-commit: c033a676eb746befd43803d1ae00c564890cb945
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 99%
+source-wordcount: '2430'
+ht-degree: 98%
 
 ---
 
@@ -204,15 +204,12 @@ Die neue Rollout-Konfiguration steht dann zur Verfügung, wenn Sie die Rollout-K
 
 1. Fügen Sie diesem Knoten die folgenden Eigenschaften hinzu:
    * **Name**: `jcr:title`
-
      **Typ**: `String`
      **Wert**: Ein bezeichnender Titel, der in der Benutzeroberfläche angezeigt wird.
    * **Name**: `jcr:description`
-
      **Typ**: `String`
      **Wert**: Eine optionale Beschreibung.
    * **Name**: `cq:trigger`
-
      **Typ**: `String`
      **Wert**: Der zu verwendende [Rollout-Trigger](/help/sites-administering/msm-sync.md#rollout-triggers). Die folgenden Optionen stehen zur Auswahl:
       * `rollout`
@@ -551,13 +548,13 @@ Erstellen Sie die MSM-Rollout-Konfiguration, die die von Ihnen erstellte `LiveAc
 
    * **Titel**: Beispiel-Rollout-Konfiguration
    * **Name**: examplerolloutconfig
-   * **cq:trigger**: `publish`
+   * **CQ:trigger**: `publish`
 
 ### Hinzufügen der Live-Aktion zur Rollout-Beispielkonfiguration {#add-the-live-action-to-the-example-rollout-configuration}
 
 Konfigurieren Sie die beim vorhergehenden Verfahren erstellte Rollout-Konfiguration so, dass sie die Klasse `ExampleLiveActionFactory` verwendet.
 
-1. Öffnen Sie CRXDE Lite; z. B. [https://localhost:4502/crx/de](https://localhost:4502/crx/de).
+1. Öffnen Sie CRXDE Lite. Beispiel: [https://localhost:4502/crx/de](https://localhost:4502/crx/de).
 1. Erstellen Sie den entsprechenden Knoten unter `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
    * **Name**: `exampleLiveAction`
@@ -635,7 +632,7 @@ Die Sprachliste ist unter dem Knoten `/libs/wcm/core/resources/languages` gespei
 
 So bearbeiten Sie die Sprachen:
 
-1. Öffnen Sie CRXDE Lite in Ihrem Webbrowser; z. B. [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
+1. Öffnen Sie CRXDE Lite in Ihrem Webbrowser, z. B. [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
 1. Wählen Sie den Ordner `/apps` aus und klicken Sie auf **Erstellen** und dann auf **Ordner erstellen**.
 
    Geben Sie dem neuen Ordner den Namen `wcm`.
@@ -685,7 +682,6 @@ Ob für eine Seiteneigenschaft ein Rollout durchgeführt werden muss und daher b
       * **Typ**: `String`
 
       * **Wert**: speichert den Namen der betroffenen Eigenschaft (und ist vergleichbar mit dem Wert der Eigenschaft `name`; z. B.
-
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Wenn `cq-msm-lockable` definiert wurde, interagiert das Öffnen oder Schließen der Kettenverbindung mit MSM wie folgt:

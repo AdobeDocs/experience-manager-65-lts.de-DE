@@ -36,7 +36,7 @@ Correspondence Management stellt APIs zum Abrufen von Briefinstanzen über den L
 >[!NOTE]
 >
 >LetterInstanceService ist ein OSGI-Dienst, dessen Instanz mithilfe von @Reference abgerufen werden kann, und zwar in der Java™-
->Klasse oder sling.getService(LetterInstanceService. Class) in JSP.
+>>Klasse oder sling.getService(LetterInstanceService. Class) in JSP.
 
 ### Verwendung von getAllLetterInstances {#using-nbsp-getallletterinstances}
 

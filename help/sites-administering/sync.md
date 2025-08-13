@@ -12,8 +12,8 @@ role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2224'
-ht-degree: 99%
+source-wordcount: '2240'
+ht-degree: 95%
 
 ---
 
@@ -267,13 +267,13 @@ Vergewissern Sie sich, dass unter `Name` der Eintrag `socialpubsync` angegeben i
 ![Sync Agents Factory](assets/chlimage_1-25.png)
 
 * **Exporter-Endpunkte**
-Es sollte für jede Veröffentlichungsinstanz einen Exporter-Endpunkt geben. Beispielsweise sollten bei zwei Veröffentlichungsinstanzen, „localhost:4503“ und „localhost:4504“, zwei Einträge vorhanden sein:
+Es sollte für jede Veröffentlichungsinstanz einen Exporter-Endpunkt geben. Wenn es beispielsweise zwei Veröffentlichungsinstanzen gibt, localhost:4503 und 4504, sollten zwei Einträge vorhanden sein:
 
    * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
    * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
 * **Importer-Endpunkte**
-Es sollte für jede Veröffentlichungsinstanz einen Importer-Endpunkt geben. Beispielsweise sollten bei zwei Veröffentlichungsinstanzen, „localhost:4503“ und „localhost:4504“, zwei Einträge vorhanden sein:
+Es sollte für jede Veröffentlichungsinstanz einen Importer-Endpunkt geben. Wenn es beispielsweise zwei Veröffentlichungsinstanzen gibt, localhost:4503 und 4504, sollten zwei Einträge vorhanden sein:
 
    * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
    * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
@@ -297,17 +297,15 @@ Um zu überprüfen, ob alle Sling-ID-Werte unterschiedlich sind, gehen Sie in je
 
 Wenn die Sling-ID einer Veröffentlichungsinstanz der Sling-ID einer anderen Veröffentlichungsinstanz entspricht, gehen Sie wie folgt vor:
 
-1. Beenden Sie eine der Veröffentlichungsinstanzen mit übereinstimmender Sling-ID.
+1. Stoppen Sie eine der Veröffentlichungsinstanzen mit übereinstimmender Sling-ID.
 1. Gehen Sie wie folgt im Verzeichnis „crx-quickstart/launchpad/felix“ vor:
 
    * Suchen und löschen Sie die Datei *sling.id.file*
 
       * Beispiel für ein Linux®-System:
-
         `rm -i $(find . -type f -name sling.id.file)`
 
       * Beispiel für ein Windows-System:
-
         `use windows explorer and search for *sling.id.file*`
 
 1. Starten Sie die Veröffentlichungsinstanz.
@@ -339,7 +337,7 @@ Damit Aktualisierungen ordnungsgemäß synchronisiert werden, muss der Vault Pac
 
 * Richtlinienhandhabung:
 
-   * Zum Überschreiben der vorhandenen Knoten „rep:policy“ mit neuen fügen Sie einen dritten Paketfilter hinzu:
+   * Um vorhandene rep:policy-Knoten durch neue zu überschreiben, fügen Sie einen dritten Paketfilter hinzu:
 
       * `/home/users|+.*/rep:policy`
 
@@ -461,7 +459,7 @@ Der autorisierte Benutzer sollte als Mitglied der Benutzergruppe **`administrato
 
 Für die autorisierte Benutzerin oder den autorisierten Benutzer sollten explizit die folgenden Rechte und Einschränkungen für alle Veröffentlichungsinstanzen gelten:
 
-| **Pfad** | **jcr:all** | **rep:glob** |
+| **path** | **jcr:all** | **rep:glob** |
 |---|---|---|
 | /home | X | &#42;/activities/&#42; |
 | /home/users | X | &#42;/activities/&#42; |
@@ -469,7 +467,7 @@ Für die autorisierte Benutzerin oder den autorisierten Benutzer sollten explizi
 
 Als Mitglied der Gruppe `administrators` sollten für die autorisierte Benutzerin oder den autorisierten Benutzer die folgenden Rechte für alle Veröffentlichungsinstanzen gelten:
 
-| **Pfad** | **jcr:all** | **jcr:read** | **rep:write** |
+| **path** | **jcr:all** | **jcr:read** | **rep:write** |
 |---|---|---|---|
 | /etc/packages/sling/distribution |  |  | X |
 | /libs/sling/distribution |  | X |  |

@@ -9,8 +9,8 @@ role: User, Developer
 exl-id: 0860f059-d599-4f87-9611-e7fe1c6bc059
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2001'
-ht-degree: 97%
+source-wordcount: '1999'
+ht-degree: 96%
 
 ---
 
@@ -149,10 +149,10 @@ Multiply(valueArray, category) {
 Nachdem Sie eine benutzerdefinierte Funktion geschrieben haben, führen Sie die folgenden Schritte aus, um sie für die Verwendung in der Diagrammkonfiguration verfügbar zu machen:
 
 1. Fügen Sie die benutzerdefinierte Funktion in der Client-Bibliothek hinzu, die dem adaptiven Formular oder dem Dokument zugeordnet ist.
-1. Erstellen Sie in CRXDe-Lite einen „nt:unstructured“-Knoten mit den folgenden Eigenschaften im Anwendungsordner:
+1. Erstellen Sie in CRXDE Lite einen nt:unstructured-Knoten im Programmordner mit den folgenden Eigenschaften:
    * Legen Sie „guideComponentType“ auf „fd/af/reducer“ fest. (mandatory)
    * Dem Wert muss ein vollständig qualifizierter Name der benutzerdefinierten JavaScript-Funktion zugewiesen werden.  (mandatory)
-   * Weisen Sie „jcr:description“ einen aussagekräftigen Namen zu.  Er erscheint in der Dropdown-Liste **Funktion verwenden**. Beispiel:**Multiplizieren**. 
+   * Legen Sie :descriptionjcr) auf einen aussagekräftigen Namen fest. Er erscheint in der Dropdown-Liste **Funktion verwenden**. Beispiel:**Multiplizieren**. 
    * Weisen Sie „qtip“ eine kurze Beschreibung der Funktion zu.  Sie wird als QuickInfo angezeigt, wenn der Mauszeiger über den Funktionsnamen in der Dropdown-Liste „Funktion verwenden“ bewegt wird.
    * Klicken Sie auf **Alles Speichern**, um die Konfiguration zu speichern.
    * Die Funktion ist jetzt für die Verwendung im Diagramm verfügbar.

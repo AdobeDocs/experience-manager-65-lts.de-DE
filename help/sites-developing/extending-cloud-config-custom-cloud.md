@@ -11,8 +11,8 @@ role: Developer
 exl-id: 7ae41982-8438-41a6-91f9-3b3b6755a39b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 100%
+source-wordcount: '399'
+ht-degree: 96%
 
 ---
 
@@ -147,8 +147,8 @@ Die standardmäßigen Cloud-Services können durch benutzerdefinierte Cloud-Serv
    * **Titel**= `Google Analytics Configuration`
    * **allowedPath** = `/etc/cloudservices/googleanalytics(/.*)?`
    * **allowedChildren** = `/apps/acs/analytics/templates/googleanalytics`
-   * **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (im Vorlagenknoten, nicht im jcr:content-Knoten)
-   * **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (in jcr:content)
+   * mit **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (im Vorlagenknoten, nicht im JCR:content-Knoten)
+   * mit **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (in JCR:content)
 
 1. Erstellen Sie eine Komponente: `/apps/acs/analytics/components/googleanalytics`.
 

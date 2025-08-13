@@ -12,8 +12,8 @@ role: Developer
 exl-id: 7822a108-f128-4ccf-bd9f-348f0c2688da
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2462'
-ht-degree: 100%
+source-wordcount: '2464'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Dieser Schritt ist so konfiguriert, dass er dem Workflow-Initiator ein Arbeitsel
 
 So erstellen Sie einen Workflow mit dem Editor:
 
-1. Öffnen Sie die **Workflow-Modelle-Konsole** über **Tools** > **Workflow** > **Modelle** oder beispielsweise über: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
+1. Öffnen Sie die **Workflow-Modelle**-Konsole über **Tools**, **Workflow**, **Models** oder zum Beispiel: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
 1. Wählen Sie **Erstellen** und dann **Modell erstellen** aus.
 1. Das Dialogfeld **Arbeitsablaufmodell hinzufügen** wird angezeigt. Geben Sie **Titel** und **Namen** (optional) ein, bevor Sie **Fertig** auswählen.
 1. Das neue Modell wird nun in der **Workflow-Modelle-Konsole** aufgeführt.

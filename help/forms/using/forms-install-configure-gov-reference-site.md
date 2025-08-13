@@ -9,8 +9,8 @@ role: Admin, User, Developer
 exl-id: 9c05a71b-70fa-4470-afdf-823fd5da5ad1
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '4533'
-ht-degree: 100%
+source-wordcount: '4532'
+ht-degree: 99%
 
 ---
 
@@ -652,7 +652,7 @@ Zum Service der automatischen Formularkonvertierung gehören bestimmte [Best Pra
 
 1. Erzeugen Sie das Formular mit der Option „Generieren Adaptiver Formulare ohne Datenbindung“, wenn Sie das Formular nach der Konvertierung an einen FDM binden möchten.
 
-1. Stellen Sie sicher, dass im Vorlagenordner die Berechtigung „jcr:read“ für alle aktiviert ist. Andernfalls können die Benutzenden des Services die Vorlage nicht aus dem Repository lesen, und die Konvertierung schlägt fehl.
+1. Stellen Sie sicher, dass im Vorlagenordner die Berechtigung „jcr:read für alle“ aktiviert ist. Andernfalls kann der Service-Benutzer die Vorlage nicht aus dem Repository lesen, und die Konvertierung schlägt fehl.
 
 ## Anpassung von Demopaketen {#demo-package-customizations}
 

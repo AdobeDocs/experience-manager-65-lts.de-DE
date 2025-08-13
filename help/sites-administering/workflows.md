@@ -12,7 +12,7 @@ exl-id: 330f5cc5-1af4-4777-b386-b0755e6781df
 source-git-commit: d37df3dc09122909adbb62ede6634939af105e06
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Wenn ein Workflow-Modell gestartet (ausgeführt) wird, wird eine Workflow-Instan
 
 >[!CAUTION]
 >
->Die ausgeführten Schritte sind diejenigen, die vom Workflow-Modell *zum Zeitpunkt der Generierung der Instanz* festgelegt wurden. Weitere [ finden Sie unter „Entwickeln und Erweitern ](/help/sites-developing/workflows.md#model) Workflows - Modelle“.
+>Die ausgeführten Schritte sind diejenigen, die vom Workflow-Modell *zum Zeitpunkt der Generierung der Instanz* festgelegt wurden. Weitere Informationen finden Sie unter [Entwickeln und Erweitern von Workflows – Modelle](/help/sites-developing/workflows.md#model).
 
 Workflow-Instanzen schreiten durch den folgenden Lebenszyklus voran:
 

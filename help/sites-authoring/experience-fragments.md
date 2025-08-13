@@ -7,8 +7,8 @@ role: User
 exl-id: 97736093-021a-4487-8818-c0e3f1e2b4e5
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1505'
-ht-degree: 100%
+source-wordcount: '1512'
+ht-degree: 99%
 
 ---
 
@@ -256,7 +256,7 @@ Sie können Ihr Experience Fragment jetzt beim Erstellen Ihrer Seiten verwenden:
    >
    >Die Seite muss auf einer bearbeitbaren Vorlage basieren.
 
-   Zum Beispiel: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
+   Beispiel: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
 1. Erstellen Sie eine Instanz der Experience-Fragment-Komponente, indem Sie die Komponente aus dem Komponenten-Browser auf das Seitenabsatzsystem ziehen:
 

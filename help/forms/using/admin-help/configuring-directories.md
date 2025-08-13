@@ -296,7 +296,7 @@ Im Folgenden finden Sie eine Beispielskript-LDIF für VLV-Einträge für Persone
 
 ### Erstellen eines Verzeichnis-Server-Indexes für VLV {#create-the-directory-server-index-for-vlv}
 
-Beenden Sie nach dem Konfigurieren der Verzeichniseinstellungen und dem Erstellen der LDAP-VLV-Einträge für Personen und Gruppen den Server und erstellen Sie den erforderlichen Index.
+Stoppen Sie nach dem Konfigurieren der Verzeichniseinstellungen und dem Erstellen der LDAP-VLV-Einträge für Personen und Gruppen den Server und erstellen Sie den erforderlichen Index.
 
 1. Stoppen Sie im Anschluss an das Erstellen der Objekteinträge den Sun ONE-Server.
 1. Generieren Sie mit dem Tool „vlvindex“ den Index durch Eingeben des folgenden Textes:

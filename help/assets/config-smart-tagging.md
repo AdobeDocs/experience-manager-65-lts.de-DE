@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: be7c294c-149b-4825-8376-573f9e2987e2
 source-git-commit: 1cedead501597fb655c2c7b87336b29cbf048294
 workflow-type: tm+mt
-source-wordcount: '1895'
-ht-degree: 98%
+source-wordcount: '1896'
+ht-degree: 97%
 
 ---
 
@@ -222,7 +222,7 @@ Sie können festlegen, dass der Smart Content Service regelmäßig mit den Asset
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Wenn Sie diese Option für einen Ordner auswählt haben, führt [!DNL Experience Manager] automatisch einen Trainings-Workflow aus, um den Smart Content Service mit den Assets im Ordner und deren Tags zu trainieren. Standardmäßig wird der Trainings-Workflow jede Woche samstags um 00:30 Uhr ausgeführt.
+Wenn Sie diese Option für einen Ordner auswählt haben, führt [!DNL Experience Manager] automatisch einen Trainings-Workflow aus, um den Smart Content Service mit den Assets im Ordner und deren Tags zu trainieren. Standardmäßig wird der Trainings-Workflow wöchentlich samstags um 12 :30 ausgeführt.
 
 ### Training bei Bedarf {#on-demand-training}
 

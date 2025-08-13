@@ -7,8 +7,8 @@ role: Admin
 exl-id: 55f100b2-625a-4d0e-b8bb-011c7e3e3580
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2125'
-ht-degree: 100%
+source-wordcount: '2139'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Der [Opt-in-Assistent](/help/sites-administering/opt-in.md), mit dem [AEM mit Ad
 Darüber hinaus können Sie Adobe Target auch als Quelle für das Reporting für bestimmte Inhalte konfigurieren, indem Sie die „A4T-Analytics-Cloud-Konfiguration“ konfigurieren.
 
 Navigieren Sie über **Tools** > **Bereitstellung** > **Cloud** zu **Cloud-Services**, um die Cloud-Konfiguration und das Framework zu ermitteln. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
-Klicken Sie unterhalb von Adobe Target auf **Konfigurationen anzeigen**.
+Klicken Sie unter Adobe Target auf **Konfigurationen anzeigen**.
 
 ### Eigenschaften der bereitgestellten Target-Konfiguration {#provisioned-target-configuration-properties}
 
@@ -52,7 +52,7 @@ Die folgenden Eigenschaftswerte werden in der vom Opt-in-Assistenten erstellten 
 >* Bessere Implementierungsoptionen für Single Page Applications (SPA)
 >* „AT.js“ enthält die Komponenten, die in „target.js“ enthalten waren, weshalb kein Aufruf mehr an die Zielgruppe erfolgt.
 
-<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=de -->
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### Bereitgestellte Target-Framework-Eigenschaften {#provisioned-target-framework-properties}
 
@@ -115,7 +115,7 @@ Sie können die Integration mit Adobe Target auch manuell durchführen, anstatt 
 >
 >Sie können im Dropdown-Menü **Client-Bibliothek** die Datei „AT.js“ oder „mbox.js“ auswählen.
 
-<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=de -->
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### Erstellen einer Target-Cloud-Konfiguration {#creating-a-target-cloud-configuration}
 

@@ -9,8 +9,8 @@ role: Admin, User, Developer
 exl-id: cb00bc09-580a-4c73-b202-d4110fa2f645
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 100%
+source-wordcount: '1120'
+ht-degree: 99%
 
 ---
 
@@ -71,7 +71,7 @@ Jeder Kundin und jedem Kunden ist eine eindeutige Kunden-ID-Nummer zugeordnet, a
 
 ## Schritt 2: Hinzufügen der aktualisierten Kundenadresse zur Datenbank {#updated-customer-address}
 
-Nachdem die Kundendaten aus der Datenbank abgerufen wurden, können Sie die Lieferadresse, das Bundesland und die Postleitzahl aktualisieren. Mit dem folgenden Verfahren wird ein Formulardatenmodelldienst aufgerufen, um Kundeninformationen in der Datenbank zu aktualisieren:
+Nachdem die Kundendaten aus der Datenbank abgerufen wurden, können Sie die Versandadresse, das Bundesland und die Postleitzahl aktualisieren. Mit dem folgenden Verfahren wird ein Formulardatenmodelldienst aufgerufen, um Kundeninformationen in der Datenbank zu aktualisieren:
 
 1. Wählen Sie das Feld **[!UICONTROL Absenden]** und dann das Symbol **[!UICONTROL Regeln bearbeiten]** aus. Das Fenster „Regeleditor“ wird geöffnet.
 1. Wählen Sie die Regel **[!UICONTROL Senden – Klicken]** und dann das Symbol **[!UICONTROL Bearbeiten]** aus. Die Optionen zum Bearbeiten der Senden-Regel werden angezeigt.

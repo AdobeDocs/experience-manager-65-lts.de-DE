@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: a74c52bc-f639-4fc2-90e5-bac24fbb9ade
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 100%
+source-wordcount: '668'
+ht-degree: 96%
 
 ---
 
@@ -70,7 +70,7 @@ Der Asset-Editor verwendet die Formularauswahl, mit der Sie Ressourcen, in diese
 Beispiel:
 
 * Einfache Formularseite: [http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
-* In der Formularseite geladenes Asset: [http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
+* Asset auf die Formularseite geladen: [http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
 
 Die Beispiel-Handles in `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`) führen Folgendes aus:
 

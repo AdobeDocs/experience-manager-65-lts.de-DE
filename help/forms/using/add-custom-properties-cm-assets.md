@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 248692f7-0718-4a12-9f82-24b4cef2b1e2
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4434'
-ht-degree: 100%
+source-wordcount: '4393'
+ht-degree: 92%
 
 ---
 
@@ -113,8 +113,8 @@ Dieses Szenario zeigt, wie Sie eine benutzerdefinierte Eigenschaft allen Asset-T
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items`
 
-1. Im neu erstellten Überlagerungsknoten (/apps/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items) 
-Erstellen Sie einen Knoten für jede Eigenschaft (Felder), für die Sie ein Dropdown-Menü (hier `geographicallocation` ) des Typs nt:unstructured erstellen möchten.
+1. Unter dem neu erstellten Überlagerungsknoten (/apps/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items)
+Erstellen Sie einen Knoten für jede der Eigenschaften (Felder), für die Sie eine Dropdown-Liste (hier `geographicallocation`) des Typs nt:unstructured erstellen müssen.
 1. Fügen Sie dem Knoten (hier: geographicallocation) die folgenden Eigenschaften hinzu und klicken Sie auf **Alle speichern**:
 
    <table>
@@ -150,7 +150,7 @@ Erstellen Sie einen Knoten für jede Eigenschaft (Felder), für die Sie ein Drop
 1. Fügen Sie unter dem property-Knoten (hier geographicallocation) einen neuen Knoten mit dem Namen `items` hinzu. Fügen Sie unter dem Knoten „items“ jeweils einen Knoten für die Werte im Dropdown-Menü hinzu. Es empfiehlt sich, den ersten Knoten leer hinzuzufügen, um diesen als Standardwert des Dropdown-Menüs zu verwenden und Benutzenden so die Möglichkeit zu geben, keinen Wert für dieses Feld anzugeben. Um mehrere Optionen/Dropdown-Werte hinzuzufügen, wiederholen Sie die folgenden Schritte:
 
    1. Klicken Sie mit der rechten Maustaste auf den property-Knoten, (hier: geographicallocation) und wählen Sie **Erstellen** > **Knoten erstellen** aus.
-   1. Geben Sie `item1,` als Namen des Felds ein, behalten Sie als Typ „nt:unstructured“ bei und klicken Sie auf **OK**.
+   1. Geben Sie den Namen des Felds ein, behalten Sie `item1,` Typ als nt:unstructured bei und klicken Sie auf **OK**.
    1. Fügen Sie die folgenden Eigenschaften dem neu erstellten Knoten (hier: item1) hinzu und klicken Sie auf **Alle speichern**:
 
       <table>
@@ -526,9 +526,9 @@ Standardmäßig sind die benutzerdefinierten Eigenschaften, die neuen Registerka
 
 1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte für Brief enthält: Bei anderen Asset-Typen ist der Pfad in der folgenden Tabelle angegeben:
 
-   **Pfad:** /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items
+   **Path:** /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items
 
-   **Speicherort:** /apps/
+   **Speicherort**: /apps/
 
    **Knotentypen abgleichen:** Ausgewählt
 
@@ -538,7 +538,7 @@ Standardmäßig sind die benutzerdefinierten Eigenschaften, die neuen Registerka
    |---|---|
    | Text | /libs/fd/cm/ma/gui/content/createasset/createtext/jcr:content/body/items/form/items/textwizard/items/editproperties/items/properties/items/tabs/items/tab1/items |
    | Liste | /libs/fd/cm/ma/gui/content/createasset/createlist/jcr:content/body/items/form/items/listwizard/items/editproperties/items/properties/items/tabs/items/tab1/items |
-   | Bedingung | /libs/fd/cm/ma/gui/content/createasset/createcondition/jcr:content/body/items/form/items/conditionwizard/items/editproperties/items/properties/items/tabs/items/tab1/items |
+   | Bedingung | /libs/fd/cm/ma/gui/content/createasset/createcondition/jcr:content/body/items/form/items/conditionWizard/items/editproperties/items/properties/items/tabs/items/tab1/items |
    | Fragment | /libs/fd/cm/ma/gui/content/createasset/createfragment/jcr:content/body/items/form/items/fragmentwizard/items/properties/items/properties/items/tabs2/items/tab1/items |
    | Brief | /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items |
 
@@ -599,9 +599,9 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Eigenschaft in
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **Pfad:** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns
+      **Path:** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns
 
-      **Speicherort:** /apps/
+      **Speicherort**: /apps/
 
       **Übereinstimmende Knotentypen:** Ausgewählt
 
@@ -750,7 +750,7 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Eigenschaft in
  </tbody>
 </table>
 
-Wenn Sie die Eigenschaft „sling:orderBefore“ hinzufügen, um die Spalte für den Standort anzugeben, müssen Sie auch die Reihenfolge des entsprechenden &lt;td>-Tags aktualisieren. Dies wird in Schritt 6.4 dieses Verfahrens erklärt. In diesem Fall müssen Sie beispielsweise sicherstellen, dass das &lt;td>-Tag für den geografischen Standort vor dem &lt;td>-Tag der Spalte „Version“ platziert wird:
+Wenn Sie die Eigenschaft sling:orderBefore hinzufügen, um die Position der Spalte anzugeben, müssen Sie auch die Reihenfolge des entsprechenden &lt;td>-Tags aktualisieren, das in Schritt 6.4 dieses Verfahrens angegeben ist. In diesem Fall müssen Sie beispielsweise sicherstellen, dass das &lt;td>-Tag für den geografischen Standort vor dem &lt;td>-Tag der Spalte „Version“ platziert wird:
 
 ```xml
 <td is="coral-td" value="<%= xssAPI.encodeForHTMLAttr(geographicalLocation) %>"><%= xssAPI.encodeForHTML(geographicalLocation) %></td>
@@ -777,15 +777,15 @@ Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, f�
 
    1. Klicken Sie auf **Alle speichern**.
 
-1. Fügen Sie im neu erstellten aggregates-Ordner einen Knoten namens „cm:ressource“ hinzu. Und fügen Sie unter cm:resource einen Knoten mit dem Namen „include0“ hinzu.
+1. Fügen Sie unter dem neu erstellten Ordner aggregates den Knoten cm:resource hinzu. Und fügen Sie unter cm:resource einen Knoten mit dem Namen „include0“ hinzu.
 
-   1. Klicken Sie mit der rechten Maustaste auf den Ordner „aggregates“ und wählen Sie **Erstellen** > **Knoten erstellen** aus. Stellen Sie sicher, dass das Dialogfeld „Knoten erstellen“ folgende Werte aufweist und klicken Sie auf **OK**:
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner „aggregates“ und wählen Sie **Erstellen** > **Knoten erstellen** aus. Stellen Sie sicher, dass das Dialogfeld „Knoten erstellen“ folgende Werte aufweist, und klicken Sie auf **OK**:
 
-      **Name:** cm:resource
+      **Name:** cm:resource
 
       **Typ:** nt:unstructured
 
-   1. Klicken Sie mit der rechten Maustaste auf den Ordner „cm:resource“ und wählen Sie **Erstellen** > **Knoten erstellen** aus. Stellen Sie sicher, dass das Dialogfeld „Knoten erstellen“ folgende Werte aufweist und klicken Sie auf **OK**:
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner :resourcecm **und wählen Sie** Erstellen > **Knoten erstellen**. Stellen Sie sicher, dass das Dialogfeld „Knoten erstellen“ folgende Werte aufweist und klicken Sie auf **OK**:
 
       **Name:** include0
 
@@ -840,7 +840,7 @@ Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, f�
 >
 >Wenn Sie immer noch nicht suchen können, gibt es möglicherweise ein Problem bei der Indexerstellung. Für die neue Indexerstellung navigieren Sie zu folgendem Knoten und ändern den Wert der Eigenschaft „re-index“ in „true“:
 >
->„/oak:index/cmLucene“. Ändern Sie den Wert der Eigenschaft.
+>/oak:index/cmLucene“ geändert und der Wert der Eigenschaft geändert
 
 ## Ändern der Standardansicht der Suchseite {#change-default-view-of-the-search-page}
 
@@ -893,15 +893,15 @@ Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, f�
 
    /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/
 
-   1. Klicken Sie mit der rechten Maustaste auf den Elementordner an folgendem Speicherort und wählen Sie **Überlagerungsknoten**:
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner „Elemente“ im folgenden Pfad und wählen Sie **Überlagerungsknoten**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list`
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **Pfad:** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list
+      **Path:** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list
 
-      **Speicherort:** /apps/
+      **Speicherort**: /apps/
 
       **Übereinstimmende Knotentypen:** Ausgewählt
 
@@ -932,7 +932,7 @@ Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, f�
 
 Um die benutzerdefinierten Eigenschaften ein- oder auszublenden, führen Sie die folgenden Schritte aus:
 
-1. Erstellen Sie unter dem benutzerdefinierten Eigenschaftsknoten, wie „geographicallocation“, einen neuen Knoten vom Typ „nt:unstructured“ und nennen Sie ihn „granite:rendercondition“.
+1. Erstellen Sie unter dem benutzerdefinierten property-Knoten, z. B. geographicallocation, einen Knoten vom Typ „nt:rendercondition mit dem Namen &quot;:unstructured&quot;.
 1. Fügen Sie dem Knoten die folgenden Eigenschaften hinzu und klicken Sie auf **Alle speichern**:
 
    <table>

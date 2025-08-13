@@ -21,7 +21,7 @@ Das Stilsystem ermöglicht es einem Vorlagenautor, in der Inhaltsrichtlinie für
 
 Dadurch entfällt die Notwendigkeit, eine benutzerdefinierte Komponente für jeden Stil zu entwickeln oder das Komponentendialogfeld anzupassen, um eine solche Stilfunktion zu aktivieren. Das Resultat sind mehr wiederverwendbare Komponenten, die schnell und einfach an die Bedürfnisse von Inhaltsautoren angepasst werden können, ohne dass eine AEM-Backend-Entwicklung erforderlich ist.
 
-## Nutzungsszenario {#use-case}
+## Anwendungsfall {#use-case}
 
 Vorlagenautorinnen und -autoren benötigen nicht nur die Möglichkeit, die Funktionsweise von Komponenten für Inhaltsautorinnen und -autoren zu konfigurieren, sondern müssen auch in der Lage sein, eine Reihe alternativer visueller Varianten einer Komponente zu konfigurieren.
 

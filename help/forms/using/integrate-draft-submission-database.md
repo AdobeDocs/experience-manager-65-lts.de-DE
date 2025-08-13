@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: b9b989e3-f204-4929-a03a-857cbb786185
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 100%
+source-wordcount: '1501'
+ht-degree: 99%
 
 ---
 
@@ -330,7 +330,7 @@ Die Datenbankimplementierung des Formularportals verwendet eine zusätzliche Met
 Führen Sie die folgenden Schritte aus, um eine [Client-Bibliothek](/help/sites-developing/clientlibs.md) zu erstellen und das Skript zu verwenden:
 
 1. Melden Sie sich bei CRXDE an und navigieren Sie zu „/etc/clientlibs/“.
-1. Erstellen Sie einen Knoten vom Typ **cq:ClientLibraryFolder** und geben Sie einen Knotennamen an. Beispiel: `validation`.
+1. Erstellen Sie einen Knoten des Typs **cq:ClientLibraryFolder** und geben Sie den Namen des Knotens an. Beispiel: `validation`.
 
    Klicken Sie auf **[!UICONTROL Alle speichern]**.
 

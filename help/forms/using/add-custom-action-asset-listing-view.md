@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: a27c4469-6430-4a68-ba2c-7fb0ddebb263
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 100%
+source-wordcount: '1329'
+ht-degree: 98%
 
 ---
 
@@ -62,7 +62,7 @@ Führen Sie die folgenden Schritte aus, um Correspondence Management so anzupass
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **Pfad**: /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
+      **Path:** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
 
       **Speicherort**: /apps/
 

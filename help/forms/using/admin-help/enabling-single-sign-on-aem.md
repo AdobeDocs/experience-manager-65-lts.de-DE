@@ -13,8 +13,8 @@ hidefromtoc: true
 exl-id: ba02f9b1-209e-42f2-b1df-2ed64fc9fdbc
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 100%
+source-wordcount: '1715'
+ht-degree: 98%
 
 ---
 
@@ -157,7 +157,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 Damit die SPNEGO-basierte Authentifizierung funktioniert, muss der Clientcomputer zu der Domain gehören, in der das Benutzerkonto erstellt wurde. Sie müssen außerdem den Client-Browser so konfigurieren, dass SPNEGO-basierte Authentifizierung zulässig ist. Ebenso muss die Site, die die SPNEGO-basierte Authentifizierung erfordert, eine vertrauenswürdige Site sein.
 
-Wenn der Zugriff auf den Server über den Computernamen erfolgt, z.B. https://lcserver:8080, sind für den Internet Explorer keine Einstellungen erforderlich. Wenn Sie eine URL eingeben, die keine Punkte („.“) enthält, wird diese Site von Internet Explorer als lokale Intranet-Site behandelt. Bei Verwendung eines vollständig qualifizierten Namens für die Site muss diese als vertrauenswürdige Site hinzugefügt werden.
+Wenn der Zugriff auf den Server über den Computernamen erfolgt, z. B. https://lcserver:8080, sind für Internet Explorer keine Einstellungen erforderlich. Wenn Sie eine URL eingeben, die keine Punkte („.“) enthält, wird diese Site von Internet Explorer als lokale Intranet-Site behandelt. Bei Verwendung eines vollständig qualifizierten Namens für die Site muss diese als vertrauenswürdige Site hinzugefügt werden.
 
 **Konfigurieren von Internet Explorer 6.x**
 
@@ -171,7 +171,7 @@ Wenn der Zugriff auf den Server über den Computernamen erfolgt, z.B. https://lc
 
 1. Geben Sie in das URL-Feld des Browsers `about:config` ein.
 
-   Das Mozilla Firefox-Dialogfeld „about:config“ wird angezeigt.
+   Das Mozilla Firefox-:config „about1“ wird angezeigt.
 
 1. Geben Sie in das Feld „Filter“ den Wert `negotiate` ein.
 1. Klicken Sie in der angezeigten Liste auf „network.negotiate-auth.trusted-uris“ und geben Sie einen der folgenden Befehle Ihrer Umgebung entsprechend ein:

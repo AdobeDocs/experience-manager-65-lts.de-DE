@@ -153,7 +153,7 @@ Wenn Sie über vorhandene Erlebnisse verfügen, können Sie einen Touchpoint dir
 >[!NOTE]
 >
 >Adobe plant nicht, diese Funktion (Lead-Verwaltung) weiter auszubauen.
->Es wird empfohlen, [Adobe Campaign und die Integration mit AEM](/help/sites-administering/campaign.md) zu nutzen.
+>>Es wird empfohlen, [Adobe Campaign und die Integration mit AEM](/help/sites-administering/campaign.md) zu nutzen.
 
 In AEM MCM können Sie Leads ordnen und hinzufügen, indem Sie sie manuell eingeben oder indem Sie eine kommagetrennte Liste importieren, z. B. eine Mailing-Liste. Sie können Leads auch anhand von Newsletter- oder Community-Anmeldungen generieren. (Wenn dies konfiguriert wurde, kann nach einer Anmeldung ein Workflow ausgelöst werden, aus dem Leads hervorgehen.)
 
@@ -301,7 +301,7 @@ Wählen Sie zum Löschen von bestehenden Leads im MCM das Kontrollkästchen nebe
 >[!NOTE]
 >
 >Adobe plant nicht, diese Funktion (Listenverwaltung) weiter auszubauen.
->Es wird empfohlen, [Adobe Campaign und die Integration mit AEM](/help/sites-administering/campaign.md) zu nutzen.
+>>Es wird empfohlen, [Adobe Campaign und die Integration mit AEM](/help/sites-administering/campaign.md) zu nutzen.
 
 Mithilfe von Listen können Sie Ihre Leads in Gruppen organisieren. Mit Listen können Sie Marketing-Kampagnen gezielt für eine bestimmte Personengruppe erstellen, z. B. können Sie einen speziellen Newsletter an eine bestimmte Liste senden. Auf die Listen können Sie im MCM über das Dashboard oder durch Klicken auf **Listen** zugreifen. Bei beiden Methoden werden Ihnen der Name der Liste sowie die Mitgliederanzahl angezeigt.
 

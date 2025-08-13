@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 30038003-e307-46d1-b5f9-624d98a672a7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1497'
-ht-degree: 98%
+source-wordcount: '1495'
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Experience Manager umfasst mehr als 100 Bildbereitstellungsbefehle für Dy
 
 * JPG oder PNG sind die beste Wahl, um Bilder in guter Qualität und mit angemessener Größe bereitzustellen.
 * Wenn kein Formatsbefehl in der URL angegeben ist, wird standardmäßig JPG bei der Bildbereitstellung von Dynamic Media verwendet.
-* JPG nutzt ein Komprimierungsverhältnis von 10:1 und erzeugt normalerweise kleinere Bilddateien. PNG nutzt ein Komprimierungsverhältnis von 2:1, außer in einigen Fällen, z. B. wenn Bilder einen weißen Hintergrund aufweisen. Normalerweise sind PNG-Dateien jedoch größer als JPG-Dateien.
+* JPG komprimiert mit einem Verhältnis von 10:1 und erzeugt normalerweise kleinere Bilddateigrößen. PNG wird mit einem Verhältnis von etwa 2 % komprimiert:1 außer in einigen Fällen, z. B. wenn Bilder einen weißen Hintergrund enthalten. Normalerweise sind PNG-Dateien jedoch größer als JPG-Dateien.
 * JPG nutzt die verlustreiche Komprimierung. Das heißt, dass Bildelemente (Pixel) bei der Komprimierung verloren gehen. PNG verwendet dagegen die verlustfreie Komprimierung.
 * JPG komprimiert Fotos oft mit besserer Wiedergabetreue als synthetische Bilder mit scharfen Kanten und Kontrast.
 * Wenn Bilder Transparenz enthalten, verwenden Sie PNG, da JPG keine Transparenz unterstützt.

@@ -11,8 +11,8 @@ role: Developer
 exl-id: 8d53072b-826d-4ff4-843b-09204fb5a455
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 99%
+source-wordcount: '1263'
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Experience Manager (AEM) bietet verschiedene Mechanismen, mit denen Sie di
 
 * Überlagerungen
 
-  Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, Standardfunktionen (in `/libs`) mit Ihren eigenen benutzerdefinierten Funktionen (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die [Sling-Ressourcenzusammenführung](/help/sites-developing/sling-resource-merger.md) das Vererben zulässt.
+  Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, Standardfunktionen (in `/libs`) mit Ihren eigenen benutzerdefinierten Funktionen (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen:1 ist keine 1:1-Kopie des Originals erforderlich, da der [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) das Vererben zulässt.
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Diese können auf viele Arten verwendet werden, um die Seitenbearbeitungsfunktio
 
 >[!CAUTION]
 >
->**&#x200B;**&#x200B;** Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen.
+>****** Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen.
 >
 >Der Grund dafür ist, dass der Inhalt von `/libs` überschrieben wird, wenn Sie Ihre Instanz das nächste Mal aktualisieren (und möglicherweise überschrieben wird, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
 >
@@ -193,7 +193,7 @@ So erstellen Sie einen neuen Editor für Bearbeitung im Kontext (innerhalb Ihrer
 >[!NOTE]
 >
 >Ein Beispiel finden Sie unter:
->`/libs/cq/gui/components/authoring/editors/clientlibs/core/js/editors/editorExample.js`
+>>`/libs/cq/gui/components/authoring/editors/clientlibs/core/js/editors/editorExample.js`
 
 1. Implementierung:
 

@@ -11,8 +11,8 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 20e958d7-5976-4ccd-99b6-0e3bdb424d2d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 100%
+source-wordcount: '1264'
+ht-degree: 96%
 
 ---
 
@@ -109,7 +109,7 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Vorlage wie d
 
    Statt der Komponente `guideformtitle` können Sie eine benutzerdefinierte Komponente oder die Komponente `parsys` einfügen. Entfernen Sie zum Beispiel `guideformtitle` und fügen Sie eine benutzerdefinierte Komponente oder den Komponentenknoten `parsys` hinzu. Vergewissern Sie sich, dass die Eigenschaft `sling:resourceType` der Komponente auf die Komponente verweist und das Gleiche auch in der Datei `component.jsp` der Seite definiert ist.
 
-1. Navigieren Sie zu „/apps/mycompany/templates/enrollment-template/jcr:content“. 
+1. Navigieren Sie zu &quot;/apps/mycompany/templates/enrollment-template/jcr:content&quot;.
 
 1. Öffnen Sie die Registerkarte **[!UICONTROL Eigenschaften]** und setzen Sie die Eigenschaft `cq:designPath` auf „/etc/designs/mycompany“. 
 
@@ -117,9 +117,9 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Vorlage wie d
 
 ## Erstellen einer adaptiven Formularseitenkomponente {#create-an-adaptive-form-page-component}
 
-Die benutzerdefinierte Vorlage hat den gleichen Stil wie die Standardvorlage, da die Vorlage auf die Seitenkomponente „/libs/fd/af/components/page/base“ verweist. Der Komponentenverweis befindet sich in der Eigenschaft `sling:resourceType` unter dem Knoten „/apps/mycompany/templates/enrollment-template/jcr:content“. Da es sich bei der Basis um eine Kernproduktkomponente handelt, sollten Sie diese Komponente nicht ändern.
+Die benutzerdefinierte Vorlage hat den gleichen Stil wie die Standardvorlage, da die Vorlage auf die Seitenkomponente „/libs/fd/af/components/page/base“ verweist. Der Komponentenverweis befindet sich in der Eigenschaft `sling:resourceType` im Knoten &quot;/apps/mycompany/templates/enrollment-template/jcr:content&quot;. Da es sich bei der Basis um eine Kernproduktkomponente handelt, sollten Sie diese Komponente nicht ändern.
 
-1. Navigieren Sie zum Knoten /apps/mycompany/templates/enrollment-template/jcr:content und setzen Sie die Eigenschaft `sling:resourceType` auf „/apps/mycompany/components/page/enrollmentpage“.
+1. Navigieren Sie zum Knoten &quot;/apps/mycompany/templates/enrollment-template/jcr:content und setzen Sie die Eigenschaft `sling:resourceType` &quot;/apps/mycompany/components/page/enrollmentpage“.
 1. Kopieren Sie den Knoten „/libs/fd/af/components/page/base“ in den Ordner „/apps/mycompany/components/page“. 
 
 1. Benennen Sie die kopierte Komponente in `enrollmentpage` um.

@@ -12,8 +12,8 @@ role: Admin
 exl-id: 4f7e1794-af5a-45a2-8dc6-80029c47caeb
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 100%
+source-wordcount: '257'
+ht-degree: 94%
 
 ---
 
@@ -43,7 +43,7 @@ Der [Opt-in-Assistent](/help/sites-administering/opt-in.md) erleichtert die Durc
 
 >[!NOTE]
 >
->Siehe auch [Integrieren von AEM in Adobe Target und Adobe Analytics mithilfe von DTM](https://helpx.adobe.com/de/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Siehe auch [Integrieren von AEM in Adobe Target und Adobe Analytics mithilfe von DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 ## Weiterführende Informationen {#further-information}
 

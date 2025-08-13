@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: de5cc19f-f3dc-42d5-877d-c15bd00487d7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 100%
+source-wordcount: '899'
+ht-degree: 97%
 
 ---
 
@@ -50,7 +50,7 @@ AEM [!DNL Forms] ermöglicht es Formularentwicklern, adaptive Formulare nahtlos 
 
 AEM [!DNL Forms] bietet eine Komponente, AEM [!DNL Forms]-Container, zum Einbetten eines adaptiven Formulars in eine AEM [!DNL Sites]-Seite. Standardmäßig ist die Komponente im AEM [!DNL Sites]-Container nicht sichtbar. Führen Sie die folgenden Schritte aus, um die AEM [!DNL Forms]-Container-Komponente zu aktivieren und das adaptive Formular in eine AEM [!DNL Sites]-Seite einzubetten:
 
-1. Erstellen und öffnen Sie eine Seite in der „We.Retail“-Website zur Bearbeitung. Zum Beispiel: [https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). Das adaptive Formular ist in die [!DNL Sites]-Seite eingebettet.
+1. Erstellen und öffnen Sie eine Seite in der „We.Retail“-Website zur Bearbeitung. Beispiel: [https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). Das adaptive Formular ist in die [!DNL Sites]-Seite eingebettet.
 
    Sie können das adaptive Formular auch in eine vorhandene We.Retail-[!DNL Site's]-Seite einbetten. Zum Beispiel die Seite „ÜBER UNS“ [https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html). Es spart Ihnen die Zeit, eine Seite zu erstellen. Die folgenden Schritte verwenden die neu erstellte Seite.
 

@@ -13,8 +13,8 @@ hidefromtoc: true
 exl-id: e64a3b6f-7248-4426-9f13-f703eab3632d
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 100%
+source-wordcount: '1711'
+ht-degree: 99%
 
 ---
 
@@ -46,7 +46,7 @@ Die Process Reporting-Services veröffentlichen auf geplanter Basis Daten aus de
 
 Dieser Vorgang kann viele Ressourcen in Anspruch nehmen und die Leistung der AEM Forms-Server beeinträchtigen. Es wird empfohlen, dies außerhalb der Zeitfenster zu planen, in denen der AEM Forms-Servers ausgelastet ist.
 
-Standardmäßig ist die Veröffentlichung von Daten so geplant, dass sie jeden Tag um 2:00 Uhr ausgeführt wird.
+Standardmäßig ist die Veröffentlichung von Daten so geplant, dass sie jeden Tag um :00 Uhr ausgeführt wird.
 
 Führen Sie die folgenden Schritte aus, um den Veröffentlichungszeitplan zu ändern:
 
@@ -54,7 +54,7 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungszeitplan zu än
 >
 >Wenn Sie Ihre AEM Forms-Implementierung auf einem Cluster ausführen, führen Sie die folgenden Schritte auf jedem Knoten des Clusters aus.
 
-1. Beenden Sie die AEM Forms-Server-Instanz.
+1. Stoppen Sie die AEM Forms-Server-Instanz.
 1. &#x200B;
 
    * (Für Windows) Öffnen Sie die `[JBoss root]/bin/run.conf.bat`-Datei in einem Editor.
@@ -70,7 +70,7 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungszeitplan zu än
 
 1. Starten Sie den AEM Forms-Server neu.
 
-1. Beenden Sie die AEM Forms-Server-Instanz.
+1. Stoppen Sie die AEM Forms-Server-Instanz.
 1. Melden Sie sich bei WebSphere® Administrative Console an. Klicken Sie in der Navigationsstruktur auf **Servers** > **Application servers** und im rechten Bereich auf den Server-Namen.
 
 1. Klicken Sie unter „Server Infrastructure“ auf **Java™ and Process Management** > **Process Definition**.
@@ -85,7 +85,7 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungszeitplan zu än
 
 1. Klicken Sie erst auf **Apply**, dann auf „OK“ und schließlich auf **Save directly to the master configuration**.
 1. Starten Sie den AEM Forms-Server neu.
-1. Beenden Sie die AEM Forms-Server-Instanz.
+1. Stoppen Sie die AEM Forms-Server-Instanz.
 1. Melden Sie sich bei Administration Console an. Die Standardadresse von WebLogic Administration Console lautet `https://[hostname]:[port]/console`.
 1. Klicken Sie im Change Center auf **Sperren und bearbeiten**.
 1. Klicken Sie unter „Domain Structure“ auf **Environment** > **Servers** und anschließend im rechten Bereich auf den Namen des verwalteten Servers.

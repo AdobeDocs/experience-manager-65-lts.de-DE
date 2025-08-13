@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 003ca1f1-5653-4b6c-a63f-ad5196adf3f2
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '694'
-ht-degree: 100%
+source-wordcount: '691'
+ht-degree: 99%
 
 ---
 
@@ -52,7 +52,7 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
 
    * MIME-Typen: `application/pdf` oder `application/postscript`
    * Befehle: `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
-   * Fügen Sie Größen für Miniaturansichten hinzu: 319:319, 140:100, 48:48. Fügen Sie ggf. eine benutzerdefinierte Konfiguration für Miniaturansichten hinzu.
+   * Fügen Sie Größen für Miniaturansichten hinzu: :319, 140:100, 48 :48. Fügen Sie ggf. eine benutzerdefinierte Konfiguration für Miniaturansichten hinzu.
 
    Die Befehlszeilenargumente für den `PDFRasterizer`-Befehl können Folgendes enthalten:
 

@@ -199,7 +199,7 @@ Das obige Bild dient als Beispiel. Die **AEM-Ansicht** hat die folgenden Eigensc
 >Die Spalte der CQ-Variablen in jeder Tabelle kann auch inline ausgefüllt werden, indem auf das Feld doppelgeklickt und dann der gewünschte Text eingegeben wird. In diesen Feldern ist JavaScript als Eingabe möglich.
 >
 >Beispiel: Neben `prop3` können Sie Folgendes hinzufügen:
->     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
+>>     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
 >, um den *Titel* einer Seite und ihre *sitesection* verkettet mit einem *:* (Doppelpunkt) und mit dem Präfix *Adobe* als `prop3` zu übermitteln.
 >
 

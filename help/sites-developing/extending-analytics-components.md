@@ -11,8 +11,8 @@ role: Developer
 exl-id: 94bdf379-d10f-4dd3-b250-f2d1a3e4c251
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1244'
-ht-degree: 100%
+source-wordcount: '1251'
+ht-degree: 97%
 
 ---
 
@@ -363,7 +363,7 @@ Der Knoten `analytics` der Komponente muss die Namen der Variablen anzeigen, die
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-Das E-Commerce-Modul stellt mehrere Komponenten bereit, die Daten für die Variable „s.products“ generieren. Die Komponente `submitorder` ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) erzeugt beispielsweise JavaScript, das dem folgenden Beispiel ähnelt:
+Das E-Commerce-Modul stellt mehrere Komponenten bereit, die Daten für die Variable „s.products“ generieren. Beispielsweise generiert die `submitorder`-Komponente ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) eine JavaScript, die dem folgenden Beispiel ähnelt:
 
 ```
 <script type="text/javascript">

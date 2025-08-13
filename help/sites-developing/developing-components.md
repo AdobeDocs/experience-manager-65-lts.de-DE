@@ -13,7 +13,7 @@ role: Developer
 exl-id: ff9c9e25-13a8-4ca7-a347-1da1352ef223
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '3200'
+source-wordcount: '3199'
 ht-degree: 99%
 
 ---
@@ -461,7 +461,7 @@ Wenn Sie eine Komponente, die für die Verwendung mit der klassischen Benutzerob
    * Migrieren von „vtypes“ zu [Validierung der Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
    * Zum Verwenden von JS-Listenern finden Sie weitere Informationen unter [Umgang mit Feldereignissen](#handling-field-events) und in der AEM Gems-Sitzung [Anpassen von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=de).
 
-### Migrieren von cq:listener-Code {#migrating-cq-listener-code}
+### Migrieren von CQ:listener-Code {#migrating-cq-listener-code}
 
 Wenn Sie ein Projekt migrieren, das für die klassische Benutzeroberfläche konzipiert wurde, verwendet der `cq:listener`-Code (und komponentenbezogene Client-Bibliotheken) möglicherweise Funktionen, die für die klassische Benutzeroberfläche spezifisch sind (z. B. `CQ.wcm.*`). Für die Migration müssen Sie diesen Code mithilfe der entsprechenden Objekte/Funktionen in der Touch-optimierten Benutzeroberfläche aktualisieren.
 

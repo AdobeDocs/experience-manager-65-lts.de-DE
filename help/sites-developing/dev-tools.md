@@ -64,4 +64,4 @@ Tools, die die Erstellung neuer Projekte erleichtern:
 >[!NOTE]
 >
 >Das folgende Tutorial kann für den Start eines neuen AEM-Projekts von Interesse sein:
->[Erste Schritte mit AEM Sites – Teil 1: Projekteinrichtung](https://helpx.adobe.com/de/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)
+>>[Erste Schritte mit AEM Sites – Teil 1: Projekteinrichtung](https://helpx.adobe.com/de/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)

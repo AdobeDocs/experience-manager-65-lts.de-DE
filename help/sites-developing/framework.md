@@ -12,8 +12,8 @@ role: Developer
 exl-id: 5d1c2c73-c457-49dc-b519-eba5ad9d5722
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 99%
+source-wordcount: '1624'
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Taggen von Inhalten und Verwenden der AEM-Tagging-Infrastruktur:
 * Der `NodeType` des mit Tags versehenen Inhaltsknotens muss das Mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin) beinhalten.
 * Die [`TagID`](#tagid) wird zur Eigenschaft [`cq:tags`](#tagged-content-cq-tags-property) des Inhaltsknotens hinzugefügt, was einen Knoten vom Typ ` [cq:Tag](#tags-cq-tag-node-type)` ergibt.
 
-## Tags: cq:Tag-Knotentyp  {#tags-cq-tag-node-type}
+## Tags : cq:Tag-Knotentyp  {#tags-cq-tag-node-type}
 
 Die Deklaration eines Tags wird im Repository in einem Knoten vom Typ `cq:Tag` erfasst
 
@@ -77,7 +77,7 @@ In AEM ist der Basispfad `/content/cq:tags` und der Stammknoten ist vom Typ `cq:
 
 ### Tag-Namespace {#tag-namespace}
 
-Mithilfe von Namespaces können Sie Elemente gruppieren. Der vorherrschende Anwendungsfall besteht darin, einen Namespace pro Site (z. B. öffentlich, intern und Portal) oder pro größerer Anwendung (z. B. WCM, Assets oder Communitys) zu verwenden. Namespaces können aber auch anderweitig eingesetzt werden. Namespaces werden in der Benutzeroberfläche verwendet, um nur die Untergruppe von Tags (d. h. die Tags eines bestimmten Namespace) anzuzeigen, die auf den aktuellen Inhalt anwendbar sind.
+Mithilfe von Namespaces können Sie Elemente gruppieren. Der vorherrschende Anwendungsfall besteht darin, einen Namespace pro Site (z. B. öffentlich, intern und Portal) oder pro größerer Anwendung (z. B. WCM, Assets oder Communitys) zu verwenden. Namespaces können aber auch anderweitig eingesetzt werden. Namespaces werden in der Benutzeroberfläche verwendet, um nur die Teilmenge von Tags (d. h. die Tags eines bestimmten Namespace) anzuzeigen, die auf den aktuellen Inhalt anwendbar sind.
 
 Der Namespace des Tags ist die erste Ebene im Teilbaum der Taxonomie, der den Knoten direkt unterhalb des [Stammknotens der Taxonomie darstellt](#taxonomy-root-node). Ein Namespace ist ein Knoten vom Typ `cq:Tag`, dessen übergeordnetes Element nicht vom Knotentyp `cq:Tag` ist.
 
@@ -128,7 +128,7 @@ Eine typische Vorgehensweise umfasst Folgendes:
 * Gewähren von Lesezugriff für Benutzer/Autoren auf alle Namespaces, die sie lesen können müssen (meist alle).
 * Gewähren von Schreibzugriff für Benutzerinnen und Benutzer bzw. Autorinnen und Autoren auf die Namespaces, bei denen Tags durch Benutzerinnen und Benutzer bzw. Autorinnen und Autoren frei definierbar sein müssen (Hinzufügen eines Knotens unter `/content/cq:tags/some_namespace`).
 
-## Tag-barer Inhalt: cq:Taggable-Mixin {#taggable-content-cq-taggable-mixin}
+## Taggable Content : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
 Damit Anwendungsentwicklerinnen und -entwickler einen Inhaltstyp mit Tags versehen können, muss die Registrierung eines Knotens ([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html)) das Mixin `cq:Taggable` oder das Mixin `cq:OwnerTaggable` umfassen.
 

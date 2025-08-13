@@ -11,8 +11,8 @@ role: Developer
 exl-id: 7b870221-2946-4e3d-b606-71a46bdfc568
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 100%
+source-wordcount: '532'
+ht-degree: 93%
 
 ---
 
@@ -106,7 +106,7 @@ Geben Sie bei der Konfiguration der Felder eindeutige Elementnamen für die Form
 
 Nach der Konfiguration der Felder müssen Sie die Zuordnung manuell ändern.
 
-Wechseln Sie in CRXDE Lite zum Knoten **jcr:content** der Seite und legen Sie als Wert von **acMapping** den internen Namen des **Zielgruppen-Mappings** fest.
+Wechseln Sie in CRXDE-lite zum Knoten **jcr:content** (der Seite) und ändern Sie den **acMapping**-Wert in den internen Namen des **Zielgruppen-Mappings**.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -122,7 +122,7 @@ Sie können das Formular nun übermitteln, um in Adobe Campaign zu überprüfen
 
 ## Fehlerbehebung {#troubleshooting}
 
-**&quot;Invalid type for value &#39;02/02/2015&#39; from element &#39;@eventdate&#39; (document of type &#39;Event ([adb:event])&#39;)&quot;**
+**„Ungültiger Typ für Wert &#39;02/02/2015&#39; ausgehend vom Element &#39;@eventdate&#39; (Dokument vom Typ &#39;Ereignis ([adb:event])&#39;)**
 
 Beim Übermitteln des Formulars wird dieser Fehler in der Datei **error.log** von AEM protokolliert.
 

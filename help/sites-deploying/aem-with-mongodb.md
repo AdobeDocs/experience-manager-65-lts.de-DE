@@ -12,7 +12,7 @@ role: Admin
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '5965'
+source-wordcount: '5964'
 ht-degree: 98%
 
 ---
@@ -286,7 +286,7 @@ Beim Schreiben auf die Festplatte schreibt WiredTiger alle in einem Snapshot ent
 
 MongoDB konfiguriert WiredTiger so, dass Checkpoints (d. h. das Schreiben des Snapshots auf die Festplatte) in Intervallen von 60 Sekunden oder für jeweils 2 GB Journaldaten erstellt werden.
 
-Während des Schreibens eines neuen Checkpoints ist der vorherige Checkpoint weiterhin gültig. Daher kann MongoDB den letzten gültigen Checkpoint nach einem Neustart auch dann wiederherstellen, wenn es während des Schreibens des neuen Checkpoints zu einem Fehler oder einem Absturz kommt.
+Während des Schreibens eines neuen Checkpoints ist der vorherige Checkpoint weiterhin gültig. Daher kann MongoDB den letzten gültigen Checkpoint nach einem Neustart auch dann wiederherstellen, wenn es während des Schreibens des neuen Checkpoints zu einem Fehler oder einer Beendigung kommt.
 
 Der neue Checkpoint wird verfügbar und dauerhaft, wenn die Metadatentabelle von WiredTiger automatisch aktualisiert wird, um auf den neuen Checkpoint zu verweisen. Sobald der neue Checkpoint verfügbar ist, gibt WiredTiger die Seiten des alten Checkpoints frei.
 

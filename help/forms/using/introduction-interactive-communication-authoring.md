@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 595f8d31-f297-48be-8ead-f171a60891b8
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 100%
+source-wordcount: '1307'
+ht-degree: 98%
 
 ---
 
@@ -66,10 +66,10 @@ Wählen Sie eine Komponente, dann ![field-level](assets/field-level.png) > **Dok
 | Diagramm | ✓ | ✓ | Fügt ein Diagramm hinzu, das Sie in interaktiver Kommunikation zur visuellen Darstellung von zweidimensionalen Daten verwenden können, die aus einem FDM-Sammlungselement abgerufen werden. |
 | Dokumentfragment | ✓ | ✓ | Ermöglicht Ihnen das Hinzufügen einer wiederverwendbaren Komponente, eines Textes, einer Liste oder einer Bedingung zu einer interaktiven Kommunikation. Die wiederverwendbare Komponente, die Sie einer interaktiven Kommunikation hinzufügen, kann entweder formulardatenmodellbasiert sein oder ohne ein Formulardatenmodell sein. |
 | Bild | ✓ | ✓ | Ermöglicht das Einfügen eines Bildes. |
-| Bedienfeld | - | ✓ | Die Bedienfeldkomponente ist ein Platzhalter zum Gruppieren anderer Komponenten und steuert, wie eine Gruppe von Komponenten in einer interaktiven Kommunikation angeordnet wird. Mit einer Bedienfeldkomponente können Sie auch eine Gruppe von Komponenten für die Endbenutzenden wiederholbar machen, z. B. in mehreren Einträgen, die zum Ausfüllen von Bildungsnachweisen erforderlich sind. Es ist sinnvoll, einen Bereich jeweils für eine Registerkarte einer interaktiven Kommunikation mit mehreren Registerkarten zu verwenden. |
+| Bedienfeld | – | ✓ | Die Bedienfeldkomponente ist ein Platzhalter zum Gruppieren anderer Komponenten und steuert, wie eine Gruppe von Komponenten in einer interaktiven Kommunikation angeordnet wird. Mit einer Bedienfeldkomponente können Sie auch eine Gruppe von Komponenten für die Endbenutzenden wiederholbar machen, z. B. in mehreren Einträgen, die zum Ausfüllen von Bildungsnachweisen erforderlich sind. Es ist sinnvoll, einen Bereich jeweils für eine Registerkarte einer interaktiven Kommunikation mit mehreren Registerkarten zu verwenden. |
 | Tabelle | &#42; | ✓ | Fügt eine Tabelle hinzu, mit der Sie Daten in Zeilen und Spalten organisieren können. |
 | Zielbereich | &#42;&#42; | ✓ | Fügt einen Zielbereich in einen Web-Kanal ein, um die Web-kanalspezifischen Komponenten zu organisieren. |
-| Text | - | ✓ | Fügt Text zum Web-Kanal einer interaktiven Kommunikation hinzu. Text kann Formulardatenmodellobjekte verwenden, um den Inhalt dynamisch zu gestalten. |
+| Text | – | ✓ | Fügt Text zum Web-Kanal einer interaktiven Kommunikation hinzu. Text kann Formulardatenmodellobjekte verwenden, um den Inhalt dynamisch zu gestalten. |
 
 &#42; Verwenden Sie Layout-Fragmente im Druckkanal, um Tabellen hinzuzufügen.
 
@@ -120,7 +120,7 @@ K: **Gruppieren von Objekten im Bereich**: Hiermit können Sie die Komponenten i
 
 L. **Untergeordnetes Bedienfeld hinzufügen** (nur für Bedienfelder): Hiermit können Sie dem Bedienfeld ein untergeordnetes Bedienfeld hinzufügen.
 
-M: **Symbolleiste hinzufügen** (Nur für Bedienfelder): Hiermit können Sie die Symbolleisten-Komponente für Bedienfelder hinzufügen. Sie können dann weitere Aktionen in der Symbolleiste ausführen.
+M: **Symbolleiste hinzufügen** (nur für Bereiche):Lets Sie fügen die Symbolleisten-Komponente für Bereiche hinzu. Sie können dann weitere Aktionen in der Symbolleiste ausführen.
 
 Außerdem können Sie mit der Option **Ersetzen** in der Symbolleiste die vorhandene Komponente durch eine andere Komponente ersetzen. Die Option ist für die Bedienfeldkomponente nicht verfügbar.
 

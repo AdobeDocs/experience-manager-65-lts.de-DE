@@ -11,8 +11,8 @@ role: Admin
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 100%
+source-wordcount: '1402'
+ht-degree: 88%
 
 ---
 
@@ -30,7 +30,7 @@ In den [Best Practices für Abfragen und Indizierung](/help/sites-deploying/best
 
 Um eine langsame Indizierung anfänglich zu erkennen, müssen die `IndexStats`-JMX-MBeans überprüft werden. Klicken Sie auf die betroffene AEM-Instanz und gehen Sie wie folgt vor:
 
-1. Öffnen Sie die Web-Konsole und klicken Sie auf die Registerkarte „JMX“. Oder wechseln Sie zu https://&lt;Host>:&lt;Port>/system/console/jmx (z. B. [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
+1. Öffnen Sie die Web-Konsole und klicken Sie auf die Registerkarte „JMX“. Oder wechseln Sie zu https://&lt;Host>:&lt;Port>/system/console/jmx (beispielsweise [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
 1. Navigieren Sie zu den `IndexStats`-MBeans.
 1. Öffnen Sie die `IndexStats`-MBeans für `async` und `fulltext-async`.
 
@@ -55,7 +55,7 @@ In Ausnahmefällen kann der Thread-Pool, der zur Verwaltung der asynchronen Indi
 
 1. Definieren Sie einen neuen, isolierten Thread-Pool für den Apache Sling Scheduler, um ihn für die asynchrone Indizierung zu verwenden:
 
-   * Nagivieren Sie auf der betroffenen AEM-Instanz zu „AEM-OSGi-Web-Konsole“ > „OSGi“ > „Konfiguration“ > „Apache Sling Scheduler“ oder zu https://&lt;Host>:&lt;Port>/system/console/configMgr (beispielsweise [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)).
+   * Navigieren Sie auf der betroffenen AEM-Instanz zu &quot;AEM-OSGi-Web-Konsole“ > „OSGi“ > „Konfiguration“ > „Apache Sling Scheduler“ oder zu https://&lt;Host>:&lt;Port>/system/console/configMgr (beispielsweise [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr))
    * Fügen Sie dem Feld „Zulässige Thread-Pools“ einen Eintrag mit dem Wert „oak“ hinzu.
    * Um die Änderungen zu speichern, klicken Sie unten rechts auf **Speichern**.
 
@@ -63,7 +63,7 @@ In Ausnahmefällen kann der Thread-Pool, der zur Verwaltung der asynchronen Indi
 
 1. Überprüfen Sie, dass der neue Thread-Pool in Apache Sling Scheduler registriert ist und in der Statusanzeige der Web-Konsole von Apache Sling Scheduler angezeigt wird.
 
-   * Navigieren Sie zu „AEM-OSGi-Web-Konsole“ > „Status“ > „Sling Scheduler“ oder zu https://&lt;Host>:&lt;Port>/system/console/status-slingscheduler (beispielsweise [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler)).
+   * Navigieren Sie zu &quot;AEM-OSGi-Web-Konsole“ > „Status“ > „Sling Scheduler“ oder zu https://&lt;Host>:&lt;Port>/system/console/status-slingscheduler (beispielsweise [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler))
    * Stellen Sie sicher, dass die folgenden Pool-Einträge vorhanden sind:
 
       * ApacheSlingoak
@@ -75,7 +75,7 @@ In Ausnahmefällen kann der Thread-Pool, der zur Verwaltung der asynchronen Indi
 
 Wenn in kurzer Zeit zu viele Änderungen und Commits am Repository vorgenommen werden, kann sich die Indizierung aufgrund einer vollen Beobachtungswarteschlange verzögern. Bestimmen Sie zunächst, ob die Beobachtungswarteschlange voll ist:
 
-1. Wechseln Sie zur Web-Konsole und klicken Sie auf die Registerkarte „JMX“. Oder wechseln Sie zu https://&lt;Host>:&lt;Port>/system/console/jmx (beispielsweise [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
+1. Wechseln Sie zur Web-Konsole und klicken Sie auf die Registerkarte „JMX“. Oder wechseln Sie zu https://&lt;Host>:&lt;Port>/system/console/jmx (beispielsweise [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
 1. Öffnen Sie im Oak-Repository das Statistik-MBean und überprüfen Sie, ob einer der Werte für `ObservationQueueMaxLength` mehr als 10.000 beträgt.
 
    * Bei normalem Betrieb wird dieser Höchstwert letztendlich auf null reduziert (insbesondere im Abschnitt `per second`). Überprüfen Sie daher, ob der Sekundenwert für `ObservationQueueMaxLength` 0 beträgt.
@@ -124,7 +124,7 @@ Gehen Sie wie folgt vor, um einen blockierten Neuindizierungsprozess zu identifi
 1. Wenn Sie alle in Schritt 1 genannten Informationen erfasst haben, starten Sie AEM neu.
 
    * Ein Neustart von AEM kann das Problem lösen, wenn eine hohe gleichzeitige Belastung vorliegt (Überlauf der Beobachtungswarteschlange o. ä.).
-   * Wenn ein Neustart das Problem nicht behebt, wenden Sie sich an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?lang=de&amp;support-solution=General&amp;support-tab=home#support) und geben Sie alle in Schritt 1 erfassten Informationen an.
+   * Wenn ein Neustart das Problem nicht behebt, wenden Sie sich an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?lang=de&support-solution=General&support-tab=home#support) und geben Sie alle in Schritt 1 erfassten Informationen an.
 
 ## Sicheres Abbrechen der asynchronen Neuindizierung {#safely-aborting-asynchronous-re-indexing}
 
@@ -137,7 +137,7 @@ Gehen Sie wie folgt vor, um die Neuindizierung sicher abzubrechen:
 
 1. Identifizieren Sie das IndexStats-MBean, das die Neuindizierungsspur steuert, die angehalten werden muss.
 
-   * Navigieren Sie über die JMX-Konsole zum gewünschten IndexStats-MBean. Wechseln Sie dazu entweder zu „AEM-OSGi-Web-Konsole“ > „Haupt“ > „JMX“ oder zu https://&lt;host>:&lt;port>/system/console/jmx (beispielsweise [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
+   * Navigieren Sie über die JMX-Konsole zum gewünschten IndexStats-MBean. Wechseln Sie dazu entweder zu &quot;AEM-OSGi-Web-Konsole“ > „Haupt“ > „JMX“ oder zu https://&lt;Host>:&lt;Port>/system/console/jmx (beispielsweise [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
    * Öffnen Sie das IndexStats-MBean auf der Grundlage der Neuindizierungsspur, die Sie stoppen möchten (`async`, `async-reindex` oder `fulltext-async`)
 
       * Um die richtige Spur und die zugehörige Instanz des IndexStats-MBeans zu ermitteln, durchsuchen Sie die Oak-Indexeigenschaft „async“. Die Eigenschaft „async“ enthält den Spurnamen: `async`, `async-reindex`, oder `fulltext-async`.

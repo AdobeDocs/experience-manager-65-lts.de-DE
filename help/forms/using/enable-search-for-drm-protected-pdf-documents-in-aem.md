@@ -7,8 +7,8 @@ role: Admin, User, Developer
 exl-id: ad86398d-0dc9-4168-b409-4d231b8d586b
 source-git-commit: 757c26274b39f5fb37a090f320493abd1af44c42
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 98%
+source-wordcount: '713'
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ Mithilfe der AEM-Suche kann nach AEM-Assets gesucht werden. Zudem kann eine Text
 * Stellen Sie sicher, dass alle Pakete aktiv sind. Wenn nicht alle Pakete aktiv sind, warten Sie, bis alle Pakete aktiv sind. 
 
    * Für AEM Forms unter OSGi werden die Bundles unter https://&#39;[server]:[port]&#39;/system/console/bundles aufgelistet.
-   * Für AEM Forms auf JEE werden die Bundles unter https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles aufgelistet. Zum Beispiel „https://localhost:8080/lc/system/console/bundles“.
+   * Für AEM Forms auf JEE werden die Bundles unter https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles aufgelistet. Beispiel: https://localhost:8080/lc/system/console/bundles.
 
 * Fügen Sie das Paket *sun.util.calendar* zur Zulassungsliste hinzu. Um das Paket zur Zulassungsliste hinzuzufügen, führen Sie die folgenden Schritte aus:
 

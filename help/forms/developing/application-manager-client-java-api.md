@@ -13,8 +13,8 @@ hidefromtoc: true
 exl-id: 1ac45713-4eca-4def-a030-c7bc3fcdf4c7
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 100%
+source-wordcount: '407'
+ht-degree: 91%
 
 ---
 
@@ -34,9 +34,9 @@ Der folgende Java™ API Quick Start (SOAP) ist für den Application Manager-Cli
 
 [Quick Start (SOAP-Modus): Abrufen des Status von Anwendungen mithilfe von Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[Quick Start (SOAP-Modus): Vorschau des AEM Forms- und späteren Anwendungsarchivs mithilfe von Java](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[Schnellstart (SOAP-Modus)](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
-[Quick Start (SOAP-Modus): Löschen des AEM Forms-Anwendungsarchivs mithilfe von Java](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
+[Schnellstart (SOAP-Modus)](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 
@@ -644,7 +644,7 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## Quick Start (SOAP-Modus): Vorschau des LiveCycle ES2- und späteren Anwendungsarchivs mit der Java™-API {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
+## Schnellstart (SOAP-Modus): :Previewing des LiveCycle ES2- und späteren Anwendungsarchivs mithilfe der Java™-API {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
 Das folgende Java™-Code-Beispiel dient der Vorschau des AEM Forms- und späteren Anwendungsarchivs mithilfe der Java™-API.
 
@@ -723,7 +723,7 @@ public class PreviewLCA_SOAP {
 }
 ```
 
-## Quick Start (SOAP-Modus): Löschen des Anwendungsarchivs mithilfe der Java™-API {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
+## Schnellstart (SOAP-Modus): :Deleting des Anwendungsarchivs mithilfe der Java™-API {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
 
 Das folgende Java™-Code-Beispiel dient zum Löschen eines Anwendungsarchivs.
 

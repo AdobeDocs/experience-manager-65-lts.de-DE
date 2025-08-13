@@ -75,7 +75,7 @@ Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführe
      ```
 
 1. Erstellen Sie eine Sicherung der `sling.properties`-Datei (normalerweise in `crx-quickstart/conf/` vorhanden) und löschen Sie sie
-1. **Ändern Sie in der `server.xml`-Datei die Version des Servlets** 6.0).
+1. **Ändern Sie in der**-Datei die Version des Servlets `server.xml`6.0).
 1. Installieren Sie Java 17/Java 21 und stellen Sie sicher, dass es korrekt installiert ist, indem Sie Folgendes ausführen:
 
    ```shell

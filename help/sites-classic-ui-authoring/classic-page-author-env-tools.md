@@ -13,7 +13,7 @@ exl-id: c4ac3f14-f45a-44f6-a232-69cae483a776
 source-git-commit: dc46c3e2689df1069eea6980ef615f639db42e92
 workflow-type: tm+mt
 source-wordcount: '931'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -156,7 +156,7 @@ Sie können in einer Suchabfrage eine beliebige Anzahl an Platzhaltern verwenden
 
 In AEM können Sie anzeigen, welche Seiten mit der aktuell bearbeiteten Seite verknüpft sind.
 
-Anzeigen von Seitenverweisen:
+So zeigen Sie Seitenverweise an:
 
 1. Wählen Sie im Sidekick das Registerkartensymbol **Seite** aus.
 
@@ -166,7 +166,7 @@ Anzeigen von Seitenverweisen:
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
-AEM zeigt alle Seiten an, die direkt auf die ausgewählte Seite verweisen, sowie alle indirekten Verweise. Dies ist hilfreich, um alle Links zu verstehen, die aktualisiert werden, wenn Sie die Seite verschieben oder löschen müssen.
+AEM zeigt alle Seiten an, die direkt auf die ausgewählte Seite verweisen, sowie alle indirekten Verweise. Dies hilft bei der Ermittlung aller Links, die aktualisiert werden, wenn Sie die Seite verschieben oder löschen müssen.
 
 ## Zusätzliche Sidekick-Aktionen {#additional-actions}
 

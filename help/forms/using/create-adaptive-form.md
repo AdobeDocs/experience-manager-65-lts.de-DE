@@ -7,8 +7,8 @@ role: Admin, User, Developer
 exl-id: 87e03ff2-1324-42bd-b4da-54a0c17ce98e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 100%
+source-wordcount: '1336'
+ht-degree: 92%
 
 ---
 
@@ -86,7 +86,7 @@ Komponenten sind Bausteine &#x200B;&#x200B;eines adaptiven Formulars. AEM [!DNL 
      <tr> 
       <td>Titel</td> 
       <td>Name<br /> </td> 
-      <td>Lieferadresse</td> 
+      <td>Versandadresse</td> 
       <td>Status</td> 
      </tr> 
      <tr> 
@@ -171,11 +171,11 @@ Mit den folgenden Schritten können Sie die E-Mail-Sendeaktion und die Demo-Send
    |--- |--- |
    | Von | `donotreply@weretail.com` |
    | To | `${customer_Email}` |
-   | Betreff | Bestätigung: Sie haben die Lieferadresse auf der We.Retail-Website hinzugefügt. |
-   | E-Mail-Vorlage | Hallo `${customer_Name}`, die folgende Adresse wurde als Lieferadresse für Ihr Konto hinzugefügt: <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}`, `${customer_ZIPCode}`<br> Mit freundlichen Grüßen, We.Retail |
+   | Betreff | Bestätigung: Sie haben die Versandadresse auf der We.Retail-Website hinzugefügt. |
+   | E-Mail-Vorlage | Hallo `${customer_Name}`, die folgende Adresse wurde als Versandadresse für Ihr Konto hinzugefügt: <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}`, `${customer_ZIPCode}`<br> Mit freundlichen Grüßen, We.Retail |
    | Anhänge einfügen | Aktiviert |
 
-   Ihr Formular ist fertig. Jetzt können Sie eine Vorschau des Formulars anzeigen und die Funktionalität testen. Wenn Sie den im Tutorial genannten Namen verwendet haben und das Formular auf dem Rechner mit dem AEM [!DNL Forms]-Server aufrufen, dann ist das Formular unter [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html) verfügbar.
+   Ihr Formular ist fertig. Jetzt können Sie eine Vorschau des Formulars anzeigen und die Funktionalität testen. Wenn Sie den im Tutorial genannten Namen verwendet haben und auf das Formular auf dem Computer zugreifen, auf dem der AEM [!DNL Forms]-Server ausgeführt wird, ist das Formular unter [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html) verfügbar.
 
 ## Schritt 5: Adaptives Formular in der Vorschau ansehen und senden {#step-preview-and-submit-the-adaptive-form}
 
@@ -183,7 +183,7 @@ Sie können die Option **[!UICONTROL Vorschau]** verwenden, um das Erscheinungsb
 
 Adaptive Formulare bieten auch eine Option zum Emulieren von Erlebnissen eines Formulars für verschiedene Geräte. Beispiel: iPhone, iPad und Desktop. Sie können die beiden Optionen **[!UICONTROL Vorschau]** und **[!UICONTROL Emulator]**-![Lineal](assets/ruler.png) in Verbindung miteinander verwenden, um eine Vorschau eines Formulars für Geräte mit unterschiedlichen Bildschirmgrößen anzuzeigen.
 
-1. Wählen Sie die Option **[!UICONTROL Vorschau]** auf der rechten Seite des Formulareditors aus. Das Formular wird im Bearbeitungsmodus geöffnet. Wenn Sie den Namen verwendet haben, der in der Schulung benutzt wird, dann lautet die Vorschau-URL des Formulars [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
+1. Wählen Sie die Option **[!UICONTROL Vorschau]** auf der rechten Seite des Formulareditors aus. Das Formular wird im Bearbeitungsmodus geöffnet. Wenn Sie den im Tutorial genannten Namen verwendet haben, lautet die Vorschau-URL des Formulars [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
 1. Verwenden Sie ![Lineal](assets/ruler.png), um zu sehen, wie das Formular auf verschiedenen Geräten aussieht.
 1. Füllen Sie die Formularfelder aus und wählen Sie **[!UICONTROL Absenden]** aus. Das Formular wird abgesendet und Sie werden zur standardmäßigen **Dankeschön**-Seite weitergeleitet. Sie können auch eine benutzerdefinierte Dankeschön-Seite angeben. Einzelheiten finden Sie unter [Konfigurieren der Weiterleitungsseite](/help/forms/using/configuring-redirect-page.md).
 

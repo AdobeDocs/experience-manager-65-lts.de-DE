@@ -258,7 +258,7 @@ Sowohl in der Komponente **Text** als auch in der Komponente **Tabelle** sind di
 
 >[!NOTE]
 >
->In der Komponente **Tabelle** ist außerdem eine spezielle Symbolleiste verfügbar, die neben den Standard-Funktionen für die Bearbeitung von Rich-Text auch eine Untergruppe tabellenspezifischer Funktionen enthält.
+>In der Komponente **Tabelle** ist außerdem eine spezielle Symbolleiste verfügbar, die neben den Standard-Funktionen für die Bearbeitung von Rich-Text auch eine Teilmenge tabellenspezifischer Funktionen enthält.
 
 Die tabellenspezifischen Funktionen sind:
 

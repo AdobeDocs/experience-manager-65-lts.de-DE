@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 1f7c1213-4100-45d2-8083-531ff8d413e0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 100%
+source-wordcount: '654'
+ht-degree: 95%
 
 ---
 
@@ -64,7 +64,7 @@ Um ein benutzerdefiniertes Profil zu erstellen, führen Sie die folgenden Schrit
 
 1. Kopieren Sie „node default“ und fügen Sie den Knoten in einen anderen Ordner (*/content/profiles*) mit dem Namen *hrform* ein.
 
-1. Wählen Sie den neuen Knoten *hrform* und fügen Sie eine String-Eigenschaft hinzu: *sling:resourceType* mit dem Wert: *hrform/demo*.
+1. Wählen Sie den neuen Knoten *hrform* aus und fügen Sie eine Zeichenfolgeneigenschaft *sling:resourceType* mit dem Wert *hrform/demo* hinzu.
 
 1. Klicken Sie im Symbolleistenmenü auf Alle speichern, um die Änderungen zu speichern.
 

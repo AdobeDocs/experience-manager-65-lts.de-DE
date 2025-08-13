@@ -47,7 +47,7 @@ Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten ausgefallen ist, di
 
 ## Wiederherstellen der AEM Forms-Daten {#recover-the-aem-forms-data}
 
-1. Beenden Sie die AEM Forms-Dienste und den Anwendungs-Server, falls er ausgeführt wird.
+1. Stoppen Sie die AEM Forms-Dienste und den Anwendungs-Server, falls er ausgeführt wird.
 1. Erstellen Sie bei Bedarf das physische System aus einem Systembild neu. Zum Beispiel ist dieser Schritt möglicherweise nicht erforderlich, wenn der Grund für die Wiederherstellung ein fehlerhafter Datenbank-Server ist.
 1. Wenden Sie Patches oder Aktualisierungen auf AEM Forms an, die seit der Erstellung des Bildes angewendet wurden. Diese Informationen wurden im Sicherungsverfahren erfasst. Bei AEM Forms müssen Patches entsprechend dem Patch-Level zum Zeitpunkt der Systemsicherung angewendet werden.
 1. (WebSphere® Anwendungs-Server) Wenn Sie eine neue Instanz des WebSphere® Anwendungs-Servers wiederherstellen, führen Sie den Befehl „restoreConfig.bat/sh“ aus.

@@ -38,7 +38,7 @@ Bei mehreren Verfahren müssen Sie die WebSphere-Instanz stoppen oder starten, f
    * (Windows) `startServer.bat`*server_name*
    * (Linux, UNIX) ./ `startServer.sh`*server_name*
 
-## WebSphere Application Server beenden {#stop-websphere-application-server}
+## WebSphere Application Server stoppen {#stop-websphere-application-server}
 
 1. Wechseln Sie ausgehend von einer Eingabeaufforderung in das Verzeichnis `[appserver root]/bin`.
 1. Geben Sie den folgenden Befehl ein. Ersetzen Sie dabei *Servername* durch den Namen Ihres WebSphere Application Servers:

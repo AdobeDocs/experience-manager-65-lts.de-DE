@@ -231,7 +231,7 @@ Detaillierte Informationen finden Sie unter [Sichern und Wiederherstellen](/help
 curl -u <user>:<password> -Faction=start http://localhost:4502/system/console/bundles/<bundle-name>
 ```
 
-#### Beenden eines Bundles {#stopping-a-bundle}
+#### Stoppen eines Bundles {#stopping-a-bundle}
 
 ```shell
 curl -u <user>:<password> -Faction=stop http://localhost:4502/system/console/bundles/<bundle-name>

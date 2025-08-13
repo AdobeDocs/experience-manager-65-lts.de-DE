@@ -204,7 +204,7 @@ Wenn Sie eine Kopie eines richtliniengeschützten Dokuments mit dem Menübefehl 
 
 ## Richtliniensätze {#policy-sets}
 
-*Richtliniensätze* dienen zum Gruppieren verschiedener Richtlinien mit einem gemeinsamen Zweck. Diese Richtliniensätze werden dann einer Untergruppe von Benutzenden im System zur Verfügung gestellt.
+*Richtliniensätze* dienen zum Gruppieren verschiedener Richtlinien mit einem gemeinsamen Zweck. Diese Richtliniensätze werden dann einer Teilmenge von Benutzenden im System zur Verfügung gestellt.
 
 Jedem Richtliniensatz können ein oder mehrere Richtliniensatz-Koordinatorinnen oder -Koordinatoren zugeordnet sein. Der Richtliniensatzkoordinator ist ein Administrator oder Benutzer mit zusätzlichen Berechtigungen. Die *Richtliniensatz-Koordinatorinnen und -Koordinatoren* sind in der Regel spezialisierte Personen in der Organisation, die die Richtlinien eines bestimmten Richtliniensatzes am besten erstellen können.
 
@@ -244,7 +244,7 @@ Richtlinien sind wiederverwendbare Sätze von Berechtigungen und Benutzergruppen
 
 Fügen Sie zu Richtlinien Benutzergruppen anstelle einzelner Benutzer hinzu. Dies erleichtert die Verwaltung und Anwendung von Richtlinien für viele Benutzende.
 
-* **Benutzerdefinierte Richtliniensätze erstellen**: Ein Richtliniensatz kombiniert mehrere Richtlinien zu einer verwaltbaren Entität. Erstellen Sie benutzerdefinierte Richtliniensätze für Ihre Organisation oder Abteilung, verwenden Sie sie zur Gruppierung verwandter Richtlinien und stellen Sie sie einer Untergruppe von Benutzern im System zur Verfügung.
+* **Benutzerdefinierte Richtliniensätze erstellen**: Ein Richtliniensatz kombiniert mehrere Richtlinien zu einer verwaltbaren Entität. Erstellen Sie benutzerdefinierte Richtliniensätze für Ihre Organisation oder Abteilung, verwenden Sie sie zur Gruppierung verwandter Richtlinien und stellen Sie sie einer Teilmenge von Benutzern im System zur Verfügung.
 
   Die Verwendung von Richtliniensätzen erleichtert die Zuweisung und Verwaltung von verwandten Richtlinien zu bestimmten Benutzern in einer Organisation oder Abteilung. So können beispielsweise separate Richtliniensätze für die Finanz- und Personalabteilung dazu beitragen, die damit verbundenen Richtlinien einfach zu verwalten und auf Dokumente anzuwenden, die für die jeweiligen Abteilungen bestimmt sind.
 

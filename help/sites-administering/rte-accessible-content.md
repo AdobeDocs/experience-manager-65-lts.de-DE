@@ -8,8 +8,8 @@ role: Admin
 exl-id: deba01bd-7a8d-48cd-956d-fbe8eb8671ba
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 100%
+source-wordcount: '932'
+ht-degree: 99%
 
 ---
 
@@ -103,7 +103,7 @@ RTE kann `strong`- und `em`-Tags anstelle von `b` und `i` verwenden. Fügen Sie 
 
 ### Schrittweise Anleitungen {#step-by-step-instructions}
 
-1. Starten Sie CRXDE Lite. Zum Beispiel: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
+1. Starten Sie CRXDE Lite. Beispiel: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Kopieren Sie:
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`

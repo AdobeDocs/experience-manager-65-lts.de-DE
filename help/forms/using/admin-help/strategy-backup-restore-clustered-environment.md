@@ -41,7 +41,7 @@ In diesem Thema werden die folgenden Strategien zum Sichern von AEM Forms-Cluste
 
 ### Offline-Sicherung mit Ausfallzeit {#offline-backup-with-downtime}
 
-1. Fahren Sie das gesamte Cluster und die zugehörigen Dienste herunter. (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Fahren Sie das gesamte Cluster und die zugehörigen Dienste herunter. (siehe [Starten und Stoppen von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Sichern Sie auf jedem Knoten die Datenbank, den globalen Dokumentenspeicher und die Connectoren. (siehe [Zu sichernde und wiederherzustellende Dateien](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Um das AEM-Repository offline zu sichern, führen Sie die folgenden Schritte aus:
 
@@ -60,7 +60,7 @@ In diesem Thema werden die folgenden Strategien zum Sichern von AEM Forms-Cluste
 
    Verlassen Sie den kontinuierlichen Sicherungsmodus nach einer Wiederherstellung.
 
-1. Beenden Sie die sekundären Knoten des Clusters mit Bezug zu AEM. (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Beenden Sie die sekundären Knoten des Clusters mit Bezug zu AEM. (siehe [Starten und Stoppen von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Sichern Sie auf jedem Knoten die Datenbank, den globalen Dokumentenspeicher und die Connectoren. (siehe [Zu sichernde und wiederherzustellende Dateien](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Um das AEM-Repository offline zu sichern, führen Sie die folgenden Schritte aus:
 
@@ -79,7 +79,7 @@ In diesem Thema werden die folgenden Strategien zum Sichern von AEM Forms-Cluste
 
    Verlassen Sie den kontinuierlichen Sicherungsmodus nach einer Wiederherstellung.
 
-1. Beenden Sie die sekundären Knoten des Clusters mit Bezug zu AEM. (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Beenden Sie die sekundären Knoten des Clusters mit Bezug zu AEM. (siehe [Starten und Stoppen von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Sichern Sie auf jedem Knoten die Datenbank, den globalen Dokumentenspeicher und die Connectoren. (siehe [Zu sichernde und wiederherzustellende Dateien](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Um das AEM-Repository online zu sichern, führen Sie die folgenden Schritte aus:
 
@@ -110,7 +110,7 @@ Führen Sie die folgenden Schritte aus, wenn der gesamte Cluster aufgrund von Fe
 
 ### Wiederherstellen eines einzelnen Knotens {#restoring-a-single-node}
 
-1. Beenden Sie den beschädigten Knoten.
+1. Stoppen Sie den beschädigten Knoten.
 
    >[!NOTE]
    >
@@ -144,7 +144,7 @@ Führen Sie die folgenden Schritte aus, wenn der gesamte Cluster aufgrund von Fe
 
 ### Wiederherstellen des gesamten Clusters {#restoring-the-entire-cluster}
 
-1. Beenden Sie alle Cluster-Knoten.
+1. Stoppen Sie alle Cluster-Knoten.
 1. Erstellen Sie das physische System von einem Systemabbild neu.
 1. Wenden Sie Patches oder Aktualisierungen auf AEM Forms an, die seit der Erstellung des Bildes angewendet wurden. Diese Informationen wurden in Schritt 1 des Backups erfasst. AEM Forms müssen auf derselben Patch-Ebene wiederhergestellt werden, auf der das System gesichert wurde.
 1. Stellen Sie die Datenbank, den globalen Dokumentenspeicher und Connectoren wieder her.

@@ -12,8 +12,8 @@ role: Admin
 exl-id: 70a5429a-e805-49f6-9c2c-28720d9674ae
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 100%
+source-wordcount: '1213'
+ht-degree: 99%
 
 ---
 
@@ -190,7 +190,7 @@ Bei einer Standardinstallation (Author oder Publish) hat jeder Lesezugriff auf d
 
 Diese Zugriffsberechtigungen werden durch die folgende Platzhalter-ACL definiert:
 
-/home everyone allow jcr:read rep:glob = &#42;/profile&#42;
+/home : Alle erlauben JCR:read Rep:glob = &#42;/profile&#42;
 
 Dies ermöglicht Folgendes:
 

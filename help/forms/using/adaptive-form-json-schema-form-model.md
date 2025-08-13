@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Forms
 exl-id: 8d2781e7-732e-42e4-b18b-e6d9ceaa7abe
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1844'
-ht-degree: 100%
+source-wordcount: '1842'
+ht-degree: 98%
 
 ---
 
@@ -343,7 +343,7 @@ Das obige Beispiel definiert einen Kundendatensatz, bei dem jede Kundin und jede
 
 ## Vorkonfigurieren von Feldern in JSON-Schemadefinitionen {#pre-configuring-fields-in-json-schema-definition}
 
-Mit der Eigenschaft **aem:afProperties** können Sie ein JSON-Schemafeld so vorkonfigurieren, dass es einer benutzerdefinierten Komponente des adaptiven Formulars zugeordnet wird. Ein Beispiel wird unten angezeigt:
+Mit der **aem:afProperties**-Eigenschaft können Sie ein JSON-Schemafeld so vorkonfigurieren, dass es einer benutzerdefinierten Komponente eines adaptiven Formulars zugeordnet wird. Ein Beispiel wird unten angezeigt:
 
 ```json
 {
@@ -367,7 +367,7 @@ Mit der Eigenschaft **aem:afProperties** können Sie ein JSON-Schemafeld so vork
 
 JavaScript ist die Ausdruckssprache, die sogenannte Expression Language von adaptiven Formularen. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und nutzen Scripting-Modell-APIs für adaptive Formulare. Sie können Formularobjekte vorkonfigurieren, um in einem Formularereignis [einen Ausdruck auszuwerten](adaptive-form-expressions.md).
 
-Verwenden Sie die Eigenschaft aem:afproperties, um Ausdrücke für adaptive Formulare oder Skripte für Komponenten von adaptiven Formularen vorzukonfigurieren. Wenn beispielsweise das Initialisierungsereignis ausgelöst wird, setzt der folgende Code den Wert des Telefonfelds und druckt einen Wert in das Protokoll:
+Verwenden Sie die aem:afproperties-Eigenschaft zum Vorkonfigurieren von Ausdrücken oder Skripten für adaptive Formularkomponenten. Wenn beispielsweise das Initialisierungsereignis ausgelöst wird, setzt der folgende Code den Wert des Telefonfelds und druckt einen Wert in das Protokoll:
 
 ```json
 "telephone": {
@@ -748,7 +748,7 @@ Gehen Sie wie folgt vor, damit alle auf einem JSON-Schema basierenden adaptiven 
 Adaptive Formulare bieten keine Unterstützung für die folgenden JSON-Schemakonstrukte:
 
 * Null-Typ
-* Union-Typen wie „any“ und „and“
+* Vereinigungstypen wie „any“ und „and“
 * „OneOf“, „AnyOf“, „AllOf“ und „NOT“;
 * Nur homogene Arrays werden unterstützt. Daher muss die Elementbeschränkung ein Objekt sein, kein Array.
 

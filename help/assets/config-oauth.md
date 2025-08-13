@@ -19,7 +19,7 @@ Eine offene Autorisierungskonfiguration ist erforderlich, um die Zustimmung daf�
 >[!NOTE]
 >
 > Sie können seit Juni 2024 keine neuen JWT-Anmeldedaten mehr erstellen. Von nun an werden nur noch OAuth-Anmeldedaten erstellt. 
-> Die JWT-Integration bleibt nur für bestehende AMS- und On-Premise-Benutzende noch bis Januar 2025 im Betrieb.
+> > Die JWT-Integration bleibt nur für bestehende AMS- und On-Premise-Benutzende noch bis Januar 2025 im Betrieb.
 
 ## OAuth-Konfiguration für die neuen AMS-Benutzenden {#oauth-config-existing-ams-users}
 
@@ -27,7 +27,7 @@ Informationen zur Konfiguration von OAuth-Diensten für neue Benutzende finden S
 
 >[!NOTE]
 >
->Bei Bedarf können Sie ein Support-Ticket einreichen, indem Sie dem [Support-Prozess](https://experienceleague.adobe.com/de?lang=de&amp;support-tab=home#support) folgen.
+>Bei Bedarf können Sie ein Support-Ticket einreichen, indem Sie dem [Support-Prozess](https://experienceleague.adobe.com/?lang=de&support-tab=home#support) folgen.
 
 ## OAuth-Konfiguration für die vorhandenen AMS-Benutzenden {#oauth-config-new-ams-users}
 
@@ -44,7 +44,7 @@ Eine OAuth-Konfiguration erfordert die folgenden Voraussetzungen:
 
 ### OAuth-Konfiguration für die vorhandenen AMS- und On-Premise-Benutzenden {#steps-config-oauth-onprem}
 
-Die folgenden Schritte können von den Systemadmins ausgeführt werden. AMS-Kundschaft kann sich an den Adobe-Support wenden oder ein Support-Ticket einreichen, indem der [Support-Prozess](https://experienceleague.adobe.com/de?lang=de&amp;support-tab=home#support) befolgt wird.
+Die folgenden Schritte können von den Systemadmins ausgeführt werden. AMS-Kundschaft kann sich an den Adobe-Support wenden oder ein Support-Ticket einreichen, indem der [Support-Prozess](https://experienceleague.adobe.com/?lang=de&support-tab=home#support) befolgt wird.
 
 1. Fügen Sie in `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config` die folgenden Eigenschaften hinzu oder aktualisieren Sie sie:
 

@@ -9,8 +9,8 @@ feature: Adaptive Forms,Document Services
 exl-id: b3b3567f-df0a-4a24-849c-dcc0b745de63
 source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 100%
+source-wordcount: '870'
+ht-degree: 97%
 
 ---
 
@@ -38,9 +38,9 @@ ECMAScript ist eine Skriptsprache. Sie wird für die Client-seitige Skripterstel
 
 1. Fügen Sie den Anzeigenamen des Skripts hinzu. Dieser Name wird in den Workflow-Schritten angezeigt. Eingeben des Namens:
 
-   1. Erweitern Sie den Skriptknoten, klicken Sie mit der rechten Maustaste auf den Knoten **[!UICONTROL jcr:content]** und dann auf **[!UICONTROL Mixins]**.
+   1. Erweitern Sie den Skriptknoten, klicken Sie mit der rechten Maustaste auf den **[!UICONTROL jcr:content]**-Knoten und klicken Sie auf **[!UICONTROL Mixins]**.
    1. Fügen Sie die Eigenschaft `mix:title` im Dialogfeld „Mixins bearbeiten“ hinzu und klicken Sie auf **OK**.
-   1. Fügen Sie folgende Eigenschaft zum Knoten „jcr:content“ des Skripts hinzu:
+   1. Fügen Sie dem jcr:content-Knoten des Skripts die folgende Eigenschaft hinzu:
 
       | Name | Typ | Wert |
       |--- |--- |--- |

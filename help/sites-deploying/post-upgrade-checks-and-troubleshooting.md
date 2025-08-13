@@ -73,9 +73,9 @@ Führen Sie in AEM eine Erstüberprüfung mithilfe von mehreren Seiten durch. We
 
 ### Überprüfen der Konfigurationen für die geplante Wartung {#verify-scheduled-maintenance-configurations}
 
-#### Aktivieren der Bereinigung des Datenspeichers {#enable-data-store-garbage-collection}
+#### Aktivieren der Datenspeicherbereinigung {#enable-data-store-garbage-collection}
 
-Wenn Sie einen Dateidatenspeicher verwenden, stellen Sie sicher, dass die Aufgabe „Data Store-Abfallsammlung“ aktiviert ist und zur Liste für die wöchentliche Wartung hinzugefügt wurde. Anweisungen hierzu finden Sie unter [Revisionsbereinigung](/help/sites-administering/data-store-garbage-collection.md).
+Wenn Sie einen Dateidatenspeicher verwenden, stellen Sie sicher, dass die Aufgabe „Datenspeicherbereinigung“ aktiviert ist und zur Liste für die wöchentliche Wartung hinzugefügt wurde. Anweisungen hierzu finden Sie unter [Revisionsbereinigung](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >

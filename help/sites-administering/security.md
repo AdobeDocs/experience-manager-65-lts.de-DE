@@ -12,8 +12,8 @@ role: Admin
 exl-id: 2661bd32-82c4-4a04-bf85-6ed120a73de4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '5388'
-ht-degree: 100%
+source-wordcount: '5386'
+ht-degree: 99%
 
 ---
 
@@ -232,7 +232,7 @@ Zugriffssteuerungslisten bestehen aus den individuellen Berechtigungen und werde
 >
 >Im Gegensatz zu vorherigen CQ-Versionen sollten die Rechte **Erstellen** und **Löschen** nicht mehr erteilt werden, wenn jemand nur Seiten ändern darf. Gewähren Sie stattdessen die Aktion **Ändern** nur, wenn Sie möchten, dass Benutzende Komponenten auf bestehenden Seiten erstellen, ändern oder löschen können.
 >
->Aus Gründen der Abwärtskompatibilität berücksichtigen die Tests für Aktionen nicht die Sonderbehandlung von Knoten, die **jcr:content** definieren.
+>Aus Gründen der Abwärtskompatibilität berücksichtigen die Tests für Aktionen nicht die Sonderbehandlung von Knoten, die &quot;**&quot;:content**.
 
 | **Aktion** | **Beschreibung** |
 |---|---|
@@ -729,7 +729,7 @@ So richten Sie Benutzende oder Admins mit Berechtigungen zum Löschen/Aktivieren
 
 Wenn Sie planen, anwendungsspezifische Berechtigungen zu implementieren, wird in den folgenden Informationen beschrieben, was Sie wissen müssen, um eine benutzerdefinierte Berechtigung zu implementieren, und wie Sie sie in CQ durchsetzen können:
 
-Die Berechtigung zum Ändern der Hierarchie wird von einer Kombination von jcr-Berechtigungen abgedeckt. Die Replikationsberechtigung **crx:replicate** wird mit anderen Berechtigungen im jcr-Repository gespeichert/evaluiert. Sie wird jedoch nicht auf jcr-Ebene durchgesetzt.
+Die Berechtigung zum Ändern der Hierarchie wird von einer Kombination von jcr-Berechtigungen abgedeckt. Die Replikationsberechtigung **crx:replicate**, die zusammen mit anderen Berechtigungen im JCR-Repository gespeichert/ausgewertet wird. Sie wird jedoch nicht auf jcr-Ebene durchgesetzt.
 
 Die Definition und Registrierung benutzerdefinierter Berechtigungen sind ab Version 2.4 offizieller Bestandteil der [Jackrabbit-API](https://jackrabbit.apache.org/oak/docs/security/privilege.html) (siehe auch [JCR-2887](https://issues.apache.org/jira/browse/JCR-2887)). Die weitere Verwendung wird über die JCR-Zugriffssteuerungsverwaltung abgedeckt, wie in [JSR 283](https://jcp.org/en/jsr/detail?id=283) (Abschnitt 16) definiert. Außerdem definiert die Jackrabbit-API verschiedene Erweiterungen.
 

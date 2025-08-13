@@ -358,7 +358,7 @@ Sie können alle GraphQL-Typen für Metadaten anzeigen, wenn Sie das generierte 
 >[!NOTE]
 >
 >**Unterschied zwischen normalen und Array-Metadaten**
->Beachten Sie, dass sich `StringMetadata` und `StringArrayMetadata` beide auf das beziehen, was im Repository gespeichert ist, und nicht darauf, wie Sie sie abrufen.
+>>Beachten Sie, dass sich `StringMetadata` und `StringArrayMetadata` beide auf das beziehen, was im Repository gespeichert ist, und nicht darauf, wie Sie sie abrufen.
 >
 >Wenn Sie beispielsweise das Feld `stringMetadata` aufrufen, erhalten Sie ein Array mit allen im Repository gespeicherten Metadaten als `String`. Und wenn Sie `stringArrayMetadata` aufrufen, erhalten Sie ein Array aller im Repository gespeicherten Metadaten als `String[]`.
 

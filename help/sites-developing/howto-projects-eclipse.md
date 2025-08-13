@@ -11,8 +11,8 @@ role: Developer
 exl-id: 951e436c-adf4-4277-895f-383aaef17940
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 100%
+source-wordcount: '432'
+ht-degree: 98%
 
 ---
 
@@ -54,7 +54,7 @@ Richten Sie Ihr Projekt anschließend wie in [So erstellen Sie AEM-Projekte mit 
 Eclipse kann auch die Arbeit mit JSP unterstützen, z. B.:
 
 * automatische Vervollständigung von Tag-Bibliotheken
-* Eclipse-Präsenz von durch &lt;cq:defineObjects /> und &lt;sling:defineObjects /> definierten Objekten
+* Eclipse-Erkennung von durch &lt;cq:defineObjects /> und &lt;sling:defineObjects /> definierten Objekten
 
 Gehen Sie wie folgt vor, damit dies funktioniert:
 

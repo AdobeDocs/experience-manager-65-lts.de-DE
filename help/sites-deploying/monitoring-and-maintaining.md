@@ -12,8 +12,8 @@ role: Admin
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '5601'
-ht-degree: 99%
+source-wordcount: '5607'
+ht-degree: 98%
 
 ---
 
@@ -557,7 +557,7 @@ Nachfolgend finden Sie eine Liste mit häufigen Leistungsproblemen sowie Vorschl
 
 Leistungsprobleme können eine Reihe von Ursachen haben, die nichts mit Ihrer Website zu tun haben, z. B. eine vorübergehend langsamere Verbindungsgeschwindigkeit, CPU-Auslastung und vieles mehr.
 
-Dies kann sich ebenfalls auf alle Ihre Besuchenden oder nur auf eine Untergruppe auswirken.
+Dies kann sich ebenfalls auf alle Ihre Besuchenden oder nur auf eine Teilmenge auswirken.
 
 All diese Informationen müssen erfasst, sortiert und analysiert werden, bevor Sie entweder die allgemeine Leistung optimieren oder gezielt Probleme lösen können.
 
@@ -804,7 +804,7 @@ Verketten Sie die individuellen `request.log`-Dateien, wenn Sie diesen Vorgang f
 
 ### Apache Bench {#apache-bench}
 
-Um die Auswirkungen von Sonderfällen (z. B. Bereinigung) zu minimieren, wird empfohlen, ein Tool wie `apachebench` zu verwenden (z. B. [ab](https://httpd.apache.org/docs/2.4/programs/ab.html) zur umfassenderen Dokumentation), um Speicherlecks zu identifizieren und Reaktionszeiten selektiv zu analysieren.
+Um die Auswirkungen von Sonderfällen (z. B. Speicherbereinigung) zu minimieren, wird empfohlen, ein Tool wie `apachebench` zu verwenden (z. B. [ab](https://httpd.apache.org/docs/2.4/programs/ab.html) zur umfassenderen Dokumentation), um Speicherlecks zu identifizieren und Reaktionszeiten selektiv zu analysieren.
 
 Apache Bench kann wie folgt verwendet werden:
 

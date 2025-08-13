@@ -7,8 +7,8 @@ role: Admin, Developer
 exl-id: e8f2a771-b2e3-4f3e-85a0-480f783fc313
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 100%
+source-wordcount: '2328'
+ht-degree: 96%
 
 ---
 
@@ -65,7 +65,7 @@ Sie klonen das [Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) un
 
 Die Produkt-Teaser-Komponente wird im Laufe dieses Tutorials erweitert. Als ersten Schritt fügen Sie der Startseite eine Instanz des Produkt-Teasers hinzu. So können Sie sich mit den Grundfunktionen vertraut machen.
 
-1. Navigieren Sie zur **Startseite** der Site: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
+1. Navigieren Sie zur **Startseite** der Website: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
 2. Fügen Sie auf der Seite eine neue **Produkt-Teaser**-Komponente in den Haupt-Layout-Container ein.
 
@@ -395,7 +395,7 @@ In diesem Fall möchten Sie ein Banner über dem Teaser darstellen, um anzuzeige
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. Öffnen Sie ein neues Browser-Fenster. Navigieren Sie zu AEM und dann zur **OSGi-Konsole** > **Status** > **Sling-Modelle**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
+1. Öffnen Sie ein neues Browser-Fenster und navigieren Sie zu AEM und **OSGi-Konsole** > **Status** > **Sling Models**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
 
 1. Suchen Sie nach `MyProductTeaserImpl`; Sie sollten eine Zeile sehen, die wie folgt aussieht:
 
@@ -405,7 +405,7 @@ In diesem Fall möchten Sie ein Banner über dem Teaser darstellen, um anzuzeige
 
    Dies bedeutet, dass das Sling-Modell ordnungsgemäß bereitgestellt und der richtigen Komponente zugeordnet wurde.
 
-1. Aktualisieren Sie zur **Venia-Startseite** unter [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html), wo der Produkt-Teaser hinzugefügt wurde.
+1. Aktualisieren Sie die **Venia-Startseite** unter [http://localhost /editor.html/content/venia/us/en.html:4502](http://localhost:4502/editor.html/content/venia/us/en.html), wo der Produkt-Teaser hinzugefügt wurde.
 
    ![Nachricht für „Umweltfreundlich“ wird angezeigt](../assets/customize-cif-components/eco-friendly-text-displayed.png)
 
@@ -474,7 +474,7 @@ An diesem Punkt funktioniert die Logik dafür, wann das Zeichen **Umweltfreundli
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. Aktualisieren Sie zur **Venia-Startseite** unter [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html), wo der Produkt-Teaser hinzugefügt wurde.
+1. Aktualisieren Sie die **Venia-Startseite** unter [http://localhost /editor.html/content/venia/us/en.html:4502](http://localhost:4502/editor.html/content/venia/us/en.html), wo der Produkt-Teaser hinzugefügt wurde.
 
    ![Abzeichen für „Umweltfreundlich“ – endgültige Implementierung](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 

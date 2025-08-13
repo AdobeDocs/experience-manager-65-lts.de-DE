@@ -11,8 +11,8 @@ role: Admin
 exl-id: 0eac1568-cddb-4d26-b04c-78a2681cf44a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 100%
+source-wordcount: '481'
+ht-degree: 99%
 
 ---
 
@@ -68,7 +68,7 @@ Gehen Sie wie folgt vor, um **AEM zu konfigurieren**:
 >
 >Diese Schritte sind nur erforderlich, wenn eine weitere Anpassung der Codecs erforderlich ist.
 
-1. Öffnen Sie [!UICONTROL CRXDE Lite] in einem Webbrowser. Besuchen Sie [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
+1. Öffnen Sie [!UICONTROL CRXDE Lite] in einem Webbrowser. Zugriff auf [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
 2. Wählen Sie den Knoten `/libs/settings/dam/video/format_aac/jcr:content` aus und stellen Sie sicher, dass die Knoteneigenschaften wie folgt lauten:
 
    * `audioCodec` ist `aac`.

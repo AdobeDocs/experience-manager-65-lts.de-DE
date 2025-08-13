@@ -12,8 +12,8 @@ role: Admin
 exl-id: 3fd6a54b-9220-4bb2-9625-4f459c4d3aa8
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 100%
+source-wordcount: '839'
+ht-degree: 97%
 
 ---
 
@@ -236,7 +236,7 @@ Sie können dem Servlet eine Kette von Zertifikaten senden, indem Sie den Parame
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-Stellen Sie nach Ausführung des Befehls sicher, dass alle Zertifikate an den KeyStore gesendet wurden. Überprüfen Sie die **Keystore-Einträge** von:
+Stellen Sie nach Ausführung des Befehls sicher, dass alle Zertifikate an den KeyStore gesendet wurden. Überprüfen Sie die **Keystore**-Einträge von:
 [http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service)
 
 ### Aktivieren einer TLS 1.3-Verbindung {#enabling-tls-connection}

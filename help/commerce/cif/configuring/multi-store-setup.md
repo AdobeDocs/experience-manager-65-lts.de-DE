@@ -11,8 +11,8 @@ role: Admin, Developer
 exl-id: 3a5d10d2-4ef8-4f85-942e-47ece6538acb
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 100%
+source-wordcount: '368'
+ht-degree: 94%
 
 ---
 
@@ -22,11 +22,11 @@ Die AEM-CIF-Kernkomponenten können auf mehreren AEM Site-Strukturen verwendet w
 
 Videoeinführung mit detaillierten Optionen zur Integration mehrerer Adobe Commerce-Store-Ansichten mit Adobe Experience Manager Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/32818/?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
 AEM-Funktionen zur Verwaltung mehrerer Websites von Live Copy und Sprachkopie werden mit dem Commerce Integration Framework verwendet, um global Sites über Regionen und Gebietsschemata hinweg zu verwalten.
 
-Es empfiehlt sich, eine 1:1-Beziehung zwischen der AEM-Site und der Adobe Commerce Store-Ansicht zu verwenden.
+Es wird empfohlen, eine 1::1-Beziehung zwischen der AEM-Site und der Adobe Commerce-Store-Ansicht zu verwenden.
 
 Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu einer dedizierten Store-Ansicht zu verbinden:
 

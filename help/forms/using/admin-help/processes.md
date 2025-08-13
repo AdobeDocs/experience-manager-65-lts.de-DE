@@ -44,7 +44,7 @@ Für jede Prozessinstanz werden in der Liste die folgenden Informationen angezei
 
 **Prozessname - Version:** Der Name des Prozesses, wie in Workbench definiert.
 
-**Status:** Zeigt an, ob die Prozessinstanz normal ausgeführt wird, den Status wechselt oder beendet wurde. (Siehe Informationen zum Status von Prozessinstanzen.)
+**Status:** Zeigt an, ob die Prozessinstanz normal ausgeführt wird, den Status wechselt oder gestoppt wurde. (Siehe Informationen zum Status von Prozessinstanzen.)
 
 **Erstellungsdatum:** Datum und die Uhrzeit, zu der die Prozessinstanz erstellt wurde.
 
@@ -105,7 +105,7 @@ Wenn ein Vorgang einer Prozessinstanz angehalten wurde oder ein anderer Fehlerzu
 
 Sie können Prozessinstanzen mit einem beliebigen Status beenden.
 
-Wenn Sie eine Prozessinstanz beenden, wechselt deren Status zuerst in WIRD BEENDET, dann in BEENDET, und der Prozess wird an der aktuellen Position beendet. Es werden keine weiteren Vorgänge ausgeführt und alle damit verbundenen Vorgänge und Aufgaben werden beendet.
+Wenn Sie eine Prozessinstanz beenden, wechselt deren Status zuerst in WIRD BEENDET, dann in BEENDET, und der Prozess wird an der aktuellen Position gestoppt. Es werden keine weiteren Vorgänge ausgeführt und alle damit verbundenen Vorgänge und Aufgaben werden beendet.
 
 1. Klicken Sie in der Administration-Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
 1. Wählen Sie auf der Seite „Prozessinstanz“ den Prozess aus und klicken Sie auf „Beenden“.
@@ -120,7 +120,7 @@ Auf der Registerkarte „Vorgänge“ werden die einzelnen Vorgänge der Prozess
 
 **Vorgangsnamen:** Der Name des Vorgangs, wie in Workbench definiert.
 
-**Status:** Zeigt an, ob der Vorgang normal ausgeführt wird oder beendet wurde. (Siehe Informationen zum Status von Prozessinstanzen.)
+**Status:** Zeigt an, ob der Vorgang normal ausgeführt wird oder gestoppt wurde. (Siehe Informationen zum Status von Prozessinstanzen.)
 
 **Zweigname:** Der Name des Zweigs, wie in Workbench definiert.
 
@@ -134,7 +134,7 @@ Ein Teilprozess ist eine Prozessinstanz, die von einem anderen Prozess gestartet
 
 **Prozessname - Version:** Der Prozessname, wie in Designer definiert.
 
-**Status:** Zeigt an, ob die Prozessinstanz normal ausgeführt wird, den Status wechselt oder beendet wurde. (Siehe Informationen zum Status von Prozessinstanzen.)
+**Status:** Zeigt an, ob die Prozessinstanz normal ausgeführt wird, den Status wechselt oder gestoppt wurde. (Siehe Informationen zum Status von Prozessinstanzen.)
 
 **Erstellungsdatum:** Datum und Uhrzeit der Erstellung des Teilprozesses.
 
@@ -160,15 +160,15 @@ Ein Vorgang (ein Schritt in einem Prozess) kann folgende Status haben:
 
 ### Beenden von Vorgängen oder Teilprozessen {#terminate-operations-or-subprocesses}
 
-Wenn ein Prozess oder Teilprozess blockiert ist oder ein anderer Fehler aufgetreten ist, oder wenn Sie einen Prozess oder Teilprozess zwingen müssen, seine Ausführung zu beenden, können Sie ihn beenden.
+Wenn ein Prozess oder Teilprozess blockiert ist oder ein anderer Fehler aufgetreten ist, oder wenn Sie einen Prozess oder Teilprozess zwingen müssen, seine Ausführung zu stoppen, können Sie ihn beenden.
 
 Sie können Vorgänge mit dem Status WIRD AUSGEFÜHRT beenden.
 
-Wenn Sie einen Vorgang beenden, ändert sich dessen Status in BEENDET. Der Vorgang wird nicht abgeschlossen und die Ausführung der Prozessinstanz wird beendet.
+Wenn Sie einen Vorgang beenden, ändert sich dessen Status in BEENDET. Der Vorgang wird nicht abgeschlossen und die Ausführung der Prozessinstanz wird gestoppt.
 
 Sie können einen Teilprozess mit beliebigem Status beenden.
 
-Wenn Sie einen Teilprozess beenden, ändert sich dessen Status zuerst in WIRD BEENDET, dann in BEENDET, und die Prozessinstanz wird bei den aktuellen Vorgängen beendet. Es werden keine weiteren Vorgänge im Teilprozess ausgeführt, obwohl die übergeordnete Prozessinstanz weiterhin ausgeführt wird.
+Wenn Sie einen Teilprozess beenden, ändert sich dessen Status zuerst in WIRD BEENDET, dann in BEENDET, und die Prozessinstanz wird bei den aktuellen Vorgängen gestoppt. Es werden keine weiteren Vorgänge im Teilprozess ausgeführt, obwohl die übergeordnete Prozessinstanz weiterhin ausgeführt wird.
 
 Sie können keine Prozesse mit Gateway-Elementen im Prozessdiagramm beenden. Wenn Sie versuchen, diese Prozesstypen zu beenden, sind die Vorgänge innerhalb der Gateway-Elemente nicht betroffen. Vorgänge, die sich in einem Gateway-Element befinden, müssen Sie direkt beenden.
 

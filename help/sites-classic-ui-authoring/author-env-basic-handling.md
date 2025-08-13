@@ -131,15 +131,15 @@ Die Konsole **Websites** listet Ihre Inhaltsseiten in einer Baumstruktur auf (li
 >Führen Sie im SiteAdmin-Knoten folgende Aktionen durch:
 >
 >Ändern Sie den Wert der Eigenschaft:
->`treeAutoExpandMax`
->in:
->`/apps/wcm/core/content/siteadmin`
+>>`treeAutoExpandMax`
+>>in:
+>>`/apps/wcm/core/content/siteadmin`
 >
 >Sie können die Einstellung auch global im Thema ändern:
->Ändern Sie den Wert von:
->`TREE_AUTOEXPAND_MAX`
->in:
->`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
+>>Ändern Sie den Wert von:
+>>`TREE_AUTOEXPAND_MAX`
+>>in:
+>>`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
 >Weitere Details finden Sie unter [SiteAdmin in der CQ Widget-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin).
 

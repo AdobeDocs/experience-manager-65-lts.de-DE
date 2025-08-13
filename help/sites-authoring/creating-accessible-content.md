@@ -7,8 +7,8 @@ role: User,Admin,Architect,Developer
 exl-id: 0c3e3b6c-3c41-455e-823a-7cce50f174d4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '13636'
-ht-degree: 100%
+source-wordcount: '13630'
+ht-degree: 99%
 
 ---
 
@@ -429,7 +429,7 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 1.3.2 erfüllen](https://ww
 
 #### Zweck: Sensorische Eigenschaften (1.3.3) {#purpose-sensory-characteristics}
 
-Entwickler nutzen bei der Präsentation von Informationen oft visuelle Design-Mittel wie Farbe, Form, Textstil oder die absolute oder relative Position eines Inhaltselements. Dabei kann es sich um sehr leistungsstarke Design-Techniken zur Informationsübermittlung handeln (die die allgemeine Zugänglichkeit für sehende Personen mit kognitiven Barrierefreiheitsanforderungen verbessern), aber blinde oder sehbehinderte Personen können möglicherweise nicht auf Informationen zugreifen, die eine visuelle Identifizierung von Attributen wie Position, Farbe oder Form erfordern.
+Designerinnen und Designer nutzen bei der Präsentation von Informationen oft visuelle Design-Mittel wie Farbe, Form, Textstil oder die absolute oder relative Position eines Inhaltselements. Dabei kann es sich um sehr leistungsstarke Design-Techniken zur Informationsübermittlung handeln (die die allgemeine Zugänglichkeit für sehende Personen mit kognitiven Barrierefreiheitsanforderungen verbessern), aber blinde oder sehbehinderte Personen können möglicherweise nicht auf Informationen zugreifen, die eine visuelle Identifizierung von Attributen wie Position, Farbe oder Form erfordern.
 
 Entsprechend sind Informationen, für die zwischen verschiedenen Klängen unterschieden werden muss (z. B. Inhalte, die von einer Frau oder einem Mann gesprochen werden), für Menschen mit eingeschränktem Hörvermögen nicht verfügbar, wenn sie nicht in Textalternativen für den Audioinhalt umgesetzt wurden.
 
@@ -475,7 +475,7 @@ So können beispielsweise Personen mit einer Rot-Grün-Sehschwäche nicht zwisch
 
 Außerdem kann Farbe nicht von Personen wahrgenommen werden, die reine Text-Browser oder monochrome Anzeigegeräte verwenden oder einen Schwarz-Weiß-Ausdruck der Seite betrachten.
 
-Eine weitere Überlegung betrifft den *ausgewählten* Status für ein Schnittstellenelement (z. B. Registerkarten, Umschalttasten usw.), der auf andere Weise als nur mit Farbe und über eine visuelle Darstellung hinaus vermittelt werden muss. Für solche Elemente ist die zusätzliche Verwendung von Mustern, Formen und programmatischen Informationen hilfreich, wenn ein vollständig integratives Kundenerlebnis erstellt werden soll, das nicht auf einem bestimmten Sinn beruht.
+Eine weitere Überlegung betrifft den *ausgewählten* Status für ein Schnittstellenelement (z. B. Registerkarten, Umschalter usw.), der auf andere Weise als nur mit Farbe und über eine visuelle Darstellung hinaus vermittelt werden muss. Für solche Elemente ist die zusätzliche Verwendung von Mustern, Formen und programmatischen Informationen hilfreich, wenn ein vollständig integratives Kundenerlebnis erstellt werden soll, das nicht auf einem bestimmten Sinn beruht.
 
 #### Erfüllen: Verwendung von Farbe (1.4.1) {#how-to-meet-use-of-color}
 
@@ -494,7 +494,7 @@ Wenn Farbe als Hinweis für die Bereitstellung von Informationen verwendet wird,
 
 * Erfolgskriterium 1.4.2
 * Level A
-* Audio-Steuerung: Wenn Audioinhalt auf einer Web-Seite automatisch für mehr als 3 Sekunden abgespielt wird, gibt es entweder einen Mechanismus, um die Wiedergabe zu pausieren oder zu beenden, oder es gibt einen Mechanismus, um die Lautstärke unabhängig von der allgemeinen Systemlautstärke zu regeln.
+* Audio-Steuerung: Wenn Audioinhalt auf einer Web-Seite automatisch für mehr als 3 Sekunden abgespielt wird, gibt es entweder einen Mechanismus, um die Wiedergabe zu pausieren oder zu stoppen, oder es gibt einen Mechanismus, um die Lautstärke unabhängig von der allgemeinen Systemlautstärke zu regeln.
 
 #### Zweck: Audio-Steuerelement (1.4.2) {#purpose-audio-control}
 
@@ -519,8 +519,8 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 1.4.2 erfüllen](https://ww
 
 * Erfolgskriterium 1.4.3
 * Level AA
-* Kontrast (Minimum): Die visuelle Darstellung von Text und Abbildungen von Text hat ein Kontrastverhältnis von mindestens 4,5:1, mit den folgenden Ausnahmen:
-   * Großer Text: Großformatiger Text und Bilder von großformatigem Text weisen ein Kontrastverhältnis von mindestens 3:1 auf.
+* Kontrast (Minimum): Die visuelle Darstellung von Text und Bildern von Text hat ein Kontrastverhältnis von mindestens 4,5:1 mit den folgenden Ausnahmen:
+   * Großer Text: Großformatiger Text und Bilder von großformatigem Text haben ein Kontrastverhältnis von mindestens 3:1.
    * Beiläufig: Für Text oder Bilder von Text, die Teil einer inaktiven Komponente der Benutzeroberfläche sind, [reine Dekoration](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), für niemanden sichtbar oder Teil eines Bildes, das signifikanten anderen visuellen Inhalt enthält, ist kein Kontrast erforderlich.
    * Firmenschriftzüge: Für Text, der Teil eines Logos oder eines Markennamens ist, gibt es keine Kontrastanforderungen.
 
@@ -543,9 +543,9 @@ Menschen mit bestimmten Sehbehinderungen können möglicherweise nicht zwischen 
 
 Achten Sie darauf, dass der Text einen ausreichenden Kontrast zu seinem Hintergrund aufweist. Die Kontrastverhältnisse hängen von der Größe und dem Stil des jeweiligen Textes ab:
 
-* Für Text mit einer Größe von weniger als 18 Punkt (oder 14 Punkt bei Fettschrift) sollte das Kontrastverhältnis zwischen Text/Bildern mit Text und dem Hintergrund mindestens 4,5:1 betragen.
-* Bei Text mit einer Größe von mindestens 18 Punkten (oder 14 Punkten und fett) sollte das Kontrastverhältnis mindestens 3:1 betragen.
-* Wenn ein Hintergrund gemustert ist, sollte der Hintergrund um jeden Text schattiert werden, sodass das Verhältnis von 4,5:1 bzw. 3:1 beibehalten wird.
+* Bei Text mit einer Größe von weniger als 18 Punkten (oder 14 Punkten und fett) sollte das Kontrastverhältnis zwischen Text und Bildern von Text und Hintergrund mindestens 4,5 % :1.
+* Bei Text mit einer Größe von mindestens 18 Punkten (oder 14 Punkten und fett) sollte das Kontrastverhältnis mindestens 3 % :1.
+* Wenn ein Hintergrund gemustert ist, sollte der Hintergrund um einen beliebigen Text schattiert werden, sodass das Verhältnis von :1,5 oder :1 beibehalten wird.
 
 >[!NOTE]
 >
@@ -691,11 +691,11 @@ Befolgen Sie die Richtlinien unter [Erfolgskriterien 2.2.1 erfüllen](https://ww
 * [Erfolgskriterien 2.2.1 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
 * [Erfolgskriterien 2.2.1 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#timing-adjustable)
 
-### Pausieren, Beenden, Ausblenden (2.2.2)  {#pause-stop-hide}
+### Pausieren, Stoppen, Ausblenden (2.2.2)  {#pause-stop-hide}
 
 * Erfolgskriterium 2.2.2
 * Level A
-* Pausieren, Beenden, Ausblenden: Für sich bewegende, blinkende, scrollende oder sich automatisch aktualisierende Informationen gelten folgenden Regeln:
+* Pausieren, Stoppen, Ausblenden: Für sich bewegende, blinkende, scrollende oder sich automatisch aktualisierende Informationen gelten folgenden Regeln:
    * Bewegen, Blinken, Scrollen: Für alle sich bewegenden, blinkenden oder scrollenden Informationen, die
       * a) automatisch gestartet werden,
       * b) länger als fünf Sekunden dauern und
@@ -712,11 +712,11 @@ Folgendes sollte beachtet werden:
 1. Für Inhalte, die regelmäßig durch Software aktualisiert werden oder an den Benutzeragenten gestreamt werden, müssen Informationen, die zwischen der Initiierung der Pause und der Wiederaufnahme der Präsentation generiert oder empfangen wurden, nicht beibehalten oder präsentiert werden, da dies möglicherweise technisch nicht möglich ist und in vielen Situationen sogar irreführend sein könnte.
 1. Eine Animation, die im Rahmen einer Vorausladephase oder einer ähnlichen Situation auftritt, kann als wesentlich angesehen werden, wenn während dieser Phase keine Interaktion für alle Benutzenden stattfinden kann und wenn eine Nichtanzeige des Fortschritts die Benutzenden verwirren oder zu der Annahme führen könnte, dass der Inhalt eingefroren oder unterbrochen ist.
 
-#### Zweck - Pausieren, Beenden, Ausblenden (2.2.2) {#purpose-pause-stop-hide}
+#### Zweck - Pausieren, Stoppen, Ausblenden (2.2.2) {#purpose-pause-stop-hide}
 
 Manche Benutzerinnen und Benutzer empfinden Inhalte, die sich bewegen, als störend oder sogar körperlich schmerzhaft und haben Schwierigkeiten, sich auf andere Bereiche der Seite zu konzentrieren. Darüber hinaus sind solche Inhalte für Menschen schwierig, die beim Lesen Probleme haben, bewegtem Text zu folgen.
 
-#### Erfüllen: Pausieren, Beenden, Ausblenden (2.2.2) {#how-to-meet-pause-stop-hide}
+#### Erfüllen: Pausieren, Stoppen, Ausblenden (2.2.2) {#how-to-meet-pause-stop-hide}
 
 Abhängig von der Art des Inhalts können Sie beim Erstellen von Web-Seiten mit sich bewegendem, aufblitzendem oder blinkendem Inhalt die folgenden Empfehlungen beachten:
 
@@ -726,7 +726,7 @@ Abhängig von der Art des Inhalts können Sie beim Erstellen von Web-Seiten mit 
 * Bieten Sie auf der Web-Seite ein Formularsteuerelement an, über das Benutzer sämtliche bewegte oder blinkenden Inhalte auf der Seite deaktivieren können.
 * Wenn einer der oben genannten Punkte nicht möglich ist, geben Sie einen Link zu einer Seite an, die alle Inhalte ohne Bewegung und Blinken zeigt.
 
-#### Weitere Informationen - Pausieren, Beenden, Ausblenden (2.2.2) {#more-information-pause-stop-hide}
+#### Weitere Informationen - Pausieren, Stoppen, Ausblenden (2.2.2) {#more-information-pause-stop-hide}
 
 * [Erfolgskriterium 2.2.2 verstehen](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html)
 * [Erfolgskriterium 2.2.2 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/#pause-stop-hide)

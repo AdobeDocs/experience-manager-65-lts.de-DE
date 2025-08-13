@@ -10,7 +10,7 @@ role: Developer,Leader
 exl-id: 3f3437fb-1fff-4703-a50d-28da89b0a856
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3523'
+source-wordcount: '3522'
 ht-degree: 99%
 
 ---
@@ -52,7 +52,6 @@ Im Folgenden finden Sie einige allgemeine Tipps zum Erstellen Ihrer URLs für SE
    * Auf Seiten, die Selektoren verwenden, sind Selektoren, die einen semantischen Wert bieten, zu bevorzugen.
    * Wenn ein Mensch Ihre URL nicht lesen kann, kann eine Suchmaschine dies auch nicht.
    * Zum Beispiel:
-
      `mybrand.com/products/product-detail.product-category.product-name.html`
 wird `mybrand.com/products/product-detail.1234.html` vorgezogen
 
@@ -197,7 +196,7 @@ Vielleicht möchten Sie den Benutzern von übersetzten Inhalten lokalisierte Sei
 * wäre folgende URL besser:
   `www.mydomain.com/es/casa.html`.
 
-Die Herausforderung bei der Lokalisierung des Seitennamens besteht darin, dass viele der für die AEM-Plattform erhältlichen Lokalisierungs-Tools für die Synchronisierung von Inhalten identische Seitennamen für verschiedene Sprachen benötigen.
+Die Herausforderung bei der Lokalisierung des Seitennamens besteht darin, dass viele der für die AEM-Plattform erhältlichen Lokalisierungs-Tools für die Synchronisierung von Inhalten identische Seitennamen für verschiedene Gebietsschemata benötigen.
 
 Die Eigenschaft `sling:alias` ermöglicht das Beste aus beiden Adobe-Welten. `sling:alias` kann als Eigenschaft zu einer Ressource hinzugefügt werden, um einen Alias für die Ressource zu erlauben. Im vorangegangenen Beispiel hätten Sie Folgendes:
 
@@ -254,10 +253,9 @@ Es gibt jedoch auch einfachere Möglichkeiten, dieses Problem zu beheben:
 
 1. **SlingResourceResolver-Regeln**
 
-   Verwenden Sie die Web-Konsole (zum Beispiel localhost:4502/system/console/configMgr), um den Sling Resource Resolver zu konfigurieren:
+   Über die Web-Konsole (z. B. localhost:4502/system/console/configMgr) können Sie den Sling Resource Resolver konfigurieren:
 
    * **Apache Sling Resource Resolver Factory**
-
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
    Adobe empfiehlt, die Zuordnungen, die zum Kürzen von URLs erforderlich sind, als reguläre Ausdrücke zu erstellen und diese Konfigurationen dann unter einem OsgiConfignode `config.publish` zu definieren, der in Ihrem Build enthalten ist.

@@ -7,8 +7,8 @@ role: Developer
 exl-id: 81d47a8f-569a-4a7c-ba07-6f6c9258547c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 100%
+source-wordcount: '782'
+ht-degree: 97%
 
 ---
 
@@ -139,7 +139,7 @@ Wenn Sie Ihre [persistierte Abfrage](/help/sites-developing/headless/graphql-api
 
 >[!NOTE]
 >
->Für den Cache `Time To Live` der persistenten Abfrage {&quot;cache-control&quot;:&quot;parameter&quot;:value} ist der Standardwert von 2 Stunden (7.200 Sekunden) definiert.
+>Für den Cache der persistenten Abfrage `Time To Live` {„cache-control“:„parameter“:value} ist der Standardwert von 2 Stunden (7.200 Sekunden) definiert.
 
 ## Kopieren der URL, um direkt auf die Abfrage zuzugreifen {#copy-url}
 

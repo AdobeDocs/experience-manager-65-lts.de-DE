@@ -54,7 +54,7 @@ Sie können auf den Seiten „Angehaltene Vorgänge“ bzw. „Angehaltene Verzw
 
 Auf der Seite „Angehaltene Vorgänge“ können Sie die angezeigten Prozessinstanzen beenden.
 
-Wenn Sie eine Prozessinstanz beenden, wird deren Ausführung beendet und es werden keine weiteren Vorgänge ausgeführt. Normalerweise beenden Sie einen Prozess nur dann, wenn er blockiert oder aufgrund eines Fehlers unbrauchbar geworden ist und weder korrigiert noch erneut gestartet werden kann.
+Wenn Sie eine Prozessinstanz beenden, wird deren Ausführung gestoppt und es werden keine weiteren Vorgänge ausgeführt. Normalerweise beenden Sie einen Prozess nur dann, wenn er blockiert oder aufgrund eines Fehlers unbrauchbar geworden ist und weder korrigiert noch neu gestartet werden kann.
 
 Auf den Seiten „Angehaltene Vorgänge“ und „Angehaltene Verzweigungen“ können Sie den Vorgang oder die Verzweigung wiederholen.
 

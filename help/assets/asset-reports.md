@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 434a081a-f9e4-4a0d-8468-55b4ab5a6287
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1155'
-ht-degree: 100%
+source-wordcount: '1154'
+ht-degree: 99%
 
 ---
 
@@ -147,7 +147,7 @@ Gehen Sie wie folgt vor, um den Berichten benutzerspezifische Spalten hinzuzufü
 
 1. Fügen Sie den Eigenschaftspfad mit der Auswahl für den Eigenschaftspfad im `jcr:content`-Knoten in CRXDE hinzu. Alternativ können Sie den Pfad im Feld „Eigenschaftspfad“ eingeben.
 
-   ![Den Eigenschaftspfad in den Pfaden in jcr:content zuordnen](assets/property_picker.png)
+   ![Ordnen Sie den Eigenschaftspfad den Pfaden in JCR zu:content](assets/property_picker.png)
 
    Klicken Sie auf **[!UICONTROL Hinzufügen]** und wiederholen Sie die Schritte 5 und 6, um weitere benutzerdefinierte Spalten hinzuzufügen.
 

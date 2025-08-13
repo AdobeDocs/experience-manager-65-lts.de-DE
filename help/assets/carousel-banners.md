@@ -39,7 +39,7 @@ In diesem Beispiel hat der Benutzer auf eine Imagemap geklickt oder getippt und 
 
 ## Video zur Erstellung von Karussellbannern {#watch-how-carousel-banners-are-created}
 
-Sehen Sie sich eine exemplarische Vorgehensweise dazu an, [wie Karussellbanner erstellt werden](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 Minuten und 33 Sekunden). Sie erfahren außerdem, wie eine Vorschau von Karussellbannern angezeigt wird und wie diese bearbeitet und bereitgestellt werden.
+Sehen Sie sich eine exemplarische Vorgehensweise dazu an, [wie Karussellbanner erstellt werden](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner) (10 Minuten und 33 Sekunden). Sie erfahren außerdem, wie eine Vorschau von Karussellbannern angezeigt wird und wie diese bearbeitet und bereitgestellt werden.
 
 >[!NOTE]
 >
@@ -293,7 +293,6 @@ Siehe auch [Hinzufügen von Imagemaps](/help/assets/image-maps.md).
    * Wählen Sie **[!UICONTROL Hyperlink]** aus.
 
       * Wenn Sie Experience Manager Sites-Kunde sind, klicken Sie auf das Symbol zur Website-Auswahl (Ordner), um zu einer URL zu gehen.
-
         >[!NOTE]
         >
         >Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.

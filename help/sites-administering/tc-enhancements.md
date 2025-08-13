@@ -9,8 +9,8 @@ role: Admin
 exl-id: 59b4d716-37a2-4f67-88eb-68c93359242c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 100%
+source-wordcount: '668'
+ht-degree: 95%
 
 ---
 
@@ -102,7 +102,7 @@ Sie können Sprachstämme jetzt unter Knoten gruppieren, z. B. nach Region. Die
 
 >[!NOTE]
 >
->Sprachstämme können einen beliebigen Seitennamen haben. Es muss nicht der ISO-Code der Sprache sein. AEM prüft stets zuerst den Pfad und den Namen. Aber wenn der Seitenname keinen Hinweis auf eine Sprache enthält, überprüft AEM die Eigenschaft „cq:language“ der Seite, um die Sprache zu identifizieren.
+>Sprachstämme können einen beliebigen Seitennamen haben. Es muss nicht der ISO-Code der Sprache sein. AEM prüft stets zuerst den Pfad und den Namen, aber wenn der Seitenname keinen Hinweis auf eine Sprache enthält, überprüft AEM die :language-Eigenschaft der Seite, um die Sprache zu identifizieren.
 
 ## Berichte zum Übersetzungsstatus {#translation-status-reporting}
 

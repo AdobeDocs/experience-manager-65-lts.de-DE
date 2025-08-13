@@ -169,9 +169,9 @@ Beispiel:
 >[!NOTE]
 >
 >Die Standardprotokollebene für jede Protokollkategorie – a (xfa), b (xfaView) und c (xfaPerf) – ist 2 (ERROR). Entsprechend lauten bei der Protokollkonfiguration 2-b6 die Protokollebenen für die verschiedenen Kategorien wie folgt:
->a (xfa): 2 (FEHLER der Standardebene)
->b (xfaView): 6 (vom Benutzer angegebenes TRACE)
->a (xfaPerf): 2 (FEHLER der Standardebene)
+>>a (xfa): 2 (FEHLER der Standardebene)
+>>b (xfaView): 6 (vom Benutzer angegebenes TRACE)
+>>a (xfaPerf): 2 (FEHLER der Standardebene)
 
 ### Aktivieren der Protokollierung über den Configuration Manager {#enabling-logging-using-configuration-manager}
 

@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: 1cd2aae7-306f-4f7a-b4d2-e8c64827c09a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 100%
+source-wordcount: '429'
+ht-degree: 95%
 
 ---
 
@@ -68,7 +68,7 @@ In dieser Beispielorchestrierung reicht jemand einen Urlaubsantrag ein. Das Antr
 
       Die Schlüssel in dieser Zuordnung müssen identisch mit den Schlüsseln sein, die in Ihrem HTML-Renderer im vorherigen Schritt definiert wurden.
 
-      Fügen Sie in der Zuordnung außerdem einen Schlüssel **sling:resourceType** mit dem Wert **Employees/PtoApplication** hinzu.
+      Fügen Sie außerdem einen **sling:resourceType**-Schlüssel mit dem Wert **Employees/PtoApplication** in der Zuordnung hinzu.
 
    1. Verwenden Sie den Teilprozess **storeContent** aus dem **ContentRepositoryConnector**-Dienst im Prozess **create PTO summary**. Dieser Teilprozess erstellt einen CRX-Knoten.
 

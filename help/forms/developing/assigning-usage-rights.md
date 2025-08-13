@@ -13,8 +13,8 @@ hidefromtoc: true
 exl-id: d8027b43-10c7-435c-8fb5-059508966d42
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '3897'
-ht-degree: 100%
+source-wordcount: '3890'
+ht-degree: 99%
 
 ---
 
@@ -148,7 +148,7 @@ So wenden Sie mithilfe der API für Acrobat Reader DC-Erweiterungen (Java) Verwe
 
 [Anwenden von Verwendungsrechten auf PDF-Dokumente](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
-[Kurzanleitung (SOAP-Modus): Anwenden von Verwendungsrechten mithilfe der Java-API](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[Schnellstart (SOAP-Modus)](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

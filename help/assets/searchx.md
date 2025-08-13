@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 92efe52b-8fa5-4006-bd68-2472b4ba04f6
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 100%
+source-wordcount: '808'
+ht-degree: 92%
 
 ---
 
@@ -140,7 +140,7 @@ So erstellen Sie ein Eigenschaftsprädikat:
    </script>
    ```
 
-1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeiten zu können, fügen Sie in CRXDE den Knoten **cq:editConfig** des primären Typs **cq:EditConfig** hinzu. Damit Sie Absätze entfernen können, fügen Sie die Eigenschaft **cq:actions** mit mehreren Werten mit dem einzelnen Wert **LÖSCHEN** hinzu.
+1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeiten zu können, fügen Sie in CRXDE einen Knoten **cq:editConfig** des primären Typs **cq:EditConfig** hinzu. Um Absätze entfernen zu können, fügen Sie eine Eigenschaft mit mehreren Werten **cq:actions** mit dem einzigen Wert **DELETE** hinzu.
 1. Navigieren Sie zu Ihrem Browser und wechseln Sie auf Ihrer Beispielseite (z. B. **press.html**) in den Design-Modus. Aktivieren Sie Ihre neue Komponente für das Absatzsystem der Eigenschaft (z. B. **links**).
 
 1. Im Modus **Bearbeiten** ist die neue Komponente jetzt im Sidekick verfügbar (in der **Suchgruppe**). Fügen Sie die Komponente in die Spalte **Eigenschaften** ein, geben Sie einen Suchbegriff – z. B. **Raute** – ein und klicken Sie auf das Lupensymbol, um die Suche zu starten.
@@ -244,7 +244,7 @@ So erstellen Sie eine Gruppeneigenschaft:
        });
    ```
 
-1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeiten zu können, fügen Sie in CRXDE den Knoten **cq:editConfig** des primären Typs **cq:EditConfig** hinzu. Damit Sie Absätze entfernen können, fügen Sie die Eigenschaft **cq:actions** mit mehreren Werten mit dem einzelnen Wert **LÖSCHEN** hinzu.
+1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeiten zu können, fügen Sie in CRXDE einen Knoten **cq:editConfig** des primären Typs **cq:EditConfig** hinzu. Um Absätze entfernen zu können, fügen Sie eine Eigenschaft mit mehreren Werten **cq:actions** mit dem einzigen Wert **DELETE** hinzu.
 1. Navigieren Sie zu Ihrem Browser und wechseln Sie auf Ihrer Beispielseite (z. B. **press.html**) in den Design-Modus. Aktivieren Sie Ihre neue Komponente für das Absatzsystem der Eigenschaft (z. B. **links**).
 1. Im Modus **Bearbeiten** ist die neue Komponente jetzt im Sidekick verfügbar (in der **Suchgruppe**). Fügen Sie die Komponente in die Spalte **Eigenschaften** ein.
 

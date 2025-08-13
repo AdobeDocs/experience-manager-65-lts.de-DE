@@ -68,7 +68,7 @@ Diese PDF-Dateien können in Adobe Acrobat 5 und Adobe Acrobat Reader® 5 oder h
 
 * Neuberechnen von Farb- und Graustufenbildern mit 300 dpi;
 * Neuberechnen von Schwarzweißbildern mit 1200 dpi;
-* Einbetten der Untergruppen aller im Dokument verwendeten Schriften;
+* Einbetten der Teilmengen aller im Dokument verwendeten Schriften;
 * Drucken mit einer höheren Bildauflösung;
 * Vermeiden des automatischen Drehens von Seiten basierend auf der Ausrichtung des Textes oder auf Document Structuring Conventions(DSC)-Kommentaren;
 * Verwenden anderer Einstellungen zum Erhalten eines Höchstmaßes an Informationen über das Originaldokument.
@@ -81,7 +81,7 @@ Druckaufträge mit Schriften, die nicht eingebettet werden können, schlagen feh
 
 **Kleinste Dateigröße**: Erstellt PDF-Dateien für die Anzeige im Web oder einem Intranet oder für die Verteilung über ein E-Mail-System zur Anzeige auf dem Bildschirm. Bei dieser Gruppe von Optionen wird eine Komprimierung, Neuberechnung und relativ niedrige Bildauflösung verwendet. Alle Farben werden in sRGB konvertiert und Schriften werden nur eingebettet, wenn dies notwendig ist. Außerdem werden Dateien für das seitenweise Herunterladen von Dokumenten (Byte-Serving) optimiert. Diese PDF-Dateien können in Acrobat 5 und Acrobat Reader 5.0 oder höher geöffnet werden.
 
-**Standard**: Erstellt PDF-Dateien für die Ausgabe auf Desktop-Druckern und Digitalkopierern, die Veröffentlichung auf einer CD oder zum Übertragen an einen Kunden als Prüfdruck. Bei dieser Gruppe von Optionen werden Komprimierung und Neuberechnung verwendet, um die Dateigröße zu reduzieren. Es werden jedoch auch die Untergruppen aller in der Datei verwendeten Schriften eingebettet und alle Farben in sRGB konvertiert. Ferner erfolgt die Druckausgabe mit einer mittleren Auflösung, um eine ausreichend präzise Ausgabedarstellung des Originaldokuments zu erreichen. Beachten Sie, dass Microsoft Windows-Schriftuntergruppen nicht standardmäßig eingebettet werden. Diese PDF-Dateien können in Acrobat 5 und Acrobat Reader 5.0 oder höher geöffnet werden.
+**Standard**: Erstellt PDF-Dateien für die Ausgabe auf Desktop-Druckern und Digitalkopierern, die Veröffentlichung auf einer CD oder zum Übertragen an einen Kunden als Prüfdruck. Bei dieser Gruppe von Optionen werden Komprimierung und Neuberechnung verwendet, um die Dateigröße zu reduzieren. Es werden jedoch auch die Teilmengen aller in der Datei verwendeten Schriften eingebettet und alle Farben in sRGB konvertiert. Ferner erfolgt die Druckausgabe mit einer mittleren Auflösung, um eine ausreichend präzise Ausgabedarstellung des Originaldokuments zu erreichen. Beachten Sie, dass Microsoft Windows-Schriftteilmengen nicht standardmäßig eingebettet werden. Diese PDF-Dateien können in Acrobat 5 und Acrobat Reader 5.0 oder höher geöffnet werden.
 
 ## Hinzufügen oder Bearbeiten von PDF-Einstellungen {#add-or-edit-pdf-settings}
 
@@ -196,7 +196,7 @@ Geben Sie in den allgemeinen Optionen die Acrobat-Version an, die zwecks Dateiko
 >
 >Wenn „DSC-Kommentare verarbeiten“ unter „Erweiterte Einstellungen“ ausgewählt ist und „%%“-Kommentare zur Anzeigeausrichtung enthalten sind, haben diese Kommentare beim Bestimmen der Seitenausrichtung Vorrang.
 
-**Bindung**: Gibt an, ob eine PDF-Datei mit Bindung auf der linken oder rechten Seite angezeigt werden soll. Diese Einstellung wirkt sich auf die Anzeige von Seiten im Layout „Fortlaufend - Doppelseiten“ aus und bewirkt, dass Kleinbilder nebeneinander angezeigt werden.
+**Bindung**: Gibt an, ob eine PDF-Datei mit Bindung auf der linken oder rechten Seite angezeigt werden soll. Diese Einstellung wirkt sich auf die Anzeige von Seiten im Layout „Fortlaufend - Doppelseiten“ aus und bewirkt, dass Miniaturen nebeneinander angezeigt werden.
 
 **Auflösung**: Legt die Emulation für die Auflösung eines Druckers für Eingabedateien fest, die ihr Verhalten an die Auflösung des Druckers anpassen, auf dem sie gedruckt werden. Bei den meisten Eingabedateien führt eine höhere Auflösungseinstellung zu größeren PDF-Dateien mit höherer Qualität und eine niedrigere Einstellung zu kleineren PDF-Dateien mit geringerer Qualität. In der Regel bestimmt die Auflösung die Anzahl der Schritte in einem Verlauf oder einer Überblendung. Sie können einen Wert zwischen 72 und 4000 eingeben. Sie sollten diese Einstellung als Standard beibehalten, außer Sie möchten die PDF-Datei auf einem bestimmten Drucker drucken und die für die ursprüngliche Eingabedatei festgelegte Auflösung emulieren.
 
@@ -295,11 +295,11 @@ Die Schriftoptionen geben an, welche Schriften in eine PDF-Datei eingebettet wer
 
 >[!NOTE]
 >
->Wenn Sie PDF-Dateien mit derselben Schriftuntergruppe kombinieren, versucht PDF Generator, die Schriftuntergruppen zu kombinieren.
+>Wenn Sie PDF-Dateien mit derselben Schriftteilmenge kombinieren, versucht PDF Generator, die Schriftteilmengen zu kombinieren.
 
 **Alle Schriftarten einbetten**: Bettet alle Schriftarten ein, die in der Datei verwendet werden. Die Schrifteinbettung ist für die Erfüllung der PDF/X-Anforderungen erforderlich.
 
-**Untergruppe von eingebetteten Schriften, wenn Prozentsatz der verwendeten Zeichen kleiner ist als**: Wenn Sie diese Option auswählen, geben Sie einen Prozentsatz an, um nur eine Untergruppe der Schriftarten einzubetten. Wenn beispielsweise der Grenzwert 35 ist und weniger als 35 % der Zeichen verwendet werden, bettet PDF Generator nur diese Zeichen ein. Es werden nur Schriften mit entsprechenden Berechtigungs-Bits eingebettet.
+**Teilmenge von eingebetteten Schriften, wenn Prozentsatz der verwendeten Zeichen kleiner ist als**: Wenn Sie diese Option auswählen, geben Sie einen Prozentsatz an, um nur eine Teilmenge der Schriftarten einzubetten. Wenn beispielsweise der Grenzwert 35 ist und weniger als 35 % der Zeichen verwendet werden, bettet PDF Generator nur diese Zeichen ein. Es werden nur Schriften mit entsprechenden Berechtigungs-Bits eingebettet.
 
 **Bei fehlgeschlagenem Einbetten**: Gibt an, wie PDF Generator reagieren soll, wenn bei der Verarbeitung einer Datei eine einzubettende Schrift nicht gefunden wird. Die folgenden Möglichkeiten stehen zur Verfügung: PDF Generator kann entweder die Anforderung ignorieren und die Schrift ersetzen, Sie warnen und die Schrift ersetzen oder die Verarbeitung des aktuellen Auftrags abbrechen.
 
@@ -317,7 +317,7 @@ Die Schriftoptionen geben an, welche Schriften in eine PDF-Datei eingebettet wer
 
 >[!NOTE]
 >
->Eine TrueType-Schrift kann eine von der Entwicklerin bzw. vom Entwickler der Schrift hinzugefügte Einstellung enthalten, die verhindert, dass die Schrift in PDF-Dateien eingebettet werden kann.
+>Eine TrueType-Schrift kann eine von der Designerin bzw. dem Designer der Schrift hinzugefügte Einstellung enthalten, die verhindert, dass die Schrift in PDF-Dateien eingebettet werden kann.
 
 >[!NOTE]
 >

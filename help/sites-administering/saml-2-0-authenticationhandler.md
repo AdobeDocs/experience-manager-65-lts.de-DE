@@ -11,8 +11,8 @@ role: Admin
 exl-id: ee438c55-88cd-4f55-873e-16376b36fa7b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 100%
+source-wordcount: '827'
+ht-degree: 94%
 
 ---
 
@@ -68,7 +68,7 @@ Die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf 
 >[!NOTE]
 >
 >Dieser Ort wird nur verwendet, wenn das Cookie `request-path` nicht festgelegt ist. Wenn Sie eine Seite unterhalb des konfigurierten Pfads ohne gültiges Anmelde-Token anfordern, wird der angeforderte Pfad in einem Cookie gespeichert
->und der Browser wird nach erfolgreicher Authentifizierung erneut an diesen Ort weitergeleitet.
+>>und der Browser wird nach erfolgreicher Authentifizierung erneut an diesen Ort weitergeleitet.
 
 **Benutzer-ID-Attribut** Der Name des Attributs, das die Benutzer-ID enthält, die zur Authentifizierung und Erstellung des Benutzers im CRX-Repository verwendet wird.
 
@@ -86,13 +86,13 @@ Die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf 
 
 **Zu Gruppen hinzufügen** Gibt an, ob Benutzer nach erfolgreicher Authentifizierung automatisch zu CRX-Gruppen hinzugefügt werden sollen.
 
-**Gruppenmitgliedschaft** Der Name des „saml:Attribute“, das eine Liste von CRX-Gruppen enthält, denen dieser Benutzer hinzugefügt werden muss.
+**Gruppenmitgliedschaft** Der Name der SAML:Attribute die eine Liste von CRX-Gruppen enthält, denen dieser Benutzer hinzugefügt werden soll.
 
 ## Hinzufügen des Identitätsanbieterzertifikats zum AEM-TrustStore {#add-the-idp-certificate-to-the-aem-truststore}
 
 SAML-Assertionen werden signiert und können optional verschlüsselt sein. Damit dies funktionieren kann, müssen Sie mindestens das öffentliche Identitätsanbieterzertifikat im Repository bereitstellen. Dazu müssen Sie folgende Schritte durchführen:
 
-1. Wechseln Sie zu *http:/Server-Adresse:Serverport/libs/granite/security/content/truststore.html*.
+1. Wechseln Sie zu *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*
 1. Klicken Sie auf **[!UICONTROL TrustStore-Link erstellen]**.
 1. Geben Sie das Kennwort für den TrustStore ein und klicken Sie auf **[!UICONTROL Speichern]**.
 1. Klicken Sie auf **[!UICONTROL TrustStore verwalten]**.
@@ -107,7 +107,7 @@ SAML-Assertionen werden signiert und können optional verschlüsselt sein. Damit
 >
 >Die folgenden Schritte sind obligatorisch. Andernfalls wird die folgende Ausnahme ausgelöst: `com.adobe.granite.keystore.KeyStoreNotInitialisedException: Uninitialised system trust store`
 
-1. Wechseln Sie zu [http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html).
+1. Wechseln Sie zu: [http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html)
 1. Bearbeiten Sie den Benutzer `authentication-service`.
 1. Erstellen Sie einen KeyStore, indem Sie unter **Kontoeinstellungen** auf **KeyStore erstellen** klicken.
 
@@ -133,7 +133,7 @@ SAML-Assertionen werden signiert und können optional verschlüsselt sein. Damit
 
 Sie können einen Logger einrichten, um alle Probleme zu debuggen, die aufgrund der falschen Konfiguration von SAML entstehen können. Gehen Sie dazu wie folgt vor:
 
-1. Wechseln Sie zur Web-Konsole unter *http://localhost:4502/system/console/configMgr*.
+1. Wechseln Sie zur Web-Konsole unter *http://localhost:4502/system/console/configMgr*
 1. Suchen Sie nach dem Eintrag **Apache Sling Logging-Logger-Konfiguration** und klicken Sie darauf.
 1. Erstellen Sie einen Logger mit folgender Konfiguration:
 

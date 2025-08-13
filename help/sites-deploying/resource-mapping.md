@@ -13,7 +13,7 @@ exl-id: 90558227-c2c2-4130-9031-03efda5b1d94
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -98,7 +98,7 @@ Dies ist die Struktur, die beim Definieren von Zuordnungen für das HTTP-Protoko
 
 #### Konfigurieren einer internen Umleitung an /content {#configuring-an-internal-redirect-to-content}
 
-So erstellen Sie eine Zuordnung, die allen Anfragen an https://localhost:4503/ das Präfix `/content` voranstellt:
+So erstellen Sie eine Zuordnung, die allen Anfragen an https://localhost:4503/ das Präfix `/content`:
 
 1. Navigieren Sie mithilfe von CRXDE zu `/etc/map/http`.
 

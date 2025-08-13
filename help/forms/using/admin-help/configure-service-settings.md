@@ -27,7 +27,7 @@ ht-degree: 100%
 Sie können die Dienstverwaltungsseite verwenden, um Einstellungen für jeden der Dienste zu konfigurieren, die Bestandteil von AEM Forms sind. Die verfügbaren Einstellungen sind vom zu konfigurierenden Dienst abhängig.
 
 1. Klicken Sie in der Administration-Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
-1. Beenden Sie den Dienst, bevor Sie ihn ändern. (Siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
+1. Stoppen Sie den Dienst, bevor Sie ihn ändern. (Siehe [Starten und Stoppen von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
 1. Klicken Sie auf den Namen des Dienstes, der konfiguriert werden soll.
 1. Wenn der Dienst über eine Registerkarte „Konfiguration“ verfügt, ändern Sie dort seine Einstellungen. Weitere Informationen finden Sie in der Liste mit Links unten.
 
@@ -74,7 +74,7 @@ Folgende Einstellungen sind für den Dienst für Barcode-Formulare verfügbar:
 
 ## Einstellungen für Central Migration Bridge-Dienst (veraltet) {#central-migration-bridge-service-settings}
 
-Der Central Migration Bridge-Dienst (`CentralMigrationBridge`) ruft eine Untergruppe von Funktionen aus Adobe Central Pro Output Server (Central-Funktionen) auf, zu der die Befehle JFMERGE, JFTRANS und XMLIMPORT gehören. Mit den Vorgängen des Central Migration Bridge-Dienstes können Sie die folgenden Central-Assets in AEM-Formularen wiederverwenden:
+Der Central Migration Bridge-Dienst (`CentralMigrationBridge`) ruft eine Teilmenge von Funktionen aus Adobe Central Pro Output Server (Central-Funktionen) auf, zu der die Befehle JFMERGE, JFTRANS und XMLIMPORT gehören. Mit den Vorgängen des Central Migration Bridge-Dienstes können Sie die folgenden Central-Assets in AEM-Formularen wiederverwenden:
 
 * Vorlagendesign (*.ifd)
 * Ausgabevorlagen (*.mdf)
@@ -612,7 +612,7 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar.
 
 **Richtlinienzuordnung unterbinden:** Gibt an, ob Richtlinienzuordnung im Zertifizierungspfad zulässig ist. Der Standardwert lautet false.
 
-**Alle Pfade überprüfen:** Gibt an, ob alle Pfade überprüft werden sollen oder ob die Überprüfung nach Finden des ersten gültigen Pfades beendet werden soll. Wählen Sie „true“ oder „false“ aus. Der Standardwert lautet false.
+**Alle Pfade überprüfen:** Gibt an, ob alle Pfade überprüft werden sollen oder ob die Überprüfung nach Finden des ersten gültigen Pfades gestoppt werden soll. Wählen Sie „true“ oder „false“ aus. Der Standardwert lautet false.
 
 **LDAP-Server:** Der zum Suchen von Zertifikaten bei der Pfadüberprüfung verwendete LDAP-Server. Kein Standardwert.
 
@@ -620,7 +620,7 @@ Folgende Einstellungen sind für den Signature-Dienst verfügbar.
 
 **Grundlegende Einschränkungserweiterung in CA-Zertifikaten erforderlich:** Gibt an, ob die grundlegende Einschränkungserweiterung für Zertifikate der Zertifizierungsstelle (CA) für CA-Zertifikate vorhanden sein muss. Einige frühere deutsche zertifizierte Stammzertifikate (7 und früher) sind nicht mit RFC 3280 konform und enthalten keine grundlegende Einschränkungserweiterung. Wenn bekannt ist, dass ein EE-Zertifikat eines oder einer Benutzenden an einen solchen deutschen Stamm verkettet ist, deaktivieren Sie dieses Kontrollkästchen. Der Standardwert lautet true.
 
-**Gültige Zertifikatsignatur während der Kettenbildung erforderlich:** Gibt an, ob der Kettengenerator gültige Signaturen für Zertifikate erfordert, aus denen Ketten erzeugt werden. Wenn dieses Kontrollkästchen aktiviert ist, erzeugt der Kettengenerator keine Ketten mit ungültigen RSA-Signaturen aus Zertifikaten. Betrachten Sie die Kette CA > ICA > EE, bei der die Signatur der Zertifizierungsstelle (CA) für eine ICA ungültig ist. Wenn diese Einstellung „true“ ist, wird die Kettenbildung an der ICA beendet und die CA wird nicht in die Kette aufgenommen. Ist sie dagegen „false“, wird die vollständige Kette aus 3 Zertifikaten erzeugt. Diese Einstellung hat keine Auswirkungen auf DSA-Signaturen. Der Standardwert lautet false.
+**Gültige Zertifikatsignatur während der Kettenbildung erforderlich:** Gibt an, ob der Kettengenerator gültige Signaturen für Zertifikate erfordert, aus denen Ketten erzeugt werden. Wenn dieses Kontrollkästchen aktiviert ist, erzeugt der Kettengenerator keine Ketten mit ungültigen RSA-Signaturen aus Zertifikaten. Betrachten Sie die Kette CA > ICA > EE, bei der die Signatur der Zertifizierungsstelle (CA) für eine ICA ungültig ist. Wenn diese Einstellung „true“ ist, wird die Kettenbildung an der ICA gestoppt und die CA wird nicht in die Kette aufgenommen. Ist sie dagegen „false“, wird die vollständige Kette aus 3 Zertifikaten erzeugt. Diese Einstellung hat keine Auswirkungen auf DSA-Signaturen. Der Standardwert lautet false.
 
 ### Zeitstempelanbieter-Optionen {#timestamp-provider-options}
 
@@ -838,7 +838,7 @@ Standardsicherheitsprofile, die installiert sind, können Sie so konfigurieren, 
    * **INVOKE_PERM:** Aufrufen aller Vorgänge für den Dienst
    * **MODIFY_CONFIG_PERM:**&#x200B;Ändern der Konfiguration eines Dienstes
    * **SUPERVISOR_PERM:** Anzeigen der Prozessinstanzdaten für einen Dienst, der aus einem Prozess erstellt wurde
-   * **START_STOP_PERM:** Starten und Beenden eines Dienstes
+   * **START_STOP_PERM:** Starten und Stoppen eines Dienstes
    * **ADD_REMOVE_ENDPOINTS_PERM:** Hinzufügen, Entfernen und Ändern von Endpunkten für einen Dienst
    * **CREATE_VERSION_PERM:** Erstellen einer neuen Version des Dienstes
    * **DELETE_VERSION_PERM:** Löschen einer Version des Dienstes

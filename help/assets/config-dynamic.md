@@ -24,26 +24,26 @@ ht-degree: 100%
 >[!IMPORTANT]
 >
 >Ende der Unterstützung für Secure Socket Layer 2.0 und 3.0 und Transport Layer Security 1.0 und 1.1
->Ab dem 30. April 2024 wird Adobe Dynamic Media die Unterstützung für Folgendes einstellen:
+>>Ab dem 30. April 2024 wird Adobe Dynamic Media die Unterstützung für Folgendes einstellen:
 >
 >* SSL (Secure Socket Layer) 2.0
 >* SSL 3.0
 >* TLS (Transport Layer Security) 1.0 und 1.1
 >* Die folgenden schwachen Verschlüsselungsverfahren in TLS 1.2:
-> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
-> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
-> `TLS_RSA_WITH_AES_256_GCM_SHA384`
-> `TLS_RSA_WITH_AES_256_CBC_SHA256`
-> `TLS_RSA_WITH_AES_256_CBC_SHA`
-> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
-> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
-> `TLS_RSA_WITH_AES_128_GCM_SHA256`
-> `TLS_RSA_WITH_AES_128_CBC_SHA256`
-> `TLS_RSA_WITH_AES_128_CBC_SHA`
-> `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
-> `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
-> `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
-> `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
+>  > `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
+>  > `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
+>  > `TLS_RSA_WITH_AES_256_GCM_SHA384`
+>  > `TLS_RSA_WITH_AES_256_CBC_SHA256`
+>  > `TLS_RSA_WITH_AES_256_CBC_SHA`
+>  > `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
+>  > `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
+>  > `TLS_RSA_WITH_AES_128_GCM_SHA256`
+>  > `TLS_RSA_WITH_AES_128_CBC_SHA256`
+>  > `TLS_RSA_WITH_AES_128_CBC_SHA`
+>  > `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
+>  > `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
+>  > `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
+>  > `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
 >
 > Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
 
@@ -1251,23 +1251,23 @@ Siehe [Bereitstellen von Assets mit Dynamic Media](/help/assets/delivering-dynam
   <tr>
    <td>Kopieren von Einbettungs-Code eines Viewers</td>
    <td><p>Im Dialogfeld zum Einbetten von Code wird ein Code-Schnipsel wie der folgende angezeigt (Code-Schnipsel dient nur zur Veranschaulichung):</p> <p><code class="code">&lt;style type="text/css"&gt;
-       &#x200B;#s7basiczoom_div.s7basiczoomviewer&lbrace;
+       #s7basiczoom_div.s7basiczoomviewer{
        width:100%;
        height:auto;
-       &rbrace;
+       }
        &lt;/style&gt;
        &lt;script
        type="text/javascript" src="https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/js/BasicZoomViewer.js"&gt;&lt;/script&gt;
        &lt;div id="s7basiczoom_div"&gt;&lt;/div&gt;
        &lt;script type="text/javascript"&gt;
-       var s7basiczoomviewer = new s7viewers.BasicZoomViewer(&lbrace;
+       var s7basiczoomviewer = new s7viewers.BasicZoomViewer({
        "containerId" : "s7basiczoom_div",
-       "params" : &lbrace;
+       "params" : {
        "serverurl" : "https://IMAGESERVICEPUBLISHNODE/is/image/",
        "contenturl" : "https://PUBLISHNODE/",
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
-       "asset" : "/content/dam/path/to/Image.jpg" &rbrace;
-       &rbrace;).init();
+       "asset" : "/content/dam/path/to/Image.jpg" }
+       }).init();
        &lt;/script&gt;</code></p> <p>Hier verweist <code>PUBLISHNODE</code> auf den regulären Veröffentlichungsknoten von Experience Manager und <code>IMAGESERVICEPUBLISHNODE</code> auf die Bilddienst-URL.</p> <p>Siehe auch <a href="/help/assets/delivering-dynamic-media-assets.md">Bereitstellen von Dynamic Media-Assets</a>.</p> </td>
   </tr>
  </tbody>

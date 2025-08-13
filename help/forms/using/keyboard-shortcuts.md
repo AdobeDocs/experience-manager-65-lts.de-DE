@@ -31,20 +31,20 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 | Bearbeiten der Regel für die ausgewählte Komponente eines adaptiven Formulars | Strg+Alt+Eingabe | Befehl+Alt+Eingabe |
 | Zwischen Vorschau und dem aktuell ausgewählten Modus (z. B. Bearbeiten und Strukturvorlage) wechseln | Strg+Umschalt+M | Strg+Umschalt+M |
 | Letzte Änderung rückgängig machen | Strg+Z | Strg+Z |
-| Letzte Änderung wiederholen | Strg+Y | Ctrl+Y&ast; |
+| Letzte Änderung wiederholen | Strg+Y | Ctrl+Y&amp;ast; |
 | Mehrere Komponenten auswählen | Umschalt+Klick | Umschalt+Klick |
 | Ausgewählte Komponente kopieren | Strg-C | Strg+C |
 | Ausgewählte Komponenten ausschneiden. Die ausgeschnittene Komponente wird erst ausgeblendet, wenn sie an der neuen Position eingefügt wird. | Strg-X | Strg-X |
 | Komponenten einfügen | Strg+V | Strg+V |
 | Ausgewählte Komponenten löschen | Strg+Entf | Strg+Entf |
 | Ausgewählte Komponenten löschen | Strg+Rücktaste | Strg+Rücktaste |
-| Text in Rich-Text-Editor-Komponente im Vorschaumodus fett formatieren | Strg+B | Strg+B&ast; |
-| Text mit der Rich Text Editor-Komponente im Vorschaumodus kursiv formatieren | Strg+I | Strg+I&ast; |
-| Text in Rich-Text-Editor-Komponente im Vorschaumodus fett formatieren | Strg+U | Strg+U&ast; |
+| Text in Rich-Text-Editor-Komponente im Vorschaumodus fett formatieren | Strg+B | Strg+B&amp;ast; |
+| Text mit der Rich Text Editor-Komponente im Vorschaumodus kursiv formatieren | Strg+I | Strg+I&amp;ast; |
+| Text in Rich-Text-Editor-Komponente im Vorschaumodus fett formatieren | Strg+U | Strg+U&amp;ast; |
 
 >[!NOTE]
 >
->Mit „&ast;“ markierte Tastaturbefehle können unter macOS sowohl mit der Strg- als auch mit der Befehlstaste verwendet werden.
+>Mit „&amp;ast;“ markierte Tastaturbefehle können unter macOS sowohl mit der Strg- als auch mit der Befehlstaste verwendet werden.
 
 >[!NOTE]
 >
@@ -61,12 +61,12 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 | Eigenschaften-Browser für die ausgewählte Komponente in einem Design öffnen | Alt+Eingabe | Alt+Eingabe |
 | Eigenschaften-Browser für die ausgewählte Komponente in einem Design schließen | Strg+Alt+W | Befehl+Alt+W |
 | Letzte Änderung rückgängig machen | Strg+Z | Strg+Z |
-| Letzte Änderung wiederholen | Strg+Y | Ctrl+Y&ast; |
-| Speichern von Änderungen im Eigenschaften-Browser für die ausgewählte Komponente in einem Design | Strg+S | Strg+S&ast; |
+| Letzte Änderung wiederholen | Strg+Y | Ctrl+Y&amp;ast; |
+| Speichern von Änderungen im Eigenschaften-Browser für die ausgewählte Komponente in einem Design | Strg+S | Strg+S&amp;ast; |
 
 >[!NOTE]
 >
->Mit „&ast;“ markierte Tastaturbefehle können unter macOS sowohl mit der Strg- als auch mit der Befehlstaste verwendet werden.
+>Mit „&amp;ast;“ markierte Tastaturbefehle können unter macOS sowohl mit der Strg- als auch mit der Befehlstaste verwendet werden.
 
 ## Inhalts-Browser  {#contentbrowser}
 

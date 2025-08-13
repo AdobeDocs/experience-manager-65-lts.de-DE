@@ -11,8 +11,8 @@ role: Admin, Developer
 exl-id: 25442753-8309-452b-881a-d33ab159d5b2
 source-git-commit: d571dc696e42bae873cd58f2e7f321bd3002f42e
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 100%
+source-wordcount: '562'
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ Darüber hinaus werden auch standardmäßige Dialogfeldfeldeigenschaften wie `na
 >[!CAUTION]
 >
 >Für die Komponente `cifproductfield` ist die Client-Bibliothek `cif.shell.picker` erforderlich. Um einem Dialogfeld eine Client-Bibliothek hinzuzufügen, können Sie die Eigenschaft „extraClientlibs“ verwenden.
->[!CAUTION]
+>>[!CAUTION]
 >
 >Ab Version 2.0.0 der CIF-Kernkomponenten wurde die Unterstützung für `id` entfernt und durch `uid` ersetzt. Adobe empfiehlt `sku` oder `slug` als Produktkennung. Adobe unterstützt `id` weiterhin nur für Projekte, die CIF-Kernkomponenten der Version 1.x verwenden.
 
@@ -78,7 +78,7 @@ Darüber hinaus werden auch standardmäßige Dialogfeldfeldeigenschaften wie `na
 >[!CAUTION]
 >
 >Wie für die Komponente `cifproductfield` ist für die Komponente `cifcategoryfield` ebenfalls die Client-Bibliothek `cif.shell.picker` erforderlich. Um einem Dialogfeld eine Client-Bibliothek hinzuzufügen, können Sie die Eigenschaft `extraClientlibs` verwenden. Siehe [Anpassen von Dialogen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=de#customizing-dialogs) in der Dokumentation zu AEM-Kernkomponenten.
->[!CAUTION]
+>>[!CAUTION]
 >
 >Ab Version 2.0.0 der CIF-Kernkomponenten wurde die Unterstützung für `id` entfernt und durch `uid` ersetzt. Adobe empfiehlt `uid` oder `urlPath` als Kategoriekennung. Adobe unterstützt `id` und `idAndUrlPath` weiterhin nur für Projekte, die CIF-Kernkomponenten der Version 1.x verwenden.
 

@@ -135,7 +135,7 @@ So konvertieren Sie ein PDF-Dokument mithilfe der Convert PDF-Service-API (Java)
 1. Speichern Sie die PostScript-Datei.
 
    * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateinamenerweiterung .ps lautet.
-   * Rufen Sie die Methode `copyToFile` des `Document`-Objekts auf, um den Inhalt des `Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der Methode `toPS2` zurückgegeben wird).
+   * Rufen Sie die Methode `copyToFile` des `Document`-Objekts auf, um den Inhalt des `Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der Methode `toPS2` zurückgegeben wurde).
 
 **Siehe auch**
 

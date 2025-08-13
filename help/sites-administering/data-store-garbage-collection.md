@@ -55,13 +55,13 @@ Dieser Ansatz funktioniert bei einem einzelnen Knoten mit einem privaten Datensp
 
 >[!NOTE]
 >
->Wenn Sie die automatische Bereinigung für einen eingerichteten Cluster- oder freigegebenen Speicher (mit Mongo oder Segment-Tar) durchführen, werden im Protokoll möglicherweise Warnungen angezeigt, wonach bestimmte Blob-IDs nicht gelöscht werden können. Dies geschieht, weil während einer vorherigen automatischen Bereinigung gelöschte Blob-IDs fälschlicherweise erneut von anderen Cluster- oder Freigabeknoten referenziert werden, denen die Informationen zu den ID-Löschungen fehlen. Daher wird bei der automatischen Bereinigung eine Warnung protokolliert, wenn versucht wird, eine bereits im vorherigen Durchgang gelöschte ID zu entfernen. Dieses Verhalten wirkt sich weder auf die Leistung noch auf die Funktionalität aus.
+>Wenn Sie die Speicherbereinigung für einen eingerichteten Cluster- oder freigegebenen Speicher (mit Mongo oder Segment-Tar) durchführen, werden im Protokoll möglicherweise Warnungen angezeigt, wonach bestimmte Blob-IDs nicht gelöscht werden können. Dies geschieht, weil während einer vorherigen Speicherbereinigung gelöschte Blob-IDs fälschlicherweise erneut von anderen Cluster- oder Freigabeknoten referenziert werden, denen die Informationen zu den ID-Löschungen fehlen. Daher wird bei der Speicherbereinigung eine Warnung protokolliert, wenn versucht wird, eine bereits im vorherigen Durchgang gelöschte ID zu entfernen. Dieses Verhalten wirkt sich weder auf die Leistung noch auf die Funktionalität aus.
 
 ## Ausführen der Datenspeicherbereinigung {#running-data-store-garbage-collection}
 
 Die Datenspeicherbereinigung kann je nach dem Setup des Datenspeichers, mit dem AEM ausgeführt wird, auf drei Arten erfolgen:
 
-1. Über die [Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md) – ein Bereinigungsmechanismus, der in der Regel für die Bereinigung des Knotenspeichers verwendet wird
+1. Über die [Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md) – ein Speicherbereinigungsmechanismus, der in der Regel für die Bereinigung des Knotenspeichers verwendet wird
 
 1. Über die [Datenspeicherbereinigung](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard) – ein Bereinigungsmechanismus speziell für externe Datenspeicher, der im Vorgangs-Dashboard verfügbar ist.
 1. Über die [JMX-Konsole](/help/sites-administering/jmx-console.md).
@@ -75,7 +75,7 @@ Die folgende Tabelle zeigt den Datenspeicherbereinigungstyp, der für alle unter
   <tr>
    <td><strong>Knotenspeicher</strong><br /> </td>
    <td><strong>Datenspeicher</strong></td>
-   <td><strong>Bereinigungsmechanismus</strong><br /> </td>
+   <td><strong>Speicherbereinigungsmechanismus</strong><br /> </td>
   </tr>
   <tr>
    <td>TarMK</td>

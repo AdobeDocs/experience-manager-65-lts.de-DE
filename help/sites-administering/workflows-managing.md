@@ -11,8 +11,8 @@ role: Admin
 exl-id: 084c59b1-1e72-475e-8ec9-2cbc6e695876
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 100%
+source-wordcount: '569'
+ht-degree: 90%
 
 ---
 
@@ -54,7 +54,7 @@ Workflow-Modelle übernehmen (erben) die Standard-Zugriffssteuerungsliste (ACL, 
 
 Falls das Workflow-Modell unter `/var/workflow/models` gespeichert ist, können Sie dem folgenden Ordner eine spezifische ACL zuweisen, die nur für diesen Workflow relevant ist:
 
-1. Öffnen Sie CRXDE Lite in Ihrem Webbrowser, z. B. [https://localhost:4502/crx/de](http://localhost:4502/crx/de)
+1. Öffnen Sie CRXDE Lite in Ihrem Webbrowser (z. B. [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Wählen Sie in der Knotenstruktur den Knoten für den Ordner der Workflow-Modelle aus:
 
    `/var/workflow/models`
@@ -90,7 +90,7 @@ Vergleichbar mit den DAM-Workflows, die im folgenden Ordner gespeichert sind:
 
 Sie können dann dem Ordner selbst eine ACL hinzufügen.
 
-1. Öffnen Sie CRXDE Lite im Webbrowser (z. B.[http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Öffnen Sie CRXDE Lite in Ihrem Webbrowser (z. B. [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Wählen Sie in der Knotenstruktur den Knoten für den einzelnen Ordner im Ordner für die Workflow-Modelle aus. Beispiel:
 
    `/var/workflow/models/prototypes`
@@ -106,7 +106,7 @@ Sie können dann dem Ordner selbst eine ACL hinzufügen.
 
    >[!NOTE]
    >
-   >Wie im Abschnitt [Anwenden einer ACL für das spezifische Workflow-Modell unter /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) können Sie ein „rep:glob“ einfügen, um den Zugriff auf einen spezifischen Workflow zu beschränken.
+   >Wie im Abschnitt [Anwenden einer ACL für das spezifische Workflow-Modell unter /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) können Sie einen Vertreter :glob, um den Zugriff auf einen spezifischen Workflow zu beschränken.
 
    ![wf-110](assets/wf-110.png)
 

@@ -12,7 +12,7 @@ exl-id: 4a2a06c2-a4fa-463c-9375-bebda426a14c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Sie können einen neuen Prozess mit den Daten eines vorhandenen Prozesses initiieren. Das Initiieren eines neuen Prozesses auf der Grundlage vorhandener Prozessdaten ist erforderlich, wenn dasselbe Formular häufig verwendet werden muss, wobei sich der Inhalt geringfügig ändert, etwa bei Formularen für bezahlten Urlaub. Mithilfe dieser Funktion können Benutzende Zeit und Mühe sparen, insbesondere, wenn ein umfangreiches Formular für den Prozess ausgefüllt werden muss.
 
-Zum Initiieren eines neuen Prozesses aus bestehenden Prozessdaten sind die folgenden Schritte erforderlich:
+Im Folgenden werden die Schritte zum Initiieren eines neuen Prozesses aus vorhandenen Prozessdaten beschrieben:-
 
 1. Führen Sie eine der folgenden Aktionen aus:
 

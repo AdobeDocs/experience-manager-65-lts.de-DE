@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: dad8b6d4-a2d9-4913-a5bc-02cb6ad38b11
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '365'
+ht-degree: 99%
 
 ---
 
@@ -50,7 +50,7 @@ Die folgenden beiden Bilder zeigen den Unterschied zwischen Standard- und benutz
 
    1. Suchen Sie auf der Renderer-Seite nach der folgenden Zeile:
 
-      &lt;cq:includeClientLib categories=&quot;xfaforms.profile&quot; />
+      &lt;cq:includeClientLib categories=„xfaforms.profile“ />
 
    1. Fügen Sie Folgendes unter der darüberstehenden Zeile ein, um das Stylesheet einzuschließen:
 

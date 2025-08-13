@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: 9df608f8-cdd0-4820-aab1-eab9fd70f961
 source-git-commit: 547d7866346fb148cb66f546d8a2e1141f69f563
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 100%
+source-wordcount: '1796'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Sie können die Eigenschaft ändern, indem Sie folgende Schritte ausführen:
 
 1. Öffnen von CRXDE Lite über `https://server:port/crx/de/index.jsp`
 1. Navigieren Sie zum Speicherort des Knotens, der angepasst werden muss, wie in der Liste mit [benutzerdefinierten Suchformularen](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) unten angegeben.
-1. Klicken Sie auf den Knoten. Klicken Sie im rechten Eigenschaftenfenster auf die Eigenschaft **sling:resourceType** und ändern Sie diese.
+1. Klicken Sie auf den Knoten. Klicken Sie im rechten Eigenschaftenbereich auf und ändern Sie die Eigenschaft **sling:resourceType** .
 1. Speichern Sie dann die Änderungen durch Anklicken der Schaltfläche **Alle speichern**.
 
 ## Liste der benutzerdefinierten Suchformulare {#list-of-custom-search-forms}

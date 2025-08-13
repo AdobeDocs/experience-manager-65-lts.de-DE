@@ -12,8 +12,8 @@ role: Developer
 exl-id: efa4b828-0807-40ac-81a0-1090cac9a257
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2967'
-ht-degree: 99%
+source-wordcount: '2973'
+ht-degree: 97%
 
 ---
 
@@ -302,7 +302,7 @@ Die Kontextspeicherkomponente `/libs/cq/personalization/components/contextstores
 
 Um Speicherdaten mithilfe einer genericstore-Komponente zu rendern, müssen Sie Folgendes tun:
 
-* der JSP-Skriptkomponete das Tag personalization:storeRendererTag hinzufügen, um den Namen des Sitzungsspeichers zu identifizieren.
+* Fügen Sie das Personalisierungs:storeRendererTag-Tag zum Komponenten-JSP-Skript hinzu, um den Namen des Sitzungsspeichers zu identifizieren.
 * eine Rendering-Methode für die Sitzungsspeicherklasse implementieren.
 
 #### Ermitteln des genericstore-Sitzungsspeichers {#identifying-the-genericstore-session-store}
@@ -490,9 +490,9 @@ In diesem Beispiel erstellen Sie eine Kontextspeicherkomponente, die Daten von e
 
 Erstellen Sie eine CQ-Anwendung und fügen Sie die Geoloc-Komponente hinzu.
 
-1. Öffnen Sie CRXDE Lite in Ihrem Webbrowser ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. https://localhost Öffnen Sie CRXDE Lite in Ihrem Webbrowser ([:4502/crx/de](https://localhost:4502/crx/de)).
 1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps` und klicken Sie auf „Erstellen“ > „Ordner erstellen“. Geben Sie für `myapp` einen Namen ein und klicken Sie auf „OK“.
-1. Erstellen Sie auch unter `myapp` einen Ordner mit dem Namen `contextstores`. &grave;&grave;
+1. Erstellen Sie auch unter `myapp` einen Ordner mit dem Namen `contextstores`. ``
 1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps/myapp/contextstores` und klicken Sie auf „Erstellen“ > „Komponente erstellen“. Geben Sie folgende Eigenschaftswerte an und klicken Sie auf „Weiter“:
 
    * Titel: Geoloc
@@ -595,7 +595,7 @@ Fügen Sie der JSP-Datei der Geoloc-Komponente den Code hinzu, um die Speicherda
 
 Fügen Sie die Standortspeicher-Komponente zu Client Context hinzu, damit sie beim Laden der Seite initialisiert wird.
 
-1. Öffnen Sie die Geometrixx Outdoors-Homepage auf der Autoreninstanz ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Öffnen Sie die Geometrixx Outdoors-Startseite auf der Autoreninstanz ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Betätigen Sie Tastenkombination Strg+Alt+C (Windows) oder Ctrl+Wahl+C (Mac), um ClientContext zu öffnen.
 1. Klicken Sie auf das Bearbeitungssymbol oben in Client Context, um Client Context-Designer zu öffnen.
 

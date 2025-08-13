@@ -640,7 +640,7 @@ Das folgende Diagramm zeigt eine Client-Anwendung, die in einer eigenen JVM ausg
 
 Dieses Szenario ähnelt dem einer Client-Anwendung, die eine eigenständige AEM Forms-Instanz aufruft. Die Provider-URL ist jedoch unterschiedlich.  Wenn eine Client-Anwendung eine Verbindung zu einem bestimmten J2EE-Anwendungs-Server herstellen möchte, muss die Anwendung die URL ändern, um auf den jeweiligen J2EE-Anwendungs-Server zu verweisen.
 
-Der Verweis auf einen bestimmten J2EE-Anwendungs-Server wird nicht empfohlen, da die Verbindung zwischen der Client-Anwendung und AEM Forms beendet wird, wenn der Anwendungs-Server beendet wird. Es wird empfohlen, dass die Provider-URL anstelle eines bestimmten J2EE-Anwendungs-Servers auf einen JNDI-Manager auf Zellenebene verweist.
+Der Verweis auf einen bestimmten J2EE-Anwendungs-Server wird nicht empfohlen, da die Verbindung zwischen der Client-Anwendung und AEM Forms gestoppt wird, wenn der Anwendungs-Server gestoppt wird. Es wird empfohlen, dass die Provider-URL anstelle eines bestimmten J2EE-Anwendungs-Servers auf einen JNDI-Manager auf Zellenebene verweist.
 
 Client-Anwendungen, die den SOAP-Verbindungsmodus verwenden, können den HTTP-Lastausgleichs-Port für den Cluster verwenden. Client-Anwendungen, die den EJB-Verbindungsmodus verwenden, können eine Verbindung zum EJB-Port eines bestimmten J2EE-Anwendungs-Servers herstellen. Diese Aktion behandelt den Lastausgleich zwischen Cluster-Knoten.
 

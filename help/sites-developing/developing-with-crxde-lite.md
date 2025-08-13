@@ -29,7 +29,7 @@ CRXDE Lite wird empfohlen, wenn Sie keinen direkten Zugriff auf den AEM-Server h
 >[!NOTE]
 >
 >Ab AEM 6.5.5.0 ist der anonyme Zugriff auf CRXDE Lite nicht mehr möglich.
->Benutzer werden zum Anmeldebildschirm weitergeleitet.
+>>Benutzer werden zum Anmeldebildschirm weitergeleitet.
 
 
 >[!NOTE]

@@ -13,8 +13,8 @@ hidefromtoc: true
 exl-id: 37f5efaa-db0b-4035-987d-4140fc5a97be
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '4604'
-ht-degree: 100%
+source-wordcount: '4602'
+ht-degree: 99%
 
 ---
 
@@ -201,7 +201,7 @@ Führen Sie die folgenden Aufgaben aus, um einen AEM Forms-Prozess aus einem mit
 >
 >In diesem Abschnitt wird beschrieben, wie Sie einen AEM Forms-Prozess aufrufen und ein Dokument hochladen, wenn AEM Forms für das Hochladen unsicherer Dokumente konfiguriert ist. Weitere Informationen zum Aufrufen von AEM Forms-Prozessen und Hochladen sicherer Dokumente sowie zum Konfigurieren von AEM Forms für die Annahme sicherer und unsicherer Dokumente finden Sie unter [Übergeben sicherer Dokumente zum Aufrufen von Prozessen mithilfe von Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
 
-**Erstellen einer mx:RemoteObject-Instanz**
+**Erstellen einer MX:RemoteObject-Instanz**
 
 Sie erstellen eine `mx:RemoteObject`-Instanz, um einen in Workbench erstellten AEM Forms-Prozess aufzurufen. Um eine `mx:RemoteObject`-Instanz zu erstellen, geben Sie die folgenden Werte an:
 
@@ -286,7 +286,7 @@ AEM Forms-Prozessausgabeparameter werden in ActionScript-Objekte umgewandelt, au
 
 Sie können den Prozess `MyApplication/EncryptDocument` aufrufen, indem Sie die folgenden Schritte ausführen:
 
-1. Erstellen Sie eine `mx:RemoteObject`-Instanz entweder über ActionScript oder über MXML. Siehe Erstellen einer mx:RemoteObject-Instanz.
+1. Erstellen Sie eine `mx:RemoteObject`-Instanz entweder über ActionScript oder über MXML. Siehe Erstellen einer MX:RemoteObject-Instanz.
 1. Richten Sie eine `ChannelSet`-Instanz ein, um mit AEM Forms zu kommunizieren, und verknüpfen Sie sie mit der `mx:RemoteObject`-Instanz. Siehe Erstellen eines Kanals in AEM Forms.
 1. Rufen Sie die Methode `login` von „ChannelSet“ oder die Methode `setCredentials` des Services auf, um den Wert und das Passwort der Benutzerkennung anzugeben. (Siehe [Verwenden von Single Sign-On](invoking-aem-forms-using-remoting.md#using-single-sign-on).)
 1. Füllen Sie eine `mx.rpc.livecycle.DocumentReference`-Instanz mit einem ungesicherten PDF-Dokument, das an den Prozess `MyApplication/EncryptDocument` übergeben wird. (Siehe [Übergeben eines Dokuments als Eingabeparameter](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter).)
@@ -624,7 +624,7 @@ Mit Administration-Console können Sie, wenn Sie ein Dokument von einer Flex-Cli
 >[!NOTE]
 >
 >* Um AEM Forms so zu konfigurieren, dass unsichere Dokumente akzeptiert werden, wählen Sie die Option „Unsicheren Dokumenten-Upload von Flex-Anwendungen zulassen“ aus. Starten Sie dann eine Anwendung oder einen Service neu, um sicherzustellen, dass die Einstellung wirksam wird.
->* Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+> * Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 
 ### Schnellstart: Aufrufen eines kurzlebigen Prozesses durch Übergeben eines sicheren Dokuments mithilfe von Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}

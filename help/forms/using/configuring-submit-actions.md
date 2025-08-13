@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: a5aff5dd-912d-49ee-94e8-38cdbc396e5b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2593'
 ht-degree: 99%
 
 ---
@@ -53,7 +53,7 @@ Dies sind die standardmäßigen Übermittlungsaktionen, die für adaptive Formul
 >[!NOTE]
 >
 >Stellen Sie sicher, dass der Ordner „[AEM-Installationsverzeichnis]\crx-quickstart\temp\datamanager\ASM“ vorhanden ist.
->vorhanden. Das Verzeichnis wird benötigt, um Anhänge vorübergehend zu speichern. Wenn das Verzeichnis nicht vorhanden ist, erstellen Sie es.
+>>vorhanden. Das Verzeichnis wird benötigt, um Anhänge vorübergehend zu speichern. Wenn das Verzeichnis nicht vorhanden ist, erstellen Sie es.
 
 >[!CAUTION]
 >
@@ -173,7 +173,7 @@ Verwenden Sie nach der erfolgreichen Konfiguration die Übermittlungsaktion [Mi
 
 >[!NOTE]
 >
->Die Funktion „An Microsoft® SharePoint-Liste senden“ wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt.
+> Die Funktion „An Microsoft® SharePoint-Liste senden“ wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt.
 
 Die Sendeaktion **[!UICONTROL An SharePoint senden]** verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint-Speicher senden. 
 
@@ -199,7 +199,7 @@ So verbinden Sie AEM Forms mit Ihrer Microsoft® SharePoint-Liste:
 
      >[!NOTE]
      >
-     >Ob das Feld **Client-Geheimnis** obligatorisch oder optional ist, hängt von der Konfiguration Ihrer Azure Active Directory-Anwendung ab. Wenn Ihre Anwendung so konfiguriert ist, dass sie ein Client-Geheimnis verwendet, ist die Angabe des Client-Geheimnisses obligatorisch.
+     > Ob das Feld **Client-Geheimnis** obligatorisch oder optional ist, hängt von der Konfiguration Ihrer Azure Active Directory-Anwendung ab. Wenn Ihre Anwendung so konfiguriert ist, dass sie ein Client-Geheimnis verwendet, ist die Angabe des Client-Geheimnisses obligatorisch.
 
 1. Klicken Sie auf **[!UICONTROL Verbinden]**. Bei erfolgreicher Verbindung erscheint die Meldung `Connection Successful`.
 1. Wählen Sie **[!UICONTROL SharePoint-Site]** und **[!UICONTROL SharePoint-Liste]** aus der Dropdown-Liste.
@@ -218,16 +218,16 @@ Wenn Sie das Formular absenden, werden die Daten im angegebenen Microsoft® Shar
 
 >[!NOTE]
 >
->Die folgenden Spaltentypen werden in der Microsoft® SharePoint-Liste nicht unterstützt:
->* Bildspalte
->* Metadatenspalte
->* Personenspalte
->* Externe Datenspalte
+> Die folgenden Spaltentypen werden in der Microsoft® SharePoint-Liste nicht unterstützt:
+> * Bildspalte
+> * Metadatenspalte
+> * Personenspalte
+> * Externe Datenspalte
 
 
 >[!NOTE]
 >
->Um Konfigurationswerte festzulegen, [generieren Sie OSGi-Konfigurationen mit dem AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#generating-osgi-configurations-using-the-aem-sdk-quickstart) und [stellen Sie die Konfiguration in Ihrer Cloud Service-Instanz bereit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de#deployment-process).
+> Um Konfigurationswerte festzulegen, [generieren Sie OSGi-Konfigurationen mit dem AEM-SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=de#generating-osgi-configurations-using-the-aem-sdk-quickstart) und [stellen Sie die Konfiguration in Ihrer Cloud Service-Instanz bereit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=de#deployment-process).
 
 ## Server-seitige Überprüfung im adaptiven Formular {#server-side-revalidation-in-adaptive-form}
 
@@ -251,7 +251,7 @@ Verwenden Sie das Kontrollkästchen **Auf dem Server erneut überprüfen** im Co
 
 Aktivieren von Server-seitiger Validierung
 
-Wenn Endbenutzerinnen oder -benutzer diese Validierungen umgehen und die Formulare senden, führt der Server die Validierung erneut durch. Wenn die Validierung Server-seitig fehlschlägt, wird die Übermittlung abgebrochen. Dem Endbenutzer wird das ursprüngliche Formular erneut präsentiert. Die erfassten Daten und die gesendeten Daten werden dem Benutzer als Fehler angezeigt.
+Wenn Endbenutzerinnen oder -benutzer diese Validierungen umgehen und die Formulare senden, führt der Server die Validierung erneut durch. Wenn die Validierung Server-seitig fehlschlägt, wird die Übermittlung gestoppt. Dem Endbenutzer wird das ursprüngliche Formular erneut präsentiert. Die erfassten Daten und die gesendeten Daten werden dem Benutzer als Fehler angezeigt.
 
 >[!NOTE]
 >

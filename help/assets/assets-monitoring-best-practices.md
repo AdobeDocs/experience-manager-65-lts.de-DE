@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: d2cb447c-69d6-4659-a29e-02af22b543fd
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1639'
-ht-degree: 100%
+source-wordcount: '1638'
+ht-degree: 99%
 
 ---
 
@@ -131,7 +131,7 @@ Replikationsagenten
 Sitzungszähler
 
 * MBean: `org.apache.jackrabbit.oak:id=7,name="OakRepository Statistics",type="RepositoryStats"`
-* URL: */system/console/jmx/org.apache.jackrabbit.oak:id=7,name=&quot;OakRepository Statistics&quot;,type*=&quot;RepositoryStats&quot;
+* URL: */system/console/jmx/org.apache.jackrabbit.oak:id=7,name=„OakRepository-Statistiken“,type*=„RepositoryStats“
 * Instanzen: Alle Server
 * Alarmschwellenwert: Wenn geöffnete Sitzungen die Baseline um mehr als 50 % überschreiten.
 * Alarmdefinition: Sitzungen werden ggf. über einen Teil des Codes geöffnet und nicht geschlossen. Dies kann im Laufe der Zeit langsam erfolgen und schließlich zu Speicherlecks im System führen. Es ist zwar normal, dass die Anzahl von Sitzungen in einem System schwankt, aber sie sollte nicht beständig ansteigen.

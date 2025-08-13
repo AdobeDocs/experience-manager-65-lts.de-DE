@@ -82,7 +82,7 @@ Verwenden Sie die Registerkarte „Archive“, um LCAs, die in Workbench erstell
 
      **SUPERVISOR_PERM:** Anzeigen der Prozessinstanzdaten für einen Dienst, der aus einem Prozess erstellt wurde
 
-     **START_STOP_PERM:** Starten und Beenden eines Dienstes
+     **START_STOP_PERM:** Starten und Stoppen eines Dienstes
 
      **ADD_REMOVE_ENDPOINTS_PERM:** Hinzufügen, Entfernen und Ändern von Endpunkten für einen Dienst
 
@@ -149,7 +149,7 @@ Verwenden Sie die Registerkarte „Archive“, um LCAs, die in Workbench erstell
 
      **SUPERVISOR_PERM:** Anzeigen der Prozessinstanzdaten für einen Dienst, der aus einem Prozess erstellt wurde
 
-     **START_STOP_PERM:** Starten und Beenden eines Dienstes
+     **START_STOP_PERM:** Starten und Stoppen eines Dienstes
 
      **ADD_REMOVE_ENDPOINTS_PERM:** Hinzufügen, Entfernen und Ändern von Endpunkten für einen Dienst
 

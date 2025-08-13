@@ -12,8 +12,8 @@ role: Admin
 exl-id: 68003650-76d7-40b3-860b-70454c13211e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 100%
+source-wordcount: '1537'
+ht-degree: 97%
 
 ---
 
@@ -46,7 +46,7 @@ So konfigurieren Sie AEM für die Integration mit Salesforce:
 
 >[!CAUTION]
 >
->Sie müssen das [Salesforce Force-API](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=2&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content-1.0.4.zip)-Integrationspaket installieren, bevor Sie mit dem Vorgang fortfahren können. Weitere Informationen zum Arbeiten mit Paketen finden Sie auf der Seite [Arbeiten mit Paketen](/help/sites-administering/package-manager.md#package-share).
+>Sie müssen das [Salesforce Force-API](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=2&package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content-1.0.4.zip)-Integrationspaket installieren, bevor Sie mit dem Vorgang fortfahren können. Weitere Informationen zum Arbeiten mit Paketen finden Sie auf der Seite [Arbeiten mit Paketen](/help/sites-administering/package-manager.md#package-share).
 
 1. Navigieren Sie in AEM zu **Cloud-Services**. Klicken Sie unter „Services von Dritten“ auf **Jetzt konfigurieren** unter **Salesforce**.
 
@@ -56,7 +56,7 @@ So konfigurieren Sie AEM für die Integration mit Salesforce:
 
    >[!NOTE]
    >
-   >Die neue Konfiguration leitet auf eine neue Seite um: **http://localhost:4502/etc/cloudservices/salesforce/developer.html**. Dies ist genau der Wert, den Sie in der Rückruf-URL beim Erstellen der Fernzugriffsanwendung in Salesforce angeben müssen. Diese Werte müssen übereinstimmen.
+   >Die neue Konfiguration wird zu einer neuen Seite umgeleitet: **http://localhost:4502/etc/cloudservices/salesforce/developer.html**. Dies ist genau der Wert, den Sie in der Rückruf-URL beim Erstellen der Fernzugriffsanwendung in Salesforce angeben müssen. Diese Werte müssen übereinstimmen.
 
 1. Melden Sie sich bei Ihrem Salesforce-Konto an. (Wenn Sie noch kein Konto haben, erstellen Sie eines unter [https://developer.force.com](https://developer.salesforce.com).)
 1. Navigieren Sie in Salesforce zu **Erstellen** > **Apps**, um zur Option **Verbundene Apps** zu gelangen (in den Salesforce-Vorgängerversionen war der Workflow **Bereitstellen** > **Fernzugriff**).
@@ -214,7 +214,7 @@ Sie können Benutzerdaten aus Salesforce in ClientContext laden, um sie für die
 
 Sie können ein Segment erstellen, das Daten aus dem Salesforce-ClientContext-Speicher verwendet.  Gehen Sie hierfür wie folgt vor:
 
-1. Navigieren Sie zur Segmentierung in AEM, entweder indem Sie zu **Tools** > **Segmentierung** oder aber zu [http://localhost:4502/miscadmin#/etc/segmentation](http://localhost:4502/miscadmin#/etc/segmentation) wechseln.
+1. Navigieren Sie zur Segmentierung in AEM entweder über **Tools** > **Segmentation** oder über [http://localhost:4502/miscadmin#/etc/segmentation](http://localhost:4502/miscadmin#/etc/segmentation).
 1. Erstellen oder aktualisieren Sie ein Segment, um Daten aus Salesforce zu übernehmen.  Weitere Informationen erhalten Sie unter [Segmentierung](/help/sites-administering/campaign-segmentation.md).
 
 ## Suchen von Leads {#searching-leads}

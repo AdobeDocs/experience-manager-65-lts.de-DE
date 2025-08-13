@@ -11,8 +11,8 @@ role: Developer
 exl-id: 3ce50030-86c7-4291-98fa-0cc9cb63f45c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 100%
+source-wordcount: '1831'
+ht-degree: 98%
 
 ---
 
@@ -529,7 +529,7 @@ Das Abfrage-Servlet funktioniert wie folgt: Es empfängt eine GQL-Abfrage und di
 
 Im Fall der Produktlisten-Komponente werden zwei Parameter wie folgt an das Abfrage-Servlet gesendet:
 
-* query: &quot;path:/content/geometrixx/en/customers/jcr:content/par/productlist Cube&quot;
+* Abfrage: „path:/content/geometrixx/en/customers/jcr:content/par/productlist Cube“
 * cols: &quot;Selection,ProductId,ProductName,Color,CatalogCode,SellingSku&quot;
 
 Und der JSON-Stream wird wie folgt zurückgegeben:

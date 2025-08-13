@@ -12,8 +12,8 @@ role: Admin
 exl-id: 432fc767-a6b8-48f8-b124-b13baca51fe8
 source-git-commit: 7584fa1c544f9dd499b4007a9158e25b783f620c
 workflow-type: tm+mt
-source-wordcount: '2594'
-ht-degree: 96%
+source-wordcount: '2587'
+ht-degree: 94%
 
 ---
 
@@ -70,9 +70,9 @@ Anschließend wird jeder Index zur Schätzung der Kosten für die Abfrage herang
 
 Wenn große Repositorys neu indiziert werden müssen, insbesondere wenn MongoDB verwendet wird und eine Volltextindizierung erforderlich ist, empfiehlt es sich gegebenenfalls, eine Textvorextraktion durchzuführen, den Ausgangsindex mit „oak-run“ zu erstellen und anschließend eine Neuindizierung durchzuführen.
 
-Indizes werden im Repository unter dem Knoten **Oak:index** als Knoten konfiguriert.
+Indizes werden als Knoten im Repository unter dem Knoten **Oak:index** konfiguriert.
 
-Der Typ des Indexknotens muss wie folgt lauten: **oak:QueryIndexDefinition.** Für jeden Indexer sind mehrere Konfigurationsoptionen als Knoteneigenschaften verfügbar. Weitere Informationen finden Sie unten in den Konfigurationsdetails für jeden Indexertyp.
+Der Typ des Indexknotens muss &quot;**&quot; :QueryIndexDefinition.** Für jeden Indexer sind mehrere Konfigurationsoptionen als Knoteneigenschaften verfügbar. Weitere Informationen finden Sie unten in den Konfigurationsdetails für jeden Indexertyp.
 
 ### Der Eigenschaftenindex {#the-property-index}
 
@@ -80,7 +80,7 @@ Der Eigenschaftenindex ist für Abfragen nützlich, die Eigenschaftseinschränku
 
 1. Öffnen Sie CRXDE, indem Sie zu `http://localhost:4502/crx/de/index.jsp` gehen.
 1. Erstellen Sie einen Knoten unter **oak:index**
-1. Nennen Sie den Knoten **PropertyIndex** und legen Sie den Knotentyp auf **oak:QueryIndexDefinition** fest
+1. Benennen Sie den Knoten **PropertyIndex** und legen Sie für den Knotentyp &quot;**&quot;:QueryIndexDefinition**
 1. Legen Sie die folgenden Eigenschaften für den neuen Knoten fest:
 
    * **type:** `property` (vom Typ Zeichenfolge)
@@ -94,7 +94,7 @@ Der Eigenschaftenindex verfügt über die folgenden Konfigurationsoptionen:
 
 * Die Eigenschaft **type** gibt den Indextyp an und muss in diesem Fall **property** lauten.
 
-* Die Eigenschaft **propertyNames** gibt die Liste der Eigenschaften an, die im Index gespeichert werden. Wenn sie fehlt, wird der Knotenname als Referenzwert für den Eigenschaftsnamen verwendet. In diesem Beispiel wird die Eigenschaft **jcr:uuid**, deren Aufgabe darin besteht, die eindeutige Kennung (UUID) ihres Knotens anzuzeigen, zum Index hinzugefügt.
+* Die Eigenschaft **propertyNames** gibt die Liste der Eigenschaften an, die im Index gespeichert werden. Wenn sie fehlt, wird der Knotenname als Referenzwert für den Eigenschaftsnamen verwendet. In diesem Beispiel wird die **jcr:uuid**-Eigenschaft, deren Auftrag darin besteht, die eindeutige Kennung (UUID) ihres Knotens anzuzeigen, zum Index hinzugefügt.
 
 * Falls für die Kennzeichnung **unique** der Wert **true** festgelegt ist, wird dadurch eine Eindeutigkeitsbeschränkung auf den Eigenschaften-Index angewendet.
 
@@ -118,7 +118,7 @@ Da der Index über einen asynchronen Hintergrund-Thread aktualisiert wird, sind 
 Sie können einen Lucene-Volltextindex wie folgt konfigurieren:
 
 1. Öffnen Sie CRXDE und erstellen Sie einen Knoten unter **oak:index**.
-1. Nennen Sie den Knoten **LuceneIndex** und legen Sie den Knotentyp auf **oak:QueryIndexDefinition** fest
+1. Benennen Sie den Knoten **LuceneIndex** und legen Sie als Knotentyp &quot;**&quot;:QueryIndexDefinition**
 1. Fügen Sie dem Knoten folgende Eigenschaften hinzu:
 
    * **type:** `lucene` (vom Typ Zeichenfolge)
@@ -130,7 +130,7 @@ Der Lucene-Index verfügt über die folgenden Konfigurationsoptionen:
 
 * Die Eigenschaft **type**, die den Indextyp angibt, muss auf **lucene** festgelegt sein
 * Die Eigenschaft **async**, die auf **async** festgelegt sein muss. Dadurch wird der Indexaktualisierungsprozess an einen Hintergrund-Thread gesendet.
-* Die Eigenschaft **includePropertyTypes**, die definiert, welche Untergruppe von Eigenschaftstypen im Index enthalten sind.
+* Die Eigenschaft **includePropertyTypes**, die definiert, welche Teilmenge von Eigenschaftstypen im Index enthalten sind.
 * Die Eigenschaft **excludePropertyNames**, die eine Liste mit Eigenschaftennamen definiert, nämlich Eigenschaften, die vom Index ausgeschlossen sein sollen.
 * Das Flag **reindex**, das bei Festlegung auf **true** eine vollständige Neuindizierung des Inhalts auslöst.
 
@@ -203,7 +203,7 @@ Lucene wechselt zwischen den beiden Listen (oder geht nacheinander `n` Listen du
 * Beim Lesen in „Rubik“ wird der nächste Eintrag abgerufen: 1000.
 * Beim Lesen in „Würfel“ wird der erste Eintrag `>` = 1000 abgerufen. 2000 wird gefunden.
 * Beim Lesen in „Rubik“ wird der erste Eintrag `>` = 2000 abgerufen, das Ende der Liste.
-* Schließlich können Sie die Suche beenden.
+* Schließlich können Sie die Suche stoppen.
 
 Das einzige Dokument, das beide Begriffe enthält, ist 200, wie im folgenden Beispiel gezeigt:
 
@@ -214,7 +214,7 @@ Wenn mehrere Einträge gefunden werden, werden sie nach ihrer Punktzahl sortiert
 
 >[!NOTE]
 >
->Der in diesem Abschnitt beschriebene Suchmechanismus verwendet eine Lucene-Indizierung, keine partielle Übereinstimmung wie der Linux-`grep`.
+>Der in diesem Abschnitt beschriebene Suchmechanismus verwendet eine Lucene-Indizierung, keine partielle Übereinstimmung wie der Linux `grep`-Befehl.
 
 ### Der Lucene-Eigenschaftenindex {#the-lucene-property-index}
 

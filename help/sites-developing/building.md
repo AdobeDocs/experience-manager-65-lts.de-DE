@@ -11,8 +11,8 @@ role: Developer
 exl-id: c835a110-89cf-4857-9ee0-c0ad781a66ae
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 99%
+source-wordcount: '866'
+ht-degree: 95%
 
 ---
 
@@ -152,7 +152,7 @@ Die Tag-Suche und die Tag-Auflistung funktionieren folgendermaßen:
 
 Wie in der Dokumentation zur Verwaltung von Tags im Abschnitt [Verwalten von Tags in verschiedenen Sprachen](/help/sites-administering/tags.md#managing-tags-in-different-languages) beschrieben, kann ein Tag-`title` in verschiedenen Sprachen definiert werden. Eine sprachempfindliche Eigenschaft wird dann dem Tag-Knoten hinzugefügt. Diese Eigenschaft weist das Format `jcr:title.<locale>` auf, beispielsweise `jcr:title.fr` für die französische Übersetzung. `<locale>` muss eine ISO-Gebietsschema-Zeichenfolge in Kleinbuchstaben sein und „_“ anstelle von „-“ enthalten, z. B. `de_ch`.
 
-Wenn das Tag **Animals** zur **Produktseite** hinzugefügt wird, wird der Wert `stockphotography:animals` zur Eigenschaft `cq:tags` des Knotens „/content/geometrixx/de/products/jcr:content“ hinzugefügt. Die Übersetzung wird vom Tag-Knoten referenziert.
+Wenn das **Animals**-Tag zur Seite **Products** hinzugefügt wird, wird der `stockphotography:animals` zur `cq:tags` des Knotens &quot;/content/geometrixx/de/products/jcr“ :content. Die Übersetzung wird vom Tag-Knoten referenziert.
 
 Die Server-seitige API verfügt über lokalisierte `title`-bezogene Methoden:
 

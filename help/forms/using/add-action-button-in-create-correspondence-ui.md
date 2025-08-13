@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
 source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1853'
 ht-degree: 99%
 
 ---
@@ -122,7 +122,7 @@ Das Hinzufügen einer Schaltfläche mit einer Aktion (hier: „Brief zur Überpr
 
 1. Klicken Sie auf **Alle speichern**.
 
-#### Erstellen eines lokalen Ordners mit der Eigenschaftendatei in der /apps-Verzweigung {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
+#### Erstellen eines Gebietsschema-Ordners mit der Eigenschaftendatei in der /apps-Verzweigung {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
 
 Die Datei „ACMExtensionsMessages.properties“ beinhaltet Beschriftungen und Quickinfo-Meldungen von verschiedenen Feldern in der Benutzeroberfläche zur Korrespondenzerstellung. Damit die benutzerdefinierten Aktionen/Schaltflächen funktionieren, müssen Sie eine Kopie dieser Datei in der /apps-Verzweigung erstellen.
 

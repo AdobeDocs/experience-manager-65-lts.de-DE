@@ -7,8 +7,8 @@ role: Developer
 exl-id: 9a953caa-47d3-4e06-a27d-2a0c3fc72597
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 100%
+source-wordcount: '1577'
+ht-degree: 99%
 
 ---
 
@@ -1738,10 +1738,10 @@ Die folgenden Fragmente werden für das entsprechende Modell verwendet.
 
 | Name | Land | Einwohnerzahl | Kategorien |
 |--- |--- |--- |--- |
-| Basel | Schweiz | 172258 | city:emea |
+| Basel | Schweiz | 172258 | Stadt:emea |
 | Berlin | Deutschland | 3669491 | city:capital<br>city:emea |
 | Bukarest | Rumänien | 1821000 |  city:capital<br>city:emea |
 | San Francisco |  USA |  883306 |  city:beach<br>city:na |
-| San José |  USA |  102635 |  city:na |
-| Stuttgart |  Deutschland |  634830 |  city:emea |
+| San José |  USA |  102635 |  Stadt:na |
+| Stuttgart |  Deutschland |  634830 |  Stadt:emea |
 |  Zürich |  Schweiz |  415367 |  city:capital<br>city:emea |

@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: 8f52ec13-80a9-4b28-824f-0f09fb988529
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 100%
+source-wordcount: '1830'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner zu erstelle
    * **Prozessdateien, die Folgendes verwenden**: Den Typ des zu startenden Prozesses. Zur Auswahl stehen Workflow, Skript oder Dienst.
    * **Dienstname/Skript-Pfad/Workflow-Pfad:** Das Verhalten des Feldes basiert auf dem Wert, der für das Feld **Prozessdateien, die Folgendes verwenden** definiert wird. Sie können die folgenden Werte festlegen:
 
-      * Für einen Workflow geben Sie das Workflow-Modell an, das ausgeführt werden soll. Zum Beispiel: /etc/workflow/models/&lt;workflow_name>/jcr:content/model
+      * Für einen Workflow geben Sie das Workflow-Modell an, das ausgeführt werden soll. Beispiel: /etc/workflow/models/&lt;workflow_name>/jcr:content/model
       * Für ein Skript geben Sie den JCR-Pfad des auszuführenden Skripts an. Zum Beispiel: /etc/watchfolder/test/testScript.ecma
       * Für einen Dienst geben Sie den Filter an, der zum Suchen nach einem OSGi-Dienst verwendet werden soll. Der Dienst ist als Implementierung der com.adobe.aemfd.watchfolder.service.api.ContentProcessor-Schnittstelle registriert. Beispiel: Der folgende Code ist eine benutzerdefinierte Implementierung der ContentProcessor-Schnittstelle mit der benutzerdefinierten Eigenschaft „foo=bar“.
 

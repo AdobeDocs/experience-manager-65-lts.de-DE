@@ -24,7 +24,7 @@ ht-degree: 100%
 > 
 > Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
-Eine *Richtlinie* definiert einen Satz von Vertraulichkeitseinstellungen sowie die Benutzenden, die auf ein Dokument zugreifen dürfen, für das die Richtlinie gilt. Ein *Richtliniensatz* dient zum Gruppieren verschiedener Richtlinien mit einem gemeinsamen Zweck. Diese Richtliniensätze werden dann einer Untergruppe von Benutzenden im System zur Verfügung gestellt. Einzelheiten zu den Richtlinien finden Sie unter [Richtlinien und richtliniengeschützte Dokumente](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
+Eine *Richtlinie* definiert einen Satz von Vertraulichkeitseinstellungen sowie die Benutzenden, die auf ein Dokument zugreifen dürfen, für das die Richtlinie gilt. Ein *Richtliniensatz* dient zum Gruppieren verschiedener Richtlinien mit einem gemeinsamen Zweck. Diese Richtliniensätze werden dann einer Teilmenge von Benutzenden im System zur Verfügung gestellt. Einzelheiten zu den Richtlinien finden Sie unter [Richtlinien und richtliniengeschützte Dokumente](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
 
 ## Arten von Richtlinien {#types-of-policies}
 

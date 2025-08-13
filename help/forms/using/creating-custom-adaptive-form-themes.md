@@ -10,8 +10,8 @@ feature: Adaptive Forms,Foundation Components
 exl-id: e9853779-e22c-484e-8480-8e724d584ab7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 100%
+source-wordcount: '789'
+ht-degree: 97%
 
 ---
 
@@ -228,7 +228,7 @@ Nachdem Sie das Thema für adaptives Formular erstellt haben, führen Sie die fo
 
    1. **Optional:** Überschreiben Sie die benutzerdefinierte Seite, überschreiben Sie je nach Bedarf „header.hsp“, „footer.jsp“ und „body.jsp“.
 
-1. Erstellen Sie eine benutzerdefinierte Vorlage (zum Beispiel: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) deren „jcr:content“ auf die benutzerdefinierte Seite zeigt, die im vorangehenden Schritt erstellt wurde (zum Beispiel: `myAfCustomizations/myAfPages/forestPage)`.
+1. Erstellen Sie eine benutzerdefinierte Vorlage (zum Beispiel: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) deren „jcr:content auf die benutzerdefinierte Seite verweist, die im vorherigen Schritt erstellt wurde (zum Beispiel: `myAfCustomizations/myAfPages/forestPage)`.
 
    ![Snapshot zum CRX-Repository](assets/2-1.png)
 

@@ -60,7 +60,7 @@ Benutzer mit Behinderungen verlassen sich häufig auf Hardware und Software, um 
 
 In [!DNL Experience Manager] decken die Funktionen für Barrierefreiheit zwei wichtige Anforderungen von [!DNL Experience Manager]-Benutzern und ihren Kunden ab.
 
-* Für Entwickler und Ersteller von Inhalten gibt es Funktionen zum Erstellen und Veröffentlichen von barrierefreien Inhalten, die wiederum von ihren Kunden und Website-Besuchern genutzt werden. Menschen mit Behinderungen nutzen die Inhalte mithilfe von Hilfstechnologien. Weitere Informationen finden Sie unter [Richtlinien für Barrierefreiheit im Web](/help/managing/web-accessibility.md).
+* Für Design- und Entwicklungs-Teams von Inhalten gibt es Funktionen zum Erstellen und Veröffentlichen von barrierefreien Inhalten, die wiederum von ihren Kunden und Website-Besuchern genutzt werden. Menschen mit Behinderungen nutzen die Inhalte mithilfe von Hilfstechnologien. Weitere Informationen finden Sie unter [Richtlinien für Barrierefreiheit im Web](/help/managing/web-accessibility.md).
 * Mit [!DNL Experience Manager] können Benutzer und Administratoren mit Behinderungen auch auf Benutzeroberflächen und Steuerelemente zugreifen, um Inhalte zu erstellen und zu verwalten. Menschen mit Behinderungen können mithilfe von Hilfstechnologien die [!DNL Assets]-Funktion navigieren, nutzen und verwalten.
 
 Die Kernfunktionen in [!DNL Assets] sind leichter zugänglich als zuvor und werden regelmäßig aktualisiert, um die Erfüllung globaler Standards zu verbessern. Die CRUD-Vorgänge in [!DNL Assets] bieten einen gewissen Grad an Barrierefreiheit. DAM-Workflows wie das Hinzufügen, Verwalten, Suchen und Verteilen von Assets sind durch Tastaturbefehle, Sprachausgaben, Farbkontrast usw. barrierefrei.

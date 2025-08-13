@@ -12,8 +12,8 @@ role: Admin
 exl-id: e95f382b-ae89-46d5-b109-ea3257b6b046
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 100%
+source-wordcount: '468'
+ht-degree: 92%
 
 ---
 
@@ -91,7 +91,7 @@ Dienst zum Konfigurieren der Ausschlussliste der Prinzipale, die durch die CUG-A
 
   Es ist möglich, bei besonderen Anforderungen eine benutzerdefinierte CugExclude-Implementierung zu verbinden.
 
-* OSGi-Komponente zur Implementierung von LoginPathProvider, der einen übereinstimmenden Anmeldepfad für den LoginSelectorHandler bereitstellt. Sie verfügt über einen obligatorischen Verweis auf einen RequirementHandler. Dieser wird dazu verwendet, die Beobachterkomponente zu registrieren, die auf geänderte Authentifizierungsanforderungen lauscht, welche im Inhalt durch den Mixin-Typ „granite:AuthenticationRequired“ gespeichert sind.
+* OSGi-Komponente zur Implementierung von LoginPathProvider, der einen übereinstimmenden Anmeldepfad für den LoginSelectorHandler bereitstellt. Er enthält einen obligatorischen Verweis auf einen RequirementHandler, der zum Registrieren des Beobachters verwendet wird, der auf geänderte Authentifizierungsanforderungen lauscht, die im Inhalt mithilfe des Granite:AuthenticationRequired-Mixin-Typs gespeichert werden.
 * OSGi-Komponente, die den RequirementHandler implementiert, der den SlingAuthenticator über Änderungen an Authentifizierungspflichten benachrichtigt.
 
   Da die Konfigurationsrichtlinie für diese Komponente REQUIRED (erforderlich) lautet, wird sie nur aktiviert, wenn ein Satz unterstützter Pfade angegeben wird.

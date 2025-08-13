@@ -12,8 +12,8 @@ role: Admin, Developer
 exl-id: 92689d52-6485-4cd5-a04f-4738096a0dba
 source-git-commit: d571dc696e42bae873cd58f2e7f321bd3002f42e
 workflow-type: tm+mt
-source-wordcount: '2338'
-ht-degree: 100%
+source-wordcount: '2377'
+ht-degree: 93%
 
 ---
 
@@ -204,7 +204,7 @@ Nehmen Sie als Nächstes eine kleine Änderung am Teaser-Stil vor, um zu sehen, 
 
 Nachdem die Code-Aktualisierungen bereitgestellt wurden, fügen Sie mit den AEM-Authoring-Tools der Startseite der Site eine neue Instanz der Produkt-Teaser-Komponente hinzu. So können wir die aktualisierten Stile anzeigen.
 
-1. Öffnen Sie eine neue Registerkarte im Browser und navigieren Sie zur **Startseite** der Site: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Öffnen Sie eine neue Browser-Registerkarte und navigieren Sie zur **Startseite** der Website: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
 1. Erweitern Sie die Asset-Suche (die Seitenleiste) im Modus **Bearbeitung**. Wechseln Sie im Asset-Filter zu **Produkte**.
 
@@ -220,7 +220,7 @@ Nachdem die Code-Aktualisierungen bereitgestellt wurden, fügen Sie mit den AEM-
 
 Überprüfen Sie dann, ob die Client-Bibliotheken auf der Seite enthalten sind.
 
-1. Navigieren Sie zur **Startseite** der Site: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Navigieren Sie zur **Startseite** der Website: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
 1. Wählen Sie das Menü **Seiteninformationen** und klicken Sie auf **Als veröffentlicht anzeigen**:
 
@@ -256,7 +256,7 @@ Nachdem die Code-Aktualisierungen bereitgestellt wurden, fügen Sie mit den AEM-
 
 Es gibt mehrere Optionen zum Einschließen einer Client-seitigen Bibliothek. Sehe Sie sich zunächst an, wie das generierte Projekt die `clientlib-site`-Bibliotheken über [Seitenvorlagen](/help/sites-developing/templates.md) enthält.
 
-1. Navigieren Sie im AEM-Editor zur **Startseite** der Site: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Navigieren Sie zur **Startseite** der Site im AEM-Editor: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
 1. Wählen Sie das Menü **Seiteninformationen** und klicken Sie auf **Vorlage bearbeiten**:
 
@@ -291,7 +291,7 @@ In der vorherigen Übung wurde an einer Sass-Datei im `ui.frontend`-Modul eine A
 
 Der webpack-Dev-Server dient als Proxy für Bilder und einige der CSS/JavaScript-Dateien aus der lokalen Instanz von AEM, erlaubt es dem Entwickler jedoch, die Stile und JavaScript im `ui.frontend`-Modul zu ändern.
 
-1. Navigieren Sie im Browser zur **Startseite** und dann zu **Als veröffentlicht anzeigen**: [http://localhost:4502/content/venia/us/en.html?wcmmode=disabled](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled).
+1. Navigieren Sie im Browser zur Seite **Startseite** und **Als veröffentlicht anzeigen**: [http://localhost:4502/content/venia/us/en.html?wcmmode=disabled](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled).
 
 1. Zeigen Sie den Quell-Code der Seite an und **kopieren** Sie den rohen HTML-Code der Seite.
 
@@ -325,13 +325,13 @@ Der webpack-Dev-Server dient als Proxy für Bilder und einige der CSS/JavaScript
    $ npm start
    ```
 
-   Mit diesem Befehl wird der webpack-dev-Server auf [http://localhost:8080/](http://localhost:8080/) gestartet.
+   Dadurch wird der webpack-dev-server auf [http://localhost:8080/](http://localhost:8080/) gestartet
 
    >[!CAUTION]
    >
    >Wenn Sie einen Sass-bezogenen Fehler erhalten, stoppen Sie den Server, führen Sie den Befehl `npm rebuild node-sass` aus und wiederholen Sie dann die oben genannten Schritte. Dazu kann es kommen, wenn Sie eine andere Version von `npm` und `node` im Projekt `aem-cif-guides-venia/pom.xml` angegeben haben.
 
-1. Navigieren Sie mit demselben Browser als angemeldeter AEM-Instanz in einer neuen Registerkarte zu [http://localhost:8080/](http://localhost:8080/). Über den webpack-Dev-Server sollte die Venia-Startseite angezeigt werden:
+1. Navigieren Sie in einer neuen Registerkarte mit demselben Browser [ einer angemeldeten Instanz von AEM zum :8080http://localhost](http://localhost:8080/)/. Über den webpack-Dev-Server sollte die Venia-Startseite angezeigt werden:
 
    ![webpack-Dev-Server an Port 80](../assets/style-cif-component/webpack-dev-server-port80.png)
 
@@ -450,7 +450,7 @@ Kehren Sie zur IDE und zum erstellten Projekt zurück.
 
 Nachdem der Code für das Projekt in AEM bereitgestellt wurde, sollten Sie die Änderungen am Produkt-Teaser sehen können.
 
-1. Kehren Sie zu Ihrem Browser zurück und aktualisieren Sie die Startseite: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html). Sie sollten erkennen, dass die aktualisierten Produkt-Teaser-Stile angewendet worden sind.
+1. Kehren Sie zu Ihrem Browser zurück und aktualisieren Sie die Homepage: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html). Sie sollten erkennen, dass die aktualisierten Produkt-Teaser-Stile angewendet worden sind.
 
    ![Aktualisierter Produkt-Teaser-Stil](../assets/style-cif-component/product-teaser-new-style.png)
 
@@ -460,7 +460,7 @@ Nachdem der Code für das Projekt in AEM bereitgestellt wurde, sollten Sie die �
 
 ## Fehlerbehebung {#troubleshooting}
 
-Sie können in [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) prüfen, ob die aktualisierte CSS-Datei bereitgestellt wurde: [http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
+Sie können in [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) überprüfen, ob die aktualisierte CSS-Datei bereitgestellt wurde: [http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
 
 Bei der Bereitstellung neuer CSS- und/oder JavaScript-Dateien muss sichergestellt werden, dass der Browser keine veralteten Dateien bereitstellt. Das können Sie vermeiden, indem Sie den Browsercache leeren oder eine neue Browser-Sitzung starten.
 

@@ -11,8 +11,8 @@ role: User,Admin,Architect,Developer
 exl-id: 1d621e12-6da5-4b49-98c9-3fb9b8189ff7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2770'
-ht-degree: 100%
+source-wordcount: '2769'
+ht-degree: 99%
 
 ---
 
@@ -177,7 +177,7 @@ So fügen Sie Personalisierung ein:
    >
    >**Adobe Campaign Classic:**
    >
-   >* Verfügbare Kontextfelder werden dynamisch aus dem Adobe Campaign-Schema **nms:seedMember** abgerufen. Erweiterungsdaten des Zieldatensatzes werden dynamisch aus dem Workflow abgerufen, der die mit dem Inhalt synchronisierte Bereitstellung enthält. (Siehe den Abschnitt [Synchronisieren von in AEM erstelltem Inhalt mit einer Bereitstellung von Adobe Campaign](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic).)
+   >* Verfügbare Kontextfelder werden dynamisch aus dem Adobe Campaign-Schema **nms:seedMember** abgerufen. Erweiterungsdaten des Zieldatensatzes werden dynamisch aus dem Workflow abgerufen, der die mit dem Inhalt synchronisierte Bereitstellung enthält. (Siehe den Abschnitt [Synchronisieren von in AEM erstelltem Inhalt mit einer Bereitstellung von Adobe Campaign](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic).)
    >
    >* Informationen zum Hinzufügen oder Ausblenden von Personalisierungselementen finden Sie unter [Verwalten von Personalisierungsfeldern und -blöcken](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks).
    >* **Wichtig**: Alle Seed-Tabellenfelder müssen sich ebenfalls in der Empfängertabelle (oder der entsprechenden Kontakttabelle) befinden.

@@ -60,8 +60,8 @@ Der **Name** wird verwendet, um die benutzerdefinierte Funktion im Regeleditor e
 
 >[!NOTE]
 >`[functionName]` ist der Name der Funktion. Leerzeichen sind nicht zulässig.
->`<Function Name>` ist der Anzeigename der Funktion im Regeleditor von adaptiven Formularen.
->Wenn der Anzeigename der Funktion mit dem Namen der Funktion selbst übereinstimmt, können Sie in der Syntax `[functionName]` weglassen.
+>>`<Function Name>` ist der Anzeigename der Funktion im Regeleditor von adaptiven Formularen.
+>>Wenn der Anzeigename der Funktion mit dem Namen der Funktion selbst übereinstimmt, können Sie in der Syntax `[functionName]` weglassen.
 
 #### Parameter
 
@@ -572,7 +572,7 @@ Sehen wir uns das Formular in der Vorschau an, um zu sehen, wie die benutzerdefi
 
 >[!NOTE]
 >
-> Sie können auf den folgenden Ordner [Benutzerdefinierte Funktionen](/help/forms/using/assets/customfunctions.zip) verweisen. Laden Sie diesen Ordner herunter und installieren Sie ihn mithilfe von [Package Manager](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager) in Ihrer AEM-Instanz.
+> Sie können auf den folgenden Ordner [Benutzerdefinierte Funktionen](/help/forms/using/assets/customfunctions.zip) verweisen. Laden Sie diesen Ordner herunter und installieren Sie ihn mithilfe von [Package Manager](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager) in Ihrer AEM-Instanz.
 
 ### Unterstützung für asynchrone Funktionen in benutzerdefinierten Funktionen {#support-of-async-functions}
 

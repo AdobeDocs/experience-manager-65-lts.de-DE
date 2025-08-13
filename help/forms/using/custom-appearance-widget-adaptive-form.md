@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## Einführung {#introduction}
 
-Adaptive Formulare nutzen das [Framework für da Erscheinungsbild](/help/forms/using/introduction-widgets.md), um Ihnen beim Erstellen von benutzerdefinierten Erscheinungsbildern für adaptive Formularfelder zu helfen und ein neuartiges Anwendererlebnis zu bieten. Ersetzen Sie zum Beispiel Optionsfelder und aktivieren Sie Felder mit Schaltflächen oder verwenden Sie benutzerdefinierte jQuery-Plugins, um Benutzereingaben in Feldern wie Telefonnummern oder E-Mail-ID einzuschränken.
+Adaptive Formulare nutzen das [Framework für da Erscheinungsbild](/help/forms/using/introduction-widgets.md), um Ihnen beim Erstellen von benutzerdefinierten Erscheinungsbildern für adaptive Formularfelder zu helfen und ein neuartiges Anwendererlebnis zu bieten. Ersetzen Sie zum Beispiel Optionsfelder und aktivieren Sie Felder mit Umschaltern oder verwenden Sie benutzerdefinierte jQuery-Plugins, um Benutzereingaben in Feldern wie Telefonnummern oder E-Mail-ID einzuschränken.
 
 In diesem Dokument wird erläutert, wie ein jQuery-Plug-in verwendet wird, um diese alternativen Erlebnisse für adaptive Formularfelder zu erstellen.  Darüber hinaus demonstriert es ein Beispiel dafür, wie ein benutzerdefiniertes Erscheinungsbild für eine numerische Feldkomponente erstellt wird, damit sie als numerischer Schritt oder Schieberegler dargestellt wird.
 

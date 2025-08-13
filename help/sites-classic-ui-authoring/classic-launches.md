@@ -11,8 +11,8 @@ role: User
 exl-id: 7f1b25dd-c58b-4c83-a8f3-2b60dcd478bf
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 100%
+source-wordcount: '176'
+ht-degree: 92%
 
 ---
 
@@ -32,4 +32,4 @@ Ein Launch wird erstellt, damit Sie (unter Beibehaltung der aktuellen Seiten) Ä
 >
 >Mehrere Quellseiten für einen Launch sind in der klassischen Benutzeroberfläche nicht möglich.
 
-Der Zugriff auf die Launch-Konsole ist direkt über [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html) möglich.
+Der Zugriff auf die Launch-Konsole ist direkt über [http://localhost:4502/libs/launches/content/admin.html möglich](http://localhost:4502/libs/launches/content/admin.html)

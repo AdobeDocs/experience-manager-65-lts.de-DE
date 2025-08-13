@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 3eb9c0e3-950e-4dd5-a4c9-2d8f486ea3cf
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1239'
-ht-degree: 95%
+source-wordcount: '1235'
+ht-degree: 92%
 
 ---
 
@@ -34,7 +34,7 @@ Gehen Sie wie folgt vor, damit Sie eine benutzerdefinierte Vorlage für verschie
 
 ## Erstellen einer benutzerdefinierten Vorlage {#creating-a-nbsp-custom-template}
 
-1. Erstellen eines sling:Folder-Knotens unter /apps
+1. Erstellen Sie einen sling:Folder-Knoten unter /apps
 
    Fügen Sie eine fpContentType-Eigenschaft hinzu. Geben Sie entsprechende Werte für die Eigenschaft abhängig von der Komponente an, für die Sie die benutzerdefinierte Vorlage definieren.
 
@@ -50,10 +50,10 @@ Gehen Sie wie folgt vor, damit Sie eine benutzerdefinierte Vorlage für verschie
 
    >[!NOTE]
    >
-   >Der Titel kann sich von dem Knotennamen des erstellten sling:Folder unterscheiden.
+   >Der Titel kann sich von dem Knotennamen des von :Folder erstellten Sling unterscheiden.
 
    Die folgende Abbildung zeigt die Konfiguration der Komponente „Search &amp; Lister“.
-   ![Erstellen eines sling:Folder](assets/1.png)
+   ![Erstellen eines Sling:Folder](assets/1.png)
 
 1. Erstellen Sie in diesem Ordner eine Datei namens „template.html“, die als benutzerdefinierte Vorlage dienen soll.
 1. Erstellen Sie die benutzerdefinierte Vorlage und verwenden Sie dafür benutzerdefinierte Metadaten wie unten beschrieben.
@@ -88,11 +88,11 @@ Das Formularportal bietet eine Syntax für Platzhalter zur Anzeige von benutzerd
 
 Um einen wiederholbaren Eintrag einzuschließen, konfigurieren Sie den Wert des Attributs **data-repeatable** als **true**.
 
-*Im gezeigten Beispiel sind oben in der benutzerdefinierten Vorlage zwei Div-Elemente vorhanden. Das erste mit der CSS-Klasse „__FP_boxes-container“ fungiert als Containerelement für die aufgelisteten Formulare. Das zweite mit der CSS-Klasse „__FP_boxes“ ist eine Vorlage für die Basiseinheiten, in diesem Fall ein Formular. Das Attribut **data-repeatable**&#x200B;im Div-Element weist den Wert **true**&#x200B;auf.*
+*Im gezeigten Beispiel sind oben in der benutzerdefinierten Vorlage zwei Div-Elemente vorhanden. Das erste mit der CSS-Klasse „__FP_boxes-container“ fungiert als Containerelement für die aufgelisteten Formulare. Das zweite mit der CSS-Klasse „__FP_boxes“ ist eine Vorlage für die Basiseinheiten, in diesem Fall ein Formular. Das Attribut **data-repeatable**im Div-Element weist den Wert **true**auf.*
 
 Jeder Platzhalter verfügt über einen exklusiven, vorkonfigurierten Metadatensatz. Um die benutzerdefinierten Metadaten an einer bestimmten Position im Formular anzuzeigen, fügen Sie die **${metadata_prop}-Eigenschaft** Ort hinzu.
 
-*Im Beispiel wird die Metadateneigenschaft in mehreren Instanzen verwendet. Sie wird z. B. bei **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**&#x200B;und **path**&#x200B;in der genannten Weise verwendet.*
+*Im Beispiel wird die Metadateneigenschaft in mehreren Instanzen verwendet. Sie wird z. B. bei **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**und **path**in der genannten Weise verwendet.*
 
 ## Vorkonfigurierte Metadaten {#out-of-the-box-metadata}
 

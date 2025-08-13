@@ -26,7 +26,7 @@ ht-degree: 99%
 
 Die [AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components) ermöglichen erweiterte Konfigurationen zum Anpassen der URLs für Produkt- und Kategorieseiten. Bei vielen Implementierungen werden diese URLs zwecks Suchmaschinen-Optimierung (Search Engine Optimization, SEO) angepasst. Im folgenden Video wird beschrieben, wie Sie den `UrlProvider`-Service und die Funktionen der [Sling-Zuordnung](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) konfigurieren können, um die URLs für Produkt- und Kategorieseiten anzupassen.
 
->[!VIDEO](https://video.tv.adobe.com/v/38581/?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## Konfiguration {#configuration}
 
@@ -79,7 +79,7 @@ Mit den obigen Beispieldaten sieht eine mit dem Standard-URL-Format formatierte 
 
 ### Spezifische Kategorie-/Produktseiten {#specific-pages}
 
-Es ist möglich, [mehrere Kategorie- und Produktseiten](multi-template-usage.md) für nur eine bestimmte Untermenge von Kategorien oder Produkten eines Katalogs zu erstellen.
+Es ist möglich, [mehrere Kategorie- und Produktseiten](multi-template-usage.md) für nur eine bestimmte Teilmenge von Kategorien oder Produkten eines Katalogs zu erstellen.
 
 `UrlProvider` ist so vorkonfiguriert, dass Deep-Links zu bestimmten Kategorie- und Produktseiten in Instanzen der Autorenebene zu erzeugt werden. Dies ist für Editoren nützlich, die eine Site im Vorschaumodus durchsuchen, zu einer bestimmten Produkt- oder Kategorieseite navigieren und zurück in den Bearbeitungsmodus wechseln, um die Seite zu bearbeiten.
 

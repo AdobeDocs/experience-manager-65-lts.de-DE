@@ -7,8 +7,8 @@ role: Admin
 exl-id: 997637d5-1627-4102-8b7c-a0cfd871a7b2
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '997'
-ht-degree: 99%
+source-wordcount: '995'
+ht-degree: 98%
 
 ---
 
@@ -45,10 +45,10 @@ Wählen Sie die erforderliche Vorlage für Ihre Website aus und bestätigen Sie 
 1. Fragen Sie die Seite für den Export an und ersetzen Sie dabei in der URL das Suffix `html` durch `export.zip`.
 
    Beispiel:
-   * localhost:4502/content/we-retail/language-masters/de.html
+   * localhost:4502/content/we-retail/language-masters/en.html
 
    Zugriff über:
-   * localhost:4502/content/we-retail/language-masters/de.export.zip
+   * localhost:4502/content/we-retail/language-masters/en.export.zip
 
 1. Laden Sie die Archivdatei auf Ihr Dateisystem herunter.
 

@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 7a0d5502-8e1a-4396-a517-ea3767e228c2
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1581'
-ht-degree: 100%
+source-wordcount: '1582'
+ht-degree: 99%
 
 ---
 
@@ -133,7 +133,7 @@ Sie können den Tagging-Workflow periodisch oder nur bei Bedarf ausführen.
 
 Sie können den Smart Content Service aktivieren, um Assets in einem Ordner regelmäßig mit Tags zu versehen. Öffnen Sie die Eigenschaftsseite Ihres Asset-Ordners, wählen Sie **[!UICONTROL Smart-Tags aktivieren]** in der Registerkarte **[!UICONTROL Details]** aus und speichern Sie die Änderungen.
 
-Wenn diese Option für einen Ordner ausgewählt ist, versieht der Smart Content Service die Assets innerhalb des Ordners automatisch mit Tags. Standardmäßig wird der Tagging-Workflow jeden Tag um 0:00 Uhr ausgeführt.
+Wenn diese Option für einen Ordner ausgewählt ist, versieht der Smart Content Service die Assets innerhalb des Ordners automatisch mit Tags. Standardmäßig wird der Tagging-Workflow täglich um 12:00 :00 ausgeführt.
 
 ### Tagging bei Bedarf {#on-demand-tagging}
 

@@ -8,7 +8,7 @@ exl-id: e095b7d4-b1b4-4070-9264-b23ea2c677f5
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '791'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -74,7 +74,7 @@ Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie z
 
 ## Bereinigen von abgeschlossenen Aufträgen {#purging-completed-jobs}
 
-AEM führt jeden Tag um 01:00 Uhr einen Bereinigungsauftrag aus, um abgeschlossene asynchrone Aufträge zu löschen, die älter als einen Tag sind.
+AEM führt jeden Tag um 01 einen Bereinigungsauftrag aus:00 um abgeschlossene asynchrone Aufträge zu löschen, die älter als einen Tag sind.
 
 Sie können den Zeitplan für den Bereinigungsauftrag bearbeiten. Außerdem können Sie anpassen, wie lange die Details zu abgeschlossenen Aufträgen gespeichert werden sollen, bevor sie gelöscht werden. Darüber hinaus können Sie die maximale Anzahl abgeschlossener Aufträge konfigurieren, deren Details zu einem beliebigen Zeitpunkt gespeichert werden.
 

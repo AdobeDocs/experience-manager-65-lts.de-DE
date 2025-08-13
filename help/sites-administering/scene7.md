@@ -11,8 +11,8 @@ role: Admin
 exl-id: 9f879ab6-6806-4e94-836c-0a7813940914
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '5405'
-ht-degree: 100%
+source-wordcount: '5417'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ Informationen zur Verwendung aller Dynamic Media Classic-Komponenten auf einer S
 >
 >* Die DHTML-Viewer-Plattform von Dynamic Media Classic wurde offiziell am 31. Januar 2014 eingestellt. Weitere Informationen finden Sie in den [FAQ zur Einstellung von DHTML-Viewer](../sites-administering/dhtml-viewer-endoflifefaqs.md).
 >* Bevor Sie Dynamic Media Classic für die Verwendung mit Experience Manager konfigurieren, lesen Sie [Best Practices](#best-practices-for-integrating-scene-with-aem) zur Integration von Dynamic Media Classic mit Experience Manager.
->* Wenn Sie Dynamic Media Classic mit einer benutzerdefinierten Proxy-Konfiguration verwenden, müssen Sie beide HTTP-Client-Proxy-Konfigurationen konfigurieren, da einige Funktionen von Experience Manager die 3.x-APIs verwenden und andere die 4.x-APIs. 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert und 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) konfiguriert.
+>* Wenn Sie Dynamic Media Classic mit einer benutzerdefinierten Proxy-Konfiguration verwenden, müssen Sie beide HTTP-Client-Proxy-Konfigurationen konfigurieren, da einige Funktionen von Experience Manager die 3.x-APIs verwenden und andere die 4.x-APIs. 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert und 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.ProxyConfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) konfiguriert.
 >
 
 ## Integration von Experience Manager/Dynamic Media Classic im Vergleich zu Dynamic Media {#aem-scene-integration-versus-dynamic-media}
@@ -329,7 +329,7 @@ Eine Cloud-Konfiguration definiert die Zuordnung zwischen einem Dynamic Media Cl
 
    >[!CAUTION]
    >
-   >Je nach Größe des Dynamic Media Classic-Ordners kann der Import eines Stammordners viel Zeit in Anspruch nehmen. Darüber hinaus können Dynamic Media Classic-Daten den Experience Manager-Speicher überschreiten. Stellen Sie sicher, dass Sie den richtigen Ordner importieren. Der Import einer zu großen Datenmenge kann zur Unterbrechung Ihres Systems führen.
+   >Je nach Größe des Dynamic Media Classic-Ordners kann der Import eines Stammordners viel Zeit in Anspruch nehmen. Darüber hinaus können Dynamic Media Classic-Daten den Experience Manager-Speicher überschreiten. Stellen Sie sicher, dass Sie den richtigen Ordner importieren. Der Import einer zu großen Datenmenge kann zum Stopp Ihres Systems führen.
 
    ![chlimage_1-298](assets/chlimage_1-298.png)
 

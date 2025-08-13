@@ -92,7 +92,7 @@ Im Zusammenfassungsabschnitt auf Formularebene erhalten Sie einen Einblick in di
 * **Entwürfe**: Gibt an, wie oft das Formular als Entwurf gespeichert wurde.
 * **Übermittlungen**: Gibt an, wie oft das Formular übermittelt wurde.
 * **Abbruch**: Gibt an, wie oft Benutzende das Ausfüllen des Formulars begonnen und dann abgebrochen haben
-* **Unique Visitors**: Gibt an, wie oft das Formular von einzelnen Besuchern erstellt wird. Weitere Informationen über individuelle Besucher finden Sie unter [Individuelle Besicher, Besuche und Kundenverhalten](https://helpx.adobe.com/de/analytics/kb/unique-visitors-visitor-behavior.html). 
+* **Unique Visitors**: Gibt an, wie oft das Formular von einzelnen Besuchern erstellt wird. Weitere Informationen über Unique Visitors finden Sie unter [Individuelle Besicher, Besuche und Kundenverhalten](https://helpx.adobe.com/de/analytics/kb/unique-visitors-visitor-behavior.html). 
 
 ![Erweiterter zusammenfassender Analysebericht auf Formularebene](assets/analytics-report.png)
 

@@ -11,8 +11,8 @@ role: Developer
 exl-id: fe3735ff-5c9b-4eb8-bf1d-f2189ec7e26f
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '3251'
-ht-degree: 99%
+source-wordcount: '3237'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ Der Java™ Content-Repository-Standard (JCR) [JSR 283](https://developer.adobe.
 
 Die Leitung der Spezifikation liegt bei Adobe Research (Schweiz) AG.
 
-Das [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)-Paket, javax.jcr.&ast; wird für den direkten Zugriff und die Bearbeitung von Repository-Inhalten verwendet.
+Das [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)-Paket, javax.jcr.&amp;ast; wird für den direkten Zugriff und die Bearbeitung von Repository-Inhalten verwendet.
 
 ## Experience Server (CRX) und Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -174,9 +174,9 @@ Unter Verwendung des obigen Beispiels, wenn der `sling:resourceType` `hr/jobs` l
 
 * GET/HEAD-Anfragen und URLs, die auf .HTML enden (Standardanfragetypen, Standardformat)
 
-  Das Skript lautet „/apps/hr/jobs/jobs.esp“. Der letzte Abschnitt von „sling:resourceType“ bildet den Dateinamen.
+  Das Skript lautet /apps/hr/jobs/jobs.esp. Der letzte Abschnitt des Sling:resourceType bildet den Dateinamen.
 
-* POST-Anfragen (alle Anfragetypen außer GET/HEAD, der Methodenname muss in Großbuchstaben angegeben werden)
+* POST-Anfragen (alle Anforderungstypen außer GET/HEAD, der Methodenname muss in Großbuchstaben angegeben werden)
 
   POST wird im Skriptnamen verwendet.
 
@@ -196,7 +196,7 @@ Unter Verwendung des obigen Beispiels, wenn der `sling:resourceType` `hr/jobs` l
 
   Das Skript ist `/apps/hr/jobs/jobs.print.esp`. Der Selektor wird zum Skriptnamen hinzugefügt.
 
-* Wenn kein „sling:resourceType“ definiert wurde, gilt Folgendes:
+* Wenn kein :resourceType definiert ist, gilt Folgendes:
 
    * Der Inhaltspfad wird für die Suche nach einem geeigneten Skript verwendet (wenn der pfadbasierte „ResourceTypeProvider“ aktiv ist).
 
@@ -279,21 +279,21 @@ Wenn Sie die Repräsentation (das Skript) direkt aufrufen, blenden Sie die Resso
 * automatische Handhabung von HTTP-Methoden außer GET, einschließlich:
 
    * POST, PUT, DELETE, die mit einer Sling-Standardimplementierung behandelt werden
-   * Das `POST.jsp`-Skript in Ihrem sling:resourceType-Speicherort
+   * Das `POST.jsp`-Skript in Ihrem Sling:resourceType-Speicherort
 
 * Ihre Code-Architektur ist nicht mehr so sauber oder so klar strukturiert, wie sie es sein sollte. Dies ist besonders wichtig für die Entwicklung in großem Maßstab.
 
 ### Sling-API {#sling-api}
 
-Hierbei wird das Sling-API-Paket „org.apache.sling“ verwendet.&ast; und -Tag-Bibliotheken.
+Hierbei wird das Sling-API-Paket „org.apache.sling“ verwendet.&amp;ast; und -Tag-Bibliotheken.
 
-### Referenzieren von vorhandenen Elementen mithilfe von sling:include {#referencing-existing-elements-using-sling-include}
+### Referenzieren vorhandener Elemente mithilfe von Sling:include {#referencing-existing-elements-using-sling-include}
 
 Eine letzte Überlegung ist die Notwendigkeit, auf vorhandene Elemente innerhalb der Skripte zu verweisen.
 
 Komplexere Skripte (aggregierende Skripte) müssen auf mehrere Ressourcen zugreifen (z. B. Navigation, Seitenleiste, Fußzeile, Elemente einer Liste) und tun dies durch Einbeziehen der *Ressource*.
 
-Verwenden Sie hierzu den Befehl „sling:include(&quot;/&lt;path>/&lt;resource>&quot;)“. Dieser umfasst effektiv die Definition der referenzierten Ressource, wie in der folgenden Anweisung, die auf eine vorhandene Definition für das Rendern von Bildern verweist:
+Verwenden Sie dazu den Befehl sling:include(“/&lt;path>/&lt;resource>„). Dieser umfasst effektiv die Definition der referenzierten Ressource, wie in der folgenden Anweisung, die auf eine vorhandene Definition für das Rendern von Bildern verweist:
 
 ```xml
 %><sling:include resourceType="geometrixx/components/image/img"/><%
@@ -342,7 +342,7 @@ Weitere Informationen zum Bearbeiten von Elementobjekten finden Sie in den [Java
 
 Knoten definieren die Inhaltsstruktur, und ihre Eigenschaften speichern den tatsächlichen Inhalt und die Metadaten.
 
-Inhaltsknoten steuern das Rendering. Sling ruft den Inhaltsknoten von der eingehenden Anfrage ab. Die Eigenschaft „sling:resourceType“ dieses Knotens verweist auf die zu verwendende Sling-Rendering-Komponente.
+Inhaltsknoten steuern das Rendering. Sling ruft den Inhaltsknoten von der eingehenden Anfrage ab. Die Eigenschaft „sling:resourceType dieses Knotens verweist auf die zu verwendende Sling-Rendering-Komponente.
 
 Ein Knoten, bei dem es sich um einen JCR-Namen handelt, wird in der Sling-Umgebung auch als Ressource bezeichnet.
 
@@ -385,7 +385,7 @@ Sie definiert die Seitenkomponente, die zum Rendern der Seite verwendet wird, un
 
 **Seite** Eine Seite ist eine „Instanz“ einer Vorlage.
 
-Eine Seite hat einen Hierarchieknoten vom Typ cq:Page und einen Inhaltsknoten vom Typ cq:PageContent. Die Eigenschaft „sling:resourceType“ des Inhaltsknotens verweist auf die Seitenkomponente, die zum Rendern der Seite verwendet wird.
+Eine Seite hat einen Hierarchieknoten vom Typ CQ:Page und einen Inhaltsknoten vom Typ CQ:PageContent. Die Eigenschaft „sling:resourceType des Inhaltsknotens verweist auf die Seitenkomponente, die zum Rendern der Seite verwendet wird.
 
 Um beispielsweise den Namen der aktuellen Seite abzurufen, können Sie in Ihrem Skript den folgenden Code verwenden:
 

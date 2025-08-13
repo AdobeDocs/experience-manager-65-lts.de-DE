@@ -31,7 +31,7 @@ AEM Forms unterstützt die folgenden CAPTCHA-Lösungen:
 
 Cloudflare&#39;s Turnstile Captcha ist eine Sicherheitsmaßnahme, die darauf abzielt, Formulare und Websites vor automatischen Bots, bösartigen Angriffen, Spam und unerwünschtem automatisierten Traffic zu schützen. Bei der Formularübermittlung wird ein Kontrollkästchen angezeigt, mit dem überprüft wird, ob es sich um menschliche Benutzende handelt, bevor das Formular übermittelt werden kann.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440949?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440940/)
 
 ### Voraussetzungen für die Integration der AEM Forms-Umgebung mit Turnstile Captcha {#prerequisite}
 
@@ -56,10 +56,8 @@ So integrieren Sie AEM Forms mit dem Drehkreuz-Service:
 
 1. Konfigurieren Sie Ihre Cloud-Services:
    1. Wechseln Sie in der AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** und klicken Sie auf **[!UICONTROL Drehkreuz]**.
-
       ![Drehkreuz in Cloud Services](assets/turnstile-in-ui.png)
    1. Wählen Sie einen erstellten oder aktualisierten Konfigurations-Container aus, wie im vorherigen Abschnitt beschrieben. Klicken Sie auf **[!UICONTROL Erstellen]**.
-
       ![Konfigurations-Drehkreuz](assets/config-hcaptcha.png)
    1. Geben Sie **[!UICONTROL Widget-Typ]** als verwaltet, nicht interaktiv oder unsichtbar an.
    1. Geben Sie weitere Details an **[!UICONTROL Titel]**, **[!UICONTROL Name]**.
@@ -96,7 +94,6 @@ So integrieren Sie AEM Forms mit dem Drehkreuz-Service:
    * **[!UICONTROL Validierungsmeldung]:** Geben Sie eine Validierungsmeldung zur Validierung von CAPTCHA bei der Formularübermittlung oder bei einer Benutzeraktion ein.
    * **[!UICONTROL CAPTCHA-]:** Wählen Sie den CAPTCHA-Dienst für die Formularübermittlung aus, hier wählen Sie Drehkreuz®.
    * **[!UICONTROL Konfigurationseinstellungen]:** Wählen Sie Ihre für Turnstile konfigurierte Cloud-Konfiguration ®.
-
      >[!NOTE]
      >Sie können in Ihrer Umgebung mehrere Cloud-Konfigurationen für einen ähnlichen Zweck verwenden. Wählen Sie den Dienst daher sorgfältig aus. Wenn kein Service aufgeführt ist, erfahren Sie unter [Verbinden Ihrer AEM Forms-Umgebung mit Turnstile](#connect-your-forms-environment-with-turnstile-service), wie Sie einen Cloud Service erstellen, der Ihre AEM Forms-Umgebung mit dem Turnstile-Service verbindet.
 

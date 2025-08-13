@@ -11,8 +11,8 @@ role: Admin
 exl-id: 6659ca39-f297-40b9-88e2-d942aa653e9b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 100%
+source-wordcount: '1745'
+ht-degree: 99%
 
 ---
 
@@ -249,7 +249,7 @@ Tag-Berechtigungen sind [standardmäßig sicher](/help/sites-administering/produ
    * Melden Sie sich mit Administratorrechten an.
    * Rufen Sie die [Sicherheitskonsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) auf.
 
-      * z. B. unter http://localhost:4502/useradmin.
+      * Navigieren Sie beispielsweise zu http://localhost:4502/useradmin
 
    * Wählen Sie im linken Bedienfeld die Gruppe oder die Personen aus, für die eine [Leseberechtigung](/help/sites-administering/security.md#permissions) gelten soll.
    * Suchen Sie im rechten Bedienfeld den **Pfad** für den Tag-Namespace,

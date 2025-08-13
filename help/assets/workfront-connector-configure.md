@@ -8,8 +8,8 @@ solution: Experience Manager, Workfront
 exl-id: 810be820-b577-4035-9fda-3d919361c58c
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 100%
+source-wordcount: '1696'
+ht-degree: 99%
 
 ---
 
@@ -60,7 +60,7 @@ Gehen Sie wie folgt vor, um die Ereignisse zu abonnieren:
 
 1. Gehen Sie in den Cloud-Services zur Registerkarte „Projektverknüpfte Ordner“.
 1. Übergeordneter Pfad des verknüpften Ordners: Wählen Sie einen Ordner im DAM aus, in dem Sie die verknüpften Ordner erstellen möchten. Wenn Sie das Feld leer lassen, wird standardmäßig /content/dam verwendet. Stellen Sie sicher, dass das Metadatenschema für Workfront-Tools und das Metadatenschema für Workfront-Ordner mit verknüpften Ordnern auf den ausgewählten Ordner angewendet wurden.
-1. Verknüpfte Ordnerstruktur: Geben Sie durch Kommas getrennte Werte ein. Jeder Wert sollte `DE:<some-project-custom-form-field>`, Portfolio, Programm, Jahr, Name oder ein „literaler Zeichenfolgenwert“ sein (letzteres in Anführungszeichen). Er ist derzeit auf Portfolio,Programm,Jahr,DE:Projekttyp,Name festgelegt.
+1. Verknüpfte Ordnerstruktur: Geben Sie durch Kommas getrennte Werte ein. Jeder Wert sollte `DE:<some-project-custom-form-field>`, Portfolio, Programm, Jahr, Name oder ein „literaler Zeichenfolgenwert“ sein (letzteres in Anführungszeichen). Sie ist derzeit auf Portfolio,Program,Year,DE,:Project,Name festgelegt.
 1. Konfigurieren der Berechtigungen: Fügen Sie Berechtigungen `jcr:all permissions` zu `/conf/workfront-tools/settings/cloudconfigs` für die Gruppe `wf-workfront-users` hinzu.
 1. Das Kontrollkästchen „Verknüpfte Ordnertitel in Workfront unter Verwendung der Namen der Ordnerstruktur erstellen“ sollte aktiviert werden, wenn der Titel des Ordners in Workfront alle Ordner in der Struktur enthalten soll. Andernfalls ist es der Titel des letzten Ordners.
 1. Im Mehrfachfeld „Unterordner“ können Sie eine Liste von Ordnern angeben, die als Unterordner des verknüpften Ordners erstellt werden sollen.

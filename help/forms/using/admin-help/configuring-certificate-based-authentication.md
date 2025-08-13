@@ -14,7 +14,7 @@ exl-id: 56603735-959e-4460-b642-bba63fa20c02
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '730'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -83,7 +83,7 @@ Wenn Sie ein Zertifikat testen, lädt die Benutzerverwaltung die Zertifikatüber
 
      Benutzerdefinierte Reihenfolge: $2 $1 (zweite Gruppe zurückgeben, verkettet mit der ersten Gruppe, erfasst durch Leerzeichen)
 
-   * So extrahieren Sie „apink@sampleorg.com“ aus „smtp:apink@sampleorg.com“:
+   * So extrahieren Sie &quot;apink@sampleorg.com&quot; aus „smtp:apink@sampleorg.com“
 
      **Regex:** smtp:(.&amp;ast;)
 

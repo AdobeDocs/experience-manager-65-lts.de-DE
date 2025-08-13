@@ -12,8 +12,8 @@ role: User,Admin,Architect,Developer
 exl-id: 18c32ec9-9f6d-4c6e-9790-dc911baa1d75
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 100%
+source-wordcount: '1096'
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
    >
    >Wenn eine Site Sprachstämme unterhalb der obersten Ebene enthält, müssen sich die Seiten und Verzweigungen für einen Launch unterhalb eines gemeinsamen Sprachstamms befinden.
    >
-   >Wenn Sie versuchen, einen Launch mit einer übergeordneten oder untergeordneten Seite im Quellpfad zu erstellen, schlägt er fehl und gibt den Fehler „Ziel existiert bereits unter :Pfad der Seite“ zurück.
+   >Wenn Sie versuchen, einen Launch mit einer übergeordneten oder untergeordneten Seite im Quellpfad zu erstellen, schlägt dies fehl und gibt den Fehler „Das Ziel existiert bereits :path auf der Seite“ zurück.
 
 1. Für jeden Eintrag können Sie angeben, ob Sie Folgendes möchten:
 

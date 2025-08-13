@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: aed65a14-2b4f-45ac-8b20-fdb08b3c9038
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 99%
+source-wordcount: '780'
+ht-degree: 96%
 
 ---
 
@@ -126,7 +126,7 @@ Sie können ein benutzerdefiniertes Bundle erstellen, um Ihre eigenen Remote-Fun
   @org.apache.felix.scr.annotations.Property(name = "exm.service", boolValue = true)})
 ```
 
-Der Eintrag exm.service=true erklärt dem Expression Manager, dass der Dienst Remote-Funktionen enthält, die für die Verwendung in Ausdrücken geeignet sind. Der &lt;service_id>-Wert muss eine gültige Java-Kennung sein (alphanumerisch, $, _, ohne weitere Sonderzeichen). Dieser Wert, dem das Schlüsselwort REMOTE_ vorangestellt ist, bildet das Präfix, das in Ausdrücken verwendet wird. Beispielsweise kann eine Schnittstelle mit einer kommentierten Methode „bar()“ und der Dienst-ID „foo“ in den Diensteigenschaften in Ausdrücken mithilfe von REMOTE_foo:bar() referenziert werden.
+Der Eintrag exm.service=true erklärt dem Expression Manager, dass der Dienst Remote-Funktionen enthält, die für die Verwendung in Ausdrücken geeignet sind. Der &lt;service_id>-Wert muss eine gültige Java-Kennung sein (alphanumerisch, $, _, ohne weitere Sonderzeichen). Dieser Wert, dem das Schlüsselwort REMOTE_ vorangestellt ist, bildet das Präfix, das in Ausdrücken verwendet wird. Beispielsweise kann eine Schnittstelle mit der Methode bar() und der Service-ID foo in den Service-Eigenschaften innerhalb von Ausdrücken mit REMOTE_foo() referenziert :bar.
 
 ```java
 package mergeandfuse.com;

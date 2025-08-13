@@ -7,8 +7,8 @@ role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
 source-git-commit: a0fe5bbfe93719641118521c6861bcb2cca76d60
 workflow-type: tm+mt
-source-wordcount: '4819'
-ht-degree: 100%
+source-wordcount: '4805'
+ht-degree: 98%
 
 ---
 
@@ -184,7 +184,7 @@ Die Definition einer Komponente lässt sich wie folgt aufschlüsseln:
 
    * `cq:editConfig (cq:EditConfig)` – Definiert die Bearbeitungseigenschaften der Komponente und ermöglicht es, dass die Komponente im Komponenten-Browser oder Sidekick aufgeführt wird.
 
-     Hinweis: Wenn die Komponente über ein Dialogfeld verfügt, wird sie automatisch im Komponenten-Browser oder Sidekick aufgeführt, selbst wenn die cq:editConfig nicht vorhanden ist.
+     Hinweis: Wenn die Komponente über ein Dialogfeld verfügt, wird sie automatisch im Komponentenbrowser oder in Sidekick angezeigt, auch wenn das cq:editConfig nicht vorhanden ist.
 
    * `cq:childEditConfig (cq:EditConfig)` – Steuert Aspekte der Autoren-Benutzeroberfläche für untergeordnete Komponenten, die keine eigene `cq:editConfig` definieren.
    * Touch-optimierte Benutzeroberfläche:
@@ -565,7 +565,7 @@ Um das Bearbeitungsverhalten einer Komponente zu konfigurieren, fügen Sie einen
       * Mehrere Ablageziele sind nur in der klassischen Benutzeroberfläche verfügbar.
       * In der Touch-optimierten Benutzeroberfläche ist nur ein einziges Ablageziel zulässig.
 
-   * `cq:actionConfigs` (Knotentyp `nt:unstructured`): definiert eine Liste mit neuen Aktionen, die an die cq:actions-Liste angehängt wird
+   * `cq:actionConfigs` (Knotentyp `nt:unstructured`): definiert eine Liste mit neuen Aktionen, die an die CQ3-Liste :actions werden
    * `cq:formParameters` (Knotentyp `nt:unstructured`): definiert zusätzliche Parameter, die zum Dialogfeldformular hinzugefügt werden
    * `cq:inplaceEditing` (Knotentyp `cq:InplaceEditingConfig`): definiert eine Kontextbearbeitungsfunktion für die Komponente
    * `cq:listeners` (Knotentyp `cq:EditListenersConfig`): Legt fest, was geschieht, bevor oder nachdem eine Aktion auf der Komponente stattfindet.
@@ -629,7 +629,7 @@ Im vorherigen Beispiel ist `model.text` die Variable, die nur dann wahr ist, wen
 
 Eine beispielhafte Verwendung dieser Vorlage ist in den Kernkomponenten zu sehen, [wie z. B. in der Titelkomponente.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
-### Konfigurieren mit cq:EditConfig-Eigenschaften {#configuring-with-cq-editconfig-properties}
+### Konfigurieren von mit cq:EditConfig-Eigenschaften {#configuring-with-cq-editconfig-properties}
 
 ### cq:actions {#cq-actions}
 
@@ -729,7 +729,7 @@ Die folgenden Konfigurationen fügen eine Bearbeitungsschaltfläche zur Bearbeit
 </jcr:root>
 ```
 
-### cq:actionConfigs (nur klassische Benutzeroberfläche) {#cq-dialogmode-classic-ui-only}
+### cq:dialogMode (nur klassische Benutzeroberfläche) {#cq-dialogmode-classic-ui-only}
 
 Sie können die Komponente mit einem Dialogfeld „Bearbeiten“ verknüpfen. Die Eigenschaft `cq:dialogMode` (`String`) legt fest, wie das Dialogfeld für die Komponente in der klassischen Benutzeroberfläche geöffnet wird. Die folgenden Werte sind verfügbar:
 
@@ -786,7 +786,7 @@ Die Eigenschaft `dialogLayout` legt fest, wie ein Dialogfeld standardmäßig ge�
 * Benutzende können den Vollbildmodus jederzeit innerhalb des Dialogfelds ein- oder ausschalten.
 * Dies gilt nicht für die klassische Benutzeroberfläche.
 
-### Konfigurieren mit untergeordneten cq:EditConfig-Knoten {#configuring-with-cq-editconfig-child-nodes}
+### Konfigurieren von mit untergeordneten CQ:EditConfig-Knoten {#configuring-with-cq-editconfig-child-nodes}
 
 ### cq:dropTargets {#cq-droptargets}
 

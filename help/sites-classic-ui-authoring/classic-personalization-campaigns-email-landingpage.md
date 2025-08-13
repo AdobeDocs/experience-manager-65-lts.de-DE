@@ -12,8 +12,8 @@ role: User
 exl-id: 92f4946d-1f49-4286-a51e-84b2a46a6b8a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 100%
+source-wordcount: '602'
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ Um eine effektive Newsletter-Landingpage zu erstellen, müssen Sie Folgendes tun
 >[!NOTE]
 >
 >Adobe plant nicht, diese Funktionen (Lead- und Listenverwaltung) weiter auszubauen.
->Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+>>Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
 ## Erstellen einer Liste für den Newsletter {#creating-a-list-for-the-newsletter}
 
@@ -49,7 +49,7 @@ Informationen zum Erstellen Ihres eigenen Newsletter-Formulars finden Sie in der
 
 Die ausgeblendeten Felder in dem folgenden Beispiel enthalten die minimal erforderlichen Informationen (E-Mail); zusätzlich hierzu können Sie später weitere Felder hinzufügen, was jedoch Auswirkungen auf die Konversionsrate hat.
 
-Das folgende Beispiel ist ein Formular, das unter „https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html“ erstellt wurde.
+Das folgende Beispiel ist ein Formular, das unter https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html erstellt wurde.
 
 1. Erstellen Sie das Formular.
 

@@ -11,7 +11,7 @@ role: Admin
 exl-id: 3ffa7c80-ce59-41cf-bb50-c6caf77d9baa
 source-git-commit: 09f3d38e9f9c7f882d8b03dcf86db68cb8885a08
 workflow-type: tm+mt
-source-wordcount: '4196'
+source-wordcount: '4202'
 ht-degree: 98%
 
 ---
@@ -212,7 +212,7 @@ Eine Neuindizierung von Oak-Indizes muss vermieden werden, sofern nicht einer de
 
 >[!NOTE]
 >
->Bevor Sie anhand der nachstehenden Tabellen ermitteln, ob eine Neuindizierung sinnvoll ist, stellen Sie **immer &#x200B;** Folgendes sicher:
+>Bevor Sie anhand der nachstehenden Tabellen ermitteln, ob eine Neuindizierung sinnvoll ist, stellen Sie **immer ** Folgendes sicher:
 >
 >* Die Abfrage ist korrekt.
 >* Die Abfrage wird in den erwarteten Index aufgelöst (mithilfe von [Abfrage erläutern](/help/sites-administering/operations-dashboard.md#diagnosis-tools)).
@@ -282,7 +282,7 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 
       * Wenn sich Änderungen nicht auf den vorhandenen Inhalt auswirken, ist lediglich eine Aktualisierung erforderlich.
 
-         * [Aktualisieren](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) Sie den Lucene-Index, indem Sie [oak:queryIndexDefinition] @refresh=true einstellen.
+         * [Aktualisieren](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) Sie den Lucene-Index, indem Sie [oak:queryIndexDefinition]@refresh=true festlegen.
 
       * Ansonsten sollte eine [Neuindizierung](#how-to-re-index) des Lucene-Index vorgenommen werden.
 

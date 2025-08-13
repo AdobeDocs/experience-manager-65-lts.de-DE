@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6.5 LTS
-description: Erfahren Sie, wie Knotenspeicher bzw. Datenspeicher konfiguriert werden und wie eine automatische Bereinigung des Datenspeichers durchgeführt wird.
+description: Erfahren Sie, wie Knotenspeicher bzw. Datenspeicher konfiguriert werden und wie eine automatische Datenspeicherbereinigung durchgeführt wird.
 content-type: reference
 topic-tags: deploying
 docset: aem65
@@ -10,8 +10,8 @@ role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '3330'
-ht-degree: 94%
+source-wordcount: '3337'
+ht-degree: 93%
 
 ---
 
@@ -318,7 +318,7 @@ Fehlgeschlagene Uploads (etwa aufgrund von Netzwerkstörungen) werden in eine Wa
 Die folgenden Schritte sind erforderlich, um nicht binäre Replikationen mit S3 zu konfigurieren:
 
 1. Installieren Sie die Authoring- und Publishing-Instanzen und stellen Sie sicher, dass diese ordnungsgemäß gestartet werden.
-1. Gehen Sie zu den Einstellungen für den Replikationsagenten, indem Sie eine Seite in *https://localhost:4502/etc/replication/agents.author/publish.html* öffnen.
+1. Gehen Sie zu den Einstellungen für den Replikationsagenten, indem Sie eine Seite unter *https://localhost:4502/etc/replication/agents.author/publish.html* öffnen.
 1. Wählen Sie im Abschnitt **Einstellungen** die Schaltfläche **Bearbeiten**.
 1. Ändern Sie die Option für den **Serialisierungs** typ in **Nicht binär**.
 
@@ -436,7 +436,7 @@ Sie können die Konfigurationsdatei mit den folgenden Optionen verwenden:
 * azureSas=&quot;&quot;: In der Connector-Version 1.6.3 wurde Unterstützung für Azure Shared Access Signature (SAS) hinzugefügt. **Wenn in der Konfigurationsdatei sowohl SAS als auch Speicheranmeldeinformationen vorhanden sind, hat SAS Priorität.** Weitere Informationen zu SAS finden Sie in der [offiziellen Dokumentation](https://learn.microsoft.com/de-de/azure/storage/common/storage-sas-overview). Stellen Sie sicher, dass &#39;=&#39; wie folgt mit Escapezeichen versehen ist &#39;\=&#39;.
 
 * azureBlobEndpoint=&quot;&quot;: Der Azure-Blob-Endpunkt, z. B. https://&lt;Speicherkonto>.blob.core.windows.net.
-* accessKey=&quot;&quot;: Der Speicherkontoname. Weitere Informationen zu den Microsoft® Azure Anmeldeinformationen für die Authentifizierung finden Sie in der [offiziellen Dokumentation](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
+* accessKey=&quot;&quot;: Der Speicherkontoname. Weitere Informationen zu den Microsoft® Azure Anmeldeinformationen für die Authentifizierung finden Sie in der [offiziellen Dokumentation](https://learn.microsoft.com/de-de/azure/storage/common/storage-account-create).
 
 * secretKey=&quot;&quot;: Der Speicherzugriffsschlüssel. Stellen Sie sicher, dass &#39;=&#39; wie folgt mit Escapezeichen versehen ist &#39;\=&#39;.
 * container=&quot;&quot;: Der Name des Microsoft® Azure Blob Storage-Containers. Der Container ist eine Gruppierung einer Reihe von Blobs. Weitere Einzelheiten finden Sie der [offiziellen Dokumentation](https://learn.microsoft.com/de-de/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
@@ -471,7 +471,7 @@ Im Rahmen der automatischen Datenspeicherbereinigung werden nicht verwendete Dat
 
 Sie können die automatische Datenspeicherbereinigung wie folgt ausführen:
 
-1. Rufen Sie die JMX-Konsole unter der folgenden Adresse auf: *https://&lt;serveraddress:port>/system/console/jmx*
+1. Wechseln Sie zur JMX-Konsole unter *https://&lt;Server-:port>/system/console/jmx*
 1. Suchen Sie nach **RepositoryManagement.** Wenn Sie das MBean „Repository Manager“ gefunden haben, klicken Sie darauf, um die verfügbaren Optionen aufzurufen.
 1. Scrollen Sie zum Ende der Seite und klicken Sie auf den Link **startDataStoreGC(boolesches markOnly)**.
 1. Geben Sie im folgenden Dialogfeld für den Parameter `false` den Wert `markOnly` ein und klicken Sie auf **Invoke**:
@@ -480,13 +480,13 @@ Sie können die automatische Datenspeicherbereinigung wie folgt ausführen:
 
    >[!NOTE]
    >
-   >Der Parameter `markOnly` gibt an, ob die Sweeping-Phase der automatischen Bereinigung ausgeführt wird oder nicht.
+   >Der Parameter `markOnly` gibt an, ob die Sweeping-Phase der Speicherbereinigung ausgeführt wird oder nicht.
 
 ## Automatische Datenspeicherbereinigung für einen freigegebenen Datenspeicher {#data-store-garbage-collection-for-a-shared-data-store}
 
 >[!NOTE]
 >
->Wenn Sie die automatische Bereinigung für einen eingerichteten Cluster- oder freigegebenen Datenspeicher (mit Mongo oder Segment-Tar) durchführen, werden im Protokoll möglicherweise Warnungen angezeigt, wonach bestimmte Blob-IDs nicht gelöscht werden können. Blob-IDs, die in einer früheren automatischen Bereinigung gelöscht wurden, werden von anderen Cluster- oder Freigabeknoten, die keine Informationen über die ID-Löschungen haben, fälschlicherweise erneut referenziert. Daher wird bei der automatischen Bereinigung eine Warnung protokolliert, wenn versucht wird, eine bereits im vorherigen Durchgang gelöschte ID zu entfernen. Dieses Verhalten wirkt sich weder auf die Leistung noch auf die Funktionalität aus.
+>Wenn Sie die Speicherbereinigung für einen eingerichteten Cluster- oder freigegebenen Datenspeicher (mit Mongo oder Segment-Tar) durchführen, werden im Protokoll möglicherweise Warnungen angezeigt, wonach bestimmte Blob-IDs nicht gelöscht werden können. Blob-IDs, die in einer früheren Speicherbereinigung gelöscht wurden, werden von anderen Cluster- oder Freigabeknoten, die keine Informationen über die ID-Löschungen haben, fälschlicherweise erneut referenziert. Daher wird bei der Speicherbereinigung eine Warnung protokolliert, wenn versucht wird, eine bereits im vorherigen Durchgang gelöschte ID zu entfernen. Dieses Verhalten wirkt sich weder auf die Leistung noch auf die Funktionalität aus.
 
 >[!NOTE]
 >
@@ -499,7 +499,7 @@ Sie können die automatische Datenspeicherbereinigung wie folgt ausführen:
 In neueren AEM-Versionen kann die automatische Datenspeicherbereinigung auch in einem Datenspeicher durchgeführt werden, der von mehreren Repositorys genutzt wird. Führen Sie die folgenden Schritte aus, um eine automatische Datenspeicherbereinigung in einem freigegebenen Datenspeicher durchführen zu können:
 
 1. Stellen Sie sicher, dass etwaige für die automatische Datenspeicherbereinigung konfigurierten Wartungsaufgaben auf allen Repository-Instanzen, die denselben Datenspeicher nutzen, deaktiviert sind.
-1. Führen Sie die unter [Automatische Bereinigung von Binärdaten](/help/sites-deploying/data-store-config.md#data-store-garbage-collection) erwähnten Schritte einzeln auf **allen** Repository-Instanzen aus, die denselben Datenspeicher nutzen. Achten Sie jedoch darauf, den Wert `true` für den Parameter `markOnly` einzugeben, bevor Sie auf die Schaltfläche „Invoke“ klicken:
+1. Führen Sie die unter [Speicherbereinigung für Binärdaten](/help/sites-deploying/data-store-config.md#data-store-garbage-collection) erwähnten Schritte einzeln auf **allen** Repository-Instanzen aus, die denselben Datenspeicher nutzen. Achten Sie jedoch darauf, den Wert `true` für den Parameter `markOnly` einzugeben, bevor Sie auf die Schaltfläche „Invoke“ klicken:
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 

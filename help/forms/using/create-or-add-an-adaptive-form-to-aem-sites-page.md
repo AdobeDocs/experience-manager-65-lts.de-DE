@@ -72,9 +72,9 @@ Sie können diese Funktion voll nutzen, indem Sie die folgenden Optionen verwend
 
 Stellen Sie sicher, dass die [Kernkomponenten adaptiver Formulare für Ihre Umgebung aktiviert sind](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=de).
 
-+++
++++ 
 
-+++  Hinzufügen von Client-Bibliotheken adaptiver Formulare zu Ihren AEM Sites-Seiten- und Experience Fragment-Seitenkomponenten
++++  Hinzufügen von Client-Bibliotheken adaptiver Formulare zu Ihren AEM Sites-Seiten- und Experience Fragment-Seitenkomponenten 
 
 Um die vollständige Funktionalität der adaptiven Formular-Container-Komponente zu aktivieren, fügen Sie die Client-Bibliotheken „customHeaderlibs“ und „customfooterlibs“ mithilfe der Bereitstellungs-Pipeline zu Ihrer AEM Sites-Seite hinzu. So fügen Sie die Bibliotheken hinzu:
 
@@ -118,7 +118,7 @@ Um die vollständige Funktionalität der adaptiven Formular-Container-Komponente
 
 1. Wiederholen Sie die obigen Schritte für alle Authoring- und Publishing-Instanzen in Ihrer Umgebung.
 
-+++
++++ 
 
 +++ Aktivieren der Container-Komponente adaptiver Formulare
 

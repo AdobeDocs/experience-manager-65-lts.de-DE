@@ -31,7 +31,7 @@ Zeigen Sie die interaktiven Bilder in Aktion auf der oben gezeigten Webseite an,
 
 ## Sehen Sie sich an, wie interaktive Bildbanner erstellt werden {#watch-how-interactive-image-banners-are-created}
 
-Sehen Sie sich eine exemplarische Vorgehensweise dazu an, [wie interaktive Bildbanner erstellt werden](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 Minuten und 33 Sekunden). Außerdem erfahren Sie, wie Sie interaktive Bild-Banner in der Vorschau betrachten, bearbeiten und bereitstellen können.
+Sehen Sie sich eine exemplarische Vorgehensweise dazu an, [wie interaktive Bildbanner erstellt werden](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner) (10 Minuten und 33 Sekunden). Außerdem erfahren Sie, wie Sie interaktive Bild-Banner in der Vorschau betrachten, bearbeiten und bereitstellen können.
 
 ## Schnellstart: Interaktive Bilder {#quick-start-interactive-images}
 
@@ -444,27 +444,27 @@ Unter Verwendung der vorherigen Schnellansichts-URL-Beispiele können Sie in den
  <tbody>
   <tr>
    <td><p>Einzelne SKU, befindet sich in der Abfragezeichenfolge.</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
-      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
+      "quickViewActivate": function(inData) {
+      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;amp;source=100";
+      },
+      });</code></td>
   </tr>
   <tr>
    <td><p>Einzelne SKU, befindet sich im URL-Pfad.</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
    <td><p>SKU und Kategorie-ID in der Abfragezeichenfolge.</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
-      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
+      "quickViewActivate": function(inData) {
+      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;amp;prodId=" + inData.sku;
+      },
+      });</code></td>
   </tr>
  </tbody>
 </table>

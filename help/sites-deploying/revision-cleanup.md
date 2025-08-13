@@ -11,7 +11,7 @@ role: Admin
 exl-id: 114a77bc-0b7e-49ce-bca1-e5195b4884dc
 source-git-commit: 3cbc2ddd4ff448278e678d1a73c4ee7ba3af56f4
 workflow-type: tm+mt
-source-wordcount: '5139'
+source-wordcount: '5142'
 ht-degree: 98%
 
 ---
@@ -212,7 +212,7 @@ Manchmal verzögert der Wechsel zwischen dem Tail- und dem vollständigen Kompri
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Warum wird die Revisionsbereinigung übersprungen?</strong></td>
+   <td><strong>Warum wird die Revisionsspeicherbereinigung übersprungen?</strong></td>
    <td><p>Die Revisionsbereinigung beruht auf einer Schätzungsphase, in der entschieden wird, ob ausreichend Datenabfall zur Bereinigung vorhanden ist. Bei der Schätzung wird die aktuelle Größe mit der Größe des Repositorys nach der letzten Komprimierung verglichen. Wenn die Größe das konfigurierte Delta überschreitet, wird die Bereinigung ausgeführt. Der Deltawert für die Größe beträgt 1 GB. In der Praxis bedeutet dies: Falls die Repository-Größe seit der letzten Bereinigung um weniger als 1 GB gewachsen ist, wird die neue Iteration der Revisionsbereinigung übersprungen. </p> <p>Unten sehen Sie die für die Schätzungsphase relevanten Protokolleinträge:</p>
     <ul>
      <li>Revision GC runs: <em>Size delta is N% or N/N (N/N bytes), so running compaction</em></li>
@@ -222,7 +222,7 @@ Manchmal verzögert der Wechsel zwischen dem Tail- und dem vollständigen Kompri
   </tr>
   <tr>
    <td><strong>Kann die automatische Komprimierung abgebrochen werden, falls die Auswirkung auf die Leistung zu groß ist?</strong></td>
-   <td>Ja. Ab AEM 6.3 kann sie sicher über das Wartungsaufgaben-Fenster im Vorgangs-Dashboard oder über JMX beendet werden.</td>
+   <td>Ja. Ab AEM 6.3 kann sie sicher über das Wartungsaufgaben-Fenster im Vorgangs-Dashboard oder über JMX gestoppt werden.</td>
    <td> </td>
   </tr>
   <tr>
@@ -261,7 +261,7 @@ Manchmal verzögert der Wechsel zwischen dem Tail- und dem vollständigen Kompri
   </tr>
   <tr>
    <td><strong>Kann die Offline-Revisionsbereinigung mehr Speicherplatz freigeben als die Online-Revisionsbereinigung?</strong></td>
-   <td><p>Bei der Offline-Revisionsbereinigung können alte Revisionen sofort entfernt werden, während bei der Online-Revisionsbereinigung alte Revisionen berücksichtigt werden müssen, auf die noch vom Anwendungsstapel verwiesen wird. Bei der Offline-Revisionsbereinigung werden alte Daten also aggressiver bereinigt, während sich bei der Online-Revisionsbereinigung der Effekt erst nach einigen Bereinigungszyklen zeigt.</p> <p>Lesen Sie hierzu auch den Abschnitt „Ausführen der Online-Revisionsbereinigung nach der Offline-Revisionsbereinigung“ in <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup">diesem Kapitel</a>.</p> </td>
+   <td><p>Bei der Offline-Revisionsbereinigung können alte Revisionen sofort entfernt werden, während bei der Online-Revisionsbereinigung alte Revisionen berücksichtigt werden müssen, auf die noch vom Anwendungsstapel verwiesen wird. Bei der Offline-Revisionsbereinigung werden alte Daten also aggressiver bereinigt, während sich bei der Online-Revisionsbereinigung der Effekt erst nach einigen Speicherbereinigungszyklen zeigt.</p> <p>Lesen Sie hierzu auch den Abschnitt „Ausführen der Online-Revisionsbereinigung nach der Offline-Revisionsbereinigung“ in <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup">diesem Kapitel</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -307,7 +307,7 @@ Manchmal verzögert der Wechsel zwischen dem Tail- und dem vollständigen Kompri
    <td><strong>Welche Protokolleinträge sind relevant?</strong></td>
    <td>
     <ul>
-     <li>Die Online-Revisionsbereinigung wurde gestartet/beendet
+     <li>Die Online-Revisionsbereinigung wurde gestartet/gestoppt
       <ul>
        <li>Die Online-Revisionsbereinigung umfasst drei Phasen: Schätzung, Komprimierung und Bereinigung. In der Schätzungsphase kann das Überspringen der Komprimierung und Bereinigung erzwungen werden, falls das Repository nicht ausreichend viele alte Daten enthält. In der neuesten Version von AEM markiert die Meldung „<code>TarMK GC #{}: estimation started</code>“ den Beginn der Schätzung, „<code>TarMK GC #{}: compaction started, strategy={}</code>“ markiert den Beginn der Komprimierung und „T<code>arMK GC #{}: cleanup started. Current repository size is {} ({} bytes</code>“ markiert den Beginn der Bereinigung.</li>
       </ul> </li>
@@ -409,7 +409,7 @@ Manchmal verzögert der Wechsel zwischen dem Tail- und dem vollständigen Kompri
     <ol>
      <li>Eine Anwendung, die die empfohlenen Zugriffsmechanismen (wie Sling und die JCR-API) umgeht und eine API/SPI auf niedrigerer Ebene verwendet, um auf das Repository zuzugreifen, und dann die Aufbewahrungsdauer eines Segments überschreitet. Das heißt, sie bewahrt einen Verweis auf eine Entität länger auf als die von der Online-Revisionsbereinigung erlaubte Aufbewahrungsdauer (standardmäßig 24 Stunden). Dieser Fall ist vorübergehend und führt nicht zu einer Beschädigung der Daten. Verwenden Sie für die Wiederherstellung das Tool „oak-run“, um den vorübergehenden Status der Ausnahme zu bestätigen (bei der Überprüfung mit „oak-run“ sollten keine Fehler gemeldet werden). Hierzu müssen Sie die Instanz in den Offline-Modus versetzen und anschließend neu starten.</li>
      <li>Ein externes Ereignis verursachte die Beschädigung der Daten auf der Festplatte. Dabei kann es sich um einen Datenträgerfehler, ungenügenden Speicherplatz oder eine versehentliche Änderung der erforderlichen Datendateien handeln. In diesem Fall muss die Instanz offline geschaltet und mithilfe der Prüfung mit „oak-run“ repariert werden. Weitere Informationen zum Ausführen von Prüfungen mit „oak-run“ finden Sie in der <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache-Dokumentation</a>.</li>
-     <li>Bei allen anderen Vorfällen wenden Sie sich an die <a href="https://experienceleague.adobe.com/de?lang=de&amp;support-solution=General&amp;support-tab=home#support" target="_blank">Adobe-Kundenunterstützung</a>.</li>
+     <li>Bei allen anderen Vorfällen wenden Sie sich an die <a href="https://experienceleague.adobe.com/?lang=de&amp;support-solution=General&amp;support-tab=home#support" target="_blank">Adobe-Kundenunterstützung</a>.</li>
     </ol> </td>
    <td> </td>
   </tr>
@@ -555,9 +555,9 @@ java -Dupdate.limit=10000 -Dcompaction-progress-log=150000 -Dlogback.configurati
 
 Zusätzlich zu den oben beschriebenen Methoden können Sie den Revisionsbereinigungsmechanismus auch wie folgt mithilfe der JMX-Konsole auslösen:
 
-1. Öffnen Sie die JMX-Konsole, indem Sie zu [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx) wechseln.
+1. Öffnen Sie die JMX-Konsole unter [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)
 1. Klicken Sie auf MBean **RevisionGarbageCollection**.
-1. Klicken Sie im nächsten Fenster auf **startRevisionGC()** und dann auf **Invoke**, um den Vorgang der Revisionsbereinigung zu starten.
+1. Klicken Sie im nächsten Fenster auf **startRevisionGC()** und dann auf **Invoke**, um den Vorgang der Revisionsspeicherbereinigung zu starten.
 
 ### Häufig gestellte Fragen zur Offline-Revisionsbereinigung {#offline-revision-cleanup-frequently-asked-questions}
 

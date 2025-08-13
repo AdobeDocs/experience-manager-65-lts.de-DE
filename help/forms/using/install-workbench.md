@@ -104,7 +104,7 @@ Die vollständige Liste der unterstützten Plattformen für Workbench finden Sie
 
 ## Überlegungen zur Installation von Designer {#designer-installation-considerations}
 
-Standardmäßig enthält die Workbench-Installation eine entsprechende englischsprachige Version von Designer. Wenn das Programm zur Installation von Workbench eine vorhandene Version von Designer auf Ihrem Computer erkennt, kann es sein, dass die Installation abbricht und Sie aufgefordert werden, erst Ihre aktuelle Version von Designer zu entfernen, bevor Sie fortfahren können.
+Standardmäßig enthält die Workbench-Installation eine entsprechende englischsprachige Version von Designer. Wenn das Programm zur Installation von Workbench eine vorhandene Version von Designer auf Ihrem Computer erkennt, kann es sein, dass die Installation beendet wird und Sie aufgefordert werden, erst Ihre aktuelle Version von Designer zu entfernen, bevor Sie fortfahren können.
 Die nachstehende Tabelle enthält eine vollständige Liste der möglichen Installationsszenarien für Designer, auf die Sie stoßen können, sowie alle Aktionen, die Sie bei der Installation von Workbench ausführen müssen.
 
 <table>

@@ -93,6 +93,6 @@ Beachten Sie, dass Sie ohne [!DNL Assets]-Lizenz keine Smart Tags, [!DNL Asset]-
 
 >[!MORELIKETHIS]
 >
->* [DAM-Funktionen in  [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/assets/assets)
+>* [DAM-Funktionen in  [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/assets/assets)
 >* [[!DNL Experience Manager] 6.5 Managed Services – Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html)
 >* [[!DNL Experience Manager] 6.5 On-Premise – Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html)

@@ -20,7 +20,7 @@ ht-degree: 32%
 |---|---|
 | Version | 6,5 LTS |
 | Typ | Hauptversion |
-| Datum der allgemeinen Verfügbarkeit | Samstag, 7. März 2025 |
+| Datum der allgemeinen Verfügbarkeit | &#x200B;7. März 2025 |
 
 ## Neue Funktionen {#what-s-new}
 

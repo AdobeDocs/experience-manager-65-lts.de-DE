@@ -11,8 +11,8 @@ role: Admin
 exl-id: c0b285b7-3b20-4412-88b8-04de4a703f42
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '2323'
-ht-degree: 98%
+source-wordcount: '2338'
+ht-degree: 95%
 
 ---
 
@@ -97,7 +97,7 @@ Sie können auch die Web-Konsole zum Anzeigen von Topologie-Informationen verwen
 
 Gehen Sie wie folgt vor, um die Seite „Topology Management“ der Web-Konsole zu öffnen:
 
-1. Öffnen Sie die Web-Konsole in Ihrem Browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
+1. Öffnen Sie die Web-Konsole in Ihrem Browser. http://localhost ([:4502/system/console](http://localhost:4502/system/console))
 1. Klicken Sie auf Sling > Topology Management.
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
@@ -111,7 +111,7 @@ Der Discovery-Dienst sendet regelmäßig POST-Anforderungen (Heartbeats) an Topo
 * Um eine Instanz zum Topologie-Mitglied zu machen, geben Sie die URL für den Topologie-Connector-Dienst des Stamm-Mitglieds an.
 * Um einer Instanz den Beitritt zu einer Topologie zu ermöglichen, fügen Sie die Instanz zur Zulassungsliste des Topologie-Connector-Dienstes des Stammmitglieds hinzu.
 
-Verwenden Sie die Web-Konsole oder einen sling:OsgiConfig-Knoten, um die folgenden Eigenschaften des Dienstes „org.apache.sling.discovery.impt.Config“ zu konfigurieren:
+Verwenden Sie die Web-Konsole oder einen sling:OsgiConfig-Knoten, um die folgenden Eigenschaften des Service org.apache.sling.discovery.impt.Config zu konfigurieren:
 
 <table>
  <tbody>
@@ -162,14 +162,14 @@ Verwenden Sie die Web-Konsole oder einen sling:OsgiConfig-Knoten, um die folgend
 
 Gehen Sie wie folgt vor, um eine CQ-Instanz mit dem Stamm-Mitglied einer Topologie zu verbinden. Die Instanz verweist dann auf die Topologie-Connector-URL des Stamm-Mitglieds der Topologie. Führen Sie diese Schritte für alle Topologiemitglieder durch.
 
-1. Öffnen Sie die Web-Konsole in Ihrem Browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
+1. Öffnen Sie die Web-Konsole in Ihrem Browser. http://localhost ([:4502/system/console](http://localhost:4502/system/console))
 1. Klicken Sie auf das Hauptmenü > „Topologieverwaltung“.
 1. Klicken Sie auf die Option zum Konfigurieren des Discovery-Dienstes.
 1. Fügen Sie ein Element zur Eigenschaft „Topology Connector URLs“ hinzu und geben Sie die URL des Topologie-Connector-Dienstes für das Stamm-Mitglied der Topologie an. Die URL hat die Form https://rootservername:4502/libs/sling/topology/connector.
 
 Führen Sie die folgenden Schritte für das Stamm-Mitglied der Topologie aus. Dadurch werden die Namen der anderen Topologiemitglieder der Zulassungsliste für den Discovery-Dienst hinzugefügt.
 
-1. Öffnen Sie die Web-Konsole in Ihrem Browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
+1. Öffnen Sie die Web-Konsole in Ihrem Browser. http://localhost ([:4502/system/console](http://localhost:4502/system/console))
 1. Klicken Sie auf das Hauptmenü > „Topologieverwaltung“.
 1. Klicken Sie auf die Option zum Konfigurieren des Discovery-Dienstes.
 1. Fügen Sie für jedes Topologiemitglied ein Element zur Eigenschaft „Topologie-Connectoren-Zulassungsliste“ hinzu und geben Sie den Hostnamen oder die IP-Adresse des Topologiemitglieds an.
@@ -208,7 +208,7 @@ Die Installation von Experience Manager umfasst mehrere implementierte JobConsum
 | Auftragsthema | Service-PID | Beschreibung |
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Mit Apache Sling installiert. Verarbeitet Aufträge, die vom OSGi-Event-Admin-Dienst aus Gründen der Abwärtskompatibilität generiert werden. |
-| com/day/cq/replication/job/&ast; | com.day.cq.replication.impl.AgentManagerImpl | Ein Replikationsagent, der Auftrags-Payloads repliziert. |
+| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Ein Replikationsagent, der Auftrags-Payloads repliziert. |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -226,7 +226,7 @@ Verwenden Sie die Web-Konsole oder einen `sling:OsgiConfig`-Knoten, um die folge
 
 | Eigenschaftsname in der Web-Konsole | OSGi-ID | Beschreibung |
 |---|---|---|
-| Themen auf der Zulassungsliste | job.consumermanager.whitelist | Eine Liste von Themen, die der lokale JobManager-Dienst verarbeitet. Der Standardwert „&ast;“ sorgt dafür, dass alle Themen an den registrierten TopicConsumer-Dienst gesendet werden. |
+| Themen auf der Zulassungsliste | job.consumermanager.whitelist | Eine Liste von Themen, die der lokale JobManager-Dienst verarbeitet. Der Standardwert „&amp;ast;“ sorgt dafür, dass alle Themen an den registrierten TopicConsumer-Dienst gesendet werden. |
 | Themen auf der Blockierungsliste | job.consumermanager.blacklist | Eine Liste von Themen, die der lokale JobManager-Dienst nicht verarbeitet. |
 
 ## Erstellen von Replikationsagenten zum Auslagern {#creating-replication-agents-for-offloading}

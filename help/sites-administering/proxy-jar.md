@@ -12,8 +12,8 @@ role: Developer
 exl-id: d918ddf2-aa70-4742-97d5-24a2c51f578a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 100%
+source-wordcount: '1173'
+ht-degree: 98%
 
 ---
 
@@ -143,7 +143,7 @@ Sehen Sie sich diese einfache Vorlage an, die bei Anforderung folgenden Code erz
 </html>
 ```
 
-Wenn AEM auf „localhost:4303“ ausgeführt wird, starten Sie den Proxy-Server wie folgt:
+Wenn AEM auf localhost:4303 ausgeführt wird, starten Sie den Proxy-Server wie folgt:
 
 ```xml
 java -jar proxy.jar localhost 4303 4444 -logfile test.log

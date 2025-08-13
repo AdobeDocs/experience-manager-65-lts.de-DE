@@ -11,8 +11,8 @@ role: Admin
 exl-id: 893d04cb-3a71-4400-9ca4-62ad46aacfdd
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 100%
+source-wordcount: '1740'
+ht-degree: 99%
 
 ---
 
@@ -189,7 +189,7 @@ Um eine Zuordnung vom Dienst zu den entsprechenden Systembenutzerinnen und -benu
 
 1. Installieren Sie Ihr Paket und stellen Sie sicher, dass die Werkskonfiguration installiert ist. Gehen Sie dazu wie folgt vor:
 
-   * Wechseln Sie zur Web-Konsole unter *https://Serverhost:Server-Adresse/system/console/configMgr*.
+   * Wechseln Sie zur Web-Konsole unter *https://serverhost:serveraddress/system/console/configMgr*
    * Suchen Sie nach **Apache Sling Service User Mapper Service Amendment**.
    * Klicken Sie auf den Link, um zu sehen, ob die korrekte Konfiguration vorhanden ist.
 

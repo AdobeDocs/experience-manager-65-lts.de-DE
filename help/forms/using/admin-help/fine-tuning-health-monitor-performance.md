@@ -66,7 +66,7 @@ Das Sammeln der Systemstatistiken, die in der Systemüberwachung angegeben werde
 
 ## Hinzufügen von Java-Optionen zu JBoss {#add-java-options-to-jboss}
 
-1. Beenden Sie den JBoss-Anwendungs-Server.
+1. Stoppen Sie den JBoss-Anwendungs-Server.
 1. Öffnen Sie „*[Programm-Server-Stammordner]*/bin/run.bat“ (Windows) oder „run.sh“ (Linux oder UNIX) in einem Texteditor und fügen Sie die Java-Optionen Ihren Anforderungen entsprechend hinzu.
 1. Starten Sie den Server neu.
 

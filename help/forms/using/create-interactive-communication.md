@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: 6d24ce27-4653-4a70-97d0-e4299eceb32c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6130'
-ht-degree: 100%
+source-wordcount: '6129'
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ Die folgenden Voraussetzungen müssen erfüllt sein, um eine interaktive Kommuni
 
    * **[!UICONTROL Nachbearbeitung]**: Wählen Sie den Namen des Workflows aus, der ausgelöst werden soll. Wenn Sie den AEM-Workflow auswählen, geben Sie den jeweiligen Pfad für die Anhänge, das Layout, die PDF-Datei, die Druckdaten und die Web-Daten an.
    * **[!UICONTROL Tags]**: Wählen Sie die Tags aus, die auf die interaktive Kommunikation angewendet werden sollen. Sie können auch einen neuen/benutzerdefinierten Tag-Namen eingeben und die Eingabetaste drücken, um ihn zu erstellen.
-   * **[!UICONTROL Autor]**: Der Name des Autors wird automatisch aus dem Benutzernamen des angemeldeten Benutzers übernommen.
+   * **[!UICONTROL Autor]**:The Der Name des Autors wird automatisch aus dem Benutzernamen des angemeldeten Benutzers übernommen.
    * **[!UICONTROL Veröffentlichungsdatum:]** Geben Sie das Datum ein, an dem die interaktive Kommunikation veröffentlicht werden soll.
    * **[!UICONTROL Datum der Aufhebung der Veröffentlichung]**: Geben Sie das Datum ein, an dem die Veröffentlichung der interaktiven Kommunikation aufgehoben werden soll.
 

@@ -164,7 +164,7 @@ Die Out-of-Band-Neuindizierung minimiert die Auswirkung der Neuindizierung auf v
 >
 >ACS Ensure Index ist ein Community-Projekt, das nicht vom Adobe-Support unterstützt wird.
 
-Es ermöglicht das Versenden der Indexdefinition über ein Inhaltspaket, das später zu einer Neuindizierung führt, indem für das Neuindizierungs-Flag der Wert `true` festgelegt wird. Dies funktioniert für kleinere Setups, bei denen die Neuindizierung nicht viel Zeit in Anspruch nimmt.
+Es ermöglicht den Versand der Indexdefinition über ein Inhaltspaket, das später zu einer Neuindizierung führt, indem für das Neuindizierungs-Flag der Wert `true` festgelegt wird. Dies funktioniert für kleinere Setups, bei denen die Neuindizierung nicht viel Zeit in Anspruch nimmt.
 
 Weitere Informationen finden Sie in der [Dokumentation zu ACS Ensure Index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html).
 

@@ -12,8 +12,8 @@ role: Admin
 exl-id: 0c20efb1-9b01-41ef-b38d-261fb4b0ff91
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6662'
-ht-degree: 100%
+source-wordcount: '6654'
+ht-degree: 97%
 
 ---
 
@@ -802,7 +802,7 @@ Dieses Abweichen von JCR-Resteigenschaften hin zu einer dedizierten Zugriffssteu
 
 Erstellen Sie CUG-Richtlinien am JCR-Knoten, der die Unterstruktur definiert, die einem eingeschränkten Lesezugriff unterliegen soll. Hierbei handelt es sich wahrscheinlich um eine AEM-Seite, falls die CUG die gesamte Baumstruktur betreffen soll.
 
-Wird die CUG-Richtlinie am Knoten „jcr:content“ unterhalb einer bestimmten Seite platziert, so wird nur der Zugriff auf den Inhalt (im engeren Sinne) einer bestimmten Seite eingeschränkt, wobei die Richtlinie keine Auswirkungen auf gleichrangige oder untergeordnete Seiten hat. Dies kann ein gültiger Anwendungsfall sein. Sie erreichen dies mithilfe eines Repository-Editors, der die Anwendung detaillierter Zugriffssteuerungsinhalte erlaubt. Bei der früheren Implementierung hingegen wurde eine auf dem Knoten „jcr:content“ platzierte Eigenschaft „cq:cugEnabled“ intern dem Seitenknoten zugeordnet. Diese Zuordnung wird nicht mehr durchgeführt.
+Durch Platzieren der CUG-Richtlinie nur auf dem jcr:content-Knoten unterhalb einer bestimmten Seite wird nur der Zugriff auf den Inhalt s.str einer bestimmten Seite eingeschränkt. Diese Richtlinie wird jedoch nicht für gleichrangige oder untergeordnete Seiten wirksam. Dies kann ein gültiger Anwendungsfall sein. Sie erreichen dies mithilfe eines Repository-Editors, der die Anwendung detaillierter Zugriffssteuerungsinhalte erlaubt. Im Gegensatz zur vorherigen Implementierung wurde die Platzierung einer cq:cugEnabled-Eigenschaft auf dem jcr:content-Knoten intern dem Seitenknoten zugeordnet. Diese Zuordnung wird nicht mehr durchgeführt.
 
 **Auswertung der Berechtigung mit CUG-Richtlinien**
 
@@ -843,13 +843,13 @@ Was `granite:loginPath` angeht, wird dieselbe Berechtigung benötigt, um die Eig
 
 Erstellen Sie Authentifizierungsanforderungen am JCR-Knoten, der die Unterstruktur definiert, die der erzwungenen Anmeldung unterliegen soll. Hierbei handelt es sich wahrscheinlich um eine AEM-Seite, falls die CUG die gesamte Baumstruktur betreffen soll. Die Benutzeroberfläche für die neue Implementierung fügt daher den Mixin-Typ „auth-requirement“ zum Seitenknoten hinzu.
 
-Wird die CUG-Richtlinie am Knoten „jcr:content“ unterhalb einer bestimmten Seite platziert, so wird nur der Zugriff auf den Inhalt einer bestimmten Seite eingeschränkt.  Dies hat jedoch keine Auswirkungen auf den Seitenknoten selbst oder auf untergeordnete Seiten.
+Durch Platzieren der CUG-Richtlinie nur im jcr:content-Knoten unterhalb einer bestimmten Seite wird nur der Zugriff auf den Inhalt beschränkt. Dies hat jedoch keine Auswirkungen auf den Seitenknoten selbst oder auf untergeordnete Seiten.
 
-Dies kann ein gültiges Szenario sein. Sie erreichen dies mithilfe eines Repository-Editors, der die Platzierung des Mixins an einem beliebigen Knoten ermöglicht. Allerdings stellt das Verhalten einen Kontrast zur vorherigen Implementierung dar, wo eine auf dem Knoten „jcr:content“ platzierte Eigenschaft „cq:cugEnabled“ oder „cq:cugLoginPage“ intern dem Seitenknoten zugeordnet wurde. Diese Zuordnung wird nicht mehr durchgeführt.
+Dies kann ein gültiges Szenario sein. Sie erreichen dies mithilfe eines Repository-Editors, der die Platzierung des Mixins an einem beliebigen Knoten ermöglicht. Das Verhalten unterscheidet sich jedoch von der früheren Implementierung, bei der eine CQ:cugEnabled- oder CQ:cugLoginPage-Eigenschaft auf dem jcr:content-Knoten intern dem Seitenknoten zugeordnet wurde. Diese Zuordnung wird nicht mehr durchgeführt.
 
 #### Konfigurierte unterstützte Pfade {#configured-supported-paths}
 
-Sowohl der Mixin-Typ `granite:AuthenticationRequired` als auch die Eigenschaft „granite:loginPath“ werden nur innerhalb des Bereichs berücksichtigt, der durch den Konfigurationsoptionssatz **Unterstützte Pfade** in **Adobe Granite Authentication Requirement and Login Path Handler** definiert wird. Wenn keine Pfade festgelegt werden, wird die Funktion zur Authentifizierungspflicht komplett deaktiviert. In diesem Fall werden weder der Mixin-Typ noch die Eigenschaft wirksam, wenn sie hinzugefügt oder auf einen JCR-Knoten festgelegt werden.
+Sowohl der Mixin-Typ `granite:AuthenticationRequired` als auch die Eigenschaft &quot;:loginPathgranite“ werden nur innerhalb des Bereichs berücksichtigt, der durch den Konfigurationsoptionssatz **Unterstützte Pfade** in **Adobe Granite Authentication Requirement and Login Path Handler definiert**. Wenn keine Pfade festgelegt werden, wird die Funktion zur Authentifizierungspflicht komplett deaktiviert. In diesem Fall werden weder der Mixin-Typ noch die Eigenschaft wirksam, wenn sie hinzugefügt oder auf einen JCR-Knoten festgelegt werden.
 
 ### Zuordnen von JCR-Inhalt, OSGi-Diensten und Konfigurationen {#mapping-of-jcr-content-osgi-services-and-configurations}
 

@@ -11,8 +11,8 @@ role: Developer
 exl-id: 42ad741e-49d6-4acb-a45c-0a6750f6fdbb
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2237'
-ht-degree: 100%
+source-wordcount: '2228'
+ht-degree: 95%
 
 ---
 
@@ -74,7 +74,7 @@ Erklären Sie alle Abfragen und stellen Sie sicher, dass sie in einen Index aufg
 
 Vor dem Hinzufügen der cq:tags-Indexregel
 
-* **cq:tags-Index-Regel**
+* **cq:tags-Indexregel**
 
    * Nicht standardmäßig vorhanden
 
@@ -94,7 +94,7 @@ Diese Abfrage wird auf den Index `cqPageLucene` aufgelöst. Da jedoch keine Eige
 
 Nach dem Hinzufügen der cq:tags-Indexregel
 
-* **cq:tags-Index-Regel**
+* **cq:tags-Indexregel**
 
   ```js
   /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
@@ -120,7 +120,7 @@ Wenn eine Abfrage mit der Einschränkung `jcr:content/cq:tags` durchgeführt wir
 
 Weitere Abfragebeschränkungen verringern die möglichen Ergebnismengen und erlauben eine weitere Abfrageoptimierung.
 
-Ebenso würde ohne eine weitere Indexregel für die Eigenschaft `cq:tags` selbst eine Volltextabfrage mit einer Einschränkung auf `cq:tags` schlecht abschneiden, da die Ergebnisse aus dem Index alle Volltexttreffer zurückgeben würden. Die Einschränkung auf cq:tags würde anschließend gefiltert werden.
+Ebenso würde ohne eine weitere Indexregel für die Eigenschaft `cq:tags` selbst eine Volltextabfrage mit einer Einschränkung auf `cq:tags` schlecht abschneiden, da die Ergebnisse aus dem Index alle Volltexttreffer zurückgeben würden. Die Einschränkung für cq:tags würde anschließend gefiltert werden.
 
 Eine weitere Ursache für ein Filtern nach dem Index sind Zugangssteuerungslisten, die bei der Entwicklung oft übersehen werden. Versuchen Sie sicherzustellen, dass die Abfrage keine Pfade zurückgibt, auf die die Benutzenden möglicherweise nicht zugreifen können. Dies kann durch eine bessere Inhaltsstruktur sowie durch Bereitstellung relevanter Pfadbeschränkungen für die Abfrage erfolgen.
 
@@ -200,7 +200,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwickelnden 
 
   Bei Abfragen ohne Knotentyp-Einschränkung muss AEM den nodetype `nt:base` annehmen. Da jeder Knoten in AEM davon ein Untertyp ist, führt dies effektiv zu keiner Knotentyp-Einschränkung.
 
-  Wenn Sie `type=cq:Page` setzen, wird die Abfrage auf `cq:Page`-Knoten beschränkt und auf cqPageLucene von AEM aufgelöst. Dadurch werden die Ergebnisse auf eine Untergruppe von Knoten (nur `cq:Page`-Knoten) in AEM beschränkt.
+  Wenn Sie `type=cq:Page` setzen, wird die Abfrage auf `cq:Page`-Knoten beschränkt und auf cqPageLucene von AEM aufgelöst. Dadurch werden die Ergebnisse auf eine Teilmenge von Knoten (nur `cq:Page`-Knoten) in AEM beschränkt.
 
 1. Passen Sie die Knotentyp-Einschränkung der Abfrage an, sodass sie auf einen vorhandenen Lucene-Eigenschaftsindex aufgelöst wird.
 
@@ -225,7 +225,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwickelnden 
    * Andere Knoten erben von `nt:hierarchyNode` (z. B. `dam:Asset`), wodurch die Menge der möglichen Ergebnisse unnötig vergrößert wird.
    * Es gibt keinen von AEM bereitgestellten Index für `nt:hierarchyNode`. Ein Index ist jedoch für `cq:Page` vorhanden.
 
-  Wenn Sie `type=cq:Page` setzen, wird die Abfrage auf `cq:Page`-Knoten beschränkt und auf cqPageLucene von AEM aufgelöst. Dadurch werden die Ergebnisse auf eine Untergruppe von Knoten (nur cq:Page-Knoten) in AEM beschränkt.
+  Wenn Sie `type=cq:Page` setzen, wird die Abfrage auf `cq:Page` Knoten beschränkt und auf cqPageLucene von AEM aufgelöst. Dadurch werden die Ergebnisse auf eine Untergruppe von Knoten (nur cq:Page-Knoten) in AEM beschränkt.
 
 1. Sie können auch die Eigenschaftsbeschränkungen anpassen, sodass die Abfrage auf einen vorhandenen Eigenschaftsindex aufgelöst wird.
 
@@ -290,7 +290,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwickelnden 
   fulltext.relPath=jcr:content/contentType
   ```
 
-  Die Bedingung LIKE wird langsam geprüft, da kein Index verwendet werden kann, wenn der Text mit einem Platzhalter (&quot;%...&#39;) beginnt. Die Bedingung jcr: ermöglicht die Verwendung eines Volltext-Index und wird daher bevorzugt. Der aufgelöste Lucene-Eigenschaftsindex benötigt dazu indexRule für `jcr:content/contentType` mit `analayzed=true`.
+  Die Bedingung LIKE wird langsam geprüft, da kein Index verwendet werden kann, wenn der Text mit einem Platzhalter (&quot;%...&#39;) beginnt. Die jcr:contains-Bedingung ermöglicht die Verwendung eines Volltextindex und wird daher bevorzugt. Der aufgelöste Lucene-Eigenschaftsindex benötigt dazu indexRule für `jcr:content/contentType` mit `analayzed=true`.
 
   Das Verwenden von Abfragefunktionen wie `fn:lowercase(..)` kann schwieriger zu optimieren sein, da es keine schnelleren Äquivalente gibt (abgesehen von komplexeren und aufdringlicheren Indexanalysekonfigurationen). Es ist am besten, andere Scoping-Einschränkungen zu identifizieren, um die Gesamtabfrageleistung zu verbessern, sodass die Funktionen nur auf die kleinstmögliche Anzahl möglicher Ergebnisse angewendet werden müssen.
 
@@ -363,8 +363,8 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwickelnden 
 
 1. Führen Sie manuell die generierte Definition additiv mit dem vorhandenen Lucene-Eigenschaftsindex zusammen. Achten Sie darauf, dass Sie keine vorhandenen Konfigurationen entfernen, da sie möglicherweise zum Erfüllen anderer Abfragen verwendet werden.
 
-   1. Suchen Sie nach dem vorhandenen Lucene-Eigenschaftsindex, der cq:Page abdeckt (mithilfe von Index Manager). In diesem Fall, `/oak:index/cqPageLucene`.
-   1. Identifizieren Sie die Konfigurationsunterschiede zwischen der optimierten Indexdefinition (Schritt 4) und dem vorhandenen Index (/oak:index/cqPageLucene) und fügen Sie die fehlenden Konfigurationen aus dem optimierten Index zur vorhandenen Indexdefinition hinzu.
+   1. Suchen Sie den vorhandenen Lucene-Eigenschaftsindex, der cq:Page abdeckt (mithilfe des Index-Managers). In diesem Fall, `/oak:index/cqPageLucene`.
+   1. Identifizieren Sie das Konfigurationsdelta zwischen der optimierten Indexdefinition (Schritt #4) und dem vorhandenen Index (/oak:index/cqPageLucene) und fügen Sie die fehlenden Konfigurationen aus dem optimierten Index zur vorhandenen Indexdefinition hinzu.
    1. Gemäß der Best Practices zur Neuindizierung in AEM müssen Sie entweder eine Aktualisierung oder eine Neuindizierung durchführen, je nachdem, ob vorhandene Inhalte von dieser Indexkonfigurationsänderung betroffen sind oder nicht.
 
 ## Erstellen eines neuen Index {#create-a-new-index}

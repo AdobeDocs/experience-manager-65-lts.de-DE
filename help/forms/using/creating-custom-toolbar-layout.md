@@ -11,8 +11,8 @@ feature: Adaptive Forms,Foundation Components
 exl-id: f9ff1458-6fc9-476a-a03e-c651464105d4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '522'
+ht-degree: 97%
 
 ---
 
@@ -65,7 +65,7 @@ Beispiel für ein benutzerdefiniertes Symbolleisten-Layout
 
 1. Benennen Sie den kopierten Knoten `mobileFixedToolbarLayout` in `customToolbarLayout.` um.
 
-   Geben Sie außerdem eine relevante Beschreibung für den Knoten an. Ändern Sie beispielsweise die „jcr:description“ des Knotens in **Benutzerdefiniertes Layout für Symbolleiste**.
+   Geben Sie außerdem eine relevante Beschreibung für den Knoten an. Ändern Sie beispielsweise „jcr“ :description Knotens in &quot;**Layout für Symbolleiste**.
 
    Die Eigenschaft `guideComponentType` des Knotens legt den Layouttyp fest. In diesem Fall ist der Layouttyp „Symbolleiste“. Daher wird er in der Auswahl-Dropdown-Liste für das Symbolleistenlayout angezeigt.
 

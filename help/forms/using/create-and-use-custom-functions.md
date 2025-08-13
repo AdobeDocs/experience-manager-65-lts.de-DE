@@ -7,7 +7,7 @@ exl-id: 40329e80-d794-4e43-8ed4-d88ce3c48751
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Syntax: `@private` Eine Private-Funktion ist nicht als benutzerdefinierte Funkti
 
 * **Name**
 Syntax: `@name funcName <Function Name>`
-Alternativ dazu ist es möglich`,` `@function funcName <Function Name>` **oder** `@func` `funcName <Function Name>` zu verwenden.
+Alternativ dazu ist es möglich`,``@function funcName <Function Name>` **oder** `@func` `funcName <Function Name>` zu verwenden.
   `funcName` ist der Name der Funktion (Leerzeichen sind nicht zulässig).
   `<Function Name>` ist der Anzeigename der Funktion.
 
@@ -86,7 +86,7 @@ Zeigt die von der Funktion verwendeten Parameter an. In einer Funktion können m
 * **Return Type** (Rückgabetyp)
 Syntax: `@return {type}`
 Alternativ ist es möglich, `@returns {type}` zu verwenden.
-Fügt Informationen über die Funktion hinzu, z. B. ihr Ziel.
+Fügt Informationen über die Funktion hinzu (z. B. ihren Zweck).
   {type} gibt den Rückgabetyp der Funktion an. Zulässige Rückgabetypen sind:
 
    1. Zeichenfolge

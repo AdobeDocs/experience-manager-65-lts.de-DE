@@ -37,7 +37,7 @@ Die Architektur für AEM Forms beinhaltet die folgenden Komponenten:
 
    * **Authoring-Frontend**: Eine Benutzeroberfläche zum Erstellen und Verwalten von Formularen.
    * **Formularwiedergabe und -übermittlungs-Frontend**: Eine Benutzeroberfläche für Endbenutzende von AEM Forms (z. B. Bürgerinnen und Bürger, die auf eine Behördenseite zugreifen). Dadurch werden Formularwiedergabe (Formular in einem Webbrowser anzeigen) und Sendefunktionen bereitgestellt.
-   * **REST APIs**: JSPs und Servlets exportieren einen Teil der Formula-Services zur Nutzung durch HTTP-basierte Clients wie das SDK für mobile Formulare.
+   * **REST APIs**: JSPs und Servlets exportieren eine Teilmenge der Formula-Services zur Nutzung durch HTTP-basierte Clients wie das SDK für mobile Formulare.
 
 **AEM Forms on OSGi:** Bei einer AEM Forms on OSGi-Umgebung handelt es sich um ein standardmäßiges AEM-Autor- oder AEM-Veröffentlichungspaket, auf dem das AEM Forms-Paket bereitgestellt ist. Sie können AEM Forms on OSGi in [Einzel-Server-Umgebungen, Farm- und Cluster-Setups ausführen](/help/sites-deploying/recommended-deploys.md). Die Cluster-Setup ist nur für AEM Autoreninstanzen verfügbar. 
 

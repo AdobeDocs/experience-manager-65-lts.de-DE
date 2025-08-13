@@ -11,8 +11,8 @@ role: User
 exl-id: b8d9df45-8b71-4f93-b94a-ecaf3da9b67b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 100%
+source-wordcount: '671'
+ht-degree: 93%
 
 ---
 
@@ -64,7 +64,7 @@ Gehen Sie wie folgt vor, um das Feed-Importtool zum Nachverfolgen nicht zugestel
 
    Hier können Sie Markierungen festlegen, nach denen gesucht werden soll.
 
-   `imap.flag.SEEN`: Legen Sie „false“ für eine neue/nicht gelesene Nachricht und „true“ für bereits gelesene Nachrichten fest.
+   `imap.flag.SEEN`:Set „false“ für neue/nicht gelesene Nachrichten, „true“ für bereits gelesene Nachrichten
 
    Siehe [https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html) für die vollständige Liste der Markierungen.
 

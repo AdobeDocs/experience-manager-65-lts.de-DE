@@ -24,7 +24,7 @@ ht-degree: 100%
 > 
 > Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
-In Workspace werden die Prozesse, die Benutzende starten können, in Kategorien im linken Navigationsbereich angezeigt. Sie können die Kategorien in der Administrationskonsole einrichten oder bei der Prozessentwicklung in Workbench einrichten lassen. Wenn bei der Prozessentwicklung Prozesse erstellt werden, werden ihnen Kategorien zugewiesen.
+In Workspace werden die Prozesse, die Benutzende starten können, in Kategorien im linken Navigationsbereich angezeigt. Sie können die Kategorien in der Administrationskonsole einrichten oder beim Prozess-Design in Workbench einrichten lassen. Wenn beim Prozess-Design Prozesse erstellt werden, werden ihnen Kategorien zugewiesen.
 
 Wenn Sie Kategorienamen angeben, erstellen Sie diese so, dass sie im Navigationsbereich von Workspace ordnungsgemäß angezeigt werden. Standardmäßig hat der linke Navigationsbereich eine feste Breite von 210 Pixel, was etwa 24 Zeichen entspricht. Wenn der von Ihnen angegebene Kategoriename zu lang ist, um in die feste Breite des linken Navigationsbereichs zu passen, wird er abgeschnitten. Der vollständige Name wird nur angezeigt, wenn der Mauszeiger darüber gehalten wird. Versuchen Sie, Kategorienamen zu vermeiden, die abgeschnitten werden. Die folgenden Beispiele veranschaulichen passende und abgeschnittene Kategorienamen:
 

@@ -11,8 +11,8 @@ role: User
 exl-id: d2c16908-18c2-4ab9-a1da-6fc072c94bf9
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 100%
+source-wordcount: '250'
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Die Spalte **Status** in der **Websites**-Konsole gibt an, ob ein Workflow auf e
 
 ### Starten eines Workflows aus der Websites-Konsole {#starting-a-workflow-from-the-websites-console}
 
-1. Öffnen Sie die Websites-Konsole. ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin))
+1. Öffnen Sie die Websites-Konsole. ([http://localhost:4502/SiteAdmin](http://localhost:4502/siteadmin))
 1. Wählen Sie in der Website-Struktur das übergeordnete Element der Seite aus, auf die Sie den Workflow anwenden möchten.
 1. Wählen Sie in der Seitenliste die Seite aus und klicken Sie dann auf „Workflow“.
 1. Wählen Sie im Dialogfeld „Workflow starten“ den Workflow aus, der angewendet werden soll. Geben Sie optional einen Kommentar und einen Titel ein. Klicken Sie dann auf „Starten“.

@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: e2b9b13b-c00c-4bfc-8512-84188e90c0ed
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '5466'
-ht-degree: 99%
+source-wordcount: '5472'
+ht-degree: 98%
 
 ---
 
@@ -522,7 +522,7 @@ Wenn Sie ein neues Video in einen Ordner hochladen, auf den Videokodierung angew
 
    >[!NOTE]
    >
-   >Die endgültige Aufzeichnung von Fehlschlag-/Fehlernachrichten kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) mehrere Workflow-Konfigurationen vorliegen, beispielsweise:
+   >Die endgültige Aufzeichnung von Fehlschlag-/Fehlermeldungen kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** von [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) mehrere Workflow-Konfigurationen vorliegen, beispielsweise:
    >
    >* Konfiguration der Warteschlange für Apache Sling-Aufträge
    >* Handler für externe Prozessaufträge im Adobe Granite-Workflow
@@ -554,7 +554,7 @@ Wenn Sie ein neues Video in einen Ordner hochladen, auf den Videokodierung angew
 
    >[!NOTE]
    >
-   >Die endgültige Aufzeichnung von Fehlernachrichten kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) mehrere Workflow-Konfigurationen vorliegen, beispielsweise:
+   >Die endgültige Aufzeichnung von Fehlermeldungen kann länger dauern, da für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** von [https://localhost:4502/system/console/configMgr} mehrere Workflow-Konfigurationen vorliegen](https://localhost:4502/system/console/configMgr) Beispiel:
    >
    >* Konfiguration der Warteschlange für Apache Sling-Aufträge
    >* Handler für externe Prozessaufträge im Adobe Granite-Workflow

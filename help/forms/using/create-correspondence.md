@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: cb6528fd-6761-412d-8413-c72049acf91d
 source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
 workflow-type: tm+mt
-source-wordcount: '3805'
-ht-degree: 99%
+source-wordcount: '3799'
+ht-degree: 98%
 
 ---
 
@@ -285,7 +285,7 @@ Solche Instanzen können nur gespeichert werden, wenn der Brief in der Publish-I
 
 Bevor Sie Briefe veröffentlichen oder Entwürfe in der Veröffentlichungsinstanz speichern, führen Sie die folgenden Schritte in der Autoren- und Veröffentlichungsinstanz durch, um die Funktion „Als Entwurf speichern“ zu aktivieren:
 
-Die Eigenschaften *cq:lastReplicationAction*, *cq:lastreplicated* und *cq:lastReplicatedBy* werden standardmäßig nicht in die Veröffentlichungsinstanz übernommen. Um die Eigenschaften *cq:lastReplicationAction*, *cq:lastreplicated* und *cq:lastReplicatedBy* in die Veröffentlichungsinstanz zu übernehmen, deaktivieren Sie die Komponente [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]. So deaktivieren Sie die Komponente:
+Die *cq:lastReplicationAction*, *cq:lastreplicated* und *cq:lastReplicatedBy* werden standardmäßig nicht auf die Veröffentlichungsinstanz übertragen. Um die Eigenschaften *cq:lastReplicationAction*, *cq:lastreplicated* und *cq:lastReplicatedBy* in die Veröffentlichungsinstanz zu übernehmen, deaktivieren Sie die Komponente [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]. So deaktivieren Sie die Komponente:
 
 1. Öffnen Sie in der Autoreninstanz die Konsole „Adobe Experience Manager Web Console Components“. Die Standardeinstellung ist `http://author-server:port/system/console/components`
 

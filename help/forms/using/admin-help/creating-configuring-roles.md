@@ -322,7 +322,7 @@ Sie können die Berechtigungen für alle Rollen ändern, die Sie erstellt haben.
 
 **Service hinzufügen**: Bereitstellen eines neuen Services in der Service-Registrierung. Das schließt das Hinzufügen neuer Prozesse und Prozessvarianten ein.
 
-**Service deaktivieren**: Alle Servsice im System beenden
+**Service deaktivieren**: Alle Servsice im System stoppen
 
 **Service löschen**: Löschen eines beliebigen Services im System, einschließlich Prozesse und Prozessvarianten
 
@@ -336,7 +336,7 @@ Sie können die Berechtigungen für alle Rollen ändern, die Sie erstellt haben.
 
 **SERVICE_MANAGER_PERM**: Lastenausgleich und andere Verwaltungsaktionen für einen Service ausführen, der aus einem Prozess erstellt wurde
 
-**START_STOP_PERM**: Starten und Beenden eines Services
+**START_STOP_PERM**: Starten und Stoppen eines Services
 
 **SUPERVISOR_PERM**: Prozessinstanzdaten für einen Service anzeigen, der aus einem Prozess erstellt wurde
 

@@ -11,7 +11,7 @@ role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
 source-git-commit: 2fcdc5df5a4b901c177d8e4158663c6b09793146
 workflow-type: tm+mt
-source-wordcount: '5054'
+source-wordcount: '5053'
 ht-degree: 99%
 
 ---
@@ -228,7 +228,7 @@ Konfigurieren Sie diese Dienste, um die maximale Anzahl der parallel ausgeführt
 
 #### Konfiguration im Repository {#configuration-in-the-repo}
 
-Wenn Sie die Dienste [mithilfe eines sling:OsgiConfig-Knotens](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) konfigurieren, müssen Sie die PID der vorhandenen Dienste suchen, zum Beispiel: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Sie können die PID mithilfe der Web-Konsole ermitteln.
+Wenn Sie die Dienste konfigurieren [mithilfe eines sling:OsgiConfig-Knotens](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), müssen Sie die PID der vorhandenen Dienste suchen, zum Beispiel: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. Sie können die PID mithilfe der Web-Konsole ermitteln.
 
 Konfigurieren Sie die Eigenschaft mit dem Namen `queue.maxparallel`.
 
@@ -425,7 +425,7 @@ Bei der Konzeption dieser Tests sollte beachtet werden, dass nicht alle Szenarie
 
 | Fehlerszenario | Fehlertyp | Anzahl der Benutzer | Tx/Sek (erwartet) | Tx/Sek (getestet) | Beschreibung |
 |---|---|---|---|---|---|
-| Überlastung der Suchkomponente | Suche mit einem globalen Platzhalter (Sternchen) | 10 | 1 |  | Es wird nur nach &ast;&ast;&ast; gesucht. |
+| Überlastung der Suchkomponente | Suche mit einem globalen Platzhalter (Sternchen) | 10 | 1 |  | Es wird nur nach &amp;ast;&amp;ast;&amp;ast; gesucht. |
 |   | Stoppwort | 20 | 2 |  | Suchen nach einem Stoppwort. |
 |   | Leere Zeichenfolge | 10 | 1 |  | Suchen nach einer leeren Zeichenfolge. |
 |   | Sonderzeichen | 10 | 1 |  | Suchen nach Sonderzeichen. |

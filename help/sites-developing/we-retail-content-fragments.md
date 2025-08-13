@@ -11,8 +11,8 @@ role: Developer
 exl-id: a772e177-1410-4341-b4be-7e5a658f4c5c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 100%
+source-wordcount: '428'
+ht-degree: 92%
 
 ---
 
@@ -49,7 +49,7 @@ Diese enthalten **Surfen in der Arktis auf den Lofoten**, ein Fragment mit den z
 
 * Navigieren Sie über **Assets**, **Dateien**, **We.Retail**, **English**, **Experiences**, **Arctic Surfing in Lofoten**:
 
-   * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten ) 
+   * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten )
 
 ![cf-44](assets/cf-44.png)
 

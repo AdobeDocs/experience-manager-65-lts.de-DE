@@ -64,11 +64,11 @@ Hierbei handelt es sich um Schulungen für die Mitarbeitenden, die Inhalte für 
 
 ### AEM-Zertifizierungsprüfung {#aem-certification-exam}
 
-Stellen Sie sicher, dass die entsprechenden Rollen für die jeweiligen [Zertifizierungsprüfungen](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) angemeldet sind.
+Stellen Sie sicher, dass die entsprechenden Rollen für die jeweiligen [Zertifizierungsprüfungen](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) angemeldet sind.
 
 ### AEM-zertifiziert {#aem-certified}
 
-Stellen Sie sicher, dass die entsprechenden Rollen die jeweiligen [Zertifizierungsprüfungen](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) bestanden haben.
+Stellen Sie sicher, dass die entsprechenden Rollen die jeweiligen [Zertifizierungsprüfungen](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) bestanden haben.
 
 ### Technische Schulungen zu AEM {#aem-technical-training}
 

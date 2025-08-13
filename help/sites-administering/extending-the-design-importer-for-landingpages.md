@@ -12,8 +12,8 @@ role: Admin
 exl-id: 1121af36-b07a-4e8d-a60b-6c5b91e56f82
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3442'
-ht-degree: 99%
+source-wordcount: '3432'
+ht-degree: 96%
 
 ---
 
@@ -323,9 +323,9 @@ Ein Lead-Formular ist ein Formular, das dazu verwendet wird, die Informationen e
 **Unterstützte Funktionen**
 
 * Vordefinierte Lead-Felder (Vorname, Nachname, Adresse, Geburtsdatum, Geschlecht, Info, Benutzer-ID, E-Mail-ID, Sende-Schaltfläche) sind im Sidekick verfügbar. Platzieren Sie die erforderliche Komponente einfach per Drag-and-Drop in Ihrem Lead-Formular.
-* Mithilfe dieser Komponenten kann der Autor ein eigenständiges Formular entwerfen. Diese Felder entsprechen den Lead-Formular-Feldern. In eigenständigen oder importierten ZIP-Anwendungen können Benutzende mit den Formularfeldern „cq:form“ oder „cta lead“ weitere Felder hinzufügen und diese ihren Anforderungen entsprechend benennen und entwerfen.
+* Mithilfe dieser Komponenten kann der Autor ein eigenständiges Formular entwerfen. Diese Felder entsprechen den Lead-Formular-Feldern. In eigenständigen oder importierten Zip-Anwendungen können Benutzer mithilfe von CQ:form- oder CTA-Lead-Formularfeldern zusätzliche Felder hinzufügen, sie entsprechend den Anforderungen benennen und entwerfen.
 * Ordnen Sie Formularfelder mithilfe spezifischer vordefinierter Namen für CTA-Lead-Formulare zu, z. B. „firstName“ für den Vornamen in einem Lead-Formular.
-* Felder, die nicht dem Lead-Formular zugewiesen sind, werden cq:form-Komponenten (Text, Optionsfeld, Kontrollkästchen, Dropdown, verborgenes Feld, Kennwort) zugeordnet.
+* Felder, die nicht Lead-Formularen zugeordnet sind, werden cq:form-Komponenten zugeordnet: Text, Optionsfeld, Kontrollkästchen, Dropdown, ausgeblendet, Kennwort.
 * Benutzende können den Titel mit dem Tag „Beschriften“ und Stile mit dem Stilattribut „Klasse“ angeben (nur für CTA-Lead-Formular-Komponenten verfügbar).
 * Die Dankeseite und die Abonnement-Liste können als versteckte Parameter des Formulars (vorhanden in der Datei „index.htm“) bereitgestellt werden oder über die Bearbeitungsleiste von „Start des Lead-Formulars“ hinzugefügt oder bearbeitet werden.
 
@@ -335,7 +335,7 @@ Ein Lead-Formular ist ein Formular, das dazu verwendet wird, die Informationen e
 
 * Beschränkungen wie „Erforderlich“ können in jeder der Komponenten unter „Konfiguration bearbeiten“ angegeben werden.
 
-HTML-Tag mit in der importierten Zip enthaltenem grafischen Link: Hier verweist „firstName“ auf das Feld „firstName“ auf dem Lead-Formular usw. Eine Ausnahme bilden Kontrollkästchen. Die beiden folgenden Kontrollkästchen verweisen auf die Dropdown-Komponente „cq:form“.
+HTML-Tag mit in der importierten Zip enthaltenem grafischen Link: Hier wird „firstName“ dem Lead-Formular „firstName“ usw. zugeordnet (mit Ausnahme von Kontrollkästchen). Diese beiden Kontrollkästchen sind der Dropdown-Komponente „cq:form&quot; zugeordnet.
 
 ```xml
 <div id="cqcanvas">
@@ -419,11 +419,11 @@ Neben der Angabe, ob importierte Komponenten bearbeitbare AEM-Komponenten sind, 
 
 ### Festlegen von Seiteneigenschaften durch Extrahieren der im HTML-Import definierten Metadaten {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
 
-Die folgenden im Kopfteil des HTML-Imports deklarierten Metadaten werden vom Design-Import-Tool als Eigenschaft „jcr:description“ extrahiert und beibehalten:
+Die folgenden im Kopf der importierten HTML deklarierten Metadaten werden vom Design Importer als Eigenschaft „jcr“ extrahiert und :description:
 
 * &lt;meta name=&quot;description&quot; content=&quot;&quot;>
 
-Das im HTML-Tag festgelegte lang-Attribut wird vom Design-Import-Tool als Eigenschaft „jrc:language“ extrahiert und beibehalten:
+Das im HTML-Tag festgelegte Lang-Attribut wird vom Design Importer als Eigenschaft „jcr“ extrahiert und :language.
 
 * &lt;html lang=&quot;en&quot;>
 
@@ -470,7 +470,7 @@ Die Verwendung von CSS-Selektoren wie den folgenden wird bei Elementen, die für
 Dies liegt daran, dass dem generierten HTML-Code nach dem Import zusätzliche HTML-Elemente wie das &lt;div>-Tag hinzugefügt werden.
 
 * Skripte, die auf einer ähnlichen Struktur wie der obigen basieren, werden ebenfalls nicht für Elemente empfohlen, die für die Konvertierung in AEM-Komponenten vorgesehen sind.
-* Die Verwendung von Stilen in den Markup-Tags für die Komponentenkonvertierung wie &lt;div data-cq-component=&quot;&ast;&quot;> wird nicht empfohlen.
+* Die Verwendung von Stilen in den Markup-Tags für die Komponentenkonvertierung wie &lt;div data-cq-component=&quot;&amp;ast;&quot;> wird nicht empfohlen.
 * Beim Designlayout sollten die Best Practices für das HTML5-Boilerplate befolgt werden. Lesen Sie mehr unter [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Konfigurieren von OSGi-Modulen {#configuring-osgi-modules}
@@ -494,7 +494,7 @@ In der folgenden Tabelle werden die Eigenschaften kurz beschrieben:
   <tr>
    <td>Design-Import-Tool für Landingpages</td>
    <td>Extraktionsfilter</td>
-   <td>Die Liste der regulären Ausdrücke, die für das Filtern der Dateien beim Extrahieren verwendet werden. <br />Zip-Einträge, die einem der angegebenen Muster entsprechen, werden von der Extraktion ausgeschlossen.</td>
+   <td>Die Liste der regulären Ausdrücke, die für das Filtern der Dateien bei der Extraktion verwendet werden. <br />Zip-Einträge, die einem der angegebenen Muster entsprechen, werden von der Extraktion ausgeschlossen.</td>
   </tr>
   <tr>
    <td>Builder für Landingpages</td>
@@ -527,11 +527,11 @@ In der folgenden Tabelle werden die Eigenschaften kurz beschrieben:
 >[!NOTE]
 >
 >**Aktuelle Beschränkung des Eintrags-Präprozessors für Landing Pages:**
->Wenn Sie Änderungen am Suchmuster vornehmen müssen, müssen Sie beim Öffnen des Felix Property Editor manuell umgekehrte Schrägstriche einfügen, um die regex-Metazeichen auszukommentieren. Wenn Sie umgekehrte Schrägstriche nicht manuell einfügen, wird der reguläre Ausdruck als ungültig angesehen und ersetzt nicht die ältere Version.
+>>Wenn Sie Änderungen am Suchmuster vornehmen müssen, müssen Sie beim Öffnen des Felix Property Editor manuell umgekehrte Schrägstriche einfügen, um die regex-Metazeichen auszukommentieren. Wenn Sie umgekehrte Schrägstriche nicht manuell einfügen, wird der reguläre Ausdruck als ungültig angesehen und ersetzt nicht die ältere Version.
 >
 >Beispiel: Die Standardkonfiguration lautet wie folgt:
 >
->&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >Und Sie müssen `CQ_DESIGN_PATH` durch `VIPURL` im Suchmuster ersetzen. Ihr Suchmuster sollte dann wie folgt aussehen:
 >

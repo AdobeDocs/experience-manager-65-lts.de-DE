@@ -11,8 +11,8 @@ role: Developer
 exl-id: 6b9b8d8c-8cd5-4c21-9b75-acd74d00354a
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 99%
+source-wordcount: '551'
+ht-degree: 98%
 
 ---
 
@@ -165,7 +165,7 @@ Diese Eigenschaft wird dann automatisch (mit dem `CryptoSupport`-Dienst) durch d
 >
 >Standardmäßig verschlüsselt der `EcryptionPostProcessor` nur `POST`-Anfragen an `/etc/cloudservices`.
 
-#### Zusätzliche Eigenschaften für die jcr:content-Knoten der Dienstseite {#additional-properties-for-service-page-jcr-content-nodes}
+#### Zusätzliche Eigenschaften für JCR:content-Knoten der Service-Seite {#additional-properties-for-service-page-jcr-content-nodes}
 
 <table>
  <tbody>

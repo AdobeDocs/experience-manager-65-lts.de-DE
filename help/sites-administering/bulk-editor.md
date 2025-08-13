@@ -12,8 +12,8 @@ role: Admin
 exl-id: 8028e74e-29df-4081-a567-5eb87ae362d4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 97%
+source-wordcount: '1158'
+ht-degree: 95%
 
 ---
 
@@ -120,8 +120,8 @@ Im Beispiel oben werden alle Seiten, die Ihren Suchkriterien entsprechen, zurüc
 
 * **path:** Durchsucht nur Knoten unter diesem Pfad. Wenn Sie mehr als einen Begriff mit einem Pfad-Präfix festlegen, wird nur das letzte berücksichtigt.
 * **type:** Gibt nur Knoten des angegebenen Knotentyps zurück. Das schließt primäre und Mixin-Typen ein.  Sie können mehrere Knotentypen durch Kommas voneinander getrennt festlegen.  GQL gibt Knoten zurück, die einen der festgelegten Typen aufweisen.
-* **order:** Sortiert das Ergebnis nach den bestimmten Eigenschaften. Sie können mehrere Eigenschaftsnamen durch Kommas voneinander getrennt festlegen.  Um das Ergebnis in absteigender Reihenfolge zu sortieren, setzen Sie einfach ein Minuszeichen als Präfix des Eigenschaftsnamens. Zum Beispiel: order:-name.  Ein Pluszeichen gibt das Ergebnis in aufsteigender Reihenfolge zurück. Dies ist auch die Standardeinstellung.
-* **limit:** Begrenzt die Anzahl der Ergebnisse mithilfe eines Intervalls. Beispiel: limit:10..20. Das Intervall basiert auf null. Der Startwert ist ein-, der Endwert ausgeschlossen. Sie können auch ein offenes `interval:limit:10..` oder `limit:..20` angeben
+* **order:** Sortiert das Ergebnis nach den bestimmten Eigenschaften. Sie können mehrere Eigenschaftsnamen durch Kommas voneinander getrennt festlegen.  Um das Ergebnis in absteigender Reihenfolge zu sortieren, setzen Sie einfach ein Minuszeichen als Präfix des Eigenschaftsnamens. Beispiel: order:-name. Ein Pluszeichen gibt das Ergebnis in aufsteigender Reihenfolge zurück. Dies ist auch die Standardeinstellung.
+* **limit:** Begrenzt die Anzahl der Ergebnisse mithilfe eines Intervalls. Beispiel: limit:10..20 Das Intervall basiert auf null, der Start ist inklusiv und das Ende ist exklusiv. Sie können auch ein offenes `interval:limit:10..` oder `limit:..20` angeben
 Wenn Sie die Punkte weglassen und nur einen Wert angeben, gibt GQL höchstens diese Anzahl an Ergebnissen zurück. Beispiel: `limit:10` (gibt die ersten zehn Ergebnisse zurück).
 
 ### Exportieren von Inhalten {#exporting-content}

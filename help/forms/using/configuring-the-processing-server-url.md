@@ -11,8 +11,8 @@ feature: Adaptive Forms
 exl-id: 8ad3afd6-e1c6-4f21-bb0f-4d97ef50710e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 100%
+source-wordcount: '240'
+ht-degree: 89%
 
 ---
 
@@ -30,7 +30,7 @@ In diesem Artikel wird beschrieben, wie Sie den **AEM DS-Einstellungsdienst** ko
 Führen Sie die folgenden Schritte aus, um die **[!UICONTROL AEM DS-Einstellungen]** zu konfigurieren:
 
 1. Öffnen Sie den Konfigurations-Manager unter der Veröffentlichungsinstanz mit der URL:\
-   *https://localhost:port/system/console/configMgr*.
+   *https://localhost:port/system/console/configMgr*
 
    ![AEM-Web-Konsolenkonfiguration](assets/web_configuration_console_new.png)
 
@@ -44,7 +44,7 @@ Führen Sie die folgenden Schritte aus, um die **[!UICONTROL AEM DS-Einstellunge
 
 1. Fügen Sie die folgenden Informationen in die entsprechenden Felder ein:
 
-   **[!UICONTROL Processing Server URL]** (Verarbeitungs-Server-URL): Der Verarbeitungs-Server ist der Server, auf dem der Forms- oder AEM-Workflow ausgelöst werden muss. Die URL kann dabei mit der URL der AEM-Autoreninstanz oder der anderen Server-URL übereinstimmen (d. h. https://localhost:port/).
+   **[!UICONTROL Processing Server URL]** (Verarbeitungs-Server-URL): Der Verarbeitungs-Server ist der Server, auf dem der Forms- oder AEM-Workflow ausgelöst werden muss. Dabei kann es sich um die gleiche URL wie die der AEM-Autoreninstanz oder die andere Server-URL handeln (d. h. https://localhost:port/).
 
    **[!UICONTROL Verarbeitungs-Server-Benutzername]**: Benutzername des Workflow-Benutzers [basiert auf der verwendeten Server-URL]
 

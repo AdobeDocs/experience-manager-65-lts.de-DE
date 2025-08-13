@@ -12,8 +12,8 @@ role: Admin
 exl-id: fcabfd44-31c2-4884-8dbd-99aa74972cfa
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '5743'
-ht-degree: 100%
+source-wordcount: '5740'
+ht-degree: 98%
 
 ---
 
@@ -158,7 +158,7 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
    >
    >Ein neues JMX-MBean wird für jede neue Konfiguration des Apache Sling Composite Health Checks erstellt.**
 
-1. Schließlich muss der Eintrag der erstellten Verbund-Konsistenzprüfung im Konfigurationsknoten des Vorgangs-Dashboards hinzugefügt werden. Die Vorgehensweise ist dieselbe wie bei individuellen Konsistenzprüfungen: es muss ein Knoten vom Typ **nt:unstructured** unter `/apps/settings/granite/operations/hc` angelegt werden. Die Ressourceneigenschaft des Knotens wird durch den Wert von **hc.mean.name** in der OSGi-Konfiguration definiert.
+1. Schließlich muss der Eintrag der erstellten Verbund-Konsistenzprüfung im Konfigurationsknoten des Vorgangs-Dashboards hinzugefügt werden. Die Vorgehensweise ist dieselbe wie bei individuellen Konsistenzprüfungen: unter **muss ein Knoten vom:unstructured** nt`/apps/settings/granite/operations/hc` erstellt werden. Die Ressourceneigenschaft des Knotens wird durch den Wert von **hc.mean.name** in der OSGi-Konfiguration definiert.
 
    Wenn Sie beispielsweise eine Konfiguration erstellt und den Wert **hc.mbean.name** auf **diskusage** gesetzt haben, sehen die Konfigurationsknoten wie folgt aus:
 
@@ -494,7 +494,7 @@ Die folgenden Aufgaben sind im Vorgangs-Dashboard verfügbar:
 1. Die Wartungsaufgabe **Projekt-Bereinigung** unter dem Menü **Wöchentliches Wartungsfenster** unter Verwendung der Option **Hinzufügen**.
 1. Die Wartungsaufgabe **Bereinigung von Ad-hoc-Aufgaben** im Menü **Wöchentliches Wartungsfenster** unter Verwendung der Option **Hinzufügen**.
 
-Der Standardzeitrahmen für das tägliche Wartungsfenster beträgt 2:00 Uhr bis 5:00 Uhr morgens. Die Aufgaben, die für das wöchentliche Wartungsfenster konfiguriert sind, werden samstags zwischen 1:00 und 2:00 Uhr morgens ausgeführt.
+Der Standardzeitrahmen für das tägliche Wartungsfenster beträgt :00 Uhr bis 5 :00 Uhr. Die Aufgaben, die für die Ausführung im wöchentlichen Wartungsfenster konfiguriert sind:00 werden samstags zwischen 1 :00 und 2 Uhr morgens ausgeführt.
 
 Sie können diese Zeiten auch konfigurieren. Klicken Sie dazu auf das Zahnradsymbol auf einer der beiden Wartungskarten:
 
@@ -659,7 +659,7 @@ Das **Systemübersicht-Dashboard** bietet einen allgemeinen Überblick über die
 
 >[!NOTE]
 >
->Eine Einführung in das Systemübersicht-Dashboard erhalten Sie auch [in diesem Video](https://video.tv.adobe.com/v/40393?captions=ger).
+>Eine Einführung in das Systemübersicht-Dashboard erhalten Sie auch [in diesem Video](https://video.tv.adobe.com/v/21340).
 
 ### Zugriff {#how-to-access}
 

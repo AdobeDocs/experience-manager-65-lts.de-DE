@@ -14,7 +14,7 @@ exl-id: 8bb1dd68-51ec-4458-9ff8-bfe6fb0b67fd
 source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
 source-wordcount: '1027'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -93,7 +93,7 @@ Sie können das User Management so konfigurieren, dass regelmäßige Prüfungen 
 1. So planen Sie die Synchronisierung:
 
    * Wählen Sie zum Aktivieren der automatischen täglichen Synchronisierung unter „Zeitplanung“ die Option „Häufigkeit“ aus. Wählen Sie aus der Liste die Option „Täglich“ aus und geben Sie in das entsprechende Feld die Zeit im 24-Stunden-Format ein. Wenn Sie die Einstellungen speichern, wird dieser Wert in einen Cron-Ausdruck konvertiert, der im Feld „Cron-Ausdruck“ angezeigt wird.
-   * Um die Synchronisierung für einen bestimmten Tag der Woche bzw. des Monats oder in einem bestimmten Monat zu planen, wählen Sie „Cron-Ausdruck“ aus und geben Sie den entsprechenden Ausdruck in das Feld ein. Sie könnten die Synchronisierung beispielsweise für 1:30 Uhr am letzten Freitag im Monat planen. 
+   * Um die Synchronisierung für einen bestimmten Tag der Woche bzw. des Monats oder in einem bestimmten Monat zu planen, wählen Sie „Cron-Ausdruck“ aus und geben Sie den entsprechenden Ausdruck in das Feld ein. Synchronisieren Sie z. B:30 um 1 Uhr morgens am letzten Freitag des Monats.
 
 Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Vorgangsplanungssystem Quartz, Version 1.4.0.
 

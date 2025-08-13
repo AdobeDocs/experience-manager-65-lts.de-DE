@@ -11,8 +11,8 @@ feature: Adaptive Forms
 exl-id: 712590c6-2348-4c0d-93b9-686e6478ca03
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1967'
-ht-degree: 100%
+source-wordcount: '1964'
+ht-degree: 99%
 
 ---
 
@@ -295,11 +295,11 @@ AEM Forms stellt die Metadatenschemata der unterstützten Formulartypen in diese
 1. Klicken Sie auf eine Komponente, die Sie gerade verschoben haben. Geben Sie in der Registerkarte „Einstellungen“, die im rechten Bedienfeld geöffnet wird, die Informationen für folgende Felder ein:
 
    1. Geben Sie eine Feldbezeichnung an, die als Anzeigename über dem im Schema platzierten Feld verwendet wird (z. B. „Abteilung“).
-   1. Unter dem Feld „Zu Eigenschaft zuordnen“ wird ein bereits befüllter Wert angezeigt **„./jcr:content/metadata/default&#39;**. Ändern Sie „**default**“ in einen gewünschten Eigenschaftsnamen, mit dem die Eigenschaft im CRX-Repository gespeichert wird (zum Beispiel „./jcr:content/metadata/department“)
+   1. Unter dem Feld „Zu Eigenschaft zuordnen“ wird ein bereits befüllter Wert angezeigt **„./jcr:content/metadata/default&#39;**. Ändern Sie „**default**“ in einen gewünschten Eigenschaftsnamen, mit dem die Eigenschaft im CRX-Repository gespeichert wird (zum Beispiel „./jcr:content/metadata/department„)
 
       >[!NOTE]
       >
-      >Ändern Sie nicht das Präfix „./jcr:content/metadata/“, da es den Pfad definiert, unter dem die Eigenschaft gespeichert ist.
+      >Ändern Sie nicht das Präfix „./jcr:content/metadata/&quot; definiert den Pfad, in dem die Eigenschaft gespeichert ist.
       >
       >Außerdem muss der Eigenschaftsname eindeutig sein, um zu vermeiden, dass Werte für zwei oder mehr Eigenschaften am selben Speicherort im Repository geschrieben werden. Daher wird empfohlen, den Wert „default“ zu ändern.
 

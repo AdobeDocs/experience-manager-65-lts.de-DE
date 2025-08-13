@@ -58,7 +58,7 @@ Das „Ultramarine-Accessible“-Design („Ultramarinblau – Barrierefreiheit�
 
 Sie sollten sich auf vier wichtige Aspekte konzentrieren: Tastaturnavigation, Farbkontrast, aussagekräftige Alternativtexte für Bilder und geeignete Beschriftungen für Formularsteuerelemente, um ein adaptives Formular barrierefrei zu gestalten. Führen Sie die folgenden Schritte aus, um das vorhandene adaptive Forms barrierefrei zu machen:
 
-### 1. Anwenden eines barrierefreien Designs und Vornehmen weiterer Korrekturen
+### &#x200B;1. Anwenden eines barrierefreien Designs und Vornehmen weiterer Korrekturen
 
 Wenden Sie das Design „Ultramarine-Accessible“ auf Ihr vorhandenes adaptives Formular an. So wenden Sie das Design an:
 
@@ -97,7 +97,7 @@ Nachdem Sie ein barrierefreies Design angewendet haben, führen Sie die folgende
 
 1. Entfernen Sie Felder für die Freihandeingabe von Unterschriften aus dem adaptiven Formular, sofern vorhanden. Konfigurieren Sie das adaptive Formular so, dass Adobe Sign für problemloses digitales Signieren verwendet wird.
 
-### 2. Angabe von angemessenen Beschriftungen für Formularsteuerelemente {#provide-proper-labels-for-form-controls}
+### &#x200B;2. Angabe von angemessenen Beschriftungen für Formularsteuerelemente {#provide-proper-labels-for-form-controls}
 
 Die Beschriftung oder der Titel einer Komponente gibt an, was die Formularkomponente darstellt. Der Text „Vorname“ weist Benutzende zum Beispiel darauf hin, dass sie ihren Vornamen in ein Textfeld eingeben müssen. Damit Bildschirmlesehilfen auf die Beschriftung zugreifen können, wird diese programmgesteuert mit einer Formularkomponente verknüpft. Alternativ dazu kann das Steuerelement im Formular mit zusätzlichen Barrierefreiheitsinformationen konfiguriert werden.
 
@@ -127,7 +127,7 @@ Gehen Sie wie folgt vor, um die Barrierefreiheitsoptionen zu verwenden:
 >* Optionsfelder und Kontrollkästchen können nur zwei Optionen für die Barrierefreiheit aufweisen, nämlich „Eigener Text“ und „Titel“.
 >* Bei XFA-basierten adaptiven Formularen wird die Barrierefreiheitsoption von den in der XDP festgelegten Barrierefreiheitsoptionen übernommen. QuickInfos aus der XDP werden der Kurzbeschreibung zugeordnet und die Beschriftung dem Titel. Die anderen Optionen bleiben gleich.
 
-### 3. Angabe von Textäquivalenten für Bilder {#provide-text-equivalents-for-images}
+### &#x200B;3. Angabe von Textäquivalenten für Bilder {#provide-text-equivalents-for-images}
 
 Bilder können bei einigen Benutzenden zu einem besseren Verständnis beitragen. Für diejenigen Benutzenden, die Bildschirmlesehilfen verwenden, verringern Bilder jedoch die Barrierefreiheit Ihres Formulars. Wenn Sie Bilder verwenden möchten, sollten Sie Textbeschreibungen für alle Bilder angeben.
 
@@ -137,7 +137,7 @@ Wählen Sie eine Bildkomponente und ![cmppr](assets/cmppr.png) aus. Geben Sie i
 
 ![Alternativtext für ein Bild](assets/image-properties.png)
 
-### 4. Sicherstellen von ausreichendem Farbkontrast {#provide-sufficient-color-contrast}
+### &#x200B;4. Sicherstellen von ausreichendem Farbkontrast {#provide-sufficient-color-contrast}
 
 Bei Barrierefreiheits-Designs müssen zusätzliche Richtlinien zur Farbverwendung beachtet werden. Formularautorinnen und -autoren können Farben verwenden, um das Erscheinungsbild von Formularen zu verbessern, indem sie verschiedene Formularkomponenten hervorheben. Bei falscher Farbnutzung kann ein Formular allerdings für Personen mit unterschiedlichen Fähigkeiten schwieriger oder gar nicht lesbar werden.
 
@@ -147,7 +147,7 @@ Es wird empfohlen, die standardmäßigen Schrift- und Hintergrundfarben zu verwe
 
 Weitere Informationen zum Ändern des Farbkontrasts und Designs für adaptive Formulare finden Sie unter [Erstellen benutzerdefinierter Designs für adaptive Formulare](/help/forms/using/creating-custom-adaptive-form-themes.md).
 
-### 5. Sicherstellen, dass Formularsteuerelemente mit der Tastatur aufgerufen werden können {#ensure-that-form-controls-are-keyboard-accessible}
+### &#x200B;5. Sicherstellen, dass Formularsteuerelemente mit der Tastatur aufgerufen werden können {#ensure-that-form-controls-are-keyboard-accessible}
 
 Ein barrierefreies Formular kann vollständig mit nur der Tastatur oder einem entsprechenden Eingabegerät ausgefüllt werden. Benutzende mit eingeschränkter Mobilität oder Sehfähigkeit haben möglicherweise keine andere Wahl, als die Tastatur zu verwenden, und auch viele Benutzende, die eine Maus verwenden könnten, bevorzugen die Eingabe über die Tastatur. Indem Sie mehrere Eingabeverfahren ermöglichen, erstellen Sie Formulare, die nicht nur barrierefrei sind, sondern auch den Vorlieben von allen Benutzenden entgegenkommen.
 

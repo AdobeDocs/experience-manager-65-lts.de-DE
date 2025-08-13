@@ -160,5 +160,5 @@ Ja, da die vorherigen dem Standardaktionsprofil zugeordneten Wiedergabe- und Sen
 
 Angenommen, Sie haben die vorhandenen Render- oder Sendedienste für PDF-Formulare geändert oder benutzerdefinierte Dienste (z. B. custom1) erstellt und möchten nun dieselbe Funktion für die HTML-Wiedergabe verwenden. Sie müssen den neuen Render- oder Sendedienst (z. B. custom2) replizieren und ähnliche Anpassungen anwenden. Ändern Sie nun das Aktionsprofil für Ihre XDP, um custom2-Dienste anstelle von custom1-Diensten zum Rendern oder Senden zu verwenden.
 
-Was muss der Prozessentwickler tun, damit ein Formular auf einem Gerät in HTML und auf einem Desktop in PDF gerendert werden kann?
-Was muss der Prozessentwickler tun, damit ein Formular auf einem Gerät in HTML und auf einem Desktop in PDF gerendert werden kann?
+Was muss das Prozess-Design tun, damit ein Formular auf einem Gerät in HTML und auf einem Desktop in PDF gerendert werden kann?
+Was muss das Prozess-Design tun, damit ein Formular auf einem Gerät in HTML und auf einem Desktop in PDF gerendert werden kann?

@@ -7,8 +7,8 @@ role: Admin,Architect,Data Architect,Developer
 exl-id: 40211033-7084-4117-a3e2-73e504283266
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 95%
+source-wordcount: '250'
+ht-degree: 94%
 
 ---
 

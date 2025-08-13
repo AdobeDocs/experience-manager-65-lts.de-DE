@@ -14,7 +14,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 1ffc31e1-9e47-40fe-93b8-cd6ef96e0674
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3792'
+source-wordcount: '3794'
 ht-degree: 99%
 
 ---
@@ -157,11 +157,11 @@ Für InDesign-Dateien werden nur dann Teil-Assets extrahiert, wenn der Adobe InD
 
 Siehe [Integrieren von Experience Manager Assets mit InDesign Server](/help/assets/indesign.md).
 
-Die Prozesskomponente zum Extrahieren von Medien im Workflow `DAM Update Asset` führt mehrere vorkonfigurierte ExtendScript-Skripte aus, um InDesign-Dateien zu verarbeiten.
+Die Prozesskomponente zur Extraktion von Medien im Workflow `DAM Update Asset` führt mehrere vorkonfigurierte ExtendScript-Skripte aus, um InDesign-Dateien zu verarbeiten.
 
-![Die ExtendScript-Pfade in den Argumenten des Prozesses zum Extrahieren von Medien](assets/6_5_mediaextractionprocess.png)
+![Die ExtendScript-Pfade in den Argumenten des Prozesses zur Extraktion von Medien](assets/6_5_mediaextractionprocess.png)
 
-Die ExtendScript-Pfade in den Argumenten der Prozesskomponente zum Extrahieren von Medien im Workflow [!UICONTROL DAM-Update-Asset]
+Die ExtendScript-Pfade in den Argumenten der Prozesskomponente zur Extraktion von Medien im Workflow [!UICONTROL DAM-Update-Asset]
 
 Die folgenden Skripte werden von der Dynamic Media-Integration verwendet:
 
@@ -226,7 +226,7 @@ Erstellte Bildvorgaben sind auch als dynamische Ausgabedarstellungen verfügbar,
 
 **Erhöhen oder verringern Sie die Anzahl der angezeigten Dynamic Media-Bildvorgaben:**
 
-1. Navigieren Sie zu CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. https://localhost Navigieren Sie zu CRXDE Lite ([:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigieren Sie zum Knoten für die Bildvorgabenliste unter `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`.
 
    ![increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
@@ -401,7 +401,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
     </ul>
     <div>
       Das Scharfzeichnen wird unter
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/sharpening_images.pdf?lang=de">Scharfzeichnen von Bildern</a> beschrieben.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/sharpening_images.pdf">Scharfzeichnen von Bildern</a> beschrieben.
     </div> </td>
   </tr>
   <tr>

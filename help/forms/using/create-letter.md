@@ -9,8 +9,8 @@ role: Admin, User, Developer
 exl-id: b866ff4a-251c-4402-b426-9c4d97fd181d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3982'
-ht-degree: 100%
+source-wordcount: '3981'
+ht-degree: 99%
 
 ---
 
@@ -159,7 +159,7 @@ Analysieren Sie jeden Brief, um die verschiedenen Teile freizulegen, die den Bri
 
 * Die Bedingungen, unter denen Business-Anwenderinnen und -Anwender, etwa bei der Schadensregulierung oder der Sachbearbeitung, Inhalte oder Teile davon im Brief ändern.
 * Szenarien beschreiben das Benutzererlebnis, die Anforderungen und die Vorteile der Brieflösung.
-* Szenarien bieten außerdem die erforderlichen Fertigkeiten und Tools, die Sie für Ihr Projekt benötigen.
+* Szenarien bieten auch :The erforderlichen Fertigkeiten und Tools, die Sie für Ihr Projekt benötigen.
 * Empfohlene Vorgehensweisen für die Planung Ihrer Implementierung. ``Allgemeine Übersicht über die Implementierung.
 
 ## Vorteile der Analyse {#benefits-of-performing-the-analysis}

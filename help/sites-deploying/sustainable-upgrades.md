@@ -9,8 +9,8 @@ hidefromtoc: true
 exl-id: 5a93918b-3b5f-49e0-9283-86776f9d8fb4
 source-git-commit: 180fd02df50f84e0d4f9bc01efe56e28d25555e2
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 100%
+source-wordcount: '855'
+ht-degree: 92%
 
 ---
 
@@ -42,17 +42,17 @@ In früheren Versionen von Adobe Experience Manager (AEM) wurden viele APIs übe
 
 #### Inhaltsklassifizierungen {#content-classifications}
 
-AEM hat lange das Prinzip von Überlagerungen und Sling Resource Merger verwendet, um Kundinnen und Kunden die Möglichkeit zu bieten, AEM-Funktionen zu erweitern und anzupassen. Vordefinierte Funktionen für die AEM-Konsolen und die Benutzeroberfläche werden in **/libs** gespeichert. Kundinnen und Kunden sollten niemals Objekte unter **/libs** ändern, konnten aber zusätzliche Inhalte unter **/apps** hinzufügen, um die in **/libs** definierte Funktionalität zu überlagern und zu erweitern. (Weitere Informationen finden Sie im Beitrag zur Entwicklung mit Überlagerungen.) Dies hat bei der Aktualisierung von AEM zu zahlreichen Problemen geführt, weil teilweise der Inhalt in **/libs** geändert wurde, weshalb die Überlagerungsfunktion auf unerwartete Weise fehlschlug. Kundinnen und Kunden konnten AEM-Komponenten außerdem durch Vererbung über `sling:resourceSuperType` oder einfach durch einen Verweis auf eine Komponente in **/libs** direkt über „sling:resourceType“ erweitern. Ähnliche Aktualisierungsprobleme konnten bei Anwendungsfällen mit Verweisen und Außerkraftsetzungen auftreten.
+AEM hat lange das Prinzip von Überlagerungen und Sling Resource Merger verwendet, um Kundinnen und Kunden die Möglichkeit zu bieten, AEM-Funktionen zu erweitern und anzupassen. Vordefinierte Funktionen für die AEM-Konsolen und die Benutzeroberfläche werden in **/libs** gespeichert. Kundinnen und Kunden sollten niemals Objekte unter **/libs** ändern, konnten aber zusätzliche Inhalte unter **/apps** hinzufügen, um die in **/libs** definierte Funktionalität zu überlagern und zu erweitern. (Weitere Informationen finden Sie im Beitrag zur Entwicklung mit Überlagerungen.) Dies hat bei der Aktualisierung von AEM zu zahlreichen Problemen geführt, weil teilweise der Inhalt in **/libs** geändert wurde, weshalb die Überlagerungsfunktion auf unerwartete Weise fehlschlug. Kunden können AEM-Komponenten auch durch Vererbung über `sling:resourceSuperType` erweitern oder einfach auf eine Komponente in **/libs** Sling:resourceType verweisen. Ähnliche Aktualisierungsprobleme konnten bei Anwendungsfällen mit Verweisen und Außerkraftsetzungen auftreten.
 
 Um dies sicherer zu machen und für Kundinnen und Kunden deutlicher zu kennzeichnen, welche Bereiche von **/libs** sie gefahrlos verwenden können, wurde der Inhalt in **/libs** mit den folgenden Mixins klassifiziert:
 
-* **Öffentlich (granite:PublicArea)**: Definiert einen Knoten als „Öffentlich“, damit er überlagert, vererbt (`sling:resourceSuperType`) oder direkt verwendet (`sling:resourceType`) werden kann. Als „Öffentlich“ gekennzeichnete Knoten unter „/libs“ können sicher aktualisiert werden, indem ein Kompatibilitätspaket hinzugefügt wird. Kundinnen und Kunden sollten grundsätzlich nur Knoten nutzen, die als „Öffentlich“ gekennzeichnet sind. 
+* **Öffentlich (Granite:PublicArea)** - Definiert einen Knoten als „Öffentlich“, damit er überlagert, vererbt (`sling:resourceSuperType`) oder direkt verwendet (`sling:resourceType`) werden kann. Als „Öffentlich“ gekennzeichnete Knoten unter „/libs“ können sicher aktualisiert werden, indem ein Kompatibilitätspaket hinzugefügt wird. Kundinnen und Kunden sollten grundsätzlich nur Knoten nutzen, die als „Öffentlich“ gekennzeichnet sind. 
 
-* **Abstrakt (granite:AbstractArea)**: Definiert einen Knoten als „Abstrakt“. Knoten können überlagert oder vererbt (`sling:resourceSupertype`), aber nicht direkt verwendet werden (`sling:resourceType`).
+* **Abstrakt (:AbstractArea))** Definiert einen Knoten als „Abstrakt“. Knoten können überlagert oder vererbt (`sling:resourceSupertype`), aber nicht direkt verwendet werden (`sling:resourceType`).
 
-* **Endgültig (granite:FinalArea)** – Definiert einen Knoten als „Endgültig“. Als endgültig eingestufte Knoten sollten idealerweise nicht überlagert oder vererbt werden. Endgültige Knoten können direkt über `sling:resourceType` verwendet werden. Unterknoten der endgültigen Knoten werden standardmäßig als intern eingestuft
+* **Endgültig (:FinalArea)** - Definiert einen Knoten als „Endgültig“. Als endgültig eingestufte Knoten sollten idealerweise nicht überlagert oder vererbt werden. Endgültige Knoten können direkt über `sling:resourceType` verwendet werden. Unterknoten der endgültigen Knoten werden standardmäßig als intern eingestuft
 
-* ***Intern (granite:InternalArea)*** – Definiert einen Knoten als „Intern“. Als „intern“ klassifizierte Knoten sollten idealerweise nicht überlagert, vererbt oder direkt verwendet werden. Diese Knoten sind ausschließlich für interne Funktionen von AEM vorgesehen.
+* ***Intern (Granite:InternalArea)*** - Definiert einen Knoten als „Intern“. Als „intern“ klassifizierte Knoten sollten idealerweise nicht überlagert, vererbt oder direkt verwendet werden. Diese Knoten sind ausschließlich für interne Funktionen von AEM vorgesehen.
 
 * **Keine Anmerkung**: Knoten übernehmen die Klassifizierung gemäß der Baumstruktur. Der /-Stamm ist standardmäßig „Öffentlich“. **Knoten mit einem übergeordneten Knoten, der als „Intern“ oder „Endgültig“ klassifiziert ist, werden ebenfalls als „Intern“ behandelt.**
 

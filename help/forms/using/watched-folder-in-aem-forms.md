@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 632ecead-f57d-4b43-8a3d-f2b0b8fe1115
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '7164'
-ht-degree: 100%
+source-wordcount: '7160'
+ht-degree: 99%
 
 ---
 
@@ -66,7 +66,7 @@ Sie können die folgenden Eigenschaften für einen überwachten Ordner konfiguri
 * **inputProcessorType (Zeichenfolge)**: Der Typ des zu startenden Prozesses. Zur Auswahl stehen Workflow, Skript oder Dienst. Dies ist eine obligatorische Eigenschaft.
 * **inputProcessorId (Zeichenfolge)**: Das Verhalten der Eigenschaft „inputProcessorId“ wird durch den für die Eigenschaft „inputProcessorType“ angegebenen Wert gesteuert. Dies ist eine obligatorische Eigenschaft. In der folgenden Liste werden alle möglichen Werte der Eigenschaft „inputProcessorType“ und die entsprechenden Anforderungen für die Eigenschaft „inputProcessorType“ aufgeführt:
 
-   * Für einen Workflow geben Sie das Workflow-Modell an, das ausgeführt werden soll. Zum Beispiel: /etc/workflow/models/&lt;workflow_name>/jcr:content/model
+   * Für einen Workflow geben Sie das Workflow-Modell an, das ausgeführt werden soll. Beispiel: /etc/workflow/models/&lt;workflow_name>/jcr:content/model
    * Für ein Skript geben Sie den JCR-Pfad des auszuführenden Skripts an. Zum Beispiel: /etc/fd/watchfolder/test/testScript.ecma
    * Für einen Dienst geben Sie den Filter an, der zum Suchen nach einem OSGi-Dienst verwendet werden soll. Der Dienst ist als Implementierung der com.adobe.aemfd.watchfolder.service.api.ContentProcessor-Schnittstelle registriert.
 
@@ -294,7 +294,7 @@ Wenn Sie Ihre Skripte an einem benutzerdefinierten Speicherort ablegen möchten,
 1. Erstellen Sie einen Systembenutzer programmgesteuert oder über die Konsole https://&#39;[server]:[port]&#39;/crx/explorer. Sie können auch vorhandene Systembenutzende verwenden. Es ist wichtig, hier mit Systembenutzenden anstelle von normalen Benutzenden zu arbeiten.
 1. Gewähren Sie neu erstellten oder vorhandenen Systembenutzenden Leserechte für den benutzerdefinierten Speicherort, an dem die Skripte gespeichert werden. Sie können mehrere benutzerdefinierte Speicherorte verwenden. Sie müssen ihm für alle benutzerdefinierten Speicherorte mindestens Leserechte gewähren.
 1. Suchen Sie in der Felix-Konfigurationskonsole (/system/console/configMgr) die Dienstbenutzerzuordnung für die watch-folders. Diese Zuordnung lautet ähnlich wie &#39;Mapping: adobe-aemds-core-watch-folder=…&#39;.
-1. Klicken Sie auf die Zuordnung. Ändern Sie für den Eintrag &#39;adobe-aemds-core-watch-folder:scripts=fd-service&#39; die Angabe „fd-service“ in die ID des benutzerdefinierten Systembenutzers. Klicken Sie auf Speichern.
+1. Klicken Sie auf die Zuordnung. Ändern Sie für den Eintrag „adobe-aemds-core-watch-folder:scripts=fd-service“ „fd-service“ in die ID des benutzerdefinierten Systembenutzers. Klicken Sie auf Speichern.
 
 Jetzt können Sie den konfigurierten, benutzerdefinierten Speicherort verwenden, um die Skripte zu speichern.
 
@@ -660,7 +660,7 @@ Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsof
 
 1. Öffnen Sie CRXDE Lite in einem Browserfenster. https://&#39;[server]:[port]&#39;/crx/de/
 
-1. Navigieren Sie zum Ordner „/etc/fd/watchfolder/config/“ und erstellen Sie einen Knoten des Typs „nt:unstructured“.
+1. Navigieren Sie zum Ordner &quot;/etc/fd/watchfolder/config/&quot; und erstellen Sie einen Knoten des Typs „nt:unstructured&quot;.
 
    ![configure-the-watched-folder-pdf](assets/configure-the-watched-folder-pdf.png)
 
@@ -669,7 +669,7 @@ Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsof
    * folderPath (Zeichenfolge): Der Pfad des Ordners, der regelmäßig mit dem angegebenen Zeitintervall überprüft werden soll. Der Ordner muss sich an einem freigegebenen Speicherort befinden und alle Server müssen uneingeschränkten Zugriff auf diesen Server haben.
 inputProcessorType (Zeichenfolge): Der Typ des zu startenden Prozesses. Geben Sie für dieses Tutorial „Workflow“ an.
 
-   * inputProcessorId (Zeichenfolge): Das Verhalten der Eigenschaft „inputProcessorId“ wird durch den für die Eigenschaft „inputProcessorType“ angegebenen Wert gesteuert. In diesem Beispiel hat die Eigenschaft „inputProcessorType“ den Wert „workflow“. Geben Sie daher für die Eigenschaft „inputProcessorId“ den folgenden Pfad des PDFG-Workflows an: /etc/workflow/models/pdfg/jcr:content/model
+   * inputProcessorId (Zeichenfolge): Das Verhalten der Eigenschaft „inputProcessorId“ wird durch den für die Eigenschaft „inputProcessorType“ angegebenen Wert gesteuert. In diesem Beispiel hat die Eigenschaft „inputProcessorType“ den Wert „workflow“. Geben Sie daher für die Eigenschaft „inputProcessorId“ den folgenden Pfad für den PDFG-Workflow an: /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern (Zeichenfolge): Das Muster der Ausgabedatei. Sie können ein Ordner- oder Dateimuster angeben. Wenn Sie ein Ordnermuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben in den Workflows. Wenn Sie ein Dateimuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben im Dateimuster.
 

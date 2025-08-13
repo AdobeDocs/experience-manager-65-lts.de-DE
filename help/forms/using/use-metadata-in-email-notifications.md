@@ -9,8 +9,8 @@ role: Admin, User, Developer
 exl-id: 64d4ef01-ee33-4c8b-977f-0c9b31755820
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 98%
+source-wordcount: '867'
+ht-degree: 96%
 
 ---
 
@@ -184,8 +184,8 @@ Sie können auch benutzerdefinierte Metadaten in einer E-Mail-Benachrichtigung v
 
    Wenn Sie keinen Titel angeben, zeigt das Feld Benutzerdefinierte Metadaten den vollständigen Pfad der ECMAScript-Datei an. Führen Sie die folgenden Schritte aus, um einen aussagekräftigen Titel für das Skript festzulegen:
 
-   1. Erweitern Sie den Skriptknoten, klicken Sie mit der rechten Maustaste auf den Knoten **[!UICONTROL jcr:content]** und dann auf **[!UICONTROL Mixins]**.
-   1. Geben Sie „mix:title“ in das Dialogfeld zur Mixin-Bearbeitung ein und klicken Sie auf **+**.
+   1. Erweitern Sie den Skriptknoten, klicken Sie mit der rechten Maustaste auf den **[!UICONTROL jcr:content]**-Knoten und klicken Sie auf **[!UICONTROL Mixins]**.
+   1. Geben Sie :title Dialogfeld Mixins bearbeiten ein und klicken Sie auf **+**.
    1. Fügen Sie eine Eigenschaft mit den folgenden Werten hinzu.
 
       | Name | jcr:title |

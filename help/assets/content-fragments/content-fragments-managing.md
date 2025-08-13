@@ -93,7 +93,7 @@ Die Methode zum Erstellen eines Inhaltsfragments ist folgende:
 In der **Assets**-Konsole ist eine Reihe von Aktionen für Ihre Inhaltsfragmente verfügbar, und zwar entweder:
 
 * In der Symbolleiste: Wenn Sie Ihr Fragment ausgewählt haben, sind alle passenden Aktionen verfügbar.
-* Als [Schnellzugriffe](/help/sites-authoring/basic-handling.md#quick-actions): Eine Untergruppe von Aktionen, die für die einzelnen Fragmentkarten verfügbar sind.
+* Als [Schnellzugriffe](/help/sites-authoring/basic-handling.md#quick-actions): Eine Teilmenge von Aktionen, die für die einzelnen Fragmentkarten verfügbar sind.
 
 ![Aktionen](assets/cfm-managing-02.png)
 

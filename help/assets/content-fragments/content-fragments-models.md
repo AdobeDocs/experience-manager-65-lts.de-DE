@@ -8,7 +8,7 @@ exl-id: 7d6e3662-f541-4755-b2a6-b35724dd8932
 source-git-commit: 6fccb80857b22ce0ab72f987afc9ce34d66bea54
 workflow-type: tm+mt
 source-wordcount: '2339'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -108,9 +108,9 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 
      >[!NOTE]
      >
-     >Aus Leistungsgründen wird nicht empfohlen, mehr als zehn Rich-Text-Felder in einem Modell zu haben.
+     >Aus Leistungsgründen wird dringend davon abgeraten, mehr als 10 Rich-Text-Felder in einem Modell zu verwenden.
      >
-     >Bei Bedarf wird die Verwendung von [verschachtelten Inhaltsfragmenten“ ](#fragment-reference-nested-fragments).
+     >Es wird empfohlen, bei Bedarf [verschachtelte Inhaltsfragmente](#fragment-reference-nested-fragments) zu verwenden.
 
 * **Zahl**
    * Fügen Sie ein oder mehrere numerische Felder hinzu.
@@ -240,10 +240,10 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 >AEM bietet einen Wiederholungsschutz für:
 >
 >* Inhaltsreferenzen
->Verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
+>  >  Verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
 >
 >* Fragmentverweise in GraphQL
->Wenn Sie eine Deep-Abfrage erstellen, die mehrere, sich gegenseitig referenzierende Inhaltsfragmente zurückgibt, gibt sie beim ersten Auftreten NULL zurück.
+>  >  Wenn Sie eine tiefe Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, gibt sie beim ersten Auftreten null zurück.
 
 ### Inhaltsreferenz {#content-reference}
 

@@ -110,7 +110,7 @@ Seien Sie immer bereit für elastisches Clustering, gehen Sie immer davon aus, d
 
 Nichts, was Sie tun, sollte den alten Code eines Kunden zerstören. Nur `/libs` sollte Produkt-Code enthalten, der während eines Upgrades aktualisiert werden kann. Der Abschnitt `/apps` des Repositorys ist Projekt-Code und der Abschnitt `/etc` enthält benutzerdefinierte Konfigurationen, die beibehalten werden müssen. Überschreiben Sie grundsätzlich nichts in `/apps`, `/content` und `/home`. Nach einem Upgrade sollten alter Projekt-Code, Konfigurationen und Inhalte weiterhin so funktionieren wie vor dem Upgrade.
 
-Wenn Sie für Abwärtskompatibilität entwickeln, stellen Sie außerdem sicher, dass das Upgrade-Erlebnis genauso einfach ist wie das der Erstinstallation.  Einfaches Beenden von AEM, Ersetzen der Quickstart-JAR-Datei und erneutes Starten von AEM sollten ausreichen. Mit einer schnell wachsenden Installationsbasis wird die Effizienz von Upgrades ein zunehmend wichtiger Vorteil sein.
+Wenn Sie für Abwärtskompatibilität entwickeln, stellen Sie außerdem sicher, dass das Upgrade-Erlebnis genauso einfach ist wie das der Erstinstallation.  Einfaches Stoppen von AEM, Ersetzen der Quickstart-JAR-Datei und erneutes Starten von AEM sollten ausreichen. Mit einer schnell wachsenden Installationsbasis wird die Effizienz von Upgrades ein zunehmend wichtiger Vorteil sein.
 
 Bestehende APIs können und sollten als veraltet markiert werden, wenn eine neuere, bessere Funktionalität diese ersetzt, alle APIs, die in einer früheren 5.x-Version veröffentlicht wurden, müssen weiterhin funktionsfähig bleiben, da sie möglicherweise in benutzerdefiniertem Anwendungs-Code verwendet werden. Keine dieser APIs sollte entfernt werden.
 

@@ -8,8 +8,8 @@ feature: Adaptive Forms
 exl-id: 636f7b61-549e-45c7-ab21-94bb90db2b22
 source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 91%
+source-wordcount: '1697'
+ht-degree: 90%
 
 ---
 

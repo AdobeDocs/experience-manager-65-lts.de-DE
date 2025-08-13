@@ -11,8 +11,8 @@ role: Developer
 exl-id: a18b1bc9-72a3-4836-a755-db586e56cf89
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 100%
+source-wordcount: '1089'
+ht-degree: 97%
 
 ---
 
@@ -169,7 +169,7 @@ Das folgende JSP-Skriptbeispiel ruft die `jcr:title`-Eigenschaft aus dem Reposit
 
 `${prop}_commentI18n`
 
-Ein `cq:page`-Knoten enthält beispielsweise die Eigenschaft jcr:title, die lokalisiert wird. Der Hinweis wird als Wert der Eigenschaft mit dem Namen jcr:title_commentI18n angegeben.
+Ein `cq:page`-Knoten enthält beispielsweise die jcr:title-Eigenschaft, die lokalisiert wird. Der Hinweis wird als Wert der Eigenschaft mit dem Namen „jcr:title_commentI18n&quot; bereitgestellt.
 
 ### Prüfung der Internationalisierungsabdeckung {#testing-internationalization-coverage}
 

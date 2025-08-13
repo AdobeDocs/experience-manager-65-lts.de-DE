@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## Voraussetzungen {#prerequisites}
 
-* [Erstellen von OSGI-Bundles](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&amp;CID=RedirectAEMCommunityKautuk)
+* [Erstellen von OSGI-Bundles](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&CID=RedirectAEMCommunityKautuk)
 * [Entwickeln von AEM-Komponenten](/help/sites-developing/components.md)
 * [Erstellen von adaptiven Formularen](../../forms/using/creating-adaptive-form.md)
 * [Bearbeiten adaptiver Formulare](../../forms/using/introduction-forms-authoring.md)

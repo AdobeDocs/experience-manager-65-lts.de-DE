@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
 source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
-source-wordcount: '10487'
-ht-degree: 100%
+source-wordcount: '10480'
+ht-degree: 99%
 
 ---
 
@@ -279,7 +279,7 @@ Der Workflow für die **Dynamic Media-Videokodierung** kodiert Videos, wenn Dyna
 
 <!-- DEAD The following are best-practice tips for encoding source video files.
 
-For advice about video encoding, see [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_de).
+For advice about video encoding, see [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en).
 
 * [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en). -->
 
@@ -294,9 +294,9 @@ Die folgende Tabelle beschreibt die empfohlenen Werte für Größe, Seitenverhä
 
 | Größe | Seitenverhältnis | Mindest-Bitrate |
 |--- |--- |--- |
-| 1024 x 768 | 4:3 | 4500 kBit/s für die meisten Videos |
-| 1280 x 720 | 16:9 | 3000–6000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt |
-| 1920 x 1080 | 16:9 | 6000–8000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt |
+| 1024 x 768 | 4 :3 | 4500 kBit/s für die meisten Videos |
+| 1280 x 720 | 16 :9 | 3000–6000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt |
+| 1920 x 1080 | 16 :9 | 6000–8000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt |
 
 ### Abrufen der Metadaten von Dateien {#obtaining-a-file-s-metadata}
 
@@ -318,12 +318,12 @@ Anhand der folgenden Tabelle können Sie die Formelergebnisse in gängige Seiten
 
 | Formelergebnis | Seitenverhältnis |
 |--- |--- |
-| 1,33 | 4:3 |
-| 0,75 | 3:4 |
-| 1,78 | 16:9 |
-| 0,56 | 9:16 |
+| 1,33 | 4 :3 |
+| 0,75 | 3 :4 |
+| 1,78 | 16 :9 |
+| 0,56 | 9 :16 |
 
-Beispiel: Ein Video mit einer Breite von 1440 und einer Höhe von 1080 hat ein Seitenverhältnis von 1440:1080 bzw. 1,33. In diesem Fall wählen Sie eine Videokodierungsvorgabe mit einem Seitenverhältnis von 4:3 aus, um die Videodatei zu kodieren.
+Beispielsweise hat ein Video mit einer Breite × Höhe von 1.440 und einem Seitenverhältnis von 1.440 zu 1.080 bzw. 1,33. In diesem Fall wählen Sie eine Videokodierungsvorgabe mit einem Seitenverhältnis von 4:3 aus, um die Videodatei zu kodieren.
 
 ### Bitrate {#bitrate}
 
@@ -454,7 +454,7 @@ Damit Videoberichte ordnungsgemäß funktionieren, wird automatisch eine Report 
 Aktualisieren Sie nur dann, wenn das Enddatum des Berichts der aktuelle Tag ist. Dadurch wird sichergestellt, dass Sie das Video-Tracking sehen, das seit der letzten Ausführung des Berichts vorgenommen wurde.
 
    * Klicken Sie in der Nähe der oberen rechten Ecke auf das Symbol **Datumsauswahl**.
-Geben Sie den Anfang und das Ende des Datumsbereichs an, für den Sie Videodaten anzeigen möchten, und klicken Sie dann auf **[!UICONTROL Bericht ausführen]**.
+Geben Sie den Start und das Ende des Datumsbereichs an, für den Sie Videodaten anzeigen möchten, und klicken Sie dann auf **[!UICONTROL Bericht ausführen]**.
 
    Im Gruppenfeld „Top-Metriken“ werden verschiedene aggregierte Messungen für alle *veröffentlichten* Videos auf der Site angegeben.
 
@@ -820,7 +820,7 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
    >
    >Für globale Unterstützung von Videountertiteln in verschiedenen Sprachen ist zu beachten, dass der WebVTT-Standard separate `.vtt`-Dateien und Abrufe für jede Sprache benötigt, die Sie unterstützen möchten.
 
-   Grundsätzlich sollte die `.vtt`-Untertiteldatei denselben Namen haben wie die Videodatei, an den dann ein Kürzel für die Sprache wie -EN, -FR oder -DE angehängt wird. Dies kann Ihnen helfen, die Generierung von Video-URLs mit Ihrem vorhandenen Web-Content-Management-System zu automatisieren.
+   Grundsätzlich sollte die `.vtt`-Untertiteldatei denselben Namen haben wie die Videodatei, an den dann ein Kürzel für das Gebietsschema wie -EN, -FR oder -DE angehängt wird. Dies kann Ihnen helfen, die Generierung von Video-URLs mit Ihrem vorhandenen Web-Content-Management-System zu automatisieren.
 
 1. Laden Sie in Experience Manager Ihre WebVTT-Untertiteldatei in das DAM hoch.
 1. Navigieren Sie zum *veröffentlichten* Video-Asset, das Sie mit der hochgeladenen Untertiteldatei verbinden möchten.
@@ -1116,7 +1116,7 @@ Im Folgenden finden Sie ein Beispiel der oben genannten API unter Verwendung von
 
 >[!TAB Hinzufügen einer Abhängigkeit in pom.xml]
 
-+++**Hinzufügen einer Abhängigkeit in pom.xml**
++++**Hinzufügen einer Abhängigkeit in pom.xml** 
 
 ```java
 dependency> 
@@ -1131,7 +1131,7 @@ dependency>
 
 >[!TAB Servlet-Beispiel]
 
-+++**Servlet-Beispiel**
++++**Servlet-Beispiel** 
 
 ```java
 @Component
@@ -1210,7 +1210,7 @@ public class ManifestServlet extends HttpServlet {
 
 >[!TAB Antwort-Klasse für Servlet]
 
-+++**Antwort-Klasse für Servlet**
++++**Antwort-Klasse für Servlet** 
 
 ```java
 public class ManifestUrl extends VideoResponse { 
@@ -1240,7 +1240,7 @@ public abstract class VideoResponse {
 
 >[!TAB Konstantendatei, auf die im Servlet verwiesen wird]
 
-+++**Konstantendatei, auf die im Servlet verwiesen wird**
++++**Konstantendatei, auf die im Servlet verwiesen wird** 
 
 ```java
 public final class Constants { 
@@ -1259,7 +1259,7 @@ public final class Constants {
 
 >[!TAB ServletContext]
 
-+++**ServletContext**
++++**ServletContext** 
 
 Bereitstellen des obigen Servlets mithilfe eines `servletContext`. Im Folgenden finden Sie ein Beispiel für `servletContext`.
 

@@ -8,8 +8,8 @@ role: Admin
 exl-id: ab876224-22bd-4fd7-b609-bd5703715932
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1134'
-ht-degree: 99%
+source-wordcount: '1133'
+ht-degree: 97%
 
 ---
 
@@ -189,7 +189,7 @@ In der Benutzeroberfläche können Sie **Übernehmen** auf der Registerkarte **E
 
 In der Benutzeroberfläche können Sie **Übersetzen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren.
 
-**updateDestinationLanguage** Dieses Attribut wird für Eigenschaften verwendet, die keinen Text, sondern Sprach-Codes enthalten, wie zum Beispiel jcr:language. Der Benutzer übersetzt keinen Text, sondern das Sprachschema von der Quelle ins Ziel. Solche Eigenschaften werden nicht zur Übersetzung versendet.
+**updateDestinationLanguage** Dieses Attribut wird für Eigenschaften verwendet, die keinen Text, sondern Sprach-Codes enthalten, z. B. jcr:language. Der Benutzer übersetzt keinen Text, sondern das Sprachschema von der Quelle ins Ziel. Solche Eigenschaften werden nicht zur Übersetzung versendet.
 
 In der Benutzeroberfläche können Sie **Übersetzen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren, außer bei den spezifischen Eigenschaften mit Sprach-Codes als Wert.
 

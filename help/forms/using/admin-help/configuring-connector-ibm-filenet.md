@@ -76,7 +76,7 @@ Connector für IBM FileNet enthält den Prozess-Engine-Connector für den IBM Fi
 
 Wenn Sie beim Konfigurieren der Content Engine-Verbindung oder der Prozess-Engine-Einstellungen einen falschen Benutzernamen oder ein falsches Kennwort eingeben, erhalten Sie abhängig davon, ob die Dienste aktuell ausgeführt werden, folgende Ergebnisse:
 
-* Wenn der Dienst „Repository-Anbieter“ für IBM FileNet und der Dienst „Content Repository Connector for IBM FileNet“ beim Speichern der Dienstkonfigurationsinformationen beendet sind, tritt kein Fehler auf. Wenn Sie den Dienst das nächste Mal starten, wird jedoch eine Ausnahme ausgelöst und der Dienst startet nicht.
+* Wenn der Dienst „Repository-Anbieter“ für IBM FileNet und der Dienst „Content Repository Connector for IBM FileNet“ beim Speichern der Dienstkonfigurationsinformationen gestoppt sind, tritt kein Fehler auf. Wenn Sie den Dienst das nächste Mal starten, wird jedoch eine Ausnahme ausgelöst und der Dienst startet nicht.
 * Wenn der Dienst „Repository-Anbieter“ für IBM FileNet oder der Dienst „Content Repository Connector for IBM FileNet“ beim Speichern der Dienstkonfigurationsinformationen gestartet ist, versucht der Dienst sofort, die Anmeldeinformationen zu überprüfen. In diesem Fall tritt ein Fehler auf und die Konfigurationsinformationen werden nicht gespeichert.
 
 ## Ändern des Repository-Dienstanbieters {#change-the-repository-service-provider}

@@ -12,7 +12,7 @@ exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
 source-git-commit: dc405bec510b0f72e916df343790572b3cd51526
 workflow-type: tm+mt
 source-wordcount: '3307'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -170,7 +170,7 @@ Wenn die Originalbildgröße kleiner ist als die von der intelligente Bildbearbe
 
 +++
 
-+++Welche Bildformate werden unterstützt?   
++++Welche Bildformate werden unterstützt?
 
 Die folgenden Bildformate werden für die intelligente Bildbearbeitung unterstützt:
 
@@ -213,7 +213,7 @@ Die intelligente Bildbearbeitung funktioniert bei Bildern, die über HTTP, HTTPS
 
 +++
 
-+++Bin ich dazu berechtigt, die intelligente Bildbearbeitung zu nutzen?
++++Bin ich zur Verwendung der intelligenten Bildbearbeitung berechtigt?
 
 Die intelligente Bildbearbeitung ist sofort für alle Kundinnen und Kunden verfügbar. Um die Vorteile zu nutzen, fügen Sie einfach `bfc=on`, `dpr=on,dprValue` oder `network=on` oder alle drei Parametereinstellungen zu Ihren vorhandenen URLs oder Vorgaben hinzu.
 
@@ -221,7 +221,7 @@ Um die intelligente Bildbearbeitung nutzen zu können, muss Dynamic Media Classi
 
 +++
 
-+++Wie kann ich die intelligente Bildbearbeitung für mein Konto aktivieren?
++++Wie verläuft der Prozess zum Aktivieren der intelligenten Bildbearbeitung für ein Konto? 
 
 Um die intelligente Bildbearbeitung zu verwenden, fügen Sie einfach `bfc=on`, `dpr=on,dprValue` oder `network=on` oder alle drei Parametereinstellungen zu Ihren vorhandenen URLs oder Vorgaben hinzu. Wenn Sie diese Änderungen nicht manuell vornehmen möchten, können Sie die intelligente Bildbearbeitung standardmäßig aktivieren lassen, indem Sie einen Support-Fall erstellen.
 
@@ -278,7 +278,7 @@ So passen Sie die TTL an:
 
 +++
 
-+++Wann wird mein Konto voraussichtlich für die intelligente Bildbearbeitung aktiviert? 
++++Wann wird ein Konto voraussichtlich für die intelligente Bildbearbeitung aktiviert?
 
 Der Support bearbeitet Anfragen in der Reihenfolge ihres Eingangs gemäß der Warteliste.
 
@@ -336,9 +336,9 @@ Aus diesem Header geht Folgendes hervor:
 >**X-Adobe-Smart-Imaging = -1, WebP bereitgestellt**
 >
 >Wenn `X-Adobe-Smart-Imaging` den Wert -1 hat und WebP weiterhin bereitgestellt wird, ist die intelligente Bildbearbeitung aktiv. Die Größenvorteile wurden jedoch aufgrund von veraltetem Cache nicht berechnet. Sie können `cache=update` (nur einmal) in der URL des Bildes verwenden, um dieses Problem zu beheben.
->&#x200B;>Beispiel für die Verwendung des Modifikators:
->&#x200B;>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->&#x200B;>Um den gesamten Cache ungültig zu machen, müssen Sie einen Support-Fall erstellen.
+>>Beispiel für die Verwendung des Modifikators:
+>>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>>Um den gesamten Cache ungültig zu machen, müssen Sie einen Support-Fall erstellen.
 
 +++
 
@@ -348,7 +348,7 @@ Wenn Sie zur standardmäßigen Bereitstellung von WebP zurückwechseln möchten,
 
 +++
 
-+++Kann die intelligente Bildbearbeitung für jede Anfrage deaktiviert werden?
++++Kann die intelligente Bildbearbeitung für eine beliebige Anfrage deaktiviert werden?
 
 Ja. Sie können die intelligente Bildbearbeitung deaktivieren, indem Sie einen der folgenden Modifikatoren hinzufügen:
 
@@ -368,7 +368,7 @@ Die intelligente Bildbearbeitung bietet drei Optionen, die Sie aktivieren oder d
 
 +++
 
-+++Ich habe eine URL mit „fmt=tif“ im Chrome-Webbrowser. Meine Anfrage schlägt jedoch mit einem ImageServer-Fehler fehl. Warum?
++++Ich habe eine URL mit fmt=tif im Chrome-Webbrowser. Meine Anfrage schlägt jedoch mit einem ImageServer-Fehler fehl. Warum?
 
 Dieser Fehler tritt nicht auf, wenn die intelligente Bildbearbeitung in Ihrem Konto nicht aktiviert ist. Die intelligente Bildbearbeitung funktioniert nur für das JPEG- und das PNG-Format.
 
@@ -386,7 +386,7 @@ Fügen Sie `fmt=tif` und `bfc=off` zum URL-Pfad des Bildes hinzu.
 
 +++
 
-+++Verwaltet die intelligente Bildbearbeitung nur das Bildformat oder auch die Bildqualitätseinstellungen, um optimale Ergebnisse zu erzielen?
++++Verwaltet die intelligente Bildbearbeitung nur das Bildformat oder verwaltet sie auch die Bildqualitätseinstellungen, um optimale Ergebnisse zu erzielen?
 
 Die intelligente Bildbearbeitung verwendet sowohl Format als auch Qualität. Die übrigen Parameter bleiben unverändert, wenn sie in der URL des Bildes angefordert werden.
 
@@ -398,13 +398,13 @@ Derzeit ist dies nicht vorgesehen.
 
 +++
 
-+++Passt die intelligente Bildbearbeitung automatisch die prozentuale Einstellung für die Ausgabequalität an, oder wird diese Einstellung manuell angepasst und gilt für alle Bilder? In welchem Bereich?
++++Passt die intelligente Bildbearbeitung automatisch die prozentuale Einstellung für die Ausgabequalität an oder wird diese Einstellung manuell angepasst und gilt für alle Bilder? In welchem Bereich?
 
 Die intelligente Bildbearbeitung passt den Qualitätsprozentsatz automatisch an. Diese Qualität wird mithilfe eines maschinellen Lernalgorithmus ermittelt, der von Adobe entwickelt wurde. Er ist nicht bereichsspezifisch.
 
 +++
 
-+++Welche Bildbereitstellungs-Befehle werden bei der intelligenten Bildbearbeitung unterstützt oder ignoriert?
++++Welche Bildbereitstellungsbefehle werden von der intelligenten Bildbearbeitung unterstützt oder ignoriert?
 
 Die einzigen Befehle, die ignoriert werden, sind `fmt` und `qlt`. Alle anderen Befehle werden unterstützt.
 
@@ -416,19 +416,19 @@ Diese Funktion funktioniert nur für JPEG und PNG.
 
 +++
 
-+++Warum wird ein JPEG-Bild manchmal an Chrome zurück statt WebP gesendet?
++++Warum wird an Chrome manchmal ein JPEG-Bild statt WebP zurückgegeben?
 
 Die intelligente Bildbearbeitung entscheidet, ob die Konvertierung vorteilhaft ist. Das neue Bild wird nur zurückgegeben, wenn die Konvertierung von Vorteil ist.
 
 +++
 
-+++Warum funktioniert die Funktion für das Geräte-Pixel-Verhältnis (Device Pixel Ratio, DPR) bei zusammengesetzten Bildern nicht wie erwartet?
++++Warum funktioniert die Funktion für das Gerätepixelverhältnis (Device Pixel Ratio, DPR) bei zusammengesetzten Bildern nicht wie erwartet?
 
 Wenn ein zusammengesetztes Bild zu viele Ebenen umfasst, kann die DPR-Funktionalität bei Verwendung eines Positionsmodifikators beeinträchtigt sein. Dieses Problem ist bekannt und sollte in künftigen Versionen der intelligenten Bildbearbeitung behoben worden sein. Wenn andere Funktionen der intelligenten Bildbearbeitung nicht wie erwartet funktionieren, können Sie einen Support-Fall erstellen, um das Problem zu melden.
 
 +++
 
-+++Warum konvertiert die intelligente Bildbearbeitung PNG weiterhin in verlustfreies WebP/AVIF?
++++Warum wird PNG durch die intelligente Bildbearbeitung weiterhin in verlustfreies WebP/AVIF konvertiert?
 
 Da PNG ein verlustfreies Format ist, wurden frühere WebP- und AVIF-Bereitstellungen verlustfrei durchgeführt, was zu einer höheren Größe als erwartet führte. Die intelligente Bildbearbeitung unterstützt jetzt verlustreiche Konvertierungen. Sie können den Modifikator `cache=update` in einer Bildanforderung verwenden (nur einmal), um dieses Problem zu beheben. Ein Beispiel für die Verwendung dieses Modifikators:
 

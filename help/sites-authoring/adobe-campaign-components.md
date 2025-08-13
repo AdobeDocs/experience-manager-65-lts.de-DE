@@ -14,7 +14,7 @@ index: false
 source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
 source-wordcount: '2857'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -267,7 +267,7 @@ Im Editor für die Bearbeitung im Kontext können Sie Text hinzufügen, die Ausr
 
 >[!NOTE]
 >
->Nur die Felder, die im **nms:seedMember**-Schema oder einer seiner Erweiterungen definiert sind, werden berücksichtigt. Die Attribute der mit „nms **verknüpften:seedMember** sind nicht verfügbar.
+>Nur die Felder, die im Schema **nms:seedMember** oder einer seiner Erweiterungen festgelegt wurden, werden berücksichtigt. Die Attribute der mit **nms:seedMember** verknüpften Tabellen sind nicht verfügbar.
 
 ## Adobe Campaign-Formular-Komponenten {#adobe-campaign-form-components}
 

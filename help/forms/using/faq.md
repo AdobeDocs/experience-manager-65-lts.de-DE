@@ -12,8 +12,8 @@ role: Admin, User, Developer
 exl-id: fc98390c-8517-46fc-9f15-bac5d4327c60
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2007'
-ht-degree: 100%
+source-wordcount: '2006'
+ht-degree: 98%
 
 ---
 
@@ -212,7 +212,7 @@ Antwort: Das Datumsfeld akzeptiert das ISO-Format JJJJ-MM-TT. Wenn Sie ein Datum
 
 1. Führen HTML5-Formulare das Initialisierungsskript und das Formularbereitschaftsereignis mehrmals aus?
 
-   Antwort: Ja, die Initialisierungsskripte und Formularbereitschaftsereignisse werden mehrfach ausgeführt, mindestens einmal auf dem Server und einmal auf der Client-Seite. Es wird empfohlen, Skripte wie „initialize“ oder „form:ready“-Ereignisse basierend auf einer Geschäftslogik (Formular- oder Felddaten) zu schreiben, sodass die Aktion basierend auf dem Status der Daten und „idempotent“ (wenn die Daten gleich sind) ausgeführt wird.
+   Antwort: Ja, die Initialisierungsskripte und Formularbereitschaftsereignisse werden mehrfach ausgeführt, mindestens einmal auf dem Server und einmal auf der Client-Seite. Es wird empfohlen, Skripte wie initialize oder form:ready-Ereignisse basierend auf einer Geschäftslogik (Formular- oder Felddaten) zu schreiben, sodass die Aktion basierend auf dem Status der Daten und idempotent (wenn die Daten gleich sind) ausgeführt wird.
 
 ### XDP-Entwurf {#designing-xdp}
 

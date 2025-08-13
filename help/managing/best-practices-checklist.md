@@ -11,8 +11,8 @@ role: Admin,Architect,Data Architect,Developer,Leader
 exl-id: 4a7d8228-101a-47bd-9bcf-d521a69d87a0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 100%
+source-wordcount: '317'
+ht-degree: 95%
 
 ---
 
@@ -51,6 +51,6 @@ Um ein qualitativ hochwertiges Projekt erfolgreich abzuliefern, müssen Sie alle
 
    >[!NOTE]
    >
-   >Es gibt keine direkte 1:1-Beziehung zwischen den einzelnen erforderlichen Dokumenten und zu erbringenden Leistungen.
+   >Es besteht keine direkte 1:1-Beziehung zwischen den einzelnen erforderlichen Dokumenten und den zu erbringenden Leistungen.
 
 1. Die Arbeitsblätter **[Projekt-Heartbeat](/help/managing/best-practices.md#project-heartbeat-dashboard)** und **[Status nach Rolle](/help/managing/best-practices.md#status-by-role)** werden basierend auf den Status der **[erforderlichen Dokumente](/help/managing/best-practices.md#required-documents)** und **[Leistungen](/help/managing/best-practices.md#deliverables)** automatisch aktualisiert, um Ihnen einen aktuellen Überblick über den Fortschritt und den Zustand Ihres Projekts zu geben.

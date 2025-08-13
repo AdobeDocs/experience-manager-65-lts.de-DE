@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 18458c49-ab84-4d49-95b5-52922fba1365
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 100%
+source-wordcount: '577'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,7 @@ Damit der Viewer für Panoramabilder in Adobe Experience Manager ordnungsgemäß
 1. Suchen Sie auf derselben Bild-Server-Veröffentlichungsseite die Überschrift **[!UICONTROL Anfrage-Attribute]**.
 1. Suchen Sie unter der Überschrift „Anfrage-Attribute“ die Option **[!UICONTROL Maximale Größe des Antwortbildes]**. Erhöhen Sie anschließend die Werte in den entsprechenden Feldern „Breite“ und „Höhe“ auf die größtmögliche Bildgröße für Panoramabilder.
 
-   Bei Dynamic Media Classic liegt die Obergrenze bei 25.000.000 Pixel. Die zulässige Maximalgröße für Bilder mit einem Seitenverhältnis von 2:1 ist 7000 x 3500. In der Regel ist für Desktopbildschirme jedoch eine Größe von 4096 x 2048 Pixel ausreichend.
+   Bei Dynamic Media Classic liegt die Obergrenze bei 25.000.000 Pixel. Die maximal zulässige Größe für Bilder mit einem Seitenverhältnis von 2:1 beträgt 7000 x 3500. In der Regel ist für Desktopbildschirme jedoch eine Größe von 4096 x 2048 Pixel ausreichend.
 
    >[!NOTE]
    >
