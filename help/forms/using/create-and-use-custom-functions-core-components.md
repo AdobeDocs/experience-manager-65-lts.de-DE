@@ -572,7 +572,7 @@ Sehen wir uns das Formular in der Vorschau an, um zu sehen, wie die benutzerdefi
 
 >[!NOTE]
 >
-> Sie können auf den folgenden Ordner [Benutzerdefinierte Funktionen](/help/forms/using/assets/customfunctions.zip) verweisen. Laden Sie diesen Ordner herunter und installieren Sie ihn mithilfe von [Package Manager](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager) in Ihrer AEM-Instanz.
+> Sie können auf den folgenden Ordner [Benutzerdefinierte Funktionen](/help/forms/using/assets/customfunctions.zip) verweisen. Laden Sie diesen Ordner herunter und installieren Sie ihn mithilfe von [Package Manager](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager) in Ihrer AEM-Instanz.
 
 ### Unterstützung für asynchrone Funktionen in benutzerdefinierten Funktionen {#support-of-async-functions}
 
