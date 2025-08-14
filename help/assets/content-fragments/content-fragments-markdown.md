@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5ca53958-dfcd-4058-a04c-c750ab4d9a6e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a8ff456d323e848cc0c6296670b39834682a36b9
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 100%
+source-wordcount: '522'
+ht-degree: 97%
 
 ---
 
@@ -166,7 +166,7 @@ Sie können Text wie folgt fett formatieren:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Um einen Codebereich anzugeben, schließen Sie ihn in einfache Anführungszeichen (&#39;) ein. Im Gegensatz zu vorformatierten Code-Blöcken zeigt ein Code-Bereich Code innerhalb eines normalen Absatzes an.
+Um einen Codebereich anzugeben, schließen Sie ihn in einfache Anführungszeichen (`` ` ``) ein. Im Gegensatz zu vorformatierten Code-Blöcken zeigt ein Code-Bereich Code innerhalb eines normalen Absatzes an.
 
 Zum Beispiel:
 
