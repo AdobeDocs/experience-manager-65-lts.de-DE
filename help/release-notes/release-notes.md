@@ -8,11 +8,11 @@ exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 12e2966754fe317c2a20951ee29b401425de486b
 workflow-type: tm+mt
 source-wordcount: '7223'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
-# Aktuelle Versionshinweise für Adobe Experience Manager 6.5 LTS, SP1 {#release-notes}
+# Aktuelle Versionshinweise zu Adobe Experience Manager 6.5 LTS, SP1 {#release-notes}
 
 ## Versionsinformationen {#release-information}
 
@@ -121,7 +121,7 @@ AEM verhindert jetzt Leistungsbeeinträchtigungen durch falsch formatierte XMP-M
 <!--
 #### [!DNL Content Fragments] - Admin{#sites-admin-65-lts-sp1} -->
 
-#### [!DNL Content Fragments] - Editor für Fragmente{#sites-fragments-editor-65-lts-sp1}
+#### [!DNL Content Fragments] – Fragmenteditor{#sites-fragments-editor-65-lts-sp1}
 
 Andere Autorinnen und Autoren können Inhaltsfragmente selbst dann veröffentlichen, wenn sie von einer anderen Autorin oder einem anderen Autor ausgecheckt werden, was dem beabsichtigten Verhalten der Checkout-Funktion widerspricht. Diese Fehlerbehebung verhindert, dass andere Benutzende die Schaltflächen zum Veröffentlichen in der Authoring-Oberfläche sehen oder verwenden, wenn ein Inhaltsfragment ausgecheckt wird. (SITES-30578)
 
@@ -136,7 +136,7 @@ Andere Autorinnen und Autoren können Inhaltsfragmente selbst dann veröffentlic
 
 Es wurde ein Problem in der Produktlistenkomponente behoben, bei dem durch das Kontrollkästchen „Alle auswählen“ nur die ersten 20 SKUs von der ersten Seite hinzugefügt wurden anstatt alle SKUs in den Suchergebnissen. (SITES-29191)
 
-#### Kern-Backend{#sites-core-backend-65-lts-sp1}
+#### Core-Backend{#sites-core-backend-65-lts-sp1}
 
 Falsch formatierte XMP-Metadaten haben bei der Verarbeitung von Bild-Assets im `ValidationDataServlet` einen Fehler ausgelöst. Die Fehlerbehebung stellt die konforme Verarbeitung von Metadaten sicher und vermeidet redundantes Parsen ungültiger Eigenschaften. (SITE-30683)
 
@@ -452,7 +452,7 @@ Informationen zu Einrichtungsanforderungen finden Sie unter [Installationsanweis
 
 >[!NOTE]
 >
-> Wenn Sie ein direktes Upgrade von alten 6.5 SPs auf LTS SP1 durchführen, befolgen Sie bitte die Anweisungen für 6.5 bis 6.5 LTS GA [Upgrade](/help/sites-deploying/upgrade.md).
+> Wenn Sie ein direktes Upgrade von alten 6.5 SPs auf LTS SP1 durchführen, folgen Sie den Anweisungen für ein [Upgrade](/help/sites-deploying/upgrade.md) auf 6.5 bis 6.5 LTS GA.
 
 
 Detaillierte Anweisungen finden Sie unter [Dokumentation zu Upgrades](/help/sites-deploying/upgrade.md).
@@ -463,7 +463,7 @@ Detaillierte Anweisungen finden Sie unter [Dokumentation zu Upgrades](/help/site
 
 ## Installieren und Aktualisieren des AEM Forms-Add-ons {#install-update-aem-forms-add-on}
 
-Detaillierte Anweisungen finden Sie unter [Durchführen eines In-Place-Upgrades](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Detaillierte Anweisungen finden Sie unter [Durchführen eines In-Place-Upgrades](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
@@ -543,11 +543,11 @@ Wenn dieses Problem auftritt, kann eine der folgenden Ausnahmen in den Fehlerpro
 
 Zur Lösung dieses Problems ist Hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) verfügbar.
 
-### Dispatcher-Verbindungsfehler mit Nur-SSL-Funktion (behoben in AEM 6.5 LTS SP1 und höher){#ssl-only-feature}
+### Dispatcher-Verbindungsfehler mit Funktion „Nur SSL“ (behoben in AEM 6.5 LTS SP1 und höher){#ssl-only-feature}
 
 >[!NOTE]
 >
-> Dieses Problem tritt nur in AEM 6.5 LTS GA auf.
+> Dieses Problem tritt nur in Version AEM 6.5 LTS GA auf.
 
 Bei der Aktivierung der Funktion „Nur SSL“ in AEM-Bereitstellungen gibt es ein bekanntes Problem, das die Verbindung zwischen dem Dispatcher und AEM-Instanzen beeinträchtigt. Nach Aktivierung dieser Funktion können Konsistenzprüfungen fehlschlagen und die Kommunikation zwischen dem Dispatcher und AEM-Instanzen kann unterbrochen werden. Dieses Problem tritt insbesondere auf, wenn Kundinnen und Kunden versuchen, eine Verbindung über `https + IP` von Dispatcher zu AEM-Instanzen herzustellen. Dies steht im Zusammenhang mit SNI-Validierungsproblemen (Server Name Indication).
 
