@@ -1,17 +1,18 @@
 ---
-title: Versionshinweise für  [!DNL Adobe Experience Manager] .6.5 LTS
+title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5 LTS
 description: Hier finden Sie die aktuellen Versionsinformationen zu Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 922b2391b45ac1a08987f286cdbd736fe9a383c8
-workflow-type: tm+mt
+exl-id: dfda31ac-765b-401d-98d0-c19f0de22aab
+source-git-commit: eda8fc347ee8c68c1022495cbe8d48175c819be3
+workflow-type: ht
 source-wordcount: '1068'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Aktuelle Versionshinweise für Adobe Experience Manager 6.5 LTS {#release-notes}
+# Aktuelle Versionshinweise zu Adobe Experience Manager 6.5 LTS {#release-notes}
 
 ## Versionsinformationen {#release-information}
 
@@ -39,7 +40,7 @@ Eclipse Jetty 11.0.x wird als Servlet-Engine für den Schnellstart verwendet.
 * Um eine optimale Leistung zu erzielen, überschreiben Sie die GC-Standardwerte mit anderen Werten. Weitere Informationen finden Sie im Abschnitt [Installieren und Aktualisieren](/help/sites-deploying/custom-standalone-install.md).
 * Adobe verteilt Wartungs-Updates für Java™ 17 und Java™ 21 für die Verwendung durch Kunden in AEM-bezogenen Projekten, sofern diese nicht über Oracle öffentlich verfügbar sind.
 
-#### UberJar-Verpackung {#uber-jar-packaging}
+#### Uber-JAR-Verpackung {#uber-jar-packaging}
 
 * Es gibt einen geringfügigen Unterschied beim Verpacken von Uber Jar in AEM 6.5 LTS. Weitere Informationen finden Sie unter [Aktualisieren der Uber Jar-Version von AEM](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
 
@@ -49,7 +50,7 @@ Eclipse Jetty 11.0.x wird als Servlet-Engine für den Schnellstart verwendet.
 
 ## Installieren und Aktualisieren {#install-update}
 
-Informationen zu Setup-Anforderungen finden Sie unter [Installationsanweisungen](/help/sites-deploying/custom-standalone-install.md).
+Informationen zu Einrichtungsanforderungen finden Sie unter [Installationsanweisungen](/help/sites-deploying/custom-standalone-install.md).
 
 Detaillierte Anweisungen finden Sie unter [Dokumentation zu Upgrades](/help/sites-deploying/upgrade.md).
 
@@ -101,10 +102,10 @@ In diesem Abschnitt werden die Funktionen aufgeführt, die aus AEM 6.5 LTS entf
 | Portal | AEM Portal Director wird nicht unterstützt. | Es steht kein Ersatz zur Verfügung. | 6.5 LTS GA |
 | Granite | Bundle `com.adobe.granite.socketio` wird entfernt. | Es steht kein Ersatz zur Verfügung. | 6.5 LTS GA |
 | Granite | `com.adobe.granite.crx-explorer` wird nicht unterstützt. | Es steht kein Ersatz zur Verfügung. | 6.5 LTS GA |
-| Granite | `crx2oak` wird nicht unterstützt. | Wählen Sie die entsprechende Version von [Oak-Upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6.5 LTS GA |
+| Granite | `crx2oak` wird nicht unterstützt. | Wählen Sie die relevante Version von [Oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) aus. | 6.5 LTS GA |
 | Adobe | `com.adobe.cq.cq-searchpromote-integration` wird nicht unterstützt. | Es steht kein Ersatz zur Verfügung. | 6.5 LTS GA |
 | Guava | Alle Guava-Abhängigkeiten sind jetzt aus AEM entfernt und daher ist das Bundle `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002` nicht Teil von AEM. | Kunden können Guava selbst hinzufügen, wenn sie von Guava abhängig sind, oder Guava-Code durch Java-Sammlungen oder andere Alternativen ersetzen, sofern möglich. | 6.5 LTS GA |
-| `We.Retail` | `We-retail` Beispiel-Site wird nicht unterstützt. | Es steht kein Ersatz zur Verfügung. | 6.5 LTS GA |
+| `We.Retail` | Die Beispiel-Site `We-retail` wird nicht unterstützt. | Es steht kein Ersatz zur Verfügung. | 6.5 LTS GA |
 | Open Source | Bundle `oak-solr-osgi` wird nicht unterstützt. | Es steht kein Ersatz zur Verfügung. | 6.5 LTS GA |
 | Open Source | `org.apache.servicemix.bundles.abdera-parser`, `org.apache.servicemix.bundles.jdom` und `org.apache.sling.atom.taglib` werden nicht unterstützt. | Es steht kein Ersatz zur Verfügung. | 6.5 LTS GA |
 | Open Source | `org.apache.commons.io`-Pakete werden jetzt aus `org.apache.commons.commons-io` exportiert. | Keine Änderung erforderlich. | 6.5 LTS GA |
@@ -127,9 +128,9 @@ Wenn dieses Problem auftritt, kann eine der folgenden Ausnahmen in den Fehlerpro
 
 Zur Lösung dieses Problems ist Hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) verfügbar.
 
-### Dispatcher-Verbindungsfehler mit Funktion nur SSL {#ssl-only-feature}
+### Dispatcher-Verbindungsfehler mit der Funktion „Nur SSL“ {#ssl-only-feature}
 
-Bei der Aktivierung der Funktion „Nur SSL“ in AEM-Bereitstellungen gibt es ein bekanntes Problem, das die Verbindung zwischen dem Dispatcher und AEM-Instanzen beeinträchtigt. Nach Aktivierung dieser Funktion können Konsistenzprüfungen fehlschlagen und die Kommunikation zwischen dem Dispatcher und AEM-Instanzen kann unterbrochen werden. Dieses Problem tritt insbesondere auf, wenn Kundinnen und Kunden versuchen, eine Verbindung über `https + IP` von der Dispatcher zu AEM-Instanzen herzustellen. Dies steht im Zusammenhang mit SNI-Validierungsproblemen (Server Name Indication).
+Bei der Aktivierung der Funktion „Nur SSL“ in AEM-Bereitstellungen gibt es ein bekanntes Problem, das die Verbindung zwischen dem Dispatcher und AEM-Instanzen beeinträchtigt. Nach Aktivierung dieser Funktion können Konsistenzprüfungen fehlschlagen und die Kommunikation zwischen dem Dispatcher und AEM-Instanzen kann unterbrochen werden. Dieses Problem tritt insbesondere auf, wenn Kundinnen und Kunden versuchen, eine Verbindung über `https + IP` von Dispatcher zu AEM-Instanzen herzustellen. Dies steht im Zusammenhang mit SNI-Validierungsproblemen (Server Name Indication).
 
 **Auswirkungen:**
 
