@@ -463,7 +463,7 @@ Detaillierte Anweisungen finden Sie unter [Dokumentation zu Upgrades](/help/site
 
 ## Installieren und Aktualisieren des AEM Forms-Add-ons {#install-update-aem-forms-add-on}
 
-Detaillierte Anweisungen finden Sie unter [Durchführen eines In-Place-Upgrades](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Detaillierte Anweisungen finden Sie unter [Durchführen eines In-Place-Upgrades](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
