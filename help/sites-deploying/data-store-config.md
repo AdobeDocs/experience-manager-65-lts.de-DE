@@ -8,10 +8,10 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: 826074f588c60c77c9ec32b3f94b47ab9aa0c12d
 workflow-type: tm+mt
-source-wordcount: '3337'
-ht-degree: 93%
+source-wordcount: '3345'
+ht-degree: 91%
 
 ---
 
@@ -184,19 +184,19 @@ Gehen Sie wie folgt vor, um auf eine neue Version des S3-Connectors 1.60.x zu ak
 
 1. Halten Sie die AEM-Instanz an.
 
-1. Navigieren Sie im AEM-Installationsordner zu `<aem-install>/crx-quickstart/install/15` und sichern Sie die dort vorhandenen Inhalte.
-1. Löschen Sie nach der Sicherung die alte Version des S3-Connectors und die entsprechenden abhängigen Elemente, indem Sie die JAR-Dateien aus dem Ordner `<aem-install>/crx-quickstart/install/15` entfernen, z. B.:
+1. Navigieren Sie im AEM-Installationsordner zu `<aem-install>/crx-quickstart/install` und sichern Sie alle zugehörigen Unterordner.
+1. Löschen Sie nach der Sicherung die alte Version des S3-Connectors und die entsprechenden abhängigen Elemente, indem Sie die JAR-Dateien aus allen Ordnern unter `<aem-install>/crx-quickstart/install/` Ordner löschen, z. B.:
 
-   * **oak-blob-cloud-1.6.1.jar**
-   * **aws-java-sdk-osgi-1.10.76.jar**
+   * **15/oak-blob-cloud-1.78.XXX.jar**
+   * **15/aws-java-sdk-osgi-1.12.XXX.jar**
 
    >[!NOTE]
    >
    >Die oben aufgeführten Dateinamen dienen nur zu Veranschaulichungszwecken.
 
-1. Laden Sie die neueste Version des Feature Packs 1.60.x von der [Software Distribution.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/s3-connector/6-5-lts/com.adobe.granite.oak.s3connector-1.60.2.zip)
-1. Entpacken Sie den Inhalt in einen anderen Ordner und navigieren Sie dann zu `jcr_root/libs/system/install/15`.
-1. Kopieren Sie die JAR-Dateien nach **&lt;aem-install>**/crx-quickstart/install/15 im AEM-Installationsverzeichnis.
+1. Laden Sie die neueste Version des Feature Packs 1.60.x aus dem [Maven-Repository.](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)
+1. Entpacken Sie den Inhalt in einen anderen Ordner und navigieren Sie dann zu `jcr_root/libs/system/install/`.
+1. Kopieren Sie alle Unterordner in **&lt;aem-install>**/crx-quickstart/install/ im Installationsordner von AEM.
 1. Starten Sie AEM und überprüfen Sie die Funktionsweise des Connectors.
 
 Sie können die Konfigurationsdatei mit den unten beschriebenen Optionen verwenden.
