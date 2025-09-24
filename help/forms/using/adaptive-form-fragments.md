@@ -9,21 +9,22 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7da165ac-2039-4ac8-810d-fbe6f771453a
-source-git-commit: c03b3e3e4526530715718b68804ac26d2562bdb8
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2372'
-ht-degree: 100%
+source-wordcount: '2381'
+ht-degree: 99%
 
 ---
 
 # Adaptive Formularfragmente{#adaptive-form-fragments}
 
-| Version | Artikel-Link |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=de) |
-| AEM 6.5 | Dieser Artikel |
+## Gilt für {#applies-to}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung für das [Erstellen neuer adaptiver Formulare](/help/forms/using/create-an-adaptive-form-core-components.md) oder das [Hinzufügen von adaptiven Formularen zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
+Diese Dokumentation gilt für **AEM 6.5 LTS Forms**.
+
+Die Dokumentation zu AEM as a Cloud Service finden Sie unter [AEM Forms auf Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=de).
+
+<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 Zwar wird jedes Formular für einen bestimmten Zweck entwickelt, aber in den meisten Formularen gibt es gängige Segmente für persönliche Angaben wie Name und Anschrift, Familienstand und Einkommen. Eine Formularentwicklerin bzw. ein Formularentwickler muss diese gängigen Segmente jedes Mal erstellen, wenn ein neues Formular erstellt wird.
 
@@ -39,7 +40,7 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder ein Bedi
 
 ### Neuerstellen von Fragmenten {#create-fragment-from-scratch}
 
-1. Melden Sie sich bei der Author-Instanz von AEM Forms unter https://[*Hostname*]:[*Port*]/aem/forms.html an.
+1. Melden Sie sich bei der Autoreninstanz von AEM Forms unter https://[*Hostname*]:[*Port*]/aem/forms.html an.
 1. Klicken Sie auf **Erstellen > Adaptives Formularfragment**.
 1. Geben Sie Titel, Name, Beschreibung und Tags für das Fragment an.
 
@@ -59,7 +60,7 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder ein Bedi
 
    ![Erstellen eines adaptiven Formulars mit einer Formularvorlage als Modell](assets/form-template-model.png)
 
-   Die Teilformulare, die als Fragmente in der ausgewählten Vorlage markiert sind, werden ebenfalls angezeigt. Sie können ein Teilformular für ein adaptives Formularfragment aus der Dropdown-Liste auswählen.
+   Die Teilformulare, die als Fragmente in der ausgewählten Formularvorlage markiert sind, werden ebenfalls angezeigt. Sie können ein Teilformular für ein adaptives Formularfragment aus der Dropdown-Liste auswählen.
 
    ![Auswählen von Teilformularen aus der angegebenen Formularvorlage](assets/fragment-subform.png)
 
@@ -106,11 +107,11 @@ Wenn Sie außerdem ein XML-Schema oder eine XDP-Formularvorlage als Formularmode
    * **Formularmodell**: Je nach Formularmodell für das adaptive Formular wird im Feld das **XML-Schema**, die **Formularvorlage** oder **Keine** angezeigt. Dies ist ein Feld, das nicht bearbeitet werden kann.
 
    * **Fragmentmodellstamm**: Diese Option wird nur in XSD-basierten adaptiven Formularen angezeigt. Sie gibt den Stamm für das Fragmentmodell an. Sie können auch **/** oder den komplexen XSD-Typ aus der Dropdown-Liste auswählen. Sie können das Fragment nur in einem anderen adaptiven Formular wiederverwenden, wenn Sie als Fragmentmodellstamm den komplexen Typ auswählen.
-Wenn Sie **/** als Fragmentmodellstamm auswählen, wird die vollständige XSD-Struktur vom Stamm in der Registerkarte für das Datenmodell des adaptiven Formulars angezeigt. Für einen Fragmentmodellstamm mit komplexem Typ werden lediglich die untergeordneten Elemente des ausgewählten komplexen Typs auf der Registerkarte „Datenmodell“ des adaptiven Formulars angezeigt. Wenn Sie ein Fragment erstellen und einen komplexen Typ als **Fragmentmodellstamm** festlegen, können Sie es überall dort einsetzen, wo dieser komplexe Typ verwendet wird (entweder innerhalb desselben Formulars oder formularübergreifend).
+Wenn Sie **/** als Fragmentmodellstamm auswählen, wird die vollständige XSD-Struktur vom Stamm in der Registerkarte für das Formulardatenmodell des adaptiven Formulars angezeigt. Für Fragmentmodellstamm eines komplexen Typs werden lediglich die untergeordneten Elemente des ausgewählten komplexen Typs in der Registerkarte des Datenmodells des adaptiven Formulars angezeigt. Wenn Sie ein Fragment erstellen und einen komplexen Typ als **Fragmentmodellstamm** festlegen, können Sie es überall dort einsetzen, wo dieser komplexe Typ verwendet wird (entweder innerhalb desselben Formulars oder formularübergreifend).
 
    * **XSD-REF**: Diese Option ist nur in den XSD-basierten adaptiven Formularen verfügbar. Sie zeigt den Ort des XML-Schemas an.
 
-   * **XDP-Ref**: Diese Option wird nur in XDP-basierten adaptiven Formularen angezeigt. Es wird der Speicherort der XDP-Vorlage angezeigt.
+   * **XDP-Ref**: Diese Option wird nur in XDP-basierten adaptiven Formularen angezeigt. Es wird der Speicherort der XDP-Formularvorlage angezeigt.
 
    ![save-fragment](assets/save-fragment.png)
 

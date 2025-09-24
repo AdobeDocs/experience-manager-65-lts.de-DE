@@ -5,19 +5,20 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: caa79def-4a29-4746-9a35-c362ea1c3c0c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 99%
+source-wordcount: '917'
+ht-degree: 97%
 
 ---
 
 # Tutorial: Erstellen Sie Ihr erstes adaptives Formular {#tutorial-create-your-first-adaptive-form}
 
-| Version | Artikel-Link |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=de) |
-| AEM 6.5 | Dieser Artikel |
+## Gilt für {#applies-to}
+
+Diese Dokumentation gilt für **AEM 6.5 LTS Forms**.
+
+Die Dokumentation zu AEM as a Cloud Service finden Sie unter [AEM Forms auf Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=de).
 
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
@@ -43,8 +44,8 @@ Die Website wird mit Adobe Experience Manager (AEM) ausgeführt und verwendet AE
 
 ### Voraussetzung {#prerequisite}
 
-* Richten Sie eine [AEM-Autoreninstanz ein](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html?lang=de#author-and-publish-installs)
-* Installieren Sie das [AEM Forms-Add-On](../../forms/using/installing-configuring-aem-forms-osgi.md) auf der Author-Instanz.
+* Richten Sie eine [AEM-Autoreninstanz ein](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
+* Installieren Sie das [AEM Forms-Add-On](../../forms/using/installing-configuring-aem-forms-osgi.md) auf der Autoreninstanz.
 * Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Die Beispiele im Tutorial basieren auf einer [!DNL MySQL]-Datenbank und verwenden [!DNL Oracle's] [MySQL JDBC-Datenbanktreiber](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 * Richten Sie eine Datenbank mit Kundendaten in den unten gezeigten Feldern ein. Eine Datenbank ist nicht unbedingt notwendig zum Erstellen eines adaptiven Formulars. In diesem Tutorial wird eine Datenbank zur Demonstration der Formulardatenmodell- und Persistenzfunktionen von AEM [!DNL Forms] verwendet.
@@ -77,7 +78,7 @@ Ziele:
 * Konfigurieren der Datenbankinstanz der Website ([!DNL MySQL]-Datenbank) als Datenquelle.
 * Erstellen des Formulardatenmodells mithilfe der [!DNL MySQL]-Datenbank als Datenquelle.
 * Hinzufügen von Datenmodellobjekten zum Datenmodell.
-* Konfigurieren der Lese- und Schreibdienste für Datenmodellobjekte.
+* Konfigurieren der Lese- und Schreibdienste für das Formulardatenmodell.
 * Testen des Formulardatenmodells und der konfigurierten Dienste mit Testdaten.
 
 [![Siehe Handbuch](assets/see-the-guide-sm.png)](create-form-data-model.md)

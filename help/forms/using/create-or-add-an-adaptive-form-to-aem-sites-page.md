@@ -6,10 +6,10 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 6e69ca67-883f-4079-96e2-5b7a9c843ada
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2884'
-ht-degree: 100%
+source-wordcount: '2893'
+ht-degree: 99%
 
 ---
 
@@ -17,10 +17,11 @@ ht-degree: 100%
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
-| Version | Artikel-Link |
-| -------- | ---------------------------- |
-| AEM 6.5 | Dieser Artikel |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=de) |
+## Gilt für {#applies-to}
+
+Diese Dokumentation gilt für **AEM 6.5 LTS Forms**.
+
+Die Dokumentation zu AEM as a Cloud Service finden Sie unter [AEM Forms auf Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=de).
 
 Mit AEM Forms können Sie adaptive Formulare nahtlos in Ihre Web-Seiten integrieren. Dadurch können Ihre Besuchenden bequem Formulare ausfüllen und senden, ohne jemals die Seite verlassen zu müssen, auf der sie sich befinden. Sie können mühelos mit anderen Elementen der Website interagieren und gleichzeitig aktiv mit dem Formular interagieren.
 
@@ -78,7 +79,7 @@ Stellen Sie sicher, dass die [Kernkomponenten adaptiver Formulare für Ihre Umge
 
 Um die vollständige Funktionalität der adaptiven Formular-Container-Komponente zu aktivieren, fügen Sie die Client-Bibliotheken „customHeaderlibs“ und „customfooterlibs“ mithilfe der Bereitstellungs-Pipeline zu Ihrer AEM Sites-Seite hinzu. So fügen Sie die Bibliotheken hinzu:
 
-1. Melden Sie sich bei Ihrer AEM Authoring-Instanz an und öffnen Sie CRX DE. Die Standard-URL für eine lokal ausgeführte Authoring-Instanz lautet: `http://localhost:4502/crx/de`.
+1. Melden Sie sich bei Ihrer AEM Autoreninstanz an und öffnen Sie CRX DE. Die Standard-URL für eine lokal ausgeführte Autoreninstanz lautet: `http://localhost:4502/crx/de`.
 
 1. Öffnen Sie die Datei `/apps/[your-sites-project]/components/page/customheaderlibs.html` und fügen Sie ihr den folgenden Code hinzu:
 

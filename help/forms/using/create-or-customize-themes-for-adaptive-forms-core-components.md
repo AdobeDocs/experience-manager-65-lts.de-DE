@@ -6,19 +6,20 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 59b54622-55c4-4526-b584-c08bbd1d08bb
-source-git-commit: 7eddd03e7b1256f2f2b54bdd92672d5a1e4440d1
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1938'
-ht-degree: 100%
+source-wordcount: '1947'
+ht-degree: 98%
 
 ---
 
 # Erstellen oder Anpassen eines Designs für ein adaptives Formular {#introduction-to-theme}
 
-| Version | Artikel-Link |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=de) |
-| AEM 6.5 | Dieser Artikel |
+## Gilt für {#applies-to}
+
+Diese Dokumentation gilt für **AEM 6.5 LTS Forms**.
+
+Die Dokumentation zu AEM as a Cloud Service finden Sie unter [AEM Forms auf Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=de).
 
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
@@ -69,8 +70,8 @@ Das Anpassen eines Designs bezieht sich auf den Prozess der Änderung und Person
 
 >[!NOTE]
 >
-> * Verwenden Sie den Package Manager, um ein Design auf allen Autoren- und Veröffentlichungsinstanzen bereitzustellen.
-> * Eine Design-Client-Bibliothek wird wie jedes andere Paket über Package Manager importiert oder exportiert.
+> * Verwenden Sie den Paket-Manager, um ein Design auf allen Autoren- und Veröffentlichungsinstanzen bereitzustellen.
+> * Eine Design-Client-Bibliothek wird wie jedes andere Paket über den Paket-Manager importiert oder exportiert.
 
 ### Voraussetzungen zum Anpassen eines Designs {#prerequisites}
 
@@ -268,7 +269,7 @@ The selected theme is applied to the Adaptive Form.
 Nachdem Sie das Design in Ihrer lokalen Entwicklungsumgebung erfolgreich getestet haben, können Sie mit der Bereitstellung des Designs in Ihren Produktionsumgebungen fortfahren, einschließlich der Autoren- und der Veröffentlichungsinstanz. Führen Sie die folgenden Schritte aus, um das Design in Ihren Produktionsumgebungen bereitzustellen:
 
 1. Melden Sie sich bei Ihrer AEM-Umgebung an.
-1. Öffnen Sie Package Manager. Die Standard-URL ist `https://localhost:4502/crx/packmgr/index.jsp`.
+1. Öffnen Sie den Paket-Manager. Die Standard-URL ist `https://localhost:4502/crx/packmgr/index.jsp`.
 1. Klicken Sie auf **Paket hochladen** und auf **Durchsuchen**.
 1. Navigieren Sie zu und wählen Sie `[AEM Archetype Project Folder]\all\target[appid].all-[version].zip` aus. Klicken Sie auf **Öffnen**.
 1. Klicken Sie auf „Installieren“. Wiederholen Sie diesen Schritt für alle Produktionsumgebungen.
@@ -281,7 +282,7 @@ Wenn das Paket installiert wurde, ist das Design zur Auswahl verfügbar.
 >[!NOTE]
 >
 >
-> Sollten Sie Schwierigkeiten haben, den Anmeldedialog auf einer Veröffentlichungsinstanz aufzurufen, um das Paket über Package Manager zu installieren, versuchen Sie, sich über die folgende URL anzumelden: `http://[Publish Server URL]:[PORT]/system/console`. Dies ermöglicht den Zugriff auf die Veröffentlichungsinstanz, sodass Sie mit dem Installationsprozess fortfahren können.
+> Sollten Sie Schwierigkeiten haben, den Anmeldedialog auf einer Veröffentlichungsinstanz aufzurufen, um das Paket über den Paket-Manager zu installieren, versuchen Sie, sich über die folgende URL anzumelden: `http://[Publish Server URL]:[PORT]/system/console`. Dies ermöglicht den Zugriff auf die Veröffentlichungsinstanz, sodass Sie mit dem Installationsprozess fortfahren können.
 
 ## Anwenden eines Designs auf ein adaptives Formular {#using-theme-in-adaptive-form}
 

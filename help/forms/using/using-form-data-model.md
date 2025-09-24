@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 900ec6cd-d780-46eb-8ab1-907e563d81d7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1268'
-ht-degree: 100%
+source-wordcount: '1277'
+ht-degree: 98%
 
 ---
 
 # Verwenden eines Formulardatenmodells{#use-form-data-model}
 
-| Version | Artikel-Link |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html?lang=de) |
-| AEM 6.5 | Dieser Artikel |
+## Gilt für {#applies-to}
+
+Diese Dokumentation gilt für **AEM 6.5 LTS Forms**.
+
+Die Dokumentation zu AEM as a Cloud Service finden Sie unter [AEM Forms auf Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html?lang=de).
 
 
 ![hero-image](do-not-localize/data-integration.png)
@@ -93,9 +94,9 @@ Weitere Informationen finden Sie unter:
 
 Mit dem Formulardatenmodelleditor können Sie Beispieldaten für Datenmodellobjekte im Formulardatenmodell generieren und bearbeiten. Sie können diese Daten verwenden, um interaktive Kommunikationen und adaptive Formulare in der Vorschau anzuzeigen und zu testen. Generieren Sie die Beispieldaten vor der Vorschau wie unter [Arbeiten mit einem Formulardatenmodell](../../forms/using/work-with-form-data-model.md#sample) beschrieben.
 
-So zeigen Sie eine Vorschau einer interaktiven Kommunikation mit Musterformular-Datenmodelldaten an:
+So zeigen Sie eine Vorschau einer interaktiven Kommunikation mit Muster-Formulardatenmodelldaten an:
 
-1. Navigieren Sie auf dem AEM-Server zu **[!UICONTROL Formulare > Formulare und Dokumente]**.
+1. Navigieren Sie auf der AEM-Autoreninstanz zu **[!UICONTROL Formulare > Formulare und Dokumente]**.
 1. Wählen Sie eine interaktive Kommunikation und **[!UICONTROL Vorschau]** in der Symbolleiste aus, um **[!UICONTROL Web-Kanal]**, **[!UICONTROL Druckkanal]** oder **[!UICONTROL Beide Kanäle]** auszuwählen und eine Vorschau der interaktiven Kommunikation anzuzeigen.
 1. Stellen Sie im Vorschau-Dialogfeld [*Kanal*] sicher, dass **[!UICONTROL Testdaten des Formulardatenmodells]** ausgewählt ist, und wählen Sie **[!UICONTROL Vorschau]** aus.
 
