@@ -54,7 +54,7 @@ Dies sind die standardmäßigen Übermittlungsaktionen, die für adaptive Formul
 >[!NOTE]
 >
 >Stellen Sie sicher, dass der Ordner „[AEM-Installationsverzeichnis]\crx-quickstart\temp\datamanager\ASM“ vorhanden ist.
->>vorhanden. Das Verzeichnis wird benötigt, um Anhänge vorübergehend zu speichern. Wenn das Verzeichnis nicht vorhanden ist, erstellen Sie es.
+>&#x200B;>vorhanden. Das Verzeichnis wird benötigt, um Anhänge vorübergehend zu speichern. Wenn das Verzeichnis nicht vorhanden ist, erstellen Sie es.
 
 >[!CAUTION]
 >

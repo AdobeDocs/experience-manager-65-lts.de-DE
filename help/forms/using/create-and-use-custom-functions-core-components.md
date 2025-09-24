@@ -61,8 +61,8 @@ Der **Name** wird verwendet, um die benutzerdefinierte Funktion im Regeleditor e
 
 >[!NOTE]
 >`[functionName]` ist der Name der Funktion. Leerzeichen sind nicht zulässig.
->>`<Function Name>` ist der Anzeigename der Funktion im Regeleditor von adaptiven Formularen.
->>Wenn der Anzeigename der Funktion mit dem Namen der Funktion selbst übereinstimmt, können Sie in der Syntax `[functionName]` weglassen.
+>&#x200B;>`<Function Name>` ist der Anzeigename der Funktion im Regeleditor von adaptiven Formularen.
+>&#x200B;>Wenn der Anzeigename der Funktion mit dem Namen der Funktion selbst übereinstimmt, können Sie in der Syntax `[functionName]` weglassen.
 
 #### Parameter
 
