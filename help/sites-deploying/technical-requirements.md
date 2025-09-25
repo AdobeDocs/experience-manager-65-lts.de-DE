@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: bcfbc3a67b4aa59532c93bd84eed655cee1262c1
+source-git-commit: 075f671d878f9bd9be33a059223800fa9acddf40
 workflow-type: tm+mt
-source-wordcount: '3290'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -171,7 +171,7 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
    >* glibc-locale.x86_64 (2.17 oder später)
-   >* OpenSSL 3 (erforderlich am Standardspeicherort im Betriebssystem).
+   >* OpenSSL 3 (am Standardspeicherort im Betriebssystem erforderlich)
 
    *Für die OpenSSL 3-Installation: Die Bibliotheken libcrypto.so.3 und libssl.so.3 müssen im Standardbibliothekspfad verfügbar sein, der durch die Umgebungsvariable LD_LIBRARY_PATH dargestellt wird. Wenn sie an einem nicht standardmäßigen Speicherort installiert sind, stellen Sie sicher, dass dieser Pfad zu LD_LIBRARY_PATH hinzugefügt wird, bevor Sie den Server starten.*
 
