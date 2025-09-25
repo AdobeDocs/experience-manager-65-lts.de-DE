@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 2534fb5af913603b69597e7be713156b427a1094
+source-git-commit: bcfbc3a67b4aa59532c93bd84eed655cee1262c1
 workflow-type: tm+mt
-source-wordcount: '3239'
-ht-degree: 92%
+source-wordcount: '3290'
+ht-degree: 95%
 
 ---
 
@@ -171,7 +171,9 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
    >* libxcb.x86_64 (1.13-1.el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
    >* glibc-locale.x86_64 (2.17 oder später)
+   >* OpenSSL 3 (erforderlich am Standardspeicherort im Betriebssystem).
 
+   *Für die OpenSSL 3-Installation: Die Bibliotheken libcrypto.so.3 und libssl.so.3 müssen im Standardbibliothekspfad verfügbar sein, der durch die Umgebungsvariable LD_LIBRARY_PATH dargestellt wird. Wenn sie an einem nicht standardmäßigen Speicherort installiert sind, stellen Sie sicher, dass dieser Pfad zu LD_LIBRARY_PATH hinzugefügt wird, bevor Sie den Server starten.*
 
 ### Virtuelle und Cloud-Computing-Umgebungen {#virtual-cloud-computing-environments}
 
@@ -385,8 +387,8 @@ Windows x86:
    <th><p><strong>Unterstützte Formate für die Konvertierung ins PDF-Format </strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> neueste Version</td>
-   <td>XPS, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML und HTM</td>
+   <td><a href="https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> – neueste Version</td>
+   <td>XPS, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF und DWF</td>
   </tr>
 
 <tr>
@@ -407,13 +409,13 @@ Windows x86:
 >[!NOTE]
 >
 >* PDF Generator unterstützt nur englische, französische, deutsche und japanische Versionen der unterstützten Betriebssysteme und Anwendungen.
->* Für PDF Generator ist Adobe Acrobat Pro DC (32 Bit) für die Konvertierung erforderlich.
+>* PDF Generator erfordert für die Konvertierung Adobe Acrobat Pro DC (32 Bit).
 >* PDF Generator unterstützt nur die 32-Bit-Version von Microsoft® Office Professional Plus und anderer für die Konvertierung erforderliche Software.
 >* Wenn eine Microsoft® Office-Installation aus irgendeinem Grund deaktiviert oder unlizenziert wird, z. B. weil eine Installation mit Volumenlizenz einen KMS-Host nicht innerhalb eines bestimmten Zeitraums finden kann, können Konvertierungen fehlschlagen, bis die Installation neu lizenziert und reaktiviert wird.
 >* PDF Generator unterstützt nicht Microsoft® Office 365.
 >* PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt®.
->* Die Funktionen von OCR PDF, PDF optimieren und PDF erstellen werden nur unter Windows unterstützt.
->* Eine Version von Acrobat ist im Lieferumfang von AEM Forms enthalten, um die PDF Generator-Funktionalität zu aktivieren. Auf die gebündelte Version sollte während der Laufzeit der AEM Forms-Lizenz nur programmgesteuert mit AEM Forms zugegriffen werden, nur zur Verwendung mit AEM Forms PDF Generator. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung für Ihre Bereitstellung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
+>* Die Funktionen von OCR PDF, PDF optimieren und PDF exportieren werden nur unter Windows unterstützt.
+>* Eine Version von Acrobat ist im Lieferumfang von AEM Forms enthalten, um die PDF Generator-Funktionalität zu aktivieren. Die gebündelte Version sollte während der Laufzeit der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur programmatisch mit AEM Forms zugänglich sein. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung für Ihre Bereitstellung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
 >* Der PDF Generator-Service unterstützt nicht Microsoft® Windows 11.
 
 
@@ -459,7 +461,7 @@ Windows x86:
 >* PDF Generator unterstützt 32-Bit- und 64-Bit-Versionen von OpenOffice unter dem Linux®-Betriebssystem.
 >* PDF Generator unterstützt nicht Microsoft® Office 365.
 >* PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt®.
->* Die Funktionen von OCR PDF, PDF optimieren und PDF erstellen werden nur unter Windows unterstützt.
+>* Die Funktionen von OCR PDF, PDF optimieren und PDF exportieren werden nur unter Windows unterstützt.
 >* Eine Version von Acrobat ist im Lieferumfang von AEM Forms enthalten, um die PDF Generator-Funktionalität zu aktivieren. Die gebündelte Version sollte während der Laufzeit der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur programmatisch mit AEM Forms zugänglich sein. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung für Ihre Bereitstellung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* Der PDF Generator-Service unterstützt nicht Microsoft® Windows 10.
 >* PDF Generator kann keine Dateien mit Microsoft® Visio 2019 konvertieren. Sie können weiterhin Microsoft® Visio 2016 verwenden, um `.VSD`- und `.VSDX`-Dateien zu konvertieren.
