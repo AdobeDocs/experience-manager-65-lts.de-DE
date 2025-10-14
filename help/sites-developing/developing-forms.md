@@ -30,7 +30,7 @@ All diese Teile werden mit einer Reihe standardmäßiger [Formularkomponenten](/
 Neben der [Entwicklung neuer Komponenten](/help/sites-developing/developing-components-samples.md) für Ihre Formulare ist auch Folgendes möglich:
 
 * [Ein Formular vorab mit Werten ausfüllen](#preloading-form-values)
-* [(Bestimmte) Felder mit mehreren Werten vorab ausfüllen ](#preloading-form-fields-with-multiple-values)
+* [(Bestimmte) Felder mit mehreren Werten vorab ausfüllen &#x200B;](#preloading-form-fields-with-multiple-values)
 * [Neue Aktionen entwickeln](#developing-your-own-form-actions)
 * [Neue Einschränkungen entwickeln](#developing-your-own-form-constraints)
 * [Bestimmte Formularfelder ein- oder ausblenden](#showing-and-hiding-form-components)

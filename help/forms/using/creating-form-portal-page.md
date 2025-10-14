@@ -252,7 +252,7 @@ Sie können eine Forms Portal-Seite anpassen und ihr ein unverwechselbares Ersch
 
 In der AEM Forms-Benutzeroberfläche können Sie benutzerdefinierte Metadaten zu Formularen hinzufügen. Benutzerdefinierte Metadaten sind nützlich, wenn Sie den Endbenutzenden die Auflistung und Suche von Formularen ermöglichen möchten. Weitere Informationen zu benutzerdefinierten Metadaten finden Sie unter [Anpassen von Vorlagen für Formularportalkomponenten](../../forms/using/customizing-templates-forms-portal-components.md).
 
-Das Formularportal stellt vorkonfigurierte Render-Aktionen bereit. Sie können das Formularportal anpassen, um weitere Aktionen hinzuzufügen. Weitere Informationen finden Sie unter [ Hinzufügen einer benutzerdefinierten Aktion zu Formularlistenelementen](../../forms/using/add-custom-action-form-lister.md).
+Das Formularportal stellt vorkonfigurierte Render-Aktionen bereit. Sie können das Formularportal anpassen, um weitere Aktionen hinzuzufügen. Weitere Informationen finden Sie unter [&#x200B; Hinzufügen einer benutzerdefinierten Aktion zu Formularlistenelementen](../../forms/using/add-custom-action-form-lister.md).
 
 ## Ähnliche Artikel
 

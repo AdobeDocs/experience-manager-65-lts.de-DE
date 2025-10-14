@@ -94,7 +94,7 @@ Um den [!DNL InDesign Server] für die Verwendung mit [!DNL Experience Manager] 
 [!DNL Experience Manager Assets] verfügt über den vorkonfigurierten Workflow **[!UICONTROL DAM-Update-Asset]**, der mehrere Prozessschritte speziell für [!DNL InDesign] umfasst:
 
 * [Extraktion von Medien](#media-extraction)
-* [Extraktion von Seiten  ](#page-extraction)
+* [Extraktion von Seiten  &#x200B;](#page-extraction)
 
 Dieser Workflow wird mit Standardwerten konfiguriert, die für Ihr Setup in den verschiedenen Autoreninstanzen angepasst werden können. (Dies ist ein Standard-Workflow. Deshalb finden Sie weitere Information unter [Bearbeiten eines Workflows](/help/sites-developing/workflows-models.md#configuring-a-workflow-step).) Wenn Sie die Standardwerte (einschließlich SOAP-Port) verwenden, ist keine Konfiguration erforderlich.
 

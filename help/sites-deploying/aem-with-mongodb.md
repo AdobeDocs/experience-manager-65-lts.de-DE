@@ -260,7 +260,7 @@ MongoDB läuft auf verschiedenen Betriebssystemen, einschließlich einer Vielzah
    * Wert für andkernel.threads-max: 64000
 
 * Stellen Sie sicher, dass für Ihr System der Auslagerungsspeicher konfiguriert ist. Detaillierte Informationen zu den Größenanforderungen finden Sie in der Dokumentation zu Ihrem Betriebssystem.
-* Stellen Sie sicher, dass der Standardwert des Systems für TCP-Keepalive richtig festgelegt ist. Der Wert „300“ bietet häufig eine bessere Performance für Replikatsätze und freigegebene Cluster. Siehe: [Wirkt sich die TCP-Keepalive-Zeit auf MongoDB-Bereitstellungen aus? ](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive) in den häufig gestellten Fragen für weitere Informationen.
+* Stellen Sie sicher, dass der Standardwert des Systems für TCP-Keepalive richtig festgelegt ist. Der Wert „300“ bietet häufig eine bessere Performance für Replikatsätze und freigegebene Cluster. Siehe: [Wirkt sich die TCP-Keepalive-Zeit auf MongoDB-Bereitstellungen aus? &#x200B;](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive) in den häufig gestellten Fragen für weitere Informationen.
 
 #### Windows {#windows}
 

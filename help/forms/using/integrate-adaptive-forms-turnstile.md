@@ -61,7 +61,7 @@ So integrieren Sie AEM Forms mit dem Drehkreuz-Service:
       ![Konfigurations-Drehkreuz](assets/config-hcaptcha.png)
    1. Geben Sie **[!UICONTROL Widget-Typ]** als verwaltet, nicht interaktiv oder unsichtbar an.
    1. Geben Sie weitere Details an **[!UICONTROL Titel]**, **[!UICONTROL Name]**.
-   1. Geben Sie **[!UICONTROL Standortschlüssel]** und **[!UICONTROL Geheimschlüssel]** für den Drehkreuz-Dienst an, [ in der Voraussetzung erhalten ](#prerequisite).
+   1. Geben Sie **[!UICONTROL Standortschlüssel]** und **[!UICONTROL Geheimschlüssel]** für den Drehkreuz-Dienst an, [&#x200B; in der Voraussetzung erhalten &#x200B;](#prerequisite).
    1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
       ![Konfigurieren Sie den Cloud Service, um Ihre AEM Forms-Umgebung mit Turnstile zu verbinden](assets/config-turntstile.png)
@@ -78,7 +78,7 @@ So integrieren Sie AEM Forms mit dem Drehkreuz-Service:
 1. Wählen Sie ein adaptives Formular aus und klicken Sie auf **[!UICONTROL Eigenschaften]**. Wählen **[!UICONTROL unter]** den Konfigurations-Container aus, der die Cloud-Konfiguration enthält, die AEM Forms mit Turnstile verbindet.
 1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
-   Wenn Sie keinen Konfigurations-Container für den CAPTCHA-Service haben, erfahren Sie im Abschnitt [Konfigurieren eines ](#configure-turnstile-steps-to-configure-hcaptcha)&quot;, wie Sie einen Konfigurations-Container erstellen.
+   Wenn Sie keinen Konfigurations-Container für den CAPTCHA-Service haben, erfahren Sie im Abschnitt [Konfigurieren eines &#x200B;](#configure-turnstile-steps-to-configure-hcaptcha)&quot;, wie Sie einen Konfigurations-Container erstellen.
 
    ![Auswählen eines Konfigurations-Containers](assets/captcha-properties.png)
 

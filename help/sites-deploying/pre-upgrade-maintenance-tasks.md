@@ -37,7 +37,7 @@ Bevor Sie mit dem Upgrade beginnen, ist es wichtig, die folgenden Wartungsaufgab
 
 ## Indexdefinitionen {#index-definitions}
 
-Vergewissern Sie sich, dass Sie die erforderlichen Indexdefinitionen installiert haben, die mit dem neuesten AEM 6.5 Service Pack veröffentlicht wurden. (Weitere Informationen finden Sie unter [Versionshinweise ](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/release-notes/release-notes) AEM 6.5 Service Pack .)
+Vergewissern Sie sich, dass Sie die erforderlichen Indexdefinitionen installiert haben, die mit dem neuesten AEM 6.5 Service Pack veröffentlicht wurden. (Weitere Informationen finden Sie unter [Versionshinweise &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/release-notes/release-notes) AEM 6.5 Service Pack .)
 
 ## Überprüfung auf ausreichenden Festplattenspeicher {#ensure-sufficient-disk-space}
 

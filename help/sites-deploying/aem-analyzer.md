@@ -37,7 +37,7 @@ Weitere Informationen zu den Kategorien sowie möglichen Auswirkungen und Lösun
 
 ## Verfügbarkeit {#analyzer-availability}
 
-Der AEM Analyzer kann als ZIP-Datei vom [Software Distribution-Portal) heruntergeladen ](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html). Sie können das Paket über [Package Manager](/help/sites-administering/package-manager.md) auf Ihrer AEM-Quellinstanz installieren.
+Der AEM Analyzer kann als ZIP-Datei vom [Software Distribution-Portal) heruntergeladen &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html). Sie können das Paket über [Package Manager](/help/sites-administering/package-manager.md) auf Ihrer AEM-Quellinstanz installieren.
 
 ## Wichtige Überlegungen zur Verwendung von AEM Analyzer {#important-considerations-for-using-aem-analyzer}
 

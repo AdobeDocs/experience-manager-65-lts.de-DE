@@ -49,7 +49,7 @@ Gehen Sie wie folgt vor, um ein adaptives Formular zu erstellen.
 1. Sie können ein adaptives Formular erstellen, das auf den folgenden Formularmodellen basiert:
 
    * [Formulardatenmodell](#fdm)
-   * [XFA-Formularvorlage ](#create-an-adaptive-form-based-on-an-xfa-form-template)
+   * [XFA-Formularvorlage &#x200B;](#create-an-adaptive-form-based-on-an-xfa-form-template)
    * [XML- oder JSON-Schema](#create-an-adaptive-form-based-on-xml-or-json-schema)
    * Keine oder ohne Formularmodell
 

@@ -42,7 +42,7 @@ In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungs-Server verwen
    ```
 
 1. Einrichten eines mit AEM 6.5 LTS kompatiblen Tomcat-Servers
-1. Überprüfen Sie die Startparameter für den AEM-Server und stellen Sie sicher, dass Sie die Parameter entsprechend den Systemanforderungen aktualisieren. Weitere Informationen finden Sie [Überlegungen zu Java 17 ](/help/sites-deploying/custom-standalone-install.md#java-considerations) Java 21 .
+1. Überprüfen Sie die Startparameter für den AEM-Server und stellen Sie sicher, dass Sie die Parameter entsprechend den Systemanforderungen aktualisieren. Weitere Informationen finden Sie [Überlegungen zu Java 17 &#x200B;](/help/sites-deploying/custom-standalone-install.md#java-considerations) Java 21 .
 1. Stellen Sie den neu heruntergeladenen 6.5 LTS-WAR mit Java 17/Java 21 auf dem Tomcat-Server bereit und starten Sie den Tomcat-Server mit AEM 6.5 LTS, indem Sie Folgendes ausführen:
 
    ```
@@ -73,4 +73,4 @@ Nach Abschluss des Upgrade-Prozesses sollte die aktualisierte Code-Basis bereitg
 
 ## Durchführen von Prüfungen und Fehlerbehebungen nach einem Upgrade {#perform-post-upgrade-checks-and-troubleshooting}
 
-Weitere Informationen [ Sie unter „Prüfungen und ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md) nach einem Upgrade“.
+Weitere Informationen [&#x200B; Sie unter „Prüfungen und &#x200B;](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md) nach einem Upgrade“.

@@ -105,7 +105,7 @@ Wenn Sie Konfigurationen für mehrere Ausführungsmodi definiert haben, müssen 
 1. [Systemeigenschaften (](#using-a-system-property-in-the-start-script)
 1. [&#128279;](#using-the-sling-properties-file)
 1. [&#128279;](#using-the-r-option)
-1. [Erkennung von Dateinamen ](#filename-detection-renaming-the-jar-file)
+1. [Erkennung von Dateinamen &#x200B;](#filename-detection-renaming-the-jar-file)
 
 Wenn Sie einen Anwendungsserver verwenden, können Sie auch [den Ausführungsmodus in web.xml](#defining-the-run-mode-in-web-xml-with-application-server) definieren.
 

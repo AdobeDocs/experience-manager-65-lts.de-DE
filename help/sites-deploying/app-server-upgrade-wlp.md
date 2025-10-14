@@ -82,7 +82,7 @@ Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführe
    java -version
    ```
 
-1. Überprüfen Sie die Startparameter für den AEM-Server und stellen Sie sicher, dass Sie die Parameter entsprechend Ihren Anforderungen aktualisieren. Weitere Informationen finden Sie [Überlegungen zu Java 17 ](/help/sites-deploying/custom-standalone-install.md#java-considerations) Java 21 .
+1. Überprüfen Sie die Startparameter für den AEM-Server und stellen Sie sicher, dass Sie die Parameter entsprechend Ihren Anforderungen aktualisieren. Weitere Informationen finden Sie [Überlegungen zu Java 17 &#x200B;](/help/sites-deploying/custom-standalone-install.md#java-considerations) Java 21 .
 1. Laden Sie den neuen 6.5 LTS-WAR herunter und kopieren Sie ihn in den Dropins-Ordner unter: `/<path-to-aem-server>/dropins/`
 1. AEM-Instanz starten: Dies kann normalerweise mithilfe dieses Befehls erfolgen:
 

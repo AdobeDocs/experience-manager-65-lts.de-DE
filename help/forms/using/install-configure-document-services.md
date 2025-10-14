@@ -212,7 +212,7 @@ Wenn Sie den PDF Generator-Service verwenden, um native Dateiformate wie Microso
 * Vertrautheit mit [Adobe Admin Console](https://helpx.adobe.com/in/enterprise/admin-guide.html)
 * Grundlegendes zur Bereitstellungsarchitektur von [AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
 * Administratorrechte sowohl auf dem Adobe Admin Console als auch auf dem Server, auf dem AEM Forms ausgeführt wird.
-* Ein Benutzer mit [Administratorzugriff](https://helpx.adobe.com/in/enterprise/using/admin-roles.html) auf die Adobe [Admin Console](https://adminconsole.adobe.com). Im Allgemeinen verfügt der Administrator Ihrer Organisation bereits über einen Benutzer mit Administratorzugriff. Anweisungen zum Hinzufügen [ Administrators finden Sie ](https://www.youtube.com/watch?v=xO2T0I6SvsU&list=PLHRegP5ZOj7CpijZyD8pB9rIMJkvO6FnI&t=81s) diesem „Video mit Anweisungen“.
+* Ein Benutzer mit [Administratorzugriff](https://helpx.adobe.com/in/enterprise/using/admin-roles.html) auf die Adobe [Admin Console](https://adminconsole.adobe.com). Im Allgemeinen verfügt der Administrator Ihrer Organisation bereits über einen Benutzer mit Administratorzugriff. Anweisungen zum Hinzufügen [&#x200B; Administrators finden Sie &#x200B;](https://www.youtube.com/watch?v=xO2T0I6SvsU&list=PLHRegP5ZOj7CpijZyD8pB9rIMJkvO6FnI&t=81s) diesem „Video mit Anweisungen“.
 * Ein Benutzerkonto mit der Rolle [Bereitstellungsadministrator](https://helpx.adobe.com/in/enterprise/global-admin-console/manage-administrators.html) in der Adobe Admin Console. Das gleiche [Anleitungsvideo](https://www.youtube.com/watch?v=xO2T0I6SvsU&list=PLHRegP5ZOj7CpijZyD8pB9rIMJkvO6FnI&t=81s) zeigt, wie Sie einen Bereitstellungsadministrator hinzufügen.
 * Lokale Administratorrechte auf dem Computer, auf dem AEM Forms ausgeführt wird
 * Windows 64-Bit-Betriebssystem
@@ -282,7 +282,7 @@ Diese Schritte sind mit Zugriff *Systemadministrator“ auf* Adobe Admin Console
    | Konfigurieren von Platform | Windows 64-Bit | Apple macOS wird derzeit nicht unterstützt |
    | Lokal aktivieren | „Betriebssystemsprache verwenden“ | Standardeinstellung |
    | Sprache | Ihre bevorzugte Sprache | Für die Benutzeroberfläche von Acrobat |
-   | Apps auswählen - Verfügbare Programme | Adobe Acrobat in verfügbaren Programmen belassen. Nicht zur ausgewählten Anwendung verschieben | In [ 6 würden Sie &quot;Adobe Acrobat ](#step-6-download-and-install-adobe-acrobat-pro)&quot; von der Adobe Experience League -Seite herunterladen. |
+   | Apps auswählen - Verfügbare Programme | Adobe Acrobat in verfügbaren Programmen belassen. Nicht zur ausgewählten Anwendung verschieben | In [&#x200B; 6 würden Sie &quot;Adobe Acrobat &#x200B;](#step-6-download-and-install-adobe-acrobat-pro)&quot; von der Adobe Experience League -Seite herunterladen. |
    | Apps auswählen - Ausgewählte Programme | Nur Lizenzdatei in ausgewählten Anwendungen beibehalten | Standardeinstellung für die FRL-Bereitstellung |
    | Plug-ins | Keine Änderungen auf diesem Bildschirm vornehmen | |
    | Optionen | Keine Änderungen auf diesem Bildschirm vornehmen | |
@@ -292,7 +292,7 @@ Diese Schritte sind mit Zugriff *Systemadministrator“ auf* Adobe Admin Console
 
 ###### Schritt 3: Einem Benutzer Download-Berechtigungen erteilen
 
-Es wird empfohlen, ein dediziertes Service-Konto für die Verwaltung von FRL-Paketen zu erstellen. Wenn Sie noch kein dediziertes Konto haben, können Sie [diesem Anleitungsvideo) ](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s), wie Sie einen neuen Benutzer zu Ihrer Adobe-Organisation hinzufügen.
+Es wird empfohlen, ein dediziertes Service-Konto für die Verwaltung von FRL-Paketen zu erstellen. Wenn Sie noch kein dediziertes Konto haben, können Sie [diesem Anleitungsvideo) &#x200B;](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s), wie Sie einen neuen Benutzer zu Ihrer Adobe-Organisation hinzufügen.
 
 Sobald Sie über das entsprechende Konto verfügen, führen Sie die folgenden Schritte aus, um Download-Berechtigungen zu gewähren:
 
@@ -432,7 +432,7 @@ Diese Schritte sind mit Zugriff *Systemadministrator“ auf* Adobe Admin Console
    | Konfigurieren von Platform | Windows 64-Bit | Apple macOS wird derzeit nicht unterstützt |
    | Lokal aktivieren | „Betriebssystemsprache verwenden“ | Standardeinstellung |
    | Sprache | Ihre bevorzugte Sprache | Für die Benutzeroberfläche von Acrobat |
-   | Apps auswählen - Verfügbare Programme | Adobe Acrobat in verfügbaren Programmen belassen. Nicht zur ausgewählten Anwendung verschieben | In [ 6 würden Sie &quot;Adobe Acrobat ](#step-6-download-and-install-adobe-acrobat-pro)&quot; von der Adobe Experience League -Seite herunterladen. |
+   | Apps auswählen - Verfügbare Programme | Adobe Acrobat in verfügbaren Programmen belassen. Nicht zur ausgewählten Anwendung verschieben | In [&#x200B; 6 würden Sie &quot;Adobe Acrobat &#x200B;](#step-6-download-and-install-adobe-acrobat-pro)&quot; von der Adobe Experience League -Seite herunterladen. |
    | Apps auswählen - Ausgewählte Programme | Nur Lizenzdatei in ausgewählten Anwendungen beibehalten | Standardeinstellung für die FRL-Bereitstellung |
    | Plug-ins | Keine Änderungen auf diesem Bildschirm vornehmen | |
    | Optionen | Keine Änderungen auf diesem Bildschirm vornehmen | |
@@ -442,7 +442,7 @@ Diese Schritte sind mit Zugriff *Systemadministrator“ auf* Adobe Admin Console
 
 ###### Schritt 3: Einem Benutzer Download-Berechtigungen erteilen
 
-Es wird empfohlen, ein dediziertes Service-Konto für die Verwaltung von FRL-Paketen zu erstellen. Wenn Sie noch kein dediziertes Konto haben, können Sie [diesem Anleitungsvideo) ](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s), wie Sie einen neuen Benutzer zu Ihrer Adobe-Organisation hinzufügen.
+Es wird empfohlen, ein dediziertes Service-Konto für die Verwaltung von FRL-Paketen zu erstellen. Wenn Sie noch kein dediziertes Konto haben, können Sie [diesem Anleitungsvideo) &#x200B;](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s), wie Sie einen neuen Benutzer zu Ihrer Adobe-Organisation hinzufügen.
 
 Sobald Sie über das entsprechende Konto verfügen, führen Sie die folgenden Schritte aus, um Download-Berechtigungen zu gewähren:
 
@@ -588,7 +588,7 @@ Diese Schritte sind mit Zugriff *Systemadministrator“ auf* Adobe Admin Console
    | Konfigurieren von Platform | Windows 64-Bit | Apple macOS wird derzeit nicht unterstützt |
    | Lokal aktivieren | „Betriebssystemsprache verwenden“ | Standardeinstellung |
    | Sprache | Ihre bevorzugte Sprache | Für die Benutzeroberfläche von Acrobat |
-   | Apps auswählen - Verfügbare Programme | Adobe Acrobat in verfügbaren Programmen belassen. Nicht zur ausgewählten Anwendung verschieben | In [ 6 würden Sie &quot;Adobe Acrobat ](#step-6-download-and-install-adobe-acrobat-pro)&quot; von der Adobe Experience League -Seite herunterladen. |
+   | Apps auswählen - Verfügbare Programme | Adobe Acrobat in verfügbaren Programmen belassen. Nicht zur ausgewählten Anwendung verschieben | In [&#x200B; 6 würden Sie &quot;Adobe Acrobat &#x200B;](#step-6-download-and-install-adobe-acrobat-pro)&quot; von der Adobe Experience League -Seite herunterladen. |
    | Apps auswählen - Ausgewählte Programme | Nur Lizenzdatei in ausgewählten Anwendungen beibehalten | Standardeinstellung für die FRL-Bereitstellung |
    | Plug-ins | Keine Änderungen auf diesem Bildschirm vornehmen | |
    | Optionen | Keine Änderungen auf diesem Bildschirm vornehmen | |
@@ -598,7 +598,7 @@ Diese Schritte sind mit Zugriff *Systemadministrator“ auf* Adobe Admin Console
 
 ###### Schritt 3: Einem Benutzer Download-Berechtigungen erteilen
 
-Es wird empfohlen, ein dediziertes Service-Konto für die Verwaltung von FRL-Paketen zu erstellen. Wenn Sie noch kein dediziertes Konto haben, können Sie [diesem Anleitungsvideo) ](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s), wie Sie einen neuen Benutzer zu Ihrer Adobe-Organisation hinzufügen.
+Es wird empfohlen, ein dediziertes Service-Konto für die Verwaltung von FRL-Paketen zu erstellen. Wenn Sie noch kein dediziertes Konto haben, können Sie [diesem Anleitungsvideo) &#x200B;](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s), wie Sie einen neuen Benutzer zu Ihrer Adobe-Organisation hinzufügen.
 
 Sobald Sie über das entsprechende Konto verfügen, führen Sie die folgenden Schritte aus, um Download-Berechtigungen zu gewähren:
 
@@ -745,7 +745,7 @@ Diese Schritte sind mit Zugriff *Systemadministrator“ auf* Adobe Admin Console
    | Konfigurieren von Platform | Windows 64-Bit | Apple macOS wird derzeit nicht unterstützt |
    | Lokal aktivieren | „Betriebssystemsprache verwenden“ | Standardeinstellung |
    | Sprache | Ihre bevorzugte Sprache | Für die Benutzeroberfläche von Acrobat |
-   | Apps auswählen - Verfügbare Programme | Adobe Acrobat in verfügbaren Programmen belassen. Nicht zur ausgewählten Anwendung verschieben | In [ 6 würden Sie &quot;Adobe Acrobat ](#step-6-download-and-install-adobe-acrobat-pro)&quot; von der Adobe Experience League -Seite herunterladen. |
+   | Apps auswählen - Verfügbare Programme | Adobe Acrobat in verfügbaren Programmen belassen. Nicht zur ausgewählten Anwendung verschieben | In [&#x200B; 6 würden Sie &quot;Adobe Acrobat &#x200B;](#step-6-download-and-install-adobe-acrobat-pro)&quot; von der Adobe Experience League -Seite herunterladen. |
    | Apps auswählen - Ausgewählte Programme | Nur Lizenzdatei in ausgewählten Anwendungen beibehalten | Standardeinstellung für die FRL-Bereitstellung |
    | Plug-ins | Keine Änderungen auf diesem Bildschirm vornehmen | |
    | Optionen | Keine Änderungen auf diesem Bildschirm vornehmen | |
@@ -755,7 +755,7 @@ Diese Schritte sind mit Zugriff *Systemadministrator“ auf* Adobe Admin Console
 
 ###### Schritt 3: Einem Benutzer Download-Berechtigungen erteilen
 
-Es wird empfohlen, ein dediziertes Service-Konto für die Verwaltung von FRL-Paketen zu erstellen. Wenn Sie noch kein dediziertes Konto haben, können Sie [diesem Anleitungsvideo) ](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s), wie Sie einen neuen Benutzer zu Ihrer Adobe-Organisation hinzufügen.
+Es wird empfohlen, ein dediziertes Service-Konto für die Verwaltung von FRL-Paketen zu erstellen. Wenn Sie noch kein dediziertes Konto haben, können Sie [diesem Anleitungsvideo) &#x200B;](https://www.youtube.com/watch?v=w8b36YX2TEM&t=59s), wie Sie einen neuen Benutzer zu Ihrer Adobe-Organisation hinzufügen.
 
 Sobald Sie über das entsprechende Konto verfügen, führen Sie die folgenden Schritte aus, um Download-Berechtigungen zu gewähren:
 

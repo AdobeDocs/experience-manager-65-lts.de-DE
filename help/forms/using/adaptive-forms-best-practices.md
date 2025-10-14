@@ -23,10 +23,10 @@ Dieses Dokument enthält Vorgaben und Empfehlungen, von denen Forms-Administrato
 
 Darüber hinaus finden Sie hier einige Informationen für bewährte Verfahren zu AEM:
 
-* [Bewährte Verfahren: Bereitstellung und Wartung von AEM ](/help/sites-deploying/best-practices.md)
-* [Bewährte Verfahren: Erstellen von Inhalten ](/help/sites-authoring/best-practices.md)
-* [Bewährte Verfahren: Verwaltung von AEM ](/help/sites-administering/administer-best-practices.md)
-* [Bewährte Verfahren: Entwicklung von Lösungen ](/help/sites-developing/best-practices.md)
+* [Bewährte Verfahren: Bereitstellung und Wartung von AEM &#x200B;](/help/sites-deploying/best-practices.md)
+* [Bewährte Verfahren: Erstellen von Inhalten &#x200B;](/help/sites-authoring/best-practices.md)
+* [Bewährte Verfahren: Verwaltung von AEM &#x200B;](/help/sites-administering/administer-best-practices.md)
+* [Bewährte Verfahren: Entwicklung von Lösungen &#x200B;](/help/sites-developing/best-practices.md)
 
 ## Einrichten und Konfigurieren von AEM Forms {#set-up-and-configure-aem-forms}
 
@@ -39,7 +39,7 @@ Eine vereinfachte und standardisierte Projektstruktur kann die Entwicklungs- und
    * Verwenden Sie den Maven-Befehl `archetype:generate`, um die anfängliche Struktur zu generieren.
    * Verwenden Sie den Maven-Befehl `eclipse:eclipse`, um die Eclipse-Projektdateien zu generieren und das Projekt in Eclipse zu importieren.
 
-Weitere Informationen finden Sie unter[ Erstellen von AEM-Projekten mit Apache Maven](/help/sites-developing/ht-projects-maven.md).
+Weitere Informationen finden Sie unter[&#x200B; Erstellen von AEM-Projekten mit Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 * Mit dem FileVault-Werkzeug oder VLT können Sie den Inhalt einer CRX- oder AEM-Instanz auf Ihr Dateisystem zuordnen. Es bietet Änderungskontroll-Management-Vorgänge, wie z. B. das Einchecken und Auschecken des AEM-Projektinhalts. Siehe [Vewenden des VLT-Tools](/help/sites-developing/ht-vlttool.md).
 
@@ -92,7 +92,7 @@ Weitere Informationen finden Sie unter [Erstellen eines adaptiven Formulars](/he
    * Um das Layout von vordefinierten adaptiven Formularkomponenten in /libs anzupassen, [erstellen Sie benutzerdefinierte Layout-Komponenten](/help/forms/using/custom-layout-components-forms.md) zusätzlich zu den [Standard-Layouts](/help/forms/using/layout-capabilities-adaptive-forms.md).
    * Führen Sie benutzerdefinierte Interaktivitäten ein, indem Sie benutzerdefinierte Widgets oder Erscheinungsbilder erstellen. Es wird nicht empfohlen, Standardkomponenten zu ändern. Weitere Informationen finden Sie unter [Erscheinungsbild-Framework](/help/forms/using/introduction-widgets.md).
 
-* Weitere Informationen finden Sie unter[ Bearbeiten von persönlichen identifizierbaren Informationen](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) für Vorschläge zum Umgang mit PII-Daten.
+* Weitere Informationen finden Sie unter[&#x200B; Bearbeiten von persönlichen identifizierbaren Informationen](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) für Vorschläge zum Umgang mit PII-Daten.
 
 ### Erstellen von Formularvorlagen
 
@@ -150,7 +150,7 @@ Der Regeleditor bietet einen visuellen Editor und einen Code-Editor zum Schreibe
       * `field.visible`, um die Sichtbarkeit eines Felds zu ändern. 
 
 * Autorinnen und Autoren adaptiver Formulare müssen möglicherweise JavaScript-Code schreiben, um Business-Logik in ein Formular zu integrieren. JavaScript ist zwar leistungsstark und effektiv, aber kann die Sicherheit beeinflussen. Daher müssen Sie sicherstellen, dass die Autorin bzw. der Autor des Formulars eine vertrauenswürdige Person ist und Prozesse zur Überprüfung und Genehmigung von JavaScript-Code vorhanden sind, bevor ein Formular produktiv eingesetzt wird. Admins können den Zugriff auf den Regeleditor für Benutzergruppen entsprechend ihrer Rolle oder Funktion beschränken. Siehe [Gewähren von Zugriff auf den Regeleditor für ausgewählte Benutzergruppen](/help/forms/using/rule-editor-access-user-groups.md).
-* Sie können Ausdrücke in Regeln verwenden, um adaptive Formulare dynamisch zu gestalten. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und nutzen Scripting-Modell-APIs für adaptive Formulare. Diese Ausdrücke geben Werte bestimmter Typen zurück. Weitere Informationen zu Ausdrücken und optimalen Verfahren finden Sie unter[ Adaptive Formularausdrücke](/help/forms/using/adaptive-form-expressions.md). 
+* Sie können Ausdrücke in Regeln verwenden, um adaptive Formulare dynamisch zu gestalten. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und nutzen Scripting-Modell-APIs für adaptive Formulare. Diese Ausdrücke geben Werte bestimmter Typen zurück. Weitere Informationen zu Ausdrücken und optimalen Verfahren finden Sie unter[&#x200B; Adaptive Formularausdrücke](/help/forms/using/adaptive-form-expressions.md). 
 
 * Adobe empfiehlt bei der Regelerstellung mit dem Regeleditor die Verwendung von synchronen statt asynchronen JavaScript-Vorgängen. Es wird dringend davon abgeraten, asynchrone Vorgänge zu verwenden. Wenn Sie sich jedoch in einer Situation befinden, in der asynchrone Vorgänge unvermeidbar sind, müssen JavaScript-Closure-Funktionen implementiert werden. So können Sie sich wirksam vor potenziellen Wettlaufsituationen schützen und Regelimplementierungen mit optimaler Leistung sowie Stabilität im gesamten System sicherstellen.
 
@@ -238,7 +238,7 @@ Weitere Informationen finden Sie unter [Vorbefüllen der Felder in adaptiven For
 Adaptive Formulare benötigen Übermittlungsaktionen für die Verarbeitung der von Benutzern angegebenen Daten. Eine Sendeaktion bestimmt die Aufgabe, die auf die mithilfe eines adaptiven Formulars übermittelten Daten angewendet wird.
 
 * Es gibt mehrere Sendeaktionen, die in adaptiven Formularen sofort verfügbar sind. Weitere Informationen finden Sie unter [Konfigurieren der Sendeaktion](/help/forms/using/configuring-submit-actions.md).
-* Sie können eine benutzerdefinierte Sendeaktion schreiben, wenn die standardmäßigen Sendeaktionen Ihren Anwendungsfall nicht erfüllen. Weitere Informationen finden Sie unter[ Schreiben von benutzerdefinierten Übermittlungsaktionen für ein adaptives Formular](/help/forms/using/custom-submit-action-form.md).
+* Sie können eine benutzerdefinierte Sendeaktion schreiben, wenn die standardmäßigen Sendeaktionen Ihren Anwendungsfall nicht erfüllen. Weitere Informationen finden Sie unter[&#x200B; Schreiben von benutzerdefinierten Übermittlungsaktionen für ein adaptives Formular](/help/forms/using/custom-submit-action-form.md).
 * Beziehen Sie serverseitige Validierungen ein, um zu verhindern, dass ungültige Daten übermittelt werden. 
 
 Sie können die Funktion der mehrfachen Signaturen von Adobe Sign in adaptiven Formularen nutzen.  Beachten Sie die folgenden Punkte bei der Konfiguration von Adobe Sign in adaptiven Formularen.  Weitere Informationen finden Sie unter [Verwenden von Adobe Sign in einem adaptiven Formular](/help/forms/using/working-with-adobe-sign.md).

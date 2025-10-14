@@ -17,7 +17,7 @@ Der SPA-Editor von Adobe wird zwar weiterhin unterstützt, aber nachstehend erfa
 
 ## Zusammenfassung {#summary}
 
-Adobe hat den SPA-Editor mit [der GA-Version AEM 6.5 LTS) ](/help/release-notes/release-notes.md#deprecated-and-removed-features), was bedeutet, dass an seinen SDKs keine weiteren Verbesserungen oder Aktualisierungen vorgenommen werden. Adobe empfiehlt Ihnen, den [universellen Editor](/help/sites-developing/universal-editor/introduction.md) für alle neuen Headless-Projekte zu verwenden, um die neuesten Innovationen von AEM zu nutzen.
+Adobe hat den SPA-Editor mit [der GA-Version AEM 6.5 LTS) &#x200B;](/help/release-notes/release-notes.md#deprecated-and-removed-features), was bedeutet, dass an seinen SDKs keine weiteren Verbesserungen oder Aktualisierungen vorgenommen werden. Adobe empfiehlt Ihnen, den [universellen Editor](/help/sites-developing/universal-editor/introduction.md) für alle neuen Headless-Projekte zu verwenden, um die neuesten Innovationen von AEM zu nutzen.
 
 ## Details zur Abschaffung {#details}
 

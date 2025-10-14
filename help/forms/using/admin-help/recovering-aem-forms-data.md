@@ -95,7 +95,7 @@ Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten ausgefallen ist, di
 
    * **Eigenständig**
 
-     *Autor- und Veröffentlichungsinstanzen wiederherstellen*: Bei einem Systemausfall können Sie das Repository im letzten gesicherten Zustand wiederherstellen, indem Sie die unter &quot;[ und Wiederherstellen“ ](/help/sites-administering/backup-and-restore.md).
+     *Autor- und Veröffentlichungsinstanzen wiederherstellen*: Bei einem Systemausfall können Sie das Repository im letzten gesicherten Zustand wiederherstellen, indem Sie die unter &quot;[&#x200B; und Wiederherstellen“ &#x200B;](/help/sites-administering/backup-and-restore.md).
 
      Bei der vollständigen Wiederherstellung des Authoring-Knotens werden auch die Daten von Forms Manager und AEM Forms Workspace wiederhergestellt.
 

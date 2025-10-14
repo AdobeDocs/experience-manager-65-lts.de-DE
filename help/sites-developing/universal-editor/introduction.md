@@ -22,7 +22,7 @@ Der universelle Editor ist ein vielseitiger visueller Editor, der Teil von Adobe
 * Autorinnen und Autoren profitieren von der Flexibilität des universellen Editors, da er dieselbe konsistente visuelle Bearbeitung für alle Formen von AEM Headless-Inhalten unterstützt.
 * Entwickler profitieren von der Vielseitigkeit des universellen Editors, da er auch die echte Entkopplung der Implementierung unterstützt. Es ermöglicht Entwicklern die Verwendung praktisch jedes Frameworks oder jeder Architektur ihrer Wahl, ohne dass SDK- oder Technologiebeschränkungen auferlegt werden.
 
-Weitere Informationen finden Sie in der Dokumentation zu [AEM as a Cloud Service ](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) universellen Editor.
+Weitere Informationen finden Sie in der Dokumentation zu [AEM as a Cloud Service &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) universellen Editor.
 
 ## Architektur {#architecture}
 
@@ -143,7 +143,7 @@ Nachdem AEM aktualisiert und konfiguriert wurde, können Sie einen lokalen unive
 
 ### Aktualisieren der Dispatcher {#update-dispatcher}
 
-Wenn AEM konfiguriert ist und ein lokaler universeller Editor-Dienst ausgeführt wird, müssen Sie einen Reverse-Proxy für den neuen Dienst ([ Dispatcher) zulassen](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/dispatcher)
+Wenn AEM konfiguriert ist und ein lokaler universeller Editor-Dienst ausgeführt wird, müssen Sie einen Reverse-Proxy für den neuen Dienst ([&#x200B; Dispatcher) zulassen](https://experienceleague.adobe.com/de/docs/experience-manager-dispatcher/using/dispatcher)
 
 1. Passen Sie die vhost-Datei der Autoreninstanz an, um einen Reverse-Proxy einzuschließen.
 
@@ -191,5 +191,5 @@ Beachten Sie, dass bei Verwendung der Dokumentation für den universellen Editor
 Der universelle Editor in AEM 6.5 LTS funktioniert im Großen und Ganzen genauso wie in AEM as a Cloud Service, einschließlich der Benutzeroberfläche und eines Großteils des Setups. Es gibt jedoch Unterschiede, die zu beachten sind.
 
 * Der universelle Editor in 6.5 LTS unterstützt nur den Headless-Anwendungsfall.
-* Das Setup des universellen Editors variiert bei 6.5 LTS leicht [wie ](#setup) aktuellen Dokument beschrieben).
+* Das Setup des universellen Editors variiert bei 6.5 LTS leicht [wie &#x200B;](#setup) aktuellen Dokument beschrieben).
 * Der universelle Editor in 6.5 LTS verwendet eine andere Asset-Auswahl und eine andere Inhaltsfragmentauswahl als AEM as a Cloud Service.

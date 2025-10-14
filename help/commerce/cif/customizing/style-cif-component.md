@@ -331,7 +331,7 @@ Der webpack-Dev-Server dient als Proxy für Bilder und einige der CSS/JavaScript
    >
    >Wenn Sie einen Sass-bezogenen Fehler erhalten, stoppen Sie den Server, führen Sie den Befehl `npm rebuild node-sass` aus und wiederholen Sie dann die oben genannten Schritte. Dazu kann es kommen, wenn Sie eine andere Version von `npm` und `node` im Projekt `aem-cif-guides-venia/pom.xml` angegeben haben.
 
-1. Navigieren Sie in einer neuen Registerkarte mit demselben Browser [ einer angemeldeten Instanz von AEM zum :8080http://localhost](http://localhost:8080/)/. Über den webpack-Dev-Server sollte die Venia-Startseite angezeigt werden:
+1. Navigieren Sie in einer neuen Registerkarte mit demselben Browser [&#x200B; einer angemeldeten Instanz von AEM zum :8080http://localhost](http://localhost:8080/)/. Über den webpack-Dev-Server sollte die Venia-Startseite angezeigt werden:
 
    ![webpack-Dev-Server an Port 80](../assets/style-cif-component/webpack-dev-server-port80.png)
 

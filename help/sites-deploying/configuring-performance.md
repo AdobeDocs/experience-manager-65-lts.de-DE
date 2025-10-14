@@ -294,9 +294,9 @@ In diesem Abschnitt erhalten Sie einen Überblick über Probleme bei der Definit
 Im Folgenden wird die übliche Vorgehensweise bei der Durchführung von Leistungstests bei einer AEM-Anwendung in der *Veröffentlichungsumgebung* beschrieben. Dieser Leistungstest umfasst die folgenden fünf Phasen:
 
 * [Überprüfung des Wissens](#verification-of-knowledge)
-* [Definition des Umfangs ](#scope-definition)
+* [Definition des Umfangs &#x200B;](#scope-definition)
 * [Testmethoden](#test-methodologies)
-* [Definition von Leistungszielen ](#defining-the-performance-goals)
+* [Definition von Leistungszielen &#x200B;](#defining-the-performance-goals)
 * [Optimierung](#optimization)
 
 Die Steuerung ist ein zusätzlicher, allumfassender Prozess – notwendig, aber nicht auf Tests beschränkt.
