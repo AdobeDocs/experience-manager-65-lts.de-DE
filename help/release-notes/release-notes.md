@@ -6,9 +6,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7319'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -449,21 +449,21 @@ Eclipse Jetty 11.0.x wird als Servlet-Engine für den Schnellstart verwendet.
 
 * Weitere Informationen zum Upgrade-Verfahren finden Sie unter [Dokumentation zu Upgrades](/help/sites-deploying/upgrade.md).
 
-#### Best Practices für AEM 6.5 LTS Service Pack-Upgrades
+#### Best Practices für AEM 6.5 LTS Service Pack-Upgrades
 
 <!-- THE INFORMATION UNDER THIS HEADING CAME FROM CQDOC-23078 -->
 
 **Umgebung**
-Gilt für: AEM 6.5 LTS (On-Premise)-Kunden, die Service Pack 1 (SP1) installieren. SP1 wird als Schnellstart-JAR-Datei bereitgestellt.
+Gilt für: Kundinnen und Kunden mit AEM 6.5 LTS (On-Premise), die Service Pack 1 (SP1) installieren. SP1 wird als Schnellstart-JAR bereitgestellt.
 
-**Warum ist das wichtig**
-SP1 für AEM 6.5 LTS wird als Schnellstart-JAR und nicht als ZIP-Datei zur Installation über Package Manager bereitgestellt. On-Premise-Kunden führen ein Upgrade durch, indem sie die Schnellstart-JAR-Datei ersetzen, entpacken und neu starten. Diese Methode entspricht dem Upgrade-Verfahren bei Adobe.
+**Warum dies wichtig ist**
+SP1 für AEM 6.5 LTS wird als Schnellstart-JAR-Datei und nicht als ZIP-Datei zur Installation über den Paket-Manager bereitgestellt. On-Premise-Kundinnen und -Kunden führen ein Upgrade durch, indem sie die Schnellstart-JAR-Datei ersetzen, entpacken und neu starten. Diese Methode entspricht dem Upgrade-Verfahren von Adobe.
 
-**Empfohlener Upgrade-Ablauf (Autor oder Veröffentlichung)**
+**Empfohlener Upgrade-Ablauf (Autoren- oder Veröffentlichungsinstanz)**
 
-1. Stellen Sie sicher, dass Ihre AEM 6.5 LTS-Instanz fehlerfrei funktioniert und zugänglich ist.
-1. Laden Sie die SP1-Schnellstart-JAR-Datei (z. B. `cq-quickstart-6.6.x.jar`) von Software Distribution herunter.
-1. Beenden Sie die laufende Instanz.
+1. Stellen Sie sicher, dass Ihre AEM 6.5 LTS-Instanz fehlerfrei funktioniert und Sie auf sie zugreifen können.
+1. Laden Sie die SP1-Schnellstart-JAR-Datei (z. B. `cq-quickstart-6.6.x.jar`) von der Software-Verteilung herunter.
+1. Stoppen Sie die Instanz, die ausgeführt wird.
 1. Ersetzen Sie im AEM-Installationsverzeichnis (außerhalb von `crx-quickstart/`) die vorherige Schnellstart-JAR-Datei durch die SP1-JAR-Datei.
 1. Entpacken Sie die JAR-Datei:
 
@@ -471,20 +471,20 @@ SP1 für AEM 6.5 LTS wird als Schnellstart-JAR und nicht als ZIP-Datei zur Insta
    java -jar cq-quickstart-6.6.x.jar -unpack
    ```
 
-   (Heap-Flags nach Bedarf anpassen.)
+   (Passen Sie Heap-Flags nach Bedarf an.)
 
-1. Benennen Sie die entpackte JAR-Datei so um, dass sie der Rolle und dem Port entspricht, z. B. `cq-author-4502.jar` oder `cq-publish-4503.jar`.
-1. Starten Sie AEM und bestätigen Sie das Upgrade in der Benutzeroberfläche (Hilfe > Info) und in den Protokollen.
+1. Benennen Sie die entpackte JAR-Datei so um, dass sie der Rolle und dem Port entspricht, z. B. `cq-author-4502.jar` oder `cq-publish-4503.jar`.
+1. Starten Sie AEM und bestätigen Sie das Upgrade auf der Benutzeroberfläche („Hilfe“ > „Info“) und in den Protokollen.
 
 **Gute Hygiene**
 
-* Führen Sie das Upgrade vor der Produktion in niedrigeren/Testumgebungen aus.
-* Erstellen Sie vollständige wiederherstellbare Sicherungen (Repository plus alle externen Datenspeicher), bevor Sie beginnen.
-* Lesen Sie die Anleitungen für das In-Place-Upgrade und die technischen Anforderungen von Adobe (Java 17/21 für LTS empfohlen).
+* Führen Sie das Upgrade in einer niedrigeren oder einer Testumgebung aus, bevor Sie es in der Produktionsumgebung ausführen.
+* Erstellen Sie vollständige wiederherstellbare Backups (Repository plus alle externen Datenspeicher), bevor Sie beginnen.
+* Lesen Sie die Anleitungen für das lokale Upgrade und die technischen Anforderungen von Adobe (Java 17/21 für LTS empfohlen).
 
 >[!NOTE]
 >
->Die oben gezeigten Dateinamen (z. B. `cq-quickstart-6.6.x.jar`) spiegeln die SP1-Schnellstart-Artefaktbenennung wider, die für diese LTS-Version beobachtet wird. Verwenden Sie immer den exakten Dateinamen, den Sie von Software Distribution herunterladen.
+>Die oben gezeigten Dateinamen (z. B. `cq-quickstart-6.6.x.jar`) spiegeln die SP1-Schnellstart-Artefaktbenennung wider, die für diese LTS-Version beobachtet wird. Verwenden Sie immer den exakt gleichen Namen der Datei, die Sie von der Software-Verteilung herunterladen.
 
 ## Installieren und Aktualisieren {#install-update}
 
