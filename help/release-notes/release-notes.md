@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
-workflow-type: ht
-source-wordcount: '7319'
-ht-degree: 100%
+source-git-commit: 6023c211220bb500814ecd511b8787d107c3c6cd
+workflow-type: tm+mt
+source-wordcount: '7381'
+ht-degree: 99%
 
 ---
 
@@ -608,6 +608,18 @@ Bei der Aktivierung der Funktion „Nur SSL“ in AEM-Bereitstellungen gibt es e
 
 **Lösung:**
 Wenn dieses Problem auftritt, wenden Sie sich an den Adobe-Kundensupport. Zur Lösung dieses Problems ist Hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip) verfügbar. Versuchen Sie nicht, „Nur SSL“-Funktionen zu aktivieren, bis Sie den erforderlichen Hotfix angewendet haben.
+
+### Leere Berechtigungsseite in der Sicherheits-Benutzeroberfläche auf AEM 6.5 LTS SP1
+
+>[!NOTE]
+>
+> Dieses Problem tritt nur in der AEM 6.5 LTS SP1-Version auf.
+
+Beim Zugriff auf die Seite „Berechtigungen“ unter „Tools“ > „Sicherheit“ in AEM 6.5 LTS SP1 wird eine leere Seite angezeigt, anstatt Berechtigungen für einen Benutzer oder eine Gruppe anzuzeigen.
+
+**Lösung:**
+Zur Behebung dieses Problems ist ein Hotfix [cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip) verfügbar.
+
 
 ## Enthaltene OSGi- und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
