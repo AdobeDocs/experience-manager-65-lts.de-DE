@@ -226,5 +226,5 @@ Verwenden Sie die folgenden Methoden, um Feedback zu geben, Fragen zu stellen un
 >
 >* [Funktionen für die Barrierefreiheit in  [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 >* [Versionshinweise zu den in den einzelnen Service Pack-Versionen vorgenommenen Verbesserungen](/help/release-notes/release-notes.md).
->* Hinweise zur Barrierefreiheit in [[!DNL Adobe Experience Manager] ](/help/managing/web-accessibility.md).
+>* Hinweise zur Barrierefreiheit in [[!DNL Adobe Experience Manager] &#x200B;](/help/managing/web-accessibility.md).
 >* [Konformitätsberichte (ACR) und VPAT-Liste für Adobe-Lösungen](https://www.adobe.com/accessibility/compliance.html).
