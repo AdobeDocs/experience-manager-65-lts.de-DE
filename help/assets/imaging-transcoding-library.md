@@ -1,15 +1,14 @@
 ---
 title: Imaging Transcoding Library
 description: Erfahren Sie, wie Sie die Imaging Transcoding Library von Adobe konfigurieren und verwenden – eine Bildverarbeitungslösung, die zentrale Bildverarbeitungsfunktionen wie Kodierung, Transkodierung, Resampling und Größenänderung von Bildern ausführen kann.
-contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 solution: Experience Manager, Experience Manager Assets
 exl-id: fb24c331-55c3-4166-bd4f-c26cece902fc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 1dd093acdfa571dad9659270ddc6912ab3d5dba5
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 100%
+source-wordcount: '978'
+ht-degree: 99%
 
 ---
 
@@ -76,7 +75,7 @@ Erstellen Sie zum Konfigurieren der ITL-Verarbeitung eine Konfigurationsdatei un
 
 Um die Bibliothek zu konfigurieren, erstellen Sie eine CONF-Datei und geben Sie die Bibliotheken mithilfe der folgenden Schritte an. Sie benötigen Admin- oder Root-Berechtigungen.
 
-1. Laden Sie das Paket mit der [Imaging Transcoding Library von Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) herunter und installieren Sie es mit dem Paket-Manager. Das Paket ist kompatibel mit [!DNL Experience Manager] 6.5.
+1. Laden Sie das Paket mit der [Imaging Transcoding Library von Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) herunter und installieren Sie es mit dem Paket-Manager. Das Paket ist kompatibel mit [!DNL Experience Manager] 6.5 LTS.
 
 1. Die Bundle-ID für `com.day.cq.dam.cq-dam-switchengine` finden Sie, indem Sie sich bei der Web-Konsole anmelden und auf **[!UICONTROL OSGi]** > **[!UICONTROL Bundles]** klicken. Alternativ können Sie zum Öffnen der Bundles-Konsole die URL `https://[aem_server:[port]/system/console/bundles/` aufrufen. Suchen Sie das Bundle `com.day.cq.dam.cq-dam-switchengine` und seine ID.
 

@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
-source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
+source-git-commit: c99c7b2616e652ae372e98349d5de3b658a0beb1
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2468'
 ht-degree: 100%
 
 ---
@@ -395,10 +395,6 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
 >[!NOTE]
 >
 >Weitere Informationen zur asynchronen Auftragsverarbeitung und zum Konfigurieren der Grenzwerte für Verschiebungs- und Umbenennungsaktionen für Seiten finden Sie im Dokument [Asynchrone Aufträge](/help/sites-administering/asynchronous-jobs.md) im Administrations-Benutzerhandbuch.
-
->[!NOTE]
->
->Für die Verarbeitung asynchroner Seitenverschiebungen ist AEM 6.5.3.0 oder höher erforderlich.
 
 ### Löschen einer Seite {#deleting-a-page}
 

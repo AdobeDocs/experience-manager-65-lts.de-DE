@@ -1,16 +1,11 @@
 ---
 title: Arbeiten mit dem Marketing Campaign Manager
 description: Der Marketing Campaign Manager (MCM) ist eine Konsole, mit der Sie Multi-Channel-Kampagnen verwalten können. Mit dieser Software zur Marketing-Automatisierung können Sie alle Ihre Marken, Kampagnen und Erlebnisse zusammen mit den zugehörigen Segmenten, Listen, Leads und Berichten verwalten.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: personalization
-content-type: reference
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: fb2fd382-e06a-4779-a4c5-e483ef42796d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 120c3fd005ce94021758ffbd14dd6b552de7afe9
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 100%

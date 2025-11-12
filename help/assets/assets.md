@@ -6,9 +6,9 @@ feature: Asset Management
 role: Leader, Architect, User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 2f2eb576-4924-4314-b348-c4b290a57fe3
-source-git-commit: aafd340d9ef03f9bf12ed23aad5eb03dc055af38
+source-git-commit: 6944befc6ca7367e229b3eb7b41fef9cc177a1df
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '903'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 100%
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/overview) |
-| AEM 6.5 | Dieser Artikel |
+| AEM 6.5 LTS | Dieser Artikel |
 
 AEM [!DNL Assets] ist ein Digital Asset Management(DAM)-Tool, das Teil der [!DNL Experience Manager]-Plattform ist und Ihrem Unternehmen die Verwaltung und Verteilung digitaler Assets ermöglicht. Benutzende im Unternehmen können viele Arten von digitalen Assets verwalten, speichern und darauf zugreifen, z. B. Bilder, Videos, Dokumente, Audio-Clips, 3D-Dateien und Rich-Media-Dateien, die im Web, in gedruckten Dokumenten und für die digitale Verteilung verwendet werden können.
 
@@ -64,7 +64,7 @@ Bei der Arbeit mit digitalen Assets in [!DNL Experience Manager] ist es hilfreic
 
 * **Sammlung**: Eine Sammlung von Assets, entweder auf Grundlage ihres physischen Speicherorts (Ordner), allgemeinen Eigenschaften (gespeicherter Suchordner) oder Benutzerauswahl (Lightbox-Ordner).
 
-* **Metadaten**: [!DNL Assets] verfügen über Metadaten, darunter Autorin oder Autor, Ablaufdatum, Digital Rights Management(DRM)-Informationen usw. Metadaten sind unter der Zugangssteuerung zu finden. [!DNL Assets] unterstützt standardmäßig die folgenden allgemeinen Metadaten-Schemata:
+* **Metadaten**: [!DNL Assets] verfügen über Metadaten, darunter Autorin oder Autor, Ablaufdatum, Digital Rights Management(DRM)-Informationen usw. Metadaten sind unter der Zugangssteuerung zu finden. [!DNL Assets] unterstützt standardmäßig die folgenden allgemeinen Metadatenschemata:
 
    * Dublin Core: einschließlich Autorin oder Autor, Beschreibung, Datum, Thema usw.
    * IPTC: einschließlich Ereignis, Modell, Ort usw.

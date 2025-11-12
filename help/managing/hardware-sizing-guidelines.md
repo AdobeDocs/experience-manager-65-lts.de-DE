@@ -1,11 +1,11 @@
 ---
 title: Hardware-Skalierungsrichtlinien
 description: Diese Skalierungsrichtlinien bieten eine Annäherung an die Hardware-Erfordernisse, die für die Bereitstellung eines AEM-Projekts erforderlich sind.
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader
 exl-id: dac9b87a-cbd2-49e3-bd4d-ebcccdec1659
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a5e7c2326785d6801601eabc71647923ba854f04
 workflow-type: tm+mt
 source-wordcount: '1231'
 ht-degree: 100%
@@ -57,9 +57,9 @@ Um Änderungen zu verifizieren. Die Anzahl der Testumgebungen kann je nach Proje
 
 * **Veröffentlichungs-Testumgebung** Hauptsächlich zum Testen von Anwendungsfällen der Zusammenarbeit in sozialen Netzwerken und/oder der Interaktion zwischen Autor und mehreren Veröffentlichungsinstanzen.
 
-* **Autoren-Bearbeitungsumgebung** Für Autoren zum Bearbeiten von Inhalten
+* **Autoren-Produktionsumgebung** Für Autoren zum Bearbeiten von Inhalten
 
-* **Veröffentlichungs-Bearbeitungsumgebung** Um veröffentlichte Inhalte bereitzustellen.
+* **Veröffentlichungs-Produktionsumgebung** Um veröffentlichte Inhalte bereitzustellen.
 
 Die Umgebungen können zudem variieren, von einem Single-Server-System mit AEM und einem Anwendungs-Server bis hin zu einem hochskalierten Satz von Multi-Server- und Multi-CPU-Clustern. Adobe empfiehlt, je einen separaten Computer für ein Produktionssystem zu verwenden und auf diesen Rechnern keine anderen Anwendungen auszuführen.
 
@@ -129,7 +129,7 @@ Weisen Sie mindestens 16 GB Heap zu und konfigurieren Sie den Workflow [!UICONT
 >
 >Siehe auch [Handbuch zur Leistung von Assets](/help/sites-deploying/assets-performance-sizing.md).
 
-### Multi-Site-Manager {#multi-site-manager}
+### Multi-Site Manager {#multi-site-manager}
 
 Der Ressourcenverbrauch beim Einsatz von MSM in AEM in einer Authoring-Umgebung hängt stark von den jeweiligen Anwendungsfällen ab. Grundlegende Faktoren sind:
 

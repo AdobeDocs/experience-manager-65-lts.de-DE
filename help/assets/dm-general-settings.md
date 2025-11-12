@@ -1,19 +1,15 @@
 ---
 title: Konfigurieren allgemeiner Einstellungen für Dynamic Media
 description: Erfahren Sie, wie Sie die allgemeinen Einstellungen in Dynamic Media verwalten. Sie können hier den Namen des Veröffentlichungs-Servers und den Namen des Ursprungs-Servers festlegen und eine Option zum Überschreiben von Bildern festlegen. Es gibt auch standardmäßige Upload-Optionen für die Unschärfemaske von Bildern und Upload-Optionen für die Verarbeitung von PostScript-, Adobe Photoshop-, PDF- und Adobe Illustrator-Dateien.
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: administering
-content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 solution: Experience Manager, Experience Manager Assets
 exl-id: 99cd5f46-f1aa-46f5-b112-311724e00490
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 298d0505a6c0561202e77008b3c352066d4e72b7
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 100%
+source-wordcount: '2498'
+ht-degree: 99%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 100%
 Die Option **[!UICONTROL Allgemeine Dynamic Media-Einstellungen]** kann nur konfiguriert werden, wenn Folgendes zutrifft:
 
 * Sie führen Dynamic Media im Scene7-Modus aus. Siehe [Aktivieren von Dynamic Media im Scene7-Modus](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
-* Sie haben eine *vorhandene* **[!UICONTROL Dynamic Media-Konfiguration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5.11 oder höher. Weitere Informationen finden Sie unter [Erstellen einer Dynamic Media-Konfiguration in Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+* Sie haben eine *vorhandene* **[!UICONTROL Dynamic Media-Konfiguration]** (in **[!UICONTROL Cloud Services]**). Weitere Informationen finden Sie unter [Erstellen einer Dynamic Media-Konfiguration in Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
 * Sie sind ein Experience Manager-Systemadministrator mit Administratorrechten.
 
 „Allgemeine Dynamic Media-Einstellungen“ richtet sich an erfahrene Website-Entwickler und -Programmierer. Adobe Dynamic Media empfiehlt, dass Benutzer, die diese Veröffentlichungseinstellungen ändern, mit Dynamic Media in Adobe Experience Manager und der grundlegenden Bildverarbeitungstechnologie vertraut sind.

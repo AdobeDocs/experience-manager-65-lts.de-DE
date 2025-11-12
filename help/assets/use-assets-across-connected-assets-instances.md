@@ -8,10 +8,10 @@ feature: Connected Assets,User and Groups
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 61a1c41a-7aec-4ffb-b622-905b3ca62c1b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e591ed82228d38446409951a1ea495a93732f92e
 workflow-type: tm+mt
-source-wordcount: '3909'
-ht-degree: 100%
+source-wordcount: '3915'
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=de) |
-| AEM 6.5 | Dieser Artikel |
+| AEM 6.5 LTS | Dieser Artikel |
 
 
 In großen Unternehmen ist die zur Erstellung von Websites erforderliche Infrastruktur möglicherwiese verteilt. Manchmal befinden sich die Funktionen und digitale Assets zum Erstellen von Web-Seiten in verschiedenen Bereitstellungen. Ein Grund können geografisch verteilte vorhandene Bereitstellungen sein, die zusammenarbeiten müssen. Ein weiterer Grund können Akquisitionen sein, die zu einer heterogenen Infrastruktur führen, einschließlich unterschiedlicher [!DNL Experience Manager]-Versionen, die die übergeordnete Firma gemeinsam nutzen möchte.
@@ -33,7 +33,7 @@ Die Funktion „Connected Assets“ unterstützt die oben genannten Anwendungsf�
 
 ## Überblick über Connected Assets {#overview-of-connected-assets}
 
-Beim Bearbeiten von Seiten als Ziel im [!UICONTROL Seiteneditor] können die Autoren nahtlos Assets aus einer anderen [!DNL Assets]-Bereitstellung, die als Asset-Quelle dient, suchen, durchsuchen und einbetten. Die Administratoren erstellen eine einmalige Integration einer Bereitstellung von [!DNL Experience Manager] mit [!DNL Sites]-Funktion mit einer anderen Bereitstellung von [!DNL Experience Manager] mit [!DNL Assets]-Funktion. Site-Autorinnen und -Autoren können Dynamic Media-Bilder auch über Connected Assets auf den Web-Seiten Ihrer Site verwenden und Dynamic Media-Funktionen wie intelligentes Zuschneiden und Bildvorgaben nutzen.
+Beim Bearbeiten von Seiten als Ziel im [!UICONTROL Seiteneditor] können die Autoren nahtlos Assets aus einer anderen [!DNL Assets]-Bereitstellung, die als Asset-Quelle dient, suchen, durchsuchen und einbetten. Die Administratoren erstellen eine einmalige Integration einer Bereitstellung von [!DNL Experience Manager] mit [!DNL Sites]-Funktion mit einer anderen Bereitstellung von [!DNL Experience Manager] mit [!DNL Assets]-Funktion. Site-Autorinnen und -Autoren können Dynamic Media-Bilder auch über Connected Assets auf den Web-Seiten Ihrer Site verwenden und Dynamic Media-Funktionen wie intelligenten Zuschnitt und Bildvorgaben nutzen.
 
 Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale Assets zur Verfügung. Die Funktion unterstützt die nahtlose Suche und den Zugriff auf Remote-Assets im Site-Editor. Für alle anderen Anwendungsfälle, bei denen das gesamte Korpus der Assets auf den Sites verfügbar sein muss, sollten Sie in Erwägung ziehen, die Assets in großen Mengen zu migrieren, anstatt Connected Assets zu verwenden. Siehe [Migrationshandbuch für Experience Manager Assets](/help/assets/assets-migration-guide.md).
 
@@ -42,13 +42,13 @@ Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale
 Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sicher:
 
 * Die Benutzer sind Teil von entsprechenden Benutzergruppen für jede Bereitstellung.
-* Bei Bereitstellungstypen von [!DNL Adobe Experience Manager] ist eines der unterstützten Kriterien erfüllt. [!DNL Experience Manager] 6,5 [!DNL Assets] arbeitet mit [!DNL Experience Manager] as a Cloud Service zusammen. Weitere Informationen zur Funktionsweise dieser Funktion in [!DNL Experience Manager] as a [!DNL Cloud Service] finden Sie unter [Connected Assets in Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=de).
+* Bei Bereitstellungstypen von [!DNL Adobe Experience Manager] ist eines der unterstützten Kriterien erfüllt. [!DNL Experience Manager] 6.5 LTS [!DNL Assets] funktioniert mit [!DNL Experience Manager] as a Cloud Service. Weitere Informationen zur Funktionsweise dieser Funktion in [!DNL Experience Manager] as a [!DNL Cloud Service] finden Sie unter [Connected Assets in Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=de).
 
-  | | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] auf AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
+  | | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 LTS [!DNL Sites] AMS | [!DNL Experience Manager] 6.5 LTS [!DNL Sites] On-Premise |
   |---|---|---|---|
-  | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Unterstützt | Unterstützt | Unterstützt |
-  | **[!DNL Experience Manager]6.5 [!DNL Assets] auf AMS** | Unterstützt | Unterstützt | Unterstützt |
-  | **[!DNL Experience Manager]6.5 [!DNL Assets] On-Premise** | Nicht unterstützt | Nicht unterstützt | Nicht unterstützt |
+  | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Unterstützt | Unterstützt | Unterstützt  |
+  | **[!DNL Experience Manager]6.5 LTS [!DNL Assets] auf AMS** | Unterstützt | Unterstützt | Unterstützt  |
+  | **[!DNL Experience Manager]6.5 LTS [!DNL Assets] On-Premise** | Nicht unterstützt | Nicht unterstützt | Nicht unterstützt |
 
 ### Unterstützte Dateiformate {#mimetypes}
 
@@ -146,7 +146,7 @@ Sie können die Verbindung zwischen konfigurierten [!DNL Sites]-Bereitstellungen
 ## Verwenden von Dynamic Media-Assets {#dynamic-media-assets}
 
 
-Mit Connected Assets können Sie Bild-Assets, die von [!DNL Dynamic Media] aus der DAM-Remote-Bereitstellung verarbeitet wurden, auf Sites-Seiten verwenden und Dynamic Media-Funktionen wie intelligentes Zuschneiden und Bildvorgaben nutzen.
+Mit Connected Assets können Sie Bild-Assets, die von [!DNL Dynamic Media] aus der DAM-Remote-Bereitstellung verarbeitet wurden, auf Sites-Seiten verwenden und Dynamic Media-Funktionen wie intelligenten Zuschnitt und Bildvorgaben nutzen.
 
 Verwenden von [!DNL Dynamic Media] mit Connected Assets:
 

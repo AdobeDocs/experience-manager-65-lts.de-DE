@@ -1,15 +1,11 @@
 ---
 title: DevOp-Strategien für Unternehmen
 description: Erfahren Sie mehr über die Prozesse, Methoden und Kommunikation, die zur Vereinfachung von Bereitstellung und Zusammenarbeit nötig sind.
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing
-content-type: reference
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader
 exl-id: bd80a4c5-4b65-43db-af4e-f43849c796be
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: db44ebd29ea80c3b95e385ace5156d028f4de122
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 100%
@@ -48,7 +44,7 @@ Die Bereitstellung von Adobe Experience Manager (AEM) besteht gewöhnlich aus me
 
 Die Entwicklenden sind für die Entwicklung und Anpassung des vorgeschlagenen Projekts mit sämtlichen benötigten Funktionen verantwortlich (z. B. Website, Mobile Apps, DAM-Implementierung). Sie:
 
-* entwickeln und passen die notwendigen Elemente an, beispielsweise Vorlagen, Komponenten, Arbeitsabläufe, Anwendungen;
+* entwickeln und passen die notwendigen Elemente an, beispielsweise Vorlagen, Komponenten, Workflows, Anwendungen;
 * setzen das Design um;
 * entwickeln die notwendigen Dienste und Skripte, um die geforderten Funktionalitäten umzusetzen.
 

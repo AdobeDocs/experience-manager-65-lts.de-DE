@@ -1,17 +1,14 @@
 ---
 title: Stilsystem
 description: Das Stilsystem ermöglicht es einem Vorlagenautor, in der Inhaltsrichtlinie für Komponenten Stilklassen festzulegen, die ein Inhaltsautor später bei der Bearbeitung der Komponente auf einer Seite auswählen kann. Diese Stile können alternative visuelle Varianten einer Komponente sein, um das Verfahren flexibler zu gestalten.
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: a3d42a73-e1b2-4f76-b98a-89cd98eea2c9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 1b01d338c8400f38e4f062cb3ee592062f560a67
 workflow-type: tm+mt
-source-wordcount: '1296'
-ht-degree: 98%
+source-wordcount: '1292'
+ht-degree: 99%
 
 ---
 
@@ -129,7 +126,7 @@ Ist die Komponente entsprechend konfiguriert, fügt AEM die von den Seitenautori
 
 ### Aktivieren der Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ {#enable-styles-tab-edit}
 
-Ab der AEM-Version 6.5.3.0 ist jetzt eine optionale Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ verfügbar. Im Gegensatz zur Registerkarte im Dialogfeld „Design“ ist die Registerkarte im Dialogfeld „Bearbeiten“ für die Funktion des Stilsystems nicht unbedingt erforderlich. Sie stellt jedoch eine optionale alternative Oberfläche dar, über die ein Inhaltsautor Stile festlegen kann.
+Im Dialogfeld „Bearbeiten“ ist jetzt eine optionale Registerkarte „Stile“ verfügbar. Im Gegensatz zur Registerkarte im Dialogfeld „Design“ ist die Registerkarte im Dialogfeld „Bearbeiten“ für die Funktion des Stilsystems nicht unbedingt erforderlich. Sie stellt jedoch eine optionale alternative Oberfläche dar, über die ein Inhaltsautor Stile festlegen kann.
 
 Die Registerkarte für das Dialogfeld „Bearbeiten“ kann auf ähnliche Weise wie die Registerkarte für das Dialogfeld „Design“ eingebunden werden:
 

@@ -1,19 +1,14 @@
 ---
 title: Datenschutzbestimmungen – Einhaltung durch Adobe Experience Manager
 description: Erfahren Sie mehr über die Unterstützung von Adobe Experience Manager für die verschiedenen Datenschutzbestimmungen. Dazu gehören die Datenschutz-Grundverordnung (DSGVO) der EU, der kalifornische Consumer Privacy Act und die Einhaltung der Vorschriften bei der Implementierung eines neuen AEM-Projekts.
-contentOwner: AEM Docs
-topic-tags: introduction, grdp
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
 exl-id: 6faf8e4f-ca2a-4d68-a354-fb0aa6c2644b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4a93e17da1157253a681bf8b3a38252962d8fb59
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 100%
+source-wordcount: '739'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +76,7 @@ Für Adobe Experience Manager gilt:
 
 Adobe bietet Verfahren für die Bearbeitung von Datenschutzanfragen im Zusammenhang mit Zugriff, Löschen und Opt-out für Adobe Experience Manager. In einigen Fällen sind APIs verfügbar, die von einem auf Kundenseite entwickelten Portal oder von Skripten aufgerufen werden können, um die Automatisierung zu unterstützen.
 
-Die folgende Abbildung zeigt, wie ein Workflow für Datenschutzanfragen aussehen könnte (unter Verwendung von Adobe Experience Manager 6.5):
+Die folgende Abbildung zeigt, wie ein Workflow für Datenschutzanfragen aussehen könnte:
 
 ![Datenschutz](assets/data-protection-and-privacy-01.png)
 
@@ -113,7 +108,7 @@ Weitere Informationen finden Sie unter den folgenden Themen:
 
 ## AEM Forms {#aem-forms}
 
-AEM Forms beinhaltet Komponenten und Workflows, die zur Orchestrierung von Geschäftsprozessen und zum Abschließen von digitalen Transaktionen Daten erfassen, verarbeiten und speichern. Die einzelnen Komponenten verwenden unterschiedliche Datenspeicher und ermöglichen darüber hinaus die Integration mit benutzerdefinierten Datenspeichern. In der folgenden Dokumentation werden Verfahren und Richtlinien für den Zugriff auf und die Verarbeitung von Benutzerdaten erläutert, um Datenschutzarbeitsabläufe (z. B. DSGVO oder CCPA) für eine Komponente zu unterstützen.
+AEM Forms beinhaltet Komponenten und Workflows, die zur Orchestrierung von Geschäftsprozessen und zum Abschließen von digitalen Transaktionen Daten erfassen, verarbeiten und speichern. Die einzelnen Komponenten verwenden unterschiedliche Datenspeicher und ermöglichen darüber hinaus die Integration mit benutzerdefinierten Datenspeichern. In der folgenden Dokumentation werden Verfahren und Richtlinien für den Zugriff auf und die Verarbeitung von Benutzerdaten erläutert, um Datenschutz-Workflows (z. B. DSGVO oder CCPA) für eine Komponente zu unterstützen.
 
 * [Formularportal](/help/forms/using/forms-portal-handling-user-data.md)
 * [Correspondence Management](/help/forms/using/correspondence-management-handling-user-data.md)

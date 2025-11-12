@@ -6,10 +6,10 @@ feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 15face30-3039-49a0-bfee-56bff21e5c27
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 0b337740dffb9e6421e6d2c44a1ae222dfa37711
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 100%
+source-wordcount: '676'
+ht-degree: 92%
 
 ---
 
@@ -22,15 +22,15 @@ Um mit AEM Content and Commerce zu beginnen, müssen Sie das AEM Content and Com
 
 Das Onboarding für AEM Content and Commerce erfolgt in zwei Schritten:
 
-1. Installieren des AEM Content and Commerce-Add-Ons für AEM 6.5
+1. Installieren von AEM Content and Commerce Add-On für AEM 6.5 LTS
 
-2. Verbinden von AEM mit Ihrem E-Commerce-System
+2. Verbinden von AEM mit Ihrer Lösung für den Handel
 
-### Installieren des AEM Content and Commerce-Add-Ons für AEM 6.5 {#install-add-on}
+### Installieren von AEM Content and Commerce Add-On für AEM 6.5 LTS {#install-add-on}
 
-Laden Sie das AEM Commerce-Add-On für AEM 6.5 vom [Softwareverteilungs](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)-Portal herunter.
+Laden Sie das AEM Commerce-Add-on für AEM 6.5 LTS vom [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)-Portal herunter.
 
-Starten und installieren Sie das erforderliche AEM 6.5 Service Pack. Es wird empfohlen, das neueste verfügbare Service Pack zu installieren.
+Starten und installieren Sie das erforderliche AEM 6.5 LTS Service Pack. Es wird empfohlen, das neueste verfügbare Service Pack zu installieren.
 
 >[!NOTE]
 >

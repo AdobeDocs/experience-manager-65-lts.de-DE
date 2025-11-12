@@ -1,13 +1,13 @@
 ---
 title: Foundation-Komponenten
-description: Erfahren Sie mehr über die Foundation-Komponenten in Adobe Experience Manager 6.5.
+description: Informationen zu Foundation-Komponenten in Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: c507bef7-4ddc-4e8c-9947-71cb2ecbbf0a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 1cdde3e82b0abb2be6f3d83020ad4bc0c8d68c2b
 workflow-type: tm+mt
-source-wordcount: '6846'
+source-wordcount: '6848'
 ht-degree: 99%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 >[!CAUTION]
 >
->Die meisten Foundation-Komponenten sind in AEM 6.5 veraltet. Adobe empfiehlt, in AEM-Projekten die moderneren [&#x200B; erweiterbaren &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)Kernkomponenten“ zu verwenden. Diese sind Teil des [Inhalts des Beispielprojekts We.Retail](/help/sites-developing/we-retail.md) und können von Ihren Admins [separat installiert und zu Entwicklungszwecken verwendet werden](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=de).
+>Die meisten Foundation-Komponenten sind in AEM 6.5 LTS veraltet. Adobe empfiehlt, in AEM-Projekten die moderneren und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) zu verwenden. Diese sind Teil des [Inhalts des Beispielprojekts We.Retail](/help/sites-developing/we-retail.md) und können von Ihren Admins [separat installiert und zu Entwicklungszwecken verwendet werden](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=de).
 >
 >Sie können die [AEM-Modernisierungs-Tool-Suite](https://opensource.adobe.com/aem-modernize-tools/) verwenden, um Ihre auf Foundation-Komponenten basierende Website für die Verwendung von Kernkomponenten umzugestalten.
 
@@ -458,7 +458,7 @@ Diese Komponente liefert ein Rasterabsatzsystem, mit dem Sie Komponenten in eine
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [&#x200B; Kernkomponente „Liste“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=de) zu verwenden.
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [ Kernkomponente „Liste“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=de) zu verwenden.
 
 Mit der Listenkomponente können Sie Suchkriterien zur Anzeige einer Liste konfigurieren:
 
@@ -1408,7 +1408,7 @@ Die Komponente „Datei-Upload“ bietet Benutzern die Möglichkeit, eine Datei 
 
 >[!NOTE]
 >
->Sie können eine individuelle Upload-Komponente erstellen, um Dateien in ein Sling Servlet hochzuladen. Weitere Informationen finden Sie unter [Hochladen von Dateien in Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276?profile.language=de).
+>Sie können eine individuelle Upload-Komponente erstellen, um Dateien in ein Sling Servlet hochzuladen. Weitere Informationen finden Sie unter [Hochladen von Dateien in Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276).
 
 ### Ausgeblendetes Feld {#hidden-field}
 
@@ -1532,7 +1532,7 @@ Sie können auf der spezialisierten Registerkarte verschiedene Parameter festleg
    * **Zugelassene Namespaces**
 
       * **Geometrixx Outdoors**
-      * **Arbeitsablauf**
+      * **Workflow**
       * **Forum**
       * **Bildarchiv**
       * **Geometrixx Media**

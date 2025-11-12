@@ -1,14 +1,14 @@
 ---
 title: Erstellen von Inhaltsseiten in AEM
-description: Die Aufgaben, die mit dem Erstellen einer Inhaltsseite in Adobe Experience Manager 6.5 verbunden sind.
+description: Die Aufgaben, die beim Erstellen einer Inhaltsseite in Adobe Experience Manager 6.5 LTS ausgeführt werden müssen.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: fafe6322-1dc3-4637-8a8a-33143af04c30
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d95f583bab511c923453a7bb4bcbb726355987b0
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 100%
+source-wordcount: '318'
+ht-degree: 95%
 
 ---
 

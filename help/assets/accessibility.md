@@ -1,15 +1,14 @@
 ---
 title: Barrierefreie Funktionen und Schnittstellen von  [!DNL Experience Manager Assets]
-description: Erfahren Sie, wie die Funktionen für die Barrierefreiheit in  [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] Benutzenden mit Behinderungen helfen.
-contentOwner: AG
+description: Erfahren Sie, wie die Funktionen für die Barrierefreiheit in  [!DNL Adobe Experience Manager] .6.5 LTS [!DNL Assets] Benutzern mit Behinderungen helfen.
 feature: Asset Management
 role: User, Architect, Leader
 solution: Experience Manager, Experience Manager Assets
 exl-id: f9540bfb-1c4f-41f0-9caa-ef9265225648
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 61a1bb55f4b8da8c421f51ee203ca8e433a73a64
 workflow-type: tm+mt
-source-wordcount: '1898'
-ht-degree: 100%
+source-wordcount: '1899'
+ht-degree: 99%
 
 ---
 

@@ -1,15 +1,11 @@
 ---
 title: Grundlegendes zur Segmentierung bei der Erstellung einer Kampagne
 description: Die Segmentierung ist ein wichtiger Faktor, der bei der Erstellung einer Kampagne berücksichtigt werden muss.
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: 7167c672-8d24-4493-aff6-b5b453074bff
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 36022b939d598a43ee7f5339ed04122e476205b7
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 100%
@@ -51,7 +47,7 @@ Im Rahmen der Segmentierung wird die folgende Terminologie verwendet:
 * Interessensgebiete auf Ihrer Website, einschließlich besuchter Seiten und gekaufter Produkte.
 * Interessensgebiete auf der verweisenden Website, einschließlich verwendeter Suchbegriffe oder Anzeigen, auf die geklickt wurde.
 * Interessensgebiete auf anderen Sites, die durch Tools wie Spyjax ermittelt werden.
-* Loyalität der Besucherinnen und Besucher, Dauer des Besuchs, Häufigkeit der Besuche.
+* Treue der Besucherinnen und Besucher, Dauer des Besuchs, Häufigkeit der Besuche.
 
 **Demografische Eigenschaften**: Dabei handelt es sich um ausgewählte Merkmale der Population, darunter:
 

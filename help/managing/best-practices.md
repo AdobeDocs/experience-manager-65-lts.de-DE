@@ -1,16 +1,11 @@
 ---
 title: Verwalten von Projekten – Checkliste für Best Practices
 description: Die Verwaltung eines Projekts zur Implementierung von Adobe Experience Manager (AEM) erfordert Planung und Know-how. Die Checklisten für Projekte bieten eine Zusammenstellung der Best Practices für die Projektabwicklung. Sie führen Sie durch alle Phasen des Projektlebenszyklus und bieten eine allgemeine Statusüberwachung.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing-checklist, introduction
-content-type: reference
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Architect,Data Architect,Developer,Leader
 exl-id: 8f8883d8-4e2b-4ba0-bd83-414a96e7d382
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 58c2f666ef6fd89fc42f5d969d1ef1626e45fe45
 workflow-type: tm+mt
 source-wordcount: '3212'
 ht-degree: 98%
@@ -56,7 +51,7 @@ Das Arbeitsblatt zum **Projekt-Heartbeat** liefert einen grafischen Überblick �
 
 ## Status nach Rolle {#status-by-role}
 
-Das Arbeitsblatt **Status nach Rolle** zeigt eine detaillierte Aufstellung der [**Konsistenz**, Qualität und **Vollständigkeit**](#projectheartbeat), sortiert nach **[Phase](#phases-and-milestones)** und **[Rolle](#persona)**.
+Das Arbeitsblatt **Status nach Rolle** schüsselt detailliert die [**Konsistenz**, Qualität und **Vollständigkeit**](#projectheartbeat) auf, sortiert nach **[Phase](#phases-and-milestones)** und **[Rolle](#persona)**.
 
 ## Phasen und Meilensteine {#phases-and-milestones}
 
@@ -239,7 +234,7 @@ Die Entwicklungsplanung ist der Schlüssel, um zu gewährleisten, dass das Proje
 
   Vor der Entwicklung sollten alle Unterstützungsprozesse erstellt werden, die zur Bereitstellung, zur Veröffentlichung, zum Testen und zur Meldung von Problemen notwendig sind.
 
-  Informationen finden Sie auch im [Adobe Support-Portal](https://experienceleague.adobe.com/de?lang=de&support-solution=General&support-tab=home#support).
+  Informationen finden Sie auch im [Adobe Support-Portal](https://experienceleague.adobe.com/?lang=de&support-solution=General&support-tab=home#support).
 
 ### Betriebsplanung und Betrieb {#operations-planning-and-operations}
 

@@ -1,15 +1,11 @@
 ---
 title: Die Checkliste – Weitere Referenzen
 description: Erfahren Sie mehr über weitere Details, die die Dokumente und Grundsätze der Checkliste „Verwalten von Projekten – Best Practices“ erläutern und/oder ergänzen.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing-checklist
-content-type: reference
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Architect,Data Architect,Developer,Leader
 exl-id: 15d9c2ac-0b13-4839-a873-bc884ee69132
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2efe81437790352d674bdb0e9cc9ff524fd00487
 workflow-type: tm+mt
 source-wordcount: '3695'
 ht-degree: 100%
@@ -54,7 +50,7 @@ Eine wichtige Überlegung ist, ob Sie:
 
 Beim Übergang von einer früheren Version zur aktuellen Version gibt es zwei Optionen:
 
-* Verwendung des [Package Manager](/help/sites-administering/package-manager.md), um den gesamten Inhalt und Anwendungscode aus dem alten System in das neue zu exportieren.
+* Verwendung des [Paket-Managers](/help/sites-administering/package-manager.md), um den gesamten Inhalt und Anwendungscode aus dem alten System in das neue zu exportieren.
 * Durchführung eines [Upgrade](/help/sites-deploying/upgrade.md) für das alte System. Diese Methode wird in der Regel empfohlen.
 
 ## Grundregeln {#basic-ground-rules}
@@ -304,7 +300,7 @@ Suchanfragen können erhebliche Auswirkungen auf Ihre Website haben, im Hinblick
 Das Festlegen von Zielen für Suchanfragen ist wiederum eine Frage der Erfahrung, die von mehreren Faktoren abhängt:
 
 * Erfahrung mit AEM
-* eine Einschätzung, wie oft die Suche im Vergleich zu anderen Zielen verwendet wird
+* eine Bewertung, wie oft die Suche im Vergleich zu anderen Zielen verwendet wird
 * Ihr Persistenzmanager
 * Ihr Suchindex
 * die Komplexität Ihrer Suchfunktion; eine einfache Suchfunktion, die die Eingabe eines Suchbegriffs ermöglicht, ist schneller als eine erweiterte Suche, mit der der Benutzer bzw. die Benutzerin komplexe Suchanweisungen mit „UND/ODER/NICHT“ erstellen kann.

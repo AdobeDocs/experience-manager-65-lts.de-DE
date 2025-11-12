@@ -1,16 +1,13 @@
 ---
 title: Best Practices für SEO und URL-Verwaltung
 description: Erfahren Sie mehr über Best Practices und Empfehlungen für SEO bei einer AEM-Implementierung.
-topic-tags: managing
-content-type: reference
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader
 exl-id: 3f3437fb-1fff-4703-a50d-28da89b0a856
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: fd3404f62beb377362db73ab937b58391b15e195
 workflow-type: tm+mt
-source-wordcount: '3522'
+source-wordcount: '3475'
 ht-degree: 99%
 
 ---
@@ -83,7 +80,7 @@ wird `mybrand.com/products/product-detail.1234.html` vorgezogen
 
 * Stellen Sie sicher, dass jede Seite nur von einem Protokoll bedient wird.
 
-   * Manchmal werden Websites über `http` bedient, bis ein Benutzer eine Seite erreicht, die beispielsweise ein Zahlungsformular oder Anmeldeformular enthält, weswegen die Seite in das `https`-Format wechselt. Wenn von dieser Seite aus verlinkt wird und die Person auf `http`-Seiten zurückkehren und auf diese über `https` zugreifen kann, verfolgt die Suchmaschine diese als zwei getrennte Seiten.
+   * Manchmal werden Websites über `http` bedient, bis ein Benutzer eine Seite erreicht, die beispielsweise ein Checkout- oder Anmeldeformular enthält, weswegen die Seite in das `https`-Format wechselt. Wenn von dieser Seite aus verlinkt wird und die Person auf `http`-Seiten zurückkehren und auf diese über `https` zugreifen kann, verfolgt die Suchmaschine diese als zwei getrennte Seiten.
 
    * Google bevorzugt derzeit `https`-Seiten gegenüber `http`-Seiten. Aus diesem Grund ist es häufig für alle Beteiligten einfacher, die ganze Website über `https` bereitzustellen.
 
@@ -206,7 +203,7 @@ Die Eigenschaft `sling:alias` ermöglicht das Beste aus beiden Adobe-Welten. `sl
 * Dieser fügen Sie dann eine Eigenschaft hinzu:
   `sling:alias` = `casa`
 
-Dies würde es den AEM-Übersetzungs-Tools wie dem Multi-Site-Manager ermöglichen, eine Beziehung zwischen folgenden Seiten beizubehalten:
+Dies würde es den AEM-Übersetzungs-Tools wie dem Multi-Site Manager ermöglichen, eine Beziehung zwischen folgenden Seiten beizubehalten:
 
 * `/en/home`
 
@@ -362,12 +359,6 @@ Der Nachteil bei der Platzierung der Datei `robots.txt` im Stammverzeichnis der 
 Crawler verwenden XML-Sitemaps, um die Website-Strukturen besser zu verstehen. Auch wenn es keine Garantie dafür gibt, dass die Bereitstellung einer Sitemap zu verbesserten SEO-Rankings führt, ist dies dennoch eine allgemein anerkannte Best Practice. Sie können eine XML-Datei auf dem Webserver manuell verwalten, um sie als Sitemap zu verwenden. Adobe empfiehlt jedoch, die Sitemap programmgesteuert zu generieren, um sicherzustellen, dass die Sitemap automatisch die Änderungen widerspiegelt, wenn Inhalte erstellt werden.
 
 AEM verwendet das [Apache Sling Sitemap-Modul](https://github.com/apache/sling-org-apache-sling-sitemap), um XML-Sitemaps zu generieren, die beim Entwickeln und Bearbeiten eine Vielzahl von Optionen zur Verfügung stellen, um die XML-Sitemap einer Website immer auf dem neuesten Stand zu halten.
-
->[!NOTE]
->
->Verfügbar als Produktfunktion seit Adobe Experience Manager Version 6.5.11.0.
-> 
->Bei älteren Versionen können Sie ein Sling-Servlet selbst registrieren, um auf einen `sitemap.xml`-Aufruf zu lauschen. Verwenden Sie die über die Servlet-API bereitgestellte Ressource, um die aktuelle Seite und ihre untergeordneten Seiten nachzuschlagen und eine Datei `sitemap.xml` auszugeben.
 
 Das Apache Sling Sitemap-Modul unterscheidet zwischen einer Top-Level-Sitemap und einer verschachtelten Sitemap, die beide für jede Ressource erzeugt werden, bei der die Eigenschaft `sling:sitemapRoot` auf `true` gesetzt ist. Im Allgemeinen werden Sitemaps mithilfe von Selektoren im Pfad der Top-Level-Sitemap der Baumstruktur gerendert, bei der es sich um die Ressource handelt, die keinen anderen Sitemap-Stamm-Vorgänger hat. Dieser Stamm der Top-Level-Sitemap legt auch den Sitemap-Index offen, der normalerweise von einem Website-Verantwortlichen im Konfigurationsportal der Suchmaschine konfiguriert oder zur Datei `robots.txt` der Site hinzugefügt wird.
 

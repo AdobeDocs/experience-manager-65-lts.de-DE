@@ -1,12 +1,11 @@
 ---
 title: Erstellen und Konfigurieren von Asset-Editor-Seiten
 description: Erfahren Sie, wie Sie benutzerdefinierte Asset-Editor-Seiten erstellen und mehrere Assets gleichzeitig bearbeiten können.
-contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 39e1b20b-27d5-4869-b7e1-0dd2d087df7b
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 7b62f47a0ce75ad5676ea41c86b299160e8b505c
 workflow-type: tm+mt
 source-wordcount: '2088'
 ht-degree: 100%
@@ -21,7 +20,7 @@ Dieses Dokument beschäftigt sich mit den folgenden Themen:
 * Erstellen und Anpassen von Asset-Editor-Seiten, bei denen es sich um WCM-Seiten handelt, mit denen Sie Metadaten anzeigen und bearbeiten sowie Aktionen für das Asset durchführen können.
 * Gleichzeitiges Bearbeiten mehrerer Assets
 
-<!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to 6.5 default samples. -->
+<!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to default samples. -->
 
 >[!NOTE]
 >

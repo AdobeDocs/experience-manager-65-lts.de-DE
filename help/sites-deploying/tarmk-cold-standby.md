@@ -10,10 +10,10 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 71e3d2cd-4e22-44a2-88dd-1f165bf2b3d8
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: c576955f2e93de5e5fdc2d0e0f8bd8ba8810df63
 workflow-type: tm+mt
-source-wordcount: '2678'
-ht-degree: 97%
+source-wordcount: '2680'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 97%
 
 Durch die Cold-Standby-Kapazität des Tar-Mikro-Kernels können eine oder mehrere Standby-Instanzen von Adobe Experience Manager (AEM) eine Verbindung mit einer primären Instanz herstellen. Die Synchronisierung ist dabei unidirektional, d. h. sie verläuft nur von der primären zur Standby-Instanz.
 
-Die Standby-Instanz dient dazu, sicherzustellen, dass eine Live-Datenkopie des primären Repositorys vorhanden ist und ein schneller Wechsel ohne Datenverluste durchgeführt wird, wenn das primäre Repository aus irgendeinem Grund nicht verfügbar ist.
+Der Zweck der Standby-Instanzen ist es, eine Live-Datenkopie des Haupt-Repositorys zu gewährleisten und einen schnellen Wechsel ohne Datenverlust zu gewährleisten, falls die primäre Instanz aus irgendeinem Grund nicht verfügbar ist.
 
 Inhalte werden linear zwischen der primären Instanz und den Standby-Instanzen synchronisiert. Dabei werden keine Integritätsprüfungen auf mögliche Datei- oder Repository-Beschädigungen durchgeführt. Aufgrund dieser Konfiguration sind die Standby-Instanzen exakte Kopien der primären Instanz. Sie können nicht dazu beitragen, Inkonsistenzen auf primären Instanzen zu verhindern.
 
@@ -43,7 +43,7 @@ Inhalte werden linear zwischen der primären Instanz und den Standby-Instanzen s
 
 ## Funktionsweise {#how-it-works}
 
-Auf der primären AEM-Instanz ist ein TCP-Port geöffnet, der eingehende Nachrichten überwacht. Derzeit senden die sekundären Instanzen zwei Arten von Nachrichten an die primäre Instanz:
+Auf der primären AEM-Instanz ist ein TCP-Port geöffnet, der eingehende Nachrichten überwacht. Derzeit gibt es zwei Arten von Nachrichten, die die Standby-Instanz an die primäre Instanz sendet:
 
 * Eine Nachricht, die die Segmentkennung des aktuellen Heads anfordert.
 * Eine Nachricht, die Segmentdaten mit einer angegebenen ID anfordert.
@@ -72,7 +72,7 @@ Auf der Standby-Instanz muss während des Synchronisierungsvorgangs mit einer ho
 
 #### Sicherheit {#security}
 
-Wird davon ausgegangen, dass alle Instanzen, in derselben Intranet-Sicherheitszone ausgeführt werden, ist die Gefahr einer Sicherheitsverletzung deutlich geringer. Sie können trotzdem eine zusätzliche Sicherheitsebene hinzufügen, indem Sie SSL-Verbindungen zwischen den sekundären Instanzen und der primären Instanz aktivieren. So wird die Wahrscheinlichkeit reduziert, dass Daten durch einen Man-in-the-Middle-Angriff kompromittiert werden.
+Wird davon ausgegangen, dass alle Instanzen, in derselben Intranet-Sicherheitszone ausgeführt werden, ist die Gefahr einer Sicherheitsverletzung deutlich geringer. Sie können jedoch eine zusätzliche Sicherheitsebene hinzufügen, indem Sie SSL-Verbindungen zwischen der Standby-Instanz und den primären Instanzen aktivieren. So wird die Wahrscheinlichkeit reduziert, dass Daten durch einen Man-in-the-Middle-Angriff kompromittiert werden.
 
 Darüber hinaus können Sie festlegen, welche Standby-Instanzen eine Verbindung herstellen dürfen, indem Sie die IP-Adressen eingehender Anforderungen beschränken. Damit dürfte sichergestellt sein, dass niemand im Intranet das Repository kopieren kann.
 
@@ -93,7 +93,7 @@ Darüber hinaus können Sie festlegen, welche Standby-Instanzen eine Verbindung 
 
 Um eine TarMK-Cold-Standby-Konfiguration zu erstellen, müssen Sie zuerst die Standby-Instanzen erstellen. Erstellen Sie hierzu an einem neuen Speicherort eine Dateisystemkopie des gesamten Installationsordners der primären Instanz. Anschließend können Sie jede Instanz mit einem Ausführungsmodus starten, der die Rolle der Instanz angibt (`primary` oder `standby`).
 
-Nachfolgend sind die erforderlichen Schritte zum Erstellen einer Konfiguration mit einer primären und einer sekundären Instanz beschrieben:
+Gehen Sie wie folgt vor, um ein Setup mit einer primären und einer Standby-Instanz zu erstellen:
 
 1. Installieren Sie AEM.
 
@@ -331,12 +331,12 @@ Führen Sie hierzu die nachfolgend beschriebenen Schritte aus:
 1. Testen Sie die Instanz nach der Installation auf mögliche Probleme.
 1. Entfernen Sie die Cold-Standby-Instanz, indem Sie ihren Installationsordner löschen.
 1. Stoppen Sie die primäre Instanz und klonen Sie sie, indem Sie eine Dateisystemkopie ihres gesamten Installationsordners an den Speicherort der Cold-Standby-Instanz erstellen.
-1. Konfigurieren Sie den neu erstellten Klon so, dass er als Cold-Standby-Instanz agiert. Siehe [&#x200B; Erstellen eines AEM-TarMK-Cold-Standby-Setups](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
+1. Konfigurieren Sie den neu erstellten Klon so, dass er als Cold-Standby-Instanz agiert. Siehe [ Erstellen eines AEM-TarMK-Cold-Standby-Setups](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
 1. Starten Sie sowohl die primäre als auch die Cold-Standby-Instanz.
 
 ## Monitoring {#monitoring}
 
-Diese Funktion stellt Informationen mithilfe von JMX oder MBeans bereit. Auf diese Weise können Sie den aktuellen Status der Standby- und der primären Instanz mit der [JMX-Konsole](/help/sites-administering/jmx-console.md) überprüfen. Die entsprechenden Informationen sind in einem MBean vom Typ `type org.apache.jackrabbit.oak:type="Standby"` namens `Status` enthalten.
+Diese Funktion stellt Informationen mithilfe von JMX oder MBeans bereit. Auf diese Weise können Sie den aktuellen Status der Standby-Instanz und der primären Instanz über die [JMX-Konsole](/help/sites-administering/jmx-console.md) überprüfen. Die entsprechenden Informationen sind in einem MBean vom Typ `type org.apache.jackrabbit.oak:type="Standby"` namens `Status` enthalten.
 
 **Standby**
 
@@ -365,7 +365,7 @@ Beim Überwachen der primären Instanz wird eine Reihe allgemeiner Informationen
 
 * `Mode:` zeigt immer den Wert `primary` an.
 
-Des Weiteren können Informationen für bis zu 10 Clients (Standby-Instanzen) abgerufen werden, die mit der primären Instanz verbunden sind. Die MBean-ID ist die UUID der Instanz. Für diese MBeans gibt es keine aufrufbaren Methoden, aber einige nützliche schreibgeschützte Attribute:
+Darüber hinaus können Informationen für bis zu zehn Clients (Standby-Instanzen) abgerufen werden, die mit der primären Instanz verbunden sind. Die MBean-ID ist die UUID der Instanz. Für diese MBeans gibt es keine aufrufbaren Methoden, aber einige nützliche schreibgeschützte Attribute:
 
 * `Name:` Dies ist die ID des Clients.
 * `LastSeenTimestamp:` Der Zeitstempel der letzten Anforderungen in Textform.

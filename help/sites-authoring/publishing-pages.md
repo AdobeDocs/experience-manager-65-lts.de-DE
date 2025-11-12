@@ -1,14 +1,14 @@
 ---
 title: Veröffentlichen von Inhaltsseiten
-description: Erfahren Sie, wie Sie Inhaltsseiten in Adobe Experience Manager 6.5 veröffentlichen.
+description: Erfahren Sie, wie Sie Inhaltsseiten in Adobe Experience Manager 6.5 LTS veröffentlichen.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 89bab7e3-f688-4c95-8571-08477e737bc8
-source-git-commit: 4817296c00e094a65744a896d798e429d3ab6c7d
+source-git-commit: 46948a857ccb9d093f946ec9e48ff585b0647314
 workflow-type: tm+mt
-source-wordcount: '1701'
-ht-degree: 100%
+source-wordcount: '1702'
+ht-degree: 99%
 
 ---
 
@@ -26,13 +26,13 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten Datum/Zeitpunkt 
 >Bestimmte Begriffe im Zusammenhang mit Publishing sind leicht zu verwechseln:
 >
 >* **Veröffentlichen/Veröffentlichung rückgängig machen**
->  >  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
+>  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
 >
 >* **Aktivieren/Deaktivieren**
->  >  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
+>  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
 >
 >* **Replizieren/Replikation**
->  >  Dies sind technische Begriffe, die für die Verschiebung von Daten (z. B. Seiteninhalten, Dateien, Code, Benutzerkommentaren) zwischen Umgebungen verwendet werden, etwa beim Veröffentlichen oder Zurückreplizieren von Benutzerkommentaren.
+>  Dies sind technische Begriffe, die für die Verschiebung von Daten (z. B. Seiteninhalten, Dateien, Code, Benutzerkommentaren) zwischen Umgebungen verwendet werden, etwa beim Veröffentlichen oder Zurückreplizieren von Benutzerkommentaren.
 
 ## Unzureichende Berechtigungen {#insufficient-privileges}
 

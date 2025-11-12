@@ -2,19 +2,13 @@
 title: Konfigurieren des Dynamic Media-Hybridmodus
 description: Erfahren Sie mehr über die Konfiguration des Dynamic Media-Hybridmodus.
 mini-toc-levels: 3
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
-legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 role: User, Admin
 feature: Configuration,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 6252e61f-44b5-4931-80a0-426c6883092e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 846b45f6ab83599eb709573a77422f2aba1ef047
 workflow-type: tm+mt
-source-wordcount: '7738'
+source-wordcount: '7607'
 ht-degree: 100%
 
 ---
@@ -24,26 +18,26 @@ ht-degree: 100%
 >[!IMPORTANT]
 >
 >Ende der Unterstützung für Secure Socket Layer 2.0 und 3.0 und Transport Layer Security 1.0 und 1.1
->>Ab dem 30. April 2024 wird Adobe Dynamic Media die Unterstützung für Folgendes einstellen:
+>Ab dem 30. April 2024 wird Adobe Dynamic Media die Unterstützung für Folgendes einstellen:
 >
 >* SSL (Secure Socket Layer) 2.0
 >* SSL 3.0
 >* TLS (Transport Layer Security) 1.0 und 1.1
 >* Die folgenden schwachen Verschlüsselungsverfahren in TLS 1.2:
->  > `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
->  > `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
->  > `TLS_RSA_WITH_AES_256_GCM_SHA384`
->  > `TLS_RSA_WITH_AES_256_CBC_SHA256`
->  > `TLS_RSA_WITH_AES_256_CBC_SHA`
->  > `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
->  > `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
->  > `TLS_RSA_WITH_AES_128_GCM_SHA256`
->  > `TLS_RSA_WITH_AES_128_CBC_SHA256`
->  > `TLS_RSA_WITH_AES_128_CBC_SHA`
->  > `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
->  > `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
->  > `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
->  > `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
+> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
+> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
+> `TLS_RSA_WITH_AES_256_GCM_SHA384`
+> `TLS_RSA_WITH_AES_256_CBC_SHA256`
+> `TLS_RSA_WITH_AES_256_CBC_SHA`
+> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
+> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
+> `TLS_RSA_WITH_AES_128_GCM_SHA256`
+> `TLS_RSA_WITH_AES_128_CBC_SHA256`
+> `TLS_RSA_WITH_AES_128_CBC_SHA`
+> `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
+> `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
+> `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
+> `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
 >
 > Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
 
@@ -258,22 +252,6 @@ Um Dynamic Media nach dem Aktivieren wieder zu deaktivieren, müssen Sie das Aus
    >Wenn der Dynamic Media-Ausführungsmodus deaktiviert wurde, wird der Workflow-Schritt zum Generieren der Ausgabedarstellungsformats `cqdam.pyramid.tiff` automatisch übersprungen. Hierbei werden auch die Unterstützung der dynamischen Ausgabedarstellungen und andere Dynamic Media-Funktionen deaktiviert.
    >
    >Achtung: Wenn Sie den Dynamic Media-Ausführungsmodus nach der Konfiguration des Experience Manager-Servers deaktivieren, sind alle mit diesem Ausführungsmodus hochgeladenen Assets ungültig.
-
-## (Optional) Migration von Dynamic Media-Vorgaben und -Konfigurationen von 6.3 zu 6.5 ohne Ausfallzeit {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
-
-Wenn Sie ein Upgrade von Experience Manager – Dynamic Media von 6.3 auf 6.5 durchführen (was jetzt die Möglichkeit bietet, Bereitstellungen ohne Ausfallzeiten zu erreichen), müssen Sie den folgenden curl-Befehl ausführen. Der Befehl migriert alle Vorgaben und Konfigurationen aus `/etc` nach `/conf` in CRXDE Lite.
-
->[!NOTE]
->
->Wenn Sie Ihre Experience Manager-Instanz im Kompatibilitätsmodus ausführen, d. h. wenn das Kompatibilitätspaket installiert ist, müssen Sie diese Befehle nicht ausführen.
-
-Bei allen Upgrades – mit oder ohne Kompatibilitätspaket – können Sie die standardmäßig in Dynamic Media vorhandenen Viewer-Vorgaben kopieren, indem Sie unter Linux® den folgenden curl-Befehl ausführen:
-
-`curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets/viewer.pushviewerpresets.json`
-
-Führen Sie zum Migrieren der von Ihren erstellten benutzerdefinierten Vorgaben und Konfigurationen von `/etc` nach `/conf` unter Linux den folgenden curl-Befehl aus:
-
-`curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
 ## Konfigurieren Sie die Bildreplikation {#configuring-image-replication}
 
@@ -579,7 +557,7 @@ Wenn Sie diese Aufgabe abgeschlossen haben, erhalten Sie eine Paketdatei, die di
 
 1. Konfigurieren Sie, falls noch nicht geschehen, die Dynamic Media-Konfiguration (vor 6.3).
 1. (Optional) Zeigen Sie die Report Suite-ID an und kopieren Sie diese (Sie benötigen Zugriff auf das JCR). Eine Report Suite-ID ist nicht erforderlich, vereinfacht jedoch die Überprüfung.
-1. Erstellen Sie ein Paket mit Package Manager.
+1. Erstellen Sie ein Paket mit dem Paket-Manager.
 1. Bearbeiten Sie das Paket so, dass es einen Filter enthält.
 
    In Experience Manager: `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
@@ -593,7 +571,7 @@ Schließen Sie diese Aufgabe ab, ***bevor*** Sie die Dynamic Media-Konfiguration
 
 Stellen Sie sicher, dass der Zugriff auf das Vorgabenpaket für die Videoanalyse auf dem ersten Autorknoten möglich ist.
 
-1. Laden Sie das zuvor erstellte Vorgabenpaket für Videoanalysen in Package Manager hoch.
+1. Laden Sie das zuvor erstellte Vorgabenpaket für Videoanalysen im Paket-Manager hoch.
 1. Installieren Sie das Vorgabenpaket für die Video-Analyse.
 1. Konfigurieren Sie die Dynamic Media-Konfiguration (vor 6.3).
 
@@ -717,7 +695,7 @@ Wenn Sie Dynamic Media für die (1) Bildverarbeitung in der Produktion *oder* di
    <td>Dynamic Media-Bildbereitstellung</td>
    <td><p>filter-images</p> <p>filter-sets</p> <p> </p> </td>
    <td><p>Beginnt mit <strong>image/</strong></p> <p>Enthält <strong>application/</strong> und endet mit <strong>set</strong>.</p> </td>
-   <td>Die vorkonfigurierten „filter-images“ (gilt für einzelne Bilder, einschließlich interaktiver Bilder) und „filter-sets“ (gilt für Rotationssets, Bildsets, gemischte Medien-Sets und Karussellsets) werden:
+   <td>Die vorkonfigurierten „filter-images“ (gilt für einzelne Bilder, einschließlich interaktiver Bilder) und „filter-sets“ (gilt für Rotations-Sets, Bild-Sets, gemischte Medien-Sets und Karussellsets) werden:
     <ul>
      <li>PTIFF-Bilder und Metadaten für die Replikation enthalten (Beliebige Ausgabedarstellung, die mit <strong>cqdam</strong> beginnt).</li>
      <li>Das Originalbild und statische Bildausgabefdarstellungen werden von der Replikation ausgeschlossen.</li>
@@ -913,11 +891,11 @@ Tabelle mit Manifesteinstellungen und deren Standardwerte:
 | `bkgcolor` | `FFFFFF` | Standard-Hintergrundfarbe. RGB-Wert, mit dem alle Bereiche des Antwortbildes gefüllt werden, die keine Bilddaten enthalten. Siehe auch [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html?lang=de#image-serving-api) in der Image-Serving-API. |
 | `defaultpix` | `300,300` | Standard-Ansichtsgröße. Der Server beschränkt die Größe der Antwortbilder auf diese Breite und Höhe, falls bei der Anfrage die Größe nicht explizit durch die Werte „wid=“, „hei=“ oder „scl=“ festgelegt wird.<br>Wird als zwei ganze Zahlen angegeben (0 oder höher), die durch ein Komma getrennt sind. Breite und Höhe in Pixel. Einer oder beide Werte können auf 0 festgelegt werden, um die Einschränkung aufzuheben. Gilt nicht für verschachtelte oder eingebettete Anforderungen.<br>Siehe auch [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html?lang=de#image-serving-api) in der Image-Serving-API.<br>Normalerweise verwenden Sie aber eine Viewer-Vorgabe oder Bildvorgabe, um das Asset bereitzustellen. „defaultpix“ gilt nur für ein Asset, für das keine Viewer-Vorgabe oder Bildvorgabe verwendet wird. |
 | `defaultthumbpix` | `100,100` | Standardgröße für Miniaturansichten. Wird anstelle von „attribute::DefaultPix“ für Anfragen von Miniaturen verwendet (`req=tmb`).<br>Der Server beschränkt die Größe der Antwortbilder auf diese Breite und Höhe. Diese Aktion ist „true“, wenn eine Anfrage einer Miniatur (`req=tmb`) die Größe nicht explizit angibt und die Anzeigegröße nicht explizit mithilfe von `wid=`, `hei=` oder `scl=` angibt.<br>Wird als zwei ganze Zahlen angegeben (0 oder höher), die durch ein Komma getrennt sind. Breite und Höhe in Pixel. Einer oder beide Werte können auf 0 festgelegt werden, um die Einschränkung aufzuheben.<br>Gilt nicht für verschachtelte oder eingebettete Anforderungen.<br>Siehe auch [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html?lang=de#image-serving-api) in der Image-Serving-API. |
-| `expiration` | `36000000` | Standardeinstellung für die Gültigkeitsdauer des Client-Caches.  Bietet ein standardmäßiges Ablaufintervall für den Fall, dass ein bestimmter Katalogdatensatz keinen gültigen Wert für „catalog::Expiration“ (also den Ablauf des Katalogs) aufweist.<br>Reelle Zahl, 0 oder höher. Anzahl von Millisekunden bis zum Ablauf seit der Generierung der Daten.  Geben Sie „0“ an, wenn das Antwortbild immer sofort ablaufen soll. Hiermit wird das Client-Caching praktisch deaktiviert.  Dieser Wert ist standardmäßig auf zehn Stunden festgelegt. Dies bedeutet, dass es bei der Veröffentlichung eines neuen Bildes zehn Stunden dauert, bis das alte Bild aus dem Cache des Benutzers entfernt wird. Wenden Sie sich an den Kunden-Support, wenn der Cache früher geleert werden soll.<br>Siehe auch [Expiration](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html?lang=de) in der Image-Serving-API. |
+| `expiration` | `36000000` | Standardeinstellung für die Gültigkeitsdauer des Client-Caches.  Bietet ein standardmäßiges Ablaufintervall für den Fall, dass ein bestimmter Katalogeintrag keinen gültigen Wert für „catalog::Expiration“ (also den Ablauf des Katalogs) aufweist.<br>Reelle Zahl, 0 oder höher. Anzahl von Millisekunden bis zum Ablauf seit der Generierung der Daten.  Geben Sie „0“ an, wenn das Antwortbild immer sofort ablaufen soll. Hiermit wird das Client-Caching praktisch deaktiviert.  Dieser Wert ist standardmäßig auf zehn Stunden festgelegt. Dies bedeutet, dass es bei der Veröffentlichung eines neuen Bildes zehn Stunden dauert, bis das alte Bild aus dem Cache des Benutzers entfernt wird. Wenden Sie sich an den Kunden-Support, wenn der Cache früher geleert werden soll.<br>Siehe auch [Expiration](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html?lang=de) in der Image-Serving-API. |
 | `jpegquality` | `80` | Standardattribute für JPEG-Verschlüsselung.  Legt die Standardattribute von JPEG-Antwortbildern fest.<br>Ganze Zahl und Flag, getrennt durch ein Komma. Der erste Wert liegt im Bereich 1 bis 100 und definiert die Qualität. Der zweite Wert kann „0“ für normales Verhalten oder „1“ sein, um anzugeben, dass die normalerweise von der JPEG-Kodierung genutzte RGB-Farbunterabtastung deaktiviert werden soll.<br>Siehe auch [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html?lang=de#image-serving-api) in der Image-Serving-API. |
 | `maxpix` | `2000,2000` | Maximale Größe des Antwortbildes. Maximale Breite und Höhe des Antwortbildes, das an den Client zurückgegeben wird.<br>Der Server gibt einen Fehler zurück, wenn eine Anfrage zu einem Antwortbild führt, dessen Breite oder Höhe den Wert von „attribute::MaxPix“ übersteigt.<br>Siehe auch [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=de#image-serving-api) in der Image-Serving-API. |
-| `resmode` | `SHARP2` | Standard-Resampling-Modus. Gibt die standardmäßigen Resampling- und Interpolationsattribute an, die für die Skalierung von Bilddaten verwendet werden sollen.<br>Wird verwendet, wenn `resMode=` in einer Anfrage nicht angegeben wird.<br>Zulässige Werte umfassen `BILIN`, `BICUB`oder `SHARP2`.<br>Enum. Festlegung auf Interpolationsmodus: 2 für `bilin`, 3 für `bicub` oder 4 für `sharp2`. Verwenden Sie `sharp2`, um bestmögliche Ergebnisse zu erzielen.<br>Siehe auch [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html?lang=de#image-serving-api) in der Image-Serving-API. |
-| `resolution` | `72` | Standardobjektauflösung.  Bietet eine standardmäßige Objektauflösung, falls ein bestimmter Katalogdatensatz keinen gültigen Wert für „catalog::Resolution“ aufweist.<br>Reelle Zahl, größer als 0. Wird normalerweise als Pixel pro Zoll ausgedrückt, aber es können auch andere Einheiten verwendet werden, z. B. Pixel pro Meter.<br>Siehe auch [Resolution](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html?lang=de#image-serving-api) in der Image-Serving-API. |
+| `resmode` | `SHARP2` | Standard-Resampling-Modus. Gibt die standardmäßigen Resampling- und Interpolationsattribute an, die für die Skalierung von Bilddaten verwendet werden sollen.<br>Wird verwendet, wenn `resMode=` in einer Anfrage nicht angegeben wird.<br>Zulässige Werte umfassen `BILIN`, `BICUB`oder `SHARP2`.<br>Aufzählung. Festlegung auf Interpolationsmodus: 2 für `bilin`, 3 für `bicub` oder 4 für `sharp2`. Verwenden Sie `sharp2`, um bestmögliche Ergebnisse zu erzielen.<br>Siehe auch [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html?lang=de#image-serving-api) in der Image-Serving-API. |
+| `resolution` | `72` | Standardobjektauflösung.  Bietet eine standardmäßige Objektauflösung, falls ein bestimmter Katalogeintrag keinen gültigen Wert für „catalog::Resolution“ aufweist.<br>Reelle Zahl, größer als 0. Wird normalerweise als Pixel pro Zoll ausgedrückt, aber es können auch andere Einheiten verwendet werden, z. B. Pixel pro Meter.<br>Siehe auch [Resolution](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html?lang=de#image-serving-api) in der Image-Serving-API. |
 | `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | Diese Werte stellen eine Momentaufnahme der Videowiedergabezeit dar und werden an [encoding.com](https://www.encoding.com/) übergeben. Weitere Informationen finden Sie unter [Informationen zu Videominiaturen](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode). |
 
 ## Konfigurieren des Farb-Managements für Dynamic Media {#configuring-dynamic-media-color-management}

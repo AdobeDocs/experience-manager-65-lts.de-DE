@@ -1,16 +1,11 @@
 ---
 title: Erstellen einer effektiven Landingpage für Newsletter
 description: Eine effektive Startseite für Ihren Newsletter hilft Ihnen dabei, so viele Personen wie möglich dazu zu animieren, sich für Ihren Newsletter (oder eine andere E-Mail-Marketing-Kampagne) zu registrieren. Sie können die Informationen nutzen, die Sie aus Ihren Newsletter-Anmeldungen sammeln, um Leads zu gewinnen.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: personalization
-content-type: reference
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 92f4946d-1f49-4286-a51e-84b2a46a6b8a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f69262246bafca44f88ff15a4c86125f5335507e
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 97%
@@ -31,7 +26,7 @@ Um eine effektive Newsletter-Landingpage zu erstellen, müssen Sie Folgendes tun
 >[!NOTE]
 >
 >Adobe plant nicht, diese Funktionen (Lead- und Listenverwaltung) weiter auszubauen.
->&#x200B;>Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+>Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
 ## Erstellen einer Liste für den Newsletter {#creating-a-list-for-the-newsletter}
 

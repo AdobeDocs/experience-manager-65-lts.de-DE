@@ -1,16 +1,11 @@
 ---
 title: Glossar
 description: Dieses Glossar listet (alphabetisch) alle zu liefernden Dokumente aus der Projekt-Checkliste auf.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing-checklist
-content-type: reference
-docset: aem65
-solution: Experience Manager, Experience Manager 6.5
+solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Architect,Data Architect,Developer,Leader
 exl-id: e6542ba9-1182-4b81-b251-537747b89e4c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: fb979ab973476212aeed9ce86d3251eb1aedcb8c
 workflow-type: tm+mt
 source-wordcount: '6926'
 ht-degree: 100%

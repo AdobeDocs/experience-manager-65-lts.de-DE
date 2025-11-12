@@ -7,9 +7,9 @@ role: User, Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 33f539d2-ae00-4f43-a27a-55c1b55a6c0c
-source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
+source-git-commit: b40c803de59f85fb34536849370ff3e77bba473a
 workflow-type: tm+mt
-source-wordcount: '2191'
+source-wordcount: '2158'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 100%
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=de) |
-| AEM 6.5 | Dieser Artikel |
+| AEM 6.5 LTS | Dieser Artikel |
 
 <!-- old content
 
@@ -450,8 +450,6 @@ Benutzer können die Eigenschaften für lizenzierte und unlizenzierte Assets anz
 
 
 ## Bekannte Einschränkungen {#known-limitations}
-
-* **Probleme bei der Integration mit [!DNL Experience Manager] Service Pack 6.5.7.0 und höher**: Bei der Integration mit [!DNL Experience Manager] 6.5.7.0 und höher tritt ein unerwartetes Problem auf. Das Problem wird derzeit untersucht, und eine Lösung dürfte in [!DNL Experience Manager] 6.5.11.0 verfügbar sein. Kontaktieren Sie den [!DNL Customer Support], um einen sofortigen Hotfix zu erhalten.
 
 * **Die Funktion zur Einschränkung von Benutzern bei der Lizenzierung funktioniert nicht ordnungsgemäß**: Alle Benutzer mit `read`-Berechtigungen für die Stock-Konfiguration dürfen die [!DNL Adobe Stock]-Assets suchen und lizenzieren.
 

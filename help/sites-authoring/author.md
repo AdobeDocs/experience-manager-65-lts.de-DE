@@ -1,14 +1,14 @@
 ---
 title: Authoring
-description: Konzepte für Authoring und Veröffentlichung in Adobe Experience Manager 6.5.
+description: Konzepte zum Verfassen und Veröffentlichen in Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 314a6c65-9b90-4f4c-9e4a-d551dbb646e9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 71ea867e240d76a2a881f6e7d65b83979b558f46
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 100%
+source-wordcount: '479'
+ht-degree: 97%
 
 ---
 
@@ -70,13 +70,13 @@ Normalerweise befindet sich die Veröffentlichungsumgebung innerhalb der „entm
 >Leider gibt es manchmal Überschneidungen in der verwendeten Terminologie. Dies kann bei Folgendem vorkommen:
 >
 >* **Veröffentlichen/Veröffentlichung rückgängig machen**
->  >  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
+>  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
 >
 >* **Aktivieren/Deaktivieren**
->  >  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
+>  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
 >
 >* **Replizieren/Replikation**
->  >  Dies sind technische Begriffe, die für die Verschiebung von Daten (z. B. Seiteninhalte, Dateien, Code, Benutzerkommentare) zwischen Umgebungen verwendet werden, z. B. beim Veröffentlichen oder beim Zurückreplizieren von Benutzerkommentaren.
+>  Dies sind technische Begriffe, die für die Verschiebung von Daten (z. B. Seiteninhalte, Dateien, Code, Benutzerkommentare) zwischen Umgebungen verwendet werden, z. B. beim Veröffentlichen oder beim Zurückreplizieren von Benutzerkommentaren.
 >
 
 #### Dispatcher {#dispatcher}
