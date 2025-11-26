@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6023c211220bb500814ecd511b8787d107c3c6cd
+source-git-commit: 5dfcc115fd2e1991a8a4701597b0fb25b374e3ee
 workflow-type: tm+mt
-source-wordcount: '7381'
-ht-degree: 99%
+source-wordcount: '7405'
+ht-degree: 98%
 
 ---
 
@@ -410,6 +410,7 @@ Es wurde ein Barrierefreiheitsproblem behoben, bei dem Platzhalter fälschlicher
 * Benutzende konnten die Timeline-Funktion von PDF-Dateien in AEM Forms nicht verwenden. Dieses Problem beeinträchtigte die Fähigkeit von Benutzenden, Dokumentenänderungen und -überarbeitungen effektiv nachzuverfolgen. Beim Hochladen von PDF-Dateien unter dem Abschnitt „Formulare und Dokumente“ im Bereich „AEM Forms“ funktioniert die Timeline-Ansicht nicht mehr. (FORMS-19408)
 * Bei der Interaktion mit OData tritt eine Null-Pointer-Ausnahme auf. Dies führt zu Unterbrechungen bei Datenabrufprozessen. (FORMS-20348)
 * Die Bibliothek „google.common.collect“ wurde entfernt, nachdem Guava, eine Open-Source-Java-Bibliothek, entfernt wurde. Diese Aktualisierung sorgt für eine bessere Kompatibilität und Leistung für Unternehmenskunden, die adaptive Formulare verwenden. (FORMS-17031)
+* Wenn die Server-seitige Validierung (SSV) aktiviert ist, können die Formularübermittlungen fehlschlagen. Wenn dieses Problem auftritt, wenden Sie sich an den [Adobe-Support](https://business.adobe.com/de/support/main.html) um Hilfe. (FORMS-21966)
 
 ### Formular-Captcha
 
