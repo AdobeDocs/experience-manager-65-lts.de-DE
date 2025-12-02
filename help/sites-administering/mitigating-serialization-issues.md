@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: eef69d02-2e88-4f44-98bb-d98fa297e3a2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ffb467630ee061bce5a9cab4e8a311e70b2aeb38
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 100%
+source-wordcount: '914'
+ht-degree: 98%
 
 ---
 
@@ -33,6 +33,10 @@ Eine Anleitung zum Konfigurieren der Blockierungsliste und der Zulassungsliste f
 Der Agent unterstützt Sie bei der Behandlung der neuesten bekannten Klassen mit Sicherheitsrisiko. Wenn Ihr Projekt nicht vertrauenswürdige Daten deserialisiert, kann es dennoch anfällig für Denial-of-Service(DoS)-Angriffe, Speicherangriffe und unbekannte zukünftige Deserialisierungs-Exploits sein.
 
 Adobe unterstützt offiziell Java™ 6, 7 und 8. Adobe geht jedoch davon aus, dass NotSoSerial auch Java™ 5 unterstützt.
+
+>[!WARNING]
+>
+>NotSoSerial sollte nicht mit Java™ 17 oder höher verwendet werden.
 
 ## Installieren des Agenten {#installing-the-agent}
 
