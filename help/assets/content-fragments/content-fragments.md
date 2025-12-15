@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7b5a9485-8d07-434e-9871-5f97d6781eaf
-source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
+source-git-commit: e0a31fe9bc3297a4cb6e72765482c24cebb3ad29
 workflow-type: tm+mt
-source-wordcount: '2295'
-ht-degree: 86%
+source-wordcount: '2329'
+ht-degree: 85%
 
 ---
 
@@ -321,7 +321,7 @@ Vermeiden Sie eine tiefe oder übermäßige Verschachtelung von Inhaltsfragmente
 
 Eine starke Verwendung von Inhaltsfragmentverweisen kann sich erheblich auf die Systemleistung, die Reaktionsfähigkeit der Benutzeroberfläche und die Ausführung von GraphQL-Abfragen auswirken. Ziel ist es, die Verschachtelung auf maximal zehn Ebenen zu belassen.
 
-## Anzahl der Datenfelder und Datentypen pro Modell {#number-of-data-fields-and-types-per-model}
+### Anzahl der Datenfelder und Typen pro Modell {#number-of-data-fields-and-types-per-model}
 
 Schließen Sie nur die Datenfelder und Typen ein, die ein Modell wirklich benötigt.
 
@@ -329,9 +329,15 @@ Schließen Sie nur die Datenfelder und Typen ein, die ein Modell wirklich benöt
 
 ### Rich-Text-Felder {#rich-text-fields}
 
-Verwenden Sie Rich-Text-Felder **Datentyp Mehrzeiliger Text**) unter Berücksichtigung von Folgendem.
+Verwenden Sie Rich-Text-Felder **Datentyp Mehrzeiliger Text**) unter Berücksichtigung von Folgendem:
 
-Begrenzen Sie die Anzahl der Rich-Text-Felder pro Modell. Außerdem die Textmenge, die in jedem Fragment gespeichert ist, und den Umfang der HTML-Formatierung. Sehr große Rich-Text-Inhalte können die Systemleistung beeinträchtigen.
+* Felder
+
+  Begrenzen Sie die Anzahl der Rich-Text-Felder pro Modell. Aus Leistungsgründen wird nicht empfohlen, mehr als zehn Rich-Text-Felder in einem Modell zu haben. Es wird empfohlen, bei Bedarf [verschachtelte Inhaltsfragmente](/help/assets/content-fragments/content-fragments-models.md#using-references-to-form-nested-content) zu verwenden.
+
+* Inhalt
+
+  Sie sollten auch die Menge an Text, die in jedem Fragment gespeichert wird, und den Umfang der HTML-Formatierung begrenzen. Sehr große Rich-Text-Inhalte können die Systemleistung beeinträchtigen.
 
 ### Anzahl der Varianten {#number-of-variations}
 

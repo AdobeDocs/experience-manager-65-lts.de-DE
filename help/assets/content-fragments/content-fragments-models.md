@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7d6e3662-f541-4755-b2a6-b35724dd8932
-source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
+source-git-commit: e0a31fe9bc3297a4cb6e72765482c24cebb3ad29
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2326'
 ht-degree: 99%
 
 ---
@@ -108,14 +108,7 @@ Zum Definieren Ihres Modells stehen unterschiedliche Datentypen zur Verfügung:
 * **Einzeilentext**
    * Fügen Sie ein oder mehrere Felder mit einer einzelnen Textzeile hinzu. Die maximale Länge kann festgelegt werden.
 * **Mehrzeilentext**
-   * Ein Textbereich, der Rich Text, Nur Text oder Markdown sein kann
-
-     >[!NOTE]
-     >
-     >Aus Leistungsgründen wird dringend davon abgeraten, mehr als 10 Rich-Text-Felder in einem Modell zu verwenden.
-     >
-     >Es wird empfohlen, bei Bedarf [verschachtelte Inhaltsfragmente](#fragment-reference-nested-fragments) zu verwenden.
-
+   * Ein Textbereich, der Rich Text, Plain Text oder Markdown sein kann
 * **Zahl**
    * Fügen Sie ein oder mehrere numerische Felder hinzu.
 * **Boolesch**
