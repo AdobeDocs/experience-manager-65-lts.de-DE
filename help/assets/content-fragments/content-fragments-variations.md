@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: a4101e70-85cd-471c-9bf9-fd09bf5fc8e8
-source-git-commit: e0fb43e63eb876049447d12ab379fd92aa1ee4b6
+source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 98%
+source-wordcount: '2309'
+ht-degree: 100%
 
 ---
 
@@ -409,12 +409,6 @@ Varianten ermöglichen die Abänderung von **primärem** Inhalt für einen besti
 
 So erstellen Sie eine Variante:
 
->[!NOTE]
->
->Varianten fügen einem Inhaltsfragment, der Autorenumgebung und der Bereitstellung Verarbeitungszeit hinzu. Es wird empfohlen, die Anzahl der Varianten auf ein überschaubares Minimum zu beschränken.
->
->Als Best Practice gilt, pro Inhaltsfragment maximal zehn Varianten zu verwenden.
-
 1. Öffnen Sie Ihr Fragment und stellen Sie sicher, dass das seitliche Bedienfeld sichtbar ist.
 1. Wählen Sie im seitlichen Bedienfeld in der Symbolleiste die Option **Varianten** aus.
 1. Wählen Sie **Variante erstellen** aus.
@@ -476,7 +470,7 @@ Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisie
 
 >[!CAUTION]
 >
->Die Synchronisierung ist nur verfügbar, um Änderungen *von der **primären Version**&#x200B;in die Variante* zu kopieren.
+>Die Synchronisierung ist nur verfügbar, um Änderungen *von der **primären Version**in die Variante* zu kopieren.
 >
 >Nur das aktuelle Element der Variante wird synchronisiert.
 >
