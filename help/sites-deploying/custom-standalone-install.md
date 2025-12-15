@@ -7,10 +7,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 93aa6218c36b52bfcd7a204e6f0b65871a4b365b
+source-git-commit: 5c7ead37f55175bb565f8661c0c156f76f135131
 workflow-type: tm+mt
 source-wordcount: '1563'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ Wenn Sie Oracle Java 17 oder Java 21 ausführen, müssen Ihrer Befehlszeile beim
 * [Nur Forms] Im Folgenden finden Sie ein Beispiel dafür, wie Sie sicherstellen können, dass AEM Forms mit Java 17/Java21 funktioniert, und die folgenden zusätzlichen JVM-Parameter einschließen:
 
 ```shell
---add-opens=java.base/java.util=ALL-UNNAMED -add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED --add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
 ```
 
 ## Ausführungsmodi {#run-modes}
@@ -323,7 +323,7 @@ Obwohl es viele Möglichkeiten gibt, AEM WCM zu konfigurieren, sollten bestimmte
 
 >[!NOTE]
 >
-> Für neue AEM 6.5 LTS-Installationen müssen Indexdefinitionen separat installiert werden. Weitere Informationen finden Sie [diesem](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
+> Für neue AEM 6.5 LTS-Installationen müssen Indexdefinitionen separat installiert werden. Weitere Informationen finden Sie [hier](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
 
 ## Zugreifen auf CRXDE Lite und die Web-Konsole {#accessing-crxde-lite-and-the-web-console}
 
@@ -347,7 +347,7 @@ Beispiel:
 
 #### Zugreifen auf die Web-Konsole {#accessing-the-web-console}
 
-Greifen Sie auf die Adobe CQ-Webkonsole zu, indem Sie auf dem Willkommensbildschirm **OSGi-Konsole** auswählen oder Ihren Browser öffnen und zu diesem Ziel navigieren.
+Greifen Sie auf die Adobe CQ-Web-Konsole zu, indem Sie auf dem Willkommensbildschirm **OSGi-Konsole** auswählen oder Ihren Browser öffnen und zu diesem Ziel navigieren.
 
 ```
  https://<host>:<port>/system/console
