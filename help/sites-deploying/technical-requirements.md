@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 075f671d878f9bd9be33a059223800fa9acddf40
+source-git-commit: d55edd443081ba21be7f119a77fcd01f68f47d4e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3232'
+ht-degree: 94%
 
 ---
 
@@ -95,7 +95,7 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen der Java™ Vi
 | IBM® Semeru J9 VM - Build 17.0.13.0 | A: Unterstützt `[2]` |
 | IBM® Semeru J9 VM - Build 21.0.6.0 | A: Unterstützt `[2]` |
 
-1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14, Java™ 15m Java™ 16 sind Nicht-LTS-Versionen von Oracle (siehe Roadmap für den Oracle Java™ SE-Support[). &#x200B;](https://www.oracle.com/technetwork/java/eol-135779.html) Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java™. Der Support und die Bereitstellung des Oracle Java™ SE JDK, einschließlich aller Wartungsupdates von LTS-Versionen, werden von Adobe direkt für alle AEM-Kundinnen und -Kunden unterstützt, die die Oracle Java™ SE-Technologie nutzen. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14, Java™ 15m Java™ 16 sind Nicht-LTS-Versionen von Oracle (siehe Roadmap für den Oracle Java™ SE-Support[). ](https://www.oracle.com/technetwork/java/eol-135779.html) Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java™. Der Support und die Bereitstellung des Oracle Java™ SE JDK, einschließlich aller Wartungsupdates von LTS-Versionen, werden von Adobe direkt für alle AEM-Kundinnen und -Kunden unterstützt, die die Oracle Java™ SE-Technologie nutzen. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
    **Diese Version unterstützt Oracle Java™ 17 und Oracle Java™ 21.**
 
 1. Die IBM® JRE wird nur zusammen mit WebSphere Application Server unterstützt.
@@ -138,7 +138,7 @@ Es gibt verschiedene Optionen zum Bereitstellen des Repositorys von Adobe Experi
 
 Adobe Experience Manager kann als eigenständiger Server (quickstart-JAR-Datei) oder als Web-Anwendung auf einem Drittanbieter-Anwendungs-Server (WAR-Datei) ausgeführt werden.
 
-Die mindestens erforderliche Servlet-API-Version ist Servlet 3.1. Darüber hinaus unterstützt AEM das Jakarta-Servlet 5 für JAR und WAR kann auf Anwendungsservern bereitgestellt werden, die die Jakarta-Servlet-API 5/6 implementieren.
+Die mindestens erforderliche Servlet-API-Version ist Servlet 3.1. Darüber hinaus unterstützt AEM Forms das Jakarta-Servlet 5 für JAR und WAR kann auf Anwendungsservern bereitgestellt werden, die die Jakarta-Servlet-API 5/6 implementieren.
 
 | Plattform | Unterstützungsebene |
 |---|---|
@@ -413,9 +413,8 @@ Windows x86:
 >* PDF Generator unterstützt nur die 32-Bit-Version von Microsoft® Office Professional Plus und anderer für die Konvertierung erforderliche Software.
 >* Wenn eine Microsoft® Office-Installation aus irgendeinem Grund deaktiviert oder unlizenziert wird, z. B. weil eine Installation mit Volumenlizenz einen KMS-Host nicht innerhalb eines bestimmten Zeitraums finden kann, können Konvertierungen fehlschlagen, bis die Installation neu lizenziert und reaktiviert wird.
 >* PDF Generator unterstützt nicht Microsoft® Office 365.
->* PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt®.
+>* PDF Generator-Konvertierungen für OpenOffice werden unter Windows und Linux® unterstützt.
 >* Die Funktionen von OCR PDF, PDF optimieren und PDF exportieren werden nur unter Windows unterstützt.
->* Eine Version von Acrobat ist im Lieferumfang von AEM Forms enthalten, um die PDF Generator-Funktionalität zu aktivieren. Die gebündelte Version sollte während der Laufzeit der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur programmatisch mit AEM Forms zugänglich sein. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung für Ihre Bereitstellung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
 >* Der PDF Generator-Service unterstützt nicht Microsoft® Windows 11.
 
 
