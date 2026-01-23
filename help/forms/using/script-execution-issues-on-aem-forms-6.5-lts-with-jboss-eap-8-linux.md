@@ -1,15 +1,15 @@
 ---
 title: Skriptausführung schlägt auf AEM Forms 6.5 LTS mit JBoss EAP 8 (Linux) fehl
-description: Beim Einrichten von JBoss EAP 8.0 (AEM Forms 6.5.1 LTS) in einer Linux-Umgebung kann beim Ausführen von Shell-Skripten oder Startdateien ein bestimmter Fehler auftreten
+description: Beim Einrichten von JBoss EAP 8.0 in einer Linux-Umgebung können beim Ausführen von Shell-Skripten oder Startdateien bestimmte Fehler auftreten
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 5d020671efaa4527a5f6dbb4b779c7a3351888a4
+source-git-commit: d397e6a51ad2a52da5ccb0a690e1acd3fafcee3c
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '236'
 ht-degree: 1%
 
 ---
