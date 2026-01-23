@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über KI in Adobe Experience Manager 6.5 LTS
 feature: Generative AI, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: 312e1d66-ba2e-4b9a-a679-4e44112f3222
-source-git-commit: 20978122a1d4e935e1384674dd5503f3cc807ef5
+source-git-commit: f27795b9acf834101d82937d9f9f142361816735
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 45%
@@ -13,7 +13,7 @@ ht-degree: 45%
 
 # KI in AEM {#ai-in-aem}
 
-KI ist ein integraler Bestandteil von Adobe Experience Manager und wird verwendet, um Benutzende bei der Suche nach Informationen zu unterstützen oder Erlebnisse zu generieren.
+KI ist ein integraler Bestandteil von Adobe Experience Manager und wird verwendet, um Benutzende bei der Suche nach Informationen oder der Generierung von Erlebnissen zu unterstützen.
 
 ## KI-Assistent {#ai-assistant}
 

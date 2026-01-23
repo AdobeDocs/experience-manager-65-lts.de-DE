@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 6659ca39-f297-40b9-88e2-d942aa653e9b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1745'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ Zu den Funktionen von Tags in AEM gehören u. a. folgende:
 
 Über die Tagging-Konsole können Sie Tags und ihre Taxonomien erstellen und verwalten. Ein Ziel besteht darin, zu vermeiden, dass viele ähnliche Tags sich auf dieselbe Sache beziehen, z. B. Seite und Seiten oder Fußbekleidung und Schuhe.
 
-Um Tags zu verwalten, gruppieren Sie sie in Namespaces, prüfen Sie vor der Erstellung neuer Tags, on Sie vorhandene verwenden können, und organisieren Sie die Tags neu, ohne sie von den Inhalten zu lösen, mit denen sie aktuell verknüpft sind.
+Tags werden verwaltet, indem sie in Namespaces gruppiert, die Verwendung vorhandener Tags überprüft, bevor neue erstellt werden, und neu organisiert werden, ohne das Tag von den aktuell referenzierten Inhalten zu trennen.
 
 Zugreifen auf die Tagging-Konsole:
 
@@ -269,7 +269,7 @@ Tag-Berechtigungen sind [standardmäßig sicher](/help/sites-administering/produ
 
    * Replizieren Sie das Paket.
 
-      * Wählen Sie im Package Manager `Replicate` aus.
+      * Wählen Sie im Paket-Manager `Replicate` aus.
 
 ## Verwalten von Tags in verschiedenen Sprachen {#managing-tags-in-different-languages}
 

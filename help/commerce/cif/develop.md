@@ -9,7 +9,7 @@ thumbnail: 39476.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
-source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 90%
@@ -70,7 +70,7 @@ Für die lokale CIF-Projektentwicklung mit dem AEM und dem CIF-Add-on gehen Sie 
 
 >[!TIP]
 >
->Alternativ kann das CIF-Add-On-Paket auch über den Package Manager installiert werden.
+>Alternativ kann das CIF-Add-On-Paket auch über den Paket-Manager installiert werden.
 
 1. Starten Sie den AEM-Schnellstart
 

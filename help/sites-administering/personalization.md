@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
 exl-id: 558cf29b-34f4-4ead-b8d6-67ef8aaa5dc5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1528'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -61,7 +61,7 @@ Die Personalisierung kann in vielen Fällen verwendet werden, wie zum Beispiel:
 
 ### Intranetseiten {#intranet-pages}
 
-* Inhalte können basierend auf dem Standort, der Abteilung und/oder der Rolle eines Benutzers angeboten werden, die bereits in einem internen Netzwerk festgelegt ist.
+* Inhalte können basierend auf dem Standort, der Abteilung und/oder der Rolle eines Benutzers angeboten werden - bereits innerhalb eines internen Netzwerks definiert.
 * Je nach der verfügbaren Auswahl hat der Benutzer noch weitere Auswahlmöglichkeiten.
 
 ### Spezifische begrenzte Zielbenutzergruppen – Extranets {#extranets}

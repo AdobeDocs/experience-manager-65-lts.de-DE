@@ -11,10 +11,10 @@ feature: Integration
 role: Admin
 exl-id: 34678cae-3c7f-4c9f-b7b6-c1dd4e0758ad
 index: false
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1072'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -60,7 +60,7 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
    <td><strong>Implementierung</strong></td>
   </tr>
   <tr>
-   <td><p>Geben Sie den Dokumenttyp an, um eine konsistente Wiedergabe zu gewährleisten.</p> <p>Fügen Sie DOCTYPE am Anfang hinzu (HTML oder XHTML).</p> </td>
+   <td><p>Geben Sie den Dokumenttyp an, um ein konsistentes Rendering sicherzustellen.</p> <p>Fügen Sie DOCTYPE am Anfang hinzu (HTML oder XHTML).</p> </td>
    <td><p>Ist durch Änderung des Designs der Eigenschaft <i>cq:doctype</i> in <i>/etc/designs/default/jcr:content/campaign_newsletterpage</i> konfigurierbar.</p> <p>Der Standardwert ist „XHTML“:</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional/EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Kann in „HTML_5“ geändert werden:</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td>
   </tr>
   <tr>

@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 3fafb5e6-f5ac-4c11-809f-6cb2c5269377
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '969'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ Der Link-Checker wird automatisch ausgeführt, um Autorinnen und Autoren von Inh
 * Anzeigen einer Liste aller externen Links im Inhalt
 * Durchführen von Linktransformationen
 
-Der Link-Checker verfügt über verschiedene [Konfigurationsoptionen](#configuring), wie das Definieren der Validierung als intern, das Auslassen der Validierung für bestimmte Links oder Link-Muster oder das Neuschreiben von Umschreibungsregeln für Links.
+Der Link-Checker verfügt über mehrere [Konfigurationsoptionen](#configuring) wie die Definition der internen Validierung, das Auslassen bestimmter Links oder Link-Muster in der Validierung und das Neuschreiben von Linkumschreibungsregeln.
 
 Der Link-Checker überprüft sowohl [interne Links](#internal) als auch [externe Links](#external).
 

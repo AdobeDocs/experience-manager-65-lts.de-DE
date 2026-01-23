@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: a39ed93e-4276-48ff-ba49-d0f630409222
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1487'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -72,7 +72,7 @@ Verwenden Sie die [Web-Konsole zum Konfigurieren des OSGi-Bundles](/help/sites-d
 
    >[!NOTE]
    >
-   >Wenden Sie sich an Ihre Site-Administratorin oder Ihren Site-Administrator, um herauszufinden, ob Sie Zugriff auf diese Konsole haben.
+   >Wenden Sie sich an Ihren Site-Administrator, um herauszufinden, ob Sie Zugriff auf diese Konsole haben.
 
 1. Wählen Sie das Konfigurationselement mit dem Namen **Adobe AEM Analytics HTTP Client** aus.
 1. Drücken Sie zum Hinzufügen der URL für ein Rechenzentrum auf die „+“-Schaltfläche neben der Liste mit **Datenzentrum-URLs** und geben Sie die URL in das Feld ein.
@@ -100,8 +100,8 @@ Verwenden Sie die [Web-Konsole zum Konfigurieren des OSGi-Bundles](/help/sites-d
 
 Für die von Ihnen verwendete Report Suite-ID (RSID) können Sie steuern, welche Server-Instanzen (Autor, Veröffentlichung oder beides) Daten zur Report Suite beitragen:
 
-* **Alle**: Informationen aus der Authoring- und der Publishing-Instanz werden in die Report Suite eingefügt.
-* **Autor**: Die Report Suite wird nur mit Informationen aus der Authoring-Instanz gefüllt.
+* **Alle**: Informationen aus der Authoring- und der Veröffentlichungsinstanz werden in die Report Suite eingefügt.
+* **Autor**: Die Report Suite wird nur mit Informationen aus der Autoreninstanz gefüllt.
 * **Veröffentlichen**: Die Report Suite wird nur mit Informationen aus der Veröffentlichungsinstanz gefüllt.
 
 >[!NOTE]
@@ -182,7 +182,7 @@ Untergeordnete Elemente der Seite übernehmen die Verknüpfung mit dem Framework
 
 1. Klicken Sie auf **Speichern und schließen**.
 1. So aktivieren Sie die Seite und alle verbundenen Konfigurationen/Dateien: **[Veröffentlichen](/help/sites-authoring/publishing-pages.md)** Sie die Seite.
-1. Der letzte Schritt besteht darin, die Seite in der Publishing-Instanz zu besuchen und nach einem Keyword (z. B. Aubergine) zu suchen, indem Sie die **Suche**-Komponente verwenden.
+1. Der letzte Schritt besteht darin, die Seite in der Veröffentlichungsinstanz zu besuchen und nach einem Keyword (z. B. Aubergine) zu suchen, indem Sie die **Suche**-Komponente verwenden.
 1. Sie können dann Aufrufe an Adobe Analytics mit einem entsprechenden Tool überprüfen. Zum Beispiel mit [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=de).
 1. Unter Verwendung des angegebenen Beispiels sollte der Aufruf den in eVar7 eingegebenen Wert (d. h. Aubergine) enthalten und die Ereignisliste sollte „event3“ enthalten.
 

@@ -5,10 +5,10 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: b749ec33-9a78-41d5-889f-73dbdb33ceed
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 97%
+source-wordcount: '712'
+ht-degree: 89%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 ## Übersicht {#overview}
 
-Das CIF-Add-on erweitert die Bearbeitung in AEM mit Commerce-spezifischen Funktionen. Dadurch können Autoren Commerce-bezogene Erlebnisse effizient erstellen und verwalten, indem sie auf Produktdaten und Inhalte zugreifen können, ohne den Kontext verlassen zu müssen.
+Das CIF-Add-on erweitert die Bearbeitung in AEM mit Commerce-spezifischen Funktionen. Dadurch können Autoren Commerce-bezogene Erlebnisse effizient erstellen und verwalten, indem sie Zugriff auf Produktdaten und Inhalte erhalten, ohne den Kontext verlassen zu müssen.
 
 ## Auswahloptionen {#pickers}
 
@@ -64,7 +64,7 @@ Die Registerkarte „Elemente“ im Seitenbereich des Editors bietet Zugriff auf
 
 ![Seitenbereich für Produktdaten](/help/commerce/cif/assets/authoring/products-side-panel.png)
 
-Analog zu Elementen können Produkte (wodurch standardmäßig eine Produkt-Teaser-Komponente erstellt wird) oder Komponenten (derzeit werden Produkt-Teaser und Produktkarussell unterstützt) auf einer Seite hinzugefügt werden.
+Analog zu Assets können Produkte per Drag-and-Drop auf eine Seite gezogen werden (wodurch standardmäßig eine Produkt-Teaser-Komponente erstellt wird) oder auf Komponenten (derzeit werden Produkt-Teaser und Produktkarussell unterstützt).
 
 ### Hinzufügen von Links in Textfeldern mithilfe von RTE {#rte}
 

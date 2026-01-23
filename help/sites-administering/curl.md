@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 45d49917-d20f-470c-bf95-6e701de67a11
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '855'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -36,7 +36,7 @@ Da das Sling-Framework, auf dem AEM aufbaut, auf dem RESTful-Prinzip basiert, l�
 
 ## Herunterladen von cURL {#downloading-curl}
 
-Bei MacOS und einigen Linux-Distributionen ist cURL standardmäßig enthalten. Das Tool ist jedoch für die meisten Betriebssysteme verfügbar. Die aktuellen Downloads finden Sie unter [https://curl.haxx.se/download.html](https://curl.haxx.se/download.html).
+Bei MacOS und einigen Linux-Distributionen ist cURL standardmäßig enthalten. Es ist jedoch für fast jedes Betriebssystem verfügbar. Die aktuellen Downloads finden Sie unter [https://curl.haxx.se/download.html](https://curl.haxx.se/download.html).
 
 Das Quell-Repository von cURL finden Sie auch auf GitHub.
 
@@ -48,7 +48,7 @@ Um zu ermitteln, welchen Befehl Sie für den gewünschten Vorgang benötigen, er
 
 Die dafür nötigen Schritte werden nachfolgend am Beispiel der Erstellung einer neuen Seite im Chrome-Browser beschrieben.
 
-1. Bereiten Sie die Aktion vor, die Sie in AEM aufrufen möchten.  In diesem Beispiel sind wir am Ende des Assistenten **Seite erstellen** angekommen, haben jedoch noch nicht auf **Erstellen** geklickt.
+1. Bereiten Sie die Aktion vor, die Sie in AEM aufrufen möchten.  In diesem Fall sind wir am Ende des Assistenten **Seite erstellen** angekommen, haben jedoch noch nicht auf **Erstellen** geklickt.
 
    ![chlimage_1-66](assets/chlimage_1-66a.png)
 
@@ -61,7 +61,7 @@ Die dafür nötigen Schritte werden nachfolgend am Beispiel der Erstellung einer
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 
-1. Kopieren Sie den cURL-Befehl in einen Texteditor. Entfernen Sie alle Header aus dem Befehl, die mit `-H` beginnen (im folgenden Screenshot in blauer Farbe hervorgehoben), und fügen Sie die korrekten Authentifizierungsparameter hinzu, z. B. `-u <user>:<password>`.
+1. Kopieren Sie den cURL-Befehl in einen Texteditor. Entfernen Sie alle Header aus dem Befehl, die mit `-H` beginnen (im folgenden Screenshot in blauer Farbe hervorgehoben), und fügen Sie die korrekten Authentifizierungsparameter hinzu, z. B. `-u <user>:<password>`.
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
@@ -201,7 +201,7 @@ curl -u <user>:<password> -FaddMembers=testuser1 http://localhost:4502/home/grou
 curl -u <user>:<password> -FremoveMembers=testuser1 http://localhost:4502/home/groups/t/testGroup.rw.html
 ```
 
-#### Festlegen der Gruppenmitgliedschaft einer Benutzerin oder eines Benutzers {#set-a-user-s-group-membership}
+#### Festlegen der Gruppenzugehörigkeit einer Benutzerin oder eines Benutzers {#set-a-user-s-group-membership}
 
 ```shell
 curl -u <user>:<password> -Fmembership=contributor -Fmembership=testgroup http://localhost:4502/home/users/t/testuser.rw.html
