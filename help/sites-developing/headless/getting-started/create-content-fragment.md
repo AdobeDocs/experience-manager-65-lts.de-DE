@@ -41,7 +41,7 @@ Inhaltsautorinnen und -autoren können eine beliebige Anzahl von Inhaltsfragment
    ![Inhaltsfragment erstellen](assets/content-fragment-create.png)
 1. Klicken Sie im Bestätigungsfenster auf **Öffnen**.
 
-   ![Bestätigung der Inhaltsfragment-Erstellung ](assets/content-fragment-confirmation.png)
+   ![Bestätigung der Inhaltsfragment-Erstellung &#x200B;](assets/content-fragment-confirmation.png)
 1. Geben Sie im Inhaltsfragment-Editor die Details des Inhaltsfragments an.
 
    ![Inhaltsfragmente-Editor](assets/content-fragment-edit.png)
