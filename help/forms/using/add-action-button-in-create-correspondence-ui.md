@@ -9,7 +9,7 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
-source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '1853'
 ht-degree: 99%
@@ -91,7 +91,7 @@ Das Hinzufügen einer Schaltfläche mit einer Aktion (hier: „Brief zur Überpr
    </extensionsConfig>
    ```
 
-1. Um ein Schreiben per E-Mail zu versenden, können Sie den LiveCycle Forms-Arbeitsablauf verwenden. Fügen Sie in „acmExtensionsConfig.xml“ ein Tag „customAction“ unter dem Tag „modelExtension“ wie folgt hinzu:
+1. Um ein Schreiben per E-Mail zu versenden, können Sie den LiveCycle Forms-Workflow verwenden. Fügen Sie in „acmExtensionsConfig.xml“ ein Tag „customAction“ unter dem Tag „modelExtension“ wie folgt hinzu:
 
    ```xml
     <customAction name="Letter Review" label="Letter Review" tooltip="Letter Review" styleName="" permissionName="forms-users" actionHandler="CM.domain.CCRCustomActionHandler">
@@ -116,7 +116,7 @@ Das Hinzufügen einer Schaltfläche mit einer Aktion (hier: „Brief zur Überpr
 
    | **Name** | **Beschreibung** |
    |---|---|
-   | serviceName | Wenn eine customAction ein untergeordnetes Tag mit dem Namen „serviceName“ enthält, wird beim Klicken auf die entsprechende Schaltfläche/Verknüpfung ein Prozess mit dem Namen aufgerufen, der im Tag „serviceName“ repräsentiert wird. Stellen Sie sicher, dass dieser Vorgang dieselbe Signatur wie der Brief PostProcess hat. Fügen Sie das Präfix „Forms-Arbeitsablauf“ zum Servicenamen hinzu. |
+   | serviceName | Wenn eine customAction ein untergeordnetes Tag mit dem Namen „serviceName“ enthält, wird beim Klicken auf die entsprechende Schaltfläche/Verknüpfung ein Prozess mit dem Namen aufgerufen, der im Tag „serviceName“ repräsentiert wird. Stellen Sie sicher, dass dieser Vorgang dieselbe Signatur wie der Brief PostProcess hat. Fügen Sie das Präfix „Forms-Workflow“ zum Servicenamen hinzu. |
    | Parameters, die das Präfix „cm_“ im Tag-Namen enthalten | Wenn eine customAction untergeordnete Tags mit dem Namen „cm_“ am Anfang enthält, dann sind diese Parameter in der Nachbearbeitung (Briefnachbearbeitung oder besonderer Prozess, der vom Tag „serviceName“ repräsentiert wird) im Eingabe-XML-Code unter dem relevanten Tag, bei dem das Präfix „cm_“ entfernt wurde, verfügbar. |
    | actionName | Wann immer eine Nachbearbeitung aufgrund eines Klicks erfolgt, enthält die gesendete XML ein spezielles Tag mit einem Namen der Benutzeraktion unter dem Tag. |
 
@@ -172,7 +172,7 @@ Nachdem Sie serverseitige Änderungen vorgenommen haben, starten Sie das Baustei
 
 1. Suchen Sie das Asset Composer-Baustein-Bundle von Adobe. Starten Sie das Bundle neu: Klicken Sie auf „Anhalten“ und klicken Sie dann auf „Start“.
 
-   ![Asset Composer-Baustein von Adobe &#x200B;](assets/6_assetcomposerbuildingblockbundle.png)
+   ![Asset Composer-Baustein von Adobe ](assets/6_assetcomposerbuildingblockbundle.png)
 
 Nach dem Neustart des Adobe Asset Composer-Baustein-Bundles wird die benutzerdefinierte Schaltfläche auf der Benutzeroberfläche „Korrespondenz erstellen“ angezeigt. Sie können einen Brief in der Benutzeroberfläche „Korrespondenz erstellen“ öffnen, um eine Vorschau der benutzerdefinierten Schaltfläche anzuzeigen.
 
@@ -264,7 +264,7 @@ Das Bearbeiten der Aktion/der Schaltfläche beim Klicken auf die Aktion/Schaltfl
           };
           /**
            * Should the action be enabled in toolbar
-           * @param extraParams additional arguements that may be passed to handler (For future use)
+           * @param extraParams additional arguments that may be passed to handler (For future use)
            * @return flag indicating whether the action should be enabled
            */
          CCRCustomActionHandler.prototype.actionEnabled = function(extraParams){

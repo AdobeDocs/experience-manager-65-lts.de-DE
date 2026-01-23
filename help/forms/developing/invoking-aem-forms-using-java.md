@@ -11,10 +11,10 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 42c85231-9e65-4c3c-8b86-3efdaa577161
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '5333'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -218,7 +218,7 @@ In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die zum Aufrufen von 
 
 ### Verbindungsmodus und J2EE-Anwendungs-JAR-Dateien {#connection-mode-and-j2ee-application-jar-files}
 
-In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die vom Verbindungsmodus und dem J2EE-Anwendungs-Server abhängen, auf dem AEM Forms bereitgestellt wird.
+In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die vom Verbindungsmodus und vom J2EE-Anwendungsserver abhängen, auf dem AEM Forms bereitgestellt wird.
 
 <table>
  <thead>
@@ -444,9 +444,9 @@ Um einen AEM Forms-Dienst erfolgreich aufzurufen, legen Sie die folgenden Verbin
   >
   >Anstatt eine Zeichenfolge zu verwenden, um die `DSC_SERVER_TYPE` Verbindungseigenschaft zu setzen, können Sie ein statisches Mitglied der `ServiceClientFactoryProperties` Klasse verwenden. Die folgenden Werte können verwendet werden: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`, oder `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
 
-* **DSC_CREDENTIAL_USERNAME:** Gibt den AEM Forms-Benutzernamen an. Damit einen AEM Forms-Dienst aufrufen können, wird die Rolle „Dienstbenutzer“ benötigt. Es kann auch eine andere Rolle sein, die die Berechtigung zum Dienstaufruf enthält. Andernfalls wird eine Ausnahme ausgelöst, wenn versucht wird, einen Dienst aufzurufen. Wenn die Servicesicherheit jedoch deaktiviert ist, müssen keine Authentifizierungswerte angegeben werden.
+* **DSC_CREDENTIAL_USERNAME:** Gibt den AEM Forms-Benutzernamen an. Damit ein Benutzer einen AEM Forms-Dienst erfolgreich aufrufen kann, benötigt er die Rolle „Dienstbenutzer“. Es kann auch eine andere Rolle sein, die die Berechtigung zum Dienstaufruf enthält. Andernfalls wird eine Ausnahme ausgelöst, wenn versucht wird, einen Dienst aufzurufen. Wenn die Servicesicherheit jedoch deaktiviert ist, müssen keine Authentifizierungswerte angegeben werden.
 * **DSC_CREDENTIAL_PASSWORD:** Gibt den entsprechenden Kennwortwert an. Wenn die Service-Sicherheit jedoch deaktiviert ist, müssen keine Authentifizierungswerte angegeben werden.
-* **DSC_REQUEST_TIMEOUT:** Das Standardlimit für Anforderungszeitlimits für die SOAP-Anforderung beträgt 1200000 Millisekunden (20 Minuten). Manchmal kann eine Anfrage länger brauchen, um den Vorgang abzuschließen.  Beispielsweise kann eine SOAP-Anfrage, die eine große Menge von Einträgen abruft, ein längeres Zeitlimit erfordern. Mit `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` können Sie das Zeitlimit für Anforderungsaufrufe für die SOAP-Anforderungen erhöhen.
+* **DSC_REQUEST_TIMEOUT:** Das Standardlimit für Anforderungszeitlimits für die SOAP-Anforderung beträgt 1200000 Millisekunden (20 Minuten). Manchmal kann eine Anfrage länger brauchen, um den Vorgang abzuschließen.  Beispielsweise kann eine SOAP-Anfrage, die eine große Menge von Einträgen abruft, einen längeren Timeout erfordern. Mit `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` können Sie den Timeout für Anfrageaufrufe für die SOAP-Anfragen erhöhen.
 
   **Hinweis**: Nur SOAP-basierte Aufrufe unterstützen die DSC_REQUEST_TIMEOUT Eigenschaft.
 
@@ -455,7 +455,7 @@ Führen Sie die folgenden Aufgaben aus, um Verbindungseigenschaften festzulegen:
 1. Erstellen Sie ein Objekt `java.util.Properties`, indem Sie den Konstruktor verwenden.
 1. Um die Verbindungseigenschaft `DSC_DEFAULT_EJB_ENDPOINT` festzulegen, rufen Sie die Methode `setProperty` des `java.util.Properties`-Objekts auf und übergeben die folgenden Werte:
 
-   * Der `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT`-Enumerationswert
+   * Der `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT`-Aufzählungswert
    * Ein string-Wert, der die URL des J2EE-Anwendungsservers angibt, der AEM Forms hostet
 
    >[!NOTE]

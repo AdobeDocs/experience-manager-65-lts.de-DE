@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
 exl-id: 7b26e5cb-3aab-4f69-a0f1-42268c39bba8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -45,7 +45,7 @@ Inhaltsautorinnen und -autoren können eine beliebige Anzahl von Inhaltsfragment
 1. Geben Sie im Inhaltsfragment-Editor die Details des Inhaltsfragments an.
 
    ![Inhaltsfragmente-Editor](assets/content-fragment-edit.png)
-1. Klicken Sie auf **Speichern** oder **Speichern und schließen**.
+1. Klicken Sie **Speichern** oder **Speichern und schließen**.
 
 Inhaltsfragmente können auf andere Inhaltsfragmente verweisen, was bei Bedarf eine verschachtelte Inhaltsstruktur ermöglicht.
 

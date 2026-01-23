@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: da8031f2-26ab-41e2-bf54-7032727ca192
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '2643'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -50,7 +50,7 @@ Wenn Ihre Prozesse so entworfen und implementiert sind, dass sie keine E-Mails b
 
    >[!NOTE]
    >
-   >Wenn Sie Microsoft Exchange Server verwenden und die E-Mail-Adresse ungültig ist, kann der Microsoft Exchange-Server keine E-Mail an die Verteilerliste senden. Um dieses Problem zu beheben, aktivieren Sie die Option **Externe Kommunikation aktivieren** separat für jede Verteilerliste auf Microsoft Exchange Server. 
+   >Wenn Sie Microsoft Exchange Server verwenden und die E-Mail-Adresse ungültig ist, kann der Microsoft Exchange-Server keine E-Mail an die Verteilerliste senden. Um das Problem zu beheben, wählen Sie die Option **Externe Kommunikation aktivieren** separat für jede Verteilerliste auf Microsoft Exchange Server aus.
 
 1. Klicken Sie auf Speichern.
 
@@ -84,7 +84,7 @@ Folgende Benachrichtigungstypen können für Benutzende und Gruppen konfiguriert
 * Aufgabenzuweisungen
 * Termine
 
-Um E-Mail-Benachrichtigungen für eine Gruppe zu generieren, müssen Sie in der Benutzerverwaltung eine E-Mail-Adresse für die Gruppe angeben. <!--Fix broken link See Setting up and organizing users -->Wenn der Arbeitsablauf für Formulare eine E-Mail-Benachrichtigung an eine Gruppe sendet, geht die Benachrichtigung an jedes Mitglied der Gruppe, dessen E-Mail-Adresse angegeben ist. Wenn ein Mitglied der Gruppe eine E-Mail-Benachrichtigung erhält und die Aufgabe anfordern möchte, muss das Mitglied auf die in der E-Mail-Benachrichtigung enthaltene Anforderungsverknüpfung klicken, wodurch die Seite mit den Aufgabendetails in Workspace geöffnet wird. Dort kann das Mitglied das Arbeitselement entweder anfordern oder anfordern und öffnen.
+Um E-Mail-Benachrichtigungen für eine Gruppe zu generieren, müssen Sie in der Benutzerverwaltung eine E-Mail-Adresse für die Gruppe angeben. <!--Fix broken link See Setting up and organizing users -->Wenn der Workflow für Formulare eine E-Mail-Benachrichtigung an eine Gruppe sendet, geht die Benachrichtigung an jedes Mitglied der Gruppe, dessen E-Mail-Adresse angegeben ist. Wenn ein Mitglied der Gruppe eine E-Mail-Benachrichtigung erhält und die Aufgabe anfordern möchte, muss das Mitglied auf die in der E-Mail-Benachrichtigung enthaltene Anforderungsverknüpfung klicken, wodurch die Seite mit den Aufgabendetails in Workspace geöffnet wird. Dort kann das Mitglied das Arbeitselement entweder anfordern oder anfordern und öffnen.
 
 >[!NOTE]
 >

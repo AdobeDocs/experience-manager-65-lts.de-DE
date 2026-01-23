@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Operations
 role: Admin
 exl-id: c5907a0b-031f-4e3a-8a5c-5daf31eb71fc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '4829'
 ht-degree: 99%
@@ -194,7 +194,7 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
 
 * Zurückgegebener Wert: die Anzahl an abgeschlossenen Workflow-Instanzen.
 
-**purgeCompleted**: Entfernt Datensätze von abgeschlossenen Workflows eines bestimmten Alters aus dem Repository. Wenn Sie häufig Workflows verwenden, verringern Sie mit diesem Vorgang regelmäßig die Größe des Repositorys. Sie können abgeschlossene Instanzen für alle Modelle bereinigen oder nur die Instanzen für ein bestimmtes Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
+**purgeCompleted**: Entfernt Einträge von abgeschlossenen Workflows eines bestimmten Alters aus dem Repository. Wenn Sie häufig Workflows verwenden, verringern Sie mit diesem Vorgang regelmäßig die Größe des Repositorys. Sie können abgeschlossene Instanzen für alle Modelle bereinigen oder nur die Instanzen für ein bestimmtes Modell. Optional können Sie den Vorgang testen, um die Ergebnisse zu sehen, ohne den Vorgang tatsächlich durchzuführen.
 
 * Argumente:
 
@@ -290,7 +290,7 @@ Informationen zum CRX-Repository.
   </tr>
   <tr>
    <td>option.observation.supported</td>
-   <td>Dabei bedeutet „true“, dass die asynchrone Überwachung von Repository-Änderungen unterstützt wird. Bei unterstützter asynchroner Überwachung können Anwendungen Benachrichtigungen zu jeder Änderung sofort erhalten und darauf reagieren.</td>
+   <td>Dabei bedeutet „true“, dass die asynchrone Überwachung von Repository-Änderungen unterstützt wird. Die Unterstützung der asynchronen Beobachtung ermöglicht es Anwendungen, Benachrichtigungen über jede Änderung zu empfangen und darauf zu reagieren, sobald sie auftreten.</td>
   </tr>
   <tr>
    <td>query.jcrscore</td>
@@ -621,7 +621,7 @@ Der Wert des TimeSeries-Feldes für jeden Statistiktyp, den `org.apache.jackrabb
 
 * Domain: `com.adobe.granite`
 * Typ: `TimeSeries`
-* Name: einer der folgenden Werte aus der Enum-Klasse von `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type`:
+* Name: einer der folgenden Werte aus der Aufzählungsklasse von `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type`:
 
    * BUNDLE_CACHE_ACCESS_COUNTER
    * BUNDLE_CACHE_MISS_AVERAGE
@@ -684,7 +684,7 @@ Statistische Informationen zu Repository-Abfragen.
 * Argumente: keine
 * Zurückgegebener Wert: keiner
 
-## Replikations-Agenten {#replication-agents}
+## Replikationsagenten {#replication-agents}
 
 Überwachen Sie die Dienste für jeden Replikationsagenten. Wenn Sie einen Replikationsagenten erstellen, wird der Dienst automatisch in der JMX-Konsole angezeigt.
 

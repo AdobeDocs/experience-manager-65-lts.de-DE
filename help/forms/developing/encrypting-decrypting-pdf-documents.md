@@ -11,7 +11,7 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 9f694358-e502-4fc0-8352-4c5119573756
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '8133'
 ht-degree: 98%
@@ -95,7 +95,7 @@ Beim Verschlüsseln eines PDF-Dokuments können Sie Berechtigungen festlegen, di
 
 >[!NOTE]
 >
->Berechtigungen werden als `PasswordEncryptionPermission`-Auflistungswerte angegeben.
+>Berechtigungen werden als `PasswordEncryptionPermission`-Aufzählungswerte angegeben.
 
 **Hinzufügen des Kennworts**
 
@@ -140,10 +140,10 @@ So verschlüsseln Sie ein PDF-Dokument mit einem Kennwort mithilfe der Verschlü
 1. Legen Sie die Laufzeitoptionen der Verschlüsselung fest.
 
    * Erstellen Sie ein `PasswordEncryptionOptionSpec`-Objekt, indem Sie seinen Konstruktor aufrufen.
-   * Geben Sie die zu verschlüsselnden PDF-Dokumentressourcen an, indem Sie die Methode `setEncryptOption` des `PasswordEncryptionOptionSpec`-Objekts aufrufen und einen `PasswordEncryptionOption`-Auflistungswert übergeben, der die zu verschlüsselnden Dokumentressourcen angibt. Um beispielsweise das gesamte PDF-Dokument einschließlich der Metadaten und Anlagen zu verschlüsseln, geben Sie `PasswordEncryptionOption.ALL` an.
+   * Geben Sie die zu verschlüsselnden PDF-Dokumentressourcen an, indem Sie die Methode `setEncryptOption` des `PasswordEncryptionOptionSpec`-Objekts aufrufen und einen `PasswordEncryptionOption`-Aufzählungswert übergeben, der die zu verschlüsselnden Dokumentressourcen angibt. Um beispielsweise das gesamte PDF-Dokument einschließlich der Metadaten und Anlagen zu verschlüsseln, geben Sie `PasswordEncryptionOption.ALL` an.
    * Erstellen Sie ein `java.util.List`-Objekt, das die Verschlüsselungsberechtigungen speichert, indem Sie den `ArrayList`-Konstruktor verwenden.
-   * Geben Sie eine Berechtigung an, indem Sie die Methode `add` des `java.util.List`-Objekts aufrufen und einen Auflistungswert übergeben, der der festzulegenden Berechtigung entspricht. Um zum Beispiel die Berechtigung festzulegen, die es Benutzenden erlaubt, Daten im PDF-Dokument zu kopieren, geben Sie `PasswordEncryptionPermission.PASSWORD_EDIT_COPY` an. (Wiederholen Sie diesen Schritt für jede festzulegende Berechtigung.)
-   * Geben Sie die Acrobat-Kompatibilitätsoption an, indem Sie die Methode `setCompatability` des `PasswordEncryptionOptionSpec`-Objekts aufrufen und einen Auflistungswert übergeben, der die Acrobat-Kompatibilitätsstufe angibt. Sie können beispielsweise `PasswordEncryptionCompatability.ACRO_7` angeben.
+   * Geben Sie eine Berechtigung an, indem Sie die Methode `add` des `java.util.List`-Objekts aufrufen und einen Aufzählungswert übergeben, der der festzulegenden Berechtigung entspricht. Um zum Beispiel die Berechtigung festzulegen, die es Benutzenden erlaubt, Daten im PDF-Dokument zu kopieren, geben Sie `PasswordEncryptionPermission.PASSWORD_EDIT_COPY` an. (Wiederholen Sie diesen Schritt für jede festzulegende Berechtigung.)
+   * Geben Sie die Acrobat-Kompatibilitätsoption an, indem Sie die Methode `setCompatability` des `PasswordEncryptionOptionSpec`-Objekts aufrufen und einen Aufzählungswert übergeben, der die Acrobat-Kompatibilitätsstufe angibt. Sie können beispielsweise `PasswordEncryptionCompatability.ACRO_7` angeben.
    * Geben Sie den Kennwortwert an, mit dem ein Benutzer das verschlüsselte PDF-Dokument öffnen kann, indem Sie die Methode `setDocumentOpenPassword` des `PasswordEncryptionOptionSpec`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der das Kennwort zum Öffnen darstellt.
    * Geben Sie den Wert des übergeordneten Kennworts an, mit dem ein Benutzer die Verschlüsselung des PDF-Dokuments aufheben kann, indem Sie die Methode `setPermissionPassword` des `PasswordEncryptionOptionSpec`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der das übergeordnete Kennwort darstellt.
 
@@ -208,8 +208,8 @@ Verschlüsseln Sie ein PDF-Dokument mit einem Kennwort mithilfe der Verschlüsse
 1. Legen Sie die Laufzeitoptionen der Verschlüsselung fest.
 
    * Erstellen Sie ein Objekt `PasswordEncryptionOptionSpec`, indem Sie den Konstruktor verwenden.
-   * Geben Sie die zu verschlüsselnden PDF-Dokumentressourcen an, indem Sie einen `PasswordEncryptionOption`-Auflistungswert dem `encryptOption`Datenelement des `PasswordEncryptionOptionSpec`-Objekts zuweisen. Um die gesamte PDF-Datei einschließlich ihrer Metadaten und Anhänge zu verschlüsseln, weisen Sie diesem Datenelement `PasswordEncryptionOption.ALL` zu.
-   * Geben Sie die Acrobat-Kompatibilitätsoption an, indem Sie dem `compatability`-Datenelement des `PasswordEncryptionOptionSpec`-Objekts einen `PasswordEncryptionCompatability`-Aufzählungswert zuweisen. Weisen Sie beispielsweise `PasswordEncryptionCompatability.ACRO_7` diesem Datenelement zu.
+   * Geben Sie die zu verschlüsselnden PDF-Dokumentressourcen an, indem Sie einen `PasswordEncryptionOption`-Aufzählungswert dem `encryptOption`Datenelement des `PasswordEncryptionOptionSpec`-Objekts zuweisen. Um die gesamte PDF-Datei einschließlich ihrer Metadaten und Anhänge zu verschlüsseln, weisen Sie diesem Datenelement `PasswordEncryptionOption.ALL` zu.
+   * Geben Sie die Acrobat-Kompatibilitätsoption an, indem Sie dem `PasswordEncryptionCompatibility`-Datenelement des `PasswordEncryptionOptionSpec`-Objekts einen `compatibility`-Auflistungswert zuweisen. Weisen Sie beispielsweise `PasswordEncryptionCompatibility.ACRO_7` diesem Datenelement zu.
    * Geben Sie den Kennwortwert an, mit dem ein Benutzer das verschlüsselte PDF-Dokument öffnen kann, indem Sie dem `documentOpenPassword`-Datenelement des `PasswordEncryptionOptionSpec`-Objekts einen Zeichenfolgewert zuweisen, der das Öffnungskennwort darstellt.
    * Geben Sie den Kennwortwert an, mit dem ein Benutzer die Verschlüsselung des PDF-Dokument entfernen kann, indem Sie dem `permissionPassword`-Datenelement des `PasswordEncryptionOptionSpec`-Objekts einen Zeichenfolgewert zuweisen, der das Hauptkennwort darstellt.
 
@@ -345,7 +345,7 @@ So verschlüsseln Sie ein PDF-Dokument mit einem Zertifikat mithilfe der Verschl
 1. Referenzieren Sie das Zertifikat.
 
    * Erstellen Sie ein `java.util.List`-Objekt, das Berechtigungsinformationen speichert, indem Sie seinen Konstruktor verwenden.
-   * Geben Sie die mit dem verschlüsselten Dokument verbundenen Berechtigungen an, indem Sie die Methode `add` des `java.util.List`-Objekts aufrufen und einen `CertificateEncryptionPermissions`-Auflistungswert übergeben, der die Berechtigungen darstellt, welche dem Benutzer gewährt werden, der das gesicherte PDF-Dokument öffnet. Um beispielsweise alle Berechtigungen anzugeben, übergeben Sie `CertificateEncryptionPermissions.PKI_ALL_PERM`.
+   * Geben Sie die mit dem verschlüsselten Dokument verbundenen Berechtigungen an, indem Sie die Methode `add` des `java.util.List`-Objekts aufrufen und einen `CertificateEncryptionPermissions`-Aufzählungswert übergeben, der die Berechtigungen darstellt, welche dem Benutzer gewährt werden, der das gesicherte PDF-Dokument öffnet. Um beispielsweise alle Berechtigungen anzugeben, übergeben Sie `CertificateEncryptionPermissions.PKI_ALL_PERM`.
    * Erstellen Sie ein Objekt `Recipient`, indem Sie den Konstruktor verwenden.
    * Erstellen Sie ein `java.io.FileInputStream`-Objekt, das das Zertifikat darstellt, das zur Verschlüsselung des PDF-Dokuments verwendet wird, indem Sie seinen Konstruktor verwenden und einen Zeichenfolgenwert übergeben, der den Speicherort des Zertifikats angibt.
    * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie dessen Konstruktor verwenden und das `java.io.FileInputStream`-Objekt übergeben, das das Zertifikat darstellt.
@@ -359,8 +359,8 @@ So verschlüsseln Sie ein PDF-Dokument mit einem Zertifikat mithilfe der Verschl
 1. Legen Sie die Laufzeitoptionen der Verschlüsselung fest.
 
    * Erstellen Sie ein `CertificateEncryptionOptionSpec`-Objekt, indem Sie seinen Konstruktor aufrufen.
-   * Geben Sie die zu verschlüsselnden PDF-Dokumentressourcen an, indem Sie die Methode `setOption` des `CertificateEncryptionOptionSpec`-Objekts aufrufen und einen `CertificateEncryptionOption`-Auflistungswert übergeben, der die zu verschlüsselnden Dokumentressourcen angibt. Um beispielsweise das gesamte PDF-Dokument einschließlich der Metadaten und Anlagen zu verschlüsseln, geben Sie `CertificateEncryptionOption.ALL` an.
-   * Geben Sie die Acrobat-Kompatibilitätsoption an, indem Sie die Methode `setCompat` des `CertificateEncryptionOptionSpec`-Objekts aufrufen und einen `CertificateEncryptionCompatibility`-Auflistungswert übergeben, der die Acrobat-Kompatibilitätsstufe angibt. Sie können beispielsweise `CertificateEncryptionCompatibility.ACRO_7` angeben.
+   * Geben Sie die zu verschlüsselnden PDF-Dokumentressourcen an, indem Sie die Methode `setOption` des `CertificateEncryptionOptionSpec`-Objekts aufrufen und einen `CertificateEncryptionOption`-Aufzählungswert übergeben, der die zu verschlüsselnden Dokumentressourcen angibt. Um beispielsweise das gesamte PDF-Dokument einschließlich der Metadaten und Anlagen zu verschlüsseln, geben Sie `CertificateEncryptionOption.ALL` an.
+   * Geben Sie die Acrobat-Kompatibilitätsoption an, indem Sie die Methode `setCompat` des `CertificateEncryptionOptionSpec`-Objekts aufrufen und einen `CertificateEncryptionCompatibility`-Aufzählungswert übergeben, der die Acrobat-Kompatibilitätsstufe angibt. Sie können beispielsweise `CertificateEncryptionCompatibility.ACRO_7` angeben.
 
 1. Erstellen Sie ein zertifikatverschlüsseltes PDF-Dokument.
 
@@ -436,8 +436,8 @@ So verschlüsseln Sie ein PDF-Dokument mit einem Zertifikat mithilfe der Verschl
 1. Legen Sie die Laufzeitoptionen der Verschlüsselung fest.
 
    * Erstellen Sie ein Objekt `CertificateEncryptionOptionSpec`, indem Sie den Konstruktor verwenden.
-   * Geben Sie die zu verschlüsselnden PDF-Dokumentressourcen an, indem Sie dem Datenelement `option` des `CertificateEncryptionOptionSpec`-Objekts einen `CertificateEncryptionOption`-Auflistungswert zuweisen. Um das gesamte PDF-Dokument einschließlich der Metadaten und Anlagen zu verschlüsseln, weisen Sie diesem Datenelement `CertificateEncryptionOption.ALL` zu.
-   * Geben Sie die Acrobat-Kompatibilitätsoption an, indem Sie dem Datenelement `compat` des `CertificateEncryptionOptionSpec`-Objekts einen `CertificateEncryptionCompatibility`-Auflistungswert zuweisen. Weisen Sie diesem Datenelement zum Beispiel `CertificateEncryptionCompatibility.ACRO_7` zu.
+   * Geben Sie die zu verschlüsselnden PDF-Dokumentressourcen an, indem Sie dem Datenelement `option` des `CertificateEncryptionOptionSpec`-Objekts einen `CertificateEncryptionOption`-Aufzählungswert zuweisen. Um das gesamte PDF-Dokument einschließlich der Metadaten und Anlagen zu verschlüsseln, weisen Sie diesem Datenelement `CertificateEncryptionOption.ALL` zu.
+   * Geben Sie die Acrobat-Kompatibilitätsoption an, indem Sie dem Datenelement `compat` des `CertificateEncryptionOptionSpec`-Objekts einen `CertificateEncryptionCompatibility`-Aufzählungswert zuweisen. Weisen Sie diesem Datenelement zum Beispiel `CertificateEncryptionCompatibility.ACRO_7` zu.
 
 1. Erstellen Sie ein zertifikatverschlüsseltes PDF-Dokument.
 
@@ -1026,7 +1026,7 @@ Bestimmen Sie mithilfe der Verschlüsselungs-API (Java) den Verschlüsselungstyp
 1. Bestimmen Sie den Verschlüsselungstyp.
 
    * Bestimmen Sie den Verschlüsselungstyp, indem Sie die `getPDFEncryption`-Methode des `EncryptionServiceClient`-Objekts aufrufen und das `com.adobe.idp.Document`-Objekt übergeben, welches das PDF-Dokument enthält. Diese Methode gibt eine `EncryptionTypeResult`-Objekt zurück.
-   * Rufen Sie die `getEncryptionType`-Methode des `EncryptionTypeResult`-Objekts auf. Diese Methode gibt einen `EncryptionType`-Enum-Wert zurück, der den Verschlüsselungstyp angibt. Wenn das PDF-Dokument beispielsweise mit einer kennwortbasierter Verschlüsselung geschützt ist, gibt diese Methode `EncryptionType.PASSWORD` zurück.
+   * Rufen Sie die `getEncryptionType`-Methode des `EncryptionTypeResult`-Objekts auf. Diese Methode gibt einen `EncryptionType`-Aufzählungswert zurück, der den Verschlüsselungstyp angibt. Wenn das PDF-Dokument beispielsweise mit einer kennwortbasierter Verschlüsselung geschützt ist, gibt diese Methode `EncryptionType.PASSWORD` zurück.
 
 **Siehe auch**
 

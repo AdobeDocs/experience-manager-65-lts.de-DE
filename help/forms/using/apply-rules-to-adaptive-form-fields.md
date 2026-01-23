@@ -7,10 +7,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: cb00bc09-580a-4c73-b202-d4110fa2f645
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '1120'
-ht-degree: 99%
+ht-degree: 96%
 
 ---
 
@@ -95,15 +95,15 @@ Nachdem die Kundendaten aus der Datenbank abgerufen wurden, können Sie die Vers
    >
    >Ziehen Sie die Felder **[!UICONTROL Name]** und **[!UICONTROL Kunden-ID]** nicht auf die entsprechende tablename.property (z. B. customerdetails.name). Der Name und die ID des Kunden sollten nicht versehentlich aktualisiert werden.
 
-1. Ziehen Sie das Feld **[!UICONTROL Kunden-ID]** per Drag-and-Drop von der Registerkarte [!UICONTROL Formularobjekte] in das Feld „ID“ im Feld **[!UICONTROL INPUT]**. Felder ohne vorangestellten Tabellennamen (in diesem Anwendungsbeispiel das Feld „customerdetails“) dienen als Suchparameter für den Aktualisierungsservice. Das Feld **[!UICONTROL ID]** in diesem Anwendungsfall identifiziert einen Datensatz in der Tabelle **customerdetails**.
-1. Klicken Sie auf **[!UICONTROL Fertig]**, um die Regel zu speichern. Wählen Sie im Regeleditor-Fenster die Option **[!UICONTROL Schließen]** aus.
+1. Ziehen Sie das Feld **[!UICONTROL Kunden-ID]** per Drag-and-Drop von der Registerkarte [!UICONTROL Formularobjekte] in das Feld „ID“ im Feld **[!UICONTROL INPUT]**. Felder ohne vorangestellten Tabellennamen (in diesem Anwendungsbeispiel das Feld „customerdetails„) dienen als Suchparameter für den Aktualisierungsdienst. Das Feld **[!UICONTROL id]** in diesem Anwendungsfall identifiziert einen Datensatz in der Tabelle **customerdetails**.
+1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Regel zu speichern. Wählen Sie im Regeleditor-Fenster die Option **[!UICONTROL Schließen]** aus.
 1. Zeigen Sie das adaptive Formular in der Vorschau an. Rufen Sie Details einer Kundin oder eines Kunden ab, aktualisieren Sie die Versandadresse und senden Sie das Formular ab. Wenn Sie Details derselben Person erneut abrufen, wird die aktualisierte Versandadresse angezeigt.
 
 ## Schritt 3: (Abschnitt „Bonus“) Ausführen von Validierungen und Anzeigen von Fehlermeldungen mit dem Code-Editor {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
 
 Sie sollten eine Validierung des Formulars durchführen, um sicherzustellen, dass die im Formular eingegebenen Daten korrekt sind und im Falle fehlerhafter Daten eine Fehlermeldung angezeigt wird. Wenn beispielsweise eine nicht vorhandene Kunden-ID in das Formular eingegeben wird, sollte eine Fehlermeldung angezeigt werden.
 
-Adaptive Formulare bieten mehrere Komponenten mit integrierten Validierungen, z. B. E-Mail, sowie numerische Felder, die Sie für häufige Anwendungsfälle verwenden können. Verwenden Sie den Regeleditor für erweiterte Anwendungsfälle, um z. B. eine Fehlermeldung anzuzeigen, wenn die Datenbank null (0) Datensätze (keine Datensätze) zurückgibt. 
+Adaptive Formulare bieten mehrere Komponenten mit integrierten Validierungen, z. B. E-Mail, sowie numerische Felder, die Sie für häufige Anwendungsfälle verwenden können. Verwenden Sie den Regeleditor für erweiterte Anwendungsfälle, um z. B. eine Fehlermeldung anzuzeigen, wenn die Datenbank null (0) Einträge (keine Einträge) zurückgibt. 
 
 Das folgende Verfahren zeigt, wie eine Regel erstellt wird, um eine Fehlermeldung anzuzeigen, wenn die im Formular eingegebene Kunden-ID nicht in der Datenbank vorhanden ist. Die Regel bringt auch den Fokus auf das Feld **[!UICONTROL Kunden-ID]** und setzt es zurück. Die Regel verwendet [die dataIntegrationUtils-API des Formulardatenmodell-Services](/help/forms/using/invoke-form-data-model-services.md), um zu überprüfen, ob die Kunden-ID in der Datenbank vorhanden ist.
 

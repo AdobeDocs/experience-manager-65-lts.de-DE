@@ -7,7 +7,7 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: bf5c2dff-db68-4e82-8217-ff35069dcb81
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '3607'
 ht-degree: 98%
@@ -80,7 +80,7 @@ Sie können ein neu hinzugefügtes oder vorhandenes Metadatenschema-Formular bea
 
 1. Wählen Sie auf der Seite [!UICONTROL Metadatenschema-Formulare] ein Formular aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
 
-1. Passen Sie auf der Seite **[!UICONTROL Metadatenschema-Formular-Editor]** das Metadaten-Formular an. Ziehen Sie die erforderlichen Komponenten von der Registerkarte **[!UICONTROL Formular erstellen]** auf eine der Registerkarten.
+1. Passen Sie auf der Seite **[!UICONTROL Metadatenschema-Formular-Editor]** das Metadatenformular an. Ziehen Sie die erforderlichen Komponenten von der Registerkarte **[!UICONTROL Formular erstellen]** auf eine der Registerkarten.
 
 1. Um eine Komponente zu konfigurieren, wählen Sie diese aus und ändern Sie ihre Eigenschaften auf der Registerkarte **[!UICONTROL Einstellungen]**.
 
