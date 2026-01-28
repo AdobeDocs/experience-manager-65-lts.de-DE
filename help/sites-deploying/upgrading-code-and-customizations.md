@@ -11,10 +11,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
-source-git-commit: f983fc1edc613feaa070c4e82a92aabab9d50cbb
+source-git-commit: c1935b95d4e9e8e3773f2ff9825c759f97738304
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 52%
+source-wordcount: '1097'
+ht-degree: 48%
 
 ---
 
@@ -27,7 +27,7 @@ Bei der Planung eines Upgrades müssen die folgenden Bereiche einer Implementier
 
 ## Übersicht {#overview}
 
-1. **AEM Analyzer** - Führen Sie AEM Analyzer aus, wie in der Upgrade-Planung und auf der Seite &quot;[&#x200B; der Upgrade-Komplexität mit AEM Analyzer“ &#x200B;](/help/sites-deploying/aem-analyzer.md) beschrieben. Sie erhalten einen AEM Analyzer-Bericht, der weitere Details zu Bereichen enthält, die zusätzlich zu den nicht verfügbaren APIs/Bundles in der Zielversion von AEM behandelt werden müssen. Der AEM Analyzer-Bericht liefert einen Hinweis auf alle Inkompatibilitäten in Ihrem Code. Wenn keine vorhanden ist, ist Ihre -Bereitstellung bereits mit 6.5 LTS kompatibel. Sie können für die Verwendung der 6.5 LTS-Funktionen weiterhin neue Entwicklungsschritte ausführen. Aus bloßen Kompatibilitätsgründen ist dies jedoch nicht erforderlich.
+1. **AEM Analyzer** - Führen Sie AEM Analyzer aus, wie in der Upgrade-Planung und auf der Seite &quot;[ der Upgrade-Komplexität mit AEM Analyzer“ ](/help/sites-deploying/aem-analyzer.md) beschrieben. Sie erhalten einen AEM Analyzer-Bericht, der weitere Details zu Bereichen enthält, die zusätzlich zu den nicht verfügbaren APIs/Bundles in der Zielversion von AEM behandelt werden müssen. Der AEM Analyzer-Bericht liefert einen Hinweis auf alle Inkompatibilitäten in Ihrem Code. Wenn keine vorhanden ist, ist Ihre -Bereitstellung bereits mit 6.5 LTS kompatibel. Sie können für die Verwendung der 6.5 LTS-Funktionen weiterhin neue Entwicklungsschritte ausführen. Aus bloßen Kompatibilitätsgründen ist dies jedoch nicht erforderlich.
 1. **Entwickeln einer Code-Basis für 6.5 LTS**- Erstellen Sie eine dedizierte Verzweigung oder ein dediziertes Repository für die Code-Basis der Zielversion. Nutzen Sie bei der Kompatibilitätsprüfung die vor dem Upgrade erfassten Daten, um die Code-Bereiche zu planen, die aktualisiert werden sollen.
 1. **Kompilieren mit 6.5 LTS Uber jar**- Aktualisieren Sie die POMs der Code-Basis, sodass sie auf 6.5 LTS uber jar verweisen, und kompilieren Sie Code dagegen.
 1. **Bereitstellung in der 6.5 LTS-Umgebung** - Eine neue Instanz von AEM 6.5 LTS (Autor und Veröffentlichung) sollte in einer Entwicklungs-/QS-Umgebung bereitgestellt werden. Stellen Sie die aktualisierte Code-Basis und ein repräsentatives Inhaltsbeispiel (aus der aktuellen Produktion) bereit.
@@ -92,6 +92,7 @@ Für AEM 6.5 LTS gibt es wieder zwei Arten von Uber Jars:
 
 * AEM 6.5 LTS enthält standardmäßig keine Google Guava-Bibliothek. Die erforderliche Version kann je nach Anforderung installiert werden.
 * Das Sling-XSS-Bundle verwendet jetzt die Java HTML Sanitizer-Bibliothek. Die Verwendung der `XSSAPI#filterHTML()`-Methode sollte zum sicheren Rendern von HTML-Inhalten und nicht zum Übergeben von Daten an andere APIs verwendet werden.
+* Aktualisierung der Apache Felix HTTP-SSL-Filterkonfiguration: In AEM 6.5 LTS wurde das `org.apache.felix.http.sslfilter`-Bundle von Version 1.2.6 auf 2.0.2 aktualisiert. Im Rahmen dieses Upgrades wird die OSGi-Konfigurations-PID `org.apache.felix.http.sslfilter.SslFilter` nicht mehr unterstützt und durch eine neue PID ersetzt: `org.apache.felix.http.sslfilter.Configuration`. Wenn der SSL-Filter in der -Bereitstellung verwendet wird, müssen vorhandene Konfigurationen mithilfe des OSGi Configuration Managers (`/system/console/configMgr`) manuell zur neuen PID migriert werden. Wenn die Konfiguration nicht migriert wird, wird der SSL-Filter möglicherweise nach dem Upgrade nicht wie erwartet angewendet.
 
 ## Testverfahren {#testing-procedure}
 
