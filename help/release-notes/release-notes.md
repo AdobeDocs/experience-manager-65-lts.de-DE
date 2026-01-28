@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c9a7faf5810e78f8e80b38a87446794488efdd35
+source-git-commit: 8f5a06dc80943362acebfd7b19fed13c051417d1
 workflow-type: tm+mt
-source-wordcount: '7355'
-ht-degree: 99%
+source-wordcount: '7751'
+ht-degree: 93%
 
 ---
 
@@ -40,6 +40,90 @@ ht-degree: 99%
 ### Forms
 
 AEM 6.5 Forms LTS on JEE ist jetzt verfügbar. Weitere Informationen zu unterstützten Umgebungen finden Sie im Dokument [Unterstützte Plattform](/help/forms/using/aem-forms-jee-supported-platforms.md)-Kombinationen . Links zum Installationsprogramm finden Sie auf der Seite [AEM Forms-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+
+#### Was in AEM Forms 6.5 LTS SP1 enthalten ist
+
+**Aktualisierungen der Java-Unterstützung**
+
+Unterstützung für neuere Java-Versionen wurde eingeführt:
+
+* Java™ 17
+* Java™ 21
+
+**Aktualisierungen der Anwendungsserver-Unterstützung**
+
+* Unterstützung für JBoss EAP 8 wurde hinzugefügt.
+* Das alte PicketBox-Sicherheits-Framework wurde entfernt.
+* Elytron-basierte Berechtigungsspeicher werden jetzt für die sichere Berechtigungsverwaltung unterstützt.
+
+**Konfiguration: Berechtigungsspeicher (auf Elytron-Basis)**
+
+AEM Forms auf JBoss EAP 8 verwendet Elytron für die Verwaltung sicherer Anmeldeinformationen. Kunden müssen einen auf Elytron basierenden Berechtigungsspeicher konfigurieren, um einen erfolgreichen Serverstart und eine sichere Datenbankauthentifizierung sicherzustellen.
+
+Weitere Informationen zur Konfiguration finden Sie im Installations- und Konfigurationshandbuch.
+
+**Änderungen an Plattform und Kompatibilität**
+
+* Unterstützung für Servlet-Spezifikation 5+
+* Auf der Grundlage der Jakarta EE 9-Konformität
+
+**Namespace-Migrationsanforderung**
+
+* Jakarta EE 9 führt eine Namespace-Änderung von `javax.*` zu `jakarta.*` ein
+* Alle **benutzerdefinierten DSCs** müssen in den `jakarta.*`-Namespace migriert werden
+* AEM Forms 6.5 LTS SP1 unterstützt **nur Jakarta EE 9+-basierte Anwendungsserver**
+
+Weitere Informationen finden Sie unter **Migration von Java zum Jakarta-Namespace**.
+
+**Migration von JavaAX zum Jakarta-Namespace**
+
+#### Migration von `javax` zu `jakarta` Namespace
+
+Ab **AEM Forms 6.5 LTS SP1** werden nur Anwendungsserver unterstützt, die **Jakarta Servlet API 5/6** implementieren. Mit **Jakarta EE 9 und höher** wechselten alle APIs vom `javax.{}`-Namespace zum `jakarta.`.
+
+Daher müssen **benutzerdefinierten DSCs den `jakarta` Namespace verwenden**. Benutzerdefinierte Komponenten, die mit `javax.{}` APIs erstellt wurden **sind mit** unterstützten Anwendungsservern nicht kompatibel.
+
+**Migrationsoptionen für benutzerdefinierte DSCs**
+
+Sie können vorhandene benutzerdefinierte DSCs mit einem der folgenden Ansätze migrieren:
+
+**Option 1: Source-Code-Migration (empfohlen)**
+
+* Alle Importanweisungen von `javax.{}` nach `jakarta.` aktualisieren
+* Erstellen Sie die benutzerdefinierten DSC-Projekte neu und kompilieren Sie sie erneut
+* Stellen Sie die aktualisierten Komponenten erneut auf dem Anwendungsserver bereit
+
+**Vorteile:**
+
+* Stellt langfristige Kompatibilität mit Jakarta EE 9+ sicher
+* Am besten geeignet für aktiv gepflegte Projekte
+
+**Option 2: Binäre Migration mit Eclipse Transformer**
+
+* Verwenden Sie das **Eclipse Transformer**-Tool, um kompilierte Binärdateien (`.jar`, `.war`) von `javax` in `jakarta` zu konvertieren
+* Keine Quellcodeänderungen oder Neukompilierung erforderlich
+* Stellen Sie die umgewandelten Binärdateien erneut auf dem Anwendungsserver bereit
+
+>[!NOTE]
+>
+> Die Binärtransformation wird auf der **Bytecode-Ebene** durchgeführt.
+
+Im Folgenden finden Sie gängige Beispiele für Namespace-Änderungen, die während der Migration erforderlich sind:
+
+Vorher (javax)    Nach (Jakarta)
+javax.servlet. **jakarta.servlet**
+javax.servlet.http. **jakarta.servlet.http.**
+
+**Beispielimport-Zuordnungen**
+
+Die folgende Tabelle zeigt allgemeine Namespace-Änderungen, die bei der Migration von `javax` zu `jakarta` erforderlich sind:
+
+| Vorher (`javax`) | Nach (`jakarta`) |
+| ---------------------- | ------------------------ |
+| `javax.servlet.*` | `jakarta.servlet.*` |
+| `javax.servlet.http.*` | `jakarta.servlet.http.*` |
+
+Verwenden Sie diese Zuordnungen als Referenz beim Aktualisieren von benutzerdefiniertem DSC-Quell-Code oder beim Überprüfen umgewandelter Binärdateien.
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
@@ -278,7 +362,7 @@ OSGi-Abhängigkeitszyklen, die verhinderten, dass die HTL Script Engine-Factory 
 #### Lokalisierung{#foundation-localization-65-lts-sp1}
 
 * Die Zeichenfolgen im Dialogfeld „Zugriffskontrolle entfernen“ der Liste „Berechtigungen“ wurden lokalisiert, um die richtigen Übersetzungen anzuzeigen. (GRANITE-59427)
-* Im Modell-Editor wurde im Dialogfeld zum Hinzufügen von Regeln für „ODER-Verzweigungs-Eigenschaften“ ein Problem behoben, bei dem mehrere Zeichenfolgen der Benutzeroberfläche, einschließlich Operatoren und Feldbezeichnungen, nicht lokalisiert angezeigt wurden. Alle Zeichenfolgen werden jetzt mit korrekter Lokalisierung angezeigt. (CQ-4354014)
+* Im Modell-Editor wurde im Dialogfeld zum Hinzufügen von Regeln für „ODER-Teilungs-Eigenschaften“ ein Problem behoben, bei dem mehrere Zeichenfolgen der Benutzeroberfläche, einschließlich Operatoren und Feldbezeichnungen, nicht lokalisiert angezeigt wurden. Alle Zeichenfolgen werden jetzt mit korrekter Lokalisierung angezeigt. (CQ-4354014)
 * Es wurde eine fehlende Übersetzung für die QuickInfo „Beschreibung anzeigen für“ im Dialogfeld zum Bearbeiten von Workflow-Modellen hinzugefügt. (CQ-4347996)
 
 #### Oak {#foundation-oak-65-lts-sp1}
@@ -448,6 +532,7 @@ Eclipse Jetty 11.0.x wird als Servlet-Engine für den Schnellstart verwendet.
 ### Aktualisieren {#upgrade}
 
 * Weitere Informationen zum Upgrade-Verfahren finden Sie unter [Dokumentation zu Upgrades](/help/sites-deploying/upgrade.md).
+* Detaillierte Aktualisierungsanweisungen finden Sie im [Aktualisierungshandbuch für AEM Forms 6.5 LTS SP1 on JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Best Practices für AEM 6.5 LTS Service Pack-Upgrades
 
@@ -520,14 +605,15 @@ Die vollständige Matrix der unterstützten Plattformen, einschließlich der Sup
 
 <!-- CARRY OVER EACH RELEASE -->
 
-Adobe überprüft kontinuierlich die Produktfunktionen, um den Kundenwert zu verbessern, indem ältere Funktionen modernisiert oder ersetzt werden. Diese Änderungen werden mit größter Sorgfalt vorgenommen, um Abwärtskompatibilität zu gewährleisten.
+Adobe überprüft und entwickelt die Produktfunktionen kontinuierlich weiter, um durch die Modernisierung oder den Ersatz älterer Funktionen einen größeren Kundennutzen zu erzielen. Diese Änderungen werden unter sorgfältiger Berücksichtigung der Abwärtskompatibilität implementiert.
 
-Für die Bekanntgabe der bevorstehenden Entfernung oder Ersetzung von Adobe Experience Manager (AEM)-Funktionen gelten die folgenden Regeln:
+Um Transparenz zu gewährleisten und eine angemessene Planung zu ermöglichen, folgt Adobe diesem Prozess der Einstellung von Adobe Experience Manager (AEM):
 
-1. Zunächst wird angekündigt, dass die betreffende Funktion veraltet ist. Obwohl diese Funktionen veraltet sind, sind sie weiterhin verfügbar, sie werden jedoch nicht weiter verbessert.
-1. Das Entfernen veralteter Funktionen erfolgt frühestens mit Einführung der nächsten Hauptversion. Das tatsächliche Zieldatum für die Entfernung wird später bekannt gegeben.
+* Die Einstellung wird zuerst angekündigt. Veraltete Funktionen bleiben weiterhin verfügbar, werden aber nicht mehr erweitert.
 
-Dieser Prozess räumt Kunden mindestens einen Veröffentlichungszyklus ein, um ihre Implementierung an eine neue Version oder die Nachfolgeversion einer veralteten Funktion anzupassen, bevor die Funktion tatsächlich entfernt wird.
+* Die Entfernung erfolgt nicht früher als bei der nächsten Hauptversion. Der geplante Zeitplan für die Entfernung wird separat mitgeteilt.
+
+* Kunden, die auf unterstützte Alternativen umstellen möchten, erhalten mindestens einen Versionszyklus, bevor eine Funktion entfernt wird.
 
 ### Veraltete Funktionen {#deprecated-features}
 
@@ -543,6 +629,10 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 ### Entfernte Funktionen {#removed-features}
 
 In diesem Abschnitt werden die Funktionen aufgeführt, die aus AEM 6.5 LTS entfernt wurden. In früheren Versionen wurden diese Funktionen als veraltet gekennzeichnet.
+
+* Die Unterstützung für RDBMK für die Persistenz des CRX-Repositorys wurde entfernt.
+
+* In Clusterumgebungen ist MongoMK jetzt die einzige unterstützte Option für die Repository-Persistenz.
 
 | Bereich | Funktion | Ersatz | Version (SP) |
 | --- | --- | --- | --- |
