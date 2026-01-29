@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 8f5a06dc80943362acebfd7b19fed13c051417d1
+source-git-commit: 6a6a79663579e4d63e68ae6c9a4bec97f24032f9
 workflow-type: tm+mt
-source-wordcount: '7751'
+source-wordcount: '7745'
 ht-degree: 93%
 
 ---
@@ -75,8 +75,6 @@ Weitere Informationen zur Konfiguration finden Sie im Installations- und Konfigu
 
 Weitere Informationen finden Sie unter **Migration von Java zum Jakarta-Namespace**.
 
-**Migration von JavaAX zum Jakarta-Namespace**
-
 #### Migration von `javax` zu `jakarta` Namespace
 
 Ab **AEM Forms 6.5 LTS SP1** werden nur Anwendungsserver unterstützt, die **Jakarta Servlet API 5/6** implementieren. Mit **Jakarta EE 9 und höher** wechselten alle APIs vom `javax.{}`-Namespace zum `jakarta.`.
@@ -110,9 +108,9 @@ Sie können vorhandene benutzerdefinierte DSCs mit einem der folgenden Ansätze 
 
 Im Folgenden finden Sie gängige Beispiele für Namespace-Änderungen, die während der Migration erforderlich sind:
 
-Vorher (javax)    Nach (Jakarta)
-javax.servlet. **jakarta.servlet**
-javax.servlet.http. **jakarta.servlet.http.**
+* Vorher (javax)    Nach (Jakarta)
+* javax.servlet. **jakarta.servlet**
+* javax.servlet.http. **jakarta.servlet.http.**
 
 **Beispielimport-Zuordnungen**
 
@@ -532,7 +530,7 @@ Eclipse Jetty 11.0.x wird als Servlet-Engine für den Schnellstart verwendet.
 ### Aktualisieren {#upgrade}
 
 * Weitere Informationen zum Upgrade-Verfahren finden Sie unter [Dokumentation zu Upgrades](/help/sites-deploying/upgrade.md).
-* Detaillierte Aktualisierungsanweisungen finden Sie im [Aktualisierungshandbuch für AEM Forms 6.5 LTS SP1 on JEE](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Detaillierte Aktualisierungsanweisungen finden Sie im [Aktualisierungshandbuch für AEM Forms 6.5 LTS SP1 on JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Best Practices für AEM 6.5 LTS Service Pack-Upgrades
 
