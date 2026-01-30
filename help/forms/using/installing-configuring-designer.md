@@ -89,8 +89,8 @@ Beim Aktualisieren der neuesten Version (6.5.16.0) von AEM Forms Designer gibt e
 Wenn Sie ein eigenständiges Installationsprogramm für AEM Forms Designer verwenden, führen Sie die folgenden Schritte aus:
 
 1. Vor der Installation von **AEM Forms Designer6.5.16.0** müssen Benutzende alle vorherigen Versionen deinstallieren.
-1. Laden Sie [AEM Forms Designer 6.5.15.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) von der Seite von AEM Forms-Versionen herunter und installieren Sie es.
-1. Nach erfolgreicher Installation von **AEM Forms Designer6.5.15.0** laden Sie [AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) herunter und installieren Sie es durch Doppelklick auf die heruntergeladene Installationsdatei.
+1. Laden Sie [AEM Forms Designer 6.5.15.0](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) von der Seite von AEM Forms-Versionen herunter und installieren Sie es.
+1. Nach erfolgreicher Installation von **AEM Forms Designer6.5.15.0** laden Sie [AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) herunter und installieren Sie es durch Doppelklick auf die heruntergeladene Installationsdatei.
 
 +++
 
@@ -98,7 +98,7 @@ Wenn Sie ein eigenständiges Installationsprogramm für AEM Forms Designer verwe
 
 Wenn Sie ein eigenständiges Installationsprogramm für AEM Forms Designer verwenden, führen Sie die folgenden Schritte aus:
 
-1. Laden Sie die neueste Version von AEM Forms Designer vom [Software Distribution-Portal](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) herunter.
+1. Laden Sie die neueste Version von AEM Forms Designer vom [Software Distribution-Portal](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) herunter.
 1. Installieren Sie die neueste Version von AEM Forms Designer, indem Sie auf die heruntergeladene Installationsdatei doppelklicken.
 
 +++
