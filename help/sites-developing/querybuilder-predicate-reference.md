@@ -381,7 +381,7 @@ Unterstützt die Facettenextraktion. Stellt für jeden eindeutigen Eigenschaftsw
 
 * **depth**
 
-  Eine Reihe von Platzhalterebenen, unter denen die Eigenschaft und der relative Pfad vorhanden sein können. `property=size depth=2` überprüft beispielsweise Knoten und Größe, Knoten/&amp;ast;/size und Knoten/&amp;ast;/&amp;ast;/size.
+  Eine Reihe von Platzhalterebenen, unter denen die Eigenschaft und der relative Pfad vorhanden sein können. `property=size depth=2` überprüft beispielsweise Knoten und Größe, Knoten/&ast;/size und Knoten/&ast;/&ast;/size.
 
 ### `rangeproperty` {#rangeproperty}
 
