@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
 workflow-type: tm+mt
-source-wordcount: '2321'
-ht-degree: 97%
+source-wordcount: '2291'
+ht-degree: 65%
 
 ---
 
@@ -60,9 +60,9 @@ ht-degree: 97%
 * [tagsearch](/help/sites-developing/querybuilder-predicate-reference.md#tagsearch)
 * [Typ](/help/sites-developing/querybuilder-predicate-reference.md#type)
 
-### boolproperty {#boolproperty}
+### `boolproperty` {#boolproperty}
 
-Übereinstimmung mit JCR BOOLEAN-Eigenschaften. Akzeptiert nur die Werte „`true`“ und „`false`“. Wenn der Wert „`false`“ ist, besteht eine Übereinstimmung, wenn die Eigenschaft den Wert „`false`“ hat oder wenn sie überhaupt nicht existiert. Dies kann für die Prüfung auf boolesche Flags nützlich sein, die nur festgelegt werden, wenn sie aktiviert sind.
+Übereinstimmung mit JCR BOOLEAN-Eigenschaften. Akzeptiert nur die Werte &quot;`true`&quot; und &quot;`false`&quot;. Ist hierfür &quot;`false`&quot; festgelegt, liegt eine Übereinstimmung vor, wenn die Eigenschaft über den Wert &quot;`false`&quot; verfügt oder überhaupt nicht vorhanden ist. Dies ist nützlich, um auf boolesche Flags zu prüfen, die nur gesetzt werden, wenn sie aktiviert sind.
 
 Der übernommene Parameter „`operation`“ hat keine Bedeutung.
 
@@ -73,10 +73,10 @@ Unterstützt die Facettenextraktion. Erstellt für jeden Wert (`true` oder `fals
 * **boolproperty**
 Relativer Pfad der Eigenschaft, z. B. `myFeatureEnabled` oder `jcr:content/myFeatureEnabled`.
 
-* **Wert**
-Wert, auf den die Eigenschaft geprüft werden soll, „`true`“ oder „`false`“.
+* **value**
+Wert, auf den die Eigenschaft überprüft werden soll, &quot;`true`&quot; oder &quot;`false`&quot;.
 
-### contentfragment {#contentfragment}
+### `contentfragment` {#contentfragment}
 
 Beschränkt das Ergebnis auf Inhaltsfragmente.
 
@@ -88,11 +88,11 @@ Facettenextraktion wird nicht unterstützt.
 
 * **contentfragment** Kann mit jedem Wert verwendet werden, um auf Inhaltsfragmente zu prüfen.
 
-### dateComparison {#datecomparison}
+### `dateComparison` {#datecomparison}
 
 Vergleicht zwei JCR DATE-Eigenschaften miteinander. Sie können testen, ob sie gleich, ungleich, größer oder größer-oder-gleich sind.
 
-Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
+Ein reines Filterprädikat, das keinen Suchindex verwenden kann.
 
 #### Eigenschaften {#properties-2}
 
@@ -106,15 +106,16 @@ Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
 
 * **operation**
 
-  „`equals`“ für genaue Übereinstimmung, „`!=`“ für unterschiedliche Werte, „`greater`“, wenn property1 größer ist als property2, „`>=`“, wenn property1 größer oder gleich property2 ist. Der Standardwert lautet „`equals`“.
+  „`equals`“ für genaue Übereinstimmung, „`!=`“ für unterschiedliche Werte, „`greater`“, wenn property1 größer ist als property2, „`>=`“, wenn property1 größer oder gleich property2 ist. Der Standardwert lautet &quot;`equals`.“
 
-### daterange {#daterange}
+### `daterange` {#daterange}
 
-Dieses Prädikat gleicht JCR-Datumseigenschaften mit einem Datums-/Zeitintervall ab. Hierbei wird das ISO8601-Format für Daten und Uhrzeiten (`YYYY-MM-DDTHH:mm:ss.SSSZ`) verwendet, wobei auch Teildarstellungen möglich sind, z. B. `YYYY-MM-DD`. Alternativ kann der Zeitstempel als Anzahl von Millisekunden seit 1970 in der UTC-Zeitzone, dem UNIX®-Zeitformat, angegeben werden.
+Gleicht JCR DATE-Eigenschaften mit einem Datums- und Zeitintervall ab. Verwendet ISO8601
+-Format für Datums- und Uhrzeitangaben (`YYYY-MM-DDTHH:mm:ss.SSSZ`) und ermöglicht auch partielle Darstellungen, z. B. `YYYY-MM-DD`. Alternativ kann der Zeitstempel als Anzahl von Millisekunden seit 1970 in der UTC-Zeitzone, dem UNIX®-Zeitformat, angegeben werden.
 
 Sie können nach allen Elementen zwischen zwei Zeitstempeln suchen, nach allem, was neuer oder älter als ein jeweiliges Datum ist, und aus inklusiven oder offenen Intervallen auswählen.
 
-Unterstützt die Facettenextraktion. Stellt die Behälter „heute“, „diese Woche“, „diesen Monat“, „letzte 3 Monate“, „dieses Jahr“, „letztes Jahr“ und „vor dem letzten Jahr“ bereit.
+Unterstützt die Facettenextraktion. Stellt die Buckets „heute“, „diese Woche“, „diesen Monat“, „letzte 3 Monate“, „dieses Jahr“, „letztes Jahr“ und „früher als letztes Jahr“ bereit.
 
 Filtern wird nicht unterstützt.
 
@@ -130,7 +131,7 @@ Filtern wird nicht unterstützt.
 
 * **lowerOperation**
 
-  „`>`“ (neuer) oder „`>=`“ (gleich alt oder neuer), gilt für `lowerBound`. Der Standardwert lautet „`>`“.
+  „`>`“ (neuer) oder „`>=`“ (gleich alt oder neuer), gilt für `lowerBound`. Der Standardwert lautet &quot;`>`.“
 
 * **upperBound**
 
@@ -138,17 +139,17 @@ Filtern wird nicht unterstützt.
 
 * **upperOperation**
 
-  „`<`“ (älter) oder „`<=`“ (gleich alt oder älter), gilt für `upperBound`. Der Standardwert lautet „`<`“.
+  „`<`“ (älter) oder „`<=`“ (gleich alt oder älter), gilt für `upperBound`. Der Standardwert lautet &quot;`<`.“
 
 * **timeZone**
 
   Kennung der Zeitzone, die verwendet werden soll, wenn keine ISO-8601-Datumszeichenfolge angegeben wird. Der Standardwert ist die standardmäßige Zeitzone des Systems.
 
-### excludepaths {#excludepaths}
+### `excludepaths` {#excludepaths}
 
 Schließt Knoten aus dem Ergebnis aus, wenn ihr Pfad mit einem regulären Ausdruck übereinstimmt.
 
-Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
+Ein reines Filterprädikat, das keinen Suchindex verwenden kann.
 
 Facettenextraktion wird nicht unterstützt.
 
@@ -158,7 +159,7 @@ Facettenextraktion wird nicht unterstützt.
 
   Regulärer Ausdruck, der anhand von Ergebnispfaden ausgewertet wird, wobei übereinstimmende Vorkommen aus dem Ergebnis ausgeschlossen werden.
 
-### fulltext {#fulltext}
+### `fulltext` {#fulltext}
 
 Sucht nach Ausdrücken im Volltextindex.
 
@@ -176,9 +177,9 @@ Facettenextraktion wird nicht unterstützt.
 
   Der relative Pfad, der in der Eigenschaft oder dem Unterknoten durchsucht werden soll. Diese Eigenschaft ist optional.
 
-### group {#group}
+### `group` {#group}
 
-Ermöglicht die Erstellung verschachtelter Bedingungen. Gruppen können verschachtelte Gruppen enthalten. Alles in einer Query Builder-Abfrage gehört implizit zu einer Stammgruppe, die auch die Parameter `p.or` und `p.not` aufweisen kann.
+Ermöglicht das Erstellen verschachtelter Bedingungen. Gruppen können verschachtelte Gruppen enthalten. Alles in einer Query Builder-Abfrage gehört implizit zu einer Stammgruppe, die auch die Parameter `p.or` und `p.not` aufweisen kann.
 
 Beispiel für die Zuordnung einer von zwei Eigenschaften anhand eines Werts:
 
@@ -190,7 +191,7 @@ group.2_property=navTitle
 group.2_property.value=My Page
 ```
 
-Dies ist konzeptionell `(1_property` ODER `2_property)`.
+Konzeptionell `(1_property` ODER `2_property)`.
 
 Beispiel für verschachtelte Gruppen:
 
@@ -203,19 +204,19 @@ group.2_group.path=/content/dam/geometrixx
 group.2_group.type=dam:Asset
 ```
 
-Hierbei wird nach dem Begriff „**Management**“ innerhalb von Seiten in `/content/geometrixx/en` oder in Assets in `/content/dam/geometrixx` gesucht.
+Sucht nach dem Begriff &quot;**Management** innerhalb von Seiten in `/content/geometrixx/en` oder in Assets in `/content/dam/geometrixx`.
 
-Dies ist konzeptionell `fulltext AND ( (path AND type) OR (path AND type) )`. Solche ODER-Verknüpfungen sind aus Leistungsgründen auf gute Indizes angewiesen.
+Konzeptionell `fulltext AND ( (path AND type) OR (path AND type) )`. Solche ODER-Verknüpfungen sind aus Leistungsgründen auf gute Indizes angewiesen.
 
 #### Eigenschaften {#properties-6}
 
 * **p.or**
 
-  Ist hierfür „`true`“ festgelegt, muss nur ein Prädikat in der Gruppe übereinstimmen. Standardmäßig ist „`false`“ festgelegt, was bedeutet, dass alle übereinstimmen müssen.
+  Ist hierfür &quot;`true`&quot; festgelegt, muss nur ein Prädikat in der Gruppe übereinstimmen. Standardmäßig ist &quot;`false`&quot; festgelegt, was bedeutet, dass alle übereinstimmen müssen.
 
 * **p.not**
 
-  Ist hierfür „`true`“ festgelegt, wird die Gruppe nicht beachtet (standardmäßig „`false`“).
+  Ist hierfür &quot;`true`&quot; festgelegt, wird die Gruppe nicht beachtet (standardmäßig &quot;`false`„).
 
 * **&lt;predicate>**
 
@@ -229,7 +230,7 @@ Dies ist konzeptionell `fulltext AND ( (path AND type) OR (path AND type) )`. So
 
 Beschränkt das Ergebnis auf Elemente, bei denen die aktuelle Sitzung die angegebenen [JCR-Privilegien](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) aufweist.
 
-Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen. Facettenextraktion wird nicht unterstützt.
+Ein reines Filterprädikat, das keinen Suchindex verwenden kann. Facettenextraktion wird nicht unterstützt.
 
 #### Eigenschaften {#properties-7}
 
@@ -237,11 +238,11 @@ Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen. Facettene
 
   Kommagetrennte JCR-Berechtigungen, die die aktuelle Benutzersitzung für den jeweiligen Knoten ALLE aufweisen muss. Zum Beispiel, `jcr:write`, `jcr:modifyAccessControl`.
 
-### language {#language}
+### `language` {#language}
 
 Findet CQ-Seiten in einer bestimmten Sprache. Hierbei wird sowohl die Spracheigenschaft der Seite als auch der Seitenpfad betrachtet, der häufig die Sprache oder das Gebietsschema in einer Site-Struktur der obersten Ebene enthält.
 
-Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
+Ein reines Filterprädikat, das keinen Suchindex verwenden kann.
 
 Unterstützt die Facettenextraktion. Stellt Buckets für jeden eindeutigen Sprach-Code zur Verfügung.
 
@@ -249,13 +250,13 @@ Unterstützt die Facettenextraktion. Stellt Buckets für jeden eindeutigen Sprac
 
 * **language**
 
-  ISO-Sprach-Code, z. B. „`de`“
+  ISO-Sprach-Code, z. B. &quot;`de`.“
 
-### mainasset {#mainasset}
+### `mainasset` {#mainasset}
 
-Prüft, ob ein Knoten ein DAM-Haupt-Asset und kein Unter-Asset ist. Dies ist im Allgemeinen jeder Knoten, der sich nicht in einem „Unter-Asset“-Knoten befindet. Hierbei wird nicht auf den Knotentyp `dam:Asset` geprüft. Legen Sie einfach „`mainasset=true`“ oder „`mainasset=false`“ fest, um dieses Prädikat zu verwenden. Es gibt keine weiteren Eigenschaften.
+Prüft, ob ein Knoten ein DAM-Haupt-Asset und kein Unter-Asset ist. Im Prinzip befindet sich jeder Knoten nicht in einem „Unter-Assets“-Knoten. Es wird nicht auf den `dam:Asset` Knotentyp geprüft. Um dieses Prädikat zu verwenden, setzen Sie &quot;`mainasset=true`&quot; oder &quot;`mainasset=false`&quot;, es gibt keine weiteren Eigenschaften.
 
-Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen.
+Ein reines Filterprädikat, das keinen Suchindex verwenden kann.
 
 Es unterstützt die Facettenextraktion und bietet zwei Buckets für Haupt- und Unter-Assets.
 
@@ -269,7 +270,7 @@ Es unterstützt die Facettenextraktion und bietet zwei Buckets für Haupt- und U
 
 Sucht Objekte, die Mitglieder einer bestimmten [Sling-Ressourcensammlung](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) sind.
 
-Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen. Facettenextraktion wird nicht unterstützt.
+Ein reines Filterprädikat, das keinen Suchindex verwenden kann. Facettenextraktion wird nicht unterstützt.
 
 #### Eigenschaften {#properties-10}
 
@@ -277,7 +278,7 @@ Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen. Facettene
 
   Pfad der Sling-Ressourcensammlung.
 
-### nodename {#nodename}
+### `nodename` {#nodename}
 
 Sucht nach Namen von JCR-Knoten.
 
@@ -289,9 +290,9 @@ Unterstützt die Facettenextraktion. Stellt Buckets für alle eindeutigen Knoten
 
   Knotennamenmuster, das Platzhalter ermöglicht: `*` = beliebiges oder kein Zeichen, `?` = beliebiges Zeichen, `[abc]` = nur Zeichen in eckigen Klammern.
 
-### notexpired {#notexpired}
+### `notexpired` {#notexpired}
 
-Wertet Elemente aus, indem überprüft wird, ob eine JCR DATE-Eigenschaft größer oder gleich der aktuellen Server-Zeit ist. Dies kann verwendet werden, um eine Datumseigenschaft wie „`expiresAt`“ zu überprüfen und das Ergebnis auf diejenigen zu beschränken, die noch nicht abgelaufen sind (`notexpired=true`) bzw. bereits abgelaufen sind ( `notexpired=false`).
+Wertet Elemente aus, indem überprüft wird, ob eine JCR DATE-Eigenschaft größer oder gleich der aktuellen Server-Zeit ist. Kann verwendet werden, um eine Datumseigenschaft wie &quot;`expiresAt`&quot; zu überprüfen und das Ergebnis auf diejenigen zu beschränken, die noch nicht abgelaufen sind ( `notexpired=true`) bzw. bereits abgelaufen sind ( `notexpired=false`).
 
 Filtern wird nicht unterstützt.
 
@@ -307,9 +308,9 @@ Unterstützt die Facettenextraktion auf die gleiche Weise wie das Prädikat „d
 
   Relativer Pfad zur zu überprüfenden `DATE`-Eigenschaft (erforderlich).
 
-### orderby {#orderby}
+### `orderby` {#orderby}
 
-Ermöglicht die Sortierung der Ergebnisse. Wenn nach mehreren Eigenschaften sortiert werden muss, muss dieses Prädikat unter Verwendung des numerischen Präfixes mehrfach hinzugefügt werden, z. B. `1_orderby=first`, `2_oderby=second`.
+Sortiert die Ergebnisse. Wenn nach mehreren Eigenschaften sortiert werden muss, muss dieses Prädikat unter Verwendung des numerischen Präfixes mehrfach hinzugefügt werden, z. B. `1_orderby=first`, `2_oderby=second`.
 
 #### Eigenschaften {#properties-13}
 
@@ -325,7 +326,7 @@ Ermöglicht die Sortierung der Ergebnisse. Wenn nach mehreren Eigenschaften sort
 
   Wird hierfür `ignore` festgelegt, wird die Groß-/Kleinschreibung nicht beachtet, „a“ kommt also vor „B“. Wird dies leer- oder ausgelassen, wird bei der Sortierung die Groß-/Kleinschreibung beachtet, „B“ kommt also vor „a“
 
-### path {#path}
+### `path` {#path}
 
 Sucht innerhalb eines angegebenen Pfads.
 
@@ -335,21 +336,22 @@ Facettenextraktion wird nicht unterstützt.
 
 * **path**
 
-  Pfadmuster. Dies hängt von „exact“ ab, entweder stimmt eine gesamte Teilbaumstruktur überein (wie wenn in xpath `//*` angehängt wird, wobei der Basispfad nicht mit eingeschlossen wird) (exact=false, Standardwert) oder nur ein exakter Pfad stimmt überein, der Platzhalter (`*`) enthalten kann. Ist „self“ festgelegt, wird die gesamte Teilbaumstruktur einschließlich des Basisknotens durchsucht.
+  Pfadmuster. Wenn `exact=false` (Standard), stimmt die Suche mit dem gesamten Teilbaum unter dem angegebenen Pfad überein - ähnlich wie beim Anhängen von `//*` in XPath, wobei der Basispfad selbst nicht einbezogen wird. Wenn `exact=true`, stimmt die Suche nur mit dem exakten Pfad überein, der `*` Platzhalter enthalten kann. Wenn `self` festgelegt ist, umfasst die Suche den Basisknoten und die gesamte Unterstruktur.
+
 
 * **exact**
 
-  Wenn für `exact` „true/on“ aktiviert ist, muss der exakte Pfad übereinstimmen; er darf bestimmte einfache Platzhalter (`*`) enthalten, die Namen entsprechen, aber nicht `/`. Wenn die Option „false“ ist (Standard), werden alle untergeordneten Elemente berücksichtigt (optional).
+  Wenn `exact` den Wert „true“ hat (aktiviert), muss der exakte Pfad übereinstimmen, darf aber bestimmte einfache Platzhalter ( `*`) enthalten, die Namen entsprechen, aber nicht &quot;`/`&quot;. Wenn der Wert „false“ ist (Standard), werden alle untergeordneten Elemente berücksichtigt (optional).
 
 * **flat**
 
-  Durchsucht nur die direkt untergeordneten Elemente (wie wenn in xpath „`/*`“ angehängt wird). Wird nur verwendet, wenn „`exact`“ nicht „true“ ist (optional).
+  Durchsucht nur die direkt untergeordneten Elemente (wie wenn in `/*` &quot;`xpath`&quot; angehängt wird). Wird nur verwendet, wenn &quot;`exact`&quot; nicht „true“ ist (optional).
 
 * **self**
 
   Durchsucht die Unterstruktur, aber bezieht den als Pfad angegebenen Basisknoten mit ein (keine Platzhalter).
 
-### property {#property}
+### `property` {#property}
 
 Führt einen Abgleich von JCR-Eigenschaften und ihren Werten durch.
 
@@ -375,15 +377,15 @@ Unterstützt die Facettenextraktion. Stellt für jeden eindeutigen Eigenschaftsw
 
 * **operation**
 
-  `equals` für eine exakte Übereinstimmung (Standard), `unequals` für unterschiedliche Werte, `like` zur Verwendung der xpath-Funktion `jcr:like` (optional), `not`, wenn keine Übereinstimmung vorliegt (z. B. `not(@prop)` in xpath, Wertparameter wird ignoriert), oder `exists` zur Überprüfung auf Vorhandensein (Wert kann „true“ sein – Eigenschaft muss vorhanden sein, Standard – oder „false“ – genau wie `not`).
+  Verwenden Sie `equals` für eine exakte Übereinstimmung (Standard) und `unequals` für einen Ungleichheitsvergleich. Verwenden Sie `like`, um die optionale XPath-Funktion `jcr:like` anzuwenden. Verwenden Sie `not` für keine Übereinstimmung (z. B. `not(@prop)` in XPath). In diesem Fall wird der `value` ignoriert. Verwenden Sie `exists`, um zu überprüfen, ob eine Eigenschaft vorhanden ist: `true` (Standard) erfordert die Eigenschaft und `false` entspricht `not`.
 
 * **depth**
 
-  Anzahl der Platzhalterebenen, unter denen die Eigenschaft/der relative Pfad vorhanden sein kann (z. B. wird mit `property=size depth=2` Knoten/Größe, Knoten/*/Größe und Knoten/*/*/Größe überprüft).
+  Eine Reihe von Platzhalterebenen, unter denen die Eigenschaft und der relative Pfad vorhanden sein können. `property=size depth=2` überprüft beispielsweise Knoten und Größe, Knoten/&amp;ast;/size und Knoten/&amp;ast;/&amp;ast;/size.
 
-### rangeproperty {#rangeproperty}
+### `rangeproperty` {#rangeproperty}
 
-Ordnet eine JCR-Eigenschaft einem Intervall zu. Dies gilt für Eigenschaften mit linearen Typen wie `LONG`, `DOUBLE` und `DECIMAL`. Details zu `DATE` finden Sie im Abschnitt zum Prädikat „daterange“, das für Eingaben im Datumsformat optimiert wurde.
+Ordnet eine JCR-Eigenschaft einem Intervall zu. Gilt für Eigenschaften mit linearen Typen wie `LONG`, `DOUBLE` und `DECIMAL`. Details zu `DATE` finden Sie im Abschnitt zum Prädikat „daterange“, das für Eingaben im Datumsformat optimiert wurde.
 
 Sie können eine untere Grenze und eine obere Grenze oder nur eine von beiden definieren. Die Operation (z. B. „lesser than“ oder „lesser or equals“) kann auch einzeln für die untere und obere Grenze festgelegt werden.
 
@@ -401,7 +403,7 @@ Facettenextraktion wird nicht unterstützt.
 
 * **lowerOperation**
 
-  „`>`“ (Standard) oder „`>=`“, gilt für den `lowerValue`
+  &quot;`>`&quot; (Standard) oder &quot;`>=`&quot;, gilt für die `lowerValue`
 
 * **upperBound**
 
@@ -409,15 +411,15 @@ Facettenextraktion wird nicht unterstützt.
 
 * **upperOperation**
 
-  „`<`“ (Standard) oder „`<=`“, gilt für den `lowerValue`
+  &quot;`<`&quot; (Standard) oder &quot;`<=`&quot;, gilt für die `lowerValue`
 
 * **decimal**
 
    „`true`“, wenn die aktivierte Eigenschaft vom Typ „Decimal“ ist.
 
-### relativedaterange {#relativedaterange}
+### `relativedaterange` {#relativedaterange}
 
-Gleicht `JCR DATE`-Eigenschaften anhand von Zeit-Offsets, die relativ zur aktuellen Serverzeit sind, mit einem Datums-/Zeitintervall ab. Sie können `lowerBound` und `upperBound` entweder anhand eines Millisekundenwerts oder der bugzilla-Syntax `1s 2m 3h 4d 5w 6M 7y` (eine Sekunde, zwei Minuten, drei Stunden, vier Tage, fünf Wochen, sechs Monate, sieben Jahre) angeben. Mit dem Präfix „`-`“ geben Sie einen negativen Offset vor der aktuellen Zeit an. Wenn Sie nur `lowerBound` oder `upperBound` angeben, wird für die jeweils andere Grenze standardmäßig „0“ festgelegt (bedeutet die aktuelle Zeit).
+Gleicht `JCR DATE` Eigenschaften anhand von Zeit-Offsets, die relativ zur aktuellen Serverzeit sind, mit einem Datums- und Zeitintervall ab. Sie können `lowerBound` und `upperBound` entweder mit einem Millisekundenwert oder dem `1s 2m 3h 4d 5w 6M 7y` der Bugzilla-Syntax angeben. Mit dem Präfix „`-`“ geben Sie einen negativen Offset vor der aktuellen Zeit an. Wenn Sie nur `lowerBound` oder `upperBound` angeben, wird für die jeweils andere Grenze standardmäßig „0“ festgelegt (bedeutet die aktuelle Zeit).
 
 Beispiel:
 
@@ -443,9 +445,9 @@ Unterstützt die Facettenextraktion auf die gleiche Weise wie das Prädikat „d
 
   Untere Datumsgrenze in Millisekunden oder `1s 2m 3h 4d 5w 6M 7y` (eine Sekunde, zwei Minuten, drei Stunden, vier Tage, fünf Wochen, sechs Monate, sieben Jahre) relativ zur aktuellen Server-Zeit. Verwenden Sie „-“ für einen negativen Offset.
 
-### root {#root}
+### `root` {#root}
 
-Stammprädikatgruppe. Unterstützt alle Eigenschaften einer Gruppe und ermöglicht das Festlegen globaler Abfrageparameter.
+Stammprädikatgruppe. Es unterstützt alle Funktionen einer Gruppe und ermöglicht das Festlegen globaler Abfrageparameter.
 
 Der Name „root“ wird in Abfragen nie verwendet, er ist implizit.
 
@@ -461,11 +463,12 @@ Der Name „root“ wird in Abfragen nie verwendet, er ist implizit.
 
 * **p.guessTotal**
 
-  Empfohlen: Vermeiden Sie die Berechnung des vollständigen Ergebnisses, da dies aufwendig sein kann. Besser entweder ein Maximalwert, bis zu dem gezählt werden soll (z. B. 1000, eine Zahl, die Benutzenden ausreichendes Feedback zur groben Größe und exakte Zahlen bei kleineren Ergebnissen liefert), oder „`true`“, um nur bis zum kleinsten notwendigen `p.offset` + `p.limit` zu zählen.
+  Um die Kosten für die Berechnung des vollständigen Ergebnisses zu vermeiden, zählen Sie nicht alle Übereinstimmungen. Legen Sie stattdessen einen maximalen Gesamtwert fest, der bis gezählt werden soll (z. B. `1000`), um Benutzern eine ungefähre Größe und exakte Gesamtwerte für kleinere Ergebnisse zu liefern. Oder setzen Sie sie auf `true` , um nur bis zum erforderlichen Minimum zu zählen: `p.offset + p.limit`.
+
 
 * **p.excerpt**
 
-  Ist hierfür `true` festgelegt, wird im Ergebnis ein Volltextauszug eingeschlossen.
+  Ist hierfür &quot;`true`&quot; festgelegt, wird dem Ergebnis ein Volltextauszug hinzugefügt.
 
 * **p.hits**
 
@@ -477,21 +480,23 @@ Der Name „root“ wird in Abfragen nie verwendet, er ist implizit.
 
    * **vollständig**:
 
-     Sling-JSON-Rendern des Knotens, wobei `jcr:path` den Pfad des Treffers anzeigt: Standardmäßig werden nur die direkten Eigenschaften des Knotens aufgeführt, weiter unten befindliche Unterstrukturen werden mit `p.nodedepth=N` eingeschlossen, wobei 0 die vollständige Unterstruktur bedeutet. Fügen Sie `p.acls=true` hinzu, um die JCR-Berechtigungen der aktuellen Sitzung für das jeweilige Ergebniselement einzuschließen (Zuordnungen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+     Die Ergebnisse werden für jeden Knoten als Sling-JSON gerendert, wobei `jcr:path` den Trefferpfad anzeigt. Standardmäßig umfasst die Antwort nur die direkten Eigenschaften des Knotens. Verwenden Sie `p.nodedepth=N`, um tiefere Inhalte einzuschließen, wobei `0` die gesamte Unterstruktur zurückgibt. Legen Sie `p.acls=true` fest, um die JCR-Berechtigungen der aktuellen Sitzung für jedes Element einzuschließen (`create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+
 
    * **selective**:
 
-     Nur in `p.properties` angegebene Eigenschaften. Dabei handelt es sich um eine mit Leerzeichen getrennte (verwenden Sie &quot;+&quot; in URLs) Liste relativer Pfade. Wenn der relative Pfad eine Tiefe >1 aufweist, werden sie als untergeordnete Elemente angezeigt. Die spezielle jcr:path-Eigenschaft umfasst den Pfad des Treffers.
+     Die Antwort enthält nur die in `p.properties` aufgelisteten Eigenschaften. Dabei handelt es sich um eine durch Leerzeichen getrennte Liste relativer Pfade (`+` in URLs). Wenn ein relativer Pfad eine Tiefe größer als 1 hat, wird er von der Ausgabe als untergeordnete Objekte verschachtelt. Die `jcr:path`-Eigenschaft enthält immer den Trefferpfad.
 
-### savedquery {#savedquery}
 
-Schließt alle Prädikate einer persistenten Query Builder-Abfrage in der aktuellen Abfrage als Untergruppenprädikat ein.
+### `savedquery` {#savedquery}
 
-Dadurch wird keine zusätzliche Abfrage ausgeführt, sondern die aktuelle Abfrage erweitert.
+Sie schließt alle Prädikate einer beständigen Query Builder-Abfrage als Untergruppenprädikat in die aktuelle Abfrage ein.
+
+Es wird keine zusätzliche Abfrage ausgeführt, sondern die aktuelle Abfrage erweitert.
 
 Abfragen können programmgesteuert anhand von `QueryBuilder#storeQuery()` persistiert werden. Das Format kann entweder eine String-Eigenschaft mit mehreren Zeilen oder ein `nt:file`-Knoten sein, der die Abfrage als Textdatei im Java™-Eigenschaftsformat enthält.
 
-Die Facettenextraktion wird für die Prädikate der gespeicherten Abfrage nicht unterstützt 
+Die Facettenextraktion wird für die Prädikate der gespeicherten Abfrage nicht unterstützt.
 
 #### Eigenschaften {#properties-19}
 
@@ -499,7 +504,7 @@ Die Facettenextraktion wird für die Prädikate der gespeicherten Abfrage nicht 
 
   Pfad zur gespeicherten Abfrage (String-Eigenschaft oder `nt:file`-Knoten).
 
-### similar {#similar}
+### `similar` {#similar}
 
 Ähnlichkeitssuche mithilfe der `rep:similar()` () von JCR XPath.
 
@@ -513,7 +518,7 @@ Absoluter Pfad zum Knoten, für den ähnliche Knoten gefunden werden sollen.
 * **local**
 Ein relativer Pfad zu einem untergeordneten Knoten oder `.` für den aktuellen Knoten (optional; der Standard lautet `.`).
 
-### tag {#tag}
+### `tag` {#tag}
 
 Sucht nach Inhalten mit Tags, indem Tag-Titelpfade angegeben werden.
 
@@ -523,7 +528,7 @@ Unterstützt die Facettenextraktion. Stellt Buckets für jedes einzigartige Tag 
 
 * **tag**
 
-  Tag-Titelpfad, nach dem gesucht werden soll, z. B. „Asset-Eigenschaften: Ausrichtung/Querformat“.
+  Tag-Titelpfad, nach dem gesucht werden soll, z. B. „Asset-Eigenschaften: Ausrichtung/Querformat“.
 
 * **N_value**
 
@@ -533,7 +538,7 @@ Unterstützt die Facettenextraktion. Stellt Buckets für jedes einzigartige Tag 
 
   Eigenschaft (bzw. relativer Pfad zur Eigenschaft), die betrachtet werden soll (Standard: `cq:tags`)
 
-### tagid {#tagid}
+### `tagid` {#tagid}
 
 Dieses Prädikat sucht nach Inhalten mit Tags, indem Tag-IDs angegeben werden.
 
@@ -543,19 +548,19 @@ Unterstützt die Facettenextraktion. Stellt Buckets für jedes einzigartige Tag 
 
 * **tagid**
 
-  Tag-ID, damit Sie z. B. nach „`properties:orientation/landscape`“ suchen können.
+  Tag-ID, sodass Sie z. B. nach &quot;`properties:orientation/landscape`&quot; suchen können.
 
 * **N_value**
 
-  Verwenden Sie `1_value`, `2_value` …, um auf mehrere tagids zu prüfen (standardmäßig kombiniert mit `OR`; wenn and=true, dann mit `AND`) (seit 5.6).
+  Verwenden Sie `1_value`, `2_value`, …, um auf mehrere `tagids` zu prüfen (standardmäßig kombiniert mit `OR`, `AND` wenn and=„true“, dann mit ) (seit 5.6).
 
 * **property**
 
   Eigenschaft (bzw. relativer Pfad zur Eigenschaft), die betrachtet werden soll (Standard: `cq:tags`).
 
-### tagsearch {#tagsearch}
+### `tagsearch` {#tagsearch}
 
-Dieses Prädikat sucht nach Inhalten mit Tags, indem Keywords angegeben werden. Hierbei wird zunächst nach Tags gesucht, die diese Keywords im Titel enthalten, woraufhin das Ergebnis auf Elemente mit diesen Tags eingeschränkt wird.
+Dieses Prädikat sucht nach Inhalten mit Tags, indem Keywords angegeben werden. Sucht zuerst nach Tags, die diese Keywords in ihren Titeln enthalten, und beschränkt das Ergebnis dann auf Elemente mit Tags.
 
 Facettenextraktion wird nicht unterstützt.
 
@@ -575,11 +580,11 @@ Facettenextraktion wird nicht unterstützt.
 
 * **all**
 
-  (bool) Suchen im gesamten Tag-Volltext, d. h. alle Titel, Beschreibungen usw. Hat Vorrang vor „l `ang`“.
+  (bool) Suchen im gesamten Tag-Volltext, d. h. alle Titel, Beschreibungen usw. hat Vorrang vor „l `ang`&quot;.
 
-### Typ {#type}
+### `type` {#type}
 
-Dieses Prädikat schränkt Ergebnisse auf einen bestimmten JCR-Knotentyp ein, sowohl auf primäre Knotentypen als auch auf Mixin-Typen. Dadurch werden auch Untertypen dieses Knotentyps gefunden. Die Indizes der Repository-Suche müssen die Knotentypen abdecken, damit eine effiziente Ausführung gewährleistet ist.
+Beschränkt Ergebnisse auf einen bestimmten JCR-Knotentyp, sowohl auf den primären Knotentyp als auch auf den Mixin-Typ, und findet Untertypen dieses Knotentyps. Die Indizes der Repository-Suche müssen die Knotentypen abdecken, um eine effiziente Ausführung zu gewährleisten.
 
 Unterstützt die Facettenextraktion. Stellt Buckets für jeden eindeutigen Typ in den Ergebnissen bereit.
 

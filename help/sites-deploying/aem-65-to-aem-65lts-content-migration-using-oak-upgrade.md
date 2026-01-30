@@ -5,16 +5,16 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8c4ffb0e-b4dc-4a81-ac43-723754cbc0de
-source-git-commit: 69033442fda82d9efdd1ba2f55a45173c8ffc6ec
+source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
 
 # Migration von AEM 6.5 zu AEM 6.5 LTS-Inhalten mit Oak-Upgrade {#aem-65-to-aem-65lts-content-migration-using-oak-upgrade}
 
-Dieses Dokument enthält eine umfassende Anleitung zum Aktualisieren von Adobe Experience Manager von Version **6.5** auf **6.5 LTS** mit Schwerpunkt auf der Migration von Content-Repositorys mit dem Oak-Upgrade-Tool, einem leistungsstarken Dienstprogramm für die präzise und kontrollierte Übertragung von Inhalten zwischen verschiedenen Repositorys.
+In diesem Dokument wird erläutert, wie Sie Adobe Experience Manager von **6.5** auf **6.5 LTS** aktualisieren, wobei der Schwerpunkt auf der Migration des Inhalts-Repositorys liegt. Es behandelt die Verwendung des Oak-Upgrade-Tools zur präzisen und kontrollierten Übertragung von Inhalten zwischen Repositorys.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -22,9 +22,9 @@ Stellen Sie vor Beginn der Migration sicher, dass die folgenden Anforderungen er
 
 1. Java-Kompatibilität: AEM 6.5 LTS muss installiert und für die Ausführung mit Java™ 17 konfiguriert sein. Starten Sie nach der Einrichtung die AEM-Instanz und stellen Sie sicher, dass alle Bundles aktiv sind und ohne Probleme ausgeführt werden
 1. Systemressourcen: Stellen Sie sicher, dass ausreichend Speicherplatz und Arbeitsspeicher für beide Repositorys während des Migrationsprozesses verfügbar sind
-1. Oak-Upgrade-Tool: Laden Sie die `oak-upgrade`-JAR-Datei aus dem [offiziellen Maven-Repository](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) herunter. Stellen Sie sicher, dass die Version mit der in AEM 6.5 LTS verwendeten Oak-Core-Version übereinstimmt. Das Oak-Upgrade-Tool läuft auf Oracle® Java™ 11 oder höher
+1. Oak-Upgrade-Tool: Laden Sie die `oak-upgrade`-JAR-Datei aus dem [offiziellen Maven-Repository](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) herunter. Stellen Sie sicher, dass die Version mit der in AEM 6.5 LTS verwendeten Oak-Kernversion übereinstimmt. Das Oak-Upgrade-Tool läuft auf Oracle® Java™ 11 oder höher
 
-## Schrittweiser Migrationsprozess {#step-by-step-migration-process}
+## Migrationsprozess {#step-by-step-migration-process}
 
 ### Anhalten von AEM 6.5 und AEM 6.5 LTS {#stopping-aem65-and-aem65lts}
 
@@ -58,7 +58,7 @@ Im Folgenden finden Sie die wichtigsten Befehle und Optionen:
   java -jar oak-upgrade-*.jar --exclude-paths=/content/old_site /old/repository /new/repository 
   ```
 
-* `--copy-binaries`: Standardmäßig migriert oak-upgrade nur Verweise auf Binärdateien, sodass die tatsächlichen Dateien im ursprünglichen Blob/Datenspeicher verbleiben. Daher ist das neue Repository weiterhin auf den Quellspeicher für Binärdateien angewiesen. Um Binärdateien zusammen mit dem Repository-Inhalt zu migrieren, verwenden Sie den Parameter `--copy-binaries` , um alle Binärdaten in den neuen Speicher zu kopieren, wie unten dargestellt:
+* `--copy-binaries`: Standardmäßig migriert Oak-upgrade nur Verweise auf Binärdateien, sodass die Dateien im ursprünglichen Blob-/Datenspeicher verbleiben. Daher ist das neue Repository weiterhin auf den Quellspeicher für Binärdateien angewiesen. Um Binärdateien zusammen mit dem Repository-Inhalt zu migrieren, verwenden Sie den Parameter `--copy-binaries` , um alle Binärdaten in den neuen Speicher zu kopieren, wie unten dargestellt:
 
   ```
   java -jar oak-upgrade-*.jar \
@@ -71,21 +71,21 @@ Im Folgenden finden Sie die wichtigsten Befehle und Optionen:
 
 ### Checkpoints migrieren {#migratiing-checkpoints}
 
-Beim Migrieren eines alten SegmentMK-Repositorys (vor Oak 1.6) zu einem neuen SegmentMK (Oak-Version größer oder gleich 1.6) werden die Checkpoints ebenfalls migriert. Dadurch kann eine Neuindizierung vermieden werden, wenn die Oak zum ersten Mal im neuen Repository ausgeführt wird. Die Checkpoints werden jedoch in folgenden Fällen nicht migriert:
+Beim Migrieren eines alten SegmentMK-Repositorys (vor Oak 1.6) zu einem neuen SegmentMK (Oak-Version größer oder gleich 1.6) werden die Checkpoints ebenfalls migriert. Durch diesen Prozess wird eine Neuindizierung vermieden, wenn die Oak zum ersten Mal im neuen Repository ausgeführt wird. Die Checkpoints werden jedoch in den folgenden Fällen nicht migriert:
 
 1. Benutzerdefinierte Ein-, Ausschluss- oder Zusammenführungspfade werden angegeben oder
-1. Die Binärdateien werden durch Verweise kopiert, es wird kein Quelldatenspeicher angegeben und zwei verschiedene Checkpoints enthalten eine andere Binärdatei unter demselben Pfad.
+1. Das System kopiert die Binärdateien per Verweis. Es wird kein Quelldatenspeicher angegeben und zwei verschiedene Checkpoints enthalten eine andere Binärdatei unter demselben Pfad.
 
-Im zweiten Fall gibt oak-upgrade folgende Warnung und Unterbrechungen aus:
+Im zweiten Fall gibt Oak-Upgrade die folgende Warnung aus und bricht ab:
 
 ```
-Checkpoints won't be copied, because no external datastore has been specified. This will result in the full repository reindexing on the first start. Use --skip-checkpoints to force the migration or see https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration for more info. 
+Checkpoints are not copied, because no external datastore has been specified. This results in the full repository reindexing on the first start. Use --skip-checkpoints to force the migration or see https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration for more info. 
 ```
 
 Die einfachste Möglichkeit, dieses Problem zu beheben, besteht darin, den Quelldatenspeicher in den Befehlszeilenoptionen anzugeben (beispielsweise `--src-datastore` oder `--src-s3datastore`).
 
-Die Warnung kann auch ignoriert werden, aber in diesem Fall wird das Repository beim ersten Start vollständig neu indiziert. Es kann ein langer Prozess sein, besonders für den großen Fall. Das Repository ist erst verwendbar, wenn der Neuindizierungsprozess abgeschlossen ist. Verwenden Sie die Option `--skip-checkpoints` , um die Warnung zu unterdrücken.
+Die Warnung kann auch ignoriert werden, aber in diesem Fall wird das Repository beim ersten Start vollständig neu indiziert. Es kann sich um einen langen Prozess handeln, insbesondere für die große Instanz. Das Repository kann erst nach Abschluss des Neuindizierungsprozesses verwendet werden. Verwenden Sie die Option `--skip-checkpoints` , um die Warnung zu unterdrücken.
 
-Sie können das Repository auch offline neu indizieren, bevor Sie AEM mit [Offline-Neuindizierung](/help/sites-deploying/offline-reindexing.md) starten.
+Sie können das Repository auch offline neu indizieren, bevor Sie AEM mit [Offline-Neuindizierung](/help/sites-deploying/offline-reindexing.md) starten, um eine vollständige Neuindizierung beim ersten Start zu vermeiden.
 
 Weitere Informationen zum Oak-Upgrade-Tool und zur erweiterten Verwendung finden Sie in der [offiziellen Dokumentation](https://jackrabbit.apache.org/oak/docs/migration.html).
