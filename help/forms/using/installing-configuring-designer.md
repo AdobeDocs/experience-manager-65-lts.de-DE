@@ -34,7 +34,7 @@ ht-degree: 65%
 >
 >* Die 64-Bit-Version von Designer wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt.
 >* Die 32-Bit-Version von Designer ist seit der Veröffentlichung von [AEM Forms Service Pack 21 (6.5.21.0) veraltet](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
-> * Die unterstützten Plattformen für Forms Designer sind auf die von AEM Forms unterstützten Plattformen ausgerichtet. Um mehr über die unterstützten Plattformen für Forms Designer zu erfahren[ klicken Sie hier](/help/sites-deploying/technical-requirements.md)
+> * Die unterstützten Plattformen für Forms Designer sind auf die von AEM Forms unterstützten Plattformen ausgerichtet. Um mehr über die unterstützten Plattformen für Forms Designer zu erfahren[&#x200B; klicken Sie hier](/help/sites-deploying/technical-requirements.md)
 
 Weitere Informationen zur Installation von Forms Designer finden Sie unter [Häufig gestellte Fragen](#fandq).
 

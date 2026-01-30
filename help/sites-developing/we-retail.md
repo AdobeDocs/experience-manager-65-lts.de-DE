@@ -54,7 +54,7 @@ Die `We.Retail`-Site wird als Beispielinhalt von AEM bereitgestellt. Um den Inha
 
 ### Neueste Version {#latest-version}
 
-Obwohl `We.Retail` mit der AEM-Version verteilt wird, können nach der Veröffentlichung Aktualisierungen am Inhalt und seinen Funktionen vorgenommen werden. Daher können Sie die [ Version von GitHub herunterladen ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) sie dann [hochladen](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) und [als ](/help/sites-administering/package-manager.md#installing-packages) auf Ihrer AEM-Instanz installieren.
+Obwohl `We.Retail` mit der AEM-Version verteilt wird, können nach der Veröffentlichung Aktualisierungen am Inhalt und seinen Funktionen vorgenommen werden. Daher können Sie die [&#x200B; Version von GitHub herunterladen &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) sie dann [hochladen](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) und [als &#x200B;](/help/sites-administering/package-manager.md#installing-packages) auf Ihrer AEM-Instanz installieren.
 
 ### Erste Schritte {#first-steps}
 
