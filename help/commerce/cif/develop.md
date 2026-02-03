@@ -31,7 +31,7 @@ Für die Arbeit mit CIF-Projekten wird eine lokale Entwicklungsumgebung empfohle
 
 >[!NOTE]
 >
->Die folgenden Anweisungen helfen Ihnen beim Einrichten einer lokalen AEM-Entwicklungsumgebung für AEM Commerce mithilfe von CIF (wobei der Fokus auf AEM 6.5 LTS liegt). Wenn Sie AEM as a Cloud Service verwenden, lesen Sie die Dokumentation zu [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#).
+>Die folgenden Anweisungen helfen Ihnen beim Einrichten einer lokalen AEM-Entwicklungsumgebung für AEM Commerce mithilfe von CIF (wobei der Fokus auf AEM 6.5 LTS liegt). Wenn Sie AEM as a Cloud Service verwenden, lesen Sie die Dokumentation zu [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#).
 
 Das als CIF-Add-on bezeichnete AEM Commerce-Add-on für AEM ist auch für die lokale Entwicklung verfügbar und wird als AEM-Paket bereitgestellt. Sie können es über das [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) als Feature Pack herunterladen.
 
