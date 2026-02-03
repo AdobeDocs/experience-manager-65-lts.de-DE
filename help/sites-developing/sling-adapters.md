@@ -338,7 +338,7 @@ Adaptierung von [**SlingHttpServletResponse**](https://developer.adobe.com/exper
 
 #### Sicherheit {#security}
 
-Adaption von **Authorizable**, **User und **Group** für:
+Adaption von **Authorizable**, **User und &#x200B;** Group** für:
 
 | [Node](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | Gibt den Hauptknoten des Benutzers/der Gruppe zurück. |
 | --- | --- |
