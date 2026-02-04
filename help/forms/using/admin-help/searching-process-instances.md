@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: e358ee51-c23f-4737-9dcf-3193ed541bbb
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 51342861dd01e659999c19fbe0274e8d3cbcf8c4
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 100%
+source-wordcount: '458'
+ht-degree: 66%
 
 ---
 
@@ -24,17 +24,17 @@ ht-degree: 100%
 > 
 > Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
-Verwenden Sie die Seite „Prozesssuche“, um Suchkriterien zum Auffinden einer Prozessinstanz einzugeben. Sie können über die Seite „Arbeitsablauf für Formulare“ auf die Seite „Prozesssuche“ zugreifen oder stattdessen auf der Seite „Prozessinstanz“ auf „Suchen“ klicken.
+Verwenden Sie die Seite „Prozesssuche“, um Suchkriterien zum Auffinden einer Prozessinstanz einzugeben. Sie können über die Forms Workflow-Seite auf die Seite „Prozesssuche“ zugreifen. Oder klicken Sie auf **Seite „Prozessinstanz** auf „Suchen“.
 
 Sie können grundlegende Kriterien zur Durchführung einer allgemeinen Suche eingeben, spezifische Attribute zur Durchführung einer Detailsuche oder eine Kombination aus grundlegenden Kriterien und spezifischen Attributen zur Durchführung einer kombinierten Suche.
 
 ## Durchführen einer allgemeinen Suche {#perform-a-general-search}
 
-Eine allgemeine Suche nach einem Prozess eignet sich optimal, wenn Sie die Prozess-ID der Prozessinstanz kennen, wenn Sie versuchen, eine Gruppe verwandter Prozessinstanzen zu finden oder wenn nur wenige Prozessinstanzen ausgeführt werden.
+Eine allgemeine Suche nach einem Prozess ist am besten geeignet, wenn Sie die Prozess-ID der Prozessinstanz kennen. Oder wenn Sie nach einer Gruppe verwandter Prozessinstanzen suchen oder wenn nur wenige Prozessinstanzen ausgeführt werden.
 
-Geben Sie zum Durchführen einer allgemeinen Suche grundlegende Kriterien ein. Wenn Sie mehrere Kriterien eingeben, wird die Suche mit einer impliziten UND-Bedingung ausgeführt.
+Geben Sie die grundlegenden Kriterien ein, um eine allgemeine Suche durchzuführen. Wenn Sie mehrere Kriterien eingeben, wird die Suche mit einer impliziten UND-Bedingung ausgeführt.
 
-1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Forms Workflow“ > „Prozesssuche“.
+1. Klicken Sie in Administration Console auf „Services“ > &quot;Forms Workflow&quot; > „Prozesssuche“.
 1. Geben Sie auf der Seite „Prozesssuche“ unter „Allgemeine Suche“ die folgenden Kriterien ein:
 
    * **Prozess-ID:** Die positive Ganzzahl, die jede eindeutige Prozessinstanz identifiziert.
@@ -42,13 +42,13 @@ Geben Sie zum Durchführen einer allgemeinen Suche grundlegende Kriterien ein. W
    * **Programm:** Wählen Sie das gewünschte Programm in der Liste. Nur bereitgestellte Programme werden angezeigt.
    * **Prozessname/-version:** Wählen Sie einen Prozessnamen im Menü. Nur bereitgestellte Prozesse werden angezeigt.
 
-1. Klicken Sie auf „Suchen“. Die Seite „Prozessinstanzen“ wird mit einer Liste der gefundenen Instanzen angezeigt.
+1. Klicken Sie auf **Suchen**. Die Seite Prozessinstanz wird mit den gefundenen Instanzen angezeigt.
 
 ## Durchführen einer Detailsuche nach einem Prozess {#perform-a-detailed-search-for-a-process}
 
 Zum Durchführen einer Detailsuche geben Sie spezifische Attribute ein. Eine Detailsuche eignet sich am besten, wenn zahlreiche Prozessinstanzen ausgeführt werden und Sie die möglichen Suchergebnisse durch bestimmte Kriterien einschränken müssen.
 
-1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Forms Workflow“ > „Prozesssuche“.
+1. Klicken Sie in Administration Console auf „Services“ > &quot;Forms Workflow&quot; > „Prozesssuche“.
 1. Geben Sie auf der Seite „Prozesssuche“ unter „Detailsuche“ den ersten Kriteriensatz an:
 
    * Wählen Sie in der Liste „Attribut“ ein Attribut aus.
@@ -58,12 +58,12 @@ Zum Durchführen einer Detailsuche geben Sie spezifische Attribute ein. Eine Det
 1. Wählen Sie zum Hinzufügen einer weiteren Zeile „Mehr Filter“ aus. Ein weiterer Satz von „Attribut“-, „Filter“- sowie „Wert“-Listen und die Liste „Bedingung“ werden angezeigt.
 1. Wählen Sie unter „Bedingung“ UND oder ODER. Wiederholen Sie die Schritte 1 bis 3 nach Bedarf, um die Suche weiter einzuschränken.
 1. Klicken Sie zum Hinzufügen oder Löschen von Zeilen auf „Mehr Filter“ oder „Weniger Filter“. Es können eine bis vier Zeilen verwendet werden.
-1. Klicken Sie auf „Suchen“. Die Seite „Prozessinstanzen“ wird mit einer Liste der gefundenen Instanzen angezeigt.
+1. Klicken Sie auf **Suchen**. Die Seite Prozessinstanz wird mit den gefundenen Instanzen angezeigt.
 
-[Informationen zum Status von Prozessinstanzen](/help/forms/using/admin-help/processes.md#about-process-instance-statuses)
+Siehe auch [Über Prozessinstanzstatus](/help/forms/using/admin-help/processes.md#about-process-instance-statuses).
 
 ## Durchführen einer kombinierten Suche nach einem Prozess {#perform-a-combined-search-for-a-process}
 
-Um eine Suche zu erstellen, die sowohl auf einer allgemeinen als auch auf einer Detailsuche basiert, wobei beide Bereiche durch ein implizites UND verknüpft sind, geben Sie die Suchkriterien auf der Seite „Prozesssuche“ in die beiden Bereiche „Allgemeine Suche“ und „Detailsuche“ ein.
+Um eine Suche zu erstellen, die sowohl allgemeine als auch detaillierte Kriterien verwendet, geben Sie Werte in beide Bereiche auf der Seite „Prozesssuche“ ein. Das System wendet eine implizite `AND` zwischen den beiden Bereichen an.
 
-Wenn die Suche zu stark eingeschränkt ist, werden keine Instanzen gefunden.
+Wenn die Suche zu eng gefasst ist, werden keine Instanzen gefunden.
