@@ -9,9 +9,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 29f1d07b-925b-4612-aa1b-34c387a5765f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b93a65226587936010c3dd53312c66e15f73cf2a
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '192'
 ht-degree: 15%
 
 ---
@@ -101,5 +101,5 @@ Die folgenden Bundles sind nicht in einer neuen AEM 6.5 LTS-Instanz enthalten. N
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
 * com.adobe.granite.osgi.wrapper.guava
-* com.adobe.cq.core.wcm.components.core (kann durch eine mit AEM 6.5 LTS kompatible Version ersetzt werden)
+* com.adobe.cq.core.wcm.components.core (kann durch die mit [AEM 6.5 LTS kompatible Version ersetzt werden](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/versions))
 * com.adobe.cq.core.wcm.components.extension.contentfragment.bundle (kann durch eine mit AEM 6.5 LTS kompatible Version ersetzt werden)
