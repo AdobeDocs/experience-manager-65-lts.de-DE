@@ -228,7 +228,7 @@ Dieser Abschnitt enthält Details und Anweisungen zur MS® Dynamics-Cloud-Konfig
 **Verweise:**
 
 1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [Konfigurieren von Microsoft® Dynamics für AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
+1. [Konfigurieren von Microsoft® Dynamics für AEM Forms](https://experienceleague.adobe.com/de/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
 
 #### MS® Dynamics OData-Cloud-Service {#ms-dynamics-odata-cloud-service}
 
@@ -483,7 +483,7 @@ Um AEM Forms mit Adobe Forms zu installieren und zu konfigurieren, müssen Benut
 
 Überprüfen Sie Folgendes, bevor Sie weitere Anweisungen lesen:
 
-* [Service für die automatische Formularkonvertierung konfigurieren](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#)
+* [Service für die automatische Formularkonvertierung konfigurieren](https://experienceleague.adobe.com/de/docs/aem-forms-automated-conversion-service/using/configure-service#)
 
 #### Erstellen einer IMS-Konfiguration - Teil 1 {#creating-ims-config}
 
@@ -582,7 +582,7 @@ Sobald die IMS-Konfiguration abgeschlossen ist, können Sie die Cloud-Konfigurat
 
 1. Für diese Konfiguration wurden die beiden Kontrollkästchenwerte leer gelassen.
 
-   Weitere Informationen zu diesen Optionen finden Sie unter [Konfigurieren des Cloud-Service](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
+   Weitere Informationen zu diesen Optionen finden Sie unter [Konfigurieren des Cloud-Service](https://experienceleague.adobe.com/de/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
 
 #### Konfigurieren der Cloud-Konfiguration (`We.Finance` AFC Production) {#configure-cloud-configuration-wefinance}
 
@@ -612,7 +612,7 @@ Sobald die IMS-Konfiguration abgeschlossen ist, können Sie mit der Erstellung d
 
 1. Für diese Konfiguration wurden die beiden Kontrollkästchenwerte leer gelassen.
 
-   * Weitere Informationen zu diesen Optionen finden Sie unter [Konfigurieren des Cloud-Services](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
+   * Weitere Informationen zu diesen Optionen finden Sie unter [Konfigurieren des Cloud-Services](https://experienceleague.adobe.com/de/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
 
 #### Testen der Formularkonvertierung (We.Gov-Registrierungsprogramm) {#test-forms-conversion}
 
@@ -652,7 +652,7 @@ Nachdem die Konfiguration eingerichtet wurde, können Benutzer sie testen, indem
 
 #### Bekannte Probleme und Hinweise {#known-issues-notes}
 
-Zum Service der automatischen Formularkonvertierung gehören bestimmte [Best Practices, bekannte komplexe Muster](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#) und [bekannte Probleme](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/known-issues#). Lesen Sie diese Informationen, bevor Sie mit der Verwendung des Service zur automatischen Formularkonvertierung von AEM Forms beginnen.
+Zum Service der automatischen Formularkonvertierung gehören bestimmte [Best Practices, bekannte komplexe Muster](https://experienceleague.adobe.com/de/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#) und [bekannte Probleme](https://experienceleague.adobe.com/de/docs/aem-forms-automated-conversion-service/using/known-issues#). Lesen Sie diese Informationen, bevor Sie mit der Verwendung des Service zur automatischen Formularkonvertierung von AEM Forms beginnen.
 
 1. Erstellen Sie das Formular mit aktivierter Option „Adaptive Formulare ohne Datenbindung generieren“, wenn Sie das Formular nach der Konvertierung an einen FDM binden möchten.
 
