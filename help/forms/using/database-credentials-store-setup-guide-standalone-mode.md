@@ -4,7 +4,7 @@ description: Suchen Sie die Einrichtung des Speichers für Datenbankberechtigung
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 2%
@@ -17,6 +17,7 @@ ht-degree: 2%
 ## Überblick
 
 Dieses Handbuch behandelt die **Einrichtung des Speichers für Datenbankberechtigungen** für AEM Forms JEE unter JBoss/Red Hat EAP **eigenständiger Modus**. Dies ist bei der manuellen Installation erforderlich.
+
 
 **Dieses Handbuch behandelt:**
 
