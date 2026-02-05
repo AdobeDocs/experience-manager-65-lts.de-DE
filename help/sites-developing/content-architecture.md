@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: eb47f730-ac26-47a0-9bd7-3b7e94c79ecd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 92%
+source-wordcount: '407'
+ht-degree: 49%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 92%
 
 ## David Nüschelers Modell als Vorbild {#follow-david-s-model}
 
-Das Model von David Nüscheler („David’s Model“) wurde vor Jahren entworfen, hat aber bis heute Gültigkeit. Die wichtigsten Grundsätze des Modells lauten:
+David Nuescheler schrieb „David’s Model“ vor Jahren, aber seine Ideen sind bis heute gültig. Die wichtigsten Grundsätze des Modells lauten:
 
 * Erst die Daten, dann die Struktur. Zumindest gegebenenfalls.
-* Steuern Sie die Inhaltshierarchie, anstatt sie dem Zufall zu überlassen.
+* Steuern Sie die Inhaltshierarchie. Lassen Sie es nicht zu.
 * Workspaces sind für `clone()`, `merge()` und `update()` vorgesehen.
 * Bei gleichgeordneten Elementen mit identischem Namen ist Vorsicht geboten.
-* Verweise richten mehr Schaden an, als sie nutzen.
+* Verweise können als schädlich betrachtet werden.
 * Dateien sind Dateien.
 * IDs sind zu vermeiden.
 
@@ -34,19 +34,19 @@ Sie finden das Modell von David Nüscheler auf Jackrabbit Wiki unter [http://wik
 
 ### Alles ist Inhalt {#everything-is-content}
 
-Sie sollten alles im Repository speichern, anstatt sich auf separate Datenquellen von Dritten wie etwa Datenbanken zu verlassen. Dies gilt für erstellte Inhalte und Binärdaten wie Bilder, Code und Konfigurationen. Auf diese Weise können Sie mit einem Satz von APIs alle Inhalte verwalten und die Promotion dieser Inhalte durch Replikation steuern. Außerdem profitieren Sie von nur einer einzigen Quelle für Backups, Protokollierung usw.
+Sie sollten alles im Repository speichern, anstatt sich auf separate Datenquellen von Dritten wie etwa Datenbanken zu verlassen. Ein solcher Ansatz gilt für erstellte Inhalte, Binärdaten wie Bilder, Code und Konfigurationen. Damit können wir einen Satz von APIs verwenden, um alle Inhalte zu verwalten und die Promotion dieser Inhalte durch Replikation zu verwalten. Außerdem profitieren Sie von nur einer einzigen Quelle für Backups, Protokollierung usw.
 
 ### Anwenden des Design-Grundsatzes „Content Model First“ {#use-the-content-model-first-design-principle}
 
-Wenn Sie eine neue Funktion entwickeln, beginnen Sie immer damit, zunächst die JCR-Inhaltsstruktur zu entwerfen. Befassen Sie sich dann erst mit dem Lesen und Schreiben Ihrer Inhalte mithilfe der standardmäßigen Sling-Servlets. Auf diese Weise können Sie sicherstellen, dass Ihre Implementierung problemlos mit Standardmechanismen für die Zugriffssteuerung funktioniert. Darüber hinaus lässt sich die Erstellung überflüssiger CRUD-Servlets vermeiden.
+Wenn Sie eine neue Funktion entwickeln, beginnen Sie immer damit, zunächst die JCR-Inhaltsstruktur zu entwerfen. Befassen Sie sich dann erst mit dem Lesen und Schreiben Ihrer Inhalte mithilfe der standardmäßigen Sling-Servlets. Mit einem solchen Ansatz können Sie sicherstellen, dass Ihre Implementierung gut mit vorkonfigurierten Zugriffssteuerungsmechanismen funktioniert, und die Erstellung unnötiger Servlets im CRUD-Stil vermeiden.
 
 ### RESTful statt Panik {#be-restful}
 
-Servlets sollten auf Basis von Ressourcentypen anstelle von Pfaden definiert werden. Dies ermöglicht die Verwendung von JCR-Zugriffssteuerungen, die Anwendung der REST-Prinzipien und die Verwendung der Ressource und des Ressourcen-Resolvers, die in der Anforderung bereitgestellt werden. Damit lassen sich außerdem die Skripte ändern, die URLs auf Serverseite rendern, ohne die URLs auf Client-Seite ändern zu müssen, während die serverseitigen Implementierungsdetails vor dem Client verborgen werden, um die Sicherheit zu erhöhen.
+Definieren Sie Servlets basierend auf Ressourcentypen anstelle von Pfaden. Dieser Ansatz ermöglicht die Verwendung von JCR-Zugriffssteuerungen, die Einhaltung von REST-Prinzipien und die Verwendung der Ressource und des Ressourcen-Resolvers, die in der Anfrage bereitgestellt werden. Mit diesem Ansatz können Sie die Skripte ändern, die URLs Server-seitig rendern, ohne die Client-seitigen URLs zu ändern. Außerdem werden Server-seitige Implementierungsdetails vor dem Client ausgeblendet, um die Sicherheit zu erhöhen.
 
 ### Vermeiden der Definition neuer Knotentypen {#avoid-defining-new-node-types}
 
-Knotentypen funktionieren auf einer niedrigen Ebene in der Infrastrukturschicht und die meisten Anforderungen können erfüllt werden, indem ein sling:resourceType verwendet wird, das einem Knotentyp „nt:unstructured&quot;, „oak:Unstructured&quot;, „sling:Folder&quot; oder „cq:Page zugewiesen. Knotentypen entsprechen dem Schema im Repository, wobei sich das Ändern von Knotentypen im weiteren Verlauf als kostspielig erweisen kann.
+Knotentypen funktionieren auf niedriger Ebene in der Infrastrukturschicht. Die meisten Anforderungen werden erfüllt, indem ein `sling:resourceType` verwendet wird, der einem `nt:unstructured`-, `oak:Unstructured`-, `sling:Folder`- oder `cq:Page`-Knotentyp zugewiesen ist. Knotentypen entsprechen dem Schema im Repository, wobei sich das Ändern von Knotentypen im weiteren Verlauf als kostspielig erweisen kann.
 
 ### Einhalten Sie Namenskonventionen im JCR {#adhere-to-naming-conventions-in-the-jcr}
 
@@ -54,14 +54,14 @@ Durch die Einhaltung von Namenskonventionen wird die Konsistenz der Code-Basis e
 
 * Knotennamen
 
-   * Ausschließliche Verwendung von Kleinbuchstaben
-   * Worttrennung mithilfe von Bindestrichen
+   * Alles Kleinbuchstaben.
+   * Worttrennung mithilfe von Bindestrichen.
 
 * Eigenschaftsnamen
 
-   * Binnenmajuskeln, beginnend mit einem Kleinbuchstaben
+   * Binnenmajuskel, beginnend mit einem Kleinbuchstaben.
 
 * Komponenten (JSP/HTML)
 
-   * Ausschließliche Verwendung von Kleinbuchstaben
-   * Worttrennung mithilfe von Bindestrichen
+   * Alles Kleinbuchstaben.
+   * Worttrennung mithilfe von Bindestrichen.

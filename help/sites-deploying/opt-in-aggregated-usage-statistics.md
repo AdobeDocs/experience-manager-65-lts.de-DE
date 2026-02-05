@@ -10,14 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 410691eb-27a9-4f8e-b926-01027c7f84d4
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 100%
+source-wordcount: '300'
+ht-degree: 61%
 
 ---
 
-# Aktivieren der aggregierten Sammlung von Nutzungsstatistiken{#opting-into-aggregated-usage-statistics-collection}
+# Opt-in für die aggregierte Sammlung von Nutzungsstatistiken{#opting-into-aggregated-usage-statistics-collection}
 
 ## Einführung {#introduction}
 
@@ -27,17 +27,17 @@ Sie können die Sammlung von Nutzungsstatistiken über die Touch-Benutzeroberfl�
 
 >[!NOTE]
 >
->Es gibt verschiedene Datenschutzbestimmungen wie DSGVO und CCPA. AEM Sites kann Kunden bei der Erfüllung ihrer Datenschutz-Compliance-Pflichten unterstützen. Auf dieser Seite werden Kunden durch die Verfahren zum Aktivieren (oder Deaktivieren) der aggregierten Sammlung von Nutzungsstatistiken angeleitet.
+>Es gibt verschiedene Datenschutzbestimmungen wie DSGVO und CCPA. AEM Sites kann Kunden bei der Erfüllung ihrer Datenschutz-Compliance-Pflichten unterstützen. Auf dieser Seite werden Kunden durch die Verfahren zum Opt-in (oder Opt-out) der aggregierten Sammlung von Nutzungsstatistiken geführt.
 >
 >Weitere Informationen finden Sie im [Datenschutzzentrum von Adobe](https://www.adobe.com/de/privacy.html).
 
 >[!NOTE]
 >
->Sie können die Sammlungsfunktion jederzeit deaktivieren, indem Sie entweder die [Web-Konsole](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) verwenden oder die Aktivierungsoption auf dem Aktivierungsbildschirm von AEM nicht auswählen.
+>Sie können die Sammlungsfunktion jederzeit mit der [Web-Konsole]&#x200B;(/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console deaktivieren oder die Opt-in-Option auf dem Opt-in-Bildschirm von AEM deaktivieren.
 
-## Aktivieren mithilfe der Touch-Benutzeroberfläche {#opt-in-by-using-the-touch-ui}
+## Opt-in über die Touch-optimierte Benutzeroberfläche {#opt-in-by-using-the-touch-ui}
 
-Wenn Sie AEM erstmalig starten, können Sie die Sammlungsfunktion mithilfe der Touch-Benutzeroberfläche wie folgt aktivieren:
+Beim ersten Starten von AEM können Sie sich wie folgt über die Touch-optimierte Benutzeroberfläche anmelden:
 
 1. Klicken Sie auf dem AEM-Navigationsbildschirm auf das Symbol für den **Posteingang** (Glocke).
 
@@ -47,7 +47,7 @@ Wenn Sie AEM erstmalig starten, können Sie die Sammlungsfunktion mithilfe der T
 
    ![usage_statisticsnavigationscreen2](assets/usage_statisticsnavigationscreen2.png)
 
-1. Wählen Sie auf dem Aktivierungsbildschirm **Sammlung aggregierter Nutzungsstatistiken zulassen** aus.
+1. Klicken Sie auf dem Opt-in-Bildschirm auf die Option **[!UICONTROL Sammlung aggregierter Nutzungsstatistiken zulassen]**.
 
    ![usage_statisticsopt-inscreen](assets/usage_statisticsopt-inscreen.png)
 
@@ -55,7 +55,7 @@ Wenn Sie AEM erstmalig starten, können Sie die Sammlungsfunktion mithilfe der T
 
 ## Aktivieren mithilfe der Web-Konsole {#opt-in-by-using-the-web-console}
 
-Die Aktivierung (oder Deaktivierung) mithilfe der Web-Konsole funktioniert wie folgt:
+Sie können sich wie folgt per Opt-in (oder Opt-out) über die Web-Konsole anmelden:
 
 1. Klicken Sie auf dem AEM-Navigationsbildschirm auf **Tools** und dann auf **Vorgänge**.
 
