@@ -86,10 +86,10 @@ Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erwe
 
 ## Siehe auch {#further-information}
 
-Weitere Informationen zu Kernkomponenten finden Sie im Authoring-Handbuch [Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/introduction) für einen Überblick über die Funktionen. Eine technische Übersicht finden [&#x200B; im Handbuch &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview)Entwickeln von Kernkomponenten“.
+Weitere Informationen zu Kernkomponenten finden Sie im Authoring-Handbuch [Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/introduction) für einen Überblick über die Funktionen. Eine technische Übersicht finden [&#x200B; im Handbuch &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/overview)Entwickeln von Kernkomponenten“.
 
 
 
-Weitere Informationen zu den Kernkomponenten finden Sie im Dokument [Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/introduction) für einen Überblick über die Kernkomponentenfunktionen und im Entwicklerdokument [Entwickeln von Kernkomponenten](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) für technische Details.
+Weitere Informationen zu den Kernkomponenten finden Sie im Dokument [Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/introduction) für einen Überblick über die Kernkomponentenfunktionen und im Entwicklerdokument [Entwickeln von Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/developing/overview) für technische Details.
 
 Sie können sich auch mit ([&#x200B; Vorlagen) &#x200B;](/help/sites-developing/we-retail-editable-templates.md). Umfassende Informationen zu bearbeitbaren Vorlagen finden Sie [&#x200B; Dokument zum Erstellen von &#x200B;](/help/sites-authoring/templates.md) oder im Entwicklerdokument [Bearbeitbare Vorlagen](/help/sites-developing/page-templates-editable.md).
