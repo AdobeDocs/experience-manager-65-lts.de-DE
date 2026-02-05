@@ -1,6 +1,6 @@
 ---
-title: APIs zum Arbeiten mit gesendeten Formularen in Forms Portal
-description: AEM Forms bietet APIs, mit deren Hilfe Sie über das Formularportal gesendete Formulardaten abfragen und Aktionen für sie durchführen können.
+title: APIs zum Arbeiten mit gesendeten Formularen im Forms-Portal
+description: AEM Forms stellt APIs bereit, mit denen Sie im Forms-Portal Abfragen zu gesendeten Formulardaten durchführen und Aktionen dafür durchführen können.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
@@ -8,22 +8,22 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: a24d0218-d534-49c9-81c1-12b38d794caa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 100%
+source-wordcount: '512'
+ht-degree: 77%
 
 ---
 
 # APIs zum Arbeiten mit gesendeten Formularen in Forms Portal {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-AEM Forms bietet APIs, mit deren Hilfe Sie über das Formularportal gesendete Formulardaten abfragen können. Darüber hinaus können Sie mithilfe der in diesem Dokument beschriebenen APIs Kommentare veröffentlichen oder die Eigenschaften gesendeter Formulare aktualisieren.
+AEM Forms stellt APIs bereit, mit denen Sie über das Forms-Portal gesendete Formulardaten abfragen können. Darüber hinaus können Sie mithilfe der in diesem Dokument beschriebenen APIs Kommentare veröffentlichen oder die Eigenschaften gesendeter Formulare aktualisieren.
 
 >[!NOTE]
 >
->Benutzer, die die APIs aufrufen sollen, müssen der Reviewer-Gruppe hinzugefügt werden, wie unter [Zuordnen von Übermittlungsprüfern zu einem Formular](/help/forms/using/adding-reviewers-form.md) beschrieben.
+>Benutzer, die die APIs aufrufen, müssen der Reviewer-Gruppe hinzugefügt werden. Siehe [Verknüpfen von Übermittlungsprüfern mit einem Formular](/help/forms/using/adding-reviewers-form.md).
 
-## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
+## GET `/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview` {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
 Gibt eine Liste aller zulässigen Formulare zurück.
 
@@ -57,7 +57,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getAllSubmissions {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
+## GET `/content/forms/portal/submission.review.json?func=getAllSubmissions` {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
 
 Gibt Details zu allen gesendeten Formularen zurück. Sie können die Ergebnisse jedoch mithilfe der URL-Parameter einschränken.
 
@@ -85,11 +85,11 @@ Geben Sie die folgenden Parameter in der Anfrage-URL an:
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (optional)</td>
-   <td>Gibt die Eigenschaft für die Sortierung der Ergebnisse an. Der Standardwert ist <strong>jcr:lastModified</strong>, d. h., die Ergebnisse werden nach dem Zeitpunkt der letzten Änderung sortiert.</td>
+   <td>Gibt die Eigenschaft für die Sortierung der Ergebnisse an. Der Standardwert ist <code>jcr:lastModified</code>, wodurch die Ergebnisse nach der Zeit der letzten Änderung sortiert werden.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (optional)</td>
-   <td>Gibt die Reihenfolge für die Sortierung der Ergebnisse an. Der Standardwert ist <strong>desc</strong>, d. h., die Ergebnisse werden in absteigender Reihenfolge sortiert. Indem Sie <code>asc</code> angeben, können Sie die Ergebnisse in iaufsteigender Reihenfolge sortieren.</td>
+   <td>Gibt die Reihenfolge für die Sortierung der Ergebnisse an. Der Standardwert ist <code>desc</code>, wodurch die Ergebnisse in absteigender Reihenfolge sortiert werden. Indem Sie <code>asc</code> angeben, können Sie die Ergebnisse in iaufsteigender Reihenfolge sortieren.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (optional)</td>
@@ -97,7 +97,7 @@ Geben Sie die folgenden Parameter in der Anfrage-URL an:
   </tr>
   <tr>
    <td><code>search</code> <br /> (optional)</td>
-   <td>Sucht in den Formulareigenschaften nach dem angegebenen Wert und gibt Formulare mit übereinstimmenden Werten zurück. Der Standardwert ist <strong>""</strong>.</td>
+   <td>Sucht in den Formulareigenschaften nach dem angegebenen Wert und gibt Formulare mit übereinstimmenden Werten zurück. Der Standardwert ist <code>""</code>.</td>
   </tr>
  </tbody>
 </table>
@@ -127,7 +127,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 {"total":1,"items":[{"formName":"form2","formPath":"/content/dam/formsanddocuments/forms-review/form2","submitID":"1403037413508500","formType":"af","jcr:lastModified":"2015-11-05T17:52:32.243+05:30","owner":"admin"}]}
 ```
 
-## POST /content/forms/portal/submission.review.json?func=addComment {#post-content-forms-portal-submission-review-json-func-addcomment-br}
+## `/content/forms/portal/submission.review.json?func=addComment` {#post-content-forms-portal-submission-review-json-func-addcomment-br}
 
 Fügt der angegebenen Sendeinstanz einen Kommentar hinzu.
 
@@ -158,7 +158,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getComments  {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## GET `/content/forms/portal/submission.review.json?func=getComments`   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 Gibt alle für die angegebene Sendeinstanz veröffentlichten Kommentare zurück.
 
@@ -196,7 +196,7 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 [{"owner":"fr1","comment":"API test comment","time":1446726988250}]
 ```
 
-## POST /content/forms/portal/submission.review.json?func=updateSubmission {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
+## `/content/forms/portal/submission.review.json?func=updateSubmission` {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
 
 Aktualisiert den Wert der festgelegten Eigenschaft der angegebenen gesendeten Formularinstanz.
 
@@ -212,7 +212,7 @@ Geben Sie die folgenden Parameter in der Anfrage-URL an:
 
 ### Antwort {#response-4}
 
-Gibt ein JSON-Objekt mit Informationen zur veröffentlichten Aktualisierung zurück.
+Es wird ein JSON-Objekt mit Informationen über die gepostete Aktualisierung zurückgegeben.
 
 ### Beispiel {#example-4}
 
