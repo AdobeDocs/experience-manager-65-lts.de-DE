@@ -1,6 +1,6 @@
 ---
 title: Akzeptanz und Abnahme
-description: Akzeptanztests sind eine spezielle Testkategorie, um sicherzustellen, dass das Projekt die Kundenanforderungen erfüllt und die Kundin bzw. der Kunde das Projekt annimmt.
+description: Akzeptanztests sind eine spezielle Testkategorie, mit der überprüft wird, ob das Projekt die Anforderungen des Kunden erfüllt und ob der Kunde das Projekt akzeptiert
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
@@ -9,24 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 22a779bc-efc3-416e-8f8a-8558c5db055a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 100%
+ht-degree: 16%
 
 ---
 
 # Akzeptanz und Abnahme{#acceptance-and-sign-off}
 
-Wie bereits erwähnt, sind [Akzeptanztests](/help/sites-developing/planning.md) eine spezielle Testkategorie, um Folgendes zu prüfen bzw. sicherzustellen:
+Wie bereits erwähnt[ handelt es sich bei ](/help/sites-developing/planning.md) Akzeptanztests um eine spezielle Testkategorie, mit der Folgendes überprüft wird:
 
 * Das Projekt erfüllt die Anforderungen des Kunden.
 * Die Kundin bzw. der Kunde akzeptiert das Projekt.
 
-Sie müssen vom Kunden und dem Projekt-Manager definiert werden. Sie haben eine besondere Bedeutung, da sie oft mit der endgültigen Rechnungsstellung zusammenhängen.
+Der Kunde und der Projektmanager sollten die Anforderungen definieren. Sie haben jeweils eine besondere Bedeutung, da sie häufig mit der endgültigen Rechnungsstellung zusammenhängen.
 
-Aus diesem Grund gilt Folgendes:
+Aus diesem Grund müssen die Anforderungen wie folgt lauten:
 
 * Die Tests müssen so früh wie möglich definiert werden.
 * Sje müssen aktualisiert werden, wann immer es notwendig ist.
-* Jegliche Änderungen müssen von beiden Parteien (partner- und kundenseitig) formal akzeptiert und abgenommen werden.
+* Sowohl der Partner als auch der Kunde müssen alle Änderungen formell akzeptieren und unterzeichnen.
+

@@ -10,28 +10,28 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: e1771229-b2ce-406a-95a5-99b11fafbe34
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 90%
+source-wordcount: '511'
+ht-degree: 63%
 
 ---
 
-# Voraussetzungen für das Integrieren mit Adobe Target{#prerequisites-for-integrating-with-adobe-target}
+# Voraussetzungen für die Integration mit Adobe Target{#prerequisites-for-integrating-with-adobe-target}
 
 Als Teil der [Integration von AEM und Adobe Target](/help/sites-administering/target.md) müssen Sie sich bei Adobe Target registrieren, den Replikationsagenten konfigurieren und Aktivitätseinstellungen auf dem Veröffentlichungsknoten sichern.
 
-## Registrieren bei Adobe Target {#registering-with-adobe-target}
+## Registrieren bei Adobe Target {#registering-with-adobe-target}
 
 Zur Integration von AEM mit Adobe Target müssen Sie über ein gültiges Adobe Target-Konto verfügen. Dieses Konto muss mindestens über die Berechtigungsstufe einer **Genehmigenden Person** verfügen. Nach der Registrierung bei Adobe Target erhalten Sie einen Clientcode. Dieser Clientcode und Ihr Adobe Target-Anmeldename sowie -Kennwort sind erforderlich, um eine Verbindung zwischen AEM und Adobe Target herzustellen.
 
-Der Clientcode identifiziert das Adobe Target-Kundenkonto beim Aufrufen des Adobe Target-Servers.
+Der Clientcode identifiziert das Adobe Target-Kundenkonto beim Aufruf des Adobe Target-Servers.
 
 >[!NOTE]
 >
->Ihr Konto muss auch vom Target-Team aktiviert werden, damit die Integration genutzt werden kann.
+>Das Target-Team muss Ihr Konto für die Verwendung der Integration aktivieren.
 >
->Falls dies nicht der Fall ist, wenden Sie sich an die [Kundenunterstützung von Adobe](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=de).
+>Falls dies nicht der Fall ist, wenden Sie sich an die [Kundenunterstützung von Adobe](https://experienceleague.adobe.com/en/docs/target/using/cmp-resources-and-contact-information).
 
 ## Aktivieren des Target-Replikationsagenten {#enabling-the-target-replication-agent}
 
@@ -44,25 +44,25 @@ Auf der Autoreninstanz muss der Test-and-Target-[Replikationsagent](/help/sites-
 
    >[!NOTE]
    >
-   >Bei der Konfiguration des Test &amp; Target-Replikationsagenten wird auf der Registerkarte **Transport** für den URI standardmäßig **tnt:///** festgelegt. Ersetzen Sie den URI nicht durch **https://admin.testandtarget.omniture.com**.
+   >Bei der Konfiguration des Test &amp; Target-Replikationsagenten wird auf der Registerkarte **Transport** für den URI standardmäßig `tnt:///` festgelegt. Ersetzen Sie den URI nicht durch `https://admin.testandtarget.omniture.com`.
    >
-   >Beim Testen der Verbindung mit **tnt:///** wird ein Fehler ausgegeben. Dieses Verhalten ist zu erwarten, da dieser URI ausschließlich zur internen Verwendung gedacht ist und nicht mit der Funktion **Verbindung testen** verwendet werden darf.
+   >Wenn Sie versuchen, die Verbindung mit `tnt:///` zu testen, wird ein Fehler angezeigt, der das erwartete Verhalten darstellt. Der Grund dafür ist, dass der URI nur zur internen Verwendung gedacht ist. Verwenden Sie nicht mit **Verbindung**.
 
 ## Sichern des Aktivitätseinstellungsknotens {#securing-the-activity-settings-node}
 
-Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Publishing-Instanz sichern, sodass dieser für normale Benutzende nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Dienst zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
+Schützen Sie den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Veröffentlichungsinstanz, damit er für normale Benutzer nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Service zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
 
-Der **cq:ActivitySettings**-Knoten ist in CRXDE Lite unter `/content/campaigns/*nameofbrand*`* *unter dem Aktivitätsknoten jcr:content verfügbar,* *z. B. `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Dieser Knoten wird nur erstellt, wenn Sie eine Komponente als Ziel angeben.
+Der **cq:ActivitySettings**-Knoten ist in CRXDE Lite unter `/content/campaigns/*nameofbrand*`* *unter dem `jcr:content` „activities“ verfügbar. Zum Beispiel: `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Dieser Knoten wird nur erstellt, wenn Sie eine Komponente als Ziel angeben.
 
-Der **cq:ActivitySettings**-Knoten unter dem jcr:content der Aktivität wird von den folgenden ACLs geschützt:
+Der **cq:ActivitySettings**-Knoten unter dem `jcr:content` der Aktivität wird von den folgenden ACLs geschützt:
 
-* Alles für jeden verweigern
-* Zulassen von jcr:read,rep:write für „target-activity-authors“ (der Autor ist standardmäßig Mitglied dieser Gruppe)
-* JCR:read,rep:write für „targetService“ zulassen
+* Jedem alles verweigern.
+* `jcr:read,rep:write` für `target-activity-authors` zulassen (Autor ist standardmäßig Mitglied dieser Gruppe).
+* `jcr:read,rep:write` für `targetservice` zulassen.
 
 Diese Einstellungen gewährleisten, dass normale Benutzende keinen Zugriff auf die Knoteneigenschaften haben. Verwenden Sie dieselben ACLs für „author“ und „publish“. Weitere Informationen finden Sie unter [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md).
 
-## Konfigurieren des AEM-Link-Externalizer {#configuring-the-aem-link-externalizer}
+## Konfigurieren des AEM Link Externalizer {#configuring-the-aem-link-externalizer}
 
 Beim Bearbeiten einer Aktivität in Adobe Target verweist die URL auf **localhost**, außer Sie ändern die URL auf dem AEM-Autorenknoten. Sie können den AEM-Link-Externalizer konfigurieren, wenn der exportierte Inhalt auf eine bestimmte *Veröffentlichungs*-Domain verweisen soll.
 
@@ -70,7 +70,7 @@ Beim Bearbeiten einer Aktivität in Adobe Target verweist die URL auf **localho
 >
 >Siehe auch [Hinzufügen der Cloud-Konfiguration](/help/sites-administering/experience-fragments-target.md#add-the-cloud-configuration).
 
-Konfigurieren Sie den AEM-Externalizer wie folgt:
+So konfigurieren Sie den AEM Externalizer:
 
 >[!NOTE]
 >
