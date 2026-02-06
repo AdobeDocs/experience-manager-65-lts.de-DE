@@ -130,7 +130,7 @@ Ermöglicht Benutzenden das Erstellen von Experience Fragments in `/content/expe
 
 [Die Entwicklung von Komponenten für die Verwendung mit/in Experience Fragments erfolgt gemäß den üblichen Verfahren.](/help/sites-developing/components.md)
 
-Die einzige zusätzliche Konfiguration besteht darin sicherzustellen, dass die Komponenten in der Vorlage zulässig sind. Diese Funktion wird mit der [Inhaltsrichtlinie“ ](/help/sites-developing/page-templates-editable.md#content-policies).
+Die einzige zusätzliche Konfiguration besteht darin sicherzustellen, dass die Komponenten in der Vorlage zulässig sind. Diese Funktion wird mit der [Inhaltsrichtlinie“ &#x200B;](/help/sites-developing/page-templates-editable.md#content-policies).
 
 ## Der Experience Fragment Link Rewriter Provider – HTML {#the-experience-fragment-link-rewriter-provider-html}
 
@@ -321,7 +321,7 @@ Beispielsweise möchten Sie den `/etc.clientlibs` Teil der URL entfernen und die
 
 >[!NOTE]
 >
->Weitere Informationen zum Abrufen eines Ressource Resolver über einen Service-Benutzer finden Sie unter &quot;[ in AEM](/help/sites-administering/security-service-users.md).
+>Weitere Informationen zum Abrufen eines Ressource Resolver über einen Service-Benutzer finden Sie unter &quot;[&#x200B; in AEM](/help/sites-administering/security-service-users.md).
 
 ```java
 private ResourceResolver resolver;
