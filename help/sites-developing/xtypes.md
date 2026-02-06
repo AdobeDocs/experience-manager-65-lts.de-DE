@@ -600,7 +600,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   Ein `panel` ist ein Container mit spezifischen Funktionen und Strukturkomponenten, die ihn zum perfekten Baustein für anwendungsorientierte Benutzeroberflächen machen.
 
-  Panels werden aufgrund ihrer Vererbung von &quot;[.Ext.Container“ ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html).
+  Panels werden aufgrund ihrer Vererbung von &quot;[.Ext.Container“ &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html).
 
 * `paragraphreference`
 
@@ -833,7 +833,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   [CQ.Ext.TabPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  Ein allgemeiner Container für Registerkarten. TabPanels kann zu Layout-Zwecken genauso wie ein standardmäßiges [CQ.Ext.Panel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) verwendet werden, verfügt aber auch über spezielle Unterstützung für darin enthaltene untergeordnete Komponenten ([`items` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)).
+  Ein allgemeiner Container für Registerkarten. TabPanels kann zu Layout-Zwecken genauso wie ein standardmäßiges [CQ.Ext.Panel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) verwendet werden, verfügt aber auch über spezielle Unterstützung für darin enthaltene untergeordnete Komponenten ([`items` &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)).
 
 * `tags`
 

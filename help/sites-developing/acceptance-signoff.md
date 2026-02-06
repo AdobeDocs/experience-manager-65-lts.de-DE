@@ -18,7 +18,7 @@ ht-degree: 16%
 
 # Akzeptanz und Abnahme{#acceptance-and-sign-off}
 
-Wie bereits erwähnt[ handelt es sich bei ](/help/sites-developing/planning.md) Akzeptanztests um eine spezielle Testkategorie, mit der Folgendes überprüft wird:
+Wie bereits erwähnt[&#x200B; handelt es sich bei &#x200B;](/help/sites-developing/planning.md) Akzeptanztests um eine spezielle Testkategorie, mit der Folgendes überprüft wird:
 
 * Das Projekt erfüllt die Anforderungen des Kunden.
 * Die Kundin bzw. der Kunde akzeptiert das Projekt.
