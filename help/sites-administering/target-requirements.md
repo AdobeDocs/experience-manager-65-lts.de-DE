@@ -31,7 +31,7 @@ Der Clientcode identifiziert das Adobe Target-Kundenkonto beim Aufruf des Adobe 
 >
 >Das Target-Team muss Ihr Konto für die Verwendung der Integration aktivieren.
 >
->Falls dies nicht der Fall ist, wenden Sie sich an die [Kundenunterstützung von Adobe](https://experienceleague.adobe.com/en/docs/target/using/cmp-resources-and-contact-information).
+>Falls dies nicht der Fall ist, wenden Sie sich an die [Kundenunterstützung von Adobe](https://experienceleague.adobe.com/de/docs/target/using/cmp-resources-and-contact-information).
 
 ## Aktivieren des Target-Replikationsagenten {#enabling-the-target-replication-agent}
 
