@@ -5,18 +5,18 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 7f8de16f-9e9a-4d37-9978-d26c496b911c
-source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
+source-git-commit: 2a33cb4b8aa1dcfd989cf61465492d563f9cd99a
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '494'
 ht-degree: 16%
 
 ---
 
-# Schritte zum Upgrade von Anwendungs-Server-Installationen (Tomcat) {#upgrade-steps-for-application-server-installations-tomcat}
+# Schritte zur Aktualisierung von Anwendungsserverinstallationen (Tomcat - Sidegrade) {#upgrade-steps-for-application-server-installations-tomcat}
 
 >[!NOTE]
 >
->Auf dieser Seite wird das Upgrade-Verfahren für AEM 6.5 LTS auf Tomcat beschrieben.
+>Auf dieser Seite wird das Upgrade von AEM 6.5 auf AEM 6.5 LTS auf Tomcat beschrieben. Informationen zum Upgrade von AEM 6.5 LTS auf AEM 6.5 LTS Service Pack [finden Sie hier](/help/sites-deploying/app-server-upgrade-tomcat-inplace.md)
 
 ## Schritte vor der Aktualisierung {#pre-upgrade-steps}
 
@@ -30,7 +30,7 @@ Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführe
 
 ### Durchführen des Upgrades {#performing-the-upgrade}
 
-In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungs-Server verwendet. Zudem wird vorausgesetzt, dass Sie bereits eine funktionierende AEM-Version installiert haben. In dieser Anleitung wird die Aktualisierung von AEM Version **.6.5 auf**&#x200B;**6.5 LTS** beschrieben.
+In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungs-Server verwendet. Zudem wird vorausgesetzt, dass Sie bereits eine funktionierende AEM-Version installiert haben. In dieser Anleitung wird die Aktualisierung von AEM Version **.6.5 auf****6.5 LTS** beschrieben.
 
 1. Wenn AEM 6.5 bereits bereitgestellt ist, überprüfen Sie, ob die Bundles ordnungsgemäß funktionieren, indem Sie Folgendes aufrufen: *`https://<serveraddress:port>/system/console/bundles`*
 1. Beenden Sie als Nächstes AEM 6.5. Dies kann über den Tomcat App Manager unter folgender Adresse durchgeführt werden: *`https://<serveraddress:port>/manager/html`*
@@ -42,7 +42,7 @@ In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungs-Server verwen
    ```
 
 1. Einrichten eines mit AEM 6.5 LTS kompatiblen Tomcat-Servers
-1. Überprüfen Sie die Startparameter für den AEM-Server und stellen Sie sicher, dass Sie die Parameter entsprechend den Systemanforderungen aktualisieren. Weitere Informationen finden Sie [Überlegungen zu Java 17 &#x200B;](/help/sites-deploying/custom-standalone-install.md#java-considerations) Java 21 .
+1. Überprüfen Sie die Startparameter für den AEM-Server und stellen Sie sicher, dass Sie die Parameter entsprechend den Systemanforderungen aktualisieren. Weitere Informationen finden Sie [Überlegungen zu Java 17 ](/help/sites-deploying/custom-standalone-install.md#java-considerations) Java 21 .
 1. Stellen Sie den neu heruntergeladenen 6.5 LTS-WAR mit Java 17/Java 21 auf dem Tomcat-Server bereit und starten Sie den Tomcat-Server mit AEM 6.5 LTS, indem Sie Folgendes ausführen:
 
    ```
@@ -73,4 +73,4 @@ Nach Abschluss des Upgrade-Prozesses sollte die aktualisierte Code-Basis bereitg
 
 ## Durchführen von Prüfungen und Fehlerbehebungen nach einem Upgrade {#perform-post-upgrade-checks-and-troubleshooting}
 
-Weitere Informationen [&#x200B; Sie unter „Prüfungen und &#x200B;](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md) nach einem Upgrade“.
+Weitere Informationen [ Sie unter „Prüfungen und ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md) nach einem Upgrade“.
