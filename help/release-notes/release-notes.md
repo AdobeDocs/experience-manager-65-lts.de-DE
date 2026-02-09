@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6a6a79663579e4d63e68ae6c9a4bec97f24032f9
+source-git-commit: 7c3f5d203be1ee2daa3274f76eade9af2ab9c821
 workflow-type: tm+mt
-source-wordcount: '7745'
+source-wordcount: '7751'
 ht-degree: 93%
 
 ---
@@ -530,7 +530,7 @@ Eclipse Jetty 11.0.x wird als Servlet-Engine für den Schnellstart verwendet.
 ### Aktualisieren {#upgrade}
 
 * Weitere Informationen zum Upgrade-Verfahren finden Sie unter [Dokumentation zu Upgrades](/help/sites-deploying/upgrade.md).
-* Detaillierte Aktualisierungsanweisungen finden Sie im [Aktualisierungshandbuch für AEM Forms 6.5 LTS SP1 on JEE](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Detaillierte Aktualisierungsanweisungen finden Sie im [Aktualisierungshandbuch für AEM Forms 6.5 LTS SP1 on JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Best Practices für AEM 6.5 LTS Service Pack-Upgrades
 
@@ -617,12 +617,12 @@ Um Transparenz zu gewährleisten und eine angemessene Planung zu ermöglichen, f
 
 In diesem Abschnitt werden Funktionen aufgeführt, die Adobe in AEM 6.5 LTS nicht mehr unterstützt werden. In der Regel werden Funktionen von Adobe eingestellt, bevor sie aus einer zukünftigen Version entfernt werden, und es wird eine Alternative bereitgestellt.
 
-
 Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Implementierung nutzen, und die Änderung ihrer Implementierung zu planen, um die bereitgestellte Alternative nutzen zu können.
 
 | Bereich | Funktion | Ersatz | Version (SP) |
 | --- | --- | --- | --- |
 | Sites | [SPA-Editor](/help/sites-developing/spa-overview.md) | Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind: <br>- der [universelle Editor](/help/sites-developing/universal-editor/introduction.md) zur visuellen Bearbeitung.<br>- der [Inhaltsfragment-Editor](/help/assets/content-fragments/content-fragments-managing.md) zur formularbasierten Bearbeitung. | 6.5 LTS GA |
+| [!DNL Foundation] | Unterstützung für com.adobe.granite.oauth.server | Adobe IMS-Integration |  |
 
 ### Entfernte Funktionen {#removed-features}
 
