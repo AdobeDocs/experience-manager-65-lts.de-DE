@@ -15,11 +15,11 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->Auf dieser Seite wird das Upgrade-Verfahren (Inplace Upgrade) von AEM 6.5 LTS auf AEM 6.5 LTS Servicepack on Tomcat beschrieben. Informationen zum Upgrade von AEM 6.5 auf 6.5 LTS [ Sie hier](/help/sites-deploying/app-server-upgrade-tomcat.md).
+>Auf dieser Seite wird das Upgrade-Verfahren (Inplace Upgrade) von AEM 6.5 LTS auf AEM 6.5 LTS Servicepack on Tomcat beschrieben. Informationen zum Upgrade von AEM 6.5 auf 6.5 LTS [&#x200B; Sie hier](/help/sites-deploying/app-server-upgrade-tomcat.md).
 
 ## Schritte vor der Aktualisierung {#pre-upgrade-steps}
 
-Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführen. Weitere [ finden Sie unter ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) vor einem Upgrade . Stellen Sie außerdem sicher, dass Ihr System die [Anforderungen für AEM 6.5 LTS Servicepack](/help/sites-deploying/technical-requirements.md) erfüllt, und lesen Sie [Überlegungen zur Upgrade-Planung](/help/sites-deploying/upgrade-planning.md).
+Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführen. Weitere [&#x200B; finden Sie unter &#x200B;](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) vor einem Upgrade . Stellen Sie außerdem sicher, dass Ihr System die [Anforderungen für AEM 6.5 LTS Servicepack](/help/sites-deploying/technical-requirements.md) erfüllt, und lesen Sie [Überlegungen zur Upgrade-Planung](/help/sites-deploying/upgrade-planning.md).
 
 
 ### Migrationsvoraussetzungen {#migration-prerequisites}
@@ -86,4 +86,4 @@ Alle Beispiele in diesem Verfahren verwenden Tomcat als Anwendungsserver und set
 
 ## Durchführen von Prüfungen und Fehlerbehebungen nach einem Upgrade {#perform-post-upgrade-checks-and-troubleshooting}
 
-Weitere Informationen [ Sie unter „Prüfungen und ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md) nach einem Upgrade“.
+Weitere Informationen [&#x200B; Sie unter „Prüfungen und &#x200B;](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md) nach einem Upgrade“.
