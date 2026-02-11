@@ -96,7 +96,7 @@ Zu Demonstrationszwecken kann es sinnvoll sein, sowohl die Autoren- als auch die
 
 ### WebSphere® 24.0.0.7 {#websphere}
 
-Lesen Sie oben „Allgemeine [&quot; vor ](#general-description) Bereitstellung.
+Lesen Sie oben „Allgemeine [&quot; vor &#x200B;](#general-description) Bereitstellung.
 
 **Vorbereitung des Servers**
 
