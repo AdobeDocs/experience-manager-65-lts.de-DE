@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 7c3f5d203be1ee2daa3274f76eade9af2ab9c821
+source-git-commit: f895a226e35b8d41b54245bdd25908f48ffc3045
 workflow-type: tm+mt
 source-wordcount: '7751'
 ht-degree: 93%
@@ -21,7 +21,7 @@ ht-degree: 93%
 | Version | Service Pack 1 (SP1), Hotfix für GRANITE-61551 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Typ | Service Pack-Version |
 | Datum | 9. September 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| Download-URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq660%2Fhotfixes%2Fcq-6.5.lts.1-hotfix-GRANITE-61551-1.2.zip) |
+| Download-URL | [Software Distribution] (https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-61551-1.4.zip) |
 
 <!-- OLD URL TO JAR
 (https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack-lts/cq-quickstart-6.6.1.jar) | -->
@@ -530,7 +530,7 @@ Eclipse Jetty 11.0.x wird als Servlet-Engine für den Schnellstart verwendet.
 ### Aktualisieren {#upgrade}
 
 * Weitere Informationen zum Upgrade-Verfahren finden Sie unter [Dokumentation zu Upgrades](/help/sites-deploying/upgrade.md).
-* Detaillierte Aktualisierungsanweisungen finden Sie im [Aktualisierungshandbuch für AEM Forms 6.5 LTS SP1 on JEE](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Detaillierte Aktualisierungsanweisungen finden Sie im [Aktualisierungshandbuch für AEM Forms 6.5 LTS SP1 on JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Best Practices für AEM 6.5 LTS Service Pack-Upgrades
 
@@ -569,7 +569,7 @@ SP1 für AEM 6.5 LTS wird als Schnellstart-JAR-Datei und nicht als ZIP-Datei zu
 >
 >Die oben gezeigten Dateinamen (z. B. `cq-quickstart-6.6.x.jar`) spiegeln die SP1-Schnellstart-Artefaktbenennung wider, die für diese LTS-Version beobachtet wird. Verwenden Sie immer den exakt gleichen Namen der Datei, die Sie von der Software-Verteilung herunterladen.
 
-## Installieren und Aktualisieren {#install-update}
+## Installieren und Aktualisieren{#install-update}
 
 Informationen zu Einrichtungsanforderungen finden Sie unter [Installationsanweisungen](/help/sites-deploying/custom-standalone-install.md).
 
