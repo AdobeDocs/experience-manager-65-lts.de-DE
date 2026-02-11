@@ -5,10 +5,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 0b4d1cb7-b3a7-4bcd-ad37-d718b2a0abd5
-source-git-commit: 2a33cb4b8aa1dcfd989cf61465492d563f9cd99a
+source-git-commit: 1d0fe9ee81a2e38f7887b6f884a13d1ba1462304
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 52%
+source-wordcount: '81'
+ht-degree: 51%
 
 ---
 
@@ -19,6 +19,6 @@ In diesem Abschnitt wird das Verfahren beschrieben, das zum Aktualisieren von AE
 Befolgen Sie die Anleitungen für jeden von AEM unterstützten Anwendungsserver:
 
 * [Schritte zum Upgrade von Anwendungs-Server-Installationen (WebSphere Liberty)](/help/sites-deploying/app-server-upgrade-wlp.md)
-* [Schritte zur Aktualisierung von Anwendungsserverinstallationen (Tomcat - Sidegrade)](/help/sites-deploying/app-server-upgrade-tomcat.md)
-* [Schritte zum Upgrade von Anwendungs-Server-Installationen (Tomcat - Inplace-Upgrade)](/help/sites-deploying/app-server-upgrade-tomcat-inplace.md)
+* [Schritte zum Upgrade von Anwendungs-Server-Installationen (Tomcat)](/help/sites-deploying/app-server-upgrade-tomcat.md)
+* [Upgrade-Schritte für AEM 6.5 LTS auf JBOSS EAP 8 (Windows)](/help/forms/using/upgrading-aem-6.5-lts-on-jboss-eap-8)
 

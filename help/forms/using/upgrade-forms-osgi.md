@@ -6,10 +6,10 @@ role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: dd45dfe953a111ccbbc71e8e25a8a2577037587a
+source-git-commit: b7aa877f9e782b0568adc7baa440dc630c690454
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 81%
+source-wordcount: '1527'
+ht-degree: 47%
 
 ---
 
@@ -29,7 +29,7 @@ Führen Sie nach dem Upgrade auf das Service Pack AEM Forms 6.5.22.0 die folgend
       1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** aus.
       1. Wählen Sie die Version aus und geben Sie sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
    1. Wählen Sie den für Ihr Betriebssystem zutreffenden Paketnamen, dann **[!UICONTROL EULA-Bedingungen akzeptieren]** und dann **[!UICONTROL Herunterladen]** aus.
-   1. Öffnen Sie [Package Manager](/help/sites-administering/package-manager.md) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
+   1. Öffnen Sie den [Paket-Manager](/help/sites-administering/package-manager.md) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
    1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
       Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) aufgeführt ist.
@@ -93,4 +93,319 @@ Führen Sie nach dem Upgrade auf das Service Pack AEM Forms 6.5.22.0 die folgend
 
    >[!NOTE]
    >
-   >In AEM 6.4 Forms hat sich die Struktur des crx-Repository geändert. Verwenden Sie nach dem Upgrade auf AEM 6.5 Forms die geänderten Pfade für die Anpassung, die Sie neu erstellen. Sie finden die vollständige Liste der geänderten Pfade unter [Forms Repository-Restrukturierung in AEM](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
+   >In AEM 6.4 Forms hat sich die Struktur des crx-Repository geändert. Verwenden Sie nach dem Upgrade auf AEM 6.5 Forms die geänderten Pfade für die Anpassung, die Sie neu erstellen. Sie finden die vollständige Liste der geänderten Pfade unter [Forms Repository-Restrukturierung in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
+
+
+## Bereitstellen von AEM unter JBoss EAP 8 (Windows)
+
+### Übersicht
+
+Dieses Handbuch enthält schrittweise Anweisungen zur Bereitstellung von Adobe Experience Manager (AEM) als eigenständige OSGi-WAR-Datei auf JBoss Enterprise Application Platform (EAP) 8 in einer Windows-Umgebung mit JDK 21.
+
+### Systemanforderungen
+
+Stellen Sie vor Beginn des Bereitstellungsprozesses sicher, dass Ihre Umgebung die folgenden Anforderungen erfüllt:
+
+| Komponente | Anforderung |
+|-----------|-------------|
+| Betriebssystem | Windows Server 2016 oder höher (64-Bit) |
+| Java Development Kit | JDK 21 (Oracle oder OpenJDK) |
+| Anwendungs-Server | JBoss EAP 8.x |
+| AEM-Verteilung | AEM WAR-Datei (bezogen von Adobe) |
+
+>[!NOTE]
+>
+> Stellen Sie sicher, dass die Umgebungsvariable `JAVA_HOME` auf Ihr JDK 21-Installationsverzeichnis verweist.
+
+### Schritt 1: Installieren von JBoss EAP 8
+
+#### JBoss EAP herunterladen
+
+1. Navigieren Sie zum Red Hat Developer Portal:\
+   [https://developers.redhat.com/products/eap/download](https://developers.redhat.com/products/eap/download)
+
+2. Laden Sie die JBoss EAP 8 ZIP-Distribution für Windows herunter.
+
+#### JBoss-EAP extrahieren
+
+1. Extrahieren Sie die heruntergeladene ZIP-Datei in das bevorzugte Installationsverzeichnis.
+
+2. Notieren Sie sich diesen Ordnerpfad, der in diesem Handbuch `<JBOSS_HOME>` wird.
+
+   **Beispiel:**\
+   ```C:\jboss-eap-8.0```
+
+### Schritt 2: AEM-WAR-Datei vorbereiten
+
+#### AEM WAR erhalten
+
+Erwerben Sie die AEM WAR-Datei von Adobe Software Distribution oder Ihrem Adobe-Support-Mitarbeiter.
+
+#### WAR-Datei umbenennen
+
+Benennen Sie die WAR-Datei um, damit ihr gewünschter URL-Kontextpfad widergespiegelt wird:
+
+```
+cq-quickstart.war
+```
+
+>[!IMPORTANT]
+>
+> Der WAR-Dateiname bestimmt den URL-Kontext der Anwendung. Beispielsweise ist `cq-quickstart.war` unter `/cq-quickstart` zugänglich.
+
+
+### Schritt 3: AEM WAR konfigurieren
+
+Alle Konfigurationsänderungen müssen vor der Bereitstellung **JBoss** werden.
+
+#### Arbeitsverzeichnis erstellen
+
+1. Erstellen Sie ein temporäres Arbeitsverzeichnis:
+
+   ```
+   C:\aem\war-config
+   ```
+
+2. Kopieren Sie `cq-quickstart.war` in diesen Ordner.
+
+#### WAR-Inhalte extrahieren
+
+1. Öffnen Sie **Eingabeaufforderung** und navigieren Sie zum Arbeitsverzeichnis:
+
+   ```cmd
+   cd C:\aem\war-config
+   ```
+
+2. Extrahieren Sie die WAR-Datei:
+
+   ```cmd
+   jar -xvf cq-quickstart.war
+   ```
+
+   Dadurch wird eine Verzeichnisstruktur mit `WEB-INF` und anderen Anwendungsdateien erstellt.
+
+### Schritt 4: Konfigurieren des JBoss-Bereitstellungsdeskriptors
+
+#### Erstellen einer Bereitstellungsstrukturdatei
+
+1. Navigieren Sie zum `WEB-INF`-Verzeichnis in Ihrem extrahierten WAR:
+
+   ```cmd
+   cd WEB-INF
+   ```
+
+2. Erstellen Sie eine neue Datei mit dem Namen `jboss-deployment-structure.xml`.
+
+3. Fügen Sie den folgenden XML-Inhalt hinzu:
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.2">
+       <deployment>
+           <dependencies>
+               <module name="jdk.unsupported" />
+           </dependencies>
+       </deployment>
+   </jboss-deployment-structure>
+   ```
+
+4. Speichern und schließen Sie die Datei.
+
+**Zweck:** Diese Konfiguration bietet Zugriff auf JDK-interne Module, die von AEM benötigt werden.
+
+### Schritt 5: Konfigurieren der Einstellungen für den mehrteiligen Upload
+
+>[!NOTE]
+>
+> Schritt 5 gilt nur für **AEM Forms**. Wenn Sie **nur AEM einrichten** können Sie diesen Schritt überspringen.
+
+
+#### Ändern von web.xml
+
+1. Öffnen Sie `WEB-INF\web.xml` in einem Texteditor.
+
+2. Suchen Sie den `<servlet>` Abschnitt, der die Ausführungsmodus-Konfiguration enthält:
+
+   ```xml
+   <!-- Set the runmode per default to author -->
+   <init-param>
+       <param-name>sling.run.modes</param-name>
+       <param-value>author</param-value>
+   </init-param>
+   <load-on-startup>100</load-on-startup>
+   </servlet>
+   ```
+
+3. Ersetzen Sie das schließende `</servlet>`-Tag und die vorangehende Zeile durch:
+
+   ```xml
+   <init-param>
+       <param-name>sling.run.modes</param-name>
+       <param-value>author</param-value>
+   </init-param>
+   <multipart-config>
+       <max-file-size>1048576000</max-file-size>
+       <max-request-size>1048576000</max-request-size>
+       <file-size-threshold>0</file-size-threshold>
+   </multipart-config>
+   <load-on-startup>100</load-on-startup>
+   </servlet>
+   ```
+
+4. Speichern und schließen Sie `web.xml`.
+
+**Zweck:** Diese Einstellungen ermöglichen große Datei-Uploads (bis zu 1 GB) für die Verwaltung von AEM Forms und digitalen Assets.
+
+### Schritt 6: Komprimieren Sie die WAR-Datei neu
+
+Komprimieren Sie nach Abschluss aller Konfigurationsänderungen die WAR-Datei neu.
+
+1. Navigieren Sie zurück zum Arbeitsverzeichnis, das den extrahierten Inhalt enthält:
+
+   ```cmd
+   cd C:\aem\war-config
+   ```
+
+2. Erstellen Sie die neue WAR-Datei:
+
+   ```cmd
+   jar -cvf cq-quickstart.war *
+   ```
+
+>[!IMPORTANT]
+>
+> Führen Sie diesen Schritt nur einmal aus, nachdem alle Konfigurationen abgeschlossen sind.
+
+### Schritt 7: AEM bereitstellen und starten
+
+#### Bereitstellen von WAR für JBoss
+
+1. Kopieren Sie die neu gepackten `cq-quickstart.war` in das JBoss-Bereitstellungsverzeichnis:
+
+   ```
+   <JBOSS_HOME>\standalone\deployments
+   ```
+
+   **Beispiel:**
+   ```C:\jboss-eap-8.0\standalone\deployments```
+
+#### JVM-Einstellungen konfigurieren (optional, aber empfohlen)
+
+Bevor Sie JBoss starten, konfigurieren Sie JVM-Speichereinstellungen:
+
+1. Öffnen Sie `<JBOSS_HOME>\bin\standalone.conf.bat` in einem Texteditor.
+
+1. Ändern Sie die folgende Zeile, um den Heap-Speicher festzulegen, oder fügen Sie sie hinzu:
+
+   ```batch
+   set "JAVA_OPTS=-Xms4096m -Xmx4096m -XX:MaxMetaspaceSize=512m"
+   ```
+
+>[!NOTE]
+>
+> Passen Sie die Speicherwerte an Ihre Serverkapazität und AEM-Anforderungen an.
+
+1. Speichern und schließen Sie die Datei.
+
+#### JBoss EAP starten
+
+1. Öffnen Sie **Eingabeaufforderung** als **Administrator**.
+
+1. Navigieren Sie zum Ordner JBoss bin :
+
+   ```cmd
+   cd <JBOSS_HOME>\bin
+   ```
+
+   **Beispiel:**
+   ```cmd cd C:\jboss-eap-8.0\bin```
+
+1. Starten Sie den JBoss-Server:
+
+   ```cmd
+   standalone.bat -b 0.0.0.0 -bmanagement 0.0.0.0
+   ```
+
+   **Parameter:**
+   * `-b 0.0.0.0` - Bindet den Server an alle Netzwerkschnittstellen
+   * `-bmanagement 0.0.0.0` - Bindet die Verwaltungsschnittstelle an alle Netzwerkschnittstellen
+
+#### Überwachen der Bereitstellung
+
+Überwachen Sie die Konsolenausgabe auf Bereitstellungsmeldungen. Eine erfolgreiche Bereitstellung wird durch Folgendes angezeigt:
+
+```
+Deployed "cq-quickstart.war" (runtime-name : "cq-quickstart.war")
+```
+
+### Schritt 8: Zugriff auf AEM
+
+Sobald die Bereitstellung abgeschlossen ist und AEM vollständig gestartet wurde:
+
+**AEM-Autoren-URL:**
+```http://<server-ip>:8080/cq-quickstart```
+
+**Standardanmeldeinformationen:**
+
+* Benutzername: `admin`
+* Passwort: `admin`
+
+**Wichtig:** Ändern Sie das Standardkennwort sofort nach der ersten Anmeldung.
+
+### Fehlerbehebung
+
+#### Gängige Probleme
+
+| Problem | Lösung |
+|-------|----------|
+| Die Bereitstellung schlägt mit ClassNotFoundException fehl | Überprüfen, ob `jboss-deployment-structure.xml` ordnungsgemäß konfiguriert ist |
+| OutOfMemoryError beim Start | Heap-Speicher in `standalone.conf.bat` erhöhen |
+| AEM startet nicht nach der Bereitstellung | Überprüfen der JBoss-Protokolle in `<JBOSS_HOME>\standalone\log\server.log` |
+| Zugriff auf AEM im Browser nicht möglich | Firewall-Einstellungen auf Port 8080 überprüfen |
+
+#### Protokolldateien
+
+* **JBoss-Serverprotokoll:** `<JBOSS_HOME>\standalone\log\server.log`
+* **AEM-Fehlerprotokoll:** nach dem Start über die AEM-Web-Konsole verfügbar unter\
+  `http://<server-ip>:8080/cq-quickstart/system/console`
+
+### Zusätzliche Konfiguration
+
+#### Konfigurieren von Ausführungsmodi
+
+Um die AEM-Ausführungsmodi (author/publish) zu ändern, ändern Sie den `sling.run.modes` in `WEB-INF\web.xml`, bevor Sie WAR neu verpacken:
+
+```xml
+<init-param>
+    <param-name>sling.run.modes</param-name>
+    <param-value>publish</param-value>
+</init-param>
+```
+
+#### Produktions-Recommendations
+
+Für Produktionsumgebungen:
+
+* Konfigurieren von SSL-/TLS-Zertifikaten in JBoss
+* Einrichten von AEM-Replikationsagenten
+* Konfigurieren des Dispatchers für den Lastenausgleich
+* Automatisierte Sicherungen aktivieren
+* Implementieren von Überwachung und Warnhinweisen
+
+### Verwandte Dokumentation
+
+* [JBoss EAP 8-Dokumentation](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0)
+* [Dokumentation zu Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=de)
+* [Installations- und Bereitstellungshandbuch für AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=de)
+
+### Dokumentinformation
+
+| Feld | Wert |
+|-------|-------|
+| Zuletzt aktualisiert | Februar 2026 |
+| AEM-Version | 6.5+ (LTS) |
+| JBoss-Version | EAP 8.x |
+| JDK-Version | 21 |
+| Platform | Windows |
+
+
