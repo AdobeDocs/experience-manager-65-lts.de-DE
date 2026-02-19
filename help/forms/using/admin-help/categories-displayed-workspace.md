@@ -43,7 +43,7 @@ Wenn Sie MySQL als Ihre AEM Forms-Datenbank verwenden, kann die Administrationsk
 1. Geben Sie im Feld „Name“ einen Namen und im Feld „Beschreibung“ eine Beschreibung der Kategorie ein.
 1. Klicken Sie auf Hinzufügen. Die Kategorie wird auf der Seite „Kategorieverwaltung“ angezeigt.
 
-   ***Hinweis **: Beim Erstellen von Kategorien können Sie nur bis zu fünf Hierarchieebenen hinzufügen.*
+   ***Hinweis &#x200B;**: Beim Erstellen von Kategorien können Sie nur bis zu fünf Hierarchieebenen hinzufügen.*
 
 ## Bearbeiten einer Kategorie {#edit-a-category}
 
