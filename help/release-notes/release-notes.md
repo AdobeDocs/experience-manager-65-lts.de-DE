@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 56a6a366aa563cab3a0385c619041238f04b31c5
+source-git-commit: ad26ea17d3d8fba351c31199607003ab4981c53d
 workflow-type: tm+mt
-source-wordcount: '5867'
-ht-degree: 22%
+source-wordcount: '6060'
+ht-degree: 21%
 
 ---
 
@@ -218,7 +218,7 @@ Die Seiteneditor-Veröffentlichung verarbeitet jetzt URLs, die Selektoren oder S
 
 #### Vorlageneditor{#sites-template-editor-65-lts-sp2}
 
-Der Text zum Vorlagenstatus wird für einige Gebietsschemata vertikal unter **Tools** > **Allgemein** > **&#x200B;**&#x200B;angezeigt. Die Bezeichnung „veraltet“ unterbrach das Layout und las als Zeichenspalte. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass die Beschriftung auf einer einzigen horizontalen Linie gerendert wird. (SITES-36797)
+Der Text zum Vorlagenstatus wird für einige Gebietsschemata vertikal unter **Tools** > **Allgemein** > **** angezeigt. Die Bezeichnung „veraltet“ unterbrach das Layout und las als Zeichenspalte. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass die Beschriftung auf einer einzigen horizontalen Linie gerendert wird. (SITES-36797)
 
 #### Universeller Editor {#sites-universal-editor-65-lts-sp2}
 
@@ -302,9 +302,9 @@ AEM synchronisiert jetzt Adobe Target-Aktivitäten, auch wenn Start- und Enddatu
 <!--
 #### Jetty{#foundation-jetty-65-lts-sp2}
 
-#### Localization{#foundation-localization-65-lts-sp2}
+#### Localization{#foundation-localization-65-lts-sp2} 
 
-#### Oak {#foundation-oak-65-lts-sp2}
+
 
 #### Omnisearch{#foundation-omnisearch-65-lts-sp2}
 
@@ -313,9 +313,36 @@ AEM synchronisiert jetzt Adobe Target-Aktivitäten, auch wenn Start- und Enddatu
 #### Projects{#foundation-projects-65-lts-sp2}
 -->
 
+#### Oak {#foundation-oak-65-lts-sp2}
+
+Für AEM 6.5 LTS Service Pack 2 ist der S3-Connector 1.60.10 oder höher erforderlich. Die S3-Datenspeicher-Konfiguration umfasst jetzt `crossRegionAccess` und `mode`, sodass Administratoren bei Bedarf den regionenübergreifenden Bucket-Zugriff aktivieren und den Speicher auf GCP umstellen können. `s3EndPoint` erwartet jetzt einen Bereich, der an `s3Region` ausgerichtet ist, oder er bleibt leer, sodass der Treiber den Endpunkt generiert. (GRANITE-64873)
+
+
 #### Schnellstart{#foundation-quickstart-65-lts-sp2}
 
-AEM 6.5 LTS SP2 aktualisiert den Foundation-Layer-Bundle-Satz für Sling, Oak und Felix. Diese Upgrades stärken die Kernlaufzeitstabilität und richten Abhängigkeitsversionen plattformübergreifend aus. (GRANITE-61874)
+* Sling aktualisiert die administrativ-login-Zulassungsliste für die Verwendung von inklusiver Terminologie und neuen Konfigurations-PIDs. Diese Änderung entspricht Sling JCR Base 3.2.0. (GRANITE-63756)
+
+  **Impact**
+
+   * Sling verwirft diese PIDs und Sie sollten sie aus Ihren Konfigurationen entfernen:
+      * Factory-PID: `org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment`
+      * Globale PID: `org.apache.sling.jcr.base.internal.LoginAdminWhitelist`
+Diese älteren Konfigurationen verwenden Eigenschaften wie `whitelist.name` und `whitelist.bundles`.
+
+   * Sling bietet weiterhin teilweise Abwärtskompatibilität für veraltete PIDs, verwendet sie jedoch nicht für neue Konfigurationen. Verwenden Sie stattdessen die neueren `LoginAdminAllowList.*` PIDs.
+   * Auf die Zulassungsliste setzen Führen Sie nicht veraltete und neue Dateikonfigurationen gleichzeitig aus. Gemischte Konfigurationen können Unklarheiten verursachen und unbeabsichtigtes Verhalten hervorrufen. Wenn Sie zu AEM 6.5 LTS SP2 migrieren, entfernen Sie die veralteten PIDs vollständig.
+
+  **Was sollten Sie tun**
+
+   1. Suchen Sie nach Zulassungsliste-Konfigurationen, die `LoginAdminWhitelist*` PIDs verwenden.
+   1. Ersetzen Sie sie durch die entsprechenden neuen PIDs:
+
+      * Factory-PID: `org.apache.sling.jcr.base.LoginAdminAllowList.fragment`
+      * Globale PID: `org.apache.sling.jcr.base.LoginAdminAllowList`
+
+      Weitere Informationen finden Sie unter [Veralteter Ansatz zur Zulassungsliste von Bundles für die Administratoranmeldung](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecated-approach-to-allowlist-bundles-for-administrative-login).
+
+* AEM 6.5 LTS SP2 aktualisiert den Foundation-Layer-Bundle-Satz für Sling, Oak und Felix. Diese Upgrades stärken die Kernlaufzeitstabilität und richten Abhängigkeitsversionen plattformübergreifend aus. (GRANITE-61874)
 
 <!--
 #### Security{#foundation-security-65-lts-sp2}
@@ -362,7 +389,7 @@ Eclipse Jetty 11.0.x wird als Servlet-Engine für den Schnellstart verwendet.
 ### Aktualisieren {#upgrade}
 
 * Weitere Informationen zum Upgrade-Verfahren finden Sie unter [Dokumentation zu Upgrades](/help/sites-deploying/upgrade.md).
-* Detaillierte Aktualisierungsanweisungen finden Sie im [Aktualisierungshandbuch für AEM Forms 6.5 LTS SP1 on JEE](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Detaillierte Aktualisierungsanweisungen finden Sie im [Aktualisierungshandbuch für AEM Forms 6.5 LTS SP1 on JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Best Practices für AEM 6.5 LTS Service Pack-Upgrades
 
@@ -537,5 +564,5 @@ In den nachfolgenden Textdokumenten sind die in [!DNL Experience Manager] 6.5 
 Diese Websites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
 
 * [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/)
-* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
