@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2f49cb29-698b-43ab-971f-81e2b18e6fa9
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ Zum Satz der Standard-Services von AEM Forms on JEE, die in der Workbench von AE
 
 Die allgemeine Erstellung von Anwendungen und Prozessen ist nicht Gegenstand dieses Tutorials, aber für diese Anleitung haben wir eine Anwendung namens „DemoApplication02“ erstellt. Wenn eine Anwendung bereits erstellt wurde, müssen Sie in dieser Anwendung einen Prozess erstellen, um den executeScript-Service aufzurufen. So fügen Sie dem Programm einen Prozess hinzu, der den Service `Execute Script` beinhaltet:
 
-1. Klicken Sie mit der rechten Maustaste auf die Anwendung und wählen Sie **[!UICONTROL Neu]** aus. Wählen Sie im ausklappbaren Menü **[!UICONTROL Neu]** die Option **[!UICONTROL Prozess]**. Benennen Sie den Prozess, fügen Sie bei Bedarf eine Beschreibung hinzu und wählen Sie das Symbol aus, das diesen Prozess darstellen soll. Für dieses Tutorial haben wir einen Prozess erstellt und ihn `executeScriptDemoProcess` genannt.
+1. Klicken Sie mit der rechten Maustaste auf die Anwendung und wählen Sie **[!UICONTROL Neu]** aus. Wählen Sie im ausklappbaren Menü **[!UICONTROL Neu]** die Option **[!UICONTROL Prozess]**. Benennen Sie Ihren Prozess, fügen Sie bei Bedarf eine Beschreibung hinzu und wählen Sie das Symbol aus, das diesen Prozess darstellen soll. Für dieses Tutorial haben wir einen Prozess erstellt und ihn `executeScriptDemoProcess` genannt.
 1. Definieren Sie die Startpunkte oder entscheiden Sie sich einfach, die Startpunkte später hinzuzufügen.
 1. Der Prozess wird jetzt erstellt und sollte automatisch im Fenster [!UICONTROL Prozess-Design] geöffnet werden. Klicken Sie hier oben im Fenster „Prozess-Design“ auf das Symbol für die Aktivitätsauswahl und ziehen Sie die neue Aktivität auf die Schwimmbahn. Zu diesem Zeitpunkt sollte das Fenster [!UICONTROL Aktivität definieren] angezeigt werden (siehe Abbildung unten).
    ![Aktivität definieren](assets/define-activity.jpg)

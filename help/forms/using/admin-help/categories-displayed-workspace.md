@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f9ffbe56-757b-4fd0-b33a-2522695aed35
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -39,7 +39,7 @@ Wenn Sie MySQL als Ihre AEM Forms-Datenbank verwenden, kann die Administrationsk
 ## Hinzufügen einer Kategorie {#add-a-category}
 
 1. Wählen Sie in der Administrationskonsole „Dienste“ > „Anwendungen und Dienste“ > „Kategorieverwaltung“ aus.
-1. Klicken Sie auf Hinzufügen. Wenn Sie eine Unterkategorie hinzufügen möchten, wählen Sie eine Kategorie aus und klicken Sie dann auf „Hinzufügen“.
+1. Klicken Sie auf Hinzufügen. Wenn Sie eine Unterkategorie hinzufügen möchten, wählen Sie eine Kategorie aus und klicken Sie dann auf Hinzufügen.
 1. Geben Sie im Feld „Name“ einen Namen und im Feld „Beschreibung“ eine Beschreibung der Kategorie ein.
 1. Klicken Sie auf Hinzufügen. Die Kategorie wird auf der Seite „Kategorieverwaltung“ angezeigt.
 
@@ -48,7 +48,7 @@ Wenn Sie MySQL als Ihre AEM Forms-Datenbank verwenden, kann die Administrationsk
 ## Bearbeiten einer Kategorie {#edit-a-category}
 
 1. Wählen Sie in der Administrationskonsole „Dienste“ > „Anwendungen und Dienste“ > „Kategorieverwaltung“ aus.
-1. Wählen Sie die zu bearbeitende Kategorie aus und klicken Sie auf „Bearbeiten“. Alternativ können Sie auf eine Kategorie doppelklicken, um sie zu bearbeiten.
+1. Wählen Sie die Kategorie aus, die Sie bearbeiten möchten, und klicken Sie auf Bearbeiten. Alternativ können Sie auf eine Kategorie doppelklicken, um sie zu bearbeiten.
 1. Bearbeiten Sie den Namen der Kategorie im Feld „Name“.
 
 ## Entfernen einer Kategorie {#remove-a-category}

@@ -7,10 +7,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: a9cbab12-62a6-4779-955f-2858166945e6
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '2478'
-ht-degree: 97%
+ht-degree: 95%
 
 ---
 
@@ -120,7 +120,7 @@ Die folgenden Gruppen sind ebenfalls enthalten:
    >
    >Die Einstellungen in AFC sind für Endbenutzerinnen und Endbenutzer vorkonfiguriert, was bedeutet, dass sie nicht geändert werden sollten.
 
-   * **Optional**: Wenn Sie das Thema „Accessible Ultramarine“ verwenden möchten, klicken Sie einfach auf „Adaptives Formularthema angeben“ und wählen Sie das Thema „Accessible-Ultramarine“ aus, das in der Liste der Optionen angezeigt wird.
+   * **Optional**: Wenn Sie das Thema Accessible Ultramarine verwenden möchten, klicken Sie einfach auf das Thema adaptives Formular angeben und wählen Sie das Thema Accessible-Ultramarine aus, das in der Liste der Optionen angezeigt wird.
 
    ![Konvertierung starten](assets/aftia-start-conversion.jpg)
 
@@ -499,7 +499,7 @@ George genehmigt Ayas Antrag, und dank eines bestehenden automatisierten Workflo
 
    ![Listenansicht im Dropdown-Menü „Ansicht“](/help/forms/using/assets/list_view_view_dropdown.jpg)
 
-1. Wählen Sie im gleichen Menü die Option **Ansichtseinstellung** und anschließend im Abschnitt **Analysen** die Spalten aus, die angezeigt werden sollen.
+1. Wählen Sie im gleichen Menü **Ansichtseinstellung** und wählen Sie die Spalten, die Sie anzeigen möchten, aus dem Abschnitt **Analytics** aus.
 
    ![Konfigurieren der Spaltenanzeige](/help/forms/using/assets/view_setting_analytics.jpg)
 

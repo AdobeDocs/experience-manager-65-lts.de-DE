@@ -6,10 +6,10 @@ feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: 810be820-b577-4035-9fda-3d919361c58c
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '1696'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ Ein Benutzer mit Adminzugriff in [!DNL Adobe Experience Manager] konfiguriert de
 >
 >* Adobe veröffentlicht möglicherweise Aktualisierungen für [!DNL Adobe Workfront] und [!DNL Adobe Experience Manager], die diesen Connector redundant machen. In diesem Fall kann es erforderlich sein, dass Kunden diesen Connector nicht mehr verwenden.
 >
->* Adobe unterstützt die Versionen 1.7.4 und höher des erweiterten Connectors. Frühere Vorabversionen und benutzerdefinierte Versionen werden nicht unterstützt. Um die Version des erweiterten Connectors zu überprüfen, gehen Sie zu der Gruppe `digital.hoodoo`, die im linken Fensterbereich des [Package Managers](/help/sites-administering/package-manager.md) verfügbar ist.
+>* Adobe unterstützt die Versionen 1.7.4 und höher des erweiterten Connectors. Frühere Vorabversionen und benutzerdefinierte Versionen werden nicht unterstützt. Um die Version des erweiterten Connectors zu überprüfen, gehen Sie zu der Gruppe `digital.hoodoo`, die im linken Fensterbereich des [Paket-Managers](/help/sites-administering/package-manager.md) verfügbar ist.
 >
 >* Siehe [Partnerzertifizierungsprüfung für den erweiterten Connector von Workfront for Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Informationen zur Prüfung finden Sie im [Prüfungshandbuch](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
@@ -81,8 +81,8 @@ Gehen Sie wie folgt vor, um die Zuordnungen zu konfigurieren:
 
 1. Fügen Sie `jcr:read`-Berechtigungen zu `/conf/global/settings/dam/adminui-extension/foldermetadataschema` für die Gruppe `wf-workfront-users` hinzu.
 1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Ordner-Metadatenschemata]**.
-1. Wählen Sie das Formular für das Ordner-Metadatenschema, das Sie bearbeiten möchten, und klicken Sie auf „Bearbeiten“.
-1. Wählen Sie das Formularfeld des Ordner-Metadatenschemas aus, das Sie bearbeiten möchten, und klicken Sie im rechten Bedienfeld auf die Registerkarte „Einstellungen“.
+1. Wählen Sie das Formular für das Ordner-Metadatenschema aus, das Sie bearbeiten möchten, und klicken Sie auf „Bearbeiten“.
+1. Wählen Sie das Formularfeld des Ordner-Metadatenschemas aus, das Sie bearbeiten möchten, und wählen Sie im rechten Bereich die Registerkarte „Einstellungen“ aus.
 1. Wählen Sie im Feld [!UICONTROL Aus Workfront-Feld zugeordnet] den Namen des Workfront-Felds aus, das Sie der ausgewählten AEM-Ordnereigenschaft zuordnen möchten. Verfügbare Optionen sind:
 
    * Benutzerdefinierte Formularfelder für Projekte
@@ -97,9 +97,9 @@ Die Zuordnung von Metadaten zwischen Adobe Workfront-Dokumenten und Assets wird 
 Gehen Sie wie folgt vor, um die Zuordnungen zu konfigurieren:
 
 1. Navigieren Sie zu **Tools** > **Assets** > **Metadatenschemata**.
-1. Wählen Sie das Metadatenschema-Formular aus, das Sie bearbeiten möchten, und klicken Sie auf **Bearbeiten** oder erstellen Sie ein neues Metadatenschema von Grund auf.
-1. Wählen Sie das Metadatenschema-Formularfeld aus, das Sie bearbeiten möchten, und wählen Sie die Registerkarte **Einstellungen** im rechten Bedienfeld.
-1. Wählen Sie in [!DNL Workfront] unter „Benutzerdefiniertes Formularfeld“ den Namen des [!DNL Workfront]-Feldes, das Sie der ausgewählten AEM-Eigenschaft zuordnen möchten. Verfügbare Optionen sind:
+1. Wählen Sie das Metadatenschema-Formular aus, das Sie bearbeiten möchten, und klicken Sie auf **Bearbeiten** oder erstellen Sie von Grund auf ein neues Metadatenschema.
+1. Wählen Sie das Metadatenschema-Formularfeld aus, das Sie bearbeiten möchten, und wählen Sie die Registerkarte **Einstellungen** im rechten Bereich aus.
+1. Wählen Sie in [!DNL Workfront] unter „Benutzerdefiniertes Formularfeld“ den Namen des [!DNL Workfront]-Feldes aus, das Sie der ausgewählten AEM-Eigenschaft zuordnen möchten. Verfügbare Optionen sind:
 
    * Benutzerdefinierte Formularfelder für Dokumente
    * Benutzerdefinierte Formularfelder für Projekte
@@ -107,7 +107,7 @@ Gehen Sie wie folgt vor, um die Zuordnungen zu konfigurieren:
    * Benutzerdefinierte Formularfelder für Aufgaben
    * Felder zur Projektübersicht (ID, Name, Beschreibung oder Referenznummer)
 
-1. Wenn das als [!UICONTROL Benutzerdefiniertes Workfront-Formularfeld] ausgewählte [!DNL Workfront]-Feld ein Workfront-Benutzerfeld mit Eingabepuffer ist, müssen Sie angeben, welches Workfront-Benutzerfeld Sie zuordnen möchten. Aktivieren Sie dazu die Option „Wert aus dem von Workfront referenzierten Objektfeld abrufen“ und geben Sie dann den Namen des [!UICONTROL benutzerdefinierten Workfront-Formularfelds] an, von dem der zuzuordnende Wert abgerufen werden soll.
+1. Wenn das [!DNL Workfront] im benutzerdefinierten Formularfeld [!UICONTROL Workfront] ein Workfront-Benutzerfeld mit Eingabepuffer ist, müssen Sie angeben, welches Workfront-Benutzerfeld Sie zuordnen möchten. Aktivieren Sie dazu die Option „Wert aus dem von Workfront referenzierten Objektfeld abrufen“ und geben Sie dann den Namen des [!UICONTROL benutzerdefinierten Workfront-Formularfelds] an, von dem der zuzuordnende Wert abgerufen werden soll.
 
    ![Konfiguration der Metadatenzuordnung](/help/assets/assets/wf-metadata-mapping-config1.png)
 
@@ -165,7 +165,7 @@ Gehen Sie wie folgt vor, um die Synchronisierung von Kommentaren von Workfront n
 
    ![Kommentar in Workfront hinterlassen](/help/assets/assets/comments-sync2.png)
 
-1. Gehen Sie zum selben verknüpften Dokument in AEM, wählen Sie das Dokument aus und öffnen Sie die Option [!UICONTROL Zeitleiste] in der linken Navigation und wählen Sie dann [!UICONTROL Kommentare] aus. In der linken Seitenleiste werden die Kommentare angezeigt, die aus [!DNL Workfront] synchronisiert wurden.
+1. Gehen Sie zum selben verknüpften Dokument in AEM, wählen Sie das Dokument aus und öffnen Sie die Option [!UICONTROL Timeline] in der linken Navigation und wählen Sie dann [!UICONTROL Kommentare] aus. In der linken Seitenleiste werden die Kommentare angezeigt, die aus [!DNL Workfront] synchronisiert wurden.
 
 ## Asset-Versionen {#asset-versions}
 
