@@ -220,7 +220,7 @@ Die Seiteneditor-Veröffentlichung verarbeitet jetzt URLs, die Selektoren oder S
 
 #### Vorlageneditor{#sites-template-editor-65-lts-sp2}
 
-Der Text zum Vorlagenstatus wird für einige Gebietsschemata vertikal unter **Tools** > **Allgemein** > **** angezeigt. Die Bezeichnung „veraltet“ unterbrach das Layout und las als Zeichenspalte. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass die Beschriftung auf einer einzigen horizontalen Linie gerendert wird. (SITES-36797)
+Der Text zum Vorlagenstatus wird für einige Gebietsschemata vertikal unter **Tools** > **Allgemein** > **&#x200B;**&#x200B;angezeigt. Die Bezeichnung „veraltet“ unterbrach das Layout und las als Zeichenspalte. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass die Beschriftung auf einer einzigen horizontalen Linie gerendert wird. (SITES-36797)
 
 #### Universeller Editor {#sites-universal-editor-65-lts-sp2}
 
@@ -519,7 +519,7 @@ In diesem Abschnitt werden die Funktionen aufgeführt, die aus AEM 6.5 LTS entf
 
 Benutzer können während der Online-Komprimierung auf eine Beschädigung des Repositorys stoßen, wenn zuvor die Offline-Komprimierung auf dem JCR-Repository ausgeführt wurde. In diesem Szenario kann ein `SegmentNotFoundException` (SNFE) auftreten, der zu einer Beschädigung des Repositorys führen kann.
 
-Um das Problem zu beheben, installieren Sie den Hotfix ( Package Manager. Sie können den Hotfix von „Software [&quot; ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-65388-1.0.zip). Da der Hotfix ein `oak-segment-tar`-Bundle auf niedriger Ebene enthält, wird die Instanz nach der Installation neu gestartet.
+Um das Problem zu beheben, installieren Sie den Hotfix ( Package Manager. Sie können den Hotfix von „Software [&quot; &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-65388-1.0.zip). Da der Hotfix ein `oak-segment-tar`-Bundle auf niedriger Ebene enthält, wird die Instanz nach der Installation neu gestartet.
 
 Planen Sie beispielsweise Ausfallzeiten bei der Anwendung ein. Verwenden Sie für die Offline-Komprimierung die entsprechende [oak-run jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar), die auch auf Software Distribution verfügbar ist.
 
