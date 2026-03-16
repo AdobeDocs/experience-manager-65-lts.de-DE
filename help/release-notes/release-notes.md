@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0268920d3c4895a1c52fbc36f537a02d1424c2a4
+source-git-commit: 68bcdfff6ea13c7d392991eba9df957bd5ab1523
 workflow-type: tm+mt
 source-wordcount: '6243'
 ht-degree: 20%
@@ -62,18 +62,18 @@ AEM 6.5 LTS SP2 enthält jetzt OpenAPIs für [Inhaltsfragment- und Modellverwalt
 * Fehlerkorrektur - Fehlende Ankündigungen von Bildschirmlesehilfen für Fehler beim Auswählen von Links in Dialogfeldern wurden behoben. Die Benutzeroberfläche veröffentlicht jetzt Fehlertext über einen Statusmeldungs-Container, sodass die NVDA die Nachricht liest, sobald sie angezeigt wird. (SITES-25368)
 * ARIA-Raster- und Rasterzellenrollen wurden aus der Seitenleisten-Asset-Liste entfernt. Die standardmäßige Listensemantik und die Tastaturfokusreihenfolge wurden wiederhergestellt, was die Navigation der Sprachausgabe verbessert und zusätzliche Tabstopps reduziert hat. (SITES-25361)
 * Die Fokussequenzierung in der Seitenleisten-Assets wurde korrigiert. Tastaturbenutzer erreichen jetzt über einen konsistenten Registerkartenpfad alle Asset-Aktionen, einschließlich „Bearbeiten“. (SITES-25360)
-* Der Layout-Überlauf im Modus &quot;Elemente suchen&quot; wurde mit einer Viewport-Breite von 320 Pixel behoben. Modale Inhalte werden jetzt umflossen und bleiben lesbar, sodass Steuerelemente das Dialogfeld nicht mehr überlappen oder überlaufen. (SITES-25330)
+* Layout-Überlauf im Assets-Modal „Suche“ bei einer Darstellungsfeldbreite von 320 Pixel behoben. Modale Inhalte fließen jetzt zurück und bleiben lesbar, sodass sich Steuerelemente nicht mehr überschneiden oder das Dialogfeld überlaufen wird. (SITES-25330)
 * NVDA-Ausgabe für die Edit-Taste korrigiert. NVDA kündigt jetzt die Aktion „Bearbeiten“ an, nicht die Schaltfläche „Vorschau“. (SITES-25320)
 * Es wurden unbenannte Texteingaben in der Demografie-Symbolleiste korrigiert, die eine stille oder generische Ausgabe der Bildschirmlesehilfe verursachten. Jede Eingabe zeigt jetzt einen klaren, auf Bezeichnungen basierenden barrierefreien Namen an, der die Tastaturnavigation und die Navigation mit Hilfstechnologien verbessert. (SITES-25316)
 * Korrektur der Tastaturfokusreihenfolge für die Demografie-Symbolleiste während der Navigation in der Layout-Vorschau. Die Registerkartennavigation wechselt jetzt direkt von der Schaltfläche Demografisch zu den Symbolleistensteuerelementen, ohne zur sekundären Symbolleiste zu wechseln. (SITES-25305)
 * Fehlerkorrektur - Die Ankündigungsreihenfolge für die Beschriftungen „Kleiner Screens&quot; und „Tablet“ auf dem Layout-Lineal „Bearbeiten“ ist jetzt korrekt. Die Sprachausgabe gibt diese Beschriftungen nun an den richtigen Linealmarken aus, die dem Seitenlayout entsprechen. (SITES-25291)
 * Ein Überlauf der Symbolleiste „Layout bearbeiten“ wurde mit 200 % Zoom behoben. Inhalte bleiben jetzt im Darstellungsfeld und sind durch Scrollen erreichbar. (SITES-25288)
-* Falsche Fokusreihenfolge in der Anmerkungsüberlagerung behoben. Die Tastatur-Tab-Funktion wechselt jetzt durch Überlagerungssteuerelemente und Anmerkungselemente. Die übergeordnete Seite nimmt den Fokus nicht mehr hinter der Überlagerung an. (SITES-25282)
-* Die Handhabung des Farbfelder-Popup-Fokus wurde korrigiert. Das Dialogfeld setzt den Fokus jetzt auf eine klare Überschrift und startet die Ausgabe der Bildschirmlesesoftware an dieser Einstiegsstelle. NVDA liest den vollständigen Inhalt des Dialogfelds nicht mehr aus der Sequenz heraus. (SITES-25275)
+* Falsche Fokusreihenfolge in der Anmerkungsüberlagerung behoben. Die Tabulatortaste durchläuft jetzt Überlagerungssteuerelemente und Anmerkungselemente. Die übergeordnete Seite erhält nicht mehr den Fokus hinter der Überlagerung. (SITES-25282)
+* Die Fokusbehandlung im Popover für Farbfelder wurde korrigiert. Das Dialogfeld verschiebt den Fokus jetzt auf eine leere Überschrift und startet die Ausgabe der Sprachausgabe an diesem Einstiegspunkt. NVDA liest den vollständigen Inhalt des Dialogfelds nicht mehr aus der Sequenz heraus. (SITES-25275)
 * Die Behandlung des modalen Fokus von Timewarp nach dem Schließen der Datumsauswahl wurde korrigiert. `Escape` kehrt jetzt zur Schaltfläche zur Datumsauswahl zurück. Bei der Datumsauswahl wird jetzt der Fokus auf das Eingabefeld neben dem Datumsauswahl-Steuerelement gelegt, wodurch Fokusverlust und der Zugriff auf die Hintergrundseite verhindert werden. (SITES-25264)
 * Fehlerkorrektur: Die Tastaturfokusbehandlung für das Dialogfeld Anmerkung löschen wurde korrigiert. Durch Abbrechen wird jetzt der Fokus auf das `Delete` Steuerelement zurückgesetzt, das das Dialogfeld geöffnet hat, nicht auf das Steuerelement zum Bestätigen des Hexadezimalwerts. Nach dem Abbrechen gibt die Sprachausgabe keinen nicht verwandten Dialogfeldinhalt mehr aus. (SITES-25258)
 * Feste Fokusbehandlung für das modale Dialogfeld „Anmerkung“. Das Öffnen des Dialogfelds legt jetzt den Fokus auf die Dialogfeldüberschrift und verhindert, dass NVDA Canvas-Inhalte und nicht zugehörigen Dialogfeldtext liest. Die Tastaturnavigation bleibt jetzt bis zum Schließen im Dialogfeld. (SITES-25257)
-* Probleme mit dem modalen Layout der Suche bei einer Breite von 320 px wurden behoben. Modale Inhalte werden jetzt sauber neu umgebrochen und Überschneidungen mit dem Baumverzeichnis werden vermieden. Benutzer können Ergebnisse anzeigen und ohne verdeckte Steuerelemente im Verzeichnis navigieren. (SITES-25246)
+* Es wurden Probleme mit dem Layout des Suchmodals bei einer Breite von 320 Pixel behoben. Modale Inhalte fließen jetzt sauber zurück und vermeiden Überschneidungen mit dem Baumverzeichnis. Benutzer können Ergebnisse anzeigen und ohne verdeckte Steuerelemente im Verzeichnis navigieren. (SITES-25246)
 * Suchmodaltext wird nach Vergrößerung des Textabstands nicht mehr angeclipst. Das Strukturverzeichnis-Layout behält jetzt eine klare Trennung bei, sodass Bezeichnungen und Einträge lesbar bleiben. Benutzer können jetzt die Suche und Navigation ohne Überschneidung oder abgeschnittenen Text abschließen. (SITES-25245)
 * Durch die Aktivierung der Anmerkung wird der Tastaturfokus jetzt in den Anmerkungsinhalt verschoben, nicht in die Schaltfläche Anmerkung beenden . Die Tabulatorreihenfolge folgt einer logischen Reihenfolge und hält die zugehörigen Steuerelemente ohne Rückwärtsnavigation erreichbar. (SITES-25241)
 * Die Links „Datum festlegen“ und „Timewarp beenden“ hatten bei der Tastaturnavigation keinen sichtbaren Fokusindikator. Die Benutzeroberfläche rendert jetzt einen eigenen Stil mit kontrastreichem Fokus, sodass Benutzende den aktiven Link auf einen Blick erkennen können. (SITES-25232)
@@ -81,8 +81,8 @@ AEM 6.5 LTS SP2 enthält jetzt OpenAPIs für [Inhaltsfragment- und Modellverwalt
 * AEM verwendet jetzt eine aussagekräftige barrierefreie Bezeichnung für die Schaltfläche Teaser-Modalinformationen . Die Sprachausgabe gibt einen klaren Aktionsnamen anstelle der Standardsymbol-Alt-Text-Zeichenfolge aus. (SITES-25223)
 * Die Sprachausgabe gibt jetzt die richtige Aktion aus, wenn Benutzende die Schaltfläche Bearbeiten aktivieren. Die NVDA meldet nicht mehr, dass die „Vorschau-Schaltfläche gedrückt“ wurde, was irreführendes Feedback und Verwirrung während der Tastaturnavigation verursachte. (SITES-25208)
 * Durch Erweitern der linken Leiste wird der Tastaturfokus jetzt auf das erste Steuerelement der linken Leiste verschoben. Die Tabulatorsequenz springt nicht mehr zur sekundären Symbolleiste oder landet in der Mid-List, sodass Tastaturbenutzer Inhalte der linken Leiste ohne Rückwärtsnavigation erreichen können. (SITES-24998)
-* Der Inhalt der Geräteemulatorleiste bleibt jetzt bei einer Viewport-Breite von 320 px vollständig sichtbar. Der Text und die Steuerelemente der Symbolleiste werden umbrochen, anstatt sie abzuschneiden. Dadurch werden Überlappungen verringert und die Lesbarkeit verbessert. (SITES-24953)
-* AEM zeigt jetzt die vollständige iPhone-Gerätebezeichnung in der Emulatorsymbolleiste an. Text wird nicht mehr mit der Standardbreite abgeschnitten, was die Lesbarkeit und die Klarheit der Geräteauswahl verbessert. (SITES-24952)
+* Der Inhalt der Leiste des Geräteemulators bleibt jetzt bei einer Darstellungsfeldbreite von 320 Pixel vollständig sichtbar. Der Text und die Steuerelemente der Symbolleiste werden umgebrochen, anstatt sie zu kürzen, wodurch Überschneidungen reduziert und die Lesbarkeit verbessert werden. (SITES-24953)
+* AEM zeigt jetzt die vollständige iPhone-Gerätebeschriftung in der Emulator-Symbolleiste an. Text wird nicht mehr mit der Standardbreite abgeschnitten, was die Lesbarkeit und die Klarheit der Geräteauswahl verbessert. (SITES-24952)
 * Listenansicht - Tabellenüberschriften zeigen jetzt über ARIA den Sortierstatus an. Die Sprachausgabe gibt eine auf- oder absteigende Reihenfolge nach einer Spaltensortierungsaktion aus. (SITES-24943)
 * AEM behält jetzt die Sichtbarkeit der Menübeschriftung Mehr Aktionen in der Kartenansicht bei Änderungen des Textabstands bei. Menüoptionen behalten den vollständigen Text, einschließlich Quick Publish, und das Menü bleibt bei allen WCAG-Textabstandseinstellungen lesbar. (SITES-24941)
 * In der Menüleiste für Kartenaktionen wird jetzt ein barrierefreier Name in der Kartenansicht angezeigt. Bildschirmlesehilfen geben den Zweck der Menüleiste klar an, und die Sprachsteuerung kann das Steuerelement anhand des Namens auswählen. (SITES-24938)
@@ -90,19 +90,19 @@ AEM 6.5 LTS SP2 enthält jetzt OpenAPIs für [Inhaltsfragment- und Modellverwalt
 * Die `Delete Modal` QuickInfo wird jetzt angezeigt, wenn Benutzer über das QuickInfo-Symbol fahren. Fokusaktionen zeigen jetzt denselben QuickInfo-Text an, was den Wiederholungszugriff für Maus- und Tastaturbenutzer verbessert. (SITES-24778)
 * Die Navigation in der linken Leiste folgt jetzt der erwarteten Tastaturfokusreihenfolge, nachdem Benutzende die Leiste konfiguriert haben. Der Tabulatorfokus landet auf dem ausgewählten Bereich der linken Leiste anstelle des Umschalt-Displays, wodurch die Navigationsklarheit der Bildschirmlesehilfe verbessert wird. (SITES-24754)
 * Fehlerkorrektur - Falsches NVDA-Feedback während der Farbfeld-Navigation im Modal „Benutzereinstellungen“ wird behoben. NVDA liest jetzt die Beschriftung für das Farbfeld, das den Fokus erhält, wodurch irreführende Farbausgaben entfernt werden. Das Farbfeldset unterstützt jetzt eine konsistente Tastaturnavigation und eine klare Auswahlerkennung. (SITES-24739)
-* Reduzierte ausführliche NVDA-Ausgabe für die `Spin`. Redundante Gruppenbeschriftung, die die Eingabebeschriftung dupliziert hat, wurde entfernt, sodass NVDA den Namen des Steuerelements einmal ankündigt. Die Navigation mit Tastatur und Bildschirmlesesoftware erfolgt jetzt in einer einzigen, klaren Ankündigung. (SITES-24725)
+* Reduzierte ausführliche NVDA-Ausgabe für die `Spin`. Redundante Gruppenbeschriftungen, die die Eingabebeschriftung dupliziert haben, wurden entfernt, sodass NVDA den Namen des Steuerelements nur einmal ankündigt. Die Navigation über Tastatur und Bildschirmlesehilfe bietet jetzt eine einzige, klare Ankündigung. (SITES-24725)
 * Im Dialogfeld „Karussell“ wird der Fokus nun auf die Dialogfeldüberschrift anstelle der Registerkarte „Elemente“ gelegt. Abbrechen und Esc stellen den Fokus auf das Steuerelement wieder her, das das Dialogfeld gestartet hat, wodurch die ausführliche NVDA-Ausgabe reduziert wird. (SITES-24716)
 * Das Dialogfeld für die Link-Auswahl richtet nun die programmgesteuerte Beschriftung an der Bildschirmbeschriftung für Baumstrukturelemente der letzten Ebene aus. Die Pfeiltasten-Navigation Trigger eine verlässliche Ankündigung der Bildschirmlesehilfe für jedes Element und entfernt irreführende Etikettenausgaben. (SITES-24710)
 * Das Dialogfeld zum Öffnen der Link-Auswahl wird jetzt unter einem 320-Pixel-Viewport korrekt wiedergegeben. Der Inhalt wird nicht mehr über das Modal oder abgeschnitten und das Modal zeigt keine horizontale Bildlaufleiste mehr an. (SITES-24709)
 * Das Dialogfeld zum Öffnen der Link-Auswahl stellt jetzt den Tastaturfokus nach Schließen oder Abbrechen wieder auf den Trigger des Dialogfelds her. Der Fokus springt nicht mehr zur Link-Eingabe, wodurch der Kontext der Sprachausgabe stabil bleibt und die zusätzliche Navigation reduziert wird. (SITES-24707)
 * Das modale Dialogfeld „Bild“ folgt jetzt einer logischen Fokussequenz. Der Fokus überspringt nach dem Abbrechen nicht mehr frühere Steuerelemente oder Drops auf dem Orientierungspunkt der Seite, und Benutzende fokussieren nach dem Beenden wieder auf die Schaltfläche Konfigurieren . (SITES-24693)
-* Das modale Dialogfeld „Leiste „Verweise“ hält jetzt den Tastaturfokus auf. Tabulatortaste und Umschalttaste+Tabulatortaste bleiben in den Dialogfeldsteuerelementen, und der Fokus wird nicht mehr auf den Seiteninhalt verschoben. Bildschirmlesesoftware gibt nur den Inhalt des Dialogfelds an. (SITES-24683)
+* Das modale Dialogfeld „Leiste „Verweise“ hält jetzt den Tastaturfokus auf. Die Registerkarten und Umschalt+Tab bleiben innerhalb der Dialogfeldsteuerelemente, und der Fokus wird nicht mehr an den Seiteninhalt weitergegeben. Die Sprachausgabe gibt nur den Inhalt von Dialogfeldern aus. (SITES-24683)
 * Das Modal „Hyperlink-Pfadauswahl“ legt jetzt den Fokus auf die Dialogfeldüberschrift beim Öffnen. Abbrechen schließt das Dialogfeld und stellt den Fokus auf die Schaltfläche Auswahl-Dialogfeld öffnen wieder her, wodurch Fokusverlust und redundante Bildschirmlesehilfen verhindert werden. (SITES-24672)
 * Das Suchfeld verwendet jetzt eine beständige On-Screen-Beschriftung anstelle von Platzhaltertext. Die Beschriftung bleibt während der Eingabe sichtbar, wodurch die Klarheit für Benutzende von Tastatur, Bildschirmleser und Sprache verbessert wird. (SITES-24529)
 * Das modale Dialogfeld „Teaser“ legt jetzt den Fokus auf die Dialogfeldüberschrift beim Öffnen. Beim Schließen des Dialogfelds wird der Fokus wieder auf das `Configure`-Steuerelement gesetzt, wodurch Fokusverlust und eine übermäßige Ausgabe der Sprachausgabe verhindert werden. (SITES-24522)
 * Die Seitenleiste des Assets-Bedienfelds enthält jetzt ein Steuerelement zum Schließen. Durch Schließen wird der Tastaturfokus auf den Umschalter für die Seitenleiste zurückgesetzt und das erzwungene Durchblättern des Bereichsinhalts wird verhindert. (SITES-24489)
 * Die Tabulatortaste auf der Tastatur greift jetzt auf Schaltflächen und Links in Admin-Tabellen zu. Benutzende verlassen sich nicht mehr auf die Pfeiltasten-Zellnavigation, um interaktive Steuerelemente zu finden. (SITES-24285)
-* Das Dialogfeld Bildkomponente zeigt keine dekorativen Symbole für Hilfe und Vollbildmodus mehr als Bilder an. Bildschirmlesehilfen überspringen jetzt diese Symbole, wobei der Fokus auf umsetzbaren Steuerelementen und Feldinhalten verbleibt. (SITES-2940)
+* Das Dialogfeld Bildkomponente zeigt keine dekorativen Hilfs- und Vollbildsymbole mehr als Bilder an. Bildschirmlesehilfen überspringen jetzt diese Symbole, wobei der Fokus auf umsetzbaren Steuerelementen und Feldinhalten verbleibt. (SITES-2940)
 * Sites Admin entfernt jetzt die Rolle Bild aus den Miniaturansichtssymbolen des Ordners. Die Hilfstechnologie überspringt diese dekorativen Elemente und behält den Fokus auf Ordnernamen und Aktionen. (SITES-2852)
 * Die Inhaltsstruktur leitet jetzt den Tastaturfokus zum aktiven Baumstrukturelement oder ersten Baumstrukturelement weiter. Der Baum-Container fungiert nicht mehr als leerer Tabulatorstopp, was Umschalt- und Tabulatorfokusfallen verhindert. (SITES-1577)
 
@@ -120,9 +120,9 @@ Der Unterstützung von Headless-Ereignissen fehlten die erforderlichen OSGi-Erei
 
 #### [!DNL Content Fragments] – Admin{#sites-admin-65-lts-sp2}
 
-* Die Komponentenbehandlung in der Site-Authoring-Oberfläche wurde angepasst, um unregelmäßiges Verhalten während Seitenaktualisierungen zu stoppen. Der Fehler führte zu unvorhersehbaren Bearbeiterantworten, die routinemäßige Inhaltsänderungen und eine reduzierte Workflow-Effizienz beeinträchtigten. Das Update richtet die Editorlogik an die erwarteten Interaktionsmuster aus und bietet eine zuverlässige Leistung während der Authoring-Aktivitäten. (SITES-35078) CRITICAL
+* Die Komponentenverarbeitung in der Authoring-Oberfläche von Sites wurde angepasst, um unregelmäßiges Verhalten während Seitenaktualisierungen zu stoppen. Der Fehler führte zu unvorhersehbaren Editor-Antworten, die routinemäßige Inhaltsänderungen beeinträchtigten und die Workflow-Effizienz verringerten. Die Aktualisierung stimmt die Editor-Logik mit den erwarteten Interaktionsmustern ab und bietet eine zuverlässige Leistung bei Authoring-Aktivitäten. (SITES-35078) CRITICAL
 
-* Durch eine Regression wurde die Listenansicht der Assets-Konsole für Inhaltsfragmente unterbrochen und ein Fehler beim Rendern der Liste ausgelöst. Durch die Aktualisierung wird die Listenansichtslogik nach dem Entfernen der Vorschau-Info korrigiert und die stabile Listenausgabe wiederhergestellt. Die Konsole zeigt jetzt Inhaltsfragmente ohne Fehler an und hält Listeninteraktionen nutzbar. (SITES-38683)
+* Eine Regression führte zu einer Unterbrechung der Assets-Konsolen-Listenansicht für Inhaltsfragmente und löste einen Fehler beim Rendern der Liste aus. Durch die Aktualisierung wird die Listenansichtslogik nach dem Entfernen der Vorschau-Info korrigiert und die stabile Listenausgabe wiederhergestellt. Die Konsole zeigt jetzt Inhaltsfragmente ohne Fehler an und hält Listeninteraktionen nutzbar. (SITES-38683)
 * Der Inhaltsfragment-Editor lokalisiert jetzt die Tag-Kennzeichnung. Der Editor lokalisiert auch die Bezeichnung Sammlungen , sodass der Benutzeroberflächentext mit dem ausgewählten Gebietsschema übereinstimmt. (SITES-977)
 
 
@@ -135,7 +135,7 @@ Der Unterstützung von Headless-Ereignissen fehlten die erforderlichen OSGi-Erei
 * Durch das Entfernen von IMS-Bereichen vom Polaris-Asset-Selektor wurde die Integration von Inhaltsfragmenten mit dem Versand-Endpunkt unterbrochen. Autoren schlagen beim Öffnen des Remote-Asset-Wählers und beim Auswählen von Assets auf Fehler. Die Aktualisierung fügt die erforderlichen IMS-Bereiche erneut hinzu und stellt den stabilen Zugriff auf die Bereitstellungsebene wieder her. (SITES-35837)
 * Das Bedienfeld „Zugehörige Inhalte“ rendert keinen hartcodierten Platzhalter „undefiniert“ mehr. Der Inhaltsfragment-Editor löst diesen Text jetzt durch Lokalisierungsressourcen auf, sodass Editoren übersetzten Text in der Benutzeroberfläche sehen. (SITES-33675)
   <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
-* Der Inhaltsfragment-Editor zeigt jetzt eine übersetzte Registerkartenbeschriftung &quot;Allgemein&quot; über Gebietsschemas hinweg an. Der Editor ersetzt nicht lokalisierten Tabulatortext und entfernt interne IDs aus Tabulatortiteln. (SITES-30715)
+* Im Inhaltsfragment-Editor wird jetzt eine übersetzte Registerkartenbeschriftung Allgemein für alle Gebietsschemata angezeigt. Der Editor ersetzt nicht lokalisierten Registerkartentext und entfernt interne IDs aus Registerkartentiteln. (SITES-30715)
 * Der Inhaltsfragment-Editor zeigt jetzt übersetzte Namen für zulässige Asset-Typen an. In der Auswahlliste werden keine internen Zeichenfolgen und Nur-Englisch-Bezeichnungen mehr gemischt, wenn Autoren Inhaltsreferenz-Einschränkungen konfigurieren. (SITES-29699)
 
 #### [!DNL Content Fragments] – GraphQL-API {#sites-graphql-api-65-lts-sp2}
@@ -147,7 +147,7 @@ Der Unterstützung von Headless-Ereignissen fehlten die erforderlichen OSGi-Erei
 #### [!DNL Content Fragments] – GraphQL-Abfrage-Editor{#sites-graphql-query-editor-65-lts-sp2}
 
 * Die Validierung von GraphQL-Abfragen wurde verfeinert, um Bereitstellungsfehler zu stoppen, die durch Fehler bei der Filterausführung verursacht wurden. Der Fehler verursachte beim Anwendungsstart Ausnahmen und blockierte den erfolgreichen Rollout in betroffenen Umgebungen. Die Revision stellt ein konsistentes Validierungsverhalten sicher und ermöglicht eine reibungslose Bereitstellung ohne Unterbrechung der Abfragevalidierung zur Laufzeit. (SITES-35529)
-* GraphQL Explorer schlägt nicht mehr fehl, wenn der Name eines Konfigurationsbrowsers CJK-Zeichen enthält. Die Erstellung von Endpunkten und der gespeicherte Abfragezugriff funktionieren ordnungsgemäß, und die GraphQL Query Editor-Seite bleibt fehlerfrei. (SITES-31616)
+* GraphQL Explorer schlägt nicht mehr fehl, wenn ein Konfigurations-Browser-Name CJK-Zeichen enthält. Die Endpunkterstellung und der gespeicherte Abfragezugriff funktionieren normal und die GraphQL-Abfrage-Editor-Seite bleibt fehlerfrei. (SITES-31616)
 
 #### [!DNL Content Fragments] - Modell-Editor{#sites-model-editor-65-lts-sp2}
 
@@ -185,15 +185,15 @@ Ein Feature-Toggle-Fehler meldet falsch den Status der Page Management-API. Die 
 #### Launches{#sites-launches-65-lts-sp2}
 
 * Während der Launch-Promotion zeigte die Sites-Zeitleiste hartcodierten englischen Text: „Erstellte Version … vor der Launch-Promotion“. Die Aktualisierung ersetzt die hartcodierte Zeichenfolge durch die Behandlung lokalisierter Nachrichten. Die Zeitleiste zeigt jetzt lokalisierten Text an und stimmt den Eintrag mit dem standardmäßigen AEM-Lokalisierungsverhalten ab. (SITES-39157)
-* Der Umfang der Heraufstufung wurde verschoben, wenn Autoren einen Unterabschnitt mithilfe von &quot;Aktuelle Seite und Unterseiten hochstufen&quot; hochstufen. AEM förderte auch nicht zugehörige Seiten und verursachte unerwartete Änderungen an der Live-Site. Die Korrektur korrigiert die Berechnung des Startbereichs, sodass nur die ausgewählte Unterstruktur hochgestuft wird. (SITES-38315)
-* Inhaltsfragmente in Launches waren nicht am `damAssetLucene`-Index beteiligt und die Suchergebnisse sowie die Abfrageeffizienz wurden eingeschränkt. Durch diese Änderung werden der Indexdefinition Launch Content Fragment-Pfade hinzugefügt. Die Suche und benutzerdefinierte Abfragen finden jetzt Inhaltsfragmente unter &quot;`/content/launches`&quot;. (SITES-35634)
+* Der Umfang der Launch-Promotion war unterschiedlich, wenn Autoren einen Unterabschnitt mit der Option Aktuelle Seite und Unterseiten hochstufen hochgestuft haben. AEM hat auch nicht verwandte Seiten hochgestuft und unerwartete Live-Site-Änderungen verursacht. Durch die Korrektur wird die Berechnung des Launch-Umfangs korrigiert, sodass nur die ausgewählte Unterstruktur höher stuft. (SITES-38315)
+* Inhaltsfragmente in Launches waren nicht am `damAssetLucene`-Index beteiligt und haben die Suchergebnisse und die Abfrageeffizienz eingeschränkt. Durch diese Änderung werden Launch-Inhaltsfragmentpfade zur Indexdefinition hinzugefügt. Suchen und benutzerdefinierte Abfragen finden jetzt Inhaltsfragmente unter `/content/launches`. (SITES-35634)
 * In der Launch-Benutzeroberfläche wurden die Launch-Steuerelemente für Inhaltsfragmente angezeigt, obwohl das Produkt keine Inhaltsfragment-Launches in der Touch-Benutzeroberfläche verfügbar macht. Durch diese Änderung werden die Codepfade für Inhaltsfragmentstarts von cq-launches-content entfernt und die Filterung der Launch-Liste angepasst. Autoren sehen jetzt konsistente Seiten-Launch-Optionen ohne Inhaltsfragment-Launch-Einträge. (SITES-35633)
 * In AEM 6.5 LTS Quickstart fehlten erforderliche Launches-Bundles und Voraussetzungen, wodurch die OpenAPI-Aktivierung von Launches blockiert wurde. Die Aktualisierung fügt Launch-Bundles und erforderliche Abhängigkeiten hinzu, z. B. Unterstützung von Metriken, DAM-cfm-Aktualisierungen und Warteschlangenkonfiguration. Launches-APIs werden jetzt auf 6.5 LTS QuickStart ausgeführt, wobei die erforderlichen Laufzeitkomponenten vorhanden sind. (SITES-35297)
 * Die CF Launches-Paketerstellung zog neuere Abhängigkeitsversionen und unnötige GraphQL-Bibliotheken hinzu, was die Integration von AEM 6.5 LTS erschwerte. Durch diese Änderung werden Abhängigkeitsversionen an der AEM 6.5 LTS-Baseline ausgerichtet und nicht verwendete GraphQL-Abhängigkeiten entfernt. Die Paketauflösung bleibt jetzt konsistent und der CF-Start bleibt stabil. (SITES-35295)
 * AEM Launches führt jetzt eine dedizierte Jenkins-Pipeline für die 6.5-LTS-Verzweigung aus. Die Pipeline führt nächtliche Builds aus und sendet Fehlerwarnungen per E-Mail. Diese Konfiguration erhöht die Testabdeckung und erfasst Regressionen frühzeitig. (SITES-35293)
 * AEM 6.5 LTS stellt jetzt ein aktualisiertes Launches-API-Bundle mit abgestimmten Artefaktversionen bereit. Das Bundle verfolgt die primäre Code-Zeile und behält dabei die korrekte Version der LTS-Version 6.5 bei. Dieses Update stabilisiert die Nutzung der Launches-API im gesamten 6.5 LTS-Stack. (SITES-35292)
 * AEM 6.5 LTS enthält jetzt ein aktualisiertes Launches-Core-Bundle mit abgestimmten Abhängigkeitsversionen. Die Aktualisierung fügt die Core-Handhabung von Launches für die Datentypen „Fragment-UUID“ und „Referenz-UUID“ hinzu. Die Launch-Verarbeitung sorgt jetzt für ein konsistentes Verhalten in allen Launches und Inhaltsfragment-Workflows. (SITES-35290)
-* Der Sites-Editor wurde verbessert, um inkonsistentes Verhalten zu beheben, das normale Workflows zum Erstellen von Seiten unterbrochen hat. Bei Autoren ist eine unerwartete Komponenteninteraktion aufgetreten, die Inhaltsaktualisierungen beeinträchtigte und die Zuverlässigkeit der Bearbeitung verringerte. Die Änderung stellt eine konsistente Verwaltung des Benutzeroberflächenstatus wieder her und stellt die vorhersehbare Ausführung von Authoring-Aktionen in den betroffenen Szenarien sicher. (SITES-35138)
+* Der Sites-Editor wurde verfeinert, um inkonsistentes Verhalten zu beheben, das normale Seitenerstellungs-Workflows gestört hat. Autoren stießen auf unerwartete Komponenteninteraktionen, die die Inhaltsaktualisierung behinderten und die Bearbeitungszuverlässigkeit beeinträchtigten. Die Änderung stellt eine konsistente Verwaltung des Benutzeroberflächenstatus wieder her und gewährleistet eine vorhersehbare Ausführung von Authoring-Aktionen in den betroffenen Szenarien. (SITES-35138)
 * Beim Start von Bearbeiten wird nun lokalisierter Fehlertext anstelle der hartcodierten `Provided path is not a launch` angezeigt. Die Benutzeroberfläche rendert jetzt übersetzte Nachrichten sprachübergreifend, wenn Edit einen ungültigen Startpfad erhält. (SITES-33360)
 * AEM 6.5 LTS enthält jetzt die Launches-OpenAPI-Side-Port-Arbeit. Durch die Aktualisierung werden Launches-API-Bundles, Inhaltspakete und erforderliche Schnellstart-Artefakte paritätisch zusammengeführt. Außerdem werden Inhaltsfragment-Launches und OpenAPI-Szenarien mit stabiler CI-Validierung ermöglicht. (SITES-32050)
 * Die Launch-Benutzeroberfläche lokalisiert jetzt die überschriebene Vorlagenbeschriftung. Vorlagenüberschreibungsdetails zeigen jetzt übersetzten Text anstelle einer nur auf Englisch übersetzten Zeichenfolge an. (SITES-29525)
@@ -220,7 +220,7 @@ Die Seiteneditor-Veröffentlichung verarbeitet jetzt URLs, die Selektoren oder S
 
 #### Vorlageneditor{#sites-template-editor-65-lts-sp2}
 
-Der Text zum Vorlagenstatus wird für einige Gebietsschemata vertikal unter **Tools** > **Allgemein** > **&#x200B;**&#x200B;angezeigt. Die Bezeichnung „veraltet“ unterbrach das Layout und las als Zeichenspalte. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass die Beschriftung auf einer einzigen horizontalen Linie gerendert wird. (SITES-36797)
+Der Text zum Vorlagenstatus wird für einige Gebietsschemata vertikal unter **Tools** > **Allgemein** > **** angezeigt. Die Bezeichnung „veraltet“ unterbrach das Layout und las als Zeichenspalte. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass die Beschriftung auf einer einzigen horizontalen Linie gerendert wird. (SITES-36797)
 
 #### Universeller Editor {#sites-universal-editor-65-lts-sp2}
 
@@ -271,7 +271,7 @@ Assets Relate funktioniert jetzt für Dateinamen, die Leerzeichen enthalten. Akt
 
 #### Apache Felix {#foundation-apachefelix-65-lts-sp2}
 
-* Sling Resource Access Security läuft jetzt auf Version 1.1.2. ResourceAccessSecurityImpl löst während der Initialisierung keine ClassCastException mehr aus, wenn mehrere ResourceAccessGateHandler-Dienste registriert werden. Die Initialisierung wird jetzt zuverlässig abgeschlossen und vermeidet Startfehler in Umgebungen mit mehreren Handlern. (NPR-42750)
+* Sling Resource Access Security wird jetzt auf Version 1.1.2 ausgeführt. ResourceAccessSecurityImpl löst während der Initialisierung keine ClassCastException mehr aus, wenn sich mehrere ResourceAccessGateHandler-Dienste registrieren. Die Initialisierung wird jetzt zuverlässig abgeschlossen und vermeidet Startfehler in Umgebungen mit mehreren Handlern. (NPR-42750)
 * Die JMX-Konsole und die Web-Konsole senden jetzt eine `Content-Type: text/css header` für CSS-Ressourcen der Konsole. Die strikte MIME-Überprüfung blockiert nicht mehr das Laden von Stylesheets, sodass die `/system/console/jmx` Benutzeroberfläche mit normalem Stil gerendert wird. (GRANITE-63677)
 * AEM vermeidet jetzt doppelte ACL-Einträge für die `contributor` im generierten `WEB-INF/resources/provisioning/model.txt`. Die WAR-Ausgabe enthält jetzt einen konsistenten ACL-Block, der verwirrende Berechtigungsunterschiede bei der Überprüfung verhindert. (GRANITE-63269)
 * AEM löscht die Deserialisierungs-Firewall-Blockierungsliste auf die Zulassungsliste setzte und die Paketaktualisierungseinstellungen nicht mehr. Die aktualisierte Filterregistrierungslogik sorgt dafür, dass die aktive Firewall-Instanz mit der gespeicherten Konfiguration abgestimmt ist, sodass der Schutz ohne Neustart aktiviert bleibt. (GRANITE-61382)
@@ -299,7 +299,7 @@ Der Expression Security Validator verarbeitet jetzt leere oder null OSGi-Konfigu
 
 #### Integrationen{#foundation-integrations-65-lts-sp2}
 
-AEM synchronisiert Adobe Target-Aktivitäten jetzt auch dann, wenn Start- und Enddatum vorhanden sind. Die Ziel-Payload formatiert Aktivitätsdaten jetzt als vollständige ISO 8601-Zeitstempel, einschließlich Sekunden, Millisekunden und Zeitzone. Das Ziel lehnt die Anforderung mit `InvalidJson.Json` nicht mehr ab. Geplante Aktivitäten werden jetzt in einen synchronisierten Status versetzt, anstatt nicht mehr synchron zu bleiben. (CQ-4360733)
+AEM synchronisiert jetzt Adobe Target-Aktivitäten, auch wenn Start- und Enddatum vorhanden sind. Die Target-Payload formatiert Aktivitätsdaten jetzt als vollständige ISO 8601-Zeitstempel, einschließlich Sekunden, Millisekunden und Zeitzone. Target lehnt die Anfrage nicht mehr mit `InvalidJson.Json` ab. Geplante Aktivitäten werden jetzt in einen synchronisierten Status versetzt, anstatt nicht synchronisiert zu bleiben. (CQ-4360733)
 
 <!--
 #### Jetty{#foundation-jetty-65-lts-sp2}
@@ -317,7 +317,7 @@ AEM synchronisiert Adobe Target-Aktivitäten jetzt auch dann, wenn Start- und En
 
 #### Oak {#foundation-oak-65-lts-sp2}
 
-AEM 6.5 LTS Service Pack 2 erfordert S3 Connector 1.60.10 oder höher. Die S3-Datenspeicher-Konfiguration umfasst jetzt `crossRegionAccess` und `mode`, sodass Administratoren bei Bedarf den regionenübergreifenden Bucket-Zugriff aktivieren und den Speicher auf GCP umstellen können. Der `s3EndPoint` erwartet jetzt einen Bereich, der an `s3Region` ausgerichtet ist, oder er bleibt leer, sodass der Treiber den Endpunkt generiert. (GRANITE-64873)
+Für AEM 6.5 LTS Service Pack 2 ist der S3-Connector 1.60.10 oder höher erforderlich. Die S3-Datenspeicher-Konfiguration umfasst jetzt `crossRegionAccess` und `mode`, sodass Administratoren bei Bedarf den regionenübergreifenden Bucket-Zugriff aktivieren und den Speicher auf GCP umstellen können. Der `s3EndPoint` erwartet jetzt einen Bereich, der an `s3Region` ausgerichtet ist, oder er bleibt leer, sodass der Treiber den Endpunkt generiert. (GRANITE-64873)
 
 
 #### Schnellstart{#foundation-quickstart-65-lts-sp2}
@@ -386,7 +386,7 @@ Eclipse Jetty 11.0.x wird als Servlet-Engine für den Schnellstart verwendet.
 
 ### Uber-JAR-Verpackung {#uber-jar-packaging}
 
-Der UberJar für AEM 6.5 LTS SP2 verwendet die AEM 6.5 LTS UberJar Version 6.6.0. Sie können die entsprechenden UberJar-Artefakte aus dem Maven Central Repository abrufen. Im Gegensatz zu AEM 6.5 unterteilt AEM 6.5 LTS öffentliche APIs und veraltete APIs in zwei verschiedene Artefakte.
+Das UberJar für AEM 6.5 LTS SP2 verwendet AEM 6.5 LTS UberJar 6.6.2. Sie können die entsprechenden UberJar-Artefakte aus dem Maven Central Repository abrufen. Im Gegensatz zu AEM 6.5 unterteilt AEM 6.5 LTS öffentliche APIs und veraltete APIs in zwei verschiedene Artefakte.
 
 Verwenden Sie Folgendes, um mit den öffentlichen APIs zu kompilieren:
 
@@ -394,7 +394,7 @@ Verwenden Sie Folgendes, um mit den öffentlichen APIs zu kompilieren:
 <dependency>
     <groupId>com.adobe.aem</groupId>
     <artifactId>uber-jar</artifactId>
-    <version>6.6.0</version>
+    <version>6.6.2</version>
     <classifier>apis</classifier>
     <scope>provided</scope>
 </dependency>
@@ -406,7 +406,7 @@ Wenn Ihr Code auch von veralteten APIs abhängig ist, fügen Sie Folgendes hinzu
 <dependency>
     <groupId>com.adobe.aem</groupId>
     <artifactId>uber-jar</artifactId>
-    <version>6.6.0</version>
+    <version>6.6.2</version>
     <classifier>deprecated-apis</classifier>
     <scope>provided</scope>
 </dependency>
@@ -417,7 +417,7 @@ Siehe auch [Aktualisieren der Uber Jar-Version von AEM](/help/sites-deploying/up
 ### Aktualisieren {#upgrade}
 
 * Weitere Informationen zum Upgrade-Verfahren finden Sie unter [Dokumentation zu Upgrades](/help/sites-deploying/upgrade.md).
-* Detaillierte Aktualisierungsanweisungen finden Sie im [Aktualisierungshandbuch für AEM Forms 6.5 LTS SP1 on JEE](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Detaillierte Aktualisierungsanweisungen finden Sie im [Aktualisierungshandbuch für AEM Forms 6.5 LTS SP1 on JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Best Practices für AEM 6.5 LTS Service Pack-Upgrades
 
@@ -434,7 +434,7 @@ SP2 für AEM 6.5 LTS wird als Schnellstart-JAR und nicht als ZIP-Datei zur Insta
 1. Stellen Sie sicher, dass Ihre AEM 6.5 LTS-Instanz fehlerfrei funktioniert und zugänglich ist.
 1. Laden Sie die Schnellstart-JAR-Datei (z. B. `cq-quickstart-6.6.x.jar`) von Software Distribution herunter.
 1. Stoppen Sie die Instanz, die ausgeführt wird.
-1. Ersetzen Sie im AEM Installationsverzeichnis (außerhalb von `crx-quickstart/`) die vorherige Quickstart-JAR durch die SP2-JAR.
+1. Ersetzen Sie im AEM-Installationsverzeichnis (außerhalb von `crx-quickstart/`) die vorherige Schnellstart-JAR-Datei durch die SP2-JAR-Datei.
 1. Entpacken Sie die JAR-Datei:
 
    ```java
@@ -505,7 +505,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 
 | Bereich | Funktion | Ersatz | Version (SP) |
 | --- | --- | --- | --- |
-| Schnellstart | Mongo-APIs | Mongo-APIs sind jetzt veraltet und sollen in zukünftigen Versionen entfernt werden. | 6,5 TS SP2 |
+| Schnellstart | Mongo-APIs | Mongo-APIs werden nicht mehr unterstützt und sollen in zukünftigen Versionen entfernt werden. | 6.5 TS SP2 |
 | Sites | Unterstützung von Inhaltsfragmenten in der AEM Assets-REST-API | AEM 6.5 LTS SP2 bietet moderne OpenAPIs für die Verwaltung von Inhaltsfragmenten und -modellen, sodass die älteren Endpunkte zur Unterstützung von Inhaltsfragmenten in der AEM Assets-REST-API jetzt nicht mehr unterstützt werden.<br>Adobe beabsichtigt, diese älteren Endpunkte bis zu einer Mitteilung über das Ende der Nutzungsdauer verfügbar zu halten. Adobe plant keine weiteren Verbesserungen an den veralteten Endpunkten. | 6.5 LTS SP2 |
 | Sites | [SPA-Editor](/help/sites-developing/spa-overview.md) | Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind: <br>- der [universelle Editor](/help/sites-developing/universal-editor/introduction.md) zur visuellen Bearbeitung.<br>- der [Inhaltsfragment-Editor](/help/assets/content-fragments/content-fragments-managing.md) zur formularbasierten Bearbeitung. | 6.5 LTS GA |
 | [!DNL Foundation] | Unterstützung für com.adobe.granite.oauth.server | Adobe IMS-Integration |  |
@@ -547,13 +547,13 @@ Benutzer können während der Online-Komprimierung auf eine Beschädigung des Re
 
 Um das Problem zu beheben, installieren Sie den Hotfix von [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-65388-1.0.zip). Da der Hotfix ein `oak-segment-tar`-Bundle auf niedriger Ebene enthält, wird die Instanz nach der Installation neu gestartet.
 
-Planen Sie die Ausfallzeit der Instanz, wenn Sie sie anwenden. Verwenden Sie für die Offline-Komprimierung das entsprechende [oak-run jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar), das auch auf der Softwareverteilung verfügbar ist.
+Planen Sie die Ausfallzeiten der Instanz bei der Anwendung ein. Verwenden Sie für die Offline-Komprimierung die entsprechende [oak-run jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar), die auch auf Software Distribution verfügbar ist.
 
 >[!NOTE]
 >
-> * Verwenden Sie für alle oak-run-Vorgänge das JAR [oak-run 1.88.1-B006](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar).
+> * Verwenden Sie für alle Oak-run-Vorgänge [oak-run 1.88.1-B006 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar).
 >
-> * Starten Sie AEM, indem Sie die Systemeigenschaft &quot;`oak.compaction.legacy=true`&quot; festlegen.
+> * Starten Sie AEM, indem Sie die Systemeigenschaft `oak.compaction.legacy=true` festlegen.
 
 ### Installieren erforderlicher Oak-Indizes für Sites Headless-APIs{#site-headless-api}
 
@@ -606,5 +606,5 @@ In den nachfolgenden Textdokumenten sind die in [!DNL Experience Manager] 6.5 
 Diese Websites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
 
 * [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/)
-* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
