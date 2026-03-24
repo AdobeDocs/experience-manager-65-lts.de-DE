@@ -4,13 +4,13 @@ description: JBoss EAP 8 unterstützt Elytron-Berechtigungsspeicher für die sic
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: f093f39fb535209297940cff13a99c7631812152
+exl-id: d7a9502b-8d6a-4d83-9b1f-0c82cbf34b70
+source-git-commit: 58f549aaf5f248c2382477790c825bba1d737137
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '373'
 ht-degree: 2%
 
 ---
-
 
 # Setup für den Datenbank-Berechtigungsspeicher (auf Elytron-Basis)
 
@@ -186,5 +186,5 @@ Alle Aliase verweisen auf dasselbe im Berechtigungsspeicher gespeicherte Datenba
 
 >[!NOTE]
 >
->* Konfigurieren Sie den Berechtigungsspeicher nur auf dem primären Knoten.
->* Sekundäre Knoten verwenden automatisch die Domain-Konfiguration, die mit dem Primärknoten synchronisiert wurde.
+>* Kopieren Sie die Speicherdatei für die Anmeldeinformationen (cred-store.p12), die auf dem primären Knoten erstellt wurde, auf jeden der Slave-Knoten.
+
