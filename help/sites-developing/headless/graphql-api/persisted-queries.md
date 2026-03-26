@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
 exl-id: 686d5510-8cdb-49eb-9ed0-f360be9bdc6d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d680ecf942886a61579cf72f82809e3dbbcfd394
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 100%
@@ -71,7 +71,7 @@ Die GraphiQL-IDE ist die **bevorzugte** Methode zum Erstellen persistenter Abfra
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
        -d \
@@ -117,7 +117,7 @@ Die GraphiQL-IDE ist die **bevorzugte** Methode zum Erstellen persistenter Abfra
 
    ```shell
    $ curl -X POST \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
        -d \
@@ -143,7 +143,7 @@ Die GraphiQL-IDE ist die **bevorzugte** Methode zum Erstellen persistenter Abfra
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-wrapped" \
        -d \
@@ -156,7 +156,7 @@ Die GraphiQL-IDE ist die **bevorzugte** Methode zum Erstellen persistenter Abfra
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
        -d \
@@ -169,7 +169,7 @@ Die GraphiQL-IDE ist die **bevorzugte** Methode zum Erstellen persistenter Abfra
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-parameters" \
        -d \
@@ -278,9 +278,9 @@ Standardmäßig macht AEM zwischengespeicherte Inhalte, die auf einer TTL (Time 
 
 {style="table-layout:auto"}
 
-### Authoring-Instanzen {#author-instances}
+### Autoreninstanzen {#author-instances}
 
-Für Authoring-Instanzen sind die Standardwerte:
+Für Autoreninstanzen sind die Standardwerte:
 
 * `max-age` : 60
 * `s-maxage` : 60
@@ -298,9 +298,9 @@ Diese Werte:
 * can be overwritten if you specify values in the **Headers** dialog of the [GraphiQL IDE](#http-cache-headers-graphiql-ide)
 -->
 
-### Publishing-Instanzen {#publish-instances}
+### Veröffentlichungsinstanzen {#publish-instances}
 
-Für Publishing-Instanzen sind die Standardwerte:
+Für Veröffentlichungsinstanzen sind die Standardwerte:
 
 * `max-age` : 60
 * `s-maxage` : 7200
@@ -353,11 +353,11 @@ Die `cache-control` kann zum Zeitpunkt der Erstellung (PUT) oder später (z. B.
 
 ### Verwalten des Caches mit einer OSGi-Konfiguration {#cache-osgi-configration}
 
-Um den Cache global zu verwalten, können Sie [die OSGi-Einstellungen](/help/sites-deploying/configuring-osgi.md) für die **Konfiguration des persistierten Abfrage-Service** konfigurieren. Andernfalls verwendet diese OSGi-Konfiguration die [Standardwerte für Publishing-Instanzen](#publish-instances).
+Um den Cache global zu verwalten, können Sie [die OSGi-Einstellungen](/help/sites-deploying/configuring-osgi.md) für die **Konfiguration des persistierten Abfrage-Service** konfigurieren. Andernfalls verwendet diese OSGi-Konfiguration die [Standardwerte für Veröffentlichungsinstanzen](#publish-instances).
 
 >[!NOTE]
 >
->Die OSGi-Konfiguration ist nur für Publishing-Instanzen geeignet. Die Konfiguration ist in Authoring-Instanzen zwar vorhanden, wird jedoch ignoriert.
+>Die OSGi-Konfiguration ist nur für Veröffentlichungsinstanzen geeignet. Die Konfiguration ist in Autoreninstanzen zwar vorhanden, wird jedoch ignoriert.
 
 ## Codieren der Abfrage-URL zur Verwendung in einer Mobile App {#encoding-query-url}
 
