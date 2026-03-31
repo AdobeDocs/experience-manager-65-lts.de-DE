@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 68bcdfff6ea13c7d392991eba9df957bd5ab1523
+source-git-commit: a3d1ebd3e1c4adba80fb63f0138d662a6d056cc6
 workflow-type: tm+mt
-source-wordcount: '6243'
+source-wordcount: '6403'
 ht-degree: 20%
 
 ---
@@ -220,7 +220,7 @@ Die Seiteneditor-Veröffentlichung verarbeitet jetzt URLs, die Selektoren oder S
 
 #### Vorlageneditor{#sites-template-editor-65-lts-sp2}
 
-Der Text zum Vorlagenstatus wird für einige Gebietsschemata vertikal unter **Tools** > **Allgemein** > **&#x200B;**&#x200B;angezeigt. Die Bezeichnung „veraltet“ unterbrach das Layout und las als Zeichenspalte. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass die Beschriftung auf einer einzigen horizontalen Linie gerendert wird. (SITES-36797)
+Der Text zum Vorlagenstatus wird für einige Gebietsschemata vertikal unter **Tools** > **Allgemein** > **** angezeigt. Die Bezeichnung „veraltet“ unterbrach das Layout und las als Zeichenspalte. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass die Beschriftung auf einer einzigen horizontalen Linie gerendert wird. (SITES-36797)
 
 #### Universeller Editor {#sites-universal-editor-65-lts-sp2}
 
@@ -239,14 +239,18 @@ Assets Relate funktioniert jetzt für Dateinamen, die Leerzeichen enthalten. Akt
 
 <!-- #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp2} -->
 
-
 <!--
+#### Forms Designer-->
+
 ### [!DNL Forms]{#forms-65-lts-sp2}
 
-#### Forms Designer
 
 #### Forms
 
+* In AEM Forms 6.5 LTS-Cluster-Bereitstellungen auf JBoss EAP 8 enthält `domain/configuration/domain_oracle.xml` kein doppeltes `<security>`-Tag mehr, das zu ungültiger XML geführt und das Starten des Domain-Controllers verhindert hat. (FORMS-24687)
+* Im Turnkey-Upgrade-Modus wird die Aktualisierung des Datenbank-Ports in `lc_turnkey.xml` jetzt während des Upgrades korrekt durchgeführt und verweist nicht mehr auf den alten Port-Wert. (FORMS-24689)
+* Beim Einrichten von JBoss EAP 8.0 unter Linux verursachen unter Windows geänderte Shell-Skripte aufgrund von CRLF-Zeilenenden keine `/bin/sh^M: bad interpreter or $'\r': command not found` mehr. (FORMS-24688)
+<!--
 #### Forms JEE 
 
 #### Forms Captcha {#forms-captcha-65-lts-sp2}
@@ -274,7 +278,7 @@ Assets Relate funktioniert jetzt für Dateinamen, die Leerzeichen enthalten. Akt
 * Sling Resource Access Security wird jetzt auf Version 1.1.2 ausgeführt. ResourceAccessSecurityImpl löst während der Initialisierung keine ClassCastException mehr aus, wenn sich mehrere ResourceAccessGateHandler-Dienste registrieren. Die Initialisierung wird jetzt zuverlässig abgeschlossen und vermeidet Startfehler in Umgebungen mit mehreren Handlern. (NPR-42750)
 * Die JMX-Konsole und die Web-Konsole senden jetzt eine `Content-Type: text/css header` für CSS-Ressourcen der Konsole. Die strikte MIME-Überprüfung blockiert nicht mehr das Laden von Stylesheets, sodass die `/system/console/jmx` Benutzeroberfläche mit normalem Stil gerendert wird. (GRANITE-63677)
 * AEM vermeidet jetzt doppelte ACL-Einträge für die `contributor` im generierten `WEB-INF/resources/provisioning/model.txt`. Die WAR-Ausgabe enthält jetzt einen konsistenten ACL-Block, der verwirrende Berechtigungsunterschiede bei der Überprüfung verhindert. (GRANITE-63269)
-* AEM löscht die Deserialisierungs-Firewall-Blockierungsliste auf die Zulassungsliste setzte und die Paketaktualisierungseinstellungen nicht mehr. Die aktualisierte Filterregistrierungslogik sorgt dafür, dass die aktive Firewall-Instanz mit der gespeicherten Konfiguration abgestimmt ist, sodass der Schutz ohne Neustart aktiviert bleibt. (GRANITE-61382)
+* AEM löscht die Deserialisierungs-Firewall-Blockierungsliste und die Paketaktualisierungseinstellungen nicht mehr. Die aktualisierte Filterregistrierungslogik sorgt dafür, dass die aktive Firewall-Instanz mit der gespeicherten Konfiguration abgestimmt ist, sodass der Schutz ohne Neustart aktiviert bleibt. (GRANITE-61382)
 * Die Felix-Web-Konsole gibt während des `NullPointerException`-Zugriffs keine zeitweiligen `/system/console` mehr aus. Die ServiceTracker-Handhabung verhindert einen Null-Tracker-Status. Konsolenanmeldung und -navigation bleiben bei wiederholten Anfragen und automatisierter Validierung stabil. (GRANITE-61042)
 
 <!--
@@ -332,7 +336,7 @@ Für AEM 6.5 LTS Service Pack 2 ist der S3-Connector 1.60.10 oder höher erforde
 Diese älteren Konfigurationen verwenden Eigenschaften wie `whitelist.name` und `whitelist.bundles`.
 
    * Sling bietet weiterhin teilweise Abwärtskompatibilität für veraltete PIDs, verwendet sie jedoch nicht für neue Konfigurationen. Verwenden Sie stattdessen die neueren `LoginAdminAllowList.*` PIDs.
-   * Auf die Zulassungsliste setzen Führen Sie nicht veraltete und neue Dateikonfigurationen gleichzeitig aus. Gemischte Konfigurationen können Unklarheiten verursachen und unbeabsichtigtes Verhalten hervorrufen. Wenn Sie zu AEM 6.5 LTS SP2 migrieren, entfernen Sie die veralteten PIDs vollständig.
+   * Führen Sie nicht veraltete und neue Dateikonfigurationen gleichzeitig aus. Gemischte Konfigurationen können Unklarheiten verursachen und unbeabsichtigtes Verhalten hervorrufen. Wenn Sie zu AEM 6.5 LTS SP2 migrieren, entfernen Sie die veralteten PIDs vollständig.
 
   **Was sollten Sie tun**
 
@@ -417,7 +421,7 @@ Siehe auch [Aktualisieren der Uber Jar-Version von AEM](/help/sites-deploying/up
 ### Aktualisieren {#upgrade}
 
 * Weitere Informationen zum Upgrade-Verfahren finden Sie unter [Dokumentation zu Upgrades](/help/sites-deploying/upgrade.md).
-* Detaillierte Aktualisierungsanweisungen finden Sie im [Aktualisierungshandbuch für AEM Forms 6.5 LTS SP1 on JEE](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Detaillierte Aktualisierungsanweisungen finden Sie im [Aktualisierungshandbuch für AEM Forms 6.5 LTS SP1 on JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Best Practices für AEM 6.5 LTS Service Pack-Upgrades
 
@@ -541,6 +545,14 @@ In diesem Abschnitt werden die Funktionen aufgeführt, die aus AEM 6.5 LTS entf
 
 ## Bekannte Probleme {#known-issues}
 
+### AEM Forms
+
+* **FORMS-24690:** In Configuration Manager schlägt die Datenbankinitialisierung beim Bootstrap fehl, wenn AEM Forms 6.5 LTS JEE im Turnkey-Modus mit benutzerdefinierter Konfiguration ausgeführt wird, wenn kein Modul ausgewählt ist.
+
+* **FORMS-24692:** Mail Service kann möglicherweise keine TLS-Socket-Verbindung herstellen, wodurch der E-Mail-Versand fehlschlägt.
+
+* **FORMS-24741:** In AEM Forms 6.5 LTS JEE unter Linux kann Configuration Manager fehlschlagen, wenn OSFileSetIntendedFor nicht korrekt festgelegt ist. Aktualisieren Sie sie auf Linux in den erforderlichen Konfigurationsdateien, bevor Sie Configuration Manager ausführen.
+
 ### Repository-Beschädigung bei Online-Komprimierung nach Offline-Komprimierung (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
 Benutzer können während der Online-Komprimierung auf eine Beschädigung des Repositorys stoßen, wenn zuvor die Offline-Komprimierung auf dem JCR-Repository ausgeführt wurde. In diesem Szenario kann ein `SegmentNotFoundException` (SNFE) auftreten, der zu einer Beschädigung des Repositorys führen kann.
@@ -606,5 +618,5 @@ In den nachfolgenden Textdokumenten sind die in [!DNL Experience Manager] 6.5 
 Diese Websites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
 
 * [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/)
-* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
