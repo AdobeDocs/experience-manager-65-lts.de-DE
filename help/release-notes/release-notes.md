@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 2ef60b4896c8d90714b33a9025567bf833f2ce06
+source-git-commit: 449f466473a3696d2ae8a7b91bd762765ddeac5b
 workflow-type: tm+mt
-source-wordcount: '6954'
+source-wordcount: '6983'
 ht-degree: 18%
 
 ---
@@ -237,7 +237,7 @@ Die Seiteneditor-Veröffentlichung verarbeitet jetzt URLs, die Selektoren oder S
 
 #### Vorlageneditor{#sites-template-editor-65-lts-sp2}
 
-Der Text zum Vorlagenstatus wird für einige Gebietsschemata vertikal unter **Tools** > **Allgemein** > **&#x200B;**&#x200B;angezeigt. Die Bezeichnung „veraltet“ unterbrach das Layout und las als Zeichenspalte. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass die Beschriftung auf einer einzigen horizontalen Linie gerendert wird. (SITES-36797)
+Der Text zum Vorlagenstatus wird für einige Gebietsschemata vertikal unter **Tools** > **Allgemein** > **** angezeigt. Die Bezeichnung „veraltet“ unterbrach das Layout und las als Zeichenspalte. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass die Beschriftung auf einer einzigen horizontalen Linie gerendert wird. (SITES-36797)
 
 #### Universeller Editor {#sites-universal-editor-65-lts-sp2}
 
@@ -286,9 +286,9 @@ Assets Relate funktioniert jetzt für Dateinamen, die Leerzeichen enthalten. Akt
 
 * FORMS-20679: Beim Dashboard von Adaptive Forms ist eine Sicherheitslücke aufgetreten. Insbesondere wurde ein Problem mit Cross-Site-Scripting (XSS) in der Datei „startpointcontrol.js“ erkannt, das die Ausführung bösartiger Skripte ermöglichen könnte.
 
-* FORMS-24687: In AEM Forms 6.5 LTS-Cluster-Bereitstellungen auf JBoss EAP 8 enthält `domain/configuration/domain_oracle.xml` kein doppeltes `<security>`-Tag mehr, das ungültige XML verursacht und den Start des Domain-Controllers verhindert hat.
+* FORMS-24687: In AEM Forms 6.5 LTS-Cluster-Bereitstellungen auf JBoss EAP 8 enthalten die Dateien domain/configuration/domain_oracle.xml, domain_mysql.xml und domain_mssql.xml kein doppeltes `<security>`-Tag mehr, das zu ungültigem XML geführt und das Starten des Domain-Controllers verhindert hat.
 
-* FORMS-24689:In Turnkey-Upgrade-Modus wird die Aktualisierung des Datenbank-Ports in `lc_turnkey.xml` jetzt während des Upgrades korrekt angewendet und verweist nicht mehr auf den alten Port-Wert.
+* FORMS-24689: Im Turnkey-Modus wird die Aktualisierung des Datenbank-Ports bei Neuinstallation und Upgrade jetzt korrekt angewendet. Im Neuinstallationsmodus können Benutzer aus allen verfügbaren Ports auswählen, und im Upgrade-Modus wird der in lc_turnkey.xml aktualisierte Datenbank-Port während des Upgrade-Prozesses korrekt referenziert.
 
 * FORMS-24688: Beim Einrichten von JBoss EAP 8.0 unter Linux verursachen unter Windows geänderte Shell-Skripte aufgrund von CRLF-Zeilenenden keine `/bin/sh^M: bad interpreter or $'\r': command not found` mehr.
 
@@ -463,7 +463,7 @@ Siehe auch [Aktualisieren der Uber Jar-Version von AEM](/help/sites-deploying/up
 ### Aktualisieren {#upgrade}
 
 * Weitere Informationen zum Upgrade-Verfahren finden Sie unter [Dokumentation zu Upgrades](/help/sites-deploying/upgrade.md).
-* Detaillierte Aktualisierungsanweisungen finden Sie im [Aktualisierungshandbuch für AEM Forms 6.5 LTS SP1 on JEE](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Detaillierte Aktualisierungsanweisungen finden Sie im [Aktualisierungshandbuch für AEM Forms 6.5 LTS SP1 on JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Best Practices für AEM 6.5 LTS Service Pack-Upgrades
 
@@ -589,7 +589,7 @@ In diesem Abschnitt werden die Funktionen aufgeführt, die aus AEM 6.5 LTS entf
 
 ### AEM Forms
 
-* **FORMS-24690:** In Configuration Manager kann die Datenbankinitialisierung beim Bootstrap im benutzerdefinierten Turnkey-Modus von AEM Forms 6.5 LTS JEE fehlschlagen, wenn keine Module oder nur eingeschränkte Komponenten ausgewählt sind. Das Problem ist auf eine fehlende Abhängigkeit (xalan-2.7.2.jar) zurückzuführen, was zu einem Fehler führt. Durch Hinzufügen der JAR-Datei zu adobe-livecycle-jboss.ear\lib wird das Problem behoben.
+* **FORMS-24690:** In Configuration Manager schlägt die Datenbankinitialisierung beim Bootstrap im benutzerdefinierten Turnkey-Modus von AEM Forms 6.5 LTS JEE fehl, wenn keine Module oder nur eingeschränkte Komponenten ausgewählt sind. Das Problem ist auf eine fehlende Abhängigkeit (xalan-2.7.2.jar) zurückzuführen, was zu einem Fehler führt. Durch Hinzufügen der JAR-Datei zu adobe-livecycle-jboss.ear\lib wird das Problem behoben.
 
 * **FORMS-24692:** Mail Service kann möglicherweise keine TLS-Socket-Verbindung herstellen, wodurch der E-Mail-Versand fehlschlägt.
 
@@ -658,5 +658,5 @@ In den nachfolgenden Textdokumenten sind die in [!DNL Experience Manager] 6.5 
 Diese Websites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
 
 * [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/)
-* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
