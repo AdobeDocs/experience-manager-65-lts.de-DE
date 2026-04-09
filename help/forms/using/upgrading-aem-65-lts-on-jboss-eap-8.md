@@ -22,7 +22,7 @@ Dieses Handbuch enthält schrittweise Anleitungen zum Aktualisieren einer besteh
 >
 >Dies ist ein wichtiger Upgrade-Vorgang. Führen Sie dieses Upgrade immer zuerst in einer Nicht-Produktionsumgebung durch und bewahren Sie vollständige Backups auf.
 >
-> ** VORAUSSETZUNGEN: ** Sie eine vollständige Systemsicherung und einen dokumentierten Rollback-Plan vor dem Fortfahren.
+> **&#x200B; VORAUSSETZUNGEN: &#x200B;** Sie eine vollständige Systemsicherung und einen dokumentierten Rollback-Plan vor dem Fortfahren.
 
 ## Anforderungen vor einem Upgrade
 

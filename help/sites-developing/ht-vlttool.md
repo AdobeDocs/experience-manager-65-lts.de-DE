@@ -800,7 +800,7 @@ $ vlt --credentials admin:admin sync --uri http://localhost:4502/crx install
 
 ### Anzeigen des Dienststatus {#displaying-the-service-status}
 
-Der Befehl `status` kann verwendet werden, um Informationen über den aktuellen Synchronisierungsdienst anzuzeigen. ``
+Der Befehl `status` kann verwendet werden, um Informationen über den aktuellen Synchronisierungsdienst anzuzeigen. &grave;&grave;
 
 ```shell
 $ vlt sync status --uri http://localhost:4502/crx

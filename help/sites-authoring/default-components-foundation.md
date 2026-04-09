@@ -251,7 +251,7 @@ Im Folgenden sehen Sie ein Beispiel für Diagrammdaten und das daraus resultiere
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [Inhaltsfragment-Kernkomponente ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de) zu verwenden.
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [Inhaltsfragment-Kernkomponente &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de) zu verwenden.
 
 [Inhaltsfragmente](/help/sites-authoring/content-fragments.md) werden als seitenunabhängige Assets erstellt und verwaltet. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
 
@@ -458,7 +458,7 @@ Diese Komponente liefert ein Rasterabsatzsystem, mit dem Sie Komponenten in eine
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [ Kernkomponente „Liste“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=de) zu verwenden.
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [&#x200B; Kernkomponente „Liste“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=de) zu verwenden.
 
 Mit der Listenkomponente können Sie Suchkriterien zur Anzeige einer Liste konfigurieren:
 
