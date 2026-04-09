@@ -3,11 +3,11 @@ title: Leistungsoptimierung [!DNL Assets].
 description: Empfehlungen und Hinweise zu  [!DNL Experience Manager] -Konfiguration, Änderungen an Hardware-, Software- und Netzwerkkomponenten, um Engpässe zu beseitigen und die Leistung von  [!DNL Experience Manager Assets] zu optimieren.
 contentOwner: AG
 mini-toc-levels: 1
-role: Architect, Admin
+role: Developer,Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43079a69-cd12-4853-9fff-96f9d177987a
-source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 99%
@@ -144,11 +144,11 @@ Stellen Sie den Workflow [!UICONTROL DAM-Update-Asset] nach Möglichkeit auf „
 
 Wenn keine Übergangs-Workflows verwendet werden können, führen Sie regelmäßig Workflow-Bereinigungen durch, um archivierte [!UICONTROL DAM-Update-Asset]-Workflows zu löschen. So verhindern Sie eine Beeinträchtigung der Systemleistung.
 
-Führen Sie die Bereinigungs-Workflows normalerweise wöchentlich aus. In ressourcenintensiven Szenarien wie z. B. einer umfangreichen Asset-Erfassung kann die Bereinigung auch häufiger ausgeführt werden.
+Führen Sie die Bereinigungs-Workflows normalerweise wöchentlich aus. In ressourcenintensiven Szenarien wie z. B. einer umfangreichen Asset-Aufnahme kann die Bereinigung auch häufiger ausgeführt werden.
 
 Um die Workflow-Bereinigung zu konfigurieren, fügen Sie über die OSGi-Konsole eine neue Adobe Granite-Workflow-Purge-Konfiguration hinzu. Konfigurieren und planen Sie anschließend den Workflow als Teil des wöchentlichen Wartungsfensters.
 
-Dauert die Bereinigung zu lange, kommt es zu einem Timeout. Daher sollten Sie sicherstellen, dass Ihre Bereinigungsvorgänge abgeschlossen sind, um zu vermeiden, dass Bereinigungs-Workflows aufgrund der hohen Anzahl an Workflows nicht abgeschlossen werden können.
+Dauert die Bereinigung zu lange, kommt es zu einem Timeout. Daher sollten Sie sicherstellen, dass Ihre Bereinigungsaufträge abgeschlossen sind, um zu vermeiden, dass Bereinigungs-Workflows aufgrund der hohen Anzahl an Workflows nicht abgeschlossen werden können.
 
 Wenn Sie zahlreiche Nicht-Übergangs-Workflows ausgeführt haben, die Workflow-Instanzknoten erstellen, können Sie das Tool [ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) auf Ad-hoc-Basis ausführen. Es entfernt redundante, abgeschlossene Workflow-Instanzen sofort, ohne dass Sie auf die Ausführung des Adobe Granite-Workflow-Bereinigungsplaners warten müssen.
 
@@ -180,7 +180,7 @@ Wenn Sie nur über eingeschränkten Speicherplatz verfügen und den Workflow [!U
 
 Kundinnen und Kunden verwenden Bilder unterschiedlicher Größe und Formate auf ihrer Website oder zur Weitergabe an Geschäftspartnerinnen und -partner. Da jede Ausgabedarstellung den Platzbedarf des Assets im Repository erhöht, empfiehlt Adobe, diese Funktion mit Bedacht zu verwenden. Um die für die Verarbeitung und Speicherung von Bildern erforderliche Ressourcenmenge zu reduzieren, können Sie diese Bilder zur Laufzeit und nicht als Ausgabeformate während der Aufnahme generieren.
 
-Viele Sites-Kundinnen und -Kunden implementieren ein Bild-Servlet, das die Größe von Bildern zum Zeitpunkt ihrer Anforderung ändert oder sie zuschneidet. Dadurch wird der Publishing-Instanz eine zusätzliche Belastung auferlegt. Solange diese Bilder jedoch zwischengespeichert werden können, lässt sich dieses Problem abmildern.
+Viele Sites-Kundinnen und -Kunden implementieren ein Bild-Servlet, das die Größe von Bildern zum Zeitpunkt ihrer Anforderung ändert oder sie zuschneidet. Dadurch wird der Veröffentlichungsinstanz eine zusätzliche Belastung auferlegt. Solange diese Bilder jedoch zwischengespeichert werden können, lässt sich dieses Problem abmildern.
 
 Ein alternativer Ansatz besteht darin, die Dynamic Media-Technologie zu verwenden, um die Bildbearbeitung vollständig abzugeben. Darüber hinaus können Sie Brand Portal bereitstellen, das nicht nur die Verantwortung für die Generierung von Ausgabedarstellungen von der [!DNL Experience Manager]-Infrastruktur übernimmt, sondern auch die gesamte Veröffentlichungsebene.
 
@@ -229,12 +229,12 @@ Das Importieren einer großen Menge an Metadaten kann zu ressourcenintensiven XM
 
 ## Replikation {#replication}
 
-Beim Replizieren von Assets in eine große Anzahl von Veröffentlichungsinstanzen, z. B. in einer Sites-Implementierung, empfiehlt Adobe die Verwendung der Kettenreplikation. In diesem Fall repliziert die Autoreninstanz auf eine einzelne Publishing-Instanz, die wiederum auf die anderen Publishing-Instanzen repliziert, wodurch die Autoreninstanz freigehalten wird.
+Beim Replizieren von Assets in eine große Anzahl von Veröffentlichungsinstanzen, z. B. in einer Sites-Implementierung, empfiehlt Adobe die Verwendung der Kettenreplikation. In diesem Fall repliziert die Autoreninstanz auf eine einzelne Veröffentlichungsinstanz, die wiederum auf die anderen Veröffentlichungsinstanzen repliziert, wodurch die Autoreninstanz freigehalten wird.
 
 ### Konfiguration der Kettenreplikation   {#configure-chain-replication}
 
 1. Wählen Sie die Veröffentlichungsinstanz, mit der Sie die Replikationen verketten möchten.
-1. Fügen Sie in dieser Publishing-Instanz Replikationsagenten hinzu, die auf die anderen Publishing-Instanzen verweisen
+1. Fügen Sie in dieser Veröffentlichungsinstanz Replikationsagenten hinzu, die auf die anderen Veröffentlichungsinstanzen verweisen
 1. Aktivieren Sie für alle anderen Replikationsagenten die Option „Bei Empfang“ auf der Registerkarte „Auslöser“.
 
 >[!NOTE]

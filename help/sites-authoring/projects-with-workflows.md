@@ -7,9 +7,9 @@ topic-tags: projects
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: eb19a269-8b3f-476b-b22b-8116dce70388
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 100%
@@ -36,7 +36,7 @@ Je nachdem, welche Projektvorlage Sie auswählen, stehen Ihnen bestimmte Workflo
 | Produkt-Fotoshooting (Commerce) |  |  | x |  |
 | Projektgenehmigung | x |  |  |  |
 | Launch anfragen | x |  |  |  |
-| Einstiegsseite anfragen | x |  |  |  |
+| Landingpage anfragen | x |  |  |  |
 | E-Mail anfragen | x |  |  |  |
 | DAM-Sprachkopie erstellen&amp;ast; |  |  |  | x |
 | DAM-Sprachkopie erstellen und übersetzen&amp;ast; |  |  |  | x |

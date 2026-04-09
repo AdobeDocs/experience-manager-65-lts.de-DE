@@ -3,10 +3,10 @@ title: Bearbeiten der Seiteneigenschaften
 description: Definieren Sie die erforderlichen Eigenschaften für eine Seite in Adobe Experience Manager.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 5148afb9-f447-4475-a15c-1fa345325711
 mini-toc-levels: 2
-source-git-commit: 4817296c00e094a65744a896d798e429d3ab6c7d
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2477'
 ht-degree: 100%

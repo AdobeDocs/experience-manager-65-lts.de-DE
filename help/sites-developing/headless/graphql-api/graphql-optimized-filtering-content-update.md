@@ -3,9 +3,9 @@ title: Aktualisieren von Inhaltsfragmenten für optimierte GraphQL-Filterung
 description: Erfahren Sie, wie Sie Ihre Inhaltsfragmente für optimierte GraphQL-Filterung in Adobe Experience Manager für die Bereitstellung von Headless-Inhalten aktualisieren.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: 40211033-7084-4117-a3e2-73e504283266
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 94%

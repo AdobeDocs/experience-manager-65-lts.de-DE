@@ -1,12 +1,12 @@
 ---
 title: Media Library für grundlegende Verwaltung von digitalen Assets verwenden
 description: '[!DNL Experience Manager Assets] und Media Library für das Asset-Management.'
-role: Architect, Leader
+role: Developer,Leader
 feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 50a980e5-3b35-4485-9a5b-44d1a42a837c
-source-git-commit: 92c9dd0043b644e258b75a999ad1d556689907a7
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 100%
@@ -74,7 +74,7 @@ Um die Media Library-Funktionalität zu verwenden, können Sie die Standardbenut
 * Zugriff auf Query Builder (API), um die Suchfunktion zu erweitern.
 * Erstellen von statischen Tags.
 * Erstellen von Projekten und Aufgaben.
-* Aktivitäts-Stream (Zeitleiste).
+* Aktivitäts-Stream (Timeline).
 * Kommentare und Anmerkungen.
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?

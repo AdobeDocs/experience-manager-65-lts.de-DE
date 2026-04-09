@@ -7,9 +7,9 @@ topic-tags: projects
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 53400e3d-542f-4abc-9909-45eb11b0cfcc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 100%
@@ -94,14 +94,14 @@ Dazu öffnen Sie die Kachel, sodass Sie ihre Elemente anzeigen und ändern könn
 
    ![Projektaufgaben](assets/project-tasks.png)
 
-### Anzeigen einer Projekt-Zeitleiste {#viewing-a-project-timeline}
+### Anzeigen einer Projekt-Timeline {#viewing-a-project-timeline}
 
-Die Projekt-Zeitleiste enthält Informationen dazu, wann Assets des Projekts zuletzt verwendet wurden. Gehen Sie wie folgt vor, um die Projekt-Zeitleiste anzuzeigen.
+Die Projekt-Timeline enthält Informationen dazu, wann Assets des Projekts zuletzt verwendet wurden. Gehen Sie wie folgt vor, um die Projekt-Timeline anzuzeigen.
 
 1. Klicken Sie in der **Projektekonsole** in der Leistenauswahl oben links auf **Timeline**.
-   ![Auswahl des Zeitleisten-Modus](assets/projects-timeline-rail.png)
-2. Wählen Sie in der Konsole das Projekt aus, dessen Zeitleiste Sie anzeigen möchten.
-   ![Projekt-Zeitleisten-Ansicht](assets/project-timeline-view.png)
+   ![Auswahl des Timeline-Modus](assets/projects-timeline-rail.png)
+2. Wählen Sie in der Konsole das Projekt aus, dessen Timeline Sie anzeigen möchten.
+   ![Projekt-Timeline-Ansicht](assets/project-timeline-view.png)
 
 Assets werden in der Leiste angezeigt. Verwenden Sie die Leistenauswahl, um nach Abschluss zur normalen Ansicht zurückzukehren.
 

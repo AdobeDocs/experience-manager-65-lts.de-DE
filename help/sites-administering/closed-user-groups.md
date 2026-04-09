@@ -10,7 +10,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 0c20efb1-9b01-41ef-b38d-261fb4b0ff91
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '6654'
 ht-degree: 97%
@@ -688,7 +688,7 @@ Neue AEM-Installationen verwenden standardmäßig die neuen Implementierungen f�
 |---|---|
 | Unterstützte Pfade: `/content` | Die Zugriffssteuerungsverwaltung für „CUGpolicies“ ist aktiviert. |
 | CUG-Prüfung aktiviert: FALSE | Die Berechtigungsprüfung ist deaktiviert. CUG-Richtlinien sind nicht wirksam. |
-| Ranking | 200 | Siehe Oak-Dokumentation. |
+| Rangfolge \|200 | Siehe Oak-Dokumentation. |
 
 >[!NOTE]
 >
@@ -700,7 +700,7 @@ Neue AEM-Installationen verwenden standardmäßig die neuen Implementierungen f�
 |---|---|
 | Unterstützte Pfade: `/content` | Die Zugriffssteuerungsverwaltung für CUG-Richtlinien wird in den konfigurierten Pfaden aktiviert. |
 | CUG-Prüfung aktiviert: TRUE | Die Berechtigungsprüfung wird in den konfigurierten Pfaden aktiviert. CUG-Richtlinien werden wirksam bei `Session.save()`. |
-| Ranking | 200 | Siehe Oak-Dokumentation. |
+| Rangfolge \|200 | Siehe Oak-Dokumentation. |
 
 | **„Apache Jackrabbit Oak CUG Exclude List“** | **Erklärung** |
 |---|---|

@@ -3,9 +3,9 @@ title: Veröffentlichen von Inhaltsseiten
 description: Erfahren Sie, wie Sie Inhaltsseiten in Adobe Experience Manager 6.5 LTS veröffentlichen.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 89bab7e3-f688-4c95-8571-08477e737bc8
-source-git-commit: 46948a857ccb9d093f946ec9e48ff585b0647314
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1702'
 ht-degree: 99%
@@ -273,7 +273,7 @@ Sie können den Veröffentlichungsstatus einer Seite bestimmen:
 
   Der Veröffentlichungsstatus wird in der Sites-Konsole in der Ansicht [Karte](/help/sites-authoring/basic-handling.md#card-view), [Spalte](/help/sites-authoring/basic-handling.md#column-view) und [Liste](/help/sites-authoring/basic-handling.md#list-view) angezeigt.
 
-* in der [Zeitleisten](/help/sites-authoring/basic-handling.md#timeline)
+* in der [Timeline](/help/sites-authoring/basic-handling.md#timeline)
 
   ![screen_shot_2018-03-21at154420](assets/screen_shot_2018-03-21at154420.png)
 

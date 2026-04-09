@@ -3,9 +3,9 @@ title: Adobe Experience Manager Headless-Inhaltsarchitekten-Tour
 description: Eine Einführung in die leistungsstarken und flexiblen Headless-Funktionen von Adobe Experience Manager und die Modellierung von Inhalten für Ihr Projekt.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
+role: Admin,Developer
 exl-id: cb64e012-7001-47a3-b038-8f8f6891c6a0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 100%

@@ -5,7 +5,7 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '4292'
 ht-degree: 99%
@@ -197,9 +197,9 @@ In den folgenden Abschnitten wird beschrieben, wie adaptive Formularelemente im 
 ### Statische Komponenten {#static-components}
 
 | Komponente des adaptiven Formulars | Zugehörige XFA-Komponente | Anmerkungen |
-|---|---|---|
+| --- | --- | --- |
 | Bild | Bild | Die Komponenten TextDraw und Image (egal ob gebunden oder nicht) werden immer im Datensatzdokument eines XSD-basierten adaptiven Formulars angezeigt, es sei denn, sie werden mithilfe der Datensatzdokument-Einstellungen ausgeschlossen. |
-| Text | Text |
+| Text | Text | |
 
 >[!NOTE]
 >
@@ -332,7 +332,7 @@ Abhängig davon, ob Sie eine standardmäßige oder benutzerdefinierte Vorlage au
 
   Wenn die von Ihnen ausgewählte benutzerdefinierte XDP-Vorlage mehrere Masterseiten enthält, werden die Eigenschaften für diese Seiten im Abschnitt **[!UICONTROL Inhalt]** auf der Registerkarte **[!UICONTROL Datensatzdokument]** angezeigt.
 
-  ![Eigenschaften primäre seite &#x200B;](assets/master-page-properties.png)
+  ![Eigenschaften primäre seite ](assets/master-page-properties.png)
 
   Die Eigenschaften der Masterseiten umfassen Logobild, Kopfzeilentext, Formulartitel, Haftungsausschlussüberschrift und Haftungsausschlusstext. Sie können Eigenschaften für adaptive Formulare oder XDP-Vorlagen auf das Datensatzdokument anwenden. AEM Forms wendet standardmäßig die Vorlageneigenschaften auf das Datensatzdokument an. Sie können auch benutzerdefinierte Werte für die Eigenschaften der Masterseiten definieren. Informationen zum Anwenden mehrerer Masterseiten in einem Datensatzdokument finden Sie unter [Anwenden mehrerer Masterseiten in einem Datensatzdokument](#apply-multiple-master-pages-dor).
 

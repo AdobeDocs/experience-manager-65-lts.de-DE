@@ -9,7 +9,7 @@ feature: Asset Management,Renditions
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
-source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '3306'
 ht-degree: 96%
@@ -22,7 +22,7 @@ Die intelligente Bildbearbeitung wendet die individuellen anzeigebezogenen Benut
 
 ## Über die intelligente Bildbearbeitung {#what-is-smart-imaging}
 
-Die intelligente Bildbearbeitung wendet KI-Funktionen von Adobe an und arbeitet mit vorhandenen „Bildvorgaben“. Sie optimiert auf Grundlage der Browserfunktionen automatisch das Format, die Größe und die Qualität eines Bildes und stellt so hochwertige Bilder bereit.
+Die intelligente Bildbearbeitung wendet Adobe AI-Funktionen an und arbeitet mit vorhandenen „Bildvorgaben“. Sie optimiert auf Grundlage der Browserfunktionen automatisch das Format, die Größe und die Qualität eines Bildes und stellt so hochwertige Bilder bereit.
 
 Jetzt erhalten Sie auch eine bessere Google Core Web Vital-Bewertung für LCP (Largest Contentful Paint) mit verbesserter intelligenter Bildbearbeitung, die jetzt sowohl AVIF- als auch WebP-Unterstützung bietet.
 
@@ -131,7 +131,7 @@ Die Werte für das Gerätepixelverhältnis und die Netzwerkbandbreite basieren a
 
 * Das Google SEO-Ranking für Web-Seiten mit der neuesten intelligenten Bildbearbeitung wurde verbessert.
 * Stellt optimierte Inhalte sofort (zur Laufzeit) bereit.
-* Verwendet Adobe-KI-Technologie zur Konvertierung gemäß der in der Bildanforderung angegebenen Qualität (`qlt`).
+* Verwendet Adobe AI-Technologie zur Konvertierung gemäß der in der Bildanforderung angegebenen Qualität (`qlt`).
 * TTL (Time To Live)-unabhängig. Zuvor war eine TTL von mindestens 12 Stunden erforderlich, damit die intelligente Bildbearbeitung funktioniert.
 * Zuvor wurden sowohl das Originalbild als auch abgeleitete Bilder zwischengespeichert. Ein zweistufiger Prozess war erforderlich, um den Cache ungültig zu machen. In der neusten Version der intelligenten Bildbearbeitung werden nur die Ableitungen zwischengespeichert, was einen einstufigen Cache-Invalidierungsprozess ermöglicht.
 * Kundinnen und Kunden, die benutzerdefinierte Kopfzeilen in ihrem Regelsatz verwenden, profitieren von der neuesten intelligenten Bildbearbeitung, da diese Kopfzeilen im Gegensatz zur vorherigen Version der intelligenten Bildbearbeitung nicht blockiert werden. Beispielsweise „Timing Allow Origin“ und „X-Robot“.

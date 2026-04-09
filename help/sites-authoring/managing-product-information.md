@@ -7,9 +7,9 @@ topic-tags: projects
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 4531a41c-99fa-4e98-b4f4-f8fc92ed9095
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2888'
 ht-degree: 100%
@@ -319,7 +319,7 @@ Mit dieser Aufgabe werden die bestätigten Assets in den produktionsbereiten Ord
 
    ![In Pfad verschieben](assets/chlimage_1-162a.png)
 
-1. Klicken Sie auf **Zur Produktion wechseln**. Schließen Sie die Bestätigungsmeldung. Die Assets werden in den angegebenen Pfad verschoben, und es wird automatisch ein Rotationsset für die bestätigten Assets für jedes Produkt basierend auf der Ordnerhierarchie erstellt.
+1. Klicken Sie auf **Zur Produktion wechseln**. Schließen Sie die Bestätigungsmeldung. Die Assets werden in den angegebenen Pfad verschoben, und es wird automatisch ein Rotations-Set für die bestätigten Assets für jedes Produkt basierend auf der Ordnerhierarchie erstellt.
 
 1. Klicken Sie in der Symbolleiste auf das Symbol **Abgeschlossen**. Der Workflow wird abgeschlossen, wenn der letzte Schritt als abgeschlossen markiert ist.
 

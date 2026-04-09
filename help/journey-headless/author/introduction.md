@@ -3,9 +3,9 @@ title: Authoring für Headless mit Adobe Experience Manager
 description: Eine Einführung in die leistungsstarken und flexiblen, Headless-Funktionen von Adobe Experience Manager und die Erstellung von Inhalten für Ihr Projekt.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 exl-id: 4864d5e7-65e3-4309-9512-cde4a138e04c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 100%
@@ -21,11 +21,11 @@ In diesem Teil der [AEM Headless-Inhaltsautoren-Tour](overview.md) können Sie s
 * **Zielgruppe**: Anfänger
 * **Ziel**: Einführung der Konzepte und der Terminologie für Headless-Authoring.
 
-## Content Management System (CMS) {#content-management-system}
+## Content-Management-System (CMS) {#content-management-system}
 
-Was ist ein Content Management System?
+Was ist ein Content-Management-System?
 
-Ein Content Management System (CMS) ist genau das, was es sagt – ein Computersystem, das zum Verwalten von Inhalten verwendet wird. Das ist etwas allgemein, genauer gesagt wird es (normalerweise) für die Verwaltung von Inhalten verwendet, die Sie auf Ihren Websites zur Verfügung stellen möchten.
+Ein Content-Management-System (CMS) ist genau das, was es sagt – ein Computersystem, das zum Verwalten von Inhalten verwendet wird. Das ist etwas allgemein, genauer gesagt wird es (normalerweise) für die Verwaltung von Inhalten verwendet, die Sie auf Ihren Websites zur Verfügung stellen möchten.
 
 ## Headless-CMS {#headless-cms}
 
@@ -45,7 +45,7 @@ Das bedeutet, dass Ihre Inhalte auf jedem Gerät und in einer Vielzahl von Forma
 
 Was ist AEM?
 
-Zunächst einmal ist AEM ein Content Management System mit einer Vielzahl von Funktionen, die auch an Ihre Anforderungen angepasst werden können.
+Zunächst einmal ist AEM ein Content-Management-System mit einer Vielzahl von Funktionen, die auch an Ihre Anforderungen angepasst werden können.
 
 Dies bedeutet, dass es wie folgt verwendet werden kann:
 

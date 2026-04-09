@@ -3,9 +3,9 @@ title: Projekte
 description: Projekte ermöglichen es Ihnen, Ressourcen innerhalb einer Entität zu gruppieren. Über deren allgemeine, gemeinsam genutzte Umgebung können Sie Projekte einfach verwalten.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: c5b4ffe5-b722-4452-8450-1e1089e3ffba
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 100%
@@ -48,11 +48,11 @@ Sie können die Leistenauswahl verwenden, um zwischen den Konsolenmodi zu wechse
 
 „Nur Inhalte“ ist der Standardmodus beim Öffnen der Konsole. Er zeigt alle Ihre Projekte.
 
-#### Zeitleiste {#timeline}
+#### Timeline {#timeline}
 
 In der Timeline-Ansicht können Sie ein einzelnes Projekt auswählen und die Aktivitäten in diesem Projekt anzeigen. Verwenden Sie die Leistenauswahl oder den Hotkey `alt+1`, um zu dieser Ansicht zu wechseln.
 
-![Zeitleistenmodus](assets/project-timeline.png)
+![Timeline-Modus](assets/project-timeline.png)
 
 ### Ansicht umschalten {#views}
 
@@ -88,7 +88,7 @@ Sie können die folgenden Kacheln mit Ihrem Projekt verknüpfen.
 * [Links](#links)
 * [Projektinformationen](#project-info)
 * [Team](#team)
-* [Landing Pages](#landing-pages)
+* [Landingpages](#landing-pages)
 * [E-Mails](#emails)
 * [Workflows](#workflows)
 * [Launches](#launches)
@@ -155,7 +155,7 @@ In dieser Kachel können Sie die Mitglieder des Projekt-Teams angeben. Geben Sie
 
 Sie können Team-Mitglieder zum Team hinzufügen und aus ihm löschen. Darüber hinaus können Sie die [Benutzerrolle](#userroles) bearbeiten, die dem jeweiligen Team-Mitglied zugewiesen ist.
 
-### Landing Pages {#landing-pages}
+### Landingpages {#landing-pages}
 
 Über die Kachel **Landingpages** können Sie eine neue Landingpage anfragen.
 
@@ -213,7 +213,7 @@ Die verschiedenen Benutzerrollen werden in einer Projektvorlage festgelegt und w
 
 Alle Projekte unterstützen die folgenden Standardrollen, mit denen Sie Sicherheits- und Kontrollberechtigungen verwalten können.
 
-| Rolle | Beschreibung | Berechtigungen | Gruppenmitgliedschaft |
+| Rolle | Beschreibung | Berechtigungen | Gruppenzugehörigkeit |
 |---|---|---|---|
 | Beobachter | Ein Benutzer mit dieser Rolle kann Projektdetails, einschließlich des Projektstatus, anzeigen. | Nur-Lese-Zugriff auf ein Projekt | `workflow-users`-Gruppe |
 | Bearbeiter | Ein Benutzer mit dieser Rolle kann Inhalt in ein Projekt hochladen und Projektinhalte bearbeiten. | Lese- und Schreibzugriff auf ein Projekt, zugehörige Metadaten und zugehörige Assets<br>Berechtigungen zum Hochladen einer Einstellungsliste, zum Fotografieren sowie zum Überprüfen und Genehmigen von Assets<br>Schreibberechtigung für `/etc/commerce`<br>Ändern der Berechtigung für ein bestimmtes Projekt | `workflow-users`-Gruppe |

@@ -3,9 +3,9 @@ title: Arbeiten mit Inhaltsseitenversionen
 description: Sie können in Adobe Experience Manager verschiedene Versionen einer Seite erstellen, vergleichen und wiederherstellen.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
-source-git-commit: d286db53c2f9605794bdadcc876b5069037edde3
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 100%
@@ -33,17 +33,17 @@ Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem besti
 
 Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
-* über die [Zeitleiste](#creating-a-new-version-timeline)
+* über die [Timeline](#creating-a-new-version-timeline)
 * mithilfe der Option [Erstellen](#creating-a-new-version-create-with-a-selected-resource) (wenn eine Ressource ausgewählt ist)
 
-### Erstellen einer neuen Version – Zeitleiste {#creating-a-new-version-timeline}
+### Erstellen einer neuen Version – Timeline {#creating-a-new-version-timeline}
 
 1. Navigieren Sie zu der Seite, für die Sie eine Version erstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie die Spalte **Zeitleiste**.
+1. Öffnen Sie die Spalte **Timeline**.
 1. Klicken Sie auf die Pfeilspitze neben dem Kommentarfeld, um die Optionen anzuzeigen:
 
-   ![Zeitleiste – Als Version speichern](assets/screen-shot_2019-03-05at112335.png)
+   ![Timeline – Als Version speichern](assets/screen-shot_2019-03-05at112335.png)
 
 1. Wählen Sie **Als Version speichern**.
 1. Geben Sie ggf. eine **Beschriftung** und einen **Kommentar** ein.
@@ -71,7 +71,7 @@ Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
 Nachdem Sie eine Version Ihrer Seite erstellt haben, gibt es verschiedene Methoden, eine ältere Version zu reaktivieren:
 
-* die Option **Auf diese Version zurück** in der [Zeitleiste](/help/sites-authoring/basic-handling.md#timeline).
+* die Option **Auf diese Version zurück** in der [Timeline](/help/sites-authoring/basic-handling.md#timeline).
 
   Reaktivieren Sie eine frühere Version einer ausgewählten Seite.
 
@@ -103,12 +103,12 @@ So können Sie für die ausgewählte Seite eine frühere Version **wiederherstel
 
 1. Navigieren Sie zu der Seite, für die Sie eine frühere Version wiederherstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie die **Zeitleiste** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus. Die Seitenversionen für die ausgewählte Seite werden aufgelistet.
+1. Öffnen Sie die **Timeline** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus. Die Seitenversionen für die ausgewählte Seite werden aufgelistet.
 1. Wählen Sie die Version aus, die Sie wiederherstellen möchten. Die möglichen Optionen werden angezeigt:
 
    ![Auf diese Version zurück](assets/screen-shot_2019-03-05at112505.png)
 
-1. Wählen Sie **Auf diese Version zurück**. Die ausgewählte Version wird wiederhergestellt und die Informationen in der Zeitleiste werden aktualisiert.
+1. Wählen Sie **Auf diese Version zurück**. Die ausgewählte Version wird wiederhergestellt und die Informationen in der Timeline werden aktualisiert.
 
 ### Version wiederherstellen {#restore-version}
 
@@ -171,7 +171,7 @@ Sie können eine Vorschau einer bestimmten Version anzeigen:
 
 1. Navigieren Sie zu der Seite, die Sie vergleichen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie die **Zeitleiste** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus.
+1. Öffnen Sie die **Timeline** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus.
 1. Die Seitenversionen werden aufgelistet. Wählen Sie die Version, die Sie in der Vorschau anzeigen möchten:
 
    ![Version zur Vorschau auswählen](assets/screen-shot_2019-03-05at112505-1.png)
@@ -182,7 +182,7 @@ Sie können eine Vorschau einer bestimmten Version anzeigen:
    >
    >Wenn eine Seite verschoben wurde, können Sie keine Vorschau von Versionen mehr anzeigen, die vor dem Verschieben erstellt wurden.
    >
-   >* Wenn Probleme bei der Vorschau auftreten, überprüfen Sie in der [Zeitleiste](/help/sites-authoring/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
+   >* Wenn Probleme bei der Vorschau auftreten, überprüfen Sie in der [Timeline](/help/sites-authoring/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
 
 ## Vergleichen einer Version mit der aktuellen Seite {#comparing-a-version-with-current-page}
 
@@ -190,7 +190,7 @@ So vergleichen Sie eine frühere Version mit der aktuellen Seite:
 
 1. Navigieren Sie zu der Seite, die Sie vergleichen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie die **Zeitleiste** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus.
+1. Öffnen Sie die **Timeline** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus.
 1. Die Seitenversionen werden aufgelistet. Wählen Sie die Version aus, die Sie vergleichen möchten.
 
    ![Aufgeführte Seitenversionen – Version auswählen](assets/screen-shot_2019-03-05at112505-2.png)
@@ -242,4 +242,4 @@ Timewarp bemüht sich nach Kräften, eine Seite zu einem bestimmten Zeitpunkt zu
 
 >[!CAUTION]
 >
->Timewarp wurde als Tool entwickelt, um Autoren beim Verstehen und Erstellen ihres Inhalts zu unterstützen. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.
+>Timewarp wurde als Tool entwickelt, um Autoren beim Verstehen und Erstellen ihres Inhalts zu unterstützen. Es ist nicht als Auditprotokoll oder zu rechtlichen Zwecken gedacht.

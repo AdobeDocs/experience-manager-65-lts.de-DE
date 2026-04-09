@@ -3,9 +3,9 @@ title: 'Schnellstartanleitung für Headless: Abrufen und Bereitstellen von Inhal
 description: Erfahren Sie, wie Sie die AEM Assets-REST-API zum Verwalten von Inhaltsfragmenten und die GraphQL-API für die Headless-Bereitstellung von Inhalten der Inhaltsfragmente verwenden.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: a5f7f0b9-7779-49c3-b79f-3dd3762c746a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 100%
@@ -71,7 +71,7 @@ Informationsarchitektinnen und -architekten müssen Abfragen für ihre Kanalendp
 
 GraphQL ermöglicht strukturierte Abfragen, die nicht nur auf bestimmte Datensätze oder einzelne Datenobjekte abzielen, sondern auch bestimmte Elemente der Objekte und verschachtelte Ergebnisse bereitstellen, Unterstützung für Abfragevariablen bieten und vieles mehr.
 
-GraphQL kann iterative API-Anfragen und zu häufige Bereitstellungen vermeiden. Stattdessen ermöglicht es Massenbereitstellung von genau dem, was zum Rendern als Antwort auf eine einzelne API-Anfrage benötigt wird. Das resultierende JSON kann verwendet werden, um Daten in anderen Sites oder Mobile Apps bereitzustellen.
+GraphQL kann iterative API-Anfragen und zu häufige Bereitstellungen vermeiden. Stattdessen ermöglicht es Massenbereitstellung von genau dem, was zum Rendern als Antwort auf eine einzelne API-Abfrage benötigt wird. Das resultierende JSON kann verwendet werden, um Daten in anderen Sites oder Mobile Apps bereitzustellen.
 
 ## Nächste Schritte {#next-steps}
 

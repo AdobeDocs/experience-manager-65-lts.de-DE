@@ -3,9 +3,9 @@ title: Glossar
 description: Dieses Glossar listet (alphabetisch) alle zu liefernden Dokumente aus der Projekt-Checkliste auf.
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 exl-id: e6542ba9-1182-4b81-b251-537747b89e4c
-source-git-commit: fb979ab973476212aeed9ce86d3251eb1aedcb8c
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '6926'
 ht-degree: 100%
@@ -307,7 +307,7 @@ Richtlinien/Anforderungen der Kundin bzw. des Kunden, wie die Entwicklung erfolg
 
 Richtlinien der Kundin bzw. des Kunden, die festlegen, wie und wann Bereitstellungen/Freigaben erfolgen können.
 
-Dazu gehören oft Zeitpläne und Termin- und Abnahmeanforderungen.
+Dazu gehören oft Timelines und Termin- und Abnahmeanforderungen.
 
 ### Überwachungsrichtlinien oder -anforderungen der Kundin bzw. des Kunden {#customer-monitoring-policies-or-requirements}
 
@@ -509,7 +509,7 @@ Bestätigung, dass die Projektbeteiligten Folgendes vollständig akzeptieren:
 
 ### Zeitplan für die Live-Schaltung {#go-live-schedule}
 
-Zeitplan für die Aktivitäten, die für Folgendes erforderlich sind:
+Timeline für die Aktivitäten, die für Folgendes erforderlich sind:
 
 * Vorbereitung der Live-Schaltung
 * Die tatsächliche Live-Schaltung
@@ -911,7 +911,7 @@ Die ersten Schätzungen sind allgemein und erfolgen gemäß den allgemeinen Anfo
 
 Die erforderliche Dokumentation zur Beschreibung der Organisation und Berichtsstruktur des Projekts und Teams.
 
-Oftmals in Form eines Diagramms, um einen anschaulichen Überblick über Zeitpläne und Zuständigkeiten zu geben. Es stehen viele Tools zur Verfügung, die Ihnen dabei helfen.
+Oftmals in Form eines Diagramms, um einen anschaulichen Überblick über Timelines und Zuständigkeiten zu geben. Es stehen viele Tools zur Verfügung, die Ihnen dabei helfen.
 
 ### Dokument zum Projektumfang {#project-scope-document}
 
@@ -1289,7 +1289,7 @@ Diese Anforderungen sind spezifisch für die technische Implementierung von Dien
 
 ### Teststrategie {#testing-strategy}
 
-Die Teststrategie skizziert die allgemeine Strategie für Qualitätssicherung und Benutzerakzeptanztests.  Dazu gehören Zeitpläne, Berichterstellungsrhythmus und Ausführung.
+Die Teststrategie skizziert die allgemeine Strategie für Qualitätssicherung und Benutzerakzeptanztests.  Dazu gehören Timelines, Berichterstellungsrhythmus und Ausführung.
 
 ### Konzept für die Integration von Systemen von Drittanbietern {#third-party-integration-concept}
 
@@ -1329,7 +1329,7 @@ Beispiel:
 
 ### Timeline und Meilensteine {#timeline-and-milestones}
 
-Hierin sollten die zu verwendenden Projektzeitpläne und vertraglichen Meilensteine für Folgendes festgelegt werden:
+Hierin sollten die zu verwendenden Projekt-Timelines und vertraglichen Meilensteine für Folgendes festgelegt werden:
 
 * Fakturierung
 * Abstimmung mit den Erfolgsdefinitionen, Erfolgskriterien und KPIs.

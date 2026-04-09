@@ -3,9 +3,9 @@ title: Grundlagen zur Inhaltsmodellierung
 description: Erfahren Sie mehr über die Grundlagen der Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
+role: Admin,Developer
 exl-id: 89d4b9ae-8237-4c85-9e68-626e7d9d3464
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 100%
@@ -83,7 +83,7 @@ AEM stellt die folgenden Datentypen bereit, mit denen Sie Ihren Inhalt modellier
 * Einzeilentext
 * Mehrzeilentext
 * Zahl
-* Boolesch
+* Boolescher Wert
 * Datum und Uhrzeit
 * Aufzählung
 * Tags

@@ -3,9 +3,9 @@ title: Ihr Posteingang zum Verwalten von Aufgaben
 description: Verwalten von Aufgaben im Posteingang in Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 077407ef-1d7f-47ad-b924-0afa19f21119
-source-git-commit: 524f1bcea6761e299141bc1d1496e32c498ffd14
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1156'
 ht-degree: 98%
@@ -71,7 +71,7 @@ So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
 1. Klicken Sie auf die Anzeige in der Symbolleiste.
 
 1. Wählen Sie **Alle anzeigen** aus. Der **AEM-Posteingang** wird geöffnet. Im Posteingang werden Elemente aus den Bereichen Workflows, Projekte und Aufgaben angezeigt.
-1. Die Standardansicht ist die [Listenansicht](#inbox-list-view), Sie können aber auch zur [Kalenderansicht &#x200B;](#inbox-calendar-view)wechseln. Dies erfolgt mit der Ansichtsauswahl (Symbolleiste oben rechts).
+1. Die Standardansicht ist die [Listenansicht](#inbox-list-view), Sie können aber auch zur [Kalenderansicht ](#inbox-calendar-view)wechseln. Dies erfolgt mit der Ansichtsauswahl (Symbolleiste oben rechts).
 
    Für beide Ansichten können Sie auch die [Anzeigeeinstellungen](#inbox-view-settings) festlegen. Die verfügbaren Optionen hängen dabei von der aktuellen Ansicht ab.
 
@@ -95,7 +95,7 @@ In dieser Ansicht werden die Elemente nach Kalenderdatum und entsprechend der vo
 
 Sie haben folgende Möglichkeiten:
 
-* eine bestimmte Ansicht auswählen (**Zeitleiste**,**Spalte** oder **Liste**)
+* eine bestimmte Ansicht auswählen (**Timeline**,**Spalte** oder **Liste**)
 
 * festlegen, dass die Aufgaben gemäß einem **Zeitplan** angezeigt werden sollen (**Alle**, **Geplant**, **In Bearbeitung**, **Bald fällig** oder **Überfällig**)
 

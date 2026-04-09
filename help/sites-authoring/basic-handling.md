@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
-source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2919'
 ht-degree: 100%
@@ -143,7 +143,7 @@ Die Kopfzeile befindet sich immer am oberen Rand des Bildschirms. Die meisten Op
 
   Sie können auch den [Tastaturbefehl](/help/sites-authoring/keyboard-shortcuts.md) `/` (Schrägstrich) verwenden, um von jeder beliebigen Konsole aus die Suche zu starten.
 
-* [Lösungen](https://business.adobe.com/de/)
+* [Lösungen](https://business.adobe.com/)
 
   ![Lösungen](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -169,7 +169,7 @@ Die Kopfzeile befindet sich immer am oberen Rand des Bildschirms. Die meisten Op
 
   ![Liste der Leistenauswahl, die auf der linken Seite des Adobe Experience Manager-Bildschirms angezeigt wird.](do-not-localize/screen_shot_2018-03-23at103943.png)
 
-  Die angezeigten Optionen hängen von der jeweiligen Konsole ab. So können Sie z. B. in **Sites** nur Inhalt (Standard), die Zeitleiste, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
+  Die angezeigten Optionen hängen von der jeweiligen Konsole ab. So können Sie z. B. in **Sites** nur Inhalt (Standard), die Timeline, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
 
   ![Leistenauswahl](assets/screen_shot_2018-03-23at104029.png)
 
@@ -482,7 +482,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
   >
   >Das Ändern der Reihenfolge funktioniert nur innerhalb eines sortierten Ordners, der den Wert `jcr:primaryType` als `sling:OrderedFolder` hat.
 
-  ![Reihenfolge ändern](assets/bh-22.png)
+  ![Änderungsauftrag](assets/bh-22.png)
 
   Klicken Sie auf die vertikale Auswahlleiste und ziehen Sie das Element an die gewünschte Position in der Liste.
 
@@ -500,7 +500,7 @@ Die **Schienenauswahl** befindet sich im Fenster oben links. Je nach Konsole ste
 
 ![Leistenauswahl](assets/bh-25.png)
 
-So können Sie z. B. in Sites nur Inhalt (Standard), die Inhaltsstruktur, die Zeitleiste, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
+So können Sie z. B. in Sites nur Inhalt (Standard), die Inhaltsstruktur, die Timeline, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
 
 Wenn „Nur Inhalt“ ausgewählt ist, wird lediglich das Schienensymbol angezeigt. Bei Auswahl einer anderen Option wird der Optionsname neben dem Schienensymbol angezeigt.
 
@@ -522,7 +522,7 @@ Mithilfe des Seitenbereichs der Inhaltsstruktur können Benutzerinnen und Benutz
 >
 >Siehe den Abschnitt [Tastaturbefehle](/help/sites-authoring/keyboard-shortcuts.md) für weitere Informationen.
 
-### Zeitleiste {#timeline}
+### Timeline {#timeline}
 
 Die Timeline kann zur Anzeige und/oder Einleitung von Ereignissen in Verbindung mit der ausgewählten Ressource verwendet werden. Öffnen Sie die Timeline-Spalte mithilfe der Leistenauswahl.
 
@@ -552,7 +552,7 @@ In der Timeline-Spalte haben Sie folgende Möglichkeiten:
 
 Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
-![Zeitleiste](assets/bh-27.png)
+![Timeline](assets/bh-27.png)
 
 ### Verweise {#references}
 

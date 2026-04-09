@@ -3,9 +3,9 @@ title: Standardkomponenten
 description: Adobe Experience Manager ist mit einer Vielzahl vorkonfigurierter Komponenten ausgestattet, die Website-Autorinnen und -Autoren umfangreiche Funktionen bieten.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 2a5d3d80-2710-4bb0-ad24-9a86525c6aea
-source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 59%
@@ -14,7 +14,7 @@ ht-degree: 59%
 
 # Komponenten{#components}
 
-Adobe Experience Manager (AEM) ist mit einer Vielzahl vorkonfigurierter Komponenten ausgestattet, die Website-Autorinnen und -Autoren umfangreiche Funktionen bieten. Sie sind beim [&#x200B; einer Seite &#x200B;](/help/sites-authoring/editing-content.md). Sie gruppieren sie nach einem Hauptfunktionsbereich, der als Komponentengruppe bezeichnet wird, um die Filterung zu erleichtern.
+Adobe Experience Manager (AEM) ist mit einer Vielzahl vorkonfigurierter Komponenten ausgestattet, die Website-Autorinnen und -Autoren umfangreiche Funktionen bieten. Sie sind beim [ einer Seite ](/help/sites-authoring/editing-content.md). Sie gruppieren sie nach einem Hauptfunktionsbereich, der als Komponentengruppe bezeichnet wird, um die Filterung zu erleichtern.
 
 Die Komponenten sind beim [Bearbeiten einer Seite](/help/sites-authoring/editing-content.md) verfügbar. Gruppieren Sie die Komponenten nach ihrem Hauptfunktionsbereich (der Komponentengruppe), um das Filtern zu erleichtern.
 
@@ -38,7 +38,7 @@ Sie können eine Komponente auswählen und an die gewünschte Stelle auf Ihrer S
 Weitere Informationen zum Hinzufügen von Komponenten zu einer Seite finden Sie unter [Bearbeiten von Seiteninhalten](/help/sites-authoring/editing-content.md).
 Die Komponenten sind nach verschiedenen Kategorien (Komponentengruppen) sortiert. Beispiele für solche Gruppen sind:
 
-* **WeRetail**: Enthält die Kernkomponenten, die für die Verwendung mit der „WeRetail[Referenzimplementierung zugänglich &#x200B;](/help/sites-developing/we-retail.md).
+* **WeRetail**: Enthält die Kernkomponenten, die für die Verwendung mit der „WeRetail[Referenzimplementierung zugänglich ](/help/sites-developing/we-retail.md).
 
 * **WeRetail Commerce**: Enthält Commerce-Komponenten wie Einkaufswagen und Produktraster
 

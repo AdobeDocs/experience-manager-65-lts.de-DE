@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Verarbeitungsprozeduren für DSGVO-Anfr
 contentOwner: carlino
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
-role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
+role: Admin,Developer,Leader,User
 exl-id: 2d7ae2ad-a7ad-4b7d-bfa4-167caa49a087
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 100%

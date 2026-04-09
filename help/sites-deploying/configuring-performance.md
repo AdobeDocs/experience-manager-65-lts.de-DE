@@ -9,7 +9,7 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: 2fcdc5df5a4b901c177d8e4158663c6b09793146
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '5053'
 ht-degree: 99%
@@ -214,7 +214,7 @@ Um die Leistung zu verbessern, begrenzen Sie die Anzahl der gleichzeitig ausgef�
 
 Wenn beispielsweise Bilder (oder DAM-Assets im Allgemeinen) hochgeladen werden, importieren Workflows die Bilder automatisch in DAM. Bilder haben häufig eine hohe Auflösung und können problemlos Hunderte von MB an Heap für die Verarbeitung verbrauchen. Die parallele Behandlung dieser Bilder stellt eine hohe Belastung für das Speicher-Subsystems und die Speicherbereinigung dar.
 
-Die Workflow-Engine verwendet Apache Sling-Vorgangswarteschlangen für die Verarbeitung und Planung der Arbeitselemente. Die folgenden Auftragswarteschlangendienste wurden standardmäßig in der Apache Sling Job Queue Configuration Service Factory zur Verarbeitung von Workflow-Aufgaben erstellt:
+Die Workflow-Engine verwendet Apache Sling-Auftragswarteschlangen für die Verarbeitung und Planung der Arbeitselemente. Die folgenden Auftragswarteschlangendienste wurden standardmäßig in der Apache Sling Job Queue Configuration Service Factory zur Verarbeitung von Workflow-Aufgaben erstellt:
 
 <!-- TODO: Change the reference to 6.5 LTS javadocs -->
 * Granite Workflow-Warteschlange: Für die meisten Workflow-Schritte, wie diejenigen zur Verarbeitung von DAM-Assets, wird der Granite Workflow-Warteschlangendienst verwendet.
@@ -240,9 +240,9 @@ Konfigurieren Sie die Eigenschaft mit dem Namen „Maximum Parallel Jobs“.
 
 ### Konfigurieren der Warteschlange für einen spezifischen Workflow {#configure-the-queue-for-a-specific-workflow}
 
-Erstellen Sie eine Vorgangswarteschlange für ein bestimmtes Workflow-Modell, damit Sie die Vorgangsverarbeitung für dieses Workflow-Modell konfigurieren können. Auf diese Weise beeinflussen Ihre Konfigurationen die Verarbeitung für einen bestimmten Workflow, während die Konfiguration der standardmäßigen Granite-Workflow-Warteschlange die Verarbeitung anderer Workflows steuert.
+Erstellen Sie eine Auftragswarteschlange für ein bestimmtes Workflow-Modell, damit Sie die Auftragsverarbeitung für dieses Workflow-Modell konfigurieren können. Auf diese Weise beeinflussen Ihre Konfigurationen die Verarbeitung für einen bestimmten Workflow, während die Konfiguration der standardmäßigen Granite-Workflow-Warteschlange die Verarbeitung anderer Workflows steuert.
 
-Wenn Workflow-Modelle ausgeführt werden, erstellen sie Sling-Vorgänge für ein bestimmtes Thema. Standardmäßig entspricht das Thema den Themen, die für die allgemeine Granite-Workflow-Warteschlange oder die Granite-Workflow-Warteschlange für externe Prozessvorgänge konfiguriert sind:
+Wenn Workflow-Modelle ausgeführt werden, erstellen sie Sling-Aufträge für ein bestimmtes Thema. Standardmäßig entspricht das Thema den Themen, die für die allgemeine Granite-Workflow-Warteschlange oder die Granite-Workflow-Warteschlange für externe Prozessaufträge konfiguriert sind:
 
 * `com/adobe/granite/workflow/job*`
 * `com/adobe/granite/workflow/external/job*`
@@ -256,14 +256,14 @@ Daher können Sie eine Auftragswarteschlange für das Thema erstellen, das dem A
 Im Folgenden wird ein Workflow **DAM Update Asset** als Beispiel verwendet, um eine Auftragswarteschlange für einen Workflow zu erstellen.
 
 1. Führen Sie das Workflow-Modell aus, für das Sie die Auftragswarteschlange erstellen möchten, sodass Themenstatistiken generiert werden. Fügen Sie beispielsweise ein Bild zu Assets hinzu, um den Workflow **DAM-Update-Asset** auszuführen.
-1. Öffnen Sie die Sling Jobs-Konsole (`https://<host>:<port>/system/console/slingevent`).
+1. Öffnen Sie die Sling-Auftragskonsole (`https://<host>:<port>/system/console/slingevent`).
 1. Erfahren Sie mehr über die Workflow-bezogenen Themen in der Konsole. Für DAM Update Asset werden die folgenden Themen gefunden:
 
    * `com/adobe/granite/workflow/external/job/etc/workflow/models/dam/update_asset/jcr_content/model`
    * `com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model`
    * `com/adobe/granite/workflow/job/etc/workflow/models/dam-xmp-writeback/jcr_content/model`
 
-1. Erstellen Sie für jedes Thema eine Auftragswarteschlange. Um eine Vorgangswarteschlange zu erstellen, erstellen Sie eine Werkskonfiguration für den Factory-Dienst Apache Sling Job Queue.
+1. Erstellen Sie für jedes Thema eine Auftragswarteschlange. Um eine Auftragswarteschlange zu erstellen, erstellen Sie eine Werkskonfiguration für den Factory-Dienst Apache Sling Job Queue.
 
    Die Werkskonfigurationen sind ähnlich der Granite Workflow-Warteschlange, die in [Gleichzeitige Workflow-Verarbeitung](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing) beschrieben wird, mit der Ausnahme, dass die Themen-Eigenschaft mit dem Thema Ihrer Workflow-Aufträge übereinstimmt.
 
@@ -294,9 +294,9 @@ In diesem Abschnitt erhalten Sie einen Überblick über Probleme bei der Definit
 Im Folgenden wird die übliche Vorgehensweise bei der Durchführung von Leistungstests bei einer AEM-Anwendung in der *Veröffentlichungsumgebung* beschrieben. Dieser Leistungstest umfasst die folgenden fünf Phasen:
 
 * [Überprüfung des Wissens](#verification-of-knowledge)
-* [Definition des Umfangs &#x200B;](#scope-definition)
+* [Definition des Umfangs ](#scope-definition)
 * [Testmethoden](#test-methodologies)
-* [Definition von Leistungszielen &#x200B;](#defining-the-performance-goals)
+* [Definition von Leistungszielen ](#defining-the-performance-goals)
 * [Optimierung](#optimization)
 
 Die Steuerung ist ein zusätzlicher, allumfassender Prozess – notwendig, aber nicht auf Tests beschränkt.
@@ -383,7 +383,7 @@ In beiden Fällen können Sie die erwartete Anzahl von Transaktionen pro Sekunde
 | Einzelbenutzer auf der Startseite | Durchschnitt | 1 | 1 |  |  |
 |   | Spitze | 1 | 3 |  |  |
 | Startseite 100 Benutzer | Durchschnitt | 100 | 3 |  |  |
-|   | Spitze | 100 | 3 |  |
+|   | Spitze | 100 | 3 |  | |
 
 #### Tests kombinierter Komponenten {#combined-component-tests}
 
@@ -425,7 +425,7 @@ Bei der Konzeption dieser Tests sollte beachtet werden, dass nicht alle Szenarie
 
 | Fehlerszenario | Fehlertyp | Anzahl der Benutzer | Tx/Sek (erwartet) | Tx/Sek (getestet) | Beschreibung |
 |---|---|---|---|---|---|
-| Überlastung der Suchkomponente | Suche mit einem globalen Platzhalter (Sternchen) | 10 | 1 |  | Es wird nur nach &ast;&ast;&ast; gesucht. |
+| Überlastung der Suchkomponente | Suche mit einem globalen Platzhalter (Sternchen) | 10 | 1 |  | Es wird nur nach &amp;ast;&amp;ast;&amp;ast; gesucht. |
 |   | Stoppwort | 20 | 2 |  | Suchen nach einem Stoppwort. |
 |   | Leere Zeichenfolge | 10 | 1 |  | Suchen nach einer leeren Zeichenfolge. |
 |   | Sonderzeichen | 10 | 1 |  | Suchen nach Sonderzeichen. |
@@ -497,13 +497,13 @@ Mit der Cache-Verhältnis-Formel wird der ungefähre Prozentsatz der vom Cache g
 
 * Die Gesamtzahl der Anforderungen. Diese Information können Sie der Apache-Datei `access.log` entnehmen. Weitere Informationen finden Sie in der [offiziellen Apache-Dokumentation](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
-* Die Anzahl der Anforderungen, die von der Publishing-Instanz bereitgestellt wurden. Diese Information können Sie der Datei `request.log` der Instanz entnehmen. Weitere Informationen finden Sie unter [Interpretieren der Datei request.log](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log) und [Auffinden der Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files).
+* Die Anzahl der Anforderungen, die von der Veröffentlichungsinstanz bereitgestellt wurden. Diese Information können Sie der Datei `request.log` der Instanz entnehmen. Weitere Informationen finden Sie unter [Interpretieren der Datei request.log](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log) und [Auffinden der Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files).
 
 Die Formel zur Berechnung des Cache-Verhältnisses lautet:
 
 * (Die Gesamtzahl der Anfragen **minus** der Anzahl der Anfragen in der Veröffentlichungsumgebung) **geteilt durch** die Gesamtanzahl der Anfragen.
 
-Wenn beispielsweise die Gesamtzahl der Anfragen 129491 und die Anzahl der von der Publishing-Instanz bereitgestellten Anforderungen 58959 beträgt, dann ist das Cache-Verhältnis: **(129491 - 58959)/129491= 54,5 %**.
+Wenn beispielsweise die Gesamtzahl der Anfragen 129491 und die Anzahl der von der Veröffentlichungsinstanz bereitgestellten Anforderungen 58959 beträgt, dann ist das Cache-Verhältnis: **(129491 - 58959)/129491= 54,5 %**.
 
 Wenn Sie keine 1-zu-1-Kopplung zwischen Publisher und Dispatcher haben, fügen Sie Anfragen von allen Dispatchern und Publishern hinzu, um eine genaue Messung zu erhalten. Siehe auch [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md).
 

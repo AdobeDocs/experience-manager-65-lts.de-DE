@@ -3,9 +3,9 @@ title: Schnellstartanleitung zum Erstellen von Inhaltsfragmenten per Headless-Im
 description: Erfahren Sie, wie Sie mit den Inhaltsfragmenten von AEM seitenunabhängige Inhalte für die Headless-Bereitstellung entwerfen, erstellen, kuratieren und verwenden können.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: 7b26e5cb-3aab-4f69-a0f1-42268c39bba8
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 98%
@@ -41,7 +41,7 @@ Inhaltsautorinnen und -autoren können eine beliebige Anzahl von Inhaltsfragment
    ![Inhaltsfragment erstellen](assets/content-fragment-create.png)
 1. Klicken Sie im Bestätigungsfenster auf **Öffnen**.
 
-   ![Bestätigung der Inhaltsfragment-Erstellung &#x200B;](assets/content-fragment-confirmation.png)
+   ![Bestätigung der Inhaltsfragment-Erstellung ](assets/content-fragment-confirmation.png)
 1. Geben Sie im Inhaltsfragment-Editor die Details des Inhaltsfragments an.
 
    ![Inhaltsfragmente-Editor](assets/content-fragment-edit.png)

@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 632ecead-f57d-4b43-8a3d-f2b0b8fe1115
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '7160'
+source-wordcount: '7136'
 ht-degree: 99%
 
 ---
@@ -84,15 +84,15 @@ Sie können die folgenden Eigenschaften für einen überwachten Ordner konfiguri
 >
 >Ist auf dem Server, der den überwachten Ordner hostet, keiner der angegebenen Ausführungsmodi verfügbar, wird der überwachte Ordner immer aktiviert, egal, welche Ausführungsmodi auf dem Server laufen.
 
-* **outputFilePattern (Zeichenfolge)**: Das Muster der Ausgabedatei. Sie können ein Ordner- oder Dateimuster angeben. Wenn Sie ein Ordnermuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben in den Workflows. Wenn Sie ein Dateimuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben im Dateimuster. [In Datei- und Ordnermustern können Sie außerdem eine Ordnerstruktur für die Ausgabedateien angeben. &#x200B;](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) Dies ist eine obligatorische Eigenschaft.
+* **outputFilePattern (Zeichenfolge)**: Das Muster der Ausgabedatei. Sie können ein Ordner- oder Dateimuster angeben. Wenn Sie ein Ordnermuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben in den Workflows. Wenn Sie ein Dateimuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben im Dateimuster. [In Datei- und Ordnermustern können Sie außerdem eine Ordnerstruktur für die Ausgabedateien angeben. ](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) Dies ist eine obligatorische Eigenschaft.
 
 * **stageFileExpirationDuration (lang, Standard -1)**: Geben Sie die Anzahl Sekunden an, nach denen für eine Eingabedatei/einen Ordner, die/der bereits zur Verarbeitung abgerufen wurde, eine Zeitüberschreitung eintritt und ein Fehler gemeldet wird. Dieser Ablaufmechanismus wird nur aktiviert, wenn der Wert für diese Eigenschaft eine positive Zahl ist.
 
 >[!NOTE]
 >
->Selbst wenn eine Eingabe mithilfe dieses Mechanismus als zeitlich begrenzt markiert wird, kann sie möglicherweise immer noch im Hintergrund verarbeitet werden, sie braucht nur mehr Zeit als erwartet. Wenn der eingegebene Inhalt genutzt wurde, bevor der Zeitüberschreitungsmechanismus einsetzte, erfolgt möglicherweise sogar später die Verarbeitung bis zur Fertigstellung, und die Ausgabe wird im Ergebnisordner abgelegt. Wenn der Inhalt nicht vor der Zeitüberschreitung genutzt wurde, ist es sehr wahrscheinlich, dass die Verarbeitung später beim Versuch, den Inhalt zu nutzen, mit einem Fehler abbricht und der Fehler auch im Fehlerordner für diese Eingabe protokolliert wird. Wenn andererseits die Verarbeitung der Eingabe aufgrund einer zeitweisen Fehlfunktion des Auftrags/Arbeitsablaufs nie aktiviert wurde (dieses Szenario ist das eigentliche Ziel des Ablaufmechanismus), tritt keiner dieser beiden Fälle ein. Daher sollten Sie bei Einträgen im Fehlerordner, die als Fehler wegen einer Zeitüberschreitung gemeldet wurden (suchen Sie im Fehlerprotokoll nach Meldungen der Art „Datei nach erheblicher Zeit nicht verarbeitet, wird als Fehler markiert!“), den Ergebnisordner (und auch den Fehlerordner selbst auf einen anderen Eintrag für dieselbe Eingabe) prüfen, ob die zuvor beschriebenen Fälle tatsächlich eingetreten sind.
+>Selbst wenn eine Eingabe mithilfe dieses Mechanismus als zeitlich begrenzt markiert wird, kann sie möglicherweise immer noch im Hintergrund verarbeitet werden, sie braucht nur mehr Zeit als erwartet. Wenn der eingegebene Inhalt genutzt wurde, bevor der Zeitüberschreitungsmechanismus einsetzte, erfolgt möglicherweise sogar später die Verarbeitung bis zur Fertigstellung, und die Ausgabe wird im Ergebnisordner abgelegt. Wenn der Inhalt nicht vor der Zeitüberschreitung genutzt wurde, ist es sehr wahrscheinlich, dass die Verarbeitung später beim Versuch, den Inhalt zu nutzen, mit einem Fehler abbricht und der Fehler auch im Fehlerordner für diese Eingabe protokolliert wird. Wenn andererseits die Verarbeitung der Eingabe aufgrund einer zeitweisen Fehlfunktion des Auftrags/Workflows nie aktiviert wurde (dieses Szenario ist das eigentliche Ziel des Ablaufmechanismus), tritt keiner dieser beiden Fälle ein. Daher sollten Sie bei Einträgen im Fehlerordner, die als Fehler wegen einer Zeitüberschreitung gemeldet wurden (suchen Sie im Fehlerprotokoll nach Meldungen der Art „Datei nach erheblicher Zeit nicht verarbeitet, wird als Fehler markiert!“), den Ergebnisordner (und auch den Fehlerordner selbst auf einen anderen Eintrag für dieselbe Eingabe) prüfen, ob die zuvor beschriebenen Fälle tatsächlich eingetreten sind.
 
-* **deleteExpiredStageFileOnlyWhenThrottled (Boolean, Standard true):** Ob die Zeitüberschreitungsfunktion nur aktiviert werden soll, wenn der überwachte Ordner gedrosselt wird. Der Mechanismus ist für gedrosselte überwachte Ordner relevanter, da eine geringe Anzahl von noch unformatiert gebliebenen Dateien (aufgrund der zeitweisen Fehlfunktion des Auftrags/Arbeitsablaufs) das Potenzial hat, die Verarbeitung des gesamten Stapels zu unterbinden, wenn die Drosselung aktiviert ist. Wenn diese Eigenschaft als „true“ beibehalten wird (Standardeinstellung), wird für überwachte Ordner, die nicht gedrosselt werden, der Ablaufmechanismus nicht aktiviert. Wenn die Eigenschaft als „false“ beibehalten wird, tritt die Zeitüberschreitung immer ein, wenn die stageFileExpirationDuration-Eigenschaft eine positive Zahl ist.
+* **deleteExpiredStageFileOnlyWhenThrottled (Boolean, Standard true):** Ob die Ablauffunktion nur aktiviert werden soll, wenn der überwachte Ordner gedrosselt wird. Der Mechanismus ist für gedrosselte überwachte Ordner relevanter, da eine geringe Anzahl von noch unformatiert gebliebenen Dateien (aufgrund der zeitweisen Fehlfunktion des Auftrags/Workflows) das Potenzial hat, die Verarbeitung des gesamten Stapels zu unterbinden, wenn die Drosselung aktiviert ist. Wenn diese Eigenschaft als „true“ beibehalten wird (Standardeinstellung), wird für überwachte Ordner, die nicht gedrosselt werden, der Ablaufmechanismus nicht aktiviert. Wenn die Eigenschaft als „false“ beibehalten wird, tritt die Zeitüberschreitung immer ein, wenn die stageFileExpirationDuration-Eigenschaft eine positive Zahl ist.
 
 * **pollInterval (Lang)**: Das Intervall in Sekunden, in dem der überwachte Ordner auf Eingaben überprüft wird. Außer wenn die Einstellung „Einschränken“ aktiviert ist, muss das Abfrageintervall länger sein als die Verarbeitungsdauer für einen durchschnittlichen Auftrag. Andernfalls kann es zu einer Überlastung des Systems kommen. Der Standardwert ist 5. Weitere Informationen finden Sie in der Beschreibung für „Stapelgröße“. Der Wert für „pollInterval“ muss größer als oder gleich eins sein.
 * **excludeFilePattern (Zeichenfolge)**: Eine durch Semikolon (;) getrennte Liste von Mustern, mit deren Hilfe in einem überwachten Ordner ermittelt wird, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner, die diesem Muster entsprechen, werden nicht für die Verarbeitung überprüft. Diese Einstellung ist hilfreich, wenn die Eingabe aus einem Ordner mit mehreren Dateien besteht. Der Inhalt des Ordners kann in einen Ordner mit einem Namen kopiert werden, der vom überwachten Ordner aufgenommen wird. Dies verhindert, dass der überwachte Ordner einen Ordner für die Verarbeitung aufnimmt, bevor dieser vollständig in den Eingabeordner kopiert ist. Der Standardwert ist Null.
@@ -102,9 +102,9 @@ Sie können [Dateimuster](../../forms/using/watched-folder-in-aem-forms.md#p-fil
    * Dateien mit bestimmten Namen; durch „data&#42;“ würden beispielsweise Dateien und Ordner mit den Namen „data1“, „data2“ usw. ausgeschlossen.
    * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
-      * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-      * &#42;.[dD][Aa]&#39;port&#39;
-      * &#42;.[Xx][Mm][Ll]
+      * `[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
+      * &#42;.`[dD][Aa]`&#39;port&#39;
+      * &#42;.`[Xx][Mm][Ll]`
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
@@ -115,10 +115,10 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](.
 
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
-   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * `[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
 
-      * &#42;.[dD][Aa]&#39;port&#39;
-      * &#42;.[Xx][Mm][Ll]
+      * &#42;.`[dD][Aa]`&#39;port&#39;
+      * &#42;.`[Xx][Mm][Ll]`
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
@@ -139,7 +139,7 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](.
    * %s = Sekunde
    * %l = Millisekunde
    * %R = Zufallszahl (zwischen 0 und 9)
-   * %P = Prozess- oder Vorgangs-ID
+   * %P = Prozess- oder Auftrags-ID
 
   Wenn es beispielsweise 20 Uhr am 17. Juli 2009 ist und Sie „C:/Test/WF0/failure/%Y/%M/%D/%H/“ angeben, lautet der Ergebnisordner „C:/Test/WF0/failure/2009/07/17/20“.
 
@@ -168,10 +168,10 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](.
 
 >[!NOTE]
 >
->Die Workflows sind standardmäßig asynchron. Sie werden selbst dann im asynchronen Modus gestartet, wenn Sie das Flag auf „false“ setzen.
+>Die Workflows sind standardmäßig asynchron. Die Workflows werden selbst dann im asynchronen Modus gestartet, wenn Sie das Flag auf „false“ setzen.
 
 * **enabled (Boolescher Wert)**: Deaktiviert und aktiviert die Überprüfung des überwachten Ordners. Legen Sie für „enabled“ den Wert „true“ fest, um die Überprüfung des überwachten Ordners zu starten. Der Standardwert lautet true.
-* **payloadMapperFilter:** Wenn ein Ordner als überwachter Ordner konfiguriert ist, wird im überwachten Ordner eine Ordnerstruktur erstellt. Die Struktur verfügt über Ordner, um Eingaben bereitzustellen, Ausgaben (Ergebnisse) zu empfangen, Daten für Fehler zu speichern, Daten für langlebige Prozesse zu bewahren und Daten für verschiedene Phasen zu speichern.  Die Ordnerstruktur eines überwachten Ordners kann als Payload für formularzentrierte Workflows dienen.  Mit einem Payload-Mapper können Sie eine Payload-Struktur definieren, die einen überwachten Ordner für Eingabe, Ausgabe und Verarbeitung verwendet.  Wenn Sie beispielsweise den standardmäßigen Zuordner verwenden, ordnet er den Inhalt des überwachten Ordners dem Ordner [payload]\input und [payload]\output zu. Zwei standardmäßige Payload-Mapper-Implementierungen sind verfügbar.  Wenn Sie keine [benutzerdefinierte Implementierung &#x200B;](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)haben, verwenden Sie eine Standard-Implementierung:
+* **payloadMapperFilter:** Wenn ein Ordner als überwachter Ordner konfiguriert ist, wird im überwachten Ordner eine Ordnerstruktur erstellt. Die Struktur verfügt über Ordner, um Eingaben bereitzustellen, Ausgaben (Ergebnisse) zu empfangen, Daten für Fehler zu speichern, Daten für langlebige Prozesse zu bewahren und Daten für verschiedene Phasen zu speichern.  Die Ordnerstruktur eines überwachten Ordners kann als Payload für formularzentrierte Workflows dienen.  Mit einem Payload-Mapper können Sie eine Payload-Struktur definieren, die einen überwachten Ordner für Eingabe, Ausgabe und Verarbeitung verwendet.  Wenn Sie beispielsweise den standardmäßigen Zuordner verwenden, ordnet er den Inhalt des überwachten Ordners dem Ordner [payload]\input und [payload]\output zu. Zwei standardmäßige Payload-Mapper-Implementierungen sind verfügbar.  Wenn Sie keine [benutzerdefinierte Implementierung ](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)haben, verwenden Sie eine Standard-Implementierung:
 
    * **Standard-Mapper**: Verwenden Sie den Standard-Payload-Mapper, um den Eingabe- und Ausgabe-Inhalt der überwachten Ordner in separaten Eingabe- und Ausgabeordnern in der Payload zu belassen. Verwenden Sie im Payload-Pfad eines Workflows außerdem die Pfade [payload]/input/ und [payload]/output, um Inhalte abzurufen und zu speichern.
 
@@ -565,9 +565,9 @@ Admins können den Dateityp angeben, von dem ein Dienst aufgerufen werden kann. 
 * Dateien mit bestimmten Namen, z. B. data.&#42;
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
-   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-   * &#42;.[dD][Aa]&#39;port&#39;
-   * &#42;.[Xx][Mm][Ll]
+   * `[0-9][0-9][0-9]`.`[dD][aA]`&#39;port&#39;
+   * &#42;.`[dD][Aa]`&#39;port&#39;
+   * &#42;.`[Xx][Mm][Ll]`
 
 * Admins können das Dateimuster des Ausgabeordners definieren, in dem die Ergebnisse gespeichert werden sollen. Für die Ausgabeordner (Ergebnis, Beibehaltung und Fehler) können Admins eines der folgenden Dateimuster angeben:
 * %Y = Jahr (vollständig)

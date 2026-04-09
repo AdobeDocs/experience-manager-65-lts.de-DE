@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 56dac3e2-e330-47c9-a32e-db947272a632
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '3808'
-ht-degree: 100%
+source-wordcount: '3806'
+ht-degree: 95%
 
 ---
 
@@ -38,7 +38,7 @@ Alle E-Mail-Endpunkte werden mit einem autorisierten Benutzernamen und Kennwort 
 
 Wenn Benutzer Dokumente mit westeuropäischen Sprachzeichen in Datei- und Konvertierungspfadnamen senden, müssen Sie eine E-Mail-Anwendung einsetzen, welche die erforderlichen Kodierungstypen (Latin1 [ISO-8859-1], Westeuropäisch [Windows] oder UTF-8) unterstützt. Weitere Informationen hierzu finden Sie im Dokument *Installieren und Bereitstellen von AEM Forms* für Ihren Anwendungs-Server.
 
-Bevor Sie einen E-Mail-Endpunkt konfigurieren, richten Sie den E-Mail-Dienst ein. (Siehe [Konfigurieren von Standardeinstellungen für E-Mail-Endpunkte](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Die Konfigurationsparameter des E-Mail-Dienstes haben zwei Zwecke:
+Bevor Sie einen E-Mail-Endpunkt konfigurieren, richten Sie den E-Mail-Dienst ein. (Siehe [Standardeinstellungen für E-Mail-Endpunkte konfigurieren](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Die Konfigurationsparameter des E-Mail-Services haben zwei Zwecke:
 
 * Konfigurieren von Attributen, die für alle E-Mail-Endpunkte gültig sind
 * Bereitstellen von Standardwerten für alle E-Mail-Endpunkte
@@ -47,9 +47,9 @@ Bevor Sie einen E-Mail-Endpunkt konfigurieren, richten Sie den E-Mail-Dienst ein
 
 Sie können POP3, IMAP bzw. SMTP zum Verwenden von Secure Sockets Layer (SSL) für einen E-Mail-Endpunkt konfigurieren.
 
-1. Aktivieren Sie auf dem E-Mail-Server gemäß der Dokumentation des Herstellers SSL für POP3, IMAP bzw. SMTP.
+1. Aktivieren Sie auf dem E-Mail-Server SSL für POP3, IMAP oder SMTP gemäß der Dokumentation des Herstellers.
 1. Exportieren Sie ein Client-Zertifikat vom E-Mail-Server.
-1. Verwenden Sie das Programm Keytool, um die Client-Zertifikatdatei in den Java Virtual Machine(JVM)-Zertifikatspeicher des Anwendungs-Servers zu importieren. Das hierfür verwendete Verfahren ist von den JVM- und Client-Installationspfaden abhängig.
+1. Verwenden Sie das Keytool-Programm, um die Client-Zertifikatdatei in den Zertifikatspeicher Java Virtual Machine (JVM) des Anwendungsservers zu importieren. Das hierfür verwendete Verfahren ist von den JVM- und Client-Installationspfaden abhängig.
 
    Wenn Sie beispielsweise eine standardmäßige Oracle WebLogic Server-Installation mit JDK 1.5.0 unter Microsoft Windows Server® 2003 verwenden, geben Sie an einer Eingabeaufforderung den folgenden Text ein:
 
@@ -91,7 +91,7 @@ Damit der Forms-Workflow eingehende E-Mail-Nachrichten von Benutzenden empfängt
 
 **Domain-Muster:** Das Domain-Namensmuster, das zum Filtern eingehender E-Mails verwendet wird. Wenn beispielsweise adobe.com verwendet wird, werden nur E-Mails aus der Domain „adobe.com“ verarbeitet, während E-Mails aus anderen Domains ignoriert werden.
 
-**Dateimuster:** Gibt die Muster für eingehende Dateianhänge an, die vom Anbieter akzeptiert werden. Hierzu gehören Dateien mit bestimmten Erweiterungen (&amp;ast;.dat, &amp;ast;.xml), Dateien mit bestimmten Namen (data) sowie Dateien mit zusammengesetzten Ausdrücken im Namen und in der Erweiterung (.[dD][aA]&#39;port&#39;). Der Standardwert lautet &amp;ast;.&amp;ast;.
+**Dateimuster:** Gibt die Muster für eingehende Dateianhänge an, die vom Anbieter akzeptiert werden. Hierzu gehören Dateien mit bestimmten Erweiterungen (&amp;ast;.dat, &amp;ast;.xml), Dateien mit bestimmten Namen (data) sowie Dateien mit zusammengesetzten Ausdrücken im Namen und in der Erweiterung (.`[dD][aA]`&#39;port&#39;). Der Standardwert lautet &amp;ast;.&amp;ast;.
 
 **Empfänger erfolgreicher Aufträge:** Eine oder mehrere E-Mail-Adressen, an die Benachrichtigungen über erfolgreiche Aufträge per E-Mail gesendet werden. Standardmäßig wird immer eine Benachrichtigung über erfolgreiche Aufträge an die Absenderin bzw. den Absender des Ausgangsauftrags gesendet. Es werden bis zu 100 Empfänger unterstützt. Zum Deaktivieren dieser Einstellung lassen Sie das Feld leer.
 
@@ -149,7 +149,7 @@ Damit der Forms-Workflow eingehende E-Mail-Nachrichten von Benutzenden empfängt
 
 Mithilfe der folgenden Einstellungen können Sie einen E-Mail-Endpunkt konfigurieren.
 
-**Name:** Eine obligatorische Angabe zum Identifizieren des Endpunktes. Der Name darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige des Namens in Workspace abgeschnitten wird. Wenn Sie eine URL als Name des Endpunktes angeben, vergewissern Sie sich, dass sie den in RFC1738 angegebenen Syntaxregeln entspricht.
+**Name:** Eine obligatorische Angabe zum Identifizieren des Endpunktes. Der Name darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige des Namens in Workspace abgeschnitten wird. Wenn Sie eine URL als Namen des Endpunktes eingeben, vergewissern Sie sich, dass sie den in RFC1738 angegebenen Syntaxregeln entspricht.
 
 **Beschreibung:** Eine Beschreibung des Endpunktes. Sie darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige der Beschreibung in Workspace abgeschnitten wird.
 
@@ -165,11 +165,11 @@ Mithilfe der folgenden Einstellungen können Sie einen E-Mail-Endpunkt konfiguri
 
 **Benutzername:** (Obligatorische Einstellung) Der Benutzername, mit dem ein Ziel-Service aus einer E-Mail heraus aufgerufen wird. Der Standardwert lautet „SuperAdmin“.
 
-**Domain-Name:** (Obligatorische Einstellung) Die Domain des Benutzers. Der Standardwert lautet „DefaultDom“.
+**Domain-Name:** Obligatorische Einstellung, d. h. die Domain des Benutzers. Der Standardwert lautet „DefaultDom“.
 
 **Domain-Muster:** Gibt die Domain-Muster für eingehende E-Mails an, die vom Anbieter akzeptiert werden. Wenn beispielsweise „adobe.com“ verwendet wird, werden nur E-Mails aus der Domain „adobe.com“ verarbeitet, während E-Mails aus anderen Domains ignoriert werden.
 
-**Dateimuster:** Gibt das Muster für eingehende Dateianhänge an, die vom Anbieter akzeptiert werden. Dazu gehören Dateien mit bestimmten Erweiterungen (&amp;ast;.dat, &amp;ast;.xml), bestimmte Namen (Daten) oder zusammengesetzte Ausdrücke im Namen und in der Erweiterung (&amp;ast;.[dD][aA]&#39;port&#39;).
+**Dateimuster:** Gibt das Muster für eingehende Dateianhänge an, die vom Anbieter akzeptiert werden. Dazu gehören Dateien mit bestimmten Erweiterungen (&amp;ast;.dat, &amp;ast;.xml), bestimmte Namen (Daten) oder zusammengesetzte Ausdrücke im Namen und in der Erweiterung (&amp;ast;.`[dD][aA]`&#39;port&#39;).
 
 **Empfänger erfolgreicher Aufträge:** Eine E-Mail-Adresse, an die Benachrichtigungen über erfolgreiche Aufträge gesendet werden. Standardmäßig werden Benachrichtigungen über erfolgreiche Aufträge immer an den Absender gesendet. Wenn Sie „sender“ eingeben, werden E-Mail-Ergebnisse an den Absender gesendet. Es werden bis zu 100 Empfänger unterstützt. Geben Sie zusätzliche Empfängerinnen und Empfänger mit durch Kommas (,) getrennte E-Mail-Adressen an.
 
@@ -209,7 +209,7 @@ Zum Deaktivieren dieser Einstellung lassen Sie sie leer. Es kann Fälle geben, i
 
 **asynchron:** Bei Festlegung auf „synchron“ werden alle Eingabedokumente verarbeitet und eine einzige Antwort wird zurückgegeben. Bei Festlegung auf „asynchron“ wird für jedes verarbeitete Dokument eine Antwort gesendet.
 
-Beispielsweise wird für einen Dienst ein E-Mail-Endpunkt erstellt, der ein einzelnes Word-Dokument akzeptiert und das Dokument als PDF-Datei zurückgibt. An den Posteingang des Endpunkts kann eine E-Mail gesendet werden, die mehrere (3) Word-Dokumente enthält. Wenn nach der Verarbeitung aller drei Dokumente der Endpunkt als „synchron“ konfiguriert wird, wird eine E-Mail-Antwort mit allen drei Dokumenten als Anlage gesendet. Ist der Endpunkt dagegen „asynchron“, wird nach der Konvertierung jedes Word-Dokuments in PDF eine E-Mail-Antwort gesendet. Das heißt also, dass drei E-Mails mit jeweils einer einzelnen PDF-Anlage gesendet werden.
+Beispielsweise wird für einen Dienst ein E-Mail-Endpunkt erstellt, der ein einzelnes Word-Dokument akzeptiert und das Dokument als PDF-Datei zurückgibt. Eine E-Mail kann an den Posteingang des Endpunkts gesendet werden, der mehrere (3) Word-Dokumente enthält. Wenn nach der Verarbeitung aller drei Dokumente der Endpunkt als „synchron“ konfiguriert wird, wird eine E-Mail-Antwort mit allen drei Dokumenten als Anlage gesendet. Ist der Endpunkt dagegen „asynchron“, wird nach der Konvertierung jedes Word-Dokuments in PDF eine E-Mail-Antwort gesendet. Das heißt also, dass drei E-Mails mit jeweils einer einzelnen PDF-Anlage gesendet werden.
 
 Der Standardwert ist „asynchron“.
 
@@ -243,7 +243,7 @@ Der Standardwert ist „asynchron“.
 
 **%F** Stellt den Dateinamen der Quelldatei dar (ohne eine Erweiterung).
 
-**%E** Steht für die Erweiterung der Quelldatei.
+**%E** Stellt die Erweiterung der Quelldatei dar.
 
 Alle Vorkommen von \ (Backslash) werden durch %% ersetzt.
 

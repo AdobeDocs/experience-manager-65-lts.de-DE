@@ -3,9 +3,9 @@ title: Erstellen und Organisieren von Seiten mit AEM
 description: Erfahren Sie, wie Sie mit Adobe Experience Manager Seiten erstellen und verwalten.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
-source-git-commit: c99c7b2616e652ae372e98349d5de3b658a0beb1
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2468'
 ht-degree: 100%

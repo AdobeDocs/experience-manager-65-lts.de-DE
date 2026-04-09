@@ -3,14 +3,14 @@ title: Adobe Experience Manager Forms 6.5 LTS SP1 Hotfixes
 description: Enthält Informationen zum Herunterladen und Installieren eines Hotfixes für AEM Forms 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
-source-git-commit: ff5992fb29c9413cc60e1f0f14c52b1eeff3c3de
+role: User,Admin,Developer
+exl-id: e485100f-3e16-4fd4-a8ce-af771d765dd1
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 45%
 
 ---
-
 
 # Hotfixes für Adobe Experience Manager Forms 6.5 LTS{#aem-form-hotfix}
 

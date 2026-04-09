@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 7d40e37a29a426e0e72b233b3aab56b1ba6f1730
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '2870'
 ht-degree: 91%
@@ -90,12 +90,12 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen der Java™ Vi
 
 | **Plattform** | **Unterstützungsebene** | **Verknüpfung** |
 |---|---|---|
-| Oracle Java™ SE 17 JDK | A: Unterstützt `[1]` |
-| Oracle Java™ SE 21 JDK | A: Unterstützt `[1]` |
-| IBM® Semeru J9 VM - Build 17.0.13.0 | A: Unterstützt `[2]` |
-| IBM® Semeru J9 VM - Build 21.0.6.0 | A: Unterstützt `[2]` |
+| Oracle Java™ SE 17 JDK | A: Unterstützt `[1]` | |
+| Oracle Java™ SE 21 JDK | A: Unterstützt `[1]` | |
+| IBM® Semeru J9 VM - Build 17.0.13.0 | A: Unterstützt `[2]` | |
+| IBM® Semeru J9 VM - Build 21.0.6.0 | A: Unterstützt `[2]` | |
 
-1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14, Java™ 15m Java™ 16 sind Nicht-LTS-Versionen von Oracle (siehe Roadmap für den Oracle Java™ SE-Support[). &#x200B;](https://www.oracle.com/technetwork/java/eol-135779.html) Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java™. Der Support und die Verteilung des Oracle Java™ SE JDK, einschließlich aller Wartungs-Updates der LTS-Versionen, werden von Adobe direkt für alle AEM-Kunden unterstützt, die die Oracle Java™ SE-Technologie verwenden. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14, Java™ 15m Java™ 16 sind Nicht-LTS-Versionen von Oracle (siehe Roadmap für den Oracle Java™ SE-Support[). ](https://www.oracle.com/technetwork/java/eol-135779.html) Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java™. Der Support und die Verteilung des Oracle Java™ SE JDK, einschließlich aller Wartungs-Updates der LTS-Versionen, werden von Adobe direkt für alle AEM-Kunden unterstützt, die die Oracle Java™ SE-Technologie verwenden. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
    **Diese Version unterstützt Oracle Java™ 17 und Oracle Java™ 21.**
 
 1. Die IBM® JRE wird nur zusammen mit WebSphere Application Server unterstützt.

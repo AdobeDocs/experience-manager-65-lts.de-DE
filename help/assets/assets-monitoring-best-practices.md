@@ -2,11 +2,11 @@
 title: 'Best Practices zur Überwachung der Bereitstellung von  [!DNL Assets] '
 description: Best Practices zur Überwachung der Umgebung und Leistung der Implementierung von [!DNL Adobe Experience Manager] nach der Bereitstellung.
 contentOwner: AG
-role: Admin, Architect
+role: Admin,Developer
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: d2cb447c-69d6-4659-a29e-02af22b543fd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1638'
 ht-degree: 99%
@@ -38,7 +38,7 @@ Es ist ratsam, die Live-Überwachung während der Leistungstestphase Ihres Entwi
 
 * [Iftop](https://www.ex-parrot.com/pdw/iftop/): Mit „Iftop“ werden ausführliche Informationen zur Ethernet-/Netzwerkauslastung angezeigt. Es werden Statistiken pro Kommunikationskanal auf den Entitäten zur Ethernet-Verwendung und zur genutzten Bandbreite angegeben. „Iftop“ kann auf den meisten Linux-Systemen mit dem Befehl `yum install iftop` oder `apt-get install iftop` installiert werden.
 
-* Java Flight Recorder (JFR): Ein kommerzielles Tool von Oracle, das Sie in Umgebungen, die nicht für die Produktion bestimmt sind, kostenlos nutzen können. Ausführliche Informationen finden Sie unter [Verwenden von Java Flight Recorder zum Diagnostizieren von CQ-Laufzeitproblemen](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
+* Java Flight Recorder (JFR): Ein kommerzielles Tool von Oracle, das Sie in produktionsfremden Umgebungen kostenlos nutzen können. Ausführliche Informationen finden Sie unter [Verwenden von Java Flight Recorder zum Diagnostizieren von CQ-Laufzeitproblemen](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
 * [!DNL Experience Manager]-Datei `error.log`: Sie können die [!DNL Experience Manager]-Datei `error.log` nach Details zu Fehlern durchsuchen, die im System protokolliert wurden. Verwenden Sie den Befehl `tail -F quickstart/logs/error.log`, um Fehler zu identifizieren, die untersucht werden müssen.
 * [Workflow-Konsole](/help/sites-administering/workflows.md): Nutzen Sie die Workflow-Konsole, um Workflows zu überwachen, die Verzögerungen aufweisen oder hängen.
 

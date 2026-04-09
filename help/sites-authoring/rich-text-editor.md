@@ -3,9 +3,9 @@ title: Verwenden des Rich-Text-Editors zum Erstellen von Inhalten
 description: Verwenden des Rich-Text-Editors zum Erstellen von Inhalten in Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 01c2a67a-7168-4362-ad7d-f4990ea43ed8
-source-git-commit: 7fcb784124027df87bf41cc6169815d755cea6d7
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 94%
