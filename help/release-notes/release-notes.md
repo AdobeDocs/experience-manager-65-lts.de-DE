@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 4c1f1b9a7b6667c58760b5e427cdd82bf197f297
 workflow-type: tm+mt
-source-wordcount: '7002'
+source-wordcount: '7102'
 ht-degree: 18%
 
 ---
@@ -242,7 +242,7 @@ Die Seiteneditor-Veröffentlichung verarbeitet jetzt URLs, die Selektoren oder S
 
 #### Vorlageneditor{#sites-template-editor-65-lts-sp2}
 
-Der Text zum Vorlagenstatus wird für einige Gebietsschemata vertikal unter **Tools** > **Allgemein** > **&#x200B;**&#x200B;angezeigt. Die Bezeichnung „veraltet“ unterbrach das Layout und las als Zeichenspalte. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass die Beschriftung auf einer einzigen horizontalen Linie gerendert wird. (SITES-36797)
+Der Text zum Vorlagenstatus wird für einige Gebietsschemata vertikal unter **Tools** > **Allgemein** > **** angezeigt. Die Bezeichnung „veraltet“ unterbrach das Layout und las als Zeichenspalte. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass die Beschriftung auf einer einzigen horizontalen Linie gerendert wird. (SITES-36797)
 
 #### Universeller Editor {#sites-universal-editor-65-lts-sp2}
 
@@ -468,7 +468,7 @@ Siehe auch [Aktualisieren der Uber Jar-Version von AEM](/help/sites-deploying/up
 ### Aktualisieren {#upgrade}
 
 * Weitere Informationen zum Upgrade-Verfahren finden Sie unter [Dokumentation zu Upgrades](/help/sites-deploying/upgrade.md).
-* Detaillierte Aktualisierungsanweisungen finden Sie im [Aktualisierungshandbuch für AEM Forms 6.5 LTS SP1 on JEE](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Detaillierte Aktualisierungsanweisungen finden Sie im [Aktualisierungshandbuch für AEM Forms 6.5 LTS SP1 on JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Best Practices für AEM 6.5 LTS Service Pack-Upgrades
 
@@ -596,7 +596,11 @@ In diesem Abschnitt werden die Funktionen aufgeführt, die aus AEM 6.5 LTS entf
 
 * **FORMS-24690:** In Configuration Manager schlägt die Datenbankinitialisierung beim Bootstrap im benutzerdefinierten Turnkey-Modus von AEM Forms 6.5 LTS JEE fehl, wenn keine Module oder nur eingeschränkte Komponenten ausgewählt sind. Das Problem ist auf eine fehlende Abhängigkeit (xalan-2.7.2.jar) zurückzuführen, was zu einem Fehler führt. Durch Hinzufügen der JAR-Datei zu adobe-livecycle-jboss.ear\lib wird das Problem behoben.
 
-* **FORMS-24692:** Mail Service kann möglicherweise keine TLS-Socket-Verbindung herstellen, wodurch der E-Mail-Versand fehlschlägt.
+* **FORMS-24894:** Bei LTS-Bereitstellungen von Forms JEE, die auf JBoss EAP 8 ausgeführt werden, kann die Benutzeroberfläche von Reader Extensions mit einem internen Server-Fehler fehlschlagen.
+
+* **FORMS-24892:** Bei der Ausführung von Forms JEE LTS auf JBoss können E-Mail-bezogene Funktionen fehlschlagen. Beim Versuch, E-Mail-Funktionen zu verwenden, protokolliert der Server möglicherweise einen Fehler ähnlich `Error IMAPProvider not a subtype`.
+
+* **FORMS-24741:** Auf Linux-Plattformen muss für Forms JEE LTS die `OSFileSetIntendedFor`-Eigenschaft in `LFS_Foundation.properties` festgelegt sein, bevor Configuration Manager ausgeführt werden kann. Wenn sie nicht aktualisiert wird, ist die Konfiguration möglicherweise nicht richtig auf Linux zugeschnitten, was zu Problemen bei der Laufzeit oder der Bereitstellung führen kann. Um das Problem zu beheben, navigieren Sie nach dem Ausführen des Installationsprogramms und vor dem Ausführen von Configuration Manager zu `configurationManager/config/solcomp/`, öffnen Sie `LFS_Foundation.properties`, legen Sie `OSFileSetIntendedFor=Linux` fest, speichern Sie die Datei und führen Sie dann Configuration Manager aus.
 
 ### Repository-Beschädigung bei Online-Komprimierung nach Offline-Komprimierung (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
@@ -663,5 +667,5 @@ In den nachfolgenden Textdokumenten sind die in [!DNL Experience Manager] 6.5 
 Diese Websites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
 
 * [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/)
-* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
