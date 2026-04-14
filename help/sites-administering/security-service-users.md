@@ -9,10 +9,10 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 893d04cb-3a71-4400-9ca4-62ad46aacfdd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4c6423d295aa93f6f7048a5ac919b551f3f305d7
 workflow-type: tm+mt
-source-wordcount: '1740'
-ht-degree: 99%
+source-wordcount: '1872'
+ht-degree: 83%
 
 ---
 
@@ -119,27 +119,39 @@ Ersetzen Sie eine Admin-Sitzung wie folgt durch eine Dienstbenutzerin oder einen
 
 Nachdem Sie überprüft haben, dass keine Benutzerin und kein Benutzer in der Liste der AEM-Dienstbenutzerinnen und -benutzer Ihrem Anwendungsfall entspricht und die jeweiligen RTC-Angelegenheiten genehmigt wurden, fügen Sie die neue Benutzerin bzw. den neuen Benutzer zum Standardinhalt hinzu.
 
-Es wird empfohlen, eine Dienstbenutzerin oder einen Dienstbenutzer zu erstellen, um den Repository-Explorer unter *https://&lt;Server>:&lt;Port>/crx/explorer/index.jsp* zu verwenden.
+>[!IMPORTANT]
+>
+>CRX Explorer (`/crx/explorer/index.jsp`) ist in AEM 6.5 LTS-Umgebungen nicht verfügbar und darf nicht zum Erstellen von Service-Benutzern verwendet werden. Vorhandene Service-Benutzer, die über CRX Explorer erstellt wurden, funktionieren weiterhin. Verwenden Sie für neue Service-Benutzer einen der unten beschriebenen Ansätze.
 
-Das Ziel ist, eine gültige Eigenschaft `jcr:uuid` zu erhalten, die erforderlich ist, um die Benutzerin oder den Benutzer anhand einer Inhaltspaketinstallation zu erstellen.
+>[!NOTE]
+>
+>Es gibt keine Mixin-Typen, die mit Service-Benutzern auf JCR-Knotenebene verknüpft sind. Dies bedeutet, dass an Systembenutzerknoten keine Zugriffssteuerungsrichtlinien direkt angehängt sind. Die Zugriffssteuerung wird stattdessen separat verwaltet, z. B. durch RepoInit-ACL-Anweisungen oder eine ACL-Konfiguration auf Repository-Ebene.
 
-Dienstbenutzende erstellen Sie wie folgt:
+### Verwenden der Sling-Repository-Initialisierung (RepoInit) {#creating-service-user-repoinit}
 
-1. Verwenden Sie den Repository-Explorer unter *https://&lt;Server>:&lt;Port>/crx/explorer/index.jsp.*.
-1. Melden Sie sich als Admin an, indem Sie oben links auf dem Bildschirm auf **Anmelden** klicken.
-1. Als Nächstes erstellen und benennen Sie Ihre Systembenutzerin oder Ihren Systembenutzer. Um den Benutzer oder die Benutzerin als Systembenutzer bzw. Systembenutzerin zu erstellen, legen Sie für den intermediate-Pfad `system` fest und fügen Sie je nach Bedarf optionale Unterordner hinzu:
+Der empfohlene Ansatz besteht darin, [Sling Repository Initialization (RepoInit) zu verwenden](https://sling.apache.org/documentation/bundles/repository-initialization.html) um Service-Benutzer zu erstellen. Mit RepoInit können Sie Service-Benutzer und ihre ACLs mithilfe einer einfachen Skriptsprache deklarativ definieren.
 
-   ![chlimage_1-102](assets/chlimage_1-102a.png)
+Um einen Service-Benutzer mit RepoInit zu erstellen, fügen Sie einer OSGi-Konfiguration eine `scripts` Eigenschaft für `org.apache.sling.jcr.repoinit.RepositoryInitializer` hinzu:
 
-1. Überprüfen Sie, ob Ihr Systembenutzerknoten wie folgt aussieht:
+```
+create service user my-service-user with path system/cq
 
-   ![chlimage_1-103](assets/chlimage_1-103a.png)
+set ACL for my-service-user
+    allow jcr:read on /content
+end
+```
 
-   >[!NOTE]
-   >
-   >Dienstbenutzerinnen oder -benutzern werden keine Mixin-Typen zugeordnet. Das heißt, dass es für Systembenutzende keine Zugriffssteuerungsrichtlinien gibt.
+Die `with path system/cq`-Anweisung platziert den Dienstbenutzer unter `/home/users/system/cq` im Repository. Sie können einen Pfad auswählen, der der Organisationsstruktur Ihres Projekts entspricht (z. B. `system/myproject`). Wenn die Zwischenpfadknoten nicht vorhanden sind, verwenden Sie `with forced path` , um sie automatisch zu erstellen.
 
-Vergewissern Sie sich beim Hinzufügen der entsprechenden „.content.xml“ zum Inhalt des Bundles, dass Sie die `rep:authorizableId` festgelegt haben und der primäre Typ `rep:SystemUser` ist. Dies sollte wie folgt aussehen:
+Dieser Ansatz wird aus folgenden Gründen empfohlen:
+
+* Definiert Dienstbenutzer und Berechtigungen als Code, sodass sie versionsgesteuert und reproduzierbar sind
+* Erstellt automatisch während der Repository-Initialisierung
+* Funktioniert sowohl in AEM 6.5 LTS- als auch in AEM as a Cloud Service-Umgebungen, obwohl geringfügige Syntaxunterschiede zwischen Sling-Versionen bestehen können. Weitere Informationen finden Sie in der RepoInit-Dokumentation für Ihre Zielplattform
+
+### Verwenden eines Inhaltspakets {#creating-service-user-content-package}
+
+Sie können einen Service-Benutzer auch erstellen, indem Sie eine `.content.xml` in Ihr Inhaltspaket aufnehmen. Stellen Sie sicher, dass Sie die `rep:authorizableId` festgelegt haben und dass der primäre Typ `rep:SystemUser` ist. Eine gültige `jcr:uuid` ist erforderlich, damit der Benutzer während der Installation des Inhaltspakets ordnungsgemäß erstellt werden kann. Sie können eine UUID mit einem standardmäßigen UUID v4-Generator generieren (z. B. dem `uuidgen`-Befehlszeilen-Tool oder einem beliebigen Online-UUID-Generator). Die `.content.xml` sollte wie folgt aussehen:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
