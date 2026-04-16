@@ -4,13 +4,13 @@ description: Suchen Sie die Einrichtung des Speichers für Datenbankberechtigung
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: f093f39fb535209297940cff13a99c7631812152
+exl-id: f6e29287-a558-43ad-8465-ebf167c79c63
+source-git-commit: b4abf61e0d30396e78ecebf228114ad2bde30633
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '777'
 ht-degree: 2%
 
 ---
-
 
 # Handbuch zum Einrichten des Speichers für Datenbankberechtigungen (eigenständiger Modus)
 
@@ -67,11 +67,11 @@ Verwenden Sie die bereitgestellten Skripte, um den Datenbank-Berechtigungsspeich
 
 #### Unter Windows:
 
-**Skript-Speicherort:** `create-elytron-cred-standalone.bat`
+**script:** `create-elytron-cred-standalone.bat`
 
-`batch cd path\to\script\location create-elytron-cred-standalone.bat`
+Laden Sie das `create-elytron-cred-standalone.bat`-Skript vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip) herunter.
 
-**Das Skript fordert Sie auf:**
+**Das Skript fordert Sie auf, Folgendes anzugeben:**
 1. **JBOSS_HOME-Pfad** (z. B. `C:\Adobe\Adobe_Experience_Manager_Forms\jboss`)
 2. **Konfigurationsdateiname** (z. B. `lc_oracle.xml`, `lc_mysql.xml` oder `lc_mssql.xml`)
 3. **Kennwort für Berechtigungsspeicher** (schützt die KeyStore-Datei - merken Sie sich dieses Kennwort)
@@ -91,11 +91,11 @@ Verwenden Sie die bereitgestellten Skripte, um den Datenbank-Berechtigungsspeich
 
 #### Unter Linux:
 
-**Skript-Speicherort:** `create-elytron-cred-standalone.sh`
+**Script** `create-elytron-cred-standalone.sh`
 
-`bash cd /path/to/script/location chmod +x create-elytron-cred-standalone.sh./create-elytron-cred-standalone.sh`
+Laden Sie das `create-elytron-cred-standalone.sh`-Skript vom [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/full-installer/6-6-0-20251218-2-12345/6.5.1.LTS_Scripts.zip) herunter.
 
-**Das Skript fordert Sie auf:**
+**Das Skript fordert Sie auf, Folgendes anzugeben:**
 
 1. **JBOSS_HOME-Pfad** (z. B. `/opt/Adobe/Adobe_Experience_Manager_Forms/jboss`)
 2. **Konfigurationsdateiname** (z. B. `lc_oracle.xml`, `lc_mysql.xml` oder `lc_mssql.xml`)
@@ -296,4 +296,3 @@ ERROR: Configuration file not found
 
 - Variable: `-DCS_PASS=password`
 - Datei: `standalone.conf.bat` (Windows) oder `standalone.conf` (Linux)
-
