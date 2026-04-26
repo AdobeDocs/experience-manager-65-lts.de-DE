@@ -640,7 +640,7 @@ Grundvoraussetzungen für das Erstellen einer separaten Benutzeroberfläche zum 
    * **description**- Gibt die einzeilige Beschreibung des Berichts an. Das Beschreibungsfeld darf leer bleiben.
    * **icon**- Gibt die Grafik an, die den Bericht symbolisieren soll. Das Symbolfeld darf leer bleiben.
 
-   ![Eigenschaften des Knotens ](assets/node_properties_new.png)
+   ![Eigenschaften des Knotens &#x200B;](assets/node_properties_new.png)
 
    Knoteneigenschaften
 

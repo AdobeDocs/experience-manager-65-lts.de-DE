@@ -23,7 +23,7 @@ Bevor Sie den Smart Content Service verwenden, führen Sie Folgendes aus:
 
 >[!IMPORTANT]
 >
->Informationen zur [ von Smart-Tags in AEM 6.5 finden Sie ](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/config-smart-tagging) „Vorbereiten von Assets für Smart Tagging“.
+>Informationen zur [&#x200B; von Smart-Tags in AEM 6.5 finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/config-smart-tagging) „Vorbereiten von Assets für Smart Tagging“.
 
 **Neue Benutzende**
 
