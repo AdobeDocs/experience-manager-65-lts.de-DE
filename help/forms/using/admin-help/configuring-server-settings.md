@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: da8031f2-26ab-41e2-bf54-7032727ca192
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2643'
+source-wordcount: '2665'
 ht-degree: 99%
 
 ---
@@ -120,7 +120,7 @@ Sie können Benachrichtigungen über Aufgabenzuweisungen an Benutzende oder eine
 
 ### Konfigurieren von Terminbenachrichtigungen für Benutzende oder Gruppen {#configure-deadline-notifications-for-users-or-groups}
 
- Sie können Terminbenachrichtigungen an Benutzende und Gruppen senden, wenn der Termin für die Durchführung einer Aufgabe verstrichen ist. Eine Terminbenachrichtigung hat normalerweise reinen Informationscharakter, weil die Person die zugewiesene Aufgabe nicht mehr ausführen kann.
+Sie können Terminbenachrichtigungen an Benutzende und Gruppen senden, wenn der Termin für die Durchführung einer Aufgabe verstrichen ist. Eine Terminbenachrichtigung hat normalerweise reinen Informationscharakter, weil die Person die zugewiesene Aufgabe nicht mehr ausführen kann.
 
 1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Forms Workflow“ > „Servereinstellungen“ > „Aufgabenbenachrichtigungen“.
 1. Klicken Sie unter „Benachrichtigungstyp“ für Benutzende auf „Termin“ bzw. für Gruppen auf „Gruppe – Termin“.

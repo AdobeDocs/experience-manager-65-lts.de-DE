@@ -6,9 +6,9 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e3972784-9ded-4da8-b90c-ec2da9c3297a
-source-git-commit: 863ec2b6d8a6e22705c2f48a4f7bbb76fa34f7c7
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '802'
 ht-degree: 100%
 
 ---

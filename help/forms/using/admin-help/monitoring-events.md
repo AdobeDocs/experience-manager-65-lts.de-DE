@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: cee9cce0-becd-4822-ac37-094d564f2289
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 100%
+source-wordcount: '968'
+ht-degree: 94%
 
 ---
 
@@ -60,19 +60,19 @@ Sie können auf der Seite „Ereignisse“ nach Ereignissen suchen, indem Sie ei
 
 **Benutzer:** Sind in der Lage, geprüfte Ereignisse für ihre richtliniengeschützten Dokumente sowie andere geschützte Dokumente, die sie erhalten und verwenden, anzuzeigen. Die folgenden Suchoptionen sind verfügbar:
 
-**Ereignisse, die mich 
-betreffen:** Benutzer können nach Ereignissen für die richtliniengeschützten Dokumente suchen, die sie erstellt oder empfangen haben. Wenn ein Benutzer beispielsweise ein Dokument öffnet, anzeigt oder druckt, das von einer anderen Person geschützt wurde, werden dem Benutzer diese Ereignisse nur für dieses Dokument angezeigt.
+**Ereignisbezogen
+an mich:** Benutzer können nach Ereignissen für die richtliniengeschützten Dokumente suchen, die sie erstellt oder empfangen haben. Wenn ein Benutzer beispielsweise ein Dokument öffnet, anzeigt oder druckt, das von einer anderen Person geschützt wurde, werden dem Benutzer diese Ereignisse nur für dieses Dokument angezeigt.
 
 **Ereignisse, die meine Dokumente betreffen:** Benutzer können alle Ereignisse finden, die im Zusammenhang mit ihren eigenen richtliniengeschützten Dokumenten stehen. Der Benutzer sieht die Ereignisse, die von allen Personen generiert wurden, die Umgang mit seinen Dokumenten hatten.
 
-**Richtliniensatzkoordinatoren:** Sind in der Lage, geprüfte Ereignisse, einschließlich Dokument- und Richtlinienereignissen, für Dokumente anzuzeigen, die von Richtlinien in ihren Richtliniensätzen geschützt werden. Die folgenden Optionen stehen zur Auswahl:  
+**Richtliniensatzkoordinatoren:** Sind in der Lage, geprüfte Ereignisse, einschließlich Dokument- und Richtlinienereignissen, für Dokumente anzuzeigen, die von Richtlinien in ihren Richtliniensätzen geschützt werden. Die folgenden Optionen stehen zur Auswahl:
 
-**Dokumentereignisse,
-wenn ich Richtliniensatzkoordinator bin:** Richtliniensatzkoordinatoren mit der Berechtigung zum Anzeigen von Ereignissen können Ereignisse finden, die Dokumente betreffen, die von Richtlinien in ihren Richtliniensätzen geschützt werden.
+**Dokumentereignisse, bei denen
+Ich bin Richtliniensatzkoordinator:** Richtliniensatzkoordinatoren mit der Berechtigung zum Anzeigen von Ereignissen können Ereignisse finden, die Dokumente betreffen, die von Richtlinien in ihren Richtliniensätzen geschützt werden.
 
 **Richtlinienereignisse, wenn ich Richtliniensatzkoordinator bin:** Richtliniensatzkoordinatoren mit der Berechtigung zum Anzeigen von Ereignissen können Ereignisse finden, die mit Richtlinien in ihren Richtliniensätzen in Zusammenhang stehen.
 
-**Administratoren:** Sind in der Lage, geprüfte Ereignisse im Zusammenhang mit allen richtliniengeschützten Dokumenten und Benutzern anzuzeigen. Admins können darüber hinaus andere Typen nachverfolgen.  Außerdem können Admins die Ereignissuche je nach Benutzertyp weiter unterteilen:
+**Administratoren:** Sind in der Lage, geprüfte Ereignisse im Zusammenhang mit allen richtliniengeschützten Dokumenten und Benutzern anzuzeigen. Admins können darüber hinaus andere Typen nachverfolgen. Außerdem können Admins die Ereignissuche je nach Benutzertyp weiter unterteilen:
 
 **Bekannte Benutzer:** Benutzer, die in den Quellordnern gefunden werden können oder als externe Benutzer registriert sind.
 
@@ -81,7 +81,7 @@ wenn ich Richtliniensatzkoordinator bin:** Richtliniensatzkoordinatoren mit der 
 **Systembenutzer:** Vom Server ausgelöste Ereignisse, z. B. eine Ordnersynchronisierung.
 
 1. Klicken Sie auf der Document Security-Seite auf „Ereignisse“.
-1. Wählen Sie in der Liste „Suchen“ die gewünschten Suchkriterien aus.  Abhängig von der Auswahl in der Liste „Suchen“ wird eine zweite Liste mit weiteren Suchkriterien angezeigt.  Geben Sie, falls möglich, in das Textfeld die Suchkriterien ein.
+1. Wählen Sie in der Liste „Suchen“ die gewünschten Suchkriterien aus. Abhängig von der Auswahl in der Liste „Suchen“ wird eine zweite Liste mit weiteren Suchkriterien angezeigt. Geben Sie, falls möglich, in das Textfeld die Suchkriterien ein.
 
    Weitere Einzelheiten zu bestimmten Ereignistypen finden Sie unter [Ereignis-Auditing-Optionen](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).
 

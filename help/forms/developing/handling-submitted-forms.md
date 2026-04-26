@@ -12,10 +12,10 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 31a10544-0be7-4ef7-ba0f-c37099d36bcb
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2894'
-ht-degree: 100%
+source-wordcount: '2915'
+ht-degree: 99%
 
 ---
 
@@ -66,7 +66,8 @@ Die folgende Abbildung zeigt die entsprechenden XML-Daten, die mithilfe der Form
 
 ![hs_hs_loandata](assets/hs_hs_loandata.png)
 
-Die Felder im Darlehensformular. Diese Werte können mithilfe von Java XML-Klassen abgerufen werden.
+Die Felder im Darlehensformular. Diese Werte können abgerufen werden
+mithilfe von Java XML-Klassen.
 
 >[!NOTE]
 >
@@ -113,7 +114,7 @@ Wenn Formulardaten als URL-UTF-16-Daten übermittelt werden, erfordert der Clien
 
 >[!NOTE]
 >
->Weitere Informationen zum Forms-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen über den Forms-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -209,7 +210,7 @@ Verarbeiten eines übermittelten Formulars mithilfe der Forms-API (Java):
 1. Abrufen von Formulardaten
 
    * Um Formulardaten abzurufen, die in einem Java-Servlet veröffentlicht wurden, erstellen Sie ein `com.adobe.idp.Document`-Objekt durch Verwenden seines Konstruktors und Aufrufen der Methode `getInputStream` des `javax.servlet.http.HttpServletResponse`-Objekts innerhalb des Konstruktors.
-   * Erstellen Sie ein Objekt `RenderOptionsSpec`, indem Sie den Konstruktor verwenden. Legen Sie den Gebietsschema-Wert fest, indem Sie die Methode `setLocale` des `RenderOptionsSpec`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Gebietsschema-Wert angibt.
+   * Erstellen Sie ein Objekt `RenderOptionsSpec`, indem Sie den Konstruktor verwenden. Legen Sie den Gebietsschemawert fest, indem Sie die `setLocale`-Methode des `RenderOptionsSpec`-Objekts aufrufen und einen Zeichenfolgewert übergeben, der den Gebietsschemawert angibt.
 
    >[!NOTE]
    >
@@ -249,7 +250,7 @@ Verarbeiten eines übermittelten Formulars mithilfe der Forms-API (Java):
    * Wenn der Dateninhalt vom Typ `application/pdf` ist, erstellen Sie eine Anwendungslogik, um die übermittelten PDF-Daten als PDF-Datei zu speichern.
 
       * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie die `getOutputContent`-Methode des `FormsResult`-Objekts aufrufen.
-      * Erstellen Sie ein `java.io.File`-Objekt mithilfe seines öffentlichen Konstruktors. Stellen Sie sicher, dass Sie PDF als Dateinamenerweiterung angeben.
+      * Erstellen Sie ein `java.io.File`-Objekt, indem Sie seinen öffentlichen Konstruktor verwenden. Stellen Sie sicher, dass Sie PDF als Dateinamenerweiterung angeben.
       * Füllen Sie die PDF-Datei, indem Sie die `copyToFile`-Methode des `com.adobe.idp.Document`-Objekts aufrufen und das `java.io.File`-Objekt übergeben.
 
 **Siehe auch**
@@ -275,7 +276,7 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms-API (Web-Dienst):
 
 1. Erstellen eines Forms Client-API-Objekts
 
-   Erstellen Sie ein `FormsService`-Objekt und legen Sie Authentifizierungswerte fest.
+   Erstellen Sie ein `FormsService` Objekt und legen Sie Authentifizierungswerte fest.
 
 1. Abrufen von Formulardaten
 
@@ -290,9 +291,9 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms-API (Web-Dienst):
 
       * Das `BLOB`-Objekt, das die Formulardaten enthält.
       * Ein Zeichenfolgenwert, der Umgebungsvariablen einschließlich aller relevanten HTTP-Kopfzeilen angibt. Geben Sie den zu verarbeitenden Content-Typ an. Um XML-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=text/xml`. Um PDF-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=application/pdf`.
-      * Ein Zeichenfolgenwert, der den `HTTP_USER_AGENT` Kopfzeilenwert angibt; Beispiel: `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * A `RenderOptionsSpec`-Objekt, das Laufzeitoptionen speichert.
-      * Ein leeres `BLOBHolder`-Objekt, das von der Methode gefüllt wird.
+      * Ein Zeichenfolgenwert, der den Wert der `HTTP_USER_AGENT`-Kopfzeile angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+      * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen speichert.
+      * Ein leeres `BLOBHolder`-Objekt, das von der Methode aufgefüllt wird.
       * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das von der Methode gefüllt wird.
       * Ein leeres `BLOBHolder`-Objekt, das von der Methode gefüllt wird.
       * Ein leeres `BLOBHolder`-Objekt, das von der Methode gefüllt wird.
@@ -300,7 +301,7 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms-API (Web-Dienst):
       * Ein leeres `MyArrayOf_xsd_anyTypeHolder`-Objekt, das von der Methode gefüllt wird. Dieser Parameter wird zum Speichern von Dateianhängen verwendet, die zusammen mit dem Formular gesendet werden.
       * Ein leeres `FormsResultHolder`-Objekt, das von der Methode mit dem gesendeten Formular gefüllt wird.
 
-     Die `processFormSubmission`-Methode füllt den `FormsResultHolder`-Parameter mit den Ergebnissen der Formularübermittlung.
+     Die Methode `processFormSubmission` füllt den Parameter `FormsResultHolder` mit den Ergebnissen der Formularübermittlung.
 
    * Stellen Sie fest, ob der Forms-Service die Verarbeitung der Formulardaten abgeschlossen hat, indem Sie die `getAction`-Methode des `FormsResult`-Objekts aufrufen. Wenn diese Methode den Wert `0` zurückgibt, sind die Formulardaten zur Verarbeitung bereit. Sie können ein `FormsResult`-Objekt erhalten, indem Sie den Wert des `value`-Datenelements des `FormsResultHolder`-Objekts abrufen.
 

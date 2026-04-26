@@ -10,10 +10,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: 9d4681c0b184cc7769a8da20a4c50d420e1137c7
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '6180'
-ht-degree: 98%
+source-wordcount: '6249'
+ht-degree: 97%
 
 ---
 
@@ -54,35 +54,35 @@ Erstellen oder bearbeiten Sie eine Dateitypeinstellung, um anzugeben, wie das Pr
 
 1. Füllen Sie die erforderlichen Informationen in diesen Abschnitten aus:
 
-[PDF Generator-Konfigurationsdateien importieren und exportieren](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+   [PDF Generator-Konfigurationsdateien importieren und exportieren](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
 
-[Adobe PDF-Exporteinstellungen (nur Windows)](#adobe-pdf-export-settings-windows-only)
+   [Adobe PDF-Exporteinstellungen (nur Windows)](#adobe-pdf-export-settings-windows-only)
 
-[„HTML in PDF“-Einstellungen](#html-to-pdf-settings)
+   [„HTML in PDF“-Einstellungen](#html-to-pdf-settings)
 
-[„Flashvideos in PDF“-Einstellungen](#flash-videos-to-pdf-settings)
+   [„Flashvideos in PDF“-Einstellungen](#flash-videos-to-pdf-settings)
 
-[„XPS in PDF“-Einstellungen](#xps-to-pdf-settings)
+   [„XPS in PDF“-Einstellungen](#xps-to-pdf-settings)
 
-[PDF-Optimierungseinstellungen](/help/forms/using/admin-help/configuring-file-type-settings.md)
+   [PDF-Optimierungseinstellungen](/help/forms/using/admin-help/configuring-file-type-settings.md)
 
-[Microsoft Excel-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
+   [Microsoft Excel-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-excel-settings-windows-only)
 
-[Microsoft PowerPoint-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
+   [Microsoft PowerPoint-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-powerpoint-settings-windows-only)
 
-[Microsoft Project-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
+   [Microsoft Project-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-project-settings-windows-only)
 
-[Microsoft Word-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
+   [Microsoft Word-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
 
-[Microsoft Visio-Einstellungen (nur Windows)](#visio)
+   [Microsoft Visio-Einstellungen (nur Windows)](#visio)
 
-[Microsoft Publisher-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
+   [Microsoft Publisher-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
 
-[AutoCAD-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
+   [AutoCAD-Einstellungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#autocad-settings-windows-only)
 
-[OpenOffice-Einstellungen](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
+   [OpenOffice-Einstellungen](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
 
-[Einstellungen anderer Anwendungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
+   [Einstellungen anderer Anwendungen (nur Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
 
    Um zu einem anderen Abschnitt zu wechseln, klicken Sie auf dessen Link auf der Webseite oder auf eine der Schaltflächen **[!UICONTROL Weiter]** oder **[!UICONTROL Zurück]**.
 
@@ -128,7 +128,7 @@ Die folgenden Optionen bestimmen, wie Bilddateien in PDF konvertiert werden. Anw
 
 **OCR verwenden:** Gibt an, ob die optische Zeichenerkennung (Optical Character Recognition, OCR) auf die PDF-Datei angewendet werden soll. Mit OCR-Software können Sie den Text in einer PDF-Datei durchsuchen, korrigieren und kopieren.
 
-***Hinweis &#x200B;**: Die OCR PDF-Funktion (durchsuchbare PDF) wird nur unter Microsoft Windows unterstützt.*
+***Hinweis **: Die OCR PDF-Funktion (durchsuchbare PDF) wird nur unter Microsoft Windows unterstützt.*
 
 **Primäre OCR-Sprache:** Die von der OCR-Engine zum Erkennen der Zeichen zu verwendende Sprache.
 
@@ -267,7 +267,7 @@ Anweisungen zum Zugriff auf diese Einstellung finden Sie unter [Erstellen oder B
 
    >[!NOTE]
    >
-   >*Wenn Sie diese Option in Kombination mit **Einbettung für einige Schriftarten aufheben**&#x200B;verwenden, ist die Einbettung für die Schriftarten in der Liste **Schriftarten für die Aufhebung der Einbettung hinzufügen**&#x200B;weiterhin vollständig aufgehoben.*
+   >*Wenn Sie diese Option in Kombination mit **Einbettung für einige Schriftarten aufheben**verwenden, ist die Einbettung für die Schriftarten in der Liste **Schriftarten für die Aufhebung der Einbettung hinzufügen**weiterhin vollständig aufgehoben.*
 
    >[!NOTE]
    >
@@ -319,7 +319,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 Die folgende Tabelle zeigt gängige Druckertypen und ihre Auflösung in dpi, ihre Standard-Rasterweite in Zeilen pro Zoll (lpi) und eine Resampling-Auflösung für Bilder in Pixel pro Zoll (ppi). Wenn Sie beispielsweise auf einem 600-dpi-Laserdrucker drucken, geben Sie 170 für die Auflösung ein, mit der Bilder neu berechnet werden sollen.
 
-**Bilder**: Wählen Sie diese Option, um Komprimierungs- und Neuberechnungsoptionen für Farb-, Graustufen- und Schwarzweißbilder festzulegen. Sie können mit diesen Optionen experimentieren, um einen guten Kompromiss zwischen Dateigröße und Bildqualität zu finden. Die Auflösungseinstellung für Farb- und Graustufenbilder sollte dem 1,5- bis 2-fachen der Rasterweitenlinierung entsprechen, mit der die Datei gedruckt wird. Die Auflösung für Schwarzweißbilder sollte mit der des Ausgabegeräts übereinstimmen. Das Speichern eines Schwarzweißbilds mit einer Auflösung von mehr als 1500 dpi erhöht allerdings die Dateigröße, ohne die Bildqualität spürbar zu verbessern. Bilder, die vergrößert werden, wie beispielsweise Karten, erfordern möglicherweise höhere Auflösungen.
+**Bilder**: Wählen Sie diese Option, um Komprimierungs- und Neuberechnungsoptionen für Farb-, Graustufen- und Schwarzweißbilder festzulegen. Sie können mit diesen Optionen experimentieren, um ein angemessenes Gleichgewicht zwischen Dateigröße und Bildqualität zu finden.Die Auflösungseinstellung für Farb- und Graustufenbilder sollte dem 1,5- bis 2-Fachen der Rasterlinieneinstellung entsprechen, mit der die Datei gedruckt wird. Die Auflösung für Schwarzweißbilder sollte mit der des Ausgabegeräts übereinstimmen. Das Speichern eines Schwarzweißbilds mit einer Auflösung von mehr als 1500 dpi erhöht allerdings die Dateigröße, ohne die Bildqualität spürbar zu verbessern. Bilder, die vergrößert werden, wie beispielsweise Karten, erfordern möglicherweise höhere Auflösungen.
 
 >[!NOTE]
 >

@@ -1,16 +1,16 @@
 ---
 title: Erstellen eines Handlers zum Einladen externer Benutzender
-description: 'Erfahren Sie, wie Sie einen Handler zum Einladen von externen Benutzenden erstellen. Damit ist der Rights Management-Service in der Lage, externe Benutzende einzuladen, damit diese zu Rights Management-Benutzenden werden. '
+description: Erfahren Sie, wie Sie einen Handler zum Einladen von externen Benutzenden erstellen. Damit ist der Rights Management-Service in der Lage, externe Benutzende einzuladen, damit diese zu Rights Management-Benutzenden werden.
 role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 5e1f1f3c-a2f3-4bf1-ba96-a02f8b16c180
-source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 97%
+source-wordcount: '1165'
+ht-degree: 96%
 
 ---
 
@@ -217,7 +217,7 @@ Die folgende Abbildung zeigt den Inhalt des Java-Projekts, der in die JAR-Datei 
 
 ![Benutzer einladen](assets/ci_ci_InviteUsers.png)
 
-A. Externe JAR-Dateien, die für die Komponente erforderlich sind B. JAVA-Datei
+A. Externe JAR-Dateien, die für die Komponente B erforderlich sind. JAVA Datei
 
 Packen Sie den Handler zum Einladen von externen Benutzenden in eine JAR-Datei. Beachten Sie, dass im vorherigen Diagramm JAVA-Dateien aufgelistet sind. Nachdem die Dateien in eine JAR-Datei gepackt wurden, müssen auch die zugehörigen CLASS-Dateien angegeben werden. Ohne die CLASS-Dateien funktioniert der Autorisierungs-Handler nicht.
 
@@ -240,7 +240,7 @@ So fügen Sie externe Benutzer hinzu, die über Administration Console eingelade
 
    >[!NOTE]
    >
-   > Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+   > Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 1. Melden Sie sich bei Administration Console an.
 1. Klicken Sie auf **[!UICONTROL Services]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Registrierung für eingeladene Benutzer]**.

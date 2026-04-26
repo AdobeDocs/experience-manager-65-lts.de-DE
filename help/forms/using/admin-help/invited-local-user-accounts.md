@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 194ad425-ca1a-4a6e-9f4e-094c4577cde9
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1211'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ Sie können Registrierungs-E-Mails auch manuell an eingeladene Benutzende senden
 
 ## Hinzufügen von eingeladenen Benutzenden {#add-an-invited-user}
 
-Sie können ein oder mehrere eingeladene Benutzerkonten gleichzeitig zur Dokumentensicherheit hinzufügen. Um ein eingeladenes Benutzerkonto hinzuzufügen, benötigen Sie die E-Mail-Adresse der Person. Wenn Sie Benutzende hinzufügen, sendet die Dokumentensicherheit eine Registrierungs-E-Mail, die die Benutzenden zur Registrierung einlädt. 
+Sie können ein oder mehrere eingeladene Benutzerkonten gleichzeitig zur Dokumentensicherheit hinzufügen. Um ein eingeladenes Benutzerkonto hinzuzufügen, benötigen Sie die E-Mail-Adresse der Person. Wenn Sie Benutzende hinzufügen, sendet die Dokumentensicherheit eine Registrierungs-E-Mail, die die Benutzenden zur Registrierung einlädt.
 
 1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Document Security“ > „Konfiguration“ > „Eingeladene und lokale Benutzer“ und dann auf die Registerkarte „Neuen Benutzer einladen“.
 1. Geben Sie die E-Mail-Adressen der Benutzenden ein, die Sie einladen möchten. Geben Sie mehrere Adressen in eine Zeile getrennt durch Kommas ein.

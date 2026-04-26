@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a9790625-af8d-4416-b96f-4724a025260b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 99%
+source-wordcount: '1046'
+ht-degree: 93%
 
 ---
 
@@ -25,8 +25,8 @@ Alternativ können Sie direkt zu [https://portal.azure.com/#blade/Microsoft_AAD_
    ![App-Registrierung](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
 1. Füllen Sie die Informationen entsprechend Ihren Anforderungen aus und klicken Sie dann auf **Registrieren**.
-   ![Unterstütztes Konto](/help/forms/using/assets/azure_suuportedaccountype.png) 
-In dem Fall oben ist die Option **Konten in einem beliebigen Organisationsverzeichnis (beliebiges Azure AD-Verzeichnis – Multitenant) und persönliche Microsoft®-Konten (z. B. Skype, Xbox)** ausgewählt.
+   ![Unterstütztes Konto](/help/forms/using/assets/azure_suuportedaccountype.png)
+Im obigen Fall ist die Option **Konten in einem beliebigen Organisationsverzeichnis (Beliebiges Azure AD-Verzeichnis - Multitenant) und persönliche Microsoft®-Konten (z.B. Skype, Xbox** ausgewählt.
 
    >[!NOTE]
    >
@@ -153,7 +153,7 @@ Konfigurieren Sie nun den E-Mail-Dienst auf dem aktuellen JEE-Server, indem Sie 
 
    >[!NOTE]
    >
-   > Weitere Informationen zu den Aufgabenbenachrichtigungen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=de#create-an-email-endpoint-for-the-complete-task-service).
+   > Weitere Informationen zu den Aufgabenbenachrichtigungen finden Sie [hier](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
 
 ## So konfigurieren Sie den E-Mail-Endpunkt {#configure_email_endpoint}
 
@@ -167,7 +167,7 @@ Konfigurieren Sie nun den E-Mail-Dienst auf dem aktuellen JEE-Server, indem Sie 
 
    >[!NOTE]
    >
-   > Um weitere Informationen zur Konfiguration von E-Mail-Endpunkten zu erhalten, klicken Sie auf [E-Mail-Endpunkt konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html?lang=de).
+   > Um weitere Informationen zur Konfiguration von E-Mail-Endpunkten zu erhalten, klicken Sie auf [E-Mail-Endpunkt konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html).
 
 ## Fehlerbehebung {#troubleshooting}
 

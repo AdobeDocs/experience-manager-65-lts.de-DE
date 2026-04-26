@@ -11,7 +11,7 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: ef1f5cfd-a8ae-4333-b9e9-6574a4c5cb0d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 100%
@@ -25,4 +25,4 @@ ht-degree: 100%
 > Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „User Management“ > „Benutzer und Gruppen“.
-1. Geben Sie Informationen zum Eingrenzen der Suche ein und klicken Sie auf „Suchen“.  Die Suchergebnisse werden unten auf der Seite aufgelistet. Sie können die Liste sortieren, indem Sie auf eine der Spaltenüberschriften klicken.  Es werden maximal 1000 Ergebnisse zurückgegeben.
+1. Geben Sie Informationen zum Eingrenzen der Suche ein und klicken Sie auf „Suchen“. Die Suchergebnisse werden unten auf der Seite aufgelistet. Sie können die Liste sortieren, indem Sie auf eine der Spaltenüberschriften klicken. Es werden maximal 1000 Ergebnisse zurückgegeben.

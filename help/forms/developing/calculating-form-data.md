@@ -12,10 +12,10 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 071a6ccb-8204-4cbc-a39b-143da52c16f7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1858'
-ht-degree: 100%
+source-wordcount: '1870'
+ht-degree: 96%
 
 ---
 
@@ -78,7 +78,7 @@ Um die Verwendung eines Formularentwurfsskripts zu veranschaulichen, wird in die
 
 ![cf_cf_caldata](assets/cf_cf_caldata.png)
 
-**A.** Ein Feld namens NumericField1 **B.** Ein Feld namens NumericField2 **C.** Ein Feld namens NumericField3
+**a.** Ein Feld mit dem Namen NumericField1 **B.** Ein Feld mit dem Namen NumericField2 **C.** Ein Feld namens NumericField3
 
 Die Syntax des Skripts in diesem Formularentwurf lautet wie folgt:
 
@@ -125,13 +125,13 @@ Nachdem Sie überprüft haben, dass der mit einem gesendeten Formular verknüpft
 
 **Siehe auch**
 
-[Einbeziehen von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-[Berechnen von Formulardaten mit der Java-API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
-[Berechnen von Formulardaten mit der Webservice-API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
-[Festlegen von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Einschließlich AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Berechnen von Formulardaten mithilfe der Java-API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
+[Berechnen von Formulardaten mithilfe der Webservice-API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
+[Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 [Kurzanleitungen zur Forms Service-API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
-[Rendern interaktiver PDF-Formulare](/help/forms/developing/rendering-interactive-pdf-forms.md)
-[Erstellen von Web-Anwendungen, die PDF-Formulare rendern](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Rendern von interaktiven PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Erstellen von Web-Anwendungen, die Forms rendern](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Berechnen von Formulardaten mithilfe der Java-API {#calculate-form-data-using-the-java-api}
 
@@ -171,8 +171,8 @@ So berechnen Sie die Formulardaten mithilfe der Forms API (Java):
 **Siehe auch**
 
 
-[Einbeziehen von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-[Festlegen von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Einschließlich AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Berechnen von Formulardaten mithilfe der Webservice-API {#calculate-form-data-using-the-web-service-api}
 

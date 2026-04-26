@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 3af4361d-ff30-46db-ac88-64bfae8f63a4
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2189'
+source-wordcount: '2204'
 ht-degree: 100%
 
 ---
@@ -43,13 +43,13 @@ Die Verwendung von Fragmenten hat folgende Vorteile:
 
 ### Zusammenstellen eines Formularentwurfs, der mithilfe von Fragmenten zusammengestellt wurde {#assembling-a-form-design-assembled-using-fragments}
 
-Sie können einen Formularentwurf basierend auf mehreren Fragmenten zusammenstellen, der an den Forms-Service übergeben wird. Verwenden Sie zum Zusammenführen mehrerer Fragmente den Assembler-Service. Ein Beispiel für die Verwendung des Assembler-Services zum Erstellen eines Formularentwurfs, der von anderen Forms-Services (dem Ausgabe-Service) verwendet wird, finden Sie unter [Erstellen von PDF-Dokumenten mithilfe von Fragmenten](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments). Anstatt den Ausgabe-Service zu verwenden, können Sie denselben Workflow mit dem Forms-Service durchführen.
+Sie können einen Formularentwurf basierend auf mehreren Fragmenten zusammenstellen, der an den Forms-Service übergeben wird. Verwenden Sie zum Zusammenführen mehrerer Fragmente den Assembler-Dienst. Ein Beispiel für die Verwendung des Assembler-Services zum Erstellen eines Formularentwurfs, der von anderen Forms-Services (dem Ausgabe-Service) verwendet wird, finden Sie unter [Erstellen von PDF-Dokumenten mithilfe von Fragmenten](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments). Anstatt den Ausgabe-Service zu verwenden, können Sie denselben Workflow mit dem Forms-Service durchführen.
 
-Bei Verwendung des Assembler-Services übergeben Sie einen Formularentwurf, der mithilfe von Fragmenten zusammengestellt wurde. Der erstellte Formularentwurf verweist nicht auf andere Fragmente. In diesem Thema wird dagegen die Übergabe eines Formularentwurfs erläutert, der andere Fragmente an den Forms-Service referenziert. Der Formularentwurf wurde jedoch nicht von Assembler zusammengestellt. Er wurde in Designer erstellt.
+Bei Verwendung des Assembler-Dienstes übergeben Sie einen Formularentwurf, der mithilfe von Fragmenten zusammengestellt wurde. Der erstellte Formularentwurf verweist nicht auf andere Fragmente. In diesem Thema wird dagegen die Übergabe eines Formularentwurfs erläutert, der andere Fragmente an den Forms-Service referenziert. Der Formularentwurf wurde jedoch nicht von Assembler zusammengestellt. Er wurde in Designer erstellt.
 
 >[!NOTE]
 >
->Weitere Informationen zum Forms-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen über den Forms-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Führen Sie die folgenden Aufgaben aus, um ein auf Fragmenten basierendes Formul
 1. Geben Sie das Formular wieder.
 1. Schreiben Sie den Formular-Datenstrom in den Client-Webbrowser.
 
-**Projektdateien einschließen**
+**Einschließen von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -85,7 +85,7 @@ Beim Rendern eines Formulars, das auf Fragmenten basiert, dürfen Sie nur das Fo
 
 Ein auf Fragmenten basierendes Formular kann auf die gleiche Weise wie nicht fragmentierte Formulare gerendert werden. Das heißt, Sie können das Formular als PDF-, HTML- oder Formular-Guides (veraltet) rendern. Im Beispiel in diesem Abschnitt wird ein Formular, das auf Fragmenten basiert, als interaktives PDF-Formular gerendert. (Weitere Informationen finden Sie unter [Rendern interaktiver PDF-Formulare](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
-**Schreiben des Formulardatentroms in den Client-Webbrowser**
+**Schreiben des Formulardaten-Streams in den Client-Webbrowser**
 
 Wenn der Forms-Service ein Formular rendert, wird ein Formulardatenstrom zurückgegeben, den Sie in den Client-Webbrowser schreiben müssen. Sobald das Formular in den Client-Webbrowser geschrieben wurde, ist es für den Benutzer sichtbar.
 
@@ -127,15 +127,15 @@ Rendern eines auf Fragmenten basierenden Formulars mithilfe der Forms API (Java)
 
 1. Wiedergeben des Formulars
 
-   Rufen Sie die Methode `renderPDFForm` des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `renderPDFForm`-Methode des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document`-Objekt.
    * Ein `PDFFormRenderSpec`-Objekt, das Laufzeitoptionen speichert.
    * Ein `URLSpec`-Objekt, das URI-Werte enthält, die der Forms-Service benötigt, um ein Formular basierend auf Fragmenten zu rendern.
-   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, für den Sie `null` angeben können, wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
 
-   Die Methode `renderPDFForm` gibt ein `FormsResult`-Objekt zurück, das einen Formulardaten-Stream enthält, der in den Client-Webbrowser geschrieben werden muss.
+   Die `renderPDFForm`-Methode gibt ein `FormsResult`-Objekt zurück, das einen Formulardatenstrom enthält, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben des Formulardaten-Streams in den Client-Webbrowser
 
@@ -145,7 +145,7 @@ Rendern eines auf Fragmenten basierenden Formulars mithilfe der Forms API (Java)
    * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser verwendet wird, indem Sie die Methode `getOutputStream` des `javax.servlet.http.HttpServletResponse`-Objekts aufrufen.
    * Erstellen Sie ein `java.io.InputStream`-Objekt, indem Sie die `getInputStream`-Methode des `com.adobe.idp.Document`-Objekts aufrufen.
    * Erstellen Sie ein Byte-Array, das mit dem Formulardatenstrom gefüllt wird, indem Sie die `read`-Methode des `InputStream`-Objekts aufrufen und ihr das Byte-Array als Argument übergeben.
-   * Rufen Sie die `write`-Methode des `javax.servlet.ServletOutputStream`-Objekts auf, um den Formulardatenstrom an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die Methode `write`.
+   * Rufen Sie die Methode `write` des `javax.servlet.ServletOutputStream`-Objekts auf, um den Formulardaten-Stream an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die Methode `write`.
 
 **Siehe auch**
 
@@ -168,7 +168,7 @@ Wiedergabe eines Formulars, das auf Fragmenten basiert, mithilfe der Forms-API (
 
 1. Erstellen eines Forms Client-API-Objekts
 
-   Erstellen Sie ein `FormsService`-Objekt und legen Sie Authentifizierungswerte fest.
+   Erstellen Sie ein `FormsService` Objekt und legen Sie Authentifizierungswerte fest.
 
 1. Angeben der URI-Werte
 
@@ -179,27 +179,27 @@ Wiedergabe eines Formulars, das auf Fragmenten basiert, mithilfe der Forms-API (
 
 1. Wiedergeben des Formulars
 
-   Rufen Sie die Methode `renderPDFForm` des `FormsService`-Objekts auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `renderPDFForm`-Methode des `FormsService`-Objekts auf und übergeben Sie die folgenden Werte:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil eines Forms-Programms ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie `null`.
    * Ein `PDFFormRenderSpec`-Objekt, das Laufzeitoptionen speichert. Die mit Tags versehene PDF-Option kann nicht festgelegt werden, wenn das Eingabedokument ein PDF-Dokument ist. Wenn es sich bei der Eingabedatei um eine XDP-Datei handelt, kann die mit Tags versehene PDF-Option festgelegt werden.
    * Ein `URLSpec`-Objekt, das für den Forms-Service erforderliche URI-Werte enthält.
    * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
-   * Ein leeres `com.adobe.idp.services.holders.BLOBHolder`-Objekt, das von der Methode aufgefüllt wird. Dieser Parameter wird zum Speichern des wiedergegebenen Formulars verwendet.
-   * Ein leeres `javax.xml.rpc.holders.LongHolder`-Objekt, das von der Methode aufgefüllt wird. Dieses Argument speichert die Anzahl der Seiten im Formular.
+   * Ein leeres `com.adobe.idp.services.holders.BLOBHolder`-Objekt, das von der Methode gefüllt wird. Dieser Parameter wird zum Speichern des wiedergegebenen Formulars verwendet.
+   * Ein leeres `javax.xml.rpc.holders.LongHolder` Objekt, das von der Methode ausgefüllt wird. Dieses Argument speichert die Anzahl der Seiten im Formular.
    * Ein leeres `javax.xml.rpc.holders.StringHolder` Objekt, das von der Methode ausgefüllt wird. Dieses Argument speichert den Gebietsschemawert.
-   * Ein leeres `com.adobe.idp.services.holders.FormsResultHolder`-Objekt, das die Ergebnisse dieses Vorgangs enthalten wird.
+   * Ein leeres `com.adobe.idp.services.holders.FormsResultHolder`-Objekt, das die Ergebnisse dieses Vorgangs enthält.
 
    Die Methode `renderPDFForm` füllt das `com.adobe.idp.services.holders.FormsResultHolder`-Objekt, das als letzter Argumentwert übergeben wird, mit einem Formulardaten-Stream, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben des Formulardaten-Streams in den Client-Webbrowser
 
-   * Erstellen Sie ein `FormResult`-Objekt, indem Sie den Wert des Datenelements `value` des `com.adobe.idp.services.holders.FormsResultHolder`-Objekts abrufen.
+   * Erstellen Sie ein `FormResult`-Objekt durch Abrufen des Werts des `value`-Daten-Members des `com.adobe.idp.services.holders.FormsResultHolder`-Objekts.
    * Erstellen Sie ein `BLOB`-Objekt, das Formulardaten enthält, indem Sie die Methode `getOutputContent` des `FormsResult`-Objekts aufrufen.
-   * Ermitteln Sie den Inhaltstyp des `BLOB`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
+   * Ermitteln Sie den Content-Typ des `BLOB`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
    * Legen Sie den Content-Typ des `javax.servlet.http.HttpServletResponse`-Objekts fest, indem Sie seine Methode `setContentType` aufrufen und den Content-Typ des `BLOB`-Objekts übergeben.
-   * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardaten-Stream in den Client-Webbrowser verwendet wird, indem Sie die Methode `getOutputStream` des `javax.servlet.http.HttpServletResponse`-Objekts aufrufen.
+   * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser verwendet wird, indem Sie die Methode `getOutputStream` des `javax.servlet.http.HttpServletResponse`-Objekts aufrufen.
    * Erstellen Sie ein Byte-Array und füllen Sie es auf, indem Sie die Methode `getBinaryData` des `BLOB`-Objekts aufrufen. Mit dieser Aufgabe wird dem Byte-Array der Inhalt des `FormsResult`-Objekts zugewiesen.
    * Rufen Sie die Methode `write` des `javax.servlet.http.HttpServletResponse`-Objekts auf, um den Formulardaten-Stream an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die Methode `write`.
 

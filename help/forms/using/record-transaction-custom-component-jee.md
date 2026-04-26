@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Forms
 hide: true
 hidefromtoc: true
 exl-id: e2d1b548-ce30-471b-b01c-ce37b737aeb5
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 100%
@@ -37,9 +37,11 @@ Wenn Sie für eine API mehr als eine Transaktion erfassen müssen, z. B. bei ei
    1. Fügen Sie eine Logik hinzu, um die Transaktionsanzahl in einer Ganzzahlvariablen speichern zu können, z. B. `transaction_count`.
    1. Wenn der Vorgang erfolgreich ist, fügen Sie `InvocationContextStack.recordTransactionCount(transaction_count)` hinzu.
 
-<!--For example, you can set count for your custom component by importing class `"com.adobe.idp.dsc.InvocationContextStack"` in the code available at `adobe-livecycle-client.jar`  and determine the transaction count basis API input/result and add (In this case we add count is equal to 3):
+<!--
+For example, you can set count for your custom component by importing class `"com.adobe.idp.dsc.InvocationContextStack"` in the code available at `adobe-livecycle-client.jar`  and determine the transaction count basis API input/result and add (In this case we add count is equal to 3):
 `InvocationContextStack.recordTransactionCount(<count>).` to 
-`InvocationContextStack.recordTransactionCount(3)`.-->
+`InvocationContextStack.recordTransactionCount(3)`.
+-->
 
 ## Verwandte Artikel
 

@@ -8,14 +8,14 @@ role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 88dc81aa-f8b2-403e-bd87-ea224ac2d0c2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '568'
-ht-degree: 100%
+source-wordcount: '595'
+ht-degree: 98%
 
 ---
 
-# Vorschau von 3D-Assets in Adobe Experience Manager  {#previewing-3d-assets-aem}
+# Vorschau von 3D-Assets in Adobe Experience Manager {#previewing-3d-assets-aem}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -28,7 +28,7 @@ Der interaktive 3D-Viewer ist auf der Seite „Asset-Details“ in Experience Ma
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 
-## Unterstützte Formate für die 3D-Vorschau in Experience Manager  {#supported-3d-previewing-assets}
+## Unterstützte Formate für die 3D-Vorschau in Experience Manager {#supported-3d-previewing-assets}
 
 Die interaktive 3D-Vorschau unterstützt die folgenden Dateiformate:
 
@@ -38,8 +38,8 @@ Die interaktive 3D-Vorschau unterstützt die folgenden Dateiformate:
 | GLTF | GL-Übertragungsformat | model/gltf+json | Siehe **Hinweis** unten. |
 | OBJ | WaveFront 3D-Objektdatei | application/x-tgif | |
 | STL | Stereolithografie | application/vnd.ms-pki.stl | |
-| DN | Adobe Dimension | model/x-adobe-dn | Unterstützung nur für die Erfassung; Vorschau nicht verfügbar. |
-| USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | Unterstützung nur für die Erfassung; Vorschau nicht verfügbar. |
+| DN | Adobe Dimension | model/x-adobe-dn | Unterstützung nur für die Aufnahme; Vorschau nicht verfügbar. |
+| USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | Unterstützung nur für die Aufnahme; Vorschau nicht verfügbar. |
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Die interaktive 3D-Vorschau unterstützt die folgenden Dateiformate:
     material_0_baseColor.jpeg
     material_0_normal.jpeg
 
-## Leistungsaspekte bei der Vorschau von 3D-Assets in Experience Manager {#performance-3d-previewing-assets}
+## Leistungsaspekte bei der Vorschau von 3D-Assets in Experience Manager{#performance-3d-previewing-assets}
 
 Die Zeit, die zum Öffnen eines 3D-Assets auf der Seite mit den Asset-Details benötigt wird, hängt von verschiedenen Faktoren ab, z. B. Bandbreite, Bildkomplexität und Latenzen zum Server.
 

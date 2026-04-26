@@ -11,9 +11,9 @@ feature: Adaptive Forms
 exl-id: c888da5d-6a98-4139-9656-a187177efcb0
 hide: true
 hidefromtoc: true
-source-git-commit: 1336ccddcc73459f933e5e4b00a3a22605cdb9a1
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '317'
 ht-degree: 100%
 
 ---
@@ -49,4 +49,4 @@ Nachdem Sie AEM Forms konfiguriert haben, ordnen Sie die Daten-XML und Anlagen a
 
 ![Guide LiveCycle Process Locator and Invoker](assets/test3.jpg)
 
-Nachdem die Konfiguration abgeschlossen ist, listet die Aktion Senden an Formular-Arbeitsablauf die AEM Forms on JEE-Serverprozesse mit den angegebenen Daten-XML-Parametern.
+Nachdem die Konfiguration abgeschlossen ist, listet die Aktion Senden an Formular-Workflow die AEM Forms on JEE-Serverprozesse mit den angegebenen Daten-XML-Parametern.

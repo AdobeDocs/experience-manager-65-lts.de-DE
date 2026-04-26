@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 7e6346ec-3cab-4f88-91b3-b111bd19983e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 100%
@@ -84,7 +84,7 @@ Sie können ganz nach Bedarf eine beliebige Anzahl von Suchvorlagen erstellen.
    * (Optional) Um eine Spalte absteigend zu sortieren, aktivieren Sie das Kontrollkästchen neben dem jeweiligen Elementnamen. Ist das Kontrollkästchen nicht aktiviert, wird die Spalte in aufsteigender Reihenfolge sortiert.
 
 1. Klicken Sie auf die Registerkarte „Speichern“.
-1. (Optional) Geben Sie beim Erstellen einer Suchvorlage einen eindeutigen Namen an.  Falls Sie keinen eindeutigen Namen angeben, wird eventuell eine vorhandene Vorlage überschrieben.
+1. (Optional) Geben Sie beim Erstellen einer Suchvorlage einen eindeutigen Namen an. Falls Sie keinen eindeutigen Namen angeben, wird eventuell eine vorhandene Vorlage überschrieben.
 1. Klicken Sie auf die Schaltfläche „Speichern“.
 
 ## Löschen einer Suchvorlage {#delete-a-search-template}

@@ -11,9 +11,9 @@ role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9eba1e3f-9251-445e-b791-2be0a92aebd1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '432'
 ht-degree: 100%
 
 ---
@@ -87,6 +87,6 @@ Melden Sie sich jetzt bei Brand Portal an, um zu sehen, ob die veröffentlichten
 
 1. Wechseln Sie zur ![Listenansicht](assets/list-view.svg), um den aktuellen Veröffentlichungsstatus des Assets anzuzeigen.
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![generierter Berichtsstatus](assets/report-status.JPG)

@@ -11,9 +11,9 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 387f917c-eae3-4326-88f4-3b77cb9e4d46
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2331'
+source-wordcount: '2382'
 ht-degree: 100%
 
 ---
@@ -54,7 +54,7 @@ Führen Sie die folgenden Scjritte aus, um ein PDF-Dokument in ein PDF/A-Dokumen
 1. Konvertieren Sie das Dokument.
 1. Speichern Sie das PDF/A-Dokument.
 
-**Einschließen von Projektdateien**
+**Projektdateien einbeziehen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -66,11 +66,11 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
 
-Weitere Informationen über den Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Erstellen eines DocConvert-Clients**
 
-Bevor Sie einen DocConverter-Vorgang programmgesteuert ausführen können, müssen Sie einen DocConverter-Client erstellen. Erstellen Sie ein `DocConverterServiceClient`-Objekt, wenn Sie die Java-API verwenden. Wenn Sie die DocConverter-Webservice-API verwenden, erstellen Sie ein `DocConverterServiceService`-Objekt.
+Bevor Sie einen DocConverter-Vorgang programmgesteuert ausführen können, müssen Sie einen DocConverter-Client erstellen. Erstellen Sie ein `DocConverterServiceClient`-Objekt, wenn Sie die Java-API verwenden. Wenn Sie die Web-Service-API für DocConverter verwenden, erstellen Sie ein `DocConverterServiceService`-Objekt.
 
 **Referenzieren eines PDF-Dokuments zur Konvertierung in ein PDF/A-Dokument**
 
@@ -160,7 +160,7 @@ Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument anhand der DocConverter-A
 1. Erstellen eines DocConvert-Clients
 
    * Erstellen Sie mit Hilfe der Microsoft .NET-Client-Assembly ein `DocConverterServiceService`-Objekt, indem Sie dessen Standardkonstruktor aufrufen.
-   * Setzen Sie das `Credentials`Datenelement des `DocConverterServiceService`-Elements auf einen `System.Net.NetworkCredential`-Wert, der den Benutzernamen und das Passwort enthät.
+   * Setzen Sie das Datenelement `DocConverterServiceService` des `Credentials`-Objekts auf einen `System.Net.NetworkCredential`-Wert, der den Benutzernamen und den Passwortwert angibt.
 
 1. Referenzieren eines PDF-Dokuments zur Konvertierung in ein PDF/A-Dokument
 
@@ -168,7 +168,7 @@ Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument anhand der DocConverter-A
    * Erstellen Sie ein `System.IO.FileStream`-Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der den Dateispeicherort des PDF-Dokuments und den Modus zum Öffnen der Datei enthält.
    * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie die Inhalte des Byte-Arrays seiner `binaryData`-Eigenschaft zuweisen.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seine `binaryData`-Eigenschaft mit dem Inhalt des Byte-Arrays belegen.
 
 1. Festlegen von Tracking-Informationen
 
@@ -189,7 +189,7 @@ Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument anhand der DocConverter-A
    * Erstellen Sie ein `BLOB`-Objekt, in dem das PDF/A-Dokument gespeichert wird, indem Sie den Wert des `PDFADocument`-Datenelements des `PDFAConversionResult`-Objekts abrufen.
    * Erstellen Sie ein Byte-Array, in dem der Inhalt des `BLOB`-Objekts gespeichert wird, das bei der Anwendung des `PDFAConversionResult`-Objekts zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des `binaryData`-Datenelements des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor verwenden und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF/A-Dokuments angibt.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor verwenden und das `System.IO.FileStream`-Objekt übergeben.
+   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
@@ -218,7 +218,7 @@ Um die Kompatibilität mit dem PDF/A-Format zu ermitteln, führen Sie die folgen
 1. Legen Sie Laufzeitoptionen fest.
 1. Rufen Sie Informationen zum PDF-Dokument ab.
 
-**Einschließen von Projektdateien**
+**Projektdateien einbeziehen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -230,7 +230,7 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
 
-Weitere Informationen über den Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Erstellen eines DocConvert-Clients**
 
@@ -273,14 +273,14 @@ Bestimmen Sie mithilfe der Java-API die Konformität mit PDF/A:
 
 1. Referenzieren eines PDF-Dokuments zur Ermittlung der PDF/A-Konformität
 
-   * Erstellen Sie mithilfe des Konstruktors ein `java.io.FileInputStream`-Objekt, das das zu konvertierende PDF-Dokument darstellt und übergeben Sie einen Zeichenfolgenwert, der den Speicherort der PDF-Datei angibt.
+   * Erstellen Sie ein `java.io.FileInputStream`-Objekt, das das zu konvertierende PDF-Dokument mithilfe des Konstruktors darstellt und einen Zeichenfolgenwert übergibt, der den Speicherort der PDF-Datei angibt.
    * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie seinen Konstruktor verwenden und das `java.io.FileInputStream`-Objekt übergeben.
 
 1. Festlegen von Laufzeitoptionen
 
    * Erstellen Sie ein Objekt `PDFAValidationOptionSpec`, indem Sie den Konstruktor verwenden.
    * Legen Sie die Konformitätsstufe fest, indem Sie die Methode `setCompliance` des `PDFAValidationOptionSpec`-Objekts aufrufen und `PDFAValidationOptionSpec.Compliance.PDFA_1B` übergeben.
-   * Legen Sie die Tracking-Stufe für Informationen fest, indem Sie die Methode `setLogLevel` des `PDFAValidationOptionSpec`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der die Tracking-Stufe angibt. Beispielsweise können Sie den Wert `FINE` übergeben. Weitere Informationen zu den verschiedenen Werten finden Sie unter „Methode `setLogLevel`“ in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Legen Sie die Tracking-Ebene für Informationen fest, indem Sie die Methode `setLogLevel` des `PDFAValidationOptionSpec`-Objekt verwenden und einen Zeichenfolgenwert übergeben, der die Tracking-Ebene angibt. Beispielsweise können Sie den Wert `FINE` übergeben. Weitere Informationen zu den verschiedenen Werten finden Sie unter der Beschreibung der `setLogLevel`-Methode in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Abrufen von Informationen zum PDF-Dokument
 
@@ -313,7 +313,7 @@ Ermitteln der PDF/A-Konformität mithilfe der Web-Service-API:
 1. Erstellen eines DocConvert-Clients
 
    * Erstellen Sie mit Hilfe der Microsoft .NET-Client-Assembly ein `DocConverterServiceService`-Objekt, indem Sie dessen Standardkonstruktor aufrufen.
-   * Setzen Sie das Datenelement `DocConverterServiceService` des `Credentials`-Objekts auf einen `System.Net.NetworkCredential`-Wert, der den Benutzernamen und den Passwortwert angibt.
+   * Setzen Sie das `Credentials`Datenelement des `DocConverterServiceService`-Elements auf einen `System.Net.NetworkCredential`-Wert, der den Benutzernamen und das Passwort enthät.
 
 1. Referenzieren eines PDF-Dokuments zur Ermittlung der PDF/A-Konformität
 
@@ -321,7 +321,7 @@ Ermitteln der PDF/A-Konformität mithilfe der Web-Service-API:
    * Erstellen Sie ein `System.IO.FileStream`-Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der den Dateispeicherort des PDF-Dokuments und den Modus zum Öffnen der Datei enthält.
    * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie dessen `binaryData`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seine `binaryData`-Eigenschaft mit dem Inhalt des Byte-Arrays belegen.
 
 1. Festlegen von Laufzeitoptionen
 

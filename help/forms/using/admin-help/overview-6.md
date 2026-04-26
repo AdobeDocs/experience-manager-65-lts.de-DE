@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2e81b9b9-321d-4423-9748-6385956b1d90
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '213'
 ht-degree: 100%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 100%
 
 In diesem Kapitel werden die Erstellung von Secure Sockets Layer(SSL)-Berechtigungen und die Konfiguration von SSL auf dem Anwendungs-Server beschrieben, um die Sicherheit Ihrer Daten bei der Kommunikation mit dem Anwendungs-Server zu erhöhen.
 
-Als Sicherheitsprodukt macht Rights Management die Konfiguration von SSL erforderlich.  Stellen Sie bei der Konfiguration von SSL-Zertifikaten sicher, dass Sie nur RSA-Schlüssel verwenden.  SSL-Zertifikate mit DSA-Schlüsseln werden nicht unterstützt.
+Als Sicherheitsprodukt macht Rights Management die Konfiguration von SSL erforderlich. Stellen Sie bei der Konfiguration von SSL-Zertifikaten sicher, dass Sie nur RSA-Schlüssel verwenden. SSL-Zertifikate mit DSA-Schlüsseln werden nicht unterstützt.
 
-Die bereitgestellten Informationen gelten für Turnkey-Installationen sowie für automatische und manuelle Installationen.  Sie finden hier ein Beispiel für eine Methode zum Konfigurieren von SSL.  Sie können auch andere Methoden verwenden, falls diese besser für Ihr Netzwerk oder Unternehmen geeignet sind.
+Die bereitgestellten Informationen gelten für Turnkey-Installationen sowie für automatische und manuelle Installationen. Sie finden hier ein Beispiel für eine Methode zum Konfigurieren von SSL. Sie können auch andere Methoden verwenden, falls diese besser für Ihr Netzwerk oder Unternehmen geeignet sind.
 
 >[!NOTE]
 >

@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: e0aa9304-3da0-4ae6-a465-089dc96c427e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1053'
 ht-degree: 100%
 
 ---
@@ -74,7 +74,7 @@ Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeit
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.low-limit</code></td>
-   <td><p>Gibt den maximalen Prozentsatz des Speicherplatzes an, der verwendet werden kann, bevor Work Manager die Einschränkung für eingehende Aufträge aufhebt.</p><p>Der Standardwert für diese Option ist <code>20</code>. Dieser Wert sollte für die meisten Systeme ausreichend sein.</p></td>
+   <td><p>Gibt den maximalen Prozentsatz des Speicherplatzes an, der verwendet werden kann, bevor Work Manager die Einschränkung für eingehende Aufträge stoppt.</p><p>Der Standardwert für diese Option ist <code>20</code>. Dieser Wert sollte für die meisten Systeme ausreichend sein.</p></td>
   </tr>
   <tr>
    <td><code>Dadobe.workmanager.allocate.max-batch-size</code></td>
@@ -85,7 +85,7 @@ Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeit
 
 **Hinzufügen von Java-Optionen zu JBoss**
 
-1. Beenden Sie den JBoss-Anwendungs-Server.
+1. Stoppen Sie den JBoss-Anwendungs-Server.
 1. Öffnen Sie den Ordner „*[Anwendungs-Server-Stammordner]*/bin/run.bat“ (Windows) oder „run.sh“ (Linux oder UNIX) in einem Texteditor und fügen Sie die erforderlichen Java-Optionen im Format `-Dproperty=value` hinzu.
 1. Starten Sie den Server neu.
 

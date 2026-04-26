@@ -8,9 +8,9 @@ breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5 LTS
 role: user
 hide: true
-source-git-commit: 96d94c843d1912abd91577b3373e38bd9fd9ed6c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '262'
 ht-degree: 89%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 89%
 + Personalisierung {#personalization}
    + [Grundlegendes zur Segmentierung](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
    + [Kampagnenmanagement](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)
-   + [Landing-Pages](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
+   + [Landingpages](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
    + [Adobe Target-Angebote](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
    + [E-Mail-Marketing](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email.md)
    + [Nachverfolgen nicht zugestellter E-Mails](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
@@ -69,7 +69,7 @@ ht-degree: 89%
    + [Konzeption einer Kampagne](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
    + [Veröffentlichen von E-Mails bei E-Mail-Dienstanbietern](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
    + [Arbeiten mit dem Marketing Campaign Manager](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
-   + [Erstellen einer effektiven Einstiegsseite für Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
+   + [Erstellen einer effektiven Landingpage für Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
    + [Verwalten von Abonnements](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
 + Adobe Campaign {#campaign}
    + [Arbeiten mit Adobe Campaign 6.1 und Adobe Campaign Standard](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md)

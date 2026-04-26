@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 9df608f8-cdd0-4820-aab1-eab9fd70f961
-source-git-commit: 547d7866346fb148cb66f546d8a2e1141f69f563
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 99%
@@ -95,7 +95,7 @@ In AEM 6.1 war die standardmäßige Volltexteigenschaft Teil des Suchformulars. 
  <tbody>
   <tr>
    <td>Knoten im Standard-Suchformular in 6.1<br /> <br /> </td>
-   <td>path</td>
+   <td>Pfade</td>
   </tr>
   <tr>
    <td><p>Ressourcentyp in 6.1</p> </td>
@@ -236,7 +236,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  <tbody>
   <tr>
    <td>Knoten im Standard-Suchformular in 6.1<br /> <br /> </td>
-   <td>Nicht zutreffend</td>
+   <td>k. A.</td>
   </tr>
   <tr>
    <td><p>Ressourcentyp in 6.1</p> </td>
@@ -261,7 +261,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  <tbody>
   <tr>
    <td>Knoten im Standard-Suchformular in 6.1<br /> <br /> </td>
-   <td>Nicht zutreffend</td>
+   <td>k. A.</td>
   </tr>
   <tr>
    <td><p>Ressourcentyp in 6.1</p> </td>
@@ -282,7 +282,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  <tbody>
   <tr>
    <td>Knoten im Standard-Suchformular in 6.1<br /> <br /> </td>
-   <td>Nicht zutreffend</td>
+   <td>k. A.</td>
   </tr>
   <tr>
    <td><p>Ressourcentyp in 6.1</p> </td>
@@ -303,7 +303,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  <tbody>
   <tr>
    <td>Knoten im Standard-Suchformular in 6.1<br /> <br /> </td>
-   <td>Nicht zutreffend</td>
+   <td>k. A.</td>
   </tr>
   <tr>
    <td><p>Ressourcentyp in 6.1</p> </td>
@@ -324,7 +324,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  <tbody>
   <tr>
    <td>Knoten im Standard-Suchformular in 6.1<br /> <br /> </td>
-   <td>Nicht zutreffend</td>
+   <td>k. A.</td>
   </tr>
   <tr>
    <td><p>Ressourcentyp in 6.1</p> </td>
@@ -345,7 +345,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  <tbody>
   <tr>
    <td>Knoten im Standard-Suchformular in 6.1<br /> <br /> </td>
-   <td>Nicht zutreffend</td>
+   <td>k. A.</td>
   </tr>
   <tr>
    <td><p>Ressourcentyp in 6.1</p> </td>

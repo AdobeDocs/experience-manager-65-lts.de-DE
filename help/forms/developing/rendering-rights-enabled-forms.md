@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 70b2d1aa-6fcd-461d-b628-e82ddf266f48
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1488'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ Um Nutzungsrechte auf ein Formular anzuwenden, muss der Dienst Acrobat Reader DC
 
 >[!NOTE]
 >
->Weitere Informationen zum Forms-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen über den Forms-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -93,7 +93,7 @@ So rendern Sie ein Formular mit aktivierten Nutzungsrechten mithilfe der Forms-A
 
 1. Projektdateien einschließen
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-forms-client.jar“ in den Klassenpfad Ihres Java-Projekts ein. 
+   Fügen Sie Client-JAR-Dateien wie „adobe-forms-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen eines Forms Client-API-Objekts
 
@@ -151,7 +151,7 @@ Rendering eines Formulars mit aktivierten Rechten mithilfe der Forms API (Webser
 
 1. Erstellen eines Forms Client-API-Objekts
 
-   Erstellen Sie ein `FormsService`-Objekt und legen Sie Authentifizierungswerte fest.
+   Erstellen Sie ein `FormsService` Objekt und legen Sie Authentifizierungswerte fest.
 
 1. Optionen für Nutzungsrechte zur Laufzeit festlegen
 

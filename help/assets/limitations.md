@@ -1,6 +1,6 @@
 ---
 title: Grenzwerte für Dynamic Media
-description: Erfahren Sie mehr über die Best Practices und durchgesetzten Grenzwerte beim Erstellen eines Bildsets oder eines Rotationssets oder beim Hochladen einer PDF. Außerdem erhalten Sie Informationen zu nicht unterstützten Kombinationen von Webbrowsern und Betriebssystemen für Dynamic Media.
+description: Erfahren Sie mehr über die Best Practices und durchgesetzten Grenzwerte beim Erstellen eines Bild-Sets oder eines Rotations-Sets oder beim Hochladen einer PDF. Außerdem erhalten Sie Informationen zu nicht unterstützten Kombinationen von Webbrowsern und Betriebssystemen für Dynamic Media.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
@@ -9,9 +9,9 @@ feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5aa07827-8483-4a99-9197-a17485226a13
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '350'
 ht-degree: 100%
 
 ---
@@ -27,14 +27,14 @@ Dieses Thema enthält die folgenden Abschnitte:
 
 ## Best Practices und durchgesetzte Grenzwerte in Dynamic Media für Asset-Typen {#best-practice-enforced-limits}
 
-Wenn Sie ein Rotationsset oder Bildset erstellen oder PDFs zur Seitenextraktion hochladen, empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Grenzwerte durch:
+Wenn Sie ein Rotations-Set oder Bild-Set erstellen oder PDFs zur Seitenextraktion hochladen, empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Grenzwerte durch:
 
 | Asset – Art des Grenzwerts | Best Practice | Erzwungene Begrenzung |
 | --- | --- | --- |
-| **Bild**: Anzahl der smarten Zuschnitte pro Bild | 5 | 100 |
+| **Bild**: Anzahl der intelligenten Zuschnitte pro Bild | 5 | 100 |
 | **Alle Sets**: Anzahl doppelter Assets pro Set | Keine Duplikate | 20‡ |
 | **Alle Sets**: Maximale Anzahl von Assets pro Set | 5–10 Bilder pro Set | 1000 |
-| **Rotationsset**: Maximale Anzahl von Zeilen/Spalten pro 2D-Set | 12–18 Bilder pro Set | 1000 |
+| **Rotations-Set**: Maximale Anzahl von Zeilen/Spalten pro 2D-Set | 12–18 Bilder pro Set | 1.000 |
 | **PDF**: Maximale Zahl der Seiten für eine PDF-Datei, die für die Extraktion berücksichtigt werden sollen |  | 100 (für alle PDFs) |
 
 ‡ Best Practice ist, keine doppelten Assets in einem Satz zu haben. Das Limit beträgt 20 Duplikate für ein einzelnes Asset. Wenn Sie ein weiteres Duplikat für dieses Asset innerhalb dieses Satzes hinzufügen, gibt die Anfrage entweder einen Fehler aus oder ignoriert das Duplikat.
@@ -56,8 +56,10 @@ Dynamic Media unterstützt nicht die folgenden Kombinationen aus Webbrowser und 
 
 ## Ende der Unterstützung für Secure Socket Layer 2.0 und 3.0 und Transport Layer Security 1.0 und 1.1 {#tls}
 
-<!-- CQDOC-19433 (original ticket)
-and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
+<!--
+CQDOC-19433 (original ticket)
+and CQDOC-19792 (removed as per this ticket December 5, 2022)
+-->
 
 Seit dem 30. April 2024 stellt Adobe Dynamic Media die Unterstützung für Folgendes ein:
 

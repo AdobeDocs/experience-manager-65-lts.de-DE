@@ -9,9 +9,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 622c4899-f75f-4b47-a6c0-f94c8427e977
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1403'
 ht-degree: 100%
 
 ---
@@ -38,7 +38,7 @@ Wenn ein Prozess ausgelöst wird, werden eine eindeutige Prozessinstanz-ID und e
 
 In den folgenden Szenarien können Sie die Prozessinstanz-ID für eine Initiatorin oder einen Initiator jedoch nicht ermitteln:
 
-* **Prozess, der durch einen überwachten Ordner ausgelöst wurde**: Eine Prozessinstanz kann nicht über ihre Initiatorin oder ihren Initiator identifiziert werden, wenn der Prozess von einem überwachten Ordner ausgelöst wird.  In diesem Fall werden die Benutzerinformationen in den gespeicherten Daten codiert.
+* **Prozess, der durch einen überwachten Ordner ausgelöst wurde**: Eine Prozessinstanz kann nicht über ihre Initiatorin oder ihren Initiator identifiziert werden, wenn der Prozess von einem überwachten Ordner ausgelöst wird. In diesem Fall werden die Benutzerinformationen in den gespeicherten Daten codiert.
 * **Von der AEM-Veröffentlichungsinstanz initiierter Prozess**: Alle von der AEM-Veröffentlichungsinstanz ausgelösten Prozessinstanzen erfassen keine Informationen über die Initiatorin oder den Initiator. Allerdings können im vorgangsbezogenen Formular ggf. Benutzerdaten erfasst und in Workflow-Variablen gespeichert werden.
 * **Prozess, der über E-Mails initiiert wird**: Die E-Mail-ID des Absenders wird als Eigenschaft in einer opaken BLOB-Spalte der Datenbanktabelle `tb_job_instance` erfasst, die nicht direkt abgefragt werden kann.
 
@@ -143,7 +143,7 @@ Nachdem Sie nun die Prozessinstanz-IDs identifiziert haben, die einer Benutzerin
 
 ### Arbeiten mit verwaisten Aufgaben {#orphan}
 
-Verwaiste Aufgaben sind Aufgaben, deren enthaltener Prozess initiiert, aber noch nicht übermittelt wurde. In diesem Fall ist die `process_instance_id` **0** (Null). Daher ist es nicht möglich, für verwaiste Aufgaben gespeicherte Benutzerdaten mithilfe der Prozessinstanz-IDs zu verfolgen. Sie können sie jedoch mithilfe der Aufgaben-ID für eine verwaiste Aufgabe verfolgen.  Sie können die Aufgaben-IDs für einen Benutzer aus der `tb_task` ermitteln, wie in [Prozessinstanz-IDs identifizieren, wenn der Workflow-Initiator oder -Teilnehmer bekannt ist](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
+Verwaiste Aufgaben sind Aufgaben, deren enthaltener Prozess initiiert, aber noch nicht übermittelt wurde. In diesem Fall ist die `process_instance_id` **0** (Null). Daher ist es nicht möglich, für verwaiste Aufgaben gespeicherte Benutzerdaten mithilfe der Prozessinstanz-IDs zu verfolgen. Sie können sie jedoch mithilfe der Aufgaben-ID für eine verwaiste Aufgabe verfolgen. Sie können die Aufgaben-IDs für einen Benutzer aus der Tabelle `tb_task` ermitteln, wie in [Prozessinstanz-IDs identifizieren, wenn der Workflow-Initiator oder -Teilnehmer bekannt ist](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
 
 Sobald Sie über die Aufgaben-IDs verfügen, gehen Sie wie folgt vor, um die zugehörigen Dateien und Daten mit einer verwaisten Aufgabe aus GDS und der Datenbank zu löschen.
 
@@ -153,7 +153,7 @@ Sobald Sie über die Aufgaben-IDs verfügen, gehen Sie wie folgt vor, um die zug
    select id from tb_form_data where task_id=<task_id>
    ```
 
-   Die Abfrage gibt eine Liste von IDs zurück.  Erstellen Sie für jede ID (`fd_id`), die in den Ergebnissen zurückgegeben wird, eine Liste der Sitzungs-ID-Zeichenfolgen wie folgt:
+   Die Abfrage gibt eine Liste von IDs zurück. Erstellen Sie für jede ID (`fd_id`), die in den Ergebnissen zurückgegeben wird, eine Liste der Sitzungs-ID-Zeichenfolgen wie folgt:
 
    * _ `wfattach<task_id>`
    * `_wftask<fd_id>`

@@ -10,10 +10,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 3fe5421e-e97e-43c4-b34b-b84bf189a779
-source-git-commit: 425b3fae2658d78b0885f5034ff4c61da625d9d4
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 61%
+source-wordcount: '1205'
+ht-degree: 70%
 
 ---
 
@@ -33,7 +33,8 @@ Der Upgrade-Prozess für AEM erfordert sorgfältig ausgeführte Planungs-, Analy
 
 Sie müssen sicherstellen, dass ein unterstütztes Betriebssystem, eine unterstützte Java™-Laufzeitumgebung sowie eine unterstützte httpd- und Dispatcher-Version ausgeführt werden. Weitere Informationen finden Sie unter [Technische Anforderungen für AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md). Das Upgrade dieser Komponenten muss in Ihrem Upgrade-Plan berücksichtigt werden und sollte vor dem Upgrade von AEM stattfinden.
 
-<!-- Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
 ## Upgrade Scope and Requirements {#upgrade-scope-requirements}
 
@@ -89,13 +90,15 @@ Below you will find a list of areas that are impacted in a typical AEM Upgrade p
  </tbody>
 </table>
 
-It is important to ensure that you are running a supported operating system, Java&trade; runtime, httpd, and Dispatcher version. For more information, see the [AEM 6.5 Technical Requirements page](/help/sites-deploying/technical-requirements.md). Upgrading these components must be accounted for in your project plan and should take place before upgrading AEM. -->
+It is important to ensure that you are running a supported operating system, Java&trade; runtime, httpd, and Dispatcher version. For more information, see the [AEM 6.5 Technical Requirements page](/help/sites-deploying/technical-requirements.md). Upgrading these components must be accounted for in your project plan and should take place before upgrading AEM.
+-->
 
 ## Upgrade-Phasen {#upgrade-phases}
 
 Die Planung und Durchführung eines AEM-Upgrades ist mit viel Arbeit verbunden. Um den unterschiedlichen Aufwand zu verdeutlichen, der mit diesem Prozess verbunden ist, hat Adobe die Planung und Ausführung in verschiedene Phasen unterteilt. In den folgenden Abschnitten führt jede Phase zu einem Ergebnis, das häufig in einer zukünftigen Phase des Upgrades verwendet wird.
 
-<!-- Alexandru:drafting for now
+<!--
+Alexandru:drafting for now
 
 ### Planning for Author Training {#planning-for-author-training}
 
@@ -103,37 +106,42 @@ With any new release, there are potential changes to the UI and user workflows t
 
 ![unu_cropped](assets/unu_cropped.png)
 
-New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/release-notes/release-notes.md). Make sure to note any changes to UIs or product features that are commonly used in your organization. As you look through the new features, also take note of any that can be of value to your organization. After looking through what has changed in AEM 6.5, develop a training plan for your authors. This could involve using freely available resources like the help feature videos or formal training offered through [Adobe Digital Learning Services](https://learning.adobe.com/). -->
+New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/release-notes/release-notes.md). Make sure to note any changes to UIs or product features that are commonly used in your organization. As you look through the new features, also take note of any that can be of value to your organization. After looking through what has changed in AEM 6.5, develop a training plan for your authors. This could involve using freely available resources like the help feature videos or formal training offered through [Adobe Digital Learning Services](https://learning.adobe.com/).
+-->
 
 ### Erstellen eines Testplans {#creating-a-test-plan}
 
-Jede Kundenimplementierung von AEM ist einzigartig und auf die Geschäftsanforderungen des Unternehmens zugeschnitten. Daher ist es wichtig, alle am System vorgenommenen Anpassungen zu bestimmen, damit sie in einen Testplan aufgenommen werden können.
+Jede Kundenimplementierung von AEM ist einzigartig und auf die Geschäftsanforderungen des Unternehmens zugeschnitten. Deshalb ist es wichtig, alle am System vorgenommenen Anpassungen zu ermitteln, damit sie in einen Testplan einbezogen werden können.
 
 Die Produktionsumgebung muss exakt dupliziert und nach dem Upgrade getestet werden, um sicherzustellen, dass alle Anwendungen und benutzerdefinierter Code weiterhin wie gewünscht ausgeführt werden. Sie müssen alle Anpassungen rückgängig machen und Leistungs-, Last- und Sicherheitstests durchführen. Beziehen Sie beim Organisieren des Testplans neben den vorkonfigurierten Benutzeroberflächen und Workflows, die für Ihre täglichen Betriebsabläufe genutzt werden, alle am System vorgenommenen Anpassungen in den Plan mit ein. Hierzu gehören möglicherweise benutzerdefinierte OSGi-Dienste und -Servlets, Integrationen mit Adobe Experience Cloud, Integrationen mit Drittanbieteranwendungen über AEM-Connectoren, benutzerdefinierte Drittanbieterintegrationen, benutzerdefinierte Komponenten und Vorlagen, benutzerdefinierte Benutzeroberflächen-Überlagerungen in AEM und benutzerdefinierte Workflows. Darüber hinaus sollten benutzerdefinierte Abfragen weiterhin getestet werden, um sicherzustellen, dass ihre Indizes nach dem Upgrade weiterhin effektiv funktionieren.
 
 ### Bewertung der Komplexität des Upgrades {#assessing-upgrade-complexity}
 
-Aufgrund der großen Vielfalt an Anpassungen, die Adobe-Kunden an ihren AEM-Umgebungen vornehmen, ist es wichtig, im Voraus den gesamten Aufwand zu bestimmen, der bei einem Upgrade zu erwarten ist. [AEM Analyzer für AEM 6.5 LTS](/help/sites-deploying/aem-analyzer.md) kann Ihnen bei der Bewertung der Komplexität des Upgrades helfen.
+Aufgrund der von Adobe-Kundinnen und -Kunden an ihren AEM-Umgebungen vorgenommenen Anpassungen, die sich hinsichtlich des Umfangs und der Art der Anpassung weitgehend unterscheiden, ist es wichtig, vor einem Upgrade den damit verbundenen Aufwand zu bestimmen. [AEM Analyzer für AEM 6.5 LTS](/help/sites-deploying/aem-analyzer.md) kann Ihnen bei der Bewertung der Komplexität des Upgrades helfen.
 
-Der [AEM Analyer für AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) liefert Ihnen eine recht genaue Schätzung dessen, was Sie während eines Upgrades in den meisten Fällen erwarten können. Für komplexere Anpassungen und Bereitstellungen, in denen inkompatible Änderungen vorhanden sind, können Sie jedoch eine Entwicklungsinstanz auf AEM 6.5 LTS upgraden. Eine Anleitung finden Sie unter [&#x200B; eines In-Place-Upgrades](/help/sites-deploying/in-place-upgrade.md). Führen Sie nach der Aktualisierung eine Reihe Feuerproben der hohen Stufe für die Umgebung durch. Ziel dieser Übung ist es nicht, den Testfallbestand vollständig abzuschließen und eine formelle Liste von Fehlern zu erstellen, sondern uns eine grobe Schätzung des Arbeitsaufwands für das Upgrade des Codes für die Kompatibilität mit AEM 6.5 LTS zu geben. In Kombination mit dem [AEM Analyzer](/help/sites-deploying/aem-analyzer.md) und den Architekturänderungen, die im vorherigen Abschnitt ermittelt wurden, kann das Projektmanagement-Team eine grobe Schätzung für die Planung des Upgrades erhalten.
+Der [AEM Analyer für AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) liefert Ihnen eine recht genaue Schätzung dessen, was Sie während eines Upgrades in den meisten Fällen erwarten können. Für komplexere Anpassungen und Bereitstellungen, in denen inkompatible Änderungen vorhanden sind, können Sie jedoch eine Entwicklungsinstanz auf AEM 6.5 LTS upgraden. Eine Anleitung finden Sie unter [ eines In-Place-Upgrades](/help/sites-deploying/in-place-upgrade.md). Führen Sie nach der Aktualisierung eine Reihe Feuerproben der hohen Stufe für die Umgebung durch. Ziel dieser Übung ist es nicht, den Testfallbestand vollständig abzuschließen und eine formelle Liste von Fehlern zu erstellen, sondern uns eine grobe Schätzung des Arbeitsaufwands für das Upgrade des Codes für die Kompatibilität mit AEM 6.5 LTS zu geben. In Kombination mit dem [AEM Analyzer](/help/sites-deploying/aem-analyzer.md) und den Architekturänderungen, die im vorherigen Abschnitt ermittelt wurden, kann das Projektmanagement-Team eine grobe Schätzung für die Planung des Upgrades erhalten.
 
 ### Erstellen des Runbooks für das Upgrade und das Rollback {#building-the-upgrade-and-rollback-runbook}
 
 Obwohl Adobe den Prozess für die Aktualisierung von AEM-Instanzen dokumentiert hat, muss der Ansatz entsprechend dem Netzwerk-Layout, der Bereitstellungsarchitektur und den Anpassungen jeder Kundin und jedes Kunden optimiert und darauf zugeschnitten werden. Aus diesem Grund empfiehlt Ihnen Adobe, die gesamte bereitgestellte Dokumentation zu lesen und sie zu verwenden, um ein upgradespezifisches Runbook mit den spezifischen Upgrade- und Rollback-Verfahren zu erstellen, die Sie in Ihrer Umgebung anwenden werden.
 
-<!--Alexandru:drafting for now
+<!--
+Alexandru:drafting for now
 
-![runbook-diagram](assets/runbook-diagram.png) -->
+![runbook-diagram](assets/runbook-diagram.png)
+-->
 
-Unter [Upgrade-Verfahren](/help/sites-deploying/upgrade-procedure.md) finden Sie Upgrade- und Rollback-Verfahren sowie Schritt-für-Schritt-Anleitungen für die Durchführung eines [In-Place-Upgrades](/help/sites-deploying/in-place-upgrade.md). Diese Anweisungen sollten überprüft und für Ihre Systemarchitektur, Anpassungen und Ausfallzeitentoleranz berücksichtigt werden, um die entsprechenden Switchover- und Rollback-Vorgänge zu bestimmen, die Sie während des Upgrades ausführen. Änderungen an der Architektur oder Servergröße sollten beim Entwerfen des benutzerdefinierten Runbooks miteinbezogen werden.
+Unter [Upgrade-Verfahren](/help/sites-deploying/upgrade-procedure.md) finden Sie Upgrade- und Rollback-Verfahren sowie Schritt-für-Schritt-Anleitungen für die Durchführung eines [In-Place-Upgrades](/help/sites-deploying/in-place-upgrade.md). Diese Anweisungen sollten überprüft und für Ihre Systemarchitektur, Anpassungen und Ausfallzeitentoleranz berücksichtigt werden, um die entsprechenden Switchover- und Rollback-Vorgänge zu bestimmen, die Sie während des Upgrades ausführen. Änderungen an der Architektur oder Servergröße sollten bei der Erstellung Ihres benutzerdefinierten Runbooks miteinbezogen werden.
 
 ### Entwickeln eines Aktualisierungsplans {#developing-an-upgrade-plan}
 
 Die Ergebnisse der vorherigen Übungen können verwendet werden, um einen Upgrade-Plan zu erstellen, der die erwarteten Zeitpläne für Ihre Test- oder Entwicklungsbemühungen und die tatsächliche Ausführung des Upgrades abdeckt.
 
-<!--Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
-![develop-project-plan](assets/develop-project-plan.png) -->
+![develop-project-plan](assets/develop-project-plan.png)
+-->
 
 Ein umfassender Projektplan sollte folgende Punkte beinhalten:
 
@@ -150,9 +158,11 @@ Ein umfassender Projektplan sollte folgende Punkte beinhalten:
 
 Adobe hat Verfahren für das [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) bereitgestellt, damit diese mit AEM 6.5 LTS kompatibel sind. Während dieser iterative Prozess ausgeführt wird, sollten nach Bedarf Änderungen am Runbook vorgenommen werden.
 
-<!--Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
-![patru_cropped](assets/patru_cropped.png) -->
+![patru_cropped](assets/patru_cropped.png)
+-->
 
 Der Entwicklungs- und Testprozess ist in der Regel iterativ. Werden Probleme identifiziert, die Anpassungen des Upgrade-Prozesses erfordern, stellen Sie sicher, dass Sie diese zum benutzerdefinierten Runbook für das Upgrade hinzufügen. Nach mehreren Iterationen von Tests und Fehlerbehebung sollte die Code-Basis vollständig validiert und für die Bereitstellung in der Staging-Umgebung bereit sein.
 
@@ -160,11 +170,13 @@ Der Entwicklungs- und Testprozess ist in der Regel iterativ. Werden Probleme ide
 
 Nach der Zertifizierung der Code-Basis durch das Qualitätssicherungs-Team Ihres Unternehmens wird eine abschließende Testrunde empfohlen. Diese Testrunde beinhaltet die Validierung Ihres Runbooks in einer Staging-Umgebung, gefolgt von Benutzerakzeptanz-, Leistungs- und Sicherheitstests.
 
-<!--Alexandru: drafting for now
+<!--
+Alexandru: drafting for now
 
-![cinci_cropped](assets/cinci_cropped.png) -->
+![cinci_cropped](assets/cinci_cropped.png)
+-->
 
-Dieser Schritt ist notwendig, da dies die einzige Gelegenheit ist, bei der Sie die Schritte im Runbook in einer produktionsähnlichen Umgebung überprüfen können. Wenn ein Upgrade für die Umgebung durchgeführt wurde, müssen die Endbenutzenden genügend Zeit haben, um sich anzumelden und ihre üblichen täglichen Aktivitäten im System durchzuführen. Durch die Identifizierung und Behebung von Fehlern in diesen Bereichen vor der Live-Schaltung können kostspielige Produktionsausfälle verhindert werden.
+Dieser Schritt ist notwendig, da dies die einzige Gelegenheit ist, bei der Sie die Schritte im Runbook in einer produktionsähnlichen Umgebung überprüfen können. Wenn ein Upgrade für die Umgebung durchgeführt wurde, müssen die Endbenutzenden genügend Zeit haben, um sich anzumelden und ihre üblichen täglichen Aktivitäten im System durchzuführen. Durch die Identifizierung und Behebung von Fehlern in diesen Bereichen vor einer Live-Schaltung können teure Produktionsausfälle verhindert werden.
 
 ### Durchführen des Upgrades {#performing-the-upgrade}
 

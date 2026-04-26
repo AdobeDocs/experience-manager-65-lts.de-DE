@@ -1,5 +1,5 @@
 ---
-title: Erzeugen von FPO (For Placement Only)-Ausgabedarstellungen (also nur für die Platzierung) für Adobe InDesign
+title: Generieren von For Placement Only-Ausgabedarstellungen für Adobe InDesign
 description: Erzeugen Sie FPO-Ausgabedarstellungen neuer und vorhandener Assets mithilfe des Experience Manager Assets-Workflows und ImageMagick.
 contentOwner: Vishabh Gupta
 role: Admin
@@ -7,14 +7,14 @@ feature: Renditions
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7f66bc81-c4f7-4267-93b8-b78097ebbb16
-source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1099'
 ht-degree: 98%
 
 ---
 
-# Erzeugen von FPO (For Placement Only)-Ausgabedarstellungen (also nur für die Platzierung) für Adobe InDesign {#fpo-renditions}
+# Generieren von For Placement Only-Ausgabedarstellungen für Adobe InDesign {#fpo-renditions}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -128,7 +128,7 @@ Um mithilfe der Bildmagick-Verarbeitungsfunktionen FPO-Ausgabedarstellungen von 
 
 Sie können die erzeugten FPO-Ausgabedarstellungen überprüfen, nachdem der Workflow abgeschlossen ist. Klicken Sie in der Experience Manager Assets-Benutzeroberfläche auf das Asset, um eine große Vorschau zu öffnen. Öffnen Sie die linke Leiste und wählen Sie Ausgabedarstellungen aus. Alternativ können Sie den Tastaturbefehl `Alt + 3` verwenden, wenn die Vorschau geöffnet ist.
 
-Klicken Sie auf **[!UICONTROL FPO-Ausgabedarstellung]**, um die Vorschau zu laden. Optional können Sie mit der rechten Maustaste auf die Ausgabedarstellung klicken und sie in Ihrem Dateisystem speichern. 
+Klicken Sie auf **[!UICONTROL FPO-Ausgabedarstellung]**, um die Vorschau zu laden. Optional können Sie mit der rechten Maustaste auf die Ausgabedarstellung klicken und sie in Ihrem Dateisystem speichern.
 
 ![rendition_list](assets/rendition_list.png)
 

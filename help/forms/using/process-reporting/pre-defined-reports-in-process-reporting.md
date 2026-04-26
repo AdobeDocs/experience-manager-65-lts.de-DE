@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3bf65798-a8ce-4864-9d77-952bb8d8da43
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '703'
 ht-degree: 100%
 
 ---
@@ -90,7 +90,7 @@ Der Bericht „Prozessdauer“ zeigt die Anzahl der Instanzen eines Forms-Prozes
 
    * **Aktualisieren**: Der Bericht wird mit den neuesten Daten im Speicher aktualisiert.
    * **Farbe der Legende ändern**: Wählen Sie die Farbe der Berichtslegende aus bzw. ändern Sie diese.
-   * **Exportieren in CSV**: Exportieren Sie die Daten aus dem Bericht und lagen Sie sie in einer durch Komma getrennten Datei (CSV) herunter.
+   * **Exportieren in CSV**: Exportieren Sie die Daten aus dem Bericht und laden Sie sie in einer durch Kommas getrennten Datei (CSV) herunter.
 
 ## Bericht zum Workflow-Volumen {#workflow-volume-report}
 
@@ -117,7 +117,7 @@ Der Bericht „Workflow-Volumen“ zeigt die Anzahl der derzeit ausgeführten un
 
 1. Klicken Sie auf **Los**, um den Bericht auszuführen.
 
-   Der Bericht wird im Bedienfeld **Bericht** rechts neben dem Fenster **Prozess-Reporting** angezeigt.
+   Der Bericht wird im Bedienfeld **Bericht** rechts neben dem Fenster **Process Reporting** angezeigt.
 
    ![workflow_volumen_report](assets/workflow_volume_report.png)
 
@@ -125,4 +125,4 @@ Der Bericht „Workflow-Volumen“ zeigt die Anzahl der derzeit ausgeführten un
 
    * **Aktualisieren**: Der Bericht wird mit den neuesten Daten im Speicher aktualisiert.
    * **Farbe der Legende ändern**: Wählen Sie die Farbe der Berichtslegende aus bzw. ändern Sie diese.
-   * **Exportieren in CSV**: Daten aus dem Bericht exportieren und als kommagetrennte Datei herunterladen
+   * **Exportieren in CSV**: Exportieren Sie die Daten aus dem Bericht und laden Sie sie in einer durch Kommas getrennten Datei (CSV) herunter.

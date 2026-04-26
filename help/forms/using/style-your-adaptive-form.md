@@ -6,10 +6,10 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5b3beaa6-ca0a-454e-85ee-c3653dd423fe
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2058'
-ht-degree: 98%
+source-wordcount: '2189'
+ht-degree: 97%
 
 ---
 
@@ -105,10 +105,10 @@ Im Rahmen dieses Tutorials gestalten Sie Kopf- und Fußzeilen, Text- und numeris
 1. Melden Sie sich bei der AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Designs]**. Die Standard-URL lautet [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Wählen Sie **[!UICONTROL Erstellen]** und dann **[!UICONTROL Design]** aus. Die Seite [!UICONTROL Design erstellen] mit den Feldern zum Erstellen eines Designs wird angezeigt. Die Felder **[!UICONTROL Titel]** und **[!UICONTROL Name]** sind obligatorisch.
 
-   * **Titel:** Geben Sie einen Titel für das Design an. Zum Beispiel: **Globales Design.** Der Titel hilft Ihnen, das Design in der Liste der Designs zu identifizieren.
-   * **Name**: Geben Sie den Namen des Designs an. Beispiel: **Globales-Design.** Im Repository wird ein Knoten mit dem angegebenen Namen erstellt. Wenn Sie mit der Eingabe des Titels beginnen, wird automatisch ein Wert für das Feld „Name“ vorgeschlagen. Sie können den vorgeschlagenen Wert gegebenenfalls ändern. Im Feld „Name“ dürfen nur alphanumerische Zeichen, Bindestriche und Unterstriche eingegeben werden. Alle ungültigen Eingaben werden durch Bindestriche ersetzt.
+   * **Titel:** Geben Sie einen Titel für das Design an. Beispiel: **Globales Design.** Der Titel hilft Ihnen, das Design in der Liste der Designs zu identifizieren.
+   * **Name**: Geben Sie den Namen des Designs an. Beispiel: **global-theme.** Im Repository wird ein Knoten mit dem angegebenen Namen erstellt. Wenn Sie mit der Eingabe des Titels beginnen, wird automatisch ein Wert für das Feld „Name“ vorgeschlagen. Sie können den vorgeschlagenen Wert gegebenenfalls ändern. Im Feld „Name“ dürfen nur alphanumerische Zeichen, Bindestriche und Unterstriche eingegeben werden. Alle ungültigen Eingaben werden durch Bindestriche ersetzt.
 
-1. Wählen Sie **[!UICONTROL Erstellen]** aus. Ein Design wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Wählen Sie **[!UICONTROL Öffnen]** aus, um das neu erstellte Design in einer neuen Registerkarte zu öffnen. Das Design wird im Design-Editor geöffnet. Zum Festlegen des Designs verwendet der Design-Editor ein sofort einsatzbereites adaptives Formular, das mit AEM [!DNL Forms] mitgeliefert wird.
+1. Wählen Sie **[!UICONTROL Erstellen]**. Ein Design wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Wählen Sie **[!UICONTROL Öffnen]** aus, um das neu erstellte Design in einer neuen Registerkarte zu öffnen. Das Design wird im Design-Editor geöffnet. Zum Festlegen des Designs verwendet der Design-Editor ein sofort einsatzbereites adaptives Formular, das mit AEM [!DNL Forms] mitgeliefert wird.
 
    Informationen zur Verwendung der Benutzeroberfläche des Design-Editors finden Sie unter [Informationen zum Design-Editor](/help/forms/using/themes.md#aboutthethemeeditor).
 
@@ -175,7 +175,7 @@ Kopf- und Fußzeile bieten ein konsistentes und unverwechselbares Erscheinungsbi
 
 ### Gestalten der Datenerfassungskomponente und Anwenden eines Hintergrunds auf das adaptive Formular {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
-Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten zu erfassen,  zum Beispiel ein Textfeld und ein numerisches Feld. Sie können für alle Datenerfassungskomponenten einen identischen Stil bereitstellen oder jeder Komponente einen eigenen Stil zuweisen.  In diesem Lernprogramm wird ein identischer Stil auf numerische Felder (Kunden-ID, Postleitzahl) und Textfelder (Kunden-ID, Name, Versandadresse, Status, E-Mail) angewendet. So gestalten Sie die Datenerfassungskomponenten:
+Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten zu erfassen, zum Beispiel ein Textfeld und ein numerisches Feld. Sie können für alle Datenerfassungskomponenten einen identischen Stil bereitstellen oder jeder Komponente einen eigenen Stil zuweisen. In diesem Lernprogramm wird ein identischer Stil auf numerische Felder (Kunden-ID, Postleitzahl) und Textfelder (Kunden-ID, Name, Versandadresse, Status, E-Mail) angewendet. So gestalten Sie die Datenerfassungskomponenten:
 
 1. Wählen Sie das Feld **[!UICONTROL Kunden-ID]** und dann die Option **[!UICONTROL Feld-Widget]**. Legen Sie die folgenden Eigenschaften fest und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -241,7 +241,7 @@ Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten 
 
 Sie können ein benutzerdefiniertes Design verwenden, um allen Schaltflächen des adaptiven Formulars einen identischen Stil zuzuweisen, bzw. einen [Inline-Stil](/help/forms/using/inline-style-adaptive-forms.md), um einen Stil einer bestimmten Schaltfläche zuzuweisen. So gestalten Sie die Schaltflächen:
 
-1. Wählen Sie die Schaltfläche **[!UICONTROL Senden]** und dann **[!UICONTROL Option]** aus. Legen Sie die folgenden Eigenschaften fest und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) aus.
+1. Wählen Sie die Schaltfläche **[!UICONTROL Senden]** und dann **[!UICONTROL Option]** aus. Legen Sie die folgenden Eigenschaften fest und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -289,7 +289,7 @@ Sie können ein benutzerdefiniertes Design verwenden, um allen Schaltflächen de
     </tbody> 
    </table>
 
-1. [Wenden Sie das benutzerdefinierte Design](/help/forms/using/style-your-adaptive-form.md#step-apply-a-theme-to-your-adaptive-form) „Globales Design“ auf Ihr adaptives Formular an. Wenn der Stil das adaptive Formular nicht widerspiegelt, bereinigen Sie den Browser-Cache und versuchen Sie es erneut. 
+1. [Wenden Sie das benutzerdefinierte Design](/help/forms/using/style-your-adaptive-form.md#step-apply-a-theme-to-your-adaptive-form) „Globales Design“ auf Ihr adaptives Formular an. Wenn der Stil das adaptive Formular nicht widerspiegelt, bereinigen Sie den Browser-Cache und versuchen Sie es erneut.
 
    ![style-data-collection-components](assets/style-data-capture-components.png)
 
@@ -297,7 +297,7 @@ Sie können ein benutzerdefiniertes Design verwenden, um allen Schaltflächen de
 
 Einige Stile gelten nur für eine bestimmte Komponente. Diese Komponenten werden im Editor für adaptive Formulare formatiert.
 
-1. Öffnen Sie Ihr adaptives Formular zum Bearbeiten. [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
+1. Öffnen Sie das adaptive Formular zum Bearbeiten. [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
 1. Wählen Sie in der oberen Leiste die Option **[!UICONTROL Stil]**.
 
    ![style-option](assets/style-option.png)
@@ -448,7 +448,8 @@ Sie können verschiedene Schriftarten verwenden, um ein adaptives Formular zu en
 <!--
 >[!NOTE]
 >
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).-->
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
+-->
 
 >[!NOTE]
 >
@@ -469,7 +470,7 @@ Sie können verschiedene Schriftarten verwenden, um ein adaptives Formular zu en
 
    ![Hinzufügen einer Schriftartbibliothek](assets/add-a-font-window.png)
 
-4. Wählen Sie **Klicken** aus, um das Projekt zu erstellen. 
+4. Wählen Sie **Klicken** aus, um das Projekt zu erstellen.
 5. Kopieren Sie den Einbettungs-Code und die URL vom Bildschirm.
    ![Einbettungs-Code und URL](assets/font-add-url.png)
 
@@ -479,7 +480,7 @@ Sie können verschiedene Schriftarten verwenden, um ein adaptives Formular zu en
 9. Gehen Sie zum neu erstellten Ordner `clientlibs` und fügen Sie die Eigenschaften `allowProxy` und `categories` hinzu.
 10. Navigieren Sie zu `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` und erstellen Sie einen neuen CSS-Ordner.
 11. Gehen Sie zum angelegten CSS-Ordner und erstellen Sie eine Datei. Erstellen Sie beispielsweise eine Datei `fonts.css` und fügen Sie den Einbettungs-Code zusammen mit der URL ein.
-    ![Ordnerstruktur](/help/forms/using/assets/fonts-add-in-crxde.png)
+   ![Ordnerstruktur](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. Speichern Sie die Änderungen.
 
 >[!NOTE]
@@ -515,4 +516,5 @@ The fonts added to the **[!UICONTROL Adobe Fonts]** are available for selection 
 1. Create an [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. It is required to use [!DNL Adobe Fonts] (Web Fonts) in an adaptive form. 
 1. In the AEM [!DNL Forms] Server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Now, open a configuration folder. If a configuration is already available, click the **[!UICONTROL Create]** button to create an instance.
 
-   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**. -->
+   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**.
+-->

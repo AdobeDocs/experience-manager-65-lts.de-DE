@@ -11,10 +11,10 @@ feature: Adaptive Forms,Document Services, Reader Extensions
 hide: true
 hidefromtoc: true
 exl-id: d8027b43-10c7-435c-8fb5-059508966d42
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3890'
-ht-degree: 99%
+source-wordcount: '3973'
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 99%
 
 ## Informationen zum Service „Acrobat Reader DC-Erweiterungen“ {#about-the-acrobat-reader-dc-extensions-service}
 
-Der Service „Acrobat Reader DC-Erweiterungen“ ermöglicht Unternehmen die einfache Freigabe interaktiver PDF-Dokumente durch Erweitern der Funktionalität von Adobe Reader. Der Service „Acrobat Reader DC-Erweiterungen“ unterstützt alle PDF-Dokumente bis einschließlich PDF 1.7 vollständig. Er funktioniert mit Adobe Reader 7.0 und höher. Der Service fügt einem PDF-Dokument Verwendungsrechte hinzu und aktiviert dadurch Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument in Adobe Reader geöffnet wird. Externe Benutzer benötigen keine zusätzliche Software oder Plug-Ins für das Verwenden der berechtigungsaktivierten Dokumente.
+Der Service „Acrobat Reader DC-Erweiterungen“ ermöglicht Unternehmen die einfache Freigabe interaktiver PDF-Dokumente durch Erweitern der Funktionalität von Adobe Reader. Der Service „Acrobat Reader DC-Erweiterungen“ unterstützt alle PDF-Dokumente bis einschließlich PDF 1.7 vollständig. Es funktioniert mit Adobe Reader 7.0 und höher. Der Service fügt einem PDF-Dokument Verwendungsrechte hinzu und aktiviert dadurch Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument in Adobe Reader geöffnet wird. Externe Benutzer benötigen keine zusätzliche Software oder Plug-Ins für das Verwenden der berechtigungsaktivierten Dokumente.
 
 Sie können diese Aufgaben mithilfe des Services „Acrobat Reader DC-Erweiterungen“ ausführen:
 
@@ -46,7 +46,7 @@ Mit der Java-Client-API der Acrobat Reader DC-Erweiterungen und dem entsprechend
 
 >[!NOTE]
 >
->Weitere Informationen zum Service „Acrobat Reader DC-Erweiterungen“ finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Service für Acrobat Reader DC-Erweiterungen finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -114,12 +114,12 @@ So wenden Sie mithilfe der API für Acrobat Reader DC-Erweiterungen (Java) Verwe
 
 1. Rufen Sie ein PDF-Dokument ab.
 
-   * Erstellen Sie ein `java.io.FileInputStream`-Objekt, das das PDF-Dokument repräsentiert, indem Sie seinen Konstruktor verwenden und einen Zeichenfolgenwert übergeben, der den Speicherort des PDF-Dokuments angibt.
+   * Erstellen Sie ein `java.io.FileInputStream`-Objekt, welches das PDF-Dokument darstellt, indem es seinen Konstruktor verwendet und einen Zeichenfolgenwert übergibt, der den Speicherort des PDF-Dokuments angibt.
    * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie seinen Konstruktor verwenden und das `java.io.FileInputStream`-Objekt übergeben.
 
 1. Geben Sie die anzuwendenden Verwendungsrechte an.
 
-   * Erstellen Sie ein `UsageRights`-Objekt, das die Verwendungsrechte darstellt, mithilfe seines Konstruktors.
+   * Erstellen Sie ein `UsageRights`-Objekt, das Verwendungsrechte darstellt, indem Sie seinen Konstruktor verwenden.
    * Rufen Sie für jedes anzuwendende Verwendungsrecht eine entsprechende Methode auf, die zum `UsageRights`-Objekt gehört. Um beispielsweise das Verwendungsrecht `enableFormFillIn` hinzuzufügen, rufen Sie die Methode `enableFormFillIn` des `UsageRights`-Objekts auf und übergeben `true`. (Wiederholen Sie diesen Schritt für jedes Verwendungsrecht, das angewendet werden soll.)
 
 1. Wenden Sie Verwendungsrechte auf das PDF-Dokument an.
@@ -142,13 +142,13 @@ So wenden Sie mithilfe der API für Acrobat Reader DC-Erweiterungen (Java) Verwe
 1. Speichern Sie das berechtigungsaktivierte PDF-Dokument.
 
    * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung .pdf ist.
-   * Rufen Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts auf, um den Inhalt des `com.adobe.idp.Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `com.adobe.idp.Document`-Objekt verwenden, das von der Methode `applyUsageRights` zurückgegeben wurde).
+   * Rufen Sie die `copyToFile`-Methode des `com.adobe.idp.Document`-Objekts auf, um die Inhalte des `com.adobe.idp.Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `com.adobe.idp.Document`-Objekt verwenden, das von der `applyUsageRights`-Methode zurückgegeben wurde).
 
 **Siehe auch**
 
 [Anwenden von Verwendungsrechten auf PDF-Dokumente](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
-[Schnellstart (SOAP-Modus)](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[Schnellstart (SOAP-Modus):Applying Verwendungsrechte unter Verwendung der Java-API](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -164,32 +164,32 @@ So wenden Sie mithilfe der API für Acrobat Reader DC-Erweiterungen (Webservice)
 
    >[!NOTE]
    >
-   >Ersetzen Sie `localhost` mit der IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
 
 1. Erstellen Sie ein Client-Objekt für Acrobat Reader DC-Erweiterungen.
 
-   * Erstellen Sie ein `ReaderExtensionsServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
-   * Erstellen Sie ein `ReaderExtensionsServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL zu dem AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`). Stellen Sie sicher, dass Sie `?blob=mtom` angeben.)
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts im `ReaderExtensionsServiceClient.Endpoint.Binding`-Feld. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Erstellen Sie ein `ReaderExtensionsServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `ReaderExtensionsServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL zu dem AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`). Stellen Sie sicher, dass Sie `?blob=mtom` angeben.)
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `ReaderExtensionsServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
+      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Rufen Sie ein PDF-Dokument ab.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines PDF-Dokuments verwendet, auf das Verwendungsrechte angewendet werden.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
+   * Befüllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
 1. Geben Sie die anzuwendenden Verwendungsrechte an.
 
-   * Erstellen Sie ein `UsageRights`-Objekt, das Verwendungsrechte darstellt, indem Sie seinen Konstruktor verwenden.
+   * Erstellen Sie ein `UsageRights`-Objekt, das die Verwendungsrechte darstellt, mithilfe seines Konstruktors.
    * Weisen Sie für jedes anzuwendende Verwendungsrecht den Wert `true` dem entsprechenden Datenelement zu, das zum `UsageRights`-Objekt gehört. Um beispielsweise das `enableFormFillIn`-Verwendungsrecht hinzuzufügen, weisen Sie dem Datenelement `enableFormFillIn` des `UsageRights`-Objekts `true` zu. (Wiederholen Sie diesen Schritt für jedes Verwendungsrecht, das angewendet werden soll.)
 
 1. Wenden Sie Verwendungsrechte auf das PDF-Dokument an.
@@ -210,7 +210,7 @@ So wenden Sie mithilfe der API für Acrobat Reader DC-Erweiterungen (Webservice)
 1. Speichern Sie das berechtigungsaktivierte PDF-Dokument.
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des berechtigungsaktivierten PDF-Dokuments darstellt.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `applyUsageRights` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des `MTOM`-Datenelements des `BLOB`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `applyUsageRights` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des `BLOB`-Datenelements des Objekts `MTOM` abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
@@ -228,7 +228,7 @@ Sie können Verwendungsrechte aus einem berechtigungsaktivierten Dokument entfer
 
 >[!NOTE]
 >
->Weitere Informationen zum Service „Acrobat Reader DC-Erweiterungen“ finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Service für Acrobat Reader DC-Erweiterungen finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-1}
 
@@ -298,7 +298,7 @@ Entfernen der Verwendungsrechte aus einem PDF-Dokument mit aktivierten Verwendun
 1. Wenden Sie Verwendungsrechte auf das PDF-Dokument an.
 
    * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung .pdf ist.
-   * Rufen Sie die `copyToFile`-Methode des `Document`-Objekts auf, um die Inhalte des `Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das von der `removeUsageRights`-Methode zurückgegebene `Document`-Objekt verwenden).
+   * Rufen Sie die `copyToFile`-Methode des `Document`-Objekts auf, um den Inhalt des `Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der `removeUsageRights`-Methode zurückgegeben wurde).
 
 **Siehe auch**
 
@@ -320,28 +320,28 @@ Entfernen der Verwendungsrechte aus einem PDF-Dokument mit aktivierten Rechten a
 
    >[!NOTE]
    >
-   >Ersetzen Sie `localhost` mit der IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
 
 1. Erstellen Sie ein Client-Objekt für Acrobat Reader DC-Erweiterungen.
 
-   * Erstellen Sie ein `ReaderExtensionsServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
-   * Erstellen Sie ein `ReaderExtensionsServiceClient.Endpoint.Address`-Objekt, indem Sie den `System.ServiceModel.EndpointAddress`-Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL zu dem AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`). Stellen Sie sicher, dass Sie `?blob=mtom` angeben.)
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts im `ReaderExtensionsServiceClient.Endpoint.Binding`-Feld. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Erstellen Sie ein `ReaderExtensionsServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `ReaderExtensionsServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL zu dem AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`). Stellen Sie sicher, dass Sie `?blob=mtom` angeben.)
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `ReaderExtensionsServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
+      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Rufen Sie ein PDF-Dokument ab.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Dokuments verwendet, aus dem die Verwendungsrechte entfernt werden sollen.
-   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus enthält, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
-   * Füllen Sie das `BLOB`-Objekt mit den Inhalten des Byte-Arrays, indem Sie diese der `MTOM`-Eigenschaft des Objekts zuweisen.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seine `MTOM`-Eigenschaft mit dem Inhalt des Byte-Arrays belegen.
 
 1. Entfernen der Verwendungsrechte aus dem PDF-Dokument.
 
@@ -350,8 +350,8 @@ Entfernen der Verwendungsrechte aus einem PDF-Dokument mit aktivierten Rechten a
 1. Wenden Sie Verwendungsrechte auf das PDF-Dokument an.
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie dessen Konstruktor aufrufen und eine Zeichenfolge übergeben, die den Speicherort der PDF-Datei darstellt.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des von der Methode `removeUsageRights` zurückgegebenen `BLOB`-Objekts enthält. Füllen Sie das Byte-Array, indem Sie den Wert des `MTOM`-Datenelements des `BLOB`-Objekts abrufen.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie dessen Konstruktor verwenden und das `System.IO.FileStream`-Objekt übergeben.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `removeUsageRights` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des `BLOB`-Datenelements des Objekts `MTOM` abrufen.
+   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
 
 **Siehe auch**
 
@@ -378,7 +378,7 @@ Um Informationen zu den Berechtigungen abzurufen, die zum Anwenden von Verwendun
 1. Rufen Sie ein PDF-Dokument mit aktivierten Benutzerrechten ab.
 1. Rufen Sie Informationen über die Berechtigung ab.
 
-**Projektdateien einschließen**
+**Einschließen von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -455,28 +455,28 @@ Abrufen von Informationen zu Berechtigungen mithilfe der API für Acrobat Reader
 
    >[!NOTE]
    >
-   >Ersetzen Sie `localhost` mit der IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
 
 1. Erstellen Sie ein Client-Objekt für Acrobat Reader DC-Erweiterungen.
 
    * Erstellen Sie ein `ReaderExtensionsServiceClient`-Objekt mithilfe seines Standardkonstruktors.
    * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `ReaderExtensionsServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL zu dem AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`). Stellen Sie sicher, dass Sie `?blob=mtom` angeben.)
-   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts im `ReaderExtensionsServiceClient.Endpoint.Binding`-Feld. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt, indem Sie den Wert des `ReaderExtensionsServiceClient.Endpoint.Binding`-Felds abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
    * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
+      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Rufen Sie ein PDF-Dokument ab.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines PDF-Dokuments mit aktivierten Berechtigungen verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments mit aktivierten Berechtigungen und den Ausführungsmodus zum Öffnen der Datei darstellt.
-   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
-   * Füllen Sie das `BLOB`-Objekt mit den Inhalten des Byte-Arrays, indem Sie diese der `MTOM`-Eigenschaft des Objekts zuweisen.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seine `MTOM`-Eigenschaft mit dem Inhalt des Byte-Arrays belegen.
 
 1. Entfernen der Verwendungsrechte aus dem PDF-Dokument.
 

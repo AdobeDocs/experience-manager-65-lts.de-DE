@@ -5,9 +5,9 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 338ea82e-c248-4118-9d42-e268d6396e65
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2116'
 ht-degree: 100%
 
 ---
@@ -117,7 +117,7 @@ Mit AEM können Sie Folgendes konfigurieren:
 * Anfragedatenprotokollierung; eine spezielle Protokollierungskonfiguration für Anfrageinformationen
 * bestimmte Einstellungen für einzelne Dienste, beispielsweise eine einzelne Protokolldatei und das Format für die Protokollmeldungen
 
-Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md). 
+Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md).
 
 ### Ausführungsmodi {#run-modes}
 
@@ -182,13 +182,13 @@ Weitere Informationen zur Konfiguration finden Sie unter [Dispatcher](https://ex
 
 Mit der Veröffentlichung der AEM-Dokumentendienste und AEM-Dokumentsicherheit hat AEM jetzt die Möglichkeit, mithilfe der LiveCycle-Dokumentendienste ein XFA-Formular zu rendern, ein Dokument in das PDF-Format zu konvertieren und ein Dokument durch eine Richtlinie zu schützen.
 
-### Abladung von Vorgängen und Topologieverwaltung {#job-offloading-and-topology-administration}
+### Abladung von Aufträgen und Topologieverwaltung {#job-offloading-and-topology-administration}
 
 [Mit der Abladung werden Verarbeitungsaufgaben auf die Experience Manager-Instanzen in einer Topologie verteilt. ](/help/sites-deploying/offloading.md) Mit der Abladung können Sie bestimmte Experience Manager-Instanzen zur Durchführung bestimmter Verarbeitungsarten verwenden. Durch eine spezielle Verarbeitung können Sie die Nutzung der verfügbaren Server-Ressourcen maximieren.
 
 Topologien sind lose verknüpfte Experience Manager-Cluster, die an der Abladung beteiligt sind. Ein Cluster besteht aus einer oder mehreren Experience Manager-Server-Instanzen (eine einzelne Instanz gilt als Cluster).
 
-Weitere Informationen zum Anzeigen oder Ändern der Topologiemitgliedschaft finden Sie unter [Verwalten von Topologien](/help/sites-deploying/offloading.md#administering-topologies).
+Weitere Informationen zum Anzeigen oder Ändern der Topologiezugehörigkeit finden Sie unter [Verwalten von Topologien](/help/sites-deploying/offloading.md#administering-topologies).
 
 ### Konfigurieren der Willkommenskonsole {#configuring-the-welcome-console}
 
@@ -202,9 +202,11 @@ Der [Leistungsaspekt](/help/sites-deploying/configuring-performance.md) ist ents
 
 Weitere Informationen finden Sie unter [Konfigurieren zur Leistungsoptimierung](/help/sites-deploying/configuring-performance.md#configuring-for-performance).
 
-<!--delete ### Scaling {#scaling}
+<!--
+delete ### Scaling {#scaling}
 
-Scaling a CQ installation correctly depends greatly on the details of your particular use case. A detailed discussion of solution patterns for various situations can be found in [Scaling CQ](/help/sites-deploying/scaling.md).-->
+Scaling a CQ installation correctly depends greatly on the details of your particular use case. A detailed discussion of solution patterns for various situations can be found in [Scaling CQ](/help/sites-deploying/scaling.md).
+-->
 
 ### Freigegebener Datenspeicher {#shared-data-store}
 
@@ -250,7 +252,7 @@ Gehen Sie wie folgt vor, um solche Ausnahmen zu vermeiden:
 
    Dieser Wert sollte bei der Entwicklung und bei Tests aus folgenden Gründen überwacht werden:
 
-   * Zur Bestätigung, dass Dateien ordnungsgemäß geschlossen werden 
+   * Zur Bestätigung, dass Dateien ordnungsgemäß geschlossen werden
    * zur Bestimmung des erforderlichen Maximalwerts (unter verschiedenen Umständen)
 
 1. Legen Sie das zulässige Maximum fest.
@@ -295,7 +297,7 @@ Weitere Informationen finden Sie unter [Konfigurieren von E-Mail-Benachrichtigun
 
 Page-Impressions werden in der Spalte **Impressions** der SiteAdmin-Konsole der klassischen Benutzeroberfläche angezeigt. Um die Erfassung von Page-Impressions zu aktivieren, konfigurieren Sie Folgendes:
 
-* In der Autoreninstanz:
+* In der Veröffentlichungsinstanz:
 
    * [Day CQ WCM-Seitenstatistiken](/help/sites-deploying/osgi-configuration-settings.md)
 

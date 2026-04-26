@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 46b3ac33-9c02-4c53-91d5-44ba49ab5c36
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '909'
 ht-degree: 100%
 
 ---
@@ -101,7 +101,7 @@ Wenn Sie OpenOffice, Microsoft® Word oder Microsoft® PowerPoint unter Windows 
 > Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
 1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „PDF Generator“ > „Benutzerkonten“.
-1. Klicken Sie auf „Hinzufügen“ und geben Sie den Namen und das Kennwort der Benutzerin oder des Benutzers ein, die bzw. der über Administratorrechte auf dem Formular-Server verfügt.  Wenn Sie Benutzerinnen oder Benutzer für OpenOffice konfigurieren, schließen Sie die anfänglichen OpenOffice-Aktivierungsdialogfelder.
+1. Klicken Sie auf „Hinzufügen“ und geben Sie den Namen und das Kennwort der Benutzerin oder des Benutzers ein, die bzw. der über Administratorrechte auf dem Formular-Server verfügt. Wenn Sie Benutzerinnen oder Benutzer für OpenOffice konfigurieren, schließen Sie die anfänglichen OpenOffice-Aktivierungsdialogfelder.
 
    >[!NOTE]
    >
@@ -119,4 +119,4 @@ Wenn Sie OpenOffice, Microsoft® Word oder Microsoft® PowerPoint unter Windows 
 ### Ändern des Kennworts für ein Konto {#change-the-password-for-an-account}
 
 1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „PDF Generator“ > „Benutzerkonten“.
-1. Klicken Sie auf den Benutzernamen, geben Sie das neue Kennwort ein und bestätigen Sie es.  Dieses Kennwort muss mit dem Systemkennwort der Person übereinstimmen.
+1. Klicken Sie auf den Benutzernamen, geben Sie das neue Kennwort ein und bestätigen Sie es. Dieses Kennwort muss mit dem Systemkennwort der Person übereinstimmen.

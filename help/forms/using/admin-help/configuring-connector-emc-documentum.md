@@ -11,10 +11,10 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: a9eae40f-531f-4354-ade0-853e84dd88d9
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 100%
+source-wordcount: '1037'
+ht-degree: 98%
 
 ---
 
@@ -48,13 +48,13 @@ Sie müssen die Server-Informationen des Verbindungs-Brokers konfigurieren. Dies
 1. Geben Sie im Bereich mit den Documentum-Konfigurationsinformationen den Hostnamen bzw. die IP-Adresse und die Portzahl des Verbindungsbrokers ein. Die Portzahl muss eine positive Ganzzahl sein (z. B. 1489).
 1. Klicken Sie auf Speichern.
 
-### Konfigurieren von Prinzipalanmeldeinformationen   {#configure-principal-credentials}
+### Konfigurieren von Prinzipalanmeldeinformationen {#configure-principal-credentials}
 
 Beim Konfigurieren der Prinzipalanmeldeinformationen hängt der anzugebende Repository-Name davon ab, ob Sie bei der Anmeldung einen expliziten Repository-Namen angegeben haben.
 
 Wenn Sie einen falschen Benutzernamen oder ein falsches Kennwort eingeben, erhalten Sie in Abhängigkeit davon, ob der Dienst aktuell ausgeführt wird, folgende Ergebnisse:
 
-* Wenn der Repository Anbieter-Dienst für EMC Documentum und der EMC Documentum Content-Repository Connector-Dienst beim Speichern der Dienstkonfigurationsinformationen beendet sind, tritt kein Fehler auf. Wenn Sie den Dienst das nächste Mal starten, wird jedoch eine Ausnahme ausgelöst und der Dienst startet nicht.
+* Wenn der Repository Anbieter-Dienst für EMC Documentum und der EMC Documentum Content-Repository Connector-Dienst beim Speichern der Dienstkonfigurationsinformationen gestoppt sind, tritt kein Fehler auf. Wenn Sie den Dienst das nächste Mal starten, wird jedoch eine Ausnahme ausgelöst und der Dienst startet nicht.
 * Wenn der Repository Anbieter-Dienst für EMC Documentum oder der EMC Documentum Content-Repository Connector-Dienst beim Speichern der Dienstkonfigurationsinformationen gestartet sind, versucht der Dienst sofort, die Anmeldedaten zu überprüfen. In diesem Fall tritt ein Fehler auf und die Konfigurationsinformationen werden nicht gespeichert.
 
 1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Connector für EMC Documentum“ > „Konfigurationseinstellungen“.
@@ -74,7 +74,7 @@ Sie können konfigurieren, welcher Repository Service Provider mit Documentum ve
 
 >[!NOTE]
 >
->Um einen Repository Service Provider auszuwählen, der nicht aufgeführt ist, konfigurieren Sie „RepositoryService“ in „Anwendungen und Dienste“ > „Service-Management“. <!-- Fix broken link (See Managing Services) -->
+>Um einen Repository Service Provider auszuwählen, der nicht aufgeführt ist, konfigurieren Sie „RepositoryService“ unter „Anwendungen und Dienste“ > „Service-Management“. <!-- Fix broken link (See Managing Services) -->.
 
 1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „Connector für EMC Documentum“ > „Konfigurationseinstellungen“.
 1. Wählen Sie im Bereich „Repository Service Provider-Informationen“ einen anderen Repository Service Provider aus.

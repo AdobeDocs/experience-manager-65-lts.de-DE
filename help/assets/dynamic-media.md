@@ -9,9 +9,9 @@ role: User, Admin
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 195c097b-787a-44a2-aa4f-a9f8ccf93e3d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '429'
 ht-degree: 100%
 
 ---
@@ -22,9 +22,11 @@ Mit [Dynamic Media](https://business.adobe.com/de/products/experience-manager/as
 
 Die Software ermöglicht interaktive Anzeigeerlebnisse wie Zoom, Drehen um 360 Grad und Videos. Sie bindet die Workflows der Adobe Experience Manager-Lösung für Digital Asset Management (Assets) zum Vereinfachen und Optimieren der Verwaltung digitaler Kampagnen auf einzigartige Weise ein.
 
-<!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
+<!--
+>ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
->A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
+>A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
+-->
 
 ## Einsatzmöglichkeiten der Software {#what-you-can-do-with-dynamic-media}
 
@@ -39,8 +41,8 @@ Funktionen, die nur für Dynamic Media vorgesehen sind:
 * [Sets für gemischte Medien](mixed-media-sets.md)
 * [Panoramabilder](panoramic-images.md)
 
-* [Rotationssets](spin-sets.md)
-* [Video ](video.md)
+* [Rotations-Sets](spin-sets.md)
+* [Video](video.md)
 * [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
 * [Verwalten von Assets](managing-assets.md)
 * [Erstellen eines benutzerdefinierten Popup-Fensters mithilfe einer Schnellansicht](custom-pop-ups.md)
@@ -56,7 +58,7 @@ Siehe auch [Einrichten von Dynamic Media](administering-dynamic-media.md).
 Anhand der folgenden Merkmale können Sie erkennen, ob die Software aktiviert ist:
 
 * Dynamische Ausgabedarstellungen sind beim Herunterladen oder Anzeigen von Assets in der Vorschau verfügbar.
-* Bildsets, Rotationssets und Sets für gemischte Medien sind verfügbar.
+* Bild-Sets, Rotations-Sets und Sets für gemischte Medien sind verfügbar.
 * PTIFF-Ausgabedarstellungen werden erstellt.
 
 Wenn Sie ein Bild-Asset auswählen, erscheint die Ansicht des Assets bei [aktivierter](config-dynamic.md#enabling-dynamic-media) Software anders. Sie nutzt die On-Demand-HTML5-Viewer.
@@ -67,7 +69,7 @@ Dynamische Ausgabedarstellungen wie Bild- und Viewer-Vorgaben (unter **[!UICONTR
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
-### Bildsets, Rotationssets und Sets für gemischte Medien {#image-sets-spins-sets-mixed-media-sets}
+### Bild-Sets, Rotationssets und Sets für gemischte Medien {#image-sets-spins-sets-mixed-media-sets}
 
 Bild-, Rotations- und gemischte Mediensets sind verfügbar, wenn die Software aktiviert ist.
 

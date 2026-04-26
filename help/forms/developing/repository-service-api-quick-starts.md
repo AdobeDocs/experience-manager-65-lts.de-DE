@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 63bf92c4-c70f-47d1-9ddf-9a32de4d49bf
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '648'
 ht-degree: 100%
 
 ---
@@ -58,7 +58,7 @@ Der Pfad zu einer Ressource im AEM Forms-Repository lautet:
 
 >[!NOTE]
 >
->Sie können das AEM Forms-Repository mithilfe eines Webbrowsers durchsuchen. Um das Repository zu durchsuchen, geben Sie die folgende URL in einen Webbrowser ein: `https://[server name]:[server port]/repository`. Mithilfe eines Webbrowsers können Sie die Ergebnisse der Kurzanleitung überprüfen. Wenn Sie beispielsweise Inhalte zum AEM Forms-Repository hinzufügen, können Sie den Inhalt in einem Webbrowser anzeigen.
+>Sie können das AEM Forms-Repository mithilfe eines Webbrowsers durchsuchen. Um das Repository zu durchsuchen, geben Sie die URL `https://[server name]:[server port]/repository` in einen Webbrowser ein. Mithilfe eines Webbrowsers können Sie die Ergebnisse der Kurzanleitung überprüfen. Wenn Sie beispielsweise Inhalte zum AEM Forms-Repository hinzufügen, können Sie den Inhalt in einem Webbrowser anzeigen.
 
 >[!NOTE]
 >

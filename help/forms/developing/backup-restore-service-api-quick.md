@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: de5663b1-2b4c-4f8e-8547-cb892a4d7d56
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 100%
+source-wordcount: '261'
+ht-degree: 92%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 100%
 
 Für die API des Sicherungs- und Wiederherstellungs-Service ist Java™ API Quick Start (SOAP) verfügbar.
 
-[Quick Start: Aufrufen des Sicherungsmodus mit Java](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
+[Schnellstart: Aufrufen des Sicherungsmodus über die Java™-API (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
 
-[Quick Start: Verlassen des Sicherungsmodus mit Java](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
+[Schnellstart: Verlassen des Sicherungsmodus über die Java™-API (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 

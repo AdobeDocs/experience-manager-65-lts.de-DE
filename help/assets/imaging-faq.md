@@ -9,10 +9,10 @@ feature: Asset Management,Renditions
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3306'
-ht-degree: 96%
+source-wordcount: '3487'
+ht-degree: 97%
 
 ---
 
@@ -59,12 +59,14 @@ Im Vergleich mit PNG können Sie eine Reduzierung der Größe um 84 % mit WebP 
 
 Siehe auch [Bildoptimierung mit Bildformaten der nächsten Generation (WebP und AVIF)](https://blog.developer.adobe.com/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 
-<!-- HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
+<!--
+HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
 
 * Large variety of devices with different form factors and high-resolution displays.
 * Constrained network bandwidth.
 
-In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
+In terms of images, the goal is to serve the best quality images as efficiently as possible.
+-->
 
 ## Vorteile der intelligenten Bildbearbeitung {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -108,7 +110,7 @@ Derzeit stammt die Display-Pixeldichte aus den CDN-Kopfzeilenwerten von Akamai.
 >* Sie können `dpr=on,dprValue` auch dann verwenden, wenn die DPR-Einstellung auf Unternehmensebene deaktiviert ist.
 >* Aufgrund der DPR-Optimierung wird die MaxPix-Breite immer erkannt, wenn das resultierende Bild größer ist als die Dynamic Media-Einstellung für MaxPix, indem das Seitenverhältnis des Bilds beibehalten wird.
 
-| Angeforderte Bildgröße | Wert für Gerätepixelverhältnis (Device Pixel Ratio, DPR) | Bereitgestellte Bildgröße |
+| Angefragte Bildgröße | Wert für Gerätepixelverhältnis (Device Pixel Ratio, DPR) | Bereitgestellte Bildgröße |
 |---|---|---|
 | 816 x 500 | 1 | 816 x 500 |
 | 816 x 500 | 2 | 1632 x 1000 |
@@ -203,7 +205,8 @@ No. Smart Imaging works seamlessly with your existing image URLs and image prese
 
 In case you must configure a new custom domain to use Smart Imaging, the URLs must be updated to reflect this custom domain.
 
-To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging) -->
+To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart Imaging?](#am-i-eligible-to-use-smart-imaging)
+-->
 
 <!-- OLD As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
@@ -337,8 +340,7 @@ Aus diesem Header geht Folgendes hervor:
 >
 >Wenn `X-Adobe-Smart-Imaging` den Wert -1 hat und WebP weiterhin bereitgestellt wird, ist die intelligente Bildbearbeitung aktiv. Die Größenvorteile wurden jedoch aufgrund von veraltetem Cache nicht berechnet. Sie können `cache=update` (nur einmal) in der URL des Bildes verwenden, um dieses Problem zu beheben.
 >Beispiel für die Verwendung des Modifikators:
->`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->Um den gesamten Cache ungültig zu machen, müssen Sie einen Support-Fall erstellen.
+>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`>Um den gesamten Cache ungültig zu machen, müssen Sie einen Support-Fall erstellen.
 
 +++
 

@@ -10,16 +10,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 60307c55-50b2-4f23-bc46-58732fee19fc
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '706'
 ht-degree: 100%
 
 ---
 
 # Registrieren als Benutzende {#registering-as-a-user}
 
-Sie können richtliniengeschützte Dokumente verwenden, die Sie von einer Person erhalten, die die Dokumentensicherheit verwendet, auch wenn Sie nicht zum Unternehmen dieser Person gehören.  Für die Verwendung richtliniengeschützter Dokumente ist die Registrierung bei Document Security erforderlich. Wenn Sie nie zuvor zur Registrierung eingeladen wurden, leitet die Dokumentensicherheit den Registrierungsprozess ein, wenn folgende Ereignisse eintreten:
+Sie können richtliniengeschützte Dokumente verwenden, die Sie von einer Person erhalten, die die Dokumentensicherheit verwendet, auch wenn Sie nicht zum Unternehmen dieser Person gehören. Für die Verwendung richtliniengeschützter Dokumente ist die Registrierung bei Document Security erforderlich. Wenn Sie nie zuvor zur Registrierung eingeladen wurden, leitet die Dokumentensicherheit den Registrierungsprozess ein, wenn folgende Ereignisse eintreten:
 
 * Eine Person, die die Dokumentensicherheit verwendet und Ihnen ein richtliniengeschütztes Dokument senden möchte, fügt Sie zu einer Richtlinie hinzu.
 * Die für Dokumentensicherheit zuständigen Admins erstellen für Sie ein Konto.
@@ -38,7 +38,7 @@ Sie können richtliniengeschützte Dokumente verwenden, die Sie von einer Person
 
 ## Registrieren als eingeladene Benutzende {#register-as-an-invited-user}
 
-Wenn Sie eingeladen wurden und per E-Mail eine Registrierungsnachricht von der Dokumentensicherheit erhalten, können Sie sich registrieren, indem Sie mithilfe der in der Nachricht enthaltenen URL die Seite für die Online-Registrierung öffnen.  Nach der Registrierung erhalten Sie eine weitere Benachrichtigung zur Aktivierung Ihres Kontos.
+Wenn Sie eingeladen wurden und per E-Mail eine Registrierungsnachricht von der Dokumentensicherheit erhalten, können Sie sich registrieren, indem Sie mithilfe der in der Nachricht enthaltenen URL die Seite für die Online-Registrierung öffnen. Nach der Registrierung erhalten Sie eine weitere Benachrichtigung zur Aktivierung Ihres Kontos.
 
 1. Öffnen Sie die Registrierungs-E-Mail von der Dokumentensicherheit. Die in der Nachricht enthaltene URL ist ein Link zur Seite für die Registrierung externer Benutzender bei der Dokumentensicherheit.
 1. Klicken Sie auf die URL oder kopieren Sie sie und fügen Sie sie in Ihren Browser ein. Die Seite für die Registrierung externer Benutzender wird angezeigt.
@@ -47,7 +47,7 @@ Wenn Sie eingeladen wurden und per E-Mail eine Registrierungsnachricht von der D
 
 ## Aktivieren Ihres eingeladenen Benutzerkontos {#activate-your-invited-user-account}
 
-Nach der Registrierung erhalten Sie eine Aktivierungs-E-Mail von Document Security. Aktivieren Sie Ihr Konto unter Verwendung der in der Nachricht angegebenen URL.  Anschließend können Sie sich bei der Dokumentensicherheit anmelden, um richtliniengeschützte Dokumente zu verwenden, auf die Sie Zugriff haben.  Abhängig von den Funktionen, die die Admins für externe Benutzende aktiviert haben, verfügen Sie möglicherweise über die Berechtigung, Richtlinien zu erstellen, Richtlinien auf Dokumente anzuwenden und/oder andere externe Benutzende zu Ihren Richtlinien hinzuzufügen.
+Nach der Registrierung erhalten Sie eine Aktivierungs-E-Mail von Document Security. Aktivieren Sie Ihr Konto unter Verwendung der in der Nachricht angegebenen URL. Anschließend können Sie sich bei der Dokumentensicherheit anmelden, um richtliniengeschützte Dokumente zu verwenden, auf die Sie Zugriff haben. Abhängig von den Funktionen, die die Admins für externe Benutzende aktiviert haben, verfügen Sie möglicherweise über die Berechtigung, Richtlinien zu erstellen, Richtlinien auf Dokumente anzuwenden und/oder andere externe Benutzende zu Ihren Richtlinien hinzuzufügen.
 
 Ihr Konto bleibt aktiv, bis es von den Admins deaktiviert oder gelöscht wird.
 

@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a4ff69d2-a429-49b9-ba48-9dd56ccdf23e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 100%
@@ -31,11 +31,11 @@ Es gibt zwei Arten von Diensten, die Teil von AEM Formularen sind:
 
 ## Starten oder Stoppen von Diensten, denen AEM Forms-Module zugeordnet sind {#start-or-stop-the-services-associated-with-aem-forms-modules}
 
-AEM Forms-Module (z. B. Forms, Rights Management, Output) arbeiten als Dienste.  Manchmal müssen die Dienste für diese AEM Forms-Module gestoppt und neu gestartet werden.  Beispielsweise müssen Sie einen AEM Forms-Dienst stoppen und wieder neu starten, nachdem Sie Einstellungen des Dienstes geändert haben.
+AEM Forms-Module (z. B. Forms, Rights Management, Output) arbeiten als Dienste. Manchmal müssen die Dienste für diese AEM Forms-Module gestoppt und neu gestartet werden. Beispielsweise müssen Sie einen AEM Forms-Dienst stoppen und wieder neu starten, nachdem Sie Einstellungen des Dienstes geändert haben.
 
 >[!NOTE]
 >
-> Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+> Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 1. Klicken Sie in der Administration-Console auf **Services** > **Programme und Services** > **Service-Verwaltung**.
 1. Wählen Sie auf der Seite „Dienstverwaltung“ das Kontrollkästchen neben dem zu stoppenden oder startenden Dienst aus und klicken Sie auf „Beenden“ bzw. „Starten“.

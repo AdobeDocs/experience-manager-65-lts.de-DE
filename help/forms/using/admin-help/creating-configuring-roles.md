@@ -11,9 +11,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: c68c602f-fa93-4e3d-9a8c-b61c3ab53000
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2495'
+source-wordcount: '2503'
 ht-degree: 100%
 
 ---
@@ -111,7 +111,7 @@ Je nach installierten AEM Forms-Komponenten können die folgenden zusätzlichen 
 
    >[!NOTE]
    >
-   >Wenn Sie MySQL verwenden, dürfen Sie keine Rollennamen erstellen, die sich nur durch erweiterte Zeichen unterscheiden.  Zum Beispiel führt der Versuch, die Rolle „abcde“ zu erstellen, wenn die Rolle „âbcdè“ bereits vorhanden ist, zu einem Fehler.
+   >Wenn Sie MySQL verwenden, dürfen Sie keine Rollennamen erstellen, die sich nur durch erweiterte Zeichen unterscheiden. Zum Beispiel führt der Versuch, die Rolle „abcde“ zu erstellen, wenn die Rolle „âbcdè“ bereits vorhanden ist, zu einem Fehler.
 
 1. Klicken Sie auf „Berechtigungen suchen“ und wählen Sie die gewünschten Berechtigungen für die Rolle aus.
 1. Klicken Sie auf „OK“ und dann auf „Weiter“.
@@ -130,7 +130,7 @@ Je nach installierten AEM Forms-Komponenten können die folgenden zusätzlichen 
 
 1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Benutzerverwaltung“ > „Rollenverwaltung“ und dann auf „Rollenname“.
 
-   Standardmäßig werden auf der Seite „Rollenverwaltung“ alle in der Benutzerverwaltungsdatenbank vorhandenen Rollen angezeigt.  Ist diese Rollenliste sehr umfangreich, können Sie den Suchbereich im oberen Teil der Seite verwenden, um nach einem bestimmten Rollennamen zu suchen.
+   Standardmäßig werden auf der Seite „Rollenverwaltung“ alle in der Benutzerverwaltungsdatenbank vorhandenen Rollen angezeigt. Ist diese Rollenliste sehr umfangreich, können Sie den Suchbereich im oberen Teil der Seite verwenden, um nach einem bestimmten Rollennamen zu suchen.
 
 1. Klicken Sie auf die Rolle, die Sie bearbeiten möchten, bearbeiten Sie die allgemeinen Einstellungen und klicken Sie auf „Speichern“.
 1. Um die Rollenberechtigungen zu bearbeiten, klicken Sie auf die Registerkarte „Berechtigungen“ und führen die folgenden Aufgaben aus:
@@ -140,7 +140,7 @@ Je nach installierten AEM Forms-Komponenten können die folgenden zusätzlichen 
 
 1. Zum Verwalten der Rollenzuweisung klicken Sie auf die Registerkarte „Rollenbenutzer“ und führen die folgenden Aufgaben aus:
 
-   * Um die Rolle neuen Benutzenden und Gruppen zuzuweisen, klicken Sie auf „Benutzer/Gruppen suchen“ und geben die Suchinformationen ein.  Aktivieren Sie die Kontrollkästchen für die Benutzenden bzw. Gruppen, die dieser Rolle zugewiesen werden sollen, klicken Sie auf „OK“ und anschließend auf „Speichern“.
+   * Um die Rolle neuen Benutzenden und Gruppen zuzuweisen, klicken Sie auf „Benutzer/Gruppen suchen“ und geben die Suchinformationen ein. Aktivieren Sie die Kontrollkästchen für die Benutzenden bzw. Gruppen, die dieser Rolle zugewiesen werden sollen, klicken Sie auf „OK“ und anschließend auf „Speichern“.
    * Um die Rolle zu entfernen, aktivieren Sie das Kontrollkästchen für die betreffenden Benutzenden oder Gruppen, klicken auf „Zuweisung aufheben“ und anschließend auf „Speichern“.
 
 ## Löschen einer Rolle {#delete-a-role}
@@ -149,14 +149,14 @@ Sie können alle von Ihnen erstellten Rollen löschen, jedoch nicht die AEM Form
 
 1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Benutzerverwaltung“ > „Rollenverwaltung“ und dann auf „Rollenname“.
 
-   Standardmäßig werden auf der Seite „Rollenverwaltung“ alle in der Benutzerverwaltungsdatenbank vorhandenen Rollen angezeigt.  Ist diese Rollenliste sehr umfangreich, können Sie den Suchbereich im oberen Teil der Seite verwenden, um nach einem bestimmten Rollennamen zu suchen.
+   Standardmäßig werden auf der Seite „Rollenverwaltung“ alle in der Benutzerverwaltungsdatenbank vorhandenen Rollen angezeigt. Ist diese Rollenliste sehr umfangreich, können Sie den Suchbereich im oberen Teil der Seite verwenden, um nach einem bestimmten Rollennamen zu suchen.
 
 1. Aktivieren Sie das Kontrollkästchen der zu löschenden Rolle und klicken Sie erst auf „Löschen“ und anschließend auf „OK“.
 
 ## Zuweisen einer Rolle an Benutzende und Gruppen {#assign-a-role-to-users-and-groups}
 
 1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Benutzerverwaltung“ > „Benutzer und Gruppen“.
-1. Geben Sie Informationen zum Eingrenzen der Suche ein und klicken Sie auf „Suchen“.  Die Suchergebnisse werden unten auf der Seite aufgelistet. Sie können die Liste sortieren, indem Sie auf eine der Spaltenüberschriften klicken.
+1. Geben Sie Informationen zum Eingrenzen der Suche ein und klicken Sie auf „Suchen“. Die Suchergebnisse werden unten auf der Seite aufgelistet. Sie können die Liste sortieren, indem Sie auf eine der Spaltenüberschriften klicken.
 1. Aktivieren Sie die Kontrollkästchen der Benutzenden und Gruppen, die Sie mit dieser Rolle verknüpfen möchten, und klicken Sie auf „Rolle zuweisen“.
 1. Wählen Sie die Rolle aus, die Sie der Person bzw. Gruppe zuweisen möchten, und klicken Sie auf „OK“.
 
@@ -166,17 +166,17 @@ Die Rollenzuweisung ist auch über die Seite „Rollenverwaltung“ möglich.
 
 1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Benutzerverwaltung“ > „Rollenverwaltung“ und dann auf „Rollenname“.
 
-   Standardmäßig werden auf der Seite „Rollenverwaltung“ alle in der Benutzerverwaltungsdatenbank vorhandenen Rollen angezeigt.  Ist diese Rollenliste sehr umfangreich, können Sie den Suchbereich im oberen Teil der Seite verwenden, um nach einem bestimmten Rollennamen zu suchen.
+   Standardmäßig werden auf der Seite „Rollenverwaltung“ alle in der Benutzerverwaltungsdatenbank vorhandenen Rollen angezeigt. Ist diese Rollenliste sehr umfangreich, können Sie den Suchbereich im oberen Teil der Seite verwenden, um nach einem bestimmten Rollennamen zu suchen.
 
-1. Klicken Sie auf der Seite „Rollendetails“ auf die Registerkarte „Rollenbenutzer“.  Daraufhin wird eine Liste mit Benutzenden und Gruppen angezeigt, die direkt mit der Rolle verknüpft sind.
+1. Klicken Sie auf der Seite „Rollendetails“ auf die Registerkarte „Rollenbenutzer“. Daraufhin wird eine Liste mit Benutzenden und Gruppen angezeigt, die direkt mit der Rolle verknüpft sind.
 
 ## Ändern von Rollenberechtigungen {#change-role-permissions}
 
-Sie können die Berechtigungen für alle Rollen ändern, die Sie erstellt haben.  Sie können die Berechtigungen für die AEM Forms-Standardrollen, die in dem Produkt enthalten sind, nicht ändern.
+Sie können die Berechtigungen für alle Rollen ändern, die Sie erstellt haben. Sie können die Berechtigungen für die AEM Forms-Standardrollen, die in dem Produkt enthalten sind, nicht ändern.
 
 1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Benutzerverwaltung“ > „Rollenverwaltung“ und dann auf „Rollenname“.
 
-   Standardmäßig werden auf der Seite „Rollenverwaltung“ alle in der Benutzerverwaltungsdatenbank vorhandenen Rollen angezeigt.  Ist diese Rollenliste sehr umfangreich, können Sie den Suchbereich im oberen Teil der Seite verwenden, um nach einem bestimmten Rollennamen zu suchen.
+   Standardmäßig werden auf der Seite „Rollenverwaltung“ alle in der Benutzerverwaltungsdatenbank vorhandenen Rollen angezeigt. Ist diese Rollenliste sehr umfangreich, können Sie den Suchbereich im oberen Teil der Seite verwenden, um nach einem bestimmten Rollennamen zu suchen.
 
 1. Wählen Sie die Rolle aus, für die Sie Berechtigungen anzeigen möchten, und klicken Sie auf die Registerkarte „Berechtigungen“.
 1. Um diese Berechtigungen zu ändern, klicken Sie auf „Berechtigungen suchen“, aktivieren die Kontrollkästchen für die zur Rolle hinzuzufügenden Berechtigungen, klicken auf „OK“ und anschließend auf „Speichern“.
@@ -359,7 +359,7 @@ Auf der Seite „Rollenverwaltung“ können Sie Benutzende und Gruppen aus eine
 
 1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Benutzerverwaltung“ > „Rollenverwaltung“ und dann auf „Rollenname“.
 
-   Standardmäßig werden auf der Seite „Rollenverwaltung“ alle in der Benutzerverwaltungsdatenbank vorhandenen Rollen angezeigt.  Ist diese Rollenliste sehr umfangreich, können Sie den Suchbereich im oberen Teil der Seite verwenden, um nach einem bestimmten Rollennamen zu suchen.
+   Standardmäßig werden auf der Seite „Rollenverwaltung“ alle in der Benutzerverwaltungsdatenbank vorhandenen Rollen angezeigt. Ist diese Rollenliste sehr umfangreich, können Sie den Suchbereich im oberen Teil der Seite verwenden, um nach einem bestimmten Rollennamen zu suchen.
 
 1. Klicken Sie in der Rollenliste auf den Namen der zu aktualisierenden Rolle und klicken Sie dann auf die Registerkarte „Rollenbenutzer“. Eine Liste der mit der Rolle verknüpften Benutzenden und Gruppen wird angezeigt.
 1. Aktivieren Sie die Kontrollkästchen der Benutzenden und Gruppen, die aus der Rolle entfernt werden sollen, und klicken Sie auf „Zuweisung aufheben“.

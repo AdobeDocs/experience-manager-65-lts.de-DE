@@ -1,5 +1,5 @@
 ---
-title: 'Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor '
+title: Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor
 description: Erfahren Sie, wie Sie mit dem Musterdetektor die Komplexität Ihres Upgrades bewerten können.
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
@@ -7,14 +7,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c499432d-6aa4-481f-821d-bd2f9b7a911d
-source-git-commit: 90f1b2ca07bec5a3be6c312a5f048abaa088df16
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '532'
 ht-degree: 95%
 
 ---
 
-# Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor 
+# Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor
 
 ## Überblick {#overview}
 
@@ -27,7 +27,7 @@ Dies kann als Bewertungsgrundlage für den erforderlichen Entwicklungsaufwand be
 
 ## Einrichtung {#how-to-set-up}
 
-Der Musterdetektor wird als separates [Paket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/de/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) veröffentlicht, das mit allen Quell-AEM-Versionen von 6.1 bis 6.5 funktioniert, die auf AEM 6.5 aktualisiert werden sollen. Er kann mit dem [Package Manager](/help/sites-administering/package-manager.md) installiert werden.
+Der Musterdetektor wird als separates [Paket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/de/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) veröffentlicht, das mit allen Quell-AEM-Versionen von 6.1 bis 6.5 funktioniert, die auf AEM 6.5 aktualisiert werden sollen. Er kann mit dem [Paket-Manager](/help/sites-administering/package-manager.md) installiert werden.
 
 ## Verwendung {#how-to-use}
 
@@ -40,16 +40,16 @@ Der Musterdetektor wird als separates [Paket](https://experience.adobe.com/#/dow
 >
 >Gleichzeitig wird die Ausführung in **Staging-Umgebungen** empfohlen, die hinsichtlich Benutzerapplikationen, Inhalt und Konfigurationen den Produktionsumgebungen möglichst stark ähneln.
 
-Sie haben verschiedene Möglichkeiten, das Ergebnis des Musterdetektors zu prüfen: 
+Sie haben verschiedene Möglichkeiten, das Ergebnis des Musterdetektors zu prüfen:
 
-* **Über die Felix Inventory-Konsole:** 
+* **Über die Felix Inventory-Konsole:**
 
 1. Navigieren Sie zur AEM-Web-Konsole unter *https://serveraddress:serverport/system/console/configMgr*
 1. Wählen Sie **Status - Musterdetektor** aus, wie im Bild unten dargestellt:
 
    ![screen-shot-2018-2-5pattern-detektor](assets/screenshot-2018-2-5pattern-detector.png)
 
-* **Über eine auf reaktivem Text basierende oder die reguläre JSON-Schnittstelle** 
+* **Über eine auf reaktivem Text basierende oder die reguläre JSON-Schnittstelle**
 * **Über eine reaktive JSON-Zeilen-Schnittstelle**, die in jeder Zeile ein separates JSON-Dokument erstellt.
 
 Beide Methoden werden im Folgenden beschrieben:
@@ -60,7 +60,7 @@ Die reaktive Schnittstelle ermöglicht die Verarbeitung des Verstoßberichts, so
 
 Die Ausgabe ist derzeit unter 2 URLs verfügbar:
 
-1. Nur-Text-Schnittstelle 
+1. Nur-Text-Schnittstelle
 1. JSON-Schnittstelle
 
 ## Handhabung der Nur-Text-Schnittstelle {#handling-the-plain-text-interface}
@@ -111,7 +111,7 @@ Mit der Ausgabe:
     "code": "ECU",
     "type": "extraneous.content.usage",
     "detective": "ContentAccessDetector",
-    "moreInfo": "https://www.adobe.com/go/aem6_ECU_de"
+    "moreInfo": "https://www.adobe.com/go/aem6_ECU"
   },
   "item": {
     "id": "a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f",

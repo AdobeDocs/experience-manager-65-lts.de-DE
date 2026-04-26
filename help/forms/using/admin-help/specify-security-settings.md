@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ccda0b61-f22a-4ae3-95e6-74d545d6d890
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 100%
@@ -24,7 +24,7 @@ ht-degree: 100%
 > 
 > Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
-Mit der Ausgabe können Sie steuern, ob externe Entitäten in XML-Eingaben aufgelöst werden.  Standardmäßig werden sie aufgelöst, jedoch können Sie dieses Verhalten ändern, um die Sicherheit Ihres AEM Forms-Systems zu erhöhen.
+Mit der Ausgabe können Sie steuern, ob externe Entitäten in XML-Eingaben aufgelöst werden. Standardmäßig werden sie aufgelöst, jedoch können Sie dieses Verhalten ändern, um die Sicherheit Ihres AEM Forms-Systems zu erhöhen.
 
 **Verhindern der Verarbeitung von XML-Datendateien mit Verweisen auf externe Entitäten**
 

@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f1a68461-c66a-4ea4-902b-644c620ea3f6
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 100%
@@ -25,11 +25,11 @@ Sie können auf der Seite „Erweiterte Systemattribute konfigurieren“ bestimm
 1. Klicken Sie in der Administration-Console auf **[!UICONTROL „Einstellungen“ > „User Management“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“]**.
 1. (Optional) Ändern Sie folgende Sitzungsattribute:
 
-   **Sitzungszeitlimit-Grenzwert (Minuten):** Der Zeitraum in Minuten, nach dem ein Benutzer automatisch vom System abgemeldet wird. Standardmäßig beträgt das Zeitlimit von AEM Forms-Komponenten wie Workbench, unabhängig von Aktivität bzw. Inaktivität, zwei Stunden. Der Benutzer muss sich dann erneut anmelden. Gültig sind Werte von `1` bis `1440`. Der Standardwert ist `120` (2 Stunden). Diese Einstellung aktualisiert den Eintragsschlüssel `SAML/Producer/assertionValidityInMinutes` in der Konfigurationsdatei.
+   **Sitzungs-Timeout-Grenzwert (Minuten):** Der Zeitraum in Minuten, nach dem ein Benutzer automatisch vom System abgemeldet wird. Standardmäßig beträgt der Timeout von AEM Forms-Komponenten wie Workbench, unabhängig von Aktivität bzw. Inaktivität, zwei Stunden. Der Benutzer muss sich dann erneut anmelden. Gültig sind Werte von `1` bis `1440`. Der Standardwert ist `120` (2 Stunden). Diese Einstellung aktualisiert den Eintragsschlüssel `SAML/Producer/assertionValidityInMinutes` in der Konfigurationsdatei.
 
    >[!NOTE]
    >
-   >Setzen Sie den Sitzungszeitlimit-Grenzwert nicht auf unter 10 Minuten, da dies zu Fehlern im System führen kann. Der empfohlene Wert beträgt 10 – 120 (Minuten).
+   >Setzen Sie den Sitzungs-Timeout-Grenzwert nicht auf unter 10 Minuten, da dies zu Fehlern im System führen kann. Der empfohlene Wert beträgt 10 – 120 (Minuten).
 
    **Assertionsschwellenwert (Sekunden):** Dieser Wert gibt einen Pufferzeitraum an, um den Verzögerungen aufgrund von Systemzeitdifferenzen zwischen AEM Forms-Anwendungsservern in einem Cluster versetzt werden sollen. AEM Forms datiert die Anmeldezeit eines Benutzers um den in dieser Eigenschaft angegebenen Zeitraum (in Sekunden) zurück. Gültig sind Werte von `0` bis `3600`. Der Standardwert ist `60`. Diese Einstellung aktualisiert den Eintragsschlüssel `SAML/Producer/assertionThresholdInSeconds` in der Konfigurationsdatei.
 

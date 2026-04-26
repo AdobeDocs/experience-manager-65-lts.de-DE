@@ -6,10 +6,10 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 5f6106a9-64a6-45aa-a31d-2075d1e911bf
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3394'
-ht-degree: 99%
+source-wordcount: '3508'
+ht-degree: 98%
 
 ---
 
@@ -61,8 +61,8 @@ Der **Name** wird verwendet, um die benutzerdefinierte Funktion im Regeleditor e
 
 >[!NOTE]
 >`[functionName]` ist der Name der Funktion. Leerzeichen sind nicht zulässig.
->&#x200B;>`<Function Name>` ist der Anzeigename der Funktion im Regeleditor von adaptiven Formularen.
->&#x200B;>Wenn der Anzeigename der Funktion mit dem Namen der Funktion selbst übereinstimmt, können Sie in der Syntax `[functionName]` weglassen.
+>`<Function Name>` ist der Anzeigename der Funktion im Regeleditor von adaptiven Formularen.
+>Wenn der Anzeigename der Funktion mit dem Namen der Funktion selbst übereinstimmt, können Sie in der Syntax `[functionName]` weglassen.
 
 #### Parameter
 
@@ -347,7 +347,7 @@ Bevor Sie mit dem Hinzufügen einer benutzerdefinierten Funktion zu Ihrem adapti
 ## Erstellen einer benutzerdefinierten Funktion {#create-custom-function}
 
 Die Schritte zum Erstellen benutzerdefinierter Funktionen sind die Folgenden:
-1. [Erstellen einer Client-seitigen Bibliothek mit dem AEM-Projektarchetyp und Hinzufügen einer benutzerdefinierten Funktion](#create-client-library-archetype)
+1. [Erstellen Sie eine Client-seitige Bibliothek mit dem AEM-Projektarchetyp und fügen Sie eine benutzerdefinierte Funktion hinzu](#create-client-library-archetype)
 ODER
    [Erstellen benutzerdefinierter Funktionen über CRXDE](#create-add-custom-function)
 1. [Hinzufügen einer Client-Bibliothek zu einem adaptiven Formular](#add-client-library)
@@ -573,7 +573,7 @@ Sehen wir uns das Formular in der Vorschau an, um zu sehen, wie die benutzerdefi
 
 >[!NOTE]
 >
-> Sie können auf den folgenden Ordner [Benutzerdefinierte Funktionen](/help/forms/using/assets/customfunctions.zip) verweisen. Laden Sie diesen Ordner herunter und installieren Sie ihn mithilfe des [Paket-Managers](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager) in Ihrer AEM-Instanz.
+> Sie können auf den folgenden Ordner [Benutzerdefinierte Funktionen](/help/forms/using/assets/customfunctions.zip) verweisen. Laden Sie diesen Ordner herunter und installieren Sie ihn mithilfe des [Paket-Managers](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager) in Ihrer AEM-Instanz.
 
 ### Unterstützung für asynchrone Funktionen in benutzerdefinierten Funktionen {#support-of-async-functions}
 
@@ -634,7 +634,8 @@ Feldobjekte beziehen sich auf die einzelnen Komponenten oder Elemente in einem F
 >
 > Der `param {scope} globals` muss der letzte Parameter sein und wird nicht im Regeleditor eines adaptiven Formulars angezeigt.
 
-<!-- Let us look at the following code snippet:
+<!--
+Let us look at the following code snippet:
 
 ```JavaScript
    
@@ -654,11 +655,12 @@ Feldobjekte beziehen sich auf die einzelnen Komponenten oder Elemente in einem F
     }
 ```
 
-In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form.
+-->
 
 Im Folgenden erfahren wir, wie benutzerdefinierte Funktionen für verschiedene Anwendungsfälle Feld- und global-Objekte mithilfe eines `Contact Us`-Formulars verwenden.
 
-![Kontaktformular &#x200B;](/help/forms/using/assets/contact-us-form.png)
+![Kontaktformular ](/help/forms/using/assets/contact-us-form.png)
 
 #### **Anwendungsfall**: Anzeigen eines Bedienfelds mithilfe der `SetProperty`-Regel
 
@@ -696,11 +698,11 @@ Erstellen wir eine Regel für die Schaltfläche `Next`, die das Bedienfeld `pers
 
 In der folgenden Abbildung sehen Sie, wie das Bedienfeld `personaldetails` beim Klicken auf die Schaltfläche `Next` validiert wird. Falls alle Felder innerhalb der `personaldetails` validiert werden, wird das Bedienfeld `feedback` angezeigt.
 
-![Festlegen der Vorschau für das Eigenschaftsformular &#x200B;](/help/forms/using/assets/set-property-form-preview.png)
+![Festlegen der Vorschau für das Eigenschaftsformular ](/help/forms/using/assets/set-property-form-preview.png)
 
 Wenn Fehler in den Feldern des Bedienfelds `personaldetails` vorhanden sind, werden sie beim Klicken auf die Schaltfläche `Next` auf Feldebene angezeigt und das Bedienfeld `feedback` bleibt unsichtbar.
 
-![Festlegen der Vorschau für das Eigenschaftsformular &#x200B;](/help/forms/using/assets/set-property-panel.png)
+![Festlegen der Vorschau für das Eigenschaftsformular ](/help/forms/using/assets/set-property-panel.png)
 
 #### **Anwendungsfall**: Das Feld validieren.
 
@@ -817,8 +819,8 @@ Wenn jemand mehr als 15 Zeichen in das Textfeld „Kommentare“ eingibt, wird d
 
 #### **Anwendungsfall**: Übermittlung geänderter Daten an den Server
 
-Diese Codezeile
-`globals.functions.submitForm(globals.functions.exportData(), false);` wird verwendet, um die Formulardaten nach der Bearbeitung zu senden.
+Die folgende Codezeile:
+`globals.functions.submitForm(globals.functions.exportData(), false);` wird verwendet, um die Formulardaten nach der Bearbeitung zu übermitteln.
 * Das erste Argument sind die zu übermittelnden Daten.
 * Das zweite Argument gibt an, ob das Formular vor der Übermittlung validiert werden soll. Es ist `optional` und standardmäßig auf `true` festgelegt.
 * Das dritte Argument ist der `contentType` der Übermittlung, der ebenfalls optional ist und den Standardwert `multipart/form-data` hat. Die anderen Werte können `application/json` und `application/x-www-form-urlencoded` sein.

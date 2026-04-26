@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 56603735-959e-4460-b642-bba63fa20c02
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 99%
+source-wordcount: '739'
+ht-degree: 88%
 
 ---
 
@@ -53,7 +53,7 @@ Wenn Sie ein Zertifikat testen, lädt die Benutzerverwaltung die Zertifikatüber
 1. Klicken Sie auf „Neue Zertifikatzuordnung“ und wählen Sie in der Liste „Für Herausgeber“ den in der Trust Store-Verwaltung konfigurierten Zertifikatalias aus.
 1. Weisen Sie eines der Zertifikatattribute einem Benutzerattribut zu. Sie können beispielsweise den allgemeinen Namen des Zertifikats der Anmelde-ID der Person zuordnen.
 
-   Wenn sich der Inhalt des Attributs im Zertifikat von dem Inhalt des Benutzerattributs in der Benutzerverwaltungsdatenbank unterscheidet, können Sie einen regulären Java-Ausdruck (Java Regular Expression, Regex) verwenden, um die beiden Attribute abzustimmen. Wenn beispielsweise die allgemeinen Namen der Zertifikate *Alex Pink (Authentifizierung)* und *Alex Pink (Signieren)* lauten und der allgemeine Name in der Benutzerverwaltungsdatenbank *Alex Pink* ist, sollten Sie den erforderlichen Teil des Zertifikatattributs (in diesem Beispiel *Alex Pink*) über einen regulären Ausdruck extrahieren. Der von Ihnen angegebene reguläre Ausdruck muss der Java-Regex-Spezifikation entsprechen.
+   Wenn sich der Inhalt des Attributs im Zertifikat von dem Inhalt des Benutzerattributs in der Benutzerverwaltungsdatenbank unterscheidet, können Sie einen regulären Java-Ausdruck (Java Regular Expression, Regex) verwenden, um die beiden Attribute abzustimmen. Wenn beispielsweise die allgemeinen Namen der Zertifikate Namen wie *Alex Pink (Authentifizierung)* und *Alex Pink (Signierung)* sind und der allgemeine Name in der User Management-Datenbank *Alex Pink* lautet, verwenden Sie einen Regex, um den erforderlichen Teil des Zertifikatattributs zu extrahieren (in diesem Beispiel *Alex Pink*.) Der von Ihnen angegebene reguläre Ausdruck muss der Java-Regex-Spezifikation entsprechen.
 
    Sie können den Ausdruck transformieren, indem Sie im Feld „Benutzerdefinierte Reihenfolge“ die Reihenfolge der Gruppen angeben. Die benutzerdefinierte Reihenfolge wird mit der Methode `java.util.regex.Matcher.replaceAll()` verwendet. Das Verhalten entspricht dem Verhalten der Methode, und die Eingabezeichenfolge (die benutzerdefinierte Reihenfolge) muss entsprechend angegeben werden.
 
@@ -62,7 +62,7 @@ Wenn Sie ein Zertifikat testen, lädt die Benutzerverwaltung die Zertifikatüber
    Sie können folgende Zeichen in dem regulären Ausdruck verwenden:
 
    * . (alle Zeichen)
-   * &ast; (0 oder mehr Vorkommen)
+   * &amp;ast; (0 oder mehr Vorkommen)
    * () (die Gruppe in Klammern angeben)
    * \ (wird verwendet, um aus einem Regex-Zeichen ein reguläres Zeichen zu machen)
    * $n (wird verwendet, um auf die n-te Gruppe zu verweisen)
@@ -71,21 +71,21 @@ Wenn Sie ein Zertifikat testen, lädt die Benutzerverwaltung die Zertifikatüber
 
    * So extrahieren Sie „Alex Pink“ aus „Alex Pink (Authentifizierung)“:
 
-     **Regex:** (.&ast;) \(Authentifizierung\)
+     **Regex:** (.&amp;ast;) \(Authentifizierung\)
 
    * So extrahieren Sie „Alex Pink“ aus „Alex (Authentifizierung) Pink“:
 
-     **Regex:** (.&ast;)\(Authentifizierung\) (.&ast;)
+     **Regex:** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
 
    * So extrahieren Sie „Pink Alex“ aus „Alex (Authentifizierung) Pink“:
 
-     **Regex:** (.&ast;)\(Authentifizierung\) (.&ast;)
+     **Regex:** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
 
      Benutzerdefinierte Reihenfolge: $2 $1 (zweite Gruppe zurückgeben, verkettet mit der ersten Gruppe, erfasst durch Leerzeichen)
 
    * So extrahieren Sie &quot;apink@sampleorg.com&quot; aus „smtp:apink@sampleorg.com“
 
-     **Regex:** smtp:(.&ast;)
+     **Regex:** smtp:(.&amp;ast;)
 
    Weitere Informationen zur Verwendung regulärer Ausdrücke finden Sie im [Java-Tutorial zu regulären Ausdrücken](https://java.sun.com/docs/books/tutorial/essential/regex/).
 

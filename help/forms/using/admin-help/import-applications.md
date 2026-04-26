@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: e0984513-f70c-4409-885b-a2eb50757a7d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '855'
 ht-degree: 100%
 
 ---
@@ -62,7 +62,7 @@ Auf der Registerkarte „Anwendungen“ können Sie Anwendungen, die in Workbenc
 
    Die Eigenschaft **syncState** gibt den Status der Synchronisierung der Daten zwischen dem AEM-Formular-Server und dem CRX-Repository an. Sobald der Importvorgang beginnt, wird dieser Status auf 0 (null) gesetzt. Dieser Status zeigt an, dass die Daten derzeit nicht synchronisiert sind. Wenn die Daten synchronisiert werden, wird der Status auf 1 gesetzt.
 
-## Bereitstellen einer Anwendung  {#deploy-an-application}
+## Bereitstellen einer Anwendung {#deploy-an-application}
 
 Sie können Anwendungen bereitstellen, die Sie importiert haben oder die Workbench-Benutzende aus Workbench importiert haben.
 

@@ -12,9 +12,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 8ad8cf67-3e90-4790-a063-099134b377a3
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1848'
 ht-degree: 100%
 
 ---
@@ -45,7 +45,7 @@ Die folgenden Einschränkungen gelten, wenn ein Formularentwurf anhand eines Wer
 
 >[!NOTE]
 >
->Weitere Informationen zum Forms-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen über den Forms-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -57,13 +57,13 @@ Um ein Formular anhand eines Werts wiederzugeben, führen Sie die folgenden Schr
 1. Rendern Sie ein Formular anhand eines Werts.
 1. Schreiben Sie den Formular-Datenstrom in den Client-Webbrowser.
 
-**Projektdateien einschließen**
+**Einschließen von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
 **Erstellen eines Objekts für die Forms Client API**
 
-Bevor Sie Daten programmgesteuert in eine PDF-Formular-Client-API importieren können, müssen Sie einen Client für den Data Integration-Service erstellen. Beim Erstellen eines Service-Clients definieren Sie Verbindungseinstellungen, die zum Aufrufen eines Services erforderlich sind.
+Bevor Sie Daten programmgesteuert in eine PDF-Formular-Client-API importieren können, müssen Sie einen Client für den Data Integration-Service erstellen. Beim Erstellen eines Service-Clients bestimmen Sie Verbindungseinstellungen, die zum Aufrufen eines Services erforderlich sind.
 
 **Verweisen auf den Formularentwurf**
 
@@ -107,7 +107,7 @@ So rendern Sie ein Formular anhand eines Werts mithilfe der Forms-API (Java):
 
 1. Projektdateien einschließen
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-forms-client.jar“ in den Klassenpfad Ihres Java-Projekts ein. 
+   Fügen Sie Client-JAR-Dateien wie „adobe-forms-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen eines Forms Client-API-Objekts
 
@@ -127,7 +127,7 @@ So rendern Sie ein Formular anhand eines Werts mithilfe der Forms-API (Java):
    * Ein `com.adobe.idp.Document`-Objekt, das den Formularentwurf enthält. Normalerweise ist dieser Parameterwert für Daten reserviert, die mit dem Formular zusammengeführt werden.
    * Ein `PDFFormRenderSpec`-Objekt, das Laufzeitoptionen speichert. Dies ist ein optionaler Parameter, für den Sie `null` angeben können, wenn Sie keine Laufzeitoptionen angeben möchten.
    * Ein `URLSpec`-Objekt, das URI-Werte enthält, die für den Forms-Service erforderlich sind.
-   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, für den Sie `null` angeben können, wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
 
    Die Methode `renderPDFForm` gibt ein `FormsResult`-Objekt zurück, das einen Formulardaten-Stream enthält, der in den Client-Webbrowser geschrieben werden kann.
 
@@ -163,7 +163,7 @@ So rendern Sie ein Formular anhand des Werts mithilfe der Forms-API (Webservice)
 
 1. Erstellen eines Forms Client-API-Objekts
 
-   Erstellen Sie ein `FormsService`-Objekt und legen Sie Authentifizierungswerte fest.
+   Erstellen Sie ein `FormsService` Objekt und legen Sie Authentifizierungswerte fest.
 
 1. Referenzieren des Formularentwurfs
 
@@ -183,7 +183,7 @@ So rendern Sie ein Formular anhand des Werts mithilfe der Forms-API (Webservice)
    * Ein `URLSpec`-Objekt, das URI-Werte enthält, die für den Forms-Service erforderlich sind.
    * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
    * Ein leeres `com.adobe.idp.services.holders.BLOBHolder`-Objekt, das von der Methode gefüllt wird. Damit wird das wiedergegebene PDF-Formular gespeichert.
-   * Ein leeres `javax.xml.rpc.holders.LongHolder`-Objekt, das von der Methode aufgefüllt wird. (Dieses Argument speichert die Anzahl der Seiten im Formular.)
+   * Ein leeres `javax.xml.rpc.holders.LongHolder`-Objekt, das von der Methode gefüllt wird. (Dieses Argument speichert die Anzahl der Seiten im Formular.)
    * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das von der Methode aufgefüllt wird. (Dieses Argument speichert den Gebietsschemawert.)
    * Ein leeres `com.adobe.idp.services.holders.FormsResultHolder`-Objekt, das die Ergebnisse dieses Vorgangs enthält.
 

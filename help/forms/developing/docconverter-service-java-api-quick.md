@@ -1,6 +1,6 @@
 ---
-title: Schnellstartanleitung zur DocConverter-Service-Java™-API (SOAP)
-description: Erfahren Sie, wie Sie ein Dokument in ein PDF/A-Dokument konvertieren und die Konformität mithilfe des Java™-API-Schnellstarts (SOAP) verwalten können.
+title: Java&trade; API-Schnellstart (SOAP) für den DocConverter-Service
+description: Erfahren Sie, wie Sie ein Dokument in ein PDF/A-Dokument konvertieren und die Konformität mithilfe der Java&trade;-API-Schnellstart (SOAP) verwalten.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations, AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: b42303c4-e328-4c57-8ff5-9f214b6c3acd
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 100%
+source-wordcount: '272'
+ht-degree: 89%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 100%
 
 Der Java™-API-Schnellstart (SOAP) ist für den DocConverter-Service verfügbar.
 
-[Schnellstart (SOAP-Modus): Bestimmen der PDF/A-Kompatibilität mithilfe der Java-API](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
+[Schnellstart (SOAP-Modus): Bestimmen der PDF/A-Kompatibilität mithilfe der Java™-API](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Konvertieren eines Dokuments in ein PDF/A-Dokument mithilfe der Java-API](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
+[Schnellstart (SOAP-Modus): Konvertieren eines Dokuments in ein PDF/A-Dokument mithilfe der Java™-API](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 

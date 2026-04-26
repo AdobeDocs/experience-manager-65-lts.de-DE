@@ -9,15 +9,17 @@ role: User,Admin
 mini-toc-levels: 4
 solution: Experience Manager, Experience Manager Assets
 exl-id: a058b4ba-8351-4c5f-87be-566620fb8876
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '684'
 ht-degree: 100%
 
 ---
 
-<!-- hide: yes
-hidefromtoc: yes -->
+<!--
+hide: true
+hidefromtoc: yes
+-->
 
 # Informationen zum Konfigurieren eines Firmen-Alias-Kontos in Dynamic Media {#about-dm-alias-acct}
 

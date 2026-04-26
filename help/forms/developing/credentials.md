@@ -11,9 +11,9 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: b3a0eb20-5b85-45a3-a416-a16a9f44acc5
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1100'
 ht-degree: 100%
 
 ---
@@ -59,7 +59,7 @@ Um eine Berechtigung in AEM Forms zu importieren, führen Sie die folgenden Schr
 1. Verweisen Sie auf die Berechtigung.
 1. Führen Sie den Importvorgang durch.
 
-**Schließen Sie Projektdateien ein**
+**Einschließen von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -73,7 +73,7 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 
 Weitere Informationen über den Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Erstellen eines Berechtigungs-Service-Clients**
+**Erstellen eines Service-Clients für die Berechtigung**
 
 Bevor Sie eine Berechtigung programmgesteuert in AEM Forms importieren können, müssen Sie einen Client für den Berechtigungs-Service erstellen. Weitere Informationen finden Sie unter [Festlegen von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
@@ -163,7 +163,7 @@ Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn S
 
 Weitere Informationen über den Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Erstellen eines Service-Clients für die Berechtigung**
+**Erstellen eines Berechtigungs-Service-Clients**
 
 Bevor Sie eine Berechtigung programmgesteuert löschen können, müssen Sie einen Client des Data Integration-Service erstellen. Beim Erstellen eines Service-Clients bestimmen Sie Verbindungseinstellungen, die zum Aufrufen eines Services erforderlich sind. Weitere Informationen finden Sie unter [Einrichten von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 

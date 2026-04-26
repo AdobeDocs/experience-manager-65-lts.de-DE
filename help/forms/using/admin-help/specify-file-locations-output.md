@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: aff0274a-bbb7-4062-afaf-7f9c31f57cb1
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 100%
@@ -34,7 +34,7 @@ Sie können die Speicherorte angeben, an denen die Ausgabe nach bestimmten Typen
 
 **Inhaltsstamm-URI**: Der URI oder der absolute Speicherort des Repositorys, aus dem Formulare abgerufen werden. Dieser Wert wird mit dem Parameter sForm kombiniert, der über die API angegeben wird, um den absoluten Pfad zu dem Formular zu erzeugen, das abgerufen wird. Dieser Wert kann auf einen Ordner oder einen Web-Speicherort verweisen, auf den über HTTP zugegriffen werden kann.
 
- Der Standardwert ist eine leere Zeichenfolge.
+Der Standardwert ist eine leere Zeichenfolge.
 
 **XCI-Konfigurationsdatei**: Der relative oder absolute Speicherort der XCI-Konfigurationsdatei, die der Ausgabe-Service für die Wiedergabe verwendet. Bei einem relativen Wert wird vorausgesetzt, dass sich die XCI-Datei in der von AEM Forms bereitstellbaren EAR-Datei befindet.
 

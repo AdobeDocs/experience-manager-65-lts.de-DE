@@ -1,6 +1,6 @@
 ---
 title: Importieren und Verwalten von Archiven
-description: Erfahren Sie, wie Sie Archive importieren und verwalten.  Mit „Archive“ können LCAs, die in Workbench erstellt wurden, importiert und verwaltet werden.  Sie können ein Archiv importieren, konfigurieren, verwenden und löschen.
+description: Erfahren Sie, wie Sie Archive importieren und verwalten. Mit „Archive“ können LCAs, die in Workbench erstellt wurden, importiert und verwaltet werden. Sie können ein Archiv importieren, konfigurieren, verwenden und löschen.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a42d1094-293e-4f1a-a8f7-376dc8d34807
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1457'
 ht-degree: 100%
 
 ---

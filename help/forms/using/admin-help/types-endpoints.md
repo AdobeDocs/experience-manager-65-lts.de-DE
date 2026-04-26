@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5ac3350d-8819-4b33-b1a1-9e686b6abd9e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 100%
@@ -36,7 +36,7 @@ Die folgenden Typen von Endpunkten können zu Diensten hinzugefügt werden. Nich
 
 **Remoting**: Ermöglicht es einem Programm, das mit Flex erstellt wurde, den Service mithilfe von AEM Forms Remoting (für AEM Forms nicht mehr unterstützt) aufzurufen. Ein Remoting-Endpunkt wird automatisch für jeden aktivierten Dienst erstellt. Ein Flex-Ziel mit demselben Namen wie der Endpunkt wird erstellt, und Flex-Kundinnen und -Kunden können Remote-Objekte erstellen, die auf dieses Ziel verweisen, um Vorgänge für den entsprechenden Service aufzurufen.
 
-**SOAP**: Ermöglicht es einem Client-Programm, das mit den AEM Forms-Programmierungs-APIs entwickelt wurde, den Service mithilfe des SOAP-Modus aufzurufen. Ein SOAP-Endpunkt wird automatisch für jeden aktivierten Dienst erstellt. 
+**SOAP**: Ermöglicht es einem Client-Programm, das mit den AEM Forms-Programmierungs-APIs entwickelt wurde, den Service mithilfe des SOAP-Modus aufzurufen. Ein SOAP-Endpunkt wird automatisch für jeden aktivierten Dienst erstellt.
 
 **Hinweis**: *Die Sicherheit kann aus Sicherheitsdokumenten entfernt werden, wenn der SOAP-Endpunkt verwendet wird, während die Dokumente in Adobe Acrobat oder Adobe Reader angezeigt werden. Detailinformationen zum Deaktivieren von SOAP-Endpunkten für LCRM-Dokumente finden Sie unter [SOAP-Endpunkte für Document Security-Dokumente deaktivieren](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*.
 
@@ -44,6 +44,6 @@ Die folgenden Typen von Endpunkten können zu Diensten hinzugefügt werden. Nich
 
 **WSDL**: Ermöglicht es einem Client-Programm, das mit den AEM Forms-Programmierungs-APIs entwickelt wurde, den Service mithilfe der Web Service Definition Language (WSDL) aufzurufen. Die Seite „Core-Konfigurationen“ enthält eine Option zum Aktivieren der WSDL-Generierung für alle AEM Forms-Dienste. (Siehe Allgemeine AEM Forms-Einstellungen konfigurieren.)
 
-**REST**: In Workbench erstellte Prozesse können so konfiguriert werden, dass sie über Representational State Transfer-Anforderungen (REST) aufgerufen werden können. REST-Anfragen werden von HTML-Seiten gesendet. Das heißt, Sie können mithilfe einer REST-Anfrage einen AEM Forms-Prozess direkt von einer Web-Seite aufrufen. 
+**REST**: In Workbench erstellte Prozesse können so konfiguriert werden, dass sie über Representational State Transfer-Anforderungen (REST) aufgerufen werden können. REST-Anfragen werden von HTML-Seiten gesendet. Das heißt, Sie können mithilfe einer REST-Anfrage einen AEM Forms-Prozess direkt von einer Web-Seite aufrufen.
 
 Die Endpunkte „E-Mail“, „Task Manager“ und „Überwachter Ordner“ stellen nur einen bestimmten Vorgang des Dienstes zur Verfügung. Das Hinzufügen dieser Endpunkte erfordert einen zweiten Konfigurationsschritt, um eine den Dienst aufrufende Methode auszuwählen, Konfigurationsparameter festzulegen und Zuordnungen von Ein- und Ausgabeparametern anzugeben.

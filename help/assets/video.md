@@ -5,10 +5,10 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '10480'
-ht-degree: 99%
+source-wordcount: '10812'
+ht-degree: 96%
 
 ---
 
@@ -57,15 +57,15 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
 
    * Video-Assets organisieren und durchsuchen
 
-      * [Digitale Assets organisieren](/help/assets/organize-assets.md)
-Weitere Informationen zu [Best Practices für die Organisation Ihrer digitalen Assets zur Verwendung von Verarbeitungsprofilen](organize-assets.md)
+      * [Organisieren digitaler Assets](/help/assets/organize-assets.md)
+Erfahren Sie mehr über [Best Practices für die Organisation Ihrer digitalen Assets zur Verwendung von Verarbeitungsprofilen](organize-assets.md)
 
       * [Nach Video-Assets suchen](search-assets.md#custompredicates) oder [Assets suchen](/help/assets/search-assets.md)
 
    * Video-Assets vorab anzeigen und veröffentlichen
 
       * Zeigen Sie das Quellvideo und die kodierten Ausgabedarstellungen des Videos zusammen mit den zugehörigen Miniaturen an:
-        [Vorschau von Videos anzeigen](managing-video-assets.md#upload-and-preview-video-assets) oder [Vorschau von Assets anzeigen](previewing-assets.md)
+        [Vorschau von Videos](managing-video-assets.md#upload-and-preview-video-assets) oder [Vorschau von Assets)](previewing-assets.md)
         [Videoausgabedarstellungen anzeigen](video-renditions.md)
         [Verwalten von Videoausgabedarstellungen](manage-assets.md#managing-renditions)
 
@@ -162,7 +162,7 @@ Siehe auch [Viewer für Experience Manager Assets und Dynamic Media Classic](htt
 
 Die HTML5-Video-Viewer-Vorgaben aus „Dynamic Media“ stellen robuste Video-Player dar. Sie können diese verwenden, um zahlreiche häufig auftretende Probleme im Zusammenhang mit der Wiedergabe von HTML5-Videos zu vermeiden. Hinzu kommen Probleme im Zusammenhang mit mobilen Geräten, wie z. B. die fehlende Bereitstellung von Streaming mit adaptiver Bitrate und die begrenzte Reichweite von Desktop-Browsern.
 
-In Bezug auf das Design des Players können Sie alle Funktionen des Video-Players mit standardmäßigen Web-Entwicklungs-Tools gestalten. Sie können beispielsweise die Schaltflächen, die Steuerelemente und den benutzerdefinierten Poster-Hintergrund mit HTML5 und CSS entwerfen, um Ihre Kundinnen und Kunden mit einem angepassten Erscheinungsbild anzusprechen.
+Mithilfe standardmäßiger Webentwicklungs-Tools können Sie die Funktionen des Video-Players entwerfen. Sie können beispielsweise die Schaltflächen, die Steuerelemente und den benutzerdefinierten Poster-Hintergrund mit HTML5 und CSS entwerfen, um Ihre Kundinnen und Kunden mit einem angepassten Erscheinungsbild anzusprechen.
 
 Bei der Wiedergabe wird die Videofähigkeit des Browsers automatisch erkannt. Anschließend wird das Video mit HLS (HTTP Live Streaming) oder DASH (Dynamic Adaptive Streaming über HTTP) bereitgestellt, das auch als Streaming mit adaptiver Bitrate bezeichnet wird. Wenn diese Bereitstellungsmethoden nicht verfügbar sind, wird stattdessen der progressive HTML5-Download verwendet.
 
@@ -231,7 +231,7 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
    <td>HLS-Streaming mit adaptiver Bitrate.</td>
   </tr>
   <tr>
-   <td>Mobilgerät</td>
+   <td>Mobilgeräte</td>
    <td>Chrome (Android™ 6 oder früher)</td>
    <td>Progressiver Download.</td>
   </tr>
@@ -251,12 +251,12 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
    <td>HLS-Streaming mit adaptiver Bitrate.</td>
   </tr>
   <tr>
-   <td>Mobilgerät</td>
+   <td>Mobilgeräte</td>
    <td>Chrome (iOS)</td>
    <td>HLS-Streaming mit adaptiver Bitrate.</td>
   </tr>
   <tr>
-   <td>Mobilgerät</td>
+   <td>Mobilgeräte</td>
    <td>BlackBerry®</td>
    <td>DASH*- oder HLS-Streaming mit adaptiver Bit-Rate./td&gt;
   </tr>
@@ -277,11 +277,13 @@ Die folgende Grafik zeigt den allgemeinen Bearbeitungs-Workflow für Videos, die
 
 Der Workflow für die **Dynamic Media-Videokodierung** kodiert Videos, wenn Dynamic Media aktiviert und Video-Cloud-Services eingerichtet sind. Dieser Workflow erfasst den Verlauf der Workflow-Prozesse und Informationen zu Fehlern. Wenn Sie Dynamic Media aktiviert und Video-Cloud-Services eingerichtet haben, wird der Workflow für die **[!UICONTROL Videokodierung mit Dynamic Media]** automatisch beim Hochladen eines Videos wirksam. (Wenn Sie Dynamic Media nicht verwenden, wird der Workflow **[!UICONTROL DAM Update Asset]** wirksam.)
 
-<!-- DEAD The following are best-practice tips for encoding source video files.
+<!--
+DEAD The following are best-practice tips for encoding source video files.
 
-For advice about video encoding, see [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_de).
+For advice about video encoding, see [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en).
 
-* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en). -->
+* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
+-->
 
 ### Quellvideodateien {#source-video-files}
 
@@ -294,17 +296,17 @@ Die folgende Tabelle beschreibt die empfohlenen Werte für Größe, Seitenverhä
 
 | Größe | Seitenverhältnis | Mindest-Bitrate |
 |--- |--- |--- |
-| 1024 x 768 | 4 :3 | 4500 kBit/s für die meisten Videos |
-| 1280 x 720 | 16 :9 | 3000–6000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt |
-| 1920 x 1080 | 16 :9 | 6000–8000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt |
+| 1024 x 768 | 4:3 | 4500 kBit/s für die meisten Videos |
+| 1280 x 720 | 16:9 | 3000–6000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt |
+| 1920 x 1080 | 16:9 | 6000–8000 kBit/s, je nachdem, wie viel Bewegung im Video vorkommt |
 
 ### Abrufen der Metadaten von Dateien {#obtaining-a-file-s-metadata}
 
-Sie können die Metadaten einer Datei abrufen, indem Sie diese mit einem Videobearbeitungs-Tool anzeigen oder ein Programm verwenden, das zum Abrufen von Metadaten entwickelt wurde. Im Folgenden wird die Nutzung von MediaInfo, eines Drittanbieterprogramms, zum Abrufen der Metadaten einer Videodatei beschrieben:
+Sie können die Metadaten einer Datei abrufen, indem Sie diese mit einem Videobearbeitungs-Tool anzeigen oder ein Programm verwenden, das zum Abrufen von Metadaten entwickelt wurde. Im Folgenden wird die Nutzung von MediaInfo, einem Drittanbieterprogramm, zum Abrufen der Metadaten einer Videodatei beschrieben:
 
 1. Gehen Sie zu [MediaInfo Download](https://mediaarea.net/de/MediaInfo/Download).
 1. Wählen Sie das Installationsprogramm für die GUI-Version aus, laden Sie es herunter und befolgen Sie die Installationsanweisungen.
-1. Klicken Sie nach der Installation mit der rechten Maustaste auf die Videodatei (nur Windows) und wählen Sie MediaInfo oder öffnen Sie MediaInfo und ziehen Sie die gewünschte Videodatei in die Anwendung. Alle mit der Videodatei verknüpften Metadaten werden angezeigt, einschließlich Breite, Höhe und fps.
+1. Klicken Sie nach der Installation mit der rechten Maustaste auf die Videodatei (nur Windows) und wählen Sie MediaInfo aus, oder öffnen Sie MediaInfo und ziehen Sie die Videodatei in die Anwendung. Alle mit Ihrer Videodatei verknüpften Metadaten werden angezeigt, einschließlich Breite, Höhe und fps.
 
 ### Seitenverhältnis {#aspect-ratio}
 
@@ -318,10 +320,10 @@ Anhand der folgenden Tabelle können Sie die Formelergebnisse in gängige Seiten
 
 | Formelergebnis | Seitenverhältnis |
 |--- |--- |
-| 1,33 | 4 :3 |
-| 0,75 | 3 :4 |
-| 1,78 | 16 :9 |
-| 0,56 | 9 :16 |
+| 1,33 | 4:3 |
+| 0,75 | 3:4 |
+| 1,78 | 16:9 |
+| 0,56 | 9:16 |
 
 Beispielsweise hat ein Video mit einer Breite × Höhe von 1.440 und einem Seitenverhältnis von 1.440 zu 1.080 bzw. 1,33. In diesem Fall wählen Sie eine Videokodierungsvorgabe mit einem Seitenverhältnis von 4:3 aus, um die Videodatei zu kodieren.
 
@@ -352,7 +354,7 @@ Diese Tabelle enthält die Datenraten von typischen Verbindungsgeschwindigkeiten
 |--- |--- |
 | 256 | Einwahlverbindung |
 | 800 | Typische Mobilverbindung Für diese Verbindung eignet sich eine Datenrate von 400 bis maximal 800 für 3G-Verbindungen. |
-| 2.000 | Typische Breitband-Desktop-Verbindung. Für diese Verbindung eignet sich eine Datenrate zwischen 800 und 2.000 kBit/s, wobei die meisten Ziele im Durchschnitt zwischen 1.200 und 1.500 kBit/s aufweisen. |
+| 2.000 | Typische Breitband-Desktop-Verbindung Für diese Verbindung wird eine Datenrate im Bereich von 800-2000 kBit/s angestrebt, wobei die meisten Ziele im Durchschnitt 1200-1500 kBit/s erreichen. |
 | 5.000 | Typische Hochbreitband-Desktopverbindung Die Kodierung in diesem oberen Bereich wird nicht empfohlen, da die Videobereitstellung in dieser Geschwindigkeit für die meisten Benutzer nicht verfügbar ist. |
 
 ### Auflösung {#resolution}
@@ -433,7 +435,7 @@ Eine Tabelle mit allen *veröffentlichten* Videos wird ebenfalls angezeigt, dami
 
 Wenn Sie in der Liste einen Videonamen auswählen, wird der Bericht zur Zielgruppentreue (Abfallrate) in Form eines Liniendiagramms angezeigt. Das Diagramm enthält die Anzahl der Ansichten für jeden einzelnen Moment während der Videowiedergabe. Wenn Sie das Video wiedergeben, bewegt sich die vertikale Leiste synchron mit der Zeitanzeige im Player. Abfälle in den Liniendiagrammdaten geben an, wo die Zielgruppe das Video aus Desinteresse abbricht.
 
-Wenn das Video außerhalb von Adobe Experience Manager Dynamic Media codiert wurde, sind das Diagramm zur Zielgruppentreue (Abbruch) und die Daten zur Wiedergabe in Prozent in der Tabelle nicht verfügbar.
+Wenn das Video außerhalb von Adobe Experience Manager für Dynamic Media kodiert wurde, sind das Diagramm zur Zielgruppentreue (Abbruch) und die Daten zur Wiedergabe in Prozent in der Tabelle nicht verfügbar.
 
 Informationen hierzu finden Sie im Abschnitt zum [Konfigurieren der Dynamic Media Cloud Services](/help/assets/config-dynamic.md).
 
@@ -441,7 +443,7 @@ Informationen hierzu finden Sie im Abschnitt zum [Konfigurieren der Dynamic Medi
 >
 >Nachverfolgungs- und Berichtsdaten basierend ausschließlich auf der Nutzung des Video-Players von Dynamic Media und den zugehörigen Video-Player-Vorgaben. Daher können Sie keine Videos nachverfolgen und in Berichte aufnehmen, die mit anderen Video-Playern wiedergegeben werden.
 
-Wenn Sie die Funktion „Videoberichte“ zum ersten Mal aufrufen, enthält der Bericht standardmäßig Videodaten für den Zeitraum vom ersten Tag des aktuellen Monats bis zum aktuellen Datum. Sie können den standardmäßigen Datumsbereich aber außer Kraft setzen, indem Sie Ihren eigenen Datumsbereich angeben. Wenn Sie „Videoberichte“ das nächste Mal aufrufen, wird der angegebene Datumsbereich verwendet.
+Wenn Sie Videoberichte zum ersten Mal aufrufen, zeigt der Bericht standardmäßig Videodaten vom ersten Tag des aktuellen Monats an, die mit dem aktuellen Datum enden. Sie können den standardmäßigen Datumsbereich jedoch überschreiben, indem Sie Ihren eigenen Datumsbereich angeben. Wenn Sie das nächste Mal Videoberichte eingeben, wird der angegebene Datumsbereich verwendet.
 
 Damit Videoberichte ordnungsgemäß funktionieren, wird automatisch eine Report Suite-ID erstellt, wenn Dynamic Media Cloud Services konfiguriert wurde. Gleichzeitig wird die Report Suite-ID an den Veröffentlichungs-Server übergeben, damit sie für die Funktion „URL kopieren“ bei der Asset-Vorschau verfügbar ist. Diese Funktionalität erfordert jedoch, dass der Veröffentlichungs-Server bereits eingerichtet ist. Wenn der Veröffentlichungs-Server nicht eingerichtet ist, können Sie dennoch veröffentlichen, um den Videobericht anzuzeigen. Sie müssen jedoch zur Konfiguration von Dynamic Media Cloud zurückkehren und auf **[!UICONTROL OK]** klicken.
 
@@ -585,12 +587,12 @@ Hinzugefügte Untertitel und Beschriftungen werden in den Formaten WebVTT und Ad
 
      | Untertitelmetadaten | Beschreibung |
      |--- |--- |
-     | Dateiname | Der Standarddateiname wird aus dem Originaldateinamen abgeleitet. Der Dateiname kann nur beim Hochladen geändert werden und später nicht mehr. Die Zeichenanforderungen für Dateinamen entsprechen denen für AEM Assets.<br>Derselbe Dateiname kann nicht für zusätzliche Untertiteldateien und Audiospurdateien verwendet werden. |
+     | Dateiname | Der Standarddateiname wird aus dem Originaldateinamen abgeleitet. Der Dateiname kann nur beim Hochladen geändert werden und später nicht mehr. Die Anforderungen an die Dateinamenzeichen sind dieselben wie für AEM Assets.<br>Der Dateiname kann nicht für zusätzliche Untertiteldateien und Audiospurdateien verwendet werden. |
      | Sprache | Wählen Sie die Sprache des Untertitels aus. |
      | Typ | Wählen Sie den Typ des verwendeten Untertitels aus.<br>**Untertitel**: Der im Video angezeigte Untertiteltext, der den Dialog übersetzt oder transkribiert.<br>**Beschriftung**: Der Untertiteltext enthält Hintergrundgeräusche, Sprecherunterscheidung und andere relevante Details. Es umfasst auch die Übersetzung oder Transkription des Dialogs. All dies erleichtert den Zugang zu Inhalten für Personen, die taub oder schwerhörig sind. |
-     | Label | Der Text, der im Medien-Player in der Popup-Liste **[!UICONTROL Audio oder Untertitel auswählen]** für den Namen der Beschriftung angezeigt wird. Die Bezeichnung ist das, was eine Kundin oder ein Kunde sieht, und entspricht einer Untertitel- oder Beschriftungsspur. Zum Beispiel: `English (CC)`. |
+     | Label | Der Text, der im Medien-Player in der Popup-Liste **[!UICONTROL Audio oder Untertitel auswählen]** für den Namen der Beschriftung angezeigt wird. Das Label ist das, was eine Kundin oder ein Kunde sieht, und entspricht einer Untertitel- oder Beschriftungsspur. Zum Beispiel: `English (CC)`. |
 
-     Sie können Metadaten von Untertiteln später bei Bedarf ändern oder bearbeiten. Wenn das Video veröffentlicht wird, werden diese Details in öffentlichen URLs in veröffentlichten Videos angezeigt.
+     Sie können Metadaten von Untertiteln später bei Bedarf ändern oder bearbeiten. Bei Veröffentlichung des Videos werden diese Details in öffentlichen URLs in veröffentlichten Videos angezeigt.
 
 1. (Optional) Gehen Sie wie folgt vor, um einem Video eine oder mehrere Audiospuren hinzuzufügen:
    * Wählen Sie **[!UICONTROL Audiospuren hochladen]** aus.
@@ -599,12 +601,12 @@ Hinzugefügte Untertitel und Beschriftungen werden in den Formaten WebVTT und Ad
 
      | Audiospur-Metadaten | Beschreibung |
      |--- |--- |
-     | Dateiname | Der Standarddateiname wird aus dem Originaldateinamen abgeleitet. Der Dateiname kann nur beim Hochladen geändert werden und später nicht mehr. Die Zeichenanforderungen für Dateinamen entsprechen denen für AEM Assets.<br>Für zusätzliche Audiospurdateien oder Untertiteldateien darf nicht derselbe Name verwendet werden. |
+     | Dateiname | Der Standarddateiname wird aus dem Originaldateinamen abgeleitet. Der Dateiname kann nur beim Hochladen geändert werden und später nicht mehr. Die Anforderungen an die Dateinamenzeichen sind dieselben wie für AEM Assets.<br>Der Dateiname kann nicht für zusätzliche Audiospur- oder Untertiteldateien verwendet werden. |
      | Sprache | Wählen Sie die Sprache der Audiospur aus. |
      | Typ | Wählen Sie den Typ der verwendeten Audiospur aus.<br>**Original**: Die Audiospur, die ursprünglich an das Video angehängt war und als `[Original]` in der Beschriftung mit der standardmäßig ausgewählten Sprache `English` dargestellt wird. Zwar können **[!UICONTROL Titel]** und **[!UICONTROL Sprache]** im Dialogfeld **[!UICONTROL Audiospur bearbeiten]** geändert werden, doch werden standardmäßig die ursprünglichen Werte verwendet, wenn das primäre Video erneut verarbeitet wird.<br>**Standard**: Eine zusätzliche Audiospur für eine andere Sprache als die Originalsprache.<br>**Audiobeschreibung**: Eine Audiospur, die auch eine beschreibende Darstellung nichtverbaler Aktionen und Gesten im Video enthält, wodurch Inhalte für Personen mit Sehbehinderungen leichter zugänglich sind. |
      | Label | Der Text, der im Medien-Player in der Popup-Liste **[!UICONTROL Audio oder Untertitel auswählen]** als Name der Audiospur angezeigt wird. Die Bezeichnung ist das, was eine Kundin oder ein Kunde sieht, und entspricht einer Audiospur. Zum Beispiel: `English [Original]`. Für die Bezeichnung der an ein Video angehängten Audiospur ist standardmäßig `[Original]` festgelegt. |
 
-     Sie können diese Audiospur-Metadaten bei Bedarf später ändern oder bearbeiten. Wenn das Video veröffentlicht wird, werden diese Details in öffentlichen URLs in veröffentlichten Videos angezeigt.
+     Sie können diese Audiospur-Metadaten bei Bedarf später ändern oder bearbeiten. Bei Veröffentlichung des Videos werden diese Details in öffentlichen URLs in veröffentlichten Videos angezeigt.
 
 1. Wählen Sie oben rechts auf der Seite aus der Dropdown-Liste **[!UICONTROL Speichern und schließen]** die Option **[!UICONTROL Speichern]** aus. Die Dateien werden hochgeladen und die Metadatenverarbeitung beginnt, wie in der Spalte **Status** der Benutzeroberfläche angezeigt.
 
@@ -808,19 +810,21 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
 
    Auf zahlreichen Websites werden sowohl kostenlose als auch Premium-Tools und -Dienste angeboten, die Sie verwenden können, um WebVTT-Untertitel/Untertiteldateien außerhalb von Dynamic Media zu erstellen. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
-   <!--[WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
+   <!--
+[WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-   For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
+Die besten Ergebnisse erzielen Sie, wenn Sie das Tool in Internet Explorer 9 oder höher, Google Chrome oder Safari verwenden.
 
-   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video. -->
+Fügen Sie im Tool im Feld **[!UICONTROL URL der Videodatei]** kopierte URL Ihrer Videodatei ein und klicken Sie dann auf **[!UICONTROL Laden]**. Unter [Abrufen einer URL für ein Asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) erhalten Sie die URL für die Videodatei selbst, die Sie dann in das Feld **[!UICONTROL URL der Videodatei eingeben“]**. Internet Explorer, Chrome oder Safari können das Video dann nativ wiedergeben.
+-->
 
-   Folgen Sie auf der Site den Anweisungen auf dem Bildschirm, um Ihre WebVTT-Datei zu erstellen und zu speichern. Wenn Sie fertig sind, kopieren Sie den Inhalt der Untertiteldatei und fügen Sie ihn in einen Texteditor ein. Speichern Sie ihn dann mit der Dateierweiterung `.vtt`.
+Folgen Sie auf der Site den Anweisungen auf dem Bildschirm, um Ihre WebVTT-Datei zu erstellen und zu speichern. Wenn Sie fertig sind, kopieren Sie den Inhalt der Untertiteldatei und fügen Sie ihn in einen Texteditor ein. Speichern Sie ihn dann mit der Dateierweiterung `.vtt`.
 
-   >[!NOTE]
-   >
-   >Für globale Unterstützung von Videountertiteln in verschiedenen Sprachen ist zu beachten, dass der WebVTT-Standard separate `.vtt`-Dateien und Abrufe für jede Sprache benötigt, die Sie unterstützen möchten.
+>[!NOTE]
+>
+>Für globale Unterstützung von Videountertiteln in verschiedenen Sprachen ist zu beachten, dass der WebVTT-Standard separate `.vtt`-Dateien und Abrufe für jede Sprache benötigt, die Sie unterstützen möchten.
 
-   Grundsätzlich sollte die `.vtt`-Untertiteldatei denselben Namen haben wie die Videodatei, an den dann ein Kürzel für das Gebietsschema wie -EN, -FR oder -DE angehängt wird. Dies kann Ihnen helfen, die Generierung von Video-URLs mit Ihrem vorhandenen Web-Content-Management-System zu automatisieren.
+Grundsätzlich sollte die `.vtt`-Untertiteldatei denselben Namen haben wie die Videodatei, an den dann ein Kürzel für das Gebietsschema wie -EN, -FR oder -DE angehängt wird. Dies kann Ihnen helfen, die Generierung von Video-URLs mit Ihrem vorhandenen Web-Content-Management-System zu automatisieren.
 
 1. Laden Sie in Experience Manager Ihre WebVTT-Untertiteldatei in das DAM hoch.
 1. Navigieren Sie zum *veröffentlichten* Video-Asset, das Sie mit der hochgeladenen Untertiteldatei verbinden möchten.
@@ -845,7 +849,7 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
 
 ## Hinzufügen von Kapitelmarken zu Videos {#adding-chapter-markers-to-video}
 
-Um das Ansehen von und Navigieren in langformatigen Videos zu erleichtern, können Sie einzelnen Videos oder adaptiven Videosets Kapitelmarken hinzufügen. Wenn eine Person das Video abspielt, kann sie auf die Kapitelmarken in der Video-Timeline (auch als Video-Scrubber bezeichnet) klicken, um einfach zum gewünschten Zielpunkt zu navigieren. Oder sie kann sofort zu neuen Inhalten, Demonstrationen und Tutorials springen.
+Um das Ansehen von und Navigieren in langformatigen Videos zu vereinfachen, können Sie einzelnen Videos oder adaptiven Video-Sets Kapitelmarken hinzufügen. Wenn eine Person das Video abspielt, kann sie auf die Kapitelmarken in der Video-Timeline (auch als Video-Scrubber bezeichnet) klicken, um einfach zum gewünschten Zielpunkt zu navigieren. Oder sie kann sofort zu neuen Inhalten, Demonstrationen und Tutorials springen.
 
 >[!NOTE]
 >
@@ -877,7 +881,7 @@ Chapter 4
 Cost-efficient access to rapidly evolving technology.
 ```
 
-Im obigen Beispiel ist `Chapter 1` der Cue-Point-Bezeichner. Diese Angabe ist optional. Die Cue-Point-Zeit `00:00:000 --> 01:04:364` gibt die Start- und Endzeit des Kapitels im Format `00:00:000` an. Die letzten drei Ziffern geben die Millisekunden an und können bei `000` belassen werden. Der Kapiteltitel von `The bicycle store behind it all` ist die eigentliche Beschreibung des Kapitelinhalts. Die Einsatzpunkt-Kennung, die Start-Einsatzpunkt-Zeit und der Kapiteltitel werden im Video-Player in einem Popup-Fenster angezeigt, wenn Benutzende mit dem Mauszeiger auf einen visuellen Einsatzpunkt in der Timeline des Videos zeigen.
+Im obigen Beispiel ist `Chapter 1` der Cue-Point-Bezeichner. Diese Angabe ist optional. Die Cue-Point-Zeit `00:00:000 --> 01:04:364` gibt die Start- und Endzeit des Kapitels im Format `00:00:000` an. Die letzten drei Ziffern geben die Millisekunden an und können bei `000` belassen werden. Der Kapiteltitel `The bicycle store behind it all` ist die tatsächliche Beschreibung des Kapitelinhalts. Die Einsatzpunkt-Kennung, die Start-Einsatzpunkt-Zeit und der Kapiteltitel werden im Video-Player in einem Popup-Fenster angezeigt, wenn Benutzende mit dem Mauszeiger auf einen visuellen Einsatzpunkt in der Timeline des Videos zeigen.
 
 Da Sie einen HTML5-Video-Viewer verwenden, stellen Sie sicher, dass die erstellte Kapiteldatei dem WebVTT (Web Video Text Tracks)-Standard entspricht. Die Erweiterung des Kapiteldateinamens lautet `.vtt`. Weitere Informationen zum WebVTT-Untertitelstandard erhalten Sie auf der folgenden Seite.
 
@@ -927,7 +931,7 @@ Siehe [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
 
 Eine Videominiatur ist eine verkleinerte Version eines Videoframes oder eines Bild-Assets, in dem das Video dem Kunden vorgestellt wird. Das Miniaturbild dient als Anreiz für eine Kundin bzw. einen Kunden, das Video auszuwählen.
 
-Alle Videos in Experience Manager müssen eine zugehörige Miniatur enthalten. Sie können eine Miniatur nur löschen, wenn sie ersetzt wird. Wenn Sie ein Video in Experience Manager hochladen, wird standardmäßig der erste Frame als Miniaturansicht verwendet. Sie können jedoch die Miniaturansicht anpassen, z. B. für Branding oder visuelle Suche. Wenn Sie eine Videominiatur anpassen, können Sie das Video abspielen und bei dem Frame anhalten, den Sie verwenden möchten. Sie können auch ein Bild-Asset auswählen, das Sie bereits in Ihrem Digital Asset Manager hochgeladen und *veröffentlicht* haben.
+Alle Videos in Experience Manager müssen eine zugehörige Miniatur enthalten. Sie können eine Miniatur nur löschen, wenn sie ersetzt wird. Wenn Sie ein Video in Experience Manager hochladen, wird standardmäßig der erste Frame als Miniaturansicht verwendet. Sie können jedoch die Miniaturansicht anpassen, z. B. für Branding oder visuelle Suche. Wenn Sie eine Videominiatur anpassen, können Sie das Video abspielen und bei dem Frame anhalten, den Sie verwenden möchten. Sie können aber auch ein Bild-Asset auswählen, das Sie bereits in Ihrem Digital Asset Manager hochgeladen und *veröffentlicht* haben.
 
 Hinweis: Benutzerdefinierte Videominiaturbilder, die Sie aus Videos auswählen, werden nicht extrahiert und als separate Assets im DAM gespeichert. Es wird jedoch eine benutzerdefinierte Videominiaturansicht, die Sie aus einem vorhandenen Bild-Asset auswählen, im JCR gespeichert. Der Pfad des ausgewählten Assets wird wie im folgenden Beispielpfad unter dem Knoten des Video-Assets gespeichert:
 
@@ -954,7 +958,7 @@ Die folgenden Schritte gelten nur, wenn Dynamic Media im Scene7-Modus ausgeführ
 1. Wählen Sie im Asset-Auswahlmodus entweder in der **[!UICONTROL Listenansicht]** oder in der **[!UICONTROL Kartenansicht]** das Video-Asset aus.
 1. Wählen Sie in der Symbolleiste das Symbol **[!UICONTROL Eigenschaften]** (ein Kreis mit einem darin enthaltenen „i“) aus.
 1. Wählen Sie auf der Seite „Eigenschaften“ des Videos **[!UICONTROL Miniaturansicht ändern]** aus.
-1. Befolgen Sie folgende Schritte auf der Seite „Ändern der Miniaturansicht“: 
+1. Befolgen Sie folgende Schritte auf der Seite „Ändern der Miniaturansicht“:
 
    * So verwenden Sie einen Frame aus dem Video als neue Miniaturansicht:
 
@@ -1108,7 +1112,7 @@ Die API gibt bei Fehlern „null“ zurück. Ausnahmen werden in Experience Mana
    * Das Video wurde nicht mit einem adaptiven Videoset aus Dynamic Media aufgenommen.
 
 * `IOException` wird protokolliert, wenn ein Problem beim Herstellen einer Verbindung mit Dynamic Media besteht.
-* Eine `UnsupportedOperationException` wird protokolliert, wenn ein übergebener `manifestType`-Parameter `ManifestType.DASH` ist, aber das Video nicht im DASH-Format verarbeitet wurde.
+* `UnsupportedOperationException` wird protokolliert, wenn ein `manifestType` übergebener Parameter `ManifestType.DASH` ist, während das Video nicht im DASH-Format verarbeitet wurde.
 
 Im Folgenden finden Sie ein Beispiel der oben genannten API unter Verwendung von Servlets, die in der Spezifikation *HTTPWhiteBoard* geschrieben sind. Wählen Sie jede Registerkarte für die Code-Syntax aus.
 

@@ -11,10 +11,10 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 5d0ba475-06be-47fd-8ea2-9160c2d86b07
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 100%
+source-wordcount: '1135'
+ht-degree: 97%
 
 ---
 
@@ -201,7 +201,7 @@ In dieser Tabelle werden die Standardanschlüsse beschrieben, die während des K
   </tr>
   <tr>
    <td>&gt;<p>LDAP</p> </td>
-   <td><p>Der Anschluss, an dem der LDAP-Server ausgeführt wird. Der Standardanschluss ist in der Regel 389. Wenn Sie jedoch die SSL-Option auswählen, ist der Standardanschluss in der Regel 636. Erkundigen Sie sich beim LDAP-Administrator, welchen Anschluss Sie angeben müssen.</p> </td>
+   <td><p>Der Anschluss, an dem der LDAP-Server ausgeführt wird. Der Standard-Port ist in der Regel 389. Wenn Sie jedoch die SSL-Option auswählen, ist der Standard-Port normalerweise 636. Bestätigen Sie mit Ihrem LDAP-Administrator, welchen Port Sie angeben müssen.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -225,7 +225,7 @@ Der Anwendungs-Server von JBoss® verwendet 8080 als standardmäßigen HTTP-Port
 
 >[!NOTE]
 >
-> Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mithilfe alternativer Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+> Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 ## Sicherheitsüberlegungen zu AEM Forms on JEE {#aem-forms-on-jee-security-considerations}
 

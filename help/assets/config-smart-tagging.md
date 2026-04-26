@@ -5,16 +5,16 @@ role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: be7c294c-149b-4825-8376-573f9e2987e2
-source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1980'
 ht-degree: 97%
 
 ---
 
 # Vorbereiten von [!DNL Assets] für Smart-Tagging {#configure-asset-tagging-using-the-smart-content-service}
 
-Bevor Sie mit dem Tagging Ihrer Assets per Smart Content Services beginnen können, integrieren Sie [!DNL Experience Manager Assets] in die Adobe Developer Console, um den Smart-Service von [!DNL Adobe AI] zu nutzen. Trainieren Sie den Service nach der Konfiguration mit einigen Bildern und einem Tag.
+Bevor Sie mit dem Tagging Ihrer Assets per Smart Content Services beginnen können, integrieren Sie [!DNL Experience Manager Assets] in die Adobe Developer Console, um den Smart-Service von [!DNL Adobe AI] zu nutzen. Nach der Konfiguration trainieren Sie den Service mit einigen Bildern und einem Tag.
 Bevor Sie den Smart Content Service verwenden, führen Sie Folgendes aus:
 
 * [Integrieren Sie ihn mit der Adobe Developer Console](#integrate-adobe-io).
@@ -23,11 +23,11 @@ Bevor Sie den Smart Content Service verwenden, führen Sie Folgendes aus:
 
 >[!IMPORTANT]
 >
->Informationen zur [&#x200B; von Smart-Tags in AEM 6.5 finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/config-smart-tagging) „Vorbereiten von Assets für Smart Tagging“.
+>Informationen zur [ von Smart-Tags in AEM 6.5 finden Sie ](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/assets/administer/config-smart-tagging) „Vorbereiten von Assets für Smart Tagging“.
 
 **Neue Benutzende**
 
-Smart Content Services ist für neue On-Premise-Benutzende von [!DNL Experience Manager Assets] nicht mehr verfügbar. 
+Smart Content Services ist für neue On-Premise-Benutzende von [!DNL Experience Manager Assets] nicht mehr verfügbar.
 
 **Vorhandene Benutzende**
 
@@ -64,7 +64,7 @@ Weitere Informationen zu dieser Konfiguration finden Sie in der Dokumentation zu
       * [Server-zu-Server-Authentifizierung](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
 
    * Erstellen von neuen OAuth-Anmeldedaten:
-      * [OAuth-Implementierungshandbuch für Server-zu-Server-Anmeldedaten](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
+      * [Implementierungshandbuch für OAuth Server-zu-Server-Anmeldeinformationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
    * Migration von vorhandenen JWT-Anmeldedaten zu OAuth-Anmeldedaten:
       * [Migration von JWT-Anmeldedaten (Service Account) zu OAuth-Server-zu-Server-Anmeldedaten](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
@@ -136,7 +136,8 @@ Nachdem Sie die Konfiguration abgeschlossen haben, können Sie die Konfiguration
 1. Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**, um die OSGi-Konsole zu öffnen. Klicken Sie auf **[!UICONTROL Main] > [!UICONTROL JMX]**.
 
 <!--
-1. Click `com.day.cq.dam.similaritysearch.internal.impl`. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.-->
+1. Click `com.day.cq.dam.similaritysearch.internal.impl`. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.
+-->
 
 1. Klicken Sie auf `com.day.cq.dam.similaritysearch.internal.impl (SCS)`.
 

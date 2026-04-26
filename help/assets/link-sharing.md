@@ -7,9 +7,9 @@ feature: Link Sharing,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: ac7ff784-d331-4437-940f-9ea3ce122f8b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1043'
 ht-degree: 100%
 
 ---
@@ -92,7 +92,7 @@ Die URL für Assets, die Sie freigeben möchten, generieren Sie im Dialogfeld [!
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-## Konfigurieren der maximal zulässigen Datengröße  {#configure-maximum-data-size}
+## Konfigurieren der maximal zulässigen Datengröße {#configure-maximum-data-size}
 
 Wenn Sie Assets herunterladen, die mithilfe der Linkfreigabe-Funktion freigegeben wurden, komprimiert [!DNL Experience Manager] die Asset-Hierarchie aus dem Repository und gibt anschließend das Asset in einer ZIP-Datei zurück. Da jedoch die Datenmenge, die in einer ZIP-Datei komprimiert werden kann, nicht begrenzt wird, kann es bei großen komprimierten Datenmengen zu Speicherfehlern in JVM kommen. Um das System vor einem damit zusammenhängenden potenziellen DoS-Angriff zu schützen, konfigurieren Sie die Maximalgröße mithilfe des Parameters **[!UICONTROL Maximale Größe von Inhalten (unkomprimiert)]** für das **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** in Configuration Manager. Wenn die unkomprimierte Größe des Assets den konfigurierten Wert überschreitet, werden Asset-Download-Anfragen abgelehnt. Der Standardwert lautet 100 MB.
 

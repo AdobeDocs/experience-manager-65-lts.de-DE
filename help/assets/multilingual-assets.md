@@ -7,9 +7,9 @@ role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 512bd351-2e6b-47a2-85c6-a23ea2c7102f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '192'
 ht-degree: 100%
 
 ---

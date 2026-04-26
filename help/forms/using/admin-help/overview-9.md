@@ -1,5 +1,5 @@
 ---
-title: Überblick über den Arbeitsablauf für Formulare
+title: Überblick über den Workflow für Formulare
 description: Mit einem Forms-Workflow können Benutzende am Menschen orientierte Prozesse entwerfen, verwalten und optimieren. Mithilfe eines Forms-Workflows können Benutzende auch automatisierte Geschäftsprozessanwendungen verwalten, die Systeme und Personen miteinander verbinden.
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: aa2477a3-3870-4ba4-bcea-e94ae2d06d02
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '259'
 ht-degree: 100%
 
 ---
 
-# Überblick über den Arbeitsablauf für Formulare {#overview-of-forms-workflow}
+# Überblick über den Workflow für Formulare {#overview-of-forms-workflow}
 
 Mit einem Forms-Workflow können Benutzende am Menschen orientierte Prozesse entwerfen, verwalten und optimieren. Mithilfe eines Forms-Workflows können Benutzende auch automatisierte Geschäftsprozessanwendungen verwalten, die Systeme und Personen miteinander verbinden.
 
@@ -42,7 +42,7 @@ Auf jeder Forms-Workflow-Seite in der Administrationskonsole können Sie verschi
      <li><p>Konfigurieren von Admin-Benachrichtigungen</p></li>
      <li><p>Konfigurieren der Konfigurationseinstellungen für Business Activity Monitoring </p></li>
     </ul></td>
-   <td><p><a href="/help/forms/using/admin-help/configuring-server-settings.md#configuring-server-settings">Servereinstellungen konfigurieren</a></p></td>
+   <td><p><a href="/help/forms/using/admin-help/configuring-server-settings.md#configuring-server-settings">Konfigurieren der Server-Einstellungen</a></p></td>
   </tr>
   <tr>
    <td><p>Forms-Workflow</p></td>
@@ -52,7 +52,7 @@ Auf jeder Forms-Workflow-Seite in der Administrationskonsole können Sie verschi
      <li><p>Anzeigen und Arbeiten mit Prozessinstanzen, Vorgängen und Aufgaben</p></li>
      <li><p>Aussetzen, Beenden und Wiederholen von Prozessinstanzen, Teilprozessen und Vorgängen</p></li>
     </ul></td>
-   <td><p><a href="/help/forms/using/admin-help/processes.md#managing-processes">Prozesse verwalten</a></p></td>
+   <td><p><a href="/help/forms/using/admin-help/processes.md#managing-processes">Verwalten von Prozessen</a></p></td>
   </tr>
   <tr>
    <td><p>Prozesssuche</p></td>
@@ -68,7 +68,7 @@ Auf jeder Forms-Workflow-Seite in der Administrationskonsole können Sie verschi
     <ul>
      <li><p>Aufgaben nach Benutzer- oder Aufgaben-ID suchen</p></li>
     </ul></td>
-   <td><p><a href="/help/forms/using/admin-help/tasks.md#working-with-tasks">Mit Aufgaben arbeiten</a></p></td>
+   <td><p><a href="/help/forms/using/admin-help/tasks.md#working-with-tasks">Arbeiten mit Aufgaben</a></p></td>
   </tr>
   <tr>
    <td><p>Fehler bei angehaltenen Vorgängen</p></td>

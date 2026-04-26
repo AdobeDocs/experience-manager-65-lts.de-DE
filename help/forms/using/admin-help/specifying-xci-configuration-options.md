@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 198016d7-0fb5-47e6-91ed-f2f0c98b2224
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '161'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 > 
 > Stellen Sie sicher, dass Benutzende über Adminberechtigungen für den Zugriff auf die Administrationskonsole verfügen.
 
-Mit Forms können Sie eine benutzerdefinierte XCI-Datei angeben, die für das Rendern verwendet werden kann. (Siehe [Konfigurieren der Speicherorte für Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).) Forms überschreibt standardmäßig einige der in der XCI-Datei angegebenen Optionen, darunter die folgenden:
+Mit Forms können Sie eine benutzerdefinierte XCI-Datei angeben, die für das Rendern verwendet werden kann. (Siehe [Konfigurieren von Speicherorten für Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).) Standardmäßig überschreibt Forms einige der in der XCI-Datei angegebenen Optionen, einschließlich der folgenden:
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`

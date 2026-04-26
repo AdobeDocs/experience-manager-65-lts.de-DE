@@ -1,6 +1,6 @@
 ---
 title: Optimieren der Leistung bei der Systemüberwachung
-description: Erfahren Sie, wie Sie die Leistung der Systemüberwachung optimieren.  Steuern Sie die Systemstatistiken, die sich auf die Leistung der Formularumgebung auswirken, mithilfe der JAVA-Einstellungsoption.
+description: Erfahren Sie, wie Sie die Leistung der Systemüberwachung optimieren. Steuern Sie die Systemstatistiken, die sich auf die Leistung der Formularumgebung auswirken, mithilfe der JAVA-Einstellungsoption.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
@@ -11,16 +11,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 62d31b00-be95-4502-9e97-3ce563192de2
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '436'
 ht-degree: 100%
 
 ---
 
 # Optimieren der Leistung bei der Systemüberwachung{#fine-tuning-health-monitor-performance}
 
-Das Sammeln der Systemstatistiken, die in der Systemüberwachung angegeben werden, hat Auswirkungen auf die Leistung Ihrer AEM Forms-Umgebung.  Diese Auswirkungen können durch Festlegen der unten aufgeführten Java-Optionen in Ihrem Anwendungs-Server kontrolliert werden.
+Das Sammeln der Systemstatistiken, die in der Systemüberwachung angegeben werden, hat Auswirkungen auf die Leistung Ihrer AEM Forms-Umgebung. Diese Auswirkungen können durch Festlegen der unten aufgeführten Java-Optionen in Ihrem Anwendungs-Server kontrolliert werden.
 
 <table>
  <thead>
@@ -34,12 +34,12 @@ Das Sammeln der Systemstatistiken, die in der Systemüberwachung angegeben werde
   <tr>
    <td><p>adobe.healthmonitor.enabled</p></td>
    <td><p>Systemüberwachung-Thread aktivieren oder deaktivieren</p></td>
-   <td><p>Ja</p></td>
+   <td><p>wahr</p></td>
   </tr>
   <tr>
    <td><p>adobe.cache.statistics-enabled</p></td>
    <td><p>Gemfire-Zwischenspeicherung aktivieren oder deaktivieren</p></td>
-   <td><p>Ja</p></td>
+   <td><p>wahr</p></td>
   </tr>
   <tr>
    <td><p>adobe.healthmonitor.refresh-interval</p></td>
@@ -48,12 +48,12 @@ Das Sammeln der Systemstatistiken, die in der Systemüberwachung angegeben werde
   </tr>
   <tr>
    <td><p>adobe.cache.multicast-port</p></td>
-   <td><p>Der Multicast-Anschluss, der zum Kommunizieren mit anderen Mitgliedern des gelieferten Systems verwendet wird. Wenn dieser auf null festgelegt ist, wird Multicast für die Mitgliedererkennung und für den Vertrieb deaktiviert. </p><p>Hinweis: Wählen Sie verschiedene Multicast-Adressen und -Anschlüsse für verschiedene verteilte Systeme aus.  Verwenden Sie nicht nur verschiedene Adressen.</p></td>
+   <td><p>Der Multicast-Anschluss, der zum Kommunizieren mit anderen Mitgliedern des gelieferten Systems verwendet wird. Wenn dieser auf null festgelegt ist, wird Multicast für die Mitgliedererkennung und für den Vertrieb deaktiviert. </p><p>Hinweis: Wählen Sie verschiedene Multicast-Adressen und -Anschlüsse für verschiedene verteilte Systeme aus. Verwenden Sie nicht nur verschiedene Adressen.</p></td>
    <td><p>Kein Standardwert. Die gültigen Werte reichen von 0 bis 65535.</p></td>
   </tr>
   <tr>
    <td><p>statistic-sample-rate</p></td>
-   <td><p>Die Rate in Millisekunden, in der Statistiken neu berechnet werden.  Betriebssystemstatistiken werden nur aktualisiert, wenn ein Beispiel abgefragt wird.</p></td>
+   <td><p>Die Rate in Millisekunden, in der Statistiken neu berechnet werden. Betriebssystemstatistiken werden nur aktualisiert, wenn ein Beispiel abgefragt wird.</p></td>
    <td><p>600000</p></td>
   </tr>
   <tr>

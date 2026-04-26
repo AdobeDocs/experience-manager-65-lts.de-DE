@@ -9,10 +9,10 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 595f8d31-f297-48be-8ead-f171a60891b8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 98%
+source-wordcount: '1316'
+ht-degree: 91%
 
 ---
 
@@ -40,9 +40,11 @@ Wenn Sie eine [interaktive Kommunikation erstellen oder eine vorhandene bearbeit
 
 **A.** Kanal-Browser **B.** Inhalts-Browser **C.** Eigenschaften-Browser **D.** Asset-Browser **E.** Komponenten-Browser **F.** Datenquellen-Browser – Datenmodell **G.** Datenquellen-Browser – Übergeordnete Inhalte
 
-<!-- Click to enlarge
+<!--
+Click to enlarge
 
-![sidebar-comps-3](assets/sidebar-comps-3.png)-->
+![sidebar-comps-3](assets/sidebar-comps-3.png)
+-->
 
 Die Seitenleiste beinhaltet Folgendes:
 
@@ -50,16 +52,19 @@ Die Seitenleiste beinhaltet Folgendes:
 
 Mit dem Kanal-Browser können Sie zwischen Druck- und Internet-Kanal der interaktiven Kommunikation wechseln. Je nach dem Kanal, den Sie im Kanal-Browser ausgewählt haben, zeigen die Browser, z. B. Inhalts- und Komponenten-Browser, die Optionen an.
 
-* **Inhalts-Browser**: Im Inhalts-Browser können Sie die Objekthierarchie des Dokuments für den ausgewählten Kanal sehen. Autorinnen und Autoren können zu bestimmten Formularkomponenten navigieren, indem sie auf das entsprechende Element in der Dokumentobjektstruktur tippen. Autorinnen und Autoren können Objekte im Web-Kanal suchen und in dieser Struktur neu anordnen.
+* **Inhaltsbrowser**
+Im Inhaltsbrowser können Sie die Objekthierarchie des Dokuments für den ausgewählten Kanal sehen. Autorinnen und Autoren können zu bestimmten Formularkomponenten navigieren, indem sie auf das entsprechende Element in der Dokumentobjektstruktur tippen. Autorinnen und Autoren können Objekte im Web-Kanal suchen und in dieser Struktur neu anordnen.
 
 * **Eigenschaften-Browser**
 
-  Hier können Sie die Eigenschaften einer Komponente bearbeiten. Die Eigenschaften sind je nach Komponente verschieden. So zeigen Sie beispielsweise die Eigenschaften des Dokument-Containers an: 
-Wählen Sie eine Komponente, dann ![field-level](assets/field-level.png) > **Dokument-Container** und schließlich ![cmppr](assets/cmppr.png) aus.
+  Hier können Sie die Eigenschaften einer Komponente bearbeiten. Die Eigenschaften sind je nach Komponente verschieden. So zeigen Sie beispielsweise die Eigenschaften des Dokumentcontainers an:
+Wählen Sie eine Komponente aus, wählen Sie ![field-level](assets/field-level.png) > **Dokumenten-Container** und klicken Sie dann auf ![cmppr](assets/cmppr.png).
 
-* **Assets-Browser** Trennt verschiedene Arten von Inhalten wie Layout-Fragmente, Bilder, Dokumente, Seiten, Videos. Der Autor kann Assets in die interaktive Kommunikation ziehen und ablegen.
+* **Assets-Browser**
+Trennt verschiedene Inhaltstypen wie Layout-Fragmente, Bilder, Dokumente, Seiten, Videos. Der Autor kann Assets in die interaktive Kommunikation ziehen und ablegen.
 
-* **Komponentenbrowser** Enthält Komponenten, mit denen Sie die Druck- und Webkanäle eines Dokuments erstellen können. Sie können Komponenten per Drag-und-Drop in die interaktive Kommunikation ziehen, um Elemente hinzuzufügen, und hinzugefügte Elemente gemäß den Anforderungen konfigurieren. In der folgenden Tabelle werden die im Komponentenbrowser aufgelisteten Komponenten für Druck- und Webkanäle beschrieben. 
+* **Komponenten-Browser**
+Enthält Komponenten, mit denen Sie die Druck- und Webkanäle eines Dokuments erstellen können. Sie können Komponenten per Drag-und-Drop in die interaktive Kommunikation ziehen, um Elemente hinzuzufügen, und hinzugefügte Elemente gemäß den Anforderungen konfigurieren. In der folgenden Tabelle werden die im Komponentenbrowser aufgelisteten Komponenten für Druck- und Web-Kanäle beschrieben.
 
 | **Komponente** | **Druckkanal** | **Web-Kanal** | **Funktionalität** |
 |---|---|---|---|
@@ -75,7 +80,8 @@ Wählen Sie eine Komponente, dann ![field-level](assets/field-level.png) > **Dok
 
 &#42;&#42; Im Druckkanal sind Zielbereiche in der XDP-/Druckvorlage vordefiniert. Sie können keine neuen Zielbereiche mithilfe der Autorenoberfläche für die interaktive Kommunikation hinzufügen.
 
-* **Datenquellenbrowser** Datenquellenbrowser zeigt die verfügbaren Datenquellen in dem Formulardatenmodell an, das Sie beim Erstellen der interaktiven Kommunikation ausgewählt haben.
+* **Datenquellen-Browser**
+Datenquellenbrowser zeigt die verfügbaren Datenquellen in dem Formulardatenmodell an, das Sie beim Erstellen der interaktiven Kommunikation ausgewählt haben.
 
 ### Wichtige Punkte beim Arbeiten mit Komponenten {#key-points-for-working-with-components}
 
@@ -96,11 +102,11 @@ Die wichtigsten Punkte beim Arbeiten mit interaktiven Kommunikationskomponenten 
 
 Wenn Sie eine Komponente auswählen, wird eine Symbolleiste angezeigt, über die Sie mit ihr arbeiten können. Sie erhalten Optionen zum Ausschneiden, Einfügen, Verschieben und Angeben von Eigenschaften der Komponenten. Ihre Optionen sind:
 
-A. **Konfigurieren**: Wenn Sie **Konfigurieren** auswählen, werden in der Seitenleiste die Komponenteneigenschaften sichtbar.
+A. **Konfigurieren**: Wenn Sie **Konfigurieren** auswählen, werden die Komponenteneigenschaften in der Seitenleiste sichtbar.
 
 B. **Regeln bearbeiten**: Wenn Sie „Regeln bearbeiten“ auswählen, wird der Regeleditor angezeigt, in dem Sie Regeln für die ausgewählte Komponente bearbeiten und erstellen können. Im Regeleditor können Sie auch andere Formularobjekte (Komponenten) auswählen und Regeln für diese Formularobjekte bearbeiten/erstellen.
 
-C. **Kopieren**: Sie können die Kopieroption verwenden, um eine Komponente zu kopieren und an andere Positionen im Formular einzufügen.
+C. **Kopieren**: Sie können die Kopieroption verwenden, um eine Komponente zu kopieren und an andere Positionen in der interaktiven Kommunikation einzufügen.
 
 D. **Ausschneiden**: Sie können die Option zum Ausschneiden verwenden, um in der interaktiven Kommunikation eine Komponente von einer Position an eine andere zu verschieben.
 
@@ -128,9 +134,9 @@ Außerdem können Sie mit der Option **Ersetzen** in der Symbolleiste die vorhan
 
 Die Seitensymbolleiste oben bietet Optionen, mit denen Sie die interaktive Kommunikation in der Vorschau anzeigen und ihre Eigenschaften ändern können. Sie können beim Bearbeiten die interaktive Kommunikation in der Vorschau anzeigen und die gewünschten Änderungen vornehmen. In der Seitensymbolleiste wird Folgendes angezeigt:
 
-* Seitliches Bedienfeld ein/aus![&#x200B; toggle-side-panel](assets/toggle-side-panel.png): Hiermit können Sie die Seitenleiste ein- oder ausblenden.
+* Seitliches Bedienfeld ein/aus![ toggle-side-panel](assets/toggle-side-panel.png): Hiermit können Sie die Seitenleiste ein- oder ausblenden.
 * Seiteninformationen ![pageinformationad](assets/pageinformationad.png): Hiermit können Sie die Seiteneigenschaften anzeigen.
-* Emulator ![ruler](assets/ruler.png): Hiermit können Sie die Darstellung des Formulars für verschiedene Display-Größen (z. B. für Tablets und Smartphones) emulieren.
+* Emulator ![ruler](assets/ruler.png): Hiermit können Sie die Darstellung der interaktiven Kommunikation für verschiedene Display-Größen (z. B. für Tablets und Smartphones) emulieren.
 * Bearbeiten: Hiermit können Sie andere Modi auswählen, wie etwa: Bearbeiten, Stil, Entwickler und Design.
 
    * Bearbeiten: Hiermit können Sie die Eigenschaften der interaktiven Kommunikation und ihre Komponenten bearbeiten. Dies tun Sie, indem Sie beispielsweise eine Komponente hinzufügen, ein Bild ablegen oder obligatorische Felder festlegen.

@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,Workbench
 hide: true
 hidefromtoc: true
 exl-id: 37f5efaa-db0b-4035-987d-4140fc5a97be
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '4602'
+source-wordcount: '4651'
 ht-degree: 99%
 
 ---
@@ -136,8 +136,8 @@ docRef.text = "Text for my document";  // Optionally, you can override the ser
 >
 >Wenn AEM Forms so konfiguriert ist, dass unsichere Dokumente hochgeladen werden können, können Sie zum Hochladen eines Dokuments einen Benutzer verwenden, der nicht die Rolle „Document Upload Application User“ hat. Ein Benutzer kann auch über die Berechtigung zum Hochladen von Dokumenten verfügen. Wenn AEM Forms jedoch so konfiguriert ist, dass nur sichere Dokumente zugelassen werden, stellen Sie sicher, dass der Benutzer über die Rolle „Document Upload Application User“ oder die Berechtigung „Document Upload“ verfügt. (Weitere Informationen unter [Konfigurieren von AEM Forms zum Akzeptieren sicherer und unsicherer Dokumente](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).)
 
-Sie verwenden standardmäßige Flash-Upload-Funktionen für die vorgesehene Upload-URL: `https://SERVER:PORT/remoting/lcfileupload`. Anschließend können Sie das `DocumentReference`-Objekt immer dann verwenden, wenn ein Eingabeparameter vom Typ `Document` erwartet wird.
-` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`Der Remoting-Schnellstart verwendet das Remoting-Upload-Servlet, um eine PDF-Datei an den `MyApplication/EncryptDocument`-Prozess zu übergeben. (Weitere Informationen unter [Aufrufen eines kurzlebigen Prozesses durch Übergeben eines unsicheren Dokuments mithilfe von AEM Forms Remoting (für AEM Forms nicht mehr unterstützt)](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
+Sie verwenden standardmäßige Flash-Upload-Funktionen für die vorgesehene Upload-URL: `https://SERVER:PORT/remoting/lcfileupload`. Anschließend können Sie das `DocumentReference`-Objekt immer dann verwenden, wenn ein Eingabeparameter vom Typ `Document` erwartet wird
+` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`Der Remoting-Schnellstart verwendet das Remoting-Upload-Servlet, um eine PDF-Datei an den `MyApplication/EncryptDocument`Prozess zu übergeben. (Weitere Informationen unter [Aufrufen eines kurzlebigen Prozesses durch Übergeben eines unsicheren Dokuments mithilfe von AEM Forms Remoting (für AEM Forms nicht mehr unterstützt)](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
 
 ```java
  
@@ -624,7 +624,7 @@ Mit Administration-Console können Sie, wenn Sie ein Dokument von einer Flex-Cli
 >[!NOTE]
 >
 >* Um AEM Forms so zu konfigurieren, dass unsichere Dokumente akzeptiert werden, wählen Sie die Option „Unsicheren Dokumenten-Upload von Flex-Anwendungen zulassen“ aus. Starten Sie dann eine Anwendung oder einen Service neu, um sicherzustellen, dass die Einstellung wirksam wird.
-> * Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+> * Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 
 ### Schnellstart: Aufrufen eines kurzlebigen Prozesses durch Übergeben eines sicheren Dokuments mithilfe von Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}

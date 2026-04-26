@@ -6,10 +6,10 @@ feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: dd6eec1e-fa63-410a-bcd3-61892861fd0c
-source-git-commit: cbcce32b78970bb4aae70f041b2f293a53348fad
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 93%
+source-wordcount: '557'
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Gehen Sie wie folgt vor, um den Connector zu installieren:
 
 1. Installieren Sie das Paket mit dem [!UICONTROL Paket-Manager]. Informationen zum Installieren von Paketen finden Sie unter [Dokumentation zum Paket-Manager](/help/sites-administering/package-manager.md).
 1. Erstellen Sie `wf-workfront-users` in den [!DNL Experience Manager]-Benutzergruppen und weisen Sie `/content/dam` die Berechtigung `jcr:all` zu.
-1. Fügen Sie der vorkonfigurierten Indexdefinition eine benutzerdefinierte Eigenschaft für **`ntFolderDamLucene(/oak:index/ntFolderDamLucene)`** hinzu.  Führen Sie die folgenden Schritte aus:
+1. Fügen Sie der vorkonfigurierten Indexdefinition eine benutzerdefinierte Eigenschaft für **`ntFolderDamLucene(/oak:index/ntFolderDamLucene)`** hinzu. Führen Sie die folgenden Schritte aus:
    * Hinzufügen einer **`nt:unstructured`**-Eigenschaft namens **`wfReferenceNumber`** zu:
      `/oak:index/ntFolderDamLucene/indexRules/nt:folder/properties/wfReferenceNumber`.
    * Indizieren Sie `index /oak:index/ntFolderDamLucene` neu, indem Sie die Neuindizierungsmarkierung auf `true` umstellen.
@@ -56,7 +56,7 @@ Ein `workfront-tools`-Systembenutzer wird automatisch erstellt und die erforderl
 
 >[!NOTE]
 >
-> Wenn Sie Unternehmens-Proxy-Server verwenden, fügen Sie [!DNL workfront] in die PID [!UICONTROL Apache HTTP Components Proxy Configuration] für den [!UICONTROL Enhanced Workfront Connector] ein, um dies zu erkennen. Das erforderliche PID-Format ist: `org.apache.http.proxyconfigurator~workfront`.
+> Wenn Sie Unternehmens-Proxy-Server verwenden, fügen Sie [!DNL workfront] in die [!UICONTROL Apache-HTTP-Komponenten-Proxy-Konfigurations-PID] für den [!UICONTROL erweiterten Workfront-Connector] ein, um dies zu erkennen. Das erforderliche PID-Format ist: `org.apache.http.proxyconfigurator~workfront`.
 
 ## Konfigurieren der Verbindung zwischen [!DNL Experience Manager] und [!DNL Workfront] {#configure-connection}
 

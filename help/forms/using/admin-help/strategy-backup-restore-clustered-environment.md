@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: 1b7e0c532ab46346059de01cee4a1adecf3a0a13
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 100%
+source-wordcount: '1398'
+ht-degree: 98%
 
 ---
 
@@ -139,7 +139,7 @@ Führen Sie die folgenden Schritte aus, wenn der gesamte Cluster aufgrund von Fe
 >Bedenken Sie die folgenden Punkte:
 
 * Wenn der fehlgeschlagene Knoten ein AEM-Primärknoten war, kopieren Sie den gesamten Inhalt des sekundären Repository-Ordners („crx-repository\crx.0000“, wobei „0000“ eine beliebige Zahl sein kann) in den Repository-Ordner „crx-repository\“ und löschen Sie den sekundären Repository-Ordner.
-* Bevor Sie einen Clusterknoten neu starten, stellen Sie sicher, dass Sie das Repository „/clustered.txt“ auf dem Primärknoten löschen.
+* Bevor Sie einen Cluster-Knoten neu starten, achten Sie darauf, dass Sie das Repository „/clustered.txt“ vom primären Knoten löschen.
 * Stellen Sie sicher, dass der primäre Knoten zuerst gestartet wird, und starten Sie die anderen Knoten erst, wenn er vollständig hochgefahren ist.
 
 ### Wiederherstellen des gesamten Clusters {#restoring-the-entire-cluster}
@@ -161,7 +161,7 @@ Führen Sie die folgenden Schritte aus, wenn der gesamte Cluster aufgrund von Fe
    1. Löschen Sie die Datei clusterNode/revision.log auf allen Cluster-Knoten.
    1. Löschen Sie die .lock-Datei auf allen Cluster-Knoten, falls vorhanden.
    1. Löschen Sie Datei repository/system.id auf allen Cluster-Knoten, falls vorhanden.
-   1. Löschen Sie die Dateien „*/listener.properties“ auf allen Cluster-Knoten, falls vorhanden.
+   1. Löschen Sie die Dateien &amp;ast;&amp;ast;/listener.properties auf allen Cluster-Knoten, falls vorhanden.
    1. Stellen Sie repository/cluster_node.id für einzelne Cluster-Knoten wieder her.
 
 >[!NOTE]
@@ -169,7 +169,7 @@ Führen Sie die folgenden Schritte aus, wenn der gesamte Cluster aufgrund von Fe
 >Bedenken Sie die folgenden Punkte:
 
 * Wenn der ausgefallene Knoten ein AEM-Primärknoten war, kopieren Sie den gesamten Inhalt aus dem sekundären Repository-Ordner (er hat die Form „crx-repository\crx.0000“, wobei „0000“ beliebigen Ziffern entsprechen kann) in den Repository-Ordner „crx-repository\“.
-* Bevor Sie einen Cluster-Knoten neu starten, achten Sie darauf, dass Sie das Repository „/clustered.txt“ vom primären Knoten löschen.
+* Bevor Sie einen Clusterknoten neu starten, stellen Sie sicher, dass Sie das Repository „/clustered.txt“ auf dem Primärknoten löschen.
 * Stellen Sie sicher, dass der primäre Knoten zuerst gestartet wird, und starten Sie die anderen Knoten erst, wenn er vollständig hochgefahren ist.
 
 ## Sichern und Wiederherstellen des Veröffentlichungsknotens der Correspondence Management Solution {#back-up-and-restore-correspondence-management-solution-publish-node}

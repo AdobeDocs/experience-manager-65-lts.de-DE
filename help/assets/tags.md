@@ -1,15 +1,15 @@
 ---
 title: Integrieren von Dynamic Media Viewers mit Adobe Analytics und Experience Platform Tags
-description: Erfahren Sie mehr über die Dynamic Media Viewers-Erweiterung für Experience Platform Tags und Dynamic Media Viewers 5.13. Sie ermöglicht es Kunden von Adobe Analytics und Experience Platform Tags, für Dynamic Media Viewers in ihrer Experience Platform Tags-Konfiguration spezifische Ereignisse und Daten zu verwenden.
+description: Erfahren Sie mehr über die Dynamic Media Viewers-Erweiterung für Experience Platform Tags und Dynamic Media Viewers 5.13. Damit können Kundinnen und Kunden von Adobe Analytics- und Experience Platform-Tags für Dynamic Media-Viewer spezifische Ereignisse und Daten in ihrer Experience Platform-Tags-Konfiguration verwenden.
 mini-toc-levels: 3
 feature: Viewers
 role: User,Admin,Developer
 solution: Experience Manager, Experience Manager Assets
 exl-id: 3aea14f7-052d-4f23-b65d-e648623146e7
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '6663'
-ht-degree: 100%
+source-wordcount: '6929'
+ht-degree: 99%
 
 ---
 
@@ -141,7 +141,8 @@ Zum Tracking von Dynamic Media-Viewern in Experience Manager Sites müssen alle 
 
 Nach ordnungsgemäßer Konfiguration verfolgt jeder Dynamic Media-Viewer, den Sie einer Sites-Seite mithilfe einer von Dynamic Media unterstützten WCM-Komponente hinzufügen, automatisch Daten für Adobe Analytics oder Adobe Analytics for Video oder beides.
 
-<!-- To be reviewed and updated although this is found live in the Experience ManageraaCS version:
+<!--
+To be reviewed and updated although this is found live in the Experience ManageraaCS version:
 See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
 -->
 
@@ -155,7 +156,8 @@ Nach der ordnungsgemäßen Konfiguration können Sie Experience Platform Tags-Un
 
 Weitere Informationen zur Verwendung des Einbettungs-Codes für die Experience Platform Tags-Bibliothek finden Sie unter [Hinzufügen von Einbettungs-Code für Experience Platform Tags](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code.html?lang=de).
 
-<!-- To be reviewed and updated although this is found live in the Experience ManageraaCS version:
+<!--
+To be reviewed and updated although this is found live in the Experience ManageraaCS version:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of Experience Manager Dynamic Media.
 -->
 
@@ -268,7 +270,7 @@ Es ist jedoch möglich, einen anderen Ansatz zu verwenden und die Erstellung von
 
 ![image2019-7-12_19-2-35](assets/image2019-7-12_19-2-35.png)
 
-Es gibt einen wichtigen Unterschied zwischen der Verwendung von Datenelementen und dem direkten Verweis auf ein Ereignisargument. Bei Datenelementen spielt es keine Rolle, welches Ereignis die Aktion „Variablen festlegen“ auslöst. Das Ereignis, das die Regel auslöst, muss nicht mit dem dynamischen Viewer verknüpft sein. Wählen Sie beispielsweise die Web-Seite aus der Core-Erweiterung aus. Bei Verwendung eines direkten Argumentverweises muss jedoch sichergestellt werden, dass das Ereignis, das die Regel auslöst, dem Ereignisargument entspricht, auf das es verweist.
+Es gibt einen wichtigen Unterschied zwischen der Verwendung von Datenelementen und dem direkten Verweis auf ein Ereignisargument. Bei Datenelementen spielt es keine Rolle, welches Ereignis die Aktion „Variablen festlegen“ auslöst. Das Ereignis, durch das die Regel Trigger wird, muss mit dem dynamischen Viewer nicht in Verbindung stehen. Wählen Sie beispielsweise die Web-Seite aus der Core-Erweiterung aus. Bei Verwendung eines direkten Argumentverweises muss jedoch sichergestellt werden, dass das Ereignis, das die Regel auslöst, dem Ereignisargument entspricht, auf das es verweist.
 
 Wenn Sie beispielsweise auf `%event.detail.dm.LOAD.asset%` verweisen, wird der richtige Asset-Name zurückgegeben, wenn die Regel durch das **[!UICONTROL LOAD]**-Ereignis der Dynamic Media Viewer-Erweiterung ausgelöst wird. Bei jedem anderen Ereignis wird jedoch ein leerer Wert zurückgegeben.
 
@@ -592,7 +594,7 @@ Detaillierte Informationen zu den Funktionen der Erweiterung finden Sie unter [K
 
 Um Änderungen an der Experience Platform Tags-Konfiguration vorzunehmen (einschließlich eingerichteter Eigenschaften, Erweiterungen, Regeln und Datenelemente), müssen Sie diese Änderungen *veröffentlichen*. Die Veröffentlichung in Experience Platform Tags erfolgt über die Registerkarte „Publishing“ unter der Eigenschaftskonfiguration.
 
-Experience Platform Tags kann über mehrere Entwicklungsumgebungen, eine Staging-Umgebung und eine Produktionsumgebung verfügen. Standardmäßig verweist die Experience Platform Tags Cloud-Konfiguration in Experience Manager den Experience Manager-Autorenknoten auf die Staging-Umgebung von Experience Platform Tags. Der Experience Manager-Veröffentlichungsknoten verweist auf die Produktionsumgebung von Experience Platform Tags. Deshalb muss mit den Standardeinstellungen für Experience Manager die Experience Platform Tags-Bibliothek in der Staging-Umgebung veröffentlicht werden. Auf diese Weise kann die Bibliothek im Experience Manager-Autorenknoten verwendet werden. Sie können sie dann in der Produktionsumgebung veröffentlichen, damit sie im Veröffentlichungsknoten von Experience Manager verwendet werden kann.
+Platform Tags kann über mehrere Entwicklungsumgebungen, eine Staging-Umgebung und eine Produktionsumgebung verfügen. Standardmäßig verweist die Experience Platform Tags Cloud-Konfiguration in Experience Manager den Experience Manager-Autorenknoten auf die Staging-Umgebung von Experience Platform Tags. Der Experience Manager-Veröffentlichungsknoten verweist auf die Produktionsumgebung von Experience Platform Tags. Deshalb muss mit den Standardeinstellungen für Experience Manager die Experience Platform Tags-Bibliothek in der Staging-Umgebung veröffentlicht werden. Auf diese Weise kann die Bibliothek im Experience Manager-Autorenknoten verwendet werden. Sie können sie dann in der Produktionsumgebung veröffentlichen, damit sie im Veröffentlichungsknoten von Experience Manager verwendet werden kann.
 
 Weitere Informationen zu Experience Platform Tags-Umgebungen finden Sie unter [Umgebungen](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=de).
 

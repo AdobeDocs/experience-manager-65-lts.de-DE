@@ -12,10 +12,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: e3ef1435-d405-482f-9eb5-f9a64ff03322
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 100%
+source-wordcount: '727'
+ht-degree: 82%
 
 ---
 
@@ -33,9 +33,11 @@ Diese Versionen werden nie bereinigt, sodass die Repository-Größe im Laufe der
 
 AEM wird mit verschiedenen Mechanismen bereitgestellt, mit denen Sie Ihr Repository verwalten können:
 
-* [Versionsmanager](#version-manager) Der Manager kann so konfiguriert werden, dass alte Versionen bei der Erstellung von neuen Versionen entfernt werden.
+* [Versionsmanager](#version-manager)
+Dies kann so konfiguriert werden, dass alte Versionen gelöscht werden, wenn neue Versionen erstellt werden.
 
-* das Tool [Versionen bereinigen](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) Dieses Tool wird im Rahmen der Überwachung und Wartung Ihres Repositorys verwendet.
+* das Tool [Versionen bereinigen](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)
+Dies wird im Rahmen der Überwachung und Wartung Ihres Repositorys verwendet.
 Hiermit können Sie alte Versionen eines Knotens oder eine Hierarchie von Knoten entsprechend den folgenden Parametern entfernen:
 
    * Die maximale Anzahl der Versionen, die im Repository gespeichert werden sollen.
@@ -60,27 +62,27 @@ Um den Versions-Manager entsprechend zu konfigurieren, [erstellen Sie eine Konfi
 
 Die folgenden Optionen sind verfügbar:
 
-* `versionmanager.createVersionOnActivation` (Boolesch, Standardeinstellung: true)
-Legt fest, ob bei der Aktivierung von Seiten eine Version erstellt werden soll.
+* `versionmanager.createVersionOnActivation` (Boolesch, Standard: true)
+Gibt an, ob bei der Aktivierung von Seiten eine Version erstellt werden soll.
 Eine Version wird erstellt, es sei denn, der Replikationsagent ist so konfiguriert, dass er die Erstellung von Versionen unterdrückt, was vom Versions-Manager berücksichtigt wird.
 Eine Version wird erstellt, wenn die Aktivierung auf einem Pfad passiert, der in `versionmanager.ivPaths` enthalten ist (siehe unten).
 
-* `versionmanager.ivPaths`(Zeichenfolge[], Standardeinstellung: `{"/"}`)
-Gibt den Pfad an, über den Versionen bei einer Aktivierung implizit erstellt werden, wenn die Einstellung für `versionmanager.createVersionOnActivation` auf „true“ gesetzt ist.
+* `versionmanager.ivPaths`(Zeichenfolge[], Standard: `{"/"}`)
+Gibt die Pfade an, in denen Versionen bei Aktivierung implizit erstellt werden, wenn `versionmanager.createVersionOnActivation` auf „true“ gesetzt ist.
 
-* `versionmanager.purgingEnabled` (Boolesch, Standardeinstellung: false)
-Legt fest, ob die Bereinigung bei der Erstellung von neuen Versionen aktiviert werden soll.
+* `versionmanager.purgingEnabled` (Boolesch, Standard: false)
+Legt fest, ob die Bereinigung aktiviert werden soll, wenn neue Versionen erstellt werden.
 
-* `versionmanager.purgePaths` (Zeichenfolge[], Standardeinstellung: {&quot;/content&quot;})
+* `versionmanager.purgePaths` (Zeichenfolge[], Standard: {&quot;/content“})
 Gibt an, auf welchen Pfaden Versionen gelöscht werden sollen, wenn neue Versionen erstellt werden.
 
 * `versionmanager.maxAgeDays` (int, Standardeinstellung: 30)
-Legt fest, dass beim Bereinigen alle Versionen entfernt werden, die älter als dieser Wert sind. Ist der Wert kleiner als „1“, wird die Bereinigung nicht auf Basis des Alters der Version durchgeführt.
+Bei der Versionsbereinigung werden alle Versionen entfernt, die älter als der konfigurierte Wert sind. Ist der Wert kleiner als „1“, wird die Bereinigung nicht auf Basis des Alters der Version durchgeführt.
 
 * `versionmanager.maxNumberVersions` (int, Standardeinstellung: 5)
-Legt fest, dass beim Bereinigen alle Versionen entfernt werden, die älter als die n-te neue Version sind. Ist der Wert kleiner als „1“, wird die Bereinigung nicht auf Basis der Anzahl der Versionen durchgeführt.
+Bei der Versionsbereinigung werden alle Versionen entfernt, die älter als die n-te neueste Version sind. Ist der Wert kleiner als „1“, wird die Bereinigung nicht auf Basis der Anzahl der Versionen durchgeführt.
 
-* `versionmanager.minNumberVersions` (int, Standardeinstellung: 0)
+* `versionmanager.minNumberVersions` (int, Standard 0)
 Die Mindestanzahl der Versionen, die unabhängig vom Alter beibehalten werden. Wenn hier ein Wert kleiner als 1 festgelegt wird, wird keine Mindestanzahl an Versionen beibehalten.
 
 >[!NOTE]

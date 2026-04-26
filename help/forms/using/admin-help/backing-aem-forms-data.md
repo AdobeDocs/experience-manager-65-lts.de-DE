@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: cbcb9301-48c9-4394-b8c0-766eed76101d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 100%
+source-wordcount: '1555'
+ht-degree: 98%
 
 ---
 
@@ -66,10 +66,10 @@ Sichern Sie die AEM Forms-Datenbank, einschließlich aller Transaktionsprotokoll
 
 Weitere Informationen finden Sie im entsprechenden Knowledgebase-Artikel für Ihre Datenbank:
 <!-- The four URLs below are all 404s; checked July 19, 2023 -->
-* [Oracle-Backup und -Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403624)
-* [MySQL-Backup und -Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403625)
-* [Microsoft® SQL Server-Backup und -Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403623)
-* [DB2®-Backup und -Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403626)
+* [Oracle-Backup und Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403624)
+* [MySQL-Backup und Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403625)
+* [Microsoft® SQL Server-Backup und Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403623)
+* [DB2®-Backup und Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403626)
 
 Diese Artikel enthalten Anleitungen zu grundlegenden Datenbankfunktionen für die Sicherung und Wiederherstellung von Daten. Sie sind nicht als allumfassende technische Handbücher für die Sicherungs- und Wiederherstellungsfunktion der Datenbank eines bestimmten Anbieters gedacht. Es handelt sich lediglich um allgemeine Informationen zu Befehlen, die zum Erstellen einer zuverlässigen Datenbanksicherungsstrategie für Ihre AEM Forms-Anwendungsdaten erforderlich sind.
 

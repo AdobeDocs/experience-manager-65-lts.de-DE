@@ -11,10 +11,10 @@ feature: Adaptive Forms,AEM Forms Upgrade,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 643bc966-b2d8-4626-8c25-b63c8909287e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 75%
+source-wordcount: '395'
+ht-degree: 67%
 
 ---
 
@@ -37,7 +37,7 @@ Gehen Sie wie folgt vor, um mit dem vollständigen Installationsprogramm ein Upg
 1. Lesen Sie das Dokument [Vorbereiten auf die Aktualisierung auf AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65_de), um zu erfahren, wie Sie die Aufgaben durchführen, die sicherstellen, dass die Aktualisierung richtig und nur mit minimalem Serverausfall verläuft.
 1. Wählen Sie je nach vorhandener Umgebung und Anwendungsserver eines der folgenden Dokumente und befolgen Sie die Anweisungen.
 
-   * [Upgrade von AEM 6.3 oder AEM 6.4 Forms auf AEM 6.5 Forms for JBoss &#x200B;](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_de)
+   * [Upgrade von AEM 6.3 oder AEM 6.4 Forms auf AEM 6.5 Forms for JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_de)
    * [Upgrade von AEM 6.3 oder AEM 6.4 Forms auf AEM 6.5 Forms for WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_de)
    * [Upgrade von AEM 6.3 oder AEM 6.4 Forms auf AEM 6.5 Forms for JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_de)
 

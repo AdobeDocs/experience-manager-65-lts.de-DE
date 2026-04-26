@@ -6,10 +6,10 @@ role: Developer
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
-source-git-commit: e799e9c99a12cad108ae2c035797e5887a2f4ef1
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 97%
+source-wordcount: '2064'
+ht-degree: 95%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->Die neuesten Informationen zu Experience Manager-APIs finden Sie unter [Adobe Experience Manager-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/?lang=de).
+>Die neuesten Informationen zu Experience Manager-APIs finden Sie unter [Adobe Experience Manager-APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einem wichtigen Teil der Headless-Bereitstellungs-Funktion in AEM.
 
@@ -278,7 +278,7 @@ Nutzung erfolgt über:
 
 `GET /{cfParentPath}/{cfName}.json`
 
-Zum Beispiel:
+Beispiel:
 
 `http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
@@ -313,7 +313,7 @@ Nutzung erfolgt über:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Beschränkungen {#limitations}
+## Einschränkungen {#limitations}
 
 Es gibt einige Beschränkungen:
 
@@ -394,7 +394,7 @@ Wird zurückgegeben, wenn:
 
 Hier finden Sie detaillierte API-Referenzen:
 
-* [Adobe Experience Manager Assets API – Inhaltsfragmente](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets-API - Inhaltsfragmente](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [Assets-HTTP-API](/help/assets/mac-api-assets.md)
 
    * [Verfügbare Funktionen](/help/assets/mac-api-assets.md#assets)

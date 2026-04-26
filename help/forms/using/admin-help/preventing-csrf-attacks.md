@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 00f52303-66c3-4865-a74b-eda0e6949193
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 100%
+source-wordcount: '978'
+ht-degree: 97%
 
 ---
 
@@ -70,7 +70,7 @@ AEM Forms ermöglicht eine Referrer-Filterung, was CSRF-Angriffe verhindern kann
 
 Wenn Sie Configuration Manager ausführen, werden der Standardhost und die IP-Adresse oder der Formular-Server der Liste für zulässige Referrer hinzugefügt. Sie können diese Liste in der Administrationskonsole bearbeiten.
 
-1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Benutzerverwaltung“ > „Konfiguration“ > „URLs für zulässige Referrer konfigurieren“. Die Liste für zulässige Referrer wird unten auf der Seite angezeigt.
+1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „URLs für zulässige Referrer konfigurieren“. Die Liste der zulässigen verweisenden Stellen wird unten auf der Seite angezeigt.
 1. Hinzufügen eines zulässigen Referrers:
 
    * Geben Sie einen Hostnamen oder eine IP-Adresse in das Feld „Zulässige Referrer“ ein. Um mehr als einen zulässigen Referrer gleichzeitig hinzuzufügen, geben Sie jeden Hostnamen oder jede IP-Adresse in eine neue Zeile ein.

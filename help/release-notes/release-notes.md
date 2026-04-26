@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 560d505465362d33f2864f13e9b75921b83ba5e4
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
 source-wordcount: '7427'
 ht-degree: 13%
@@ -242,7 +242,7 @@ Die Seiteneditor-Veröffentlichung verarbeitet jetzt URLs, die Selektoren oder S
 
 #### Vorlageneditor{#sites-template-editor-65-lts-sp2}
 
-Der Text zum Vorlagenstatus wird für einige Gebietsschemata vertikal unter **Tools** > **Allgemein** > **&#x200B;**&#x200B;angezeigt. Die Bezeichnung „veraltet“ unterbrach das Layout und las als Zeichenspalte. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass die Beschriftung auf einer einzigen horizontalen Linie gerendert wird. (SITES-36797)
+Der Text zum Vorlagenstatus wird für einige Gebietsschemata vertikal unter **Tools** > **Allgemein** > **** angezeigt. Die Bezeichnung „veraltet“ unterbrach das Layout und las als Zeichenspalte. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass die Beschriftung auf einer einzigen horizontalen Linie gerendert wird. (SITES-36797)
 
 #### Universeller Editor {#sites-universal-editor-65-lts-sp2}
 
@@ -262,7 +262,8 @@ Assets Relate funktioniert jetzt für Dateinamen, die Leerzeichen enthalten. Akt
 <!-- #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp2} -->
 
 <!--
-#### Forms Designer-->
+#### Forms Designer
+-->
 
 ### [!DNL Forms]{#forms-65-lts-sp2}
 
@@ -382,7 +383,8 @@ Diese älteren Konfigurationen verwenden Eigenschaften wie `whitelist.name` und 
 <!--
 #### Security{#foundation-security-65-lts-sp2}
 
-AEM now prevents NullPointerException errors when a logged-in user lacks read access for some groups and opens the Groups tab. The tab now hides groups without access and renders group membership details without a blank or unresponsive UI. (NPR-43311) -->
+AEM now prevents NullPointerException errors when a logged-in user lacks read access for some groups and opens the Groups tab. The tab now hides groups without access and renders group membership details without a blank or unresponsive UI. (NPR-43311)
+-->
 
 #### Sling{#foundation-sling-65-lts-sp2}
 
@@ -450,7 +452,7 @@ Siehe auch [Aktualisieren der Uber Jar-Version von AEM](/help/sites-deploying/up
 ### Aktualisieren {#upgrade}
 
 * Weitere Informationen zum Upgrade-Verfahren finden Sie unter [Dokumentation zu Upgrades](/help/sites-deploying/upgrade.md).
-* Detaillierte Aktualisierungsanweisungen finden Sie im [Aktualisierungshandbuch für AEM Forms 6.5 LTS SP1 on JEE](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Detaillierte Aktualisierungsanweisungen finden Sie im [Aktualisierungshandbuch für AEM Forms 6.5 LTS SP1 on JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Best Practices für AEM 6.5 LTS Service Pack-Upgrades
 
@@ -646,5 +648,5 @@ In den folgenden Textdokumenten sind die in dieser Version [!DNL Experience Mana
 Diese Websites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
 
 * [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/)
-* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 

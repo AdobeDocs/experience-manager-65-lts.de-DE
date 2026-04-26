@@ -10,10 +10,10 @@ feature: Adaptive Forms,Reader Extensions,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: a8ec523c-b304-41ba-9980-8ba84e076c7d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 95%
+source-wordcount: '315'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 95%
 
 Die folgenden Schnellstarts sind für den Service für Acrobat Reader DC-Erweiterungen verfügbar.
 
-[Schnellstart (SOAP-Modus)](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[Schnellstart (SOAP-Modus):Applying Verwendungsrechte unter Verwendung der Java-API](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [Entfernen von Verwendungsrechten aus PDF-Dokumenten](#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 

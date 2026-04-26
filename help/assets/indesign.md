@@ -5,10 +5,10 @@ role: Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: f0db5ec6-45ea-418e-ae5f-e6e307a40a38
-source-git-commit: 8489976fbcee595ee8230c530597523e7cd0f6b7
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1548'
-ht-degree: 98%
+source-wordcount: '1582'
+ht-degree: 97%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 98%
 * Einen Proxy Worker zum Definieren und Verwalten einer bestimmten Aufgabe.
 Diese Aufgaben können unterschiedlichster Art sein, beispielsweise die Nutzung von [!DNL InDesign Server] zur Verarbeitung von Dateien.
 
-Um Dateien, die Sie mit [!DNL Adobe InDesign] erstellt haben, vollständig in [!DNL Experience Manager Assets] zu laden, wird ein Proxy verwendet. Dieser verwendet einen Proxy Worker für die Kommunikation mit dem [!DNL Adobe InDesign Server], auf dem [Skripte](https://helpx.adobe.com/de/indesign/using/scripting.html) ausgeführt werden, um Metadaten zu extrahieren und verschiedene Ausgabedarstellungen für [!DNL Experience Manager Assets] zu generieren. Der Proxy Worker ermöglicht die bidirektionale Kommunikation zwischen [!DNL InDesign Server]-Instanzen und den [!DNL Experience Manager]-Instanzen in einer Cloud-Konfiguration.
+Um Dateien, die Sie mit [!DNL Adobe InDesign] erstellt haben, vollständig in [!DNL Experience Manager Assets] zu laden, wird ein Proxy verwendet. Dieser verwendet einen Proxy Worker für die Kommunikation mit dem [!DNL Adobe InDesign Server], auf dem [Skripte](https://helpx.adobe.com/indesign/using/scripting.html) ausgeführt werden, um Metadaten zu extrahieren und verschiedene Ausgabedarstellungen für [!DNL Experience Manager Assets] zu generieren. Der Proxy Worker ermöglicht die bidirektionale Kommunikation zwischen [!DNL InDesign Server]-Instanzen und den [!DNL Experience Manager]-Instanzen in einer Cloud-Konfiguration.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] gibt es als zwei separate Angebote. Das [Adobe InDesign](https://www.adobe.com/de/products/indesign.html)-Desktop-Programm, das zum Entwerfen von Seiten-Layouts für den Druck und die digitale Distribution verwendet wird. [Adobe InDesign Server](https://www.adobe.com/de/products/indesignserver.html) ermöglicht die programmgesteuerte automatisierte Erstellung von Dokumenten, die auf denen basieren, die Sie mit [!DNL InDesign] entworfen haben. Es fungiert als Dienst, der eine Schnittstelle zu seiner [ExtendScript](https://helpx.adobe.com/de/indesign/using/scripting.html)-Engine bietet. Die Skripte werden in [!DNL ExtendScript] geschrieben, was [!DNL JavaScript] ähnelt.
+>[!DNL Adobe InDesign] gibt es als zwei separate Angebote. Das [Adobe InDesign](https://www.adobe.com/de/products/indesign.html)-Desktop-Programm, das zum Entwerfen von Seiten-Layouts für den Druck und die digitale Distribution verwendet wird. [Adobe InDesign Server](https://www.adobe.com/de/products/indesignserver.html) ermöglicht die programmgesteuerte automatisierte Erstellung von Dokumenten, die auf denen basieren, die Sie mit [!DNL InDesign] entworfen haben. Es fungiert als Dienst, der eine Schnittstelle zu seiner [ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html)-Engine bietet.Die Skripte werden in [!DNL ExtendScript] geschrieben, das Ähnlichkeiten mit [!DNL JavaScript] aufweist.
 
 ## So funktioniert die Extraktion {#how-the-extraction-works}
 
@@ -58,7 +58,7 @@ Dieses Befehlsskript führt folgende Aktionen aus:
 1. Nach der Extraktion und Ausgabegenerierung:
 
    * Die Struktur wird auf einer `cq:Page` repliziert (Ausgabetyp).
-   * Der extrahierte Text und die Dateien werden in [!DNL Experience Manager Assets] gespeichert. 
+   * Der extrahierte Text und die Dateien werden in [!DNL Experience Manager Assets] gespeichert.
    * Alle Ausgabedarstellungen werden in [!DNL Experience Manager Assets] im Asset selbst gespeichert.
 
 ## Integration von [!DNL InDesign Server] mit Experience Manager {#integrating-the-indesign-server-with-aem}
@@ -94,7 +94,7 @@ Um den [!DNL InDesign Server] für die Verwendung mit [!DNL Experience Manager] 
 [!DNL Experience Manager Assets] verfügt über den vorkonfigurierten Workflow **[!UICONTROL DAM-Update-Asset]**, der mehrere Prozessschritte speziell für [!DNL InDesign] umfasst:
 
 * [Extraktion von Medien](#media-extraction)
-* [Extraktion von Seiten  &#x200B;](#page-extraction)
+* [Extraktion von Seiten](#page-extraction)
 
 Dieser Workflow wird mit Standardwerten konfiguriert, die für Ihr Setup in den verschiedenen Autoreninstanzen angepasst werden können. (Dies ist ein Standard-Workflow. Deshalb finden Sie weitere Information unter [Bearbeiten eines Workflows](/help/sites-developing/workflows-models.md#configuring-a-workflow-step).) Wenn Sie die Standardwerte (einschließlich SOAP-Port) verwenden, ist keine Konfiguration erforderlich.
 
@@ -114,7 +114,8 @@ Argumente und Skriptpfade zur Extraktion von Medien
 
 * **Skripte erweitern**: Hier können Sie unterschiedliche Skriptkombinationen angeben. Wenn Ihre eigenen Skripte auf [!DNL InDesign Server] ausgeführt werden sollen, speichern Sie die Skripte unter `/apps/settings/dam/indesign/scripts`.
 
-<!-- TBD: Hiding this link since ADC is not available anymore. 
+<!--
+TBD: Hiding this link since ADC is not available anymore. 
 For information about [!DNL Adobe InDesign] scripts, see [InDesign developer documentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 -->
 
@@ -162,7 +163,7 @@ Anpassungen können Sie im Schritt **[!UICONTROL Extraktion von Seiten]** auf de
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
    * **IDS-Pool**
-Die SOAP-Endpunkte, die mit dem [!DNL InDesign Server] kommunizieren sollen. Sie können Elemente nach Bedarf hinzufügen, entfernen und ordnen.
+Die SOAP-Endpunkte, die für die Kommunikation mit dem [!DNL InDesign Server] verwendet werden sollen. Sie können Elemente nach Bedarf hinzufügen, entfernen und ordnen.
 
 1. Klicken Sie zum Speichern auf „OK“.
 
@@ -234,7 +235,7 @@ Sie können die standardmäßigen Admin-Anmeldeinformationen (Benutzername und P
 
 1. Wechseln zu `/etc/cloudservices/proxy.html`.
 1. Geben Sie im Dialogfeld den neuen Benutzernamen und das neue Passwort an.
-1. Speichern Sie die Anmeldeinformationen. 
+1. Speichern Sie die Anmeldeinformationen.
 
 >[!MORELIKETHIS]
 >

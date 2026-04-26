@@ -10,7 +10,7 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: e95f382b-ae89-46d5-b109-ea3257b6b046
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 92%
@@ -31,7 +31,7 @@ ht-degree: 92%
   <tr>
    <td><p>Eigenschaft: cq:cugEnabled</p> <p>Deklarierender Knotentyp: nicht zutreffend, Resteigenschaft</p> </td>
    <td><p>Autorisierung:</p> <p>Knoten: rep:cugPolicy des Knotentyps rep:CugPolicy</p> <p>Deklarierender Knotentyp: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Authentifizierung:</p> <p>Mixin-Typ: granite:AuthenticationRequired</p> </td>
-   <td><p>Um den Lesezugriff zu beschränken, wird eine dedizierte CUG-Richtlinie auf den Zielknoten angewendet.</p> <p>HINWEIS: Richtlinien können nur auf die konfigurierten unterstützten Pfade angewendet werden.</p> <p>Knoten mit dem Namen rep:cugPolicy und Typ rep:CugPolicy sind geschützt und können nicht mit regulären JCR-API-Aufrufen geschrieben werden. Verwenden Sie stattdessen die Verwaltung der JCR-Zugriffssteuerung.</p> <p>Weitere Informationen finden Sie auf <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">dieser Seite</a>.</p> <p>Um die Authentifizierungspflicht auf einem Knoten durchzusetzen, genügt es, den Mixin-Typ granite:AuthenticationRequired hinzuzufügen.</p> <p>HINWEIS: Wird nur unterhalb der konfigurierten unterstützten Pfade berücksichtigt.</p> </td>
+   <td><p>Um den Lesezugriff zu beschränken, wird eine dedizierte CUG-Richtlinie auf den Zielknoten angewendet.</p> <p>HINWEIS: Richtlinien können nur auf die konfigurierten unterstützten Pfade angewendet werden.</p> <p>Knoten mit dem Namen rep:cugPolicy und Typ rep:CugPolicy sind geschützt und können nicht mit regulären JCR-API-Aufrufen geschrieben werden. Verwenden Sie stattdessen die Verwaltung der JCR-Zugriffssteuerung.</p> <p>Weitere Informationen finden Sie auf <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">dieser Seite</a>.</p> <p>Um die Authentifizierungspflicht auf einem Knoten durchzusetzen, genügt es, den Mixin-Typ granite:AuthenticationRequired hinzuzufügen.</p> <p>HINWEIS: Wird nur unter den konfigurierten unterstützten Pfaden berücksichtigt.</p> </td>
   </tr>
   <tr>
    <td><p>Eigenschaft: cq:cugPrincipals</p> <p>Deklarierender Knotentyp: nicht zutreffend, Resteigentum</p> </td>
@@ -98,7 +98,8 @@ Dienst zum Konfigurieren der Ausschlussliste der Prinzipale, die durch die CUG-A
 
   Durch die Aktivierung des Dienstes wird der RequirementService gestartet.
 
-<!-- nested tables not supported - text above is the table>
+<!--
+nested tables not supported - text above is the table>
 <table>
  <tbody>
   <tr>

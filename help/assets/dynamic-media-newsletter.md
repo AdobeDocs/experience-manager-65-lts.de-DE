@@ -1,15 +1,15 @@
 ---
 title: Dynamic Media-Newsletter-Archiv
 description: Der archivierte Dynamic Media Newsletter von Experience League war ein monatlicher Newsletter. Er sollte Ihnen helfen, sich mit Dynamic Media und Dynamic Media Classic vertraut zu machen, sodass Sie sofort Nutzen daraus ziehen können. Die archivierten Newsletter enthalten wertvolle Ressourcen zur Wissensbildung, die in diesem inzwischen eingestellten One-Stop-Shop-Newsletter verfügbar waren. Archivierte Newsletter enthalten Anleitungsvideos und Lösungsübersichten. Außerdem werden wichtige Funktionen und Möglichkeiten wie Bildvorgaben, Viewer-Vorgaben und Videoprofile vorgestellt.
-keywords: Dynamic Media;Newsletter;Produkt-Updates;Tipps und Tricks;Ereignisse;Kundenerfolg;Blog;Blogs;Bilder;Videos; Features; Funktionen
+keywords: Dynamic Media;Newsletter;Produkt-Updates;Tipps und Tricks;Ereignisse;Customer Success;Blog;Blogs;Bilder;Videos; Features; Funktionen
 contentOwner: Rick Brough
 solution: Experience Manager, Experience Manager Assets
 role: User, Admin
 feature: Collaboration,Dynamic Media Classic
 exl-id: ee098fae-cc6f-4c6e-8475-1737134543df
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1111'
 ht-degree: 100%
 
 ---
@@ -24,13 +24,16 @@ Der Dynamic Media Newsletter von Experience League soll Ihnen helfen, sich mit D
 
 In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wissensaufbau, wie z. B. Anleitungsvideos und Lösungsübersichten, alles an einem Ort. Außerdem werden wichtige Funktionen und Möglichkeiten wie Bildvorgaben, Viewer-Vorgaben und Videoprofile vorgestellt.
 
-<!-- ## Get inspired - Stay informed
+<!--
+## Get inspired - Stay informed
 
-[Sign up](https://www.adobe.com/subscription/dynamic-media-newsletter.html) to receive the Dynamic Media Newsletter on a monthly basis in your inbox. -->
+[Sign up](https://www.adobe.com/subscription/dynamic-media-newsletter.html) to receive the Dynamic Media Newsletter on a monthly basis in your inbox.
+-->
 
 ## Dynamic Media-Newsletter-Archiv
 
-<!-- * **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+<!--
+* **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
 
     In this issue:
 
@@ -43,7 +46,8 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
     * Look what's new in Experience Manager Innovation.
     * Build your Experience Manager skills *live* with the Adobe pros.
     * Connect with the Adobe Experience Manager Community.
-    * Fast-track your Adobe expertise with Adobe Experience League. -->
+    * Fast-track your Adobe expertise with Adobe Experience League.
+-->
 
 * **[April 2020, Ausgabe 3](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2020_April.html?lang=de)**
 
@@ -138,7 +142,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
    * Sehen Sie sich wichtige Anleitungsvideos in Experience League an.
    * Erfahren Sie mehr über die bevorstehende Adobe Insider Tour.
    * Informieren Sie sich darüber, wie Sie digitale Assets vor Piraterie schützen können.
-   * Erfahren Sie mehr über die KI-gesteuerte Funktion für das smarte Zuschneiden von Bildern.
+   * Erfahren Sie mehr über die KI-gesteuerte Funktion für den intelligenten Zuschnitt von Bildern.
    * Treffen Sie `Alex Thiers`, eine der treibenden Kräfte hinter vielen der großartigen Funktionen und Innovationen in Dynamic Media und Dynamic Media Classic.
 
 * **[Mai 2019, Ausgabe 05](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_05_2019_May.html?lang=de)**
@@ -149,7 +153,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
    * Sehen Sie sich wichtige Anleitungsvideos in Experience League an.
    * Informieren Sie sich über die bevorstehende Adobe Insider Tour.
    * Lesen Sie eine dreiteilige Blog-Serie, um Ihre Rich-Media-Strategie zu aktualisieren.
-   * Erfahren Sie mehr über die KI-gesteuerte Funktion für das smarte Zuschneiden von Videos.
+   * Erfahren Sie mehr über die KI-gesteuerte Funktion für den intelligenten Zuschnitt von Videos.
 
 * **[April 2019, Ausgabe 04](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_04_2019_April.html?lang=de)**
 

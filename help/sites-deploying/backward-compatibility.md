@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 96e44da3-da89-4671-a4fb-19ce1b9a38c4
-source-git-commit: 10f0949f6317f060c38791cfe43156a56f8ebe47
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '503'
 ht-degree: 100%
 
 ---
@@ -54,7 +54,7 @@ Der Legacy-Modus eignet sich für Kundinnen und Kunden, die benutzerdefinierte S
 
 ## Einrichtung {#how-to-set-up}
 
-Das **AEM 6.4-Kompatibilitätspaket für 6.5** kann als Paket mit Package Manager installiert werden. Sie können das [AEM 6.4-Kompatibilitätspaket für 6.5 von der Software Distribution-Site](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=20&package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) herunterladen.
+Das **AEM 6.4-Kompatibilitätspaket für 6.5** kann als Paket mit dem Paket-Manager installiert werden. Sie können das [AEM 6.4-Kompatibilitätspaket für 6.5 von der Software Distribution-Site](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=20&package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) herunterladen.
 
 Sobald das Kompatibilitätspaket installiert wurde, können Sie das Routing über einen Schalter in der OSGi-Konfiguration aktivieren oder deaktivieren:
 

@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: d297ab09-2b92-442a-8b19-ffee86e24bb9
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 100%
+source-wordcount: '545'
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Weitere Informationen und Anweisungen zu Acrobat Reader DC Extensions finden Sie
 ## Importieren von Berechtigungen {#import-a-credential}
 
 1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
-1. Klicken Sie auf „Importieren“. Wählen Sie unter „Trust Store-Typ“ eine der folgenden Optionen aus:
+1. Wählen Sie Importieren. Wählen Sie unter Trust Store-Typ eine der folgenden Optionen:
 
    * **Berechtigung für die Dokumentsignierung:** Eine Berechtigung, die zum Hinzufügen einer digitalen Signatur zu einem Dokument dient.
    * **Berechtigung für Acrobat Reader DC-Erweiterungen:** Ein digitales Zertifikat, das speziell für Acrobat Reader DC-Erweiterungen gilt und die Aktivierung von Adobe Reader-Benutzerrechten in den erstellten PDF-Dokumenten ermöglicht.
@@ -51,7 +51,7 @@ Weitere Informationen und Anweisungen zu Acrobat Reader DC Extensions finden Sie
 
 1. Klicken Sie auf „Durchsuchen“, um die Berechtigung zu suchen. Geben Sie das Kennwort der Berechtigung ein und klicken Sie auf „OK“.
 
-   Wenn die Fehlermeldung „Fehler beim Importieren einer Berechtigung aufgrund eines fehlerhaften Dateiformats oder eines falschen Kennworts“ angezeigt wird, müssen Sie sicherstellen, dass das Kennwort gültig ist. 
+   Wenn die Fehlermeldung „Fehler beim Importieren einer Berechtigung aufgrund eines fehlerhaften Dateiformats oder eines falschen Kennworts“ angezeigt wird, müssen Sie sicherstellen, dass das Kennwort gültig ist.
 
 ## Exportieren einer Berechtigung {#export-a-credential}
 

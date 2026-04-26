@@ -9,9 +9,9 @@ role: User, Admin,Developer
 feature: Configuration,Rulesets
 solution: Experience Manager, Experience Manager Assets
 exl-id: 8f005ada-275a-444f-9883-64d847fd9959
-source-git-commit: ce717f045221a65f88766d1d5f62d0fa33a3ffcd
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '744'
 ht-degree: 100%
 
 ---
@@ -50,9 +50,11 @@ Für Produktions- und Testumgebungen sind in der Regel unterschiedliche Anmeldun
 
 Informationen zum Anmelden finden Sie unter dem [Adobe Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#sign-in-dmc-app).
 
-<!-- OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+<!--
+OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+-->
 
 **So stellen Sie XML-Regelsätze bereit:**
 

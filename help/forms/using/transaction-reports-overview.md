@@ -8,16 +8,17 @@ feature: Transaction Reports
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 05c15b83-046e-4a11-904a-f45bd0b621df
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '490'
 ht-degree: 100%
 
 ---
 
 # Transaktionsberichte für AEM Forms on OSGi {#transaction-reports-overview}
 
-<!--## Introduction {#introduction}
+<!--
+## Introduction {#introduction}
 
 Transaction reports in AEM Forms let you keep a count of all transactions taken place since a specified date on your AEM Forms deployment. The objective is to provide information about product usage and help business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
@@ -25,7 +26,8 @@ Transaction reports in AEM Forms let you keep a count of all transactions taken 
 * Rendition of a print or a web version of an interactive communication
 * Conversion of a document from one file format to another
 
-For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).-->
+For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).
+-->
 
 Die Transaktionsaufzeichnung ist standardmäßig deaktiviert. Sie können von der AEM-Web-Konsole aus die [Transaktionserfassung aktivieren](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports). Sie können Transaktionsberichte zu Autoren-, Verarbeitungs- oder Veröffentlichungsinstanzen anzeigen. Zeigen Sie Transaktionsberichte zu Autoren- oder Verarbeitungsinstanzen für eine aggregierte Summe aller Transaktionen an. Zeigen Sie Transaktionsberichte zu den Veröffentlichungsinstanzen für eine Zählung aller Transaktionen an, die nur auf derjenigen Veröffentlichungsinstanz stattfinden, von der aus der Bericht ausgeführt wird.
 

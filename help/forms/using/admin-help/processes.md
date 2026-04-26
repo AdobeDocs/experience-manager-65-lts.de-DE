@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 6459abd5-6341-4c28-a747-bde9a91e3a88
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '1643'
 ht-degree: 100%
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Auf der Seite „Prozessliste“ werden die Prozesse angezeigt, die von Benutzenden initiiert oder automatisch gestartet wurden.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. Die Prozessliste enthält die folgenden Informationen:
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Workflow für Formulare“ > „Workflow für Formulare“. Die Prozessliste enthält die folgenden Informationen:
 
    **Prozessname - Version:** Der Name des Prozesses, wie in Workbench definiert.
 
@@ -30,7 +30,7 @@ Auf der Seite „Prozessliste“ werden die Prozesse angezeigt, die von Benutzen
 
    **Status:** Aktiv bedeutet, dass es sich um den Prozess handelt, der für die Prozessversion aktiviert wurde. Inaktiv bedeutet, dass der Prozess eine alte Version ist, von der immer noch Prozessinstanzen vorhanden sind.
 
-   **Erstellungsdatum:** Datum und Uhrzeit der Bereitstellung des Prozesses.
+   **Ertsllungsdatum:** Datum und Uhrzeit der Bereitstellung des Prozesses.
 
 1. Klicken Sie auf einen Prozessnamen, um dessen Prozessinstanzen auf der Seite „Prozessinstanz“ anzuzeigen.
 
@@ -42,7 +42,7 @@ Für jede Prozessinstanz werden in der Liste die folgenden Informationen angezei
 
 **Prozess-ID:** Dieser Bezeichner wird vom Formular-Workflow zugewiesen, wenn der Prozess instanziiert (d. h. von einem Benutzer oder einem automatisierten Schritt initiiert) wird. Anhand dieser ID können Sie die Prozessinstanz während ihres gesamten Lebenszyklus verfolgen.
 
-**Prozessname - Version:** Der Name des Prozesses, wie in Workbench definiert.
+**Prozessname/-version**: Der Name des Prozesses, wie in Workbench definiert.
 
 **Status:** Zeigt an, ob die Prozessinstanz normal ausgeführt wird, den Status wechselt oder gestoppt wurde. (Siehe Informationen zum Status von Prozessinstanzen.)
 
@@ -96,7 +96,7 @@ Wenn Sie die Aussetzung einer Prozessinstanz aufheben, wechselt deren Status in 
 
 Wenn Sie eine Prozessinstanz aussetzen, die andere (untergeordnete) Prozesse mithilfe ihres jeweiligen Aufrufvorgangs aufgerufen hat, werden die untergeordneten Prozesse ebenfalls ausgesetzt.
 
-1. Klicken Sie in der Administration-Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Workflow für Formulare“ > „Workflow für Formulare“.
 1. Wählen Sie auf der Seite „Prozessinstanz“ den Prozess aus und klicken Sie auf „Aussetzen“ oder „Aussetzen aufheben“.
 
 ### Beenden von Prozessinstanzen {#terminate-a-process-instances}
@@ -107,7 +107,7 @@ Sie können Prozessinstanzen mit einem beliebigen Status beenden.
 
 Wenn Sie eine Prozessinstanz beenden, wechselt deren Status zuerst in WIRD BEENDET, dann in BEENDET, und der Prozess wird an der aktuellen Position gestoppt. Es werden keine weiteren Vorgänge ausgeführt und alle damit verbundenen Vorgänge und Aufgaben werden beendet.
 
-1. Klicken Sie in der Administration-Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Workflow für Formulare“ > „Workflow für Formulare“.
 1. Wählen Sie auf der Seite „Prozessinstanz“ den Prozess aus und klicken Sie auf „Beenden“.
 
 ## Arbeiten mit Prozessinstanzdetails {#working-with-process-instance-details}
@@ -192,7 +192,7 @@ Wenn Sie einen Vorgang wiederholen, wird Forms Workflow eine Aufforderung zum Ne
 
 Auf der Seite „Vorgangsdetails“ wird die Zusammenfassung eines in einem Prozess enthaltenen Vorgangs mit seinen aktuellen Benutzerzuweisungen angezeigt.
 
-1. Klicken Sie in der Administration-Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Workflow für Formulare“ > „Workflow für Formulare“.
 1. Klicken Sie auf den Namen eines Prozesses, um die dazugehörigen Prozessinstanzen anzuzeigen. Klicken Sie auf eine Prozessinstanz, um die Seite „Prozessinstanzdetails“ anzuzeigen, und wählen Sie einen Vorgang aus, um die Seite „Vorgangsdetails“ anzuzeigen.
 
    Für jede Aufgabe werden in der Liste die folgenden Informationen angezeigt:

@@ -7,10 +7,10 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43fb8af8-9750-44c1-8e02-34b25b92fd65
-source-git-commit: 194937f0678ea27a04319197f391dd7cc358ec51
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 98%
+source-wordcount: '2007'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,8 @@ ht-degree: 98%
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=de) |
 | AEM 6.5 LTS | Dieser Artikel |
 
-<!-- Scope of metadata articles:
+<!--
+Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
@@ -40,7 +41,7 @@ Sie können eigene Namespaces in [!DNL Experience Manager] hinzufügen. Es gibt 
 1. Zugriff auf die Knotentyp-Administrationsseite `https://[aem_server]:[port]/crx/explorer/nodetypes/index.jsp`.
 1. Um auf die Seite zur Namespace-Verwaltung zuzugreifen, klicken Sie oben auf der Seite auf **[!UICONTROL Namespaces]**.
 1. Um einen Namespace hinzuzufügen, klicken Sie unten auf der Seite auf **[!UICONTROL Neu]**.
-1. Geben Sie einen benutzerdefinierten Namespace gemäß der XML-Namespace-Konvention an. Geben Sie die ID in Form eines URI und verknüpftes Präfix für ID an. Klicken Sie auf **[!UICONTROL Speichern]**.
+1. Geben Sie in der XML-Namespace-Konvention einen benutzerdefinierten Namespace an. Geben Sie die ID in Form eines URI und ein verknüpftes Präfix für die ID an. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 ## Konfigurieren des Grenzwerts für die Metadaten-Massenaktualisierung {#bulk-metadata-update-limit}
 
@@ -117,8 +118,9 @@ Mit einem Metadatenprofil können Sie Standardmetadaten auf Assets in einem Ordn
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Metadatenprofile löschen]**.
 1. Klicken Sie im Dialogfeld auf **[!UICONTROL Löschen]**, um den Löschvorgang zu bestätigen. Das Metadatenprofil wird aus der Liste gelöscht.
 
-<!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/de/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+<!--
+TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -200,7 +202,7 @@ Um die Eigenschaften von Formularelementen zu bearbeiten, klicken Sie auf die Ko
 
 **[!UICONTROL Feldbezeichnung]**: Der Name der Metadateneigenschaft, der auf der Eigenschaftenseite des Assets angezeigt wird.
 
-**[!UICONTROL Zu Eigenschaft zuordnen]**: Diese Eigenschaft gibt den relativen Pfad des Ordnerknotens im CRX-Repository an, wo das Element gespeichert ist. Sie beginnt mit „**./**“, was angibt, dass sich der Pfad unter dem Knoten des Ordners befindet.
+**[!UICONTROL Zu Eigenschaft zuordnen]**: Diese Eigenschaft gibt den relativen Pfad des Ordnerknotens im CRX-Repository an, wo das Element gespeichert ist. Sie beginnt mit &quot;**./**&quot;, was anzeigt, dass sich der Pfad unter dem Knoten des Ordners befindet.
 
 Im Folgenden finden Sie die gültigen Werte für diese Eigenschaft:
 
@@ -276,7 +278,7 @@ Geben Sie Metadatenwerte in die verschiedenen Felder ein und klicken Sie auf **[
 
 >[!MORELIKETHIS]
 >
->* [Metadatenkonzepte und Grundlegendes](metadata-concepts.md).
+>* [Konzepte und Grundlagen von Metadaten](metadata-concepts.md).
 >* [Bearbeiten von Metadateneigenschaften mehrerer Sammlungen](manage-collections.md#editing-collection-metadata-in-bulk).
 >* [Import und Export von Metadaten in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=de).
 >* [Profile zur Verarbeitung von Metadaten, Bildern und Videos](processing-profiles.md).

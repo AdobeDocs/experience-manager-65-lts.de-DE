@@ -6,10 +6,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 43%
+source-wordcount: '619'
+ht-degree: 46%
 
 ---
 
@@ -47,7 +47,8 @@ Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführe
 
 1. Wenn benutzerdefinierte sling.properties angewendet werden müssen, erstellen Sie eine neue lokale AEM-Instanz und rufen Sie die Datei sling.properties aus dem Verzeichnis crx-quickstart/conf ab. Wenden Sie die erforderlichen benutzerdefinierten Änderungen auf diese Datei an und kopieren Sie sie dann in den Ordner „crx-quickstart/conf“ der AEM-Instanz, die aktualisiert wird. Wenn keine benutzerdefinierten Eigenschaften vorhanden sind, kann dieser Schritt übersprungen werden.
 
-<!-- Alexandru: drafting temporarily
+<!--
+Alexandru: drafting temporarily
 
 ## Content Repository Migration {#content-repository-migration}
 
@@ -180,11 +181,11 @@ Starten Sie nun die AEM-Instanz mit dem neuen Befehl, der anhand der Information
 >
 >Die Unterstützung für einige der Java 8/11-Argumente wurde in Java 17/21 entfernt. Siehe [Oracle Java™ 17-Dokumente](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html), [Oracle Java™ 21-Dokumente](https://docs.oracle.com/en/java/javase/21/docs/specs/man/java.html) und [Überlegungen zu Java&amp;trade-Argumenten für AEM 6.5 LTS](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations).
 
-Um das Upgrade auszuführen, ist es wichtig, AEM mithilfe der JAR-Datei zu starten, um die Instanz aufzurufen.
+Um das Upgrade durchzuführen, muss AEM mithilfe der JAR-Datei gestartet werden, um die Instanz zu öffnen.
 
 Beachten Sie, dass der Start von AEM über das Startskript das Upgrade nicht startet. Die meisten Kundinnen und Kunden starten AEM per Startskript und haben dieses Startskript so angepasst, dass es Schalter für Umgebungskonfigurationen wie Speichereinstellungen, Sicherheitszertifikate usw. enthält. Aus diesem Grund empfiehlt Adobe die folgende Vorgehensweise, um den richtigen Upgrade-Befehl zu ermitteln:
 
-1. Führen Sie in einer aktiven AEM-Instanz Folgendes in der Befehlszeile aus: 
+1. Führen Sie in einer aktiven AEM-Instanz Folgendes in der Befehlszeile aus:
 
    ```shell
    ps -ef | grep java

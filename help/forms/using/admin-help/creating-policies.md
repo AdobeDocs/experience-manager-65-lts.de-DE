@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: e8faf76e-5287-4b0c-b440-f348443287f3
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '4725'
-ht-degree: 100%
+source-wordcount: '4769'
+ht-degree: 99%
 
 ---
 
@@ -128,7 +128,7 @@ Wenn Sie Richtlinien bearbeiten, gelten die folgenden Einschränkungen:
 
    Um die Richtlinie den Benutzenden zur Verfügung zu stellen, müssen Sie sie aktivieren. (Siehe [Freigegebene Richtlinien aktivieren oder deaktivieren](creating-policies.md#enable-or-disable-shared-policies).)
 
-### Benutzer und Gruppen  {#users-and-groups}
+### Benutzer und Gruppen {#users-and-groups}
 
 Geben Sie im Bereich „Benutzer und Gruppen“ die Personen an, die Zugriff auf Dokumente haben, die mit der Richtlinie geschützt sind. Legen Sie für alle angegebenen Personen und Gruppen auch die Berechtigungen zur Dokumentnutzung fest.
 
@@ -152,7 +152,7 @@ Geben Sie im Bereich „Benutzer und Gruppen“ die Personen an, die Zugriff auf
 
 Nach der Registrierung können eingeladene Personen richtliniengeschützte Dokumente nutzen, für die sie autorisiert sind. Abhängig von den Funktionen, die von den Admins aktiviert werden, sind externe Benutzende eventuell auch dazu berechtigt, Richtlinien auf Dokumente anzuwenden, Richtlinien zu erstellen, zu bearbeiten und zu löschen sowie weitere externe Benutzende zu Richtlinien hinzuzufügen.
 
-**Anonymen Benutzer hinzufügen:** Um den anonymen Benutzerzugriff zuzulassen, klicken Sie auf „Anonymen Benutzer hinzufügen“. Diese Option ist nur verfügbar, wenn der Administrator den anonymen Benutzerzugriff für Document Security aktiviert hat. (Siehe „Konfigurieren des Document Security-Servers“.) Diese Option erlaubt allen Benutzenden den Zugriff auf von dieser Richtlinie geschützte Dokumente, auch wenn sie kein Konto für die Dokumentensicherheit haben. Bei Aktivierung dieser Option können Sie dieser Richtlinie keine anderen Benutzertypen hinzufügen.
+**Anonymen Benutzer hinzufügen:** Um den anonymen Benutzerzugriff zuzulassen, klicken Sie auf „Anonymen Benutzer hinzufügen“. Diese Option ist nur verfügbar, wenn der Administrator den anonymen Benutzerzugriff für Document Security aktiviert hat. (Siehe Document Security-Server konfigurieren.) Diese Option gewährt allen Benutzern Zugriff auf Dokumente, die durch diese Richtlinie geschützt sind, unabhängig davon, ob sie über ein Document Security-Konto verfügen. Bei Aktivierung dieser Option können Sie dieser Richtlinie keine anderen Benutzertypen hinzufügen.
 
 >[!NOTE]
 >
@@ -202,7 +202,7 @@ Für freigegebene Richtlinien können Admins dem Dokument-Publisher (der Person,
 
 **Sperren:** Erlaubt dem Herausgeber des Dokuments, die Dokumentzugriffsberechtigungen zu sperren.
 
-**Wechseln:** Erlaubt dem Herausgeber des Dokuments, Richtlinienberechtigungen zu wechseln. 
+**Wechseln:** Erlaubt dem Herausgeber des Dokuments, Richtlinienberechtigungen zu wechseln.
 
 ### Allgemeine Einstellungen {#general-settings}
 

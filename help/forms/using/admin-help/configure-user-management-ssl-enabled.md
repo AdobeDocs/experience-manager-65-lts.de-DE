@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a97cb5a6-4097-4f2e-b932-cb858bd5681a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '282'
 ht-degree: 94%
 
 ---
@@ -28,7 +28,7 @@ Damit die Synchronisierung ordnungsgemäß über LDAPS erfolgen kann, müssen di
 
    `keytool -import -alias`*alias* `-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
 
-1. Geben Sie auf Anforderung das Kennwort ein. (Für Java lautet das Standardkennwort `changeit`.) Es wird eine Meldung angezeigt, die besagt, dass das Zertifikat erfolgreich importiert wurde.
+1. Geben Sie auf Anforderung das Kennwort ein. (Für Java lautet das Standardkennwort `changeit`.) Eine Meldung wird angezeigt, die besagt, dass das Zertifikat erfolgreich importiert wurde.
 1. Geben Sie nach Aufforderung `Yes` ein, um das Zertifikat als vertrauenswürdig festzulegen.
 1. Aktivieren Sie SSL in User Management, wählen Sie beim Konfigurieren der Verzeichniseinstellungen für die SLL-Option die Einstellung „Ja“ und ändern Sie die Port-Einstellung entsprechend. Die Standardportzahl ist 636.
 

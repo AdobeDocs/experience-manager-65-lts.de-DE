@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 68e43842-cba9-47b8-b7a3-6f625dbfca08
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '200'
 ht-degree: 100%
 
 ---
@@ -28,6 +28,6 @@ Der AEM Forms-Dienst ermöglicht es Ihnen, interaktive Client-Anwendungen zur Da
 
 Weitere Informationen zum Forms-Dienst finden Sie unter [Dienste-Referenz](https://www.adobe.com/go/learn_aemforms_services_63).
 
-Mithilfe der Forms-Seite in der Administrationskonsole können Sie das Verhalten des Forms-Dienstes konfigurieren. Diese Einstellungen gelten für alle Aufrufe des Dienstes. Alle Parameter, die durch das AEM Forms-SDK gesendet werden, überschreiben die in der Administrationskonsole festgelegten Einstellungen. Sie betreffen jedoch nur diesen bestimmten Aufruf. 
+Mithilfe der Forms-Seite in der Administrationskonsole können Sie das Verhalten des Forms-Dienstes konfigurieren. Diese Einstellungen gelten für alle Aufrufe des Dienstes. Alle Parameter, die durch das AEM Forms-SDK gesendet werden, überschreiben die in der Administrationskonsole festgelegten Einstellungen. Sie betreffen jedoch nur diesen bestimmten Aufruf.
 
 Nachdem Sie die Forms-Einstellungen in der Administrationskonsole geändert haben, klicken Sie auf „Speichern“. Der Server muss nicht neu gestartet werden, damit die Änderungen wirksam werden. Sie müssen jedoch ggf. den Forms-Dienst anhalten und neu starten, wenn Sie Cache-Moduseinstellungen konfigurieren. (Siehe [Starten und Stoppen von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)

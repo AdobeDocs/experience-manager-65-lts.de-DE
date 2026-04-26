@@ -7,9 +7,9 @@ feature: Asset Reports,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 434a081a-f9e4-4a0d-8468-55b4ab5a6287
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1171'
 ht-degree: 99%
 
 ---
@@ -114,7 +114,7 @@ Gehen Sie wie folgt vor, um Berichte zu erstellen:
    ![Auswählen oder Aufheben der Auswahl von Berichtsspalten](assets/custom_columns.png)
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
-1. Auf der Seite [!UICONTROL Asset-Berichte] basiert der angezeigte Reporting-Status auf dem aktuellen Status des Berichtsauftrags, zum Beispiel [!UICONTROL Erfolg], [!UICONTROL Fehlgeschlagen], [!UICONTROL Zur Ausgabe bereit] oder [!UICONTROL Geplant]. Derselbe Status wird auch im Benachrichtigungseingang angezeigt. Klicken Sie zur Ansicht der Berichtsseite auf den Berichts-Link. Alternativ wählen Sie den Bericht aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Anzeigen]**.
+1. Auf der Seite [!UICONTROL Asset-Berichte] basiert der angezeigte Reporting-Status auf dem aktuellen Status des Berichtsauftrags, zum Beispiel [!UICONTROL Erfolg], [!UICONTROL Fehlgeschlagen], [!UICONTROL Zur Ausgabe bereit] oder [!UICONTROL Geplant]. Derselbe Status wird im Posteingang für Benachrichtigungen angezeigt.Klicken Sie auf den Link „Bericht“, um die Berichtsseite anzuzeigen. Alternativ wählen Sie den Bericht aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Anzeigen]**.
 
    <!--![A generated report](assets/report_page.png)-->
    [Berichtstatus](assets/report-status.JPG)

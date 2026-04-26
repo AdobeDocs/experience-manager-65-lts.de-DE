@@ -7,9 +7,9 @@ feature: Collaboration
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: adcf1276-f4c3-4c32-a830-cc968185dca3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '603'
 ht-degree: 100%
 
 ---

@@ -1,6 +1,6 @@
 ---
-title: Einführung in die Kurzanleitung zur Java™-API
-description: Erfahren Sie, wie Vorgänge in AEM Forms mithilfe der stark typisierten und mit einer SOAP-Verbindung ausgestatteten AEM Forms Java&trade;-API ausgeführt werden können.
+title: Einführung in Java&trade; API QuickStart
+description: Erfahren Sie, wie AEM Forms-Vorgänge mit der AEM Forms Java&trade;-API mit starker Typisierung und SOAP-Verbindung durchgeführt werden können.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +11,10 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: a5ae164d-d0c0-40d0-baeb-0e646fc71f55
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 100%
+source-wordcount: '533'
+ht-degree: 95%
 
 ---
 

@@ -6,9 +6,9 @@ feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: 5181d278-2e6e-41f7-891e-1067a03de016
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1178'
 ht-degree: 100%
 
 ---

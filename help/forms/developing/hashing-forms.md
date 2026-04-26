@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3fa1b6c9-fe73-4d76-aa72-20ce3e502941
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 100%
+source-wordcount: '1234'
+ht-degree: 98%
 
 ---
 
@@ -124,5 +124,5 @@ Ich empfehle Ihnen, die beiden PDF-Beispieldateien weiter zu studieren.  Sie kö
 * [NIST](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
 * [Hash-Kollision](https://de.wikipedia.org/wiki/Hashkollision)
 * [Regenbogentabelle](https://de.wikipedia.org/wiki/Rainbow_Table)
-* [Startseite des JavaScript-MD5-Projekts](https://pajhome.org.uk/crypt/md5/)
+* [Startseite des JavaScript MD5-Projekts](https://pajhome.org.uk/crypt/md5/)
 * [jsSHA2-Projekt-Startseite](https://anmar.eu.org/projects/jssha2/)

@@ -10,10 +10,10 @@ hidefromtoc: true
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 3de38e4d-6a12-470e-aded-7eb75a9cdcd8
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '7604'
-ht-degree: 99%
+source-wordcount: '7800'
+ht-degree: 98%
 
 ---
 
@@ -63,7 +63,7 @@ In der folgenden Tabelle werden gängige Prozesse beschrieben, die Sicherheitsl�
   </tr> 
   <tr> 
    <td><p>Private IP-Adressen</p> </td> 
-   <td><p>Verwenden Sie auf AEM Forms-Programm-Servern durch NAT (Network Address Translation) geschützte private IP-Adressen gemäß RFC 1918. Weisen Sie private IP-Adressen (10.0.0.0/8, 172.16.0.0/12 und 192.168.0.0/16) zu, um es einem Angreifer zu erschweren, Netzwerkverkehr über das Internet zu und von einem internen Host mit NAT zu leiten.</p> </td> 
+   <td><p>Verwenden Sie Network Address Translation (NAT) mit privaten RFC 1918-IP-Adressen auf dem AEM Forms-Anwendungsserver. Weisen Sie private IP-Adressen (10.0.0.0/8, 172.16.0.0/12 und 192.168.0.0/16) zu, um es einem Angreifer zu erschweren, Traffic über das Internet zu und von einem internen Host der NAT zu leiten.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Firewalls</p> </td> 
@@ -132,7 +132,7 @@ In diesem Abschnitt werden Verfahren beschrieben, die Sie während des AEM Forms
   </tr> 
   <tr> 
    <td><p>Festplattenpartitionen</p> </td> 
-   <td><p>Platzieren Sie AEM Forms on JEE auf einer dedizierten Festplattenpartition. Die Festplattenaufteilung ist ein Prozess, bei dem bestimmte Daten auf dem Server auf separaten physischen Festplatten verwaltet werden, um die Sicherheit zu erhöhen. Durch eine solche Datenanordnung lässt sich das Risiko von Directory Traversal-Angriffen verringern. Planen Sie die Erstellung einer von der Systempartition getrennten Partition, auf der Sie das AEM Forms on JEE-Inhaltsverzeichnis installieren können. (Unter Windows enthält die Systempartition das Verzeichnis „system32“, das auch als Boot-Partition bezeichnet wird.)</p> </td> 
+   <td><p>Platzieren Sie AEM Forms on JEE auf einer dedizierten Festplattenpartition. Die Festplattenaufteilung ist ein Prozess, bei dem bestimmte Daten auf dem Server auf separaten physischen Festplatten verwaltet werden, um die Sicherheit zu erhöhen. Durch eine solche Datenanordnung lässt sich das Risiko von Verzeichnisdurchlauf-Angriffen verringern. Planen Sie die Erstellung einer von der Systempartition getrennten Partition, auf der Sie das AEM Forms on JEE-Inhaltsverzeichnis installieren können. (Unter Windows enthält die Systempartition das Verzeichnis „system32“, das auch als Boot-Partition bezeichnet wird.)</p> </td> 
   </tr> 
   <tr> 
    <td><p>Komponenten</p> </td> 
@@ -179,7 +179,7 @@ Um den Anwendungs-Server, auf dem AEM Forms on JEE bereitgestellt wird, mit eine
    >Sie können diese Einstellung für PDF Generator nicht ändern.
 
 1. Wählen Sie **Starten** > **Einstellungen** > **Admin Tools** > **Dienste** aus.
-1. Doppelklicken Sie auf JBoss für AEM Forms on JEE und beenden Sie den Dienst.
+1. Doppelklicken Sie auf JBoss für AEM Forms on JEE und stoppen Sie den Dienst.
 1. Wählen Sie auf der Registerkarte **Anmelden** die Option **Dieses Konto** aus, suchen Sie das von Ihnen erstellte Benutzerkonto und geben Sie das Passwort für das Konto ein.
 1. Öffnen Sie im MMC die Option **Lokale Sicherheitseinstellungen** und wählen Sie **Lokale Richtlinien** > **Zuweisen von Benutzerrechten** aus.
 1. Weisen Sie dem Benutzerkonto, unter dem der Formular-Server ausgeführt wird, die folgenden Berechtigungen zu:
@@ -193,8 +193,8 @@ Um den Anwendungs-Server, auf dem AEM Forms on JEE bereitgestellt wird, mit eine
    * **CRX-Repository-Verzeichnis**: Der Standardspeicherort lautet `[AEM-Forms-installation-location]\crx-repository`
    * **Temporäre Verzeichnisse von AEM Forms**:
       * (Windows) TMP- oder TEMP-Pfad gemäß Einstellung in den Umgebungsvariablen
-      * (AIX, Linux oder Solaris) Basisordner der angemeldeten Person
-Auf UNIX-basierten Systemen kann eine Benutzerin oder ein Benutzer ohne Stammordner den folgenden Ordner als temporären Ordner verwenden:
+      * (AIX, Linux oder Solaris) Basisverzeichnis der angemeldeten Person
+Auf UNIX-basierten Systemen kann ein Nicht-Root-Benutzer den folgenden Ordner als temporären Ordner verwenden:
       * (Linux) /var/tmp oder /usr/tmp
       * (AIX) /tmp oder /usr/tmp
       * (Solaris) /var/tmp oder /usr/tmp
@@ -237,7 +237,7 @@ Configuration Manager verwendete ein auf Ihrem Anwendungsserver bereitgestelltes
    <!-- bootstrapper end-->
    ```
 
-1. Beenden Sie den AEM Forms-Server.
+1. Stoppen Sie den AEM Forms-Server.
 1. Kommentieren Sie die Module „adobe-bootstrapper.war“ und „adobe-lcm-bootstrapper-redirectory.war“ aus. wie folgt aus:
 
    ```java
@@ -264,7 +264,7 @@ Configuration Manager verwendete ein auf Ihrem Anwendungsserver bereitgestelltes
 1. Starten Sie den AEM Forms-Server.
 1. Geben Sie die nachstehende URL in einen Browser ein, um die Änderung zu testen und sicherzustellen, dass sie nicht mehr funktioniert.
 
-   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
+   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
 
 **Sperren des Remote-Zugriffs auf den Trust Store**
 
@@ -367,7 +367,7 @@ Unter Oracle benötigt das verwendete Datenbankkonto nur die Berechtigungen CONN
 1. Ändern Sie die Eigenschaft des JBoss Windows-Dienstes (JBoss for AEM Forms on JEE) für „Anmelden als“ von „Lokales System“ in ein Anmeldekonto mit einer AEM Forms-Datenbank und einem Mindestsatz von Berechtigungen. Wenn Sie JBoss von der Befehlszeile und nicht als Windows-Dienst ausführen, ist dieser Schritt nicht erforderlich.
 1. Ändern Sie die Sicherheitseinstellung von SQL Server von **Gemischt** in **Nur Windows-Authentifizierung**.
 
-#### Integrierte Sicherheit für SQL Server unter Windows für WebLogic konfigurieren  {#configuring-integrated-security-for-sql-server-on-windows-for-weblogic}
+#### Integrierte Sicherheit für SQL Server unter Windows für WebLogic konfigurieren {#configuring-integrated-security-for-sql-server-on-windows-for-weblogic}
 
 1. Starten Sie die Administration-Console von WebLogic Server, indem Sie die folgende URL in die Adresszeile eines Webbrowsers eingeben:
 
@@ -472,7 +472,7 @@ Sie können Benutzerinnen und Benutzern, die keine Admins sind, die Verwendung d
 
 >[!NOTE]
 >
-> Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+> Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 ## Konfigurieren von AEM Forms on JEE für den Zugriff außerhalb des Unternehmens {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
@@ -822,7 +822,7 @@ Wenn Sie, wie im vorherigen Abschnitt beschrieben, eine sichere Netzwerkarchitek
  <thead> 
   <tr> 
    <th><p>Protokoll</p> </th> 
-   <th><p>Verwenden Sie</p> </th> 
+   <th><p>Verwendung</p> </th> 
   </tr> 
  </thead> 
  <tbody>
@@ -1019,8 +1019,8 @@ Bei der AEM Forms on JEE-Turnkey-Installation wird standardmäßig unter Verwend
    * **CRX-Repository-Verzeichnis**: Der Standardspeicherort lautet `[AEM-Forms-installation-location]\crx-repository`
    * **Temporäre Verzeichnisse von AEM Forms**:
       * (Windows) TMP- oder TEMP-Pfad gemäß Einstellung in den Umgebungsvariablen
-      * (AIX, Linux oder Solaris) Basisordner der angemeldeten Person
-Auf UNIX-basierten Systemen kann eine Benutzerin oder ein Benutzer ohne Stammordner den folgenden Ordner als temporären Ordner verwenden:
+      * (AIX, Linux oder Solaris) Basisverzeichnis der angemeldeten Person
+Auf UNIX-basierten Systemen kann ein Nicht-Root-Benutzer den folgenden Ordner als temporären Ordner verwenden:
       * (Linux) /var/tmp oder /usr/tmp
       * (AIX) /tmp oder /usr/tmp
       * (Solaris) /var/tmp oder /usr/tmp

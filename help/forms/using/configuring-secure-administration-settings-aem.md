@@ -10,9 +10,9 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 2278a4df-2584-4a15-9aaf-bbfc0487b72a
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '852'
 ht-degree: 100%
 
 ---
@@ -107,7 +107,7 @@ Einige Formular-Server-Dienste lassen einen nicht authentifizierten (anonymen) A
 
    Der anonyme Zugriff sollte für alle nicht erforderlichen Dienste deaktiviert werden. Für viele interne Dienste muss die anonyme Authentifizierung aktiviert sein, da sie von potenziell allen Benutzenden ohne eine Vorautorisierung im System aufgerufen werden müssen.
 
-## Standardmäßiges globales Zeitlimit ändern  {#changing-the-default-global-time-out}
+## Standardmäßiges globales Zeitlimit ändern {#changing-the-default-global-time-out}
 
 Endbenutzer von AEM Forms können sich über Workbench, Web-Anwendungen für AEM Forms oder über benutzerdefinierte Anwendungen, die Server-Services für AEM Forms aufrufen, authentifizieren. Mithilfe einer globalen Zeitlimiteinstellung wird festgelegt, wie lange solche Benutzer AEM Forms nutzen können (mittels einer auf SAML basierenden Bestätigung), bevor sie sich erneut authentifizieren müssen. Der Standardwert ist zwei Stunden. In einer Produktionsumgebung muss die Zeitdauer auf die akzeptable Mindestanzahl von Minuten reduziert werden.
 
@@ -121,7 +121,7 @@ Endbenutzer von AEM Forms können sich über Workbench, Web-Anwendungen für AEM
 
 1. Klicken Sie auf **Einstellungen > Benutzerverwaltung > Konfiguration > Konfigurationsdateien importieren und exportieren**.
 1. Klicken Sie auf **Exportieren**, um eine Datei config.xml mit den vorhandenen AEM Forms-Einstellungen zu erstellen.
-1. Öffnen Sie die XML-Datei in einem Editor und suchen Sie den folgenden Eintrag: 
+1. Öffnen Sie die XML-Datei in einem Editor und suchen Sie den folgenden Eintrag:
 
    `<entry key="assertionValidityInMinutes" value="120"/>`
 

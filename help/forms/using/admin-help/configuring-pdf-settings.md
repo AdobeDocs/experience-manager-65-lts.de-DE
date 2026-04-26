@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 41a8a4b0-cb39-40a6-82b6-085f2c635e0c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '7415'
-ht-degree: 100%
+source-wordcount: '7478'
+ht-degree: 98%
 
 ---
 
@@ -95,19 +95,19 @@ Die PDF-Einstellungen bestimmen genau die Konvertierungsmethode und die sich erg
 1. Klicken Sie auf „Neu“ oder auf den Namen einer vorhandenen Einstellung.
 1. Geben Sie auf der Seite „Adobe PDF-Einstellungen“ im Bereich „Neu/Bearbeiten“ in den folgenden Abschnitten die erforderlichen Informationen ein:
 
-[Allgemeine Optionen](configuring-pdf-settings.md#general-options)
+   [Allgemeine Optionen](configuring-pdf-settings.md#general-options)
 
-[Bildoptionen](configuring-pdf-settings.md#images-options)
+   [Bildoptionen](configuring-pdf-settings.md#images-options)
 
-[Schriftartoptionen](configuring-pdf-settings.md#fonts-options)
+   [Schriftartoptionen](configuring-pdf-settings.md#fonts-options)
 
-[Farboptionen](configuring-pdf-settings.md#color-options)
+   [Farboptionen](configuring-pdf-settings.md#color-options)
 
-[Erweiterte Optionen](configuring-pdf-settings.md#advanced-options)
+   [Erweiterte Optionen](configuring-pdf-settings.md#advanced-options)
 
-[Optionen für „Standards - Berichterstellung und Kompatibilität“](configuring-pdf-settings.md#standards-reporting-and-compliance-options)
+   [Optionen für „Standards - Berichterstellung und Kompatibilität“](configuring-pdf-settings.md#standards-reporting-and-compliance-options)
 
-[Optionen für Ansicht beim Öffnen](configuring-pdf-settings.md#initial-view-options)
+   [Optionen für Ansicht beim Öffnen](configuring-pdf-settings.md#initial-view-options)
 
    Um zu einem anderen Abschnitt zu wechseln, klicken Sie auf dessen Link auf der Web-Seite oder auf eine der Schaltflächen „Weiter“ oder „Zurück“.
 
@@ -299,7 +299,8 @@ Die Schriftoptionen geben an, welche Schriften in eine PDF-Datei eingebettet wer
 
 **Alle Schriftarten einbetten**: Bettet alle Schriftarten ein, die in der Datei verwendet werden. Die Schrifteinbettung ist für die Erfüllung der PDF/X-Anforderungen erforderlich.
 
-**Teilmenge von eingebetteten Schriften, wenn Prozentsatz der verwendeten Zeichen kleiner ist als**: Wenn Sie diese Option auswählen, geben Sie einen Prozentsatz an, um nur eine Teilmenge der Schriftarten einzubetten. Wenn beispielsweise der Grenzwert 35 ist und weniger als 35 % der Zeichen verwendet werden, bettet PDF Generator nur diese Zeichen ein. Es werden nur Schriften mit entsprechenden Berechtigungs-Bits eingebettet.
+**Untergruppe von eingebetteten Schriftarten, wenn Prozentsatz der verwendeten Zeichen
+Ist kleiner als:** Wenn Sie diese Option wählen, geben Sie einen Prozentsatz an, um nur eine Teilmenge der Schriftarten einzubetten. Wenn beispielsweise der Grenzwert 35 ist und weniger als 35 % der Zeichen verwendet werden, bettet PDF Generator nur diese Zeichen ein. Es werden nur Schriften mit entsprechenden Berechtigungs-Bits eingebettet.
 
 **Bei fehlgeschlagenem Einbetten**: Gibt an, wie PDF Generator reagieren soll, wenn bei der Verarbeitung einer Datei eine einzubettende Schrift nicht gefunden wird. Die folgenden Möglichkeiten stehen zur Verfügung: PDF Generator kann entweder die Anforderung ignorieren und die Schrift ersetzen, Sie warnen und die Schrift ersetzen oder die Verarbeitung des aktuellen Auftrags abbrechen.
 
@@ -341,11 +342,12 @@ Wenn Sie für „Einstellungsdatei“ die Option „Ohne“ ausgewählt haben, g
 
 **Nur Bilder für Farb-Management kennzeichnen**: Bettet beim Untersuchen von Dateien ICC-Profile nur in Bilder, nicht jedoch in Text oder Grafiken ein, wenn Sie die Kompatibilität mit Acrobat 4 (PDF 1.3) ausgewählt haben. Diese Option verhindert, dass schwarzer Text Farbverschiebungen unterzogen wird. Geräteabhängige Farbräume in Bildern (RGB, Graustufen und CMYK) werden jedoch in geräteunabhängige Farbräume (CalRGB, CalGray und LAB) konvertiert. Text und Grafiken werden nicht konvertiert.
 
-**Alle Farben in sRGB konvertieren oder Alle Farben in CMYK konvertieren**: Kalibriert die Farben in der Datei, wodurch die Farben geräteunabhängig werden, ähnlich wie bei „Alles für Farb-Management kennzeichnen“. Wenn Sie eine Kompatibilität mit Acrobat 4 (PDF 1.3) oder höher ausgewählt haben und eine Konvertierung in sRGB ausführen, werden CMYK- und RGB-Bilder in sRGB konvertiert.
+**Alle Farben in sRGB konvertieren oder Alle Farben in konvertieren
+CMYK:** Kalibriert die Farben in der Datei, wodurch die Farben geräteunabhängig werden, ähnlich wie bei „Alles für Farb-Management kennzeichnen“. Wenn Sie eine Kompatibilität mit Acrobat 4 (PDF 1.3) oder höher ausgewählt haben und eine Konvertierung in sRGB ausführen, werden CMYK- und RGB-Bilder in sRGB konvertiert.
 
 Unabhängig von der ausgewählten Kompatibilitätsoption bleiben Graustufenbilder unverändert. Dadurch wird bei PDF-Dateien normalerweise die Größe verringert und die Anzeige beschleunigt, da zum Beschreiben von RGB-Bildern weniger Informationen als zum Beschreiben von CMYK-Dateien benötigt werden. Da RGB der von Monitoren verwendete native Farbraum ist, muss während der Anzeige keine Farbkonvertierung erfolgen, wodurch die Online-Anzeige beschleunigt wird. Diese Option wird empfohlen, wenn die PDF-Datei online oder bei Druckern mit niedriger Auflösung verwendet wird.
 
-**Bedingung für die Dokumentwiedergabe**: Die Methode zur Zuordnung von Farben zwischen Farbräumen. Das Ergebnis einer bestimmten Methode hängt von den Profilen der Farbräume ab. Einige Profile liefern beispielsweise bei unterschiedlichen Methoden identische Ergebnisse. Die folgenden Optionen stehen zur Auswahl:  
+**Bedingung für die Dokumentwiedergabe**: Die Methode zur Zuordnung von Farben zwischen Farbräumen. Das Ergebnis einer bestimmten Methode hängt von den Profilen der Farbräume ab. Einige Profile liefern beispielsweise bei unterschiedlichen Methoden identische Ergebnisse. Die folgenden Optionen stehen zur Auswahl:
 
 >[!NOTE]
 >
@@ -363,9 +365,9 @@ Unabhängig von der ausgewählten Kompatibilitätsoption bleiben Graustufenbilde
 
 ### Arbeitsfarbräume {#working-spaces}
 
-Wählen Sie für alle Werte in der Liste unter „Farbmanagement“ (außer „Farbe unverändert lassen“) Optionen in den Listen im Bereich „Arbeitsfarbraum“ aus, um anzugeben, welche ICC-Profile für die Definition und Kalibrierung der Graustufen-, RGB- und CMYK-Farbräume in untersuchten PDF-Dateien verwendet werden. Die folgenden Optionen stehen zur Auswahl:  
+Wählen Sie für alle Werte in der Liste unter „Farbmanagement“ (außer „Farbe unverändert lassen“) Optionen in den Listen im Bereich „Arbeitsfarbraum“ aus, um anzugeben, welche ICC-Profile für die Definition und Kalibrierung der Graustufen-, RGB- und CMYK-Farbräume in untersuchten PDF-Dateien verwendet werden. Die folgenden Optionen stehen zur Auswahl:
 
-**Grau**: Definiert den Farbraum aller Graustufenbilder in Dateien. Diese Option ist nur verfügbar, wenn Sie „Alles für Farbmanagement kennzeichnen“ oder „Nur Bilder für Farbmanagement kennzeichnen“ auswählen. Das standardmäßige ICC-Profil für Graustufenbilder ist Gray Gamma 2.2. Sie können auch „Ohne“ wählen, um die Konvertierung von Graustufenbildern zu verhindern.
+**Grau**: Definiert den Farbraum aller Graustufenbilder in Dateien. Diese Option ist nur verfügbar, wenn Sie „Alles für Farbmanagement kennzeichnen“ oder „Nur Bilder für Farbmanagement kennzeichnen“ auswählen. Das standardmäßige ICC-Profil für Graubilder ist Gray Gamma 2.2. Sie können auch Keine auswählen, um zu verhindern, dass Graustufenbilder konvertiert werden.
 
 **RGB**: Definiert den Farbraum aller RGB-Bilder in Dateien. Die Standardeinstellung „sRGB IEC61966-2.1“ ist meist eine gute Wahl, da sich diese Einstellung sich immer mehr zum Branchenstandard entwickelt, der von vielen Ausgabegeräten erkannt wird. Sie können auch „Ohne“ auswählen, um das Konvertieren von RGB-Bildern zu verhindern.
 
@@ -425,9 +427,9 @@ Für das Arbeiten mit den erweiterten Optionen ist es hilfreich, mit der Sprache
 
 **Original-JPEG-Bilder in PDF speichern, wenn möglich:** Verarbeitet alle komprimierten JPEG-Bilder (Bilder, die bereits mit DCT-Kodierung komprimiert wurden), ohne sie erneut zu komprimieren. Ist diese Option aktiviert, dekomprimiert PDF Generator JPEG-Bilder, um sicherzustellen, dass sie fehlerfrei sind. Gültige Bilder werden dagegen nicht erneut komprimiert, weshalb bei der Verarbeitung das Originalbild unberührt bleibt. Wird diese Option ausgewählt, verbessert sich die Leistung, da nur eine De- und keine Rekomprimierung erfolgt und die Bild- und Metadaten beibehalten bleiben.
 
-**Portable Job Ticket in PDF-Datei speichern**: Behält ein PostScript-Job-Ticket in einer PDF-Datei bei. Das Job Ticket enthält Informationen zur PostScript-Datei, z. B. Papierformat, Auflösung und Überfüllungsinformationen, statt Informationen zum Inhalt. Diese Informationen können später in einem Workflow oder zum Drucken der PDF-Datei verwendet werden.
+**Portable Job Ticket in PDF-Datei speichern**: Behält ein PostScript-Auftrags-Ticket in einer PDF-Datei bei. Das Auftrags-Ticket enthält Informationen zur PostScript-Datei, z. B. Papierformat, Auflösung und Überfüllungsinformationen, statt Informationen zum Inhalt. Diese Informationen können später in einem Workflow oder zum Drucken der PDF-Datei verwendet werden.
 
-**Prologue.ps und Epilogue.ps verwenden**: Sendet mit jedem Auftrag eine Prologue- und Epilogue-Datei. Diese Dateien haben vielfältige Zwecke. Prolog-Dateien können beispielsweise so bearbeitet werden, dass Umschlagseiten angegeben werden. Epilog-Dateien können so bearbeitet werden, dass eine Folge von Prozeduren in einer PostScript-Datei aufgelöst wird. Sie können die Dateien hoch- und herunterladen.  (Siehe Hochladen und Herunterladen von Prologue- und Epilogue-Dateien.)
+**Prologue.ps und Epilogue.ps verwenden**: Sendet mit jedem Auftrag eine Prologue- und Epilogue-Datei. Diese Dateien haben vielfältige Zwecke. Prolog-Dateien können beispielsweise so bearbeitet werden, dass Umschlagseiten angegeben werden. Epilog-Dateien können so bearbeitet werden, dass eine Folge von Prozeduren in einer PostScript-Datei aufgelöst wird. Sie können die Dateien hoch- und herunterladen. (Siehe Hochladen und Herunterladen von Prologue- und Epilogue-Dateien.)
 
 **DSC-Kommentare verarbeiten**: Behält DSC-Informationen aus einer PostScript-Datei bei. Diese Unteroptionen lauten wie folgt:
 

@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2c0dd472-9697-4b96-b3fa-3c50883bf425
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3253'
-ht-degree: 100%
+source-wordcount: '3275'
+ht-degree: 99%
 
 ---
 
@@ -95,7 +95,7 @@ Wenn Sie einer Domain einen Ordner hinzufügen, geben Sie die folgenden Ordnerei
 
 **Bindung** (obligatorisch): Legt fest, wie auf das Verzeichnis zugegriffen werden soll.
 
-**Anonym:** Es ist kein Benutzername oder Kennwort erforderlich. Anonyme Benutzerinnen und Benutzer können nur eine begrenzte Datenmenge abrufen. Diese Option kann beim ersten Testen sinnvoll sein.
+**Anonym**: Es ist kein Benutzername oder Kennwort erforderlich. Anonyme Benutzerinnen und Benutzer können nur eine begrenzte Datenmenge abrufen. Diese Option kann beim ersten Testen sinnvoll sein.
 
 **Benutzer**: Authentifizierung ist erforderlich. Geben Sie im Feld „Name“ den Namen des Benutzereintrags an, der auf den Ordner zugreifen darf. Am besten geben Sie den vollständigen definierten Namen (DN) des Benutzerkontos ein, z. B. cn=Jane Doe, ou=user, dc=can, dc=com. Geben Sie im Feld „Kennwort“ das zugehörige Kennwort an. Wenn Sie „Benutzer“ als Bindungsoption auswählen, sind diese Einstellungen obligatorisch.
 
@@ -131,7 +131,7 @@ Wenn Sie in den Ordnereinstellungen „Verweise aktivieren“ ausgewählt haben,
 
 Obwohl „Basis-DN“ eine obligatorische Einstellung in der Administrationskonsole ist, erfordern einige Verzeichnis-Server wie IBM Domino Enterprise Server möglicherweise einen leeren Basis-DN. Um einen leeren Basis-DN anzugeben, exportieren Sie die Datei „config.xml“, bearbeiten Sie die Einstellung in dieser Datei und importieren Sie sie dann wieder. (Siehe [Importieren und Exportieren der Konfigurationsdatei](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
-**Suchfilter:** (Obligatorisch) Der Suchfilter, der verwendet werden soll, um den Eintrag zu finden, der dem Benutzer zugeordnet ist. Sie können eine Suche auf einer Ebene oder auf Unterebenen durchführen. (Siehe Syntax für Suchfilter oder RFC 2254.) Weitere Informationen zum Microsoft AD-Schema finden Sie unter „Active Directory-Schema“.
+**Suchfilter:** (Obligatorisch) Der Suchfilter, der verwendet werden soll, um den Eintrag zu finden, der dem Benutzer zugeordnet ist. Sie können eine Suche auf einer Ebene oder auf Unterebenen durchführen. (Siehe Syntax für Suchfilter oder RFC 2254.) Weitere Informationen zum Microsoft AD-Schema finden Sie unter Active Directory-Schema.
 
 **Beschreibung:** Das Schemaattribut für die Beschreibung des Benutzers.
 
@@ -145,13 +145,13 @@ Obwohl „Basis-DN“ eine obligatorische Einstellung in der Administrationskons
 
 **Initialen:** Das Schemaattribut für die Initialen der Person.
 
-**Geschäftskalender:** Ermöglicht das Zuordnen eines Geschäftskalenders zu einem Benutzer auf Grundlage des Wertes für diese Einstellung (Geschäftskalenderschlüssel). Geschäftskalender definieren Geschäftstage und geschäftsfreie Tage. AEM-Formulare können bei der Berechnung künftiger Daten und Zeiten für Ereignisse wie Erinnerungen, Fristen und Eskalationen Geschäftskalender verwenden. Die Methode zum Zuweisen von Geschäftskalenderschlüsseln zu Benutzern ist davon abhängig, ob eine Unternehmens-, eine lokale oder eine Hybrid-Domain verwendet wird. (Siehe Geschäftskalender konfigurieren.) 
+**Geschäftskalender:** Ermöglicht das Zuordnen eines Geschäftskalenders zu einem Benutzer auf Grundlage des Wertes für diese Einstellung (Geschäftskalenderschlüssel). Geschäftskalender definieren Geschäftstage und geschäftsfreie Tage. AEM-Formulare können bei der Berechnung künftiger Daten und Zeiten für Ereignisse wie Erinnerungen, Fristen und Eskalationen Geschäftskalender verwenden. Die Methode zum Zuweisen von Geschäftskalenderschlüsseln zu Benutzern ist davon abhängig, ob eine Unternehmens-, eine lokale oder eine Hybrid-Domain verwendet wird. (Siehe Geschäftskalender konfigurieren.)
 
- Wenn Sie eine Unternehmens-Domain verwenden, können Sie die Einstellung „Geschäftskalender“ einem Feld im LDAP-Ordner zuordnen. Wenn beispielsweise jeder Benutzereintrag in Ihrem Verzeichnis ein Feld *Land* enthält und Sie Geschäftskalender auf Grundlage des Landes zuweisen möchten, in dem sich die Person befindet, geben Sie den Feldnamen *Land* als Wert für die Einstellung „Geschäftskalender“ an. Anschließend können Sie die Geschäftskalenderschlüssel (die für das Feld *Land* im LDAP-Verzeichnis definierten Werte) Geschäftskalendern in Forms Workflow zuordnen.
+Wenn Sie eine Unternehmens-Domain verwenden, können Sie die Einstellung „Geschäftskalender“ einem Feld im LDAP-Ordner zuordnen. Wenn beispielsweise jeder Benutzereintrag in Ihrem Verzeichnis ein Feld *Land* enthält und Sie Geschäftskalender auf Grundlage des Landes zuweisen möchten, in dem sich die Person befindet, geben Sie den Feldnamen *Land* als Wert für die Einstellung „Geschäftskalender“ an. Anschließend können Sie die Geschäftskalenderschlüssel (die für das Feld *Land* im LDAP-Verzeichnis definierten Werte) Geschäftskalendern in Forms Workflow zuordnen.
 
 Der Platz zum Anzeigen des Namens des Geschäftskalenderschlüssels auf den Forms Workflow-Seiten ist begrenzt. Begrenzen Sie den Namen des Geschäftskalenderschlüssels auf weniger als 53 Zeichen, um zu verhindern, dass der Name auf diesen Seiten abgeschnitten wird.
 
-**Zeitstempel ändern:** Um die Delta-Ordnersynchronisierung zu aktivieren, legen Sie diesen Wert auf „Zeitstempel ändern“ fest. (Siehe Delta-Ordnersynchronisierung aktivieren.)
+**Zeitstempel ändern**: Um die Delta-Ordnersynchronisierung zu aktivieren, legen Sie diesen Wert fest, um den Zeitstempel zu ändern. (Siehe Delta-Ordnersynchronisierung aktivieren.)
 
 **Firma:** Das Schemaattribut für den Namen der Firma, der der Benutzer angehört.
 

@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 14264788-a05a-4a8d-b485-33ae1caac094
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '382'
 ht-degree: 100%
 
 ---
@@ -37,13 +37,13 @@ Endpunkte können nur zu Diensten hinzugefügt werden. Ein Endpunkt kann nicht s
 1. Wählen Sie in der Liste auf der Registerkarte „Endpunkte“ den hinzuzufügenden Endpunkttyp aus und klicken Sie auf „Hinzufügen“.
 1. Je nach Endpunkttyp müssen weitere Endpunkteinstellungen konfiguriert werden.
 
-[Einstellungen für Endpunkte des Typs „Überwachter Ordner“](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
+   [Einstellungen für Endpunkte des Typs „Überwachter Ordner“](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
 
-[E-Mail-Endpunkteinstellungen](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
+   [E-Mail-Endpunkteinstellungen](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
 
-[Task Manager-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
+   [Task Manager-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
 
-[Remoting-Endpunkteinstellungen](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
+   [Remoting-Endpunkteinstellungen](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
 
 1. Klicken Sie auf Hinzufügen.
 

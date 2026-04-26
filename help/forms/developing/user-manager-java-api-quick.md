@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: b960ca0b-5e0f-4009-b923-e93889c3c1f7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 100%
+source-wordcount: '494'
+ht-degree: 95%
 
 ---
 
@@ -382,7 +382,7 @@ Das folgende Codebeispiel sucht einen lokalen Benutzer und die lokale Gruppe, zu
 
 ## Schnellstart (SOAP-Modus): Verwalten von Rollen und Berechtigungen mit der Java-API {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
 
-Das folgende Codebeispiel weist einem Prinzipal die Rolle „Services User“ zu, gibt die Rollen aus, die der Prinzipal besitzt, und entfernt anschließend die Rolle aus dem Prinzipal. Für diesen Schnellstart werden zwei Dienste aufgerufen: den DirectoryManager-Dienst und den AuthorizationManager-Dienst.(Siehe [Verwalten von Rollen und Berechtigungen](/help/forms/developing/users.md#managing-roles-and-permissions).)
+Das folgende Codebeispiel weist einem Prinzipal die Rolle „Services User“ zu, gibt die Rollen aus, die der Prinzipal besitzt, und entfernt anschließend die Rolle aus dem Prinzipal. Für diesen Schnellstart werden zwei Dienste aufgerufen: der DirectoryManager-Dienst und der AuthorizationManager-Dienst.(Siehe [Verwalten von Rollen und Berechtigungen](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 ```java
  /*

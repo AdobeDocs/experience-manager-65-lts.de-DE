@@ -11,7 +11,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: d6a0caed-99fa-4121-ac2e-bc21626ff9e0
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 100%
@@ -50,13 +50,13 @@ Die Ergebnisse der Suche nach Aufgaben werden auf der Seite „Aufgabenliste“ 
 
 Die Aufgaben werden mit den folgenden Informationen angezeigt:
 
-**Aufgaben-ID**: Die positive Ganzzahl, die vom Arbeitsablauf für Formulare zugewiesen wird, wenn die Aufgabe instanziiert (von einem Benutzer initiiert) wird. Anhand dieser ID können Sie die Aufgabe während ihres gesamten Lebenszyklus verfolgen. Klicken Sie auf eine Aufgaben-ID, um Informationen zum Aufgabenverlauf anzuzeigen oder die Aufgabe einer anderen Person zuweisen.
+**Aufgaben-ID**: Die positive Ganzzahl, die vom Workflow für Formulare zugewiesen wird, wenn die Aufgabe instanziiert (von einem Benutzer initiiert) wird. Anhand dieser ID können Sie die Aufgabe während ihres gesamten Lebenszyklus verfolgen. Klicken Sie auf eine Aufgaben-ID, um Informationen zum Aufgabenverlauf anzuzeigen oder die Aufgabe einer anderen Person zuweisen.
 
 **Status**: Zugewiesen bedeutet, dass die Aufgabe derzeit dem Benutzer zugewiesen ist. Nicht zugewiesen bedeutet, dass die Aufgabe dem Benutzer zuvor zugewiesen war. Möglich ist auch der Status Abgeschlossen.
 
 **Aktivität**: Zeigt das Formular und den Namen für einen anfänglichen Vorgang oder den Prozessvorgang an, der die Aufgabe generiert hat.
 
-**Prozess-ID**: Die positive Ganzzahl, die vom Arbeitsablauf für Formulare zugewiesen wird, wenn der Prozess instanziiert (d. h. von einem Benutzer oder einem automatisierten Schritt initiiert) wird. Anhand dieser ID können Sie die Prozessinstanz während ihres gesamten Lebenszyklus verfolgen.
+**Prozess-ID**: Die positive Ganzzahl, die vom Workflow für Formulare zugewiesen wird, wenn der Prozess instanziiert (d. h. von einem Benutzer oder einem automatisierten Schritt initiiert) wird. Anhand dieser ID können Sie die Prozessinstanz während ihres gesamten Lebenszyklus verfolgen.
 
 **Prozessname/-version**: Der Name des Prozesses, wie in Workbench definiert.
 

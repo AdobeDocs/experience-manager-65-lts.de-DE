@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ff4dce07-725e-4750-9e95-4261b50580bd
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 100%
+source-wordcount: '118'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Ereignisse wie Laufzeit- oder Startfehler werden in die Protokolldateien des Anw
 (JBoss) Die folgenden Protokolldateien befinden sich im Verzeichnis `[appserver root]/server/'server'/log`:
 
 * boot.log
-* server.log.*[jjjj-mm-tt]*
+* server.log.*[-MM-TT]*
 * server.log
 
 (WebLogic) Protokolldateien für Domains befinden sich im Verzeichnis `[appserverdomain]` und Protokolldateien des Servers im Verzeichnis `[appserverdomain]/servers/[appserver name]/logs`:

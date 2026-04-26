@@ -7,10 +7,10 @@ feature: Asset Management,Renditions
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e48f7950-1b6e-4896-8abc-523552e42ed9
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 100%
+source-wordcount: '2014'
+ht-degree: 98%
 
 ---
 
@@ -104,7 +104,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt:
 | DOCX | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
 | ODT | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| HTML  | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| HTML | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
 | RTF | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
 | TXT | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
 | XLS | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
@@ -280,9 +280,9 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | HEIC | − | − | − | ✓ | − | − |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Drehung](/help/assets/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Spin](/help/assets/spin-sets.md) |
 | PICT | ✓ | − | − | − | − | − |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Drehung](/help/assets/spin-sets.md) |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Spin](/help/assets/spin-sets.md) |
 | PSD ‡ | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Spin](/help/assets/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
@@ -308,7 +308,8 @@ Die folgende Liste beschreibt die Untertypen von Rasterbild-Dateiformaten, die n
 * TIFF-Dateien mit Gleitkommadaten.
 * TIFF-Dateien mit Lab-Farbraum.
 
-<!-- Topic commented out for now as of March 31, 2020. The topic may still need adjustment so it can be published live, or it may be moved into a KB article instead. Just waiting on feedback in CQDOC-15657. - Rick
+<!--
+Topic commented out for now as of March 31, 2020. The topic may still need adjustment so it can be published live, or it may be moved into a KB article instead. Just waiting on feedback in CQDOC-15657. - Rick
 ## Unsupported raster image formats in Dynamic Media (#unsupported-image-formats-dynamic-media)
 
 The following table describes the sub-types of raster image formats that are *not* supported in Dynamic Media. The table also describes suggested methods you can use to detect such files.
@@ -337,7 +338,7 @@ Siehe auch [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/assets-3d.md).
 | GLB | Binäre GL-Übertragung | model/gltf-binary | Umfasst die Materialien und Texturen als ein Asset. |
 | OBJ | WaveFront 3D-Objektdatei | application/x-tgif |  |
 | STL | Stereolithografie | application/vnd.ms-pki.stl |  |
-| USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | *Nur Aufnahme unterstützt, keine Anzeige oder Interaktion möglich.* USDZ ist ein proprietäres 3D-Format, das von Safari- and iOS-Endgeräten nativ angezeigt werden kann. |
+| USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | *Unterstützung nur für die Aufnahme; keine Anzeige oder Interaktion verfügbar.* USDZ ist ein proprietäres 3D-Format, das von Safari- und iOS-Geräten nativ angezeigt werden kann. |
 
 >[!MORELIKETHIS]
 >

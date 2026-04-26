@@ -7,9 +7,9 @@ role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7a0d5502-8e1a-4396-a517-ea3767e228c2
-source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1581'
+source-wordcount: '1611'
 ht-degree: 97%
 
 ---
@@ -31,7 +31,7 @@ Damit der Smart Content Service die richtigen Tags anwendet, müssen Sie ihn dar
 
 Sobald ein Tag trainiert wurde und bereit ist, kann der Dienst dieses Tag über einen Tagging-Workflow auf Assets anwenden.
 
-Im Hintergrund verwendet der Smart Content Service das KI-Framework von Adobe, um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
+Im Hintergrund verwendet der Smart Content Service das Adobe AI-Framework, um den Bilderkennungsalgorithmus auf Ihre Tag-Struktur und Ihre Unternehmenstaxonomie zu trainieren. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf einen anderen Satz von Assets anzuwenden.
 
 Smart Content Service ist ein Cloud-Service, der auf [!DNL Adobe Developer Console] gehostet wird. Um ihn in [!DNL Adobe Experience Manager] zu verwenden, muss die bzw. der Systemadmin Ihre [!DNL Experience Manager]-Bereitstellung mit [!DNL Adobe Developer Console] integrieren.
 
@@ -81,7 +81,7 @@ Der Service wendet Smart-Tags auf Asset-Ausgabedarstellungen der folgenden MIME-
 
 ## Onboarding {#onboarding}
 
-Der Smart Content Service kann als Add-on zu [!DNL Experience Manager] erworben werden. Nach dem Kauf wird eine E-Mail mit einem Link zu [!DNL Adobe I/O] an die oder den Admin Ihres Unternehmens gesendet. 
+Der Smart Content Service kann als Add-on zu [!DNL Experience Manager] erworben werden. Nach dem Kauf wird eine E-Mail mit einem Link zu [!DNL Adobe I/O] an die oder den Admin Ihres Unternehmens gesendet.
 
 Die bzw. der Admin kann über diesen Link den Smart Content Service mit [!DNL Experience Manager] integrieren. Weitere Informationen zum Integrieren des Services mit [!DNL Experience Manager Assets] finden Sie im Abschnitt [Konfigurieren von Smart-Tags](config-smart-tagging.md).
 
@@ -117,7 +117,7 @@ Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden 
 
 >[!CAUTION]
 >
->Wenn die Lucene-Indizierung außerhalb von [!DNL Adobe Experience Manager] durchgeführt wird, funktioniert die Suche auf der Grundlage von Smart-Tags nicht wie erwartet.
+>Wenn die Lucene-Indizierung über [!DNL Adobe Experience Manager] durchgeführt wird, dann funktioniert die Suche basierend auf Smart-Tags nicht wie erwartet.
 
 ## Automatisches Taggen von Assets {#tagging-assets-automatically}
 

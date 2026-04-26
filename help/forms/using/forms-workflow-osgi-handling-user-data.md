@@ -9,10 +9,10 @@ feature: Adaptive Forms,AEM Forms on OSGi
 hide: true
 hidefromtoc: true
 exl-id: a817fa19-ae22-4c77-8a8e-6c4deed10d67
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 100%
+source-wordcount: '1032'
+ht-degree: 99%
 
 ---
 
@@ -77,13 +77,13 @@ Sie können Benutzerdaten aus einer Workflow-Instanz im Repository aufrufen und 
 Bei der Identifizierung von Workflows, die mit einer Initiatorin oder einem Initiator verbunden sind, können Sie jedoch in den folgenden Szenarien keine Workflows identifizieren oder die Ergebnisse sind möglicherweise nicht eindeutig:
 
 * **Workflow, der durch einen überwachten Ordner ausgelöst wird**: Eine Workflow-Instanz kann nicht über die Person identifiziert werden, die sie initiiert hat, wenn der Workflow durch einen überwachten Ordner ausgelöst wird. In diesem Fall werden die Benutzerinformationen in den gespeicherten Daten codiert.
-* **Workflow, der von der AEM-Publishing-Instanz initiiert wurde**: Alle Workflow-Instanzen werden mithilfe eines Dienstbenutzers erstellt, wenn adaptive Formulare, interaktive Mitteilungen oder Briefe von der AEM-Publishing-Instanz gesendet werden. In diesen Fällen wird der Benutzername der angemeldeten Person nicht in den Workflow-Instanzdaten erfasst.
+* **Workflow, der von der AEM-Veröffentlichungsinstanz initiiert wurde**: Alle Workflow-Instanzen werden mithilfe eines Dienstbenutzers erstellt, wenn adaptive Formulare, interaktive Mitteilungen oder Briefe von der AEM-Veröffentlichungsinstanz gesendet werden. In diesen Fällen wird der Benutzername der angemeldeten Person nicht in den Workflow-Instanzdaten erfasst.
 
 ### Zugreifen auf Benutzerdaten {#access}
 
 Führen Sie die folgenden Schritte aus, um Benutzerdaten für eine Workflow-Instanz zu identifizieren und darauf zuzugreifen:
 
-1. Navigieren Sie in der AEM-Author-Instanz zu `https://'[server]:[port]'/crx/de` und anschließend zu **[!UICONTROL Tools > Abfrage]**.
+1. Navigieren Sie in der AEM-Autoreninstanz zu `https://'[server]:[port]'/crx/de` und anschließend zu **[!UICONTROL Tools > Abfrage]**.
 
    Wählen Sie **[!UICONTROL SQL2]** aus der Dropdown-Liste **[!UICONTROL Typ]** aus.
 
@@ -113,7 +113,7 @@ Führen Sie die folgenden Schritte aus, um Benutzerdaten für eine Workflow-Inst
 
 1. Navigieren Sie zu den Speicherorten für Entwürfe und Verlauf für die Workflow-Instanz.
 
-   Zum Beispiel:
+   Beispiel:
 
    `/var/fd/dashboard/instances/server0/2018-04-09/_var_workflow_instances_server0_2018-04-09_basicmodel_54/draft/`
 

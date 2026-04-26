@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ba02f9b1-209e-42f2-b1df-2ed64fc9fdbc
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 98%
+source-wordcount: '1739'
+ht-degree: 94%
 
 ---
 
@@ -77,7 +77,7 @@ Sie können SSO auch über HTTP-Header aktivieren. (Siehe [Aktivieren von SSO mi
 >AEM Forms auf JEE unterstützt nicht die Konfiguration von SSO mithilfe von Kerberos/SPNEGO in einer Umgebung mit mehreren untergeordneten Domains.
 
 1. Legen Sie die Domain fest, in der SSO aktiviert werden soll. Der AEM-Formular-Server und die Benutzenden müssen alle zur selben Windows-Domain bzw. vertrauenswürdigen Domain gehören.
-1. Erstellen Sie in Active Directory eine Benutzerin oder einen Benutzer, die bzw. der den AEM-Formular-Server repräsentiert. (Siehe [Erstellen eines Benutzerkontos](enabling-single-sign-on-aem.md#create-a-user-account).) Wenn Sie mehr als eine Domain zum Verwenden von SPNEGO konfigurieren, stellen Sie sicher, dass die Kennwörter für die einzelnen Benutzenden verschieden sind. Wenn die Kennwörter nicht verschieden sind, kann SPNEGO-SSO nicht verwendet werden.
+1. Erstellen Sie in Active Directory eine Benutzerin oder einen Benutzer, die bzw. der den AEM-Formular-Server repräsentiert. (Siehe [Benutzerkonto erstellen](enabling-single-sign-on-aem.md#create-a-user-account).) Wenn Sie mehr als eine Domain für die Verwendung von SPNEGO konfigurieren, stellen Sie sicher, dass die Kennwörter für jeden dieser Benutzer unterschiedlich sind. Wenn die Kennwörter nicht verschieden sind, kann SPNEGO-SSO nicht verwendet werden.
 1. Weisen Sie den Dienstprinzipalnamen zu. (Siehe [Zuweisen eines Dienstprinzipalnamen (SPN)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
 1. Konfigurieren Sie den Domain-Controller. (Siehe [Verhindern von Fehlern bei der Kerberos-Integritätsprüfung](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
 1. Anschließend müssen Sie eine Unternehmens-Domain hinzufügen oder bearbeiten (siehe [Domains hinzufügen](/help/forms/using/admin-help/adding-domains.md#adding-domains) oder [Bestehende Domains bearbeiten oder umwandeln](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)). Führen Sie beim Erstellen oder Bearbeiten der Unternehmens-Domain die folgenden Aufgaben aus:
@@ -155,7 +155,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 ### Konfigurieren der SPNEGO-Client-Browser-Einstellungen {#configuring-spnego-client-browser-settings}
 
-Damit die SPNEGO-basierte Authentifizierung funktioniert, muss der Clientcomputer zu der Domain gehören, in der das Benutzerkonto erstellt wurde. Sie müssen außerdem den Client-Browser so konfigurieren, dass SPNEGO-basierte Authentifizierung zulässig ist. Ebenso muss die Site, die die SPNEGO-basierte Authentifizierung erfordert, eine vertrauenswürdige Site sein.
+Damit die SPNEGO-basierte Authentifizierung funktioniert, muss der Client-Computer Teil der Domain sein, in der das Benutzerkonto erstellt wurde. Sie müssen auch den Client-Browser so konfigurieren, dass eine SPNEGO-basierte Authentifizierung zulässig ist. Ebenso muss die Site, die die SPNEGO-basierte Authentifizierung erfordert, eine vertrauenswürdige Site sein.
 
 Wenn der Zugriff auf den Server über den Computernamen erfolgt, z. B. https://lcserver:8080, sind für Internet Explorer keine Einstellungen erforderlich. Wenn Sie eine URL eingeben, die keine Punkte („.“) enthält, wird diese Site von Internet Explorer als lokale Intranet-Site behandelt. Bei Verwendung eines vollständig qualifizierten Namens für die Site muss diese als vertrauenswürdige Site hinzugefügt werden.
 

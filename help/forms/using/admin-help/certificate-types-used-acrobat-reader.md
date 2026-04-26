@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ca919915-c37b-4793-b5e2-21a464c5dcdf
-source-git-commit: 253e2b5a39fd4c2fe7ab9aeaafb72930b4aa39ff
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '948'
 ht-degree: 65%
 
 ---
@@ -62,7 +62,7 @@ In der folgenden Tabelle sind die Zertifikatprofile aufgeführt, die bei der Ana
   <tr>
    <td><p>P1</p></td>
    <td><p>SAP-Produktion</p></td>
-   <td><p>Maximal</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produktion</p></td>
   </tr>
   <tr>
@@ -74,7 +74,7 @@ In der folgenden Tabelle sind die Zertifikatprofile aufgeführt, die bei der Ana
   <tr>
    <td><p>P3</p></td>
    <td><p>Acrobat Reader DC Extensions, Produktion</p></td>
-   <td><p>Maximal</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produktion</p></td>
   </tr>
   <tr>
@@ -93,54 +93,54 @@ In der folgenden Tabelle sind die Zertifikatprofile aufgeführt, die bei der Ana
    <td><p>P6</p></td>
    <td><p>Acrobat Reader DC Extensions, Auswertung</p></td>
    <td><p>60 Tage</p></td>
-   <td><p>Test</p></td>
+   <td><p>Auswertung</p></td>
   </tr>
   <tr>
    <td><p>P8</p></td>
    <td><p>Forms, Produktion</p></td>
-   <td><p>Maximal</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produktion</p></td>
   </tr>
   <tr>
    <td><p>P9</p></td>
    <td><p>Adobe Acrobat 7.x, Produktion</p></td>
-   <td><p>Maximal</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produktion</p></td>
   </tr>
   <tr>
    <td><p>I10</p></td>
    <td><p>Forms; OEMs können Forms verwenden</p></td>
-   <td><p>Maximal</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produktion und Auswertung</p></td>
   </tr>
   <tr>
    <td><p>I11</p></td>
    <td><p>Forms; OEMs können Forms verwenden.</p></td>
-   <td><p>Maximal</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produktion und Auswertung</p></td>
   </tr>
   <tr>
    <td><p>I12</p></td>
    <td><p>Nur Signatur; OEMs dürfen nur Signaturen verwenden</p></td>
-   <td><p>Maximal</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produktion und Auswertung</p></td>
   </tr>
   <tr>
    <td><p>I13</p></td>
    <td><p>Nur Offline-Kommentare; OEMs können Offline-Kommentare verwenden</p></td>
-   <td><p>Maximal</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produktion und Auswertung</p></td>
   </tr>
   <tr>
    <td><p>I14</p></td>
    <td><p>Nur Kommentare; OEMs dürfen nur Kommentare verwenden</p></td>
-   <td><p>Maximal</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produktion und Auswertung</p></td>
   </tr>
   <tr>
    <td><p>I15</p></td>
    <td><p>Vollständige Berechtigungen; OEMs können vollständige Berechtigungen verwenden</p></td>
-   <td><p>Maximal</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produktion und Auswertung</p></td>
   </tr>
  </tbody>
@@ -148,9 +148,9 @@ In der folgenden Tabelle sind die Zertifikatprofile aufgeführt, die bei der Ana
 
 ## Gültigkeitsdauer {#validity-period}
 
-Auswertungszertifikate werden Kundinnen und Kunden sowie Entwickelnden ausgestellt, damit sie Beispielanwendungen für Produkte entwickeln und testen können. Die Gültigkeitsdauer dieser Zertifikate liegt zwischen 60 und 90 Tagen.  Sie laufen am Ende des zweiten Monats nach Ablauf der Ausgabedaten ab.
+Auswertungszertifikate werden Kundinnen und Kunden sowie Entwickelnden ausgestellt, damit sie Beispielanwendungen für Produkte entwickeln und testen können. Die Gültigkeitsdauer dieser Zertifikate liegt zwischen 60 und 90 Tagen. Sie laufen am Ende des zweiten Monats nach Ablauf der Ausgabedaten ab.
 
-Zertifikate für die Partnerintegration werden Adobe-Geschäftspartnern ausgestellt, um die Softwareentwicklung, Integration, Erstellung von Prototypen und Demos zu unterstützen.  Diese Zertifikate gelten zwei Jahre ab dem Ausstellungsdatum.
+Zertifikate für die Partnerintegration werden Adobe-Geschäftspartnern ausgestellt, um die Softwareentwicklung, Integration, Erstellung von Prototypen und Demos zu unterstützen. Diese Zertifikate gelten zwei Jahre ab dem Ausstellungsdatum.
 
 Adobe Internal Use-Zertifikate werden innerhalb von Adobe verwendet, um die Entwicklung, Integration, Prototyping und Demonstration von Software zu unterstützen. Diese Zertifikate gelten zwei Jahre ab dem Ausstellungsdatum.
 
@@ -160,7 +160,7 @@ Produktionszertifikate werden Kunden ausgestellt, die Acrobat Reader DC Extensio
 
 Wenn Sie das Zertifikat für Acrobat Reader DC Extensions im Zertifikatbetrachter überprüfen, können Sie das Element „Verwendungsrechte“ auf der Registerkarte „Details“ auswählen (falls konfiguriert). Sie können eine detaillierte Liste der Adobe Reader-Verwendungsrechte sehen, die das Zertifikat aktivieren kann. Die für ein bestimmtes Dokument aktivierten Verwendungsrechte können eine Teilmenge dieser durch das Zertifikat aktivierten Rechte sein.
 
-Wenn die Online-Kommentierung in einer Umgebung ohne Zusammenarbeitsfunktionalität erforderlich ist, wenden Sie sich wegen weiterer Informationen an den Adobe-Support.  Die Modus-Eigenschaft entspricht dem Bereitstellungstyp und lautet entweder *production* (Produktion) oder *evaluation* (Test).
+Wenn die Online-Kommentierung in einer Umgebung ohne Zusammenarbeitsfunktionalität erforderlich ist, wenden Sie sich wegen weiterer Informationen an den Adobe-Support. Die Modus-Eigenschaft entspricht dem Bereitstellungstyp und lautet entweder *production* (Produktion) oder *evaluation* (Test).
 
 Die zulässigen Verwendungsrechte für Acrobat Reader DC-Erweiterungen bestehen aus einem oder mehreren bestimmten Elementen. Diese Elemente werden in verschiedenen Kombinationen verwendet, um Variationen lizenzierter Produktfunktionen zu ermöglichen.
 

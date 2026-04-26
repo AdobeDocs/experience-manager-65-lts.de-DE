@@ -1,6 +1,6 @@
 ---
 title: Java API-Schnellstart (SOAP) für LiveCycleProcess
-description: Verwenden Sie den Schnellstart der LiveCycleProcess-Java-API (SOAP), um nach Prozessinstanzen zu suchen, Prozessinstanzen auszusetzen, ausgesetzte Prozessinstanzen zu starten, Prozessinstanzen zu beenden, Prozessdaten zu bereinigen und den Status eines Vorgangs abzurufen.
+description: Verwenden Sie den Schnellstart der LiveCycleProcess-Java-API (SOAP), um nach Prozessinstanzen zu suchen, Prozessinstanzen auszusetzen, ausgesetzte Prozessinstanzen zu starten, Prozessinstanzen zu beenden, Prozessdaten zu bereinigen und den Status eines Auftrags abzurufen.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: bdc63436-81d7-442a-9516-e6fbcc254d98
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '424'
 ht-degree: 100%
 
 ---
@@ -538,7 +538,7 @@ Der folgende Java-Code löscht Daten aus einem Prozess mit dem Namen *SecureDocu
 
 ## Schnellstart (SOAP-Modus): Abrufen des Status eines Auftrags unter Verwendung der Java-API {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
 
-Im folgenden Codebeispiel wird der Status von 10 AEM Forms-Vorgängen abgerufen.
+Im folgenden Codebeispiel wird der Status von 10 AEM Forms-Aufträgen abgerufen.
 
 ```java
  /*

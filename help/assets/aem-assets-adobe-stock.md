@@ -7,9 +7,9 @@ role: User, Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 33f539d2-ae00-4f43-a27a-55c1b55a6c0c
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2158'
+source-wordcount: '2240'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,8 @@ ht-degree: 100%
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=de) |
 | AEM 6.5 LTS | Dieser Artikel |
 
-<!-- old content
+<!--
+old content
 
 [!DNL Experience Manager Assets] provides users the ability to search, preview, save, and license [!DNL Adobe Stock] assets directly from [!DNL Experience Manager]. 
 
@@ -30,10 +31,11 @@ Organizations can integrate their [!DNL Adobe Stock] enterprise plan with [!DNL 
 [!DNL Adobe Stock] service provides designers and businesses with access to millions of high-quality, curated, royalty-free photos, vectors, illustrations, videos, templates, and 3D assets for all their creative projects. [!DNL Experience Manager] users are able to quickly find, preview, and license [!DNL Adobe Stock] assets that are saved in [!DNL Experience Manager], without leaving the [!DNL Experience Manager] interface.
 -->
 
-<!-- New overview content
+<!--
+New overview content
 -->
 
-Der [!DNL Adobe Stock]-Service bietet Designern und Unternehmen Zugang zu Millionen von hochwertigen, kuratierten und gebührenfreien Fotos, Vektorgrafiken, Illustrationen, Videos, Vorlagen und 3D-Assets für sämtliche Kreativprojekte. 
+Der [!DNL Adobe Stock]-Service bietet Designern und Unternehmen Zugang zu Millionen von hochwertigen, kuratierten und gebührenfreien Fotos, Vektorgrafiken, Illustrationen, Videos, Vorlagen und 3D-Assets für sämtliche Kreativprojekte.
 
 Das Angebot von [!DNL Adobe Stock] für Unternehmen umfasst standardmäßig Freigabeberechtigungen innerhalb der Organisation. Nachdem ein Asset von einem Benutzer Ihrer Organisation lizenziert wurde, können andere Benutzer Ihrer Organisation dieses Asset identifizieren, herunterladen und verwenden, ohne es erneut lizenzieren zu müssen. Sobald ein Asset von Ihrer Organisation lizenziert wurde, ist das Recht zur Verwendung dieses Assets dauerhaft.
 
@@ -57,7 +59,8 @@ Ein Unternehmens-Abo von [!DNL Adobe Stock],
 
 Im Rahmen der Berechtigung ist ein standardmäßiges Produktprofil für [!DNL Adobe Stock] in [!DNL Admin Console] vorhanden. Es können mehrere Profile erstellt werden. Diese Profile bestimmen, wer Stock-Assets lizenzieren kann. Ein Benutzer mit direktem Zugriff auf das Produktprofil kann auf [https://stock.adobe.com/de](https://stock.adobe.com/de) zugreifen und Stock-Assets lizenzieren. Es gibt jedoch eine andere Methode, mit dem Entwicklerzugriff eine Integration (API) zu erstellen. Diese Integration authentifiziert die Kommunikation zwischen [!DNL Experience Manager Assets] und [!DNL Adobe Stock].
 
-<!-- Old content
+<!--
+Old content
 ## Prerequisites {#prerequisites}
 
 The integration requires an [enterprise [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/).
@@ -158,7 +161,8 @@ Führen Sie die folgenden Schritte aus, um die Cloud-Konfiguration zum Verbinden
 1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
    ![Verwenden von Adobe Stock mit AEM](/help/assets/assets/adobe-stock-config-page.png)
 
-<!-- old content
+<!--
+old content
 
 ## Steps to integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integration-steps}
 
@@ -468,7 +472,8 @@ Benutzer können die Eigenschaften für lizenzierte und unlizenzierte Assets anz
 >* [[!DNL Adobe Stock] Häufig gestellte Fragen (FAQ)](https://helpx.adobe.com/de/stock/faq.html)
 
 
-<!--old content
+<!--
+old content
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
@@ -482,7 +487,8 @@ Benutzer können die Eigenschaften für lizenzierte und unlizenzierte Assets anz
 
 -->
 
-<!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
+<!--
+TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
 
 <!--

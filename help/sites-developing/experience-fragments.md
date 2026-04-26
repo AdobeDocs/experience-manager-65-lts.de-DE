@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: bc621086-8128-4836-a580-dca99f61c439
-source-git-commit: d894bb145d70fba819cc8452056e9e46112e69d9
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1767'
 ht-degree: 63%
 
 ---
@@ -25,11 +25,11 @@ Ein [Experience Fragment](/help/sites-authoring/experience-fragments.md) ist ein
 
 Ein primäres Experience Fragment, eine Experience Fragment-Variante oder beide Varianten verwenden Folgendes:
 
-* `sling:resourceType`: `/libs/cq/experience-fragments/components/xfpage`
+* `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
 
 Da es keine `/libs/cq/experience-fragments/components/xfpage/xfpage.html` gibt, wird die folgende Bedingung erfüllt:
 
-* `sling:resourceSuperType`: `wcm/foundation/components/page`
+* `sling:resourceSuperType` : `wcm/foundation/components/page`
 
 ## Einfache HTML-Ausgabedarstellung {#the-plain-html-rendition}
 
@@ -43,7 +43,7 @@ Die einfache HTML-Ausgabedarstellung fügt das Protokoll, den Host und den Konte
 
 * oder folgendermaßen enden: `-src` oder `-href`
 
-Zum Beispiel:
+Beispiel:
 
 `.../brooklyn-coat/master.plain.html`
 
@@ -121,7 +121,8 @@ Ermöglicht Benutzenden das Erstellen von Experience Fragments in `/content/expe
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
 -->
 
-<!-- >[!NOTE]
+<!--
+>[!NOTE]
 >
 >[Allowed templates](/help/sites-authoring/experience-fragments.md#configuring-allowed-templates) can be configured in the Experience Fragments console.
 -->
@@ -130,7 +131,7 @@ Ermöglicht Benutzenden das Erstellen von Experience Fragments in `/content/expe
 
 [Die Entwicklung von Komponenten für die Verwendung mit/in Experience Fragments erfolgt gemäß den üblichen Verfahren.](/help/sites-developing/components.md)
 
-Die einzige zusätzliche Konfiguration besteht darin sicherzustellen, dass die Komponenten in der Vorlage zulässig sind. Diese Funktion wird mit der [Inhaltsrichtlinie“ &#x200B;](/help/sites-developing/page-templates-editable.md#content-policies).
+Die einzige zusätzliche Konfiguration besteht darin sicherzustellen, dass die Komponenten in der Vorlage zulässig sind. Diese Funktion wird mit der [Inhaltsrichtlinie“ ](/help/sites-developing/page-templates-editable.md#content-policies).
 
 ## Der Experience Fragment Link Rewriter Provider – HTML {#the-experience-fragment-link-rewriter-provider-html}
 
@@ -321,7 +322,7 @@ Beispielsweise möchten Sie den `/etc.clientlibs` Teil der URL entfernen und die
 
 >[!NOTE]
 >
->Weitere Informationen zum Abrufen eines Ressource Resolver über einen Service-Benutzer finden Sie unter &quot;[&#x200B; in AEM](/help/sites-administering/security-service-users.md).
+>Weitere Informationen zum Abrufen eines Ressource Resolver über einen Service-Benutzer finden Sie unter &quot;[ in AEM](/help/sites-administering/security-service-users.md).
 
 ```java
 private ResourceResolver resolver;

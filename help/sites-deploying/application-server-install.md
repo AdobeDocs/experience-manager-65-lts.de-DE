@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: 1d0fe9ee81a2e38f7887b6f884a13d1ba1462304
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '852'
 ht-degree: 41%
 
 ---
@@ -27,15 +27,17 @@ In diesem Abschnitt erfahren Sie, wie Sie Adobe Experience Manager (AEM) mit ein
 
 Es werden die Installationsschritte der folgenden Anwendungs-Server beschrieben:
 
-* [WebSphere](#websphere)
+* [WebSphere® 24.0.0.7](#websphere)
 * [Tomcat 10.0.x/10.1.x](#tomcat)
 * [JBoss EAP 8](/help/forms/using/upgrade-forms-osgi.md)
 
 Lesen Sie die entsprechende Anwendungsserverdokumentation, um weitere Informationen über das Installieren von Webanwendungen, Serverkonfigurationen und darüber zu erhalten, wie der Server gestartet und angehalten wird.
 
-<!-- >[!NOTE]
+<!--
+>[!NOTE]
 >
->If you are using Dynamic Media in a WAR deployment, see [Dynamic Media documentation](/help/assets/config-dynamic.md#enabling-dynamic-media). -->
+>If you are using Dynamic Media in a WAR deployment, see [Dynamic Media documentation](/help/assets/config-dynamic.md#enabling-dynamic-media).
+-->
 
 ## Allgemeine Beschreibung {#general-description}
 
@@ -96,7 +98,7 @@ Zu Demonstrationszwecken kann es sinnvoll sein, sowohl die Autoren- als auch die
 
 ### WebSphere® 24.0.0.7 {#websphere}
 
-Lesen Sie oben „Allgemeine [&quot; vor &#x200B;](#general-description) Bereitstellung.
+Lesen Sie oben „Allgemeine [&quot; vor ](#general-description) Bereitstellung.
 
 **Vorbereitung des Servers**
 

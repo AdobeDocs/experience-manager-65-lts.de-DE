@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 1ac45713-4eca-4def-a030-c7bc3fcdf4c7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 91%
+source-wordcount: '434'
+ht-degree: 79%
 
 ---
 
@@ -22,21 +22,21 @@ ht-degree: 91%
 
 Der folgende Java™ API Quick Start (SOAP) ist für den Application Manager-Client verfügbar.
 
-[Quick Start (SOAP-Modus): Erstellen der Anwendungsversion mithilfe von Java](#quick-start-soap-mode-creating-application-version-using-the-java-api)
+[Quick Start (SOAP-Modus): Erstellen der Anwendungsversion mithilfe der Java™-API](#quick-start-soap-mode-creating-application-version-using-the-java-api)
 
-[Quick Start (SOAP-Modus): Exportieren von Anwendungen mithilfe von Java](#quick-start-soap-mode-exporting-applications-using-the-java-api)
+[Schnellstart (SOAP-Modus): Exportieren von Anwendungen mit der Java™-API](#quick-start-soap-mode-exporting-applications-using-the-java-api)
 
-[Quick Start (SOAP-Modus): Importieren von Anwendungen mithilfe von Java](#quick-start-soap-mode-importing-applications-using-the-java-api)
+[Schnellstart (SOAP-Modus): Importieren von Anwendungen mit der Java™-API](#quick-start-soap-mode-importing-applications-using-the-java-api)
 
-[Quick Start (SOAP-Modus): Abrufen einer AEM Forms-Anwendung mithilfe von Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
+[Schnellstart (SOAP-Modus): Abrufen einer AEM Forms-Anwendung mit der Java™-API](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
 
-[Quick Start (SOAP-Modus): Anwendungen mithilfe von Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
+[Quick Start (SOAP-Modus): Abrufen der Anwendungen mithilfe der Java™-API](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
 
-[Quick Start (SOAP-Modus): Abrufen des Status von Anwendungen mithilfe von Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
+[Quick Start (SOAP-Modus): Abrufen des Status von Anwendungen mit der Java™-API](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[Schnellstart (SOAP-Modus)](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[Schnellstart (SOAP-Modus): :Previewing des AEM Forms- und späteren Anwendungsarchivs mit der Java™-API](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
-[Schnellstart (SOAP-Modus)](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
+[Schnellstart (SOAP-Modus): :Deleting des AEM Forms-Anwendungsarchivs mit der Java™-API](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
 AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 

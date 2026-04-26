@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 040a4db1-45e1-4501-8117-d2d41d4a73ea
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '583'
 ht-degree: 100%
 
 ---
@@ -54,7 +54,7 @@ Der Trust Store enthält möglicherweise mehr als eine Berechtigung für Acrobat
 
 1. Klicken Sie auf „Eine Datei auswählen“, um die Berechtigung zu suchen. Geben Sie das Kennwort der Berechtigung ein und klicken Sie auf „OK“.
 
-   Wenn die Fehlermeldung „Fehler beim Importieren einer Berechtigung aufgrund eines fehlerhaften Dateiformats oder eines falschen Kennworts“ angezeigt wird, müssen Sie sicherstellen, dass das Kennwort gültig ist. 
+   Wenn die Fehlermeldung „Fehler beim Importieren einer Berechtigung aufgrund eines fehlerhaften Dateiformats oder eines falschen Kennworts“ angezeigt wird, müssen Sie sicherstellen, dass das Kennwort gültig ist.
 
 ## Entfernen einer Berechtigung für Acrobat Reader DC-Erweiterungen {#remove-a-acrobat-reader-dc-extensions-credential}
 

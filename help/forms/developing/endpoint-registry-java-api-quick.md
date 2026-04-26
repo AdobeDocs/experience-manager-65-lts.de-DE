@@ -1,6 +1,6 @@
 ---
-title: Java™-API-Schnellstart (SOAP) für die Endpunkt-Registry
-description: Erfahren Sie, wie Sie Endpunkte wie EJB, SOAP, Watched Folder, E-Mail-Endpunkt und Remoting-Endpunkt hinzufügen und Endpunkte mit einer Java™-API bearbeiten, entfernen und abrufen.
+title: Java&trade; API-Schnellstart (SOAP) für die Endpunktregistrierung
+description: Erfahren Sie, wie Sie Endpunkte wie EJB, SOAP, überwachte Ordner, E-Mail-Endpunkt und Remoting-Endpunkt hinzufügen und Endpunkte mithilfe der Java&trade;-API bearbeiten, entfernen und abrufen können.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: ac33db6b-9896-4593-9365-62dd924b6bcb
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 100%
+source-wordcount: '562'
+ht-degree: 91%
 
 ---
 

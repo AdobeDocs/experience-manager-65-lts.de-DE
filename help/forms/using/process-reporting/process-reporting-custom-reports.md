@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5670fede-4567-445e-8eeb-84349405db0e
-source-git-commit: 7e7c9f2414504ade45d6695641e08108afed0bd2
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 97%
+source-wordcount: '1021'
+ht-degree: 98%
 
 ---
 
@@ -640,7 +640,7 @@ Grundvoraussetzungen für das Erstellen einer separaten Benutzeroberfläche zum 
    * **description**- Gibt die einzeilige Beschreibung des Berichts an. Das Beschreibungsfeld darf leer bleiben.
    * **icon**- Gibt die Grafik an, die den Bericht symbolisieren soll. Das Symbolfeld darf leer bleiben.
 
-   ![Eigenschaften des Knotens &#x200B;](assets/node_properties_new.png)
+   ![Eigenschaften des Knotens ](assets/node_properties_new.png)
 
    Knoteneigenschaften
 
@@ -658,4 +658,4 @@ Grundvoraussetzungen für das Erstellen einer separaten Benutzeroberfläche zum 
 
 Um benutzerdefinierter Berichte und Benutzeroberflächen, wie in dem Artikel erörtert, zu integrieren, importieren Sie das `sample-report-pkg-1.zip`-Paket in die Benutzeroberfläche für die Prozessverwaltung.
 
-[Datei laden](assets/sample-report-pkg-1.zip)
+[Datei abrufen](assets/sample-report-pkg-1.zip)

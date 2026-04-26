@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 5a93918b-3b5f-49e0-9283-86776f9d8fb4
-source-git-commit: 180fd02df50f84e0d4f9bc01efe56e28d25555e2
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '856'
 ht-degree: 92%
 
 ---
@@ -46,7 +46,7 @@ AEM hat lange das Prinzip von Überlagerungen und Sling Resource Merger verwende
 
 Um dies sicherer zu machen und für Kundinnen und Kunden deutlicher zu kennzeichnen, welche Bereiche von **/libs** sie gefahrlos verwenden können, wurde der Inhalt in **/libs** mit den folgenden Mixins klassifiziert:
 
-* **Öffentlich (Granite:PublicArea)** - Definiert einen Knoten als „Öffentlich“, damit er überlagert, vererbt (`sling:resourceSuperType`) oder direkt verwendet (`sling:resourceType`) werden kann. Als „Öffentlich“ gekennzeichnete Knoten unter „/libs“ können sicher aktualisiert werden, indem ein Kompatibilitätspaket hinzugefügt wird. Kundinnen und Kunden sollten grundsätzlich nur Knoten nutzen, die als „Öffentlich“ gekennzeichnet sind. 
+* **Öffentlich (Granite:PublicArea)** - Definiert einen Knoten als „Öffentlich“, damit er überlagert, vererbt (`sling:resourceSuperType`) oder direkt verwendet (`sling:resourceType`) werden kann. Als „Öffentlich“ gekennzeichnete Knoten unter „/libs“ können sicher aktualisiert werden, indem ein Kompatibilitätspaket hinzugefügt wird. Kundinnen und Kunden sollten grundsätzlich nur Knoten nutzen, die als „Öffentlich“ gekennzeichnet sind.
 
 * **Abstrakt (:AbstractArea))** Definiert einen Knoten als „Abstrakt“. Knoten können überlagert oder vererbt (`sling:resourceSupertype`), aber nicht direkt verwendet werden (`sling:resourceType`).
 
@@ -68,7 +68,7 @@ In CRXDE Lite angewendete Mixins zeigen als `INTERNAL` gekennzeichnete Inhaltskn
 
 ![image2018-2-8_23-34-5](assets/image2018-2-8_23-34-5.png)
 
-**Endgültig** 
+**Endgültig**
 
 ![image2018-2-8_23-34-56](assets/image2018-2-8_23-34-56.png)
 

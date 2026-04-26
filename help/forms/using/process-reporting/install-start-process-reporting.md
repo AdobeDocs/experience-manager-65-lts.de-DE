@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: e64a3b6f-7248-4426-9f13-f703eab3632d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1711'
+source-wordcount: '1734'
 ht-degree: 99%
 
 ---
@@ -103,7 +103,7 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungszeitplan zu än
 
 >[!NOTE]
 >
-> Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+> Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 ### ProcessDataStorage-Service {#processdatastorage-service}
 
@@ -142,11 +142,11 @@ Der ReportConfiguration-Service wird vom Prozess-Reporting zum Konfigurieren sei
 
 1. Anmelden bei **Configuration Manager** mit CRX-Administratorberechtigungen. Die Standard-URL von Configuration Manager lautet `https://'[server]:[port]'/lc/system/console/configMgr`
 1. Öffnen Sie den **ReportingConfiguration**-Service.
-1. **Anzahl von Datensätzen**
+1. **Anzahl von Einträgen**
 
-   Beim Ausführen einer Abfrage im Repository kann ein Ergebnis möglicherweise eine große Anzahl von Datensätzen enthalten. Wenn die Ergebnismenge groß ist, kann die Ausführung der Abfrage Server-Ressourcen beanspruchen.
+   Beim Ausführen einer Abfrage im Repository kann ein Ergebnis möglicherweise eine große Anzahl von Einträgen enthalten. Wenn die Ergebnismenge groß ist, kann die Ausführung der Abfrage Server-Ressourcen beanspruchen.
 
-   Um große Ergebnismengen zu verarbeiten, teilt der ReportConfiguration-Service die Abfrageverarbeitung in Datensatz-Batches auf. Dadurch wird die Systemlast reduziert.
+   Um große Ergebnismengen zu verarbeiten, teilt der ReportConfiguration-Service die Abfrageverarbeitung in Eintrags-Batches auf. Dadurch wird die Systemlast reduziert.
 
    `Default`: `1000`
 

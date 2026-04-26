@@ -1,6 +1,6 @@
 ---
 title: Zusammenstellen von PDF-Dokumenten
-description: Verwenden Sie den Assembler-Service, um mehrere PDF-Dokumente in einem PDF-Dokument zusammenzuführen oder ein PDF-Dokument in mehrere PDF-Dokumente aufzuteilen.
+description: Verwenden Sie den Assembler-Dienst, um mehrere PDF-Dokumente in einem PDF-Dokument zusammenzuführen oder ein PDF-Dokument in mehrere PDF-Dokumente aufzuteilen.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/performing_service_operations_using_apis
@@ -12,9 +12,9 @@ feature: Adaptive Forms, Document Services
 hide: true
 hidefromtoc: true
 exl-id: 0dd63557-2961-497a-b820-8f2e0a823610
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '147'
 ht-degree: 100%
 
 ---
@@ -23,12 +23,12 @@ ht-degree: 100%
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
 
-**Über den Assembler-Service**
+**Über den Assembler-Dienst**
 
-Der Assembler-Service kann mehrere PDF-Dokumente in einem PDF-Dokument zusammenführen oder ein PDF-Dokument in mehrere PDF-Dokumente aufteilen. Der Assembler-Service kann Dokumente auf verschiedene Weise bearbeiten, z. B. die Seitengröße ändern und Inhalte drehen. Er kann zusätzliche Inhalte wie Kopf- und Fußzeilen sowie ein Inhaltsverzeichnis einfügen und vorhandene Inhalte wie Anmerkungen, Dateianhänge und Lesezeichen beibehalten, importieren oder exportieren.
+Der Assembler-Dienst kann mehrere PDF-Dokumente in einem PDF-Dokument zusammenführen oder ein PDF-Dokument in mehrere PDF-Dokumente aufteilen. Der Assembler-Dienst kann Dokumente auf verschiedene Weise bearbeiten, z. B. die Seitengröße ändern und Inhalte drehen. Er kann zusätzliche Inhalte wie Kopf- und Fußzeilen sowie ein Inhaltsverzeichnis einfügen und vorhandene Inhalte wie Anmerkungen, Dateianhänge und Lesezeichen beibehalten, importieren oder exportieren.
 
-Ab LiveCycle ES 8.0 und höher ist die Unterstützung für PDF-Pakete im Assembler-Service verfügbar.
+Ab LiveCycle ES 8.0 und höher ist die Unterstützung für PDF-Pakete im Assembler-Dienst verfügbar.
 
 >[!NOTE]
 >
->Weitere Informationen zum Assembler-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Assembler-Dienst finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).

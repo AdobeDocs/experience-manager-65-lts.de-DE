@@ -11,10 +11,10 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: e8824453-8891-40e0-9948-c0c0f0fdce62
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1585'
-ht-degree: 100%
+source-wordcount: '1590'
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ In einer dynamischen Gruppe wählen Sie die Benutzenden, die zur Gruppe gehören
 Verwenden Sie eine dieser beiden Methoden, um dynamische Gruppen zu erstellen:
 
 * Aktivieren Sie die automatische Erstellung dynamischer Gruppen auf Basis von E-Mail-Domains (z. B. @adobe.com). Wenn Sie diese Funktion aktivieren, erstellt User Management eine dynamische Gruppe für jede eindeutige E-Mail-Domain in der AEM Forms-Datenbank. Verwenden Sie einen Cron-Ausdruck, um anzugeben, wie oft User Management die AEM Forms-Datenbank nach neuen E-Mail-Domains durchsuchen soll. Diese dynamischen Gruppen werden der lokalen Domain „DefaultDom“ hinzugefügt und erhalten die Bezeichnung „Alle Benutzer mit einer *`[email domain]`*-E-Mail-ID“.
-* Erstellen Sie eine dynamische Gruppe auf der Grundlage von bestimmten Kriterien, wie E-Mail-Domain des Benutzers, Beschreibung, allgemeinem Namen, kanonischem Namen und Domain-Namen. Um zur dynamischen Gruppe zu gehören, muss eine Person alle angegebenen Kriterien erfüllen. Um eine „oder“-Bedingung einzurichten, erstellen Sie zwei separate dynamische Gruppen und fügen Sie beide einer lokalen Gruppe hinzu. Verwenden Sie diese Vorgehensweise beispielsweise, um eine Gruppe von Benutzern zu erstellen, die zur E-Mail-Domain „@adobe.com“ gehören oder deren kanonischer Name ou=adobe.com enthält. Die Benutzer müssten jedoch nicht unbedingt beide Bedingungen erfüllen.
+* Erstellen Sie eine dynamische Gruppe auf der Grundlage von bestimmten Kriterien, wie E-Mail-Domain des Benutzers, Beschreibung, allgemeinem Namen, kanonischem Namen und Domain-Namen. Um zur dynamischen Gruppe zu gehören, muss eine Person alle angegebenen Kriterien erfüllen. Um eine „oder“-Bedingung einzurichten, erstellen Sie zwei separate dynamische Gruppen und fügen Sie beide einer lokalen Gruppe hinzu. Verwenden Sie diesen Ansatz beispielsweise, um eine Gruppe von Benutzern zu erstellen, die zur E-Mail-Domain @adobe.com gehören oder deren kanonischer Name ou=adobe.com enthält. Die Benutzer müssen jedoch nicht unbedingt beide Bedingungen erfüllen.
 
 Eine dynamische Gruppe enthält nur Benutzende. Sie kann nicht andere Gruppen enthalten. Eine dynamische Gruppe kann jedoch zu einer übergeordneten Gruppe gehören.
 
@@ -82,7 +82,7 @@ Eine dynamische Gruppe enthält nur Benutzende. Sie kann nicht andere Gruppen en
    * Um die automatische Synchronisierung täglich zu aktivieren, geben Sie die Uhrzeit im 24-Stunden-Format in das Feld „Erfolgt täglich um“ ein. Wenn Sie Ihre Einstellungen speichern, wird dieser Wert in einen Cron-Ausdruck umgewandelt, der im Feld unten angezeigt wird.
    * Um die Synchronisierung an einem bestimmten Tag der Woche oder im Monat oder in einem bestimmten Monat zu planen, geben Sie den entsprechenden Cron-Ausdruck in das Feld ein. Der Standardwert ist `0 00 4 ? * *`(d. h. jeden Tag um 4 Uhr nachprüfen).
 
-     Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Vorgangsplanungssystem Quartz, Version 1.4.0.
+     Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Auftragsplanungssystem Quartz, Version 1.4.0.
 
 1. Klicken Sie auf Speichern.
 

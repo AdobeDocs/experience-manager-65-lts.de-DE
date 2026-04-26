@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5e7fe85e-3c7f-4a37-8f65-5c0ad4bbd66c
-source-git-commit: 32da9c3f13cb1eba130e96e03ab97617d18e1486
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3218'
+source-wordcount: '3286'
 ht-degree: 100%
 
 ---
@@ -43,7 +43,7 @@ Durch das Schützen eines Dokuments mit einer Richtlinie behalten Sie die Kontro
 
 Document Security besteht aus einem Server und einer Benutzeroberfläche:
 
-**Server:** Der Server ist die zentrale Komponente, über die Document Security Transaktionen wie z. B. die Authentifizierung von Benutzern, die Richtlinienverwaltung in Echtzeit und das Durchsetzen der Vertraulichkeit ausführt. Der Server stellt außerdem ein zentrales Repository für Richtlinien, Auditdatensätze und andere zugehörige Informationen bereit.
+**Server:** Der Server ist die zentrale Komponente, über die Document Security Transaktionen wie z. B. die Authentifizierung von Benutzern, die Richtlinienverwaltung in Echtzeit und das Durchsetzen der Vertraulichkeit ausführt. Der Server stellt außerdem ein zentrales Repository für Richtlinien, Auditeinträge und andere zugehörige Informationen bereit.
 
 **Web-Seiten:** Die Benutzeroberfläche, auf der Sie Richtlinien erstellen, richtliniengeschützte Dokumente verwalten und Ereignisse im Zusammenhang mit richtliniengeschützten Dokumenten überwachen. Admins können auch globale Optionen wie Benutzerauthentifizierung, Auditing und Messaging für eingeladene Benutzende konfigurieren und Konten eingeladener Benutzender verwalten.
 
@@ -256,7 +256,7 @@ Fügen Sie zu Richtlinien Benutzergruppen anstelle einzelner Benutzer hinzu. Die
 
    * Verwenden Sie zusätzlich zum standardmäßigen Prozess zur Richtlinienbewertung einen Zugriffskontrollmechanismus, den Ihr Content-Management-System verwendet. Wenn der Dienst beispielsweise bestimmt, ob eine Person ein richtliniengeschütztes Dokument drucken kann, kann er den standardmäßigen Prozess zur Richtlinienbewertung verwenden. Außerdem kann er den Zugriffskontrollmechanismus verwenden, den Ihr Content-Management-System verwendet.
 
-  Obwohl es möglich ist, den Richtlinienbewertungsprozess von Document Security vollständig durch einen externen Autorisierungs-Handler zu ersetzen, wird empfohlen, dass Sie einen externen Autorisierungs-Handler in Verbindung mit dem Richtlinienbewertungsprozess verwenden. Dann kann der Dokumentzugriff über denselben Kontrollmechanismus gesteuert werden, den Ihr Content Management-System verwendet. Wenn beispielsweise der Document Security-Dienst bestimmt, ob eine Person ein richtliniengeschütztes Dokument drucken kann, wird der standardmäßige Prozess zur Richtlinienbewertung verwendet. Außerdem wird der Zugriffssteuerungsmechanismus verwendet, den Ihr Content-Management-System verwendet. Weitere Informationen finden Sie unter [Erstellen externer Autorisierungs-Handler](https://help.adobe.com/de_DE/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
+  Obwohl es möglich ist, den Richtlinienbewertungsprozess von Document Security vollständig durch einen externen Autorisierungs-Handler zu ersetzen, wird empfohlen, dass Sie einen externen Autorisierungs-Handler in Verbindung mit dem Richtlinienbewertungsprozess verwenden. Dann kann der Dokumentzugriff über denselben Kontrollmechanismus gesteuert werden, den Ihr Content-Management-System verwendet. Wenn beispielsweise der Document Security-Dienst bestimmt, ob eine Person ein richtliniengeschütztes Dokument drucken kann, wird der standardmäßige Prozess zur Richtlinienbewertung verwendet. Außerdem wird der Zugriffssteuerungsmechanismus verwendet, den Ihr Content-Management-System verwendet. Weitere Informationen finden Sie unter [Erstellen externer Autorisierungs-Handler](https://help.adobe.com/de_DE/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
 * **Beschränken Sie die Anzahl der Richtliniensätze auf ein Minimum**: Es gibt mehrere Faktoren, die zu einer ständigen Zunahme von Richtlinien und Richtliniensätzen führen. Einige häufige Faktoren sind:
 

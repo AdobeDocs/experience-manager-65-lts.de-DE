@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 14f006f8-8751-4713-ba5a-590ce479fbb4
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1592'
-ht-degree: 100%
+source-wordcount: '1614'
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ Wenn Sie die einmalige Anmeldung mithilfe von SPNEGO aktivieren, fügen Sie eine
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Wählen Sie die gewünschte Domain in der Liste aus. Wenn Sie die Authentifizierung für eine neue Domain einrichten möchten, lesen Sie [Eine Unternehmens-Domain hinzufügen](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) oder [Hybrid-Domain hinzufügen](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain) hinzuzufügen.
 1. Klicken Sie auf „Authentifizierung hinzufügen“ und wählen Sie in der Liste „Authentifizierungsanbieter“ einen der Authentifizierungsmethode Ihres Unternehmens entsprechenden Anbieter aus.
-1. Geben Sie weitere auf dieser Seite angeforderte Informationen ein.  (Siehe [Authentifizierungseinstellungen](configuring-authentication-providers.md#authentication-settings).)
+1. Geben Sie weitere auf dieser Seite angeforderte Informationen ein. (Siehe [Authentifizierungseinstellungen](configuring-authentication-providers.md#authentication-settings).)
 1. (Optional) Klicken Sie auf „Testen“, um die Konfiguration zu testen.
 1. Klicken Sie auf „OK“ und dann erneut auf „OK“.
 
@@ -103,7 +103,8 @@ Wenn Sie die Authentifizierung für eine Unternehmens- oder Hybrid-Domain konfig
 
 Wenn Sie die Authentifizierung für eine Unternehmens- oder Hybrid-Domain konfigurieren und die SAML-Authentifizierung wählen, sind die folgenden Einstellungen verfügbar. Informationen zu weiteren SAML-Einstellungen finden Sie unter [Konfigurieren der SAML-Dienstanbietereinstellungen](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings).
 
-**Wählen Sie eine zu importierende Metadatendatei des SAML-Identitätsanbieters aus:** Klicken Sie auf „Durchsuchen“, um eine von Ihrem IDP generierte Metadatendatei des SAML-Identitätsanbieters auszuwählen, und klicken Sie dann auf „Importieren“. Die Details des Identitätsanbieters werden angezeigt.
+**Wählen Sie einen SAML-Identitätsanbieter für Metadaten aus.
+Zu importierende Datei:** Klicken Sie auf Durchsuchen , um eine von Ihrem IDP generierte Metadatendatei des SAML-Identitätsanbieters auszuwählen, und klicken Sie dann auf Importieren. Die Details des Identitätsanbieters werden angezeigt.
 
 **Titel:** Alias zu der von der Entitäts-ID bezeichneten URL. Der Titel wird ebenfalls auf der Anmeldeseite für Unternehmen und lokale Benutzer angezeigt.
 
@@ -145,13 +146,13 @@ Im vorliegenden Verfahren wird beschrieben, wie die herkömmliche Authentifizier
 1. Das vom Authentifizierungsanbieter zurückgegebene Ergebnis wird ausgewertet. Wenn der Authentifizierungsanbieter die Authentifizierung erfolgreich zurückgibt, können sich die Benutzenden anmelden. Andernfalls fragt das User Management beim nächsten Authentifizierungsanbieter nach (Schritte 2 bis 3).
 1. Ein Authentifizierungsfehler wird zurückgegeben, wenn kein verfügbarer Authentifizierungsanbieter die Benutzeranmeldeinformationen validiert.
 
-Wenn Just-in-time-Bereitstellung aktiviert ist, werden neue Benutzende dynamisch in der Benutzerverwaltung erstellt, wenn einer der Authentifizierungsanbieter deren Anmeldedaten validiert.  (Nach Schritt 3 im obigen Verfahren.)
+Wenn Just-in-time-Bereitstellung aktiviert ist, werden neue Benutzende dynamisch in der Benutzerverwaltung erstellt, wenn einer der Authentifizierungsanbieter deren Anmeldedaten validiert. (Nach Schritt 3 im obigen Verfahren.)
 
 Ohne Just-in-time-Bereitstellung ist die Authentifizierung nicht erfolgreich, wenn jemand authentifiziert, aber nicht in der Datenbank der Benutzerverwaltung gefunden wird. Die Just-in-time-Bereitstellung fügt dem Authentifizierungsverfahren einen Schritt hinzu, um die Benutzerin bzw. den Benutzer zu erstellen und dieser Person Rollen und Gruppen zuzuweisen.
 
 ### Just-in-time-Bereitstellung für eine Domain aktivieren {#enable-just-in-time-provisioning-for-a-domain}
 
-1. Schreiben Sie einen Dienst-Container, der IdentityCreator- und AssignmentProvider-Schnittstellen implementiert.  (Siehe [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).)
+1. Schreiben Sie einen Dienst-Container, der IdentityCreator- und AssignmentProvider-Schnittstellen implementiert. (Siehe [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).)
 1. Stellen Sie den Dienst-Container auf dem Formular-Server bereit.
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 

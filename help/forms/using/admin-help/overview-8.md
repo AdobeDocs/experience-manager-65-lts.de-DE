@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5708ff03-4af7-47a3-b385-34a3a94f7a7b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '263'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ Weitere Informationen zum Ausgabe-Service finden Sie unter [Dienste-Referenz](ht
 Sie können auf den Ausgabe-Seiten in der Administrationskonsole mehrere Aufgaben durchführen:
 
 * Geben Sie Zeichensätze für die Internationalisierung an. (Siehe [Ändern des Zeichensatzes](/help/forms/using/admin-help/change-character-set.md#change-the-character-set).)
-* Geben Sie absolute und relative Pfade für URLs, URIs, XCIs und Dateispeicherorte an. (Siehe [Angeben der Dateispeicherorte für die Ausgabe](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).) 
+* Geben Sie absolute und relative Pfade für URLs, URIs, XCIs und Dateispeicherorte an. (Siehe [Angeben der Dateispeicherorte für die Ausgabe](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
 * Konfigurieren Sie Cache-Größen und -Richtlinien. (Siehe [Angeben des Cache-Modus](/help/forms/using/admin-help/configuring-caching-output.md#specifying-the-cache-mode) und [Konfigurieren der Cache-Einstellungen](/help/forms/using/admin-help/configuring-caching-output.md#configuring-cache-settings).)
 * Stellen Sie Schriften auf dem Anwendungs-Server bereit. (Siehe [Bereitstellen von Schriften](/help/forms/using/admin-help/make-fonts-available.md#make-fonts-available).)
 * Geben Sie die einzubettenden Schriften an. (Siehe [Angeben der einzubettenden Schriftarten](/help/forms/using/admin-help/specify-fonts-embed.md#specify-fonts-to-embed).)

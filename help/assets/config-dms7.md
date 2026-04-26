@@ -6,10 +6,10 @@ mini-toc-levels: 4
 feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 98bd0c24-6c5e-4b96-a3aa-a3e4ef802baf
-source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '6494'
-ht-degree: 99%
+source-wordcount: '6659'
+ht-degree: 97%
 
 ---
 
@@ -43,7 +43,7 @@ Mit der neuen Architektur ist Experience Manager für Assets aus Primärquellen 
 
 ## Aktivieren von Dynamic Media im Scene7-Modus {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media ist standardmäßig deaktiviert. &#x200B;](https://business.adobe.com/de/products/experience-manager/assets/dynamic-media.html) Funktionen für Dynamic Media müssen für die Nutzung aktiviert werden.
+[Dynamic Media ist standardmäßig deaktiviert. ](https://business.adobe.com/de/products/experience-manager/assets/dynamic-media.html) Funktionen für Dynamic Media müssen für die Nutzung aktiviert werden.
 
 >[!WARNING]
 >
@@ -71,9 +71,9 @@ Führen Sie zum Migrieren der von Ihren erstellten benutzerdefinierten Vorgaben 
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
-## Installieren des Feature Pack 18912 für die Massenmigration von Assets {#installing-feature-pack-for-bulk-asset-migration}
+## Installieren von Feature Pack 18912 für die Massenmigration von Assets {#installing-feature-pack-for-bulk-asset-migration}
 
-Die Installation von Feature Pack 18912 ist *optional*.
+Die Installation von Feature Pack 18912 ist *optional*.
 
 Mit dem Feature Pack 18912 können Sie Assets entweder per FTP in großen Mengen importieren oder Assets aus dem Dynamic Media-Hybridmodus oder Dynamic Media Classic in den Dynamic Media-Scene7-Modus auf Experience Manager migrieren. Es ist verfügbar unter [Adobe Professional Services](https://business.adobe.com/de/customers/consulting-services/main.html).
 
@@ -81,11 +81,13 @@ Weitere Informationen finden Sie unter [Installieren des Feature Pack 18912 für
 
 ## Erstellen einer Dynamic Media-Konfiguration in Cloud Services {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+<!--
+**Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**To create a Dynamic Media Configuration in Cloud Services:** -->
+**To create a Dynamic Media Configuration in Cloud Services:**
+-->
 
 1. Klicken Sie im Experience Manager-Autorenmodus auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen, und wählen Sie das Symbol „Tools“ aus. Gehen Sie dann zu **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media-Konfiguration]**.
 1. Klicken Sie auf der Seite „Browser zur Konfiguration von Dynamic Media“ im linken Fensterbereich auf **[!UICONTROL global]** (klicken Sie nicht auf das Ordnersymbol links neben **[!UICONTROL global]**) und klicken Sie dann auf **[!UICONTROL Erstellen]**.
@@ -131,7 +133,7 @@ Weitere Informationen finden Sie unter [Installieren des Feature Pack 18912 für
 
         ![Kontrollkästchen „Replizieren von Metadaten nach der Dynamic Media-Veröffentlichung“](assets-dm/replicate-metadata-setting.png)
 
-      * **[!UICONTROL Selektive Veröffentlichung]** Mit dieser Option können Sie steuern, welche Ordner in Dynamic Media veröffentlicht werden. Damit können Sie Funktionen wie intelligenten Zuschnitt oder dynamische Ausgabedarstellungen verwenden oder bestimmen, welche Ordner ausschließlich in Experience Manager zur Vorschau veröffentlicht werden. Die gleichen Assets werden *nicht* in Dynamic Media veröffentlicht, um sie in der öffentlichen Domain bereitzustellen.<br>Sie können diese Option hier in der **[!UICONTROL Konfiguration von Dynamic Media Cloud]** festlegen oder, wenn Sie es vorziehen, diese Option auf Ordnerebene in den **[!UICONTROL Eigenschaften]** eines Ordners festlegen.<br>Siehe [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](/help/assets/selective-publishing.md).<br>Wenn Sie diese Konfiguration später ändern oder auf Ordnerebene ändern, wirken sich diese Änderungen nur auf neue Assets aus, die Sie ab diesem Zeitpunkt hochladen. Der Veröffentlichungsstatus vorhandener Assets im Ordner bleibt unverändert, bis Sie ihn im Dialogfeld **[!UICONTROL Quick Publish]** oder **[!UICONTROL Veröffentlichung verwalten]** manuell ändern.
+      * **[!UICONTROL Selektive Veröffentlichung]** Mit dieser Option können Sie steuern, welche Ordner in Dynamic Media veröffentlicht werden. Damit können Sie Funktionen wie intelligenten Zuschnitt oder dynamische Ausgabedarstellungen verwenden oder bestimmen, welche Ordner ausschließlich in Experience Manager zur Vorschau veröffentlicht werden. Die gleichen Assets werden *nicht* in Dynamic Media veröffentlicht, um sie in der öffentlichen Domain bereitzustellen.<br>Sie können diese Option hier in der **[!UICONTROL Konfiguration von Dynamic Media Cloud“ festlegen]** oder, wenn Sie es vorziehen, diese Option auf Ordnerebene in den **[!UICONTROL Eigenschaften]** eines Ordners festlegen.<br>Siehe [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](/help/assets/selective-publishing.md).<br>Wenn Sie diese Konfiguration später ändern oder auf Ordnerebene ändern, wirken sich diese Änderungen nur auf neue Assets aus, die Sie ab diesem Zeitpunkt hochladen. Der Veröffentlichungsstatus vorhandener Assets im Ordner bleibt unverändert, bis Sie ihn im Dialogfeld **[!UICONTROL Quick Publish]** oder **[!UICONTROL Veröffentlichung verwalten]** manuell ändern.
 
    * **[!UICONTROL Sicherer Vorschau-Server]** – bietet Ihnen die Möglichkeit, den URL-Pfad zu Ihrem Vorschau-Server für sichere Ausgaben anzugeben. Nachdem die Ausgabedarstellungen generiert wurden, kann Experience Manager sicher auf die Remote-Dynamic Media-Ausgabedarstellungen zugreifen und eine Vorschau davon anzeigen (es werden keine Binärdateien an die Experience Manager-Instanz zurückgesendet).
 Sofern Sie keine gesonderte Vereinbarung zum Verwenden Ihrer eigenen Unternehmens-Server oder eines speziellen Servers getroffen haben, empfiehlt Adobe, diese Einstellung nicht zu verändern.
@@ -141,7 +143,7 @@ Sofern Sie keine gesonderte Vereinbarung zum Verwenden Ihrer eigenen Unternehmen
    * **[!UICONTROL Synchronisierungsmodus für Dynamic Media]**
       * **[!UICONTROL Standardmäßig aktiviert]** – Die Konfiguration wird auf alle Ordner angewendet, es sei denn, Sie markieren einen Ordner speziell zum Ausschließen. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Standardmäßig deaktiviert]** – Die Konfiguration wird auf einen Ordner erst dann angewendet, wenn Sie einen ausgewählten Ordner explizit zur Synchronisierung mit Dynamic Media markieren.
-Um einen ausgewählten Ordner zur Synchronisierung mit Dynamic Media zu markieren, wählen Sie einen Asset-Ordner aus und wählen Sie dann in der Symbolleiste **[!UICONTROL Eigenschaften]** aus. Wählen Sie auf der Registerkarte **[!UICONTROL Details]** in der Dropdown-Liste **[!UICONTROL Synchronisierungsmodus für Dynamic Media]** eine der folgenden drei Optionen aus. Wenn Sie fertig sind, wählen Sie **[!UICONTROL Speichern]** aus. *Denken Sie daran: Diese drei Optionen stehen nicht zur Verfügung, wenn Sie zuvor **[!UICONTROL Alle Inhalte synchronisieren]**&#x200B;ausgewählt haben.* Weitere Informationen finden Sie unter [Arbeiten mit selektiver Veröffentlichung auf Ordnerebene in Dynamic Media](/help/assets/selective-publishing.md).
+Um einen ausgewählten Ordner zur Synchronisierung mit Dynamic Media zu markieren, wählen Sie einen Asset-Ordner aus und wählen Sie dann in der Symbolleiste **[!UICONTROL Eigenschaften]** aus. Wählen Sie auf der Registerkarte **[!UICONTROL Details]** in der Dropdown-Liste **[!UICONTROL Synchronisierungsmodus für Dynamic Media]** eine der folgenden drei Optionen aus. Wenn Sie fertig sind, wählen Sie **[!UICONTROL Speichern]** aus. *Denken Sie daran: Diese drei Optionen stehen nicht zur Verfügung, wenn Sie zuvor **[!UICONTROL Alle Inhalte synchronisieren]**ausgewählt haben.* Siehe auch [Arbeiten mit selektiver Veröffentlichung auf der Ordnerebene in Dynamic Media](/help/assets/selective-publishing.md).
          * **[!UICONTROL Vererbt]** – Kein expliziter Synchronisierungswert für den Ordner. Stattdessen übernimmt der Ordner den Synchronisierungswert von einem seiner Vorgängerordner oder den Standardmodus in der Cloud-Konfiguration. Der detaillierte Status für geerbte Daten wird als QuickInfo angezeigt.
          * **[!UICONTROL Aktivieren für Unterordner]**: Schließt alle Elemente in dieser Unterstruktur zur Synchronisierung mit Dynamic Media ein. Die ordnerspezifischen Einstellungen setzen den Standardmodus in der Cloud-Konfiguration außer Kraft.
          * **[!UICONTROL Deaktiviert für Unterordner]**: Schließt alle Elemente in dieser Unterstruktur von der Synchronisierung mit Dynamic Media aus.
@@ -157,13 +159,15 @@ Um einen ausgewählten Ordner zur Synchronisierung mit Dynamic Media zu markiere
 
 Wenn Sie Ihre Konfiguration weiter anpassen möchten, wie etwa Berechtigungen auf die Zugriffskontrollliste (ACL) aktivieren, können Sie auch eine der Aufgaben unter [(Optional) Konfigurieren der erweiterten Einstellungen in Dynamic Media – Scene7-Modus](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode) abschließen.
 
-<!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
+<!--
+1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
     * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
     * On the Dynamic Media Image Server page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
     * Select the **[!UICONTROL Security]** tab.
     * For the **[!UICONTROL Client address]**, select **[!UICONTROL Add]**.
     * Enter the IP address of the Experience Manager Author instance (not Dispatcher IP).
-    * In the upper-right corner of the page, select **[!UICONTROL Save]**. -->
+    * In the upper-right corner of the page, select **[!UICONTROL Save]**.
+-->
 
 Sie haben nun die Grundkonfiguration abgeschlossen und können Dynamic Media im Scene7-Modus verwenden.
 
@@ -660,9 +664,11 @@ Die Übergangs-Workflow-Warteschlange von Granite wird für den Workflow **[!UI
 
    Sie können **[!UICONTROL Maximale Anzahl an parallelen Aufträgen]** erhöhen, um das Hochladen von Dateien zu Dynamic Media angemessen zu unterstützen. Der genaue Wert hängt von der Hardware-Kapazität ab. In bestimmten Szenarien – z. B. bei einer ersten Migration oder einem einmaligen Massen-Upload – können Sie einen großen Wert verwenden. Beachten Sie jedoch, dass die Verwendung eines großen Werts (z. B. die doppelte Anzahl an Kernen) negative Auswirkungen auf andere gleichzeitige Aktivitäten haben kann. Daher sollten Sie den Wert basierend auf Ihrem jeweiligen Anwendungsfall testen und anpassen.
 
-<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0&ndash;1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
+<!--
+By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0&ndash;1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic (Scene7). -->
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic (Scene7).
+-->
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 

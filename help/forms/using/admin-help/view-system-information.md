@@ -11,16 +11,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 6be4ce1d-39fe-4a25-9d4e-f1cbc593d2c7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '546'
 ht-degree: 100%
 
 ---
 
 # Anzeigen von Systeminformationen {#view-system-information}
 
-Auf der Registerkarte „System“ werden Diagramme zur Ressourcenüberwachung und Informationen über den Server angezeigt, der AEM Forms ausführt.  Klicken Sie in der Administrationskonsole in der rechten oberen Ecke der Seite auf „Health Monitor“, um diese Informationen anzuzeigen.  Wenn Sie AEM Forms in einer Cluster-Umgebung ausführen, gelten die angezeigten Informationen für den auf der Server-Liste ausgewählten Knoten.
+Auf der Registerkarte „System“ werden Diagramme zur Ressourcenüberwachung und Informationen über den Server angezeigt, der AEM Forms ausführt. Klicken Sie in der Administrationskonsole in der rechten oberen Ecke der Seite auf „Health Monitor“, um diese Informationen anzuzeigen. Wenn Sie AEM Forms in einer Cluster-Umgebung ausführen, gelten die angezeigten Informationen für den auf der Server-Liste ausgewählten Knoten.
 
 Um die aktuellen Systeminformationen als Eigenschaftendatei zu speichern, klicken Sie auf „Speichern“.
 
@@ -30,11 +30,11 @@ Im rechten Bereich der Registerkarte „System“ werden die folgenden Informati
 * Heap- und zugesicherte Heap-Auslastung
 * Nicht-Heap- und zugesicherte Nicht-Heap-Auslastung
 
-Sie können Ihren Zeiger auf der Zeitachse verschieben, um Werte für einen bestimmten Zeitpunkt abzurufen.
+Sie können Ihren Zeiger auf der Timeline verschieben, um Werte für einen bestimmten Zeitpunkt abzurufen.
 
 >[!NOTE]
 >
->Die Diagrammdaten, Werte zu Server-Informationen und die Uhrzeit werden alle 10 Minuten aktualisiert.  Die Informationen werden nicht in Echtzeit angezeigt.
+>Die Diagrammdaten, Werte zu Server-Informationen und die Uhrzeit werden alle 10 Minuten aktualisiert. Die Informationen werden nicht in Echtzeit angezeigt.
 
 Im linken Bereich der Registerkarte „System“ werden die folgenden Informationen zum Server oder Knoten angezeigt:
 
