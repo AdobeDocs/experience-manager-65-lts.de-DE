@@ -164,7 +164,7 @@ Wenn eine Benutzerin oder ein Benutzer ohne die erforderlichen Berechtigungen f�
 * Lösung „Correspondence Management“
 * AEM Forms Workspace
 
-  ***Hinweis **: Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.*
+  ***Hinweis &#x200B;**: Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.*
 
 * Forms Manager
 * Prozessberichterstellung

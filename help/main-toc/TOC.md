@@ -345,7 +345,7 @@ ht-degree: 68%
       + [[!DNL Assets] und MediaLibrary](/help/assets/medialibrary.md)
       + [Verwenden des PDF Rasterizer](/help/assets/aem-pdf-rasterizer.md)
       + [Konfigurieren von Upload-Beschränkungen](/help/assets/configuring-asset-upload-restrictions.md)
-      + [Integration mit [!DNL Experience Manager] und  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
+      + [Integration mit [!DNL Experience Manager] und  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
       + [Integrieren mit  [!DNL InDesign Server]](/help/assets/indesign.md)
       + [Digital Rights Management in Assets](/help/assets/drm.md)
       + [Verwenden des Demopakets für Assets Insights](/help/assets/use-demo-package-for-asset-insights.md)
@@ -950,7 +950,7 @@ ht-degree: 68%
          + {hide-from-toc}[Ausführen von AEM Forms im Wartungsmodus](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
       + Warten der AEM Forms-Datenbank {#maintain-aem-forms-database}
          + {hide-from-toc}[DB2®-Datenbank: Einen Prozess wöchentlich ausführen](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
-         + Schwellenwert für maximal geöffnete Cursor in Oracle-Datenbank {hide-from-toc}[](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
+         + {hide-from-toc}[Schwellenwert für maximal geöffnete Cursor in Oracle-Datenbank &#x200B;](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
          + {hide-from-toc}[IBM® DB2®-Datenbank: Befehle zur regelmäßigen Wartung ausführen](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
          + {hide-from-toc}[Bereinigen von Prozessdaten](/help/forms/using/admin-help/purging-process-data.md)
          + {hide-from-toc}[Microsoft SQL Server-Datenbank: Konfiguration optimieren](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
