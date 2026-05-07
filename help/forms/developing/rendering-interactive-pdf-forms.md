@@ -10,9 +10,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: de61c579-50ed-423b-adca-60329f3f0b89
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '2471'
 ht-degree: 98%
@@ -51,7 +50,7 @@ Die folgende Tabelle beschreibt die Schritte in diesem Diagramm.
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>Das Java-Servlet <code>GetLoanForm</code> verwendet die Client-API des Forms-Services, um das Darlehensformular im Client-Webbrowser zu rendern. (Siehe <a href="#render-an-interactive-pdf-form-using-the-java-api">Rendern eines interaktiven PDF-Formulars mithilfe der Java-API</a>.)</p></td>
+   <td><p>Das Java-Servlet <code>GetLoanForm</code> verwendet die Client-API des Forms-Services, um das Darlehensformular an den Client-Webbrowser zu rendern. (Siehe <a href="#render-an-interactive-pdf-form-using-the-java-api">Rendern eines interaktiven PDF-Formulars mithilfe der Java-API</a>.)</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
@@ -104,7 +103,7 @@ Normalerweise würden Sie den Client-API-Code des Forms-Services nicht innerhalb
 
 >[!NOTE]
 >
->Weitere Informationen zum Forms-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen über den Forms-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 **Zusammenfassung der Schritte**
 
@@ -223,7 +222,7 @@ So rendern Sie ein interaktives PDF-Formular mithilfe der Forms-API (Java):
    * Ein `URLSpec`-Objekt, das URI-Werte enthält, die für den Forms-Service erforderlich sind.
    * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` festlegen, wenn Sie keine Dateien an das Formular anhängen möchten.
 
-   Die `renderPDFForm`-Methode gibt ein `FormsResult`-Objekt zurück, das einen Formulardatenstrom enthält, der in den Client-Webbrowser geschrieben werden muss.
+   Die Methode `renderPDFForm` gibt ein `FormsResult`-Objekt zurück, das einen Formulardaten-Stream enthält, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben des Formulardaten-Streams in den Client-Webbrowser
 

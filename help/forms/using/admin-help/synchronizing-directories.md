@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 8bb1dd68-51ec-4458-9ff8-bfe6fb0b67fd
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 95%
@@ -77,7 +76,7 @@ Sie können das User Management so konfigurieren, dass regelmäßige Prüfungen 
 1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Benutzerverwaltung“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
 1. Geben Sie unter „Synch Finisher Cron Expression“ einen Cron-Ausdruck ein, der das Intervall, in dem User Management die fehlgeschlagenen Synchronisierungen erneut auszuführen versucht, angibt. Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Auftragsplanungssystem Quartz, Version 1.4.0.
 
-   Der Standardwert ist 0 0/13 &ast; ? &ast;, was bedeutet, dass die Prüfung alle 13 Minuten erfolgt.
+   Der Standardwert ist 0 0/13 &amp;ast; ? &amp;ast;, was bedeutet, dass die Prüfung alle 13 Minuten erfolgt.
 
 ## Manuelles Synchronisieren von Verzeichnissen {#manually-synchronize-directories}
 

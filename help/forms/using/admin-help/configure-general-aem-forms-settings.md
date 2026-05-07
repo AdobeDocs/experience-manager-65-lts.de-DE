@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 54e7132d-3009-4a83-9f03-55bb2c41ae90
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1801'
 ht-degree: 97%
@@ -79,7 +78,7 @@ Zusätzliche Informationen zum GDS-Ordner finden Sie unter [Vorbereiten der Inst
 
 **Speicherort des Verzeichnisses für Kundenschriftarten** – Geben Sie den Pfad zu einem Verzeichnis ein, das zusätzliche Schriftarten enthält, die Sie verwenden möchten.
 
-***Hinweis &#x200B;**: Schriftarten werden aus dem Windows-Systemschriftarten-Cache ausgewählt, und ein Neustart des Systems ist erforderlich, um den Cache zu aktualisieren. Nachdem Sie das Verzeichnis für Kundenschriftarten angegeben haben, müssen Sie das System neu starten, auf dem AEM Forms installiert ist.*
+***Hinweis **: Schriftarten werden aus dem Windows-Systemschriftarten-Cache ausgewählt, und ein Neustart des Systems ist erforderlich, um den Cache zu aktualisieren. Nachdem Sie das Verzeichnis für Kundenschriftarten angegeben haben, müssen Sie das System neu starten, auf dem AEM Forms installiert ist.*
 
 **Speicherort des Verzeichnisses für Systemschriftarten** – Geben Sie den Pfad zu dem von Ihrem Betriebssystem vorgegebenen Verzeichnis für Schriftarten ein. Mehrere Ordner können hinzugefügt werden, indem sie durch ein Semikolon **;** voneinander getrennt werden.
 

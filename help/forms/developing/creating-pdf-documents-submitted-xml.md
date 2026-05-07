@@ -10,9 +10,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 66736a58-b2ef-404e-b94c-9bc407828359
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1334'
 ht-degree: 100%
@@ -101,7 +100,7 @@ So erstellen Sie mithilfe der Forms-, Ausgabe- und Document Management-API (Java
 
 1. Abrufen von Formulardaten mithilfe des Forms-Services
 
-   * Rufen Sie die Methode `processFormSubmission` des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
+   * Rufen Sie die `processFormSubmission`-Methode des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
       * Das `com.adobe.idp.Document`-Objekt, das die Formulardaten enthält.
       * Ein Zeichenfolgenwert, der Umgebungsvariablen angibt, einschließlich aller relevanten HTTP-Kopfzeilen. Geben Sie den zu verarbeitenden Inhaltstyp an, indem Sie einen oder mehrere Werte für die Umgebungsvariable `CONTENT_TYPE` angeben. Um beispielsweise XML-Daten zu verarbeiten, geben Sie den folgenden Zeichenfolgenwert für diesen Parameter an: `CONTENT_TYPE=text/xml`.
@@ -127,7 +126,7 @@ So erstellen Sie mithilfe der Forms-, Ausgabe- und Document Management-API (Java
    * Ein Zeichenfolgenwert, der den Inhaltsstamm angibt, in dem sich der Formularentwurf befindet.
    * Ein `PDFOutputOptionsSpec`-Objekt, das PDF-Laufzeitoptionen enthält.
    * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen zum Rendern enthält.
-   * Das `com.adobe.idp.Document`-Objekt, das die XML-Datenquelle enthält, die Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen. Stellen Sie sicher, dass dieses Objekt von der Methode `getOutputContent` des Objekts `FormsResult` zurückgegeben wurde.
+   * Das `com.adobe.idp.Document`-Objekt, das die XML-Datenquelle mit den Daten enthält, die mit dem Formularentwurf zusammengeführt werden sollen. Stellen Sie sicher, dass dieses Objekt von der Methode `getOutputContent` des Objekts `FormsResult` zurückgegeben wurde.
    * Die `generatePDFOutput`-Methode gibt ein Objekt `OutputResult` zurück, das das Ergebnis der Authentifizierung enthält.
    * Rufen Sie das nicht interaktive PDF-Dokument ab, indem Sie die Methode `getGeneratedDoc` des Objekts `OutputResult` aufrufen. Diese Methode gibt eine `com.adobe.idp.Document`-Instanz zurück, die das nicht interaktive PDF-Dokument darstellt.
 

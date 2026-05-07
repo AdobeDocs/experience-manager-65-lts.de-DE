@@ -8,9 +8,8 @@ feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '6249'
 ht-degree: 97%
@@ -128,7 +127,7 @@ Die folgenden Optionen bestimmen, wie Bilddateien in PDF konvertiert werden. Anw
 
 **OCR verwenden:** Gibt an, ob die optische Zeichenerkennung (Optical Character Recognition, OCR) auf die PDF-Datei angewendet werden soll. Mit OCR-Software können Sie den Text in einer PDF-Datei durchsuchen, korrigieren und kopieren.
 
-***Hinweis &#x200B;**: Die OCR PDF-Funktion (durchsuchbare PDF) wird nur unter Microsoft Windows unterstützt.*
+***Hinweis **: Die OCR PDF-Funktion (durchsuchbare PDF) wird nur unter Microsoft Windows unterstützt.*
 
 **Primäre OCR-Sprache:** Die von der OCR-Engine zum Erkennen der Zeichen zu verwendende Sprache.
 
@@ -267,7 +266,7 @@ Anweisungen zum Zugriff auf diese Einstellung finden Sie unter [Erstellen oder B
 
    >[!NOTE]
    >
-   >*Wenn Sie diese Option in Kombination mit **Einbettung für einige Schriftarten aufheben**&#x200B;verwenden, ist die Einbettung für die Schriftarten in der Liste **Schriftarten für die Aufhebung der Einbettung hinzufügen**&#x200B;weiterhin vollständig aufgehoben.*
+   >*Wenn Sie diese Option in Kombination mit **Einbettung für einige Schriftarten aufheben**verwenden, ist die Einbettung für die Schriftarten in der Liste **Schriftarten für die Aufhebung der Einbettung hinzufügen**weiterhin vollständig aufgehoben.*
 
    >[!NOTE]
    >

@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 83dbd00e-28ad-4a2e-ac22-3658fb6f639b
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 100%
@@ -34,7 +33,7 @@ A. Nach der Neubewertung der Situation können wir davon ausgehen, dass alle PDF
 
 **F. An wen sollte ich mich wenden, wenn ich weitere Fragen habe?**
 
-A. Sie können sich an den [Adobe-Support](https://experienceleague.adobe.com/de?support-solution=Experience+Manager&lang=de#support) wenden oder ein Support-Ticket erstellen.
+A. Sie können sich an den [Adobe-Support](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=de#support) wenden oder ein Support-Ticket erstellen.
 
 **F. Was passiert, wenn ich mein Zertifikat nicht vor dem 7. Januar 2023 aktualisiere?**
 
@@ -46,7 +45,7 @@ A. In der Beschreibung der neuen Acrobat Reader Extensions-Zertifikate wird **G3
 
 **F. Wie erhalte ich die neuesten Zertifikate?**
 
-A. Alle berechtigten Forms-Kunden (mit aktiver Lizenz) können die neuen Zertifikate (Zertifikate, die auf „Adobe Root CA G2“ basieren) von der [Adobe-Lizenzierungs-Website](https://licensing.adobe.com/) herunterladen. Wenn Sie das Zertifikat auf der Adobe-Lizenzierungs-Website nicht finden können, wenden Sie sich an den [Adobe-Support](https://experienceleague.adobe.com/de?support-solution=Experience+Manager&lang=de#support) oder erstellen Sie ein Support-Ticket.
+A. Alle berechtigten Forms-Kunden (mit aktiver Lizenz) können die neuen Zertifikate (Zertifikate, die auf „Adobe Root CA G2“ basieren) von der [Adobe-Lizenzierungs-Website](https://licensing.adobe.com/) herunterladen. Wenn Sie das Zertifikat auf der Adobe-Lizenzierungs-Website nicht finden können, wenden Sie sich an den [Adobe-Support](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=de#support) oder erstellen Sie ein Support-Ticket.
 
 **F. Funktionieren meine PDF-Dokumente, die mit Zertifikaten erweitert wurden, welche von „Adobe Root CA“ (der alten Zertifizierungsstelle) ausgestellt wurden, auch nach dem 7. Januar 2023?**
 
@@ -151,7 +150,7 @@ You can also import and delete credentials programmatically. (See [Programming w
 
 Remove usage rights from existing rights-enabled PDF documents before applying usage rights with latest credentials. AEM Forms on JEE provides APIs to remove usage rights. For detailed instructions, see [Removing Usage Rights from PDF Documents](../../developing/assigning-usage-rights.md#removing-usage-rights-from-pdf-documents).
 
-To remove usage rights for AEM Forms on JEE processes developed in Workbench, see [Workbench Help](https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf). 
+To remove usage rights for AEM Forms on JEE processes developed in Workbench, see [Workbench Help](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf). 
 
 #### Apply the usage rights to PDF documents 
 
@@ -190,5 +189,5 @@ Remove usage rights from existing rights-enabled PDF documents before applying u
 
 #### Apply the usage rights to PDF documents 
 
-To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html?lang=de).
+To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html).
 -->

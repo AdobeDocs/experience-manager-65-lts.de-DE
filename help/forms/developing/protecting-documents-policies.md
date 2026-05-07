@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 0664e8f8-fad4-40e6-871e-24bba642fb4f
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '15601'
 ht-degree: 98%
@@ -170,7 +169,7 @@ Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehen v
 
 **Erstellen eines Document Security-Client-API-Objekts**
 
-Bevor Sie einen Document Security Service-Vorgang programmgesteuert durchführen können, erstellen Sie ein Document Security Service-Client-Objekt.
+Bevor Sie einen Document Security-Service-Vorgang programmgesteuert durchführen können, erstellen Sie ein Document Security-Service-Client-Objekt.
 
 **Festlegen der Richtlinienattribute**
 
@@ -197,7 +196,7 @@ Wenn Sie die Option `NoEncryption` angeben, können Sie die Option `PlaintextMet
 
 >[!NOTE]
 >
->Weitere Informationen zu anderen Attributen, die Sie festlegen können, finden Sie unter Beschreibung der `Policy`-Benutzeroberfläche in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Weitere Informationen zu anderen Attributen, die Sie festlegen können, finden Sie in der Beschreibung der `Policy`-Benutzeroberfläche in [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Einen Richtlinieneintrag erstellen**
 
@@ -575,7 +574,7 @@ Um eine Richtlinie auf ein PDF-Dokument anzuwenden, führen Sie folgende Schritt
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
-**Ein Document Security Client-API-Objekt erstellen**
+**Erstellen eines Document Security Client-API-Objekts**
 
 Bevor Sie einen Document Security-Service-Vorgang programmgesteuert durchführen können, erstellen Sie ein Document Security-Service-Client-Objekt. Wenn Sie die Java-API verwenden, erstellen Sie ein `DocumentSecurityClient`-Objekt. Wenn Sie die Document Security-Webservice-API verwenden, erstellen Sie ein `DocumentSecurityServiceService`-Objekt.
 
@@ -683,7 +682,7 @@ Wenden Sie mithilfe der Document Security-API (Web Service) eine Richtlinie auf 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Ermitteln Sie die Größe des Byte-Arrays, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie dessen Feld `MTOM` mit dem Inhalt des Byte-Arrays belegen.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Wenden Sie eine vorhandene Richtlinie auf das PDF-Dokument an.
 
@@ -740,7 +739,7 @@ Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn S
 
 **Erstellen eines Document Security-Client-API-Objekts**
 
-Bevor Sie einen Document Security Service-Vorgang programmgesteuert durchführen können, erstellen Sie ein Document Security Service-Client-Objekt.
+Bevor Sie einen Document Security-Service-Vorgang programmgesteuert durchführen können, erstellen Sie ein Document Security-Service-Client-Objekt.
 
 **Abrufen eines richtliniengeschützten PDF-Dokuments**
 
@@ -828,7 +827,7 @@ Entfernen Sie mithilfe der Document Security-API (Web-Service) eine Richtlinie a
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
-   * Füllen Sie das `BLOB`-Objekt mit den Inhalten des Byte-Arrays, indem Sie diese dem `MTOM`-Feld des Objekts zuweisen.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Entfernen Sie die Richtlinie aus dem PDF-Dokument.
 
@@ -971,7 +970,7 @@ So widerrufen Sie den Zugriff auf ein richtliniengeschütztes PDF-Dokument mithi
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des zu widerrufenden richtliniengeschützten PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
-   * Füllen Sie das `BLOB`-Objekt mit den Inhalten des Byte-Arrays, indem Sie diese dem `MTOM`-Feld des Objekts zuweisen.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Widerrufen des richtliniengeschützten Dokuments
 
@@ -1605,7 +1604,7 @@ Code-Beispiele, die den Document Security-Service verwenden, finden Sie im Absch
 1. Legen Sie die Wasserzeichenattribute fest.
 
    * Erstellen Sie für jede zu aktualisierende Wasserzeicheneigenschaft ein separates `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekt.
-   * Legen Sie den Schlüsselwert fest, indem Sie dem Datenelement `key` des `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekts einen Wert zuweisen (zum Beispiel `WaterBackCmd:OPACITY)`).
+   * Legen Sie den Schlüsselwert fest, indem Sie dem Datenelement `MyMapOf_xsd_string_To_xsd_anyType_Item` des `key`-Objekts einen Wert zuweisen (zum Beispiel `WaterBackCmd:OPACITY)`).
    * Legen Sie den Wert fest, indem Sie dem Datenelement `value` des `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekts einen Wert zuweisen (zum Beispiel `.50`).
    * Erstellen Sie ein Objekt vom Typ `MyArrayOf_xsd_anyType`. Rufen Sie für jedes `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekt die Methode `Add` des `MyArrayOf_xsd_anyType`-Objekts auf. Übergeben Sie das `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekt.
    * Weisen Sie das `MyArrayOf_xsd_anyType`-Objekt dem Datenelement `values` des `WatermarkSpec`-Objekts zu.
@@ -2074,7 +2073,7 @@ Wenden Sie mithilfe der Document Security-API (Web-Service) eine Richtlinie auf 
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines Word-Dokuments verwendet, auf das eine Richtlinie angewendet wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des Word-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Ermitteln Sie die Größe des Byte-Arrays, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Ermitteln Sie die Größe des Byte-Arrays, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
@@ -2179,7 +2178,7 @@ So entfernen Sie mithilfe der Document Security-API (Java) eine Richtlinie aus e
 
 1. Speichern des ungesicherten Word-Dokuments
 
-   * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung .doc ist.
+   * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung DOC lautet.
    * Rufen Sie die Methode `copyToFile` des `Document`-Objekts auf, um den Inhalt des `Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der Methode `removeSecurity` zurückgegeben wurde).
 
 **Code-Beispiele**
@@ -2229,7 +2228,7 @@ So entfernen Sie mithilfe der Document Security-API (Webservice) eine Richtlinie
 1. Speichern des ungesicherten Word-Dokuments
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des ungesicherten Word-Dokuments darstellt.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `removePolicySecurity` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Felds `MTOM` des `BLOB`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des von der `removePolicySecurity`-Methode zurückgegebenen `BLOB`-Objekts enthält. Füllen Sie das Byte-Array, indem Sie den Wert des Felds `MTOM` des `BLOB`-Objekts abrufen.
    * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
 
 **Code-Beispiele**

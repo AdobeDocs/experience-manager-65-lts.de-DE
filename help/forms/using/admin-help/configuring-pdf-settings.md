@@ -9,9 +9,8 @@ feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 41a8a4b0-cb39-40a6-82b6-085f2c635e0c
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '7478'
 ht-degree: 98%
@@ -131,7 +130,7 @@ Sie können PDF-Einstellungen dauerhaft löschen, wenn sie nicht mehr benötigt 
 
 ## Allgemeine Optionen {#general-options}
 
-Geben Sie in den allgemeinen Optionen die Acrobat-Version an, die zwecks Dateikompatibilität und für andere Datei- und Geräteoptionen verwendet werden soll. Anweisungen zum Zugriff auf die allgemeinen Optionen finden Sie unter [Hinzufügen und Bearbeiten von PDF-Einstellungen &#x200B;](configuring-pdf-settings.md#add-or-edit-pdf-settings).
+Geben Sie in den allgemeinen Optionen die Acrobat-Version an, die zwecks Dateikompatibilität und für andere Datei- und Geräteoptionen verwendet werden soll. Anweisungen zum Zugriff auf die allgemeinen Optionen finden Sie unter [Hinzufügen und Bearbeiten von PDF-Einstellungen ](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
 ### Dateioptionen {#file-options}
 

@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 56603735-959e-4460-b642-bba63fa20c02
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 88%
@@ -62,7 +61,7 @@ Wenn Sie ein Zertifikat testen, lädt die Benutzerverwaltung die Zertifikatüber
    Sie können folgende Zeichen in dem regulären Ausdruck verwenden:
 
    * . (alle Zeichen)
-   * &ast; (0 oder mehr Vorkommen)
+   * &amp;ast; (0 oder mehr Vorkommen)
    * () (die Gruppe in Klammern angeben)
    * \ (wird verwendet, um aus einem Regex-Zeichen ein reguläres Zeichen zu machen)
    * $n (wird verwendet, um auf die n-te Gruppe zu verweisen)
@@ -71,21 +70,21 @@ Wenn Sie ein Zertifikat testen, lädt die Benutzerverwaltung die Zertifikatüber
 
    * So extrahieren Sie „Alex Pink“ aus „Alex Pink (Authentifizierung)“:
 
-     **Regex:** (.&ast;) \(Authentifizierung\)
+     **Regex:** (.&amp;ast;) \(Authentifizierung\)
 
    * So extrahieren Sie „Alex Pink“ aus „Alex (Authentifizierung) Pink“:
 
-     **Regex:** (.&ast;)\(Authentication\) (.&ast;)
+     **Regex:** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
 
    * So extrahieren Sie „Pink Alex“ aus „Alex (Authentifizierung) Pink“:
 
-     **Regex:** (.&ast;)\(Authentication\) (.&ast;)
+     **Regex:** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
 
      Benutzerdefinierte Reihenfolge: $2 $1 (zweite Gruppe zurückgeben, verkettet mit der ersten Gruppe, erfasst durch Leerzeichen)
 
    * So extrahieren Sie &quot;apink@sampleorg.com&quot; aus „smtp:apink@sampleorg.com“
 
-     **Regex:** smtp:(.&ast;)
+     **Regex:** smtp:(.&amp;ast;)
 
    Weitere Informationen zur Verwendung regulärer Ausdrücke finden Sie im [Java-Tutorial zu regulären Ausdrücken](https://java.sun.com/docs/books/tutorial/essential/regex/).
 

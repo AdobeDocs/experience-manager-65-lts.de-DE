@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 4b7d417f-6480-479e-9b8d-bcf2c9790a97
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 100%
@@ -30,7 +29,7 @@ Java API Quick Start (SOAP) ist für den Application Manager-Service verfügbar.
 >
 >Die Anwendungs-Manager-APIs unterstützen nur AEM Forms-LCA-Dateien. LCA-Dateien von LiveCycle ES2 und ES4 werden nicht unterstützt.
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden und der Verbindungsmodus sollte auf SOAP festgelegt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 
 >[!NOTE]
 >

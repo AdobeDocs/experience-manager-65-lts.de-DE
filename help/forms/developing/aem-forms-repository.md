@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 4a911fe6-2939-4c8c-b486-7575c759857d
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '9089'
 ht-degree: 100%
@@ -78,7 +77,7 @@ Mithilfe der Repository-Service-API können Sie die folgenden Aufgaben ausführe
 
 >[!NOTE]
 >
->Weitere Informationen zum Repository-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen über den Repository-Dienst finden Sie unter [Dienstereferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Erstellen eines Ordners {#creating-folders}
 
@@ -88,7 +87,7 @@ Dateien erben Zugriffssteuerungslisten (ACLs) aus Ordnern, und Unterordner erben
 
 >[!NOTE]
 >
->Weitere Informationen über den Repository-Dienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen über den Repository-Dienst finden Sie unter [Dienstereferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -372,7 +371,7 @@ Auflisten von Ressourcen funktioniert nach Beziehung: Ressourcen sind Mitglieder
 
 >[!NOTE]
 >
->Weitere Informationen über den Repository-Dienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen über den Repository-Dienst finden Sie unter [Dienstereferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-2}
 
@@ -569,7 +568,7 @@ So lesen Sie eine Ressource mit Hilfe der Repository Service-API (Webservice):
 
 1. Erstellen des Service-Clients
 
-   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt durch Aufrufen des Standardkonstruktors. Legen Sie seine `Credentials`-Eigenschaft mit einem `System.Net.NetworkCredential`-Objekt fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt durch Aufrufen des Standardkonstruktors. Legen Sie die `Credentials`-Eigenschaft mithilfe eines `System.Net.NetworkCredential`-Objekts fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Angeben des URI der zu lesenden Ressource
 
@@ -599,7 +598,7 @@ Sie können Ressourcen programmgesteuert aktualisieren, indem Sie die Java-API d
 
 >[!NOTE]
 >
->Weitere Informationen über den Repository-Dienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen über den Repository-Dienst finden Sie unter [Dienstereferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-4}
 
@@ -656,7 +655,7 @@ Aktualisieren einee Ressource mithilfe der Repository Service API (Java):
 
 1. Aktualisieren der Ressource
 
-   Aktualisieren Sie die `Resource`-Objektinformationen. In diesem Beispiel rufen Sie zur Aktualisierung der Beschreibung die Methode `setDescription` des `Resource`-Objekts auf und übergeben die neue Beschreibungszeichenfolge als Parameter.
+   Aktualisieren der `Resource`-Objektinformationen. In diesem Beispiel rufen Sie zur Aktualisierung der Beschreibung die Methode `setDescription` des `Resource`-Objekts auf und übergeben die neue Beschreibungszeichenfolge als Parameter.
 
    Rufen Sie dann das `ServiceClientFactory`-Objekt `updateResource` und übergeben Sie die folgenden Parameter:
 
@@ -685,7 +684,7 @@ Aktualisieren einer Ressource mithilfe der Repository-API (Webdienst):
 
 1. Erstellen des Service-Clients
 
-   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt durch Aufrufen des Standardkonstruktors. Legen Sie seine `Credentials`-Eigenschaft mit einem `System.Net.NetworkCredential`-Objekt fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt durch Aufrufen des Standardkonstruktors. Legen Sie die `Credentials`-Eigenschaft mithilfe eines `System.Net.NetworkCredential`-Objekts fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Zu aktualisierende Ressource abrufen
 
@@ -1113,7 +1112,7 @@ Sperren Sie Ressourcen mithilfe der Repository Service API (Web Service):
 
 1. Erstellen des Service-Clients
 
-   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt durch Aufrufen des Standardkonstruktors. Legen Sie seine `Credentials`-Eigenschaft mit einem `System.Net.NetworkCredential`-Objekt fest, das den Benutzernamen und das Kennwort enthält.
+   Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `RepositoryServiceService`-Objekt durch Aufrufen des Standardkonstruktors. Legen Sie die `Credentials`-Eigenschaft mithilfe eines `System.Net.NetworkCredential`-Objekts fest, das den Benutzernamen und das Kennwort enthält.
 
 1. Geben Sie den URI der Ressource an, die gesperrt werden soll
 
@@ -1159,7 +1158,7 @@ Ein Löschvorgang ist in ECM-Systemen nicht transaktionssicher. Wenn Sie beispie
 
 >[!NOTE]
 >
->Weitere Informationen über den Repository-Dienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen über den Repository-Dienst finden Sie unter [Dienstereferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-8}
 

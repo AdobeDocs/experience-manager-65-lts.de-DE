@@ -10,9 +10,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 071a6ccb-8204-4cbc-a39b-143da52c16f7
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1870'
 ht-degree: 96%
@@ -203,14 +202,14 @@ So berechnen Sie Formulardaten mithilfe der Forms API (Webservice):
       * Ein Zeichenfolgenwert, der den Wert der `HTTP_USER_AGENT`-Kopfzeile angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen speichert. Für weitere Informationen, .
       * Ein leeres `BLOBHolder`-Objekt, das von der Methode aufgefüllt wird.
-      * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das von der Methode gefüllt wird.
-      * Ein leeres `BLOBHolder`-Objekt, das von der Methode gefüllt wird.
-      * Ein leeres `BLOBHolder`-Objekt, das von der Methode gefüllt wird.
+      * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das von der Methode aufgefüllt wird.
+      * Ein leeres `BLOBHolder`-Objekt, das von der Methode aufgefüllt wird.
+      * Ein leeres `BLOBHolder`-Objekt, das von der Methode aufgefüllt wird.
       * Ein leeres `javax.xml.rpc.holders.ShortHolder`-Objekt, das von der Methode gefüllt wird.
       * Ein leeres `MyArrayOf_xsd_anyTypeHolder`-Objekt, das von der Methode gefüllt wird. Dieser Parameter wird zum Speichern von Dateianhängen verwendet, die zusammen mit dem Formular gesendet werden.
       * Ein leeres `FormsResultHolder`-Objekt, das von der Methode mit dem gesendeten Formular gefüllt wird.
 
-     Die Methode `processFormSubmission` füllt den Parameter `FormsResultHolder` mit den Ergebnissen der Formularübermittlung. Die Methode `processFormSubmission` gibt ein `FormsResult`-Objekt zurück, das die Ergebnisse der Formularübermittlung enthält.
+     Die Methode `processFormSubmission` füllt den Parameter `FormsResultHolder` mit den Ergebnissen der Formularübermittlung. Die `processFormSubmission`-Methode gibt ein `FormsResult`-Objekt aus, das die Ergebnisse der Formularübermittlung enthält.
 
    * Überprüfen Sie, ob der Verarbeitungsstatus eines übermittelten Formulars `1` ist, indem Sie die Methode `getAction` des `FormsResult`-Objekts aufrufen. Wenn diese Methode den Wert `1` zurückgibt, wurde die Berechnung durchgeführt und die Daten können in den Client-Webbrowser zurückgeschrieben werden.
 

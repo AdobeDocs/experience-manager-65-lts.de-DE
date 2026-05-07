@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 0fe1aef7-f607-4c40-bfa9-9ec9ebd8abeb
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '2536'
 ht-degree: 100%
@@ -76,7 +75,7 @@ So erstellen Sie eine Anwendung, die den Sicherungsmodus aktiviert:
 1. (Optional) Rufen Sie Informationen zur Sicherungsmodussitzung auf dem Server ab.
 1. Führen Sie ein Backup des globalen Dokumentenspeichers (GDS) und der Datenbank durch.
 
-**Einschließen von Projektdateien**
+**Einbinden von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Diese Dateien müssen in Ihr Projekt aufgenommen werden, damit Sie Ihren Code ordnungsgemäß kompilieren und die Backup- und Wiederherstellungs-Service-API verwenden können.
 

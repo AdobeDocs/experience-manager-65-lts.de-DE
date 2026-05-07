@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, APIs & Integrations, AEM Forms on JEE
 hide: true
-hidefromtoc: true
 exl-id: 1cc7b91e-c2f1-4831-b8cd-1399e7dd821e
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '3762'
 ht-degree: 98%
@@ -585,7 +584,7 @@ Um eine ASP-Seite zu erstellen, die den Prozess `FirstAppSolution/PreLoanProcess
     https://hiro-xp:8080/soap/services/FirstAppSolution/PreLoanProcess?blob=mtom
    ```
 
-   Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen. Stellen Sie jedoch sicher, dass Sie `?blob=mtom` angeben.
+   Sie brauchen das Attribut `lc_version` nicht zu verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen. Stellen Sie jedoch sicher, dass Sie `?blob=mtom` angeben.
 
    >[!NOTE]
    >

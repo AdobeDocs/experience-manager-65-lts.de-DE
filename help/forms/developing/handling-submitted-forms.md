@@ -10,9 +10,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 31a10544-0be7-4ef7-ba0f-c37099d36bcb
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '2915'
 ht-degree: 99%
@@ -294,9 +293,9 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms-API (Web-Dienst):
       * Ein Zeichenfolgenwert, der den Wert der `HTTP_USER_AGENT`-Kopfzeile angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen speichert.
       * Ein leeres `BLOBHolder`-Objekt, das von der Methode aufgefüllt wird.
-      * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das von der Methode gefüllt wird.
-      * Ein leeres `BLOBHolder`-Objekt, das von der Methode gefüllt wird.
-      * Ein leeres `BLOBHolder`-Objekt, das von der Methode gefüllt wird.
+      * Ein leeres `javax.xml.rpc.holders.StringHolder`-Objekt, das von der Methode aufgefüllt wird.
+      * Ein leeres `BLOBHolder`-Objekt, das von der Methode aufgefüllt wird.
+      * Ein leeres `BLOBHolder`-Objekt, das von der Methode aufgefüllt wird.
       * Ein leeres `javax.xml.rpc.holders.ShortHolder`-Objekt, das von der Methode gefüllt wird.
       * Ein leeres `MyArrayOf_xsd_anyTypeHolder`-Objekt, das von der Methode gefüllt wird. Dieser Parameter wird zum Speichern von Dateianhängen verwendet, die zusammen mit dem Formular gesendet werden.
       * Ein leeres `FormsResultHolder`-Objekt, das von der Methode mit dem gesendeten Formular gefüllt wird.

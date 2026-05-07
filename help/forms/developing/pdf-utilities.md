@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 06869949-4a71-4d8a-9431-b94df13985e9
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '2577'
 ht-degree: 100%
@@ -35,7 +34,7 @@ Sie können dies mithilfe des PDF Utilities-Services erreichen:
 
 >[!NOTE]
 >
->Weitere Informationen zum PDF Utilities-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum PDF-Utilities-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Konvertieren von PDF-Dokumenten in XDP-Dokumente {#converting-pdf-documents-into-xdp-documents}
 
@@ -43,7 +42,7 @@ Sie können die Java- und Web-Service-APIs von PDF Utilities verwenden, um PDF-D
 
 >[!NOTE]
 >
->Weitere Informationen zum PDF Utilities-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum PDF-Utilities-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -130,7 +129,7 @@ Sie können die Java- und Web-Service-APIs von PDF Utilities verwenden, um XDP-D
 
 >[!NOTE]
 >
->Weitere Informationen zum PDF Utilities-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum PDF-Utilities-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-1}
 
@@ -391,11 +390,11 @@ So legen Sie die PDF-Dokumentspeicheroptionen mithilfe der PDF Utilities-API (Ja
    * Ein `PDFUtilitySaveMode`-Objekt, das den zu verwendenden Speicherstil enthält.
    * Ein boolescher Wert, der bestimmt, ob vorherige Einstellungen überschrieben werden sollen.
 
-   Die Methode gibt ein `com.adobe.idp.Document`-Objekt zurück, das unter Verwendung des angegebenen Speicherstils formatiert wurde.
+   Die Methode gibt ein `com.adobe.idp.Document`-Objekt zurück, das mit dem angegebenen Speichermodus formatiert wurde.
 
 1. Übergeben des PDF-Dokuments an einen anderen AEM Forms-Vorgang
 
-   * Übergeben Sie das zurückgegebene `com.adobe.idp.Document`-Objekt an einen anderen AEM Forms-Vorgang.
+   * Übergeben Sie die zurückgegebene `com.adobe.idp.Document`-Objekt an einen anderen AEM Forms-Vorgang.
 
 **Siehe auch**
 
@@ -423,7 +422,7 @@ So legen Sie die PDF-Dokumentspeicheroptionen mithilfe der PDF Utilities-API (We
    * Erstellen Sie ein Objekt `PDFUtilitySaveMode`, indem Sie den Konstruktor verwenden.
    * Legen Sie den Speichermodus fest, indem Sie der Methode `saveStyle` des `PDFUtilitySaveMode`-Objekts einen Zeichenfolgenwert zuweisen, der den Speichermodus angibt. Um beispielsweise für eine schnelle Web-Anzeige zu speichern, geben Sie `FAST_WEB_VIEW` an.
 
-1. Aufrufen des Speicherstilvorgangs
+1. Aufrufen des Vorgangs für die Art der Speicherung
 
    Rufen Sie die `setSaveMode`-Methode des `PDFUtilityServiceService`-Objekts auf und übergeben Sie die folgenden Werte:
 

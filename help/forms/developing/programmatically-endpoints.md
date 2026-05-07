@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 6a0c7dbf-02ae-4211-a5c7-941eb353a403
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '10888'
 ht-degree: 98%
@@ -77,7 +76,7 @@ Führen Sie die folgenden Aufgaben aus, um einen EJB-Endpunkt zu einem Service h
 1. Erstellen Sie einen EJB-Endpunkt.
 1. Aktivieren Sie den Endpunkt.
 
-**Einschließen von Projektdateien**
+**Projektdateien einbeziehen**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt werden:
 
@@ -99,7 +98,7 @@ Um einen EJB-Endpunkt für einen Service zu erstellen, geben Sie die folgenden W
 * **Connector-ID**: Gibt den Typ des zu erstellenden Endpunkts an. Um einen EJB-Endpunkt zu erstellen, geben Sie `EJB` an.
 * **Beschreibung**: Gibt die Beschreibung des Endpunkts an.
 * **Name**: Gibt den Namen des Endpunkts an.
-* **Dienstkennung**: Gibt den Service an, zu dem der Endpunkt gehört.
+* **Service-ID**: Gibt den Service an, zu dem der Endpunkt gehört.
 * **Vorgangsname**: Gibt den Namen des Vorgangs an, der mithilfe des Endpunkts aufgerufen wird. Geben Sie beim Erstellen eines EJB-Endpunkts ein Platzhalterzeichen (`*`) an. Wenn Sie jedoch einen bestimmten Vorgang angeben möchten, anstatt alle Service-Vorgänge aufzurufen, geben Sie anstelle des Platzhalterzeichens (`*`) den Namen des Vorgangs an.
 
 **Erstellen eines EJB-Endpunkts**
@@ -242,8 +241,8 @@ So fügen Sie mithilfe der Java-API einen SOAP-Endpunkt zu einem Service hinzu:
    * Geben Sie den Wert der Connector-ID an, indem Sie die Methode `setConnectorId` des `CreateEndpointInfo`-Objekts aufrufen und den Zeichenfolgenwert `SOAP` übergeben.
    * Geben Sie die Beschreibung des Endpunkts an, indem Sie die Methode `setDescription` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Endpunkt beschreibt.
    * Geben Sie den Namen des Endpunkts an, indem Sie die Methode `setName` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen festlegt.
-   * Geben Sie den Service an, zu dem der Endpunkt gehört, indem Sie die Methode `setServiceId` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen des Services festlegt.
-   * Geben Sie den Vorgang an, der aufgerufen wird, indem Sie die Methode `setOperationName` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen des Vorgangs angibt. Geben Sie für SOAP- und EJB-Endpunkte ein Platzhalterzeichen (`*`) an, wodurch alle Vorgänge impliziert werden.
+   * Geben Sie den Service an, zu dem der Endpunkt gehört, indem Sie die Methode `setServiceId` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen des Services angibt.
+   * Geben Sie den Vorgang an, der aufgerufen werden soll, indem Sie die Methode `setOperationName` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Vorgangsnamen angibt. Geben Sie für SOAP- und EJB-Endpunkte ein Platzhalterzeichen (`*`) an, wodurch alle Vorgänge impliziert werden.
 
 1. Erstellen Sie einen SOAP-Endpunkt.
 
@@ -271,7 +270,7 @@ Um einem Service programmgesteuert einen Endpunkt vom Typ „Überwachter Ordner
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
-Bei diesem Prozess wird ein ungesichertes PDF-Dokument als Eingabewert akzeptiert und das ungesicherte PDF-Dokument wird dann an den `EncryptPDFUsingPassword`-Vorgang des Verschlüsselungsdienstes übergeben. Das PDF-Dokument wird mit einem Passwort verschlüsselt und das passwortverschlüsselte PDF-Dokument ist der Ausgabewert dieses Vorgangs. Der Name des Eingabewerts (das ungesicherte PDF-Dokument) lautet `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Der Name des Ausgabewerts (das passwortverschlüsselte PDF-Dokument) lautet `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`.
+Bei diesem Prozess wird ein ungesichertes PDF-Dokument als Eingabewert akzeptiert und das ungesicherte PDF-Dokument wird dann an den `EncryptPDFUsingPassword`-Vorgang des Verschlüsselungsdienstes übergeben. Das PDF-Dokument wird mit einem Passwort verschlüsselt und das passwortverschlüsselte PDF-Dokument ist der Ausgabewert dieses Vorgangs. Der Name des Eingabewerts (das ungesicherte PDF-Dokument) lautet `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Der Name des Ausgabewerts (das kennwortverschlüsselte PDF-Dokument) lautet `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -361,7 +360,7 @@ Geben Sie die folgenden Werte an, um die für einen Endpunkt des Typs „Überwa
 
 **Definieren eines Ausgabeparameterwertes**
 
-Beim Erstellen eines Endpunkts des Typs „Überwachter Ordner“ müssen Sie einen Ausgabeparameterwert definieren. Das heißt, Sie müssen den Ausgabewert beschreiben, der vom Service zurückgegeben wird, der vom Endpunkt „Überwachter Ordner“ aufgerufen wird. Betrachten Sie beispielsweise den in diesem Thema eingeführten Prozess. Es gibt einen Ausgabewert mit dem Namen `SecuredDoc` und dem Datentyp `com.adobe.idp.Document`. Beim Erstellen eines Endpunkts des Typs „Überwachter Ordner“ für diesen Prozess (nachdem ein Prozess aktiviert wurde, wird er zu einem Service) müssen Sie den Ausgabeparameterwert definieren.
+Beim Erstellen eines Endpunkts des Typs „Überwachter Ordner“ müssen Sie einen Ausgabeparameterwert definieren. Das heißt, Sie müssen den Ausgabewert beschreiben, der vom Service zurückgegeben wird, der vom Endpunkt „Überwachter Ordner“ aufgerufen wird. Betrachten Sie beispielsweise den in diesem Thema eingeführten Prozess. Er hat einen Ausgabewert mit dem Namen `SecuredDoc` und dem Datentyp `com.adobe.idp.Document`. Beim Erstellen eines Endpunkts des Typs „Überwachter Ordner“ für diesen Prozess (nachdem ein Prozess aktiviert wurde, wird er zu einem Service) müssen Sie den Ausgabeparameterwert definieren.
 
 Geben Sie die folgenden Werte an, um einen für einen Endpunkt des Typs „Überwachter Ordner“ erforderlichen Ausgabeparameterwert zu definieren:
 
@@ -410,7 +409,7 @@ So fügen Sie mithilfe der AEM Forms-Java-API einen Endpunkt des Typs „Überwa
    * Geben Sie den Wert der Connector-ID an, indem Sie die Methode `setConnectorId` des `CreateEndpointInfo`-Objekts aufrufen und den Zeichenfolgenwert `WatchedFolder` übergeben.
    * Geben Sie die Beschreibung des Endpunkts an, indem Sie die Methode `setDescription` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Endpunkt beschreibt.
    * Geben Sie den Namen des Endpunkts an, indem Sie die Methode `setName` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen festlegt.
-   * Geben Sie den Service an, zu dem der Endpunkt gehört, indem Sie die Methode `setServiceId` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen des Services festlegt.
+   * Geben Sie den Service an, zu dem der Endpunkt gehört, indem Sie die Methode `setServiceId` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen des Services angibt.
    * Geben Sie den Vorgang an, der aufgerufen werden soll, indem Sie die Methode `setOperationName` des `CreateEndpointInfo`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Vorgangsnamen angibt. Beim Erstellen eines Endpunkts vom Typ „Überwachter Ordner“ für einen Service, der aus einem in Workbench erstellten Prozess stammt, wird normalerweise der Name des Vorgangs aufgerufen.
 
 1. Geben Sie Konfigurationswerte an.
@@ -546,7 +545,7 @@ Geben Sie die folgenden Werte an, um einen E-Mail-Endpunkt für einen Service zu
 
 * **Connector-Kennungswert**: Gibt den Typ des Endpunkts an, der erstellt wird. Um einen E-Mail-Endpunkt zu erstellen, geben Sie `Email` an.
 * **Beschreibung**: Gibt eine Beschreibung für den Endpunkt an.
-* **Name**: Gibt den Namen des Endpunkts an.
+* **Name:** Gibt den Namen des Formulars an.
 * **Service-Kennungswert**: Gibt den Service an, zu dem der Endpunkt gehört. Um beispielsweise einen E-Mail-Endpunkt zum Prozess hinzuzufügen, der in diesem Abschnitt eingeführt wird (ein Prozess wird zu einem Service, wenn er mithilfe von Workbench aktiviert wird), geben Sie `EncryptDocument` an.
 * **Vorgangsname**: Gibt den Namen des Vorgangs an, der mithilfe des Endpunkts aufgerufen wird. Beim Erstellen eines E-Mail-Endpunkts für einen Service, der aus einem in Workbench erstellten Prozess stammt, lautet der Name des Vorgangs normalerweise `invoke`.
 
@@ -568,7 +567,7 @@ Beim programmgesteuerten Hinzufügen eines E-Mail-Endpunkts zu einem Service wer
 * **userName**: Der Benutzername, der beim Aufrufen eines Ziel-Service aus einer E-Mail verwendet wird. Der Standardwert ist `SuperAdmin`.
 * **domainName**: Ein obligatorischer Konfigurationswert. Der Standardwert ist `DefaultDom`.
 * **domainPattern**: Gibt die Domain-Muster für eingehende E-Mails an, die vom Anbieter akzeptiert werden. Wenn beispielsweise „`adobe.com`“ verwendet wird, werden nur E-Mails aus der Domain „adobe.com“ verarbeitet, während E-Mails aus anderen Domains ignoriert werden.
-* **filePattern**: Gibt die Muster für eingehende Dateianhänge an, die vom Anbieter akzeptiert werden. Dazu gehören Dateien mit bestimmten Dateinamenerweiterungen (&ast;.dat, &ast;.xml), Dateien mit bestimmten Namen (data) und Dateien mit zusammengesetzten Ausdrücken im Namen und in der Erweiterung (&ast;.`[dD][aA]`&#39;port&#39;). Der Standardwert ist `*`.
+* **filePattern**: Gibt die Muster für eingehende Dateianhänge an, die vom Anbieter akzeptiert werden. Dazu gehören Dateien mit bestimmten Dateinamenerweiterungen (&amp;ast;.dat, &amp;ast;.xml), Dateien mit bestimmten Namen (data) und Dateien mit zusammengesetzten Ausdrücken im Namen und in der Erweiterung (&amp;ast;.`[dD][aA]`&#39;port&#39;). Der Standardwert ist `*`.
 * **recipientSuccessfulJob**: Eine E-Mail-Adresse, an die Benachrichtigungen über erfolgreiche Aufträge gesendet werden. Standardmäßig wird eine Benachrichtigung über erfolgreiche Aufträge immer an den Absender gesendet. Wenn Sie `sender` eingeben, werden E-Mail-Ergebnisse an den Absender gesendet. Es werden bis zu 100 Empfänger unterstützt. Geben Sie zusätzliche Empfänger mit E-Mail-Adressen an, von denen jeder durch ein Komma getrennt ist. Zum Deaktivieren dieser Option lassen Sie das Feld unausgefüllt. Es kann Fälle geben, in denen Sie einen Prozess auslösen möchten, ohne ein Benachrichtigung per E-Mail zum Ergebnis erhalten zu wollen. Der Standardwert ist `sender`.
 * **recipientFailedJob**: Eine E-Mail-Adresse, an die Benachrichtigungen über fehlgeschlagene Aufträge gesendet werden. Standardmäßig wird eine Benachrichtigung über einen fehlgeschlagenen Auftrag immer an den Absender gesendet. Wenn Sie `sender` eingeben, werden E-Mail-Ergebnisse an den Absender gesendet. Es werden bis zu 100 Empfänger unterstützt. Geben Sie zusätzliche Empfänger mit E-Mail-Adressen an, von denen jeder durch ein Komma getrennt ist. Zum Deaktivieren dieser Option lassen Sie das Feld unausgefüllt. Der Standardwert ist `sender`.
 * **inboxHost**: Der Hostname oder die IP-Adresse für den Posteingang, der/die vom E-Mail-Anbieter überprüft werden soll.
@@ -911,7 +910,7 @@ Um einen TaskManager-Endpunkt für einen Service zu erstellen, geben Sie die fol
 
 * **Connector-ID**: Gibt den Typ des zu erstellenden Endpunkts an. Um einen TaskManager-Endpunkt zu erstellen, geben Sie `TaskManagerConnector` an.
 * **Beschreibung**: Gibt die Beschreibung des Endpunkts an.
-* **Name**: Gibt den Namen des Endpunkts an.
+* **Name:** Gibt den Namen des Formulars an.
 * **Service-ID**: Gibt den Service an, zu dem der Endpunkt gehört.
 * **Kategorie**: Gibt den ID-Wert einer Kategorie an, die mit dem TaskManager-Endpunkt verbunden ist.
 * **Vorgangsname**: Beim Erstellen eines TaskManager-Endpunkts für einen Service, der aus einem in Workbench erstellten Prozess stammt, lautet der Name des Vorgangs in der Regel `invoke`.
@@ -1103,7 +1102,7 @@ Führen Sie die folgenden Aufgaben aus, um einen Endpunkt aus einem Service zu e
 1. Rufen Sie den Endpunkt ab.
 1. Entfernen Sie den Endpunkt.
 
-**Einschließen von Projektdateien**
+**Einbeziehen von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
