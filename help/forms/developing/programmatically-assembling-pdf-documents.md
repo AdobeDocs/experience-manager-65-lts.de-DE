@@ -10,9 +10,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 hide: true
-hidefromtoc: true
 exl-id: a64f0bd4-8d5c-485d-b620-608bfe33a72f
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '2139'
 ht-degree: 100%
@@ -49,7 +48,7 @@ In diesem DDX-Dokument werden zwei PDF-Dokumente mit den Namen *map.pdf* und *di
 
 >[!NOTE]
 >
->Weitere Informationen zum Assembler-Dienst finden Sie unter [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Assembler-Dienst finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -93,7 +92,7 @@ Wenn AEM Forms auf einem unterstützten J2EE-Programm-Server bereitgestellt wird
 
 Bevor Sie einen Assembler-Vorgang programmgesteuert durchführen können, müssen Sie einen Assembler-Client erstellen.
 
-**Referenzieren eines bestehenden DDX-Dokuments**
+**Vorhandenes DDX-Dokument referenzieren**
 
 Zum Zusammenführen eines PDF-Dokuments muss auf ein DDX-Dokument verwiesen werden. Betrachten Sie beispielsweise das DDX-Dokument, das in diesem Abschnitt eingeführt wurde. Dieses DDX-Dokument weist den Assembler-Dienst an, zwei PDF-Dokumente in ein PDF-Dokument zusammenzuführen.
 
@@ -204,7 +203,7 @@ Zusammenführen eines PDF-Dokuments mithilfe der Assembler-Dienst-API (Java):
    Führen Sie die folgenden Schritte aus, um das neu erstellte PDF-Dokument abzurufen:
 
    * Rufen Sie die `AssemblerResult`-Objekt`getDocuments`-Methode auf. Dadurch wird ein `java.util.Map`-Objekt zurückgegeben.
-   * Durchsuchen Sie das `java.util.Map`-Objekt, bis Sie das entstandene `com.adobe.idp.Document`-Objekt gefunden haben. (Sie können das im DDX-Dokument angegebene PDF-Ergebniselement verwenden, um das Dokument abzurufen.)
+   * Iterieren Sie durch das `java.util.Map`-Objekt, bis Sie das resultierende `com.adobe.idp.Document`-Objekt finden. (Sie können das im DDX-Dokument angegebene PDF-Ergebniselement verwenden, um das Dokument abzurufen.)
    * Rufen Sie die Methode `copyToFile` des `com.adobe.idp.Document`-Objekts auf, um das PDF-Dokument zu extrahieren.
 
    >[!NOTE]
@@ -258,7 +257,7 @@ Zusammenführen von PDF-Dokumenten mithilfe der Assembler-Dienst-API (Web-Servic
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des Eingabe-PDF-Dokuments und den Modus enthält, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie dessen `MTOM`-Feld den Inhalt des Byte-Arrays zuweisen.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
    * Erstellen Sie ein `MyMapOf_xsd_string_To_xsd_anyType`-Objekt. Dieses Sammlungsobjekt wird zum Speichern von PDF-Eingabedokumenten verwendet.
    * Erstellen Sie für jedes PDF-Eingabedokument ein `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekt. Wenn beispielsweise zwei PDF-Eingabedokumente verwendet werden, erstellen Sie zwei `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekte.
    * Weisen Sie dem Feld `key` des `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekts einen Zeichenfolgenwert zu, der den Schlüsselnamen darstellt. Dieser Wert muss mit dem Wert des im DDX-Dokument angegebenen PDF-Quellelements übereinstimmen. (Führen Sie diese Aufgabe für jedes PDF-Eingabedokument aus.)

@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 2e8b73eb-7070-4b7b-b14b-bfcca6175afb
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '2784'
 ht-degree: 98%
@@ -204,7 +203,7 @@ Importieren von Formulardaten mithilfe der Form Data Integration-API (Web-Servic
 
    >[!NOTE]
    >
-   >Ersetzen Sie `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie `localhost` durch die IP-Adresse des Servers, der AEM Forms hostet.
 
 1. Erstellen Sie einen Client für den Form Data Integration-Service.
 

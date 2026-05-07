@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 35802b50-71ca-4bb2-8f2c-7452b81a6b1f
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 100%
@@ -87,7 +86,7 @@ Aufteilen eines PDF-Dokuments mithilfe der Assembler-Dienst-API (Webservice):
 
    * Greifen Sie auf das `documents`-Feld des `AssemblerResult`-Objekts zu. Dies ist ein `Map`-Objekt, das die zerlegten PDF-Dokumente enthält.
    * Iterieren Sie durch das `Map`-Objekt, um jedes resultierende Dokument zu erhalten. Wandeln Sie dann `value` der Array-Elemente in `BLOB` um.
-   * Extrahieren Sie die Binärdaten, die das PDF-Dokument darstellen, indem Sie auf die `MTOM`-Eigenschaft des `BLOB`-Objekts zugreifen. Dadurch wird ein Array von Bytes zurückgegeben, die Sie in eine PDF-Datei schreiben können.
+   * Extrahieren Sie die Binärdaten, die das PDF-Dokument darstellen, indem Sie auf die `MTOM`-Eigenschaft von dessen `BLOB`-Objekt zugreifen. Dadurch wird ein Array von Bytes zurückgegeben, die Sie in eine PDF-Datei schreiben können.
 
 **Siehe auch**
 

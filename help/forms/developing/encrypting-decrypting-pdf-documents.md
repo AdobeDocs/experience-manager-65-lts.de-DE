@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 9f694358-e502-4fc0-8352-4c5119573756
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '8295'
 ht-degree: 98%
@@ -49,7 +48,7 @@ Nachdem ein PDF-Dokument mit einem Kennwort verschlüsselt wurde, muss ein Benut
 
 >[!NOTE]
 >
->Weitere Informationen zum Verschlüsselungs-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen über den Verschlüsselungsdienst finden Sie unter [Dienstverweise für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -62,7 +61,7 @@ Um ein PDF-Dokument mit einem Kennwort zu verschlüsseln, führen Sie die folgen
 1. Fügen Sie das Kennwort hinzu.
 1. Speichern Sie das verschlüsselte PDF-Dokument als PDF-Datei.
 
-**Einschließen von Projektdateien**
+**Einbinden von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -225,7 +224,7 @@ Verschlüsseln Sie ein PDF-Dokument mit einem Kennwort mithilfe der Verschlüsse
 1. Speichern Sie das verschlüsselte PDF-Dokument als PDF-Datei.
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des gesicherten PDF-Dokuments darstellt.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der `encryptPDFUsingPassword`-Methode zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des `BLOB`-Datenelements des Objekts `MTOM` abrufen.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `encryptPDFUsingPassword` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des `BLOB`-Datenelements des Objekts `MTOM` abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
@@ -452,7 +451,7 @@ So verschlüsseln Sie ein PDF-Dokument mit einem Zertifikat mithilfe der Verschl
 1. Speichern Sie das verschlüsselte PDF-Dokument als PDF-Datei.
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des gesicherten PDF-Dokuments darstellt.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der `encryptPDFUsingCertificates`-Methode zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des `BLOB`-Datenelements des Objekts `binaryData` abrufen.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `encryptPDFUsingCertificates` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des `BLOB`-Datenelements des Objekts `binaryData` abrufen.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
@@ -496,7 +495,7 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 
 **Erstellen eines Verschlüsselungs-Service-Clients**
 
-Um einen Vorgang des Verschlüsselungs-Services programmgesteuert durchführen zu können, müssen Sie einen Verschlüsselungs-Service-Client erstellen. Wenn Sie die Java-API des Verschlüsselungs-Services verwenden, erstellen Sie ein `EncrytionServiceClient`-Objekt. Wenn Sie die Webservice-API des Verschlüsselungs-Services verwenden, erstellen Sie ein `EncryptionServiceService`-Objekt.
+Um programmgesteuert einen Vorgang des Verschlüsselungs-Dienstes durchzuführen, müssen Sie einen Verschlüsselungs-Dienst-Client erstellen. Wenn Sie die Java-API des Verschlüsselungs-Services verwenden, erstellen Sie ein `EncrytionServiceClient`-Objekt. Wenn Sie die Webservice-API des Verschlüsselungs-Services verwenden, erstellen Sie ein `EncryptionServiceService`-Objekt.
 
 **Abrufen des verschlüsselten PDF-Dokuments**
 
@@ -643,7 +642,7 @@ So entfernen Sie die kennwortbasierte Verschlüsselung aus einem PDF-Dokument:
 1. Entfernen Sie das Kennwort.
 1. Speichern Sie das Formular als PDF-Datei.
 
-**Einschließen von Projektdateien**
+**Einbeziehen von Projektdateien**
 
 Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie ein Client-Programm mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, stellen Sie sicher, dass Sie die Proxy-Dateien einschließen.
 
@@ -657,7 +656,7 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 
 **Erstellen eines Verschlüsselungs-Service-Clients**
 
-Um einen Vorgang des Verschlüsselungs-Services programmgesteuert durchführen zu können, müssen Sie einen Verschlüsselungs-Service-Client erstellen. Wenn Sie die Java-API des Verschlüsselungs-Services verwenden, erstellen Sie ein `EncrytionServiceClient`-Objekt. Wenn Sie die Webservice-API des Verschlüsselungs-Services verwenden, erstellen Sie ein `EncryptionServiceService`-Objekt.
+Um programmgesteuert einen Vorgang des Verschlüsselungs-Dienstes durchzuführen, müssen Sie einen Verschlüsselungs-Dienst-Client erstellen. Wenn Sie die Java-API des Verschlüsselungs-Services verwenden, erstellen Sie ein `EncrytionServiceClient`-Objekt. Wenn Sie die Webservice-API des Verschlüsselungs-Services verwenden, erstellen Sie ein `EncryptionServiceService`-Objekt.
 
 **Abrufen des verschlüsselten PDF-Dokuments**
 
@@ -778,7 +777,7 @@ Ein kennwortverschlüsseltes oder zertifikatverschlüsseltes PDF-Dokument muss e
 
 >[!NOTE]
 >
->Weitere Informationen zum Verschlüsselungs-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen über den Verschlüsselungsdienst finden Sie unter [Dienstverweise für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-4}
 
@@ -804,7 +803,7 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 
 **Erstellen eines Verschlüsselungs-Service-Clients**
 
-Um einen Vorgang des Verschlüsselungs-Services programmgesteuert durchführen zu können, müssen Sie einen Verschlüsselungs-Service-Client erstellen. Wenn Sie die Java-API des Verschlüsselungs-Services verwenden, erstellen Sie ein `EncrytionServiceClient`-Objekt. Wenn Sie die Webservice-API des Verschlüsselungs-Services verwenden, erstellen Sie ein `EncryptionServiceService`-Objekt.
+Um programmgesteuert einen Vorgang des Verschlüsselungs-Dienstes durchzuführen, müssen Sie einen Verschlüsselungs-Dienst-Client erstellen. Wenn Sie die Java-API des Verschlüsselungs-Services verwenden, erstellen Sie ein `EncrytionServiceClient`-Objekt. Wenn Sie die Webservice-API des Verschlüsselungs-Services verwenden, erstellen Sie ein `EncryptionServiceService`-Objekt.
 
 **Abrufen des verschlüsselten PDF-Dokuments**
 
@@ -981,7 +980,7 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 
 **Erstellen eines Service-Clients**
 
-Um einen Vorgang des Verschlüsselungs-Services programmgesteuert durchführen zu können, müssen Sie einen Verschlüsselungs-Service-Client erstellen. Wenn Sie die Java-API des Verschlüsselungs-Services verwenden, erstellen Sie ein `EncrytionServiceClient`-Objekt. Wenn Sie die Webservice-API des Verschlüsselungs-Services verwenden, erstellen Sie ein `EncryptionServiceService`-Objekt.
+Um programmgesteuert einen Vorgang des Verschlüsselungs-Dienstes durchzuführen, müssen Sie einen Verschlüsselungs-Dienst-Client erstellen. Wenn Sie die Java-API des Verschlüsselungs-Services verwenden, erstellen Sie ein `EncrytionServiceClient`-Objekt. Wenn Sie die Webservice-API des Verschlüsselungs-Services verwenden, erstellen Sie ein `EncryptionServiceService`-Objekt.
 
 **Abrufen des verschlüsselten PDF-Dokuments**
 

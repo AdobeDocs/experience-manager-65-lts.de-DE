@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: ae001541-ae7f-42ce-8236-5fbb6ddb4c1f
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '7169'
 ht-degree: 96%
@@ -120,7 +119,7 @@ Mithilfe der folgenden Einstellungen können Sie einen Endpunkt des Typs „übe
 
 **Name** (obligatorisch): Gibt den Endpunkt an. Der Name darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige des Namens in Workspace abgeschnitten wird. Wenn Sie eine URL als Namen des Endpunktes eingeben, vergewissern Sie sich, dass sie den in RFC1738 angegebenen Syntaxregeln entspricht.
 
-**Beschreibung**: Eine Beschreibung des Endpunkts. Der Name darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige des Namens in Workspace abgeschnitten wird.
+**Beschreibung:** Eine Beschreibung des Endpunktes. Der Name darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige des Namens in Workspace abgeschnitten wird.
 
 **Pfad** (obligatorisch): Gibt den Speicherort des überwachten Ordners an. In einer Clusterumgebung muss diese Einstellung auf einen freigegebenen Netzwerkordner zeigen, auf den alle Computer im Cluster zugreifen können.
 

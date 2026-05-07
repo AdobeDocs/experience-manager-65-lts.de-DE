@@ -9,9 +9,8 @@ feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 1d2adc53-498f-43f5-b664-0b9dd864b9a1
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 100%
@@ -128,7 +127,7 @@ PDF Generator unterstützt die Funktion zum Reduzieren der Größe von PDF-Datei
 
 >[!NOTE]
 >
->Bei der Optimierung eines digital signierten Dokuments werden die digitalen Signaturen entfernt und ungültig.
+>Durch die Optimierung eines digital signierten Dokuments werden die digitalen Signaturen entfernt und ungültig.
 
 1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „PDF Generator“ > „PDF optimieren“.
 1. Klicken Sie auf „Durchsuchen“, um die zu optimierende PDF-Datei zu suchen.

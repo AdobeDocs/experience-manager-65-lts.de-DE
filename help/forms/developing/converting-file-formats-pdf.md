@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services
 hide: true
-hidefromtoc: true
 exl-id: c6e007e9-6050-4d86-a32e-0bd942d48f27
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '7942'
 ht-degree: 98%
@@ -98,7 +97,7 @@ In diesem Abschnitt wird beschrieben, wie Sie mit der Generate PDF-API ein Micro
 
 >[!NOTE]
 >
->Weitere Informationen zum Generate PDF-Dienst finden Sie in der [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Generate PDF-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -247,7 +246,7 @@ So konvertieren Sie ein Microsoft Word-Dokument mithilfe der Generate PDF-API (W
 
    * Rufen Sie das konvertierte PDF-Dokument ab, indem Sie das Feld `MTOM` des `BLOB`-Objekts einem Byte-Array zuweisen. Das Byte-Array stellt das konvertierte PDF-Dokument dar. Stellen Sie sicher, dass Sie das `BLOB`-Objekt verwenden, das als Ausgabeparameter für die `createPDF2`-Methode dient.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der den Dateispeicherort des konvertierten PDF-Dokuments darstellt.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+   * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
@@ -397,7 +396,7 @@ So konvertieren Sie HTML-Inhalte mithilfe der Generate PDF-API (Webservice) in e
 
    * Rufen Sie das konvertierte PDF-Dokument ab, indem Sie das Feld `MTOM` des `BLOB`-Objekts einem Byte-Array zuweisen. Das Byte-Array stellt das konvertierte PDF-Dokument dar. Stellen Sie sicher, dass Sie das `BLOB`-Objekt verwenden, das als Ausgabeparameter für die `HtmlToPDF2`-Methode dient.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der den Dateispeicherort des konvertierten PDF-Dokuments darstellt.
-   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+   * Erstellen Sie ein Objekt vom Typ `System.IO.BinaryWriter`, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
    * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
@@ -414,7 +413,7 @@ In diesem Abschnitt wird beschrieben, wie Sie mit der Generate PDF-Java-API und 
 
 >[!NOTE]
 >
->Weitere Informationen zum Generate PDF-Dienst finden Sie in der [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Generate PDF-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-2}
 

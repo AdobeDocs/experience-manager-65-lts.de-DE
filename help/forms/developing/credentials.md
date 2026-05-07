@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: b3a0eb20-5b85-45a3-a416-a16a9f44acc5
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 100%
@@ -73,7 +72,7 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 
 Weitere Informationen über den Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Erstellen eines Service-Clients für die Berechtigung**
+**Erstellen eines Berechtigungs-Service-Clients**
 
 Bevor Sie eine Berechtigung programmgesteuert in AEM Forms importieren können, müssen Sie einen Client für den Berechtigungs-Service erstellen. Weitere Informationen finden Sie unter [Festlegen von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 

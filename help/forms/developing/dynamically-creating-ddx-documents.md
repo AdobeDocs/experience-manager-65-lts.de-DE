@@ -10,9 +10,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 3508d2d1-e05a-4733-b682-4b022348147a
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 100%
@@ -42,11 +41,11 @@ Dieses DDX-Dokument zerlegt ein PDF-Dokument. Sie sollten mit dem Aufteilen von 
 
 >[!NOTE]
 >
->Weitere Informationen zum Assembler-Dienst finden Sie unter [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Assembler-Dienst finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Weitere Informationen zu einem DDX-Dokument finden Sie in der [Referenz für Assembler-Dienst und DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Weitere Informationen zu einem DDX-Dokument finden Sie in der [Assembler-Dienst- und DDX-Referenz](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -137,7 +136,7 @@ Erstellen Sie dynamisch ein DDX-Dokument und zerlegen Sie ein PDF-Dokument mithi
 
      ` Element PDFsFromBookmarks = (Element)document.createElement("PDFsFromBookmarks");  PDFsFromBookmarks.setAttribute("prefix","stmt");  root.appendChild(PDFsFromBookmarks);`
 
-   * Erstellen Sie ein Element `PDF`, indem Sie die Methode `createElement` des Objekts `Document` aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie einen Wert für das Element `PDF` fest, indem Sie seine `setAttribute`-Methode aufrufen. Fügen Sie das Element `PDF` an das Element `PDFsFromBookmarks` an, indem Sie die Methode `appendChild` des Elements `PDFsFromBookmarks` aufrufen. Übergeben Sie das `PDF`-Elementobjekt als Argument. Die folgenden Code-Zeilen zeigen diese Programmlogik:
+   * Erstellen Sie ein Element `PDF`, indem Sie die Methode `createElement` des Objekts `Document` aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie einen Wert für das Element `PDF` fest, indem Sie seine `setAttribute`-Methode aufrufen. Fügen Sie das Element `PDF` an das Element `PDFsFromBookmarks` an, indem Sie die Methode `appendChild` des Elements `PDFsFromBookmarks` aufrufen. Übergeben Sie das `PDF`-Elementobjekt als Argument. Die folgenden Code-Zeilen zeigen diese Anwendungslogik:
 
      ` Element PDF = (Element)document.createElement("PDF");  PDF.setAttribute("source","AssemblerResultPDF.pdf");  PDFsFromBookmarks.appendChild(PDF);`
 
@@ -230,7 +229,7 @@ Erstellen Sie ein DDX-Dokument dynamisch und zerlegen Sie ein PDF-Dokument mithi
 
      ` XmlElement PDFsFromBookmarks = ddx.CreateElement("PDFsFromBookmarks");  PDFsFromBookmarks.SetAttribute("prefix", "stmt");  root.AppendChild(PDFsFromBookmarks);`
 
-   * Erstellen Sie das Element `PDF` des DDX-Dokuments, indem Sie die Methode `CreateElement` des Objekts `XmlElement` aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `CreateElement`-Methode. Legen Sie anschließend einen Wert für das untergeordnete Element fest, indem Sie dessen `SetAttribute`-Methode aufrufen. Fügen Sie das Element `PDF` an das Element `PDFsFromBookmarks` an, indem Sie die Methode `AppendChild` des Elements `PDFsFromBookmarks` aufrufen. Übergeben Sie das `PDF`-Elementobjekt als Argument. Die folgenden Code-Zeilen zeigen diese Programmlogik:
+   * Erstellen Sie das Element `PDF` des DDX-Dokuments, indem Sie die Methode `CreateElement` des Objekts `XmlElement` aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `CreateElement`-Methode. Legen Sie anschließend einen Wert für das untergeordnete Element fest, indem Sie dessen `SetAttribute`-Methode aufrufen. Fügen Sie das Element `PDF` an das Element `PDFsFromBookmarks` an, indem Sie die Methode `AppendChild` des Elements `PDFsFromBookmarks` aufrufen. Übergeben Sie das `PDF`-Elementobjekt als Argument. Die folgenden Code-Zeilen zeigen diese Anwendungslogik:
 
      ` XmlElement PDF = ddx.CreateElement("PDF");  PDF.SetAttribute("source", "AssemblerResultPDF.pdf");  PDFsFromBookmarks.AppendChild(PDF);`
 

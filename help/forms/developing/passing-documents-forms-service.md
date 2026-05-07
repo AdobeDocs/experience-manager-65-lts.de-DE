@@ -10,9 +10,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 78d72100-b67b-48ac-9479-706fdccbd3cd
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1689'
 ht-degree: 100%
@@ -139,7 +138,7 @@ Je nach Art des Client-Programms können Sie das Formular in einen Client-Webbro
 
    Verwenden Sie die folgende WSDL-Definition für die Service-Referenz, die mit dem Document Management-Service verknüpft ist: `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`.
 
-   Da der Datentyp `BLOB` für beide Service-Verweise verwendet wird, müssen Sie den Datentyp `BLOB` qualifizieren, wenn Sie ihn verwenden. Im entsprechenden Webservice-Schnellstart sind alle `BLOB`-Instanzen vollständig qualifiziert.
+   Da der `BLOB`-Datentyp für beide Service-Referenzen verwendet wird, müssen Sie den `BLOB`-Datentyp vollständig qualifizieren, wenn Sie ihn verwenden. Im entsprechenden Webservice-Schnellstart sind alle `BLOB`-Instanzen vollständig qualifiziert.
 
    >[!NOTE]
    >
@@ -161,7 +160,7 @@ Je nach Art des Client-Programms können Sie das Formular in einen Client-Webbro
 
    >[!NOTE]
    >
-   >Wiederholen Sie diese Schritte für den `DocumentManagementServiceClient`Service-Client.
+   >Wiederholen Sie diese Schritte für den `DocumentManagementServiceClient`-Service-Client.
 
 1. Abrufen des Formularentwurfs aus Content Services (nicht mehr unterstützt)
 

@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: f5b45667-87df-4069-8f08-2b6daf4bad1e
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1219'
 ht-degree: 94%
@@ -28,7 +27,7 @@ Sie können Suchvorlagendefinitionen und globale Einstellungen für Workspace im
 
 >[!NOTE]
 >
->Der Flex-Workspace wird für die AEM Forms-Version nicht mehr unterstützt.
+>Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
 
 Sie können beispielsweise von einer Entwicklungsumgebung zu einer Produktionsumgebung wechseln, indem Sie die Suchvorlagendefinitionen und globalen Einstellungen aus einer Umgebung exportieren und in die andere importieren.
 
@@ -72,7 +71,7 @@ Sie können die Datei mit den globalen Einstellungen ändern, sollten jedoch nur
 
 >[!NOTE]
 >
->Der Flex-Workspace wird für die AEM Forms-Version nicht mehr unterstützt.
+>Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
 
 Die Datei mit den globalen Einstellungen für Workspace enthält die folgenden Einstellungen:
 
