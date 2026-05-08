@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6aca9496869f6673661a650438a7fc1beb212097
+source-git-commit: eab6902e5bdb58f626e7b79f91d27447b31d6830
 workflow-type: tm+mt
-source-wordcount: '7603'
+source-wordcount: '7581'
 ht-degree: 97%
 
 ---
@@ -242,7 +242,7 @@ Die Seiteneditor-Veröffentlichung verarbeitet jetzt URLs, die Selektoren oder S
 
 #### Vorlageneditor{#sites-template-editor-65-lts-sp2}
 
-Der Text zum Vorlagenstatus unter **Tools** > **Allgemein** > **&#x200B;**&#x200B;wurde für einige Gebietsschemata vertikal angezeigt. Das Label „veraltet“ unterbrach das Layout und wurde als Zeichenspalte gelesen. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass das Label in einer einzigen horizontalen Zeile ausgegeben wird. (SITES-36797)
+Der Text zum Vorlagenstatus unter **Tools** > **Allgemein** > **** wurde für einige Gebietsschemata vertikal angezeigt. Das Label „veraltet“ unterbrach das Layout und wurde als Zeichenspalte gelesen. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass das Label in einer einzigen horizontalen Zeile ausgegeben wird. (SITES-36797)
 
 #### Universeller Editor {#sites-universal-editor-65-lts-sp2}
 
@@ -281,6 +281,8 @@ Assets-Korrelation funktioniert jetzt für Dateinamen mit Leerzeichen. Aktualisi
 * In AEM Forms 6.5 LTS-Cluster-Bereitstellungen auf JBoss® EAP 8 enthalten die Dateien „`domain/configuration/domain_oracle.xml`“, „`domain_mysql.xml`“ und „`domain_mssql.xml`“ kein doppeltes Tag „`<security>`“ mehr, was zu ungültiger XML führte und den Start des Domain-Controllers verhinderte. (FORMS-24687)
 * Im Turnkey-Modus wird die Aktualisierung des Datenbank-Ports bei Neuinstallationen und Upgrades jetzt korrekt durchgeführt. Im Neuinstallationsmodus können Benutzende aus allen verfügbaren Ports auswählen, und im Upgrade-Modus wird der in „lc_turnkey.xml“ aktualisierte Datenbank-Port während des Upgrade-Prozesses korrekt referenziert. (FORMS-24689)
 * Beim Einrichten von JBoss® EAP 8.0 unter Linux® verursachen unter Windows geänderte Shell-Skripte keine Fehler „`/bin/sh^M: bad interpreter or $'\r': command not found`“ aufgrund von CRLF-Zeilenenden mehr. (FORMS-24688)
+* Bei Bereitstellungen von Forms JEE LTS, die auf JBoss® EAP 8 ausgeführt werden, kann die Reader Extensions-Benutzeroberfläche mit einem internen Server-Fehler fehlschlagen. (FORMS-24894)
+* Unter Linux® traten Laufzeit- oder Bereitstellungsprobleme auf, wenn Forms JEE LTS Configuration Manager mit einem nicht festgelegten oder falschen `OSFileSetIntendedFor` in `configurationManager/config/solcomp/LFS_Foundation.properties` ausgeführt wurde, was verhinderte, dass die Konfiguration korrekt auf Linux® zugeschnitten wurde. Legen Sie nach der Installation und vor dem Ausführen von Configuration Manager `OSFileSetIntendedFor=Linux` in dieser Datei fest. (FORMS-24741)
 
 <!--
 #### Forms JEE 
@@ -578,9 +580,7 @@ In diesem Abschnitt werden die Funktionen aufgeführt, die aus AEM 6.5 LTS entf
 ### AEM Forms
 
 * Im Configuration Manager schlägt die Datenbankinitialisierung beim Bootstrap im benutzerdefinierten Turnkey-Modus von AEM Forms 6.5 LTS JEE fehl, wenn keine Module oder nur eingeschränkte Komponenten ausgewählt sind. Das Problem ist auf eine fehlende Abhängigkeit (xalan-2.7.2.jar) zurückzuführen, die zu einem Fehler führt. Durch Hinzufügen der JAR-Datei zu „adobe-livecycle-jboss.ear\lib“ wird das Problem behoben. (FORMS-24690)
-* Bei Bereitstellungen von Forms JEE LTS, die auf JBoss® EAP 8 ausgeführt werden, kann die Reader Extensions-Benutzeroberfläche mit einem internen Server-Fehler fehlschlagen. (FORMS-24894)
 * Bei Forms JEE LTS, das auf JBoss® ausgeführt wird, können E-Mail-bezogene Funktionen fehlschlagen. Beim Versuch, E-Mail-Funktionen zu verwenden, protokolliert der Server möglicherweise einen Fehler ähnlich wie „`Error IMAPProvider not a subtype`“. (FORMS-24892)
-* Auf Linux®-Plattformen muss für Forms JEE LTS in „`LFS_Foundation.properties`“ die Eigenschaft „`OSFileSetIntendedFor`“ korrekt eingestellt sein, bevor der Configuration Manager ausgeführt werden kann. Wenn sie nicht aktualisiert wird, ist die Konfiguration möglicherweise nicht richtig auf Linux® zugeschnitten, was zu Problemen bei der Laufzeit oder der Bereitstellung führen kann. Um das Problem zu beheben, navigieren Sie nach dem Ausführen des Installationsprogramms und vor dem Ausführen von Configuration Manager zu „`configurationManager/config/solcomp/`“, öffnen Sie „`LFS_Foundation.properties`“, stellen Sie „`OSFileSetIntendedFor=Linux`“ ein, speichern Sie die Datei und führen Sie dann den Configuration Manager aus. (FORMS-24741)
 
 ### Repository-Beschädigung bei Online-Komprimierung nach Offline-Komprimierung (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
