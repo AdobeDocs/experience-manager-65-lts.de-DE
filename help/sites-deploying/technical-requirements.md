@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+source-git-commit: 551f915c2fa91a3b099ce5636ae5b7f4439c8236
 workflow-type: tm+mt
-source-wordcount: '2870'
-ht-degree: 91%
+source-wordcount: '3086'
+ht-degree: 90%
 
 ---
 
@@ -64,7 +64,7 @@ Adobe empfiehlt diese Konfigurationen und bietet im Zuge der standardmäßigen V
    <td>Adobe bietet vollständige Unterstützung und Wartung für diese Konfiguration. Diese Konfiguration wird über den Qualitätssicherungsvorgang von Adobe abgedeckt.</td>
   </tr>
   <tr>
-   <td><strong>R: Eingeschränkte Unterstützung </strong></td>
+   <td><strong>R: Eingeschränkte Unterstützung</strong></td>
    <td>Um den Projekterfolg unserer Kundinnen und Kunden sicherzustellen, bietet Adobe im Rahmen eines eingeschränkten Support-Programms volle Unterstützung an. Dafür müssen bestimmte Bedingungen erfüllt sein. Der Support auf R-Ebene erfordert eine formelle Kundenanfrage und eine Bestätigung durch Adobe. Weitere Informationen erhalten Sie bei der Kundenunterstützung von Adobe.</td>
   </tr>
  </tbody>
@@ -95,7 +95,7 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen der Java™ Vi
 | IBM® Semeru J9 VM - Build 17.0.13.0 | A: Unterstützt `[2]` | |
 | IBM® Semeru J9 VM - Build 21.0.6.0 | A: Unterstützt `[2]` | |
 
-1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14, Java™ 15m Java™ 16 sind Nicht-LTS-Versionen von Oracle (siehe Roadmap für den Oracle Java™ SE-Support[). &#x200B;](https://www.oracle.com/technetwork/java/eol-135779.html) Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java™. Der Support und die Verteilung des Oracle Java™ SE JDK, einschließlich aller Wartungs-Updates der LTS-Versionen, werden von Adobe direkt für alle AEM-Kunden unterstützt, die die Oracle Java™ SE-Technologie verwenden. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14, Java™ 15m Java™ 16 sind Nicht-LTS-Versionen von Oracle (siehe Roadmap für den Oracle Java™ SE-Support](https://www.oracle.com/technetwork/java/eol-135779.html)). [Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java™. Der Support und die Verteilung des Oracle Java™ SE JDK, einschließlich aller Wartungs-Updates der LTS-Versionen, werden von Adobe direkt für alle AEM-Kunden unterstützt, die die Oracle Java™ SE-Technologie verwenden. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
    **Diese Version unterstützt Oracle Java™ 17 und Oracle Java™ 21.**
 
 1. Die IBM® JRE wird nur zusammen mit WebSphere Application Server unterstützt.
@@ -294,11 +294,11 @@ Der Betrieb ist nahtlos, da keine spezielle Konfiguration erforderlich ist. Sie 
 
 Wenn eine IP-Adresse angegeben werden muss, können Sie (nach Bedarf) aus folgenden Optionen auswählen:
 
-* Eine IPv6-Adresse.  Beispiel: `https://[ab12::34c5:6d7:8e90:1234]:4502`
+* Eine IPv6-Adresse. Beispiel: `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
-* Eine IPv4-Adresse.  Beispiel: `https://123.1.1.4:4502`
+* Eine IPv4-Adresse. Beispiel: `https://123.1.1.4:4502`
 
-* Einen Server-Namen.  Beispiel: `https://www.yourserver.com:4502`
+* Einen Server-Namen. Beispiel: `https://www.yourserver.com:4502`
 
 * Der Standardfall `localhost` wird für IPv4- und IPv6-Netzwerkinstallationen angenommen. Beispiel: `https://localhost:4502`
 
@@ -384,7 +384,7 @@ Windows x86:
  <tbody>
   <tr>
    <th><p><strong>Produkt</strong></p> </th>
-   <th><p><strong>Unterstützte Formate für die Konvertierung ins PDF-Format </strong></p> </th>
+   <th><p><strong>Unterstützte Formate für die Konvertierung ins PDF-Format</strong></p> </th>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> – neueste Version</td>
@@ -408,6 +408,7 @@ Windows x86:
 
 >[!NOTE]
 >
+>* PDF Generator unterstützt Microsoft® Office 2024.
 >* PDF Generator unterstützt nur englische, französische, deutsche und japanische Versionen der unterstützten Betriebssysteme und Anwendungen.
 >* PDF Generator erfordert für die Konvertierung Adobe Acrobat Pro DC (32 Bit).
 >* PDF Generator unterstützt nur die 32-Bit-Version von Microsoft® Office Professional Plus und anderer für die Konvertierung erforderliche Software.
@@ -448,6 +449,6 @@ Das Zurückschreiben von XMP-Daten wird für die folgenden Plattformen und Datei
 
 ### Anforderungen für die Verarbeitung von Metadaten-lastigen Assets durch AEM Assets unter Linux® {#assetsonlinux}
 
-Für den XMPFilesProcessor-Prozess ist die Bibliothek GLIBC_2.14 erforderlich. Verwenden Sie einen Linux®-Kernel, der GLIBC_2.14 enthält, zum Beispiel Linux®-Kernel Version 3.1.x. Dies verbessert die Leistung bei der Verarbeitung von Assets, die eine große Menge an Metadaten enthalten, z. B. PSD-Dateien. Die Verwendung einer früheren Version von GLIBC führt zu Fehlern in Protokollen, die mit `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` beginnen.
+Für den XMPFilesProcessor-Prozess ist die Bibliothek GLIBC_2.14 erforderlich. Verwenden Sie einen Linux®-Kernel, der GLIBC_2.14 enthält, zum Beispiel Linux®-Kernel Version 3.1.x. Dies verbessert die Leistung bei der Verarbeitung von Assets, die eine große Menge an Metadaten enthalten, z. B. PSD-Dateien. Die Verwendung einer früheren Version von GLIBC führt zu Fehlern in Protokollen, die mit `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` beginnen.
 
 Wenden Sie sich bei Fragen zu unterstützten Formaten oder Plattformversionen an den [AEM Forms-Support](https://business.adobe.com/de/support/main.html)
