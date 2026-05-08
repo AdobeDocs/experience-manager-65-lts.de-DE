@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 551f915c2fa91a3b099ce5636ae5b7f4439c8236
+source-git-commit: f5a36877c0d051de5c96a8ab89b2886b28865249
 workflow-type: tm+mt
-source-wordcount: '3086'
-ht-degree: 90%
+source-wordcount: '3090'
+ht-degree: 88%
 
 ---
 
@@ -392,12 +392,12 @@ Windows x86:
   </tr>
 
 <tr>
-   <td>Microsoft® Office 2021 Professional Plus, Einzelhandels- und Volumenlizenzen</td>
+   <td>Microsoft® Office 2024 Professional Plus, Einzelhandels- und Volumenlizenzen</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF und TXT</td>
   </tr>
   <tr>
    <td>
-    <strong>OpenOffice 4.1.15</strong>   </td>
+   OpenOffice 4.1.15 </td>
    <td>
     ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF und TXT<br>
 
@@ -408,15 +408,15 @@ Windows x86:
 
 >[!NOTE]
 >
->* PDF Generator unterstützt Microsoft® Office 2024.
 >* PDF Generator unterstützt nur englische, französische, deutsche und japanische Versionen der unterstützten Betriebssysteme und Anwendungen.
->* PDF Generator erfordert für die Konvertierung Adobe Acrobat Pro DC (32 Bit).
->* PDF Generator unterstützt nur die 32-Bit-Version von Microsoft® Office Professional Plus und anderer für die Konvertierung erforderliche Software.
->* Wenn eine Microsoft® Office-Installation aus irgendeinem Grund deaktiviert oder unlizenziert wird, z. B. weil eine Installation mit Volumenlizenz einen KMS-Host nicht innerhalb eines bestimmten Zeitraums finden kann, können Konvertierungen fehlschlagen, bis die Installation neu lizenziert und reaktiviert wird.
+>* Für die Konvertierung benötigt PDF Generator 32-Bit Adobe Acrobat Pro DC und Microsoft® Office Professional Plus.
+>* Die Microsoft® Office Professional Plus-Installation kann eine Einzelhandels- oder MAK/KMS/AD-basierte Mengenlizenzierung verwenden.
+>* Wenn eine Microsoft® Office-Installation aus irgendeinem Grund deaktiviert oder unlizenziert wird, z. B. bei einer Installation mit Volumenlizenz, die einen KMS-Host innerhalb eines bestimmten Zeitraums nicht finden kann, können Konvertierungen fehlschlagen, bis die Installation erneut lizenziert und reaktiviert wird.
 >* PDF Generator unterstützt nicht Microsoft® Office 365.
 >* PDF Generator-Konvertierungen für OpenOffice werden unter Windows und Linux® unterstützt.
 >* Die Funktionen von OCR PDF, PDF optimieren und PDF exportieren werden nur unter Windows unterstützt.
->* Der PDF Generator-Dienst unterstützt Microsoft® Windows 11 nicht.
+>* PDF Generator unterstützt Microsoft® Windows 11 nicht.
+>* Die Unterstützung für Microsoft® Office 2021 Professional Plus wird nicht mehr unterstützt.
 
 ### Anforderungen für AEM Forms Designer {#requirements-for-aem-forms-designer}
 
