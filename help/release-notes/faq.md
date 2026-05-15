@@ -22,7 +22,7 @@ Adobe setzt sich weiterhin für die Sicherheit und Stabilität der bereitgestell
 
 ## Ich gehöre zur On-Premise-Kundschaft. Was passiert, wenn ich nicht auf AEM 6.5 LTS aktualisiere?
 
-AEM 6.5 LTS enthält wichtige Sicherheits- und Stabilitätsaktualisierungen, einschließlich Unterstützung für Oracle Java 17 und Java 21. Es wird empfohlen, dass Unternehmen ein Upgrade auf 6.5 LTS planen. Adobe unterstützt AEM 6.5 noch bis zum 28. Februar 2027. Weitere Einzelheiten finden Sie [&#x200B; &quot;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem65)&quot;.
+AEM 6.5 LTS enthält wichtige Sicherheits- und Stabilitätsaktualisierungen, einschließlich Unterstützung für Oracle Java 17 und Java 21. Es wird empfohlen, dass Unternehmen ein Upgrade auf 6.5 LTS planen. Adobe unterstützt AEM 6.5 noch bis zum 28. Februar 2027. Weitere Einzelheiten finden Sie [&#x200B; &quot;](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem65)&quot;.
 
 ## Hat es Auswirkungen auf meine vorhandenen Anpassungen und Integrationen, wenn ich auf AEM 6.5 LTS aktualisiere?
 
