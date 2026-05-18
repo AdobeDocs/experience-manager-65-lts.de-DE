@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: eab6902e5bdb58f626e7b79f91d27447b31d6830
+source-git-commit: 02b7915e1e5554d29577e46960c072d46bcc8b0c
 workflow-type: tm+mt
-source-wordcount: '7581'
-ht-degree: 97%
+source-wordcount: '7695'
+ht-degree: 95%
 
 ---
 
@@ -242,7 +242,7 @@ Die Seiteneditor-Veröffentlichung verarbeitet jetzt URLs, die Selektoren oder S
 
 #### Vorlageneditor{#sites-template-editor-65-lts-sp2}
 
-Der Text zum Vorlagenstatus unter **Tools** > **Allgemein** > **&#x200B;**&#x200B;wurde für einige Gebietsschemata vertikal angezeigt. Das Label „veraltet“ unterbrach das Layout und wurde als Zeichenspalte gelesen. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass das Label in einer einzigen horizontalen Zeile ausgegeben wird. (SITES-36797)
+Der Text zum Vorlagenstatus unter **Tools** > **Allgemein** > **** wurde für einige Gebietsschemata vertikal angezeigt. Das Label „veraltet“ unterbrach das Layout und wurde als Zeichenspalte gelesen. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass das Label in einer einzigen horizontalen Zeile ausgegeben wird. (SITES-36797)
 
 #### Universeller Editor {#sites-universal-editor-65-lts-sp2}
 
@@ -595,6 +595,16 @@ Planen Sie die Ausfallzeiten der Instanz bei der Hotfix-Anwendung ein. Verwenden
 > * Verwenden Sie für alle „`oak-run`“-Vorgänge die Datei „[`oak-run` 1.88.1-B006 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar)“.
 >
 > * Starten Sie AEM, indem Sie die Systemeigenschaft „`oak.compaction.legacy=true`“ einstellen.
+
+### Fehlendes `com.adobe.granite.apicontroller`-Bundle in AEM 6.5 LTS SP2 (GRANITE-67640) {#missing-apicontroller-bundle-granite-67640}
+
+Das `com.adobe.granite.apicontroller`-Bundle fehlt in AEM 6.5 LTS SP2. Dieses Bundle steuert, wie OSGi-Bundles aufgelöst werden, und kann verhindern, dass Bundles in andere Bundles aufgelöst werden. Dies ist nützlich, um die Anzahl der verfügbar gemachten APIs zu begrenzen.
+
+Installieren Sie den Hotfix von [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-67640-1.0.zip), um diese Funktion zu verwenden.
+
+>[!NOTE]
+>
+> Überprüfen Sie nach der Installation des Hotfixes den Bundle-Status aller installierten Bundles, um sicherzustellen, dass mit der Standardkonfiguration von `com.adobe.granite.apicontroller` keine unbeabsichtigten Auflösungsbeschränkungen eingeführt wurden, die sich auf bestehende benutzerdefinierte Implementierungen auswirken könnten.
 
 ### JSON-Kommentare werden in sling-initial-content (SP2) nicht mehr unterstützt {#json-comments-no-longer-supported-in-sling-initial-content}
 
