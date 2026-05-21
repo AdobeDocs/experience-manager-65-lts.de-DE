@@ -8,7 +8,7 @@ exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 02b7915e1e5554d29577e46960c072d46bcc8b0c
 workflow-type: tm+mt
 source-wordcount: '7695'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -606,17 +606,17 @@ Installieren Sie den Hotfix von [Software Distribution](https://experience.adobe
 >
 > Überprüfen Sie nach der Installation des Hotfixes den Bundle-Status aller installierten Bundles, um sicherzustellen, dass mit der Standardkonfiguration von `com.adobe.granite.apicontroller` keine unbeabsichtigten Auflösungsbeschränkungen eingeführt wurden, die sich auf bestehende benutzerdefinierte Implementierungen auswirken könnten.
 
-### JSON-Kommentare werden in sling-initial-content (SP2) nicht mehr unterstützt {#json-comments-no-longer-supported-in-sling-initial-content}
+### JSON-Kommentare werden in Sling-Initial-Content (SP2) nicht mehr unterstützt {#json-comments-no-longer-supported-in-sling-initial-content}
 
-Dieses Problem betrifft Entwickler von OSGi-Bundles und Administratoren, die Bundles bereitstellen, die `Sling-Initial-Content` mit JSON-Dateien verwenden.
+Dieses Problem betrifft Entwicklerinnen und Entwickler von OSGi-Bundles und Admins, die Bundles bereitstellen, die `Sling-Initial-Content` mit JSON-Dateien verwenden.
 
-Ab AEM 6.5 LTS SP2 akzeptieren JSON-Dateien, die in `Sling-Initial-Content` Bundles verwendet werden, keine Kommentare mehr (`//` oder `/* */`). Frühere AEM-Versionen akzeptierten Kommentare, weil der `javax.json` dies nachsichtig annahm. AEM 6.5 LTS SP2 aktualisierte `org.apache.sling.jcr.contentloader` auf Version 2.6.0, wodurch der JSON-Parser auf `jakarta.json` umgestellt wurde. Während die [JSON-Spezifikation (RFC 8259)](https://datatracker.ietf.org/doc/html/rfc8259) keine Syntax für Kommentare definiert, wurden diese in früheren AEM-Versionen aufgrund der Kronzeugenregelung des `javax.json` akzeptiert. Der `jakarta.json` bietet diese Erweiterung nicht an.
+Ab AEM 6.5 LTS SP2 akzeptieren JSON-Dateien, die in `Sling-Initial-Content` Bundles verwendet werden, keine Kommentare mehr (`//` oder `/* */`). Frühere AEM-Versionen akzeptierten Kommentare, da der `javax.json`-Anbieter diesbezüglich kulant war. AEM 6.5 LTS SP2 aktualisierte `org.apache.sling.jcr.contentloader` auf Version 2.6.0, wodurch der JSON-Parser auf `jakarta.json` umgestellt wurde. Während die [JSON-Spezifikation (RFC 8259)](https://datatracker.ietf.org/doc/html/rfc8259) keine Syntax für Kommentare definiert, wurden diese in früheren AEM-Versionen akzeptiert, da der `javax.json`-Anbieter diesbezüglich kulant war. Der `jakarta.json`-Anbieter bietet diese Erweiterung nicht an.
 
-Der Fehler ist stumm: Inhaltsknoten können bei der Bundle-Aktivierung nicht geladen werden, ohne dass ein Fehler für das Installationsprogramm angezeigt wird. Wenn nach dem Upgrade auf SP2 unerwartet Inhalte fehlen, überprüfen Sie die OSGi-Installationsprotokolle auf JSON-Parsing-Fehler. Um betroffene Bundles zu identifizieren, suchen Sie nach `//` oder `/* */` in JSON-Dateien, die unter `Sling-Initial-Content`-Manifestkopfzeilen aufgeführt sind.
+Der Ausfall erfolgt still: Inhaltsknoten werden bei der Bundle-Aktivierung nicht geladen, wobei im Installationsprogramm kein Fehler ausgegeben wird. Wenn nach dem Upgrade auf SP2 unerwartet Inhalte fehlen, suchen Sie im Protokoll des OSGi-Installationsprogramms nach JSON-Parsing-Fehlern. Zur Identifizierung betroffener Bundles suchen Sie in den JSON-Dateien, die unter den `Sling-Initial-Content`-Manifest-Headern aufgeführt sind, nach „`//`“ oder „`/* */`“.
 
 >[!CAUTION]
 >
-> Entfernen Sie alle Kommentare aus JSON-Dateien in Ihren `Sling-Initial-Content`-Bundles, um Fehler beim Laden von Inhalten nach dem Upgrade auf AEM 6.5 LTS SP2 zu vermeiden.
+> Entfernen Sie alle Kommentare aus JSON-Dateien in Ihren `Sling-Initial-Content`-Bundles, damit es nach dem Upgrade auf AEM 6.5 LTS SP2 nicht zu Fehlern beim Laden von Inhalten kommt.
 
 ### Installieren erforderlicher Oak-Indizes für Sites Headless-APIs{#site-headless-api}
 
