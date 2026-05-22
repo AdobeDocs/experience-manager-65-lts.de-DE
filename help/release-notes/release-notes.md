@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 02b7915e1e5554d29577e46960c072d46bcc8b0c
+source-git-commit: c87fd907f2e9b91cc7013be5c12c867fb71dbbe1
 workflow-type: tm+mt
-source-wordcount: '7695'
+source-wordcount: '7679'
 ht-degree: 97%
 
 ---
@@ -659,10 +659,10 @@ Wenn dieses Problem auftritt, wenden Sie sich an den Adobe-Kunden-Support. Zur L
 
 ## Enthaltene OSGi- und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
-In den nachfolgenden Textdokumenten sind die in dieser [!DNL Experience Manager] 6.5. LTS, Service Pack 2 enthaltenen OSGi-Pakete und Inhaltspakete aufgeführt: <!-- UPDATE FOR EACH NEW RELEASE -->
+Die folgenden ZIP-Dateien enthalten die Textdokumente, die die in dieser Experience Manager 6.5 LTS Service Pack-Version enthaltenen OSGi-Bundles und Inhaltspakete auflisten:
 
-* [Liste der in Experience Manager 6.5 LTS, Service Pack 2 enthaltenen OSGi-Pakete](/help/release-notes/assets/65lts_sp2_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Liste der in Experience Manager 6.5 LTS, Service Pack 2 enthaltenen Inhaltspakete](/help/release-notes/assets/65lts_sp2_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [OSGi-Bundles](/help/release-notes/assets/65lts_sp2_bundles.zip)
+* [Inhaltspakete](/help/release-notes/assets/65lts_sp2_packages.zip)
 
 ## Eingeschränkte Websites{#restricted-sites}
 
