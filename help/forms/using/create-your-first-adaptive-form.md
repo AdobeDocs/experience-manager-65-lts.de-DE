@@ -7,8 +7,8 @@ role: Admin, User, Developer
 exl-id: caa79def-4a29-4746-9a35-c362ea1c3c0c
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 97%
+source-wordcount: '1007'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ Die Website wird mit Adobe Experience Manager (AEM) ausgeführt und verwendet AE
 
 ### Voraussetzung {#prerequisite}
 
-* Richten Sie eine [AEM-Autoreninstanz ein](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html?lang=de#author-and-publish-installs)
+* Richten Sie eine [AEM-Autoreninstanz ein](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Installieren Sie das [AEM Forms-Add-On](../../forms/using/installing-configuring-aem-forms-osgi.md) auf der Autoreninstanz.
 * Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Die Beispiele im Tutorial basieren auf einer [!DNL MySQL]-Datenbank und verwenden [!DNL Oracle's] [MySQL JDBC-Datenbanktreiber](https://dev.mysql.com/downloads/connector/j/5.1.html).
 

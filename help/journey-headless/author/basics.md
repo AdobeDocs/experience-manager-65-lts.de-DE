@@ -7,8 +7,8 @@ role: Admin,Developer,User,Leader
 exl-id: 20ff7c83-0882-454e-a8f5-9eda1724cfe3
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 100%
+source-wordcount: '1698'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ Dieser Artikel baut auf diesen auf, damit Sie verstehen, wie Sie eigene Inhalte 
 
 ## Grundlegende Handhabung {#basic-handling}
 
-Bevor Sie mit Inhaltsfragmenten umgehen, hier eine (sehr) kurze Einführung in die Verwendung von AEM...aber nichts ersetzt das Erlebnis, sich anzumelden und zu versuchen, das System zu verwenden.
+Bevor Sie mit Inhaltsfragmenten umgehen, hier eine (sehr) kurze Einführung in die Verwendung von AEM….. Nichts ersetzt jedoch das Erlebnis, sich anzumelden und zu versuchen, das System zu verwenden.
 
 ### Authoring und Veröffentlichen {#author-preview-publish}
 
@@ -204,7 +204,7 @@ Inhaltsfragmentmodelle sind für Ihre Inhaltsfragmente von entscheidender Bedeut
 
   Dies ist ziemlich offensichtlich, da es sich um eine Registerkarte im Editor handelt.
 
-  Inhaltsfragmente sind in AEM seit einigen Versionen verfügbar. Ursprünglich wurden sie für die „traditionelle“ Verwendung beim Authoring von Seiten zur Verfügung gestellt...und werden weiterhin in diesem Zusammenhang verwendet. Dazu kann es gehören, Assets (z. B. Bilder) zuzuordnen, die zwar nicht in das Fragment eingebettet sind, die aber für die Autorin bzw. den Autor beim Verfassen einer Seite verfügbar sein müssen.
+  Inhaltsfragmente sind in AEM seit einigen Versionen verfügbar. Ursprünglich wurden sie für die „traditionelle“ Verwendung beim Erstellen von Seiten …. und werden weiterhin in diesem Kontext verwendet. Dazu kann es gehören, Assets (z. B. Bilder) zuzuordnen, die zwar nicht in das Fragment eingebettet sind, die aber für die Autorin bzw. den Autor beim Verfassen einer Seite verfügbar sein müssen.
 
 * **Vorschau**
 

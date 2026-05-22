@@ -7,8 +7,8 @@ role: Admin, Developer
 exl-id: 47e73efa-997d-44d9-bb41-6f550eac137a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 100%
+source-wordcount: '1281'
+ht-degree: 99%
 
 ---
 
@@ -124,7 +124,7 @@ Nachfolgend finden Sie [zusätzliche Ressourcen](#additional-resources) mit weit
 Im Folgenden finden Sie einige zusätzliche Ressourcen, die näher auf einige der in diesem Dokument erwähnten Konzepte eingehen.
 
 * [Headful und Headless in AEM](/help/sites-developing/headful-headless.md) – eine Beschreibung der verschiedenen in AEM verfügbaren Bereitstellungsmodelle
-* [SPA-Einführung und exemplarische Vorgehensweise.](/help/sites-developing/spa-walkthrough.md) – eine Einführung zu SPAs in AEM
+* [SPA-Einführung und exemplarische Vorgehensweise.](/help/sites-developing/spa-walkthrough.md) - Eine gute Einführung in die SPA in AEM
 * [Entwickeln von SPAs für AEM](/help/sites-developing/spa-architecture.md) – Orientierungshilfe für die Entwicklung von SPAs für AEM
 * [SPA-Editor – Überblick](/help/sites-developing/spa-overview.md) – Details zur Funktionsweise des SPA-Editors
 * [SPA-Referenzdokumente](/help/sites-developing/spa-reference-materials.md): JavaScript-API-Referenzen und Links zu den Open-Source-AEM-SPA-GitHub-Projekten
