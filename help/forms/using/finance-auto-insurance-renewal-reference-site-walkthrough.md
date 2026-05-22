@@ -11,7 +11,7 @@ role: User, Developer
 exl-id: 3f9f1a20-9029-4e30-9c9d-ef452512f7e9
 source-git-commit: c0bf6864bb344e582c4f88371c892d401ce2827c
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '747'
 ht-degree: 48%
 
 ---
@@ -24,7 +24,7 @@ Die `We.Finance`-Website ist eine Website für Finanzdienstleistungen, auf der S
 
 Lesen Sie eine detaillierte Anleitung eines Anwendungsfalls zur `We.Finance` Kfz-Versicherung, die zeigt, wie AEM Forms und seine Integration mit Microsoft® Dynamics dazu beitragen, das Kundenerlebnis in einem Finanzdienstleistungsunternehmen zu personalisieren. Die interaktive Anleitung hat das Ziel, die Implementierung komplexer digitaler Transaktionen und Kundenkommunikationen in einem Finanzunternehmen zu erleichtern.
 
-**Das Ganze beginnt mit dem Benutzerszenario:** 
+**Das Ganze beginnt mit dem Benutzerszenario:**
 
 Sarah Rose ist bereits `We.Finance` Kunde und hat eine Kfz-Versicherungspolice erworben. Nun ist es wie jedes Jahr an der Zeit, dass Sarah ihre Versicherungspolice erneuert. Gloria Rios ist ihre Versicherungsagentin. Die `We.Finance`-Website sendet eine E-Mail, die Sarah an die Erneuerung ihrer Police erinnert. Sarah befolgt die Anweisungen in der E-Mail und schließt den Prozess erfolgreich ab.
 

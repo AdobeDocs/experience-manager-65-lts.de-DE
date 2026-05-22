@@ -7,7 +7,7 @@ role: Admin, Developer
 exl-id: 8837e7cd-c949-46cc-9c39-3c7a82cc1daf
 source-git-commit: 84ef35149332330e040b8d94cae151708e3c6829
 workflow-type: tm+mt
-source-wordcount: '1801'
+source-wordcount: '1909'
 ht-degree: 99%
 
 ---
@@ -59,7 +59,7 @@ Git wird für die Versionskontrolle verwendet sowie dazu, die Änderungen in Clo
 
 AEM verwendet Apache Maven zum Erstellen von Projekten, die aus dem AEM-Maven-Projektarchetyp generiert wurden. Alle wichtigen IDEs bieten Integrationsunterstützung für Maven.
 
-Node.js ist eine JavaScript-Laufzeitumgebung, die zum Arbeiten mit den Frontend-Assets des `ui.frontend`-Unterprojekts eines AEM-Projekts verwendet wird. Node.js wird mit npm verteilt, dem tatsächlichen Package Manager von Node.js, der zur Verwaltung von JavaScript-Abhängigkeiten verwendet wird.
+Node.js ist eine JavaScript-Laufzeitumgebung, die zum Arbeiten mit den Frontend-Assets des `ui.frontend`-Unterprojekts eines AEM-Projekts verwendet wird. Node.js wird mit npm verteilt, dem tatsächlichen Paket-Manager von Node.js, der zur Verwaltung von JavaScript-Abhängigkeiten verwendet wird.
 
 ## Komponenten eines AEM-Systems auf einen Blick {#components-of-an-aem-system-at-a-glance}
 
