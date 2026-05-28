@@ -1,17 +1,13 @@
 ---
 title: Tastaturbefehle für Konsolen in AEM
 description: Mit diesen Tastaturbefehlen sparen Sie Zeit bei der Seitenerstellung.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: bff562ff-bf0e-4f56-afd2-77907ec01e2c
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 2e9786117c4a8b3026f7f3109b5a49ce188b119a
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '386'
 ht-degree: 100%
 
 ---
@@ -40,7 +36,7 @@ Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Commerce�
 | Konsolen | `?` | Hilfe zu Tastaturbefehlen |
 |  | `/` | Aufrufen der [Suche](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Umschalten zwischen den anzuzeigenden [Schienenauswahloptionen](/help/sites-authoring/basic-handling.md#rail-selector) |
-|  | ``` ` ``` | Ausblenden der Schiene |
+|  | `` ` `` | Ausblenden der Schiene |
 |  | `e` | Bearbeiten |
 |  | `p` | Eigenschaften |
 |  | `m` | Verschieben |

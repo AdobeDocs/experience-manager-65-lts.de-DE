@@ -6,10 +6,10 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 exl-id: a9790625-af8d-4416-b96f-4724a025260b
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: a053ca75d106025fcfeb63ac5ba3c95283861e7e
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 93%
+source-wordcount: '1034'
+ht-degree: 91%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 93%
 
 Um es Unternehmen zu ermöglichen, sichere E-Mail-Anforderungen zu erfüllen, bietet AEM Forms OAuth 2.0-Unterstützung für die Integration mit Microsoft® Office 365-Mailserver-Protokollen. Sie können den OAuth 2.0-Authentifizierungsdienst von Azure Active Directory (Azure AD) verwenden, um sich mit verschiedenen Protokollen wie IMAP, POP oder SMTP zu verbinden und auf die E-Mail-Daten von Office 365-Benutzenden zuzugreifen. Nachfolgend finden Sie eine schrittweise Anleitung zur Konfiguration der Microsoft® Office 365-Mailserver-Protokolle für die Authentifizierung über den OAuth 2.0-Dienst:
 
-1. Melden Sie sich unter [https://portal.azure.com/](https://portal.azure.com/) an, suchen Sie in der Suchleiste nach **Azure Active Directory** und klicken Sie auf das Ergebnis.
-Alternativ können Sie direkt zu [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) navigieren
+1. Melden Sie sich bei [https://portal.azure.com/](https://portal.azure.com/) an, suchen Sie in der **nach**&#x200B;Azure Active Directory, und klicken Sie auf das Ergebnis.
+Alternativ können Sie direkt zu [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview navigieren](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Klicken Sie auf **Hinzufügen** > **App-Registrierung** > **Neue Registrierung**.
 
    ![App-Registrierung](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
@@ -72,7 +72,7 @@ Als Nächstes müssen Sie den Autorisierungs-Code generieren, wie in den folgend
 
 1. Öffnen Sie die folgende URL im Browser, nachdem Sie `clientID` durch `<client_id>` und `redirect_uri` durch den Redirect-URI Ihrer Anwendung ersetzt haben:
 
-   ```https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login```
+   `https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
    >[!NOTE]
    >
