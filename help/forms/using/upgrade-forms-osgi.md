@@ -6,10 +6,10 @@ role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: b7aa877f9e782b0568adc7baa440dc630c690454
+source-git-commit: b5db6129e83dd7a54516707bbdb8864dc709d54b
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 47%
+source-wordcount: '1615'
+ht-degree: 44%
 
 ---
 
@@ -93,12 +93,12 @@ Führen Sie nach dem Upgrade auf das Service Pack AEM Forms 6.5.22.0 die folgend
 
    >[!NOTE]
    >
-   >In AEM 6.4 Forms hat sich die Struktur des crx-Repository geändert. Verwenden Sie nach dem Upgrade auf AEM 6.5 Forms die geänderten Pfade für die Anpassung, die Sie neu erstellen. Sie finden die vollständige Liste der geänderten Pfade unter [Forms Repository-Restrukturierung in AEM](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
+   >In AEM 6.4 Forms hat sich die Struktur des crx-Repository geändert. Verwenden Sie nach dem Upgrade auf AEM 6.5 Forms die geänderten Pfade für die Anpassung, die Sie neu erstellen. Sie finden die vollständige Liste der geänderten Pfade unter [Forms Repository-Restrukturierung in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
 
 
 ## Bereitstellen von AEM unter JBoss EAP 8 (Windows)
 
-### Übersicht
+### Überblick
 
 Dieses Handbuch enthält schrittweise Anweisungen zur Bereitstellung von Adobe Experience Manager (AEM) als eigenständige OSGi-WAR-Datei auf JBoss Enterprise Application Platform (EAP) 8 in einer Windows-Umgebung mit JDK 21.
 
@@ -133,7 +133,7 @@ Stellen Sie vor Beginn des Bereitstellungsprozesses sicher, dass Ihre Umgebung d
 2. Notieren Sie sich diesen Ordnerpfad, der in diesem Handbuch `<JBOSS_HOME>` wird.
 
    **Beispiel:**\
-   ```C:\jboss-eap-8.0```
+   `C:\jboss-eap-8.0`
 
 ### Schritt 2: AEM-WAR-Datei vorbereiten
 
@@ -287,7 +287,7 @@ Komprimieren Sie nach Abschluss aller Konfigurationsänderungen die WAR-Datei ne
    ```
 
    **Beispiel:**
-   ```C:\jboss-eap-8.0\standalone\deployments```
+   `C:\jboss-eap-8.0\standalone\deployments`
 
 #### JVM-Einstellungen konfigurieren (optional, aber empfohlen)
 
@@ -318,7 +318,7 @@ Bevor Sie JBoss starten, konfigurieren Sie JVM-Speichereinstellungen:
    ```
 
    **Beispiel:**
-   ```cmd cd C:\jboss-eap-8.0\bin```
+   `cmd cd C:\jboss-eap-8.0\bin`
 
 1. Starten Sie den JBoss-Server:
 
@@ -343,7 +343,7 @@ Deployed "cq-quickstart.war" (runtime-name : "cq-quickstart.war")
 Sobald die Bereitstellung abgeschlossen ist und AEM vollständig gestartet wurde:
 
 **AEM-Autoren-URL:**
-```http://<server-ip>:8080/cq-quickstart```
+`http://<server-ip>:8080/cq-quickstart`
 
 **Standardanmeldeinformationen:**
 

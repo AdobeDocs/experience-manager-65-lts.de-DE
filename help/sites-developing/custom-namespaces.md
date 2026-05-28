@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie benutzerdefinierte Namespaces definieren und 
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,JCR
 role: Developer
-source-git-commit: 31d67c5b9bff651077df5a497e5c318b86a48158
+source-git-commit: 475a77e8e4ff0ecd19a939fd3b3c9294adf24997
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 66%
@@ -14,7 +14,7 @@ ht-degree: 66%
 
 # Benutzerdefinierte Namespaces{#custom-namespaces}
 
-Erfahren Sie, wie Sie benutzerdefinierte [&#x200B; (Namespaces) definieren und &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/4.5_Namespaces.html) AEM 6.5 LTS bereitstellen.
+Erfahren Sie, wie Sie benutzerdefinierte [ (Namespaces) definieren und ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/4.5_Namespaces.html) AEM 6.5 LTS bereitstellen.
 
 Benutzerdefinierte Namespaces sind der optionale Teil einer JCR-Eigenschaft vor einem Doppelpunkt (`:`). AEM verwendet verschiedene Namespaces, z. B.:
 
@@ -29,11 +29,11 @@ Namespaces können verwendet werden, um den Umfang und den Zweck einer Eigenscha
 
 Benutzerdefinierte Namespaces werden in [Sling Repository Initialization (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html)-Skripten verwaltet und als OSGi-Konfigurationen im Konfigurationspaket Ihres Projekts bereitgestellt (z. B. `ui.config`).
 
-## Ressourcen
+## Ressourcen {#resources}
 
 + [Dokumentation zur Sling Repository-Initialisierung (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios)
 
-## Code
+## Code {#code}
 
 Der folgende Code wird zum Konfigurieren eines `wknd`-Namespace verwendet.
 
