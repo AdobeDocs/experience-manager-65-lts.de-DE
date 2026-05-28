@@ -14,7 +14,7 @@ ht-degree: 66%
 
 # Benutzerdefinierte Namespaces{#custom-namespaces}
 
-Erfahren Sie, wie Sie benutzerdefinierte [ (Namespaces) definieren und ](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/4.5_Namespaces.html) AEM 6.5 LTS bereitstellen.
+Erfahren Sie, wie Sie benutzerdefinierte [&#x200B; (Namespaces) definieren und &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/4.5_Namespaces.html) AEM 6.5 LTS bereitstellen.
 
 Benutzerdefinierte Namespaces sind der optionale Teil einer JCR-Eigenschaft vor einem Doppelpunkt (`:`). AEM verwendet verschiedene Namespaces, z. B.:
 
