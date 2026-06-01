@@ -9,10 +9,10 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: eb4c7e2afa28c5bd5bdf9c38fe44143a71abd1fc
+source-git-commit: aed08dbb5afd7aefb07716ff5dbbff7265c208e5
 workflow-type: tm+mt
-source-wordcount: '3184'
-ht-degree: 92%
+source-wordcount: '3156'
+ht-degree: 91%
 
 ---
 
@@ -80,10 +80,10 @@ Adobe empfiehlt die folgenden Konfigurationen und bietet vollständige oder eing
 
 >[!NOTE]
 >
->Um Kunden und Kundinnen von AEM Forms dabei zu helfen, die Nutzungskosten zu reduzieren, die Bereitstellungsarchitektur zu vereinfachen und den Entwicklungs-Stack zu modernisieren, wird die Enterprise-Plattform Adobe Experience Manager von Anwendungsserver-basierten Bereitstellungen auf eigenständige OSGi-basierte Bereitstellungen umgestellt. Adobe unterstützt weiterhin den JEE-Stack von AEM Forms mit einer reduzierten Matrix von Infrastrukturkomponenten.
->Bei neuen Installationen wird empfohlen, AEM Forms möglichst auf dem modernen OSGi-Stack bereitzustellen, um die neuesten Innovationen für responsive Adaptive Forms für mobile, mehrkanalige interaktive Kommunikation und Backend-Datenintegrationen mithilfe des Formulardatenmodells optimal zu nutzen.
+>Um AEM Forms-Kunden dabei zu helfen, die Nutzungskosten zu senken, die Bereitstellungsarchitektur zu vereinfachen und den Entwicklungs-Stack zu modernisieren, wird die Adobe Experience Manager-Unternehmensplattform von Anwendungsserver-basierten Bereitstellungen auf eigenständige OSGi-basierte Bereitstellungen umgestellt. Adobe unterstützt weiterhin den JEE-Stack von AEM Forms mit einer reduzierten Matrix von Infrastrukturkomponenten.
+>Bei Neuinstallationen wird empfohlen, AEM Forms nach Möglichkeit auf dem modernen OSGi-Stack bereitzustellen, um die neuesten Innovationen für responsive Adaptive Forms für mobile, interaktive Mehrkanal-Kommunikation und Backend-Datenintegrationen mithilfe des Formulardatenmodells zu verwenden.
 >
->Adobe erkennt an, dass bestehende Benutzerinnen und Benutzer AEM Forms on JEE Stack weiterhin bereitstellen müssen. In solchen Fällen erfordert Adobe die Bereitstellung von AEM Forms JEE auf unterstützter Infrastruktur, wie in dieser Dokumentation beschrieben. Wenn Sie ein Upgrade auf AEM 6.5 Forms durchführen und eine nicht unterstützte Plattform aus der vorherigen AEM Forms-Version verwenden, können Sie sich an den Adobe-Support wenden, um Hilfe beim Upgrade auf eine unterstützte Plattform zu erhalten.
+>Adobe erkennt an, dass bestehende Benutzerinnen und Benutzer AEM Forms on JEE Stack weiterhin bereitstellen müssen. In solchen Fällen erfordert Adobe die Bereitstellung von AEM Forms JEE auf unterstützter Infrastruktur, wie in dieser Dokumentation beschrieben. Wenn Sie ein Upgrade auf AEM 6.5 Forms durchführen und eine nicht unterstützte Plattform aus der vorherigen Version von AEM Forms verwenden, können Sie sich an den Adobe Support wenden, um Hilfe beim Upgrade auf eine unterstützte Plattform zu erhalten.
 
 ### Java™ Virtual Machines (JVM) {#java-virtual-machines-jvm}
 
@@ -155,7 +155,7 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
   </tr>
   <tr>
    <td><p>Microsoft® SQL Server 2022 </p> </td>
-   <td><p>-</p> </td>
+   <td><p>–</p> </td>
    <td><p>Unterstützt</p> </td>
   </tr>
   <tr>
@@ -245,7 +245,7 @@ Adobe Experience Manager Forms erfordert eine Java™ Virtual Machine, die durch
    <td><p>Nebenversionen, kumulative Updates und wichtige Updates</p> </td>
   </tr>
   <tr>
-   <td><p>Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64-Bit)</td>
+   <td><p>Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 Bit)</td>
    <td><p>A: Unterstützt</p> </td>
    <td><p>Nebenversionen, kumulative Updates und wichtige Updates</p> </td>
   </tr>
@@ -272,6 +272,11 @@ Sie können AEM Forms on JEE auf einem physischen Computer oder in einer virtuel
   </tr>
   <tr>
    <td><p>Microsoft® Windows® 10 64-Bit</p> </td>
+   <td>E: Funktionsfähigkeit wird erwartet</td>
+   <td><p>Service Pack und wichtige Updates</p> </td>
+  </tr>
+  <tr>
+   <td><p>Microsoft® Windows® 11 64-Bit</p> </td>
    <td>E: Funktionsfähigkeit wird erwartet</td>
    <td><p>Service Pack und wichtige Updates</p> </td>
   </tr>
@@ -491,6 +496,10 @@ Für zusätzliche Anforderungen siehe:
   </tr>
   <tr>
    <td><p>Microsoft® Windows® 10 (Enterprise, Pro, Basic)</p> <p>32-Bit- oder 64-Bit-Version</p> <p> </p> </td>
+   <td>Service Packs und wichtige Updates</td>
+  </tr>
+  <tr>
+   <td><p>Microsoft® Windows® 11 (Enterprise, Pro, Basic)</p> <p>64-Bit-Version</p> <p> </p> </td>
    <td>Service Packs und wichtige Updates</td>
   </tr>
   <tr>
