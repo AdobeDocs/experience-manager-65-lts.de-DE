@@ -12,7 +12,7 @@ role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
 source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1153'
 ht-degree: 80%
 
 ---
@@ -37,7 +37,7 @@ Bevor Sie mit dem Upgrade beginnen, ist es wichtig, die folgenden Wartungsaufgab
 
 ## Indexdefinitionen {#index-definitions}
 
-Vergewissern Sie sich, dass Sie die erforderlichen Indexdefinitionen installiert haben, die mit dem neuesten AEM 6.5 Service Pack veröffentlicht wurden. (Weitere Informationen finden Sie unter [Versionshinweise &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/release-notes/release-notes) AEM 6.5 Service Pack .)
+Vergewissern Sie sich, dass Sie die erforderlichen Indexdefinitionen installiert haben, die mit dem neuesten AEM 6.5 Service Pack veröffentlicht wurden. (Weitere Informationen finden Sie unter [Versionshinweise ](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/release-notes/release-notes) AEM 6.5 Service Pack .)
 
 ## Überprüfung auf ausreichenden Festplattenspeicher {#ensure-sufficient-disk-space}
 

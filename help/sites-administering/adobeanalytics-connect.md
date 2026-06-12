@@ -12,7 +12,7 @@ role: Admin
 exl-id: a39ed93e-4276-48ff-ba49-d0f630409222
 source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1487'
+source-wordcount: '1491'
 ht-degree: 98%
 
 ---
@@ -196,16 +196,17 @@ Siehe [Anzeigen von Seitenanalysedaten](/help/sites-authoring/page-analytics-usi
 
 Konfigurieren Sie die entsprechende Instanz des Dienstes **Adobe AEM Analytics Report Sling Importer**:
 
-* **Abrufversuche**: 
+* **Abrufversuche**:
 Anzahl der Versuche, einen Bericht in der Warteschlange abzurufen.
 Der Standardwert lautet `6`.
 
-* **Abrufverzögerung**: 
-Die Anzahl der Millisekunden zwischen den Versuchen, einen Bericht in der Warteschlange abzurufen.
-Der Standardwert lautet `10000`. Da dies in Millisekunden angegeben wird, entspricht es 10 Sekunden.
+* **Abrufverzögerung**:
+Die Anzahl der Millisekunden zwischen Versuchen, einen Bericht in der Warteschlange abzurufen.
+Der Standardwert lautet `10000`. Da dies in Millisekunden geschieht, entspricht es 10 Sekunden.
 
-* **Abrufhäufigkeit**:Ein Ausdruck `cron` zum Bestimmen der Häufigkeit für das Abrufen des Analyseberichts.
-Der Standardwert ist `0 0 0/12 * * ?`, was 12 Abrufen pro Stunde entspricht.
+* **Abrufhäufigkeit**:
+Ein `cron` Ausdruck, um die Häufigkeit des Abrufs des Analytics-Berichts zu bestimmen.
+Der Standardwert ist `0 0 0/12 * * ?`. Dies entspricht 12 Abrufen pro Stunde.
 
 Zum Konfigurieren dieses OSGi-Service können Sie entweder die [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder einen [osgiConfig-Knoten im Repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) verwenden (die Service-PID lautet `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
 

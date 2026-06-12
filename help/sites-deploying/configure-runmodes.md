@@ -7,8 +7,8 @@ role: Admin
 exl-id: b21555f2-bc07-4653-a5da-966b9aa7ea1f
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 96%
+source-wordcount: '683'
+ht-degree: 92%
 
 ---
 
@@ -57,7 +57,7 @@ Sie können auch eigene, benutzerdefinierte Ausführungsmodi erstellen. Diese k�
 
 * `publish` + `intranet`
 
-* nach Bedarf ...
+* nach Bedarf . . .
 
 Benutzerdefinierte Ausführungsmodi können auch bei jedem Start ausgewählt werden.
 
@@ -102,10 +102,10 @@ Diese Ordner sich vom Typ `nt:folder` und sollten das entsprechende Bundle entha
 
 Wenn Sie Konfigurationen für mehrere Ausführungsmodi definiert haben, müssen Sie definieren, welcher beim Start verwendet werden soll. Es gibt mehrere Methoden, um festzulegen, welcher Ausführungsmodus verwendet werden soll. Die Reihenfolge der Auflösung lautet:
 
-1. [Systemeigenschaften (](#using-a-system-property-in-the-start-script)
-1. [&#128279;](#using-the-sling-properties-file)
-1. [&#128279;](#using-the-r-option)
-1. [Erkennung von Dateinamen &#x200B;](#filename-detection-renaming-the-jar-file)
+1. [Systemeigenschaften (`-D`)](#using-a-system-property-in-the-start-script)
+1. [Datei `sling.properties`](#using-the-sling-properties-file)
+1. [`-r`](#using-the-r-option)
+1. [Erkennung von Dateinamen](#filename-detection-renaming-the-jar-file)
 
 Wenn Sie einen Anwendungsserver verwenden, können Sie auch [den Ausführungsmodus in web.xml](#defining-the-run-mode-in-web-xml-with-application-server) definieren.
 
@@ -123,7 +123,7 @@ Mit der Datei `sling.properties` können Sie den erforderlichen Ausführungsmodu
 
 ### Verwenden der -r-Option {#using-the-r-option}
 
-Beim Ausführen des Schnellstarts können Sie mit der `-r`-Option einen benutzerdefinierten Ausführungsmodus aktivieren. Beispielsweise können Sie folgenden Befehl verwenden, um eine AEM-Instanz mit dem dev-Ausführungsmodus zu starten. &grave;&grave;
+Beim Ausführen des Schnellstarts können Sie mit der `-r`-Option einen benutzerdefinierten Ausführungsmodus aktivieren. Verwenden Sie beispielsweise den folgenden Befehl, um eine AEM-Instanz mit dem Ausführungsmodus dev zu starten. ``
 
 ```shell
 java -jar cq-56-p4545.jar -r dev

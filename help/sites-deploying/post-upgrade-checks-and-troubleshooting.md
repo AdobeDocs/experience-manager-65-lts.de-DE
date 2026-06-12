@@ -12,7 +12,7 @@ role: Admin
 exl-id: 8b3d8d0f-10f7-4736-881d-8f1f21c69182
 source-git-commit: a037dc7cbb13abfeb8a7289baded50d3d788cbf6
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1196'
 ht-degree: 80%
 
 ---
@@ -103,7 +103,7 @@ Dieser Abschnitt enthält einige Problemszenarien, die möglicherweise im Zuge d
 
 ### Fehlerhafte Aktualisierung von Paketen  {#packages-and-bundles-fail-to-update}
 
-Wenn Pakete während des Upgrades nicht installiert werden können, werden die darin enthaltenen Pakete ebenfalls nicht aktualisiert. Diese Kategorie von Problemen geht auf eine Fehlkonfiguration des Datenspeichers zurück.  Sie werden auch als **ERROR**- und **WARN**-Meldungen in der Datei error.log angezeigt. Da in den meisten dieser Fälle die Standardanmeldung möglicherweise nicht funktioniert, können Sie CRXDE direkt verwenden, um die Konfigurationsprobleme zu untersuchen und zu finden.
+Wenn Pakete während des Upgrades nicht installiert werden können, werden die darin enthaltenen Pakete ebenfalls nicht aktualisiert. Diese Kategorie von Problemen geht auf eine Fehlkonfiguration des Datenspeichers zurück. Sie werden auch als **ERROR**- und **WARN**-Meldungen in der Datei error.log angezeigt. Da in den meisten dieser Fälle die Standardanmeldung möglicherweise nicht funktioniert, können Sie CRXDE direkt verwenden, um die Konfigurationsprobleme zu untersuchen und zu finden.
 
 ### Upgrade wurde nicht ausgeführt {#the-upgrade-did-not-run}
 
@@ -123,7 +123,7 @@ Falls Ihre benutzerdefinierten Bundles nicht in den aktiven Status wechseln, lie
 
 Es empfiehlt sich außerdem zu überprüfen, ob die Änderung, die das Problem verursacht hat, erforderlich war, und sie zurückzusetzen, wenn dies nicht der Fall ist. Überprüfen Sie zudem, ob die Version des Paketexports unter Beachtung einer strengen semantischen Versionierung mehr als nötig erhöht wurde.
 
-### Analysieren der Dateien „error.log“ und „upgrade.log“   {#analyzing-the-error.log-and-upgrade.log}
+### Analysieren der Dateien „error.log“ und „upgrade.log“ {#analyzing-the-error.log-and-upgrade.log}
 
 In den meisten Situationen müssen die Protokolle auf Fehler untersucht werden, um die Ursache eines Problems zu ermitteln. Bei Upgrades ist es jedoch ebenfalls erforderlich, Abhängigkeitsfehler zu überwachen, da alte Bundles möglicherweise nicht ordnungsgemäß aktualisiert werden.
 
