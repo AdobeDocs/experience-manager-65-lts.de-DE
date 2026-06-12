@@ -77,7 +77,7 @@ Mithilfe der Repository-Service-API können Sie die folgenden Aufgaben ausführe
 
 >[!NOTE]
 >
->Weitere Informationen über den Repository-Dienst finden Sie unter [Dienstereferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Repository-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Erstellen eines Ordners {#creating-folders}
 
@@ -87,7 +87,7 @@ Dateien erben Zugriffssteuerungslisten (ACLs) aus Ordnern, und Unterordner erben
 
 >[!NOTE]
 >
->Weitere Informationen über den Repository-Dienst finden Sie unter [Dienstereferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Repository-Dienst finden Sie in der [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -218,7 +218,7 @@ Sie können Ressourcen programmgesteuert schreiben, indem Sie die Java-API des R
 
 >[!NOTE]
 >
->Weitere Informationen über den Repository-Dienst finden Sie unter [Dienstereferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Repository-Dienst finden Sie in [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-1}
 
@@ -371,7 +371,7 @@ Auflisten von Ressourcen funktioniert nach Beziehung: Ressourcen sind Mitglieder
 
 >[!NOTE]
 >
->Weitere Informationen über den Repository-Dienst finden Sie unter [Dienstereferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Forms-Dienst finden Sie in [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-2}
 
@@ -488,7 +488,7 @@ Sie können Ressourcen programmgesteuert lesen, indem Sie die Java-API des Repos
 
 >[!NOTE]
 >
->Weitere Informationen über den Repository-Dienst finden Sie unter [Dienstereferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Repository-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-3}
 
@@ -598,7 +598,7 @@ Sie können Ressourcen programmgesteuert aktualisieren, indem Sie die Java-API d
 
 >[!NOTE]
 >
->Weitere Informationen über den Repository-Dienst finden Sie unter [Dienstereferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen über den Repository-Dienst finden Sie unter [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-4}
 
@@ -655,7 +655,7 @@ Aktualisieren einee Ressource mithilfe der Repository Service API (Java):
 
 1. Aktualisieren der Ressource
 
-   Aktualisieren der `Resource`-Objektinformationen. In diesem Beispiel rufen Sie zur Aktualisierung der Beschreibung die Methode `setDescription` des `Resource`-Objekts auf und übergeben die neue Beschreibungszeichenfolge als Parameter.
+   Aktualisieren Sie die `Resource`-Objektinformationen. In diesem Beispiel rufen Sie zur Aktualisierung der Beschreibung die Methode `setDescription` des `Resource`-Objekts auf und übergeben die neue Beschreibungszeichenfolge als Parameter.
 
    Rufen Sie dann das `ServiceClientFactory`-Objekt `updateResource` und übergeben Sie die folgenden Parameter:
 
@@ -727,7 +727,7 @@ Dann rufen Sie die `searchProperties`-Methode des `ResourceRepositoryClient`-Obj
 
 >[!NOTE]
 >
->Weitere Informationen über den Repository-Dienst finden Sie unter [Dienstereferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen über den Repository-Dienst finden Sie unter [Dienste-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-5}
 
@@ -867,7 +867,7 @@ Sie können Beziehungen zwischen Ressourcen programmgesteuert angeben, indem Sie
 
 >[!NOTE]
 >
->Weitere Informationen über den Repository-Dienst finden Sie unter [Dienstereferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Repository-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-6}
 

@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: f27b595b-24eb-444c-a598-6f70c59ed8fc
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2354'
-ht-degree: 100%
+source-wordcount: '2419'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ Siehe auch [Unterstützte 3D-Formate](/help/assets/assets-formats.md).
 | GLB | Binäre GL-Übertragung | model/gltf-binary | Umfasst die Materialien und Texturen als ein Asset. |
 | OBJ | WaveFront 3D-Objektdatei | application/x-tgif |  |
 | STL | Stereolithografie | application/vnd.ms-pki.stl |  |
-| USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | *Nur Erfassung unterstützt, keine Anzeige oder Interaktion möglich.* USDZ ist ein proprietäres 3D-Format, das von Safari- and iOS-Endgeräten nativ angezeigt werden kann. |
+| USDZ | Universelles Scene Description-Zip-Archiv | model/vnd.usdz+zip | *Unterstützung nur für die Aufnahme; keine Anzeige oder Interaktion verfügbar.* USDZ ist ein proprietäres 3D-Format, das von Safari- und iOS-Geräten nativ angezeigt werden kann. |
 
 >[!NOTE]
 >
@@ -152,7 +152,7 @@ Siehe auch [Vorschau von Assets über die Software-Schnittstelle](/help/assets/p
    * Löschen Sie `/editor.html` aus der Seiten-URL im Browser.
 
    ![3D-Asset, das innerhalb der 3D-Medien-Komponente angezeigt wird](/help/assets/assets-dm/3d-asset-in-3d-media.png)
-Ein vollständig interaktives 3D-Asset, wie im **[!UICONTROL Vorschaumodus]** angezeigt.
+Ein vollständig interaktives 3D-Asset, wie im **[!UICONTROL Vorschau]**-Modus angezeigt.
 
 1. Führen Sie im **[!UICONTROL Vorschaumodus]** einen der folgenden Schritte aus:
 

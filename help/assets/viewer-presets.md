@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 23c04c7e-3321-4eae-8067-ca23adefa9f6
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 100%
+source-wordcount: '211'
+ht-degree: 75%
 
 ---
 
@@ -24,8 +24,8 @@ Wenn Sie Administrator sind und Viewer-Vorgaben verwalten, erstellen, sortieren 
 
 Siehe auch [Veröffentlichen von Viewer-Vorgaben](managing-viewer-presets.md#publishing-viewer-presets).
 
-Je nach Veröffentlichungsmodus müssen Sie möglicherweise keine Viewer-Vorgaben veröffentlichen.
-Informationen zu Problemen mit Viewer-Vorgaben finden Sie unter [Problembehandlung in Dynamic Media – Scene7](troubleshoot-dms7.md#viewers).
+Je nach Veröffentlichungsmodus müssen Sie keine Viewer-Vorgaben veröffentlichen.
+Informationen zu Problemen mit Viewer-Vorgaben finden Sie unter [Problembehandlung in Dynamic Media - Scene7](troubleshoot-dms7.md#viewers).
 
 ## Anwenden von Dynamic Media-Viewer-Vorgaben auf ein Asset {#applying-a-viewer-preset-to-an-asset}
 

@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 06785380-07cc-4c8b-b11c-6005471bd058
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '970'
 ht-degree: 100%
 
 ---
@@ -48,7 +48,7 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 -->
 Gehen Sie wie folgt vor, um einen Workflow auf ein Asset anzuwenden:
 
-1. Navigieren Sie zum Speicherort des Assets, für das Sie einen Workflow beginnen möchten, und klicken Sie auf das Asset, um die Asset-Seite zu öffnen. Wählen Sie **[!UICONTROL Zeitleiste]** aus dem Menü aus, um die Zeitleiste anzuzeigen.
+1. Navigieren Sie zum Speicherort des Assets, für das Sie einen Workflow beginnen möchten, und klicken Sie auf das Asset, um die Asset-Seite zu öffnen. Wählen Sie **[!UICONTROL Timeline]** aus dem Menü aus, um die Timeline anzuzeigen.
 
    ![timeline-1](assets/timeline.png)
 
@@ -62,13 +62,13 @@ Gehen Sie wie folgt vor, um einen Workflow auf ein Asset anzuwenden:
 
    ![Workflow auswählen, Titel eingeben und auf „Start“ klicken](assets/start-workflow.png)
 
-1. Klicken Sie auf **[!UICONTROL Start]** und dann auf **[!UICONTROL Fortfahren]**. Jeder Schritt des Workflows wird in der Zeitleiste als ein Ereignis angezeigt.
+1. Klicken Sie auf **[!UICONTROL Start]** und dann auf **[!UICONTROL Fortfahren]**. Jeder Schritt des Workflows wird in der Timeline als ein Ereignis angezeigt.
 
    ![chlimage_1-256](assets/chlimage_1-52.png)
 
 ## Anwenden eines Workflows auf mehrere Assets {#applying-a-workflow-to-multiple-assets}
 
-1. Navigieren Sie in der [!DNL Assets]-Konsole zum Speicherort der Assets, für die Sie einen Workflow starten möchten, und wählen Sie die Assets aus. Wählen Sie **[!UICONTROL Zeitleiste]** aus dem Menü aus, um die Zeitleiste anzuzeigen.
+1. Navigieren Sie in der [!DNL Assets]-Konsole zum Speicherort der Assets, für die Sie einen Workflow starten möchten, und wählen Sie die Assets aus. Wählen Sie **[!UICONTROL Timeline]** aus dem Menü aus, um die Timeline anzuzeigen.
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
