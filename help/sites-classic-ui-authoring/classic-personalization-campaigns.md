@@ -11,8 +11,8 @@ role: User
 exl-id: 86fe233e-b3fb-432e-861e-8134df2744e4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 93%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 100%
 
 Das Kampagnen-Management bietet E-Marketing-Fachleuten die Möglichkeit, personalisierte Inhalte bereitzustellen und so individuelle Erlebnisse für Besucherinnen und Besucher zu schaffen.
 
-Es bietet Ihnen die Möglichkeit, Marketing-Kampagnen für Internet, E-Mail und Mobile Services zu erstellen und so Benutzerinteraktionen auszulösen.  Sie können Inhalte erstellen, Besuchende in Segmente einteilen, zielgerichtete Inhalte an bestimmte Benutzerprofile weiterleiten und Kampagnen über mehrere Kanäle verwalten.
+Es bietet Ihnen die Möglichkeit, Marketing-Kampagnen für Internet, E-Mail und Mobile Services zu erstellen und so Benutzerinteraktionen auszulösen. Sie können Inhalte erstellen, Besuchende in Segmente einteilen, zielgerichtete Inhalte an bestimmte Benutzerprofile weiterleiten und Kampagnen über mehrere Kanäle verwalten.
 
-Dieses Dokument beschreibt die verschiedenen Elemente, aus denen Kampagnen bestehen.  Weitere Informationen finden Sie in folgenden Dokumenten:
+Dieses Dokument beschreibt die verschiedenen Elemente, aus denen Kampagnen bestehen. Weitere Informationen finden Sie in folgenden Dokumenten:
 
 * [Teaser und Strategien](/help/sites-classic-ui-authoring/classic-personalization-campaigns-teasers-strategy.md)
 * [E-Mail-Marketing](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email.md)
-* [Landing-Pages](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
+* [Landingpages](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 * [Target-Angebote](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
 * [Arbeiten mit dem Marketing Campaign Manager](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
 * [Grundlegendes zur Segmentierung](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
@@ -35,13 +35,13 @@ Dieses Dokument beschreibt die verschiedenen Elemente, aus denen Kampagnen beste
 Das Kampagnen-Management umfasst verschiedene Elemente:
 
 * **Marken**
-In Adobe Experience Manager (AEM) bilden Marken die höchste Ebene und stellen eine Sammlung von **Kampagnen** dar.
+In Adobe Experience Manager (AEM) bilden Marken die oberste Ebene und eine Sammlung von **Kampagnen**.
 
 * **Kampagnen**
-Eine Kampagne ist eine Sammlung einzelner **Erlebnisse**.
+Eine Kampagne ist eine Sammlung einzelner **Erlebnisse**.
 
 * **Erlebnisse**
-Die zielgerichteten Inhalte bilden verschiedene Erlebnisse, die Besucherinnen und Besuchern an **Touchpoints** präsentiert werden. Es gibt verschiedene Erlebnistypen:
+Der fokussierte Inhalt bildet die verschiedenen Erlebnisse, die dem Besucher auf (Touchpoints&#x200B;**präsentiert**. Es gibt verschiedene Erlebnistypen:
 
    * **Teaser**
      [Teaser-Seiten/-Absätze](#teasers) dienen dazu, bestimmte **Besuchersegmente** zu Inhalten zu leiten, die auf ihre Interessen ausgerichtet sind.
@@ -49,7 +49,7 @@ Die zielgerichteten Inhalte bilden verschiedene Erlebnisse, die Besucherinnen un
      Teaser-Seiten bieten folgende Möglichkeiten:
 
       * Präsentieren einer Optionspalette, aus der Besucherinnen und Besucher wählen können
-      * Anzeigen von nur einem Teaser-Absatz, der auf dem spezifischen Besuchersegment basiert.  Beispielsweise kann der angezeigte Teaser-Absatz vom Alter der Besucherin bzw. des Besuchers abhängen.
+      * Anzeigen von nur einem Teaser-Absatz, der auf dem spezifischen Besuchersegment basiert. Beispielsweise kann der angezeigte Teaser-Absatz vom Alter der Besucherin bzw. des Besuchers abhängen.
 
      Bei einer Teaser-Seite handelt es sich in der Regel um eine temporäre Aktion, die für einen bestimmten Zeitraum gültig ist, bis sie durch die nächste Teaser-Seite ersetzt wird.
 

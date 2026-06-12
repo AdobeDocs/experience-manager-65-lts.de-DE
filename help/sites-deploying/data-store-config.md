@@ -196,7 +196,7 @@ Gehen Sie wie folgt vor, um auf eine neue Version des S3-Connectors 1.60.x zu ak
 
 1. Laden Sie die neueste Version des Feature Packs 1.60.x aus dem [Maven-Repository.](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)
 1. Entpacken Sie den Inhalt in einen anderen Ordner und navigieren Sie dann zu `jcr_root/libs/system/install/`.
-1. Kopieren Sie alle Unterordner nach **&lt;aem-install>**/crx-quickstart/install/ im Installationsordner von AEM.
+1. Kopieren Sie alle Unterordner in **&lt;aem-install>**/crx-quickstart/install/ im Installationsordner von AEM.
 1. Starten Sie AEM und überprüfen Sie die Funktionsweise des Connectors.
 
 Sie können die Konfigurationsdatei mit den unten beschriebenen Optionen verwenden.

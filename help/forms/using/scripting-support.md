@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 4110e3d5-7242-459b-b249-637b5bf3472d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3916'
-ht-degree: 100%
+source-wordcount: '3948'
+ht-degree: 99%
 
 ---
 
@@ -1154,7 +1154,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <td>while (i lt 5) do i = i + 1 endwhile</td>
   </tr>
   <tr>
-   <td> für </td>
+   <td>für</td>
    <td><br type="_moz" /> </td>
    <td>for i = 100 downto 1 <br /> do s = s + i endfor</td>
   </tr>
@@ -1285,7 +1285,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   </tr>
   <tr>
    <td>app.setTimeOut()</td>
-   <td>Gibt ein JavaScript-Skript und einen Zeitraum an. Das Skript wird nur einmal nach dem Ablauf des Zeitraums ausgeführt. Der Rückgabewert dieser Methode muss in einer JavaScript-Variable erfasst werden. Andernfalls unterliegt das Zeitüberschreitungsobjekt der Garbage Collection und die Uhr würde angehalten werden. Um das Zeitüberschreitungsereignis zu beenden, übergeben Sie das zurückgegebene Zeitüberschreitungsobjekt an clearTimeOut.</td>
+   <td>Gibt ein JavaScript-Skript und einen Zeitraum an. Das Skript wird nur einmal nach Ablauf des Zeitraums ausgeführt.Der Rückgabewert dieser Methode muss in einer JavaScript-Variable erfasst werden. Andernfalls unterliegt das Zeitüberschreitungsobjekt der Garbage Collection und die Uhr würde angehalten werden. Um das Zeitüberschreitungsereignis zu beenden, übergeben Sie das zurückgegebene Zeitüberschreitungsobjekt an clearTimeOut.</td>
    <td> </td>
   </tr>
   <tr>

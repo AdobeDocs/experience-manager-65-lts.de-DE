@@ -7,8 +7,8 @@ role: User,Admin,Developer
 exl-id: c5b4ffe5-b722-4452-8450-1e1089e3ffba
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 100%
+source-wordcount: '1366'
+ht-degree: 97%
 
 ---
 
@@ -227,7 +227,7 @@ Wenn Sie das Projekt erstellen und den verschiedenen Rollen Benutzer hinzufügen
 
 Ein Projekt mit dem Namen Myproject könnte z. B. drei Gruppen **Myproject-Eigentümer**, **Myproject-Editor**, **Myproject-Beobachter** haben.
 
-Wenn das Projekt gelöscht wird, werden diese Gruppen nur gelöscht, [wenn Sie beim Löschen des Projekts die entsprechende Option auswählen.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Eine bzw. ein Admin kann die Gruppen unter **Tools** > **Sicherheit** > **Gruppen** manuell löschen.
+Wenn das Projekt gelöscht wird, werden diese Gruppen nur gelöscht, wenn Sie die entsprechende Option auswählen [beim Löschen des Projekts.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Eine bzw. ein Admin kann die Gruppen unter **Tools** > **Sicherheit** > **Gruppen** manuell löschen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

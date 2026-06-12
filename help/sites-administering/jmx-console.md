@@ -12,7 +12,7 @@ role: Admin
 exl-id: c5907a0b-031f-4e3a-8a5c-5daf31eb71fc
 source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '4829'
+source-wordcount: '4969'
 ht-degree: 99%
 
 ---
@@ -252,7 +252,7 @@ Informationen zum CRX-Repository.
   </tr>
   <tr>
    <td>identifier.stability</td>
-   <td>Gibt die Stabilität von nicht referenzierbaren Knoten-IDs an. Die folgenden Werte sind möglich:
+   <td>Gibt die Stabilität von nicht referenzierbaren Knotenkennungen an. Die folgenden Werte sind möglich:
     <ul>
      <li>identifier.stability.indefinite.duration: Die IDs ändern sich nicht.</li>
      <li>identifier.stability.method.duration: Die IDs können sich zwischen Methodenaufrufen ändern.</li>
@@ -605,7 +605,7 @@ Schreibgeschützt.
 
 * Argumente:
 
-   * `master`: Ein Zeichenfolgenwert, der für die IP-Adresse oder den Computernamen des Computers steht, auf dem der Master-Repository-Knoten ausgeführt wird. 
+   * `master`: Ein Zeichenfolgenwert, der für die IP-Adresse oder den Computernamen des Computers steht, auf dem der Master-Repository-Knoten ausgeführt wird.
    * `username`: Der Benutzername, der für die Authentifizierung beim Cluster genutzt werden soll.
    * `password`: Das Kennwort, dass für die Authentifizierung genutzt werden soll.
 
