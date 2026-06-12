@@ -12,8 +12,8 @@ role: User, Developer
 exl-id: 3f919e4d-0535-4816-8762-9c0088e47a2c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 100%
+source-wordcount: '559'
+ht-degree: 95%
 
 ---
 
@@ -80,7 +80,7 @@ Um die Bilder zu lokalisieren, führen Sie die folgenden Schritte aus:
 
 1. Führen Sie alle semantischen Änderungen durch, die im Artikel [Anpassung von Workspace](../../forms/using/introduction-customizing-html-workspace.md) aufgeführt sind.
 1. Navigieren Sie zum Ordner */js/runtime/utility* und öffnen Sie die Datei *usersession.js* zur Bearbeitung.
-1. Suchen Sie den Code, der im ursprünglichen Code-Block aufgeführt ist und fügen Sie die folgende Bedingung hinzu: *lang !== &#39;nw&#39;* to the if statement:
+1. Suchen Sie den Code, der im ursprünglichen Code-Block aufgeführt ist, und fügen Sie die Bedingung *lang !== &#39;nw* zur if-Anweisung hinzu:
 
    ```javascript
    // Orignal code

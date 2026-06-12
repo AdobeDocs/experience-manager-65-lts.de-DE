@@ -7,8 +7,8 @@ role: Developer
 exl-id: 686d5510-8cdb-49eb-9ed0-f360be9bdc6d
 source-git-commit: d680ecf942886a61579cf72f82809e3dbbcfd394
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 100%
+source-wordcount: '1390'
+ht-degree: 98%
 
 ---
 
@@ -28,11 +28,11 @@ Die [GraphiQL-IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md) 
 
 Persistente Abfragen müssen immer den Endpunkt verwenden, der mit der [entsprechenden Sites-Konfiguration](/help/sites-developing/headless/graphql-api/graphql-endpoint.md) verknüpft ist. Sie können also entweder eine oder beide dieser Optionen verwenden:
 
-* Globale Konfiguration und Endpunkt
+* Die globale Konfiguration und der Endpunkt
 Die Abfrage hat Zugriff auf alle Inhaltsfragmentmodelle.
 * Spezifische Sites-Konfigurationen und -Endpunkte
 Das Erstellen einer persistenten Abfrage für eine bestimmte Sites-Konfiguration erfordert einen entsprechenden Sites-konfigurationsspezifischen Endpunkt (um Zugriff auf die zugehörigen Inhaltsfragmentmodelle zu gewähren).
-Um beispielsweise eine persistente Abfrage speziell für die WKND-Website-Konfiguration zu erstellen, müssen eine entsprechende WKND-spezifische Sites-Konfiguration und ein WKND-spezifischer Endpunkt im Voraus erstellt werden.
+Um beispielsweise eine persistente Abfrage speziell für die WKND-Sites-Konfiguration zu erstellen, müssen eine entsprechende WKND-spezifische Sites-Konfiguration und ein WKND-spezifischer Endpunkt im Voraus erstellt werden.
 
 >[!NOTE]
 >
