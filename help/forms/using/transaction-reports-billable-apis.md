@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: d9dc7630-a157-4202-8caf-7c55e348c06e
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1763'
-ht-degree: 98%
+source-wordcount: '2359'
+ht-degree: 96%
 
 ---
 
@@ -203,7 +203,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
    <td><a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PDFOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePDFOutputBatch</a></td>
    <td>Führt Daten und Vorlagen zusammen, um einen Satz von PDF-Dokumenten zu erstellen.</td>
    <td>Verarbeitete Dokumente</td>
-   <td> Die generatePDFOutputBatch-API kombiniert eine Formularvorlage mit einem Eintrag und generiert eine PDF-Datei. Wenn Sie einen Eintrags-Batch verarbeiten, zählt der Transaktionsberichts-Service jeden Eintrag als separate PDF-Ausgabedarstellung. <br> Sie können das Flag <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> verwenden, um mehrere Ausgabedarstellungen zu einer einzigen PDF-Datei zu kombinieren. Unabhängig vom Status des Flags zählt der Service jeden Eintrag als separate PDF-Ausgabedarstellung. </td>
+   <td> Die generatePDFOutputBatch-API kombiniert eine Formularvorlage mit einem Eintrag und generiert eine PDF-Datei. Wenn Sie einen Datensatz-Batch verarbeiten, zählt der Transaktionsberichts-Service jeden Datensatz als separate PDF-Ausgabedarstellung. <br> Sie können das Flag <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> verwenden, um mehrere Ausgabedarstellungen zu einer einzigen PDF-Datei zu kombinieren. Unabhängig vom Status des Flags zählt der Service jeden Eintrag als separate PDF-Ausgabedarstellung. </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
@@ -221,7 +221,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
    <td><a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PrintedOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePrintedOutputBatch</a></td>
    <td>Konvertiert einen Satz von XDP- und PDF-Dokumenten in die Formate PostScript (PS), Printer Command Language (PCL) und ZPL. </td>
    <td>Verarbeitete Dokumente</td>
-   <td> Die generatePDFOutputBatch-API kombiniert eine Formularvorlage mit einem Eintrag und generiert eine PDF-Datei. Wenn Sie einen Eintrags-Batch verarbeiten, zählt der Transaktionsberichts-Service jeden Eintrag als separate PDF-Ausgabedarstellung. <br> Sie können das Flag <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> verwenden, um mehrere Ausgabedarstellungen zu einer einzigen PDF-Datei zu kombinieren. Unabhängig vom Status des Flags zählt der Service jeden Eintrag als separate PDF-Ausgabedarstellung. </td>
+   <td> Die generatePDFOutputBatch-API kombiniert eine Formularvorlage mit einem Eintrag und generiert eine PDF-Datei. Wenn Sie einen Datensatz-Batch verarbeiten, zählt der Transaktionsberichts-Service jeden Datensatz als separate PDF-Ausgabedarstellung. <br> Sie können das Flag <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> verwenden, um mehrere Ausgabedarstellungen zu einer einzigen PDF-Datei zu kombinieren. Unabhängig vom Status des Flags zählt der Service jeden Eintrag als separate PDF-Ausgabedarstellung. </td>
   </tr>
  </tbody>
 </table>
@@ -432,7 +432,7 @@ Alle Übermittlungsereignisse von adaptiven Formularen, HTML5-Formularen und For
 
 Die Schritte der Zuweisung von Aufgaben und der Dokumenten-Services von formularzentrierten AEM-Workflows unter OSGi und alle Ausgabedarstellungen von interaktiver Kommunikation werden als Transaktionen verbucht. Die Vorschau einer interaktiven Kommunikation auf der Autoreninstanz und die Vorschau auf der Veröffentlichungsinstanz mithilfe der Agent-Benutzeroberfläche werden nicht als Transaktionen verbucht. Wenn durch einen Workflow-Schritt eine Transaktion verbucht wird und der Workflow nicht abgeschlossen werden kann, wird die Transaktionsanzahl nicht zurückgesetzt.
 
-### Webkanal für interaktive Kommunikation {#interactive-communication-web-channel}
+### Web-Kanal für interaktive Kommunikation {#interactive-communication-web-channel}
 
 <table>
  <tbody>
