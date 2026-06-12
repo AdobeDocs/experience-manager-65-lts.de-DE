@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: cb6528fd-6761-412d-8413-c72049acf91d
 source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
 workflow-type: tm+mt
-source-wordcount: '3799'
-ht-degree: 98%
+source-wordcount: '3848'
+ht-degree: 97%
 
 ---
 
@@ -225,7 +225,7 @@ Sie können Änderungen an Layout und Inhalt des Briefs vornehmen, um sicherzust
 
 1. Bearbeiten Sie auf der Registerkarte „Inhalt“ nach Bedarf die Inhaltsmodule. Um den Fokus auf das relevante Inhaltsmodul in der Inhaltshierarchie zu verschieben, können Sie entweder die betreffende Zeile oder den betreffenden Absatz in der Briefvorschau auswählen oder in der Inhaltshierarchie direkt das Inhaltsmodul auswählen.
 
-   Beispielsweise ist in der folgenden Grafik die Zeile „Um uns Zugriff zu gewähren…“ ausgewählt, und das entsprechende Inhaltsmodul ist auf der Registerkarte „Inhalt“ ausgewählt.
+   Beispielsweise die Zeile „Um uns Zugriff zu gewähren…“ wird in der folgenden Grafik ausgewählt und das entsprechende Inhaltsmodul wird auf der Registerkarte Inhalt ausgewählt.
 
    Durch Tippen auf „Ausgewählte Module im Inhalt hervorheben“ (![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) können Sie eine Funktion aktivieren oder deaktivieren, die bewirkt, dass beim Tippen auf den relevanten Text oder Absatz bzw. das Datenfeld in der Briefvorschau das dazugehörige Inhaltsmodul auf der Registerkarte „Inhalt“ markiert wird.
 
@@ -275,9 +275,9 @@ Es gibt zwei Arten von Briefinstanzen, die gespeichert werden können: Entwurfsi
 
 * **Übermittlungsinstanz**: Übermittlungsinstanzen erfassen den Status des Briefs zum Sendezeitpunkt. Die Sendeinstanz speichert den PDF-Status der Briefinstanz, nachdem sie zusammen mit den vom Benutzer in der Benutzeroberfläche „Korrespondenz erstellen“ eingegebenen Daten nachbearbeitet wurde.
 
-Solche Instanzen können nur gespeichert werden, wenn der Brief in der Publish-Instanz angezeigt wird. Standardmäßig ist das Speichern von Instanzen deaktiviert. Um das Speichern von Briefinstanzen zu aktivieren, führen Sie die folgenden Schritte aus.
+Solche Instanzen können nur gespeichert werden, wenn der Brief in der Veröffentlichungsinstanz angezeigt wird. Standardmäßig ist das Speichern von Instanzen deaktiviert. Um das Speichern von Briefinstanzen zu aktivieren, führen Sie die folgenden Schritte aus.
 
-1. Öffnen Sie in AEM die Adobe Experience Manager Web Console-Konfiguration für Ihren Server mit der folgenden URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
+1. Öffnen Sie in AEM die Konfiguration der Adobe Experience Manager-Web-Konsole für Ihren Server mit der folgenden URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
 1. Suchen Sie nach **[!UICONTROL Correspondence Management-Konfigurationen]** und klicken Sie darauf.
 1. Überprüfen Sie die Konfiguration **[!UICONTROL Briefinstanzen im Veröffentlichungsmodus verwalten]** und klicken Sie dann auf **[!UICONTROL Speichern]**.
 
@@ -295,13 +295,13 @@ Die *cq:lastReplicationAction*, *cq:lastreplicated* und *cq:lastReplicatedBy* we
 
 ![Autoreninstanz](/help/forms/using/assets/replicationproperties.png)
 
-Um die Funktion „Als Entwurf speichern“ zu aktivieren, ersetzen Sie die vorhandene URL unter [!UICONTROL VersionRestoreManager Author URL] durch die URL Ihrer Authoreninstanz. So ersetzen Sie die URL:
+Um die Funktion „Als Entwurf speichern“ zu aktivieren, ersetzen Sie die vorhandene URL unter [!UICONTROL Autoren-URL von VersionRestoreManager] durch die URL Ihrer Autoreninstanz. So ersetzen Sie die URL:
 
-1. Öffnen Sie auf der Veröffentlichungsinstanz die [!UICONTROL Adobe Experience Manager Web Console-Konfiguration]. Die Standard-URL ist `https://publish-server:port/system/console/configMgr`
+1. Öffnen Sie auf der Veröffentlichungsinstanz die [!UICONTROL Konfiguration der Adobe Experience Manager-Web-Konsole]. Die Standard-URL ist `https://publish-server:port/system/console/configMgr`
 
 1. Suchen und öffnen Sie die Komponente **[!UICONTROL Correspondence Management – Autoreninstanz Version Konfigurationen wiederherstellen]**.
 
-1. Suchen Sie das Feld **[!UICONTROL VersionRestoreManager Autor URL]** und geben Sie die URL für die Autoreninstanz an.
+1. Suchen Sie das Feld **[!UICONTROL Autoren-URL von VersionRestoreManager]** und geben Sie die URL für die Autoreninstanz an.
 
 1. Klicken Sie auf „Speichern“.
 
@@ -311,21 +311,21 @@ Wenn das Speichern von Briefinstanzen aktiviert ist, können Sie auswählen, wo 
 
 ### Lokal speichern {#local-save}
 
-Briefinstanzen werden in der Veröffentlichungsinstanz gespeichert und in der Autorinstanz rückwärtsrepliziert.
+Briefinstanzen werden in der Veröffentlichungsinstanz gespeichert und in der Autoreninstanz rückwärtsrepliziert.
 
 ### Remote speichern {#remote-save}
 
-Diese Option ist für Personen vorgesehen, die bezüglich des Speicherns von Daten in Veröffentlichungsinstanzen haben, die sich normalerweise außerhalb der Firewall des Unternehmens befinden. Wenn das Remote-Speichern aktiviert ist, werden die Briefinstanzen nicht in der Publishing-Instanz gespeichert, sondern remote in der verarbeitenden Authoring-Instanz gespeichert, die über die LiveCycle Client SDK-Konfigurationen angegeben wurde.
+Diese Option ist für Personen vorgesehen, die bezüglich des Speicherns von Daten in Veröffentlichungsinstanzen haben, die sich normalerweise außerhalb der Firewall des Unternehmens befinden. Wenn das Remote-Speichern aktiviert ist, werden die Briefinstanzen nicht in der Veröffentlichungsinstanz gespeichert, sondern remote in der verarbeitenden Authoring-Instanz gespeichert, die über die LiveCycle Client SDK-Konfigurationen angegeben wurde.
 
 #### Aktivieren des Remote-Speicherns {#enable-remote-save}
 
-1. Öffnen Sie in AEM die Adobe Experience Manager Web Console-Konfiguration für Ihren Server mit der folgenden URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Öffnen Sie in AEM die Konfiguration der Adobe Experience Manager-Web-Konsole für Ihren Server mit der folgenden URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
 1. Suchen Sie nach **[!UICONTROL Correspondence Management-Konfigurationen]** und klicken Sie darauf.
 1. Suchen Sie die Konfiguration **[!UICONTROL Remote Speichern]**, überprüfen Sie sie und klicken Sie auf **[!UICONTROL Speichern]**.
 
 #### Angeben der Einstellungen für Prozessautor {#specify-processing-author-settings}
 
-1. Öffnen Sie in AEM die Adobe Experience Manager Web Console-Konfiguration für Ihren Server mit der folgenden URL: `https://<server>:<port>/system/console/configMgr`
+1. Öffnen Sie in AEM die Konfiguration der Adobe Experience Manager-Web-Konsole für Ihren Server mit der folgenden URL: `https://<server>:<port>/system/console/configMgr`
 
    ![Konfiguration der Adobe Experience Manager-Web-Konsole](assets/2configmanager.png)
 

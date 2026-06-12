@@ -7,7 +7,7 @@ role: Developer
 exl-id: 81d47a8f-569a-4a7c-ba07-6f6c9258547c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '792'
 ht-degree: 97%
 
 ---
@@ -181,7 +181,7 @@ Nachdem Sie Ihre persistente Abfrage mit GraphiQL entwickelt und getestet haben,
 Es gibt eine Auswahl von Tastaturbefehlen, die direkten Zugriff auf Aktionssymbole in der IDE bieten:
 
 * Abfrage schön machen:  `Shift-Control-P`
-* Abfrage fusionieren:  `Shift-Control-M`
+* Abfrage zusammenführen:  `Shift-Control-M`
 * Abfrage ausführen:  `Control-Enter`
 * Automatisch vervollständigen:  `Control-Space`
 

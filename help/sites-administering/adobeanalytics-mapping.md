@@ -12,7 +12,7 @@ role: Admin
 exl-id: d9ffc796-1c2b-4fa6-b434-fb3ee03d40b5
 source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1459'
 ht-degree: 96%
 
 ---
@@ -198,8 +198,7 @@ Das obige Bild dient als Beispiel. Die **AEM-Ansicht** hat die folgenden Eigensc
 >
 >Die Spalte der CQ-Variablen in jeder Tabelle kann auch inline ausgefüllt werden, indem auf das Feld doppelgeklickt und dann der gewünschte Text eingegeben wird. In diesen Feldern ist JavaScript als Eingabe möglich.
 >
->Beispiel: Neben `prop3` können Sie Folgendes hinzufügen:
->     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
+>Beispiel: Neben `prop3` können Sie Folgendes hinzufügen:> `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
 >, um den *Titel* einer Seite und ihre *sitesection* verkettet mit einem *:* (Doppelpunkt) und mit dem Präfix *Adobe* als `prop3` zu übermitteln.
 >
 

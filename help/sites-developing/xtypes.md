@@ -11,8 +11,8 @@ role: Developer
 exl-id: 4a78de53-33bf-4999-ba3c-7d0bc33196a4
 source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
 workflow-type: tm+mt
-source-wordcount: '3668'
-ht-degree: 59%
+source-wordcount: '6205'
+ht-degree: 73%
 
 ---
 
@@ -510,7 +510,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   [CQ.Ext.menu.Menu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  Ein Menüobjekt. Der Container, dem Menüelemente hinzugefügt werden können. Das Menü kann auch als allgemeine Klasse dienen, wenn Sie ein spezielles Menü basierend auf einer anderen Komponente (wie z. B. [CQ.Ext.menu.DateMenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)) benötigen.
+  Ein Menüobjekt. Der Container, dem Menüelemente hinzugefügt werden können. Menu kann auch als Basisklasse dienen, wenn Sie ein spezielles Menü benötigen, das auf einer anderen Komponente basiert (z. B[CQ.Ext.menu.DateMenu](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)).
 
   Menüs können entweder [Menüelemente](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) oder allgemeine [Komponenten](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) enthalten.
 
@@ -875,7 +875,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
 * `tip`
 
-  [CQ.Ext.Tip](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+  [CQ.Ext.Tipp](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
   @xtype tip. Dieses ist die allgemeine Klasse für [CQ.Ext.QuickTip](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) und [CQ.Ext.Tooltip](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html), die das grundlegende Layout und die Platzierung bereitstellt, die für alle Klassen mit QuickInfo erforderlich sind. Diese Klasse kann direkt für einfache, statisch platzierte QuickInfos verwendet werden.
 

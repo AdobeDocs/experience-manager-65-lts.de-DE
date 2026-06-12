@@ -7,8 +7,8 @@ role: Admin, Developer
 exl-id: e8f2a771-b2e3-4f3e-85a0-480f783fc313
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2328'
-ht-degree: 96%
+source-wordcount: '2662'
+ht-degree: 95%
 
 ---
 
@@ -491,8 +491,8 @@ Sie haben Ihre erste AEM-CIF-Komponente angepasst. Laden Sie die [fertigen Lösu
 ## Zusätzliche Ressourcen {#additional-resources}
 
 - [AEM-Archetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de)
-- [AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components)
-- [Anpassen von AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components)
+- [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components)
+- [Anpassen der AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components)
 - [Anpassen der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=de)
 - [Erste Schritte mit AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de)
 - [Verwenden der CIF-Produkt- und Kategorieauswahl](use-cif-pickers.md)
