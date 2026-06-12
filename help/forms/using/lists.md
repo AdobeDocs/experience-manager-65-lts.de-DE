@@ -73,7 +73,7 @@ Die Lösung „Correspondence Management“ unterstützt zwei Arten von dynamisc
    ![Absatz-Symbolleiste](assets/fonteditingtoolbar.png)
 
    Absatz-Symbolleiste
-   [![ Ausrichtungs-Symbolleiste](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)Ausrichtungs-Symbolleiste
+   [![&#x200B; Ausrichtungs-Symbolleiste](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)Ausrichtungs-Symbolleiste
 
    ![Auflistungs-Symbolleiste](assets/bulleteditingtoolbar.png)
 
@@ -187,7 +187,7 @@ Mithilfe der Funktion „Suchen und Ersetzen“ können Sie nach einer beliebige
 
 1. Wenn Sie erneut auf „Suchen“ klicken, wird die Suche am Anfang der Seite fortgesetzt.
 
-   Verwenden Sie die Option „Alle ersetzen“, um alle Instanzen des Texts im Textmodul zu ersetzen. Wenn Sie `` verwenden, wird die Anzahl der Ersetzungen als Meldung im Dialogfeld „Suchen und Ersetzen“ angezeigt.
+   Verwenden Sie die Option „Alle ersetzen“, um alle Instanzen des Texts im Textmodul zu ersetzen. Wenn Sie &grave;&grave; verwenden, wird die Anzahl der Ersetzungen als Meldung im Dialogfeld „Suchen und Ersetzen“ angezeigt.
 
 #### Best Practices/Tipps und Tricks für Textmodule {#best-practices-tips-and-tricks-for-text-modules}
 
@@ -243,7 +243,7 @@ Eine Liste ist eine Gruppe von zusammenhängenden Inhalten, die in einer Briefvo
    ![Assets zum Hinzufügen zur Liste auswählen](assets/selectassets.png)
 
 1. Die Assets werden der Seite „Listenelemente“ hinzugefügt.
-Um die Reihenfolge der Assets innerhalb der Liste zu ändern, wählen Sie das Pfeilsymbol ( ![dragndrop) aus, halten Sie die ](assets/dragndrop.png) gedrückt und verwenden Sie die Drag-and-Drop-Funktion. Wenn der/die Benutzende in der Benutzeroberfläche „Korrespondenz erstellen“ eine Briefvorlage öffnet, wird der Inhalt in der hier definierten Reihenfolge zusammengestellt.
+Um die Reihenfolge der Assets innerhalb der Liste zu ändern, wählen Sie das Pfeilsymbol ( ![dragndrop) aus, halten Sie die &#x200B;](assets/dragndrop.png) gedrückt und verwenden Sie die Drag-and-Drop-Funktion. Wenn der/die Benutzende in der Benutzeroberfläche „Korrespondenz erstellen“ eine Briefvorlage öffnet, wird der Inhalt in der hier definierten Reihenfolge zusammengestellt.
 
    ![Assets in einer Liste neu anordnen und konfigurieren](assets/listitems.png)
 

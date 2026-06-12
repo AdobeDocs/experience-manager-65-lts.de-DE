@@ -234,7 +234,7 @@ Dieser Abschnitt enthält Details und Anweisungen zur MS® Dynamics-Cloud-Konfig
 
 1. Gehen Sie zu:
 
-   https://<aemserver>:<port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
+   https://&lt;aemserver>:&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
    1. Stellen Sie sicher, dass Sie auf den Server zugreifen, indem Sie dieselbe Umleitungs-URL verwenden, die in der Registrierung des MS® Dynamics-Programms konfiguriert wurde.
 
@@ -712,7 +712,7 @@ Die in diesem Paket enthaltenen Seiten unterstützen auch das Stilsystem:
 
 [Stilsystem](../../sites-authoring/style-system.md)
 
-Informationen zu [ Stilen finden Sie unter ](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) von Vorlagenanpassungen .
+Informationen zu [&#x200B; Stilen finden Sie unter &#x200B;](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) von Vorlagenanpassungen .
 
 ### Anpassung adaptiver Formulare {#adaptive-forms-customization}
 
