@@ -9,7 +9,7 @@ feature: Document Security,Adaptive Forms
 exl-id: c619a3b8-cd06-4f5d-af20-67f3a4bfcdce
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '989'
 ht-degree: 100%
 
 ---
@@ -42,7 +42,7 @@ Die folgende Tabelle zeigt, wie im Rahmen der Dokumentsicherheit Daten in Datenb
   </tr>
   <tr>
    <td><p><code>EdcLicenseEntity</code></p> </td>
-   <td>Speichert den Datensatz eines geschützten Dokuments. Es werden Lizenzdetails für jedes geschützte Dokument gespeichert.</td>
+   <td>Speichert den Eintrag eines geschützten Dokuments. Es werden Lizenzdetails für jedes geschützte Dokument gespeichert.</td>
   </tr>
   <tr>
    <td><p><code>EdcDocumentEntity</code></p> </td>
@@ -95,7 +95,7 @@ Wenn Sie die Prinzipal-ID kennen, können Sie die Benutzerdaten exportieren oder
 
 ### Exportieren von Benutzerdaten {#export-user-data}
 
-Führen Sie die folgenden Datenbankbefehle aus, um Benutzerdaten für eine Prinzipal-ID aus Datenbanktabellen zu exportieren.  Ersetzen Sie `<principal_id>` im Befehl `select` durch die Haupt-ID des Benutzers, dessen Daten Sie exportieren möchten.
+Führen Sie die folgenden Datenbankbefehle aus, um Benutzerdaten für eine Prinzipal-ID aus Datenbanktabellen zu exportieren. Ersetzen Sie `<principal_id>` im Befehl `select` durch die Haupt-ID des Benutzers, dessen Daten Sie exportieren möchten.
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ Führen Sie folgende Schritte aus, um Dokumentsicherheitsdaten für eine Prinzip
 
    Neben dem Löschen von Daten direkt aus der Tabelle `EdcPolicyXmlEntity` gibt es zwei weitere Möglichkeiten, um dies zu erreichen:
 
-   **Verwenden der Verwaltungskonsole** 
+   **Verwenden der Verwaltungskonsole**
 
    1. Melden Sie sich als Admin auf der Forms-JEE-Administrationskonsole unter https://[*Server*]:[*Port*]/adminui an.
    1. Navigieren Sie zu **[!UICONTROL Dienste > Dokumentensicherheit > Richtliniensätze]**.

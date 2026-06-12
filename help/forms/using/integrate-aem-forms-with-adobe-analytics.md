@@ -7,8 +7,8 @@ feature: Adaptive Forms
 exl-id: 5d1bd8c9-2d9b-47a5-9204-9328eadfb102
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1809'
-ht-degree: 99%
+source-wordcount: '1899'
+ht-degree: 98%
 
 ---
 
@@ -44,7 +44,7 @@ Die folgende Abbildung veranschaulicht die Aktionen, die Sie durchführen müsse
 
 ![Überblick über Analytics](/help/forms/using/assets/analyticsworkflow.png)
 
-## &#x200B;1. Konfiguration von [!DNL Adobe Analytics] {#Configure-adobe-analytics}
+## &#x200B;1. Konfigurieren von [!DNL Adobe Analytics] {#Configure-adobe-analytics}
 
 Vor dem Konfigurieren von [!DNL Adobe Analytics] erstellen Sie:
 
@@ -164,7 +164,7 @@ Führen Sie die folgenden Schritte aus, um Regeln auf der Grundlage der Erweiter
 
 1. Wählen Sie im Abschnitt **[!UICONTROL Aktionen]** das Pluszeichen (+) aus und geben Sie **[!UICONTROL Adobe Analytics]** als Namen der Erweiterung an.
 
-1. Wählen Sie als Aktionstyp **[!UICONTROL Variablen löschen]** aus. Wählen Sie **[!UICONTROL Änderungen beibehalten]** aus. Nachdem Sie diese Schritte durchgeführt haben, wird der Abschnitt **[!UICONTROL Aktionen]** wie folgt angezeigt:
+1. Wählen Sie **[!UICONTROL Aktionstyp]** Variablen löschen“ aus. Wählen **[!UICONTROL Änderungen beibehalten]** aus. Nachdem Sie diese Schritte ausgeführt haben, wird **[!UICONTROL Abschnitt]**&#x200B;Aktionen“ wie folgt angezeigt:
    ![Konfiguration von Aktionen](/help/forms/using/assets/actions-config.png)
 
    Passen Sie den Abschnitt **[!UICONTROL Aktionen]** Ihren Anforderungen entsprechend an. Sie können beispielsweise zwei Schritte **Beacon senden** in einem Aktionsfluss definieren, um in einem Schritt Daten an [!DNL Adobe Analytics] zu senden und als Seitenansicht zu behandeln und im zweiten Schritt Daten an [!DNL Adobe Analytics] zu senden und nicht als Seitenansicht zu behandeln.
@@ -196,7 +196,7 @@ Führen Sie zum Veröffentlichen der Konfiguration folgende Schritte aus:
 
 ![Veröffentlichungsfluss](/help/forms/using/assets/publish-flow.png)
 
-## &#x200B;2. Konfiguration von AEM Forms {#configure-aem-forms}
+## &#x200B;2. Konfigurieren von AEM Forms {#configure-aem-forms}
 
 Bevor Sie eine Adobe Launch-Konfiguration erstellen, erstellen Sie eine [Adobe IMS-Konfiguration mit Adobe Launch als Cloud-Lösung](https://experienceleague.adobe.com/de/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/connect-aem-tag-property-using-ims).
 
@@ -270,7 +270,7 @@ So ordnen Sie das Ereignis einem benutzerdefinierten Erfassungsereignis in [!DNL
 
 1. Geben Sie den Namen des Ereignisses an, den Sie in Schritt 4 beim Erstellen einer Regel mit dem Regeleditor angegeben haben.
 
-1. Wählen Sie **Änderungen beibehalten** aus und führen Sie die restlichen unter [Konfigurieren von Regeln](#configure-rules) angegebenen Aktionen aus.
+1. Wählen Sie **Änderungen beibehalten** und führen Sie die restlichen unter [Regeln konfigurieren](#configure-rules) angegebenen Aktionen aus.
 
 ## &#x200B;3. Konfigurieren und Anzeigen von Berichten in [!DNL Adobe Analytics] {#view-reports-adobe-analytics}
 

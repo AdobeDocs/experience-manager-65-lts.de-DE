@@ -12,8 +12,8 @@ hide: true
 exl-id: 11a7278e-efaa-402c-8add-5280bf5a156a
 source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
-source-wordcount: '2507'
-ht-degree: 97%
+source-wordcount: '2399'
+ht-degree: 95%
 
 ---
 
@@ -85,7 +85,7 @@ Beim Aufrufen von AEM Forms-Services mithilfe von REST-Anfragen werden die folge
 * eine URL, die auf den Inhalt des Dokuments verweist (wenn die Liste aus `com.adobe.idp.Document`-Objekten besteht)
 
   Im folgenden Beispiel wird eine XML-Nachricht von einem Service zurückgegeben, der einen einzigen Ausgabeparameter namens *Liste*, hier eine Liste von Ganzzahlen, aufweist.
-  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Ein ausgegebener Zuordnungsparameter wird in der resultierenden XML-Nachricht als Serie von XML-Elementen mit genau einem Element für jeden Eintrag in der Zuordnung dargestellt. Jedes Element erhält den gleichen Namen wie der Schlüssel des Zuordnungseintrags. Der Wert jedes Elements ist entweder eine Textdarstellung des Zuordnungseintragswerts (wenn die Zuordnung aus Einträgen mit einem Zeichenfolgenwert besteht) oder eine URL, die auf den Inhalt des Dokuments verweist (wenn die Zuordnung aus Einträgen mit dem Wert `com.adobe.idp.Document` besteht). Nachfolgend finden Sie ein Beispiel für eine XML-Nachricht, die von einem Service zurückgegeben wird, der einen einzigen Ausgabeparameter namens `map` aufweist. Dieser Parameterwert ist eine Zuordnung, die aus Einträgen besteht, die Briefe mit `com.adobe.idp.Document`-Objekten verknüpfen.
+  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Ein ausgegebener Zuordnungsparameter wird in der resultierenden XML-Nachricht als Serie von XML-Elementen mit genau einem Element für jeden Datensatz in der Zuordnung dargestellt. Jedes Element erhält den gleichen Namen wie der Schlüssel des Zuordnungsdatensatzes. Der Wert jedes Elements ist entweder eine Textdarstellung des Zuordnungsdatensatzwerts (wenn die Zuordnung aus Datensätzen mit einem Zeichenfolgenwert besteht) oder eine URL, die auf den Inhalt des Dokuments verweist (wenn die Zuordnung aus Datensätzen mit dem `com.adobe.idp.Document` besteht). Nachfolgend finden Sie ein Beispiel für eine XML-Nachricht, die von einem Service zurückgegeben wird, der einen einzigen Ausgabeparameter namens `map` aufweist. Dieser Parameterwert ist eine Zuordnung, die aus Datensätzen besteht, die Briefe mit `com.adobe.idp.Document` Objekten verknüpfen.
   ` <result>   http://localhost:8080/DocumentManager/docm123/4567   . . .   <Z>http://localhost:8080/DocumentManager/docm987/6543</Z>  </result>  `
 
 ## Asynchrone Aufrufe {#asynchronous-invocations}

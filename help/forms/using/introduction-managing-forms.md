@@ -11,14 +11,15 @@ role: Admin, User
 exl-id: 7ec29926-a5f6-4080-a981-597f9632f6e8
 source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 98%
+source-wordcount: '1556'
+ht-degree: 97%
 
 ---
 
 # Einführung in das Verwalten von Formularen {#introduction-to-managing-forms}
 
-AEM [!DNL Forms] bietet eine vereinfachte und dennoch leistungsstarke Benutzeroberfläche zum Erstellen und Verwalten von Formularen, Dokumenten, Themen, Briefen, Dokumentfragmenten, Datenwörterbüchern und ähnlichen Assets. Es vereinfacht die Verwaltung des gesamten Formularzyklusvon Formularen, Dokumente und damit zusammenhängenden Assets – vom Desktop eines Entwicklers bis zur Bereitstellung auf einem Portalserver für Endbenutzer. Sie können die Benutzeroberfläche von AEM [!DNL Forms] für folgendes verwenden:
+AEM [!DNL Forms] bietet eine vereinfachte und dennoch leistungsstarke Benutzeroberfläche zum Erstellen und Verwalten von Formularen, Dokumenten, Themen, Briefen, Dokumentfragmenten, Datenwörterbüchern und ähnlichen Assets. Es hilft beim Management des gesamten Lebenszyklus von Formularen, Dokumenten und zugehörigen Assets - vom Desktop eines Entwicklers bis zum Angebot
+Es wird auf einem Portal-Server für Endbenutzer angezeigt. Sie können die Benutzeroberfläche von AEM [!DNL Forms] für folgendes verwenden:
 
 * Zugriff auf AEM [!DNL Forms]-Komponenten
 * Zugriff auf AEM [!DNL Forms]-Konfigurationen
@@ -29,7 +30,7 @@ AEM [!DNL Forms] bietet eine vereinfachte und dennoch leistungsstarke Benutzerob
 
 ## Zugreifen auf AEM Forms-Komponenten {#access-aem-forms-components}
 
-Neben anderen Optionen zum Erstellen von Formularen, Dokumenten und verknüpften Asstes bietet AEM Optionen zum Erstellen von Sites, Assets, zum Verwalten einer AEM-Instanz und mehr.  Sie können auf das Experience Manager-Logo ![adobeexperiencemanager](assets/adobeexperiencemanager.png) klicken, um zu allen verfügbaren Tools zu navigieren. Zusätzlich zu Konsolen von anderen Komponenten enthält es auch Links zu AEM [!DNL Forms]. Um zu AEM [!DNL Forms] zu navigieren, klicken Sie auf das Experience Manager-Logo ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Navigation ![compass](assets/compass.png) > **[!UICONTROL Forms]**. Links der folgenden Konsolen werden angezeigt:
+Neben anderen Optionen zum Erstellen von Formularen, Dokumenten und verknüpften Asstes bietet AEM Optionen zum Erstellen von Sites, Assets, zum Verwalten einer AEM-Instanz und mehr. Sie können auf das Experience Manager-Logo ![adobeexperiencemanager](assets/adobeexperiencemanager.png) klicken, um zu allen verfügbaren Tools zu navigieren. Zusätzlich zu Konsolen von anderen Komponenten enthält es auch Links zu AEM [!DNL Forms]. Um zu AEM [!DNL Forms] zu navigieren, klicken Sie auf das Experience Manager-Logo ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Navigation ![compass](assets/compass.png) > **[!UICONTROL Forms]**. Links der folgenden Konsolen werden angezeigt:
 
 * Formulare und Dokumente
 * Designs
@@ -69,7 +70,7 @@ Der Bereich „Formulare und Dokumente“ bietet auch Optionen für Folgendes:
 
 ### Designs  {#themes}
 
-Zu einem Design gehören Details der Formatierung von Komponenten und Bereichen.  Designs haben eine unabhängige Identität.  Daher können Sie ein Design für mehrere adaptive Formulare wiederverwenden.  Sie können die Stile für eine Komponente festlegen oder CSS-Eigenschaften für die verschiedenen Komponenten in Ihrem Formular ändern.  Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz und Größe.  Sie können Anpassungen in einem Design speichern und diese als Voreinstellung auf Komponenten des Formulars übertragen.  Wenn Sie das Design zu einem Formular hinzufügen, bestimmt der festgelegte Stil die entsprechenden Komponenten des Formulars.  Mit AEM [!DNL Forms] 6.2 können Sie Designs erstellen und sie auf Ihre Formulare anwenden.
+Zu einem Design gehören Details der Formatierung von Komponenten und Bereichen. Designs haben eine unabhängige Identität. Daher können Sie ein Design für mehrere adaptive Formulare wiederverwenden. Sie können die Stile für eine Komponente festlegen oder CSS-Eigenschaften für die verschiedenen Komponenten in Ihrem Formular ändern. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz und Größe. Sie können Anpassungen in einem Design speichern und diese als Voreinstellung auf Komponenten des Formulars übertragen. Wenn Sie das Design zu einem Formular hinzufügen, bestimmt der festgelegte Stil die entsprechenden Komponenten des Formulars. Mit AEM [!DNL Forms] 6.2 können Sie Designs erstellen und sie auf Ihre Formulare anwenden.
 
 Weitere Informationen zum Erstellen und Verwenden von Designs finden Sie unter [Designs in AEM Forms](../../forms/using/themes.md).
 
@@ -81,7 +82,7 @@ Weitere Informationen zum Erstellen und Verwenden von Briefen finden Sie unter [
 
 ### Dokumentfragmente {#document-fragments}
 
-Dokumentfragmente sind wiederverwendbare Teile/Komponenten einer Korrespondenz, mit der Sie Briefe/Korrespondenz erstellen können. Die Dokumentfragmente sind vom Typ Texte, Listen, Bedingungen und Layoutfragmente.  Informationen zum Erstellen und Verwenden von Dokumentfragmenten finden Sie unter [Erstellen von Dokumentfragmenten](/help/forms/using/document-fragments.md).
+Dokumentfragmente sind wiederverwendbare Teile/Komponenten einer Korrespondenz, mit der Sie Briefe/Korrespondenz erstellen können. Die Dokumentfragmente sind vom Typ Texte, Listen, Bedingungen und Layoutfragmente. Informationen zum Erstellen und Verwenden von Dokumentfragmenten finden Sie unter [Erstellen von Dokumentfragmenten](/help/forms/using/document-fragments.md).
 
 ### Datenwörterbücher {#data-dictionaries}
 
@@ -98,28 +99,28 @@ AEM Tools-Bereich enthält Tools für verschiedene Komponenten. Um zu den spezif
 
   ![AEM Forms-Tools](assets/aem_forms_tools_new.png)
 
-* **Konfigurieren von PDF Generator:** Ein Administrator kann AEM [!DNL Forms] PDF Generator-Einstellungen konfigurieren, Benutzerkonten hinzufügen und Konfiguration in PDF Generator importieren oder exportieren. 
-* **Correspondence Management-Assets veröffentlichen:** Mit AEM [!DNL Forms] können Sie sofort alle Briefe, Dokumentfragmente, und Datenwörterbücher und verknüpfte Abhängigkeiten von einer Autorinstanz veröffentlichen. Die veröffentlichten Assets umfassen sämtliche Correspondence Management-Assets und ihre zugehörigen Abhängigkeiten. Ausführliche Informationen finden Sie unter [Veröffentlichen und Aufheben des Veröffentlichens von Formularen und Dokumenten](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
+* **Konfigurieren von PDF Generator:** Ein Administrator kann AEM [!DNL Forms] PDF Generator-Einstellungen konfigurieren, Benutzerkonten hinzufügen und Konfiguration in PDF Generator importieren oder exportieren.
+* **Correspondence Management-Assets veröffentlichen:** Mit AEM [!DNL Forms] können Sie sofort alle Briefe, Dokumentfragmente, und Datenwörterbücher und verknüpfte Abhängigkeiten von einer Autoreninstanz veröffentlichen. Die veröffentlichten Assets umfassen sämtliche Correspondence Management-Assets und ihre zugehörigen Abhängigkeiten. Ausführliche Informationen finden Sie unter [Veröffentlichen und Aufheben des Veröffentlichens von Formularen und Dokumenten](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
 * **Exportieren von Correspondence Management-Assets**: Verwenden Sie diese Option, um alle Correspondence Management-Assets und die zugehörigen Abhängigkeiten als Paket aus einer AEM [!DNL Forms]-Instanz herunterzuladen. Detaillierte Informationen finden Sie unter [Importieren und Exportieren von Assets in AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
 
 ## Häufige Elemente der Benutzeroberfläche {#commonelements}
 
 * **Linke Leiste**: Sie können auf das Symbol für die linke Leiste ![railleftpng](assets/railleftpng.png) klicken, um die Timeline- und Referenzfunktionen von AEM [!DNL Forms] anzuzeigen.
 
-   * **Zeitleiste:** Sie können Kommentare zu einem Asset hinzufügen, das für Review in der Zeitleiste verfügbar ist. Detaillierte Anweisungen finden Sie unter [Erstellen und Verwalten von Überprüfungen von Assets in Formularen](../../forms/using/create-reviews-forms.md).
-   * **Referenzen**: Ein AEM [!DNL Forms]-Asset kann in mehreren AEM [!DNL Forms]-Assets verwendet werden. Ein Dokumentfragment kann beispielsweise in mehreren Briefen verwendet werden. „Referenzen“ besteht aus einer Liste von Assets (andere Formulare oder Ressourcen), in denen das ausgewählte Asset verwendet wird, und einer Liste anderer Assets, die das ausgewählte Asset seinerseits verwendet. 
+   * **Timeline:** Sie können Kommentare zu einem Asset hinzufügen, das für Review in der Timeline verfügbar ist. Detaillierte Anweisungen finden Sie unter [Erstellen und Verwalten von Überprüfungen von Assets in Formularen](../../forms/using/create-reviews-forms.md).
+   * **Referenzen**: Ein AEM [!DNL Forms]-Asset kann in mehreren AEM [!DNL Forms]-Assets verwendet werden. Ein Dokumentfragment kann beispielsweise in mehreren Briefen verwendet werden. „Referenzen“ besteht aus einer Liste von Assets (andere Formulare oder Ressourcen), in denen das ausgewählte Asset verwendet wird, und einer Liste anderer Assets, die das ausgewählte Asset seinerseits verwendet.
 
 * **Breadcrumbs:** Ein Breadcrumb gibt den Titel der aktuellen Konsole oder des Ordners an. Sie können auf die Breadcrumb-Option klicken, um zwischen den Ordnerebenen, die höher in der Hierarchie sind, zu navigieren.
 * **Umschalter anzeigen**: Sie können auf das Symbol „Umschalter anzeigen“ ![viewlist](assets/viewlist.png) oder ![viewcard](assets/viewcard.png) klicken, um schnell zwischen Listen- und Kartenansicht zu wechseln. Weitere Informationen zu allgemeinen Komponenten der Benutzeroberfläche finden Sie unter [Authoring](/help/sites-authoring/author.md).
 * **Suche**: Die Suchoption ![search](assets/search.png) bietet Funktionen zum schnellen Suchen und Springen zu benötigten Inhalten und Tools. Geben Sie den Namen des Inhalts oder der Produktfunktion ein und wählen Sie aus den Vorschlägen. Geben Sie z. B. „Dokumente“ ein, um schnell die Konsole der **[!UICONTROL Formulare und Dokumente]** oder der Dokumentfragmente zu finden und dorthin zu navigieren. Weitere Informationen zu finden Sie im AEM 6.2-Artikel [Suche](/help/sites-authoring/search.md)
 
-* **Aktionssymbolleiste**: Bei der Auswahl eines Assets wird die Aktionssymbolleiste über der Liste von Assets angezeigt.  Sie enthält alle Verwaltungs-Tools für das ausgewählte Asset.  Sie können die Maus über ein Symbol bewegen, um die QuickInfo anzuzeigen, die die zugehörige Funktion beschreibt
+* **Aktionssymbolleiste**: Bei der Auswahl eines Assets wird die Aktionssymbolleiste über der Liste von Assets angezeigt. Sie enthält alle Verwaltungs-Tools für das ausgewählte Asset. Sie können die Maus über ein Symbol bewegen, um die QuickInfo anzuzeigen, die die zugehörige Funktion beschreibt
 
 >[!NOTE]
 >
->Wenn jemand eine Suche auf einer beliebigen Konsole von „Fomulare und Dokumente“ durchführt, dann enthält die Leiste nur **Filter und Optionen**.  Sie können „Filter und Optionen“ verwenden, um eine erweiterte Suche durchzuführen.
+>Wenn jemand eine Suche auf einer beliebigen Konsole von „Fomulare und Dokumente“ durchführt, dann enthält die Leiste nur **Filter und Optionen**. Sie können „Filter und Optionen“ verwenden, um eine erweiterte Suche durchzuführen.
 
-* **Aktionssymbolleiste**: Bei der Auswahl eines Assets wird die Aktionssymbolleiste über der Liste von Assets angezeigt.  Sie enthält alle Verwaltungs-Tools für das ausgewählte Asset.  Sie können die Maus über ein Symbol bewegen, um die QuickInfo anzuzeigen, die die zugehörige Funktion beschreibt
+* **Aktionssymbolleiste**: Bei der Auswahl eines Assets wird die Aktionssymbolleiste über der Liste von Assets angezeigt. Sie enthält alle Verwaltungs-Tools für das ausgewählte Asset. Sie können die Maus über ein Symbol bewegen, um die QuickInfo anzuzeigen, die die zugehörige Funktion beschreibt
 
   ![Aktionssymbolleiste für ein adaptives Formular](assets/action_toolbar_new.png)
 

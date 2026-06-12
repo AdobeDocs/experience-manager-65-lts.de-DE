@@ -56,7 +56,7 @@ Die Java-API unterstützt die folgenden Funktionen:
 Um einen AEM Forms-Dienst programmgesteuert mithilfe der Java-API aufzurufen, fügen Sie die erforderlichen Bibliotheksdateien (JAR-Dateien) in den Klassenpfad Ihres Java-Projekts ein. Die JAR-Dateien, die Sie in den Klassenpfad Ihrer Client-Anwendung aufnehmen, hängen von mehreren Faktoren ab:
 
 * Der aufzurufende AEM Forms-Dienst. Eine Client-Anwendung kann einen oder mehrere Dienste aufrufen.
-* Der Modus, in dem Sie einen AEM Forms-Dienst aufrufen möchten. Sie können den EJB- oder SOAP-Modus verwenden. (Siehe [Einstellung von Verbindungseigenschaften](invoking-aem-forms-using-java.md#setting-connection-properties).)
+* Der Modus, in dem Sie einen AEM Forms-Dienst aufrufen möchten. Sie können den EJB- oder SOAP-Modus verwenden. (Siehe [Einstellen von Verbindungseigenschaften](invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 >[!NOTE]
 >
@@ -71,9 +71,9 @@ In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die zum Aufrufen von 
 <table>
  <thead>
   <tr>
-   <th><p>Datei</p></th>
+   <th><p>File</p></th>
    <th><p>Beschreibung</p></th>
-   <th><p>Speicherort</p></th>
+   <th><p>Ort</p></th>
   </tr>
  </thead>
  <tbody>
@@ -85,7 +85,7 @@ In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die zum Aufrufen von 
   <tr>
    <td><p>adobe-usermanager-client.jar</p></td>
    <td><p>Muss immer im Klassenpfad einer Java-Client-Anwendung enthalten sein.</p></td>
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>Installationsverzeichnis</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-utilities.jar</p></td>
@@ -95,77 +95,77 @@ In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die zum Aufrufen von 
   <tr>
    <td><p>adobe-applicationmanager-client-sdk.jar</p></td>
    <td><p>Erforderlich, um den Application Manager-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>Installationsverzeichnis</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-assembler-client.jar</p></td>
    <td><p>Erforderlich, um den Assembler-Dienst aufzurufen. </p></td>
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>Installationsverzeichnis</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-backup-restore-client-sdk.jar</p></td>
    <td><p>Erforderlich, um die API für den Sicherungs- und Wiederherstellungs-Service aufzurufen.</p></td>
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>Installationsverzeichnis</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-barcodedforms-client.jar</p></td>
    <td><p>Erforderlich, um den Dienst „Barcode-Formulare“ aufzurufen. </p></td>
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>Installationsverzeichnis</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-convertpdf-client.jar</p></td>
    <td><p>Erforderlich, um den Convert PDF-Dienst aufzurufen. </p></td>
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>Installationsverzeichnis</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-distiller-client.jar</p></td>
    <td><p>Erforderlich, um den Distiller-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>Installationsverzeichnis</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-docconverter-client.jar</p></td>
    <td><p>Erforderlich, um den DocConverter-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>Installationsverzeichnis</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-contentservices-client.jar</p></td>
    <td><p>Erforderlich, um den Document Management-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>Installationsverzeichnis</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-encryption-client.jar</p></td>
    <td><p>Erforderlich, um den Verschlüsselungsdienst aufzurufen.</p></td>
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>Installationsverzeichnis</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-forms-client.jar</p></td>
    <td><p>Erforderlich, um den Forms-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>Installationsverzeichnis</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-formdataintegration-client.jar</p></td>
    <td><p>Erforderlich, um den Form Data Integration-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>Installationsverzeichnis</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-generatepdf-client.jar</p></td>
    <td><p>Erforderlich, um den Generate PDF-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>Installationsverzeichnis</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-generate3dpdf-client.jar</p></td>
    <td><p>Erforderlich, um den Generate 3D PDF-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>Installationsverzeichnis</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-jobmanager-client-sdk.jar</p></td>
    <td><p>Erforderlich, um den Job Manager-Dienst aufzurufen. </p></td>
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>Installationsverzeichnis</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-output-client.jar</p></td>
    <td><p>Erforderlich, um den Ausgabe-Service aufzurufen.</p></td>
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>Installationsverzeichnis</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-pdfutility-client.jar</p></td>
@@ -222,9 +222,9 @@ In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die vom Verbindungsmo
 <table>
  <thead>
   <tr>
-   <th><p>Datei</p> </th>
+   <th><p>File</p> </th>
    <th><p>Beschreibung</p> </th>
-   <th><p>Speicherort</p> </th>
+   <th><p>Ort</p> </th>
   </tr>
  &lt;/thead align="left"&gt;
  <tbody>
@@ -287,7 +287,7 @@ In der folgenden Tabelle werden die Aufrufszenarien angegeben und die zum erfolg
 <table>
  <thead>
   <tr>
-   <th><p>Services</p> </th>
+   <th><p>Dienste</p> </th>
    <th><p>Aufrufmodus</p> </th>
    <th><p>J2EE-Anwendungs-Server</p> </th>
    <th><p>Erforderliche JAR-Dateien</p> </th>
