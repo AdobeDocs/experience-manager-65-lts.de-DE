@@ -121,7 +121,7 @@ Siehe [Hinzufügen von Dynamic Media Assets zu Seiten](/help/assets/adding-dynam
    * Ziehen Sie den Mauszeiger über das Video, um den Anzeigewinkel der statischen Szene zu ändern.
    * Wählen Sie die Schaltfläche **[!UICONTROL Play]**, um die Wiedergabe des Videos zu starten. Ziehen Sie während der Wiedergabe des Videos den Mauszeiger über das Video, um den Anzeigewinkel zu ändern.
 
-   ![Screenshot der im Weltraum schwebenden internationalen Weltraumstation mit Erde und Sonne im Hintergrund ](assets/6_5_360video-preview-video360-social.png)*Ein 360-Grad-Screenshot.*
+   ![Screenshot der im Weltraum schwebenden internationalen Weltraumstation mit Erde und Sonne im Hintergrund &#x200B;](assets/6_5_360video-preview-video360-social.png)*Ein 360-Grad-Screenshot.*
 
    * Wählen Sie in der Viewer-Liste **[!UICONTROL Video360VR]** aus.
 
@@ -136,7 +136,7 @@ Siehe [Hinzufügen von Dynamic Media Assets zu Seiten](/help/assets/adding-dynam
 
 Veröffentlichen Sie das 360-Grad-Video, damit Sie es verwenden können. Die Veröffentlichung eines 360-Grad-Videos aktiviert die URL und den Einbettungs-Code. Außerdem wird das 360-Grad-Video in der Dynamic Media-Cloud veröffentlicht, die für eine skalierbare und leistungsfähige Bereitstellung mit einem CDN integriert ist.
 
-Weitere Informationen [ Veröffentlichen von 360](/help/assets/publishing-dynamicmedia-assets.md)Grad-Videos finden Sie unter Veröffentlichen von Dynamic Media-Assets .
+Weitere Informationen [&#x200B; Veröffentlichen von 360](/help/assets/publishing-dynamicmedia-assets.md)Grad-Videos finden Sie unter Veröffentlichen von Dynamic Media-Assets .
 Siehe auch [Einbetten des Video- oder Bild-Viewers auf einer Web-Seite](/help/assets/embed-code.md).
 Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md). Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Experience Manager Sites.
 Siehe auch [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
