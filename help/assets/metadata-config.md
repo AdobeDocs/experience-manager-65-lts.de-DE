@@ -120,7 +120,7 @@ Mit einem Metadatenprofil können Sie Standardmetadaten auf Assets in einem Ordn
 
 <!--
 TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/de/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -278,7 +278,7 @@ Geben Sie Metadatenwerte in die verschiedenen Felder ein und klicken Sie auf **[
 
 >[!MORELIKETHIS]
 >
->* [Konzepte und Grundlagen von Metadaten](metadata-concepts.md).
+>* [Metadatenkonzepte und Grundlegendes](metadata-concepts.md).
 >* [Bearbeiten von Metadateneigenschaften mehrerer Sammlungen](manage-collections.md#editing-collection-metadata-in-bulk).
 >* [Import und Export von Metadaten in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=de).
 >* [Profile zur Verarbeitung von Metadaten, Bildern und Videos](processing-profiles.md).

@@ -7,8 +7,8 @@ role: Admin, User, Developer
 exl-id: 5e1c5e07-1848-4784-9bdc-4d3b464baebe
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 100%
+source-wordcount: '2167'
+ht-degree: 97%
 
 ---
 
@@ -202,9 +202,9 @@ fragment="myFragment"/>
 
 #### Auflösen von Verweisen im CRX-Repository {#resolve-references-on-crx-repository}
 
-Sie können den Quellverweis selektiv angeben, den Sie auflösen möchten, indem Sie den CRX-Pfad des
-Fragmentverweises in der XDP-Quelle angeben. Im unten angegebenen Beispiel werden die enthaltenen Fragmente
-ebenfalls aufgelöst.
+Sie können die Quellreferenz, die Sie auflösen möchten, selektiv angeben, indem Sie den CRX-Pfad des
+Fragmentverweis in der XDP-Quelle. Im folgenden Beispiel sind die Fragmente ebenfalls enthalten
+Auflösung.
 
 ```xml
 <DDX xmlns="http://ns.adobe.com/DDX/1.0/"
@@ -293,7 +293,7 @@ Das folgende Beispiel stellt ein DDX-Dokument dar, das zum Aufteilen des Dokumen
 
 ### Aufteilen eines Quelldokuments basierend auf Lesezeichen {#divide-a-source-document-based-on-bookmarks}
 
-In der folgenden Abbildung ist DocA in mehrere Zieldokumente unterteilt. Das Lesezeichen der Stufe 1 auf einer Seite gibt den Beginn eines neuen resultierenden Dokuments an.
+In der folgenden Abbildung ist DocA in mehrere Zieldokumente unterteilt. Das Lesezeichen der Stufe 1 auf einer Seite kennzeichnet den Beginn eines neuen resultierenden Dokuments.
 
 ![Aufteilen eines Quelldokuments in mehrere Dokumente basierend auf Lesezeichen](assets/as_intro_pdfsfrombookmarks.png)
 

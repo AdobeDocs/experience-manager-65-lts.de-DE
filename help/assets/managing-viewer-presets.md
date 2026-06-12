@@ -13,8 +13,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: bb860b28-19ee-4b1c-b420-3f61528156f0
 source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
 workflow-type: tm+mt
-source-wordcount: '4398'
-ht-degree: 81%
+source-wordcount: '4537'
+ht-degree: 76%
 
 ---
 
@@ -39,7 +39,7 @@ In diesem Abschnitt wird beschrieben, wie Viewer-Vorgaben erstellt, bearbeitet u
 
 Alle standardmäßigen Viewer unterstützen den Zugriff auf die Tastatur.
 
-Weitere Informationen finden Sie unter [Tastaturzugriff und Navigation](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility).
+Weitere Informationen finden Sie unter [Tastaturzugriff und Navigation](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility).
 
 ## Viewer-Vorgaben verwalten {#managing-viewer-presets-1}
 
@@ -55,12 +55,12 @@ Sie können Viewer-Vorgaben in Adobe Experience Manager hinzufügen, bearbeiten,
 
 Unterschiedliche Web-Seiten haben unterschiedliche Anforderungen. Mitunter möchten Sie vielleicht, dass eine Web-Seite über einen Link verfügt, der den HTML5-Viewer in einem separaten Browser-Fenster öffnet. In anderen Fällen kann es aber auch erforderlich sein, den HTML5-Viewer direkt auf der Host-Seite einzubetten. In letzterem Fall kann die Web-Seite ein statisches Layout aufweisen. Oder sie kann „responsiv“ sein und auf verschiedenen Geräten oder bei verschieden großen Browser-Fenstern anders angezeigt werden. Um all diese Anforderungen zu berücksichtigen, unterstützen sämtliche vordefinierten, standardmäßig vorhandenen HTML5-Viewer, die mit Dynamic Media bereitgestellt werden, sowohl statische als auch responsive Web-Seiten.
 
-Weitere Informationen [&#x200B; Einbetten responsiver Viewer auf Web](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library)Seiten finden Sie unter „Bibliothek responsiver Bilder“ .
+Weitere Informationen [ Einbetten responsiver Viewer auf Web](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library)Seiten finden Sie unter „Bibliothek responsiver Bilder“ .
 
 >[!NOTE]
 >
->Veröffentlichen Sie alle vorkonfigurierten Viewer, bevor Sie sie zum ersten Mal verwenden.
->&#x200B;>Siehe [Veröffentlichen von Viewer-Vorgaben].(#publishing-viewer-presets)
+>Veröffentlichen Sie alle vordefinierten Viewer, bevor Sie sie zum ersten Mal verwenden.
+>Siehe [Veröffentlichen von Viewer-Vorgaben].(#publishing-viewer-presets)
 
 ### Systemkompatibilität der Viewer-Vorgaben {#viewer-preset-system-compatibility}
 
@@ -80,7 +80,7 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
 <table>
  <tbody>
   <tr>
-   <td><strong>Karussellset</strong><br /> </td>
+   <td><strong>Karussell-Set</strong><br /> </td>
    <td><p>Hotspots oder Imagemaps oder beides werden zu einer Reihe von zwei oder mehr Bildern hinzugefügt. Ein Kunde kann Bilder nach links oder rechts schwenken. Anschließend können sie einen Hotspot auswählen, um weitere Details anzuzeigen oder einen Kauf direkt über die Kategorie einer Website, über die Startseite oder Landingpages vorzunehmen.</p> </td>
   </tr>
   <tr>
@@ -96,8 +96,8 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
    <td>Zeigt ein Bild des gezoomten Bereichs im Original-Viewer an. Es stehen keinerlei Steuerelemente zur Verfügung. Benutzer verschieben vielmehr die Auswahl über den Bereich, der angezeigt werden soll.</td>
   </tr>
   <tr>
-   <td><strong>Bildset</strong></td>
-   <td>Im Bildset-Viewer können Benutzer unterschiedliche Ansichten oder Farbvariationen eines Elements sehen, indem sie auf eine Miniatur klicken. Dieser Viewer bietet auch Zoomtools, mit denen Bilder genauer untersucht werden können.</td>
+   <td><strong>Bild-Set</strong></td>
+   <td>Im Bild-Set-Viewer können Benutzer unterschiedliche Ansichten oder Farbvariationen eines Elements sehen, indem sie auf eine Miniatur klicken. Dieser Viewer bietet auch Zoomtools, mit denen Bilder genauer untersucht werden können.</td>
   </tr>
   <tr>
    <td><strong>Interaktives Bild</strong></td>
@@ -105,11 +105,11 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
   </tr>
   <tr>
    <td><strong>Interaktives Video</strong></td>
-   <td>Miniaturansichten werden Zeitleistensegmenten in einem Video hinzugefügt, auf die Kundinnen und Kunden anschließend klicken können, um zusätzliche Informationen zu erhalten oder den Kauf direkt über die Kategorie einer Website, über die Startseite oder Landingpages vorzunehmen.</td>
+   <td>Miniaturansichten werden Timeline -Segmenten in einem Video hinzugefügt, auf die Kundinnen und Kunden anschließend klicken können, um zusätzliche Informationen zu erhalten oder den Kauf direkt über die Kategorie einer Website, über die Startseite oder Landingpages vorzunehmen.</td>
   </tr>
   <tr>
    <td><strong>Gemischte Medien</strong></td>
-   <td>Zeigt unterschiedliche Medientypen in einem Viewer an. Dort können Sie Rotationssets, Bildsets, Bilder und Videos aufnehmen.</td>
+   <td>Zeigt unterschiedliche Medientypen in einem Viewer an. Dort können Sie Rotations-Sets, Bild-Sets, Bilder und Videos aufnehmen.</td>
   </tr>
   <tr>
    <td><strong>Panoramabild</strong></td>
@@ -120,7 +120,7 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
     </ul> <p>Sowohl das Kriterium für das Seitenverhältnis als auch das für die Keywords gelten für Panorama-Assets für die Asset-Detailseite und die WCM-Komponente für „Panoramamedien“.</p> <p><strong>Wichtig</strong>: Dieser Viewer ist nur im Scene7-Modus von Dynamic Media verfügbar.</p> </td>
   </tr>
   <tr>
-   <td><strong>Smartes Zuschneiden von Videos</strong><br /> </td>
+   <td><strong>Intelligenter Zuschnitt von Videos</strong><br /> </td>
    <td><p>Verwenden Sie diesen Viewer, um den Fokus in jedem Video automatisch zu erkennen und zuzuschneiden.</p> </td>
   </tr>
   <tr>
@@ -139,7 +139,7 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
    <td><strong>Vertikaler Zoom</strong></td>
    <td><p>Mit dem Viewer für vertikalen Zoom können Sie das Anzeigeerlebnis von Produktbildern maximieren, um Ihrem Publikum die bestmögliche Darstellung eines Produkts zu bieten. Die vertikale Position von Farbfeldern bewirkt Folgendes:</p>
     <ul>
-     <li>Stellt sicher, dass sich Farbfelder „über der Falte“ befinden.<br/> Bei einer horizontalen Platzierung von Farbfeldern sind diese je nach Bildschirmgröße erst sichtbar, wenn auf der Seite nach unten gescrollt wird. Durch die vertikale Platzierung der Farbfelder im Viewer wird sichergestellt, dass sie unabhängig von der Bildschirmgröße der Benutzenden sichtbar sind.</li>
+     <li>Stellt sicher, dass sich Farbfelder „über der Falte“ befinden<br/> Bei einer horizontalen Platzierung von Farbfeldern sind diese je nach Bildschirmgröße erst sichtbar, wenn auf der Seite nach unten gescrollt wird. Durch die vertikale Platzierung der Farbfelder im Viewer wird sichergestellt, dass sie unabhängig von der Bildschirmgröße der Benutzenden sichtbar sind.</li>
      <li>Maximiert die Größe des Hauptbilds.<br /> Bei horizontalen Farbfeldern muss Platz auf der Seite eingeplant werden, um sicherzustellen, dass sie sichtbar sind. Durch diese Positionierung wird die Größe des Hauptbilds verringert. Bei einem vertikalen Farbfeld-Layout ist das Einplanen dieses Bereichs jedoch nicht erforderlich. Daher können Sie die Größe des Hauptbilds maximieren.</li>
     </ul> </td>
   </tr>
@@ -162,11 +162,11 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
 
 >[!NOTE]
 >
->Alle vorkonfigurierten Viewer-Vorgaben in Dynamic Media sind bereits aktiviert. Sie müssen sie allerdings noch veröffentlichen.
->&#x200B;>Siehe [Veröffentlichen von Viewer-Vorgaben](#publishing-viewer-presets).
+>Alle vordefinierten Viewer-Vorgaben in Dynamic Media sind bereits aktiviert. Sie müssen sie jedoch noch veröffentlichen.
+>Siehe [Veröffentlichen von Viewer-Vorgaben](#publishing-viewer-presets).
 >
 >Alle neuen Viewer-Vorgaben, die Sie erstellen und hinzufügen, müssen aktiviert *und* veröffentlicht werden.
->&#x200B;>Siehe [Aktivieren oder Deaktivieren von Viewer-Vorgaben](#activating-or-deactivating-viewer-presets) und [Veröffentlichen von Viewer-Vorgaben](#publishing-viewer-presets).
+>Siehe [Aktivieren oder Deaktivieren von Viewer](#activating-or-deactivating-viewer-presets)Vorgaben und [Veröffentlichen von Viewer](#publishing-viewer-presets).
 
 <table>
  <tbody>
@@ -207,12 +207,12 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>ImageSet_dark</td>
-   <td>Bildset</td>
+   <td>Bild-Set</td>
    <td><code>html5_zoomviewer_dark.css</code></td>
   </tr>
   <tr>
    <td>ImageSet_light</td>
-   <td>Bildset</td>
+   <td>Bild-Set</td>
    <td><code>html5_zoomviewer_light.css</code></td>
   </tr>
   <tr>
@@ -440,13 +440,13 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
      Der Visual Editor zeigt Ihnen, wie sich eine bestimmte Eigenschaft auf einen Stil auswirkt. Legen Sie eine beliebige Eigenschaft fest oder passen Sie sie an, um zu sehen, wie sie sich auf den Viewer auswirkt. Verwenden Sie dazu das Beispiel links vom Editor.
 
-     Die CSS-Stileigenschaften für alle Viewer-Vorgabetypen werden im Abschnitt „Anpassen des *`<viewer name>`*-Viewers“ in den Hilfethemen im [Viewers-Referenzhandbuch](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources) beschrieben. Wenn Sie z. B. eine Viewer-Vorgabe vom Typ `Mixed_Media` erstellen, finden Sie im Thema zum [Anpassen von Viewern für gemischte Medien](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer) eine Aufstellung und Beschreibung jeder Eigenschaft.
+     Die CSS-Stileigenschaften für alle Viewer-Vorgabetypen werden im Abschnitt „Anpassen des *`<viewer name>`*-Viewers“ in den Hilfethemen im [Viewers-Referenzhandbuch](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources) beschrieben. Wenn Sie z. B. eine Viewer-Vorgabe vom Typ `Mixed_Media` erstellen, finden Sie im Thema zum [Anpassen von Viewern für gemischte Medien](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer) eine Aufstellung und Beschreibung jeder Eigenschaft.
 
    * Wenn Stileinstellungen in einer separaten CSS-Datei definiert sind, können Sie die CSS-Datei in AEM Assets hochladen. Wählen **[!UICONTROL CSS importieren]** aus dem Pulldown **[!UICONTROL Menü „Ausgewählter]**&quot; aus. Scrollen Sie bei Bedarf im Visual Editor nach oben, um die hochgeladene CSS-Datei zu finden und sie mit der Viewer-Vorgabe zu verknüpfen.
 
      Beim Importieren einer CSS-Datei überprüft der Visual Editor, ob CSS die korrekten Viewer-Markierungen verwendet. Wenn Sie etwa einen Zoom-Viewer erstellen, müssen alle CSS-Regeln, die Sie importieren, mit dem zugehörigen Viewer-Klassennamen `.s7mixedmediaviewer` (definiert in einem übergeordneten Viewer-Element) festgelegt werden.
 
-     Sie können beliebige, selbst definierte CSS-Dateien importieren, solange diese die CSS-Markierungen für den jeweiligen Viewer ordnungsgemäß definieren. (CSS-Markierungen werden im Hilfethema „Anpassen *&lt;Viewer-Name>*-Viewers“ im [Viewers-Referenzhandbuch“ &#x200B;](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources). Wenn Sie beispielsweise über CSS-Markierungen für den Zoom-Viewer lesen möchten, finden Sie weitere Informationen unter [Anpassen des Zoom-Viewers](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer).) Es ist jedoch möglich, dass der visuelle Editor einige CSS-Werte nicht versteht. In diesem Fall versucht der visuelle Editor, die Fehler zu überschreiben, damit CSS nach wie vor verwendet werden kann.
+     Sie können beliebige, selbst definierte CSS-Dateien importieren, solange diese die CSS-Markierungen für den jeweiligen Viewer ordnungsgemäß definieren. (CSS-Markierungen werden im Hilfethema „Anpassen *&lt;Viewer-Name>*-Viewers“ im [Viewers-Referenzhandbuch“ ](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources). Informationen zu CSS-Markierungen für den Zoom-Viewer finden Sie beispielsweise unter [Anpassen des Zoom-Viewers](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer).) Es ist jedoch möglich, dass der visuelle Editor einige CSS-Werte nicht versteht. In diesem Fall versucht der visuelle Editor, die Fehler zu überschreiben, damit CSS nach wie vor verwendet werden kann.
 
    >[!NOTE]
    >
@@ -458,8 +458,8 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
    >Für Schaltflächengrafiken wählen Sie das 2x-Bild aus und laden Sie Grafiken mit hoher Auflösung hoch. Beim Arbeiten mit interaktiven Bildern und Bannern mit Einkaufsfunktion können Sie auch aus verschiedenen standardmäßig vorhandenen Hotspot-Schaltflächen wählen.
 
 1. (Optional) Klicken Sie in der Nähe des oberen Bereichs der Seite „Viewer-Vorgabe bearbeiten“ auf **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]** oder **[!UICONTROL Phone]**, um eindeutige visuelle Stile für verschiedene Geräte- und Bildschirmtypen zu definieren.
-1. Wählen Sie auf der Seite „Viewer-Vorgaben-Editor“ die Registerkarte **[!UICONTROL Verhalten]**. Sie können auch auf ein beliebiges visuelles Element im Viewer klicken, um es zum Konfigurieren auszuwählen.
-Beispiel: Beim *VideoPlayer*-Typ können Sie unter **[!UICONTROL Modifikatoren]** > **[!UICONTROL Wiedergabe]** aus einer von drei Streaming-Optionen für adaptive Bit-Raten auswählen:
+1. Wählen Sie auf der Seite „Viewer-Vorgabe bearbeiten“ die Registerkarte **[!UICONTROL Verhalten]** aus. Alternativ können Sie jedes visuelle Element im Viewer auswählen, um es für die Konfiguration auszuwählen.
+Beispielsweise können Sie für den *VideoPlayer*-Typ unter **[!UICONTROL Modifiers]** > **[!UICONTROL Play]** aus einer von drei Streaming-Optionen für adaptive Bit-Raten auswählen:
 
    * **[!UICONTROL DASH]** – Video-Stream nur als DASH. Auf Safari-/iOS-Geräten müssen Sie jedoch stattdessen **[!UICONTROL hls]** als Typ auswählen.
    * **[!UICONTROL HLS]** – Video-Stream nur als HLS.
@@ -472,7 +472,7 @@ Beispiel: Beim *VideoPlayer*-Typ können Sie unter **[!UICONTROL Modifikatoren]*
 
    Viele Komponenten im Visual Editor sind mit einer detaillierten Beschreibung verknüpft. Diese Beschreibungen werden in blauen Feldern angezeigt, wenn Sie eine Komponente zum Anzeigen der mit ihr verknüpften Parameter einblenden.
 
-   Einige Viewer-Typen verfügen über Komponenten, mit denen Sie Befehle zum Image Serving in einem **[!UICONTROL IS-Befehl]**-Textfeld angeben können. Eine Liste der verfügbaren Befehle finden Sie in der [Image Serving API-Referenz](https://experienceleague.adobe.com/de/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home).
+   Einige Viewer-Typen verfügen über Komponenten, mit denen Sie Befehle zum Image Serving in einem **[!UICONTROL IS-Befehl]**-Textfeld angeben können. Eine Liste der verfügbaren Befehle finden Sie in der [Image Serving API-Referenz](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home).
 
    >[!NOTE]
    >
@@ -536,13 +536,13 @@ Das Videountersegment 3 wird nicht über die Miniaturen hinweg erweitert, die ih
 Die durch den Viewer zum Bestimmen der Anzahl der im seitlichen Bedienfeld angezeigten Miniaturen verwendete Logik basiert wie folgt auf der Anzahl der verfügbaren Positionen:
 
 * Anzahl der Untersegmente = Aufrundung auf das nächste Untersegment (Anzahl der Miniaturen: Anzahl der sichtbaren Spots im Miniaturansichtsfeld, auf Grundlage der Browser-Fenstergröße).
-Unter Verwendung des Beispiels in der obigen Tabelle ergibt 9 Miniaturen : 4 Slots = 2,25, was die Viewer-Logik auf drei Untersegmente aufrundet.
+Unter Verwendung des Beispiels in der obigen Tabelle ergibt 9 Miniaturansichten : 4 Slots = 2,25, was die Viewer-Logik auf drei Untersegmente aufrundet.
 
 * Anzahl der Miniaturen = Aufrundung auf die nächste Miniatur (Anzahl der Miniaturen : Anzahl der Videountersegmente).
 Unter Verwendung des Beispiels in der obigen Tabelle ergibt 9 Miniaturen : 3 Videountersegmente = 3 Miniaturen.
 
 * Dauer des Untersegments = gesamte Videodauer : Anzahl der Videountersegmente.
-Unter Verwendung des Beispiels in der obigen Tabelle ergibt 30 Sekunden: 3 Segmente = 10 Sekunden anhaltende Anzeige jedes Segments.
+Unter Verwendung des Beispiels in der obigen Tabelle ergibt 30 Sekunden : 3 Videountersegmente = 10-Sekunden-Anzeige jedes Videountersegments.
 
 #### Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 

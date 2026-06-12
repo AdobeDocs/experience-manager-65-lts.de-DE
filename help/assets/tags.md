@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 3aea14f7-052d-4f23-b65d-e648623146e7
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '6929'
+source-wordcount: '6920'
 ht-degree: 99%
 
 ---
@@ -725,7 +725,7 @@ Die Experience Manager-Konfiguration besteht aus den folgenden zwei Hauptschritt
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
-1. Es wird eine Seite mit Integrationsdetails **&#x200B;**&#x200B;(ähnlich der folgenden) angezeigt:
+1. Es wird eine Seite mit Integrationsdetails **** (ähnlich der folgenden) angezeigt:
 
    >[!NOTE]
    >

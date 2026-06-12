@@ -9,8 +9,8 @@ role: Admin, User, Developer
 exl-id: 9c05a71b-70fa-4470-afdf-823fd5da5ad1
 source-git-commit: 51342861dd01e659999c19fbe0274e8d3cbcf8c4
 workflow-type: tm+mt
-source-wordcount: '4485'
-ht-degree: 62%
+source-wordcount: '4746'
+ht-degree: 61%
 
 ---
 
@@ -227,14 +227,14 @@ Dieser Abschnitt enthält Details und Anweisungen zur MS® Dynamics-Cloud-Konfig
 
 **Verweise:**
 
-1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [Konfigurieren von Microsoft® Dynamics für AEM Forms](https://experienceleague.adobe.com/de/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
+1. [Microsoft® Dynamics OData-Konfiguration](/help/forms/using/ms-dynamics-odata-configuration.md)
+1. [Konfigurieren von Microsoft® Dynamics für AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
 
 #### MS® Dynamics OData-Cloud-Service {#ms-dynamics-odata-cloud-service}
 
 1. Gehen Sie zu:
 
-   https://&lt;aemserver>:&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
+   https://<aemserver>:<port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
    1. Stellen Sie sicher, dass Sie auf den Server zugreifen, indem Sie dieselbe Umleitungs-URL verwenden, die in der Registrierung des MS® Dynamics-Programms konfiguriert wurde.
 
@@ -283,13 +283,13 @@ Die in diesem Abschnitt beschriebenen Schritte bieten Hilfe bei der Suche nach d
 1. Um die Ressourcen-URL/Dienststamm-URL zu finden, navigieren Sie zum Dashboard der MS® Dynamics-Instanz.
 1. Klicken Sie in der oberen Navigationsleiste auf **Verkauf** oder Ihren eigenen Instanztyp und dann auf **Einstellungen auswählen**.
 1. Klicken Sie unten rechts auf **Anpassungen** und **Entwicklerressourcen**.
-1. Suchen Sie die Service-Stamm-URL. Beispiel:
+1. Suchen Sie die Service-Stamm-URL. Zum Beispiel:
 
    `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 
 1. Details zur URL für Aktualisierungs- und Zugriffstoken finden Sie unter:
 
-   [https://learn.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app](https://learn.microsoft.com/de-de/rest/api/datacatalog/authenticate-a-client-app)
+   [https://learn.microsoft.com/de-de/rest/api/datacatalog/authenticate-a-client-app](https://learn.microsoft.com/de-de/rest/api/datacatalog/authenticate-a-client-app)
 
 #### Testen des Formulardatenmodells (Dynamics) {#testing-the-form-data-model}
 
@@ -383,7 +383,7 @@ Dieses Paket ist für die Verbindung mit Adobe Analytics vorkonfiguriert. Die fo
 Suchen Sie die Benutzeranmeldeinformationen für ein Adobe Analytics-Konto, das der Kontoadministrator ausführen muss, indem Sie die folgenden Aufgaben ausführen.
 
 1. Navigieren Sie zum Adobe Experience Cloud-Portal.
-Melden Sie sich mit Ihren Administrator-Anmeldeinformationen an.
+Melden Sie sich mit Ihren Administrator-Anmeldeinformationen an
 1. Wählen Sie im Haupt-Dashboard das Adobe Analytics-Symbol aus.
    ![Schnellzugriff](assets/aftia-quick-access.jpg)
 1. Navigieren Sie zur Registerkarte „Admin“ und wählen Sie das Element „User Management (Legacy)“ aus.
@@ -483,7 +483,7 @@ Um AEM Forms mit Adobe Forms zu installieren und zu konfigurieren, müssen Benut
 
 Überprüfen Sie Folgendes, bevor Sie weitere Anweisungen lesen:
 
-* [Service für die automatische Formularkonvertierung konfigurieren](https://experienceleague.adobe.com/de/docs/aem-forms-automated-conversion-service/using/configure-service#)
+* [Service zur automatischen Formularkonvertierung konfigurieren](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#)
 
 #### Erstellen einer IMS-Konfiguration - Teil 1 {#creating-ims-config}
 
@@ -512,7 +512,7 @@ Vergewissern Sie sich, dass Sie die Möglichkeit haben, eine Integration in Ihre
 
 1. Navigieren Sie zu [Adobe Developer Console](https://developer.adobe.com/console/).
 
-1. Klicken Sie auf **Integration erstellen**.
+1. Klicken Sie **Integration erstellen**.
 
 1. Wählen Sie **Zugriff auf eine API** aus.
 
@@ -582,7 +582,7 @@ Sobald die IMS-Konfiguration abgeschlossen ist, können Sie die Cloud-Konfigurat
 
 1. Für diese Konfiguration wurden die beiden Kontrollkästchenwerte leer gelassen.
 
-   Weitere Informationen zu diesen Optionen finden Sie unter [Konfigurieren des Cloud-Service](https://experienceleague.adobe.com/de/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
+   Weitere Informationen zu diesen Optionen finden Sie unter [Konfigurieren des Cloud-Service](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
 
 #### Konfigurieren der Cloud-Konfiguration (`We.Finance` AFC Production) {#configure-cloud-configuration-wefinance}
 
@@ -612,7 +612,7 @@ Sobald die IMS-Konfiguration abgeschlossen ist, können Sie mit der Erstellung d
 
 1. Für diese Konfiguration wurden die beiden Kontrollkästchenwerte leer gelassen.
 
-   * Weitere Informationen zu diesen Optionen finden Sie unter [Konfigurieren des Cloud-Services](https://experienceleague.adobe.com/de/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
+   * Weitere Informationen zu diesen Optionen finden Sie unter [Konfigurieren des Cloud-Services](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
 
 #### Testen der Formularkonvertierung (We.Gov-Registrierungsprogramm) {#test-forms-conversion}
 
@@ -652,7 +652,7 @@ Nachdem die Konfiguration eingerichtet wurde, können Benutzer sie testen, indem
 
 #### Bekannte Probleme und Hinweise {#known-issues-notes}
 
-Zum Service der automatischen Formularkonvertierung gehören bestimmte [Best Practices, bekannte komplexe Muster](https://experienceleague.adobe.com/de/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#) und [bekannte Probleme](https://experienceleague.adobe.com/de/docs/aem-forms-automated-conversion-service/using/known-issues#). Lesen Sie diese Informationen, bevor Sie mit der Verwendung des Service zur automatischen Formularkonvertierung von AEM Forms beginnen.
+Zum Service der automatischen Formularkonvertierung gehören bestimmte [Best Practices, bekannte komplexe Muster](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#) und [bekannte Probleme](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/known-issues#). Lesen Sie diese Informationen, bevor Sie mit der Verwendung des Service zur automatischen Formularkonvertierung von AEM Forms beginnen.
 
 1. Erstellen Sie das Formular mit aktivierter Option „Adaptive Formulare ohne Datenbindung generieren“, wenn Sie das Formular nach der Konvertierung an einen FDM binden möchten.
 
@@ -712,7 +712,7 @@ Die in diesem Paket enthaltenen Seiten unterstützen auch das Stilsystem:
 
 [Stilsystem](../../sites-authoring/style-system.md)
 
-Informationen zu [&#x200B; Stilen finden Sie unter &#x200B;](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) von Vorlagenanpassungen .
+Informationen zu [ Stilen finden Sie unter ](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) von Vorlagenanpassungen .
 
 ### Anpassung adaptiver Formulare {#adaptive-forms-customization}
 
@@ -778,7 +778,7 @@ Wenn Sie diese Daten exportieren möchten, klicken Sie auf die drei Schaltfläch
 ### Ultramarine-Design {#ultramarine-theme}
 
 Das öffentlich verfügbare Ultramarine-Design, das von Adobe gepflegt wird, ist in die
-`we-gov-forms.pkg.all-<version>.zip` installierbare ZIP-Datei integriert. Dieses Paket wird mit CRX installiert.
+`we-gov-forms.pkg.all-<version>.zip` installierbare ZIP-Datei Dieses Paket wird mit CRX installiert.
 
 Package Manager-Benutzer können auf das Ultramarine-Design in AEM Forms zugreifen, indem sie zu **Forms** > **Designs** > **Referenz-Designs** > **Ultramarine-Accessible**.
 

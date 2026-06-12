@@ -542,7 +542,7 @@ Führen Sie die folgenden Aufgaben aus, um Benutzer, Gruppen und Domains mithilf
 
 1. Erstellen Sie einen DirectoryManagerService-Client.
 
-   Erstellen Sie ein `DirectoryManagerServiceClient`-Objekt, indem Sie seinen Konstruktor verwenden und ein `ServiceClientFactory`-Objekt übergeben, das Verbindungseigenschaften enthält. Weitere Informationen finden Sie unter [Festlegen von Verbindungseigenschaften &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
+   Erstellen Sie ein `DirectoryManagerServiceClient`-Objekt, indem Sie seinen Konstruktor verwenden und ein `ServiceClientFactory`-Objekt übergeben, das Verbindungseigenschaften enthält. Weitere Informationen finden Sie unter [Festlegen von Verbindungseigenschaften ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
 
 1. Rufen Sie die entsprechenden Benutzer- oder Gruppenvorgänge auf.
 
@@ -552,7 +552,7 @@ Führen Sie die folgenden Aufgaben aus, um Benutzer, Gruppen und Domains mithilf
 
    Mithilfe des resultierenden `User`- oder `Group`-Objekts (beide stammen von der `Principal`-Schnittstelle ab) können Sie die Informationen abrufen, die Sie für Ihre Workflows benötigen. Beispielsweise identifizieren die Werte für Domain-Namen und kanonische Namen gemeinsam einen Prinzipal eindeutig. Diese werden durch Aufrufen der Methoden `getDomainName` bzw. `getCanonicalName` des `Principal`-Objekts abgerufen.
 
-   Um eine lokale Benutzerin bzw. einen lokalen Benutzer zu löschen, rufen Sie die Methode `deleteLocalUser` des `DirectoryManagerServiceClient`-Objekts auf und übergeben Sie die entsprechende Benutzerkennung.
+   Um eine lokale Benutzerin bzw einen lokalen Benutzer aufzurufen, rufen Sie die Methode `deleteLocalUser` des `DirectoryManagerServiceClient`-Objekts auf und übergeben Sie die entsprechende Benutzerkennung.
 
    Um eine lokale Gruppe zu löschen, rufen Sie die Methode `deleteLocalGroup` des `DirectoryManagerServiceClient`-Objekts auf und übergeben Sie die Kennung der Gruppe.
 
