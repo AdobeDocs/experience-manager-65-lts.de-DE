@@ -12,7 +12,7 @@ role: User,Admin,Developer
 exl-id: 5a962fd3-33bb-44df-a48d-416a04f393eb
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1558'
 ht-degree: 100%
 
 ---
@@ -54,7 +54,7 @@ Bevor Sie sich einen Überblick über die Besonderheiten verschaffen, hier eine 
       * [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode)
       * [Als veröffentlicht anzeigen](/help/sites-authoring/editing-content.md#view-as-published)
 
-* Versionen werden nicht aus dem Seiteneditor gestartet/erstellt. Dies erfolgt jetzt über die Sites-Konsole (über **Erstellen** oder [Timeline](/help/sites-authoring/basic-handling.md#timeline) für die jeweilige Ressource).   
+* Versionen werden nicht aus dem Seiteneditor gestartet/erstellt. Dies erfolgt jetzt über die Sites-Konsole (über **Erstellen** oder [Timeline](/help/sites-authoring/basic-handling.md#timeline) für die jeweilige Ressource).
 
 >[!NOTE]
 >
@@ -127,7 +127,7 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
 [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions) sind verfügbar:
 
 1. [Navigieren Sie zu der Seite,](#finding-your-page) mit der Sie eine Aktion ausführen möchten.
-1. Bewegen Sie den Mauszeiger über die Karte für die gewünschte Ressource. Die Schnellaktionen werden angezeigt: 
+1. Bewegen Sie den Mauszeiger über die Karte für die gewünschte Ressource. Die Schnellaktionen werden angezeigt:
 
    ![screen_shot_2018-03-21at160503-1](assets/screen_shot_2018-03-21at160503-1.png)
 
@@ -280,7 +280,7 @@ Diese Aktionen können alle wie folgt ausgelöst werden:
    >
    >Löschen ist nicht als Schnellaktion verfügbar.
 
-### Sperren (und Entsperren) Ihrer Seite  {#locking-your-page-then-unlocking}
+### Sperren (und Entsperren) Ihrer Seite {#locking-your-page-then-unlocking}
 
 [Sperren einer Seite](/help/sites-authoring/editing-content.md#locking-a-page): Verhindert, dass andere Autoren daran arbeiten, während Sie dies tun. Das Symbol bzw. die Schaltfläche „Sperren“ (und „Entsperren“) ist verfügbar:
 

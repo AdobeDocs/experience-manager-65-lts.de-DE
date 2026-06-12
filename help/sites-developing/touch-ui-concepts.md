@@ -12,8 +12,8 @@ role: Developer
 exl-id: b60b198e-1683-4970-b9b4-f1d0178e00e1
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2117'
-ht-degree: 100%
+source-wordcount: '2207'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Die Touch-optimierte Benutzeroberfläche umfasst Folgendes:
    * Enthält einen Link zu „Globale Navigation“.
    * Enthält einen Link zu anderen allgemeinen Aktionen, z. B. „Suchen“, „Hilfe“, „Experience Cloud-Lösungen“, „Benachrichtigungen“ und „Benutzereinstellungen“.
 * Leiste auf der linken Seite (Anzeige bei Bedarf, kann ausgeblendet werden):
-   * Zeitleiste
+   * Timeline
    * Verweise
    * Filter
 * Kontextabhängige Navigationskopfzeile:
@@ -120,7 +120,8 @@ Die Granite-Benutzeroberfläche:
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-* [Granite-Benutzeroberfläche – Foundation-Komponenten](#granite-ui-foundation-components) Diese Bibliothek mit Grundlagenkomponenten kann von anderen Bibliotheken verwendet oder erweitert werden.
+* [Granite-Benutzeroberfläche - Foundation-Komponenten](#granite-ui-foundation-components)
+Diese Bibliothek mit Foundation-Komponenten kann von anderen Bibliotheken verwendet oder erweitert werden.
 * [Granite-Benutzeroberfläche – Verwaltungskomponenten](#granite-ui-administration-components)
 
 ### Client-Seite und Server-Seite {#client-side-vs-server-side}
@@ -273,7 +274,7 @@ Implementierung:
 CoralUI.pdf
 
 [Datei abrufen](assets/coralui.pdf)
-Die Coral-Benutzeroberfläche (CUI) ist eine Implementierung des visuellen Stils von Adobe für die Touch-optimierte Benutzeroberfläche. Sie wurde entwickelt, um produktübergreifend die Einheitlichkeit des Anwendererlebnisses sicherzustellen. Die Coral-Benutzeroberfläche bietet alles, was Sie benötigen, um den visuellen Stil der Authoring-Umgebung zu übernehmen.
+Die Coral-Benutzeroberfläche (CUI) ist eine Implementierung des visuellen Stils von Adobe für die Touch-optimierte Benutzeroberfläche. Sie bietet produktübergreifend ein konsistentes Benutzererlebnis. Die Coral-Benutzeroberfläche bietet alles, was Sie benötigen, um den visuellen Stil der Authoring-Umgebung zu übernehmen.
 
 >[!CAUTION]
 >

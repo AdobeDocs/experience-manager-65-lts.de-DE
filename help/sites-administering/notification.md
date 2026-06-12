@@ -11,8 +11,8 @@ role: Admin
 exl-id: 3ef72c05-1301-402e-94ce-49fbaf26fb98
 source-git-commit: aff6c41e13293a1c83eca226354f5c16cff18d99
 workflow-type: tm+mt
-source-wordcount: '2147'
-ht-degree: 99%
+source-wordcount: '2175'
+ht-degree: 98%
 
 ---
 
@@ -206,7 +206,7 @@ subject=<text_1>
 >
 >Weitere Informationen zum Vorlagenformat werden von der Methode [javadocs der Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-)-Methode bereitgestellt.
 
-Die Methode `${payload.path.open}` legt den Pfad zur Payload des Arbeitselements offen. Bei einer Seite in Sites würde `payload.path.open` dann `/bin/wcmcommand?cmd=open&path=…`ähneln, das den Server-Namen nicht enthält. Aus diesem Grund stellt die Vorlage diesem `${host.prefix}` voran.
+Die Methode `${payload.path.open}` legt den Pfad zur Payload des Arbeitselements offen. Beispiel: Für eine Seite in Sites wäre `payload.path.open` dann ähnlich wie `/bin/wcmcommand?cmd=open&path=…`. Dies ist ohne den Server-Namen, weshalb die Vorlage dieser `${host.prefix}` voranstellt.
 
 Die folgenden Variablen können innerhalb der E-Mail-Vorlage verwendet werden:
 
