@@ -11,8 +11,8 @@ role: Admin
 exl-id: 29f1d07b-925b-4612-aa1b-34c387a5765f
 source-git-commit: b93a65226587936010c3dd53312c66e15f73cf2a
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 15%
+source-wordcount: '384'
+ht-degree: 7%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 15%
 
 Beim Upgrade auf AEM 6.5 LTS werden die folgenden Bundles automatisch deinstalliert, je nachdem, von welcher Version des AEM 6.5 Service Packs das Upgrade erfolgt ist:
 
-* com.adobe.cq.social.cq-social-activitystreams
+* com.adobe.cq.social.cq-social-activityStreams
 * com.adobe.cq.social.cq-social-as-provider
 * com.adobe.cq.social.cq-social-badging-api
 * com.adobe.cq.social.cq-social-badging-basic-impl
@@ -31,9 +31,9 @@ Beim Upgrade auf AEM 6.5 LTS werden die folgenden Bundles automatisch deinstalli
 * com.adobe.cq.social.cq-social-commons
 * com.adobe.cq.social.cq-social-console
 * com.adobe.cq.social.cq-social-content-fragments-impl
-* com.adobe.cq.social.cq-social-enablement-api
-* com.adobe.cq.social.cq-social-enablement-impl
-* com.adobe.cq.social.cq-social-filelibrary
+* com.adobe.cq.social.cq-social-enable-api
+* com.adobe.cq.social.cq-social-enable-impl
+* com.adobe.cq.social.cq-social-filelilibrary
 * com.adobe.cq.social.cq-social-forum
 * com.adobe.cq.social.cq-social-gamification-api
 * com.adobe.cq.social.cq-social-gamification-impl
@@ -51,7 +51,7 @@ Beim Upgrade auf AEM 6.5 LTS werden die folgenden Bundles automatisch deinstalli
 * com.adobe.cq.social.cq-social-members-impl
 * com.adobe.cq.social.cq-social-messaging-api
 * com.adobe.cq.social.cq-social-messaging-impl
-* com.adobe.cq.social.cq-social-moderation-spamdetector-core
+* com.adobe.cq.social.cq-social-moderation-spamdetektor-core
 * com.adobe.cq.social.cq-social-moderation
 * com.adobe.cq.social.cq-social-ms-provider
 * com.adobe.cq.social.cq-social-notifications-api
@@ -63,7 +63,7 @@ Beim Upgrade auf AEM 6.5 LTS werden die folgenden Bundles automatisch deinstalli
 * com.adobe.cq.social.cq-social-review
 * com.adobe.cq.social.cq-social-scf-api
 * com.adobe.cq.social.cq-social-scf-impl
-* com.adobe.cq.social.cq-social-scoring-api
+* com.adobe.cq.social.cq-social-score-api
 * com.adobe.cq.social.cq-social-scoring-basic-impl
 * com.adobe.cq.social.cq-social-scoring-impl
 * com.adobe.cq.social.cq-social-serviceusers-api
@@ -82,7 +82,7 @@ Beim Upgrade auf AEM 6.5 LTS werden die folgenden Bundles automatisch deinstalli
 * com.adobe.cq.screens.mq.core
 * com.adobe.cq.screens
 * com.adobe.cq.screens.sessions
-* com.adobe.granite.socketio
+* com.adobe.granite.socket
 * org.apache.jackrabbit.jackrabbit-api (durch neuere Version ersetzt org.apache.jackrabbit.oak-jackrabbit-api)
 * com.adobe.cq.commerce.cq-commerce-core
 * com.adobe.cq.commerce.cq-commerce-pim
@@ -101,5 +101,5 @@ Die folgenden Bundles sind nicht in einer neuen AEM 6.5 LTS-Instanz enthalten. N
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
 * com.adobe.granite.osgi.wrapper.guava
-* com.adobe.cq.core.wcm.components.core (kann durch die mit [AEM 6.5 LTS kompatible Version ersetzt werden](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/versions))
+* com.adobe.cq.core.wcm.components.core (kann durch die mit [AEM 6.5 LTS kompatible Version ersetzt werden](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/versions))
 * com.adobe.cq.core.wcm.components.extension.contentfragment.bundle (kann durch eine mit AEM 6.5 LTS kompatible Version ersetzt werden)

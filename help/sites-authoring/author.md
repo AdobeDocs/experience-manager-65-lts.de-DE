@@ -7,8 +7,8 @@ role: User,Admin,Developer
 exl-id: 314a6c65-9b90-4f4c-9e4a-d551dbb646e9
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 97%
+source-wordcount: '430'
+ht-degree: 96%
 
 ---
 
@@ -69,14 +69,14 @@ Normalerweise befindet sich die Veröffentlichungsumgebung innerhalb der „entm
 >
 >Leider gibt es manchmal Überschneidungen in der verwendeten Terminologie. Dies kann bei Folgendem vorkommen:
 >
->* **Veröffentlichen/Veröffentlichung rückgängig machen**
->  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
+>* **Veröffentlichen/Veröffentlichung aufheben**
+>  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung öffentlich verfügbar machen (oder nicht).
 >
 >* **Aktivieren/Deaktivieren**
->  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
+>  Diese Begriffe sind gleichbedeutend mit Veröffentlichen/Rückgängigmachen der Veröffentlichung.
 >
 >* **Replizieren/Replikation**
->  Dies sind technische Begriffe, die für die Verschiebung von Daten (z. B. Seiteninhalte, Dateien, Code, Benutzerkommentare) zwischen Umgebungen verwendet werden, z. B. beim Veröffentlichen oder beim Zurückreplizieren von Benutzerkommentaren.
+>  Dies sind die technischen Begriffe, die verwendet werden, um das Verschieben von Daten (z. B. Seiteninhalte, Dateien, Code, Benutzerkommentare) von einer Umgebung in eine andere anzugeben, d. h. beim Veröffentlichen oder Rückwärtsreplizieren von Benutzerkommentaren.
 >
 
 #### Dispatcher {#dispatcher}
