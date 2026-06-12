@@ -12,8 +12,8 @@ role: Admin
 exl-id: b840d970-9365-4df3-8467-e34abd940074
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '3276'
-ht-degree: 98%
+source-wordcount: '3230'
+ht-degree: 96%
 
 ---
 
@@ -68,9 +68,9 @@ Um diesem Beispiel zu folgen und die standardmäßigen Replikationsagenten zu ve
 
 Diese Replikation wird von der Autorenumgebung aus durch folgende Komponente durchgeführt:
 
-* **Standardagent („publish“)**
-Dieser Agent repliziert Inhalte in die standardmäßige Veröffentlichungsinstanz.
-Der Zugriff auf entsprechende Details (Konfiguration und Protokolle) ist über die Tools-Konsole der Autorenumgebung oder
+* **Standardagent (publish)**
+Dieser Agent repliziert Inhalte auf der Standard-Veröffentlichungsinstanz.
+Details hierzu (Konfiguration und Protokolle) können über die Tools -Konsole der Autorenumgebung aufgerufen werden oder:
   `http://localhost:4502/etc/replication/agents.author/publish.html`.
 
 >[!NOTE]
@@ -84,8 +84,8 @@ Der Zugriff auf entsprechende Details (Konfiguration und Protokolle) ist über d
 >* Agenten für Autor: Rückwärtsreplikationsagent („publish_reverse“)
 >* Agenten bei Veröffentlichung: Rückwärtsreplikation („outbox“)
 >
->Der Status des Agenten oder der Warteschlange kann mithilfe der **Tools-Konsole** überprüft werden.
->&#x200B;>Weitere Informationen finden Sie unter [Überwachen der Replikationsagenten](#monitoring-your-replication-agents).
+>Um den Status des Agenten oder der Warteschlange zu überprüfen, verwenden Sie die **Tools**-Konsole.
+>Siehe [Überwachen der Replikationsagenten](#monitoring-your-replication-agents).
 
 #### Replikation (von der Autoren- in die Veröffentlichungsinstanz) {#replication-author-to-publish}
 
@@ -103,18 +103,18 @@ Der Zugriff auf entsprechende Details (Konfiguration und Protokolle) ist über d
 Die folgenden Agenten sind in der AEM-Standardinstallation verfügbar:
 
 * [Standardagent](#replication-author-to-publish)
-Dient zum Replizieren von der Autoren- in die Veröffentlichungsinstanz.
+Wird für die Replikation von der Autoren- zur Veröffentlichungsinstanz verwendet.
 
-* Dispatcher Flush
-Dient zum Verwalten des Dispatcher-Caches. Weitere Informationen finden Sie unter [Invalidieren des Dispatcher-Cache aus der Autorenumgebung](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de#invalidating-dispatcher-cache-from-the-authoring-environment) und [Invalidieren des Dispatcher-Cache von einer Veröffentlichungsinstanz](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de#invalidating-dispatcher-cache-from-a-publishing-instance).
+* Dispatcher-Leerung
+Dies wird für die Verwaltung des Dispatcher-Caches verwendet. Weitere Informationen finden Sie unter [Invalidieren des Dispatcher-Cache aus der Autorenumgebung](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de#invalidating-dispatcher-cache-from-the-authoring-environment) und [Invalidieren des Dispatcher-Cache von einer Veröffentlichungsinstanz](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=de#invalidating-dispatcher-cache-from-a-publishing-instance).
 
 * [Rückwärtsreplikation](#configuring-reverse-replication)
-Dient zum Replizieren von der Veröffentlichungs- in die Autoreninstanz. Die Rückwärtsreplikation wird nicht für Communities-Funktionen wie Foren, Blogs und Kommentare verwendet. Sie ist effektiv deaktiviert, da der Postausgang nicht aktiviert ist. Für die Rückwärtsreplikation ist eine benutzerdefinierte Konfiguration erforderlich.
+Wird für die Replikation von der Veröffentlichungs- auf die Autoreninstanz verwendet. Die Rückwärtsreplikation wird nicht für Communities-Funktionen wie Foren, Blogs und Kommentare verwendet. Sie ist effektiv deaktiviert, da der Postausgang nicht aktiviert ist. Für die Rückwärtsreplikation ist eine benutzerdefinierte Konfiguration erforderlich.
 
 * Statischer Agent
-Dies ist ein „Agent, der eine statische Repräsentation eines Knotens im Dateisystem speichert“.
-Bei den Standardeinstellungen werden beispielsweise Inhaltsseiten und DAM-Assets unter `/tmp` gespeichert, entweder im HTML- oder im entsprechenden Asset-Format. Weitere Einzelheiten zur Konfiguration finden Sie auf den Registerkarten `Settings` und `Rules`.
-Der Grund hierfür war, dass die Inhalte sichtbar sein sollten, wenn die Seite direkt vom Anwendungs-Server angefordert wird. Hierbei handelt es sich um einen speziellen Agenten, der (wahrscheinlich) für den Großteil der Instanzen nicht benötigt wird.
+Dies ist ein „Agent, der eine statische Darstellung eines Knotens im Dateisystem speichert“.
+Bei den Standardeinstellungen werden beispielsweise Inhaltsseiten und DAM-Assets unter `/tmp` gespeichert, entweder im HTML- oder im entsprechenden Asset-Format. Weitere Informationen zur Konfiguration finden Sie auf den Registerkarten `Settings` und `Rules` .
+Dies wurde angefordert, damit der Inhalt angezeigt wird, wenn die Seite direkt vom Anwendungs-Server angefordert wird. Dies ist ein spezialisierter Agent, der (wahrscheinlich) für die meisten Instanzen nicht erforderlich ist.
 
 ## Replikationsagenten – Konfigurationsparameter {#replication-agents-configuration-parameters}
 

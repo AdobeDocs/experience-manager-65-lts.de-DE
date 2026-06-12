@@ -12,7 +12,7 @@ role: User,Admin,Developer
 exl-id: a0ddb246-64eb-493c-9950-9b7ecb32e555
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '4650'
+source-wordcount: '4704'
 ht-degree: 99%
 
 ---
@@ -54,7 +54,7 @@ Ausführliche Informationen zur Funktionsweise von bearbeitbaren Vorlagen auf te
 
 Achten Sie auf Folgendes, bevor Sie beginnen:
 
-* Das Erstellen einer Vorlage erfordert eine Zusammenarbeit.  Aus diesem Grund wird für jede Aufgabe eine [Rolle](#roles) angezeigt.
+* Das Erstellen einer Vorlage erfordert eine Zusammenarbeit. Aus diesem Grund wird für jede Aufgabe eine [Rolle](#roles) angezeigt.
 
 ### Rollen {#roles}
 
@@ -166,7 +166,7 @@ Für Ihr Projekt sollte ein Vorlagenordner für Ihre projektspezifischen Vorlage
    >
    >Wenn eine neue Vorlage erstellt wird, wird sie in der Konsole als **Entwurf** markiert, was bedeutet, dass sie noch nicht für Seitenautoren zur Verfügung steht.
 
-### Definieren von Vorlageneigenschaften – Vorlagenautor  {#defining-template-properties-template-author}
+### Definieren von Vorlageneigenschaften – Vorlagenautor {#defining-template-properties-template-author}
 
 Eine Vorlage kann die folgenden Eigenschaften aufweisen:
 
@@ -250,7 +250,7 @@ Eine Vorlage kann für bestimmte Seitenverzweigungen verfügbar oder nicht verf�
 
 1. Verwenden Sie unter **Vorlageneinstellungen** die Option **Feld hinzufügen**, um die Pfade zu Ihren Vorlagen anzugeben.
 
-   Der Pfad kann explizit sein oder Muster verwenden. Ein Beispiel:
+   Der Pfad kann explizit sein oder Muster verwenden. Beispiel:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 

@@ -11,8 +11,8 @@ role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
 source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '5053'
-ht-degree: 99%
+source-wordcount: '5215'
+ht-degree: 98%
 
 ---
 
@@ -139,13 +139,13 @@ Zwei Dinge wirken sich auf die Leistung aus:
 
 Beachten Sie Folgendes, um die Leistung zu verbessern:
 
-* Wie viele Assets werden pro Tag hochgeladen? Eine gute Schätzung erhalten Sie mit folgender Formel: 
+* Wie viele Assets werden pro Tag hochgeladen? Eine gute Schätzung erhalten Sie mit folgender Formel:
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
 * Der Zeitrahmen, in dem Bearbeitungen durchgeführt werden (normalerweise während der Bürozeiten, länger bei internationaler Zusammenarbeit).
 * Die durchschnittliche Größe der hochgeladenen Bilder (und die Größe der pro Bild generierten Darstellungen) in Megabyte.
-* Bestimmen Sie die durchschnittliche Datenrate: 
+* Bestimmen Sie die durchschnittliche Datenrate:
 
 ![chlimage_1-78](assets/chlimage_1-78.png)
 
@@ -232,7 +232,7 @@ Wenn Sie die Dienste konfigurieren [mithilfe eines sling:OsgiConfig-Knotens](/he
 
 Konfigurieren Sie die Eigenschaft mit dem Namen `queue.maxparallel`.
 
-#### Konfiguration in der Web-Konsole  {#configuration-in-the-web-console}
+#### Konfiguration in der Web-Konsole {#configuration-in-the-web-console}
 
 Um diese Dienste mithilfe [der Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) zu konfigurieren, suchen Sie die vorhandenen Konfigurationselemente unter der Apache Sling Job Queue Configuration Service Factory.
 
@@ -275,7 +275,7 @@ Der Dienst wird deaktiviert, indem man [den OSGi-Dienst](/help/sites-deploying/c
 
 ### Mehrere DAM-Instanzen {#multiple-dam-instances}
 
-Das Bereitstellen mehrerer DAM-Instanzen kann in folgenden Fällen die Leistung steigern: 
+Das Bereitstellen mehrerer DAM-Instanzen kann in folgenden Fällen die Leistung steigern:
 
 * Aufgrund regelmäßiger Uploads zahlreicher Assets in die Authoring-Umgebung entsteht eine hohe Last. In dieser Situation kann eine separate DAM-Instanz speziell für die Inhaltsverarbeitung reserviert werden.
 * Sie verfügen über mehrere Teams an weltweiten Standorten (z. B. USA, Europa, Asien).
@@ -294,9 +294,9 @@ In diesem Abschnitt erhalten Sie einen Überblick über Probleme bei der Definit
 Im Folgenden wird die übliche Vorgehensweise bei der Durchführung von Leistungstests bei einer AEM-Anwendung in der *Veröffentlichungsumgebung* beschrieben. Dieser Leistungstest umfasst die folgenden fünf Phasen:
 
 * [Überprüfung des Wissens](#verification-of-knowledge)
-* [Definition des Umfangs &#x200B;](#scope-definition)
+* [Definition des Umfangs](#scope-definition)
 * [Testmethoden](#test-methodologies)
-* [Definition von Leistungszielen &#x200B;](#defining-the-performance-goals)
+* [Definition von Leistungszielen](#defining-the-performance-goals)
 * [Optimierung](#optimization)
 
 Die Steuerung ist ein zusätzlicher, allumfassender Prozess – notwendig, aber nicht auf Tests beschränkt.
@@ -352,14 +352,14 @@ Dieses Konzept umfasst vier Szenarien, in denen die Leistungsziele definiert und
 
 Basierend auf den folgenden Grundsätzen.
 
-#### Belastungsgrenze der Komponente  {#component-breakpoints}
+#### Belastungsgrenze der Komponente {#component-breakpoints}
 
 * Jede Komponente hat eine bestimmte Belastungsgrenze in Bezug auf die Leistung. Das heißt, eine Komponente kann bis zu einem bestimmten Punkt eine gute Leistung aufweisen, woraufhin die Leistung schnell abnimmt.
 * Um einen vollständigen Überblick über die Anwendung zu erhalten, müssen Sie zunächst feststellen, wann bei Ihren Komponenten diese Belastungsgrenze erreicht ist.
 * Um den Breakpoint zu finden, können Sie einen Lasttest durchführen, bei dem Sie über einen bestimmten Zeitraum die Anzahl der Benutzer bzw. Benutzerinnen erhöhen, um eine steigende Last zu erzeugen. Durch die Überwachung dieser Last und die Beobachtung der Reaktion der Komponenten wird ein spezifisches Leistungsverhalten festgestellt, wenn der Belastungspunkt der Komponente erreicht ist. Der Punkt kann anhand der Anzahl der gleichzeitigen Transaktionen pro Sekunde sowie der Anzahl der gleichzeitigen Benutzer bzw. Benutzerinnen qualifiziert werden (wenn die Komponente auf diese KPI reagiert).
 * Diese Informationen können dann als Benchmark für Verbesserungen dienen, die Effizienz der verwendeten Maßnahmen angeben und bei der Definition von Testszenarien helfen.
 
-#### Transaktionen  {#transactions}
+#### Transaktionen {#transactions}
 
 * Der Begriff Transaktion wird verwendet, um die Anfrage einer vollständigen Web-Seite einschließlich der Seite selbst und aller nachfolgenden Aufrufe darzustellen. Das heißt die Seitenanfrage, alle AJAX Aufrufe, Bilder und andere Objekte **Drilldown für Anfragen**.
 * Um jede Anfrage vollständig zu analysieren, können Sie jedes Element des Aufrufstapels darstellen und dann die durchschnittliche Verarbeitungszeit für jedes Element addieren.
@@ -511,7 +511,7 @@ Wenn Sie keine 1-zu-1-Kopplung zwischen Publisher und Dispatcher haben, fügen S
 >
 >Für eine optimale Leistung empfiehlt Adobe ein Cache-Verhältnis von 90 % bis 95 %.
 
-#### Verwenden einer einheitlichen Seitencodierung  {#using-consistent-page-encoding}
+#### Verwenden einer einheitlichen Seitencodierung {#using-consistent-page-encoding}
 
 Mit der Dispatcher-Version 4.1.11 können Sie Antwort-Header zwischenspeichern. Wenn Sie keine Antwort-Header im Dispatcher cachen, können Probleme auftreten, wenn Sie Informationen zur Seitencodierung im Header speichern. In diesem Fall wird die Standardcodierung des Webservers für die Seite verwendet, wenn der Dispatcher eine Seite aus dem Cache bereitstellt. Es gibt zwei Möglichkeiten, dieses Problem zu vermeiden:
 
@@ -540,7 +540,7 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 >
 >Diese URL ruft dieselbe Seite und Vorlage auf wie `gallery.html`. In der Vorlagendefinition können Sie angeben, welches Skript die Seite rendert, oder Sie können dasselbe Skript für alle Seiten verwenden.
 
-#### Anpassen nach URL  {#customize-by-url}
+#### Anpassen nach URL {#customize-by-url}
 
 Wenn Sie Benutzerinnen und Benutzern erlauben, die Schriftgröße (oder eine andere Layout-Anpassung) zu ändern, stellen Sie sicher, dass die verschiedenen Anpassungen in der URL berücksichtigt werden.
 
@@ -562,7 +562,7 @@ www.myCompany.com/news/main.large.html
 >
 >Mithilfe des Skript-Globbings der Vorlagendefinition können Sie ein separates Skript angeben, das die Druckseiten rendert.
 
-#### Invalidierung von als Titel verwendeten Bilddateien  {#invalidating-image-files-used-as-titles}
+#### Invalidierung von als Titel verwendeten Bilddateien {#invalidating-image-files-used-as-titles}
 
 Wenn Sie Seitentitel oder anderen Text als Bilder rendern, wird empfohlen, die Dateien so zu speichern, dass sie bei einer Inhaltsaktualisierung auf der Seite gelöscht werden:
 
@@ -577,7 +577,7 @@ Beispielsweise können Sie den Titel der Seite `myPage.html` in der Datei `file 
 >
 >Die Bilddatei ist nicht unbedingt physisch auf der AEM-Instanz vorhanden. Sie können ein Skript verwenden, das die Bilddatei dynamisch erstellt. Der Dispatcher speichert die Datei dann auf dem Webserver.
 
-#### Invalidierung von Bilddateien für die Navigation  {#invalidating-image-files-used-for-navigation}
+#### Invalidierung von Bilddateien für die Navigation {#invalidating-image-files-used-for-navigation}
 
 Wenn Sie Bilder für die Navigationseinträge verwenden, ist die Methode im Wesentlichen die gleiche wie bei Titeln, aber etwas komplexer. Speichern Sie alle Navigationsbilder mit den Zielseiten. Wenn Sie zwei Bilder für „normal“ und „aktiv“ verwenden, können Sie die folgenden Skripte verwenden:
 
@@ -610,7 +610,7 @@ Bezüglich der Mischung von eingeschränkten und öffentlichen Inhalten auf eine
 >
 >Informationen zum Umgang mit gemischten öffentlichen und eingeschränkten Inhalten finden Sie unter [Einrichten von Sling Dynamic Include](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html?lang=de).
 
-#### Sticky-Verbindungen  {#sticky-connections}
+#### Sticky-Verbindungen {#sticky-connections}
 
 [Sticky-Verbindungen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de#the-benefits-of-load-balancing) stellen sicher, dass die Dokumente für eine Benutzerin oder einen Benutzer alle auf demselben Server erstellt werden. Wenn eine Benutzerin oder ein Benutzer diesen Ordner verlässt und später zu ihm zurückkehrt, bleibt die Verbindung erhalten. Um alle Dokumente zu speichern, die Sticky-Verbindungen für die Website erfordern, definieren Sie einen Ordner. Dieser sollte keine anderen Dokumente enthalten. Diese Funktion ist wichtig, wenn Sie personalisierte Seiten und Sitzungsdaten verwenden.
 

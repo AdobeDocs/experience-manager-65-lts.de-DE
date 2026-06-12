@@ -11,8 +11,8 @@ role: Admin
 exl-id: c49a9876-3a8e-4837-a1a7-e0e62bc60e32
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 100%
+source-wordcount: '519'
+ht-degree: 92%
 
 ---
 
@@ -22,7 +22,7 @@ Das [Open Web Application Security Project](https://owasp.org/) (OWASP) führt e
 
 Diese sind unten aufgeführt – zusammen mit einer Erläuterung, wie CRX mit ihnen umgeht.
 
-## 1. Injection {#injection}
+## &#x200B;1. Einspritzung {#injection}
 
 * SQL – Vorbeugung per Design: Das Standard-Repository umfasst und erfordert keine herkömmliche Datenbank, denn alle Daten werden im Content-Repository gespeichert. Der Zugriff ist komplett auf authentifizierte Benutzende beschränkt und kann nur durch die JCR-API durchgeführt werden. SQL wird nur für Suchanfragen unterstützt (SELECT). Darüber hinaus bietet SQL Unterstützung für Werte-Binding.
 * LDAP – Eine LDAP-Injection ist nicht möglich, da das Authentifizierungsmodul die Eingaben filtert und den Benutzerimport mithilfe der bind-Methode durchführt.
@@ -34,11 +34,11 @@ Die allgemeine Praxis zur Schadensbegrenzung besteht in der Codierung aller Ausg
 
 XSS hat sowohl bei den Tests als auch bei der Entwicklung eine hohe Priorität und alle festgestellten Probleme werden (in der Regel) umgehend behoben.
 
-## &#x200B;3. Fehler in Authentifizierung und Session Management {#broken-authentication-and-session-management}
+## &#x200B;3. Fehlerhafte Authentifizierung und Sitzungsverwaltung {#broken-authentication-and-session-management}
 
 AEM nutzt fundierte, bewährte Authentifizierungstechniken und greift hierzu auf [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/index.html) und [Apache Sling](https://sling.apache.org/) zurück. In AEM werden keine Browser-/HTTP-Sitzungen verwendet.
 
-## &#x200B;4. Unsichere direkte Objektreferenzen {#insecure-direct-object-references}
+## &#x200B;4. Unsichere direkte Objektverweise {#insecure-direct-object-references}
 
 Jeglicher Zugriff auf Datenobjekte wird durch ein Repository vermittelt und daher durch die rollenbasierte Zugriffssteuerung beschränkt.
 
@@ -48,7 +48,7 @@ Auf das Risiko der Cross-Site Request Forgery (CSRF) wird durch die automatisch
 
 Darüber hinaus ist AEM mit einem Referrer-Header-basierten Filter ausgestattet, der so konfiguriert werden kann, dass er *nur* POST-Anforderungen von bestimmten Hosts (in einer Liste definiert) zulässt.
 
-## &#x200B;6. Sicherheitsrelevante Fehlkonfiguration {#security-misconfiguration}
+## &#x200B;6. Fehlerhafte Sicherheitskonfiguration {#security-misconfiguration}
 
 Es kann nicht garantiert werden, dass sämtliche Software immer korrekt konfiguriert ist. Allerdings versucht Adobe, so viel Hilfe wie möglich bereitzustellen und die Konfiguration so einfach wie möglich zu gestalten. Darüber hinaus ist AEM mit [integrierten Sicherheitsintegritätsprüfungen](/help/sites-administering/operations-dashboard.md) ausgestattet, die Ihnen bei der Überwachung der Sicherheitskonfiguration auf einen Blick helfen.
 
@@ -60,14 +60,14 @@ Die Kennwörter werden als kryptografische Hashes im Benutzerknoten gespeichert.
 
 Sensible Daten wie Drittanbieter-Ameldedaten sind in verschlüsselter Form mithilfe einer FIPS 140-2-zertifizierten kryptografischen Bibliothek gespeichert.
 
-## &#x200B;8. Fehlgeschlagene Beschränkung des URL-Zugriffs {#failure-to-restrict-url-access}
+## &#x200B;8. URL-Zugriff kann nicht eingeschränkt werden {#failure-to-restrict-url-access}
 
 Das Repository ermöglicht die Einstellung von [feinabgestimmten Rechten (wie durch JCR angegeben)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) für jede Person bzw. Gruppe unter jedem beliebigen Pfad über Zugriffssteuerungseinträge. Zugriffbeschränkungen werden durch das Repository durchgesetzt.
 
-## &#x200B;9. Unzureichende Transportschichtsicherheit {#insufficient-transport-layer-protection}
+## &#x200B;9. Unzureichender Schutz der Transportschicht {#insufficient-transport-layer-protection}
 
 Dieses Risiko wird durch die Server-Konfiguration gemindert (z. B. ausschließliche Verwendung von HTTPS).
 
-## &#x200B;10. Ungeprüfte Um- und Weiterleitungen {#unvalidated-redirects-and-forwards}
+## &#x200B;10. Nicht validierte Weiterleitungen und Weiterleitungen {#unvalidated-redirects-and-forwards}
 
 Dieses Risiko wird durch die Beschränkung aller Umleitungen an benutzerseitig bereitgestellte Ziele auf interne Standorte gemindert.

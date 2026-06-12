@@ -9,8 +9,8 @@ role: Admin
 exl-id: 413f15c9-5b51-4d8d-8cf0-3e98608b9d9e
 source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1388'
-ht-degree: 99%
+source-wordcount: '1410'
+ht-degree: 95%
 
 ---
 
@@ -47,10 +47,10 @@ Das responsive Layout für Ihre Seiten wird von AEM durch eine Kombination von M
         Sie können den Layout-Container als Standard für die Seite festlegen und es den Benutzern gleichzeitig erlauben, weitere Layout-Container darin hinzuzufügen, z. B. für die Spaltensteuerung.
 
 * **[Layout-Modus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-Sobald der Layout-Container auf der Seite positioniert ist, können Sie im **Layout**-Modus Inhalte im responsiven Raster positionieren.
+Sobald der Layout-Container auf Ihrer Seite positioniert ist, können Sie den **Layout**-Modus verwenden, um Inhalte im responsiven Raster zu positionieren.
 
 * [**Emulator**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
-Auf diese Weise können Sie responsive Websites erstellen und bearbeiten, deren Layout sich durch interaktive Größenanpassung der Komponenten an die Geräte-/Fenstergröße anpasst. Die Benutzerin bzw. der Benutzer kann dann mit dem Emulator sehen, wie der Inhalt wiedergegeben wird.
+Auf diese Weise können Sie responsive Websites erstellen und bearbeiten, deren Layout durch interaktive Größenanpassung der Komponenten an die Geräte-/Fenstergröße angepasst wird. Die Benutzerin bzw. der Benutzer kann dann mit dem Emulator sehen, wie der Inhalt wiedergegeben wird.
 
 Mit diesen responsiven Rastermechanismen können Sie:
 
@@ -309,7 +309,7 @@ Gelegentlich ist es erforderlich, responsive Raster zu verschachteln, um die Anf
 
 Wenn Sie die Verwendung verschachtelter responsiver Raster nicht vermeiden können, stellen Sie Folgendes sicher:
 
-* Alle Container (Container, Registerkarten, Akkordeons usw.) haben die Eigenschaft `layout = responsiveGrid`.
+* Alle Container (Container, Registerkarten, Akkordeons usw.) Lassen Sie die Eigenschaft `layout = responsiveGrid`.
 * Mischen Sie nicht die Eigenschaft `layout = simple` in der Container-Hierarchie.
 
 Dies betrifft alle strukturellen Container aus der Seitenvorlage.

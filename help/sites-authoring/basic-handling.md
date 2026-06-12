@@ -12,8 +12,8 @@ role: User,Admin,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '2919'
-ht-degree: 100%
+source-wordcount: '2951'
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließe
 
 Die globale Navigation verfügt über zwei Fenster, die am linken Bildschirmrand durch Symbole dargestellt werden:
 
-* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** – dargestellt durch einen Kompass 
+* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** – dargestellt durch einen Kompass
 * **[Tools](/help/sites-authoring/basic-handling.md#tools-panel)** – dargestellt durch einen Hammer
 
 Die in diesen Fenstern verfügbaren Optionen werden im Folgenden beschrieben.
@@ -177,7 +177,7 @@ Die Kopfzeile befindet sich immer am oberen Rand des Bildschirms. Die meisten Op
 
   ![Breadcrumbs](assets/bh-05.png)
 
-  Werden in der Mitte der Leiste angezeigt und zeigen immer die Beschreibung des aktuell ausgewählten Elements an. Sie ermöglichen Ihnen damit die Navigation innerhalb einer bestimmten Konsole.  In der Sites-Konsole können Sie damit durch die Ebenen Ihrer Website navigieren.
+  Werden in der Mitte der Leiste angezeigt und zeigen immer die Beschreibung des aktuell ausgewählten Elements an. Sie ermöglichen Ihnen damit die Navigation innerhalb einer bestimmten Konsole. In der Sites-Konsole können Sie damit durch die Ebenen Ihrer Website navigieren.
 
   Durch Klicken auf den Breadcrumb-Text wird eine Dropdown-Liste mit den Hierarchieebenen des aktuell ausgewählten Elements geöffnet. Klicken Sie auf einen Eintrag, um zu dieser Position zu springen.
 
@@ -242,10 +242,10 @@ Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
   Über die **Tools**-Konsole können Sie auch auf die externen **Ressourcen** zugreifen:
 
    * **Dokumentation**
-Dokumentation für Web Experience Management anzeigen
+Dokumentation zu Web Experience Management anzeigen
 
    * **Entwicklungsressourcen**
-Entwicklungsressourcen und Downloads
+Ressourcen und Downloads für Entwickler
 
   >[!NOTE]
   >
@@ -268,7 +268,7 @@ In der Symbolleiste werden immer nur jene Aktionen angezeigt, die Sie bei den je
 
 Wie Sie [eine Ressource auswählen](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), hängt von der Ansicht ab.
 
-Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbolleiste schnell länger als der verfügbare Platz werden. In diesem Fall werden weitere Optionen angezeigt. Durch Klicken oder Tippen auf die Auslassungspunkte (drei Punkte bzw. **…**) wird eine Dropdown-Auswahl geöffnet, die alle verbleibenden Aktionen enthält. Beispiel: Sie haben eine Seite in der **Sites-Konsole** ausgewählt:
+Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbolleiste schnell länger als der verfügbare Platz werden. In diesem Fall werden weitere Optionen angezeigt. Durch Klicken oder Tippen auf die drei Punkte (die drei Punkte oder **…**) Öffnet eine Dropdown-Auswahl, die alle verbleibenden Aktionen enthält. Beispiel: Sie haben eine Seite in der **Sites-Konsole** ausgewählt:
 
 ![Aktionssymbolleiste](assets/bh-12.png)
 
@@ -543,7 +543,7 @@ In der Timeline-Spalte haben Sie folgende Möglichkeiten:
 
       * Alle anzeigen
 
-* [Hinzufügen/Anzeigen von Kommentaren zum gewählten Element ](#timelineaddingandviewingcomments) Das Feld **Kommentare** wird unten in der Ereignisliste angezeigt. Wenn Sie einen Kommentar gefolgt von der Eingabetaste eingeben, wird der Kommentar registriert. Er wird angezeigt, wenn **Kommentare** oder **Alle anzeigen** ausgewählt ist.
+* [Hinzufügen/Anzeigen von Kommentaren zum gewählten Element &#x200B;](#timelineaddingandviewingcomments) Das Feld **Kommentare** wird unten in der Ereignisliste angezeigt. Wenn Sie einen Kommentar gefolgt von der Eingabetaste eingeben, wird der Kommentar registriert. Er wird angezeigt, wenn **Kommentare** oder **Alle anzeigen** ausgewählt ist.
 
 * Bestimmte Konsolen verfügen über zusätzliche Funktionen. In der Sites-Konsole können Sie beispielsweise Folgendes tun:
 

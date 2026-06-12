@@ -8,8 +8,8 @@ role: Admin
 exl-id: f185c622-1681-4221-a082-cac71d6b510b
 source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4379'
-ht-degree: 99%
+source-wordcount: '4463'
+ht-degree: 98%
 
 ---
 
@@ -85,7 +85,7 @@ Bei Verwendung von RTE können Autorinnen und Autoren Inhalte in einem der folge
 
 * **MS® Word-Modus**: Fügen Sie den Text, einschließlich Tabellen, beim Kopieren aus MS® Word mit Formatierung ein. Das Kopieren und Einfügen von Text aus einer anderen Quelle wie einer Web-Seite oder MS® Excel wird nicht unterstützt und dabei wird nur ein Teil der Formatierung beibehalten.
 
-### Konfigurieren der in der RTE-Symbolleiste verfügbaren Einfüge-Optionen   {#configure-paste-options-available-on-the-rte-toolbar}
+### Konfigurieren der in der RTE-Symbolleiste verfügbaren Einfüge-Optionen  {#configure-paste-options-available-on-the-rte-toolbar}
 
 Sie können Ihren Autoren in der RTE-Symbolleiste nur einige, alle oder keine dieser drei Symbole zur Verfügung stellen:
 
@@ -122,7 +122,7 @@ Die Konfiguration ermöglicht die folgenden drei Arten von Anwendungsfällen:
 
 ### Konfigurieren der beim Einfügen von Inhalten zulässigen Formate {#pasteformats}
 
-Der Modus „paste-as-Microsoft-Word“ (`paste-wordhtml`) kann weiter konfiguriert werden. So können Sie explizit festlegen, welche Stile beim Einfügen von Inhalten in AEM von einem anderen Programm wie beispielsweise Microsoft® Word aus zulässig sind. 
+Der Modus „paste-as-Microsoft-Word“ (`paste-wordhtml`) kann weiter konfiguriert werden. So können Sie explizit festlegen, welche Stile beim Einfügen von Inhalten in AEM von einem anderen Programm wie beispielsweise Microsoft® Word aus zulässig sind.
 
 Sollen beim Einfügen von Inhalten in AEM zum Beispiel nur fett gedruckte Formate und Listen zulässig sein, können Sie die anderen Formate herausfiltern. Dieser Vorgang wird als konfigurierbare Filterung beim Einfügen bezeichnet, die für Folgendes verwendet werden kann:
 
@@ -270,7 +270,7 @@ Geben Sie dann die Speicherorte für die Stylesheets an, auf die Sie verweisen m
 
    * **Name** `cssName`
    * **Typ** `String`
-   * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; beispielsweise `cssClass` anstatt `.cssClass`)
+   * **Wert** Der Name der CSS-Klasse (ohne vorangestelltes &quot;.“; z. B. `cssClass` anstelle von `.cssClass`)
 
 1. Fügen Sie demselben Knoten die Eigenschaft `text` hinzu. Dadurch wird der im Auswahlfeld angezeigte Text definiert:
 
@@ -686,13 +686,13 @@ Um zu konfigurieren, wie Links in AEM von einem anderen Programm aus hinzugefüg
 
       * **Name** `cssInternal`
       * **Typ** `String`
-      * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; beispielsweise `cssClass` anstatt `.cssClass`)
+      * **Wert** der Name der CSS-Klasse (ohne vorangestelltes &quot;.“; z. B. `cssClass` anstelle von `.cssClass`)
 
    * CSS-Stil für externe Links
 
       * **Name** `cssExternal`
       * **Typ** `String`
-      * **Wert:** Der Name der CSS-Klasse (ohne „.“ voranzustellen; beispielsweise `cssClass` anstatt `.cssClass`)
+      * **Wert** der Name der CSS-Klasse (ohne vorangestelltes &quot;.“; z. B. `cssClass` anstelle von `.cssClass`)
 
    * Array von gültigen **Protokollen**. Die unterstützten Protokolle sind `http://`, `https://`, `file://` und `mailto:`.
 
