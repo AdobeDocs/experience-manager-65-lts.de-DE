@@ -9,7 +9,7 @@ role: Admin, User, Developer
 exl-id: 238cf38b-31f3-4a0b-ad26-b93df2844195
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1436'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ We.Finance ist eine Organisation, die es Bewerberinnen und Bewerbern ermöglicht
 
 * Bewerberinnen und Bewerber, die nach Stellen suchen und sich auf sie bewerben
 * Vorauswahl und engere Auswahl von Bewerberinnen und Bewerbern
-* Ablauf der Vorstellungsgespräche 
+* Ablauf der Vorstellungsgespräche
 * Sammlung von Bewerbungsunterlagen
 * Hintergrundprüfung der Bewerberinnen und Bewerber
 * Unterbreiten von Angeboten für ausgewählte Bewerberinnen und Bewerber
@@ -141,7 +141,7 @@ John Does AEM-Posteingang
 
 ![johndoescheduleinterview](assets/johndoescheduleinterview.png)
 
-John Doe plant das Vorstellungsgespräch und sendet die Details an Sarah Rose 
+John Doe plant das Vorstellungsgespräch und sendet die Details an Sarah Rose
 
 ## Sarah Rose erhält die E-Mail mit dem Zeitplan für das Vorstellungsgespräch {#sarah-rose-receives-the-email-with-interview-schedule}
 

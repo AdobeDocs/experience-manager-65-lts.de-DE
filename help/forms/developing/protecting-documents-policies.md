@@ -196,7 +196,7 @@ Wenn Sie die Option `NoEncryption` angeben, können Sie die Option `PlaintextMet
 
 >[!NOTE]
 >
->Weitere Informationen zu anderen Attributen, die Sie festlegen können, finden Sie in der Beschreibung der `Policy`-Benutzeroberfläche in [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Weitere Informationen zu anderen Attributen, die Sie festlegen können, finden Sie unter Beschreibung der `Policy`-Benutzeroberfläche in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Einen Richtlinieneintrag erstellen**
 
@@ -970,7 +970,7 @@ So widerrufen Sie den Zugriff auf ein richtliniengeschütztes PDF-Dokument mithi
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des zu widerrufenden richtliniengeschützten PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
    * Erstellen Sie ein Byte-Array, in dem der Inhalt des `System.IO.FileStream`-Objekts gespeichert wird. Sie können die Größe des Byte-Arrays ermitteln, indem Sie die Eigenschaft `Length` des Objekts `System.IO.FileStream` abrufen.
    * Füllen Sie das Byte-Array mit Stream-Daten auf, indem Sie die Methode `Read` des Objekts `System.IO.FileStream` verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge weitergeben.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
+   * Füllen Sie das `BLOB`-Objekt mit den Inhalten des Byte-Arrays, indem Sie diese dem `MTOM`-Feld des Objekts zuweisen.
 
 1. Widerrufen des richtliniengeschützten Dokuments
 
@@ -1788,7 +1788,7 @@ So suchen Sie mithilfe der Rights Management-API (Webservice) nach Ereignissen:
     </tr>
     <tr>
     <td><p><code>DOCUMENT_VIEW_EVENT </code></p></td>
-    <td><p>2000</p></td>
+    <td><p>2.000</p></td>
     </tr>
     <tr>
     <td><p><code>DOCUMENT_PRINT_LOW_EVENT </code></p></td>
@@ -1896,7 +1896,7 @@ So suchen Sie mithilfe der Rights Management-API (Webservice) nach Ereignissen:
     </tr>
     <tr>
     <td><p><code>ADMIN_ADD_EVENT </code></p></td>
-    <td><p>5000</p></td>
+    <td><p>5.000</p></td>
     </tr>
     <tr>
     <td><p><code>ADMIN_DELETE_EVENT </code></p></td>
@@ -1916,7 +1916,7 @@ So suchen Sie mithilfe der Rights Management-API (Webservice) nach Ereignissen:
     </tr>
     <tr>
     <td><p><code>ERROR_DIRECTORY_SERVICE_EVENT </code></p></td>
-    <td><p>6000</p></td>
+    <td><p>6.000</p></td>
     </tr>
     <tr>
     <td><p><code>CREATED_POLICYSET_EVENT</code></p></td>

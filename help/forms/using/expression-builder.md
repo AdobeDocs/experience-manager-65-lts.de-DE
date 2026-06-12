@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: aed65a14-2b4f-45ac-8b20-fdb08b3c9038
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '797'
 ht-degree: 96%
 
 ---
@@ -26,7 +26,7 @@ Der Ausdrucksgenerator verwendet intern JSP EL-Bibliotheken, damit der Ausdruck 
 
 ![Ausdrucksgenerator](assets/expressionbuilder.png)
 
-### Operatoren  {#operators}
+### Operatoren {#operators}
 
 Die Operatoren, die zur Verwendung in Ausdrücken verfügbar sind, sind in der oberen Leiste des Ausdrucksgenerators verfügbar.
 
