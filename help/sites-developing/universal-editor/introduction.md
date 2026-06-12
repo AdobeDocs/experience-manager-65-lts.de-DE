@@ -6,8 +6,8 @@ role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
 source-git-commit: 49922325d3cc993d551683fac1effe9fc9590880
 workflow-type: tm+mt
-source-wordcount: '1191'
-ht-degree: 42%
+source-wordcount: '1320'
+ht-degree: 46%
 
 ---
 
@@ -53,7 +53,7 @@ Dieses Dokument konzentriert sich auf die Unterstützung von AEM 6.5 LTS für de
 >
 >*Wenn Sie Adobe Managed Services (AMS) verwenden, wenden Sie sich an Ihren Customer Success Engineer (CSE), wenn Sie den universellen Editor verwenden möchten.
 
-## Einrichtung {#setup}
+## Setup {#setup}
 
 Gehen Sie wie folgt vor, um den universellen Editor zu verwenden:
 
@@ -69,7 +69,7 @@ Der universelle Editor beruht auf einer Reihe von Services, die konfiguriert wer
 
 #### Legen Sie das SameSite-Attribut für das Cookie `login-token` fest. {#samesite-attribute}
 
-1. Öffnen Sie den Configuration Manager. 
+1. Öffnen Sie den Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
 1. Suchen Sie **Adobe Granite Token Authentication Handler** in der Liste und klicken Sie auf **Konfigurationswerte ändern**.
 1. Ändern Sie im Dialogfeld den Wert **SameSite-Attribut für das Cookie des Anmelde-Tokens** (`token.samesite.cookie.attr`) auf `Partitioned`.
@@ -77,7 +77,7 @@ Der universelle Editor beruht auf einer Reihe von Services, die konfiguriert wer
 
 #### Entfernen Sie die Option „X-Frame“ für `SAMEORIGIN`-Header. {#sameorigin}
 
-1. Öffnen Sie den Configuration Manager. 
+1. Öffnen Sie den Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
 1. Suchen Sie **Apache Sling Main Servlet** in der Liste und klicken Sie auf **Edit the configuration values** (Konfigurationswerte bearbeiten).
 1. Löschen Sie den Wert `X-Frame-Options=SAMEORIGIN` aus dem Attribut **Zusätzliche Antwortkopfzeilen** (`sling.additional.response.headers`), falls vorhanden.
@@ -85,7 +85,7 @@ Der universelle Editor beruht auf einer Reihe von Services, die konfiguriert wer
 
 #### Konfigurieren des Adobe Granite Query Parameter Authentication Handlers {#query-parameter}
 
-1. Öffnen Sie den Configuration Manager. 
+1. Öffnen Sie den Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
 1. Suchen Sie **Adobe Granite Query Parameter Authentication Handler** in der Liste und klicken Sie auf **Edit the configuration values** (Konfigurationswerte bearbeiten).
 1. Fügen Sie im Feld **Pfad** (`path`) `/` hinzu, um zu aktivieren.
@@ -94,7 +94,7 @@ Der universelle Editor beruht auf einer Reihe von Services, die konfiguriert wer
 
 #### Definieren, welche Inhaltspfade oder `sling:resourceTypes` im universellen Editor geöffnet werden {#paths}
 
-1. Öffnen Sie den Configuration Manager. 
+1. Öffnen Sie den Configuration Manager.
    * `http://<host>:<port>/system/console/configMgr`
 1. Suchen Sie **Universal Editor URL Service** in der Liste und klicken Sie auf **Edit the configuration values** (Konfigurationswerte bearbeiten).
 1. Definieren Sie, für welche Inhaltspfade oder `sling:resourceTypes` der universelle Editor geöffnet werden soll.
@@ -142,7 +142,7 @@ Nachdem AEM aktualisiert und konfiguriert wurde, können Sie einen lokalen unive
 1. Installieren Sie eine Version >=20 von Node.js.
 1. Laden Sie den neuesten universellen Editor-Service von [Software Distribution](https://experienceleague.adobe.com/de/docs/experience-cloud/software-distribution/home) herunter und entpacken Sie ihn.
 1. Konfigurieren Sie den universellen Editor-Dienst mithilfe von Umgebungsvariablen oder `.env`.
-   * [Weitere Informationen finden Sie in der Dokumentation zum universellen Editor von AEM as a Cloud Service](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service).
+   * [Weitere Informationen finden Sie in der Dokumentation zum universellen Editor von AEM as a Cloud Service .](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * Beachten Sie, dass Sie möglicherweise die Option `UES_MAPPING` verwenden müssen, wenn eine interne IP-Umschreibung erforderlich ist.
 1. Führen Sie `universal-editor-service.cjs` aus.
 
