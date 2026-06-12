@@ -60,7 +60,7 @@ In der folgenden Tabelle sind die WSDL-Definitionen des Services aufgeführt (un
 <table>
  <thead>
   <tr>
-   <th><p>Dienst</p></th>
+   <th><p>Service</p></th>
    <th><p>WSDL-Definition</p></th>
   </tr>
  </thead>
@@ -106,7 +106,7 @@ In der folgenden Tabelle sind die WSDL-Definitionen des Services aufgeführt (un
    <td><p><code>http://localhost:8080/soap/services/FormDataIntegration?wsdl</code></p></td>
   </tr>
   <tr>
-   <td><p>Generieren einer PDF</p></td>
+   <td><p>Generate PDF</p></td>
    <td><p><code>http://localhost:8080/soap/services/ GeneratePDFService?wsdl</code></p></td>
   </tr>
   <tr>
@@ -257,7 +257,7 @@ Im Folgenden wird der Zusammenhang zwischen den Übertragungsarten und dem Feld,
 
 >[!NOTE]
 >
->JAX WS-basierte Anwendungen, die das MTOM-Übertragungsprotokoll verwenden, sind auf 25 MB an gesendeten und empfangenen Daten beschränkt. Diese Begrenzung ist auf einen Fehler in JAX-WS zurückzuführen. Wenn die Gesamtgröße der gesendeten und empfangenen Dateien 25 MB überschreitet, verwenden Sie das SwaRef-Übertragungsprotokoll anstelle des MTOM-Protokolls. Andernfalls besteht die Möglichkeit einer `OutOfMemory`-Ausnahme.
+>JAX WS-basierte Anwendungen, die das MTOM-Übertragungsprotokoll verwenden, sind auf 25 MB an gesendeten und empfangenen Daten beschränkt. Diese Begrenzung ist auf einen Fehler in JAX-WS zurückzuführen. Wenn die Gesamtgröße der gesendeten und empfangenen Dateien 25 MB überschreitet, verwenden Sie das SwaRef-Übertragungsprotokoll anstelle des MTOM-Protokolls. Andernfalls besteht die Möglichkeit einer `OutOfMemory` Ausnahme.
 
 **MTOM-Übertragung von base64-kodierten Byte-Arrays**
 
@@ -287,7 +287,7 @@ In der folgenden Tabelle sind die Java-Datentypen mit dem entsprechenden Webdien
   </tr>
   <tr>
    <td><p><code>java.util.Date</code></p></td>
-   <td><p>Der <code>DATE</code>-Typ, der in einer Dienst-WSDL wie folgt definiert ist:</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Wenn ein AEM Forms-Dienstvorgang einen <code>java.util.Date</code>-Wert als Eingabe verwendet, muss die SOAP-Client-Anwendung das Datum im <code>DATE.date</code>-Feld übergeben. Das Setzen des <code>DATE.calendar</code>-Feldes führt in diesem Fall zu einer Laufzeitausnahme. Wenn der Dienst ein <code>java.util.Date</code> zurückgibt, wird das Datum in das Feld <code>DATE.date</code> zurückgegeben.</p></td>
+   <td><p>Der <code>DATE</code>-Typ, der in einer Dienst-WSDL wie folgt definiert ist:</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Wenn ein AEM Forms-Dienstvorgang einen <code>java.util.Date</code>-Wert als Eingabe verwendet, muss die SOAP-Client-Anwendung das Datum im Feld <code>DATE.date</code> übergeben. Das Setzen des <code>DATE.calendar</code>-Feldes führt in diesem Fall zu einer Laufzeitausnahme. Wenn der Dienst ein <code>java.util.Date</code> zurückgibt, wird das Datum in das Feld <code>DATE.date</code> zurückgegeben.</p></td>
   </tr>
   <tr>
    <td><p><code>java.util.Calendar</code></p></td>
@@ -669,7 +669,7 @@ Sie können einen AEM Forms-Service mithilfe von Java-Proxy-Klassen und Base64 a
 
    >[!NOTE]
    >
-   >Ersetzen `hiro-xp` *mit der IP-Adresse des J2EE-Anwendungsservers, auf dem AEM Forms gehostet wird.*
+   >Ersetzen Sie `hiro-xp` *durch die IP-Adresse des J2EE-Anwendungsservers, der als Host für AEM Forms dient.*
 
 1. Packen Sie die mit JAX-WS erstellten Java-Proxy-Klassen in eine JAR-Datei.
 1. Schließen Sie die Java-Proxy-JAR-Datei und die JAR-Dateien im folgenden Pfad ein:
@@ -877,7 +877,7 @@ Um den `MyApplication/EncryptDocument`-Prozess mithilfe von Java-Proxy-Dateien a
 1. Erstellen Sie ein `MyApplicationEncryptDocument`-Objekt, indem Sie die Methode `getEncryptDocument` des `MyApplicationEncryptDocumentService`-Objekts aufrufen.
 1. Legen Sie die zum Aufrufen von AEM Forms erforderlichen Verbindungswerte fest, indem Sie den folgenden Datenelementen Werte zuweisen:
 
-   * Weisen Sie den WSDL-Endpunkt und den Codierungstyp dem Feld `ENDPOINT_ADDRESS_PROPERTY` des `javax.xml.ws.BindingProvider`-Objekts zu. Um den `MyApplication/EncryptDocument`-Dienst mit SwaRef-Kodierung aufzurufen, geben Sie den folgenden URL-Wert an:
+   * Weisen Sie den WSDL-Endpunkt und den Kodierungstyp dem Feld `ENDPOINT_ADDRESS_PROPERTY` des `javax.xml.ws.BindingProvider`-Objekts zu. Um den `MyApplication/EncryptDocument`-Dienst mit SwaRef-Kodierung aufzurufen, geben Sie den folgenden URL-Wert an:
 
      ` https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=swaref`
 

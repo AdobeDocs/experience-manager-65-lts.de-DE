@@ -1,6 +1,6 @@
 ---
 title: Verwenden von cURL mit AEM
-description: 'Erfahren Sie, wie Sie cURL für gängige Aufgaben in Adobe Experience Manager verwenden. '
+description: Erfahren Sie, wie Sie cURL für gängige Aufgaben in Adobe Experience Manager verwenden.
 contentOwner: Silviu Raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -11,7 +11,7 @@ role: Developer
 exl-id: 45d49917-d20f-470c-bf95-6e701de67a11
 source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '865'
 ht-degree: 92%
 
 ---
@@ -48,7 +48,7 @@ Um zu ermitteln, welchen Befehl Sie für den gewünschten Vorgang benötigen, er
 
 Die dafür nötigen Schritte werden nachfolgend am Beispiel der Erstellung einer neuen Seite im Chrome-Browser beschrieben.
 
-1. Bereiten Sie die Aktion vor, die Sie in AEM aufrufen möchten.  In diesem Fall sind wir am Ende des Assistenten **Seite erstellen** angekommen, haben jedoch noch nicht auf **Erstellen** geklickt.
+1. Bereiten Sie die Aktion vor, die Sie in AEM aufrufen möchten. In diesem Fall sind wir am Ende des Assistenten **Seite erstellen** angekommen, haben jedoch noch nicht auf **Erstellen** geklickt.
 
    ![chlimage_1-66](assets/chlimage_1-66a.png)
 

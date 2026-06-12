@@ -278,7 +278,7 @@ Geben Sie Metadatenwerte in die verschiedenen Felder ein und klicken Sie auf **[
 
 >[!MORELIKETHIS]
 >
->* [Konzepte und Grundlagen von Metadaten](metadata-concepts.md).
+>* [Metadatenkonzepte und Grundlegendes](metadata-concepts.md).
 >* [Bearbeiten von Metadateneigenschaften mehrerer Sammlungen](manage-collections.md#editing-collection-metadata-in-bulk).
 >* [Import und Export von Metadaten in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=de).
 >* [Profile zur Verarbeitung von Metadaten, Bildern und Videos](processing-profiles.md).

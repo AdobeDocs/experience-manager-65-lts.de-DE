@@ -12,8 +12,8 @@ hide: true
 exl-id: e56b22b9-3f4f-46d1-9885-a7e58b47f42d
 source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 94%
+source-wordcount: '1011'
+ht-degree: 93%
 
 ---
 
@@ -1192,7 +1192,7 @@ Im folgenden Java-Code-Beispiel wird dynamisch ein DDX-Dokument erstellt, das ei
 * `convertDDX`: Konvertiert ein `org.w3c.dom.Document`-Objekt in ein `com.adobe.idp.Document`-Objekt. Diese Methode akzeptiert ein `org.w3c.dom.Document`-Objekt als Eingabeparameter und gibt ein `com.adobe.idp.Document`-Objekt zurück.
 
   Beide Methoden werden in dieser Kurzanleitung aufgerufen. (Siehe [Dynamisches Erstellen von DDX-](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents))
-&grave;&grave;
+&quot;
 
 ```java
 /*
