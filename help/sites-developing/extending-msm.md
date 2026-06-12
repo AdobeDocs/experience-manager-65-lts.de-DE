@@ -12,8 +12,8 @@ role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
 source-git-commit: c033a676eb746befd43803d1ae00c564890cb945
 workflow-type: tm+mt
-source-wordcount: '2430'
-ht-degree: 98%
+source-wordcount: '2605'
+ht-degree: 92%
 
 ---
 
@@ -33,7 +33,7 @@ Auf dieser Seite erfahren Sie, wie Sie die Funktionen von Multi Site Manager erw
 
 >[!CAUTION]
 >
->Multi Site Manager und die dazugehörige API werden beim Erstellen einer Website verwendet und sind daher ausschließlich für die Nutzung in einer Authoring-Umgebung gedacht.
+>Multi-Site Manager und die dazugehörige API werden beim Erstellen einer Website verwendet und sind daher ausschließlich für die Nutzung in einer Authoring-Umgebung gedacht.
 
 ## Überblick über die Java-API {#overview-of-the-java-api}
 
@@ -233,7 +233,7 @@ Fügen Sie untergeordnete Knoten des Typs `cq:LiveSyncAction` hinzu, um Synchron
 1. **Erstellen** Sie einen Knoten mit den folgenden Knoteneigenschaften:
 
    * **Name**: Der Knotenname der Synchronisierungsaktion.
-Der Name muss dem **Aktionsnamen** in der Tabelle unter [Synchronisierungsaktionen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) entsprechen, z. B. `contentCopy` oder `workflow`.
+Der Name muss mit dem **Aktionsnamen“ in** Tabelle unter „Synchronisierungsaktionen[&#x200B; übereinstimmen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) z. B. `contentCopy` oder `workflow`.
    * **Typ**: `cq:LiveSyncAction`
 
 1. Fügen Sie so viele Synchronisierungsaktionsknoten hinzu wie erforderlich und konfigurieren Sie sie. Ordnen Sie die Aktionsknoten so an, dass sie die Reihenfolge aufweisen, in der sie ausgeführt werden sollen. Der oberste Aktionsknoten wird zuerst ausgeführt.
