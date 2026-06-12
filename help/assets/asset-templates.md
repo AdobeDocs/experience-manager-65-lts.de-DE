@@ -7,14 +7,14 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 8584d5ea-6ef2-4e81-8b18-5aa2d4226ea6
 source-git-commit: 9ed889c74a886e1b41c379dac77bb570ef5c2c39
 workflow-type: tm+mt
-source-wordcount: '1557'
+source-wordcount: '1570'
 ht-degree: 100%
 
 ---
 
 # Asset-Vorlagen {#asset-templates}
 
-Bei Asset-Vorlagen handelt es sich um eine spezielle Klasse von Assets, die das schnelle Wiederverwenden von visuell reichhaltigen Inhalten für digitale Medien und Printmedien ermöglichen.  Eine Asset-Vorlage enthält zwei Teile: den unveränderlichen Messaging-Abschnitt und den bearbeitbaren Abschnitt. Der unveränderliche Messaging-Abschnitt kann proprietären Inhalt enthalten, z. B. das Markenlogo und Copyright-Informationen, die nicht bearbeitet werden können. Der bearbeitbare Abschnitt kann visuelle Inhalte und Textinhalte in Feldern enthalten, die bearbeitet werden können, um das Messaging anzupassen.
+Bei Asset-Vorlagen handelt es sich um eine spezielle Klasse von Assets, die das schnelle Wiederverwenden von visuell reichhaltigen Inhalten für digitale Medien und Printmedien ermöglichen. Eine Asset-Vorlage enthält zwei Teile: den unveränderlichen Messaging-Abschnitt und den bearbeitbaren Abschnitt. Der unveränderliche Messaging-Abschnitt kann proprietären Inhalt enthalten, z. B. das Markenlogo und Copyright-Informationen, die nicht bearbeitet werden können. Der bearbeitbare Abschnitt kann visuelle Inhalte und Textinhalte in Feldern enthalten, die bearbeitet werden können, um das Messaging anzupassen.
 
 Da eingeschränkte Bearbeitungen flexibel vorgenommen werden können, während das globale Erscheinungsbild geschützt ist, sind Asset-Vorlagen ideale Bausteine für die schnelle Inhaltsadaptation und Verteilung als Inhaltsartefakte für verschiedene Funktionen. Durch die Wiederverwendung von Inhalten werden die Kosten für die Verwaltung von Druckkanälen und digitalen Kanälen reduziert und ganzheitliche und konsistente Umgebungen für diese Kanäle bereitgestellt.
 

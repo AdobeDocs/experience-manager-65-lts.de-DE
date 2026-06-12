@@ -29,7 +29,7 @@ Java API Quick Start (SOAP) ist für den Application Manager-Service verfügbar.
 >
 >Die Anwendungs-Manager-APIs unterstützen nur AEM Forms-LCA-Dateien. LCA-Dateien von LiveCycle ES2 und ES4 werden nicht unterstützt.
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 
 >[!NOTE]
 >
