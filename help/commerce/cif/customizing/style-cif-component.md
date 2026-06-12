@@ -1,6 +1,6 @@
 ---
 title: Gestalten von Stilen für Adobe Experience Manager CIF-Kernkomponenten
-description: Erfahren Sie, wie Sie Stile für Adobe Experience Manager CIF-Kernkomponenten gestalten können.  In diesem Tutorial wird beschrieben, wie sich Client-seitige Bibliotheken (auch clientlibs genannt) zum Bereitstellen und Verwalten von CSS- und JavaScript-Dateien für eine Adobe Experience Manager (AEM) Commerce-Implementierung verwenden lassen. Zudem wird in dem Tutorial erläutert, wie sich das ui.frontend-Modul und ein webpack-Projekt in den End-to-End-Build-Prozess integrieren lassen.
+description: Erfahren Sie, wie Sie Stile für Adobe Experience Manager CIF-Kernkomponenten gestalten können. In diesem Tutorial wird beschrieben, wie sich Client-seitige Bibliotheken (auch clientlibs genannt) zum Bereitstellen und Verwalten von CSS- und JavaScript-Dateien für eine Adobe Experience Manager (AEM) Commerce-Implementierung verwenden lassen. Zudem wird in dem Tutorial erläutert, wie sich das ui.frontend-Modul und ein webpack-Projekt in den End-to-End-Build-Prozess integrieren lassen.
 sub-product: Commerce
 topics: Development
 doc-type: tutorial
@@ -12,14 +12,14 @@ role: Admin, Developer
 exl-id: 92689d52-6485-4cd5-a04f-4738096a0dba
 source-git-commit: d571dc696e42bae873cd58f2e7f321bd3002f42e
 workflow-type: tm+mt
-source-wordcount: '2377'
+source-wordcount: '2684'
 ht-degree: 93%
 
 ---
 
 # Stile für AEM CIF-Kernkomponenten festlegen {#style-aem-cif-core-components}
 
-Das [CIF-Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) ist eine Referenz-Code-Basis für die Verwendung von [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components). In diesem Tutorial können Sie sich das Venia-Referenzprojekt ansehen und erfahren, wie von AEM CIF-Kernkomponenten verwendete CSS- und JavaScript-Dateien organisiert werden.  Außerdem erstellen Sie mithilfe von CSS einen Stil, um den Standardstil der **Produkt-Teaser-Komponente** zu aktualisieren.
+Das [CIF-Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) ist eine Referenz-Code-Basis für die Verwendung von [CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components). In diesem Tutorial können Sie sich das Venia-Referenzprojekt ansehen und erfahren, wie von AEM CIF-Kernkomponenten verwendete CSS- und JavaScript-Dateien organisiert werden. Außerdem erstellen Sie mithilfe von CSS einen Stil, um den Standardstil der **Produkt-Teaser-Komponente** zu aktualisieren.
 
 >[!TIP]
 >
@@ -27,7 +27,7 @@ Das [CIF-Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) ist eine 
 
 ## Was Sie erstellen werden
 
-In diesem Tutorial wird ein neuer Stil für die Produkt-Teaser-Komponente implementiert, der einer Karte ähnlich ist.  Das im Tutorial erworbene Wissen kann auf andere CIF-Kernkomponenten angewendet werden.
+In diesem Tutorial wird ein neuer Stil für die Produkt-Teaser-Komponente implementiert, der einer Karte ähnlich ist. Das im Tutorial erworbene Wissen kann auf andere CIF-Kernkomponenten angewendet werden.
 
 ![Was Sie erstellen werden](../assets/style-cif-component/what-you-will-build.png)
 
@@ -331,7 +331,7 @@ Der webpack-Dev-Server dient als Proxy für Bilder und einige der CSS/JavaScript
    >
    >Wenn Sie einen Sass-bezogenen Fehler erhalten, stoppen Sie den Server, führen Sie den Befehl `npm rebuild node-sass` aus und wiederholen Sie dann die oben genannten Schritte. Dazu kann es kommen, wenn Sie eine andere Version von `npm` und `node` im Projekt `aem-cif-guides-venia/pom.xml` angegeben haben.
 
-1. Navigieren Sie in einer neuen Registerkarte mit demselben Browser [&#x200B; einer angemeldeten Instanz von AEM zum :8080http://localhost](http://localhost:8080/)/. Über den webpack-Dev-Server sollte die Venia-Startseite angezeigt werden:
+1. Navigieren Sie in einer neuen Registerkarte mit demselben Browser :8080 einer angemeldeten Instanz von AEM zum [http://localhost](http://localhost:8080/)/. Über den webpack-Dev-Server sollte die Venia-Startseite angezeigt werden:
 
    ![webpack-Dev-Server an Port 80](../assets/style-cif-component/webpack-dev-server-port80.png)
 
@@ -479,8 +479,8 @@ Verwenden Sie das [AEM-Stilsystem](/help/sites-authoring/style-system.md), um zw
 ## Zusätzliche Ressourcen {#additional-resources}
 
 * [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype)
-* [AEM-CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components)
-* [Lokale AEM-Entwicklungsumgebung einrichten](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=de)
+* [AEM CIF-Kernkomponenten](https://github.com/adobe/aem-core-cif-components)
+* [Einrichten einer lokalen AEM-Entwicklungsumgebung](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=de)
 * [Client-seitige Bibliotheken](/help/sites-developing/clientlibs.md)
 * [Erste Schritte mit AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de)
 * [Entwickeln mit dem Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=de)

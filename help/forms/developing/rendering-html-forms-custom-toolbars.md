@@ -242,7 +242,7 @@ Rendern eines HTML-Formular mit einer benutzerdefinierten Symbolleiste mithilfe 
    * Das `HTMLRenderSpec`-Objekt, das HTML-Laufzeitoptionen speichert.
    * Ein Zeichenfolgenwert, der den `HTTP_USER_AGENT`-Kopfzeilenwert angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
    * Ein `URLSpec`-Objekt, das URI-Werte speichert, die zum Rendern eines HTML-Formulars erforderlich sind.
-   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, und Sie können `null` angeben, wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, für den Sie `null` angeben können, wenn Sie keine Dateien an das Formular anhängen möchten.
 
    Die `renderHTMLForm`-Methode gibt ein `FormsResult`-Objekt zurück, das einen Formulardatenstrom enthält, der in den Client-Webbrowser geschrieben werden muss.
 

@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3487'
-ht-degree: 97%
+source-wordcount: '3441'
+ht-degree: 96%
 
 ---
 
@@ -269,7 +269,7 @@ Geben Sie beim Erstellen des Support-Falles an, welche Funktionen der intelligen
       * Geben Sie an, ob Sie auf eine Nutzung der intelligenten Bildbearbeitung über HTTP/2 angewiesen sind.
 
 1. Der Adobe-Kundendienst aktiviert standardmäßig die angeforderten Funktionen der intelligenten Bildbearbeitung, sodass Parameter nicht manuell an URLs angehängt werden müssen.
-1. Adobe empfiehlt, die Time-to-Live (TTL) auf mindestens 24 Stunden festzulegen, um die Leistung durch das Zwischenspeichern zu maximieren.
+1. Adobe empfiehlt, die Time To Live (TTL) auf mindestens 24 Stunden festzulegen, um die Leistung durch Caching zu maximieren.
 So passen Sie die TTL an:
 
    1. **Für Dynamic Media Classic:**
@@ -338,7 +338,7 @@ Aus diesem Header geht Folgendes hervor:
 >
 >**X-Adobe-Smart-Imaging = -1, WebP bereitgestellt**
 >
->Wenn `X-Adobe-Smart-Imaging` den Wert -1 hat und WebP weiterhin bereitgestellt wird, ist die intelligente Bildbearbeitung aktiv. Die Größenvorteile wurden jedoch aufgrund von veraltetem Cache nicht berechnet. Sie können `cache=update` (nur einmal) in der URL des Bildes verwenden, um dieses Problem zu beheben.
+>Wenn der Wert von `X-Adobe-Smart-Imaging` -1 beträgt und dennoch WebP bereitgestellt wird, ist die intelligente Bildbearbeitung aktiv. Die Größenvorteile wurden jedoch aufgrund eines veralteten Caches nicht berechnet. Sie können `cache=update` (nur einmal) in der URL des Bildes verwenden, um dieses Problem zu beheben.
 >Beispiel für die Verwendung des Modifikators:
 >`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`>Um den gesamten Cache ungültig zu machen, müssen Sie einen Support-Fall erstellen.
 

@@ -191,7 +191,7 @@ Es wird empfohlen, die Verwendung von Validierungsregeln für Formularfelder bei
 
 >[!NOTE]
 >
->Weitere Informationen über den Forms-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen über den Forms-Dienst finden Sie unter [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Zusammenfassung der Schritte {#summary-of-steps}
 

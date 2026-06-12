@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 248692f7-0718-4a12-9f82-24b4cef2b1e2
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4393'
-ht-degree: 92%
+source-wordcount: '4415'
+ht-degree: 91%
 
 ---
 
@@ -132,7 +132,7 @@ Erstellen Sie einen Knoten für jede der Eigenschaften (Felder), für die Sie ei
    <tr>
       <td>name</td>
       <td>Zeichenfolge</td>
-      <td>./extendedproperties/geographicallocation (Verwenden Sie denselben Wert wie für den Feldnamen, den Sie unter dem items-Knoten erstellt haben)</td>
+      <td>./extendedproperties/geographicallocation (Verwenden Sie denselben Wert wie für den Feldnamen, den Sie unter dem Knoten „items“ erstellt haben)</td>
    </tr>
    <tr>
       <td>renderReadOnly</td>
@@ -295,7 +295,7 @@ Mithilfe des folgenden Verfahrens können Sie eine Registerkarte mit einem Feld 
 
    1. Klicken Sie auf **Alle speichern**.
 
-1. Wenn Sie ein Feld auf der benutzerdefinierten Registerkarte (hier: Empfängerinnen und Empfänger) erstellen möchten, fügen Sie einen Knoten (hier: GeographicalLocation) hinzu. Diese Eigenschaft entspricht der Spalte, die Sie erstellt haben. Führen Sie die folgenden Schritte aus, um das Feld zu erstellen. (Wiederholen Sie diese Schritte, um weitere Felder/Knoten zu erstellen.):
+1. Wenn Sie ein Feld auf der benutzerdefinierten Registerkarte (hier: Empfängerinnen und Empfänger) erstellen möchten, fügen Sie einen Knoten (hier: GeographicalLocation) hinzu. Diese Eigenschaft entspricht der Spalte, die Sie erstellt haben. Führen Sie die folgenden Schritte aus, um das Feld zu erstellen (um weitere Felder/Knoten zu erstellen, wiederholen Sie diese Schritte):
 
    1. Klicken Sie mit der rechten Maustaste auf den Knoten „items“ und wählen Sie **Erstellen** > **Knoten erstellen** aus.
    1. Stellen Sie sicher, dass das Dialogfeld „Knoten erstellen“ folgende Werte aufweist, und klicken Sie auf **OK**:
@@ -388,7 +388,7 @@ Dieses Szenario zeigt, wie Sie eine Eigenschaft einem bestimmten Asset-Typ hinzu
 * Datenwörterbuch
 * Brief
 
-Sie möchten z. B. nur zu den Text-Assets eine Eigenschaft (nämlich den Ort der Empfängerinnen und Empfänger) hinzufügen, um zu ermitteln, für welches geografische Gebiet ein Asset relevant ist. ![Benutzerdefinierte Eigenschaft wurde zu einem Element hinzugefügt](assets/newtabui.png)
+Sie möchten z. B. nur zu den Text-Assets eine Eigenschaft (nämlich den Ort der Empfängerinnen und Empfänger) hinzufügen, um zu ermitteln, für welches geografische Gebiet ein Asset relevant ist.  ![Benutzerdefinierte Eigenschaft wurde zu einem Element hinzugefügt](assets/newtabui.png)
 
 Um eine Eigenschaft einem Assettyp hinzuzufügen, führen Sie die folgenden Schritte aus:
 
@@ -713,7 +713,7 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Eigenschaft in
       %>
       ```
 
-      „GeoLocation“ ist im Code der Wert, den Sie in der name-Eigenschaft beim Erstellen des benutzerdefinierten Knotens/Felds festlegen. Beim Erstellen eines benutzerdefinierten Felds/Knotens haben Sie den Namen der Eigenschaft angegeben.Präfix /extendedproperties/: ./extendedproperties/GeoLocation. Im Code ist das Präfix nicht erforderlich.
+      „GeoLocation“ ist im Code der Wert, den Sie in der name-Eigenschaft beim Erstellen des benutzerdefinierten Knotens/Felds festlegen. Beim Erstellen eines benutzerdefinierten Knotens/Felds haben Sie den Namen der Eigenschaft mit dem Präfix &quot;/extendedproperties/&quot; angegeben: ./extendedproperties/GeoLocation. Im Code ist das Präfix nicht erforderlich.
 
    1. Zum Anzeigen der neuen Eigenschaft auf der Benutzeroberfläche fügen Sie einen TD-Tag vor dem schließenden tr(&lt;/tr>)-Tag hinzu:
 
@@ -761,9 +761,9 @@ Wenn Sie die Eigenschaft sling:orderBefore hinzufügen, um die Position der Spal
 
 Standardmäßig enthält die Volltextsuche keine benutzerdefinierten Eigenschaften, die Sie zur Benutzeroberfläche mit CRX/DE hinzufügen.
 
-Um die benutzerdefinierten Eigenschaften in die Suche einzubeziehen, müssen Sie die Indexerstellung von benutzerdefinierten Eigenschaften zulassen.
+Um die benutzerdefinierten Eigenschaften in die Suche einzubeziehen, müssen Sie die Indizierung von benutzerdefinierten Eigenschaften zulassen.
 
-Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, führen Sie die folgenden Schritte aus:
+Um die Indizierung von benutzerdefinierten Eigenschaften zu ermöglichen, führen Sie die folgenden Schritte aus:
 
 1. Wechseln Sie zu `https://'[server]:[port]'/[ContextPath]/crx/de` und melden Sie sich als „Administrator“ an.
 1. Navigieren Sie zu `/oak:index/cmLucene` und fügen Sie darunter einen Knoten mit dem Namen **aggregates** hinzu.
@@ -838,7 +838,7 @@ Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, f�
 
 >[!NOTE]
 >
->Wenn Sie immer noch nicht suchen können, gibt es möglicherweise ein Problem bei der Indexerstellung. Für die neue Indexerstellung navigieren Sie zu folgendem Knoten und ändern den Wert der Eigenschaft „re-index“ in „true“:
+>Wenn Sie immer noch nicht suchen können, gibt es möglicherweise ein Problem bei der Indizierung. Für die neue Indizierung navigieren Sie zu folgendem Knoten und ändern den Wert der Eigenschaft „re-index“ in „true“:
 >
 >/oak:index/cmLucene“ geändert und der Wert der Eigenschaft geändert
 

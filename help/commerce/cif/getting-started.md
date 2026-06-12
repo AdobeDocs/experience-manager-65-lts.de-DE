@@ -8,8 +8,8 @@ role: Admin, Developer
 exl-id: 15face30-3039-49a0-bfee-56bff21e5c27
 source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 92%
+source-wordcount: '741'
+ht-degree: 89%
 
 ---
 
@@ -78,7 +78,7 @@ Die folgenden Eigenschaften können konfiguriert werden:
 
   >[!NOTE]
   >
-  >Die Unterstützung für UIDs wurde in Adobe Commerce 2.4.2 eingeführt. Aktivieren Sie diese nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
+  >Die Unterstützung für UIDs wurde in Adobe Commerce 2.4.2 eingeführt. Aktivieren Sie diese Option nur, wenn Ihr Commerce-Backend ein GraphQL-Schema der Version 2.4.2 oder höher unterstützt.
 
 - Kennung der Stammkategorie des Katalogs – die Kennung (UID oder ID) des Stammverzeichnisses des Shops
 
@@ -93,5 +93,5 @@ Komplexere Setups mit mehreren AEM-Website-Strukturen in Kombination mit verschi
 ## Zusätzliche Ressourcen {#additional-resources}
 
 - [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype)
-- [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
+- [AEM Venia-Referenz-Store](https://github.com/adobe/aem-cif-guides-venia)
 - [Multi-Store-Einrichtung in Commerce](configuring/multi-store-setup.md)

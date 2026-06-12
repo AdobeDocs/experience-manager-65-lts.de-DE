@@ -7,8 +7,8 @@ feature: Smart Imaging
 exl-id: 3b4f3624-d76d-4835-834b-e8610c2c40bd
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 100%
+source-wordcount: '294'
+ht-degree: 94%
 
 ---
 
@@ -56,8 +56,8 @@ Client-seitiges DPR liefert 100 % genaue Werte und funktioniert für jedes Ger�
 
    Sie können die beiden DPR-Skripte zusammenfassen, um mehrere Netzwerkanforderungen zu vermeiden.
 
-   Adobe empfiehlt, diese Skripte _vor_ allen anderen Skripten auf der HTML-Seite zu laden.
-Adobe empfiehlt auch, Ihre App unter dem HTML-Tag „diff“ und nicht unter einem Body-Element zu laden. Der Grund dafür ist, dass `dprImageInjection.js` das Bild-Tag dynamisch am Anfang des Body-Abschnitts auf der HTML-Seite einfügt.
+   Adobe empfiehlt, diese Skripte (_) vor_ anderen Skripten auf der HTML-Seite zu laden.
+Adobe empfiehlt außerdem, die App unter dem HTML-Tag „diff“ und nicht unter einem Body-Element Bootstrap. Der Grund dafür ist, dass `dprImageInjection.js` das Bild-Tag dynamisch am Anfang des body-Abschnitts der HTML-Seite einfügt.
 
 ## Herunterladen von JavaScript-Dateien. {#client-side-dpr-script}
 

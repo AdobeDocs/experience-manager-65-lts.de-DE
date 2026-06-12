@@ -190,7 +190,7 @@ Jede Datenuntergruppe muss XML-Elemente enthalten, die mit den Feldnamen im Teil
 
 >[!NOTE]
 >
->Weitere Informationen über den Forms-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Forms-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -291,7 +291,7 @@ So füllen Sie ein Formular mit einem flexiblen Layout mithilfe der Forms API (J
 
    Rufen Sie die Methode `renderPDFForm` des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
-   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs angibt, einschließlich der Dateinamenerweiterung.
+   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt.
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Stellen Sie sicher, dass Sie das `com.adobe.idp.Document`-Objekt verwenden, das in den Schritten 1 und 2 erstellt wurde.
    * Ein `PDFFormRenderSpec`-Objekt, das Laufzeitoptionen speichert.
    * Ein `URLSpec`-Objekt, das URI-Werte enthält, die für den Forms-Service erforderlich sind.
@@ -367,7 +367,7 @@ Führen Sie die folgenden Schritte aus, um ein Formular mit einem flexiblen Layo
 
    Rufen Sie die Methode `renderPDFForm` des `FormsService`-Objekts auf und übergeben Sie die folgenden Werte:
 
-   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs angibt, einschließlich der Dateinamenerweiterung.
+   * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt.
    * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Stellen Sie sicher, dass Sie das `BLOB`-Objekt verwenden, das in den Schritten 1 und 2 erstellt wurde.
    * Ein `PDFFormRenderSpecc`-Objekt, das Laufzeitoptionen speichert. Weitere Informationen finden Sie unter [API-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Ein `URLSpec`-Objekt, das URI-Werte enthält, die für den Forms-Service erforderlich sind.
@@ -385,7 +385,7 @@ Führen Sie die folgenden Schritte aus, um ein Formular mit einem flexiblen Layo
    * Legen Sie den Content-Typ des `javax.servlet.http.HttpServletResponse`-Objekts fest, indem Sie seine Methode `setContentType` aufrufen und den Content-Typ des `BLOB`-Objekts übergeben.
    * Erstellen Sie ein Objekt vom Typ `javax.servlet.ServletOutputStream`, das zum Schreiben des Formulardatenstroms in den Client-Webbrowser verwendet wird, indem Sie die Methode `getOutputStream` des `javax.servlet.http.HttpServletResponse`-Objekts aufrufen.
    * Erstellen Sie ein Byte-Array und füllen Sie es auf, indem Sie die Methode `getBinaryData` des `BLOB`-Objekts aufrufen. Mit dieser Aufgabe wird dem Byte-Array der Inhalt des `FormsResult`-Objekts zugewiesen.
-   * Rufen Sie die Methode `write` des `javax.servlet.http.HttpServletResponse`-Objekts auf, um den Formulardatenstrom an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die Methode `write`.
+   * Rufen Sie die Methode `write` des `javax.servlet.http.HttpServletResponse`-Objekts auf, um den Formulardatenstrom an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die `write`-Methode.
 
    >[!NOTE]
    >
