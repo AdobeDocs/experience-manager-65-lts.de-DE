@@ -263,7 +263,7 @@ Configuration Manager verwendete ein auf Ihrem Anwendungsserver bereitgestelltes
 1. Starten Sie den AEM Forms-Server.
 1. Geben Sie die nachstehende URL in einen Browser ein, um die Änderung zu testen und sicherzustellen, dass sie nicht mehr funktioniert.
 
-   https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
+   https://<localhost>:<port>/adobe-bootstrapper/bootstrap
 
 **Sperren des Remote-Zugriffs auf den Trust Store**
 
@@ -471,7 +471,7 @@ Sie können Benutzerinnen und Benutzern, die keine Admins sind, die Verwendung d
 
 >[!NOTE]
 >
-> Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+> Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 ## Konfigurieren von AEM Forms on JEE für den Zugriff außerhalb des Unternehmens {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
@@ -821,7 +821,7 @@ Wenn Sie, wie im vorherigen Abschnitt beschrieben, eine sichere Netzwerkarchitek
  <thead> 
   <tr> 
    <th><p>Protokoll</p> </th> 
-   <th><p>Verwendung</p> </th> 
+   <th><p>Verwenden Sie</p> </th> 
   </tr> 
  </thead> 
  <tbody>

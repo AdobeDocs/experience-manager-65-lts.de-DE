@@ -12,7 +12,7 @@ hide: true
 exl-id: ba02f9b1-209e-42f2-b1df-2ed64fc9fdbc
 source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1719'
 ht-degree: 94%
 
 ---
@@ -187,7 +187,7 @@ Klicken Sie, um die Schritte zum [Zuweisen von Rollen zu Benutzenden und Gruppen
 
 1. Melden Sie sich bei Ihrer AEM Forms auf JEE-Umgebung an.
 1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Benutzerverwaltung“ > „Domain-Verwaltung“.
-1. Wählen Sie Ihre Domain-Konfiguration aus, z. B. LDAP, und klicken Sie darauf. Sie finden alle erstellten Benutzenden und Gruppen im Verzeichnis. Bei Bedarf können Sie neue Benutzende oder Gruppen erstellen.
+1. Wählen Sie Ihre Domain-Konfiguration aus, z. B. LDAP, und klicken Sie darauf. Alle erstellten Benutzer und Gruppen befinden sich im Verzeichnis . Bei Bedarf können Sie neue Benutzende oder Gruppen erstellen.
    ![Seite zur Domain-Verwaltung](/help/forms/using/assets/domain-mgmt-page.png)
 1. Klicken Sie auf „Authentifizierung“. Wählen Sie auf der neuen Seite einen Authentifizierungsanbieter aus, z. B. LDAP.
 1. Navigieren Sie zur Seite „Domain-Verwaltung“, wählen Sie „LDAP“ und klicken Sie auf **Jetzt synchronisieren**, um das Verzeichnis mit dem konfigurierten Authentifizierungsschema für den AEM-Zugriff zu synchronisieren.

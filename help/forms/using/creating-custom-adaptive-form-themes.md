@@ -10,8 +10,8 @@ feature: Adaptive Forms,Foundation Components
 exl-id: e9853779-e22c-484e-8480-8e724d584ab7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 97%
+source-wordcount: '800'
+ht-degree: 96%
 
 ---
 
@@ -43,8 +43,8 @@ Sie erstellen eine **adaptive Vorlage** und wenden das Design auf die Vorlage an
 >
 >Wenn Sie diesen Schritten mithilfe der Namen folgen, sollte die resultierende Vorlage in etwa dem folgenden Snapshot ähneln:
 
-![Momentaufnahme des adaptiven Formulars mit Waldthemen](assets/thumbnail.png)
-**Abbildung**: *Beispiel für Waldthemen*
+![ Momentaufnahme des adaptiven Formulars mit Waldthemen](assets/thumbnail.png)
+**Abbildung:** *Beispiel für Waldthemen*
 
 1. Erstellen Sie einen Knoten des Typs `cq:ClientLibraryFolder` unter dem Knoten `/apps`.
 
