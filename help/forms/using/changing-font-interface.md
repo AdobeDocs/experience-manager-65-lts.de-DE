@@ -12,14 +12,14 @@ role: User, Developer
 exl-id: e27ff9df-41d0-4eef-b04e-a3eefea3c9ab
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '278'
 ht-degree: 100%
 
 ---
 
 # Ändern der Schriftart auf der Benutzeroberfläche{#changing-the-font-on-the-interface}
 
-Sie können die Schriftart ändern, die in AEM Forms Workspace angezeigt wird.  Schriftarten, die in einem bestimmten Bereich der Benutzeroberfläche verwendet werden, werden im entsprechenden Abschnitt des Stylesheets definiert.  Sie können die Schriftarten auf der Benutzeroberfläche selektiv ändern.
+Sie können die Schriftart ändern, die in AEM Forms Workspace angezeigt wird. Schriftarten, die in einem bestimmten Bereich der Benutzeroberfläche verwendet werden, werden im entsprechenden Abschnitt des Stylesheets definiert. Sie können die Schriftarten auf der Benutzeroberfläche selektiv ändern.
 
 Führen Sie die Anweisungen unter [Generische Schritte zur Anpassung von AEM Forms Workspace](../../forms/using/generic-steps-html-workspace-customization.md) aus. Befolgen Sie bei Bedarf außerdem die Schritte zum Anpassen von CSS, HTML oder beidem.
 

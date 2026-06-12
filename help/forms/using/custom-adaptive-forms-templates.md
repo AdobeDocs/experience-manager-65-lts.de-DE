@@ -11,8 +11,8 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 20e958d7-5976-4ccd-99b6-0e3bdb424d2d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 96%
+source-wordcount: '1288'
+ht-degree: 95%
 
 ---
 
@@ -52,7 +52,7 @@ Die folgende Tabelle zeigt die Zuordnung zwischen Vorlagen und Seitenkomponenten
  <tbody>
   <tr>
    <td><p><strong>Vorlage</strong></p> </td>
-   <td><p><strong>Seitenkomponente </strong></p> </td>
+   <td><p><strong>Seitenkomponente</strong></p> </td>
   </tr>
   <tr>
    <td><p>/libs/fd/af/templates/surveyTemplate</p> </td>
@@ -99,7 +99,7 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Vorlage wie d
 1. Navigieren Sie zum Ordner „/libs/fd/af/templates“.
 1. Kopieren Sie den Knoten `simpleEnrollmentTemplate`.
 1. Navigieren Sie zum Ordner „/apps/mycompany/templates“. Klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Einfügen]**.
-1. Benennen Sie bei Bedarf den kopierten Vorlagenknoten um. Nennen Sie ihn zum Beispiel „enrollment-template“. 
+1. Benennen Sie bei Bedarf den kopierten Vorlagenknoten um. Nennen Sie ihn zum Beispiel „enrollment-template“.
 
 1. Navigieren Sie zu „/apps/mycompany/templates/enrollment-template“.
 
@@ -111,16 +111,16 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Vorlage wie d
 
 1. Navigieren Sie zu &quot;/apps/mycompany/templates/enrollment-template/jcr:content&quot;.
 
-1. Öffnen Sie die Registerkarte **[!UICONTROL Eigenschaften]** und setzen Sie die Eigenschaft `cq:designPath` auf „/etc/designs/mycompany“. 
+1. Öffnen Sie die Registerkarte **[!UICONTROL Eigenschaften]** und setzen Sie die Eigenschaft `cq:designPath` auf „/etc/designs/mycompany“.
 
-1. Erstellen Sie nun für den Typ `cq:Page` den Knoten „/etc/designs/mycompany“. 
+1. Erstellen Sie nun für den Typ `cq:Page` den Knoten „/etc/designs/mycompany“.
 
 ## Erstellen einer adaptiven Formularseitenkomponente {#create-an-adaptive-form-page-component}
 
 Die benutzerdefinierte Vorlage hat den gleichen Stil wie die Standardvorlage, da die Vorlage auf die Seitenkomponente „/libs/fd/af/components/page/base“ verweist. Der Komponentenverweis befindet sich in der Eigenschaft `sling:resourceType` im Knoten &quot;/apps/mycompany/templates/enrollment-template/jcr:content&quot;. Da es sich bei der Basis um eine Kernproduktkomponente handelt, sollten Sie diese Komponente nicht ändern.
 
 1. Navigieren Sie zum Knoten &quot;/apps/mycompany/templates/enrollment-template/jcr:content und setzen Sie die Eigenschaft `sling:resourceType` &quot;/apps/mycompany/components/page/enrollmentpage“.
-1. Kopieren Sie den Knoten „/libs/fd/af/components/page/base“ in den Ordner „/apps/mycompany/components/page“. 
+1. Kopieren Sie den Knoten „/libs/fd/af/components/page/base“ in den Ordner „/apps/mycompany/components/page“.
 
 1. Benennen Sie die kopierte Komponente in `enrollmentpage` um.
 
@@ -147,7 +147,7 @@ Die benutzerdefinierte Vorlage hat den gleichen Stil wie die Standardvorlage, da
 
 Die `head.jsp`-Datei der Komponente `enrollmentpage` der neuen Vorlage enthält eine Client-Bibliothek namens `guide.theme.simpleEnrollment`. Die Standardvorlage verwendet ebenfalls diese Client-Bibliothek. Ändern Sie den Stil in der neuen Vorlage mit einer der folgenden Methoden:
 
-* Definieren Sie ein benutzerdefiniertes Design, durch das Sie das Standarddesign`guide.theme.simpleEnrollment` ersetzen. 
+* Definieren Sie ein benutzerdefiniertes Design, durch das Sie das Standarddesign`guide.theme.simpleEnrollment` ersetzen.
 * Definieren Sie unter „/etc/designs/mycompany“ eine neue Client-Bibliothek. Schließen Sie die Client-Bibliothek nach dem Eintrag des Standard-Designs in der JSP-Seite ein. Binden Sie alle überschriebenen Stile und zusätzlichen JavaScript-Dateien in dieser Client-Bibliothek ein.
 
 >[!NOTE]

@@ -9,7 +9,7 @@ role: Admin, User, Developer
 exl-id: b866ff4a-251c-4402-b426-9c4d97fd181d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3981'
+source-wordcount: '4013'
 ht-degree: 99%
 
 ---
@@ -29,7 +29,7 @@ Der Correspondence Management-Workflow besteht aus vier Phasen:
 
 Die folgende Abbildung zeigt einen typischen Workflow zur Erstellung einer Korrespondenzvorlage.
 
-![Arbeitsablauf für das Erstellen einer Korrespondenzvorlage](assets/01.png)
+![Workflow für das Erstellen einer Korrespondenzvorlage](assets/01.png)
 
 Die einzelnen Workflow-Schritte:
 
@@ -81,7 +81,7 @@ Kundschaftsorientierte Mitarbeitende (z. B. in der Schadensregulierung oder Sac
 
 #### Systemgesteuert {#system-driven}
 
-Die Erstellung von Schriftstücken wird durch sogenannte Ereignistrigger ausgelöst und erfolgt automatisch. Beispiel: Ein Mahnschreiben zur Erinnerung an eine Steuervorauszahlung wird durch Zusammenfügung der vorab definierten Vorlage mit den Kontaktdaten des Empfängers generiert. Der endgültige Brief kann per E-Mail gesendet, ausgedruckt, als Fax verschickt oder archiviert werden.
+Die Erstellung von Schriftstücken wird durch sogenannte Ereignistrigger ausgelöst und erfolgt automatisch. Beispiel: Ein Mahnschreiben zur Erinnerung an eine Steuervorauszahlung wird durch Zusammenführung der vorab definierten Vorlage mit den Kontaktdaten des Empfängers generiert. Der endgültige Brief kann per E-Mail gesendet, ausgedruckt, als Fax verschickt oder archiviert werden.
 
 ![Systemgesteuerte Korrespondenz](assets/us_cm_generate.png)
 
@@ -116,7 +116,7 @@ Dieses Dokument einer Kündigungsmitteilung ist ein Beispiel für eine typische 
   </tr> 
   <tr> 
    <td>Daten aus Backend-Unternehmenssystemen</td> 
-   <td>Daten, die aus Backend-Unternehmenssystemen bezogen werden. Die Daten werden dynamisch mit der Korrespondenzvorlage kombiniert.</td> 
+   <td>Daten, die aus Backend-Unternehmenssystemen bezogen werden. Die Daten werden dynamisch mit der Korrespondenzvorlage zusammengeführt.</td> 
    <td>Datendatei<br />, die basierend auf einem Datenwörterbuch erstellt wurde</td> 
   </tr> 
   <tr> 
@@ -384,7 +384,7 @@ Die folgenden Werte in der Tabelle
    <td>Nicht zutreffend</td> 
   </tr> 
   <tr> 
-   <td><strong>Zeit </strong></td> 
+   <td><strong>Zeit</strong></td> 
    <td>Ja</td> 
    <td>Nein</td> 
    <td>Ja</td> 

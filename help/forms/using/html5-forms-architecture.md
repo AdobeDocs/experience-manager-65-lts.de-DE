@@ -12,8 +12,8 @@ role: Admin, User, Developer
 exl-id: e57d51de-9d98-4b20-8180-22fa81fad4fd
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1971'
-ht-degree: 97%
+source-wordcount: '2002'
+ht-degree: 94%
 
 ---
 
@@ -41,9 +41,9 @@ HTML5-Formulare speichert alle Zwischenobjekte zwischen, die für die Verarbeitu
 
 Formulare für Mobilgeräte verwalten zwei verschiedene Cache-Ebenen: PreRender-Cache und Render-Cache. Der PreRender-Cache enthält alle Fragmente und Bilder einer aufgelösten Vorlage und der Render-Cache enthält gerenderte Inhalte wie HTML.
 
-![Arbeitsablauf für HTML5-Formulare](assets/cacheworkflow.png)
+![Workflow für HTML5-Formulare](assets/cacheworkflow.png)
 
-Arbeitsablauf für HTML5-Formulare
+Workflow für HTML5-Formulare
 
 HTML5-Formulare speichert Vorlagen nicht zwischen, die fehlende Verweise auf Fragmente und Bilder aufweisen. Wenn HTML5-Formulare länger als gewöhnlich lädt, prüfen Sie die Server-Protokolle auf fehlende Verweise und Warnungen. Stellen Sie auch sicher, dass die maximale Größe des Objekts nicht erreicht wurde.
 
@@ -94,7 +94,7 @@ HTML5-Formulare verwendet eine Zwischenspeicherung, um den Durchsatz zu maximier
   </tr>
   <tr>
    <td>Aggressiv</td>
-   <td>Den gerenderten HTML-Inhalt zwischenspeichern<br />Es werden alle Artefakte gespeichert, die in der Ebene „Konservativ“ zwischengespeichert wurden.<br /> <strong>Hinweis</strong>: Diese Strategie führt zur besten Leistung, verbraucht jedoch mehr Speicher zum Speichern der zwischengespeicherten Artefakte.</td>
+   <td>Gerenderte HTML-Inhalte zwischenspeichern<br /> Alle Artefakte zwischenspeichern, die in der Ebene „Konservativ“ zwischengespeichert wurden.<br /> <strong>Hinweis</strong>: Diese Strategie führt zur besten Leistung, verbraucht jedoch mehr Speicher zum Speichern der zwischengespeicherten Artefakte.</td>
   </tr>
  </tbody>
 </table>
@@ -123,7 +123,7 @@ Das Laufzeitpaket enthält die Client-seitigen Bibliotheken, die zum Rendern von
 
 Die XFA-Implementierung von Adobe unterstützt zwei Arten von Skriptsprachen, um die Ausführung der benutzerdefinierten Logik in Formularen zu ermöglichen: JavaScript und FormCalc.
 
-Die Scripting Engine von HTML Forms ist in JavaScript geschrieben, um die XFA-Skript-API in beiden Sprachen zu unterstützen.
+Die Scripting Engine von HTML-Formularen ist in JavaScript geschrieben, um die XFA-Skript-API in beiden Sprachen zu unterstützen.
 
 Während des Renderns wird das FormCalc-Skript auf dem Server in JavaScript übersetzt (und zwischengespeichert), sodass es für die Person, die es verwendet oder gestaltet, transparent ist.
 
@@ -177,10 +177,10 @@ Der Profilknoten hat eine -Eigenschaft **sling:resourceSuperType** mit dem Wert 
 * **xfaforms.I18N.&lt;locale>**: Diese Bibliothek enthält lokalisierte Daten.
 * **xfaforms.profile**: Diese Bibliothek enthält die Implementierung für XFA Scripting und für die Layout-Engine.
 
-Diese Bibliotheken sind als CQ-Client-Bibliotheken modelliert, um Nutzen aus den automatischen Verkettungs-, Minimierungs- und Komprimierungsfunktionen der CQ Framework JavaScript-Bibliotheken zu ziehen.
+Diese Bibliotheken sind als CQ-Client-Bibliotheken modelliert, um die Vorteile der automatischen Verkettungs-, Minimierungs- und Komprimierungsfunktionen des CQ-Frameworks JavaScript-Bibliotheken nutzen zu können.
 Weitere Informationen zu CQ-Client-Bibliotheken finden Sie unter [Dokumentation zu CQ Client-Bibliotheken](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de).
 
 Wie oben beschrieben ruft der Profil-Renderer-JSP den Forms-Service über ein Sling-Include auf. Dieses JSP legt auch verschiedene Debugging-Optionen auf Basis der Admin-Konfiguration oder von Anfrageparametern ein.
 
-HTML5-Formulare ermöglicht Entwicklern, Profile und Profil-Renderer zu erstellen, um das Erscheinungsbild der Formulare anzupassen. Beispielsweise können Entwickler HTML-Formulare in ein Bedienfeld oder einen &lt;div>-Abschnitt eines vorhandenen HTML-Portals integrieren.
-Weitere Informationen über das Erstellen benutzerdefinierter Profile finden Sie unter [Erstellen eines benutzerfreundlichen Profils](/help/forms/using/custom-profile.md).
+HTML5-Formulare ermöglichen es Entwicklerinnen und Entwicklern, Profile und Profil-Renderer zu erstellen, um das Erscheinungsbild der Formulare anzupassen. Beispielsweise können Entwicklerinnen und Entwickler mit HTML-Formularen Formulare in einen Bereich oder &lt;div>-Abschnitt eines bestehenden HTML-Portals integrieren.
+Weitere Informationen zum Erstellen benutzerdefinierter Profile finden Sie unter [&#x200B; eines benutzerdefinierten Profils](/help/forms/using/custom-profile.md).

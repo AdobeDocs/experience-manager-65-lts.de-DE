@@ -7,14 +7,14 @@ role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
 source-git-commit: e91f40d1af626b3aa42c9ddb8381d73ef9a69273
 workflow-type: tm+mt
-source-wordcount: '4354'
-ht-degree: 96%
+source-wordcount: '4296'
+ht-degree: 95%
 
 ---
 
 # Generierung eines Datensatzdokuments für adaptive Formulare oder adaptive Formularfragmente {#generate-document-of-record-for-adaptive-forms}
 
-<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
 ## Gilt für {#applies-to}
 
@@ -268,8 +268,8 @@ Führen Sie die folgenden Schritte aus, um ein Datensatzdokument für adaptive F
 
 1. Klicken Sie in der AEM-Autoreninstanz auf **Formulare > Formulare und Dokumente**.
 1. Wählen Sie ein Formular aus und klicken Sie auf **Eigenschaften anzeigen**.
-1. Wählen Sie im Fenster „Eigenschaften“ **Formularmodell** aus.
-Sie können auch bei der Erstellung eines Formulars ein Formularmodell auswählen.
+1. Wählen Sie im Fenster „Eigenschaften **die Option „Formularmodell**.
+Sie können ein Formularmodell auch beim Erstellen eines Formulars auswählen.
 
    >[!NOTE]
    >
@@ -457,12 +457,12 @@ Führen Sie die folgenden Schritte aus, um die zweiten Master-Seiteneigenschafte
 
 1. Wählen Sie den Bereich aus, um die zweite Musterseite anzuwenden, und wählen Sie dann ![Konfigurieren](assets/cmppr.png) aus.
 1. Wählen Sie im Bereich **[!UICONTROL Seitenumbruch]** im Feld **[!UICONTROL Ort]** die Option ![Ordner](/help/forms/using/assets/folder-icon.png) aus.
-1. Wählen Sie **[!UICONTROL Auf Seite]**, dann die zweite Musterseite und schließlich **[!UICONTROL Auswählen]** aus.
-AEM Forms wendet die zweite Musterseite auf den Bereich und alle nachfolgenden Bereiche im adaptiven Formular an.
+1. Wählen Sie **[!UICONTROL Auf Seite]**, dann die zweite Master-Seite aus und klicken Sie auf **[!UICONTROL Auswählen]**.
+AEM Forms wendet die zweite Master-Seite auf das Bedienfeld und alle nachfolgenden Bedienfelder im adaptiven Formular an.
 1. Wählen Sie im Bereich **[!UICONTROL Seitenumbruch]** im Feld **[!UICONTROL Nachher]** die Option ![Ordner](/help/forms/using/assets/folder-icon.png) aus.
 1. Wählen Sie **[!UICONTROL Wechseln zu Seite]**, dann die dritte Musterseite und schließlich **[!UICONTROL Auswählen]** aus.
-1. Wählen Sie ![Speichern](/help/forms/using/assets/save_icon.png) aus, um die Eigenschaften zu speichern.
-AEM Forms wendet die dritte Musterseite auf den Bereich und alle nachfolgenden Bereiche im adaptiven Formular an.
+1. Klicken Sie ![Speichern](/help/forms/using/assets/save_icon.png), um die Eigenschaften zu speichern.
+AEM Forms wendet die dritte Master-Seite auf das Bedienfeld und alle nachfolgenden Bedienfelder im adaptiven Formular an.
 
 >[!NOTE]
 >

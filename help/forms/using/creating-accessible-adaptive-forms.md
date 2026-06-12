@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: 8a0b276a-6020-4f48-95ab-4e7270e42e44
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2099'
-ht-degree: 100%
+source-wordcount: '2139'
+ht-degree: 99%
 
 ---
 
@@ -58,7 +58,7 @@ Das „Ultramarine-Accessible“-Design („Ultramarinblau – Barrierefreiheit�
 
 Sie sollten sich auf vier wichtige Aspekte konzentrieren: Tastaturnavigation, Farbkontrast, aussagekräftige Alternativtexte für Bilder und geeignete Beschriftungen für Formularsteuerelemente, um ein adaptives Formular barrierefrei zu gestalten. Führen Sie die folgenden Schritte aus, um das vorhandene adaptive Forms barrierefrei zu machen:
 
-### &#x200B;1. Anwenden eines barrierefreien Designs und Vornehmen weiterer Korrekturen
+### &#x200B;1. Anwenden eines barrierefreien Designs und Durchführen zusätzlicher Fehlerbehebungen
 
 Wenden Sie das Design „Ultramarine-Accessible“ auf Ihr vorhandenes adaptives Formular an. So wenden Sie das Design an:
 
@@ -97,7 +97,7 @@ Nachdem Sie ein barrierefreies Design angewendet haben, führen Sie die folgende
 
 1. Entfernen Sie Felder für die Freihandeingabe von Unterschriften aus dem adaptiven Formular, sofern vorhanden. Konfigurieren Sie das adaptive Formular so, dass Adobe Sign für problemloses digitales Signieren verwendet wird.
 
-### &#x200B;2. Angabe von angemessenen Beschriftungen für Formularsteuerelemente {#provide-proper-labels-for-form-controls}
+### &#x200B;2. Angeben angemessener Beschriftungen für Formularsteuerelemente {#provide-proper-labels-for-form-controls}
 
 Die Beschriftung oder der Titel einer Komponente gibt an, was die Formularkomponente darstellt. Der Text „Vorname“ weist Benutzende zum Beispiel darauf hin, dass sie ihren Vornamen in ein Textfeld eingeben müssen. Damit Bildschirmlesehilfen auf die Beschriftung zugreifen können, wird diese programmgesteuert mit einer Formularkomponente verknüpft. Alternativ dazu kann das Steuerelement im Formular mit zusätzlichen Barrierefreiheitsinformationen konfiguriert werden.
 
@@ -127,7 +127,7 @@ Gehen Sie wie folgt vor, um die Barrierefreiheitsoptionen zu verwenden:
 >* Optionsfelder und Kontrollkästchen können nur zwei Optionen für die Barrierefreiheit aufweisen, nämlich „Eigener Text“ und „Titel“.
 >* Bei XFA-basierten adaptiven Formularen wird die Barrierefreiheitsoption von den in der XDP festgelegten Barrierefreiheitsoptionen übernommen. QuickInfos aus der XDP werden der Kurzbeschreibung zugeordnet und die Beschriftung dem Titel. Die anderen Optionen bleiben gleich.
 
-### &#x200B;3. Angabe von Textäquivalenten für Bilder {#provide-text-equivalents-for-images}
+### &#x200B;3. Angeben von Textäquivalenten für Bilder {#provide-text-equivalents-for-images}
 
 Bilder können bei einigen Benutzenden zu einem besseren Verständnis beitragen. Für diejenigen Benutzenden, die Bildschirmlesehilfen verwenden, verringern Bilder jedoch die Barrierefreiheit Ihres Formulars. Wenn Sie Bilder verwenden möchten, sollten Sie Textbeschreibungen für alle Bilder angeben.
 

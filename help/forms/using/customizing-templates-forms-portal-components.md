@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 3eb9c0e3-950e-4dd5-a4c9-2d8f486ea3cf
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 92%
+source-wordcount: '1188'
+ht-degree: 89%
 
 ---
 
@@ -120,10 +120,10 @@ Unterstützung für Lokalisierung, Sortierung und Verwendung von Konfigurationse
 1. **Lokalisierungsunterstützung**: Zur Lokalisierung von beliebigem statischem Text verwenden Sie das Attribut `${localize-YOUR_TEXT}` und stellen Sie den lokalisierten Wert bereit, sofern er nicht bereits vorhanden ist.
    *Im genannten Beispiel werden die Attribute `${localize-Apply}` und `${localize-Download}` verwendet, um den Text „Apply“ und „Download“ zu lokalisieren.*
 
-1. **Unterstützung für die Sortierung**: Klicken Sie auf das HTML-Element, um die Suchergebnisse zu sortieren. Um eine Sortierung in ein Tabellen-Layout einzufügen, fügen Sie der jeweiligen Tabellenkopfzeile das Attribut „data-sortKey“ hinzu. Fügen Sie außerdem seinen Wert als die Metadaten hinzu, nach denen Sie sortieren möchten.
-So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header „data-sortKey“ „title“. Klicken Sie auf die Überschrift, um die Werte in einer bestimmten Spalte zu sortieren.
+1. **Unterstützung für die Sortierung**: Klicken Sie auf das HTML-Element, um die Suchergebnisse zu sortieren. Um eine Sortierung in einem Tabellenlayout zu implementieren, fügen Sie dem jeweiligen Tabellenkopf das Attribut „data-sortKey“ hinzu. Fügen Sie außerdem seinen Wert als die Metadaten hinzu, nach denen Sie sortieren möchten.
+Beispielsweise lautet für die Kopfzeile „Title“ in der Rasteransicht der Wert der Kopfzeile „data-sortKey“ „title“. Klicken Sie auf die Überschrift, um die Werte in einer bestimmten Spalte zu sortieren.
 
-1. **Verwenden von Konfigurationseigenschaften**: Die Komponente „Search &amp; Lister“ verfügt über mehrere Konfigurationen, die Sie in der Benutzeroberfläche verwenden können. Verwenden Sie z. B. das Attribut `${config-htmlLinkText}`, um im Bearbeitungsdialogfeld gespeicherten HTML-QuickInfo-Text anzuzeigen.  **Verwenden Sie analog dazu für PDF-QuickInfo-Text das Attribut** `${config-pdfLinkText}`.
+1. **Verwenden von Konfigurationseigenschaften**: Die Komponente „Search &amp; Lister“ verfügt über mehrere Konfigurationen, die Sie in der Benutzeroberfläche verwenden können. Verwenden Sie z. B. das Attribut `${config-htmlLinkText}`, um im Bearbeitungsdialogfeld gespeicherten HTML-QuickInfo-Text anzuzeigen. **Verwenden Sie analog dazu für PDF-QuickInfo-Text das Attribut** `${config-pdfLinkText}`.
 
 ### Komponente „Link“ {#link-component}
 
@@ -158,13 +158,13 @@ So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header
 
 **A**. Container-Element
 
-**B.** „path“-Metadaten mit einer festen Hierarchie zum Abruf der für jedes Formular gespeicherten Miniatur.
+**B.** „path“-Metadaten mit einer festen Hierarchie zum Abrufen der für jedes Formular gespeicherten Miniaturansicht.
 
 **C.** Datenwiederholbares Attribut für den Vorlagenbereich jedes Formulars
 
-**D.** Zu lokalisierende Zeichenfolge„Apply“ 
+**D.** Zu lokalisierende Zeichenfolge„Apply“
 
-**E.** Verwenden der Konfigurationseigenschaft „pdfLinkText“ 
+**E.** Verwenden der Konfigurationseigenschaft „pdfLinkText“
 
 **F.** Verwenden der Metadaten „pdfUrl“
 
