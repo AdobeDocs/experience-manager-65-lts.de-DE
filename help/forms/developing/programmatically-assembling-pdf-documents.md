@@ -228,7 +228,7 @@ Zusammenführen von PDF-Dokumenten mithilfe der Assembler-Dienst-API (Web-Servic
 
    >[!NOTE]
    >
-   >Ersetzen Sie `localhost` durch die IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
+   >Ersetzen Sie `localhost` mit der IP-Adresse des Servers, auf dem AEM Forms gehostet wird.
 
 1. Erstellen Sie einen PDF Assembler-Client.
 

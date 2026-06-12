@@ -12,8 +12,8 @@ role: Admin
 exl-id: 2661bd32-82c4-4a04-bf85-6ed120a73de4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '5386'
-ht-degree: 99%
+source-wordcount: '5443'
+ht-degree: 98%
 
 ---
 
@@ -58,7 +58,7 @@ In der folgenden Tabelle finden Sie eine Aufstellung der einzelnen Elemente zusa
 <table>
  <tbody>
   <tr>
-   <td>Benutzer-ID </td>
+   <td>Benutzer-ID</td>
    <td>Typ</td>
    <td>Beschreibung</td>
    <td>Empfehlung</td>
@@ -73,7 +73,7 @@ In der folgenden Tabelle finden Sie eine Aufstellung der einzelnen Elemente zusa
    <td><p>Anonym</p> <p> </p> </td>
    <td>User</td>
    <td><p>Besitzt die Standardrechte für nicht authentifizierten Zugriff auf eine Instanz. Dieses Konto verfügt standardmäßig über die Mindestzugriffsrechte.</p> <p>Wenn Sie dieses Konto versehentlich löschen, wird es beim Start neu erstellt. Das Konto kann zwar nicht dauerhaft gelöscht, aber deaktiviert werden.</p> </td>
-   <td>Löschen oder deaktivieren Sie dieses Konto nicht, da dies die Funktionalität von Authoring-Instanzen beeinträchtigen kann. Wenn es Sicherheitsanforderungen gibt, die Sie dazu verpflichten, es zu löschen, stellen Sie sicher, dass Sie zuerst die Auswirkungen auf Ihre Systeme ordnungsgemäß testen.</td>
+   <td>Löschen oder deaktivieren Sie dieses Konto nicht, da dies die Funktionalität von Autoreninstanzen beeinträchtigen kann. Wenn es Sicherheitsanforderungen gibt, die Sie dazu verpflichten, es zu löschen, stellen Sie sicher, dass Sie zuerst die Auswirkungen auf Ihre Systeme ordnungsgemäß testen.</td>
   </tr>
   <tr>
    <td><p>author</p> <p>Standardpasswort: author</p> </td>
@@ -415,7 +415,7 @@ In der linken Struktur werden alle Benutzenden und Gruppen aufgelistet, die sich
 | Eigenschaften | Listet Informationen über Benutzenden oder eine Gruppe auf, z. B. E-Mail-Adresse, Beschreibung und Namen. Außerdem können Sie das Passwort einer Benutzerin oder eines Benutzers ändern. Siehe [Erstellen von Benutzenden und Gruppen](#creating-users-and-groups), [Ändern von Benutzer- und Gruppeneigenschaften](#modifying-user-and-group-properties) und [Ändern von Benutzerkennwörtern](#changing-a-user-password). |
 | Gruppen | Listet alle Gruppen auf, denen die/der ausgewählte Benutzende oder die ausgewählte Gruppe angehört. Sie können die/den ausgewählte(n) Benutzenden oder die ausgewählte Gruppe zusätzlichen Gruppen zuweisen oder aus Gruppen entfernen. Siehe [Gruppen](#adding-users-or-groups-to-a-group). |
 | Mitglieder | Nur für Gruppen verfügbar. Es werden nur die Mitglieder einer bestimmten Gruppe aufgeführt. Siehe [Mitglieder](#members-adding-users-or-groups-to-a-group). |
-| Berechtigungen | Sie können Benutzenden oder Gruppen Berechtigungen zuweisen. Hiermit können Sie Folgendes steuern:<ul><li>Berechtigungen für bestimmte Seiten/Knoten. Siehe [Festlegen von Zugriffsberechtigungen](#setting-permissions). </li><li>Berechtigungen zum Erstellen und Löschen von Seiten und zum Ändern der Hierarchie. Sie können [Berechtigungen zuweisen](#settingprivileges), z. B. Hierarchieänderung, mit denen Sie Seiten erstellen und löschen können.</li><li>Berechtigungen im Zusammenhang mit [Replikationsberechtigungen](#setting-replication-privileges) (normalerweise von der Autoren- zur Veröffentlichungsinstanz) anhand eines Pfads.</li></ul> |
+| Berechtigungen | Sie können Benutzenden oder Gruppen Berechtigungen zuweisen. Hiermit können Sie Folgendes steuern:<ul><li>Berechtigungen für bestimmte Seiten/Knoten. Siehe [Festlegen von Zugriffsberechtigungen](#setting-permissions). </li><li>Berechtigungen zum Erstellen und Löschen von Seiten und zum Ändern der Hierarchie. ??? Ermöglicht die [Zuweisung von Berechtigungen](#settingprivileges) wie Hierarchieänderung, mit denen Sie Seiten erstellen und löschen können,</li><li>Berechtigungen im Zusammenhang mit [Replikationsberechtigungen](#setting-replication-privileges) (normalerweise von der Autoren- zur Veröffentlichungsinstanz) anhand eines Pfads.</li></ul> |
 | Stellvertretender | Ermöglicht es anderen Benutzenden, die Identität des Kontos zu übernehmen. Dies ist nützlich, wenn ein/e Benutzende stellvertretend für andere agieren soll. Siehe [Stellvertretendes Agieren für Benutzende](#impersonating-another-user). |
 | Voreinstellungen | Legt [Voreinstellungen für die Gruppe oder Benutzende](#setting-user-and-group-preferences) fest, etwa Sprachvoreinstellungen. |
 
@@ -735,7 +735,7 @@ Die Definition und Registrierung benutzerdefinierter Berechtigungen sind ab Vers
 
 Der Mechanismus zur Berechtigungsregistrierung befindet sich auf der Benutzeroberfläche unter **Repository Configuration**.
 
-Die Registrierung neuer (benutzerdefinierter) Berechtigungen ist selbst durch eine integrierte Berechtigung geschützt, die auf Repository-Ebene erteilt werden muss. In JCR: Übergeben von „null“ als Parameter „absPath“ in der ac-mgt-API; für Details siehe „jsr 333“. Standardmäßig wird diese Berechtigung dem Profil **admin** und allen Mitgliedern der Administratorgruppe erteilt.
+Die Registrierung neuer (benutzerdefinierter) Berechtigungen ist selbst durch eine integrierte Berechtigung geschützt, die auf Repository-Ebene erteilt werden muss. In JCR: Übergeben von „null“ als Parameter „absPath“ in der ac-mgt-API; für Details siehe „jsr 333“. Standardmäßig wird diese Berechtigung dem Profil **admin** und allen Mitgliedern der Administratorgruppe erteilt.
 
 >[!NOTE]
 >
