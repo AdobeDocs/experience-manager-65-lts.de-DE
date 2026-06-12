@@ -113,7 +113,7 @@ Wenn Formulardaten als URL-UTF-16-Daten übermittelt werden, erfordert der Clien
 
 >[!NOTE]
 >
->Weitere Informationen über den Forms-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Forms-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -209,7 +209,7 @@ Verarbeiten eines übermittelten Formulars mithilfe der Forms-API (Java):
 1. Abrufen von Formulardaten
 
    * Um Formulardaten abzurufen, die in einem Java-Servlet veröffentlicht wurden, erstellen Sie ein `com.adobe.idp.Document`-Objekt durch Verwenden seines Konstruktors und Aufrufen der Methode `getInputStream` des `javax.servlet.http.HttpServletResponse`-Objekts innerhalb des Konstruktors.
-   * Erstellen Sie ein Objekt `RenderOptionsSpec`, indem Sie den Konstruktor verwenden. Legen Sie den Gebietsschemawert fest, indem Sie die `setLocale`-Methode des `RenderOptionsSpec`-Objekts aufrufen und einen Zeichenfolgewert übergeben, der den Gebietsschemawert angibt.
+   * Erstellen Sie ein Objekt `RenderOptionsSpec`, indem Sie den Konstruktor verwenden. Legen Sie den Gebietsschema-Wert fest, indem Sie die Methode `setLocale` des `RenderOptionsSpec`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Gebietsschema-Wert angibt.
 
    >[!NOTE]
    >

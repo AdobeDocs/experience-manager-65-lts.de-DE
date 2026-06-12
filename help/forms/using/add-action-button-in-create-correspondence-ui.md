@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
 source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1853'
-ht-degree: 99%
+source-wordcount: '1888'
+ht-degree: 97%
 
 ---
 
@@ -39,7 +39,7 @@ Das Hinzufügen einer Schaltfläche mit einer Aktion (hier: „Brief zur Überpr
 1. Hinzufügen der Aktionsbearbeitung zur Schaltfläche
 1. Hinzufügen eines LiveCycle-Prozesses, um die Aktionsbearbeitung zu aktivieren
 
-### Hinzufügen der Schaltfläche „Korrespondenz erstellen“ zur Benutzeroberfläche  {#add-the-button-to-the-create-correspondence-user-interface}
+### Hinzufügen der Schaltfläche „Korrespondenz erstellen“ zur Benutzeroberfläche {#add-the-button-to-the-create-correspondence-user-interface}
 
 1. Wechseln Sie zu `https://'[server]:[port]'/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
 1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen `defaultApp` und einem ähnlichen Pfad/einer ähnlichen Struktur wie der defaultApp-Ordner (im config-Ordner). Mit den folgenden Schritten können Sie den Ordner erstellen:
@@ -156,13 +156,13 @@ Die Datei „ACMExtensionsMessages.properties“ beinhaltet Beschriftungen und 
 
    `loc.letterInstance.letterreview.label=Revue De Lettre`
 
-   Sie können in dieser Datei auch mehr Eigenschaften wie für Quickinfo und Stil hinzufügen.  
+   Sie können in dieser Datei auch mehr Eigenschaften wie für Quickinfo und Stil hinzufügen.
 
 1. Klicken Sie auf **Alle speichern**.
 
 #### Neustarten des Baustein-Bundles von Adobe Asset Composer {#restart-the-adobe-asset-composer-building-block-bundle}
 
-Nachdem Sie serverseitige Änderungen vorgenommen haben, starten Sie das Baustein-Bundle von Adobe Asset Composer neu.  In diesem Szenario werden die Dateien „acmExtensionsConfig.xml“ und „ACMExtensionsMessages.properties“ auf der Server-Seite bearbeitet, und folglich erfordert das Asset Composer-Baustein-Bundle von Adobe einen Neustart.
+Nachdem Sie serverseitige Änderungen vorgenommen haben, starten Sie das Baustein-Bundle von Adobe Asset Composer neu. In diesem Szenario werden die Dateien „acmExtensionsConfig.xml“ und „ACMExtensionsMessages.properties“ auf der Server-Seite bearbeitet, und folglich erfordert das Asset Composer-Baustein-Bundle von Adobe einen Neustart.
 
 >[!NOTE]
 >
@@ -172,7 +172,7 @@ Nachdem Sie serverseitige Änderungen vorgenommen haben, starten Sie das Baustei
 
 1. Suchen Sie das Asset Composer-Baustein-Bundle von Adobe. Starten Sie das Bundle neu: Klicken Sie auf „Anhalten“ und klicken Sie dann auf „Start“.
 
-   ![Asset Composer-Baustein von Adobe &#x200B;](assets/6_assetcomposerbuildingblockbundle.png)
+   ![Asset Composer-Baustein von Adobe ](assets/6_assetcomposerbuildingblockbundle.png)
 
 Nach dem Neustart des Adobe Asset Composer-Baustein-Bundles wird die benutzerdefinierte Schaltfläche auf der Benutzeroberfläche „Korrespondenz erstellen“ angezeigt. Sie können einen Brief in der Benutzeroberfläche „Korrespondenz erstellen“ öffnen, um eine Vorschau der benutzerdefinierten Schaltfläche anzuzeigen.
 
@@ -328,8 +328,8 @@ Aktivieren Sie in diesem Szenario die folgenden Komponenten, die ein Teil der a
 * JAR der DSC-Komponenten (DSCSample.jar)
 * LCA, um den Brief zum Überprüfungsprozess zu senden (SendLetterForReview.lca)
 
-Laden Sie die Datei „components.zip“ herunter und extrahieren Sie daraus die Dateien „DSCSample.jar“ und „SendLetterForReview.lca“. Verwenden Sie diese Dateien, wie in den folgenden Verfahren angegeben.
-[Datei laden](assets/components.zip)
+Laden Sie die Datei „components.zip“ herunter und entpacken Sie sie, um die Dateien „DSCSample.jar“ und „SendLetterForReview.lca“ zu erhalten. Verwenden Sie diese Dateien, wie in den folgenden Verfahren angegeben.
+[Datei abrufen](assets/components.zip)
 
 #### Konfigurieren Sie den LiveCycle-Server, um den LCA-Vorgang auszuführen {#configure-the-livecycle-server-to-run-the-lca-process}
 
@@ -346,7 +346,7 @@ Der LCA-Vorgang wird auf dem LiveCycle-Server ausgeführt und erfordert die Serv
 
    * **Server-URL**: URL des LC-Servers, dessen Service „An Review senden“ den Aktionsbearbeitungs-Code verwendet.
    * **Benutzername**: Admin-Benutzername des LC-Servers
-   * **Kennwort:** Kennwort des Adminbenutzernamens 
+   * **Kennwort:** Kennwort des Adminbenutzernamens
 
    ![Adobe LiveCycle Client SDK-Konfiguration](assets/3_clientsdkconfiguration.png)
 
@@ -372,7 +372,7 @@ Der erforderliche LiveCycle-Prozess, der den E-Mail-Service-Vorgang aktiviert.
 
    ![Wählen Sie die SendLetterForReview.lca-Datei](assets/14_sendletterforreview_lca.png)
 
-1. Klicken Sie auf **Vorschau**. 
+1. Klicken Sie auf **Vorschau**.
 
 1. Wählen Sie **Assets nach Abschluss des Imports für die Laufzeit bereitstellen**.
 

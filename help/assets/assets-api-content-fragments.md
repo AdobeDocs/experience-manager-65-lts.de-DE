@@ -278,7 +278,7 @@ Nutzung erfolgt über:
 
 `GET /{cfParentPath}/{cfName}.json`
 
-Beispiel:
+Zum Beispiel:
 
 `http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
@@ -313,7 +313,7 @@ Nutzung erfolgt über:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Einschränkungen {#limitations}
+## Beschränkungen {#limitations}
 
 Es gibt einige Beschränkungen:
 
