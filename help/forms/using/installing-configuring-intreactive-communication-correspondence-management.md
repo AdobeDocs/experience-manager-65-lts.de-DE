@@ -7,8 +7,8 @@ feature: Interactive Communication,Correspondence Management
 exl-id: d03965e1-4fa3-414c-80b6-c9fca281bee4
 source-git-commit: bd33420307a7be6664b6bbb52677af66edaa9c0e
 workflow-type: tm+mt
-source-wordcount: '1381'
-ht-degree: 100%
+source-wordcount: '1450'
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## Einführung {#introduction}
 
-Mit AEM Form lässt sich die Generierung, Zusammenstellung, Verwaltung und Lieferung von sicheren und interaktiven Dokumenten wie Geschäftskorrespondenzen, Dokumenten, Kontoauszügen, Mitteilungen über finanzielle Leistungen, Marketing-Mails, Rechnungen und Willkommenspaketen zentralisieren. Diese Funktion wird als interaktive Kommunikation bezeichnet. Die Funktion ist im Add-on-Paket zu AEM Forms enthalten. Das Add-On-Paket wird auf einer Authoring- oder Publishing-Instanz von AEM bereitgestellt.
+Mit AEM Form lässt sich die Generierung, Zusammenstellung, Verwaltung und Lieferung von sicheren und interaktiven Dokumenten wie Geschäftskorrespondenzen, Dokumenten, Kontoauszügen, Mitteilungen über finanzielle Leistungen, Marketing-Mails, Rechnungen und Willkommenspaketen zentralisieren. Diese Funktion wird als interaktive Kommunikation bezeichnet. Die Funktion ist im Add-on-Paket zu AEM Forms enthalten. Das Add-On-Paket wird auf einer Authoring- oder Veröffentlichungsinstanz von AEM bereitgestellt.
 
 Sie können die Funktion der interaktiven Kommunikation verwenden, um Kommunikation in mehreren Formaten zu erstellen. Zum Beispiel Web und PDF. Sie können die interaktive Kommunikation mit AEM Workflow integrieren, um die zusammengesetzte Kommunikation zu verarbeiten und sie den Kundinnen und Kunden über den Kanal ihrer Wahl zu liefern. Beispielsweise, indem Sie eine Kommunikation per E-Mail an die Endnutzerin oder den Endnutzer senden.
 
@@ -30,7 +30,7 @@ Das AEM Forms Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. 
 
 ![recommended-topology](assets/recommended-topology.png)
 
-Interaktive Kommunikationen in AEM Forms führen Administrations-, Authoring- und Agentenbenutzeroberflächen auf den Authoring-Instanzen von AEM Forms aus. Die Publishing-Instanzen hosten die endgültige Version der interaktiven Kommunikation, die für Endnutzende nutzbar ist.
+Interaktive Kommunikationen in AEM Forms führen Administrations-, Authoring- und Agentenbenutzeroberflächen auf den Autoreninstanzen von AEM Forms aus. Die Veröffentlichungsinstanzen hosten die endgültige Version der interaktiven Kommunikation, die für Endnutzende nutzbar ist.
 
 ## Systemanforderungen {#system-requirements}
 
@@ -92,12 +92,12 @@ Das AEM Forms Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. 
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** aus.
    2. Wählen Sie die Version aus und geben Sie sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
 1. Wählen Sie den für Ihr Betriebssystem zutreffenden Paketnamen, dann **[!UICONTROL EULA-Bedingungen akzeptieren]** und dann **[!UICONTROL Herunterladen]** aus.
-1. Öffnen Sie [Package Manager](/help/sites-administering/package-manager.md) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
+1. Öffnen Sie den [Paket-Manager](/help/sites-administering/package-manager.md) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
    Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) aufgeführt ist.
 
-1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Warten Sie vor dem Anhalten des AEM Forms-Servers, bis die Meldungen „ServiceEvent REGISTERED“ und „ServiceEvent UNREGISTERED“ nicht mehr in der Datei „[AEM-Installation-Directory]/crx-quickstart/logs/error.log“ angezeigt werden und das Protokoll stabil ist.
+1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Warten Sie vor dem Anhalten des AEM Forms-Servers, bis die Meldungen ServiceEvent REGISTERED und ServiceEvent UNREGISTERED nicht mehr in der Datei [AEM-Installationsverzeichnis]/crx-quickstart/logs/error.log angezeigt werden und das Protokoll stabil ist.
 
    >[!NOTE]
    >

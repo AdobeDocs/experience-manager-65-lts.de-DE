@@ -12,7 +12,7 @@ role: Admin, User, Developer
 exl-id: 39be83b0-c003-4e6c-baca-95166f654bc7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1790'
 ht-degree: 100%
 
 ---
@@ -227,7 +227,6 @@ Es dient vor allem der Anpassung, denn es bietet Funktionen, um Folgendes zu gen
          * fr-FR - Enthält translation.json für Französisch.
          * ja-JP - Enthält translation.json für Japanisch.
          * html.jsp - Enthält Code, um das aktuelle Browser-Gebietsschema zu ermitteln.
-
 
       * html.jsp
       * GET.jsp

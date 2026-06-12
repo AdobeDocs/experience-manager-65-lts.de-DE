@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: a804ba9b-c5c6-4d76-96e4-5d729b673ca4
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 100%
+source-wordcount: '728'
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ Führen Sie die folgenden Schritte aus, um die Datei `adobe-aemfd-forms-app-src-
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** aus.
    2. Wählen Sie die Version aus und geben Sie sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
 1. Wählen Sie den für Ihr Betriebssystem zutreffenden Paketnamen, dann **[!UICONTROL EULA-Bedingungen akzeptieren]** und dann **[!UICONTROL Herunterladen]** aus.
-1. Öffnen Sie [Package Manager](/help/sites-administering/package-manager.md) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
+1. Öffnen Sie den [Paket-Manager](/help/sites-administering/package-manager.md) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 1. Um das Quellcodearchiv herunterzuladen, öffnen Sie **https://&lt;server>:&lt;port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-&lt;version>.zip** in Ihrem Browser. Die ZIP-Datei der Android-App wird auf Ihr Gerät heruntergeladen.
 1. Extrahieren Sie den Inhalt der ZIP-Datei in einen Ordner in Ihrem lokalen Dateisystem. Beispiel: *C:\&lt;Folder Structure>\adobe-lc-mobileworkspace-src-2.4.20*
@@ -49,8 +49,8 @@ Das folgende Bild zeigt die Struktur des Ordners `adobe-lc-mobileworkspace-src-<
 Legen Sie die folgenden Umgebungsvariablen fest, bevor Sie den Build-Prozess für die AEM Forms-Anwendung starten:
 
 * Legen Sie die Umgebungsvariable JAVA_HOME auf den Speicherort der JDK-Software im lokalen Dateisystem fest. Beispiel: C:\Program Files\Java\jdk1.8.0_181
-* Setzen Sie die Systemumgebungsvariable `ANDROID_SDK_ROOT` auf den Speicherort des SDK für Android. Beispiel: C:\Benutzer\&lt;Benutzername>\AppData\Local\Android\Sdk
-* Legen Sie die Systemumgebungsvariable `Path` fest, um die Ordner „Plattform-Tools“ und „Tools“ für Android einzubeziehen. Beispiel: C:\Benutzer\&lt;Benutzername>\AppData\Local\Android\Sdk\platform-tools und C:\Benutzer\&lt;Benutzername>\AppData\Local\Android\Sdk\tools.
+* Setzen Sie die Systemumgebungsvariable `ANDROID_SDK_ROOT` auf den Speicherort des SDK für Android. Beispiel: C:\Users\&lt;username>\AppData\Local\Android\Sdk
+* Legen Sie die Systemumgebungsvariable `Path` fest, um die Ordner „Plattform-Tools“ und „Tools“ für Android einzubeziehen. Zum Beispiel C:\Users\&lt;username>\AppData\Local\Android\Sdk\platform-tools und C:\Users\&lt;username>\AppData\Local\Android\Sdk\tools.
 
 ## Erstellen einer standardmäßigen AEM Forms-App {#set-up-the-xcode-project}
 

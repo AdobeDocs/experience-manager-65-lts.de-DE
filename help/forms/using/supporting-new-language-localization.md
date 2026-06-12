@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 exl-id: 9c516c90-1b1d-406a-b42d-909aae8bb634
 source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 96%
+source-wordcount: '848'
+ht-degree: 95%
 
 ---
 
@@ -40,8 +40,8 @@ Es gibt zwei Methoden, das Gebietsschema eines adaptiven Formulars zu identifizi
 
 * mit einer Überprüfung der folgenden Parameter in der angegebenen Reihenfolge:
 
-   * Anforderungsparameter `afAcceptLang`
-Um das Browser-Gebietsschema der Benutzenden zu überschreiben, können Sie den Anfrageparameter `afAcceptLang` übergeben, um das Gebietsschema zu erzwingen. So erzwingt beispielsweise die folgende URL das Rendering des Formulars im japanischen Gebietsschema:
+   * `afAcceptLang` für Anforderungsparameter
+Um das Browser-Gebietsschema von Benutzern zu überschreiben, können Sie den `afAcceptLang`-Anforderungsparameter übergeben, um das Gebietsschema zu erzwingen. Beispielsweise wird die folgende URL gezwungen, das Formular im japanischen Gebietsschema wiederzugeben:
      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
    * Das für den Benutzer festgelegte Browser-Gebietsschema, das in der Abfrage mit dem `Accept-Language`-Header angegeben ist.
@@ -51,7 +51,7 @@ Um das Browser-Gebietsschema der Benutzenden zu überschreiben, können Sie den 
    * Das Browser-Gebietsschema ist standardmäßig aktiviert. Gehen Sie wie folgt vor, um das im Browser eingestellte Gebietsschema zu ändern:
       * Öffnen Sie den Configuration Manager. Die URL lautet `http://[server]:[port]/system/console/configMgr`.
       * Suchen und öffnen Sie die Konfiguration **[!UICONTROL Web-Kanal für adaptive Formulare und Interaktive Kommunikation]**.
-      * Ändern Sie den Status der Option **[!UICONTROL Browser-Gebietsschema verwenden]** und **[!UICONTROL Sie]** Konfiguration.
+      * Ändern Sie den Status der Option **[!UICONTROL Browser-Gebietsschema verwenden]** und **[!UICONTROL speichern]** Sie die Konfiguration.
 
 Sobald das Gebietsschema definiert ist, wählt das adaptive Formular das formularspezifische Wörterbuch aus. Wenn das formularspezifische Wörterbuch für das angeforderte Gebietsschema nicht gefunden wird, verwendet es das Wörterbuch für die Sprache, in der das adaptive Formular verfasst wurde.
 
@@ -97,7 +97,7 @@ I18N.js
 
 ### Clientbibliothek für adaptive Formulare für ein Gebietsschema hinzufügen {#add-adaptive-form-client-library-for-a-locale-br}
 
-Erstellen Sie einen Knoten vom Typ `cq:ClientLibraryFolder` unter `etc/<folderHierarchy>` mit der Kategorie `guides.I18N.<locale>` und den Abhängigkeiten `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` und `guide.common`. 
+Erstellen Sie einen Knoten des Typs `cq:ClientLibraryFolder` unter `etc/<folderHierarchy>` mit der Kategorie `guides.I18N.<locale>` und den Abhängigkeiten `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` und `guide.common`. ``
 
 Fügen Sie die folgenden Dateien der Client-Bibliothek hinzu:
 

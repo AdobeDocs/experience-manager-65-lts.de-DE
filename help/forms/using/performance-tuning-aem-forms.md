@@ -11,8 +11,8 @@ feature: Adaptive Forms
 exl-id: 4009c85e-cb8a-4bed-a6ff-7c76fe78a47f
 source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 100%
+source-wordcount: '804'
+ht-degree: 99%
 
 ---
 
@@ -48,7 +48,7 @@ Die standardmäßigen Cacheeinstellungen für AEM Forms erweisen sich für eine 
 >
 >Wenn Sie AEM Dispatcher zum Caching adaptiver Formulare verwenden, werden dabei auch adaptive Formulare im Cache gespeichert, die Formulare mit vorausgefüllten Daten enthalten. Werden solche Formulare aus dem AEM Dispatcher-Cache bereitgestellt, erhalten die Benutzenden eventuell vorausgefüllte oder veraltete Daten. Verwenden Sie AEM Dispatcher daher zum Zwischenspeichern von Formularen, die keine vorausgefüllten Daten enthalten. Darüber hinaus werden im Dispatcher-Cache gespeicherte Fragmente nicht automatisch invalidiert. Verwenden Sie diesen daher nicht zum Zwischenspeichern von Formularfragmenten. Nutzen Sie für solche Formulare und Fragmente den [Cache für adaptive Formulare](../../forms/using/configure-adaptive-forms-cache.md).
 
-## JVM-Parameter  {#jvm-parameters}
+## JVM-Parameter {#jvm-parameters}
 
 Für eine optimale Leistung werden folgende `init`-JVM-Argumente empfohlen, um `Java heap` und `PermGen` zu konfigurieren.
 
@@ -71,7 +71,7 @@ Führen Sie beispielsweise die folgenden Schritte durch, um die Komprimierung au
 
 >[!NOTE]
 >
->Die folgenden Anweisungen gelten für keine anderen Server als Apache Web Server 2.0 32 Bit.  Informationen über spezielle Schritte für andere Server finden Sie in der entsprechenden Produktdokumentation.
+>Die folgenden Anweisungen gelten für keine anderen Server als Apache Web Server 2.0 32 Bit. Informationen über spezielle Schritte für andere Server finden Sie in der entsprechenden Produktdokumentation.
 
 Die folgenden Schritte zeigen die Änderungen, die für eine Komprimierung mit Apache Web Server erforderlich sind.
 
@@ -95,8 +95,8 @@ Apache kann mit CRX über das HTTP-Protokoll kommunizieren. Die Konfigurationen 
    >
    >Für Linux® lautet der Standard für `APACHE_HOME` `/etc/httpd/`.
 
-1. Konfigurieren Sie das Proxys auf Port 4502 von crx.
-Fügen Sie in die `APACHE_HOME/conf/httpd.conf`-Konfigurationsdatei folgende Konfiguration ein.
+1. Konfigurieren Sie den Proxy auf Port 4502 von crx.
+Fügen Sie in `APACHE_HOME/conf/httpd.conf` Konfigurationsdatei folgende Konfiguration ein.
 
    ```shell
    ProxyPass / https://<server>:4502/

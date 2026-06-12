@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: e99f1cbd-492e-4cc2-9975-8f17c885dd8c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '142'
 ht-degree: 100%
 
 ---
@@ -33,7 +33,7 @@ Um die URL der Onlinedokumentation zu aktualisieren, führen Sie die Schritte un
    ```html
    <ul class="helpmenu">
      <li>
-       <a href="https://www.adobe.com/go/learn_aemforms_documentation_63_de" title="<%= $.t('index.header.dropdown.WorkspaceHelp')%>" target="_blank"><%= $.t('index.header.dropdown.WorkspaceHelp')%></a>
+       <a href="https://www.adobe.com/go/learn_aemforms_documentation_63" title="<%= $.t('index.header.dropdown.WorkspaceHelp')%>" target="_blank"><%= $.t('index.header.dropdown.WorkspaceHelp')%></a>
      </li>
    ```
 
