@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 69734a2b-7f9d-4661-a1e9-3bf6e362c272
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2213'
-ht-degree: 98%
+source-wordcount: '2298'
+ht-degree: 97%
 
 ---
 
@@ -94,10 +94,10 @@ Die Struktur der vorausgefüllten XML-Datei und der übermittelten XML-Datei fü
 
 Prefill-Submit-Data-ContentPackage.zip
 
-[Datei laden](assets/prefill-submit-data-contentpackage.zip)
-Beispiel mit vorbefüllten und übermittelten Daten
+[Datei abrufen](assets/prefill-submit-data-contentpackage.zip)
+Beispiel mit Vorbefüllungsdaten und übermittelten Daten
 
-### XML-Schema-basierte adaptive Formulare  {#xml-schema-af}
+### XML-Schema-basierte adaptive Formulare  {#xml-schema-af}
 
 Die Struktur von Prefill-XML und von eingereichten XML für adaptive Formulare, die auf XML-Schemata basieren, ist wie folgt:
 
@@ -235,7 +235,7 @@ Die XML-Tags für die Benutzerdaten, die für verschiedene Felder übermittelt w
 
 ## Konfigurieren des Vorbefüllungs-Service mithilfe von Configuration Manager {#configuring-prefill-service-using-configuration-manager}
 
-Um den Vorbefüllungs-Service zu aktivieren, müssen Sie die standardmäßige Vorbefüllungs-Service-Konfiguration in der AEM Web Console-Konfiguration angeben. Führen Sie folgende Schritte aus, um den Vorbefüllungs-Service zu konfigurieren:
+Um den Vorbefüllungsdienst zu aktivieren, müssen Sie die standardmäßige Vorbefüllungsdienstkonfiguration in der Konfiguration der AEM-Web-Konsole angeben. Führen Sie folgende Schritte aus, um den Vorbefüllungs-Service zu konfigurieren:
 
 >[!NOTE]
 >
@@ -277,7 +277,7 @@ Im Allgemeinen werden gebundene (Formular-Schema) und ungebundene Felder oder Te
 
 Adaptive Formulare können mit Benutzerdaten im Vorbefülldatenformat über die folgenden Protokolle vorbefüllt werden, wenn sie mit gültigem Regex konfiguriert sind:
 
-### „crx://“-Protokoll  {#the-crx-protocol}
+### „crx://“-Protokoll {#the-crx-protocol}
 
 ```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///tmp/fd/af/myassets/sample.xml
@@ -285,7 +285,7 @@ https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx://
 
 Der angegebene Knoten muss die Eigenschaft `jcr:data` aufweisen und die Daten enthalten.
 
-### „file://“-Protokoll  {#the-file-protocol-nbsp}
+### „file://“-Protokoll  {#the-file-protocol-nbsp}
 
 ```http
 https://localhost:4502/content/forms/af/someAF.html?wcmmode=disabled&dataRef=file:///C:/Users/form-user/Downloads/somesamplexml.xml
@@ -293,13 +293,13 @@ https://localhost:4502/content/forms/af/someAF.html?wcmmode=disabled&dataRef=fil
 
 Die referenzierte Datei muss sich auf demselben Server befinden.
 
-### „https://“-Protokoll  {#the-http-protocol}
+### „https://“-Protokoll {#the-http-protocol}
 
 ```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://localhost:8000/somesamplexmlfile.xml
 ```
 
-### „service://“-Protokoll  {#the-service-protocol}
+### „service://“-Protokoll {#the-service-protocol}
 
 ```http
 https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
@@ -351,7 +351,7 @@ Sie können den benutzerdefinierten Vorbefüllungs-Service für die Szenarien ve
 
 Der Vorbefüllungsdienst ist ein OSGi-Dienst und wird über das OSGi-Paket bereitgestellt. Sie erstellen das OSGi-Bundle, laden es hoch und installieren es in die AEM Forms-Pakete. Bevor Sie mit der Erstellung des Pakets beginnen:
 
-* [Laden Sie das AEM Forms Client SDK herunter](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html)
+* [AEM Forms Client SDK herunterladen](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html)
 * Laden Sie das Textbausteinpaket herunter
 
 * Platzieren Sie die Datendatei (Vorbefüllungsdaten) in das CRX-Repository. Sie können die Datei an einem beliebigen Ort in den \contents des CRX-Repositorys platzieren.
@@ -374,7 +374,7 @@ Das Textbausteinpaket (Vorbefüllungsdienst-Beispielpaket) enthält folgende Bei
 
 #### Starten und Verwenden des Vorbefüllungs-Service {#start-and-use-the-prefill-service}
 
-Um den Vorbefüllungsdienst zu starten, laden Sie die JAR-Datei in die AEM Forms Web Console hoch und aktivieren Sie den Dienst. Jetzt wird der Dienst im Editor für adaptive Formulare angezeigt. Verknüpfen eines Vorbefüllungs-Dienstes mit einem adaptiven Formular:
+Um den Vorbefüllungsdienst zu starten, laden Sie die JAR-Datei in die AEM Forms-Web-Konsole hoch und aktivieren Sie den Dienst. Jetzt wird der Dienst im Editor für adaptive Formulare angezeigt. Verknüpfen eines Vorbefüllungs-Dienstes mit einem adaptiven Formular:
 
 1. Öffnen Sie das adaptive Formular im Editor für Formulare und öffnen Sie den Bereich „Eigenschaften“ für den Formular-Container.
 1. In der Eigenschaftenkonsole gehen Sie zu „AEM Forms-Container“ > „Standard“ > „Vorbefüllungsdienst“.
@@ -388,7 +388,7 @@ Sie können den AEM Forms-Server so konfigurieren, dass die Datenzusammenführun
 
 * Aktivieren oder Deaktivieren der Funktion über den Configuration Manager:
    1. Öffnen Sie AEM Configuration Manager.
-   1. Suchen und Öffnen der Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation
+   1. Suchen und Öffnen der Web-Kanalkonfiguration für adaptive Formulare und interaktive Kommunikation
    1. Aktivieren der Option „Configuration.af.clientside.datamerge.enabled.name“
 * Aktivieren oder Deaktivieren der Funktion über die Befehlszeile:
    * Zum Aktivieren führen Sie folgenden cURL-Befehl aus:

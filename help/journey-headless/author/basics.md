@@ -7,8 +7,8 @@ role: Admin,Developer,User,Leader
 exl-id: 20ff7c83-0882-454e-a8f5-9eda1724cfe3
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 96%
+source-wordcount: '1653'
+ht-degree: 95%
 
 ---
 
@@ -193,8 +193,8 @@ OK, dies mag ein etwas seltsamer Abschnitt sein, aber sobald Sie den Inhaltsfrag
 
 * **Inhaltsfragmentmodelle**
 
-  Der Name des Inhaltsfragmentmodells wird oben im Editor angezeigt – direkt unter dem Namen des Fragments. Dies ist auch ein Link, über den Sie zum Modell-Editor gelangen.
-Inhaltsfragmentmodelle sind für Ihre Inhaltsfragmente von entscheidender Bedeutung, da sie die zu verwendende Struktur definieren. Für die Erstellung und Bearbeitung ist jedoch (in der Regel) eine andere Rolle, der Inhaltsarchitekt, verantwortlich.
+  Der Name des Inhaltsfragmentmodells wird oben im Editor angezeigt - direkt unter dem Fragmentnamen. Dies ist auch ein Link, über den Sie zum Modell-Editor gelangen.
+Inhaltsfragmentmodelle sind für Ihre Inhaltsfragmente von entscheidender Bedeutung, da sie die verwendete Struktur definieren. Für die Erstellung und Bearbeitung ist jedoch (in der Regel) eine andere Rolle, der Inhaltsarchitekt, verantwortlich.
 
   >[!NOTE]
   >

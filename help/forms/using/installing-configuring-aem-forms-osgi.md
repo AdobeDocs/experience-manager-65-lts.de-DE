@@ -10,8 +10,8 @@ feature: Adaptive Forms,AEM Forms on OSGi
 exl-id: ee917b4b-fd38-4e05-8632-8efb82d9cddc
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1881'
-ht-degree: 100%
+source-wordcount: '1962'
+ht-degree: 98%
 
 ---
 
@@ -115,17 +115,17 @@ Das AEM Forms Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. 
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** aus.
    2. Wählen Sie die Version aus und geben Sie sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
 1. Wählen Sie den für Ihr Betriebssystem zutreffenden Paketnamen, dann **[!UICONTROL EULA-Bedingungen akzeptieren]** und dann **[!UICONTROL Herunterladen]** aus.
-1. Öffnen Sie [Package Manager](/help/sites-administering/package-manager.md) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
+1. Öffnen Sie den [Paket-Manager](/help/sites-administering/package-manager.md) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
    Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms-Versionen](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
-1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Warten Sie vor dem Anhalten des AEM Forms-Servers, bis die Meldungen „ServiceEvent REGISTERED“ und „ServiceEvent UNREGISTERED“ nicht mehr in der Datei `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` angezeigt werden und das Protokoll stabil ist.
+1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Warten Sie vor dem Anhalten des AEM Forms-Servers, bis die Meldungen „ServiceEvent REGISTERED“ und „ServiceEvent UNREGISTERED“ nicht mehr in der `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` angezeigt werden und das Protokoll stabil ist.
 
    >[!NOTE]
    >
    > Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
-1. Wiederholen Sie Schritten 1-7 für alle Autor- und Veröffentlichungsinstanzen. 
+1. Wiederholen Sie Schritten 1-7 für alle Autor- und Veröffentlichungsinstanzen.
 
 ### (Nur Windows) Automatische Installation von verteilbaren Visual Studio-Dateien {#automatic-installation-visual-studio-redistributables}
 
@@ -214,7 +214,7 @@ Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu 
 
 #### Konfigurieren der SSL-Kommunikation für das Formulardatenmodell {#configure-ssl-communcation-for-form-data-model}
 
-Sie können für das Formulardatenmodell die SSL-Kommunikation aktivieren. Um die SSL-Kommunikation für das Formulardatenmodell zu aktivieren, fügen Sie vor dem Starten einer AEM Forms-Instanz Zertifikate zum Java Trust Store aller Instanzen hinzu. Sie können den folgenden Befehl ausführen, um die Zertifikate hinzuzufügen: 
+Sie können für das Formulardatenmodell die SSL-Kommunikation aktivieren. Um die SSL-Kommunikation für das Formulardatenmodell zu aktivieren, fügen Sie vor dem Starten einer AEM Forms-Instanz Zertifikate zum Java Trust Store aller Instanzen hinzu. Sie können den folgenden Befehl ausführen, um die Zertifikate hinzuzufügen:
 
 `keytool -import -alias <alias-name> -file <pathTo .cer certificate file> -keystore <<pathToJRE>\lib\security\cacerts>`
 
@@ -243,5 +243,5 @@ AEM forms kann mit der Adobe Marketing Cloud-Lösung Adobe Target integriert wer
 Sie haben eine Umgebung für die Verwendung der AEM Forms-Datenerfassungsfunktionen konfiguriert. Die nächsten Schritte zur Verwendung der Funktionen, sind Folgende:
 
 * [Erstellen Sie Ihr erstes adaptives Formular](/help/forms/using/create-your-first-adaptive-form.md)
-* [Erstellen Sie Ihr erstes PDF Formular](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_de)
+* [Erstellen Ihres ersten PDF-Formulars](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_de)
 * [Einführung in HTML5-Formulare](/help/forms/using/introduction.md)

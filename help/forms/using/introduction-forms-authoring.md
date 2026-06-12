@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: a1791374-d05c-4f60-b178-152a7bc06c45
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3215'
+source-wordcount: '3164'
 ht-degree: 96%
 
 ---
@@ -29,7 +29,7 @@ Die Dokumentation zu AEM as a Cloud Service finden Sie unter [AEM Forms auf Clou
 
 Mit adaptiven Formularen können Sie Formulare erstellen, die ansprechend, reaktionsfähig, dynamisch und anpassungsfähig sind. AEM Forms bietet eine intuitive Benutzeroberfläche sowie vordefinierte Komponenten zum Erstellen und Verarbeiten von adaptiven Formularen. Sie können adaptive Formulare auf der Basis eines Formularmodells oder Schemas oder ohne Formularmodell erstellen. Es ist wichtig, sorgfältig ein Formularmodell zu wählen, das nicht nur Ihren Verwendungszwecken entspricht, sondern auch Ihre bestehenden Infrastrukturinvestitionen und -Assets erweitert. Zum Erstellen eines adaptiven Formulars werden die folgenden Optionen bereitgestellt:
 
-* **Verwenden eines Formulardatenmodells**
+* **Verwendung eines Formulardatenmodell**
   [Datenintegration](../../forms/using/data-integration.md) ermöglicht die Integration von Entitäten und Services aus unterschiedlichen Datenquellen in ein Formulardatenmodell, das Sie zum Erstellen adaptiver Formulare verwenden können. Wählen Sie das Formulardatenmodell, wenn Sie ein adaptives Formular erstellen, für das Daten aus mehreren Datenquellen abgerufen und in diese geschrieben werden sollen.
 
 * **Verwenden einer XDP-Formularvorlage**
@@ -91,7 +91,7 @@ Zeigt die Objekthierarchie des Formulars an Der Autor kann zu bestimmten Formula
 
    * **Datenmodellobjekte**
 Hiermit können Sie die Formularmodellhierarchie anzeigen.
-Damit können Sie Formularmodellelemente per Drag-and-Drop auf das adaptive Formular ziehen. Die hinzugefügten Elemente werden automatisch in Formularkomponenten konvertiert, während ihre ursprünglichen Eigenschaften beibehalten werden. Sie können Datenmodellobjekte anzeigen, wenn in Ihrem Formular ein XML-Schema, ein JSON-Schema oder eine XDP-Vorlage verwendet wird.
+Damit können Sie Formularmodellelemente per Drag-and-Drop auf das adaptive Formular ziehen. Die hinzugefügten Elemente werden automatisch in Formularkomponenten konvertiert, während ihre ursprünglichen Eigenschaften beibehalten werden. Sie können Datenmodellobjekte sehen, wenn Ihr Formular ein XML-Schema, ein JSON-Schema oder eine XDP-Vorlage verwendet.
 
 * **Eigenschaften-Browser**
 

@@ -8,8 +8,8 @@ role: Admin, User, Developer
 exl-id: 5b3beaa6-ca0a-454e-85ee-c3653dd423fe
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 97%
+source-wordcount: '2174'
+ht-degree: 96%
 
 ---
 
@@ -479,7 +479,7 @@ Sie können verschiedene Schriftarten verwenden, um ein adaptives Formular zu en
 8. Erstellen Sie eine Ordnerstruktur in CRXDE, z. B. `/apps/[fontslibrary]/[customlibrary(clientlibrary)]`.
 9. Gehen Sie zum neu erstellten Ordner `clientlibs` und fügen Sie die Eigenschaften `allowProxy` und `categories` hinzu.
 10. Navigieren Sie zu `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` und erstellen Sie einen neuen CSS-Ordner.
-11. Gehen Sie zum angelegten CSS-Ordner und erstellen Sie eine Datei. Erstellen Sie beispielsweise eine Datei `fonts.css` und fügen Sie den Einbettungs-Code zusammen mit der URL ein.
+11. Wechseln Sie zum erstellten CSS-Ordner und erstellen Sie eine Datei. Erstellen Sie beispielsweise eine Datei als `fonts.css` und fügen Sie den Einbettungs-Code zusammen mit der URL ein.
     ![Ordnerstruktur](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. Speichern Sie die Änderungen.
 
