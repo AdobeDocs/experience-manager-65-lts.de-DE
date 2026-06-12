@@ -11,8 +11,8 @@ role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
 source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
 workflow-type: tm+mt
-source-wordcount: '2291'
-ht-degree: 65%
+source-wordcount: '2354'
+ht-degree: 63%
 
 ---
 
@@ -71,7 +71,7 @@ Unterstützt die Facettenextraktion. Erstellt für jeden Wert (`true` oder `fals
 #### Eigenschaften {#properties}
 
 * **boolproperty**
-Relativer Pfad der Eigenschaft, z. B. `myFeatureEnabled` oder `jcr:content/myFeatureEnabled`.
+Relativer Pfad der Eigenschaft, z. B. `myFeatureEnabled` oder `jcr:content/myFeatureEnabled`.
 
 * **value**
 Wert, auf den die Eigenschaft überprüft werden soll, &quot;`true`&quot; oder &quot;`false`&quot;.
@@ -86,7 +86,8 @@ Facettenextraktion wird nicht unterstützt.
 
 #### Eigenschaften {#properties-1}
 
-* **contentfragment** Kann mit jedem Wert verwendet werden, um auf Inhaltsfragmente zu prüfen.
+* **contentfragment**
+Sie kann mit jedem Wert verwendet werden, um auf Inhaltsfragmente zu prüfen.
 
 ### `dateComparison` {#datecomparison}
 
@@ -345,7 +346,7 @@ Facettenextraktion wird nicht unterstützt.
 
 * **flat**
 
-  Durchsucht nur die direkt untergeordneten Elemente (wie wenn in `/*` &quot;`xpath`&quot; angehängt wird). Wird nur verwendet, wenn &quot;`exact`&quot; nicht „true“ ist (optional).
+  Durchsucht nur die direkt untergeordneten Elemente (wie wenn in `xpath` &quot;`/*`&quot; angehängt wird). Wird nur verwendet, wenn &quot;`exact`&quot; nicht „true“ ist (optional).
 
 * **self**
 
@@ -381,7 +382,7 @@ Unterstützt die Facettenextraktion. Stellt für jeden eindeutigen Eigenschaftsw
 
 * **depth**
 
-  Eine Reihe von Platzhalterebenen, unter denen die Eigenschaft und der relative Pfad vorhanden sein können. `property=size depth=2` überprüft beispielsweise Knoten und Größe, Knoten/&ast;/size und Knoten/&ast;/&ast;/size.
+  Eine Reihe von Platzhalterebenen, unter denen die Eigenschaft und der relative Pfad vorhanden sein können. `property=size depth=2` überprüft beispielsweise Knoten und Größe, Knoten/&amp;ast;/size und Knoten/&amp;ast;/&amp;ast;/size.
 
 ### `rangeproperty` {#rangeproperty}
 
@@ -415,7 +416,7 @@ Facettenextraktion wird nicht unterstützt.
 
 * **decimal**
 
-   „`true`“, wenn die aktivierte Eigenschaft vom Typ „Decimal“ ist.
+  „`true`“, wenn die aktivierte Eigenschaft vom Typ „Decimal“ ist.
 
 ### `relativedaterange` {#relativedaterange}
 
@@ -426,7 +427,7 @@ Beispiel:
 * `upperBound=1h` (und keine `lowerBound`) wählt alles in der folgenden Stunde aus.
 * `lowerBound=-1d` (und keine `upperBound`) wählt alles in den vergangenen 24 Stunden aus.
 * `lowerBound=-6M` und `upperBound=-3M` wählt alles aus, was zwischen sechs und drei Monaten alt ist.
-* `lowerBound=-1500` und `upperBound=5500` wählt alles aus, was im Zeitraum zwischen einschließlich 1500 Millisekunden in der Vergangenheit und einschließlich 5500 Millisekunden in der Zukunft liegt. 
+* `lowerBound=-1500` und `upperBound=5500` wählt alles aus, was im Zeitraum zwischen einschließlich 1500 Millisekunden in der Vergangenheit und einschließlich 5500 Millisekunden in der Zukunft liegt.
 * `lowerBound=1d` und `upperBound=2d` wählt alles am übernächsten Tag aus.
 
 Schaltjahre werden nicht berücksichtigt, und alle Monate haben 30 Tage.
@@ -472,7 +473,7 @@ Der Name „root“ wird in Abfragen nie verwendet, er ist implizit.
 
 * **p.hits**
 
-   (nur für das JSON-Servlet) Legt fest, wie Treffer als JSON geschrieben werden. Folgende Standardmethoden stehen zur Auswahl (erweiterbar über den Dienst „ResultHitWriter“):
+  (nur für das JSON-Servlet) Legt fest, wie Treffer als JSON geschrieben werden. Folgende Standardmethoden stehen zur Auswahl (erweiterbar über den Dienst „ResultHitWriter“):
 
    * **einfach**:
 
@@ -515,8 +516,8 @@ Filtern wird nicht unterstützt. Facettenextraktion wird nicht unterstützt.
 * **similar**
 Absoluter Pfad zum Knoten, für den ähnliche Knoten gefunden werden sollen.
 
-* **local**
-Ein relativer Pfad zu einem untergeordneten Knoten oder `.` für den aktuellen Knoten (optional; der Standard lautet `.`).
+* **lokal**
+Ein relativer Pfad zu einem untergeordneten Knoten oder `.` für den aktuellen Knoten (optional, der Standardwert lautet &quot;`.`„).
 
 ### `tag` {#tag}
 

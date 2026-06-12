@@ -7,8 +7,8 @@ role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
 source-git-commit: a0fe5bbfe93719641118521c6861bcb2cca76d60
 workflow-type: tm+mt
-source-wordcount: '4805'
-ht-degree: 98%
+source-wordcount: '4940'
+ht-degree: 94%
 
 ---
 
@@ -45,7 +45,7 @@ Bevor es um die Entwicklung von Komponenten geht, müssen Sie wissen, welche Ben
 * **Touch-optimierte Benutzeroberfläche**
   Die [Standardbenutzeroberfläche](/help/sites-developing/touch-ui-concepts.md) basiert auf dem einheitlichen Anwendererlebnis für Adobe Experience Cloud und verwendet dabei die zugrunde liegenden Technologien der [Coral-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#coral-ui) und der [Granite-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **Klassische Benutzeroberfläche**
-Eine auf der ExtJS-Technologie basierende Benutzeroberfläche, die seit AEM 6.4 veraltet ist.
+Eine auf der ExtJS-Technologie basierende Benutzeroberfläche, die seit AEM 6.4 veraltet ist.
 
 Komponenten können je nach Implementierung die Touch-optimierte Benutzeroberfläche, die klassische oder beide Versionen unterstützen. Eine Standardinstanz umfasst auch vorkonfigurierte Komponenten, die ursprünglich für die klassische oder die Touch-optimierte Benutzeroberfläche oder beide Versionen entwickelt wurden.
 
@@ -84,13 +84,13 @@ Eine schnelle Möglichkeit für den Einstieg ist das Kopieren einer vorhandenen 
 
 * [Entwickeln von Komponenten](/help/sites-developing/developing-components-samples.md) (mit Schwerpunkt auf der Touch-optimierten Benutzeroberfläche)
 
-### Verschieben von Komponenten in die Publishing-Instanz {#moving-components-to-the-publish-instance}
+### Verschieben von Komponenten in die Veröffentlichungsinstanz {#moving-components-to-the-publish-instance}
 
-Die Komponenten, die Inhalte rendern, müssen in derselben AEM-Instanz bereitgestellt werden wie die Inhalte. Daher müssen alle Komponenten, die zum Verfassen und Rendern von Seiten in der Authoring-Instanz genutzt werden, in der Publishing-Instanz bereitgestellt werden. Wenn sie bereitgestellt sind, stehen diese Komponenten zum Rendern aktivierter Seiten zur Verfügung.
+Die Komponenten, die Inhalte rendern, müssen in derselben AEM-Instanz bereitgestellt werden wie die Inhalte. Daher müssen alle Komponenten, die zum Verfassen und Rendern von Seiten in der Autoreninstanz genutzt werden, in der Veröffentlichungsinstanz bereitgestellt werden. Wenn sie bereitgestellt sind, stehen diese Komponenten zum Rendern aktivierter Seiten zur Verfügung.
 
-Mit den folgenden Tools können Sie Ihre Komponenten in die Publishing-Instanz verschieben:
+Mit den folgenden Tools können Sie Ihre Komponenten in die Veröffentlichungsinstanz verschieben:
 
-* [Mit Package Manager](/help/sites-administering/package-manager.md) können Sie Ihre Komponenten zu einem Paket hinzufügen und in eine andere AEM-Instanz verschieben.
+* [Mit dem Paket-Manager](/help/sites-administering/package-manager.md) können Sie Ihre Komponenten zu einem Paket hinzufügen und in eine andere AEM-Instanz verschieben.
 * [Mit dem Replikations-Tool „Tree aktivieren“](/help/sites-authoring/publishing-pages.md#manage-publication) können Sie die Komponenten replizieren.
 
 >[!NOTE]
@@ -262,7 +262,7 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
   <tr>
    <td><code>componentGroup</code></td>
    <td><code>String</code></td>
-   <td>Gruppe, aus der die Komponente im Komponenten-Browser (Touch-optimierte Benutzeroberfläche) oder Sidekick (klassische Benutzeroberfläche) ausgewählt werden kann.<br /> Der Wert <code>.hidden</code> wird für Komponenten genutzt, die nicht zur Auswahl über die Benutzeroberfläche verfügbar sind, z. B. die tatsächlichen Absatzsysteme.</td>
+   <td>Gruppe, aus der die Komponente im Komponentenbrowser (Touch-optimierte Benutzeroberfläche) oder Sidekick (klassische Benutzeroberfläche) ausgewählt werden kann.<br /> Der Wert <code>.hidden</code> wird für Komponenten verwendet, die nicht zur Auswahl über die Benutzeroberfläche verfügbar sind, z. B. die tatsächlichen Absatzsysteme.</td>
   </tr>
   <tr>
    <td><code>cq:isContainer</code></td>
@@ -337,7 +337,7 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
   <tr>
    <td><code>cq:templatePath</code></td>
    <td><code>String</code></td>
-   <td>Pfad zu einem Knoten, der als Inhaltsvorlage genutzt wird, wenn die Komponente vom Komponenten-Browser oder Sidekick hinzugefügt wird. Es muss sich hierbei um einen absoluten Pfad handeln, keinen relativen zum Komponentenknoten.<br /> Wenn Sie keine bereits an anderer Stelle verfügbaren Inhalte wiederverwenden möchten, ist dies nicht erforderlich und <code>cq:template</code> ausreichend (siehe unten).</td>
+   <td>Pfad zu einem Knoten, der als Inhaltsvorlage genutzt wird, wenn die Komponente vom Komponenten-Browser oder Sidekick hinzugefügt wird. Dies muss ein absoluter Pfad sein, nicht relativ zum Komponentenknoten.<br /> Wenn Sie keine bereits an anderer Stelle verfügbaren Inhalte wiederverwenden möchten, ist dies nicht erforderlich und <code>cq:template</code> ausreichend (siehe unten).</td>
   </tr>
   <tr>
    <td><code>jcr:created</code></td>
@@ -600,7 +600,7 @@ Es gibt zahlreiche vorhandene Konfigurationen im Repository. Sie können ganz ei
 
 Komponenten müssen immer HTML-Inhalte wiedergeben, die für den Autor sichtbar sind, auch wenn die Komponente keinen Inhalt hat. Andernfalls könnte sie visuell aus der Benutzeroberfläche des Editors verschwinden, sodass sie zwar technisch vorhanden, aber auf der Seite und im Editor unsichtbar ist. In einem solchen Fall können die Autorinnen und Autoren die leere Komponente nicht auswählen und mit ihr interagieren.
 
-Aus diesem Grund sollten Komponenten einen Platzhalter darstellen, solange sie beim Rendern der Seite im Seiteneditor (wenn der WCM-Modus `edit` oder `preview` ist) keine sichtbare Ausgabe erzeugen.
+Aus diesem Grund sollten Komponenten einen Platzhalter darstellen, solange sie beim Rendern der Seite im Seiten-Editor (wenn der WCM-Modus `edit` oder `preview` ist) keine sichtbare Ausgabe erzeugen.
 Das typische HTML-Markup für einen Platzhalter sieht wie folgt aus:
 
 ```HTML
@@ -702,11 +702,11 @@ Die Eigenschaft `cq:layout` (`String`) legt fest, die wie Komponente in der klas
   </tr>
   <tr>
    <td><code>rollover</code></td>
-   <td>Standardwert. Die Komponentenbearbeitung ist beim Darüberfahren mit der Maus durch Anklicken und/oder über das Kontextmenü zugänglich.<br /> Hinweis für fortgeschrittene Benutzende: Das entsprechende Client-seitige Objekt ist <code>CQ.wcm.EditRollover</code>.</td>
+   <td>Standardwert. Die Komponentenbearbeitung ist beim Darüberfahren mit der Maus durch Klicks und/oder über das Kontextmenü zugänglich.<br /> Für fortgeschrittene Nutzer lautet das entsprechende Client-seitige Objekt: <code>CQ.wcm.EditRollover</code>.</td>
   </tr>
   <tr>
    <td><code>editbar</code></td>
-   <td>Auf die Komponentenbearbeitung kann über eine Symbolleiste zugegriffen werden.<br /> Hinweis für fortgeschrittene Benutzende: Das entsprechende Client-seitige Objekt ist <code>CQ.wcm.EditBar</code>.</td>
+   <td>Auf die Komponentenbearbeitung kann über eine Symbolleiste zugegriffen werden.<br /> Für fortgeschrittene Nutzer lautet das entsprechende Client-seitige Objekt: <code>CQ.wcm.EditBar</code>.</td>
   </tr>
   <tr>
    <td><code>auto</code></td>
@@ -809,7 +809,8 @@ Jeder untergeordnete Knoten des Typs `cq:DropTargetConfig` definiert ein Ablagez
 
 `com.day.cq.wcm.api.components.DropTarget.CSS_CLASS_PREFIX`.
 
-Beispielsweise wird der Klassenname wie folgt im JSP der Download-Komponente (`/libs/foundation/components/download/download.jsp`) definiert. Dabei ist `file` der Knotenname des Ablageziels in der Bearbeitungskonfiguration der Download-Komponente:
+Beispielsweise wird der Klassenname wie folgt im JSP der Download-Komponente definiert
+( `/libs/foundation/components/download/download.jsp`), wobei `file` der Knotenname des Ablageziels in der Bearbeitungskonfiguration der Download-Komponente ist:
 
 `String ddClassName = DropTarget.CSS_CLASS_PREFIX + "file";`
 

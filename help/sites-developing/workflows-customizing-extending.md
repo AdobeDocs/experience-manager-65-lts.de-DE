@@ -11,8 +11,8 @@ role: Developer
 exl-id: 9036e26c-74cd-4013-a63d-70ece0f80904
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '3492'
-ht-degree: 97%
+source-wordcount: '3611'
+ht-degree: 94%
 
 ---
 
@@ -59,7 +59,7 @@ Die Komponente `/libs/cq/workflow/components/model/step` ist der nächste gemein
 
   ![wf-22-1](assets/wf-22-1.png)
 
-* [cq](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog)
+* [cq:dialog](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog)
 
   Ein Dialogfeld mit den folgenden Registerkarten:
 
@@ -257,7 +257,7 @@ Fügen Sie unter dem Knoten `cq:Component` den Knoten `cq:EditConfig` hinzu. Fü
 
 Sie können Workflow-Metadaten verwenden, um Informationen aufzubewahren, die während der Lebensdauer des Workflows – und zwischen den Schritten – benötigt werden. Eine gängige Anforderung an Workflow-Schritte besteht darin, Daten für die zukünftige Verwendung beizubehalten oder die gespeicherten Daten aus vorherigen Schritten abzurufen.
 
-Workflow-Metadaten werden in einem [`MetaDataMap`](#metadatamaps)-Objekt gespeichert. Die Java-API stellt die Methode [`Workflow.getWorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html) bereit, die ein [`WorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html)-Objekt zurückgibt, das das entsprechende `MetaDataMap`-Objekt bereitstellt. Dieses `WorkflowData` `MetaDataMap`-Objekt ist für den OSGi-Dienst oder das ECMA-Skript einer Schritt-Komponente verfügbar.
+Workflow-Metadaten werden in einem [`MetaDataMap`](#metadatamaps)-Objekt gespeichert. Die Java-API stellt die Methode [`Workflow.getWorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html) bereit, die ein [`WorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html)-Objekt zurückgibt, das das entsprechende `MetaDataMap`-Objekt bereitstellt. Dieses `WorkflowData``MetaDataMap`-Objekt ist für den OSGi-Dienst oder das ECMA-Skript einer Schritt-Komponente verfügbar.
 
 #### Java {#java}
 
@@ -370,7 +370,7 @@ Beim Erstellen einer benutzerdefinierten Schritt-Komponente ist das Objekt `meta
 
 ## Entwickeln von Prozessschrittimplementierungen {#developing-process-step-implementations}
 
-Wenn Prozessschritte während des Prozesses gestartet werden, senden die Schritte eine Anfrage an einen OSGi-Dienst oder führen ein ECMA-Skript aus. Entwickeln Sie den Dienst oder das ECMA-Skript, der bzw. das die Aktionen ausführt, die für Ihren Workflow erforderlich sind.
+Wenn Prozessschritte während der Verarbeitung eines Workflows gestartet werden, senden die Schritte eine Anfrage an einen OSGi-Dienst oder führen ein ECMA-Skript aus. Entwickeln Sie den Dienst oder das ECMA-Skript, der bzw. das die Aktionen ausführt, die für Ihren Workflow erforderlich sind.
 
 >[!NOTE]
 >

@@ -1,14 +1,14 @@
 ---
 title: Variablen in AEM-Workflows
-description: Erstellen Sie eine Variable, legen Sie einen Wert für die Variable fest und verwenden Sie sie in den Workflow-Schritten „ODER-Aufspaltung“ und „Goto“ von AEM.
+description: Erstellen Sie eine Variable, legen Sie einen Wert für die Variable fest und verwenden Sie sie in den Workflow-Schritten „ODER-Teilung“ und „Goto“ von AEM.
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: eb75efb8-c59a-4d51-af54-942cca178f2e
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '1910'
-ht-degree: 99%
+source-wordcount: '1999'
+ht-degree: 90%
 
 ---
 
@@ -20,7 +20,7 @@ In AEM-Workflow-Modellen haben Sie folgende Möglichkeiten:
 
 * [Erstellen Sie eine Variable](/help/sites-developing/using-variables-in-aem-workflows.md#create-a-variable) eines Datentyps basierend auf dem Typ von Information, die Sie darin speichern möchten.
 * [Legen Sie einen Wert für die Variable fest](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable), indem Sie den Workflow-Schritt „Variable festlegen“ verwenden.
-* [Verwenden Sie die Variable](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) in den Workflow-Schritten „ODER-Aufspaltung“ und „Goto“ von AEM zum Definieren eines Ausdrucks für Routing-Entscheidungen. In allen AEM Forms-Workflow-Schritten können Sie auch Variablen verwenden.
+* [Verwenden Sie die Variable](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) in den Workflow-Schritten „ODER-Teilung“ und „Goto“ von AEM zum Definieren eines Ausdrucks für Routing-Entscheidungen. In allen AEM Forms-Workflow-Schritten können Sie auch Variablen verwenden.
 
 Variablen sind eine Erweiterung der [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)-Schnittstelle. Sie können [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) in ECMAScript verwenden, um auf Metadaten zuzugreifen, die mithilfe von Variablen gespeichert wurden.
 
@@ -53,7 +53,7 @@ Um eine Variable zu erstellen:
    * Formulardatenmodell – Geben Sie einen Pfad für ein Formulardatenmodell an.
    * ArrayList – Geben Sie einen Untertyp für die Auflistung an.
 
-1. Geben Sie eine optionale Beschreibung für die Variable an und wählen Sie das ![Symbol „Speichern“ aus, das durch einen Haken in einem Kästchen dargestellt wird](assets/Done_Icon.png), um die Änderungen zu speichern. Die Variable wird in der im linken Bereich verfügbaren Liste angezeigt.
+1. Geben Sie eine optionale Beschreibung für die Variable ein und wählen Sie ![Speichern -Symbol, das durch ein Häkchen in einem Feld gekennzeichnet ist.](assets/Done_Icon.png) um die Änderungen zu speichern. Die Variable wird in der im linken Bereich verfügbaren Liste angezeigt.
 
 Berücksichtigen Sie beim Erstellen von Variablen die folgenden Punkte:
 
@@ -83,10 +83,10 @@ Sie können bestimmte Elemente einer JSON- oder XML-Typvariablen auch mittels JS
 Gehen Sie wie folgt vor, um eine Zuordnung zwischen Variablen hinzuzufügen:
 
 1. Wählen Sie auf der Seite für das Bearbeiten des Workflows das Symbol „Schritte“ aus, das im Sidekick des Workflow-Modells verfügbar ist.
-1. Ziehen Sie den Schritt **Variable festlegen** per Drag-and-Drop in den Workflow-Editor, wählen Sie den Schritt und das ![Symbol „Konfigurieren“ aus, das durch einen Schraubenschlüssel dargestellt wird](assets/configure_icon.png) (Konfigurieren).
+1. Ziehen Sie den Schritt **Variable festlegen** in den Workflow-Editor, wählen Sie den Schritt aus und klicken Sie auf ![Symbol „Konfigurieren“, das durch einen Schraubenschlüssel angezeigt wird.](assets/configure_icon.png) (Konfigurieren).
 1. Wählen Sie im Dialogfeld „Variable festlegen“ die Option **[!UICONTROL Zuordnung]** > **[!UICONTROL Zuordnung hinzufügen]** aus.
 1. Wählen Sie im Abschnitt **Variable zuordnen** die Variable aus, in der Daten gespeichert werden sollen, wählen Sie den Zuordnungsmodus aus und geben Sie einen Wert an, der in der Variablen gespeichert werden soll. Die Zuordnungsmodi variieren je nach Variablentyp.
-1. Ordnen Sie weitere Variablen zu, damit Sie einen aussagekräftigen Ausdruck bilden können. Wählen Sie das ![Symbol „Speichern“ aus, das durch einen Haken in einem Kästchen dargestellt wird](assets/Done_Icon.png), um die Änderungen zu speichern.
+1. Ordnen Sie weitere Variablen zu, damit Sie einen aussagekräftigen Ausdruck bilden können. Wählen Sie ![Speichersymbol, das durch ein Häkchen in einem Feld gekennzeichnet wird.](assets/Done_Icon.png) um die Änderungen zu speichern.
 
 ### Beispiel 1: Abfragen einer XML-Variablen, um den Wert für eine Zeichenfolgenvariable festzulegen {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -149,7 +149,7 @@ Wählen Sie auf ähnliche Weise einen externen Skriptpfad aus oder geben Sie das
 
 Weitere Beispiele finden Sie unter [Erstellen eines Workflow-Modells](/help/forms/using/aem-forms-workflow.md#create-a-workflow-model).
 
-#### GOTO-Schritt (Wechseln zu Schritt)  {#go-to-step}
+#### GOTO-Schritt (Wechseln zu Schritt) {#go-to-step}
 
 Mit der Option **Goto-Schritt** können Sie den nächsten auszuführenden Schritt im Workflow-Modell angeben, abhängig vom Ergebnis eines Routing-Ausdrucks.
 
@@ -231,8 +231,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Bearbeiten einer Variablen {#edit-a-variable}
 
 1. Wählen Sie auf der Seite „Workflow bearbeiten“ das Symbol „Variablen“ im Sidekick des Workflow-Modells aus. Im Abschnitt „Variablen“ im linken Bereich werden alle vorhandenen Variablen angezeigt.
-1. Wählen Sie das Symbol ![„Bearbeiten“ aus, dargestellt durch ein Bleistiftsymbol](assets/edit.png) (Bearbeiten) neben dem Namen der Variablen, die Sie bearbeiten möchten.
-1. Bearbeiten Sie die Variableninformationen und wählen Sie das Symbol ![„Speichern“ aus, dargestellt durch ein Häkchen](assets/Done_Icon.png), um die Änderungen zu speichern. Die Felder **[!UICONTROL Name]** und **[!UICONTROL Typ]** für eine Variable können Sie nicht bearbeiten.
+1. Wählen Sie das ![Bearbeiten-Symbol, das durch ein Bleistiftsymbol angezeigt wird“](assets/edit.png) (Bearbeiten) neben dem Namen der Variablen, die Sie bearbeiten möchten.
+1. Bearbeiten Sie die Variableninformationen und wählen Sie ![Speichersymbol, das durch ein Häkchen gekennzeichnet ist.](assets/Done_Icon.png) um die Änderungen zu speichern. Die Felder **[!UICONTROL Name]** und **[!UICONTROL Typ]** für eine Variable können Sie nicht bearbeiten.
 
 ## Löschen einer Variablen {#delete-a-variable}
 
@@ -242,4 +242,4 @@ So löschen Sie eine Variable,
 
 1. Wählen Sie auf der Seite „Workflow bearbeiten“ das Symbol „Variablen“ im Sidekick des Workflow-Modells aus. Im Abschnitt „Variablen“ im linken Bereich werden alle vorhandenen Variablen angezeigt.
 1. Wählen Sie das Symbol „Löschen“ neben dem Namen der Variablen aus, die Sie löschen möchten.
-1. Wählen Sie das Symbol ![„Fertig“ aus, dargestellt durch ein Häkchen](assets/Done_Icon.png), um zu bestätigen, dass die Variable gelöscht werden soll.
+1. Wählen Sie ![Symbol „Fertig“ aus, das durch ein Häkchen gekennzeichnet wird.](assets/Done_Icon.png) , um die Variable zu bestätigen und zu löschen.

@@ -11,8 +11,8 @@ role: Developer
 exl-id: fe3735ff-5c9b-4eb8-bf1d-f2189ec7e26f
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '3237'
-ht-degree: 96%
+source-wordcount: '3366'
+ht-degree: 95%
 
 ---
 
@@ -44,7 +44,7 @@ Der Java™ Content-Repository-Standard (JCR) [JSR 283](https://developer.adobe.
 
 Die Leitung der Spezifikation liegt bei Adobe Research (Schweiz) AG.
 
-Das [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)-Paket, javax.jcr.&ast; wird für den direkten Zugriff und die Bearbeitung von Repository-Inhalten verwendet.
+Das [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)-Paket javax.jcr.&amp;ast; wird für den direkten Zugriff auf und die Bearbeitung von Repository-Inhalten verwendet.
 
 ## Experience Server (CRX) und Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -60,7 +60,7 @@ AEM ist auf [Sling](https://sling.apache.org/index.html) aufgebaut, einem auf RE
 
 Bei Verwendung von Sling ist der Typ des zu rendernden Inhalts nicht die erste Verarbeitungsüberlegung. Stattdessen ist die Hauptüberlegung, ob die URL zu einem Inhaltsobjekt aufgelöst wird, für das dann ein Skript gefunden werden kann, um das Rendering durchzuführen. Dies bietet Autorinnen und Autoren von Web-Inhalten eine hervorragende Unterstützung beim Erstellen von Seiten, die einfach an ihre Anforderungen angepasst werden können.
 
-Die Vorteile dieser Flexibilität zeigen sich in Programmen mit einer großen Auswahl verschiedener Inhaltselemente oder wenn Sie Seiten benötigen, die einfach angepasst werden können. Insbesondere bei der Implementierung eines Web Content Management-Systems wie WCM in der AEM-Lösung.
+Die Vorteile dieser Flexibilität zeigen sich in Programmen mit einer großen Auswahl verschiedener Inhaltselemente oder wenn Sie Seiten benötigen, die einfach angepasst werden können. Insbesondere bei der Implementierung eines Web-Content-Management-Systems wie WCM in der AEM-Lösung.
 
 Siehe [Entdecken Sie Sling in 15 Minuten](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) für die ersten Schritte zur Entwicklung mit Sling.
 
@@ -103,7 +103,7 @@ Sie lässt sich in ihre Bestandteile zerlegen:
 
 | protocol | host | content path | selectors | Erweiterung |  | Suffix |  | params |
 |---|---|---|---|---|---|---|---|---|
-| https:// | Myhost  | tools/spy | .printable.a4. | html | / | a/b | ? | x=12 |
+| https:// | Myhost | tools/spy | .printable.a4. | html | / | a/b | ? | x=12 |
 
 **protocol** – HTTP
 
@@ -285,7 +285,7 @@ Wenn Sie die Repräsentation (das Skript) direkt aufrufen, blenden Sie die Resso
 
 ### Sling-API {#sling-api}
 
-Hierbei wird das Sling-API-Paket „org.apache.sling“ verwendet.&ast; und -Tag-Bibliotheken.
+Hierbei werden das Sling-API-Paket „org.apache.sling.last;“ und Tag-Bibliotheken verwendet.
 
 ### Referenzieren vorhandener Elemente mithilfe von Sling:include {#referencing-existing-elements-using-sling-include}
 
@@ -417,7 +417,7 @@ Die folgende Liste gibt einen Überblick über die Struktur, die Sie im Reposito
 
 * `/apps`
 
-   Anwendungsbezogen; enthält für Ihre Website spezifische Komponentendefinitionen. Die von Ihnen entwickelten Komponenten können auf den Standardkomponenten basieren, die unter `/libs/foundation/components` verfügbar sind.
+  Anwendungsbezogen; enthält für Ihre Website spezifische Komponentendefinitionen. Die von Ihnen entwickelten Komponenten können auf den Standardkomponenten basieren, die unter `/libs/foundation/components` verfügbar sind.
 
 * `/content`
 
@@ -431,7 +431,7 @@ Die folgende Liste gibt einen Überblick über die Struktur, die Sie im Reposito
 
 * `/libs`
 
-   Bibliotheken und Definitionen, die zum Kern von AEM gehören. Die Unterordner in `/libs` repräsentieren die vorkonfigurierten AEM-Funktionen wie Suche oder Replikation. Inhalte in `/libs` sollten nicht geändert werden, da dies die Funktionsweise von AEM beeinflusst. Spezielle Funktionen für Ihre Website sollten unter `/apps` entwickelt werden (siehe [Anpassen von Komponenten und anderen Elementen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+  Bibliotheken und Definitionen, die zum Kern von AEM gehören. Die Unterordner in `/libs` repräsentieren die vorkonfigurierten AEM-Funktionen wie Suche oder Replikation. Inhalte in `/libs` sollten nicht geändert werden, da dies die Funktionsweise von AEM beeinflusst. Spezielle Funktionen für Ihre Website sollten unter `/apps` entwickelt werden (siehe [Anpassen von Komponenten und anderen Elementen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
@@ -439,7 +439,7 @@ Die folgende Liste gibt einen Überblick über die Struktur, die Sie im Reposito
 
 * `/var`
 
-   Dateien, die sich ändern und vom System aktualisiert werden; wie Audit-Logs, Statistiken, Event-Handling.
+  Dateien, die sich ändern und vom System aktualisiert werden; wie Auditprotokolle, Statistiken, Event-Handling.
 
 ## Umgebungen {#environments}
 

@@ -12,7 +12,7 @@ role: Developer
 exl-id: efa4b828-0807-40ac-81a0-1090cac9a257
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2973'
+source-wordcount: '2996'
 ht-degree: 97%
 
 ---
@@ -105,9 +105,9 @@ Durch die ClientContext-Komponente lädt die Seite die Client-Bibliotheken, die 
 * Das ClientContext-Framework, das Sitzungsspeicher und Ereignisverwaltung unterstützt.
 * Segmente, die definiert sind.
 * Die init.js-Skripte, die für jede Kontextspeicherkomponente generiert werden, die zu Client Context hinzugefügt wurde.
-* (Nur Authoring-Instanz) Die Client Context-Benutzeroberfläche.
+* (Nur Autoreninstanz) Die Client Context-Benutzeroberfläche.
 
-Die Client Context-Benutzeroberfläche ist nur in der Authoring-Instanz verfügbar.
+Die Client Context-Benutzeroberfläche ist nur in der Autoreninstanz verfügbar.
 
 ## Erweitern von Client Context {#extending-client-context}
 
@@ -220,13 +220,13 @@ Wenn Client Context initialisiert wird, werden diese Knoten verarbeitet.
 
 Fügen Sie Ihrer Komponente eine init.js.jsp-Datei hinzu, um JavaScript-Code zu generieren, der den Sitzungsspeicher für Ihre Kontextspeicherkomponente initialisiert. Verwenden Sie beispielsweise das Initialisierungsskript, um die Konfigurationseigenschaften der Komponente abzurufen und in den Sitzungsspeicher einzuspeisen.
 
-Der generierte JavaScript-Code wird der Seite hinzugefügt, wenn Client Context beim Laden der Seite sowohl auf der Authoring- als auch auf der Publishing-Instanz initialisiert wird. Diese JSP wird ausgeführt, bevor die Instanz der Kontextspeicherkomponente geladen und gerendert wird.
+Der generierte JavaScript-Code wird der Seite hinzugefügt, wenn Client Context beim Laden der Seite sowohl auf der Authoring- als auch auf der Veröffentlichungsinstanz initialisiert wird. Diese JSP wird ausgeführt, bevor die Instanz der Kontextspeicherkomponente geladen und gerendert wird.
 
 Im Code muss der MIME-Typ der Datei auf `text/javascript` festgelegt sein, andernfalls wird er nicht ausgeführt.
 
 >[!CAUTION]
 >
->Das Skript „init.js.jsp“ wird auf der Authoring- und Publishing-Instanz ausgeführt, jedoch nur, wenn die Kontextspeicherkomponente zu Client Context hinzugefügt wird.
+>Das Skript „init.js.jsp“ wird auf der Authoring- und Veröffentlichungsinstanz ausgeführt, jedoch nur, wenn die Kontextspeicherkomponente zu Client Context hinzugefügt wird.
 
 Im folgenden Verfahren wird die Skriptdatei „init.js.jsp“ erstellt und der Code hinzugefügt, der den richtigen MIME-Typ festlegt. Der Code für die Speicherinitialisierung würde danach folgen.
 
@@ -492,7 +492,7 @@ Erstellen Sie eine CQ-Anwendung und fügen Sie die Geoloc-Komponente hinzu.
 
 1. https://localhost Öffnen Sie CRXDE Lite in Ihrem Webbrowser ([:4502/crx/de](https://localhost:4502/crx/de)).
 1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps` und klicken Sie auf „Erstellen“ > „Ordner erstellen“. Geben Sie für `myapp` einen Namen ein und klicken Sie auf „OK“.
-1. Erstellen Sie auch unter `myapp` einen Ordner mit dem Namen `contextstores`. &grave;&grave;
+1. Erstellen Sie auch unter `myapp` einen Ordner mit dem Namen `contextstores`. ``
 1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps/myapp/contextstores` und klicken Sie auf „Erstellen“ > „Komponente erstellen“. Geben Sie folgende Eigenschaftswerte an und klicken Sie auf „Weiter“:
 
    * Titel: Geoloc
@@ -624,7 +624,7 @@ enthält den Inhalt des benutzerdefinierten ClientContext.
   `/contextstores`
 ermöglicht es Ihnen, verschiedene Konfigurationen für die Kontextspeicher festzulegen.
 
-Um Ihren benutzerdefinierten ClientContext zu verwenden, bearbeiten Sie die Eigenschaft
+Um Ihren benutzerdefinierten ClientContext zu verwenden, bearbeiten Sie die Eigenschaft .
 `path`
 im Designstil der ClientContext-Komponente, wie in der Seitenvorlage enthalten. Beispielsweise als Standardspeicherort von:
 `/libs/cq/personalization/components/clientcontext/design_dialog/items/path`

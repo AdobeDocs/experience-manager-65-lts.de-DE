@@ -11,8 +11,8 @@ role: Developer
 exl-id: 255f52f3-aff4-432c-a541-3ce03e626742
 source-git-commit: 9bc1cad84bb14b7513ede1fff2c1a37768dac442
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 83%
+source-wordcount: '1735'
+ht-degree: 82%
 
 ---
 
@@ -318,7 +318,7 @@ Definiert die Konfiguration für die `editbar`.
 
 **Beschreibung**
 
-Konfiguriert ein Ablageziel einer Komponente.  Der Name dieses Knotens wird als ID für per Drag-and-Drop zu verschiebende Komponenten verwendet.
+Konfiguriert ein Ablageziel einer Komponente. Der Name dieses Knotens wird als ID für per Drag-and-Drop zu verschiebende Komponenten verwendet.
 
 * `@prop accept` – Liste der MIME-Typen, die von diesem Ablageziel akzeptiert werden, beispielsweise `["image/*"]`
 * `@prop groups` - Liste der Drag-and-Drop-Gruppen, die eine Quelle akzeptieren.
@@ -336,7 +336,7 @@ Konfiguriert ein Ablageziel einer Komponente.  Der Name dieses Knotens wird als
 
 **Beschreibung**
 
-Definiert eine virtuelle CQ-Komponente.  Wird derzeit nur für den neuen Assistenten zum Verschieben von Komponenten per Drag-and-Drop verwendet.
+Definiert eine virtuelle CQ-Komponente. Wird derzeit nur für den neuen Assistenten zum Verschieben von Komponenten per Drag-and-Drop verwendet.
 
 * `@prop jcr:title` - Titel dieser Komponente.
 * `@prop jcr:description` - Beschreibung dieser Komponente.
