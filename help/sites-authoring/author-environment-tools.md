@@ -12,8 +12,8 @@ role: User,Admin,Developer
 exl-id: 11ab6be0-ed61-4a4b-af82-d26eec982edd
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '2211'
-ht-degree: 100%
+source-wordcount: '2223'
+ht-degree: 99%
 
 ---
 
@@ -43,7 +43,7 @@ Sie können eine Seite mit dem Seiteneditor bearbeiten. Zum Beispiel:
 >
 >Sie können diese Tour überspringen und jederzeit wiederholen, indem Sie sie im Menü **Seiteninformationen** auswählen.
 
-## Aufrufen der Hilfe   {#accessing-help}
+## Aufrufen der Hilfe {#accessing-help}
 
 Wenn Sie eine Seite bearbeiten, können Sie folgendermaßen auf die **Hilfe** zugreifen:
 
@@ -120,7 +120,7 @@ Wenn der Asset-Browser geöffnet ist, können Sie alle für die Seite verfügbar
 
 ![ateat-08](assets/ateat-08.png)
 
-Um ein Asset zu der Seite hinzuzufügen, wählen Sie es aus und ziehen Sie es an die gewünschte Position. Dabei kann es sich um Folgendes handeln:
+Um ein Asset zu Ihrer Seite hinzuzufügen, wählen Sie es aus und ziehen Sie es an die gewünschte Position. Dies kann sein:
 
 * Eine vorhandene Komponente des entsprechenden Typs.
 
@@ -236,7 +236,7 @@ Wenn Ihre Seite Inhaltsfragmente enthält, haben Sie auch Zugriff auf den [Brows
 
 Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen. In bestimmten Situationen sind weitere Aktionen verfügbar, wenn Sie einen bestimmten Verweis auswählen, z. B.:
 
-* **Eingehende Links** enthält eine Liste der Seiten, die auf die Seite verweisen, und bietet direkten Zugriff zum **Bearbeiten** einer dieser Seiten, wenn Sie einen bestimmten Link auswählen. 
+* **Eingehende Links** enthält eine Liste der Seiten, die auf die Seite verweisen, und bietet direkten Zugriff zum **Bearbeiten** einer dieser Seiten, wenn Sie einen bestimmten Link auswählen.
 
    * Es können nur statische Links angezeigt werden, nicht dynamisch generierte Links, z. B. aus der Listenkomponente.
 

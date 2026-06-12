@@ -12,8 +12,8 @@ role: Admin
 exl-id: 448715f1-ccec-4fb8-92d7-b7458cf9e6d4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6065'
-ht-degree: 97%
+source-wordcount: '6108'
+ht-degree: 96%
 
 ---
 
@@ -113,7 +113,7 @@ Das Portlet kann mit den folgenden Voreinstellungen konfiguriert werden:
   </tr>
   <tr>
    <td>htmlSelector</td>
-   <td>Der Selektor, der an jede URL angehängt wird. Standardmäßig ist dies <strong>portlet</strong>, d. h. alle Anfragen an HTML-Seiten nutzen URLs mit folgender Endung: <strong>.portlet.html.</strong> Dies ermöglicht die Verwendung von benutzerdefinierten Skripten in AEM für das Rendern von Portlets.</td>
+   <td>Der Selektor, der an jede URL angehängt wird. Standardmäßig ist dies <strong>portlet</strong>, d. h. alle Anfragen an HTML-Seiten nutzen URLs mit folgender Endung: <strong>.portlet.html.</strong> Dies ermöglicht die Verwendung benutzerdefinierter Skripte in AEM für das Portlet-Rendering.</td>
   </tr>
   <tr>
    <td>addCssToPortalHeader</td>
@@ -152,7 +152,7 @@ Unter der Annahme, dass der Portal-Server auf dem Host „localhost“ (Port 808
 
 Zur Unterstützung automatisierter Implementierungen und Konfigurationsbereitstellungen verfügt das AEM-Inhalts-Portlet über eine integrierte Konfigurations-Support-Funktion, die versucht, Konfigurationen aus dem Klassenpfad auszulesen, der für die Portlet-Anwendung angegeben wird.
 
-Beim Start wird die Systemeigenschaft **com.day.cq.portet.config** ausgelesen, sodass die aktuelle Umgebung erkannt werden kann. Normalerweise lautet der Wert dieser Eigenschaft **dev**, **prod**, **test**.  Wenn keine Umgebung festgelegt ist, werden keine Konfigurationen ausgelesen.
+Beim Start wird die Systemeigenschaft **com.day.cq.portet.config** ausgelesen, sodass die aktuelle Umgebung erkannt werden kann. Normalerweise lautet der Wert dieser Eigenschaft **dev**, **prod**, **test**. Wenn keine Umgebung festgelegt ist, werden keine Konfigurationen ausgelesen.
 
 Ist eine Umgebung festgelegt, wird im Klassenpfad unter **com/day/cq/portlet/{env}.config nach einer Konfigurationsdatei gesucht** wobei **env** durch den tatsächlichen Wert für die Umgebung ersetzt wird. Diese Datei sollte alle Konfigurationsdateien für diese Umgebung auflisten. Diese Dateien werden relativ zum Speicherort der Konfigurationsdatei durchsucht. Wenn die Datei beispielsweise eine Zeile `my.service.xml,` enthält, wird diese Datei aus dem Klassenpfad unter `com/day/cq/portlet/my.service.config.` gelesen. Der Name der Datei besteht aus der Persistenz-ID des Service, gefolgt von **.config**. Im vorherigen Beispiel ist die Persistenz-ID **my.service**. Das Format der Konfigurationsdatei entspricht dem Format, das vom Apache Sling OSGi-Installationsprogramm verwendet wird.
 
@@ -171,7 +171,7 @@ Sie können dieses Bundle während der Laufzeit bereitstellen oder vor der Berei
 Nachdem der Cache bereitgestellt wurde, speichert das Portlet Inhalte aus der Veröffentlichungsinstanz zwischen. Der Portlet-Cache kann mithilfe einer Anweisung zum Leeren des Dispatchers von AEM invalidiert werden. So konfigurieren Sie das Portlet auf eine Weise, dass es seinen eigenen Cache verwendet:
 
 1. Konfigurieren Sie einen Replikationsagenten in der Autoreninstanz, der auf den Portal-Server ausgerichtet ist.
-1. Wenn der Portal-Server auf dem Host **localhost** (**Port 8080**) ausgeführt wird und die Web-Anwendung des AEM-Portlets im Web-Anwendungskontext **cqportlet** gemountet wird, lautet die URL zum Leeren des Zwischenspeichers `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Verwenden Sie das Verfahren GET.
+1. Wenn der Portal-Server auf dem Host **localhost** (**Port 8080**) ausgeführt wird und die Web-Anwendung des AEM-Portlets im Kontext **cqportlet** gemountet wird, wird die URL zum Leeren des Caches `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Verwenden Sie GET als Methode.
    **Hinweis:** Anstatt einen Anforderungsparameter zu verwenden, können Sie eine HTTP-Kopfzeile mit dem Namen **Pfad** senden.
 
 #### Leeren des Cache über den Replikationsagenten {#flushing-the-cache-via-replication-agent}
@@ -332,7 +332,7 @@ Um SSO in AEM WCM zu aktivieren, rufen Sie den entsprechenden Konfigurationseint
 1. Greifen Sie über die URI unter https://&lt;AEM-Host>:&lt;Port>/system/console auf die Konsole zu.
 1. Wählen Sie im Menü „Konfigurationen“ den SSO-Authentifizierungs-Handler aus. In diesem Beispiel akzeptiert der SSO-Handler SSO-Anforderungen für alle Pfade basierend auf dem von AEM Portlet bereitgestellten Cookie. Ihre Konfiguration könnte davon abweichen.
 
-   | Pfad  | / | Aktiviert den SSO-Handler für alle Anforderungen |
+   | Pfad | / | Aktiviert den SSO-Handler für alle Anforderungen |
    |---|---|---|
    | Cookie-Namen | cqpsso | Name des vom Portlet bereitgestellten Cookies, wie in der OSGi-Konsole des Portlets konfiguriert. |
 
@@ -530,7 +530,7 @@ Zur Installation benutzerdefinierter Layouts rufen Sie den Abschnitt **Bundles**
 
 #### Pakete {#packages}
 
-Wenn Sie Pakete für Ihre Installation hochladen oder erstellen müssen, lesen Sie den Abschnitt „Package Manager“ in der AEM-Dokumentation, um weitere Informationen zu erhalten.
+Wenn Sie Pakete für Ihre Installation hochladen oder erstellen müssen, lesen Sie den Abschnitt „Paket-Manager“ in der AEM-Dokumentation, um weitere Informationen zu erhalten.
 
 ### Verarbeiten von Links {#link-handling}
 
@@ -654,9 +654,9 @@ Die AEM-Schnellstart-JAR-Datei enthält die Portlet-Komponentendateien. Um die D
    * Führen Sie den Schnellstart aus: crx-quickstart/opt/portal
    * Extrahieren Sie die Schnellstart-Inhalte: static/opt/portal
 
-1. Öffnen Sie den Package Manager der CQ5-Autoreninstanz, die auf dem Anwendungs-Server bereitgestellt wird. (https://*appserverhost*:*port*/cq5author/crx/packmgr)
+1. Öffnen Sie den Paket-Manager der CQ5-Autoreninstanz, die auf dem Anwendungs-Server bereitgestellt wird. (https://*appserverhost*:*port*/cq5author/crx/packmgr)
 
-1. Verwenden Sie den Package Manager, um das Paket cq-portlets-components.zip [hochzuladen und zu installieren](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system).
+1. Verwenden Sie den Paket-Manager, um das Paket cq-portlets-components.zip [hochzuladen und zu installieren](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system).
 
    Das Paket speichert die Datei cq-portlet-director-sharedlibs-x.x.x.jar im Ordner /libs/portal/director im Repository.
 
@@ -775,8 +775,8 @@ So konfigurieren Sie das Portlet:
 
    * **Autor-Basis-URL**: Die Basis-URL für die AEM-Autoreninstanz.
    * **Veröffentlichungs-Basis-URL**: Die Basis-URL für die AEM-Veröffentlichungsinstanz.
-   * **Autor wird als Veröffentlichungsinstanz verwendet**: Wird die Autoreninstanz als Veröffentlichungsinstanz 
-verwendet (für die Entwicklung)?
+   * **Autor wird als Veröffentlichung verwendet**: Wird die Autoreninstanz als Veröffentlichung verwendet?
+Instanz (für die Entwicklung)?
 
    ![chlimage_1-137](assets/chlimage_1-137.png)
 

@@ -11,8 +11,8 @@ role: Admin
 exl-id: 1c437771-cec5-48b8-8d77-a66c269420ec
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 99%
 
 ---
 
@@ -61,7 +61,7 @@ Um SSO für eine AEM-Instanz zu konfigurieren, konfigurieren Sie den [SSO-Authen
    * **Kopfzeilennamen:** SM_USER
    * **ID-Format:** AsIs
 
-1. Bestätigen Sie, dass Single Sign-on wie erforderlich funktioniert, einschließlich Autorisierung. 
+1. Bestätigen Sie, dass Single Sign-on wie erforderlich funktioniert, einschließlich Autorisierung.
 
 >[!CAUTION]
 >
@@ -85,8 +85,7 @@ Um SSO für eine AEM-Instanz zu konfigurieren, konfigurieren Sie den [SSO-Authen
 >* `disp_iis.ini`
 >* IIS
 >
->Legen Sie in `disp_iis.ini` Folgendes fest:
->>(Einzelheiten finden Sie unter [Installieren des Dispatchers mit Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=de#microsoft-internet-information-server))
+>Unter `disp_iis.ini`:>(siehe [Installieren von Dispatcher mit dem Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=de#microsoft-internet-information-server) für weitere Informationen)
 >
 >* `servervariables=1` (leitet IIS-Server-Variablen als Anforderungskopfzeilen an die Remote-Instanz weiter)
 >* `replaceauthorization=1` (ersetzt alle Kopfzeilen mit dem Namen „Authorization“ mit Ausnahme von „Basic“ durch die Entsprechung von „Basic“)
@@ -128,7 +127,7 @@ mit folgender Konfiguration:
 
 * **ID-Format**: `AsIs`
 
-sieht die Antwort wie folgt aus: 
+sieht die Antwort wie folgt aus:
 
 ```xml
 HTTP/1.1 200 OK
