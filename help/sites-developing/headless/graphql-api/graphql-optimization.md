@@ -7,8 +7,8 @@ role: Admin,Developer
 exl-id: c2beb0fa-ff6c-4e42-842d-6a73311f4740
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1993'
-ht-degree: 97%
+source-wordcount: '1915'
+ht-degree: 99%
 
 ---
 
@@ -185,7 +185,7 @@ GraphQL in AEM unterstützt zwei Arten der Seitennummerierung:
 
 * [Limit-/Offset-basierte Paginierung](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
 Dies wird für Listenabfragen verwendet. Diese enden mit `List`. Beispiel: `articleList`.
-Um sie zu verwenden, müssen Sie die Position des ersten Elements angeben, das zurückgegeben werden soll (`offset`) und die Anzahl der zurückzugebenden Elemente (`limit` oder Seitengröße).
+Um sie zu verwenden, müssen Sie die Position des ersten Elements angeben, das zurückgegeben werden soll (die `offset`) und die Anzahl der zurückzugebenden Elemente (die `limit` oder Seitengröße).
 
 * [Cursor-basierte Paginierung](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after) (dargestellt durch `first`und `after`)
 Dadurch wird für jedes Element eine eindeutige ID bereitgestellt; auch als Cursor bezeichnet.
