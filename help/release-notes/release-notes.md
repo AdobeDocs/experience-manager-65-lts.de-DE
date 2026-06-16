@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c87fd907f2e9b91cc7013be5c12c867fb71dbbe1
+source-git-commit: a24394ffd8d54faf9f16245e359d91c0cfbb04e4
 workflow-type: tm+mt
-source-wordcount: '7660'
-ht-degree: 97%
+source-wordcount: '7696'
+ht-degree: 96%
 
 ---
 
@@ -48,6 +48,8 @@ AEM 6.5 LTS SP2 enthält jetzt OpenAPIs für [Inhaltsfragment- und Modellverw
 **Inhalt von AEM Forms 6.5 LTS SP2**
 
 * Unterstützung für RDBMK mit JBoss® EAP 8.0 wurde hinzugefügt.
+
+* Unterstützung für WebSphere® Liberty Profile (WLP) wurde hinzugefügt.
 
 * Verbessertes Benutzererlebnis im visuellen Regeleditor. Dieses Update enthält:
 
@@ -580,7 +582,8 @@ In diesem Abschnitt werden die Funktionen aufgeführt, die aus AEM 6.5 LTS entf
 ### AEM Forms
 
 * Im Configuration Manager schlägt die Datenbankinitialisierung beim Bootstrap im benutzerdefinierten Turnkey-Modus von AEM Forms 6.5 LTS JEE fehl, wenn keine Module oder nur eingeschränkte Komponenten ausgewählt sind. Das Problem ist auf eine fehlende Abhängigkeit (xalan-2.7.2.jar) zurückzuführen, die zu einem Fehler führt. Durch Hinzufügen der JAR-Datei zu „adobe-livecycle-jboss.ear\lib“ wird das Problem behoben. (FORMS-24690)
-* Bei Forms JEE LTS, das auf JBoss® ausgeführt wird, können E-Mail-bezogene Funktionen fehlschlagen. Beim Versuch, E-Mail-Funktionen zu verwenden, protokolliert der Server möglicherweise einen Fehler ähnlich wie „`Error IMAPProvider not a subtype`“. (FORMS-24892)
+* Bei Forms JEE LTS, das auf JBoss® ausgeführt wird, können E-Mail-bezogene Funktionen fehlschlagen. Beim Versuch, E-Mail-Funktionen zu verwenden, protokolliert der Server einen Fehler: `Error IMAPProvider not a subtype`. (FORMS-24892)
+* Bei Forms JEE LTS Service Pack 2-Bereitstellungen, die auf dem WebSphere® Liberty-Profil ausgeführt werden, kann die E-Mail-Funktion fehlschlagen. Beim Versuch, E-Mail-Funktionen zu verwenden, protokolliert der Server einen Fehler: `Could not convert socket to TLS`. (FORMS-24692)
 
 ### Repository-Beschädigung bei Online-Komprimierung nach Offline-Komprimierung (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
