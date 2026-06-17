@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: a24394ffd8d54faf9f16245e359d91c0cfbb04e4
+source-git-commit: 6795f085b5a4d1ac2836b6c6f2f4d09a5739e639
 workflow-type: tm+mt
-source-wordcount: '7696'
+source-wordcount: '7708'
 ht-degree: 96%
 
 ---
@@ -49,7 +49,7 @@ AEM 6.5 LTS SP2 enthält jetzt OpenAPIs für [Inhaltsfragment- und Modellverw
 
 * Unterstützung für RDBMK mit JBoss® EAP 8.0 wurde hinzugefügt.
 
-* Unterstützung für WebSphere® Liberty Profile (WLP) wurde hinzugefügt.
+* Unterstützung für WebSphere® Liberty Profile (WLP) wurde hinzugefügt. WLP wird nur mit Oracle Database und IBM® Sumeru JDK 21 unterstützt.
 
 * Verbessertes Benutzererlebnis im visuellen Regeleditor. Dieses Update enthält:
 
@@ -244,7 +244,7 @@ Die Seiteneditor-Veröffentlichung verarbeitet jetzt URLs, die Selektoren oder S
 
 #### Vorlageneditor{#sites-template-editor-65-lts-sp2}
 
-Der Text zum Vorlagenstatus unter **Tools** > **Allgemein** > **&#x200B;**&#x200B;wurde für einige Gebietsschemata vertikal angezeigt. Das Label „veraltet“ unterbrach das Layout und wurde als Zeichenspalte gelesen. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass das Label in einer einzigen horizontalen Zeile ausgegeben wird. (SITES-36797)
+Der Text zum Vorlagenstatus unter **Tools** > **Allgemein** > **** wurde für einige Gebietsschemata vertikal angezeigt. Das Label „veraltet“ unterbrach das Layout und wurde als Zeichenspalte gelesen. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass das Label in einer einzigen horizontalen Zeile ausgegeben wird. (SITES-36797)
 
 #### Universeller Editor {#sites-universal-editor-65-lts-sp2}
 
