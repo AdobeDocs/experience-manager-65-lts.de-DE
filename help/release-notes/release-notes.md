@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6795f085b5a4d1ac2836b6c6f2f4d09a5739e639
+source-git-commit: bb021c0f03e7bb3884ecada32d1888e12d5238c5
 workflow-type: tm+mt
-source-wordcount: '7708'
+source-wordcount: '7683'
 ht-degree: 96%
 
 ---
@@ -244,7 +244,7 @@ Die Seiteneditor-Veröffentlichung verarbeitet jetzt URLs, die Selektoren oder S
 
 #### Vorlageneditor{#sites-template-editor-65-lts-sp2}
 
-Der Text zum Vorlagenstatus unter **Tools** > **Allgemein** > **&#x200B;**&#x200B;wurde für einige Gebietsschemata vertikal angezeigt. Das Label „veraltet“ unterbrach das Layout und wurde als Zeichenspalte gelesen. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass das Label in einer einzigen horizontalen Zeile ausgegeben wird. (SITES-36797)
+Der Text zum Vorlagenstatus unter **Tools** > **Allgemein** > **** wurde für einige Gebietsschemata vertikal angezeigt. Das Label „veraltet“ unterbrach das Layout und wurde als Zeichenspalte gelesen. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass das Label in einer einzigen horizontalen Zeile ausgegeben wird. (SITES-36797)
 
 #### Universeller Editor {#sites-universal-editor-65-lts-sp2}
 
@@ -582,7 +582,6 @@ In diesem Abschnitt werden die Funktionen aufgeführt, die aus AEM 6.5 LTS entf
 ### AEM Forms
 
 * Im Configuration Manager schlägt die Datenbankinitialisierung beim Bootstrap im benutzerdefinierten Turnkey-Modus von AEM Forms 6.5 LTS JEE fehl, wenn keine Module oder nur eingeschränkte Komponenten ausgewählt sind. Das Problem ist auf eine fehlende Abhängigkeit (xalan-2.7.2.jar) zurückzuführen, die zu einem Fehler führt. Durch Hinzufügen der JAR-Datei zu „adobe-livecycle-jboss.ear\lib“ wird das Problem behoben. (FORMS-24690)
-* Bei Forms JEE LTS, das auf JBoss® ausgeführt wird, können E-Mail-bezogene Funktionen fehlschlagen. Beim Versuch, E-Mail-Funktionen zu verwenden, protokolliert der Server einen Fehler: `Error IMAPProvider not a subtype`. (FORMS-24892)
 * Bei Forms JEE LTS Service Pack 2-Bereitstellungen, die auf dem WebSphere® Liberty-Profil ausgeführt werden, kann die E-Mail-Funktion fehlschlagen. Beim Versuch, E-Mail-Funktionen zu verwenden, protokolliert der Server einen Fehler: `Could not convert socket to TLS`. (FORMS-24692)
 
 ### Repository-Beschädigung bei Online-Komprimierung nach Offline-Komprimierung (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
