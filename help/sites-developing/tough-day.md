@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 0360a8eb-d4ff-4225-9be3-fa375b5da971
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b1edea6e0bc6fe2bad0d3e04390742a04cc3ca18
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1838'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## Was ist Tough Day 2? {#what-is-tough-day}
 
-„Tough Day 2“ ist eine Anwendung, mit der Sie einen Stresstest Ihrer AEM-Instanz durchführen können. Sie können diesen direkt mit der standardmäßigen Test-Suite ausführen oder an Ihre Testanforderungen anpassen. In [dieser Aufnahme](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=de) sehen Sie eine Präsentation der Anwendung.
+„Tough Day 2“ ist eine Anwendung, mit der Sie einen Stresstest Ihrer AEM-Instanz durchführen können. Sie können diesen direkt mit der standardmäßigen Test-Suite ausführen oder an Ihre Testanforderungen anpassen.
 
 >[!CAUTION]
 >
