@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: In der Dokumentation zu Adobe Experience Manager 6.5 LTS erfahren Sie, wie diese funktioniert und was die Software für Sie tun kann.
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5 LTS
-source-git-commit: c77ad85cf736ee660bfaa662d428a7f7e83a12ff
+source-git-commit: 176e5aabb810f9eee0aa2f8583422f149f016a2e
 workflow-type: tm+mt
-source-wordcount: '7695'
-ht-degree: 68%
+source-wordcount: '7709'
+ht-degree: 67%
 
 ---
 
@@ -1096,6 +1096,7 @@ ht-degree: 68%
       + {hide-from-toc}[Der PaperCapture-Service kann OCR für PDFs nicht ausführen](/help/forms/using/papercapture-service-resolution.md)
       + [Skriptausführung schlägt auf AEM Forms 6.5 LTS mit JBoss EAP 8 (Linux) fehl](/help/forms/using/script-execution-issues-on-aem-forms-65-lts-with-jboss-eap-8-linux.md)
       + [JBoss-Domänencontroller kann nicht gestartet werden](/help/forms/using/unable-to-start-jboss-domain-controller-due-to-duplicate-security-tag.md)
+      + [VULN-36128 und VULN-36120 für AEM Forms on JEE 6.5 LTS SP2](/help/forms/using/mitigating-vulnerabilities-vuln-36128-vuln-36120-for-aem-forms-on-jee-65-lts-sp2.md)
    + Alte Dokumentation {#legacy-documentation}
       + {hide-from-toc}[Verwenden des Service „execute script“ aus der Workbench von AEM Forms on JEE zum Erstellen von XML-Daten](/help/forms/developing/building-xml.md)
       + {hide-from-toc}[Komprimieren und Dekomprimieren von Dateien mithilfe eines benutzerdefinierten DSC von AEM Forms on JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
@@ -1314,7 +1315,7 @@ ht-degree: 68%
          + [Die RemotePage-Komponente](/help/sites-developing/spa-remote-page.md)
          + [Bearbeiten einer externen SPA in AEM](/help/sites-developing/spa-edit-external.md)
          + [Zusammengesetzte Komponenten in SPAs](/help/sites-developing/spa-composite-component.md)
-         + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/json-exporter-components.html?lang=de)
+         + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/json-exporter-components.html)
          + [Launch-Integration](/help/sites-developing/spa-launch.md)
          + [SPA-Referenzmaterial](/help/sites-developing/spa-reference-materials.md)
       + Entwicklungs-Tools {#devtools}
