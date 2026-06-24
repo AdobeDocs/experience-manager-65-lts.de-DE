@@ -1315,7 +1315,7 @@ ht-degree: 67%
          + [Die RemotePage-Komponente](/help/sites-developing/spa-remote-page.md)
          + [Bearbeiten einer externen SPA in AEM](/help/sites-developing/spa-edit-external.md)
          + [Zusammengesetzte Komponenten in SPAs](/help/sites-developing/spa-composite-component.md)
-         + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/json-exporter-components.html)
+         + [Aktivieren eines JSON-Exports für eine Komponente](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/json-exporter-components.html?lang=de)
          + [Launch-Integration](/help/sites-developing/spa-launch.md)
          + [SPA-Referenzmaterial](/help/sites-developing/spa-reference-materials.md)
       + Entwicklungs-Tools {#devtools}
