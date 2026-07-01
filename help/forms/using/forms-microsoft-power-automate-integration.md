@@ -1,6 +1,6 @@
 ---
-title: Wie verbindet man adaptive Formulardaten mit Microsoft® Power Automate und sendet sie?
-description: Eine schrittweise Anleitung zum Verbinden und Senden von adaptiven Formulardaten an Microsoft® Power Automate.
+title: Verbinden und Senden von Daten aus adaptiven Formularen an Microsoft&reg; Power Automate
+description: Eine schrittweise Anleitung zum Verbinden und Senden von Daten adaptiver Formulare an Microsoft&reg; Power Automate.
 keywords: Adaptive Formulare an Microsoft Power Automate, Übermittlung von adaptiven Formulardaten an Microsoft Power Automate
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
@@ -8,8 +8,8 @@ role: User, Developer
 exl-id: e2c4cae6-67db-4531-b1e1-0a378d9800f2
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1179'
-ht-degree: 100%
+source-wordcount: '1233'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ Sie können ein adaptives Formular so konfigurieren, dass bei der Übermittlung 
 * Führen Sie komplexe Berechnungen für erfasste Daten durch
 * Speichern Sie die Daten von adaptiven Formularen in Speichersystemen nach einem vordefinierten Zeitplan
 
-Der Editor für adaptive Formulare verfügt über die Übermittlungsaktion **Aufrufen eines Microsoft® Power Automate-Flusses** zum Senden von Daten, Anhängen und Datensatzdokumenten für adaptive Formulare an den Cloud-Fluss von Power Automate. Um die Übermittlungsaktion dazu zu verwenden, erfasste Daten an Microsoft® Power Automate zu senden, [verbinden Sie Ihre AEM Forms-Autoreninstanz mit Microsoft® Power Automate](#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
+Der Editor für adaptive Formulare verfügt über die Übermittlungsaktion **Aufrufen eines Microsoft® Power Automate-Flusses** zum Senden von Daten, Anhängen und Datensatzdokumenten für adaptive Formulare an den Cloud-Fluss von Power Automate. Um die Übermittlungsaktion dazu zu verwenden, erfasste Daten an Microsoft® Power Automate zu senden, [verbinden Sie Ihre AEM Forms-Autoreninstanz mit Microsoft® Power Automate] (#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
 
 ## Voraussetzungen
 
@@ -38,10 +38,10 @@ Um ein adaptives Formular mit Microsoft® Power Automate zu verbinden, ist Folge
 
 Führen Sie die folgenden Schritte aus, um Ihre AEM Forms-Autoreninstanz mit Microsoft® Power Automate zu verbinden:
 
-1. [Erstellen Sie eine Microsoft](#ms-power-automate-application)
-1. [Erstellen Sie eine Microsoft](#microsoft-power-automate-dataverse-cloud-configuration)
-1. [Erstellen Sie eine Microsoft](#create-microsoft-power-automate-flow-cloud-configuration)
-1. [Veröffentlichen Sie eine Microsoft](#publish-microsoft-power-automate-dataverse-cloud-configuration)
+1. [Erstellen einer Microsoft® Azure Active Directory-Anwendung](#ms-power-automate-application)
+1. [Erstellen einer Cloud-Konfiguration des Microsoft® Power Automate Dataverse](#microsoft-power-automate-dataverse-cloud-configuration)
+1. [Erstellen einer Cloud-Konfiguration für den Microsoft® Power Automate-Fluss-Service](#create-microsoft-power-automate-flow-cloud-configuration)
+1. [Veröffentlichen Sie Cloud-Konfigurationen des Microsoft® Power Automate Dataverse und des Microsoft® Power Automate Flow Service](#publish-microsoft-power-automate-dataverse-cloud-configuration)
 
 ### Erstellen einer Microsoft® Azure Active Directory-Anwendung {#ms-power-automate-application}
 
@@ -193,4 +193,4 @@ Nachdem Sie [Ihre AEM Forms-Autoreninstanz mit Microsoft® Power Automate verbun
 
 * [Erstellen eines adaptiven Formulars](create-an-adaptive-form-core-components.md)
 * [Konfigurieren einer Übermittlungsaktion](configuring-submit-actions.md)
-* [Adobe Experience Manager-Connector für Microsoft® Power Automate](https://learn.microsoft.com/de-de/connectors/adobeexperiencemanag/)
+* [Adobe Experience Manager Connector für Microsoft® Power Automate](https://learn.microsoft.com/de-de/connectors/adobeexperiencemanag/)

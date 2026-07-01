@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: 6c23092f-49ac-4133-baf0-87e4deaabeb0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1689'
 ht-degree: 100%
 
 ---
@@ -291,7 +291,7 @@ Gehen Sie wie folgt vor, um statischen Text zu erstellen und Formulardatenmodell
 1. Setzen Sie den Cursor neben das Feld **Internationale Roaming-Gebühren** und doppelklicken Sie auf die Eigenschaft **bills** > **roamingintnl**.
 1. Setzen Sie den Cursor neben das Feld **Mehrwert - Service-Gebühren** und doppelklicken Sie auf die Eigenschaft **bills** > **vas**.
 1. Setzen Sie den Cursor neben das Feld **Gebühren insgesamt** und doppelklicken Sie auf die Eigenschaft **bills** > **usagecharges**.
-1. Setzen Sie den Cursor neben das Feld **GESAMT ZAHLBAR** und doppelklicken Sie auf die Eigenschaft **bills** > **usagecharges**. 
+1. Setzen Sie den Cursor neben das Feld **GESAMT ZAHLBAR** und doppelklicken Sie auf die Eigenschaft **bills** > **usagecharges**.
 
    ![Zusammenfassung der Gebühren](assets/summary_charges_static_fdm_new.png)
 
