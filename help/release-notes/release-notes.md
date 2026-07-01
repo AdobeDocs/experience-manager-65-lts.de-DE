@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c532abc558084ee9b58e618b0fc16677f4c5b6a4
+source-git-commit: ee3cfd977ab2e7f7cadabb2719fb38ef255b6a2a
 workflow-type: tm+mt
-source-wordcount: '7743'
+source-wordcount: '7770'
 ht-degree: 96%
 
 ---
@@ -157,8 +157,7 @@ Bei der Unterstützung für Headless-Eventing fehlten die erforderlichen OSGi-Er
 
 * Der Inhaltsfragment-RTE zeigte Layout- und visuelle Probleme nach den letzten Änderungen des Benutzeroberflächensstils. Service Pack 2 optimiert die RTE-Formatierung, sodass die Symbolleiste und der bearbeitbare Bereich korrekt dargestellt werden und lesbar bleiben. Der Inhaltsfragment-Editor wird jetzt am Erscheinungsbild und Verhalten des Seiteneditors ausgerichtet. (SITES-38684)
 * Das Entfernen von IMS-Bereichen aus dem Polaris-Asset-Wähler unterbrach die Integration von Inhaltsfragmenten mit dem Bereitstellungsendpunkt. Autorinnen und Autoren erfuhren Fehler beim Öffnen des Remote-Asset-Wählers und beim Auswählen von Assets. Die Aktualisierung fügt die erforderlichen IMS-Bereiche wieder hinzu und stellt den stabilen Zugriff auf die Bereitstellungsebene wieder her. (SITES-35837)
-* Das Bedienfeld „Zugehörige Inhalte“ rendert keinen hartcodierten Platzhalter „undefiniert“ mehr. Der Inhaltsfragment-Editor löst diesen Text jetzt durch Lokalisierungsressourcen auf, sodass Editoren übersetzten Text in der Benutzeroberfläche sehen. (SITES-33675)
-  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
+* Das Panel „Zugehörige Inhalte“ rendert keinen hart-codierten Platzhalter „undefiniert“ mehr. Der Inhaltsfragment-Editor löst diesen Text jetzt durch Lokalisierungsressourcen auf, sodass Bearbeitende übersetzten Text in der Benutzeroberfläche sehen. (SITES-33675)  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
 * Im Inhaltsfragment-Editor wird jetzt ein übersetztes Label der Registerkarte „Allgemein“ für alle Gebietsschemata angezeigt. Der Editor ersetzt nicht lokalisierten Registerkartentext und entfernt interne IDs aus Registerkartentiteln. (SITES-30715)
 * Der Inhaltsfragment-Editor zeigt jetzt übersetzte Namen für zulässige Asset-Typen an. In der Auswahlliste werden keine internen Zeichenfolgen und Nur-Englisch-Label mehr gemischt, wenn Autorinnen und Autoren Einschränkungen für Inhaltsreferenzen konfigurieren. (SITES-29699)
 
@@ -244,7 +243,7 @@ Die Seiteneditor-Veröffentlichung verarbeitet jetzt URLs, die Selektoren oder S
 
 #### Vorlageneditor{#sites-template-editor-65-lts-sp2}
 
-Der Text zum Vorlagenstatus unter **Tools** > **Allgemein** > **&#x200B;**&#x200B;wurde für einige Gebietsschemata vertikal angezeigt. Das Label „veraltet“ unterbrach das Layout und wurde als Zeichenspalte gelesen. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass das Label in einer einzigen horizontalen Zeile ausgegeben wird. (SITES-36797)
+Der Text zum Vorlagenstatus unter **Tools** > **Allgemein** > **** wurde für einige Gebietsschemata vertikal angezeigt. Das Label „veraltet“ unterbrach das Layout und wurde als Zeichenspalte gelesen. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass das Label in einer einzigen horizontalen Zeile ausgegeben wird. (SITES-36797)
 
 #### Universeller Editor {#sites-universal-editor-65-lts-sp2}
 
@@ -540,6 +539,7 @@ Kundinnen und Kunden werden aufgefordert zu prüfen, ob sie die Funktion in ihre
 
 | Bereich | Funktion | Ersatz | Version (SP) |
 | --- | --- | --- | --- |
+| Sites | Zusammenfassung des Inhaltsfragmenttextes | Es steht kein Ersatz zur Verfügung. | |
 | Schnellstart | Mongo-APIs | Mongo-APIs werden nicht mehr unterstützt und sollen in zukünftigen Versionen entfernt werden. | 6.5 TS SP2 |
 | Sites | Unterstützung von Inhaltsfragmenten in der AEM Assets-REST-API | AEM 6.5 LTS SP2 bietet moderne OpenAPIs für die Verwaltung von Inhaltsfragmenten und -modellen. Daher wurden die älteren Endpunkte zur Unterstützung von Inhaltsfragmenten in der AEM Assets-REST-API jetzt eingestellt.<br>Adobe beabsichtigt, diese älteren Endpunkte bis zu einer Ankündigung zum Ende der Nutzungsdauer verfügbar zu halten. Adobe plant keine weiteren Verbesserungen an den veralteten Endpunkten. | 6.5 LTS SP2 |
 | Sites | [SPA-Editor](/help/sites-developing/spa-overview.md) | Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind:<br>– [Der universelle Editor](/help/sites-developing/universal-editor/introduction.md) für visuelle Bearbeitung.<br>– [Der Inhaltsfragment-Editor](/help/assets/content-fragments/content-fragments-managing.md) für formularbasierte Bearbeitung. | 6.5 LTS GA |
