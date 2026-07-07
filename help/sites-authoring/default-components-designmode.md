@@ -7,8 +7,8 @@ role: User,Admin,Developer
 exl-id: 679ec753-1beb-49d2-9ed3-ee9abdd5f1a9
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 97%
+source-wordcount: '902'
+ht-degree: 95%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 Wenn die AEM-Instanz direkt installiert wird, ist im Komponenten-Browser sofort eine Auswahl von Komponenten verfügbar.
 
-Darüber hinaus sind auch verschiedene weitere Komponenten verfügbar. Mithilfe des [Design-Modus](#enable-disable-components) können Sie diese Komponenten aktivieren bzw. deaktivieren. Wenn Sie den Design-Modus aktivieren und sich auf der Seite befinden, können Sie damit [Aspekte des Komponenten-Designs konfigurieren](#configuring-the-design-of-a-component), indem Sie die Attributparameter bearbeiten.
+Darüber hinaus stehen verschiedene weitere Komponenten zur Verfügung. Sie können den Design-Modus verwenden, um [solche Komponenten zu aktivieren/deaktivieren](#enable-disable-components). Wenn Sie den Design-Modus aktivieren und sich auf der Seite befinden, können Sie [Aspekte des Komponenten-Designs konfigurieren](#configuring-the-design-of-a-component) indem Sie die Attributparameter bearbeiten.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Beispielsweise kann der Inhalt einer Produktseite ein Absatzsystem enthalten, da
 >
 >Bearbeiten des Designs im Design-Modus wie in diesem Artikel beschrieben ist die empfohlene Vorgehensweise zum Definieren von Designs statischer Vorlagen
 >
->Das Ändern von Designs in CRX DE ist beispielsweise nicht empfehlenswert, und die Anwendung solcher Designs kann von erwarteten Verhaltensweisen abweichen.
+>Das Ändern von Designs in CRX DE ist beispielsweise nicht ratsam, und die Anwendung derartiger Designs kann von erwarteten Verhaltensweisen abweichen.
 
 ## Aktivieren/Deaktivieren von Komponenten {#enable-disable-components}
 

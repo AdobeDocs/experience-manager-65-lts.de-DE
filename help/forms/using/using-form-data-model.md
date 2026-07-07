@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: 900ec6cd-d780-46eb-8ab1-907e563d81d7
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1323'
 ht-degree: 98%
 
 ---
@@ -108,7 +108,7 @@ Um ein adaptives Formular mit Beispieldaten in der Vorschau anzuzeigen, öffnen 
 
 ## Vorbefüllen mit dem Formulardatenmodelldienst {#prefill}
 
-AEM Forms bietet einen standardmäßigen Vorbefüllungsdienst für Formulardatenmodelle, den Sie für adaptive Formulare und interaktive Kommunikationen auf Basis eines Formulardatenmodells aktivieren können. Der Vorbefüllungsdienst fragt Datenquellen nach Datenmodellobjekten im adaptiven Formular ab und befüllt dementsprechend Daten, während das Formular oder die Kommunikation gerendert wird.
+AEM Forms bietet einen standardmäßigen Vorbefüllungsdienst für Formulardatenmodelle, den Sie für adaptive Formulare und interaktive Kommunikationen auf Basis eines Formulardatenmodells aktivieren können. Der Vorbefüllungsdienst fragt Datenquellen nach Datenmodellobjekten im adaptiven Formular und der interaktiven Kommunikation ab und befüllt dementsprechend Daten, während das Formular oder die Kommunikation gerendert wird.
 
 Um den Vorbefüllungsdienst für Formulardatenmodelle für ein adaptives Formular zu aktivieren, öffnen Sie die Eigenschaften des Containers für ein adaptives Formular und wählen Sie **[!UICONTROL Vorbefüllungsdienst für Formulardatenmodell]** aus der Dropdown-Liste **[!UICONTROL Vorbefüllungsdienst]** im Akkordeon „Standard“ aus. Speichern Sie anschließend die Eigenschaften.
 
@@ -130,7 +130,7 @@ Beim Übermitteln des Formulars werden die Daten für das konfigurierte Datenmod
 
 ![data-submission](assets/data-submission.png)
 
-Mithilfe der Objekteigenschaft „Binärdatenmodell“ können Sie auch Formularanhänge an eine Datenquelle senden. Führen Sie folgende Schritte aus, um Anlagen an eine JDBC-Datenquelle zu senden:
+Sie können auch Formularanhänge mit der Eigenschaft des binären Datenmodellobjekts an eine Datenquelle senden. Führen Sie folgende Schritte aus, um Anlagen an eine JDBC-Datenquelle zu senden:
 
 1. Fügen Sie dem Formulardatenmodell ein Datenmodellobjekt hinzu, das eine binäre Eigenschaft enthält.
 1. Ziehen Sie im adaptiven Formular die Komponente **[!UICONTROL Dateianhang]** aus dem Komponentenbrowser in das adaptive Formular und legen Sie sie dort ab.
