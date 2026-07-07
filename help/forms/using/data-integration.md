@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: 69420707-2362-462b-8618-d9bf63881632
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '527'
 ht-degree: 100%
 
 ---
@@ -40,13 +40,13 @@ Ein verteiltes, modulares System hat seine eigenen Vorteile, aber die Herausford
 Nachdem Sie ein Formulardatenmodell erstellt haben, können Sie es in verschiedenen Workflows für adaptive Formulare und interaktive Kommunikationen verwenden, zum Beispiel:
 
 * Erstellen adaptiver Formulare und interaktiver Kommunikationen basierend auf dem Formulardatenmodell
-* Ausfüllen adaptiver Formulare und interaktiver Kommunikation aus konfigurierten Datenquellen 
+* Ausfüllen adaptiver Formulare und interaktiver Kommunikation aus konfigurierten Datenquellen
 * Aufrufen von Datenquellendiensten/-vorgängen mithilfe von Regeln für adaptive Formulare
 * Schreiben von übermittelten Daten aus adaptiven Formularen in Datenquellen
 
 ## Erste Schritte mit der Datenintegration {#get-started-with-data-integration}
 
-Der erste Schritt zur Implementierung der Datenintegration besteht darin, Datenquellen zu identifizieren und zu konfigurieren, die Informationen speichern und die Sie in Anwendungsfällen für adaptive Formulare sowie interaktive Kommunikationen verwenden möchten.  Als Nächstes erstellen Sie ein Formulardatenmodell, das Datenmodellobjekte, Eigenschaften und Dienste aus mindestens einer Datenquelle verwendet. Sie können adaptive Formulare und interaktive Kommunikationen basierend auf einem Formulardatenmodell erstellen, bei dem adaptive Formularfelder oder Platzhalter in interaktiver Kommunikation an die jeweiligen Datenquelleneigenschaften gebunden sind.
+Der erste Schritt zur Implementierung der Datenintegration besteht darin, Datenquellen zu identifizieren und zu konfigurieren, die Informationen speichern und die Sie in Anwendungsfällen für adaptive Formulare sowie interaktive Kommunikationen verwenden möchten. Als Nächstes erstellen Sie ein Formulardatenmodell, das Datenmodellobjekte, Eigenschaften und Dienste aus mindestens einer Datenquelle verwendet. Sie können adaptive Formulare und interaktive Kommunikationen basierend auf einem Formulardatenmodell erstellen, bei dem adaptive Formularfelder oder Platzhalter in interaktiver Kommunikation an die jeweiligen Datenquelleneigenschaften gebunden sind.
 
 Mit [!DNL AEM Forms] können Sie auch ein von Datenquellen unabhängiges Formulardatenmodell erstellen und später Datenmodellobjekte und Eigenschaften im Formulardatenmodell mit der Datenquelle verknüpfen oder daran binden. Dadurch werden alle Abhängigkeiten von Datenquellen beseitigt, während Sie an einem Formulardatenmodell arbeiten.
 

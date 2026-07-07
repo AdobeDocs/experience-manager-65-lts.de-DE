@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 469495f2-b6d3-490d-a5df-ffa07b30cc1e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1410'
 ht-degree: 97%
 
 ---
@@ -50,7 +50,7 @@ Anhand der folgenden Asset-Eigenschaften können Sie in CRXDE Lite prüfen, ob A
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a\|364266`** | Allgemeiner Indikator dafür, dass der Knoten mit Dynamic Media verknüpft ist. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** oder Fehlertext | Status des Hochladens der Assets in Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Muss ausgefüllt werden, um URLs zu Remote-Assets von Dynamic Media zu generieren. |
-| `<object_node>/jcr:content/dam:lastSyncStatus` | **Erfolg** oder **fehlgeschlagen:`<error text>`** | Synchronisierungsstatus für Sets (Rotationssets, Bildsets usw.), Bildvorgaben, Viewer-Vorgaben oder Imagemap-Updates für ein Asset oder Bilder, die bearbeitet wurden. |
+| `<object_node>/jcr:content/dam:lastSyncStatus` | **Erfolg** oder **fehlgeschlagen:`<error text>`** | Synchronisierungsstatus für Sets (Rotations-Sets, Bild-Sets usw.), Bildvorgaben, Viewer-Vorgaben oder Imagemap-Updates für ein Asset oder Bilder, die bearbeitet wurden. |
 
 ### Protokollierung der Synchronisierung {#synchronization-logging}
 
@@ -170,7 +170,7 @@ Falls Sie Probleme mit Videos haben, sehen Sie sich die folgende Anleitung zur F
    <td>
     <ul>
      <li>Prüfen Sie, ob der Ausführungsmodus <code>dynamicmedia_scene7</code> ist.</li>
-     <li>Überprüfen Sie, ob Dynamic Media Cloud Service konfiguriert ist.</li>
+     <li>Überprüfen Sie, ob Dynamic Media-Cloud-Service konfiguriert ist.</li>
      <li>Prüfen Sie, ob dem Upload-Ordner ein Videoprofil zugeordnet ist.</li>
     </ul> </td>
    <td>
@@ -251,12 +251,11 @@ Wenn die Beispiel-Assets oder das Bildmaterial der Viewer-Vorgabe nicht synchron
 
 1. Gehen Sie zu CRXDE Lite.
 1. Löschen Sie `<sync-folder>/_CSS/_OOTB`.
-1. Navigieren Sie zum CRX Package Manager: `https://localhost:4502/crx/packmgr/`.
+1. Navigieren Sie zum CRX-Paket-Manager: `https://localhost:4502/crx/packmgr/`.
 1. Suchen Sie das Viewer-Paket in der Liste; es beginnt mit `cq-dam-scene7-viewers-content`.
 1. Wählen Sie **Neu installieren** aus.
 1. Navigieren Sie zur Seite für die Dynamic Media-Konfiguration und klicken Sie auf „Bearbeiten“, um das Konfigurationsdialogfeld für Ihre Dynamic Media S7-Konfiguration zu öffnen.
-1. Nehmen Sie keine Änderungen vor und klicken Sie auf **Speichern**.
-Dadurch wird die Logik zum Erstellen und Synchronisieren von Beispiel-Assets, Viewer-Vorgabe-CSS und Bildmaterial erneut ausgelöst.
+1. Nehmen Sie keine Änderungen vor und klicken Sie auf **Speichern**.Dadurch wird die Logik zum Erstellen und Synchronisieren von Beispiel-Assets, Viewer-Vorgabe-CSS und Bildmaterial erneut ausgelöst.
 
 ### Problem: Die Bildvorschau wird beim Bearbeiten von Viewer-Vorgaben nicht geladen {#image-preview-not-loading}
 
