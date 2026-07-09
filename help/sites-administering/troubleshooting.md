@@ -12,7 +12,7 @@ role: Admin
 exl-id: f286ca06-e567-4d77-a0ff-6786a8bbf32a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '253'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,7 @@ Dieser Abschnitt enthält detaillierte Informationen zu den verfügbaren Protoko
 >Weitere Informationen zu Protokollen finden Sie unter:
 >
 >* [Auditprotokollwartung in AEM](/help/sites-administering/operations-audit-log.md)
->* [Arbeiten mit Auditdatensätzen und Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
+>* [Arbeiten mit Auditeinträge und Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
 
 CRX zeichnet detaillierte Protokolle auf. Nachdem Sie den Schnellstart entpackt und gestartet haben, finden Sie die Protokolle an den folgenden Speicherorten:
 

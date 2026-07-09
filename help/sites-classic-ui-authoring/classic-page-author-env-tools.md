@@ -12,8 +12,8 @@ role: User
 exl-id: c4ac3f14-f45a-44f6-a232-69cae483a776
 source-git-commit: dc46c3e2689df1069eea6980ef615f639db42e92
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 99%
+source-wordcount: '950'
+ht-degree: 90%
 
 ---
 
@@ -101,7 +101,7 @@ In dieser Registerkarte werden sämtliche Produkte aufgeführt. Nachdem Sie eine
 
 ### Suchen nach Seiten {#finding-pages}
 
-Auf dieser Registerkarte werden alle Seiten aufgelistet. Doppelklicken Sie auf eine beliebige Seite, um diese zur Bearbeitung zu öffnen.
+Auf dieser Registerkarte werden alle Seiten angezeigt. Doppelklicken Sie auf eine Seite, um sie zur Bearbeitung zu öffnen.
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
@@ -197,13 +197,13 @@ Beim Bearbeiten einer Seite in der klassischen Benutzeroberfläche können Sie v
 
 Die Reihe von Symbolen am unteren Rand des Sidekick wird verwendet, um den Bearbeitungsmodus für Seiten umzuschalten:
 
-* [Bearbeiten:](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
-Dies ist der Standardmodus. Darin können Sie die Seite bearbeiten, Komponenten hinzufügen oder löschen sowie andere Änderungen vornehmen.
+* [Bearbeiten](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
+Dies ist der Standardmodus; er ermöglicht die Bearbeitung der Seite durch Hinzufügen oder Löschen von Komponenten sowie andere Änderungen.
 
-* [Vorschau:](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
-In diesem Modus können Sie sich eine Seite so ansehen, wie sie final auf Ihrer Website angezeigt würde.
+* [Vorschau](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
+In diesem Modus können Sie eine Seite in der finalen Form betrachten, in der sie auf der Website erscheint.
 
-* [Design:](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0)
+* [Design](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0)
 In diesem Modus können Sie das Design der Seite bearbeiten, indem Sie die verfügbaren Komponenten konfigurieren.
 
 >[!NOTE]
