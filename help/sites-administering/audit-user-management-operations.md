@@ -12,7 +12,7 @@ role: Admin
 exl-id: cd93bdfb-e8f1-45e8-b2a1-de70aba42581
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '300'
 ht-degree: 95%
 
 ---
@@ -82,7 +82,7 @@ Bei ordnungsgemäßer Konfiguration sollte die Ausgabe wie folgt aussehen:
 
 ## Klassische Benutzeroberfläche {#classic-ui}
 
-In der klassischen Benutzeroberfläche beschränken sich Informationen zu CRUD-Vorgängen, die im Audit-Protokoll zum Hinzufügen und Löschen von Benutzenden aufgezeichnet wurden, auf die ID der betroffenen Person und den Zeitpunkt der Änderung.
+In der klassischen Benutzeroberfläche beschränken sich Informationen zu CRUD-Vorgängen, die im Auditprotokoll zum Hinzufügen und Löschen von Benutzenden aufgezeichnet wurden, auf die ID der betroffenen Person und den Zeitpunkt der Änderung.
 
 Beispiel:
 

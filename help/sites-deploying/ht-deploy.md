@@ -7,8 +7,8 @@ role: Admin
 exl-id: c316a5d6-0e4a-4710-b4d0-3467f1d5085b
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '43'
-ht-degree: 100%
+source-wordcount: '54'
+ht-degree: 85%
 
 ---
 
@@ -22,7 +22,7 @@ In den folgenden Themen wird beschrieben, wie bestimmte AEM-Bereitstellungsaufga
 
 * [Bereinigen von Workflows und des Administratorprotokolls](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-24590)
 
-* [Tipps zur Leistungsoptimierung ](/help/sites-deploying/configuring-performance.md)
+* [Tipps zur Leistungsoptimierung](/help/sites-deploying/configuring-performance.md)
 
 <!--
 * [How to Remove Features From the Welcome Screen](/help/sites-developing/customizing-the-welcome-console.md)
