@@ -11,7 +11,7 @@ role: Admin
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
 source-git-commit: 4087a6f44bd87e3f841feb09220a9ea34ec1dc1c
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1800'
 ht-degree: 98%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 98%
 
 ## Einführung {#introduction}
 
-Leistungstests sind ein wichtiger Bestandteil jeder AEM-Implementierung. Je nach Kundenanforderungen können Leistungstests für Publishing-Instanzen, Authoring-Instanzen oder beides durchgeführt werden.
+Leistungstests sind ein wichtiger Bestandteil jeder AEM-Implementierung. Je nach Kundenanforderungen können Leistungstests für Veröffentlichungsinstanzen, Autoreninstanzen oder beides durchgeführt werden.
 
 In dieser Dokumentation werden die Gesamtstrategien und Methoden für die Durchführung von Leistungstests sowie einige der Tools beschrieben, die von Adobe zur Prozessunterstützung zur Verfügung gestellt werden. Lesen Sie abschließend eine Analyse der in AEM 6 verfügbaren Tools, um die Leistungsoptimierung zu unterstützen, sowohl aus der Sicht der Code-Analyse als auch der Systemkonfiguration.
 
@@ -86,14 +86,13 @@ Mit dem [Tool „Abfrage erläutern“](/help/sites-administering/operations-das
 
 **PageSpeed-Tools**
 
-Die PageSpeed-Tools von Google bieten Website-Analysen zur Einhaltung der Best Practices in Bezug auf die seitenbezogene Leistung sowie ein Plug-in, das zur weiteren Optimierung neben dem Dispatcher in einer Apache-Instanz installiert werden kann.
-Siehe die [PageSpeed Tools-Website](https://developers.google.com/speed).
+Die PageSpeed-Tools von Google bieten Website-Analysen zur Einhaltung der Best Practices in Bezug auf die seitenbezogene Leistung sowie ein Plug-in, das zur weiteren Optimierung neben dem Dispatcher in einer Apache-Instanz installiert werden kann.Siehe die [PageSpeed Tools-Website](https://developers.google.com/speed).
 
 ## Autorenumgebung {#author-environment}
 
 ### Durchführen von Tests {#performing-tests}
 
-Um Leistungstests für die Authoring-Umgebung durchzuführen, müssen Sie das Erlebnis der Produktionsautoren simulieren. Die Authoring-Installationen müssen also alle Komponenten, OSGi-Bundles, Benutzeroberflächenanpassung, benutzerdefinierten Indizes und sonstigen Ergänzungen für die produktionsbezogenen Authoring-Instanzen umfassen.
+Um Leistungstests für die Authoring-Umgebung durchzuführen, müssen Sie das Erlebnis der Produktionsautoren simulieren. Die Authoring-Installationen müssen also alle Komponenten, OSGi-Bundles, Benutzeroberflächenanpassung, benutzerdefinierten Indizes und sonstigen Ergänzungen für die produktionsbezogenen Autoreninstanzen umfassen.
 
 Es gibt viele Automatisierungs-Frameworks, die auf Leistungs- und Belastungstests ausgelegt sind. Benutzerdefinierte Skripte können in diesen Tools aufgezeichnet und dann wiedergegeben werden, um eine Spitzenanzahl von Autoren und Autorinnen zu simulieren, die gleichzeitig ähnlichen Inhalt erstellen und Aktivierungen durchführen. Es wird empfohlen, das Tough Day-Tool zu verwenden, um Aktivitäten wie das Hochladen Tausender Assets oder das Aktivieren einer großen Anzahl von Seiten zu simulieren.
 
@@ -130,13 +129,13 @@ Die Leistung der Website kann mithilfe automatisierter Test-Tools von Drittanbie
 
 Die meisten Produktions-Websites verfügen über Optimierungsfunktionen wie Dispatcher-Caching und ein Content Delivery Network. Stellen Sie beim Testen sicher, dass diese Optimierungen auch für die Testumgebung verfügbar sind. Überwachen Sie nicht nur die Reaktionszeiten der Endbenutzerinnen und -benutzer, sondern behalten Sie auch die Systemmetriken auf den Veröffentlichungs-Servern und Dispatchern im Auge, um sicherzustellen, dass das System nicht durch Hardware-Ressourcen eingeschränkt wird.
 
-Auf einem System, das keine umfassende Personalisierung erfordert, sollte der Dispatcher die meisten Anforderungen zwischenspeichern. Daher sollte die Belastungskurve für die Publishing-Instanz relativ flach bleiben. Wenn ein hohes Maß an Personalisierung erforderlich ist, wird empfohlen, Technologien wie iFrames oder AJAX-Anforderungen für personalisierte Inhalte zu verwenden, um ein Maximum an Dispatcher-Caching zuzulassen.
+Auf einem System, das keine umfassende Personalisierung erfordert, sollte der Dispatcher die meisten Anforderungen zwischenspeichern. Daher sollte die Belastungskurve für die Veröffentlichungsinstanz relativ flach bleiben. Wenn ein hohes Maß an Personalisierung erforderlich ist, wird empfohlen, Technologien wie iFrames oder AJAX-Anforderungen für personalisierte Inhalte zu verwenden, um ein Maximum an Dispatcher-Caching zuzulassen.
 
 Für grundlegende Tests kann Apache Bench verwendet werden, um die Antwortzeiten von Webservern zu messen und Lasten für das Messen von Dingen wie etwa Speicherverlusten zu erzeugen. Weitere Informationen liefert Ihnen das Beispiel in der [Dokumentation zur Überwachung](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
 
 ## Fehlerbehebung von Leistungsproblemen {#troubleshooting-performance-issues}
 
-Nach dem Ausführen von Leistungstests auf der Authoring-Instanz müssen alle festgestellten Probleme untersucht, diagnostiziert und behoben werden. Zur Analyse und Behandlung dieser Probleme können Sie verschiedene Tools und Verfahren anwenden:
+Nach dem Ausführen von Leistungstests auf der Autoreninstanz müssen alle festgestellten Probleme untersucht, diagnostiziert und behoben werden. Zur Analyse und Behandlung dieser Probleme können Sie verschiedene Tools und Verfahren anwenden:
 
 * Sie können das [Protokoll zur Anfrageleistung](/help/sites-administering/operations-dashboard.md#request-performance) im Vorgangs-Dashboard einsehen. Mit diesem Tool können Sie langsame Seitenanfragen identifizieren
 * Analysieren Sie langsame Abfragen mit dem [Tool „Abfrageleistung“](/help/sites-administering/operations-dashboard.md#query-performance).
@@ -145,7 +144,7 @@ Nach dem Ausführen von Leistungstests auf der Authoring-Instanz müssen alle fe
 * Überwachen Sie die Hardware-Ressourcen des Systems, z. B. Speicher- und CPU-Auslastung oder E/A-Vorgänge von Festplatten bzw. Netzwerk. Diese Ressourcen sind häufig die Ursachen für Leistungsengpässe.
 * Optimieren Sie die Architektur der Seiten und ihre Adressierung, um die Verwendung von URL-Parametern zu minimieren, damit ein Höchstmaß an Zwischenspeicherung ermöglicht wird.
 * Befolgen Sie die [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md).
-* Wenn beim Bearbeiten bestimmter Seiten oder Komponenten in Authoring-Instanzen Probleme auftreten, sehen Sie sich die fragliche Seite mithilfe des Entwicklermodus der Touch-optimierten Benutzeroberfläche an. Dadurch erhalten Sie eine Aufschlüsselung der einzelnen Inhaltsbereiche auf der Seite und ihrer Ladezeiten.
+* Wenn beim Bearbeiten bestimmter Seiten oder Komponenten in Autoreninstanzen Probleme auftreten, sehen Sie sich die fragliche Seite mithilfe des Entwicklermodus der Touch-optimierten Benutzeroberfläche an. Dadurch erhalten Sie eine Aufschlüsselung der einzelnen Inhaltsbereiche auf der Seite und ihrer Ladezeiten.
 * Minimieren Sie alle JS- und CSS-Dateien auf der Site.
 * Entfernen Sie eingebettete CSS- und JS-Elemente aus den Komponenten. Diese sollten in den Client-seitigen Bibliotheken enthalten und minimiert sein, um die Anzahl der zum Rendern der Seite benötigten Anfragen zu minimieren.
 * Verwenden Sie Browser-Tools wie den Chrome-Tab „Netzwerk“, um die Server-Anfragen zu überprüfen und festzustellen, welche am längsten dauern.

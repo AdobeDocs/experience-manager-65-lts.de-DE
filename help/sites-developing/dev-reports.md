@@ -11,8 +11,8 @@ role: Developer
 exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '5166'
-ht-degree: 96%
+source-wordcount: '5294'
+ht-degree: 94%
 
 ---
 
@@ -47,10 +47,7 @@ Für die mit AEM bereitgestellten Standardberichte gilt Folgendes:
 >
 >In den hier aufgeführten Beispielen und Definitionen wird die folgende Notation verwendet:
 >
->* Jede Zeile definiert einen Knoten oder eine Eigenschaft, wobei:
->  &#x200B;>  `N:<name> [<nodeType>]` : einen Knoten mit dem Namen `<*name*>` und des Knotentyps `<*nodeType*>`*beschreibt.*
->  &#x200B;>  `P:<name> [<propertyType]` : eine Eigenschaft mit dem Namen `<*name*>` und des Eigenschaftentyps `<*propertyType*>` beschreibt.
->  &#x200B;>  `P:<name> = <value>` : eine Eigenschaft mit dem Namen `<name>` beschreibt, deren Wert auf `<value>` festgelegt sein muss.
+>* Jede Zeile definiert einen Knoten oder eine Eigenschaft, wobei: : einen Knoten mit dem Namen `<*name*>` und des Knotentyps `<*nodeType*>`*beschreibt. : eine Eigenschaft mit dem Namen `<*name*>` und des Eigenschaftentyps `<*propertyType*>` beschreibt. : eine Eigenschaft mit dem Namen `<name>` beschreibt, deren Wert auf `<value>` festgelegt sein muss.
 >
 >* Die Einrückung veranschaulicht die hierarchischen Abhängigkeiten zwischen den Knoten.
 >* Durch „|“ getrennte Elemente kennzeichnen eine Liste möglicher Elemente wie Typen oder Namen; `String|String[]` bedeutet beispielsweise, dass die Eigenschaft entweder „String“ oder „String[]“ lauten kann.
@@ -222,7 +219,7 @@ N:apps
                         N:<columnname> [cq:Component]  // column base component
 ```
 
-### Seitenkomponente  {#page-component}
+### Seitenkomponente {#page-component}
 
 Eine Berichtseite muss den `sling:resourceType` von `/libs/cq/reporting/components/reportpage` verwenden.
 
@@ -316,7 +313,7 @@ N:charting
 
    * `active`
 
-     Da sich mehrere Einstellungen definieren lassen, können Sie damit festlegen, welche gerade aktiv sind. Diese werden durch ein Array von Knoten definiert (es gibt keine obligatorische Benennungskonvention für diese Knoten, für die Standardberichte wird aber häufig `0`, `1`.. `x` verwendet), die jeweils die folgende Eigenschaft aufweisen:
+     Da sich mehrere Einstellungen definieren lassen, können Sie damit festlegen, welche gerade aktiv sind. Diese werden durch ein Array von Knoten definiert (es gibt keine obligatorische Benennungskonvention für diese Knoten, für die Standardberichte werden jedoch häufig `0`, `1`… `x` verwendet), die alle die folgenden Eigenschaften aufweisen:
 
       * `id`
 
@@ -326,7 +323,7 @@ N:charting
 
   Definiert die Diagrammtypen, die für den Bericht verfügbar sein können. Die zu verwendenden `definitions` werden durch die `active`-Einstellungen angeben.
 
-  Die Definitionen werden mithilfe eines Arrays von Knoten angegeben (auch in diesem Fall meist mit dem Namen `0`, `1`.. `x`), die jeweils die folgenden Eigenschaften aufweisen:
+  Die Definitionen werden mithilfe eines Arrays von Knoten angegeben (auch in diesem Fall meist mit dem Namen `0`, `1`… `x`), die jeweils die folgenden Eigenschaften aufweisen:
 
    * `id`
 
@@ -361,13 +358,11 @@ Definiert einen festen Radius für das Kreisdiagramm.
 
          * `totals` ( `Boolean`)
 
-           Sollte auf „true“ festgelegt sein, wenn eine zusätzliche Zeile mit der **Gesamtsumme** angezeigt werden soll.
-Standardwert: `false`
+           Sollte auf „true“ festgelegt sein, wenn eine zusätzliche Zeile mit der **Gesamtsumme** angezeigt werden soll.Standardwert: `false`
 
          * `series` ( `Long`)
 
-           Anzahl der anzuzeigenden Zeilen/Reihen.
-Standardwert: `9` (dies ist auch der maximal zulässige Wert)
+           Anzahl der anzuzeigenden Zeilen/Reihen.Standardwert: `9` (dies ist auch der maximal zulässige Wert)
 
          * `hoverLimit` ( `Long`)
 
@@ -600,7 +595,7 @@ N:definitions
 
    * `const`
 
-      Ordnet Werte anderen Werten zu, beispielsweise um Konstanten wie `en` in den entsprechenden Wert `English` aufzulösen.
+     Ordnet Werte anderen Werten zu, beispielsweise um Konstanten wie `en` in den entsprechenden Wert `English` aufzulösen.
 
    * `default`
 
@@ -608,7 +603,7 @@ N:definitions
 
    * `page`
 
-       Löst einen Pfadwert zum Pfad der entsprechenden Seite auf, genauer gesagt zum entsprechenden Knoten `jcr:content`. Zum Beispiel wird `/content/.../page/jcr:content/par/xyz` nach `/content/.../page/jcr:content` aufgelöst.
+     Löst einen Pfadwert zum Pfad der entsprechenden Seite auf, genauer gesagt zum entsprechenden Knoten `jcr:content`. Zum Beispiel wird `/content/.../page/jcr:content/par/xyz` nach `/content/.../page/jcr:content` aufgelöst.
 
    * `path`
 
@@ -676,7 +671,7 @@ N:definitions
 
 #### Resolver {#resolvers}
 
-Die Resolver werden verwendet, um die erforderlichen Informationen zu extrahieren.  Beispiele für die verschiedenen Resolver:
+Die Resolver werden verwendet, um die erforderlichen Informationen zu extrahieren. Beispiele für die verschiedenen Resolver:
 
 **Const**
 
@@ -748,7 +743,8 @@ Die Definition `preprocessing` kann wahlweise auf Folgendes angewendet werden:
 
 Sie können eine der folgenden bei der Vorverarbeitung zu verwendenden Optionen angeben:
 
-* [Muster zum Suchen und Ersetzen](#preprocessing-find-and-replace-patterns) Wenn das angegebene Muster gefunden wird (das als regulärer Ausdruck definiert ist), wird es durch ein anderes Muster ersetzt. Dieses kann z. B. verwendet werden, um eine Teilzeichenfolge des ursprünglichen Musters zu extrahieren.
+* [Muster suchen und ersetzen](#preprocessing-find-and-replace-patterns)
+Wenn das angegebene Muster gefunden wird (das als regulärer Ausdruck definiert ist), wird es durch ein anderes Muster ersetzt. Dieses kann beispielsweise verwendet werden, um eine Teilzeichenfolge des ursprünglichen Musters zu extrahieren.
 
 * [Datentypformatierer](#preprocessing-data-type-formatters)
 
@@ -1029,7 +1025,7 @@ Gehen Sie wie folgt vor, um eine Spalte als generisch zu definieren:
 
    * Die Felder des Dialogfelds müssen sich auf die gleichen Namen beziehen wie die entsprechende Komponenteneigenschaft, einschließlich ihres Pfads.
 
-      Wenn Sie beispielsweise den Typ der generischen Spalte über das Dialogfeld als konfigurierbar festlegen möchten, verwenden Sie ein Feld mit dem Namen `./definitions/type`
+     Wenn Sie beispielsweise den Typ der generischen Spalte über das Dialogfeld als konfigurierbar festlegen möchten, verwenden Sie ein Feld mit dem Namen `./definitions/type`
 
    * Eigenschaften, die über die Benutzeroberfläche/das Dialogfeld definiert wurden, haben Vorrang vor denen, die in der `columnbase`-Komponente definiert wurden.
 
@@ -1057,7 +1053,7 @@ Gehen Sie wie folgt vor, um eine Spalte als generisch zu definieren:
 
 ## Berichts-Design {#report-design}
 
-Mit dem Design wird festgelegt, welche Spaltentypen für die Erstellung eines Berichts zur Verfügung stehen.  Außerdem wird damit das Absatzsystem definiert, dem die Spalten hinzugefügt werden.
+Mit dem Design wird festgelegt, welche Spaltentypen für die Erstellung eines Berichts zur Verfügung stehen. Außerdem wird damit das Absatzsystem definiert, dem die Spalten hinzugefügt werden.
 
 Adobe empfiehlt, für jeden Bericht ein eigenes Design zu erstellen. Dadurch wird eine umfassende Flexibilität gewährleistet. Siehe [Definieren neuer Berichte](#defining-your-new-report).
 
@@ -1065,7 +1061,7 @@ Die standardmäßigen Berichtskomponenten befinden sich unter `/etc/designs/repo
 
 Der Speicherort für Ihre Berichte ist ggf. davon abhängig, wo sich Ihre Komponenten befinden:
 
-* `/etc/designs/reports/<yourReport>` ist geeignet, wenn sich der Bericht unter `/apps/cq/reporting` befindet 
+* `/etc/designs/reports/<yourReport>` ist geeignet, wenn sich der Bericht unter `/apps/cq/reporting` befindet
 
 * `/etc/designs/<yourProject>/reports/<*yourReport*>` für Berichte, die das Muster `/apps/<yourProject>/reports` verwenden
 
@@ -1099,7 +1095,7 @@ Ein Beispiel für ein Design-Snippet (aus dem Design des Komponentenberichts):
 <!-- ... -->
 ```
 
-Die Angabe von Designs für einzelne Spalten ist nicht erforderlich.  Verfügbare Spalten können im Design-Modus definiert werden.
+Die Angabe von Designs für einzelne Spalten ist nicht erforderlich. Verfügbare Spalten können im Design-Modus definiert werden.
 
 >[!NOTE]
 >
@@ -1109,11 +1105,11 @@ Die Angabe von Designs für einzelne Spalten ist nicht erforderlich.  Verfügba
 
 >[!NOTE]
 >
->Standardspalten können beim Erstellen eines Berichts automatisch erstellt werden.  Diese werden in der Vorlage angegeben.
+>Standardspalten können beim Erstellen eines Berichts automatisch erstellt werden. Diese werden in der Vorlage angegeben.
 
 ## Berichtsvorlage {#report-template}
 
-Jeder Berichtstyp muss eine Vorlage bereitstellen.  Dabei handelt es sich um die standardmäßigen [CQ-Vorlagen](/help/sites-developing/templates.md), die auch als solche konfiguriert werden können.
+Jeder Berichtstyp muss eine Vorlage bereitstellen. Dabei handelt es sich um die standardmäßigen [CQ-Vorlagen](/help/sites-developing/templates.md), die auch als solche konfiguriert werden können.
 
 Die Vorlage muss:
 
@@ -1258,7 +1254,7 @@ Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht de
    * sowohl `pie`- als auch `lineseries`-Diagramme anzeigt.
    * für die Benutzenden ein Dialogfeld zum Konfigurieren des Berichts bereitstellt.
 
-1. Definieren Sie Ihre erste Spaltenkomponente („columnbase“).  Zum Beispiel `bundlecol[cq:Component]` unter `/apps/cq/reporting/components/osgireport`.
+1. Definieren Sie Ihre erste Spaltenkomponente („columnbase“). Zum Beispiel `bundlecol[cq:Component]` unter `/apps/cq/reporting/components/osgireport`.
 
    ```xml
    N:osgireport [sling:Folder]
@@ -1412,13 +1408,13 @@ Diese können über das Konfigurationsmenü der Web-Konsole eingesehen werden (b
 
 ### Cache-Einstellungen („Day CQ Reporting Cache“) {#cache-settings-day-cq-reporting-cache}
 
-* **Aktivieren** ermöglicht es Ihnen, das Caching von Berichtsdaten zu aktivieren bzw. zu deaktivieren. Bei Aktivieren des Bericht-Caches werden die Berichtsdaten während mehrerer Anforderungen im Speicher vorgehalten.  Damit lässt sich zwar die Leistung steigern, allerdings wird auch mehr Speicherplatz beansprucht, was in unter extremen Umständen zu Speicherausfällen führen kann.
+* **Aktivieren** ermöglicht es Ihnen, das Caching von Berichtsdaten zu aktivieren bzw. zu deaktivieren. Bei Aktivieren des Bericht-Caches werden die Berichtsdaten während mehrerer Anforderungen im Speicher vorgehalten. Damit lässt sich zwar die Leistung steigern, allerdings wird auch mehr Speicherplatz beansprucht, was in unter extremen Umständen zu Speicherausfällen führen kann.
 * **TTL** definiert die Zeit (in Sekunden), für die Berichtsdaten zwischengespeichert werden. Mit einem höheren Wert wird zwar die Leistung gesteigert, ggf. werden dann aber ungenaue Daten zurückgegeben, wenn sich die Daten innerhalb des Zeitraums ändern.
 * **Max. Anzahl an Einträgen** definiert die maximale Anzahl an Berichten, die gleichzeitig zwischengespeichert werden.
 
 >[!NOTE]
 >
->Die Berichtsdaten können je nach Benutzerin bzw. Benutzer und Sprache unterschiedlich sein.  Daher werden die Berichtsdaten pro Bericht, Person und Sprache zwischengespeichert.  Dies bedeutet, dass ein Wert für **Max. Anzahl an Einträgen** von `2` Daten für Folgendes zwischenspeichert:
+>Die Berichtsdaten können je nach Benutzerin bzw. Benutzer und Sprache unterschiedlich sein. Daher werden die Berichtsdaten pro Bericht, Person und Sprache zwischengespeichert. Dies bedeutet, dass ein Wert für **Max. Anzahl an Einträgen** von `2` Daten für Folgendes zwischenspeichert:
 >
 >* entweder für einen Bericht für zwei Benutzer mit unterschiedlichen Spracheinstellungen
 >* oder für einen Benutzer und zwei Berichte

@@ -12,7 +12,7 @@ role: Developer
 exl-id: cafc7120-114e-487a-8b81-9c695318731e
 source-git-commit: a061c19dcb883b94ee61be21459c46e21eaf696a
 workflow-type: tm+mt
-source-wordcount: '2800'
+source-wordcount: '2895'
 ht-degree: 97%
 
 ---
@@ -101,7 +101,7 @@ Vollständige Informationen, einschließlich Attributen zum Filtern von JS-, CSS
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` wurde früher häufig zum Einschließen von Client-Bibliotheken verwendet, wird aber seit AEM 5.6 nicht mehr unterstützt. Stattdessen sollte [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) wie oben beschrieben verwendet werden.
+>`<cq:includeClientLib>`, das früher häufig zum Einschließen von Client-Bibliotheken verwendet wurde, wird seit AEM 5.6 nicht mehr unterstützt. [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) sollte stattdessen wie oben beschrieben verwendet werden.
 
 ## Erstellen von Client-Bibliotheksordnern {#creating-client-library-folders}
 
@@ -206,7 +206,7 @@ Die Abhängigkeiten müssen ein anderer `cq:ClientLibraryFolder` sein. Fügen Si
 
 * **Name:** dependencies
 * **Typ:** String[]
-* **Values:** Der Wert der categories-Eigenschaft des cq:ClientLibraryFolder-Knotens, von dem der aktuelle Bibliotheksordner abhängt.
+* **Werte:** Der Wert der Eigenschaft „categories“ des Knotens „cq:ClientLibraryFolder“, von dem der aktuelle Bibliotheksordner abhängig ist.
 
 Beispielsweise weist /`etc/clientlibs/myclientlibs/publicmain` eine Abhängigkeit von der `cq.jquery`-Bibliothek auf. Die JSP, die die Haupt-Client-Bibliothek referenziert, generiert HTML mit dem folgenden Code:
 

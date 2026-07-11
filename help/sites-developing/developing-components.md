@@ -13,8 +13,8 @@ role: Developer
 exl-id: ff9c9e25-13a8-4ca7-a347-1da1352ef223
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '3199'
-ht-degree: 99%
+source-wordcount: '3540'
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ AEM-Komponenten werden verwendet, um den Inhalt, den Sie auf Ihren Web-Seiten be
 
 * Beim [Erstellen von Seiten](/help/sites-authoring/default-components.md) erlauben es die Komponenten den Autoren, den Inhalt zu bearbeiten und zu konfigurieren.
 
-* Auf der Publishing-Instanz rendern die Komponenten Ihren Inhalt und stellen ihn Ihren Website-Besucherinnen und -Besuchern wie gewünscht dar.
+* Auf der Veröffentlichungsinstanz rendern die Komponenten Ihren Inhalt und stellen ihn Ihren Website-Besucherinnen und -Besuchern wie gewünscht dar.
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ Ausführliche Informationen finden Sie hier:
 
    * Bietet eine konsistente Benutzeroberfläche für alle Cloud-Lösungen
    * [Konzepte der Touch-optimierten Benutzeroberfläche von AEM - Coral-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Coral-Benutzeroberfläche - Handbuch](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
+   * [Coral-UI-Handbuch](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
 
 * Granite-Benutzeroberfläche
 
@@ -418,7 +418,7 @@ CODE AUF GITHUB
 
 Den Code dieser Seite finden Sie auf GitHub.
 
-* [Öffnen Sie das Projekt aem-project-archetype in GitHub](https://github.com/adobe/aem-project-archetype)
+* [Öffnen Sie das Projekt aem-project-archetype in GitHub.](https://github.com/adobe/aem-project-archetype)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/adobe/aem-project-archetype/archive/master.zip) herunter.
 
 >[!NOTE]
