@@ -59,7 +59,7 @@ Auf dem Markt ist eine Vielzahl von Tools für Leistungstests erhältlich. Stell
 * AEM bietet vorkonfigurierte Tools, um problematische Abfragen, Anforderungen und Fehlermeldungen schnell anzuzeigen. Weitere Informationen finden Sie im Abschnitt [Diagnose-Tools](/help/sites-administering/operations-dashboard.md#diagnosis-tools) der Dokumentation zum Vorgangs-Dashboard.
 * Apache bietet ein Produkt namens **JMeter** an, das Leistungs- und Belastungstests sowie eine Überprüfung des Funktionsverhaltens ermöglicht. Es handelt sich um eine Open-Source-Software, die kostenlos verwendet werden kann, aber eine kleinere Funktion hat als Unternehmensprodukte und eine stärkere Lernkurve aufweist. JMeter können Sie auf der Apache-Website unter [https://jmeter.apache.org/](https://jmeter.apache.org/) herunterladen.
 
-* **Load Runner** ist ein Enterprise-Produkt für Auslastungstests. Eine kostenlose Evaluierungsversion ist verfügbar. Weitere Informationen finden Sie unter &quot;[ Professional Performance Engineering](https://www.opentext.com/products/professional-performance-engineering).
+* **Load Runner** ist ein Enterprise-Produkt für Auslastungstests. Eine kostenlose Evaluierungsversion ist verfügbar. Weitere Informationen finden Sie unter &quot;[&#x200B; Professional Performance Engineering](https://www.opentext.com/products/professional-performance-engineering).
 
 * Beim Testen mobiler oder responsiver Websites muss ein separater Satz von Tools verwendet werden. Diese drosseln die Netzwerkbrandbreite, um langsamere mobile Verbindungen wie 3G oder EDGE zu simulieren. Zu den gängigeren Tools gehören:
 
