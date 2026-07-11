@@ -12,8 +12,8 @@ role: Developer
 exl-id: 5c98915c-e516-4505-9f9e-76f4509ba581
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 99%
+source-wordcount: '818'
+ht-degree: 94%
 
 ---
 
@@ -44,7 +44,7 @@ CODE AUF GITHUB
 
 Den Code dieser Seite finden Sie auf GitHub.
 
-* [Öffnen Sie das Projekt „aem-search-custom-predicate-evaluator“ auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator).
+* [Öffnen Sie das Projekt aem-search-custom-predicate-evaluator auf GitHub .](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip) herunter.
 
 ### Prädikat-Auswerter im Detail {#predicate-evaluator-in-detail}

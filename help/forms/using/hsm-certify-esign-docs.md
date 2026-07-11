@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: 20bd6c24-ac9d-4f8d-b5c0-9b7935d4bdf8
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '699'
 ht-degree: 100%
 
 ---
@@ -112,11 +112,11 @@ Der Aliasname enthält alle Parameter, die ein HSM oder E-Token erfordert. Befol
    >Geben Sie beim Konfigurieren von eToken einen numerischen Wert für das HSM-Steckplatz-ID-Feld an. Ein numerischer Wert ist erforderlich, um Signaturen-Vorgänge zu ermöglichen.
 
    * **Certificate SHA1** (SHA1-Zertifikat): Geben Sie den SHA1-Wert (Fingerabdruck) der öffentlichen Schlüsseldatei (.cer) für die verwendete Berechtigung an. Stellen Sie sicher, dass in dem SHA1-Wert keine Leerzeichen verwendet werden.
-   * **HSM-Gerätetyp**: Wählen Sie den HSM- oder eToken-Gerätehersteller aus (Luna oder anderer). 
+   * **HSM-Gerätetyp**: Wählen Sie den HSM- oder eToken-Gerätehersteller aus (Luna oder anderer).
 
    Klicken Sie auf **Speichern**. Das Hardware-Sicherheitsmodul ist für AEM Forms konfiguriert. Jetzt können Sie das Hardware-Sicherheitsmodul mit AEM Forms verwenden, um Dokumente zu signieren oder zu zertifizieren.
 
-## Verwenden der DocAssurance-Dienst-APIs zum Signieren oder Zertifizieren eines Dokuments mit auf dem Gerät gespeicherten digitalen Schlüsseln  {#programatically}
+## Verwenden der DocAssurance-Dienst-APIs zum Signieren oder Zertifizieren eines Dokuments mit auf dem Gerät gespeicherten digitalen Schlüsseln  {#programatically}
 
 Der folgende Beispiel-Code verwendet ein HSM oder E-Token, um ein Dokument zu signieren oder zertifizieren.
 

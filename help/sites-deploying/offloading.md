@@ -11,8 +11,8 @@ role: Admin
 exl-id: c0b285b7-3b20-4412-88b8-04de4a703f42
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '2338'
-ht-degree: 95%
+source-wordcount: '2386'
+ht-degree: 94%
 
 ---
 
@@ -22,33 +22,33 @@ ht-degree: 95%
 
 Mit der Abladung werden Verarbeitungsaufgaben auf die Experience Manager-Instanzen in einer Topologie verteilt. Mit der Abladung können Sie bestimmte Experience Manager-Instanzen zur Durchführung bestimmter Verarbeitungsarten verwenden. Durch eine spezielle Verarbeitung können Sie die Nutzung der verfügbaren Server-Ressourcen maximieren.
 
-Die Abladung basiert auf den [Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html)- und JobManager-Funktionen von Apache Sling. Um die Abladung zu nutzen, müssen Sie Experience Manager-Cluster zu einer Topologie hinzufügen und die von den Clustern verarbeiteten Aufgabenthemen identifizieren. Cluster bestehen aus einer oder mehreren Experience Manager-Instanzen, sodass eine einzelne Instanz als Cluster betrachtet wird.
+Die Abladung basiert auf den [Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html)- und JobManager-Funktionen von Apache Sling. Um die Abladung zu nutzen, müssen Sie Experience Manager-Cluster zu einer Topologie hinzufügen und die von den Clustern verarbeiteten Auftragsthemen identifizieren. Cluster bestehen aus einer oder mehreren Experience Manager-Instanzen, sodass eine einzelne Instanz als Cluster betrachtet wird.
 
 Informationen zum Hinzufügen von Instanzen zu einer Topologie finden Sie unter [Verwalten von Topologien](/help/sites-deploying/offloading.md#administering-topologies).
 
-### Aufgabenverteilung {#job-distribution}
+### Auftragsverteilung {#job-distribution}
 
-Der Sling JobManager und JobConsumer ermöglichen die Erstellung von Aufgaben, die in einer Topologie verarbeitet werden:
+Der Sling JobManager und JobConsumer ermöglichen die Erstellung von Aufträgen, die in einer Topologie verarbeitet werden:
 
-* JobManager: Ein Dienst, der Aufgaben für bestimmte Themen erstellt.
+* JobManager: Ein Dienst, der Aufträge für bestimmte Themen erstellt.
 * JobConsumer: Ein Dienst, der Aufträge für ein oder mehrere Themen ausführt. Für dasselbe Thema können mehrere JobConsumer-Dienste registriert werden.
 
-Wenn JobManager eine Aufgabe erstellt, wählt das Offloading-Framework einen Experience Manager-Cluster in der Topologie aus, um die Aufgabe auszuführen:
+Wenn JobManager einen Auftrag erstellt, wählt das Offloading-Framework einen Experience Manager-Cluster in der Topologie aus, um den Auftrag auszuführen:
 
-* Der Cluster muss eine oder mehrere Instanzen enthalten, die einen JobConsumer ausführen, der für das Aufgabenthema registriert ist.
+* Der Cluster muss eine oder mehrere Instanzen enthalten, die einen JobConsumer ausführen, der für das Auftragsthema registriert ist.
 * Das Thema muss für mindestens eine Instanz im Cluster aktiviert sein.
 
-Siehe [Konfigurieren der Themenverarbeitung](/help/sites-deploying/offloading.md#configuring-topic-consumption) für mehr Informationen zur Verfeinerung der Aufgabenverteilung.
+Siehe [Konfigurieren der Themenverarbeitung](/help/sites-deploying/offloading.md#configuring-topic-consumption) für mehr Informationen zur Verfeinerung der Auftragsverteilung.
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
 Wenn das Abladungs-Framework einen Cluster für die Ausführung eines Auftrags auswählt und der Cluster mehrere Instanzen umfasst, bestimmt die Sling-Verteilung, welche Instanz im Cluster den Auftrag ausführt.
 
-### Aufgaben-Payloads {#job-payloads}
+### Auftrags-Payloads {#job-payloads}
 
-Das Abladungs-Framework unterstützt Auftrags-Payloads, die Aufträge mit Ressourcen im Repository verknüpfen. Aufgaben-Payloads sind nützlich, wenn Aufgaben zur Verarbeitung von Ressourcen erstellt werden und die Aufgabe auf einen anderen Computer verlagert wird.
+Das Abladungs-Framework unterstützt Auftrags-Payloads, die Aufträge mit Ressourcen im Repository verknüpfen. Auftrags-Payloads sind nützlich, wenn Aufgaben zur Verarbeitung von Ressourcen erstellt werden und der Auftrag auf einen anderen Computer verlagert wird.
 
-Bei der Erstellung eines Auftrags befindet sich die Payload nur auf der Instanz, die den Auftrag erstellt. Beim Abladen des Auftrags stellen Replikationsagenten sicher, dass die Payload auf der Instanz erstellt wird, die den Auftrag schließlich verarbeitet. Wenn die Aufgabenausführung abgeschlossen ist, führt die umgekehrte Replikation dazu, dass die Payload zurück auf die Instanz kopiert wird, die die Aufgabe erstellt hat.
+Bei der Erstellung eines Auftrags befindet sich die Payload nur auf der Instanz, die den Auftrag erstellt. Beim Abladen des Auftrags stellen Replikationsagenten sicher, dass die Payload auf der Instanz erstellt wird, die den Auftrag schließlich verarbeitet. Wenn die Auftragsausführung abgeschlossen ist, führt die umgekehrte Replikation dazu, dass die Payload zurück auf die Instanz kopiert wird, die den Auftrag erstellt hat.
 
 ## Verwalten von Topologien {#administering-topologies}
 
@@ -75,8 +75,8 @@ Für jede Instanz des Clusters werden verschiedene topologiebezogene Eigenschaft
 
 * Eine Zulassungsliste mit Themen für den JobConsumer der Instanz.
 * Die Endpunkte, die für die Verbindung mit der Topologie verfügbar gemacht werden.
-* Die Aufgabenthemen, für die die Instanz zum Auslagern registriert ist.
-* Die Aufgabenthemen, die die Instanz verarbeitet.
+* Die Auftragsthemen, für die die Instanz zum Auslagern registriert ist.
+* Die Auftragsthemen, die die Instanz verarbeitet.
 
 1. Klicken Sie in der Touch-Benutzeroberfläche auf die Registerkarte „Tools“. ([http://localhost:4502/aem/start.html](http://localhost:4502/aem/start.html))
 1. Um die Abladung anzuzeigen, klicken Sie im Abschnitt Bereitstellung auf Kachel Abladung .
@@ -102,7 +102,7 @@ Gehen Sie wie folgt vor, um die Seite „Topology Management“ der Web-Konsole 
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
-### Konfigurieren der Topologiemitgliedschaft {#configuring-topology-membership}
+### Konfigurieren der Topologiezugehörigkeit {#configuring-topology-membership}
 
 Der ressourcenbasierte Apache Sling-Discovery-Dienst wird auf jeder Instanz ausgeführt, um zu steuern, wie Experience Manager-Instanzen mit einer Topologie interagieren.
 
@@ -178,7 +178,7 @@ Führen Sie die folgenden Schritte für das Stamm-Mitglied der Topologie aus. Da
 
 Verwenden Sie die Browser-Abladung, um die Themenverarbeitung für die Experience Manager-Instanzen in der Topologie zu konfigurieren. Sie können die von jeder Instanz verarbeiteten Themen angeben. Beispiel: Um die Topologie so zu konfigurieren, dass nur eine Instanz einen bestimmten Thementyp verarbeitet, deaktivieren Sie das Thema in allen Instanzen bis auf eine.
 
-Aufgaben werden mithilfe der Round-Robin-Logik auf die Instanzen verteilt, auf denen das verknüpfte Thema aktiviert ist.
+Aufträge werden mithilfe der Round-Robin-Logik auf die Instanzen verteilt, auf denen das verknüpfte Thema aktiviert ist.
 
 1. Klicken Sie in der Touch-Benutzeroberfläche auf die Registerkarte „Tools“. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
 1. Klicken Sie im Bereich „Granite-Vorgänge“ auf „Browser-Abladung“.
@@ -208,7 +208,7 @@ Die Installation von Experience Manager umfasst mehrere implementierte JobConsum
 | Auftragsthema | Service-PID | Beschreibung |
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Mit Apache Sling installiert. Verarbeitet Aufträge, die vom OSGi-Event-Admin-Dienst aus Gründen der Abwärtskompatibilität generiert werden. |
-| com/day/cq/replication/job/&ast; | com.day.cq.replication.impl.AgentManagerImpl | Ein Replikationsagent, der Auftrags-Payloads repliziert. |
+| com/day/cq/replication/job/&amp;ast | com.day.cq.replication.impl.AgentManagerImpl | Ein Replikationsagent, der Auftrags-Payloads repliziert. |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -226,7 +226,7 @@ Verwenden Sie die Web-Konsole oder einen `sling:OsgiConfig`-Knoten, um die folge
 
 | Eigenschaftsname in der Web-Konsole | OSGi-ID | Beschreibung |
 |---|---|---|
-| Themen auf der Zulassungsliste | job.consumermanager.whitelist | Eine Liste von Themen, die der lokale JobManager-Dienst verarbeitet. Der Standardwert „&ast;“ sorgt dafür, dass alle Themen an den registrierten TopicConsumer-Dienst gesendet werden. |
+| Themen auf der Zulassungsliste | job.consumermanager.whitelist | Eine Liste von Themen, die der lokale JobManager-Dienst verarbeitet. Der Standardwert &quot;*&quot; bewirkt, dass alle Themen an den registrierten TopicConsumer-Dienst gesendet werden. |
 | Themen auf der Blockierungsliste | job.consumermanager.blacklist | Eine Liste von Themen, die der lokale JobManager-Dienst nicht verarbeitet. |
 
 ## Erstellen von Replikationsagenten zum Auslagern {#creating-replication-agents-for-offloading}
@@ -283,13 +283,13 @@ Beispiel: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    | Einstellungen > Serialisierungstyp | Standard |
    | Transport > Transport-URI | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
    | Transport > Transport-Benutzer | Replikationsbenutzer auf Zielinstanz |
-   | Transport > Transport-Passwort | Replizieren des Benutzerkennworts auf der Zielinstanz |
+   | Transport > Transport-Passwort | Replikation des Benutzerkennworts auf der Zielinstanz |
    | Erweitert > HTTP-Methode | POST |
    | Trigger > Standard ignorieren | True |
 
 ### Erstellen des Rückwärtsagenten {#creating-the-reverse-agent}
 
-1. Erstellen Sie einen **Rückwärts-Replikationsagenten** auf der Autoreninstanz. (Siehe [Dokumentation für Replikationsagenten](/help/sites-deploying/replication.md).) Geben Sie einen beliebigen **Titel** an. Der **Name** muss der Namenskonvention entsprechen.
+1. Erstellen Sie einen **Rückwärts-Replikationsagenten** auf der Autoreninstanz. (Weitere Informationen finden [ in der Dokumentation zu Replikationsagenten](/help/sites-deploying/replication.md).) Geben Sie einen beliebigen **Titel an**. Der **Name** muss der Namenskonvention entsprechen.
 1. Erstellen Sie den Agenten mit den folgenden Eigenschaften:
 
    | Eigenschaft | Wert |
@@ -297,12 +297,12 @@ Beispiel: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    | Einstellungen > Serialisierungstyp | Standard |
    | Transport > Transport-URI | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
    | Transport > Transport-Benutzer | Replikationsbenutzer auf Zielinstanz |
-   | Transport > Transport-Passwort | Replizieren des Benutzerkennworts auf der Zielinstanz |
+   | Transport > Transport-Passwort | Replikation des Benutzerkennworts auf der Zielinstanz |
    | Erweitert > HTTP-Methode | GET |
 
 ### Erstellen des Postausgangs-Agenten {#creating-the-outbox-agent}
 
-1. Erstellen Sie einen **Replikationsagenten** auf der Worker-Instanz. (Siehe [Dokumentation für Replikationsagenten](/help/sites-deploying/replication.md).) Geben Sie einen beliebigen **Titel** an. Der **Name** muss `offloading_outbox` lauten.
+1. Erstellen Sie einen **Replikationsagenten** auf der Worker-Instanz. (Weitere Informationen finden [ in der Dokumentation zu Replikationsagenten](/help/sites-deploying/replication.md).) Geben Sie einen beliebigen **Titel an**. Der **Name** muss `offloading_outbox` lauten.
 1. Erstellen Sie den Agenten mit den folgenden Eigenschaften.
 
    | Eigenschaft | Wert |

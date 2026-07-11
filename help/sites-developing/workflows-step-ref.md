@@ -12,7 +12,7 @@ role: Developer
 exl-id: e82d97c2-c26a-48df-9210-47dc017c68c8
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '3226'
+source-wordcount: '3268'
 ht-degree: 99%
 
 ---
@@ -39,7 +39,8 @@ Jede Schrittkomponente beinhaltet ein Dialogfeld **Schritt-Eigenschaften**, in d
 
 Eine Kombination der folgenden Eigenschaften ist für die meisten Workflow-Schrittkomponenten im Eigenschaften-Dialogfeld auf der Registerkarte **Allgemein** verfügbar:
 
-* **Titel** Der Titel für den Schritt.
+* **title**
+Der Titel für den Schritt.
 
 * **Beschreibung**
 Eine Beschreibung des Schritts.
@@ -50,8 +51,7 @@ Eine Beschreibung des Schritts.
 
 * **Zeitüberschreitung**
 
-  Der Zeitraum, nach dem für den Schritt eine Zeitüberschreitung auftritt.
-Folgende Optionen stehen zur Auswahl: **Aus**, **Unmittelbar**, **1 h**, **6 h**, **12 h**, **24 h**.
+  Der Zeitraum, nach dem für den Schritt eine Zeitüberschreitung auftritt.Folgende Optionen stehen zur Auswahl: **Aus**, **Unmittelbar**, **1 h**, **6 h**, **12 h**, **24 h**.
 
 * **Zeitüberschreitungs-Handler**
 
@@ -195,7 +195,7 @@ Die **ODER-Teilung** erstellt eine Verzweigung im Workflow, nach der nur eine de
 
 So konfigurieren Sie die Aufspaltung:
 
-* Bearbeiten Sie die **ODER-Verzweigungs-Eigenschaften**:
+* Bearbeiten Sie die **ODER-Teilungs-Eigenschaften**:
 
    * **Allgemein**
 
