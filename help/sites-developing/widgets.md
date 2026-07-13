@@ -12,8 +12,8 @@ role: Developer
 exl-id: 20a8e6d7-dab5-476a-9235-0abca3da5ff3
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4886'
-ht-degree: 98%
+source-wordcount: '5042'
+ht-degree: 94%
 
 ---
 
@@ -103,7 +103,7 @@ wenn `<category-nameX>` der Name der Client-seitigen Bibliothek ist.
 * um nur JavaScript-Code einzuschließen:
   `<ui:includeClientLib js="<category-name>"/>`
 
-Weitere Informationen finden Sie in der Beschreibung des Tags [&lt;ui:includeClientLib>](/help/sites-developing/taglib.md#lt-ui-includeclientlib) .
+Weitere Informationen finden Sie in der Beschreibung des [&lt;ui:includeClientLib>](/help/sites-developing/taglib.md#lt-ui-includeclientlib)-Tags.
 
 Manchmal sollte eine Client-Bibliothek nur im Authoring-Modus verfügbar sein und im Publishing-Modus ausgeschlossen werden. Dies lässt sich wie folgt erreichen:
 
@@ -118,9 +118,8 @@ Manchmal sollte eine Client-Bibliothek nur im Authoring-Modus verfügbar sein un
 Zum Durchführen der Übungen auf dieser Seite installieren Sie das Paket **Verwenden von ExtJS Widgets** auf einer lokalen AEM-Instanz und erstellen eine Beispielseite, in der die Komponenten enthalten sind. Gehen Sie dazu wie folgt vor:
 
 1. Laden Sie in Ihrer AEM-Instanz das Paket **Verwenden von ExtJS Widgets (v01)** von Package Share herunter und installieren Sie es. Dabei wird im Repository unter `extjstraining` das Projekt `/apps` erstellt.
-1. Fügen Sie die Client-Bibliothek, die die Skripte (js) und das Stylesheet (css) enthält, in das Head-Tag der Geometrixx-Seiten-JSP ein. Sie werden jetzt die Beispielkomponenten in eine neue Seite des **Geometrixx**-Zweiges einbinden:
-Öffnen Sie in **CRXDE Lite** die Datei `/apps/geometrixx/components/page/headlibs.jsp` und fügen Sie die Kategorie `cq.extjstraining` wie folgt zum bestehenden `<ui:includeClientLib>`-Tag hinzu:
-   `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
+1. Fügen Sie die Client-Bibliothek, die die Skripte (js) und das Stylesheet (css) enthält, in das Head-Tag der Geometrixx-Seiten-JSP ein. Sie werden jetzt die Beispielkomponenten in eine neue Seite der Verzweigung **Geometrixx** einbeziehen:
+Öffnen Sie in **0&rbrace;die `/apps/geometrixx/components/page/headlibs.jsp` und fügen Sie die `cq.extjstraining` Kategorie wie folgt zum bestehenden `<ui:includeClientLib>`-Tag hinzu:**   `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
 1. Erstellen Sie eine Seite im **Geometrixx**-Zweig unter `/content/geometrixx/en/products` und nennen Sie sie **Verwenden von ExtJS Widgets**.
 1. Wechseln Sie in den Designmodus und fügen Sie alle Komponenten der Gruppe **Verwenden von ExtJS Widgets** dem Design von Geometrixx hinzu.
 1. Wechseln Sie zurück in den Bearbeitungsmodus: Die Komponenten der Gruppe **Verwenden von ExtJS Widgets** stehen im Sidekick zur Verfügung.
@@ -208,7 +207,8 @@ Das Dialogfeld **Multi-Panel** zeigt dasselbe wie das Dialogfeld **Full**, ist a
 
 Das Dialogfeld „Multi-Panel“ verwenden Sie wie folgt:
 
-1. Ersetzen Sie das Dialogfeld der Komponente **Dialog Allgemein** durch das Dialogfeld **Multi-Panel**: Führen Sie die in [Beispiel 2: Dialogfeld „Single Panel“](#example-single-panel-dialog) beschriebenen Schritte aus.
+1. Ersetzen Sie das Dialogfeld der Komponente **Dialog Allgemein** durch das Dialogfeld **Multi-Panel**:
+Führen Sie die in [Beispiel 2: Dialogfeld „Single Panel“ beschriebenen Schritte aus](#example-single-panel-dialog)
 1. Bearbeiten Sie die Komponente: Das Dialogfeld wird wie im Folgenden dargestellt:
 
 ![screen_shot_2012-01-31at50119pm](assets/screen_shot_2012-01-31at50119pm.png)
@@ -228,7 +228,8 @@ Das Dialogfeld **Rich** zeigt ein Fenster mit zwei Registerkarten an. Die erste 
 
 So verwenden Sie das Dialogfeld **Rich**:
 
-1. Ersetzen Sie das Dialogfeld der Komponente **Dialog Allgemein** durch das Dialogfeld **Rich**: Führen Sie die in [Beispiel 2: Dialogfeld „Single Panel“](#example-single-panel-dialog) beschriebenen Schritte aus.
+1. Ersetzen Sie das Dialogfeld der Komponente **Dialog Allgemein** durch das Dialogfeld **Rich**:
+Führen Sie die in [Beispiel 2: Dialogfeld „Single Panel“ beschriebenen Schritte aus](#example-single-panel-dialog)
 1. Bearbeiten Sie die Komponente: Das Dialogfeld wird wie im Folgenden dargestellt:
 
 ![screen_shot_2012-01-31at50429pm](assets/screen_shot_2012-01-31at50429pm.png) ![screen_shot_2012-01-31at50519pm](assets/screen_shot_2012-01-31at50519pm.png)
@@ -308,8 +309,7 @@ Die wichtigsten Merkmale sind:
 
 Die Logik wird wie folgt durch Ereignis-Listener und JavaScript-Code implementiert:
 
-* Das `ownerdraw`-Widget hat einen „`loadcontent`“-Listener, der Informationen über die Seite anzeigt, die die Komponente enthält. Das heißt, das Asset, auf das das Smartfile-Widget verweist, wenn der Inhalt geladen wird:
-  `loadcontent="function(field,rec,path){Ejst.x2.showInfo(field,rec,path);}"`
+* Das `ownerdraw`-Widget hat einen „`loadcontent`“-Listener, der Informationen über die Seite anzeigt, die die Komponente enthält. Das heißt, das Asset, auf das das Smartfile-Widget verweist, wenn der Inhalt geladen wird:  `loadcontent="function(field,rec,path){Ejst.x2.showInfo(field,rec,path);}"`
   `field` ist mit dem Objekt `ownerdraw` festgelegt
   `path` ist mit dem Inhaltspfad der Komponente festgelegt (zum Beispiel `/content/geometrixx/en/products/triangle/ui-tutorial/jcr:content/par/dynamicdialogs`)
 * Das Objekt `Ejst.x2` wird definiert in der Datei `exercises.js` unter:
@@ -323,7 +323,8 @@ Die Logik wird wie folgt durch Ereignis-Listener und JavaScript-Code implementie
 
 So verwenden Sie das Dialogfeld **Arbitrary**:
 
-1. Ersetzen Sie das Dialogfeld der Komponente **Dynamische Dialogfelder** durch das Dialogfeld **Beliebig**: Führen Sie die in [Beispiel 2: Dialogfeld „Single Panel“](#example-single-panel-dialog) beschriebenen Schritte aus.
+1. Ersetzen Sie das Dialogfeld der Komponente **Dynamischer Dialog** durch das Dialogfeld **Beliebig**:
+Führen Sie die in [Beispiel 2: Dialogfeld „Single Panel“ beschriebenen Schritte aus](#example-single-panel-dialog)
 1. Bearbeiten Sie die Komponente: Das Dialogfeld wird wie im Folgenden dargestellt:
 
 ![screen_shot_2012-02-01at115300am](assets/screen_shot_2012-02-01at115300am.png)
@@ -353,12 +354,13 @@ Die Logik wird wie folgt durch Ereignis-Listener und JavaScript-Code implementie
   ist `box` das Auswahlobjekt;
   ist `panel` das Bedienfeld, das das selection- und das dialogfieldset-Widget enthält;
   ist `fieldSet` das dialogfieldset-Objekt;
-  ist `show` der Wert der Auswahl (true oder false)
-basierend auf „`show`“ wird das dialogfieldset angezeigt oder nicht
+  `show` ist der Wert der Auswahl (true oder false);
+Basierend auf &quot;`show`&quot; wird das dialogfieldset angezeigt oder nicht
 
 Um das Dialogfeld **Felder umschalten** zu verwenden, gehen Sie wie folgt vor:
 
-1. Ersetzen Sie das Dialogfeld der Komponente **Dynamische Dialogfelder** durch das Dialogfeld **Felder umschalten**: Führen Sie die in [Beispiel 2: Dialogfeld „Single Panel“](#example-single-panel-dialog) beschriebenen Schritte aus.
+1. Ersetzen Sie das Dialogfeld der Komponente **Dynamisches**&quot; durch das Dialogfeld **Felder umschalten**:
+Führen Sie die in [Beispiel 2: Dialogfeld „Single Panel“ beschriebenen Schritte aus](#example-single-panel-dialog)
 1. Bearbeiten Sie die Komponente: Das Dialogfeld wird wie im Folgenden dargestellt:
 
 ![screen_shot_2012-02-01at115518am](assets/screen_shot_2012-02-01at115518am.png)
@@ -374,8 +376,7 @@ Die im Lieferumfang von AEM enthaltenen vordefinierten Widgets sollten die meist
 Die benutzerdefinierten Widgets und das Plug-in sind in der Komponente namens **3. Benutzerdefinierte Widgets** des **Verwenden von ExtJS-Widgets**-Pakets enthalten. Um diese Komponente in die Beispielseite aufzunehmen:
 
 1. Fügen Sie die **3. Benutzerdefinierte Widgets**-Komponente über die Registerkarte **Verwenden von ExtJS-Widgets** im **Sidekick** zur Beispielseite hinzu.
-1. Die Komponente zeigt einen Titel, etwas Text und, wenn Sie auf den Link **EIGENSCHAFTEN** klicken, die Eigenschaften des im Repository gespeicherten Absatzes an. Durch erneutes Klicken werden die Eigenschaften verborgen.
-Die Komponente wird wie im Folgenden dargestellt:
+1. Die Komponente zeigt einen Titel, etwas Text und, wenn Sie auf den Link **EIGENSCHAFTEN** klicken, die Eigenschaften des im Repository gespeicherten Absatzes an. Durch erneutes Klicken werden die Eigenschaften verborgen.Die Komponente wird wie im Folgenden dargestellt:
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -390,8 +391,7 @@ Das Widget-basierte Dialogfeld **Benutzerdefiniertes Multifield**:
 * Das Bedienfeld weist ein `multifield`-Widget (node type = `cq:Widget`, xtype = ` [multifield](/help/sites-developing/xtypes.md#multifield)`) auf.
 * Das `multifield`-Widget verfügt über eine fieldconfig (Knotentyp = `nt:unstructured`, xtype = `ejstcustom`, optionsProvider = `Ejst.x3.provideOptions`), die auf dem benutzerdefinierten xtype „`ejstcustom`“ basiert:
    * „`fieldconfig`“ ist eine Konfigurationsoption des ` [CQ.form.MultiField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.MultiField)`-Objekts.
-   * „`optionsProvider`“ ist eine Konfiguration des `ejstcustom`-Widgets. Sie wird mit der `Ejst.x3.provideOptions`-Methode festgelegt, die definiert ist in `exercises.js` unter:
-     `/apps/extjstraining/clientlib/js/exercises.js`
+   * „`optionsProvider`“ ist eine Konfiguration des `ejstcustom`-Widgets. Sie wird mit der `Ejst.x3.provideOptions`-Methode festgelegt, die definiert ist in `exercises.js` unter:     `/apps/extjstraining/clientlib/js/exercises.js`
 und gibt zwei Optionen zurück.
 * Wird definiert durch den Knoten `multifield` unter:
   `/apps/extjstraining/components/customwidgets/multifield`
@@ -452,7 +452,8 @@ Das benutzerdefinierte treebrowse-Widgets (xtype = `ejstbrowse`):
 
 Um das Widget-basierte Dialogfeld **Benutzerdefiniertes Treebrowse** zu verwenden:
 
-1. Ersetzen Sie das Dialogfeld der Komponente **Benutzerdefinierte Widgets** durch das Dialogfeld **Benutzerdefiniertes Durchsuchen der Baumstruktur**: Führen Sie die in [Beispiel 2: Dialogfeld „Single Panel“](#example-single-panel-dialog) beschriebenen Schritte aus.
+1. Ersetzen Sie das Dialogfeld der Komponente **Benutzerdefinierte Widgets** durch das Dialogfeld **Benutzerdefiniertes Durchsuchen der**&quot;:
+Führen Sie die in [Beispiel 2: Dialogfeld „Single Panel“ beschriebenen Schritte aus](#example-single-panel-dialog)
 1. Bearbeiten Sie die Komponente: Das Dialogfeld wird wie im Folgenden dargestellt:
 
 ![screen_shot_2012-02-01at120104pm](assets/screen_shot_2012-02-01at120104pm.png)
@@ -488,10 +489,11 @@ Das RTE-Plug-in:
 
 So verwenden Sie das auf dem **Rich-Text-Editor (RTE)-Plug-in** basierende Dialogfeld:
 
-1. Ersetzen Sie das Dialogfeld der Komponente **Benutzerdefinierte Widgets** durch das auf dem **Rich-Text-Editor (RTE)-Plug-in** basierende Dialogfeld: Führen Sie die in [Beispiel 2: Dialogfeld „Single Panel“](#example-single-panel-dialog) beschriebenen Schritte aus.
+1. Ersetzen Sie das Dialogfeld der Komponente **Benutzerdefinierte Widgets** durch das **Rich-Text-Editor(RTE)-Plug-in** basierte Dialogfeld:
+Führen Sie die in [Beispiel 2: Dialogfeld „Single Panel“ beschriebenen Schritte aus](#example-single-panel-dialog)
 1. Bearbeiten Sie die Komponente.
 1. Klicken Sie auf das letzte Symbol auf der rechten Seite (das mit den vier Pfeilen). Geben Sie einen Pfad ein und klicken Sie auf **OK**:
-Der Pfad wird in eckigen Klammern ([ ]) angezeigt.
+Der Pfad wird in Klammern angezeigt ([ ]) angezeigt.
 1. Klicken Sie auf **OK**, sodass sich der Rich-Text-Editor schließt.
 
 Das **Rich-Text-Editor(RTE)-Plug-in**-basierte Dialogfeld wird wie folgt angezeigt:
@@ -563,7 +565,7 @@ Das Komponentendialogfeld:
 
 Ein Rasterbedienfeld stellt Daten in tabellarischer Form von Zeilen und Spalten dar. Es umfasst Folgendes:
 
-* Store: das Modell, das die Datendatensätze enthält (Zeilen)
+* Store: das Modell, das die Daten-Einträge enthält (Zeilen)
 * Spaltenmodell: das Spaltendesign
 * Ansicht: fasst die Benutzeroberfläche zusammen
 * Auswahlmodell: das Auswahlverhalten
@@ -655,9 +657,7 @@ Die Komponente wird wie im Folgenden dargestellt:
 Der JavaScript-Code, auf den in der Komponenten-JSP verwiesen wird (`referencesearch.js`), definiert die `getGridPanel()`-Methode, die von der Komponenten-JSP aufgerufen wird und ein ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`-Objekt zurückgibt, das auf Daten basiert, welche dynamisch aus dem Repository abgerufen werden. Die Logik in `referencesearch.js` definiert dynamische Daten als Basis für das GridPanel:
 
 * `reader` ist ein ` [CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.JsonReader)`-Objekt, das die Antwort des Servlets im JSON-Format für drei Spalten liest.
-* `cm` ist ein ` [CQ.Ext.grid.ColumnModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)`-Objekt für drei Spalten.
-Die „Test“-Spaltenzellen können bearbeitet werden, da sie mit einem Editor definiert werden:
-  `editor: new [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)({})`
+* `cm` ist ein ` [CQ.Ext.grid.ColumnModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)`-Objekt für drei Spalten.Die „Test“-Spaltenzellen können bearbeitet werden, da sie mit einem Editor definiert werden:  `editor: new [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)({})`
 * die Spalten sind sortierbar:
   `cm.defaultSortable = true;`
 * `store` ist ` [CQ.Ext.data.GroupingStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)`-Objekt:
