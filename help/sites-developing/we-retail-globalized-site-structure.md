@@ -11,7 +11,7 @@ role: Developer
 exl-id: a4e6b858-2470-4e8a-b02d-58e6ab7f37ea
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '436'
 ht-degree: 100%
 
 ---
@@ -67,7 +67,7 @@ We.Retail wurde mit einer globalisierten Site-Struktur erstellt, die eine Sprach
 
 >[!NOTE]
 >
->Dieses Verfahren hat die Integration mit der maschinellen Übersetzung von Microsoft® demonstriert. Mit dem [AEM Translation Integration Framework](/help/sites-administering/translation.md) können Sie viele Standardübersetzungsdienste integrieren, um die Übersetzung von AEM zu organisieren.
+>Dieses Verfahren hat die native Integration mit der maschinellen Übersetzung von Microsoft® demonstriert. Mit dem [AEM Translation Integration Framework](/help/sites-administering/translation.md) können Sie viele Standardübersetzungsdienste integrieren, um die Übersetzung von AEM zu organisieren.
 
 ## Weitere Informationen {#further-information}
 
