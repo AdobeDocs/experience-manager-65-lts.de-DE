@@ -10,7 +10,7 @@ role: User, Developer
 exl-id: 37637d7a-cbf3-4fe7-8506-0b4116a01808
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '638'
 ht-degree: 96%
 
 ---
@@ -43,7 +43,7 @@ Kopieren Sie ein adaptives Formular mithilfe eines der folgenden Verfahren:
    >
    >Schnellaktionen sind die Aktionselemente, die beim Zeigen mit der Maus auf eine Miniaturansicht angezeigt werden.
 
-1. Wählen Sie das adaptive Formular aus.  Der Auswahlprozess unterscheidet sich je nach Ansicht.
+1. Wählen Sie das adaptive Formular aus. Der Auswahlprozess unterscheidet sich je nach Ansicht.
 
    Wenn Sie sich in der Kartenansicht befinden, wechseln Sie zum Auswahlmodus, indem Sie das Auswahlsymbol ![aem6forms_check-circle](assets/aem6forms_check-circle.png) und alle adaptiven Formulare anklicken, die Sie kopieren möchten.
 
