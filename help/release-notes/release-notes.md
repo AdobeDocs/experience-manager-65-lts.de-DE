@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: ee3cfd977ab2e7f7cadabb2719fb38ef255b6a2a
+source-git-commit: 992c178c97245aa3fef43137498dc45e5ab79c39
 workflow-type: tm+mt
-source-wordcount: '7770'
-ht-degree: 96%
+source-wordcount: '7761'
+ht-degree: 95%
 
 ---
 
@@ -53,11 +53,11 @@ AEM 6.5 LTS SP2 enthält jetzt OpenAPIs für [Inhaltsfragment- und Modellverw
 
 * Verbessertes Benutzererlebnis im visuellen Regeleditor. Dieses Update enthält:
 
-   * Automatisches Neuladen der Zusammenfassungsansicht nach einem Speichervorgang, um den aktualisierten Regelstatus anzuzeigen
+  * Automatisches Neuladen der Zusammenfassungsansicht nach einem Speichervorgang, um den aktualisierten Regelstatus anzuzeigen
 
-   * Anzeige der Schaltflächen „Hinzufügen“/„Löschen“ und Möglichkeit zum Umschalten statt Ausblenden
+  * Anzeige der Schaltflächen „Hinzufügen“/„Löschen“ und Möglichkeit zum Umschalten statt Ausblenden
 
-   * Eindeutiges Feedback, wenn ein Regelspeichervorgang nicht erfolgreich war (FORMS-21261)
+  * Eindeutiges Feedback, wenn ein Regelspeichervorgang nicht erfolgreich war (FORMS-21261)
 
 * Laufzeit-API (Application Programming Interface) wurde hinzugefügt, um den alten Exportmodus der Extensible Markup Language (XML) in AEM Forms umzuschalten. Dies ersetzt den Parameter „`Dcom.adobe.fd.forms.export.legacy`“. Diese Verbesserung ermöglicht es Benutzenden, effizienter zwischen Exportmodi zu wechseln, was die Flexibilität des Workflows verbessert. (FORMS-23115)
 
@@ -157,7 +157,8 @@ Bei der Unterstützung für Headless-Eventing fehlten die erforderlichen OSGi-Er
 
 * Der Inhaltsfragment-RTE zeigte Layout- und visuelle Probleme nach den letzten Änderungen des Benutzeroberflächensstils. Service Pack 2 optimiert die RTE-Formatierung, sodass die Symbolleiste und der bearbeitbare Bereich korrekt dargestellt werden und lesbar bleiben. Der Inhaltsfragment-Editor wird jetzt am Erscheinungsbild und Verhalten des Seiteneditors ausgerichtet. (SITES-38684)
 * Das Entfernen von IMS-Bereichen aus dem Polaris-Asset-Wähler unterbrach die Integration von Inhaltsfragmenten mit dem Bereitstellungsendpunkt. Autorinnen und Autoren erfuhren Fehler beim Öffnen des Remote-Asset-Wählers und beim Auswählen von Assets. Die Aktualisierung fügt die erforderlichen IMS-Bereiche wieder hinzu und stellt den stabilen Zugriff auf die Bereitstellungsebene wieder her. (SITES-35837)
-* Das Panel „Zugehörige Inhalte“ rendert keinen hart-codierten Platzhalter „undefiniert“ mehr. Der Inhaltsfragment-Editor löst diesen Text jetzt durch Lokalisierungsressourcen auf, sodass Bearbeitende übersetzten Text in der Benutzeroberfläche sehen. (SITES-33675)  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
+* Das Bedienfeld „Zugehörige Inhalte“ rendert keinen hartcodierten Platzhalter „undefiniert“ mehr. Der Inhaltsfragment-Editor löst diesen Text jetzt durch Lokalisierungsressourcen auf, sodass Editoren übersetzten Text in der Benutzeroberfläche sehen. (SITES-33675)
+  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
 * Im Inhaltsfragment-Editor wird jetzt ein übersetztes Label der Registerkarte „Allgemein“ für alle Gebietsschemata angezeigt. Der Editor ersetzt nicht lokalisierten Registerkartentext und entfernt interne IDs aus Registerkartentiteln. (SITES-30715)
 * Der Inhaltsfragment-Editor zeigt jetzt übersetzte Namen für zulässige Asset-Typen an. In der Auswahlliste werden keine internen Zeichenfolgen und Nur-Englisch-Label mehr gemischt, wenn Autorinnen und Autoren Einschränkungen für Inhaltsreferenzen konfigurieren. (SITES-29699)
 
@@ -243,7 +244,7 @@ Die Seiteneditor-Veröffentlichung verarbeitet jetzt URLs, die Selektoren oder S
 
 #### Vorlageneditor{#sites-template-editor-65-lts-sp2}
 
-Der Text zum Vorlagenstatus unter **Tools** > **Allgemein** > **&#x200B;**&#x200B;wurde für einige Gebietsschemata vertikal angezeigt. Das Label „veraltet“ unterbrach das Layout und wurde als Zeichenspalte gelesen. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass das Label in einer einzigen horizontalen Zeile ausgegeben wird. (SITES-36797)
+Der Text zum Vorlagenstatus unter **Tools** > **Allgemein** > **** wurde für einige Gebietsschemata vertikal angezeigt. Das Label „veraltet“ unterbrach das Layout und wurde als Zeichenspalte gelesen. Durch die Korrektur wird der Stil des Vorlagenstatus korrigiert, sodass das Label in einer einzigen horizontalen Zeile ausgegeben wird. (SITES-36797)
 
 #### Universeller Editor {#sites-universal-editor-65-lts-sp2}
 
@@ -359,23 +360,23 @@ Für AEM 6.5 LTS Service Pack 2 ist der S3-Connector 1.60.10 oder höher erfo
 
   **Auswirkungen**
 
-   * Sling verwirft folgende PIDs, die Sie aus Ihren Konfigurationen entfernen sollten:
-      * Werkseitige PID: `org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment`
-      * Globale PID: `org.apache.sling.jcr.base.internal.LoginAdminWhitelist`
-Diese älteren Konfigurationen verwenden Eigenschaften wie „`whitelist.name`“ und „`whitelist.bundles`“.
+  * Sling verwirft folgende PIDs, die Sie aus Ihren Konfigurationen entfernen sollten:
+    * Werkseitige PID: `org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment`
+    * Globale PID: `org.apache.sling.jcr.base.internal.LoginAdminWhitelist`
+      Diese älteren Konfigurationen verwenden Eigenschaften wie „`whitelist.name`“ und „`whitelist.bundles`“.
 
-   * Sling bietet weiterhin partielle Abwärtskompatibilität für die veralteten PIDs. Verwenden Sie sie jedoch nicht für neue Konfigurationen. Verwenden Sie stattdessen die neueren „`LoginAdminAllowList.*`“-PIDs.
-   * Führen Sie veraltete und neue Zulassungslistenkonfigurationen nicht gleichzeitig aus. Gemischte Konfigurationen können Mehrdeutigkeiten verursachen und zu unbeabsichtigtem Verhalten führen. Wenn Sie zu AEM 6.5 LTS SP2 migrieren, entfernen Sie die veralteten PIDs vollständig.
+  * Sling bietet weiterhin partielle Abwärtskompatibilität für die veralteten PIDs. Verwenden Sie sie jedoch nicht für neue Konfigurationen. Verwenden Sie stattdessen die neueren „`LoginAdminAllowList.*`“-PIDs.
+  * Führen Sie veraltete und neue Zulassungslistenkonfigurationen nicht gleichzeitig aus. Gemischte Konfigurationen können Mehrdeutigkeiten verursachen und zu unbeabsichtigtem Verhalten führen. Wenn Sie zu AEM 6.5 LTS SP2 migrieren, entfernen Sie die veralteten PIDs vollständig.
 
   **Vorgehensweise**
 
-   1. Suchen Sie nach Zulassungslistenkonfigurationen, die „`LoginAdminWhitelist*`“-PIDs verwenden.
-   1. Ersetzen Sie sie durch die entsprechenden neuen PIDs:
+  1. Suchen Sie nach Zulassungslistenkonfigurationen, die „`LoginAdminWhitelist*`“-PIDs verwenden.
+  1. Ersetzen Sie sie durch die entsprechenden neuen PIDs:
 
-      * Werkseitige PID: `org.apache.sling.jcr.base.LoginAdminAllowList.fragment`
-      * Globale PID: `org.apache.sling.jcr.base.LoginAdminAllowList`
+     * Werkseitige PID: `org.apache.sling.jcr.base.LoginAdminAllowList.fragment`
+     * Globale PID: `org.apache.sling.jcr.base.LoginAdminAllowList`
 
-      Weitere Informationen finden Sie unter [Veralteter Ansatz bei Paket-Zulassungslisten für die Administratoranmeldung](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecated-approach-to-allowlist-bundles-for-administrative-login).
+     Weitere Informationen finden Sie unter [Veralteter Ansatz bei Paket-Zulassungslisten für die Administratoranmeldung](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecated-approach-to-allowlist-bundles-for-administrative-login).
 
 * AEM 6.5 LTS SP2 aktualisiert das Paket-Set der Foundation-Ebene für Sling, Oak und Felix. Diese Upgrades verbessern die Kernlaufzeitstabilität und stimmen Abhängigkeitsversionen plattformübergreifend ab. (GRANITE-61874)
 
@@ -499,7 +500,7 @@ Informationen zu Einrichtungsanforderungen finden Sie unter [Installationsanweis
 > Wenn Sie ein direktes Upgrade von alten 6.5 SPs auf LTS SP1 durchführen, folgen Sie den Anweisungen zum [Upgrade](/help/sites-deploying/upgrade.md) auf 6.5 bis 6.5 LTS GA.
 
 
-Detaillierte Anweisungen finden Sie unter [Dokumentation zu Upgrades](/help/sites-deploying/upgrade.md).
+Detaillierte Anweisungen finden Sie in der [Upgrade-Dokumentation](/help/sites-deploying/upgrade.md), da für LTS Service Pack-Aktualisierungen dieselbe Dokumentation gilt.
 
 >[!NOTE]
 >
