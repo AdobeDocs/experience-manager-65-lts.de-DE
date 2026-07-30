@@ -7,8 +7,8 @@ role: Developer,Leader
 exl-id: 3f3437fb-1fff-4703-a50d-28da89b0a856
 source-git-commit: fd3404f62beb377362db73ab937b58391b15e195
 workflow-type: tm+mt
-source-wordcount: '3475'
-ht-degree: 99%
+source-wordcount: '3746'
+ht-degree: 98%
 
 ---
 
@@ -36,53 +36,53 @@ Im Folgenden finden Sie einige allgemeine Tipps zum Erstellen Ihrer URLs für SE
 
 * Verwenden Sie Bindestriche, um Wörter voneinander zu trennen.
 
-   * Verwenden Sie Bindestriche (-) als Trennzeichen zwischen Seitennamen.
-   * Vermeiden Sie Binnenmajuskeln, Unterstriche und Leerzeichen.
+  * Verwenden Sie Bindestriche (-) als Trennzeichen zwischen Seitennamen.
+  * Vermeiden Sie Binnenmajuskeln, Unterstriche und Leerzeichen.
 
 * Vermeiden Sie, wenn möglich, die Verwendung von Abfrageparametern. Falls erforderlich, begrenzen Sie diese auf maximal zwei.
 
-   * Verwenden Sie die Verzeichnisstruktur, um die Informationsarchitektur anzuzeigen, sofern verfügbar.
-   * Wenn eine Verzeichnisstruktur keine Option ist, verwenden Sie Sling-Selektoren in der URL statt Abfragezeichenfolgen. Zusätzlich zu den gebotenen Vorteilen für die SEO ermöglichen Sling-Selektoren dem Dispatcher außerdem die Zwischenspeicherung der Seiten.
+  * Verwenden Sie die Verzeichnisstruktur, um die Informationsarchitektur anzuzeigen, sofern verfügbar.
+  * Wenn eine Verzeichnisstruktur keine Option ist, verwenden Sie Sling-Selektoren in der URL statt Abfragezeichenfolgen. Zusätzlich zu den gebotenen Vorteilen für die SEO ermöglichen Sling-Selektoren dem Dispatcher außerdem die Zwischenspeicherung der Seiten.
 
-* Je leichter es für Menschen ist, die URL zu lesen, desto besser. Die Verwendung von Schlüsselwörtern in der URL macht diese wertvoller.
+* Je besser eine URL für Menschen lesbar ist, desto besser. Die Verwendung von Schlüsselwörtern in der URL steigert den Wert.
 
-   * Auf Seiten, die Selektoren verwenden, sind Selektoren, die einen semantischen Wert bieten, zu bevorzugen.
-   * Wenn ein Mensch Ihre URL nicht lesen kann, kann eine Suchmaschine dies auch nicht.
-   * Zum Beispiel:
-     `mybrand.com/products/product-detail.product-category.product-name.html`
-wird `mybrand.com/products/product-detail.1234.html` vorgezogen
+  * Auf Seiten, die Selektoren verwenden, sind Selektoren, die einen semantischen Wert bieten, zu bevorzugen.
+  * Wenn ein Mensch Ihre URL nicht lesen kann, kann eine Suchmaschine dies auch nicht.
+  * Zum Beispiel:
+    `mybrand.com/products/product-detail.product-category.product-name.html`
+    wird `mybrand.com/products/product-detail.1234.html` vorgezogen
 
 * Vermeiden Sie Subdomains so weit wie möglich, da Suchmaschinen diese als unterschiedliche Einheiten einordnen, wodurch der SEO-Wert der Website fragmentiert wird.
 
-   * Nutzen Sie stattdessen Unterpfade auf erster Ebene. Verwenden Sie beispielsweise `www.mybrand.com/es/home.html` statt `es.mybrand.com/home.html`.
+  * Nutzen Sie stattdessen Unterpfade auf erster Ebene. Verwenden Sie beispielsweise `www.mybrand.com/es/home.html` statt `es.mybrand.com/home.html`.
 
-   * Planen Sie die Inhaltshierarchie gemäß dieser Richtlinie passend zu der Art und Weise, wie die Inhalte dargestellt werden.
+  * Planen Sie die Inhaltshierarchie gemäß dieser Richtlinie passend zu der Art und Weise, wie die Inhalte dargestellt werden.
 
 * Die Effektivität von Keywords in URLs nimmt bei mit zunehmender Länge der URL und späterer Position des Keywords ab. Mit anderen Worten: je kürzer, desto besser.
 
-   * Nutzen Sie die von AEM zur Verfügung gestellten Techniken und Funktionen zum Kürzen von URLs, um unnötige URL-Elemente zu entfernen.
-   * Beispiel: `mybrand.com/en/myPage.html` wird `mybrand.com/content/my-brand/en/myPage.html` vorgezogen.
+  * Nutzen Sie die von AEM zur Verfügung gestellten Techniken und Funktionen zum Kürzen von URLs, um unnötige URL-Elemente zu entfernen.
+  * Beispiel: `mybrand.com/en/myPage.html` wird `mybrand.com/content/my-brand/en/myPage.html` vorgezogen.
 
 * Verwenden Sie kanonische URLs.
 
-   * Wenn eine URL von unterschiedlichen Pfaden aus oder mit unterschiedlichen Parametern oder Selektoren bedient werden kann, stellen Sie sicher, dass Sie ein Tag `rel=canonical` auf der Seite verwenden.
+  * Wenn eine URL von unterschiedlichen Pfaden aus oder mit unterschiedlichen Parametern oder Selektoren bedient werden kann, stellen Sie sicher, dass Sie ein Tag `rel=canonical` auf der Seite verwenden.
 
-   * Schließen Sie kanonische URLs in den Code für die AEM-Vorlage ein.
+  * Schließen Sie kanonische URLs in den Code für die AEM-Vorlage ein.
 
 * Passen Sie URLs wann immer möglich an Seitentitel an.
 
-   * Autorinnen und Autoren von Inhalten sollten ermutigt werden, diese Vorgehensweise zu befolgen.
+  * Autorinnen und Autoren von Inhalten sollten ermutigt werden, diese Vorgehensweise zu befolgen.
 
 * Unterstützen Sie das Ignorieren von Groß- und Kleinschreibung in URL-Anfragen.
 
-   * Konfigurieren Sie den Dispatcher so, dass alle eingehenden Anfragen in Kleinbuchstaben umgeschrieben werden.
-   * Trainieren Sie Inhaltsautorinnen und -autoren dazu, alle Seiten-URLs mit Kleinbuchstaben zu erstellen.
+  * Konfigurieren Sie den Dispatcher so, dass alle eingehenden Anfragen in Kleinbuchstaben umgeschrieben werden.
+  * Trainieren Sie Inhaltsautorinnen und -autoren dazu, alle Seiten-URLs mit Kleinbuchstaben zu erstellen.
 
 * Stellen Sie sicher, dass jede Seite nur von einem Protokoll bedient wird.
 
-   * Manchmal werden Websites über `http` bedient, bis ein Benutzer eine Seite erreicht, die beispielsweise ein Checkout- oder Anmeldeformular enthält, weswegen die Seite in das `https`-Format wechselt. Wenn von dieser Seite aus verlinkt wird und die Person auf `http`-Seiten zurückkehren und auf diese über `https` zugreifen kann, verfolgt die Suchmaschine diese als zwei getrennte Seiten.
+  * Manchmal werden Websites über `http` bedient, bis ein Benutzer eine Seite erreicht, die beispielsweise ein Checkout- oder Anmeldeformular enthält, weswegen die Seite in das `https`-Format wechselt. Wenn von dieser Seite aus verlinkt wird und die Person auf `http`-Seiten zurückkehren und auf diese über `https` zugreifen kann, verfolgt die Suchmaschine diese als zwei getrennte Seiten.
 
-   * Google bevorzugt derzeit `https`-Seiten gegenüber `http`-Seiten. Aus diesem Grund ist es häufig für alle Beteiligten einfacher, die ganze Website über `https` bereitzustellen.
+  * Google bevorzugt derzeit `https`-Seiten gegenüber `http`-Seiten. Aus diesem Grund ist es häufig für alle Beteiligten einfacher, die ganze Website über `https` bereitzustellen.
 
 ### Server-Konfiguration {#server-configuration}
 
@@ -90,7 +90,7 @@ Hinsichtlich der Server-Konfiguration können Sie mit den folgenden Schritten ge
 
 * Verwenden Sie eine `robots.txt`-Datei, um Crawling von nicht indizierten Inhalten zu vermeiden.
 
-   * Blockieren Sie **jegliches** Crawling in Testumgebungen.
+  * Blockieren Sie **jegliches** Crawling in Testumgebungen.
 
 * Richten Sie beim Launch einer neuen Website mit aktualisierten URLs eine 301-Weiterleitung ein, um sicherzustellen, dass das derzeitige SEO-Ranking nicht verloren geht.
 * Fügen Sie ein Favicon für Ihre Site hinzu.
@@ -242,7 +242,7 @@ Ein Beispiel dafür, wie dieses Problem auftritt:
 
 1. Der Dispatcher speichert die Antwort unter `/my-page.html` und gibt die Antwort an den Benutzer zurück.
 1. Ein Inhaltsautor ändert diese Seite und aktiviert sie.
-1. Der Flush-Agent des Dispatchers sendet eine Anfrage zur Invalidierung von `/content/my-brand/my-page`**.** Da der Dispatcher auf diesem Pfad keine Seite in den Cache geladen hat, bleibt der alte Inhalt im Cache und ist nicht mehr aktuell.
+1. Der Dispatcher Flush-Agent sendet eine Anfrage zur Invalidierung von `/content/my-brand/my-page`**.** Da die Dispatcher auf diesem Pfad keine Seite in den Cache geladen hat, bleibt der alte Inhalt im Cache und ist nicht mehr aktuell.
 
 Es gibt Möglichkeiten, benutzerdefinierte Dispatch-Flush-Regeln zu konfigurieren, welche zur Invalidierung des Caches die kürzere URL der längeren URL zuordnen.
 
