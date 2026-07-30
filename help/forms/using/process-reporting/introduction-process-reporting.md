@@ -10,7 +10,7 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 exl-id: 755df7e2-3603-4c0d-ad07-ec6f27de8c64
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: 9559b626ab9c0a3910fddefd04b9b2744c62db72
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 96%
@@ -47,7 +47,7 @@ Process Reporting bietet außerdem die Möglichkeit, die Berichts- und Abfrageda
 
 ### Ad-hoc-Berichte {#adhoc-reports}
 
-![print-&amp;-colour](assets/print-&-colour.png)
+![print-&amp;-colour](assets/print-and-colour.png)
 
 Verwenden Sie Filter, um eine bestimmte Ansicht Ihrer Daten zu erhalten.
 
