@@ -1416,7 +1416,7 @@ ht-degree: 67%
         + [Testen von Experience Fragments in We.Retail](/help/sites-developing/we-retail-experience-fragments.md)
       + [Tipps zum Programmieren](/help/sites-developing/coding-tips.md)
       + [Fallstricke beim Programmieren](/help/sites-developing/code-pitfalls.md)
-      + [OSGi-Bundles](/help/sites-developing/osgi-bundles.md)
+      + [OSGi-Pakete](/help/sites-developing/osgi-bundles.md)
       + [JCR-Integration](/help/sites-developing/jcr-integration.md)
       + [Benutzerdefinierte Namespaces](/help/sites-developing/custom-namespaces.md)
       + [Code-Beispiele](/help/sites-developing/code-samples.md)
@@ -1480,7 +1480,7 @@ ht-degree: 67%
       + [Schritte zum Upgrade von Installationen auf Anwendungs-Servern (WLP)](/help/sites-deploying/app-server-upgrade-wlp.md)
       + [Schritte zur Aktualisierung von Anwendungsserverinstallationen (Tomcat - Sidegrade)](/help/sites-deploying/app-server-upgrade-tomcat.md)
       + [Upgrade-Schritte für Anwendungs-Server-Installationen (Tomcat - Inplace-Upgrade)](/help/sites-deploying/app-server-upgrade-tomcat-inplace.md)
-      + [Liste der nach dem Upgrade deinstallierten veralteten Bundles](/help/sites-deploying/obsolete-bundles.md)
+      + [Liste der nach dem Upgrade deinstallierten veralteten Pakete](/help/sites-deploying/obsolete-bundles.md)
     + Best Practices {#practices}
       + [Best Practices für die Bereitstellung](/help/sites-deploying/best-practices.md)
       + [Leistungsübersicht](/help/sites-deploying/performance-tree.md)

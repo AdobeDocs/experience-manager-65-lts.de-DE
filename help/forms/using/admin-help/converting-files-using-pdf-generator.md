@@ -127,7 +127,7 @@ PDF Generator unterstützt die Funktion zum Reduzieren der Größe von PDF-Datei
 
 >[!NOTE]
 >
->Durch die Optimierung eines digital signierten Dokuments werden die digitalen Signaturen entfernt und ungültig.
+>Bei der Optimierung eines digital signierten Dokuments werden die digitalen Signaturen entfernt und ungültig.
 
 1. Klicken Sie in der Administrationskonsole auf „Dienste“ > „PDF Generator“ > „PDF optimieren“.
 1. Klicken Sie auf „Durchsuchen“, um die zu optimierende PDF-Datei zu suchen.
