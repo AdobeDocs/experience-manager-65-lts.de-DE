@@ -1,25 +1,25 @@
 ---
 title: Upgrade auf AEM 6.5 Forms LTS unter OSGi
-description: Sie können direkt von AEM 6.5.22.0 Forms auf AEM 6.5 Forms LTS aktualisieren.
+description: Sie können direkt von AEM 6.5.17.0 Forms oder höher auf AEM 6.5 Forms LTS aktualisieren.
 content-type: reference
 role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: b5db6129e83dd7a54516707bbdb8864dc709d54b
+source-git-commit: 818673651f736311d400c71bfeb635b73b25a034
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1619'
 ht-degree: 44%
 
 ---
 
 # Upgrade auf AEM 6.5 Forms LTS unter OSGi {#upgrade-to-aem-forms-osgi}
 
-Um [von AEM 6.5 auf AEM 6.5 LTS](/help/sites-deploying/upgrade.md) zu aktualisieren, führen Sie ein Upgrade auf AEM 6.5.22.0 Forms oder höher durch. Ein direktes Upgrade von AEM 6.5.22.0 auf AEM 6.5 Forms LTS wird unterstützt.
+Um [von AEM 6.5 auf AEM 6.5 LTS](/help/sites-deploying/upgrade.md) zu aktualisieren, führen Sie ein Upgrade auf AEM 6.5.17.0 Forms oder höher durch. Ein direktes Upgrade von AEM 6.5.17.0 (oder höher) auf AEM 6.5 Forms LTS wird unterstützt.
 
 Wenn Sie AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms, AEM 6.3 Forms, AEM 6.4 Forms oder AEM 6.5 Forms verwenden, ist kein direktes Upgrade auf AEM 6.5 Forms LTS verfügbar. Ausführliche Informationen zu Upgrade-Pfaden finden Sie in der [Upgrade-Pfade](/help/forms/using/upgrade.md).
 
-Führen Sie nach dem Upgrade auf das Service Pack AEM Forms 6.5.22.0 die folgenden Schritte aus, um auf AEM 6.5 LTS Forms zu aktualisieren:
+Führen Sie nach dem Upgrade auf AEM Forms 6.5.17.0 oder höher die folgenden Schritte aus, um auf AEM 6.5 LTS Forms zu aktualisieren:
 
 1. Installieren des AEM Forms-Add-on-Pakets. Die Schritte sind hier aufgeführt:
 
@@ -74,8 +74,8 @@ Führen Sie nach dem Upgrade auf das Service Pack AEM Forms 6.5.22.0 die folgend
 
      In AEM 6.5 Forms wird die jQuery-Version auf 3.2.1 aktualisiert und die jQuery-UI-Version wird auf 1.12.1 aktualisiert. AEM Form verwendet JQuery im **noConflict**-Modus. Wenn Sie also eine andere jQuery-Version verwenden, werden bei der Durchführung eines Upgrades keine Probleme angezeigt. Wenn Sie jedoch auf AEM 6.5 Forms aktualisieren:
 
-      * Stellen Sie sicher, dass Ihre benutzerdefinierten Komponenten, falls vorhanden, mit unterstützten jQuery-Versionen kompatibel sind.
-      * Entfernen Sie nicht unterstützte APIs aus den benutzerdefinierten Komponenten. Siehe [Upgrade-Handbuch](https://jquery.com/upgrade-guide/3.0/) für die Liste der entfernten APIs. Beispielsweise wird die Unterstützung für die APIs load(), .unload() und .error() entfernt. Verwenden Sie die Methode .on() anstelle der oben genannten APIs. Ändern Sie beispielsweise $(&quot;img&quot;).load(fn) to $(&quot;img&quot;).on(&quot;load&quot;, fn).
+     * Stellen Sie sicher, dass Ihre benutzerdefinierten Komponenten, falls vorhanden, mit unterstützten jQuery-Versionen kompatibel sind.
+     * Entfernen Sie nicht unterstützte APIs aus den benutzerdefinierten Komponenten. Siehe [Upgrade-Handbuch](https://jquery.com/upgrade-guide/3.0/) für die Liste der entfernten APIs. Beispielsweise wird die Unterstützung für die APIs load(), .unload() und .error() entfernt. Verwenden Sie die Methode .on() anstelle der oben genannten APIs. Ändern Sie beispielsweise $(&quot;img&quot;).load(fn) to $(&quot;img&quot;).on(&quot;load&quot;, fn).
 
    * **(Nur wenn Sie von AEM 6.2 Forms oder früheren Versionen aktualisieren) Konfigurieren Sie Analysen und Berichte neu**
 
@@ -87,9 +87,9 @@ Führen Sie nach dem Upgrade auf das Service Pack AEM Forms 6.5.22.0 die folgend
    * **Überprüfen Sie die Replikation und Rückwärtsreplikation:** Veröffentlichen Sie einige migrierte Formulare, füllen Sie sie aus und senden Sie sie. Überprüfen Sie auch die gesendeten Daten.
    * **Überprüfen Sie den Zugriff auf die Administrator- und Entwicklerbenutzeroberflächen:** Melden Sie sich über ein Administratorkonto bei der AEM-Instanz an und stellen Sie sicher, dass Sie Zugriff auf die folgenden URLs haben:
 
-      * `https://'[server]:[port]'/crx/packmgr`
-      * `https://'[server]:[port]'/crx/de`
-      * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
+     * `https://'[server]:[port]'/crx/packmgr`
+     * `https://'[server]:[port]'/crx/de`
+     * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
 
    >[!NOTE]
    >
