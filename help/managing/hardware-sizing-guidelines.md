@@ -1,48 +1,48 @@
 ---
 title: Hardware-Skalierungsrichtlinien
-description: Diese Skalierungsrichtlinien bieten eine Annäherung an die Hardware-Erfordernisse, die für die Bereitstellung eines AEM-Projekts erforderlich sind.
+description: Diese Skalierungsrichtlinien bieten eine Annäherung an die Hardware-Ressourcen, die für die Bereitstellung eines AEM-Projekts erforderlich sind.
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader
 exl-id: dac9b87a-cbd2-49e3-bd4d-ebcccdec1659
 source-git-commit: a5e7c2326785d6801601eabc71647923ba854f04
 workflow-type: tm+mt
-source-wordcount: '1231'
-ht-degree: 100%
+source-wordcount: '1253'
+ht-degree: 95%
 
 ---
 
 # Hardware-Skalierungsrichtlinien{#hardware-sizing-guidelines}
 
-Diese Skalierungsrichtlinien bieten eine Annäherung an die Hardware-Erfordernisse, die für die Bereitstellung eines AEM-Projekts erforderlich sind. Die geschätzte Skalierung hängt von der Architektur des Projekts, der Komplexität der Lösung, dem erwarteten Traffic und den Projektanforderungen ab. Dieser Leitfaden hilft Ihnen, den Hardwarebedarf für eine bestimmte Lösung zu ermitteln oder eine obere und untere Schätzung für die Hardwareanforderungen zu finden.
+Diese Skalierungsrichtlinien bieten eine Annäherung an die Hardware-Ressourcen, die für die Bereitstellung eines AEM-Projekts erforderlich sind. Die geschätzte Skalierung hängt von der Architektur des Projekts, der Komplexität der Lösung, dem erwarteten Traffic und den Projektanforderungen ab. Dieser Leitfaden hilft Ihnen, den Hardwarebedarf für eine bestimmte Lösung zu ermitteln oder eine obere und untere Schätzung für die Hardwareanforderungen zu finden.
 
 Grundlegende Faktoren sind (in dieser Reihenfolge):
 
 * **Netzwerkgeschwindigkeit**
 
-   * Netzwerklatenz
-   * Verfügbare Bandbreite
+  * Netzwerklatenz
+  * Verfügbare Bandbreite
 
 * **Rechengeschwindigkeit**
 
-   * Caching-Effizienz
-   * Erwarteter Traffic
-   * Komplexität von Vorlagen, Anwendungen und Komponenten
-   * Gleichzeitig arbeitende Autorinnen und Autoren
-   * Komplexität der Authoring-Vorgangs (einfache Inhaltsbearbeitung, MSM-Rollout usw.)
+  * Caching-Effizienz
+  * Erwarteter Traffic
+  * Komplexität von Vorlagen, Anwendungen und Komponenten
+  * Gleichzeitig arbeitende Autorinnen und Autoren
+  * Komplexität der Authoring-Vorgangs (einfache Inhaltsbearbeitung, MSM-Rollout usw.)
 
 * **E/A-Performance**
 
-   * Performance und Effizienz der Datei- oder Datenbankspeicherung
+  * Performance und Effizienz der Datei- oder Datenbankspeicherung
 
 * **Festplatte**
 
-   * mindestens zwei- oder dreimal größer als die Größe des Repositorys
+  * mindestens zwei- oder dreimal größer als die Größe des Repositorys
 
 * **Arbeitsspeicher**
 
-   * Größe der Website (Anzahl der Inhaltsobjekte, Seiten und Benutzenden)
-   * Anzahl der gleichzeitig aktiven Benutzenden/Sitzungen
+  * Größe der Website (Anzahl der Inhaltsobjekte, Seiten und Benutzenden)
+  * Anzahl der gleichzeitig aktiven Benutzenden/Sitzungen
 
 ## Architektur {#architecture}
 
@@ -50,16 +50,20 @@ Ein typisches AEM-Setup besteht aus einer Autoren- und einer Veröffentlichungsu
 
 In einem typischen Projekt-Setup stehen Ihnen mehrere Umgebungen zur Verfügung, in denen Sie Projektphasen inszenieren können:
 
-* **Entwicklungsumgebung** Um neue Funktionen zu entwickeln oder wesentliche Änderungen vorzunehmen. Am besten arbeitet man mit einer Entwicklungsumgebung pro entwickelnder Person (lokale Installationen auf den jeweiligen persönlichen Systemen).
+* **Entwicklungsumgebung**
+Neue Funktionen entwickeln oder wesentliche Änderungen vornehmen. Am besten arbeitet man mit einer Entwicklungsumgebung pro entwickelnder Person (lokale Installationen auf den jeweiligen persönlichen Systemen).
 
 * **Autoren-Testumgebung**
-Um Änderungen zu verifizieren. Die Anzahl der Testumgebungen kann je nach Projektanforderungen variieren (z. B. getrennt für QA, Integrationstests oder Benutzerakzeptanztests).
+Um Änderungen zu überprüfen. Die Anzahl der Testumgebungen kann je nach Projektanforderungen variieren (z. B. getrennt für QA, Integrationstests oder Benutzerakzeptanztests).
 
-* **Veröffentlichungs-Testumgebung** Hauptsächlich zum Testen von Anwendungsfällen der Zusammenarbeit in sozialen Netzwerken und/oder der Interaktion zwischen Autor und mehreren Veröffentlichungsinstanzen.
+* **Testumgebung veröffentlichen**
+Hauptsächlich zum Testen von Anwendungsfällen der Zusammenarbeit in sozialen Netzwerken und/oder der Interaktion zwischen Autor und mehreren Veröffentlichungsinstanzen.
 
-* **Autoren-Produktionsumgebung** Für Autoren zum Bearbeiten von Inhalten
+* **Autoren-Produktionsumgebung**
+Für Autoren zum Bearbeiten von Inhalten
 
-* **Veröffentlichungs-Produktionsumgebung** Um veröffentlichte Inhalte bereitzustellen.
+* **Produktionsumgebung veröffentlichen**
+So stellen Sie veröffentlichte Inhalte bereit.
 
 Die Umgebungen können zudem variieren, von einem Single-Server-System mit AEM und einem Anwendungs-Server bis hin zu einem hochskalierten Satz von Multi-Server- und Multi-CPU-Clustern. Adobe empfiehlt, je einen separaten Computer für ein Produktionssystem zu verwenden und auf diesen Rechnern keine anderen Anwendungen auszuführen.
 

@@ -11,7 +11,7 @@ role: Admin
 exl-id: 4f830ee9-e0e3-48df-b67d-709258cb1991
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '387'
 ht-degree: 100%
 
 ---
@@ -84,7 +84,7 @@ Best Practices bezüglich der Leistung sind hier aufgeführt:
    <td>Ein einheitlicher Überblick über die Probleme bei der Definition eines Testkonzepts speziell für Leistungstests in der <em>Veröffentlichungsumgebung</em>. Dies ist vor allem für QS-Beauftragte, Projektleitende und Systemadmins von Interesse.</td>
   </tr>
   <tr>
-   <td>Verwenden des Dispatchers mit einem CDN </td>
+   <td>Verwenden des Dispatchers mit einem CDN</td>
    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de#using-dispatcher-with-a-cdn">Verwenden des Dispatchers mit einem CDN</a></td>
    <td>Ein CDN (Content Delivery Network) wie Akamai Edge Delivery oder Amazon Cloud Front stellt Inhalte von einem Speicherort in der Nähe des Endbenutzers bereit.</td>
   </tr>
@@ -96,7 +96,7 @@ Best Practices bezüglich der Leistung sind hier aufgeführt:
   <tr>
    <td>Leistungstests</td>
    <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">Best Practices für Leistungstests</a></td>
-   <td>Beschreibt Best Practices für die Durchführung von Leistungstests bei der AEM-Bereitstellung<br />  </td>
+   <td>Beschreibt Best Practices für die Durchführung von Leistungstests bei der AEM-Bereitstellung<br /> </td>
   </tr>
  </tbody>
 </table>

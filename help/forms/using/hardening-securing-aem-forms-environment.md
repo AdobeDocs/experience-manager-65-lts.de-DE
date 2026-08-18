@@ -8,8 +8,8 @@ feature: Document Security,Adaptive Forms
 exl-id: 0225063b-9a57-4b3f-8216-295b1f2d4db5
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 100%
+source-wordcount: '1470'
+ht-degree: 99%
 
 ---
 
@@ -123,9 +123,9 @@ Sie können die interne Firewall konfigurieren, um bestimmten Komponenten von AE
 
 Standardmäßig sind Assets auf den Veröffentlichungsknoten für alle Benutzenden zugänglich. Der Lesezugriff ist für alle Assets aktiviert. Dies ist erforderlich, um anonymen Zugriff zuzulassen. Wenn Sie die Formularansicht einschränken und nur authentifizierten Personen Zugriff gewähren möchten, verwenden Sie eine gemeinsame Gruppe, um nur authentifizierten Personen schreibgeschützten Zugriff auf die auf den Veröffentlichungsknoten verfügbaren Assets zu gewähren. Die folgenden Speicherorte/Verzeichnisse enthalten Formular-Assets, die durch Beschränken des Lesezugriffs auf authentifizierte Personen abgesichert („gehärtet“) werden müssen:
 
-* /content/&amp;ast;
-* /etc.clientlibs/fd/&amp;ast;
-* /libs/fd/&amp;ast;
+* /content/*;
+* /etc.clientlibs/fd/&ast;
+* /libs/fd/&amp;ast
 
 ## Sichere Verarbeitung von Formulardaten  {#securely-handle-forms-data}
 
@@ -168,18 +168,18 @@ Für Autoren-, Veröffentlichungs- und Verarbeitungsinstanzen sind unterschiedli
 
 * Für jede Rolle steht jeweils eine Reihe vordefinierter Gruppen mit spezifischen Berechtigungen zur Verfügung. Benutzer zu Gruppe zuordnen.
 
-   * Benutzende der Gruppe „forms-user“:
+  * Benutzende der Gruppe „forms-user“:
 
-      * können ein Formular erstellen, ausfüllen, veröffentlichen und absenden
-      * können kein XDP-basiertes adaptives Formular erstellen
-      * sind nicht berechtigt, Skripte für adaptive Formulare zu schreiben
-      * können weder XDP importieren noch Pakete, die XDP enthalten
+    * können ein Formular erstellen, ausfüllen, veröffentlichen und absenden
+    * können kein XDP-basiertes adaptives Formular erstellen
+    * sind nicht berechtigt, Skripte für adaptive Formulare zu schreiben
+    * können weder XDP importieren noch Pakete, die XDP enthalten
 
-   * Benutzer der Gruppe „forms-power-user“ können alle Typen von Formularen erstellen, ausfüllen, veröffentlichen und senden, Skripte für adaptive Formulare schreiben und Pakete importieren, die XDP enthalten.
-   * Benutzende der Gruppen „template-authors“ und „template-power-user“ können Vorlagen in der Vorschau anzeigen und erstellen.
-   * Benutzende der Gruppe „fdm-authors“ können Formulardatenmodelle erstellen und ändern.
-   * Benutzende der Gruppe „cm-user-agent“ können Korrespondenzverwaltungs-Briefe erstellen, in der Vorschau anzeigen und veröffentlichen.
-   * Benutzende der Gruppe „workflow-editors“ können Posteingang-Anwendungen und Workflow-Modelle erstellen.
+  * Benutzer der Gruppe „forms-power-user“ können alle Typen von Formularen erstellen, ausfüllen, veröffentlichen und senden, Skripte für adaptive Formulare schreiben und Pakete importieren, die XDP enthalten.
+  * Benutzende der Gruppen „template-authors“ und „template-power-user“ können Vorlagen in der Vorschau anzeigen und erstellen.
+  * Benutzende der Gruppe „fdm-authors“ können Formulardatenmodelle erstellen und ändern.
+  * Benutzende der Gruppe „cm-user-agent“ können Korrespondenzverwaltungs-Briefe erstellen, in der Vorschau anzeigen und veröffentlichen.
+  * Benutzende der Gruppe „workflow-editors“ können Posteingang-Anwendungen und Workflow-Modelle erstellen.
 
 **Beim Verarbeiten des Authorings:**
 

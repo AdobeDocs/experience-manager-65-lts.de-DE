@@ -1,6 +1,6 @@
 ---
 title: Query Builder-API
-description: Die Funktionalität der Query Builder-Komponente für die Asset-Freigabe wird über eine Java™-API und eine REST-API verfügbar gemacht.
+description: Die Funktionalität des Query Builders für die Asset-Freigabe wird über eine Java&trade;-API und eine REST-API verfügbar gemacht.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -13,8 +13,8 @@ role: Developer
 exl-id: a87c571e-7afb-42e7-836c-170dcfb0d03b
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2032'
-ht-degree: 99%
+source-wordcount: '2350'
+ht-degree: 88%
 
 ---
 
@@ -32,7 +32,7 @@ Die REST-API bietet Zugriff auf dieselben Funktionen über HTTP, wobei Antworten
 
 >[!NOTE]
 >
->Die Query Builder-API wird mithilfe der JCR-API erstellt. Sie können JCR in Adobe Experience Manager auch abfragen, indem Sie die JCR-API innerhalb eines OSGi-Bundles verwenden. Weitere Informationen erhalten Sie unter [Adobe Experience Manager mit der JCR-API](/help/sites-developing/access-jcr.md).
+>Die Query Builder-API wird mithilfe der JCR-API erstellt. Sie können JCR in Adobe Experience Manager auch abfragen, indem Sie die JCR-API innerhalb eines OSGi-Pakets verwenden. Weitere Informationen erhalten Sie unter [Adobe Experience Manager mit der JCR-API](/help/sites-developing/access-jcr.md).
 
 ## Gem-Sitzung {#gem-session}
 
@@ -141,8 +141,8 @@ Beispielsweise kann für die Benutzeroberfläche der folgende Ansatz genutzt wer
 
 * Die Antwort kann das folgende Ergebnis enthalten:
 
-   * `total=43`, `more=false` – gibt an, dass die Gesamtzahl der Treffer 43 beträgt. Auf der Benutzeroberfläche können auf der ersten Seite bis zu zehn Ergebnisse angezeigt werden und für die nächsten drei Seiten können Seitenumbrüche genutzt werden. Sie können diese Implementierung auch verwenden, um einen beschreibenden Text wie **„43 Ergebnisse gefunden“** anzuzeigen.
-   * `total=100`, `more=true` – gibt an, dass die Gesamtzahl der Treffer größer als 100 und die genaue Anzahl unbekannt ist. Auf der Benutzeroberfläche können auf der ersten Seite bis zu zehn Ergebnisse angezeigt werden und für die nächsten zehn Seiten können Seitenumbrüche genutzt werden. Sie können dies auch verwenden, um einen Text wie **„mehr als 100 Ergebnisse gefunden“** anzuzeigen. Wenn der Anwender auf die nächsten Seiten zugreift, würden Query Builder-Aufrufe dazu führen, dass sich die Beschränkung von `guessTotal` und auch die Parameter `offset` und `limit` erhöhen.
+  * `total=43`, `more=false` – gibt an, dass die Gesamtzahl der Treffer 43 beträgt. Auf der Benutzeroberfläche können auf der ersten Seite bis zu zehn Ergebnisse angezeigt werden und für die nächsten drei Seiten können Seitenumbrüche genutzt werden. Sie können diese Implementierung auch verwenden, um einen beschreibenden Text wie **„43 Ergebnisse gefunden“** anzuzeigen.
+  * `total=100`, `more=true` – gibt an, dass die Gesamtzahl der Treffer größer als 100 und die genaue Anzahl unbekannt ist. Auf der Benutzeroberfläche können auf der ersten Seite bis zu zehn Ergebnisse angezeigt werden und für die nächsten zehn Seiten können Seitenumbrüche genutzt werden. Sie können dies auch verwenden, um einen Text wie **„mehr als 100 Ergebnisse gefunden“** anzuzeigen. Wenn der Anwender auf die nächsten Seiten zugreift, würden Query Builder-Aufrufe dazu führen, dass sich die Beschränkung von `guessTotal` und auch die Parameter `offset` und `limit` erhöhen.
 
 `guessTotal` sollte in Fällen verwendet werden, in denen die Benutzeroberfläche das unendliche Scrollen nutzen muss, um zu vermeiden, dass der Query Builder die genaue Trefferanzahl ermittelt.
 
@@ -424,7 +424,7 @@ Für Haupteigenschaften dieser Art können Sie die Abfrage verkürzen und anstel
 
 >[!NOTE]
 >
->Weitere Informationen zur Erstellung eines OSGi-Bundles mit Nutzung der QueryBuilder-API und Verwendung dieses OSGi-Bundles in einer Adobe Experience Manager-Anwendung finden Sie unter [Erstellen von Adobe CQ-OSGi-Bundles mit Nutzung der Query-Builder-AP](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)I).
+>Weitere Informationen zur Erstellung eines OSGi-Pakete mit Nutzung der QueryBuilder-API und Verwendung dieses OSGi-Pakete in einer Adobe Experience Manager-Anwendung finden Sie unter [Erstellen von Adobe CQ-OSGi-Paketen mit Nutzung der Query-Builder-AP](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)I).
 
 Ausführung der gleichen Abfrage per HTTP mit dem Query Builder-Servlet (JSON):
 
@@ -476,12 +476,12 @@ Erklären Sie **alle** Abfragen während des Entwicklungszyklus anhand des Zieli
 
 * Aktivieren Sie DEBUG-Protokolle für Query Builder, um eine zugrunde liegende, erklärbare XPath-Abfrage zu erhalten.
 
-   * Navigieren Sie zu https://&lt;Server-Adresse>:&lt;Serverport>/system/console/slinglog. Erstellen Sie einen neuen Logger für `com.day.cq.search.impl.builder.QueryImpl` unter **DEBUG**.
+  * Navigieren Sie zu https://&lt;Server-Adresse>:&lt;Serverport>/system/console/slinglog. Erstellen Sie einen neuen Logger für `com.day.cq.search.impl.builder.QueryImpl` unter **DEBUG**.
 
 * Nachdem DEBUG für die obige Klasse aktiviert wurde, zeigen die Protokolle den von Query Builder generierten XPath an.
 * Kopieren Sie die XPath-Abfrage aus dem Protokolleintrag für die zugeordnete QueryBuilder-Abfrage. Zum Beispiel:
 
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
+  * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
 * Fügen Sie die XPath-Abfrage unter [Abfrage erläutern](/help/sites-administering/operations-dashboard.md#explain-query) als XPath ein, um den Abfrageplan abzurufen.
 
@@ -495,12 +495,12 @@ Erklären Sie **alle** Abfragen während des Entwicklungszyklus anhand des Zieli
 
 * Aktivieren Sie DEBUG-Protokolle für Query Builder, um eine zugrunde liegende, erklärbare XPath-Abfrage zu erhalten.
 
-   * Navigieren Sie zu https://&lt;Server-Adresse>:&lt;Serverport>/system/console/slinglog. Erstellen Sie einen neuen Logger für `com.day.cq.search.impl.builder.QueryImpl` unter **DEBUG**.
+  * Navigieren Sie zu https://&lt;Server-Adresse>:&lt;Serverport>/system/console/slinglog. Erstellen Sie einen neuen Logger für `com.day.cq.search.impl.builder.QueryImpl` unter **DEBUG**.
 
 * Nachdem DEBUG für die obige Klasse aktiviert wurde, zeigen die Protokolle den von Query Builder generierten XPath an.
 * Kopieren Sie die XPath-Abfrage aus dem Protokolleintrag für die zugeordnete QueryBuilder-Abfrage. Zum Beispiel:
 
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
+  * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
 * Fügen Sie die XPath-Abfrage unter [Abfrage erläutern](/help/sites-administering/operations-dashboard.md#explain-query) als XPath ein, um den Abfrageplan abzurufen.
 

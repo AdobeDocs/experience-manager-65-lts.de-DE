@@ -11,7 +11,7 @@ role: Developer
 exl-id: 6c0cddc8-44b0-4e75-939f-2a1f735508fc
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '621'
 ht-degree: 100%
 
 ---
@@ -63,7 +63,7 @@ Code-Analysewerkzeuge haben nur dann einen Wert, wenn ihre Berichte vom Entwickl
 
 ### Der Pfadfinderregel folgen {#follow-the-boy-scout-rule}
 
-Pfadfinder haben eine Regel: „Hinterlass es besser, als du es vorgefunden hast.“ Sofern sich alle Mitglieder des Entwicklungs-Teams an diese Regel halten und eine Verbesserung vornehmen, wenn sie einen Fehler sehen, wird der Code konstant verbessert. 
+Pfadfinder haben eine Regel: „Hinterlass es besser, als du es vorgefunden hast.“ Sofern sich alle Mitglieder des Entwicklungs-Teams an diese Regel halten und eine Verbesserung vornehmen, wenn sie einen Fehler sehen, wird der Code konstant verbessert.
 
 ### Implementierung von YAGNI-Funktionen vermeiden {#avoid-implementing-yagni-features}
 
