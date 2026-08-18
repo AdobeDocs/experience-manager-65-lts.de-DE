@@ -12,8 +12,8 @@ role: Admin
 exl-id: 9baa4111-831a-4b68-9ce5-82aeeb06e07f
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 99%
+source-wordcount: '1531'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 99%
 >
 >Diese Seite beschreibt empfohlene Topologien für AEM. Weitere Informationen zu Clustering-Funktionen und zum Konfigurieren derselben finden Sie in der [Apache Sling-Dokumentation zur Discovery-API](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) (in englischer Sprache).
 
-Ab AEM 6.2 fungieren Mikrokernel als Persistenz-Manager. Die Auswahl des geeigneten Mikrokernels für Ihre Anforderungen hängt vom Zweck der Instanz und von dem von Ihnen in Betracht gezogenen Bereitstellungstyp ab.
+Mikrokernels fungieren ab AEM 6.2 als Persistenzmanager. Die Auswahl einer geeigneten Komponente hängt vom Zweck Ihrer Instanz und dem Bereitstellungstyp ab, den Sie in Betracht ziehen.
 
 Die nachfolgenden Beispiele sollen ihre empfohlene Verwendung in den gängigsten AEM-Konfigurationen veranschaulichen.
 
@@ -147,13 +147,13 @@ Es ist quasi unmöglich, vorherzusagen, wie das genau Parallelitätsmodell nach 
 
 1. Anzahl der benannten, verbundenen Benutzer an einem Tag: Tausende oder mehr.
 1. Anzahl der gleichzeitigen Benutzer: Hunderte oder mehr.
-1. Volumen der erfassten Assets pro Tag: Hunderttausende oder mehr.
-1. Volumen der Seitenbearbeitungen pro Tag: Hunderttausende oder mehr (einschließlich automatisierte Aktualisierungen, z. B. über Multi-Site-Manager oder Newsfeed-Erfassungen)
+1. Volumen der aufgenommenen Assets pro Tag: Hunderttausende oder mehr.
+1. Volumen der Seitenbearbeitungen pro Tag: Hunderttausende oder mehr (einschließlich automatisierte Aktualisierungen, z. B. über Multi-Site Manager oder Newsfeed-Aufnahme)
 1. Volumen der Suchvorgänge pro Tag: Zehntausende oder mehr.
 
 >[!NOTE]
 >
->Mithilfe von [Tough Day](/help/sites-developing/tough-day.md) kann die Leistung der Kundenanwendung im Kontext der bereitgestellten Hardware-Konfiguration bewertet werden. 
+>Mithilfe von [Tough Day](/help/sites-developing/tough-day.md) kann die Leistung der Kundenanwendung im Kontext der bereitgestellten Hardware-Konfiguration bewertet werden.
 
 Eine Mindestbereitstellung mit MongoDB umfasst normalerweise die folgende Topologie:
 
@@ -168,7 +168,7 @@ Wenn erwartet wird, dass die oben genannten Kriterien innerhalb der ersten 18 Mo
 
 ### Ausnahmen für die Auswahl von AEM MongoMK gegenüber TarMK bei Veröffentlichungsinstanzen {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-publish-instances}
 
-Die Bereitstellung von MongoMK für Veröffentlichungsinstanzen wird nicht empfohlen. Die Veröffentlichungsschicht der Bereitstellung wird fast immer als Farm mit unabhängigen Veröffentlichungsinstanzen bereitgestellt, auf denen TarMK ausgeführt wird und die durch das Replizieren von Inhalten von den Autoreninstanzen synchronisiert werden. Diese für Veröffentlichnungsinstanzen geeignete Shared-Nothing-Architektur ermöglicht die horizontale, lineare Skalierung der bereitgestellten Veröffentlichungsschicht. Die Farm-Topologie bietet außerdem den Vorteil, dass Aktualisierungen oder Upgrades fortlaufend auf Veröffentlichungsinstanzen angewendet werden können, sodass bei Änderungen an der Veröffentlichungsebene keine Ausfallzeiten erforderlich sind.
+Die Bereitstellung von MongoMK für Veröffentlichungsinstanzen wird nicht empfohlen. Die Veröffentlichungsschicht der Bereitstellung wird fast immer als Farm mit unabhängigen Veröffentlichungsinstanzen bereitgestellt, auf denen TarMK ausgeführt wird und die durch das Replizieren von Inhalten von den Autoreninstanzen synchronisiert werden. Diese für Veröffentlichungsinstanzen geeignete Shared-Nothing-Architektur ermöglicht die horizontale, lineare Skalierung der bereitgestellten Veröffentlichungsschicht. Die Farm-Topologie bietet außerdem den Vorteil, dass Aktualisierungen oder Upgrades fortlaufend auf Veröffentlichungsinstanzen angewendet werden können, sodass bei Änderungen an der Veröffentlichungsebene keine Ausfallzeiten erforderlich sind.
 
 ### Voraussetzungen und Empfehlungen für die Bereitstellung von AEM mit MongoMK {#prerequisites-and-recommendations-when-deploying-aem-with-mongomk}
 
@@ -190,4 +190,4 @@ Falls Sie eine MongoMK-Bereitstellung für AEM in Betracht ziehen, liegt eine Re
 
 >[!NOTE]
 >
->Bei allen weiteren Fragen zu diesen Richtlinien, Voraussetzungen und Empfehlungen wenden Sie sich bitte an die [&#x200B; Adobe-Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
+>Bei allen weiteren Fragen zu diesen Richtlinien, Voraussetzungen und Empfehlungen wenden Sie sich bitte an die [ Adobe-Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).

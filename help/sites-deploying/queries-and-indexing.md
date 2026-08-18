@@ -12,7 +12,7 @@ role: Admin
 exl-id: 432fc767-a6b8-48f8-b124-b13baca51fe8
 source-git-commit: 7584fa1c544f9dd499b4007a9158e25b783f620c
 workflow-type: tm+mt
-source-wordcount: '2587'
+source-wordcount: '2613'
 ht-degree: 94%
 
 ---
@@ -50,7 +50,7 @@ Ein Indexer ist der **Eigenschaftenindex**, für den die Indexdefinition im Repo
 
 Die Implementierung für **Apache Lucene** ist standardmäßig verfügbar und unterstützt die Volltextindizierung.
 
-Der **Traversalindex** wird verwendet, wenn kein anderer Indexer verfügbar ist. Das bedeutet, dass der Inhalt nicht indiziert ist und Inhaltsknoten durchlaufen werden, um Übereinstimmungen mit der Abfrage zu finden.
+Der **Durchlaufindex** wird verwendet, wenn kein anderer Indexer verfügbar ist. Das bedeutet, dass der Inhalt nicht indiziert ist und Inhaltsknoten durchlaufen werden, um Übereinstimmungen mit der Abfrage zu finden.
 
 Wenn für eine Abfrage mehrere Indexer verfügbar sind, schätzt jeder verfügbare Indexer die Kosten für die Ausführung der Abfrage. Oak wählt dann den Indexer mit den niedrigsten geschätzten Kosten aus.
 
@@ -72,7 +72,7 @@ Wenn große Repositorys neu indiziert werden müssen, insbesondere wenn MongoDB 
 
 Indizes werden als Knoten im Repository unter dem Knoten **Oak:index** konfiguriert.
 
-Der Typ des Indexknotens muss &quot;**&quot; :QueryIndexDefinition.** Für jeden Indexer sind mehrere Konfigurationsoptionen als Knoteneigenschaften verfügbar. Weitere Informationen finden Sie unten in den Konfigurationsdetails für jeden Indexertyp.
+Der Typ des Indexknotens muss **oak:QueryIndexDefinition.** Für jeden Indexer stehen als Knoteneigenschaften mehrere Konfigurationsoptionen zur Verfügung. Weitere Informationen finden Sie unten in den Konfigurationsdetails für jeden Indexertyp.
 
 ### Der Eigenschaftenindex {#the-property-index}
 
@@ -136,7 +136,7 @@ Der Lucene-Index verfügt über die folgenden Konfigurationsoptionen:
 
 ### Grundlegendes zur Volltextsuche {#understanding-fulltext-search}
 
-Die Dokumentation in diesem Abschnitt gilt beispielsweise für Apache Lucene, ElasticSearch und Volltextindizes von PostgreSQL, SQLite und MySQL.  Das folgende Beispiel gilt für AEM/Oak/Lucene.
+Die Dokumentation in diesem Abschnitt gilt beispielsweise für Apache Lucene, ElasticSearch und Volltextindizes von PostgreSQL, SQLite und MySQL. Das folgende Beispiel gilt für AEM/Oak/Lucene.
 
 <b>Zu indizierende Daten</b>
 
@@ -222,7 +222,7 @@ Seit **Oak 1.0.8** kann Lucene zum Erstellen von Indizes verwendet werden, die 
 
 Für einen Lucene-Eigenschaftenindex muss die Eigenschaft **fulltextEnabled** immer auf „false“ gesetzt sein.
 
-Sehen wir uns folgende Beispielabfrage an: 
+Sehen wir uns folgende Beispielabfrage an:
 
 ```xml
 select * from [nt:base] where [alias] = '/admin'
@@ -310,45 +310,45 @@ Wenn Sie einen vordefinierten Analyzer verwenden möchten, können Sie ihn wie f
 
 #### Erstellen von Analyzern durch Komposition {#creating-analyzers-via-composition}
 
-Analyzer können auch anhand der Eigenschaften `Tokenizers`, `TokenFilters` und `CharFilters` zusammengestellt werden. Hierzu können Sie einen Analyzer angeben und untergeordnete Knoten der optionalen Tokenizer und Filter erstellen, die in der angegebenen Reihenfolge angewendet werden.
+Analyzer können auch anhand der Eigenschaften `Tokenizers`, `TokenFilters` und `CharFilters` zusammengestellt werden. Geben Sie dazu einen Analyzer an und erstellen Sie untergeordnete Knoten der optionalen Tokenizer und Filter, die in der aufgeführten Reihenfolge angewendet werden.
 
 Sehen Sie sich diese Knotenstruktur als Beispiel an:
 
 * **Name:** `analyzers`
 
-   * **Name:** `default`
+  * **Name:** `default`
 
-      * **Name:** `charFilters`
-      * **Typ:** `nt:unstructured`
+    * **Name:** `charFilters`
+    * **Typ:** `nt:unstructured`
 
-         * **Name:** `HTMLStrip`
-         * **Name:** `Mapping`
+      * **Name:** `HTMLStrip`
+      * **Name:** `Mapping`
 
-      * **Name:** `tokenizer`
+    * **Name:** `tokenizer`
 
-         * **Eigenschaftsname:** `name`
+      * **Eigenschaftsname:** `name`
 
-            * **Typ:** `String`
-            * **Wert:** `Standard`
+        * **Typ:** `String`
+        * **Wert:** `Standard`
 
-      * **Name:** `filters`
-      * **Typ:** `nt:unstructured`
+    * **Name:** `filters`
+    * **Typ:** `nt:unstructured`
 
-         * **Name:** `LowerCase`
-         * **Name:** `Stop`
+      * **Name:** `LowerCase`
+      * **Name:** `Stop`
 
-            * **Eigenschaftsname:** `words`
+        * **Eigenschaftsname:** `words`
 
-               * **Typ:** `String`
-               * **Wert:** `stop1.txt, stop2.txt`
+          * **Typ:** `String`
+          * **Wert:** `stop1.txt, stop2.txt`
 
-            * **Name:** `stop1.txt`
+        * **Name:** `stop1.txt`
 
-               * **Typ:** `nt:file`
+          * **Typ:** `nt:file`
 
-            * **Name:** `stop2.txt`
+        * **Name:** `stop2.txt`
 
-               * **Typ:** `nt:file`
+          * **Typ:** `nt:file`
 
 Der Name der Filter, charFilters und Tokenizer wird gebildet, indem die Factory-Suffixe entfernt werden. Ergebnis:
 
@@ -395,7 +395,7 @@ Wenn dies aus irgendeinem Grund nicht möglich ist, können Sie die Indizierungs
 
 #### Aktivieren der Protokollierung {#enable-logging}
 
-Zum Aktivieren der Protokollierung müssen Sie die **DEBUG**-Protokollebene für die Kategorien aktivieren, die sich auf Oak-Indizierung und -Abfragen beziehen. Diese Kategorien sind: 
+Zum Aktivieren der Protokollierung müssen Sie die **DEBUG**-Protokollebene für die Kategorien aktivieren, die sich auf Oak-Indizierung und -Abfragen beziehen. Diese Kategorien sind:
 
 * org.apache.jackrabbit.oak.plugins.index
 * org.apache.jackrabbit.oak.query
@@ -411,7 +411,7 @@ Sie können die Protokollierung aktivieren, indem Sie folgende Schritte ausführ
 
 1. Lassen Sie Ihren Browser auf `https://serveraddress:port/system/console/slinglog` verweisen.
 1. Klicken Sie auf die Schaltfläche **Neue Protokollierung hinzufügen** unten in der Konsole.
-1. Fügen Sie die oben genannten Kategorien in der neu erstellten Reihe hinzu. Verwenden Sie das **+**-Symbol, um einer Protokollierung mehr als eine Kategorie hinzuzufügen. 
+1. Fügen Sie die oben genannten Kategorien in der neu erstellten Reihe hinzu. Verwenden Sie das **+**-Symbol, um einer Protokollierung mehr als eine Kategorie hinzuzufügen.
 1. Wählen Sie **DEBUG** aus der Dropdown-Liste **Protokollebene** aus.
 1. Geben Sie als Ausgabedatei `logs/queryDebug.log` an. Dadurch werden alle DEBUG-Ereignisse in einer Protokolldatei zusammengefasst.
 1. Führen Sie die Abfrage aus oder geben Sie die Seite aus, auf der die Abfrage verwendet wird, die Sie debuggen möchten.
@@ -421,7 +421,7 @@ Sie können die Protokollierung aktivieren, indem Sie folgende Schritte ausführ
 
 Die Art und Weise, wie die Abfrage ausgewertet wird, wird stark durch die Indexkonfiguration beeinflusst. Es ist wichtig, die Indexkonfiguration analysieren zu lassen oder an den Support zu senden. Sie können die Konfiguration entweder als Inhaltspaket abrufen oder eine JSON-Ausgabedarstellung abrufen.
 
-Die Indexkonfiguration wird normalerweise unter dem Knoten `/oak:index` in CRXDE gespeichert. Sie können die JSON-Version unter folgender Adresse abrufen:
+Die Indizierungskonfiguration wird normalerweise unter dem Knoten `/oak:index` in CRXDE gespeichert. Sie können die JSON-Version unter folgender Adresse abrufen:
 
 `https://serveraddress:port/oak:index.tidy.-1.json`
 
@@ -456,5 +456,5 @@ Sie können die konsolidierte JMX-Ausgabe auch über `https://serveraddress:port
 
 Sie können weitere Details sammeln, um das Problem zu beheben, z. B.:
 
-1. Die Oak-Version, auf der Ihre Instanz ausgeführt wird. Öffnen Sie dazu CRXDE. Die Version wird unten rechts auf der Begrüßungsseite anzeigt. Sie können die Version auch im `org.apache.jackrabbit.oak-core`-Bundle überprüfen.
+1. Die Oak-Version, auf der Ihre Instanz ausgeführt wird. Öffnen Sie dazu CRXDE. Die Version wird unten rechts auf der Begrüßungsseite anzeigt. Sie können die Version auch im `org.apache.jackrabbit.oak-core`-Paket überprüfen.
 1. Die Ausgabe des QueryBuilder-Debugger zu der problematischen Abfrage. Der Debugger kann unter `https://serveraddress:port/libs/cq/search/content/querydebug.html` aufgerufen werden.

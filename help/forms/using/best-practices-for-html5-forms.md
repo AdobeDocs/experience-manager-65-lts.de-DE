@@ -7,8 +7,8 @@ role: Admin, User, Developer
 exl-id: 7f66832f-c9d1-43e1-b3a4-a25ea9a8a224
 source-git-commit: 7a52531c6c9c1c81ab563fd85f67ba4b7f81d318
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 100%
+source-wordcount: '1440'
+ht-degree: 97%
 
 ---
 
@@ -24,12 +24,12 @@ Obwohl die Empfehlungen, die in diesem Artikel diskutiert werden, auf HTML5-Form
 
 ## Knoten sind die Währung der HTML5-Formulare, also nutzen Sie diese sinnvoll. {#nodes-are-currency-of-html-forms-spend-them-wisely}
 
-Im Allgemeinen hat ein XFA-Formular mehrere Elemente.  Beispiel: Tabelle, Text und Bilder.  Jedes Element hat mehrere Eigenschaften, um das Verhalten und das Erscheinungsbild des Elements zu steuern. Wenn ein XFA-Formular im HTML5-Format gerendert wird, werden alle XFA-Elemente und die entsprechenden Eigenschaften in Modell- oder HTML DOM-Knoten konvertiert. Diese Knoten erhöhen die Größe und Komplexität eines DOM. Sie machen das HTML5-Formular für das Rendern langsamer.
+Im Allgemeinen hat ein XFA-Formular mehrere Elemente. Beispiel: Tabelle, Text und Bilder. Jedes Element hat mehrere Eigenschaften, um das Verhalten und das Erscheinungsbild des Elements zu steuern. Wenn ein XFA-Formular im HTML5-Format gerendert wird, werden alle XFA-Elemente und die entsprechenden Eigenschaften in Modell- oder HTML DOM-Knoten konvertiert. Diese Knoten erhöhen die Größe und Komplexität eines DOM. Sie machen das HTML5-Formular für das Rendern langsamer.
 
 Es ist einfacher für Browser, ein schlankeres DOM wiederzugeben. Sie können die folgenden Optimierungen auf einem XFA-Formular durchführen, um die Anzahl der Knoten zu reduzieren. Sie sollten daher eine schlanke DOM-Struktur erstellen:
 
 * Mit der Titel-Eigenschaft können Sie einem Feld eine Bezeichnung hinzuzufügen. Verwenden Sie kein separates Textelement, um eine Bezeichnung hinzuzufügen. Es trägt dazu bei, zusätzliche Gewichtung loszuwerden, was zur Leistungssteigerung führt. Es werden außerdem Layout-Probleme vermieden.
-* Halten Sie die Anzahl von Zeichen-Textelementen in einem Formular auf einem absoluten Minimum.  Zeichenelemente sind hilfreich beim Verbessern der Lesbarkeit und des Erscheinungsbilds, haben aber keine Möglichkeit, Informationen zu speichern. Es wird empfohlen, mehrere Zeichen-Textelemente in ein einzelnes Zeichen-Textelement zusammenzuführen. Nutzen Sie alle Möglichkeiten, um ein Formular schlanker zu machen.
+* Halten Sie die Anzahl von Zeichen-Textelementen in einem Formular auf einem absoluten Minimum. Zeichenelemente sind hilfreich beim Verbessern der Lesbarkeit und des Erscheinungsbilds, haben aber keine Möglichkeit, Informationen zu speichern. Es wird empfohlen, mehrere Zeichen-Textelemente in ein einzelnes Zeichen-Textelement zusammenzuführen. Nutzen Sie alle Möglichkeiten, um ein Formular schlanker zu machen.
 
 ## Lite-Formulare funktionieren besser und komprimieren die Ressourcen {#lite-forms-perform-better-keep-the-resources-compressed}
 
@@ -53,10 +53,10 @@ Ein HTML5-Formular kann Hunderte von Seiten umfassen. Ein Formular mit vielen Fe
 
 HTML5-Formulare können datengesteuerte Felder (Tabellen und Teilformulare) enthalten. Diese Felder erhöhen die Größe des Formulars zur Laufzeit. Eine datengesteuerte Tabelle in einem HTML5-Formular kann beispielsweise Tausende von Zeilen umfassen. Solche Tabellen können das Layout und die Leistung beeinträchtigen. Die unten vorgeschlagenen Optimierungen können Ihnen dabei helfen, die Ladezeit von HTML5-Formularen mit datengesteuerten Feldern zu reduzieren:
 
-* Nutzen Sie XFA-Scripting, um eine ausgelagerte Navigation zu ermöglichen und datengesteuerte Felder (Tabellen und Teilformulare) anzuzeigen. Bei der ausgelagerten Navigation werden nur bestimmte Daten auf einer Seite angezeigt. Dadurch wird der Vorgang des Zeichnens im Browser auf die jeweils angezeigten Felder beschränkt und die Navigation in einem Formular erleichtert. Außerdem sind die Benutzer auf Mobilgeräten nur an einer Teilmenge von Daten interessiert. Damit wird größere Benutzerfreundlichkeit geboten und die Zeit zum Laden der benötigten Daten wird verkürzt. Das Ergebnis sind zwei Lösungen. Beachten Sie auch, dass ausgelagerte Navigation nicht vorkonfiguriert verfügbar ist. Sie können XFA-Scripting verwenden, um eine ausgelagerte Navigation zu entwickeln.
+* Nutzen Sie XFA-Scripting, um eine ausgelagerte Navigation zu ermöglichen und datengesteuerte Felder (Tabellen und Teilformulare) anzuzeigen. Bei der ausgelagerten Navigation werden nur bestimmte Daten auf einer Seite angezeigt. Dadurch wird der Vorgang des Zeichnens im Browser auf die jeweils angezeigten Felder beschränkt und die Navigation in einem Formular erleichtert. Außerdem sind die Benutzer auf Mobilgeräten nur an einer Teilmenge von Daten interessiert. Damit wird größere Benutzerfreundlichkeit geboten und die Zeit zum Laden der benötigten Daten wird verkürzt. Das Ergebnis sind zwei Lösungen.  Beachten Sie auch, dass ausgelagerte Navigation nicht vorkonfiguriert verfügbar ist. Sie können XFA-Scripting verwenden, um eine ausgelagerte Navigation zu entwickeln.
 
 * Überlegen Sie, ggf. mehrere schreibgeschützte Spalten in einer Spalte zusammenzuführen. Dadurch wird der für die Anzeige des Formulars erforderliche Arbeitsspeicher reduziert. Außerdem sollten Sie vermeiden, die Spalten anzuzeigen, für die keine Benutzereingabe erforderlich ist.
-* Überlegen Sie, ggf. das datengesteuerte Formular in einen [Formularsatz](https://helpx.adobe.com/de/aem-forms/6-3/formset-in-aem-forms.html) aufzuteilen, wenn die obigen Vorschläge zu keinen deutlichen Verbesserungen führen. Wenn beispielsweise eine Tabelle mehr als 1000 Zeilen aufweist, verschieben Sie jeweils 100 Zeilen in ein anderes Formular. Das würde die Ladezeit und die Leistung der Formulare verbessern. Beachten Sie auch, dass ein Formularsatz eine konsolidierte Übermittlungs-XML für alle Formulare erzeugt. Um Daten für jedes Formular zu unterscheiden, verwenden Sie verschiedene Datenstämme. Weitere Informationen finden Sie unter[ Formularsatz in AEM Forms](https://helpx.adobe.com/de/aem-forms/6-3/formset-in-aem-forms.html).
+* Überlegen Sie, ggf. das datengesteuerte Formular in einen [Formularsatz](https://helpx.adobe.com/de/aem-forms/6-3/formset-in-aem-forms.html) aufzuteilen, wenn die obigen Vorschläge zu keinen deutlichen Verbesserungen führen. Wenn beispielsweise eine Tabelle mehr als 1000 Zeilen aufweist, verschieben Sie jeweils 100 Zeilen in ein anderes Formular. Das würde die Ladezeit und die Leistung der Formulare verbessern.  Beachten Sie auch, dass ein Formularsatz eine konsolidierte Übermittlungs-XML für alle Formulare erzeugt. Um Daten für jedes Formular zu unterscheiden, verwenden Sie verschiedene Datenstämme. Weitere Informationen finden Sie unter[ Formularsatz in AEM Forms](https://helpx.adobe.com/de/aem-forms/6-3/formset-in-aem-forms.html).
 
 ## Zweierpotenz für ein Datensatzdokument (DoR) {#power-of-two-for-document-of-record-dor}
 
@@ -74,5 +74,5 @@ Mit Adobe Experience Manager(AEM)-Formularen können Sie komplexe Transaktionen 
 
 ## Schnellnachweiskarte {#quick-reference-card}
 
-Sie können die folgende Karte ausdrucken (wenn Sie auf die Karte klicken, können Sie eine Version mit hoher Auflösung herunterladen) und auf Ihrem Schreibtisch als Schnellreferenz bereithalten: 
-[![Schnellreferenzkarte mit bewährten Verfahren für HTML5-Formulare](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+Sie können die folgende Karte ausdrucken (Klicken Sie auf die Karte, um eine Version mit hoher Auflösung herunterzuladen) und auf Ihrem Schreibtisch als Referenz behalten:
+[![HTML5 Forms Best Practices-Schnellnachweiskarte](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
