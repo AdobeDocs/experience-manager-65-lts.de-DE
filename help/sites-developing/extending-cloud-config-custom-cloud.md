@@ -11,7 +11,7 @@ role: Developer
 exl-id: 7ae41982-8438-41a6-91f9-3b3b6755a39b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '404'
 ht-degree: 96%
 
 ---
@@ -83,12 +83,12 @@ Die standardmäßigen Cloud-Services können durch benutzerdefinierte Cloud-Serv
    * **Typ**: `cq:Dialog`
    * **Eigenschaften**:
 
-      * **Name**: `title`
-      * **Typ**: `String`
-      * **Wert**: `Google Analytics Config`
-      * **Name**: `xtype`
-      * **Typ**: `String`
-      * **Wert**: `dialog`
+     * **Name**: `title`
+     * **Typ**: `String`
+     * **Wert**: `Google Analytics Config`
+     * **Name**: `xtype`
+     * **Typ**: `String`
+     * **Wert**: `dialog`
 
 1. Erstellen Sie einen Knoten unter `/apps/acs/analytics/components/googleanalyticspage/dialog`:
 
@@ -96,9 +96,9 @@ Die standardmäßigen Cloud-Services können durch benutzerdefinierte Cloud-Serv
    * **Typ**: `cq:Widget`
    * **Eigenschaften**:
 
-      * **Name**: `xtype`
-      * **Typ**: `String`
-      * **Wert**: `tabpanel`
+     * **Name**: `xtype`
+     * **Typ**: `String`
+     * **Wert**: `tabpanel`
 
 1. Erstellen Sie einen Knoten unter `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
 
@@ -111,9 +111,9 @@ Die standardmäßigen Cloud-Services können durch benutzerdefinierte Cloud-Serv
    * **Typ**: `cq:Panel`
    * **Eigenschaften**:
 
-      * **Name**: `title`
-      * **Typ**: `String`
-      * **Wert**: `Config`
+     * **Name**: `title`
+     * **Typ**: `String`
+     * **Wert**: `Config`
 
 1. Erstellen Sie einen Knoten unter `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
 
@@ -121,23 +121,23 @@ Die standardmäßigen Cloud-Services können durch benutzerdefinierte Cloud-Serv
    * **Typ**: `nt:unstructured`
    * **Eigenschaften**:
 
-      * **Name**: `fieldLabel`
-      * **Typ**: Zeichenfolge
-      * **Wert**: Konto-ID
+     * **Name**: `fieldLabel`
+     * **Typ**: Zeichenfolge
+     * **Wert**: Konto-ID
 
-      * **Name**: `fieldDescription`
-      * **Typ**: `String`
-      * **Wert**: `The account ID assigned by Google. Usually in the form UA-NNNNNN-N`
+     * **Name**: `fieldDescription`
+     * **Typ**: `String`
+     * **Wert**: `The account ID assigned by Google. Usually in the form UA-NNNNNN-N`
 
-      * **Name**: `name`
-      * **Typ**: `String`
-      * **Wert**: `./accountID`
-      * **Name**: `validateOnBlur`
-      * **Typ**: `String`
-      * **Wert**: `true`
-      * **Name**: `xtype`
-      * **Typ**: `String`
-      * **Wert**: `textfield`
+     * **Name**: `name`
+     * **Typ**: `String`
+     * **Wert**: `./accountID`
+     * **Name**: `validateOnBlur`
+     * **Typ**: `String`
+     * **Wert**: `true`
+     * **Name**: `xtype`
+     * **Typ**: `String`
+     * **Wert**: `textfield`
 
 1. Kopieren Sie `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` nach `/apps/acs/analytics/components/googleanalyticspage/body.jsp`, ändern Sie `libs` in Zeile 34 in `apps` und ändern Sie die Skriptreferenz in Zeile 79 in einen vollständig qualifizierten Pfad.
 1. Erstellen Sie eine Vorlage unter `/apps/acs/analytics/templates/`:
