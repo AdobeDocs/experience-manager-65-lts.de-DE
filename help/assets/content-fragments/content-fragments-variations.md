@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: a4101e70-85cd-471c-9bf9-fd09bf5fc8e8
-source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
+source-git-commit: fd7199ca5efa15df0fd014b7a0cfc52cbd7173fe
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 100%
+source-wordcount: '2078'
+ht-degree: 99%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 100%
 
 Auf der Registerkarte **Varianten** können Sie Folgendes tun:
 
-* [Eingeben des Inhalts](#authoring-your-content) für Ihr Fragment,
-* [Erstellen und Verwalten von Varianten](#managing-variations) des **primären** Inhalts,
+* [Inhalt eingeben](#authoring-your-content) für Ihr Fragment
+* [Erstellen und Verwalten von Varianten](#managing-variations) des **primären** Inhalts
 
 Führen Sie eine Vielzahl weiterer Aktionen abhängig vom bearbeiteten Datentyp aus, z. B.:
 
@@ -30,8 +30,6 @@ Führen Sie eine Vielzahl weiterer Aktionen abhängig vom bearbeiteten Datentyp 
 * [Inhalt hochladen](#uploading-content)
 
 * [Anzeigen von Schlüsselstatistiken](#viewing-key-statistics) (über mehrzeiligen Text)
-
-* [Zusammenfassen von Text](#summarizing-text)
 
 * [Synchronisieren von Varianten mit dem primären Inhalt](#synchronizing-with-master)
 
@@ -47,28 +45,26 @@ Zum Beispiel:
 
 ![Vollbild-Editor](assets/cfm-variations-02.png)
 
-
-
 Sie haben folgende Möglichkeiten:
 
 * Bearbeiten Sie Ihre Inhalte direkt auf der Registerkarte **Varianten**. Jeder Datentyp bietet verschiedene Bearbeitungsoptionen, z. B.:
 
-   * Für **mehrzeilige Textfelder** können Sie auch den [Vollbild-Editor](#full-screen-editor) öffnen, um:
+  * Für **mehrzeilige Textfelder** können Sie auch den [Vollbild-Editor](#full-screen-editor) öffnen, um:
 
-      * das [Format](#formats) auszuwählen
-      * weitere Bearbeitungsoptionen anzuzeigen ([Rich-Text](#rich-text)-Format)
-      * auf eine Reihe von [Aktionen](#actions) zuzugreifen
+    * das [Format](#formats) auszuwählen
+    * weitere Bearbeitungsoptionen anzuzeigen ([Rich-Text](#rich-text)-Format)
+    * auf eine Reihe von [Aktionen](#actions) zuzugreifen
 
-   * Für die Felder **Fragmentreferenz** kann je nach Modelldefinition die Option [Inhaltsfragment bearbeiten](#fragment-references-edit-content-fragment) verfügbar sein.
+  * Für die Felder **Fragmentreferenz** kann je nach Modelldefinition die Option [Inhaltsfragment bearbeiten](#fragment-references-edit-content-fragment) verfügbar sein.
 
 * Weisen Sie der aktuellen Variante **Tags** zu. Die Tags können hinzugefügt, aktualisiert und entfernt werden
 
-   * [Tags](/help/sites-authoring/tags.md) sind leistungsstark bei der Organisation Ihrer Fragmente, da sie für die Inhaltsklassifizierung und -taxonomie verwendet werden können. Tags können zum Suchen von Inhalten (nach Tags) und zum Anwenden von Massenvorgängen verwendet werden.
+  * [Tags](/help/sites-authoring/tags.md) sind leistungsstark bei der Organisation Ihrer Fragmente, da sie für die Inhaltsklassifizierung und -taxonomie verwendet werden können. Tags können zum Suchen von Inhalten (nach Tags) und zum Anwenden von Massenvorgängen verwendet werden.
 
-      * Bei der Suche nach einem Tag wird das Fragment zurückgegeben, wobei die getaggte Variante hervorgehoben ist.
-      * Varianten-Tags können auch verwendet werden, um Varianten für ein bestimmtes CDN-Profil (Content Delivery Network) (für CDN-Caching) zu gruppieren, anstatt den Variantennamen zu verwenden.
+    * Bei der Suche nach einem Tag wird das Fragment zurückgegeben, wobei die getaggte Variante hervorgehoben ist.
+    * Varianten-Tags können auch verwendet werden, um Varianten für ein bestimmtes CDN-Profil (Content Delivery Network) (für CDN-Caching) zu gruppieren, anstatt den Variantennamen zu verwenden.
 
-     Beispielsweise können Sie relevante Fragmente als „Weihnachts-Launch“ taggen, um nur diese als Teilmenge zu durchsuchen oder sie für einen anderen zukünftigen Launch in einen neuen Ordner zu kopieren.
+    Beispielsweise können Sie relevante Fragmente als „Weihnachts-Launch“ taggen, um nur diese als Teilmenge zu durchsuchen oder sie für einen anderen zukünftigen Launch in einen neuen Ordner zu kopieren.
 
   >[!NOTE]
   >
@@ -103,8 +99,6 @@ Die folgenden Aktionen sind ebenfalls verfügbar (für sämtliche [Formate](#for
 
 * [Mit primärer Version synchronisieren](#synchronizing-with-master) (beim Bearbeiten einer Variante)
 
-* [Zusammenfassen von Text](#summarizing-text)
-
 ### Formate {#formats}
 
 Die Optionen für das Bearbeiten von mehrzeiligem Text hängen vom ausgewählten Format ab:
@@ -132,10 +126,10 @@ Die Rich-Text-Bearbeitung ermöglicht folgende Formatierungen:
 * Absatzformat: Absatz, Überschrift 1/2/3
 * [Asset einfügen](#inserting-assets-into-your-fragment)
 * Öffnen Sie den Vollbild-Editor, in dem die folgenden Formatierungsoptionen zur Verfügung stehen:
-   * Suchen
-   * Suchen/Ersetzen
-   * Rechtschreibprüfung
-   * [Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+  * Suchen
+  * Suchen/Ersetzen
+  * Rechtschreibprüfung
+  * [Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [Inhaltsfragment einfügen](#inserting-content-fragment-into-your-fragment); verfügbar, wenn Ihr **mehrzeiliges Textfeld** mit **Fragmentreferenz zulassen** konfiguriert wurde.
 
 Die [Aktionen](#actions) sind ebenfalls über den Vollbild-Editor verfügbar.
@@ -218,60 +212,6 @@ Zum Beispiel:
 ### Hochladen von Inhalt {#uploading-content}
 
 Um die Erstellung von Inhaltsfragmenten zu vereinfachen, können Sie Text hochladen, der in einem externen Editor vorbereitet wurde, und ihn direkt in das Fragment einfügen.
-
-### Zusammenfassung von Text {#summarizing-text}
-
-Mithilfe der Zusammenfassung von Text können Benutzende die Länge des Textes auf eine vordefinierte Anzahl von Wörtern verringern, während die wichtigsten Punkte und die allgemeine Bedeutung beibehalten werden.
-
->[!NOTE]
->
->Auf technischer Ebene behält das System die Sätze bei, die in Übereinstimmung mit bestimmten Algorithmen das *beste Verhältnis von Informationsdichte und Eindeutigkeit* bieten.
-
->[!CAUTION]
->
->Das Inhaltsfragment muss einen gültigen Sprachordner (ISO-Code) als Vorgänger haben, der verwendet wird, um das zu verwendende Sprachmodell zu bestimmen.
->
->Beispiel: `en/` wie im folgenden Pfad:
->
->  `/content/dam/my-brand/en/path-down/my-content-fragment`
-
->[!CAUTION]
->
->Englisch ist standardmäßig verfügbar.
->
->Andere Sprachen sind als Sprachmodellpakete von Package Share verfügbar:
->
->* [Französisch (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Deutsch (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italienisch (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Spanisch (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
->
-
-1. Wählen Sie **Primäre Version** oder die erforderliche Variante aus.
-1. Öffnen Sie den Vollbild-Editor.
-
-1. Wählen Sie in der Symbolleiste die Option **Text zusammenfassen** aus.
-
-   ![Zusammenfassung](assets/cfm-variations-05.png)
-
-1. Geben Sie den Zielwert der Wörter an und wählen Sie **Starten**:
-1. Der ursprüngliche Text wird neben der vorgeschlagenen Zusammenfassung angezeigt:
-
-   * Alle zu löschenden Sätze sind rot hervorgehoben und durchgestrichen.
-   * Klicken Sie auf einen beliebigen hervorgehobenen Satz, wenn Sie ihn im zusammengefassten Inhalt beibehalten möchten.
-   * Klicken Sie auf einen beliebigen nicht hervorgehobenen Satz, wenn Sie ihn beseitigen möchten.
-
-1. Wählen Sie **Zusammenfassen** aus, um die Änderungen zu bestätigen.
-
-1. Der ursprüngliche Text wird neben der vorgeschlagenen Zusammenfassung angezeigt:
-
-   * Alle zu löschenden Sätze sind rot hervorgehoben und durchgestrichen.
-   * Klicken Sie auf einen beliebigen hervorgehobenen Satz, wenn Sie ihn im zusammengefassten Inhalt beibehalten möchten.
-   * Klicken Sie auf einen beliebigen nicht hervorgehobenen Satz, wenn Sie ihn beseitigen möchten.
-   * Die Zusammenfassungsstatistiken werden gezeigt: **Actual** und **Target**.
-   * Sie können die Änderungen in der **Vorschau** sehen.
-
-   ![Zusammenfassungsvergleich](assets/cfm-variations-06.png)
 
 ### Anmerkungen zu Inhaltsfragmenten {#annotating-a-content-fragment}
 
@@ -470,7 +410,7 @@ Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisie
 
 >[!CAUTION]
 >
->Die Synchronisierung ist nur verfügbar, um Änderungen *von der **primären Version**in die Variante* zu kopieren.
+>Die Synchronisierung ist nur verfügbar, um Änderungen *von der **primären Version**&#x200B;in die Variante* zu kopieren.
 >
 >Nur das aktuelle Element der Variante wird synchronisiert.
 >
