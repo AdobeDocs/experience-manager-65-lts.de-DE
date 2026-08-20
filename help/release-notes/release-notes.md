@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 0ce890503d43af340b6ee3c85b1b563613627c78
+source-git-commit: d4d05cf9f295e6c3740ebf1e3559b5d117898342
 workflow-type: tm+mt
-source-wordcount: '6749'
+source-wordcount: '6752'
 ht-degree: 26%
 
 ---
@@ -530,7 +530,6 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Be
 
 | Bereich | Funktion | Ersatz | Version (SP) |
 | --- | --- | --- | --- |
-| Sites | Zusammenfassung des Inhaltsfragmenttextes | Es steht kein Ersatz zur Verfügung. | |
 | Schnellstart | Mongo-APIs | Mongo-APIs werden nicht mehr unterstützt und sollen in zukünftigen Versionen entfernt werden. | 6.5 TS SP2 |
 | Sites | Unterstützung von Inhaltsfragmenten in der AEM Assets-REST-API | AEM 6.5 LTS SP2 bietet moderne OpenAPIs für die Verwaltung von Inhaltsfragmenten und -modellen. Daher wurden die älteren Endpunkte zur Unterstützung von Inhaltsfragmenten in der AEM Assets-REST-API jetzt eingestellt.<br>Adobe beabsichtigt, diese älteren Endpunkte bis zu einer Ankündigung zum Ende der Nutzungsdauer verfügbar zu halten. Adobe plant keine weiteren Verbesserungen an den veralteten Endpunkten. | 6.5 LTS SP2 |
 | Sites | [SPA-Editor](/help/sites-developing/spa-overview.md) | Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind:<br>– [Der universelle Editor](/help/sites-developing/universal-editor/introduction.md) für visuelle Bearbeitung.<br>– [Der Inhaltsfragment-Editor](/help/assets/content-fragments/content-fragments-managing.md) für formularbasierte Bearbeitung. | 6.5 LTS GA |
@@ -545,6 +544,7 @@ In diesem Abschnitt werden die Funktionen aufgeführt, die aus AEM 6.5 LTS entf
 
 | Bereich | Funktion | Ersatz | Version (SP) |
 | --- | --- | --- | --- |
+| Sites | Zusammenfassung des Inhaltsfragmenttextes | Es steht kein Ersatz zur Verfügung. | 6.5 LTS SP3 |
 | Commerce | AEM CIF Classic wird nicht unterstützt. | Migrieren Sie zu [AEM CIF](/help/commerce/cif/migration.md). | 6.5 LTS GA |
 | Lösungen | Social/Communities wird nicht unterstützt. | Es steht kein Ersatz zur Verfügung. | 6.5 LTS GA |
 | Screens | Screens werden nicht unterstützt. | Es steht kein Ersatz zur Verfügung. | 6.5 LTS GA |
