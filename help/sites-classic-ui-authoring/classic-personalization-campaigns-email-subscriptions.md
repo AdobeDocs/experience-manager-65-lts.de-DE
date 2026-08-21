@@ -11,8 +11,8 @@ role: User
 exl-id: 1a11407d-7261-4f1a-bcb9-4c06b8277af4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 95%
+source-wordcount: '947'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 95%
 >[!NOTE]
 >
 >Adobe plant nicht, diese Funktionen (Lead- und Listenverwaltung) weiter auszubauen.
->&#x200B;>Es wird empfohlen, [Adobe Campaign und dessen AEM-Integration](/help/sites-administering/campaign.md) zu verwenden.
+>Es wird empfohlen, [Adobe Campaign und dessen AEM-Integration](/help/sites-administering/campaign.md) zu verwenden.
 
 Benutzer können über die Komponente **Formular** auf einer AEM-Web-Seite gebeten werden, Mailing-Listen eines **E-Mail-Dienstanbieters** zu abonnieren. Damit Sie eine AEM-Seite mit einem Abonnementformular erstellen können, das für die Anmeldung bei Mailing-Listen Ihres E-Mail-Diensts konfiguriert ist, müssen Sie die entsprechende Dienstkonfiguration auf die AEM-Seite anwenden, die der potenzielle Abonnent besuchen wird.
 
@@ -57,7 +57,7 @@ So erstellen Sie ein Abonnementformular und konfigurieren es für die Anmeldung 
    >
    >Ihr Dialogfeld unterscheidet sich je nach E-Mail-Dienstleister möglicherweise vom hier beschriebenen.
 
-1. Wählen Sie auf der **Formular** die Dankeseite aus, die Benutzer sehen sollen, nachdem sie das Formular gesendet haben. (Wenn Sie das Feld leer lassen, wird das Formular bei der Übermittlung erneut angezeigt.) Klicken Sie **OK**. Im Formular wird eine **E-Mail-ID**-Komponente angezeigt, mit deren Hilfe Sie ein Formular erstellen können, in das Benutzende ihre E-Mail-Adresse zur Anmeldung oder Abmeldung aus der Mailingliste eingeben können.
+1. Wählen Sie auf der **Formular** die Dankeseite aus, die Benutzer sehen sollen, nachdem sie das Formular gesendet haben. (Wenn Sie das Feld leer lassen, wird das Formular bei der Übermittlung erneut angezeigt.) Klicken Sie auf **OK**. Im Formular wird eine **E-Mail-ID**-Komponente angezeigt, mit deren Hilfe Sie ein Formular erstellen können, in das Benutzende ihre E-Mail-Adresse zur Anmeldung oder Abmeldung aus der Mailingliste eingeben können.
 1. Fügen Sie im Sidekick die Schaltflächenkomponente **Senden** für das **Formular** hinzu.
 
    Ihr Formular ist fertig. Veröffentlichen Sie die in den oben genannten Schritten konfigurierte Seite gemeinsam mit der **Dankeseite** in der Veröffentlichungsinstanz. Alle potenziellen Abonnentinnen und Abonnenten, die die Seite besuchen, können das Formular ausfüllen und sich bei der in der Konfiguration angegebenen Liste anmelden.
@@ -70,11 +70,11 @@ So erstellen Sie ein Abonnementformular und konfigurieren es für die Anmeldung 
 
 Damit das Abonnieren und Abbestellen von E-Mail-Diensten über Abonnementformulare auf Veröffentlichungsinstanzen funktioniert, müssen Sie die folgenden Schritte ausführen:
 
-1. Navigieren Sie in der Autoreninstanz zum Package Manager.
-1. Erstellen Sie ein Paket.  Wählen Sie den Filter `/etc/key` aus.
+1. Navigieren Sie in der Autoreninstanz zum Paket-Manager.
+1. Erstellen Sie ein Paket. Wählen Sie den Filter `/etc/key` aus.
 1. Erstellen Sie das Paket und laden Sie es herunter.
-1. Navigieren Sie in der Veröffentlichungsinstanz zum Package Manager und laden Sie dieses Paket hoch.
-1. Navigieren Sie zu der OSGi-Konsole für die Veröffentlichung und starten Sie das Bundle **„Adobe Granite Crypto Support“** neu.
+1. Navigieren Sie in der Veröffentlichungsinstanz zum Paket-Manager und laden Sie dieses Paket hoch.
+1. Navigieren Sie zu der OSGi-Konsole für die Veröffentlichung und starten Sie das Paket **„Adobe Granite Crypto Support“** neu.
 
 ## Abmelden von Benutzenden aus Listen {#unsubscribing-users-from-lists}
 
@@ -105,12 +105,12 @@ So konfigurieren Sie eine automatische Antwort-E-Mail für einen E-Mail-Dienst:
 1. **Wählen Sie eine Klassifikation aus** (diese Klassifikation wird zum Versenden der E-Mail verwendet).
 1. Wählen Sie die **Dankeseite** aus (die Seite, auf die Benutzer weitergeleitet werden, wenn sie das Formular senden).
 
-   Wählen Sie auf der Registerkarte **Formular** die Dankeseite aus, die Benutzer sehen sollen, nachdem sie das Formular gesendet haben. (Wenn Sie das Feld leer lassen, wird das Formular nach der Übermittlung erneut angezeigt.) Klicken Sie **OK**.
+   Wählen Sie auf der Registerkarte **Formular** die Dankeseite aus, die Benutzer sehen sollen, nachdem sie das Formular gesendet haben. (Wenn Sie das Feld leer lassen, wird das Formular nach der Übermittlung erneut angezeigt.) Klicken Sie auf **OK**.
 
 1. Exportieren Sie die Schlüssel des Autors zur Veröffentlichung.
 1. Fügen Sie im Sidekick die Schaltflächenkomponente **Senden** für das **Formular** hinzu.
 
-   Das Anmeldeformular ist jetzt einsatzbereit.  Veröffentlichen Sie die in den oben genannten Schritten konfigurierte Seite gemeinsam mit der **Dankeseite** in der Veröffentlichungsinstanz. Alle potenziellen Abonnentinnen und Abonnenten, die die Seite besuchen, können das Formular ausfüllen. Beim Absenden des Formulars erhält die Person eine automatische Antwort an die E-Mail-Adresse, die sie im Formular angegeben hat.
+   Das Anmeldeformular ist jetzt einsatzbereit. Veröffentlichen Sie die in den oben genannten Schritten konfigurierte Seite gemeinsam mit der **Dankeseite** in der Veröffentlichungsinstanz. Alle potenziellen Abonnentinnen und Abonnenten, die die Seite besuchen, können das Formular ausfüllen. Beim Absenden des Formulars erhält die Person eine automatische Antwort an die E-Mail-Adresse, die sie im Formular angegeben hat.
 
    >[!NOTE]
    >
