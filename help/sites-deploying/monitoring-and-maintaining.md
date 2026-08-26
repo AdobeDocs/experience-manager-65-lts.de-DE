@@ -10,10 +10,10 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 0fc8e7c27cbb9e24edea6d6a9f1f6e7051742b91
 workflow-type: tm+mt
-source-wordcount: '5796'
-ht-degree: 96%
+source-wordcount: '5865'
+ht-degree: 95%
 
 ---
 
@@ -22,6 +22,10 @@ ht-degree: 96%
 Nach der Bereitstellung Ihrer AEM-Instanzen müssen Sie deren Betrieb, Leistung und Integrität überwachen und aufrechterhalten.
 
 Um potenzielle Probleme erkennen zu können, müssen Sie unbedingt wissen, wie Ihr System unter normalen Bedingungen aussieht und sich verhält. Dies lässt sich am besten durch die Überwachung des Systems und das Sammeln von Informationen im Laufe der Zeit erreichen.
+
+>[!NOTE]
+>
+>Die Anleitungen auf dieser Seite gelten für selbstverwaltete (On-Premise-)Bereitstellungen. Wenn Sie AEM auf Adobe Managed Services ausführen, wird die Anwendungs- und Infrastrukturtelemetrie für Sie erfasst und über Observability Insights verfügbar gemacht, das eine gehostete Ansicht Ihrer Produktions- und produktionsfremden Umgebungen bietet. Weitere Informationen finden Sie unter [Observability Insights](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview).
 
 | Überprüfen | Zu beachten | Kommentar/Aktionen |
 |---|---|---|
@@ -32,7 +36,7 @@ Um potenzielle Probleme erkennen zu können, müssen Sie unbedingt wissen, wie I
 | [Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) werden überwacht. |  |  |
 | Die Systemüberwachung wird (ständig) im Hintergrund ausgeführt. | Einschließlich CPU-, Arbeitsspeicher-, Datenträger- und Netzwerkauslastung. Verwendet wird z. B. iostat / vmstat / perfmon. | Protokollierte Daten werden visualisiert und können zur Verfolgung von Leistungsproblemen verwendet werden. Auch Rohdaten sind verfügbar. |
 | [Die AEM-Leistung wird überwacht](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Einschließlich [Anfragezähler](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) zur Überwachung des Traffic-Niveaus. | Wird ein signifikanter oder langfristiger Leistungsverlust festgestellt, sollte eine eingehende Untersuchung durchgeführt werden. |
-| Sie überwachen Ihre [Replikationsagenten](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). |  |  |
+| Sie überwachen Ihre [Replikationsagents](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). |  |  |
 | Regelmäßige Bereinigung von Workflow-Instanzen. | Repository-Größe und Workflow-Leistung. | Siehe [Regelmäßige Bereinigung von Workflow-Instanzen](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
 
 ## Backups {#backups}
@@ -122,7 +126,7 @@ Um Versionen einer Website zu löschen, gehen Sie folgendermaßen vor:
    ![Konfiguration der Versionsbereinigung](assets/version-purge-configuration.png)
 
    * **Bereinigungspfade**
-Legen Sie den Startpfad des zu löschenden Inhalts fest, z. B. `/content/wknd`.
+     Legen Sie den Startpfad des zu löschenden Inhalts fest, z. B. `/content/wknd`.
 
      >[!CAUTION]
      >
@@ -132,17 +136,17 @@ Legen Sie den Startpfad des zu löschenden Inhalts fest, z. B. `/content/wknd`.
 
    * **Versionen rekursiv bereinigen**
 
-      * Deaktivieren Sie diese Option, wenn Sie nur den durch den Pfad definierten Knoten löschen möchten.
-      * Wählen Sie aus, ob Sie den durch Ihren Pfad und seine untergeordneten Pfade definierten Knoten löschen möchten.
+     * Deaktivieren Sie diese Option, wenn Sie nur den durch den Pfad definierten Knoten löschen möchten.
+     * Wählen Sie aus, ob Sie den durch Ihren Pfad und seine untergeordneten Pfade definierten Knoten löschen möchten.
 
    * **Maximale Anzahl von Versionen**
-Legen Sie die maximale Anzahl von Versionen (für jeden Knoten) fest, die Sie beibehalten möchten. Lassen Sie das Feld frei, falls diese Einstellung nicht verwendet werden soll.
+     Legen Sie die maximale Anzahl von Versionen (für jeden Knoten) fest, die Sie beibehalten möchten. Lassen Sie das Feld frei, falls diese Einstellung nicht verwendet werden soll.
 
    * **Mindestanzahl von Versionen**
-Legen Sie die Mindestanzahl von Versionen (für jeden Knoten) fest, die Sie beibehalten möchten. Lassen Sie das Feld frei, falls diese Einstellung nicht verwendet werden soll.
+     Legen Sie die Mindestanzahl von Versionen (für jeden Knoten) fest, die Sie beibehalten möchten. Lassen Sie das Feld frei, falls diese Einstellung nicht verwendet werden soll.
 
    * **Maximales Versionsalter**
-Legen Sie das maximale Versionsalter in Tagen (für jeden Knoten) fest, den Sie beibehalten möchten. Lassen Sie das Feld frei, falls diese Einstellung nicht verwendet werden soll.
+     Legen Sie das maximale Versionsalter in Tagen (für jeden Knoten) fest, den Sie beibehalten möchten. Lassen Sie das Feld frei, falls diese Einstellung nicht verwendet werden soll.
 
    Dann **Speichern**.
 
@@ -215,36 +219,36 @@ Verschiedene Protokolldateien werden auf dem Datei-Server gespeichert, auf dem S
 
 * `<cq-installation-dir>/crx-quickstart/logs`
 
-   * `access.log`
-Hier werden alle Zugriffsanfragen an das AEM WCM-System und das Repository registriert.
+  * `access.log`
+    Hier werden alle Zugriffsanfragen an das AEM WCM-System und das Repository registriert.
 
-   * `audit.log`
-Hier werden Moderationsaktionen registriert.
+  * `audit.log`
+    Hier werden Moderationsaktionen registriert.
 
-   * `error.log`
-Hier werden Fehlermeldungen (mit unterschiedlichem Schweregrad) registriert.
+  * `error.log`
+    Hier werden Fehlermeldungen (mit unterschiedlichem Schweregrad) registriert.
 
-   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=de)
-Dieses Protokoll wird nur verwendet, wenn [!DNL Dynamic Media] aktiviert ist. Es stellt die Statistiken und analytische Informationen bereit, die für die Analyse des Verhaltens des internen ImageServer-Prozesses verwendet werden.
+  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=de)
+    Dieses Protokoll wird nur verwendet, wenn [!DNL Dynamic Media] aktiviert ist. Es stellt die Statistiken und analytische Informationen bereit, die für die Analyse des Verhaltens des internen ImageServer-Prozesses verwendet werden.
 
-   * `request.log`
-Hier werden alle Zugriffsanfragen zusammen mit der Antwort registriert.
+  * `request.log`
+    Hier werden alle Zugriffsanfragen zusammen mit der Antwort registriert.
 
-   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=de)
-Dieses Protokoll wird nur verwendet, wenn [!DNL Dynamic Media] aktiviert ist. Das s7access-Protokoll zeichnet alle Anfragen auf, die an [!DNL Dynamic Media] bis `/is/image` und `/is/content` gemacht wurden.
+  * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=de)
+    Dieses Protokoll wird nur verwendet, wenn [!DNL Dynamic Media] aktiviert ist. Das s7access-Protokoll zeichnet alle Anfragen auf, die an [!DNL Dynamic Media] bis `/is/image` und `/is/content` gemacht wurden.
 
-   * `stderr.log` Enthält Fehlermeldungen (ebenfalls mit unterschiedlichem Schweregrad), die beim Starten generiert werden. Die Protokollebene wird standardmäßig auf `Warning` (`WARN`) festgelegt.
+  * `stderr.log` Enthält Fehlermeldungen (ebenfalls mit unterschiedlichem Schweregrad), die beim Starten generiert werden. Die Protokollebene wird standardmäßig auf `Warning` (`WARN`) festgelegt.
 
-   * `stdout.log`
-Enthält Protokollmeldungen, die auf Ereignisse beim Starten verweisen.
+  * `stdout.log`
+    Enthält Protokollmeldungen, die auf Ereignisse beim Starten verweisen.
 
-   * `upgrade.log`
-Bietet ein Protokoll aller Upgrade-Vorgänge, die von den Paketen `com.day.compat.codeupgrade` und `com.adobe.cq.upgradesexecutor` ausgeführt werden.
+  * `upgrade.log`
+    Bietet ein Protokoll aller Upgrade-Vorgänge, die von den Paketen `com.day.compat.codeupgrade` und `com.adobe.cq.upgradesexecutor` ausgeführt werden.
 
 * `<cq-installation-dir>/crx-quickstart/repository/segmentstore`
 
-   * `journal.log`
-Zeigt Daten des Revisionsjournals an.
+  * `journal.log`
+    Zeigt Daten des Revisionsjournals an.
 
 >[!NOTE]
 >
@@ -311,9 +315,9 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
      Wert: Angabe der OSGi-Dienste, für die der Logger Meldungen protokollieren soll, beispielsweise alle folgenden:
 
-      * `org.apache.sling`
-      * `org.apache.felix`
-      * `com.day`
+     * `org.apache.sling`
+     * `org.apache.felix`
+     * `com.day`
 
    * Name: `org.apache.sling.commons.log.level`
 
@@ -323,13 +327,13 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
    * Konfigurieren Sie ggf. weitere Parameter:
 
-      * Name: `org.apache.sling.commons.log.pattern`
+     * Name: `org.apache.sling.commons.log.pattern`
 
-        Typ: `String`
+       Typ: `String`
 
-        Wert: Angabe des Musters der Protokollmeldung nach Bedarf; Beispiel:
+       Wert: Angabe des Musters der Protokollmeldung nach Bedarf; Beispiel:
 
-        `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
+       `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
 
    >[!NOTE]
    >
@@ -406,17 +410,17 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
 
    * Konfigurieren Sie ggf. weitere Parameter:
 
-      * Name: `org.apache.sling.commons.log.file.number`
+     * Name: `org.apache.sling.commons.log.file.number`
 
-        Typ: `Long`
+       Typ: `Long`
 
-        Wert: Angabe der Anzahl der Protokolldateien, die Sie beibehalten möchten, z. B. `5`
+       Wert: Angabe der Anzahl der Protokolldateien, die Sie beibehalten möchten, z. B. `5`
 
-      * Name: `org.apache.sling.commons.log.file.size`
+     * Name: `org.apache.sling.commons.log.file.size`
 
-        Typ: `String`
+       Typ: `String`
 
-        Wert: Geben Sie diesen wie erforderlich an, um die Dateirotation nach Größe/Datum zu steuern; beispielsweise `'.'yyyy-MM-dd`
+       Wert: Geben Sie diesen wie erforderlich an, um die Dateirotation nach Größe/Datum zu steuern; beispielsweise `'.'yyyy-MM-dd`
 
    >[!NOTE]
    >
@@ -482,7 +486,7 @@ OSGi-Ereignisse generieren ebenfalls Audit-Einträge, die Sie in der AEM-Web-Kon
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
-## Überwachen der Replikationsagenten {#monitoring-your-replication-agents}
+## Überwachen der Replikationsagents {#monitoring-your-replication-agents}
 
 Sie können Ihre [Replikations-Warteschlangen](/help/sites-deploying/replication.md) überwachen, um zu erkennen, wann eine Warteschlange ausfällt oder blockiert ist – was wiederum auf ein Problem mit einer Publishing-Instanz oder einem externen System hinweisen könnte:
 
@@ -563,23 +567,23 @@ All diese Informationen müssen erfasst, sortiert und analysiert werden, bevor S
 
 * Bevor ein Leistungsproblem auftritt, sollten Sie Folgendes tun:
 
-   * Sammeln Sie so viele Informationen wie möglich, um umfangreiches praktisches Wissen über das System unter normalen Umständen aufzubauen.
+  * Sammeln Sie so viele Informationen wie möglich, um umfangreiches praktisches Wissen über das System unter normalen Umständen aufzubauen.
 
 * Tun Sie Folgendes, wenn ein Leistungsproblem auftritt:
 
-   * Versuchen Sie, es mit einem (oder vorzugsweise mehreren) Standard-Webbrowsern auf einem anderen Client zu replizieren, von dem Sie wissen, dass er eine hohe allgemeine Leistung hat, und/oder auf dem Server selbst (falls möglich).
-   * Überprüfen Sie, ob sich in einem entsprechend gewählten Zeitraum irgendetwas (im Zusammenhang mit dem System) geändert hat und ob eine dieser Änderungen die Leistung beeinflusst haben könnte.
-   * Stellen Sie Fragen wie:
+  * Versuchen Sie, es mit einem (oder vorzugsweise mehreren) Standard-Webbrowsern auf einem anderen Client zu replizieren, von dem Sie wissen, dass er eine hohe allgemeine Leistung hat, und/oder auf dem Server selbst (falls möglich).
+  * Überprüfen Sie, ob sich in einem entsprechend gewählten Zeitraum irgendetwas (im Zusammenhang mit dem System) geändert hat und ob eine dieser Änderungen die Leistung beeinflusst haben könnte.
+  * Stellen Sie Fragen wie:
 
-      * Tritt das Problem nur zu bestimmten Zeiten auf?
-      * Tritt das Problem nur auf bestimmten Seiten auf?
-      * Sind andere Anfragen betroffen?
+    * Tritt das Problem nur zu bestimmten Zeiten auf?
+    * Tritt das Problem nur auf bestimmten Seiten auf?
+    * Sind andere Anfragen betroffen?
 
-   * Sammeln Sie so viele Informationen wie möglich, um sie mit Ihrem Wissen über das System unter normalen Umständen zu vergleichen:
+  * Sammeln Sie so viele Informationen wie möglich, um sie mit Ihrem Wissen über das System unter normalen Umständen zu vergleichen:
 
-### Tools zur Leistungsüberwachung und -analyse {#tools-for-monitoring-and-analyzing-performance}
+### Tools zur Überwachung und -analyse der Performance {#tools-for-monitoring-and-analyzing-performance}
 
-Im Folgenden finden Sie einen kurzen Überblick über einige der verfügbaren Tools zur Leistungsüberwachung und -analyse.
+Im Folgenden finden Sie einen kurzen Überblick über einige der verfügbaren Tools zur Überwachung und -analyse der Performance.
 
 Einige dieser Tools hängen von Ihrem Betriebssystem ab.
 
@@ -643,7 +647,7 @@ Einige dieser Tools hängen von Ihrem Betriebssystem ab.
   <tr>
    <td>JConsole</td>
    <td>Beobachten von JVM-Metriken und -Threads.</td>
-   <td><p>Verwendungszweck: jconsole</p> <p>Siehe <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html">JConsole</a> und <a href="#monitoring-performance-using-jconsole">Leistungsüberwachung mit JConsole</a>.</p> <p><strong>Hinweis:</strong> Bei JDK 1.8 ist JConsole durch Plug-ins erweiterbar; z. B. Top oder TDA (Thread Dump Analyzer).</p> </td>
+   <td><p>Verwendungszweck: jconsole</p> <p>Siehe <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html">JConsole</a> und <a href="#monitoring-performance-using-jconsole">Überwachen der Performance mit JConsole</a>.</p> <p><strong>Hinweis:</strong> Bei JDK 1.8 ist JConsole durch Plug-ins erweiterbar; z. B. Top oder TDA (Thread Dump Analyzer).</p> </td>
   </tr>
   <tr>
    <td>truss/strace, lsof</td>
@@ -709,15 +713,15 @@ Dieses Protokoll enthält eine Zeile pro Anforderung oder Antwort:
 * Ein Pfeil, der angibt, ob es sich um eine Anfrage (Pfeil nach rechts) oder eine Antwort (Pfeil nach links) handelt.
 * Bei Anfragen enthält die Zeile:
 
-   * die Methode (normalerweise GET, HEAD oder POST)
-   * die angefragte Seite
-   * das Protokoll
+  * die Methode (normalerweise GET, HEAD oder POST)
+  * die angefragte Seite
+  * das Protokoll
 
 * Bei Antworten enthält die Zeile:
 
-   * den Status-Code (200 steht für „Erfolg“, 404 steht für „Seite nicht gefunden“);
-   * den MIME-Typ
-   * die Antwortzeit
+  * den Status-Code (200 steht für „Erfolg“, 404 steht für „Seite nicht gefunden“);
+  * den MIME-Typ
+  * die Antwortzeit
 
 Mithilfe von kleinen Skripten können Sie die erforderlichen Informationen aus der Protokolldatei extrahieren und die gewünschten Statistiken zusammenstellen. Aus diesen Statistiken können Sie ableiten, welche Seiten oder Seitentypen langsam sind und ob die Gesamtleistung zufriedenstellend ist.
 
@@ -758,7 +762,7 @@ Sie sollten testen, wie viele gleichzeitige Benutzer das System unterstützt, be
 
 ### Verwenden von rlog.jar zum Suchen von Anfragen mit langer Dauer {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-AEM bietet verschiedene Hilfs-Tools in den folgenden Bereichen:
+AEM umfasst verschiedene Hilfs-Tools in den folgenden Bereichen:
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 Eines dieser Tools, `rlog.jar`, kann zum schnellen Sortieren von `request.log` verwendet werden, indem Anfragen nach Dauer, von der längsten bis zur kürzesten, angezeigt werden.
@@ -1085,7 +1089,7 @@ In diesen Fällen müssen Sie Folgendes überprüfen:
 * Die zum [Starten von AEM](/help/sites-deploying/deploy.md#getting-started) verwendeten JVM-Einstellungen
 * Die Wissensdatenbank:
 
-   * [Analyse von Speicherproblemen](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=de)
+  * [Analyse von Speicherproblemen](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=de)
 
 ### Datenträger-E/A {#disk-i-o}
 
@@ -1093,17 +1097,17 @@ Wenn Ihrem System der Festplattenspeicher ausgeht oder Sie feststellen, dass die
 
 * Ob Sie die Erfassung von Debugging-Informationen deaktiviert haben – diese kann an verschiedenen Stellen konfiguriert werden, darunter:
 
-   * [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
-   * [Apache Sling JavaScript Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
-   * [Apache Sling Logging-Konfiguration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
-   * [CQ HTML-Bibliotheks-Manager](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [CQ WCM Debug-Filter](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [Protokollierungen](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
+  * [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
+  * [Apache Sling JavaScript Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
+  * [Apache Sling Logging-Konfiguration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
+  * [CQ HTML-Bibliotheks-Manager](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
+  * [CQ WCM Debug-Filter](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+  * [Protokollierungen](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
 * Haben Sie die [Versionsbereinigung](/help/sites-deploying/version-purging.md) deaktiviert?
 * Wissensdatenbank:
 
-   * [Zu viele geöffnete Dateien](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=de)
+  * [Zu viele geöffnete Dateien](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=de)
 
 ### Regelmäßige Leistungsbeeinträchtigung {#regular-performance-degradation}
 
