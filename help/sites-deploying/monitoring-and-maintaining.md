@@ -25,7 +25,7 @@ Um potenzielle Probleme erkennen zu können, müssen Sie unbedingt wissen, wie I
 
 >[!NOTE]
 >
->Die Anleitungen auf dieser Seite gelten für selbstverwaltete (On-Premise-)Bereitstellungen. Wenn Sie AEM auf Adobe Managed Services ausführen, wird die Anwendungs- und Infrastrukturtelemetrie für Sie erfasst und über Observability Insights verfügbar gemacht, das eine gehostete Ansicht Ihrer Produktions- und produktionsfremden Umgebungen bietet. Weitere Informationen finden Sie unter [Observability Insights](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview).
+>Die Anleitungen auf dieser Seite gelten für selbstverwaltete (On-Premise-)Bereitstellungen. Wenn Sie AEM auf Adobe Managed Services ausführen, wird die Anwendungs- und Infrastrukturtelemetrie für Sie erfasst und über Observability Insights verfügbar gemacht, das eine gehostete Ansicht Ihrer Produktions- und produktionsfremden Umgebungen bietet. Weitere Informationen finden Sie unter [Observability Insights](https://experienceleague.adobe.com/de/docs/ams-observability-insights/content/overview).
 
 | Überprüfen | Zu beachten | Kommentar/Aktionen |
 |---|---|---|
