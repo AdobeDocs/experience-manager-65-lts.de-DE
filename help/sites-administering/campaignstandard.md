@@ -11,8 +11,8 @@ role: Admin
 exl-id: fbc73503-efa3-480b-bdc6-9f997c3f3474
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 100%
+source-wordcount: '1824'
+ht-degree: 97%
 
 ---
 
@@ -24,19 +24,19 @@ Durch diese Integration können AEM und Adobe Campaign Standard unabhängig vone
 
 >[!INFO]
 >
->In diesem Dokument wird beschrieben, wie Sie Adobe Campaign Standard mit AEM 6.5 integrieren. Weiterführende Informationen zu anderen Campaign-Integrationen finden Sie im Dokument [Integrieren von AEM 6.5 in Adobe Campaign](campaign.md).
+>In diesem Dokument wird die Integration von Adobe Campaign Standard mit AEM 6.5 beschrieben. Informationen zu anderen Campaign-Integrationen finden Sie im Dokument [Integrieren von AEM 6.5 mit Adobe Campaign.](campaign.md)
 
 ## Integrationsschritte {#integration-steps}
 
 Die Konfiguration der Integration zwischen AEM und Adobe Campaign Standard erfordert eine Reihe von Schritten in beiden Lösungen.
 
-1. [Konfigurieren Sie die ](#aemserver-user)
-1. [Überprüfen Sie die ](#resource-type-filter)
+1. [Konfigurieren des `aemserver` in Campaign](#aemserver-user)
+1. [Überprüfen der `AEMResourceTypeFilter` in Campaign](#resource-type-filter)
 1. [Erstellen einer AEM-spezifischen E-Mail-Versandvorlage in Campaign](#aem-email-delivery-template)
 1. [Konfigurieren der Campaign-Integration in AEM](#campaign-integration)
 1. [Konfigurieren der Replikation für die AEM-Veröffentlichungsinstanz](#replication)
 1. [Konfigurieren des AEM-Externalizers](#externalizer)
-1. [Konfigurieren Sie die ](#campaign-remote-user)
+1. [Konfigurieren des `campaign-remote`-Benutzers in AEM](#campaign-remote-user)
 1. [Konfigurieren des externen AEM-Kontos in Campaign](#acc-external-user)
 
 Dieses Dokument führt Sie im Detail durch die einzelnen Schritte.
@@ -44,7 +44,7 @@ Dieses Dokument führt Sie im Detail durch die einzelnen Schritte.
 ## Voraussetzungen {#prerequisites}
 
 * Administratorzugriff auf Adobe Campaign Standard
-   * Weitere Informationen zum Einrichten und Konfigurieren von Adobe Campaign Standard finden Sie in der [Dokumentation zu Adobe Campaign Standard.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=de)
+  * Weitere Informationen zum Einrichten und Konfigurieren von Adobe Campaign Standard finden Sie in der [Dokumentation zu Adobe Campaign Standard.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=de)
 * Administratorzugriff auf AEM
 
 ## Konfigurieren des aemserver-Benutzers in Campaign {#aemserver-user}
@@ -65,7 +65,7 @@ Adobe Campaign Standard enthält standardmäßig einen `aemserver`-Benutzer, den
 
 Ihr `aemserver`-Benutzer verfügt jetzt über die erforderlichen Berechtigungen, damit AEM ihn für die Kommunikation mit Adobe Campaign verwenden kann.
 
-Bevor AEM jedoch den `aemserver`-Benutzer verwenden kann, muss sein Kennwort festgelegt sein. Dies kann nicht über Adobe Campaign erfolgen. Es muss von einer Support-Fachkraft von Adobe durchgeführt werden. [Senden Sie ein Ticket an die Adobe-Kundenunterstützung](https://experienceleague.adobe.com/de?support-tab=home&lang=de#support), um das Zurücksetzen des `aemserver`-Kennworts anzufordern. Wenn Sie das Kennwort von der Adobe-Kundenunterstützung erhalten haben, bewahren Sie es an einem sicheren Ort auf.
+Bevor AEM jedoch den `aemserver`-Benutzer verwenden kann, muss sein Kennwort festgelegt sein. Dies kann nicht über Adobe Campaign erfolgen. Es muss von einer Support-Fachkraft von Adobe durchgeführt werden. [Senden Sie ein Ticket an die Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-tab=home&lang=de#support), um das Zurücksetzen des `aemserver`-Kennworts anzufordern. Wenn Sie das Kennwort von der Adobe-Kundenunterstützung erhalten haben, bewahren Sie es an einem sicheren Ort auf.
 
 ## Überprüfen der Option „AEMResourceTypeFilter“ in Campaign {#resource-type-filter}
 
@@ -141,7 +141,7 @@ AEM kommuniziert mit Adobe Campaign mithilfe einer nativen Integration und dem `
 
 1. Ein neues Fenster und Dialogfeld wird geöffnet, um die Konfiguration zu bearbeiten. Geben Sie die folgenden Informationen ein.
 
-   * **Benutzername**: Dies ist [der `aemserver`-Benutzer in Adobe Campaign, den Sie in einem vorherigen Schritt konfiguriert haben.](#aemserver-user) Standardgemäß ist dies `aemserver`.
+   * **Benutzername** - Dies ist [der `aemserver` Benutzer in Adobe Campaign, den Sie in einem vorherigen Schritt konfiguriert haben.](#aemserver-user) Standardmäßig ist dies `aemserver`.
    * **Kennwort**: Dies ist das Kennwort für [den `aemserver`-Benutzer in Adobe Campaign, den Sie in einem vorherigen Schritt von der Adobe-Kundenunterstützung angefordert haben.](#aemserver-user)
    * **API-Endpunkt** - Dies ist die Adobe Campaign-Instanz-URL.
 
@@ -209,7 +209,7 @@ Genau wie Sie einen Benutzer in Adobe Campaign benötigen, den AEM für die Komm
 
 1. Melden Sie sich in AEM als Admin an.
 1. Klicken Sie in der Hauptnavigationskonsole in der linken Leiste auf **Tools**.
-1. Klicken Sie anschließend auf **Sicherheit** > **Benutzer**, um die Benutzer-Administration-Console zu öffnen. 
+1. Klicken Sie anschließend auf **Sicherheit** > **Benutzer**, um die Benutzer-Administration-Console zu öffnen.
 1. Suchen Sie den `campaign-remote`-Benutzer.
 1. Wählen Sie den `campaign-remote`-Benutzer aus und klicken Sie auf **Eigenschaften**, um den Benutzer zu bearbeiten.
 1. Klicken Sie im Fenster **Benutzereinstellungen bearbeiten** auf **Kennwort ändern**.
