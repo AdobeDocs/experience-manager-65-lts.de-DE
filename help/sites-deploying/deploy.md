@@ -1,42 +1,37 @@
 ---
 title: Bereitstellen und Verwalten
 description: Erfahren Sie, wie Sie mit der AEM-Installation beginnen.
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: deploying
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: add91325feaa96338526edcdde977d1f619e09d4
+source-git-commit: fc736c74bc5bd584059038ad5a54ffc814d095a2
 workflow-type: tm+mt
-source-wordcount: '1363'
-ht-degree: 93%
+source-wordcount: '1437'
+ht-degree: 90%
 
 ---
 
-# Bereitstellen und Verwalten {#deploying-and-maintaining}
+# Bereitstellen und Verwalten{#deploying-and-maintaining}
 
 Inhalt dieser Seite:
 
 * [Grundlegende Konzepte](#basic-concepts)
 
-   * [Was ist AEM?](#what-is-aem)
-   * [Typische Bereitstellungen](#typical-deployment-scenarios)
+  * [Was ist AEM?](#what-is-aem)
+  * [Typische Bereitstellungen](#typical-deployment-scenarios)
 
-      * [On-Premise](#on-premise)
-      * [Managed Services mit Cloud Manager](#managed-services-using-cloud-manager)
+    * [On-Premise](#on-premise)
+    * [Managed Services mit Cloud Manager](#managed-services-using-cloud-manager)
 
 * [Erste Schritte](#getting-started)
 
-   * [Voraussetzungen](#prerequisites)
-   * [Abrufen der Software](#getting-the-software)
-   * [Standardmäßige lokale Installation](#default-local-install)
-   * [Installation von Erstellungs- und Veröffentlichungsinstanzen](#author-and-publish-installs)
-   * [Entpacktes Installationsverzeichnis](#unpacked-install-directory)
-   * [Starten und Anhalten](#starting-and-stopping)
+  * [Voraussetzungen](#prerequisites)
+  * [Abrufen der Software](#getting-the-software)
+  * [Standardmäßige lokale Installation](#default-local-install)
+  * [Installation von Erstellungs- und Veröffentlichungsinstanzen](#author-and-publish-installs)
+  * [Entpacktes Installationsverzeichnis](#unpacked-install-directory)
+  * [Starten und Anhalten](#starting-and-stopping)
 
 Nachdem Sie sich mit diesen Grundlagen vertraut gemacht haben, finden Sie auf den folgenden Unterseiten komplexere und ausführlichere Informationen:
 
@@ -89,9 +84,9 @@ In der Terminologie von AEM entspricht eine „Instanz“ einer Kopie von AEM, d
 
 Diese Instanzen sind hinsichtlich der installierten Software identisch. Sie unterscheiden sich nur in Bezug auf ihre Konfiguration. Darüber hinaus verwenden die meisten Installationen einen Dispatcher:
 
-* **Dispatcher**: Ein mit dem AEM-Dispatcher-Modul angereicherter statischer Webserver (Apache httpd, Microsoft® IIS).  Er speichert die durch die Veröffentlichungsinstanz generierten Web-Seiten zwischen, um die Leistung zu verbessern.
+* **Dispatcher**: Ein mit dem AEM-Dispatcher-Modul angereicherter statischer Webserver (Apache httpd, Microsoft® IIS). Er speichert die durch die Veröffentlichungsinstanz generierten Web-Seiten zwischen, um die Leistung zu verbessern.
 
-Es gibt viele erweiterte Optionen und Ausarbeitungen dieses Setups, aber das grundlegende Muster von Author, Publish und Dispatcher bildet den Kern der meisten Bereitstellungen. Zunächst konzentrieren wir uns auf ein einfaches Setup.  Die Erläuterung der erweiterten Bereitstellungsoptionen folgt.
+Es gibt viele erweiterte Optionen und Ausarbeitungen dieses Setups, aber das grundlegende Muster von Author, Publish und Dispatcher bildet den Kern der meisten Bereitstellungen. Zunächst konzentrieren wir uns auf ein einfaches Setup. Die Erläuterung der erweiterten Bereitstellungsoptionen folgt.
 
 In den folgenden Abschnitten werden beide Szenarien beschrieben:
 
@@ -107,7 +102,7 @@ Sie können AEM auf Servern in Ihrer Unternehmensumgebung installieren. Typische
 
 ### Managed Services mit Cloud Manager {#managed-services-using-cloud-manager}
 
-<i>Wird in Kürze bekannt gegeben.</i>
+Bei Adobe Managed Services-Bereitstellungen werden AEM-Umgebungen über [Cloud Manager bereitgestellt und &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-manager/content/introduction). Informationen zur Überwachung der Anwendungsleistung und des Infrastrukturzustands in allen Produktions- und Nicht-Produktionsumgebungen finden Sie unter [Observability Insights](https://experienceleague.adobe.com/de/docs/ams-observability-insights/content/overview).
 
 ## Erste Schritte {#getting-started}
 
