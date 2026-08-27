@@ -13,8 +13,8 @@ role: Admin
 exl-id: 255ef365-0da5-4bc9-b099-2e3bc67dd25a
 source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 98%
+source-wordcount: '842'
+ht-degree: 92%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 98%
 >
 >Für das Upgrade muss mit Ausfallzeiten für die Erstellungsebene gerechnet werden, da der Großteil der Adobe Experience Manager (AEM)-Upgrades als In-Place-Upgrade durchgeführt wird. Durch Befolgen dieser Best Practices können Sie Ausfallzeiten der Veröffentlichungsebene minimieren oder vermeiden.
 
-Wenn Sie die AEM-Umgebungen aktualisieren, müssen Sie sich die Unterschiede beim Upgrade von Autorenumgebungen und Veröffentlichungsumgebungen bewusst machen, um Ausfallzeiten für Autorinnen und Autoren sowie Endbenutzende zu minimieren. Auf dieser Seite finden Sie einen Überblick über Upgrades einer AEM-Topologie, die auf einer AEM 6.x-Version ausgeführt wird. Da sich der Vorgang für die Autoren- und Veröffentlichungsebene und ebenfalls zwischen Bereitstellungen mit Mongo und TarMK unterscheidet, werden die einzelnen Ebenen und Mikro-Kernels in separaten Abschnitten behandelt. Adobe empfiehlt, beim Ausführen der Bereitstellung zuerst die Autorenumgebung zu aktualisieren und dann mit den Veröffentlichungsumgebungen fortzufahren.
+Wenn Sie die AEM-Umgebungen aktualisieren, müssen Sie sich die Unterschiede beim Upgrade von Autorenumgebungen und Veröffentlichungsumgebungen bewusst machen, um Ausfallzeiten für Autorinnen und Autoren sowie Endbenutzende zu minimieren. Auf dieser Seite wird das allgemeine Verfahren zum Aktualisieren einer AEM-Topologie beschrieben, die derzeit auf einer Version von AEM 6.x ausgeführt wird. Da sich der Prozess zwischen der Autoren- und Veröffentlichungsebene und Mongo- und TarMK-basierten Bereitstellungen unterscheidet, wurden jede Ebene und jeder Mikrokernel in einem separaten Abschnitt aufgeführt. Adobe empfiehlt, beim Ausführen der Bereitstellung zuerst die Autorenumgebung zu aktualisieren und dann mit den Veröffentlichungsumgebungen fortzufahren.
 
 ## Erstellungsebene auf TarMK {#tarmk-author-tier}
 
@@ -116,7 +116,7 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 
 1. Starten Sie die Autoreninstanzen einzeln neu.
 
-1. Entfernen Sie den geklonten Datenspeicher. 
+1. Entfernen Sie den geklonten Datenspeicher.
 
 ### Bei fehlgeschlagenem Upgrade (Rollback)  {#if-unsuccessful-rollback-2}
 

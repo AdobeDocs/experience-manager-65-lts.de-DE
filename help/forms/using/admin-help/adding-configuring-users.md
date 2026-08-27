@@ -6,10 +6,10 @@ role: User, Developer
 feature: Adaptive Forms
 hide: true
 exl-id: b3f8e1d6-3e6e-4b2c-8528-3346bbda3396
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '1724'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -164,7 +164,7 @@ Wenn eine Benutzerin oder ein Benutzer ohne die erforderlichen Berechtigungen f�
 * Lösung „Correspondence Management“
 * AEM Forms Workspace
 
-  ***Hinweis &#x200B;**: Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.*
+  ***Hinweis &#x200B;**: Die Flex Workspace wird für die AEM Forms-Version nicht mehr unterstützt.*
 
 * Forms Manager
 * Prozessberichterstellung

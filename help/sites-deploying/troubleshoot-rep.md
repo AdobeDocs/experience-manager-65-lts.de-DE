@@ -12,7 +12,7 @@ role: Admin
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '928'
 ht-degree: 90%
 
 ---
@@ -40,7 +40,7 @@ Wechseln Sie zu /etc/replication/agents.author.html und klicken Sie dann auf die
 
 **Wenn eine oder einige Agentenwarteschlangen hängen geblieben sind:**
 
-1. Lautet der Status der Warteschlange **gesperrt**? Wenn dies der Fall ist, wird die Veröffentlichungsinstanz nicht ausgeführt oder reagiert sie nicht? Überprüfen Sie die Veröffentlichungsinstanz, um zu sehen, wo der Fehler liegt.  Überprüfen Sie also die Protokolle, ob ein OutOfMemory-Fehler oder ein anderes Problem vorliegt. Wenn die Instanz nur langsam ist, analysieren Sie die Thread-Sicherungskopien.
+1. Lautet der Status der Warteschlange **gesperrt**? Wenn dies der Fall ist, wird die Veröffentlichungsinstanz nicht ausgeführt oder reagiert sie nicht? Überprüfen Sie die Veröffentlichungsinstanz, um zu sehen, wo der Fehler liegt. Überprüfen Sie also die Protokolle, ob ein OutOfMemory-Fehler oder ein anderes Problem vorliegt. Wenn die Instanz nur langsam ist, analysieren Sie die Thread-Sicherungskopien.
 1. Lautet der Status der Warteschlange **Warteschlange ist aktiv – x ausstehend**? Möglicherweise wurde der Replikationsauftrag durch einen SocketRead-Vorgang unterbrochen und wartet auf eine Reaktion der Veröffentlichungsinstanz oder des Dispatchers. Das bedeutet, dass u. U. eine hohe Last auf der Veröffentlichungsinstanz oder dem Dispatcher vorliegt oder dass diese durch eine Sperre unterbrochen wurden. Überprüfen Sie in diesem Fall die Thread-Sicherungskopien der Autoren- und Veröffentlichungsinstanzen.
 
    * Öffnen Sie die Thread-Sicherungskopien der Autoreninstanz in einem Analyzer für Thread-Sicherungskopien und prüfen Sie, ob der Sling-Eventing-Auftrag des Replikationsagenten durch einen SocketRead-Vorgang unterbrochen wurde.
@@ -55,7 +55,7 @@ Wechseln Sie zu /etc/replication/agents.author.html und klicken Sie dann auf die
    1. Klicken Sie auf die Lupenschaltfläche.
    1. Wählen Sie „XPath“ als Typ aus.
    1. Geben Sie in das Feld „Abfrage“ diese Abfrage /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job) order by @slingevent ein:created
-   1. Klicken Sie auf „Suchen“. 
+   1. Klicken Sie auf „Suchen“.
    1. Die in den Ergebnissen ganz oben angezeigten Elemente sind die aktuellen Sling-Eventing-Aufträge. Klicken Sie auf die einzelnen Aufträge, um nach den unterbrochenen Replikationen zu suchen, die mit dem oben in der Warteschlange Angezeigten übereinstimmen.
 
 **Erstellen einer „replication.log“-Datei**
@@ -76,7 +76,7 @@ In manchen Fällen ist es hilfreich, wenn die gesamte Replikationsprotokollierun
 
 In manchen Fällen ist es u. U. nützlich, die Replikations-Warteschlange anzuhalten, um die Last auf dem Autorensystem zu reduzieren, ohne dieses zu deaktivieren. Dies ist derzeit nur durch das vorübergehende Konfigurieren eines ungültigen Ports möglich. Ab Version 5.4 steht eine Schaltfläche zum Anhalten der Warteschlange des Replikationsagenten zur Verfügung, jedoch mit einigen Einschränkungen.
 
-1. Der Status wird nicht persistiert, d. h., wenn Sie einen Server neu starten oder ein Replikations-Bundle wiederverwenden, kehrt die Warteschlange wieder in den Ausführungsstatus zurück.
+1. Der Status wird nicht persistiert, d. h., wenn Sie einen Server neu starten oder ein Replikations-Paket wiederverwenden, kehrt die Warteschlange wieder in den Ausführungsstatus zurück.
 1. Beim Anhalten für kurze Zeiträume tritt ein Leerlauf ein (OOB nach einer Stunde ohne Aktivitäten mit Replikation durch andere Threads), nicht jedoch für längere Zeiträume. Dies liegt an einer Funktion von Apache Sling, die Threads im Leerlauf verhindert. Überprüfen Sie also, ob ein Auftragswarteschlangen-Thread länger nicht verwendet wurde. Ist dies der Fall, werden Bereinigungszyklen gestartet. Durch den Bereinigungszyklus wird der Thread gestoppt und die Einstellung zum Anhalten wird nicht beibehalten. Da Aufträge persistiert werden, wird ein neuer Thread zum Verarbeiten der Warteschlange initiiert, der keine Details über die angehaltene Konfiguration umfasst. Aus diesem Grund wird die Warteschlange in den Ausführungsstatus versetzt.
 
 ## Seitenberechtigungen werden bei der Benutzeraktivierung nicht repliziert {#page-permissions-are-not-replicated-on-user-activation}
