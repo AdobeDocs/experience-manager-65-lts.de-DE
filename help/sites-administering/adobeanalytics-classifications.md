@@ -9,14 +9,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: f564bda3-4141-40b3-8c08-140d4da92e2c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9c1795a90f0cd80dcf886477620a5330c5e3fbbf
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 100%
+source-wordcount: '673'
+ht-degree: 93%
 
 ---
 
 # Adobe Classifications{#adobe-classifications}
+
+[!BADGE Eingestellt]{type=negative tooltip="Diese Funktion wurde jetzt eingestellt"}
+
+<div class="preview"> Adobe Classifications erfordern eine Adobe Analytics-Konfiguration, die Benutzeranmeldeinformationen (Benutzername und Kennwort) verwendet. Dies wird jetzt nicht mehr unterstützt, da die <a href="https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/">Adobe Analytics 1.4-API das Ende der Lebensdauer erreicht </a>. Daher werden Adobe-Klassifizierungen nicht mehr unterstützt. </div>
 
 Adobe Classifications führt geplante Exporte von Klassifizierungsdaten in [Adobe Analytics](/help/sites-administering/adobeanalytics.md) durch. Der Exporter ist eine Implementierung von **com.adobe.cq.scheduled.exporter.Exporter**.
 
@@ -85,13 +89,13 @@ In der Standardimplementierung (SAINTDefaultTransformer) werden die untergeordne
 
 * ID-Klassifikation `nt:unstructured`
 
-   * 1 `nt:unstructured`
+  * 1 `nt:unstructured`
 
-      * Produkt = Mein Produktname (Zeichenfolge)
-      * Preis = 120,90 (Zeichenfolge)
-      * Größe = M (Zeichenfolge)
-      * Farbe = schwarz (Zeichenfolge)
-      * Color^Code = 101 (Zeichenfolge)
+    * Produkt = Mein Produktname (Zeichenfolge)
+    * Preis = 120,90 (Zeichenfolge)
+    * Größe = M (Zeichenfolge)
+    * Farbe = schwarz (Zeichenfolge)
+    * Color^Code = 101 (Zeichenfolge)
 
 **SAINT-Header und -Eintrag:**
 
@@ -124,7 +128,7 @@ Die Eigenschaften umfassen Folgendes:
    <td>Datensatzbeziehungs-ID, für die der Importauftrag ausgeführt werden soll. </td>
   </tr>
   <tr>
-   <td>description</td>
+   <td>Beschreibung</td>
    <td>Auftragsbeschreibung. <br /> </td>
   </tr>
   <tr>

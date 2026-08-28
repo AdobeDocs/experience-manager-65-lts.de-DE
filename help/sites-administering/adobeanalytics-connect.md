@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: a39ed93e-4276-48ff-ba49-d0f630409222
-source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
+source-git-commit: 9c1795a90f0cd80dcf886477620a5330c5e3fbbf
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 98%
+source-wordcount: '1582'
+ht-degree: 93%
 
 ---
 
@@ -63,7 +63,7 @@ Wenn Ihre Organisation eine Datenerfassung oder einen Datenabruf von einem besti
 | Singapur | `https://api4.omniture.com/` |
 | Oregon | `https://api5.omniture.com/` |
 
-Verwenden Sie die [Web-Konsole zum Konfigurieren des OSGi-Bundles](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) **Adobe AEM Analytics HTTP-Client**. Fügen Sie die **Datenzentrum-URL** des Datenzentrums hinzu, in dem eine Report Suite gehostet wird, für die Ihre AEM-Seiten die Daten erfassen.
+Verwenden Sie die [Web-Konsole zum Konfigurieren des OSGi-Pakets](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) **Adobe AEM Analytics HTTP-Client**. Fügen Sie die **Datenzentrum-URL** des Datenzentrums hinzu, in dem eine Report Suite gehostet wird, für die Ihre AEM-Seiten die Daten erfassen.
 
 ![aa-07](assets/aa-07.png)
 
@@ -81,6 +81,10 @@ Verwenden Sie die [Web-Konsole zum Konfigurieren des OSGi-Bundles](/help/sites-d
 1. Klicken Sie auf „Speichern“.
 
 ## Konfigurieren der Verbindung zu Adobe Analytics {#configuring-the-connection-to-adobe-analytics}
+
+>[!CAUTION]
+>
+>Die [Adobe Analytics 1.4-API hat das Ende der Lebensdauer erreicht](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). Daher werden Adobe Analytics-Konfigurationen, die Benutzeranmeldeinformationen (Benutzername und Kennwort) verwenden, nicht mehr unterstützt.
 
 >[!CAUTION]
 >
@@ -150,21 +154,21 @@ Das Framework-System ermöglicht Ihnen die Änderung der Server-Einstellungen in
 
 * **Tracking-Server**
 
-   * Enthält die URL, die zum Senden von Adobe Analytics-Aufrufen verwendet wird
+  * Enthält die URL, die zum Senden von Adobe Analytics-Aufrufen verwendet wird
 
-      * `cname` – standardmäßig der *Unternehmensname* im Adobe Analytics-Konto
-      * `d1` – entspricht dem Rechenzentrum, an das die Informationen gesendet werden (entweder `d1`, `d2` oder `d3`)
-      * `sc.omtrdc.net` – Domain-Name
+    * `cname` – standardmäßig der *Unternehmensname* im Adobe Analytics-Konto
+    * `d1` – entspricht dem Rechenzentrum, an das die Informationen gesendet werden (entweder `d1`, `d2` oder `d3`)
+    * `sc.omtrdc.net` – Domain-Name
 
 * **Sicherer Tracking-Server**
 
-   * Hat dieselben Segmente wie der Tracking-Server
-   * wird zum Senden von Daten von sicheren Seiten verwendet (`https://`)
+  * Hat dieselben Segmente wie der Tracking-Server
+  * wird zum Senden von Daten von sicheren Seiten verwendet (`https://`)
 
 * **Besucher-Namespace**
 
-   * Der Namespace bestimmt den ersten Teil der Tracking-URL.
-   * Wird der Namespace zum Beispiel in **CNAME** geändert, hat dies zur Folge, dass Aufrufe an Adobe Analytics anders als das standardmäßige **CNAME.d1.omtrdc.net** aussehen.
+  * Der Namespace bestimmt den ersten Teil der Tracking-URL.
+  * Wird der Namespace zum Beispiel in **CNAME** geändert, hat dies zur Folge, dass Aufrufe an Adobe Analytics anders als das standardmäßige **CNAME.d1.omtrdc.net** aussehen.
 
 ## Verknüpfung einer Seite mit einem Adobe Analytics-Framework {#associating-a-page-with-a-adobe-analytics-framework}
 
@@ -202,11 +206,11 @@ Der Standardwert lautet `6`.
 
 * **Abrufverzögerung**:
 Die Anzahl der Millisekunden zwischen Versuchen, einen Bericht in der Warteschlange abzurufen.
-Der Standardwert lautet `10000`. Da dies in Millisekunden geschieht, entspricht es 10 Sekunden.
+Der Standardwert lautet `10000`. Da dies in Millisekunden angegeben wird, entspricht es 10 Sekunden.
 
 * **Abrufhäufigkeit**:
 Ein `cron` Ausdruck, um die Häufigkeit des Abrufs des Analytics-Berichts zu bestimmen.
-Der Standardwert ist `0 0 0/12 * * ?`. Dies entspricht 12 Abrufen pro Stunde.
+Der Standardwert ist `0 0 0/12 * * ?`, was 12 Abrufen pro Stunde entspricht.
 
 Zum Konfigurieren dieses OSGi-Service können Sie entweder die [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder einen [osgiConfig-Knoten im Repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) verwenden (die Service-PID lautet `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
 
