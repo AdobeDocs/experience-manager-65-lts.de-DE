@@ -205,7 +205,7 @@ Das JSP-Skript dieser Komponente generiert Aufrufe an die Target-JavaScript-API 
 
 Die standardmäßige `mbox.js`-Datei, die zum Erstellen von Mboxes verwendet wird, befindet sich unter `/etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js`. Um eine benutzerdefinierte `mbox.js`-Datei zu verwenden, fügen Sie die Datei zur Target-Cloud-Konfiguration hinzu. Um die Datei hinzuzufügen, muss die `mbox.js` Datei im Dateisystem verfügbar sein.
 
-Wenn Sie beispielsweise den Marketing Cloud ID-Service [](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=de) verwenden möchten, müssen Sie `mbox.js` herunterladen, damit er den richtigen Wert für die `imsOrgID`-Variable enthält, die auf Ihrem Mandanten basiert. Diese Variable ist für die Integration mit dem Marketing Cloud-ID-Service erforderlich. Weitere Informationen finden Sie unter [Adobe Analytics as the Reporting Source for Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=de) und [Vor der Implementierung.](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html?lang=de)
+Wenn Sie beispielsweise den Marketing Cloud ID-Service [&#128279;](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=de) verwenden möchten, müssen Sie `mbox.js` herunterladen, damit er den richtigen Wert für die `imsOrgID`-Variable enthält, die auf Ihrem Mandanten basiert. Diese Variable ist für die Integration mit dem Marketing Cloud-ID-Service erforderlich. Weitere Informationen finden Sie unter [Adobe Analytics as the Reporting Source for Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=de) und [Vor der Implementierung.](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html?lang=de)
 
 >[!NOTE]
 >
@@ -325,7 +325,7 @@ Wenn im vorherigen Beispiel die Komponente in der Kaufbestätigungsseite enthalt
 
 ## Grundlagen der Target-Komponente {#understanding-the-target-component}
 
-Die Target-Komponente ermöglicht es Autorinnen und Autoren, dynamische Mboxes aus CQ-Inhaltskomponenten zu erstellen. Weitere Informationen finden [ unter ](/help/sites-authoring/content-targeting-touch.md)Content-Targeting“. Die Target-Komponente befindet sich unter `/libs/cq/personalization/components/target`.
+Die Target-Komponente ermöglicht es Autorinnen und Autoren, dynamische Mboxes aus CQ-Inhaltskomponenten zu erstellen. Weitere Informationen finden [&#x200B; unter &#x200B;](/help/sites-authoring/content-targeting-touch.md)Content-Targeting“. Die Target-Komponente befindet sich unter `/libs/cq/personalization/components/target`.
 
 Das `target.jsp` Skript greift auf die Seiteneigenschaften zu, um die Targeting-Engine zu bestimmen, die für die Komponente verwendet werden soll, und führt dann das entsprechende Skript aus:
 
