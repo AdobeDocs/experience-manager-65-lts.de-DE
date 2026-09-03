@@ -10,14 +10,15 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
 exl-id: 650ba9be-6546-46dc-b4ab-ea0b97abff40
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: d49de63985f537da3e6b92dac5233c104b1ccdfe
 workflow-type: tm+mt
-source-wordcount: '5284'
-ht-degree: 99%
+source-wordcount: '5374'
+ht-degree: 93%
 
 ---
 
-# Verfassen zielgerichteter Inhalte im Targeting-Modus{#authoring-targeted-content-using-targeting-mode}
+
+# Verfassen zielgerichteter Inhalte im Targeting-Modus {#authoring-targeted-content-using-targeting-mode}
 
 Verfassen von zielgerichteten Inhalten im Targeting-Modus von AEM. Im Targeting-Modus und in der Targeting-Komponente stehen verschiedene Werkzeuge zur Verfügung, mit deren Hilfe sich Inhalte für Erlebnisse erstellen lassen:
 
@@ -30,13 +31,13 @@ Verfassen von zielgerichteten Inhalten im Targeting-Modus von AEM. Im Targeting-
 * Simulieren Sie das Benutzererlebnis.
 * Konfigurieren Sie die Target-Komponente für weitere Anpassungen.
 
-Sie können entweder AEM oder Adobe Target als Targeting-Engine verwenden (für die Verwendung von Adobe Target benötigen Sie ein gültiges Adobe Target-Konto). Wenn Sie Adobe Target verwenden, müssen Sie zunächst die Integration konfigurieren. Informationen hierzu finden Sie unter [Anleitung für die Integration mit Adobe Target](/help/sites-administering/target.md).
+Sie können entweder AEM oder Adobe Target als Targeting-Engine verwenden (für die Verwendung von Adobe Target benötigen Sie ein gültiges Adobe Target-Konto). Wenn Sie Adobe Target verwenden, müssen Sie zunächst die Integration konfigurieren. Siehe [Anleitung zur Integration mit Adobe Target.](/help/sites-administering/target.md)
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
-Die im Targeting-Modus sichtbaren Aktivitäten und Erlebnisse spiegeln die Optionen der [Aktivitätskonsole](/help/sites-authoring/activitylib.md) wider:
+Die im Target-Modus sichtbaren Aktivitäten und Erlebnisse spiegeln die Optionen der [Aktivitätskonsole](/help/sites-authoring/activitylib.md) wider:
 
-* Änderungen, die Sie im Targeting-Modus an Aktivitäten und Erlebnissen vornehmen, werden in der Aktivitätskonsole angezeigt.
+* Änderungen, die Sie im Targeting-Modus an Aktivitäten und Erlebnissen vornehmen, werden in der Aktivitätskonsole übernommen.
 * Änderungen, die in der Aktivitätskonsole vorgenommen werden, werden im Targeting-Modus angezeigt.
 
 >[!NOTE]
@@ -50,6 +51,10 @@ Die im Targeting-Modus sichtbaren Aktivitäten und Erlebnisse spiegeln die Optio
 >[!NOTE]
 >
 >Beim Targeting bleibt die Kombination aus Branding und Aktivität auf Benutzerebene gleich, nicht auf Kanalebene.
+
+>[!NOTE]
+>
+>Der Targeting-Modus und die klassische Zielgruppenkomponente für AEM verwenden die auf ContextHub basierende AEM Target-Integration. Seiten, die ausschließlich auf der AEP Web SDK basieren, rendern daher nicht die klassische AEM-Targeting-Komponente. [Weitere Informationen finden Sie in der Entwicklerdokumentation.](/help/sites-developing/target.md)
 
 ## Wechseln in den Modus „Targeting“ {#switching-to-targeting-mode}
 
@@ -74,7 +79,7 @@ Außerdem haben Sie die Möglichkeit, Adobe Target-Aktivitäten mit AEM zu erst
 
 Darüber hinaus können Sie Ziele und Metriken für alle Adobe Target-Aktivitäten verwalten und Ihre Adobe Target-Zielgruppen verwalten. Zu guter Letzt steht Ihnen auch das Aktivitäts-Reporting von Adobe Target zur Verfügung, die unter anderem auch die Konvertierung der im A/B-Test am besten abschneidenden Erlebnisse umfasst.
 
-Fügen Sie eine Aktivität hinzu, erscheint diese auch in der [Aktivitätskonsole](/help/sites-authoring/activitylib.md).
+Wenn Sie eine Aktivität hinzufügen, wird sie auch in der [Aktivitätskonsole“ ](/help/sites-authoring/activitylib.md)
 
 So fügen Sie eine Aktivität hinzu:
 
@@ -82,7 +87,7 @@ So fügen Sie eine Aktivität hinzu:
 
    >[!NOTE]
    >
-   >Adobe empfiehlt, dass Sie [Marken über die Aktivitätenkonsole erstellen](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
+   >Adobe empfiehlt, [Marken über die Aktivitätskonsole zu erstellen.](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console)
    >
    >
    >Wenn Sie eine Marke auf andere Weise erstellen, stellen Sie sicher, dass der Knoten `/campaigns/<brand>/master` vorhanden ist. Sonst führt der Versuch, eine Aktivität zu erstellen, zu einem Fehler.
@@ -139,7 +144,7 @@ Im Erstellungsschritt des Inhalts-Targetings werden Erlebnisse geschaffen. n die
 
 ### Anzeigen von Erlebnisangeboten im Targeting-Modus {#seeing-experience-offers-in-targeting-mode}
 
-Nach dem [Starten des Targeting-Prozesses](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) wählen Sie ein Erlebnis aus, um die Angebote anzuzeigen, die für dieses Erlebnis bereitgestellt werden. Bei der Auswahl eines Erlebnisses ändern sich die auf der Seite angezeigten Targeting-Komponenten so, dass das Angebot dieses Erlebnisses angezeigt wird.
+Nachdem Sie [ Targeting-Prozess gestartet haben, ](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) Sie ein Erlebnis aus, um die für dieses Erlebnis bereitgestellten Angebote anzuzeigen. Bei der Auswahl eines Erlebnisses ändern sich die auf der Seite angezeigten Targeting-Komponenten so, dass das Angebot dieses Erlebnisses angezeigt wird.
 
 >[!CAUTION]
 >
@@ -177,7 +182,7 @@ Sie können benutzerdefinierte Angebote in einer Angebotsbibliothek speichern, w
 
 ### Hinzufügen und Entfernen von Erlebnissen im Targeting-Modus {#adding-and-removing-experiences-using-targeting-mode}
 
-Im Erstellungsschritt des [Targeting-Prozesses](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) können Sie Erlebnisse hinzufügen und entfernen. Darüber hinaus können Sie ein Erlebnis duplizieren und es auch umbenennen.
+Mit dem Schritt Erstellen [ Zielgruppenbestimmungsprozesses ](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) Sie Erlebnisse hinzufügen und entfernen. Darüber hinaus können Sie ein Erlebnis duplizieren und es auch umbenennen.
 
 #### Hinzufügen von Erlebnissen im Targeting-Modus {#adding-experiences-using-targeting-mode}
 
@@ -224,19 +229,19 @@ So duplizieren Sie Erlebnisse im Targeting-Modus:
 
 Erstellen Sie durch das Targeting einer Komponente Angebote für Ihre Erlebnisse. Targeting-Komponenten stellen die Inhalte bereit, die als Angebote für Erlebnisse verwendet werden.
 
-* [Führen Sie das Targeting einer bestehenden Komponente durch](/help/sites-authoring/content-targeting-touch.md#creating-a-default-offer-by-targeting-an-existing-component). Der Inhalt wird zum Angebot des Standarderlebnisses.
-* [Fügen Sie eine Target-Komponente hinzu](/help/sites-authoring/content-targeting-touch.md#creating-an-offer-by-adding-a-target-component) und versehen Sie diese anschließend mit Inhalt.
+* [Targeting einer vorhandenen Komponente.](/help/sites-authoring/content-targeting-touch.md#creating-a-default-offer-by-targeting-an-existing-component) Der Inhalt wird zum Angebot des Standarderlebnisses.
+* [Fügen Sie eine Target-Komponente hinzu ](/help/sites-authoring/content-targeting-touch.md#creating-an-offer-by-adding-a-target-component) fügen Sie dann der Komponente Inhalte hinzu.
 
 Nach dem Targeting der Komponente können für jedes Erlebnis Angebote hinzugefügt werden:
 
-* [Fügen Sie individuelle Angebote hinzu](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer).
-* [Fügen Sie Angebote aus einer Bibliothek hinzu](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
+* [Hinzufügen benutzerdefinierter Angebote.](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer)
+* [Hinzufügen von Angeboten aus einer Bibliothek](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)
 
 Für die Arbeit mit Angeboten stehen die folgenden Tools zur Verfügung:
 
-* [Fügen Sie einer Angebotsbibliothek ein individuelles Angebot hinzu](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library).
-* [Konvertieren Sie ein Bibliotheksangebot in ein individuelles Angebot](/help/sites-authoring/content-targeting-touch.md#converting-a-library-offer-to-a-custom-library).
-* [Öffnen Sie ein Bibliotheksangebot und bearbeiten Sie den Inhalt](/help/sites-authoring/content-targeting-touch.md#editing-a-library-offer).
+* [Hinzufügen eines benutzerdefinierten Angebots zu einer Angebotsbibliothek.](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library)
+* [Konvertieren eines Bibliothekangebots in ein benutzerdefiniertes Angebot.](/help/sites-authoring/content-targeting-touch.md#converting-a-library-offer-to-a-custom-library)
+* [Öffnen Sie ein Bibliotheksangebot und bearbeiten Sie den Inhalt.](/help/sites-authoring/content-targeting-touch.md#editing-a-library-offer)
 
 #### Erstellen von Standardangeboten durch Targeting bestehender Komponenten {#creating-a-default-offer-by-targeting-an-existing-component}
 
@@ -244,7 +249,7 @@ Durch Targeting einer Komponente auf der Seite können Sie diese als Angebot fü
 
 Nach dem Targeting einer Komponente kann nur diese Komponente im Angebot verwendet werden. Sie können die Komponente nicht aus dem Angebot entfernen und dem Angebot auch keine anderen Komponenten hinzufügen.
 
-Gehen Sie folgendermaßen vor, nachdem Sie den [Targeting-Prozess gestartet](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) haben.
+Gehen Sie wie folgt vor[ nachdem Sie den Targeting-Prozess gestartet haben](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)
 
 1. Klicken Sie auf die Komponente für das Targeting. Die Symbolleiste für die Komponente wird angezeigt, ähnlich wie im folgenden Beispiel.
 
@@ -254,7 +259,7 @@ Gehen Sie folgendermaßen vor, nachdem Sie den [Targeting-Prozess gestartet](/he
 
    ![Ziel](do-not-localize/chlimage_1.png)
 
-   Der Komponenteninhalt ist das Angebot für das Standarderlebnis. Beim Festlegen einer Komponente wird der zugehörige Standardknoten für jedes Erlebnis repliziert. Dies ist zum Modifizieren des richtigen Inhaltsknotens beim erlebnisspezifischen Bearbeiten erforderlich. Diesen Ereignissen, die nicht dem Standardereignis entsprechen, können Sie entweder [ein individuelles Angebot](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) oder [ein Bibliotheksangebot](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library) hinzufügen.
+   Der Komponenteninhalt ist das Angebot für das Standarderlebnis. Beim Festlegen einer Komponente wird der zugehörige Standardknoten für jedes Erlebnis repliziert. Dies ist zum Modifizieren des richtigen Inhaltsknotens beim erlebnisspezifischen Bearbeiten erforderlich. Bei diesen nicht standardmäßigen Erlebnissen können Sie entweder [Benutzerdefiniertes Angebot hinzufügen](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) oder [Bibliotheksangebot hinzufügen.](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)
 
 #### Erstellen eines Angebots durch Hinzufügen einer Target-Komponente {#creating-an-offer-by-adding-a-target-component}
 
@@ -291,25 +296,24 @@ Möchten Sie Targeting-Inhalte bearbeiten, müssen Sie zunächst auf **Targeting
 
    >[!NOTE]
    >
-   >Falls diese Einstellung von den Admins festgelegt worden ist, müssen Sie den Ort möglicherweise genau angeben.
+   >Sollte diese Einstellung vom Administrator gefordert werden, müssen Sie den Ort möglicherweise genau angeben.
    >
    >
-   >Hier können Admins entscheiden, ob diese Konfiguration erforderlich ist: **http://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
+   >Administratoren können unter `https://<host>:<port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet` festlegen, ob diese Einstellung zwingend vorgenommen werden muss.
    >
-   >
-   >Um Benutzer zur Eingabe eines Pfads aufzufordern, aktivieren Sie das Kontrollkästchen **Ortsangabe erzwingen**.
+   >Sollen Benutzer zur Eingabe eines Pfads aufgefordert werden, aktivieren Sie das Kontrollkästchen **Ortsangabe erzwingen**.
 
 1. Wählen Sie das Erlebnis aus, für das Sie das Angebot erstellen möchten.
 1. Erstellen Sie das Angebot:
 
    * Ziehen Sie für das Standarderlebnis Komponenten in den Targeting-Ablagebereich und bearbeiten Sie die Komponenteneigenschaften wie gewohnt, um Inhalte für das Angebot zu erstellen.
-   * Für Erlebnisse, die nicht dem Standarderlebnis entsprechen, können Sie entweder [individuelle Angebote](#adding-a-custom-offer) oder [Bibliotheksangebote](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library) hinzufügen.
+   * Bei nicht standardmäßigen Erlebnissen entweder [Benutzerdefiniertes Angebot hinzufügen](#adding-a-custom-offer) oder [Bibliotheksangebot hinzufügen.](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)
 
 #### Hinzufügen individueller Angebote {#adding-a-custom-offer}
 
 Erstellen Sie ein Angebot, indem Sie den Inhalt einer Targeting-Komponente im Targeting-Modus bearbeiten. Wenn Sie ein benutzerdefiniertes Angebot erstellen, wird es als Angebot für ein einzelnes Erlebnis verwendet.
 
-Sollten Sie sich dazu entschließen, das Angebot auch für andere Erlebnisse nutzen zu wollen, können Sie ein individuelles Angebot erstellen und es [der Bibliothek hinzufügen](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library). Weitere Informationen zur Verwendung der Angebotskonsole für die Erstellung wiederverwendbarer Angebote finden Sie unter [Hinzufügen von Angeboten zu Angebotsbibliotheken](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library).
+Wenn Sie sich entscheiden, dass das Angebot für andere Erlebnisse verwendet werden kann, können Sie ein benutzerdefiniertes Angebot erstellen und [es der Bibliothek hinzufügen.](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library) Informationen zur Verwendung der Angebotskonsole zum Erstellen eines wiederverwendbaren Angebots finden Sie unter [Hinzufügen eines Angebots zu einer Angebotsbibliothek.](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)
 
 1. Wählen Sie das Erlebnis aus, dem Sie das Angebot hinzufügen möchten.
 1. Um das Komponentenmenü anzuzeigen, klicken Sie auf die Targeting-Komponente, zu der Sie das Angebot hinzufügen.
@@ -367,7 +371,7 @@ Sie können dem Standarderlebnis keine Bibliotheksangebote hinzufügen.
 
 Fügen Sie ein benutzerdefiniertes Angebot zur [Angebotsbibliothek](/help/sites-authoring/offerlib.md) hinzu, wenn Sie es als Angebot für mehrere Erlebnisse wiederverwenden möchten. Sie können zur Bibliothek der aktuellen Marke, die Sie als Ziel auswählen, Angebote hinzufügen.
 
-Weitere Informationen zur Verwendung der Angebotskonsole für die Erstellung wiederverwendbarer Angebote finden Sie unter [Hinzufügen von Angeboten zu Angebotsbibliotheken](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library).
+Informationen zur Verwendung der Angebotskonsole zum Erstellen eines wiederverwendbaren Angebots finden Sie unter [Hinzufügen eines Angebots zu einer Angebotsbibliothek.](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)
 
 1. Wählen Sie das Erlebnis aus, um das benutzerdefinierte Angebot anzuzeigen.
 1. Klicken Sie auf das benutzerdefinierte Angebot, um das Angebotsmenü anzuzeigen, und dann auf das Symbol **Angebot in Angebotsbibliothek speichern**.
@@ -381,7 +385,7 @@ Weitere Informationen zur Verwendung der Angebotskonsole für die Erstellung wie
 Konvertieren Sie ein Bibliotheksangebot in ein benutzerdefiniertes Angebot, um das Angebot für das aktuelle Erlebnis zu ändern, ohne das Angebot in anderen Erlebnissen zu ändern.
 
 1. Wählen Sie das Erlebnis aus, um das Bibliotheksangebot anzuzeigen.
-1. Klicken Sie auf das Bibliotheksangebot, um das Angebotsmenü anzuzeigen, und dann auf das Symbol „In Inline-Angebot konvertieren“.
+1. Klicken Sie auf das Bibliotheksangebot, um das Angebotsmenü anzuzeigen, und klicken Sie dann auf das Symbol **In Inline-** umwandeln).
 
    ![In Inline-Angebot konvertieren](do-not-localize/chlimage_1-5.png)
 
@@ -390,7 +394,7 @@ Konvertieren Sie ein Bibliotheksangebot in ein benutzerdefiniertes Angebot, um d
 Öffnen Sie ein Bibliotheksangebot aus einem Erlebnis im Targeting-Modus, um das Angebot zu bearbeiten. Die vorgenommenen Änderungen werden in allen Erlebnissen angezeigt, die das Angebot verwenden.
 
 1. Wählen Sie das Erlebnis aus, um das Bibliotheksangebot anzuzeigen.
-1. Wandeln Sie das Bibliotheksangebot in ein lokales/individuelles Angebot um. Weitere Informationen finden Sie unter [Umwandeln von Bibliotheksangeboten in individuelle Angebote](#converting-a-library-offer-to-a-custom-library).
+1. Wandeln Sie das Bibliotheksangebot in ein lokales/individuelles Angebot um. Siehe [Konvertieren eines Bibliothekangebots in eine benutzerdefinierte Bibliothek.](#converting-a-library-offer-to-a-custom-library)
 1. Bearbeiten Sie den Inhalt des Angebots.
 
 1. Speichern Sie es erneut in der Bibliothek. Weitere Informationen finden Sie unter [Hinzufügen individueller Angebote zu einer Bibliothek](#adding-a-custom-offer-to-a-library).
@@ -399,7 +403,7 @@ Konvertieren Sie ein Bibliotheksangebot in ein benutzerdefiniertes Angebot, um d
 
 Im Target-Schritt des [Targeting-Verfahrens](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) werden Zielgruppen mit den Erlebnissen verknüpft, die Sie während des Erstellungsschritts bearbeitet haben. Auf der Target-Seite werden die Zielgruppen angezeigt, die von den einzelnen Erlebnissen angesprochen werden. Sie können die Zielgruppe für jedes Erlebnis festlegen oder ändern. Sollten Sie mit Adobe Target arbeiten, können Sie zudem A/B-Tests erstellen, die es Ihnen ermöglichen, einen bestimmten Anteil des Traffics einer Zielgruppe auf ein bestimmtes Erlebnis umzuleiten.
 
-### Wenn Sie AEM-Targeting oder Adobe Target (Erlebnis-Targeting) verwenden … {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### Wenn Sie AEM-Targeting oder Adobe Target (Erlebnis-Targeting) verwenden {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 werden Zielgruppen auf der linken Seite des Zuordnungsdiagramms angezeigt, Erlebnisse auf der rechten Seite.
 
@@ -407,7 +411,7 @@ werden Zielgruppen auf der linken Seite des Zuordnungsdiagramms angezeigt, Erleb
 
 Legen Sie mithilfe eines Segments eine Zielgruppe fest. Die Cloud-Konfiguration für die Seite bestimmt darüber, welche Segmente Ihnen zur Verfügung stehen. Wenn die Seite nicht mit einer Adobe Target-Cloud-Konfiguration verknüpft ist, stehen AEM-Segmente zum Definieren von Zielgruppen zur Verfügung. Wenn die Seite mit einer Adobe Target-Cloud-Konfiguration verknüpft ist, verwenden Sie Target-Segmente.
 
-Informationen zu Targeting-Engines finden Sie unter [Targeting-Engine](/help/sites-authoring/personalization.md#targeting-engine).
+Informationen zu Targeting-Engines finden Sie unter [Targeting-Engine.](/help/sites-authoring/personalization.md#targeting-engine)
 
 Verwenden Sie nicht mehr als ein Erlebnis für eine Zielgruppe. Neben einem Erlebnis wird ein Warnsymbol angezeigt, wenn es einer Zielgruppe zugeordnet ist, die einem anderen Erlebnis zugeordnet ist.
 
@@ -421,7 +425,7 @@ Gehen Sie wie folgt vor, um ein Erlebnis mit einer Zielgruppe zu verknüpfen, we
 1. (Optional) Klicken Sie auf **Bearbeiten** und geben Sie dann einen Suchbegriff ein, um nach dem gewünschten Segment zu suchen.
 1. Wählen Sie aus der Zielgruppenliste die gewünschte Zielgruppe aus und klicken Sie auf **OK**.
 
-### Wenn Sie A/B-Tests (Adobe Target) verwenden …     {#if-you-are-using-a-b-testing-adobe-target}
+### Wenn Sie A/B-Tests (Adobe Target) verwenden {#if-you-are-using-a-b-testing-adobe-target}
 
 Wenn Sie über eine A/B-Test-Aktivität verfügen, befinden sich die Zielgruppen auf der linken Seite, der Prozentsatz, in dem jedes Erlebnis angezeigt wird, befindet sich in der Mitte und die Erlebnisse befinden sich auf der rechten Seite.
 
@@ -562,8 +566,8 @@ So konfigurieren Sie Ziele und Einstellungen, falls Sie Adobe Target verwenden:
    * **Wenn deaktiviert**: Beendet die Aktivität, wenn die Seite, die den zielgerichteten Inhalt enthält, deaktiviert wird.
    * **Angegebenes Datum und Uhrzeit:** Ein bestimmter Zeitpunkt. Wenn Sie diese Option auswählen, klicken Sie auf das Kalendersymbol, wählen Sie ein Datum aus und geben Sie die Zeit für das Ende der Aktivität an.
 
-1. Um eine Priorität für die Aktivität festzulegen, wählen Sie mit dem Schieberegler entweder **Niedrig**, **Normal**, oder **Hoch**.
-1. Wenn Sie Adobe Analytics für Ihr Adobe Target-Konto konfiguriert haben, wird das Dropdown-Menü **Berichtsquelle** angezeigt. Wählen Sie **Adobe Target** oder **Adobe Analytics** als Quelle.
+1. Um eine Priorität für die Aktivität festzulegen, wählen Sie mit dem Schieberegler entweder **Niedrig**, **Normal** oder **Hoch**.
+1. Sollten Sie Adobe Analytics über Ihr Adobe Target-Konto konfiguriert haben, wird Ihnen zusätzlich das Dropdown-Menü **Berichtsquelle** angezeigt. Wählen Sie **Adobe Target** oder **Adobe Analytics** als Quelle.
 
    Wenn Sie **Adobe Analytics** auswählen, wählen Sie das Unternehmen und die Report Suite aus. Sollten Sie **Adobe Target** auswählen, muss keine weitere Auswahl getroffen werden.
 
@@ -575,7 +579,7 @@ So konfigurieren Sie Ziele und Einstellungen, falls Sie Adobe Target verwenden:
 
    Möchten Sie die Inhalte aller Felder löschen, klicken Sie auf die drei Punkte oben rechts und wählen Sie **Alle Felder löschen** aus.
 
-   Alle Metriken verfügen auch über erweiterte Einstellungen, die Sie definieren können. Wählen Sie **Erweiterte Einstellungen** aus, um auf diese zuzugreifen. Weitere Informationen dazu, wie die Erfolgsmetriken in der oben stehenden Tabelle gemessen werden, finden Sie in der [Adobe Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=de).
+   Alle Metriken verfügen auch über erweiterte Einstellungen, die Sie definieren können. Wählen Sie **Erweiterte Einstellungen** aus, um auf diese zuzugreifen. Siehe Definition der Zählung von Erfolgsmetriken in der vorherigen Tabelle und die [Dokumentation zu Adobe Target.](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=de)
 
    >[!NOTE]
    >
@@ -607,10 +611,10 @@ Simulieren Sie das Erlebnis einer Besucherin bzw. eines Besuchers, um sicherzust
 Die folgenden Kriterien bestimmen den Inhalt, der bei der Simulation des Besuchererlebnisses angezeigt wird:
 
 * die Daten im Sitzungsspeicher der Person (über ContextHub).
-* die [Aktivitäten, die aktiviert sind](/help/sites-authoring/activitylib.md).
-* die [Regeln, die die Segmente definieren](/help/sites-administering/campaign-segmentation.md).
+* Die [Aktivitäten, die aktiviert sind.](/help/sites-authoring/activitylib.md)
+* Die [Regeln, die die Segmente definieren.](/help/sites-administering/campaign-segmentation.md)
 * der Inhalt der Erlebnisse in den Target-Komponenten.
-* die [Konfiguration der Targeting-Engine](/help/sites-authoring/activitylib.md).
+* Die [Konfiguration der Targeting-Engine.](/help/sites-authoring/activitylib.md)
 
 Wenn beim Laden eines Profils unerwartete Inhalte auf der Seite angezeigt werden, überprüfen Sie die Konfiguration der einzelnen Elemente in dieser Liste.
 
@@ -710,7 +714,7 @@ Wenn Sie Adobe Target als Engine auswählen:
 
 >[!NOTE]
 >
->Wenn Sie eine Komponente auswählen und als Ziel verfügbar machen, ersetzt AEM auch die Komponente und fügt eine Adobe Target-Komponente ein. (Die Adobe Target-Komponente wird nicht nur verwendet, wenn Sie sie der Seite manuell hinzufügen, sondern auch, wenn Sie eine vorhandene Komponente als Ziel auswählen.)
+>Wenn Sie eine Komponente auswählen und als Ziel verfügbar machen, ersetzt AEM auch die Komponente und fügt eine Adobe Target-Komponente ein. Die Adobe Target-Komponente wird nicht nur verwendet, wenn Sie sie manuell zur Seite hinzufügen, sondern auch, wenn Sie eine vorhandene Komponente als Ziel auswählen.
 
 Wenn Sie Client Context (clientseitig) als Engine auswählen:
 
