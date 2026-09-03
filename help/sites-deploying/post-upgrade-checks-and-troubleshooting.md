@@ -10,10 +10,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8b3d8d0f-10f7-4736-881d-8f1f21c69182
-source-git-commit: a037dc7cbb13abfeb8a7289baded50d3d788cbf6
+source-git-commit: 76bd0f170b06a3f930d504b680342c954daae460
 workflow-type: tm+mt
-source-wordcount: '1196'
-ht-degree: 80%
+source-wordcount: '1382'
+ht-degree: 70%
 
 ---
 
@@ -36,6 +36,8 @@ Nach einem [ersetzenden Upgrade](/help/sites-deploying/in-place-upgrade.md) soll
 * [Aktivieren von Replikationsagenten](#enable-replication-agents)
 
 * [Aktivieren von benutzerdefinierten geplanten Aufträgen](#enable-custom-scheduled-jobs)
+
+* [Neuinstallation oder Überprüfung von Add-ons](#reinstall-or-verify-add-ons)
 
 * [Ausführen des Testplans](#execute-test-plan)
 
@@ -61,11 +63,11 @@ Die Datei „error.log“ sollte beim Start von AEM und danach anhand der JAR-Da
 
 ### Überprüfen von OSGi-Paketen {#verify-osgi-bundles}
 
-Navigieren Sie zur OSGi-Konsole unter `/system/console/bundles` und überprüfen Sie, ob irgendwelche Pakete nicht gestartet wurden. Wenn Bundles den Status „Installiert“ aufweisen, überprüfen Sie die Datei `error.log`, um das ursächliche Problem zu ermitteln.
+Navigieren Sie zur OSGi-Konsole unter `/system/console/bundles` und überprüfen Sie, ob irgendwelche Pakete nicht gestartet wurden. Wenn Pakete den Status „Installiert“ aufweisen, überprüfen Sie die Datei `error.log`, um das ursächliche Problem zu ermitteln.
 
 ### Überprüfen der Oak-Version {#verify-oak-version}
 
-Nach dem Upgrade sollte ersichtlich sein, dass die Oak-Version auf Version **1.68.x** aktualisiert wurde. Um die Oak-Version zu überprüfen, navigieren Sie zur OSGi-Konsole und suchen Sie nach der entsprechenden Version der Oak-Bundles: Oak Core, Oak Commons, Oak Segment Tar.
+Nach dem Upgrade sollte ersichtlich sein, dass die Oak-Version auf Version **1.68.x** aktualisiert wurde. Um die Oak-Version zu überprüfen, navigieren Sie zur OSGi-Konsole und suchen Sie nach der entsprechenden Version der Oak-Pakete: Oak Core, Oak Commons, Oak Segment Tar.
 
 ### Erstüberprüfung von Seiten {#initial-validation-of-pages}
 
@@ -93,6 +95,19 @@ Wenn eine Veröffentlichungsumgebung vollständig upgegradet und überprüft wur
 
 Zu diesem Zeitpunkt können alle geplanten Aufträge, die Teil der Codebasis sind, aktiviert werden.
 
+### Neuinstallation oder Überprüfung von Add-ons {#reinstall-or-verify-add-ons}
+
+>[!IMPORTANT]
+>
+>Die Installation eines AEM 6.5 LTS Service Packs ist technisch ein vollständiges [In-Place-Upgrade](/help/sites-deploying/in-place-upgrade.md) (die AEM-Schnellstart-JAR-Datei wird vollständig ausgetauscht, bevor die Aktualisierung angewendet wird). Daher werden die standardmäßigen Bereinigungsaufgaben vor einem Upgrade, die während eines In-Place-Upgrades ausgeführt werden, jetzt auch beim Anwenden eines Service Packs ausgeführt.
+
+Mit einer dieser Aufgaben werden veraltete `install`-Ordner (`install` und Ausführungsmodusvarianten wie `install.author` oder `install.publish`) entfernt, die sich an beliebiger Stelle unter `/libs` befinden, um zu verhindern, dass veraltete Bundles und Konfigurationen neu installiert werden. Wenn Ihre Lösung auf ein Add-on angewiesen ist, das seine eigenen OSGi-Bundles oder -Konfigurationen in einem solchen `install` Ordner unter `/libs` speichert, kann dieser Ordner im Rahmen der Anwendung eines Service Packs entfernt werden, selbst wenn dies bei Service Pack-Upgrades in der Vergangenheit nicht beobachtet wurde.
+
+Nach der Anwendung eines Service Packs:
+
+* Stellen Sie sicher, dass alle zuvor installierten Add-ons weiterhin vorhanden und ihre OSGi-Pakete und -Konfigurationen aktiv sind. Überprüfen Sie `/system/console/bundles` auf Pakete, die nicht gestartet wurden.
+* Wenn der Inhalt eines Add-ons fehlt, installieren Sie das Inhaltspaket des Add-ons neu, um ihn wiederherzustellen.
+
 ### Ausführen des Testplans {#execute-test-plan}
 
 Führen Sie einen detaillierten Testplan aus, wie in [Aktualisieren von Code und Anpassungen **Abschnitt „Testverfahren** definiert](/help/sites-deploying/upgrading-code-and-customizations.md#testing-procedure-testing-procedure).
@@ -111,7 +126,7 @@ Bevor Sie mit den vorbereitenden Schritten beginnen, stellen Sie sicher, dass Si
 
 ### Einige AEM-Pakete wechseln nicht in den aktiven Status {#some-aem-bundles-are-not-switching-to-the-active-state}
 
-Wenn Bundles nicht starten, prüfen Sie diese auf nicht erfüllte Abhängigkeiten.
+Wenn Pakete nicht starten, prüfen Sie diese auf nicht erfüllte Abhängigkeiten.
 
 Wenn dieses Problem auftritt, jedoch auf eine fehlerhafte Paketinstallation zurückzuführen ist, wodurch Pakete nicht aktualisiert werden, werden diese für die neue Version als inkompatibel angesehen. Weitere Informationen über die entsprechende Fehlerbehebung finden Sie oben unter **Fehlerhafte Aktualisierung von Pakete**.
 
@@ -125,7 +140,7 @@ Es empfiehlt sich außerdem zu überprüfen, ob die Änderung, die das Problem v
 
 ### Analysieren der Dateien „error.log“ und „upgrade.log“ {#analyzing-the-error.log-and-upgrade.log}
 
-In den meisten Situationen müssen die Protokolle auf Fehler untersucht werden, um die Ursache eines Problems zu ermitteln. Bei Upgrades ist es jedoch ebenfalls erforderlich, Abhängigkeitsfehler zu überwachen, da alte Bundles möglicherweise nicht ordnungsgemäß aktualisiert werden.
+In den meisten Situationen müssen die Protokolle auf Fehler untersucht werden, um die Ursache eines Problems zu ermitteln. Bei Upgrades ist es jedoch ebenfalls erforderlich, Abhängigkeitsfehler zu überwachen, da alte Pakete möglicherweise nicht ordnungsgemäß aktualisiert werden.
 
 Dafür sollten Sie alle Meldungen aus der Datei „error.log“ entfernen, die erwartungsgemäß nicht mit Ihrem Problem in Zusammenhang stehen. Dies ist mit einem Tool wie grep möglich, indem Sie Folgendes verwenden:
 
