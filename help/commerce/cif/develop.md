@@ -11,8 +11,8 @@ role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
 source-git-commit: 5995dda0aac101e6c0d506ac5bba786674b0735b
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 56%
+source-wordcount: '880'
+ht-degree: 55%
 
 ---
 
@@ -31,9 +31,9 @@ Für die Arbeit mit CIF-Projekten wird eine lokale Entwicklungsumgebung empfohle
 
 >[!NOTE]
 >
->Die folgenden Anweisungen helfen Ihnen beim Einrichten einer lokalen AEM-Entwicklungsumgebung für AEM Commerce mithilfe von CIF (wobei der Fokus auf AEM 6.5 LTS liegt). Wenn Sie AEM as a Cloud Service verwenden, lesen Sie die Dokumentation zu [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#).
+>Die folgenden Anweisungen helfen Ihnen beim Einrichten einer lokalen AEM-Entwicklungsumgebung für AEM Commerce mithilfe von CIF (wobei der Fokus auf AEM 6.5 LTS liegt). Wenn Sie AEM as a Cloud Service verwenden, lesen Sie die Dokumentation zu [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#).
 
-Das als CIF-Add-on bezeichnete AEM Commerce-Add-on für AEM ist auch für die lokale Entwicklung verfügbar und wird als AEM-Paket bereitgestellt. Sie können es über das [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) als Feature Pack herunterladen.
+Das als CIF-Add-on bezeichnete AEM Commerce-Add-on für AEM ist auch für die lokale Entwicklung verfügbar und wird als AEM-Paket bereitgestellt. Sie können es über das [Software Distribution-Portal](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html) als Feature Pack herunterladen.
 
 ### Erforderliche Software
 
@@ -54,7 +54,7 @@ Das CIF-Add-on kann über das [Software Distribution-Portal](https://experience.
 >
 >Stellen Sie sicher, dass Sie immer die neueste Add-on-Version für CIF verwenden.
 
-### Lokale Einrichtung
+### Lokales Setup
 
 Gehen Sie für die lokale CIF-Projektentwicklung mit AEM und dem Add-on CIF wie folgt vor:
 
@@ -74,7 +74,7 @@ Gehen Sie für die lokale CIF-Projektentwicklung mit AEM und dem Add-on CIF wie 
 
 1. Starten Sie den AEM-Schnellstart
 
-Überprüfen Sie das Setup über die OSGi-Konsole: `http://localhost:4502/system/console/osgi-installer`. Die Liste sollte die CIF-Add-on-bezogenen Bundles, Inhaltspakete und OSGi-Konfigurationen enthalten. Stellen Sie sicher, dass alle Bundles gestartet sind.
+Überprüfen Sie das Setup über die OSGi-Konsole: `http://localhost:4502/system/console/osgi-installer`. Die Liste sollte die CIF-Add-on-bezogenen Bundles, Inhaltspakete und OSGi-Konfigurationen enthalten. Stellen Sie sicher, dass alle Pakete gestartet sind.
 
 ## Projekt-Setup {#project}
 
@@ -145,7 +145,7 @@ Beginnen Sie mit dem Venia Reference Store, indem Sie das [Git-Repository](https
 
 >[!NOTE]
 >
->Das Venia Reference Store-Projekt enthält zwei Build-Profile für AEM as a Cloud Service und AEM 6.5. Schauen Sie sich die Datei [readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) des Projekts an, um zu sehen, wie sie verwendet werden. Für AEM 6.5 verwenden Sie das Profil `classic`.
+>Das Venia Reference Store-Projekt enthält zwei Build-Profile für AEM as a Cloud Service und AEM 6.5. Überprüfen Sie [Projekt readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md), um zu sehen, wie sie verwendet werden. Für AEM 6.5 verwenden Sie das Profil `classic`.
 
 ### Verbinden von AEM mit dem Commerce-System
 
@@ -164,4 +164,4 @@ Navigieren Sie zu http://localhost:4502/system/console/configMgr und erstellen S
 ## Zusätzliche Ressourcen
 
 - [AEM-Projektarchetyp](https://github.com/adobe/aem-project-archetype)
-- [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
+- [AEM Venia-Referenz-Store](https://github.com/adobe/aem-cif-guides-venia)

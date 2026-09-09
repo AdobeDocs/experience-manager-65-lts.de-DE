@@ -7,8 +7,8 @@ role: Admin, Developer
 exl-id: aced89a0-dec1-49fe-afbc-3ddf1318b900
 source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 99%
+source-wordcount: '339'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ In diesem Dokument werden die wichtigen Unterschiede zwischen dem CIF-Add-on und
 
 ## Installation und Updates
 
-Das AEM CIF-Add-On-Paket wird mit AEM Package Manager installiert und aktualisiert.
+Das AEM CIF-Add-On-Paket wird mit dem AEM-Paket-Manager installiert und aktualisiert.
 
 **Vorherige CIF-Versionen**
 
@@ -36,7 +36,7 @@ Der Endpunkt wird über die OSGi-Konsole konfiguriert.
 
 ## Bereitstellung des CIF-Venia-Projekts
 
-Projekt verfügbar unter [GitHub – AEM Guides – CIF Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) und Bereitstellung über AEM Package Manager.
+Projekt verfügbar unter [GitHub – AEM Guides – CIF Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) und Bereitstellung über den AEM-Paket-Manager.
 
 **Vorherige CIF-Versionen**
 
