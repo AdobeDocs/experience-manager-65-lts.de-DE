@@ -10,10 +10,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
-source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
+source-git-commit: c93d78653e192d041830a84ea24fe5d3edde29e0
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 80%
+source-wordcount: '1332'
+ht-degree: 69%
 
 ---
 
@@ -24,6 +24,7 @@ Bevor Sie mit dem Upgrade beginnen, ist es wichtig, die folgenden Wartungsaufgab
 * [Indexdefinitionen](#index-definitions)
 * [Überprüfung auf ausreichenden Festplattenspeicher](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#ensure-sufficient-disk-space)
 * [Vollständige Sicherung von AEM](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#fully-back-up-aem)
+* [Auf veraltete Sicherungskopien vor einem Upgrade prüfen](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#check-stale-pre-upgrade-backups)
 * [Erstellen der quickstart.properties-Datei](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
 * [Konfigurieren von Workflow- und Auditprotokoll-Löschung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
 * [Installieren, Konfigurieren und Ausführen der Aufgaben vor dem Upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
@@ -37,7 +38,7 @@ Bevor Sie mit dem Upgrade beginnen, ist es wichtig, die folgenden Wartungsaufgab
 
 ## Indexdefinitionen {#index-definitions}
 
-Vergewissern Sie sich, dass Sie die erforderlichen Indexdefinitionen installiert haben, die mit dem neuesten AEM 6.5 Service Pack veröffentlicht wurden. (Weitere Informationen finden Sie unter [Versionshinweise &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/release-notes/release-notes) AEM 6.5 Service Pack .)
+Vergewissern Sie sich, dass Sie die erforderlichen Indexdefinitionen installiert haben, die mit dem neuesten AEM 6.5 Service Pack veröffentlicht wurden. (Weitere Informationen finden Sie unter [Versionshinweise ](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/release-notes/release-notes) AEM 6.5 Service Pack .)
 
 ## Überprüfung auf ausreichenden Festplattenspeicher {#ensure-sufficient-disk-space}
 
@@ -46,6 +47,18 @@ Stellen Sie beim Ausführen des Upgrades sicher, dass ausreichend Speicherplatz 
 ## Vollständige Sicherung von AEM {#fully-back-up-aem}
 
 Bevor Sie mit dem Upgrade beginnen, sollten Sie eine vollständige Sicherungskopie von AEM erstellen. Stellen Sie sicher, dass Sie Ihr Repository, Ihre Anwendungsinstallation, Ihren Datenspeicher und gegebenenfalls Ihre Mongo-Instanzen sichern. Weitere Informationen zum Sichern und Wiederherstellen einer AEM-Instanz finden Sie unter [Sicherung und Wiederherstellung](/help/sites-administering/backup-and-restore.md).
+
+## Auf veraltete Sicherungskopien vor einem Upgrade prüfen {#check-stale-pre-upgrade-backups}
+
+Vor einem Upgrade sichert AEM bestimmte Pfade (z. B. `/etc/tags`) unter `/var/upgrade/PreUpgradeBackup/<timestamp>` und stellt sie dann nach Abschluss des Upgrades wieder her. Jeder Backup-Knoten verfügt über die Eigenschaft Zusammenführungsstatus : `INIT` bedeutet, dass das Backup erstellt, aber nie wieder zusammengeführt wurde, während `COMPLETED` bedeutet, dass die Zusammenführung erfolgreich abgeschlossen wurde.
+
+Wenn ein Backup von einem früheren Upgrade (z. B. von 6.4 auf 6.5) im `INIT` verbleibt, wird dieses alte, nicht zusammengeführte Backup durch das neueste Upgrade (von 6.5 auf 6.5 LTS) wiederhergestellt. Dies kann veraltete oder veraltete Inhalte, die nicht mehr dem aktuellen Repository-Status entsprechen, im Hintergrund wieder einführen, was nach Abschluss des Upgrades zu unerwarteten Problemen führen kann.
+
+Um dies zu vermeiden, sollten Sie vor dem Start des Upgrades Folgendes beachten:
+
+1. Überprüfen Sie mithilfe von CRXDE Lite (`/crx/de/index.jsp`) die Quellinstanz auf bereits vorhandene Knoten unter `/var/upgrade/PreUpgradeBackup/`.
+2. Überprüfen Sie die Eigenschaft für den Zusammenführungsstatus jedes gefundenen Sicherungsknotens.
+3. Wenn ein Knoten `INIT` Status einer vorherigen Aktualisierung gefunden wurde, überprüfen Sie seinen Inhalt und bereinigen Sie ihn - löschen Sie ihn oder führen Sie ihn explizit zusammen -, bevor Sie fortfahren. Dadurch wird sichergestellt, dass beim Upgrade ein neues, genaues Backup erstellt wird, anstatt veraltete Daten im Hintergrund wiederherzustellen.
 
 ## Erzeugen der Datei quickstart.properties {#generate-quickstart-properties}
 
