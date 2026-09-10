@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 79f3d3211a79ce62242273df0cdecd24cd8900cf
+source-git-commit: aa819778006a3acb0d02772156c2af820ed353bb
 workflow-type: tm+mt
-source-wordcount: '6705'
-ht-degree: 26%
+source-wordcount: '7575'
+ht-degree: 23%
 
 ---
 
@@ -301,13 +301,61 @@ Der Launch-Promotion-Verlauf zeigt jetzt lokalisierten Text in der Sites-Zeitlei
 
 
 
-<!--
 ### [!DNL Forms]{#forms-65-lts-sp3}
--->
+
+>[!NOTE]
+>
+> AEM Forms 6.5 LTS Service Pack 3 (SP3) für OSGi-Bereitstellungen ist jetzt verfügbar. Es enthält Fehlerbehebungen, Sicherheitsverbesserungen und Verbesserungen. **Bereitstellungen von AEM Forms 6.5 LTS Service Pack 3 (SP3) für JEE werden zu einem späteren Zeitpunkt veröffentlicht.**
+
+#### Verbesserungen {#forms-enhancements-65-lts-sp3}
+
+* FORMS-24360: Es wurde Unterstützung für PDF Generator (PDFG) für Microsoft Office 2024 hinzugefügt.
+* FORMS-24949: Unterstützung für Forms Builder Agent wurde für AEM Forms 6.5 LTS hinzugefügt. Dadurch werden die Forms Manager-HTTP-APIs und die vom Agenten benötigten Form Generative AI (GenAI)-HTTP-APIs rückportiert.
+* FORMS-25180: Der `daysUntilSigningDeadline` Wert wurde zur AEM Forms-Benutzeroberfläche hinzugefügt, damit Autorinnen und Autoren den Empfängerinnen und Empfängern anzeigen können, wie viele Tage bis zum Ablauf der Signaturfrist für Adobe Sign verbleiben.
+* FORMS-25182: PDF Generator (PDFG) unterstützt jetzt Multithread-Dokumentkonvertierungen, wenn sie mit einem einzigen Benutzerkonto konfiguriert werden.
+
+#### Behobene Probleme {#forms-fixed-issues-65-lts-sp3}
+
+* FORMS-23726: Fehler beim Anwenden eines XML-Schemas in den Eigenschaften des adaptiven Formss aufgrund eines `xsom`. Die Schemaauswahl funktioniert jetzt.
+* FORMS-24296: Das Feld Dateianhang der Foundation-Komponenten akzeptierte unzulässige Dateitypen (z. B. `.xsd`) zum Zeitpunkt des Uploads und lehnte sie im Gegensatz zu anderen blockierten Typen nur beim Senden ab. Unzulässige Typen werden jetzt beim Hochladen blockiert.
+* FORMS-24603: In Correspondence Management-Briefen verloren Textfragmente, die eine Bedingung enthielten, ihren Zeilenumbruch, wenn sie als Entwurf gespeichert wurden. Bei Entwürfen werden nun die ursprünglichen Zeilenumbrüche beibehalten.
+* FORMS-24783: Dateianhänge wurden aus dem `assignTask` Schritt in auf der Open Services Gateway Initiative (OSGi) basierenden Forms-Workflows gelöscht. Anlagen werden jetzt durch Aufgabenzuweisung beibehalten.
+* FORMS-24877: Das Kalendersymbol zur Datumsauswahl zeigte bei Anwendung eines Anzeigemusters keine barrierefreie Beschriftung an, sodass die NVDA-Bildschirmlesehilfe nur „anklickbar“ ankündigte. Das Symbol bietet jetzt eine beschreibende Beschriftung.
+* FORMS-24913: AEM Forms-Workflows wurden nach dem Adobe Sign-Schritt angehalten, da der Signaturstatus nie zurückgegeben wurde. Die Workflows werden jetzt nach Abschluss des Signierens fortgesetzt.
+* FORMS-25033: Die Komponente „Freihandsignatur“ wurde in der Reihenfolge der Tastaturregisterkarten übersprungen, was eine Barrierefreiheit für Benutzende mit ausschließlicher Tastatur schuf. Die Registerkartennavigation erreicht jetzt das Feld.
+* FORMS-25045: Nach einem Upgrade werden Übersetzungen aus dem traditionellen Chinesisch (Hongkong) nicht mehr gerendert, sodass Formulare wieder in der Standardsprache vorliegen. Lokalisierter Text wird jetzt korrekt gerendert.
+* FORMS-25170: Beim Aufrufen von `addInstance()` wurden keine dynamisch hinzugefügten Bereiche angezeigt, wenn die Anzahl der Ausgangsinstanzen 0 war. Hinzugefügte Bedienfelder werden jetzt sofort angezeigt.
+* FORMS-25225: Durch die Server-seitige erneute Überprüfung wurden Feldübersetzungen entfernt, die sich außerhalb von Fragmenten in adaptivem Forms befanden. Dadurch wurden Kennzeichnungen auf die Basissprache zurückgesetzt. Diese Übersetzungen werden jetzt beibehalten.
+* FORMS-25233: Bei Bereitstellungen der Open Services Gateway Initiative (OSGi) hat der Assembler-Service eine primäre XDP mit dem zugehörigen sofortigen Fragment zugeordnet, jedoch verschachtelte Fragmentverweise wie Kopfzeilen, Fußzeilen und wiederverwendbare Unterformulare nicht aufgelöst, sodass sie in der zusammengestellten Ausgabe fehlten. Verschachtelte Fragmente werden jetzt aufgelöst.
+* FORMS-25289: Der Forms-Rendering-Service hat unterschiedliche Ausgaben für dieselbe Eingabe in allen Service Packs zurückgegeben, was sich auf Correspondence Management-Briefe auswirkte. Die Rendering-Ausgabe ist jetzt konsistent.
+* FORMS-25290: Correspondence Management-Briefe wurden gespeichert, verloren Leerzeichen und zeigten an einigen Stellen ein verirrtes „x“, wenn sie wieder geöffnet wurden. Gespeicherter Briefinhalt bleibt jetzt intakt.
+* FORMS-25346: Nach einem Service Pack-Upgrade wurden Briefe für interaktive Kommunikation (IC) auf einem Ladeschleuderrad eingefroren, und Briefe, die geladen wurden, verloren in der Vorschau Leerzeichen. Laden und Abstände funktionieren jetzt korrekt.
+* FORMS-25431: Der Assistent „Formularfragment erstellen“ hat bei jedem Tastenanschlag im Titelfeld eine Netzwerkanfrage gesendet. Die redundanten Aufrufe wurden entfernt.
+* FORMS-25645: Das Erstellen eines auf Kernkomponenten basierenden adaptiven Formularfragments aus einem inline hochgeladenen JSON-Schema ist fehlgeschlagen mit „ALC-FMG-700-009 Es wurde ein ungültiges Formularmodell angegeben.“ Inline-JSON-Schemata werden jetzt akzeptiert.
+* FORMS-25646: Ein auf Kernkomponenten basierendes adaptives Formularfragment, das aus einem JSON-Schema erstellt wurde, hat im Editor ein leeres Datenquellenbedienfeld angezeigt. Im Bedienfeld werden nun die Schemadatenquellen aufgelistet.
+* FORMS-25674: Die Benutzeroberfläche des Interactive Communications (IC) Agent wurde auf einer leeren Seite geöffnet, sodass Agenten keine IC-Inhalte anzeigen konnten. Die Benutzeroberfläche für Agenten wird jetzt dargestellt.
+* FORMS-25686: Beim Umschalten der Option für den Schematyp im Assistenten zum Erstellen eines adaptiven Formularfragments wurde der Status der vorherigen Option nicht gelöscht, was zu einer Schemakonfliktübereinstimmung führte. Der Assistent setzt nun die Option Inaktiv zurück.
+* FORMS-25757: Beim Anwenden eines Designs wurde die Basis-Client-Bibliothek nicht aktualisiert, sodass Design-Änderungen anscheinend keine Auswirkungen hatten. Designs aktualisieren jetzt die Client-Basisbibliothek.
+* FORMS-25825: Das mobile Hamburger-Menü reagierte nicht auf Tips, sodass die Navigation auf Mobilgeräten unbrauchbar blieb. Das Menü wird nun erwartungsgemäß geöffnet.
+* FORMS-26333: Die Veröffentlichungsaktion verschwand, nachdem die Veröffentlichung eines Formulars aufgehoben wurde, wodurch die erneute Veröffentlichung blockiert wurde. „Veröffentlichen“ ist jetzt nach dem Rückgängigmachen der Veröffentlichung verfügbar.
+* FORMS-26763: In Designer ging die Fettformatierung für Hyperlinks innerhalb eines statischen Textobjekts nach jeder Bearbeitung des Textes verloren. Die Fettformatierung übersteht jetzt Bearbeitungen.
+* FORMS-26817: Durch Klicken auf Zurücksetzen in einem adaptiven Formular wird das vom Autor konfigurierte Bild in der Bildkomponente gelöscht und ein beschädigtes Bild hinterlassen, während andere Felder korrekt zurückgesetzt werden. Das konfigurierte Bild wird jetzt beibehalten.
+* FORMS-26852: In der Benutzeroberfläche für Agenten wurde das Datum einen Tag vor dem gespeicherten Wert in einem Datums-/Uhrzeitfeld angezeigt. Das Feld zeigt jetzt das richtige Datum an.
+
+#### Bekannte Probleme {#forms-known-issues-65-lts-sp3}
+
+Für diese Version werden keine bekannten Probleme gemeldet.
+
+#### Sicherheitskorrekturen {#forms-security-fixes-65-lts-sp3}
+
+Diese Version behebt Sicherheitslücken in AEM Forms, einschließlich mehrerer Cross-Site-Scripting (XSS)-Fehlerbehebungen, einer Server-seitigen Request Forgery-Fehlerbehebung (SSRF), einer Fehlerbehebung bei XML External Entity (XE) und Aktualisierungen bei Drittanbieterbibliotheken.
+
+<!-- TODO: Add security bulletin link. Open question, pending information from Sunny Marwaha. -->
 
 
 
-### Fundament {#foundation-65-lts-sp3}
+
+### Foundation {#foundation-65-lts-sp3}
 
 #### AEM Context Service {#foundation-aem-context-service-65-lts-sp3}
 
@@ -396,7 +444,6 @@ Die **Gruppe kopieren** Aktion öffnet jetzt das erwartete Formular, anstatt ein
 * Das Dialogfeld „Workflow-Variable“ zeigt jetzt die richtigen Steuerelemente für Formulardatenmodell-, JSON-, XML- und Dokumentvariablen an. Autorinnen und Autoren sehen beim Erstellen dieser nicht primitiven Variablen kein unformatiertes HTML-Markup mehr. (GRANITE-67915)
 
 
-
 ## Info [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
 Die Plattform von [!DNL Adobe Experience Manager] 6.5 LTS basiert auf aktualisierten Versionen des OSGi-basierten Frameworks (Apache Sling und Apache Felix) und dem Java™ Content-Repository Apache Jackrabbit Oak 1.68.x.
@@ -474,8 +521,8 @@ SP2 für AEM 6.5 LTS wird als Schnellstart-JAR-Datei und nicht als ZIP-Datei zur
 **Best Practices**
 
 * Führen Sie das Upgrade in einer niedrigeren oder einer Testumgebung aus, bevor Sie es in der Produktionsumgebung ausführen.
-* Erstellen ein vollständiges wiederherstellbares Backup (Repository plus alle externen Datenspeicher), bevor Sie beginnen.
-* Lesen Sie die Anleitungen für das lokale Upgrade und die technischen Anforderungen von Adobe (Java 17/21 für LTS empfohlen).
+* Erstellen Sie ein vollständiges, wiederherstellbares Backup (Repository plus alle externen Datenspeicher), bevor Sie beginnen.
+* Prüfen Sie den Adobe-Leitfaden für das lokale Upgrade und die technischen Anforderungen (Java 17/21 für LTS empfohlen).
 
 >[!NOTE]
 >
@@ -524,13 +571,13 @@ Um Transparenz zu gewährleisten und eine angemessene Planung zu ermöglichen, f
 
 ### Veraltete Funktionen {#deprecated-features}
 
-In diesem Abschnitt werden Funktionen aufgeführt, die Adobe in AEM 6.5 LTS nicht mehr unterstützt werden. In der Regel werden Funktionen von Adobe eingestellt, bevor sie aus einer zukünftigen Version entfernt werden, und es wird eine Alternative bereitgestellt.
+In diesem Abschnitt werden Funktionen aufgeführt, die Adobe in AEM 6.5 LTS nicht mehr unterstützt werden. In der Regel kennzeichnet Adobe Funktionen als veraltet, bevor sie in einer zukünftigen Version entfernt werden, und stellt eine Alternative bereit.
 
 Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Bereitstellung verwenden. Planen Sie Änderungen an Ihrer Implementierung, um die bereitgestellte Alternative zu verwenden.
 
 | Bereich | Funktion | Ersatz | Version (SP) |
 | --- | --- | --- | --- |
-| Schnellstart | Mongo-APIs | Mongo-APIs werden nicht mehr unterstützt und sollen in zukünftigen Versionen entfernt werden. | 6.5 TS SP2 |
+| Schnellstart | Mongo-APIs | Mongo-APIs sind jetzt veraltet und sollen in zukünftigen Versionen entfernt werden. | 6.5 TS SP2 |
 | Sites | Unterstützung von Inhaltsfragmenten in der AEM Assets-REST-API | AEM 6.5 LTS SP2 bietet moderne OpenAPIs für die Verwaltung von Inhaltsfragmenten und -modellen. Daher wurden die älteren Endpunkte zur Unterstützung von Inhaltsfragmenten in der AEM Assets-REST-API jetzt eingestellt.<br>Adobe beabsichtigt, diese älteren Endpunkte bis zu einer Ankündigung zum Ende der Nutzungsdauer verfügbar zu halten. Adobe plant keine weiteren Verbesserungen an den veralteten Endpunkten. | 6.5 LTS SP2 |
 | Sites | [SPA-Editor](/help/sites-developing/spa-overview.md) | Die bevorzugten Editoren für die Verwaltung von Headless-Inhalten in AEM sind:<br>– [Der universelle Editor](/help/sites-developing/universal-editor/introduction.md) für visuelle Bearbeitung.<br>– [Der Inhaltsfragment-Editor](/help/assets/content-fragments/content-fragments-managing.md) für formularbasierte Bearbeitung. | 6.5 LTS GA |
 | [!DNL Foundation] | Unterstützung für com.adobe.granite.oauth.server | Adobe IMS-Integration | |
@@ -574,7 +621,7 @@ In diesem Abschnitt werden die Funktionen aufgeführt, die aus AEM 6.5 LTS entf
 
 ### Repository-Beschädigung bei Online-Komprimierung nach Offline-Komprimierung (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
-Bei Benutzenden kann während der Online-Komprimierung eine Beschädigung des Repositorys auftreten, wenn sie zuvor die Offline-Komprimierung auf dem JCR-Repository ausgeführt haben. In diesem Szenario kann eine `SegmentNotFoundException` (SNFE) auftreten, die zu einer Beschädigung des Repositorys führen kann.
+Während der Online-Komprimierung kann es zu einer Beschädigung des Repositorys kommen, wenn zuvor eine Offline-Komprimierung für das JCR-Repository ausgeführt wurde. In diesem Szenario kann eine `SegmentNotFoundException` (SNFE) auftreten, die zu einer Beschädigung des Repositorys führen kann.
 
 Um das Problem zu beheben, installieren Sie den Hotfix von [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-65388-1.0.zip). Da der Hotfix ein `oak-segment-tar`-Paket auf niedriger Ebene enthält, wird die Instanz nach der Installation neu gestartet.
 
@@ -602,7 +649,7 @@ Dieses Problem betrifft Entwicklerinnen und Entwickler von OSGi-Paketen und Admi
 
 Ab AEM 6.5 LTS SP2 akzeptieren JSON-Dateien, die in `Sling-Initial-Content` Paketen verwendet werden, keine Kommentare mehr (`//` oder `/* */`). Frühere AEM-Versionen akzeptierten Kommentare, da der `javax.json`-Anbieter diesbezüglich kulant war. AEM 6.5 LTS SP2 aktualisierte `org.apache.sling.jcr.contentloader` auf Version 2.6.0, wodurch der JSON-Parser auf `jakarta.json` umgestellt wurde. Während die [JSON-Spezifikation (RFC 8259)](https://datatracker.ietf.org/doc/html/rfc8259) keine Syntax für Kommentare definiert, wurden diese in früheren AEM-Versionen akzeptiert, da der `javax.json`-Anbieter diesbezüglich kulant war. Der `jakarta.json`-Anbieter bietet diese Erweiterung nicht an.
 
-Der Ausfall erfolgt still: Inhaltsknoten werden bei der Paket-Aktivierung nicht geladen, wobei im Installationsprogramm kein Fehler ausgegeben wird. Wenn nach dem Upgrade auf SP2 unerwartet Inhalte fehlen, suchen Sie im Protokoll des OSGi-Installationsprogramms nach JSON-Parsing-Fehlern. Zur Identifizierung betroffener Pakete suchen Sie in den JSON-Dateien, die unter den `Sling-Initial-Content`-Manifest-Headern aufgeführt sind, nach „`//`“ oder „`/* */`“.
+Der Ausfall erfolgt still: Inhaltsknoten werden bei der Paket-Aktivierung nicht geladen, wobei im Installationsprogramm kein Fehler ausgegeben wird. Wenn nach dem Upgrade auf SP2 unerwartet Content fehlt, suchen Sie im Protokoll des OSGi-Installationsprogramms nach JSON-Parsing-Fehlern. Zur Identifizierung betroffener Pakete suchen Sie in den JSON-Dateien, die unter den `Sling-Initial-Content`-Manifest-Headern aufgeführt sind, nach „`//`“ oder „`/* */`“.
 
 >[!CAUTION]
 >
@@ -632,7 +679,7 @@ Installieren Sie das `cq-dam-cfm-indices`-Paket, um die folgenden Funktionen zu 
 
 Laden Sie das Indexpaket [cq-dam-cfm-](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) im Adobe Software Distribution-Portal herunter.
 
-### Dispatcher-Verbindungsfehler mit Funktion „Nur SSL“ (behoben in AEM 6.5 LTS SP1 und höher){#ssl-only-feature}
+### Dispatcher-Verbindungsfehler mit der Funktion „Nur SSL“ (behoben in AEM 6.5 LTS SP1 und später){#ssl-only-feature}
 
 >[!NOTE]
 >
