@@ -4,22 +4,21 @@ description: Erfahren Sie, wie Sie Instanzen von AEM aktualisieren, die über To
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: b3c4e946a3f235fa0e3a0945f1ad692ee195e3ef
+exl-id: a9f7494e-4a09-4999-9164-c369e0989886
+source-git-commit: 60809c26ba9591bf9e30a19e25d71ceb449a162e
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '419'
 ht-degree: 9%
-
 ---
-
 # Upgrade-Schritte für Anwendungs-Server-Installationen (Tomcat - Inplace-Upgrade) {#upgrade-steps-for-application-server-installations-tomcat-inplace}
 
 >[!NOTE]
 >
->Auf dieser Seite wird das Upgrade-Verfahren (Inplace Upgrade) von AEM 6.5 LTS auf AEM 6.5 LTS Servicepack on Tomcat beschrieben. Informationen zum Upgrade von AEM 6.5 auf 6.5 LTS [&#x200B; Sie hier](/help/sites-deploying/app-server-upgrade-tomcat.md).
+>Auf dieser Seite wird das Upgrade-Verfahren (Inplace Upgrade) von AEM 6.5 LTS auf AEM 6.5 LTS Servicepack on Tomcat beschrieben. Informationen zum Upgrade von AEM 6.5 auf 6.5 LTS [ Sie hier](/help/sites-deploying/app-server-upgrade-tomcat.md).
 
 ## Schritte vor der Aktualisierung {#pre-upgrade-steps}
 
-Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführen. Weitere [&#x200B; finden Sie unter &#x200B;](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) vor einem Upgrade . Stellen Sie außerdem sicher, dass Ihr System die [Anforderungen für AEM 6.5 LTS Servicepack](/help/sites-deploying/technical-requirements.md) erfüllt, und lesen Sie [Überlegungen zur Upgrade-Planung](/help/sites-deploying/upgrade-planning.md).
+Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführen. Weitere [ finden Sie unter ](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) vor einem Upgrade . Stellen Sie außerdem sicher, dass Ihr System die [Anforderungen für AEM 6.5 LTS Servicepack](/help/sites-deploying/technical-requirements.md) erfüllt, und lesen Sie [Überlegungen zur Upgrade-Planung](/help/sites-deploying/upgrade-planning.md).
 
 
 ### Migrationsvoraussetzungen {#migration-prerequisites}
@@ -86,4 +85,4 @@ Alle Beispiele in diesem Verfahren verwenden Tomcat als Anwendungsserver und set
 
 ## Durchführen von Prüfungen und Fehlerbehebungen nach einem Upgrade {#perform-post-upgrade-checks-and-troubleshooting}
 
-Weitere Informationen [&#x200B; Sie unter „Prüfungen und &#x200B;](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md) nach einem Upgrade“.
+Weitere Informationen [ Sie unter „Prüfungen und ](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md) nach einem Upgrade“.

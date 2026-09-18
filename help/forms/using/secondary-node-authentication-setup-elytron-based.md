@@ -4,14 +4,12 @@ description: JBoss EAP 8 verwendet Elytron, um eine sichere Kommunikation und Re
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: f093f39fb535209297940cff13a99c7631812152
+exl-id: 212aa75c-7f2a-4140-8051-77643065e429
+source-git-commit: c89b742e24734fc67883b9dec966f59a01062a2a
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '474'
 ht-degree: 5%
-
 ---
-
-
 # Einrichtung der Sekundären Knotenauthentifizierung (auf Elytron-Basis)
 
 ## Konfigurieren der Sekundären Knotenauthentifizierung mit Elytron
@@ -229,4 +227,3 @@ Bestätigen Sie die erfolgreiche Registrierung mithilfe der Host-Controller-Prot
 * **Option 2** ermöglicht eine höhere Sicherheit mithilfe eines benutzerdefinierten Kennworts für den Berechtigungsspeicher.
 * Die Konfiguration muss abgeschlossen **nur auf sekundären Knoten**.
 * Die Primäre Knotenkonfiguration wird automatisch in der gesamten Domain wiederverwendet.
-

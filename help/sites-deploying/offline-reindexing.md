@@ -4,13 +4,12 @@ description: Erfahren Sie, wie Sie die Offline-Neuindizierungsmethode verwenden 
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 076db19026a0992725062ec9965ff6c1cb84333e
+exl-id: 156f245f-b185-4da4-b9c6-6d0a98405119
+source-git-commit: c89b742e24734fc67883b9dec966f59a01062a2a
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 62%
-
+source-wordcount: '1230'
+ht-degree: 65%
 ---
-
 # Offline-Neuindizierung für AEM {#offline-reindexing-for-aem}
 
 ## Einführung {#introduction}
@@ -21,7 +20,7 @@ In diesem Abschnitt wird beschrieben, wie Sie mit dem Oak-run-Tool eine Offline-
 
 ## Übersicht {#overview}
 
-AEM-Repositorys erfordern häufig eine Neuindizierung aus verschiedenen Gründen, z. B. aufgrund von Änderungen der Indexdefinition, Leistungsoptimierung oder nach wesentlichen Inhaltsänderungen. Bei der Bereitstellung von Assets ist eine Neuindizierung aufwändig, da Text in Assets (z. B. Text in PDF-Dateien) extrahiert und indiziert wird. Bei MongoMK-Repositorys werden die Daten über das Netzwerk beibehalten, was den Zeitaufwand für die Neuindizierung weiter erhöht. Die Lösung besteht darin, die Neuindizierung **offline** mit dem Tool &quot;Oak-run“ durchzuführen und dann die vordefinierten Indizes in die aktive AEM-Instanz zu importieren. Dieser Ansatz minimiert die Neuindizierungszeit und ermöglicht ein besseres Ressourcenmanagement.
+AEM-Repositorys erfordern häufig eine Neuindizierung aus verschiedenen Gründen, z. B. aufgrund von Änderungen der Indexdefinition, Leistungsoptimierung oder nach wesentlichen Inhaltsänderungen. Bei der Bereitstellung von Assets ist eine Neuindizierung aufwändig, da Text in Assets (z. B. Text in PDF-Dateien) extrahiert und indiziert wird. Bei MongoMK-Repositorys werden die Daten über das Netzwerk vorgehalten, was den Zeitaufwand für die Neuindizierung weiter erhöht. Die Lösung besteht darin, die Neuindizierung **offline** mit dem Tool &quot;Oak-run“ durchzuführen und dann die vordefinierten Indizes in die aktive AEM-Instanz zu importieren. Dieser Ansatz minimiert die Neuindizierungszeit und ermöglicht ein besseres Ressourcenmanagement.
 
 ## Ansatz {#approach}
 
@@ -161,7 +160,7 @@ Die Verwendung des `--doc-traversal-mode`-Parameters ist bei MongoMK-Installatio
 
 Im Falle von MongoMK kann dieser Prozess beschleunigt werden, wenn dieser Schritt in einer Instanz ausgeführt wird, die näher an der MongoDB-Instanz liegt. Wenn er auf demselben Computer ausgeführt wird, kann ein zu großer Netzwerk-Overhead vermieden werden.
 
-Weitere technische Details finden Sie in der [Oak-run-Dokumentation zur Indizierung](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
+Weitere technische Details finden Sie in der [Oak-run-Dokumentation zur Indizierung](Https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
 
 ### Importieren von Indizes {#importing-indexes}
 
