@@ -549,8 +549,8 @@ Wenn das Upgrade fehlschlägt und nicht behoben werden kann:
 ## Verwandte Dokumentation
 
 - [JBoss EAP 8-Migrationshandbuch](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0/html/migration_guide/)
-- [Adobe Experience Manager 6.5-Aktualisierungshandbuch](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html)
-- [Installieren von Service Packs durch AEM](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
+- [Adobe Experience Manager 6.5-Aktualisierungshandbuch](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=de)
+- [Installieren von Service Packs durch AEM](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=de)
 
 ## Dokumentinformation
 
