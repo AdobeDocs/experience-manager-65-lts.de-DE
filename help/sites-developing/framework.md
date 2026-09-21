@@ -12,11 +12,9 @@ role: Developer
 exl-id: 5d1c2c73-c457-49dc-b519-eba5ad9d5722
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1624'
-ht-degree: 98%
-
+source-wordcount: '1641'
+ht-degree: 99%
 ---
-
 # AEM-Tagging-Framework {#aem-tagging-framework}
 
 Tagging ermöglicht die Kategorisierung und Organisation von Inhalten. Tags können anhand eines Namespace und einer Taxonomie klassifiziert werden. Ausführliche Informationen zur Verwendung von Tags:
@@ -177,14 +175,14 @@ Im Folgenden finden Sie eine Beschreibung der Auswirkungen, die im Repository au
 
 * Wenn ein Tag A verschoben oder mit Tag B unter `/content/cq:tags` zusammengeführt wird:
 
-   * Tag A wird nicht gelöscht und erhält eine `cq:movedTo`-Eigenschaft.
-   * Tag B wird erstellt (im Falle einer Verschiebung) und erhält eine `cq:backlinks`-Eigenschaft.
+  * Tag A wird nicht gelöscht und erhält eine `cq:movedTo`-Eigenschaft.
+  * Tag B wird erstellt (im Falle einer Verschiebung) und erhält eine `cq:backlinks`-Eigenschaft.
 
 * `cq:movedTo` verweist auf Tag B.
 
-   * Diese Eigenschaft bedeutet, dass Tag A verschoben oder mit Tag B zusammengeführt wurde. Wird Tag B verschoben, wird diese Eigenschaft entsprechend aktualisiert. Tag A ist somit ausgeblendet und wird nur im Repository behalten, um Tag-IDs in Inhaltsknoten aufzulösen, die auf Tag A verweisen. Der Garbage Collector für Tags entfernt Tags wie Tag A, sobald keine Inhaltsknoten mehr darauf verweisen.
+  * Diese Eigenschaft bedeutet, dass Tag A verschoben oder mit Tag B zusammengeführt wurde. Wird Tag B verschoben, wird diese Eigenschaft entsprechend aktualisiert. Tag A ist somit ausgeblendet und wird nur im Repository behalten, um Tag-IDs in Inhaltsknoten aufzulösen, die auf Tag A verweisen. Der Garbage Collector für Tags entfernt Tags wie Tag A, sobald keine Inhaltsknoten mehr darauf verweisen.
 
-   * Ein spezieller Wert für die Eigenschaft `cq:movedTo` ist `nirvana`. Er wird angewendet, wenn das Tag gelöscht wird, aber nicht aus dem Repository entfernt werden kann, weil untergeordnete Tags mit `cq:movedTo` vorhanden sind, die beibehalten werden müssen.
+  * Ein spezieller Wert für die Eigenschaft `cq:movedTo` ist `nirvana`. Er wird angewendet, wenn das Tag gelöscht wird, aber nicht aus dem Repository entfernt werden kann, weil untergeordnete Tags mit `cq:movedTo` vorhanden sind, die beibehalten werden müssen.
 
   >[!NOTE]
   >
@@ -204,13 +202,13 @@ Im Folgenden finden Sie eine Beschreibung der Auswirkungen, die im Repository au
 
 * Das Lesen einer `cq:tags`-Eigenschaft eines Inhaltsknotens umfasst die folgende Auflösung:
 
-   1. Wenn unter `/content/cq:tags` keine Übereinstimmung verfügbar ist, wird kein Tag zurückgegeben.
+  1. Wenn unter `/content/cq:tags` keine Übereinstimmung verfügbar ist, wird kein Tag zurückgegeben.
 
-   1. Wenn das Tag eine `cq:movedTo`-Eigenschaft aufweist, steht danach die referenzierte Tag-ID.
+  1. Wenn das Tag eine `cq:movedTo`-Eigenschaft aufweist, steht danach die referenzierte Tag-ID.
 
-      * Dieser Schritt wird so lange wiederholt, wie das angehängte Tag eine `cq:movedTo`-Eigenschaft aufweist.
+     * Dieser Schritt wird so lange wiederholt, wie das angehängte Tag eine `cq:movedTo`-Eigenschaft aufweist.
 
-   1. Falls das angehängte Tag nicht über eine `cq:movedTo`-Eigenschaft verfügt, wird das Tag gelesen.
+  1. Falls das angehängte Tag nicht über eine `cq:movedTo`-Eigenschaft verfügt, wird das Tag gelesen.
 
 * Um eine Änderung zu veröffentlichen, wenn ein Tag verschoben oder zusammengeführt wurde, müssen der Knoten `cq:Tag` und all seine Backlinks repliziert werden. Dies geschieht automatisch, wenn das Tag in der Tag-Verwaltungskonsole aktiviert wird.
 
@@ -224,4 +222,4 @@ Im Folgenden finden Sie eine Beschreibung der Auswirkungen, die im Repository au
 
 Seit Adobe Experience Manager 6.4 werden Tags unter `/content/cq:tags` gespeichert, in früheren Versionen unter `/etc/tags`.
 
-Bei jeder Aktualisierung eines AEM-Systems von einer Version vor 6.4 müssen Tags nach `/content/cq:tags` migriert werden.
+Beim Aktualisieren eines AEM-Systems von einer früheren Version als 6.4 müssen Tags zu `/content/cq:tags` migriert werden.
