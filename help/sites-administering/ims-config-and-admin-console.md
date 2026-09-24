@@ -1,6 +1,6 @@
 ---
-title: Unterstützung der Adobe IMS-Authentifizierung und der [!DNL Admin Console] für Adobe Experience Manager Managed Services
-description: Erfahren Sie, wie Sie die  [!DNL Admin Console]  in Adobe Experience Manager verwenden.
+title: Unterstützung der Adobe IMS-Authentifizierung und -[!DNL Admin Console] für Adobe Experience Manager Managed Services
+description: Erfahren Sie, wie Sie die [!DNL Admin Console] in Adobe Experience Manager verwenden.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -11,11 +11,9 @@ role: Admin
 exl-id: 63f42a35-fbd5-4b1b-bba1-1bdcfd23dd33
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 98%
-
+source-wordcount: '1702'
+ht-degree: 97%
 ---
-
 # Unterstützung der Adobe IMS-Authentifizierung und der [!DNL Admin Console] für AEM Managed Services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
 
 >[!NOTE]
@@ -58,7 +56,7 @@ Für AEM Managed Services-Kundschaft sollte bereits eine Organisation bereitgest
 
 Der Wechsel zu IMS zur Benutzerauthentifizierung ist eine gemeinsame Maßnahme zwischen AMS und Kunden, wobei jede Seite eigene Workflows abschließen muss.
 
-Sobald ein Kunde als „IMS-Organisation“ existiert und AMS die Bereitstellung des Kunden für IMS abgeschlossen hat, lautet die Zusammenfassung der erforderlichen Konfigurationsschritte wie folgt:
+Sobald ein Kunde als „IMS-Organisation“ existiert und AMS die Bereitstellung des Kunden für IMS abgeschlossen hat, lautet die Zusammenfassung der erforderlichen Konfigurations-Workflows wie folgt:
 
 ![image2018-9-23_23-33-25](assets/image2018-9-23_23-33-25.png)
 
@@ -114,11 +112,11 @@ Die Benutzersynchronisierung steht über das Adobe Github-Repository an diesem S
 
 Hinweis: Eine Pre-Release-Version 2.4RC1 mit Unterstützung für dynamische Gruppenerstellung steht hier zur Verfügung: [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
 
-Die wichtigsten Funktionen dieser Version sind die Möglichkeit, neue LDAP-Gruppen für die Benutzermitgliedschaft in der [!DNL Admin Console] dynamisch zuzuordnen und dynamische Benutzergruppen zu erstellen.
+Die wichtigsten Funktionen dieser Version sind die Möglichkeit, neue LDAP-Gruppen für die Benutzerzugehörigkeit zur [!DNL Admin Console] dynamisch zuzuordnen und dynamische Benutzergruppen zu erstellen.
 
 Weitere Informationen zu den neuen Gruppenfunktionen finden Sie hier:
 
-[https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options](https://adobe-apiplatform.github.io/user-sync.py/de/user-manual/advanced_configuration.html#additional-group-options)
+[https://adobe-apiplatform.github.io/user-sync.py/de/user-manual/advanced_configuration.html#additional-group-options](https://adobe-apiplatform.github.io/user-sync.py/de/user-manual/advanced_configuration.html#additional-group-options)
 
 >[!NOTE]
 >
@@ -135,7 +133,7 @@ Weitere Informationen zu den neuen Gruppenfunktionen finden Sie hier:
 
 >[!NOTE]
 >
->Die AEM IMS-Konfiguration wird vom Adobe Managed Services-Team vorgenommen. Die Kundenadmins können sie jedoch gemäß ihren Anforderungen ändern (z. B. automatische Gruppenmitgliedschaft oder Gruppenzuordnung). Der IMS-Client wird auch von Ihrem Managed Services-Team registriert.
+>Die AEM IMS-Konfiguration wird vom Adobe Managed Services-Team vorgenommen. Die Kundenadmins können sie jedoch gemäß ihren Anforderungen ändern (z. B. automatische Gruppenzugehörigkeit oder Gruppenzuordnung). Der IMS-Client wird auch von Ihrem Managed Services-Team registriert.
 
 ## Verwendung {#how-to-use}
 
@@ -215,7 +213,7 @@ Die Benutzerin bzw. der Benutzer ist Teil der folgenden Gruppen in IMS:
 
 ![screen_shot_2018-09-17at94237pm](assets/screen_shot_2018-09-17at94237pm.png)
 
-Wenn sich die Benutzerin bzw. der Benutzer anmeldet, werden die Gruppenmitgliedschaften wie unten dargestellt synchronisiert:
+Wenn sich die Benutzerin bzw. der Benutzer anmeldet, werden die Gruppenzugehörigkeiten wie unten dargestellt synchronisiert:
 
 ![screen_shot_2018-09-17at94033pm](assets/screen_shot_2018-09-17at94033pm.png)
 

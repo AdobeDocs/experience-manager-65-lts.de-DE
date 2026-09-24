@@ -13,9 +13,7 @@ source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 100%
-
 ---
-
 # Auditprotokollwartung in AEM 6{#audit-log-maintenance-in-aem}
 
 AEM-Ereignisse, die sich für die Auditprotokollierung qualifizieren, generieren eine große Menge archivierter Daten. Diese Datenmenge kann aufgrund von Replikationen, Asset-Uploads und anderen Systemaktivitäten schnell anwachsen.
