@@ -9,11 +9,9 @@ role: User
 exl-id: da33f43b-7375-46f1-a80f-c1891fd90312
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '249'
 ht-degree: 100%
-
 ---
-
 # Videoausgabeformate {#video-renditions}
 
 Adobe Experience Manager Assets erstellt Videoausgabeformate für Video-Assets verschiedener Formate, einschließlich OGG, FLV usw.

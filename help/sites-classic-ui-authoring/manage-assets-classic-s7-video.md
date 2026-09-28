@@ -11,11 +11,9 @@ role: User
 exl-id: 46af0e0d-9f8f-4751-91a8-c39d028e4c91
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1725'
 ht-degree: 100%
-
 ---
-
 # Video{#video}
 
 Assets bietet zentralisierte Video-Asset-Verwaltung, mit der Sie Videos direkt in Assets zur automatischen Kodierung in Dynamic Media Classic hochladen und für die Seitenerstellung direkt in Assets auf Dynamic Media Classic-Videos zugreifen können.
