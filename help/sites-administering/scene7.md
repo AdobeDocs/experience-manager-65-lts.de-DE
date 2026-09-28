@@ -11,11 +11,9 @@ role: Admin
 exl-id: 9f879ab6-6806-4e94-836c-0a7813940914
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '5417'
+source-wordcount: '5545'
 ht-degree: 99%
-
 ---
-
 # Integrieren von Adobe Experience Manager mit Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
 Adobe Dynamic Media Classic ist eine gehostete Lösung für die Verwaltung, Optimierung, Veröffentlichung und Bereitstellung von Rich-Media-Assets für Web-, Mobil-, E-Mail- und Internet-verbundene Anzeigen und Ausdrucke.
@@ -28,7 +26,7 @@ Informationen zur Verwendung aller Dynamic Media Classic-Komponenten auf einer S
 >
 >* Die DHTML-Viewer-Plattform von Dynamic Media Classic wurde offiziell am 31. Januar 2014 eingestellt. Weitere Informationen finden Sie in den [FAQ zur Einstellung von DHTML-Viewer](../sites-administering/dhtml-viewer-endoflifefaqs.md).
 >* Bevor Sie Dynamic Media Classic für die Verwendung mit Experience Manager konfigurieren, lesen Sie [Best Practices](#best-practices-for-integrating-scene-with-aem) zur Integration von Dynamic Media Classic mit Experience Manager.
->* Wenn Sie Dynamic Media Classic mit einer benutzerdefinierten Proxy-Konfiguration verwenden, müssen Sie beide HTTP-Client-Proxy-Konfigurationen konfigurieren, da einige Funktionen von Experience Manager die 3.x-APIs verwenden und andere die 4.x-APIs. 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert und 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.ProxyConfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) konfiguriert.
+>* Wenn Sie Dynamic Media Classic mit einer benutzerdefinierten Proxy-Konfiguration verwenden, müssen Sie beide HTTP-Client-Proxy-Konfigurationen konfigurieren, da einige Funktionen von Experience Manager die 3.x-APIs verwenden und andere die 4.x-APIs. 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert und 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) konfiguriert.
 >
 
 ## Integration von Experience Manager/Dynamic Media Classic im Vergleich zu Dynamic Media {#aem-scene-integration-versus-dynamic-media}
@@ -68,7 +66,7 @@ Wenn Sie innerhalb dieser Lösung mit Assets arbeiten, befolgen Sie diesen Workf
 
 Die von Ihnen für Dynamic Media verwendeten Komponenten befinden sich im Komponentenbereich **[!UICONTROL Dynamic Media]** im [Design-Modus](/help/sites-authoring/author-environment-tools.md#page-modes). Sie umfassen Folgendes:
 
-* **[!UICONTROL Dynamic Media]** – Die Komponente **[!UICONTROL Dynamic Media]** ist intelligent: In Abhängigkeit davon, ob Sie ein Bild oder Video hinzufügen, haben Sie verschiedene Optionen. Die Komponente unterstützt Bildvorgaben, bildbasierte Viewer wie Bildsets sowie Rotationssets, Sets für gemischte Medien und Videos. Zudem ist der Viewer dynamisch. Die Anzeigegröße ändert sich demnach automatisch auf Grundlage der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
+* **[!UICONTROL Dynamic Media]** – Die Komponente **[!UICONTROL Dynamic Media]** ist intelligent: In Abhängigkeit davon, ob Sie ein Bild oder Video hinzufügen, haben Sie verschiedene Optionen. Die Komponente unterstützt Bildvorgaben, bildbasierte Viewer wie Bild-Sets sowie Rotations-Sets, Sets für gemischte Medien und Videos. Zudem ist der Viewer dynamisch. Die Anzeigegröße ändert sich demnach automatisch auf Grundlage der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
 
 * **[!UICONTROL Interaktive Medien]** – Die Komponente **[!UICONTROL Interaktive Medien]** ist für Assets wie Karussellbanner, interaktive Bilder und interaktive Videos geeignet. Solche Assets weisen Interaktivität auf, z. B. Hotspots oder Imagemaps. Diese Komponente ist intelligent. Dies bedeutet: Je nachdem, ob Sie ein Bild oder Video hinzufügen, werden Ihnen unterschiedliche Optionen zur Verfügung gestellt. Zudem ist der Viewer responsiv. Die Größe des Bildschirms ändert sich demnach automatisch auf Grundlage der Bildschirmgröße. Bei allen Viewern handelt es sich um HTML5-Viewer.
 
@@ -199,8 +197,8 @@ Sie können Assets entweder mithilfe der Assets-Funktion (Digital Asset Manageme
 * Dynamic Media Classic-Asset-Typen, die Experience Manager Assets noch nicht unterstützt, müssen über den Dynamic Media Classic-Inhaltsbrowser direkt von Dynamic Media Classic auf einer Experience Manager-Website hinzugefügt werden. Ein Beispiel sind Bildvorlagen.
 * Bei Asset-Typen, die sowohl von Experience Manager Assets als auch von Dynamic Media Classic unterstützt werden, hängt die Entscheidung über die Art des Uploads von Folgendem ab:
 
-   * Wo befinden sich die Assets heute
-   * Wie wichtig ihre Verwaltung in einem gemeinsamen Repository ist
+  * Wo befinden sich die Assets heute
+  * Wie wichtig ihre Verwaltung in einem gemeinsamen Repository ist
 
 Angenommen, die Assets befinden sich bereits in Dynamic Media Classic und ihre Verwaltung in einem gemeinsamen Repository ist nicht wichtig. In diesem Fall ist der Export der Assets in Experience Manager Assets nur, um sie für die Bereitstellung wieder mit Dynamic Media Classic zu synchronisieren, ein unnötiger Roundtrip. Adobe empfiehlt, dass Sie Assets in einem einzigen Repository speichern und nur zur Bereitstellung mit Dynamic Media Classic synchronisieren.
 
@@ -563,7 +561,7 @@ Insbesondere konfigurieren Sie hier das vom MIME-Typ akzeptierte Dateiformat im 
 1. Wählen Sie auf der rechten Seite der Seite „CRXDE Lite“ die Registerkarte **[!UICONTROL Eigenschaften]** aus.
 1. Geben Sie einen Auftragsparameter für einen Dynamic Media Classic-Upload im Wertfeld **[!UICONTROL jobParam]** an.
 
-   Beispiel: `psprocess="rasterize"&psresolution=120`. 
+   Beispiel: `psprocess="rasterize"&psresolution=120`.
 
    Informationen zu weiteren Upload-Auftragsparametern, die Sie verwenden können, finden Sie in der [Adobe Dynamic Media Classic Image Production System-API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html?lang=de).
 
@@ -602,8 +600,8 @@ Wenn Sie Probleme bei der Integration von Experience Manager mit Dynamic Media C
 * Stellen Sie sicher, dass Sie die Cloud-Services-Konfiguration konfiguriert haben, um das automatische Hochladen zu aktivieren, und dass Sie den DAM-Asset-Workflow aktualisiert und gespeichert haben, sodass er das Hochladen in Dynamic Media Classic umfasst.
 * Stellen Sie beim Hochladen eines Bildes in einen Unterordner des Dynamic Media Classic-Zielordners sicher, dass Sie eine der folgenden Aktionen ausführen:
 
-   * Stellen Sie sicher, dass die Namen aller Assets unabhängig von ihrem Speicherort eindeutig sind. Andernfalls wird das Asset im Hauptzielordner gelöscht und es verbleibt nur das Asset im Unterordner.
-   * Ändern Sie, wie Dynamic Media Classic Assets im Bereich „Einstellungen“ des Dynamic Media Classic-Kontos überschreibt. Legen Sie nicht fest, dass Dynamic Media Classic Assets unabhängig vom Speicherort überschreibt, wenn Sie Assets mit dem gleichen Namen in Unterordnern verwenden.
+  * Stellen Sie sicher, dass die Namen aller Assets unabhängig von ihrem Speicherort eindeutig sind. Andernfalls wird das Asset im Hauptzielordner gelöscht und es verbleibt nur das Asset im Unterordner.
+  * Ändern Sie, wie Dynamic Media Classic Assets im Bereich „Einstellungen“ des Dynamic Media Classic-Kontos überschreibt. Legen Sie nicht fest, dass Dynamic Media Classic Assets unabhängig vom Speicherort überschreibt, wenn Sie Assets mit dem gleichen Namen in Unterordnern verwenden.
 
 **Wenn Ihre gelöschten Assets oder Ordner nicht zwischen Dynamic Media Classic und Experience Manager synchronisiert werden:**
 

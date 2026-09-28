@@ -11,11 +11,9 @@ role: Admin
 exl-id: 0eac1568-cddb-4d26-b04c-78a2681cf44a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 99%
-
+source-wordcount: '534'
+ht-degree: 98%
 ---
-
 # Konfigurieren der Videokomponente {#configure-the-video-component}
 
 Mit der [Videokomponente](/help/sites-authoring/default-components-foundation.md#video) können Sie ein vordefiniertes, vorkonfiguriertes Video-Asset auf Ihrer Seite platzieren.

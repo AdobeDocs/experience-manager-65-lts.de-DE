@@ -9,11 +9,9 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 2e03224f-b4eb-4bf5-aba9-a6cc292c96c2
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '264'
 ht-degree: 100%
-
 ---
-
 # Einrichten von Dynamic Media {#setting-up-dynamic-media}
 
 Mithilfe von [Dynamic Media](https://business.adobe.com/de/products/experience-manager/assets/dynamic-media.html) können Sie Assets verwalten, indem Sie umfassende visuelle Merchandising- und Marketing-Assets bei Bedarf übermitteln, und zwar automatisch skaliert für die Verwendung im Web, auf Mobilgeräten und in Social Media. Anhand eines Sets von Assets aus Primärquellen können Sie mit Dynamic Media mehrere Varianten ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
