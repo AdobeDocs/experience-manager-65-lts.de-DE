@@ -20,7 +20,7 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '5215'
 ht-degree: 98%
@@ -434,7 +434,7 @@ Bei der Konzeption dieser Tests sollte beachtet werden, dass nicht alle Szenarie
 
 | Fehlerszenario | Fehlertyp | Anzahl der Benutzer | Tx/Sek (erwartet) | Tx/Sek (getestet) | Beschreibung |
 |---|---|---|---|---|---|
-| Überlastung der Suchkomponente | Suche mit einem globalen Platzhalter (Sternchen) | 10 | 1 |  | Es wird nur nach &ast;&ast;&ast; gesucht. |
+| Überlastung der Suchkomponente | Suche mit einem globalen Platzhalter (Sternchen) | 10 | 1 |  | Es wird nur nach &amp;ast;&amp;ast;&amp;ast; gesucht. |
 |   | Stoppwort | 20 | 2 |  | Suchen nach einem Stoppwort. |
 |   | Leere Zeichenfolge | 10 | 1 |  | Suchen nach einer leeren Zeichenfolge. |
 |   | Sonderzeichen | 10 | 1 |  | Suchen nach Sonderzeichen. |
@@ -606,11 +606,13 @@ Es wird empfohlen, die Personalisierung auf den erforderlichen Bereich zu beschr
 * Wenn Sie dagegen zehn verschiedene Startseiten auswählen, können Sie jede dieser Startseiten zwischenspeichern und so die Leistung verbessern.
 
 >[!TIP]
+>
 >Weitere Informationen zum Konfigurieren des Dispatcher-Caches finden Sie im [Tutorial zum AEM Dispatcher Cache](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html?lang=de) und dort im Abschnitt [Caching geschützter Inhalte](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html?lang=de#dispatcher-tips-and-tricks).
 
 Wenn Sie die einzelnen Seiten personalisieren, indem Sie den Namen der Benutzerin oder des Benutzers beispielsweise in die Titelleiste einfügen, wirkt sich dies auf die Leistung aus.
 
 >[!TIP]
+>
 >Informationen zum Caching geschützter Inhalte finden Sie unter [Caching geschützter Inhalte](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=de) im Dispatcher-Handbuch.
 
 Bezüglich der Mischung von eingeschränkten und öffentlichen Inhalten auf einer Seite sollten Sie eine Strategie erwägen, bei der Server-seitige Includes im Dispatcher verwendet werden, oder Client-seitige Includes über Ajax im Browser.

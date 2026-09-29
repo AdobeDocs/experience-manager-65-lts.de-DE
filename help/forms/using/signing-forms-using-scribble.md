@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 97%
@@ -61,13 +61,11 @@ Sie können das Symbol **Konfigurieren** ![configure](assets/configure.png) ausw
 
 * Wenn das Seitenverhältnis der Arbeitsfläche für Freihandsignaturen größer als 1 ist, werden die Geolocation-Informationen auf der rechten Seite der Arbeitsfläche für Freihandsignaturen hinzugefügt.
 
-![scribble signature-bottom](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
+  ![scribble signature-bottom](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
 
-
->[!NOTE]
->
->Signaturen werden immer im PNG-Format gespeichert.
->
+  >[!NOTE]
+  >
+  >Signaturen werden immer im PNG-Format gespeichert.
 
 ## Adaptives Formular konfigurieren, um Freihandsignatur zu verwenden {#configure-an-adaptive-form-to-use-scribble-signature}
 

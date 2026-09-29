@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '8126'
 ht-degree: 95%
@@ -181,7 +181,7 @@ Sie können Dynamic Media nur für Bilder, nur für Video oder sowohl für Bilde
 
 ## Aktivieren von Dynamic Media {#enabling-dynamic-media}
 
-[Dynamic Media ist standardmäßig deaktiviert. &#x200B;](https://business.adobe.com/de/products/experience-manager/assets/dynamic-media.html) Um die Funktionen von Dynamic Media nutzen zu können, müssen Sie Dynamic Media aktivieren, indem Sie den Ausführungsmodus `dynamicmedia` verwenden, wie Sie dies beispielsweise auch mit dem Ausführungsmodus `publish` durchführen. Prüfen Sie vor dem Aktivieren die [technischen Anforderungen](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
+[Dynamic Media ist standardmäßig deaktiviert. ](https://business.adobe.com/de/products/experience-manager/assets/dynamic-media.html) Um die Funktionen von Dynamic Media nutzen zu können, müssen Sie Dynamic Media aktivieren, indem Sie den Ausführungsmodus `dynamicmedia` verwenden, wie Sie dies beispielsweise auch mit dem Ausführungsmodus `publish` durchführen. Prüfen Sie vor dem Aktivieren die [technischen Anforderungen](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
 
 >[!NOTE]
 >
@@ -970,248 +970,248 @@ Nach der Installation des Feature Pack müssen Sie die richtigen Standardfarbpro
 
    **Tabelle „Farbkorrektureigenschaften“**
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Eigenschaft</strong></td>
-   <td><strong>Typ</strong></td>
-   <td><strong>Standard</strong></td>
-   <td><strong>Beschreibung</strong></td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=de">iccprofilergb</a></td>
-   <td>Zeichenfolge</td>
-   <td>&lt;empty&gt;</td>
-   <td>Name des standardmäßigen RGB-Profils.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=de">iccprofilecmyk</a></td>
-   <td>Zeichenfolge</td>
-   <td>&lt;empty&gt;</td>
-   <td>Name des standardmäßigen CMYK-Farbprofils.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=de">iccprofilegray</a></td>
-   <td>Zeichenfolge</td>
-   <td>&lt;empty&gt;</td>
-   <td>Name des standardmäßigen grauen Farbprofils.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=de">iccprofilesrcrgb</a></td>
-   <td>Zeichenfolge</td>
-   <td>&lt;empty&gt;</td>
-   <td>Name des standardmäßigen RGB-Farbprofils, das für RGB-Bilder ohne eingebettetes Farbprofil verwendet wird.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=de">iccprofilesrccmyk</a></td>
-   <td>Zeichenfolge</td>
-   <td>&lt;empty&gt;</td>
-   <td>Name des standardmäßigen CMYK-Farbprofils, das für CMYK-Bilder ohne eingebettetes Farbprofil verwendet wird.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=de">iccprofilesrcgray</a></td>
-   <td>Zeichenfolge</td>
-   <td>&lt;empty&gt;</td>
-   <td>Name des standardmäßigen Farbprofils für Grau, das für CMYK-Bilder ohne eingebettetes Farbprofil verwendet wird.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=de">iccblackpointpayment</a></td>
-   <td>Boolesch</td>
-   <td>True</td>
-   <td>Gibt an, ob während der Farbkorrektur eine Schwarzpunktkompensation erfolgt. Adobe empfiehlt, dass diese Einstellung aktiviert ist.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=de">iccdither</a></td>
-   <td>Boolesch</td>
-   <td>False</td>
-   <td>Gibt an, ob die Fehlerdiffusion während der Farbkorrektur durchgeführt wird.</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=de">iccrenderintent</a></td>
-   <td>Zeichenfolge</td>
-   <td>relative</td>
-   <td><p>Gibt die Rendering-Absicht an. Zulässige Werte sind: <strong>wahrnehmungsorientiert, relativ, Sättigung, absolut. </strong><i></i>Adobe empfiehlt <strong>relativ</strong><i></i> als Standard.</p> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Eigenschaft</strong></td>
+      <td><strong>Typ</strong></td>
+      <td><strong>Standard</strong></td>
+      <td><strong>Beschreibung</strong></td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=de">iccprofilergb</a></td>
+      <td>Zeichenfolge</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name des standardmäßigen RGB-Profils.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=de">iccprofilecmyk</a></td>
+      <td>Zeichenfolge</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name des standardmäßigen CMYK-Farbprofils.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=de">iccprofilegray</a></td>
+      <td>Zeichenfolge</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name des standardmäßigen grauen Farbprofils.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=de">iccprofilesrcrgb</a></td>
+      <td>Zeichenfolge</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name des standardmäßigen RGB-Farbprofils, das für RGB-Bilder ohne eingebettetes Farbprofil verwendet wird.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=de">iccprofilesrccmyk</a></td>
+      <td>Zeichenfolge</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name des standardmäßigen CMYK-Farbprofils, das für CMYK-Bilder ohne eingebettetes Farbprofil verwendet wird.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=de">iccprofilesrcgray</a></td>
+      <td>Zeichenfolge</td>
+      <td>&lt;empty&gt;</td>
+      <td>Name des standardmäßigen Farbprofils für Grau, das für CMYK-Bilder ohne eingebettetes Farbprofil verwendet wird.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=de">iccblackpointpayment</a></td>
+      <td>Boolesch</td>
+      <td>True</td>
+      <td>Gibt an, ob während der Farbkorrektur eine Schwarzpunktkompensation erfolgt. Adobe empfiehlt, dass diese Einstellung aktiviert ist.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=de">iccdither</a></td>
+      <td>Boolesch</td>
+      <td>False</td>
+      <td>Gibt an, ob die Fehlerdiffusion während der Farbkorrektur durchgeführt wird.</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=de">iccrenderintent</a></td>
+      <td>Zeichenfolge</td>
+      <td>relative</td>
+      <td><p>Gibt die Rendering-Absicht an. Zulässige Werte sind: <strong>wahrnehmungsorientiert, relativ, Sättigung, absolut. </strong><i></i>Adobe empfiehlt <strong>relativ</strong><i></i> als Standard.</p> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Bei Eigenschaftsnamen wird zwischen Groß- und Kleinschreibung unterschieden. Es darf nur die Kleinschreibung verwendet werden.
+   >[!NOTE]
+   >
+   >Bei Eigenschaftsnamen wird zwischen Groß- und Kleinschreibung unterschieden. Es darf nur die Kleinschreibung verwendet werden.
 
-**Tabelle „Farbprofile“**
+   **Tabelle „Farbprofile“**
 
-Die folgenden Farbprofile werden installiert:
+   Die folgenden Farbprofile werden installiert:
 
-<table>
- <tbody>
-  <tr>
-   <th><p>Name</p> </th>
-   <th><p>Farbraum</p> </th>
-   <th><p>Beschreibung</p> </th>
-  </tr>
-  <tr>
-   <td>Adobe RGB</td>
-   <td>RGB</td>
-   <td>Adobe RGB (1998)</td>
-  </tr>
-  <tr>
-   <td>AppleRGB</td>
-   <td>RGB</td>
-   <td>Apple RGB</td>
-  </tr>
-  <tr>
-   <td>CIERGB</td>
-   <td>RGB</td>
-   <td>CIE-RGB</td>
-  </tr>
-  <tr>
-   <td>CoatedFogra27</td>
-   <td>CMYK</td>
-   <td>Coated FOGRA27 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>CoatedFogra39</td>
-   <td>CMYK</td>
-   <td>Coated FOGRA39 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>CoatedGraCol</td>
-   <td>CMYK</td>
-   <td>Coated GRACoL 2006 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>ColorMatchRGB</td>
-   <td>RGB</td>
-   <td>ColorMatch-RGB</td>
-  </tr>
-  <tr>
-   <td>EuropeISOCoated</td>
-   <td>CMYK</td>
-   <td>Europe ISO Coated FOGRA27</td>
-  </tr>
-  <tr>
-   <td>EuroscaleCoated</td>
-   <td>CMYK</td>
-   <td>Euro-Skala Coated v2</td>
-  </tr>
-  <tr>
-   <td>EuroscaleUncoated</td>
-   <td>CMYK</td>
-   <td>Euro-Skala, Uncoated v2</td>
-  </tr>
-  <tr>
-   <td>JapanColorCoated</td>
-   <td>CMYK</td>
-   <td>Japan Color 2001 Coated</td>
-  </tr>
-  <tr>
-   <td>JapanColorNewspaper</td>
-   <td>CMYK</td>
-   <td>Japan Color 2002 Newspaper</td>
-  </tr>
-  <tr>
-   <td>JapanColorUncoated</td>
-   <td>CMYK</td>
-   <td>Japan Color 2001 Uncoated</td>
-  </tr>
-  <tr>
-   <td>JapanColorWebCoated</td>
-   <td>CMYK</td>
-   <td>Japan Color 2003 Web Coated</td>
-  </tr>
-  <tr>
-   <td>JapanWebCoated</td>
-   <td>CMYK</td>
-   <td>Japan Web Coated (Ad)</td>
-  </tr>
-  <tr>
-   <td>NewsprintSNAP2007</td>
-   <td>CMYK</td>
-   <td>US Newsprint (SNAP 2007)</td>
-  </tr>
-  <tr>
-   <td>NTSC</td>
-   <td>RGB</td>
-   <td>NTSC (1953)</td>
-  </tr>
-  <tr>
-   <td>PAL</td>
-   <td>RGB</td>
-   <td>PAL/SECAM</td>
-  </tr>
-  <tr>
-   <td>ProPhoto</td>
-   <td>RGB</td>
-   <td>ProPhoto RGB</td>
-  </tr>
-  <tr>
-   <td>PS4Default</td>
-   <td>CMYK</td>
-   <td>Photoshop 4 Standard CMYK</td>
-  </tr>
-  <tr>
-   <td>PS5Default</td>
-   <td>CMYK</td>
-   <td>Photoshop 5 Standard CMYK</td>
-  </tr>
-  <tr>
-   <td>SheetfedCoated</td>
-   <td>CMYK</td>
-   <td>U.S. Sheetfed Coated v2</td>
-  </tr>
-  <tr>
-   <td>SheetfedUncoated</td>
-   <td>CMYK</td>
-   <td>U.S. Sheetfed Uncoated v2</td>
-  </tr>
-  <tr>
-   <td>SMPTE</td>
-   <td>RGB</td>
-   <td>SMPTE-C</td>
-  </tr>
-  <tr>
-   <td>sRGB</td>
-   <td>RGB</td>
-   <td>sRGB IEC61966-2.1</td>
-  </tr>
-  <tr>
-   <td>UncoatedFogra29</td>
-   <td>CMYK</td>
-   <td>Uncoated FOGRA29 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>WebCoated</td>
-   <td>CMYK</td>
-   <td>U.S. Web Coated (SWOP) v2</td>
-  </tr>
-  <tr>
-   <td>WebCoatedFogra28</td>
-   <td>CMYK</td>
-   <td>Web Coated FOGRA28 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>WebCoatedGrade3</td>
-   <td>CMYK</td>
-   <td>Web Coated SWOP 2006 Grade 3 Paper</td>
-  </tr>
-  <tr>
-   <td>WebCoatedGrade5</td>
-   <td>CMYK</td>
-   <td>Web Coated SWOP 2006 Grade 5 Paper</td>
-  </tr>
-  <tr>
-   <td>WebUncoated</td>
-   <td>CMYK</td>
-   <td>U.S. Web Uncoated v2</td>
-  </tr>
-  <tr>
-   <td>WideGamutRGB</td>
-   <td>RGB</td>
-   <td>Wide Gamut RGB</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <th><p>Name</p> </th>
+      <th><p>Farbraum</p> </th>
+      <th><p>Beschreibung</p> </th>
+   </tr>
+   <tr>
+      <td>Adobe RGB</td>
+      <td>RGB</td>
+      <td>Adobe RGB (1998)</td>
+   </tr>
+   <tr>
+      <td>AppleRGB</td>
+      <td>RGB</td>
+      <td>Apple RGB</td>
+   </tr>
+   <tr>
+      <td>CIERGB</td>
+      <td>RGB</td>
+      <td>CIE-RGB</td>
+   </tr>
+   <tr>
+      <td>CoatedFogra27</td>
+      <td>CMYK</td>
+      <td>Coated FOGRA27 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>CoatedFogra39</td>
+      <td>CMYK</td>
+      <td>Coated FOGRA39 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>CoatedGraCol</td>
+      <td>CMYK</td>
+      <td>Coated GRACoL 2006 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>ColorMatchRGB</td>
+      <td>RGB</td>
+      <td>ColorMatch-RGB</td>
+   </tr>
+   <tr>
+      <td>EuropeISOCoated</td>
+      <td>CMYK</td>
+      <td>Europe ISO Coated FOGRA27</td>
+   </tr>
+   <tr>
+      <td>EuroscaleCoated</td>
+      <td>CMYK</td>
+      <td>Euro-Skala Coated v2</td>
+   </tr>
+   <tr>
+      <td>EuroscaleUncoated</td>
+      <td>CMYK</td>
+      <td>Euro-Skala, Uncoated v2</td>
+   </tr>
+   <tr>
+      <td>JapanColorCoated</td>
+      <td>CMYK</td>
+      <td>Japan Color 2001 Coated</td>
+   </tr>
+   <tr>
+      <td>JapanColorNewspaper</td>
+      <td>CMYK</td>
+      <td>Japan Color 2002 Newspaper</td>
+   </tr>
+   <tr>
+      <td>JapanColorUncoated</td>
+      <td>CMYK</td>
+      <td>Japan Color 2001 Uncoated</td>
+   </tr>
+   <tr>
+      <td>JapanColorWebCoated</td>
+      <td>CMYK</td>
+      <td>Japan Color 2003 Web Coated</td>
+   </tr>
+   <tr>
+      <td>JapanWebCoated</td>
+      <td>CMYK</td>
+      <td>Japan Web Coated (Ad)</td>
+   </tr>
+   <tr>
+      <td>NewsprintSNAP2007</td>
+      <td>CMYK</td>
+      <td>US Newsprint (SNAP 2007)</td>
+   </tr>
+   <tr>
+      <td>NTSC</td>
+      <td>RGB</td>
+      <td>NTSC (1953)</td>
+   </tr>
+   <tr>
+      <td>PAL</td>
+      <td>RGB</td>
+      <td>PAL/SECAM</td>
+   </tr>
+   <tr>
+      <td>ProPhoto</td>
+      <td>RGB</td>
+      <td>ProPhoto RGB</td>
+   </tr>
+   <tr>
+      <td>PS4Default</td>
+      <td>CMYK</td>
+      <td>Photoshop 4 Standard CMYK</td>
+   </tr>
+   <tr>
+      <td>PS5Default</td>
+      <td>CMYK</td>
+      <td>Photoshop 5 Standard CMYK</td>
+   </tr>
+   <tr>
+      <td>SheetfedCoated</td>
+      <td>CMYK</td>
+      <td>U.S. Sheetfed Coated v2</td>
+   </tr>
+   <tr>
+      <td>SheetfedUncoated</td>
+      <td>CMYK</td>
+      <td>U.S. Sheetfed Uncoated v2</td>
+   </tr>
+   <tr>
+      <td>SMPTE</td>
+      <td>RGB</td>
+      <td>SMPTE-C</td>
+   </tr>
+   <tr>
+      <td>sRGB</td>
+      <td>RGB</td>
+      <td>sRGB IEC61966-2.1</td>
+   </tr>
+   <tr>
+      <td>UncoatedFogra29</td>
+      <td>CMYK</td>
+      <td>Uncoated FOGRA29 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>WebCoated</td>
+      <td>CMYK</td>
+      <td>U.S. Web Coated (SWOP) v2</td>
+   </tr>
+   <tr>
+      <td>WebCoatedFogra28</td>
+      <td>CMYK</td>
+      <td>Web Coated FOGRA28 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>WebCoatedGrade3</td>
+      <td>CMYK</td>
+      <td>Web Coated SWOP 2006 Grade 3 Paper</td>
+   </tr>
+   <tr>
+      <td>WebCoatedGrade5</td>
+      <td>CMYK</td>
+      <td>Web Coated SWOP 2006 Grade 5 Paper</td>
+   </tr>
+   <tr>
+      <td>WebUncoated</td>
+      <td>CMYK</td>
+      <td>U.S. Web Uncoated v2</td>
+   </tr>
+   <tr>
+      <td>WideGamutRGB</td>
+      <td>RGB</td>
+      <td>Wide Gamut RGB</td>
+   </tr>
+   </tbody>
+   </table>
 
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
@@ -1243,28 +1243,28 @@ Siehe [Bereitstellen von Assets mit Dynamic Media](/help/assets/delivering-dynam
   </tr>
   <tr>
    <td>Kopieren einer Viewer-URL</td>
-   <td><p>Das Dialogfeld zum Kopieren einer URL zeigt eine URL ähnlich der folgenden an (URL dient nur zur Veranschaulichung):</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&contentRoot=%2F</code></p> <p>Hier verweist <code>PUBLISHNODE</code> auf den regulären Veröffentlichungsknoten von Experience Manager und <code>IMAGESERVICEPUBLISHNODE</code> auf die Bilddienst-URL.</p> <p>Siehe auch <a href="/help/assets/delivering-dynamic-media-assets.md">Bereitstellen von Dynamic Media-Assets</a>.</p> </td>
+   <td><p>Das Dialogfeld zum Kopieren einer URL zeigt eine URL ähnlich der folgenden an (URL dient nur zur Veranschaulichung):</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>Hier verweist <code>PUBLISHNODE</code> auf den regulären Veröffentlichungsknoten von Experience Manager und <code>IMAGESERVICEPUBLISHNODE</code> auf die Bilddienst-URL.</p> <p>Siehe auch <a href="/help/assets/delivering-dynamic-media-assets.md">Bereitstellen von Dynamic Media-Assets</a>.</p> </td>
   </tr>
   <tr>
    <td>Kopieren von Einbettungs-Code eines Viewers</td>
    <td><p>Im Dialogfeld zum Einbetten von Code wird ein Code-Schnipsel wie der folgende angezeigt (Code-Schnipsel dient nur zur Veranschaulichung):</p> <p><code class="code">&lt;style type="text/css"&gt;
-       &#x200B;#s7basiczoom_div.s7basiczoomviewer&lbrace;
+       #s7basiczoom_div.s7basiczoomviewer{
        width:100%;
        height:auto;
-       &rbrace;
+       }
        &lt;/style&gt;
        &lt;script
        type="text/javascript" src="https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/js/BasicZoomViewer.js"&gt;&lt;/script&gt;
        &lt;div id="s7basiczoom_div"&gt;&lt;/div&gt;
        &lt;script type="text/javascript"&gt;
-       var s7basiczoomviewer = new s7viewers.BasicZoomViewer(&lbrace;
+       var s7basiczoomviewer = new s7viewers.BasicZoomViewer({
        "containerId" : "s7basiczoom_div",
-       "params" : &lbrace;
+       "params" : {
        "serverurl" : "https://IMAGESERVICEPUBLISHNODE/is/image/",
        "contenturl" : "https://PUBLISHNODE/",
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
-       "asset" : "/content/dam/path/to/Image.jpg" &rbrace;
-       &rbrace;).init();
+       "asset" : "/content/dam/path/to/Image.jpg" }
+       }).init();
        &lt;/script&gt;</code></p> <p>Hier verweist <code>PUBLISHNODE</code> auf den regulären Veröffentlichungsknoten von Experience Manager und <code>IMAGESERVICEPUBLISHNODE</code> auf die Bilddienst-URL.</p> <p>Siehe auch <a href="/help/assets/delivering-dynamic-media-assets.md">Bereitstellen von Dynamic Media-Assets</a>.</p> </td>
   </tr>
  </tbody>

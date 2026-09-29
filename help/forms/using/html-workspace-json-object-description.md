@@ -30,7 +30,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '2168'
 ht-degree: 92%
@@ -43,49 +43,49 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, werden unten beschrie
 
    Kategorien sind auf der Workspace-Registerkarte „Prozess starten“ zu finden. Diese Kategorien werden verwendet, um die Startpunkte zu klassifizieren.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Eigenschaft</strong></td>
-   <td><strong>Nur Client</strong></td>
-   <td><strong>Kommentare</strong></td>
-  </tr>
-  <tr>
-   <td>name</td>
-   <td>F</td>
-   <td>Kategoriename.</td>
-  </tr>
-  <tr>
-   <td>id</td>
-   <td>F</td>
-   <td>Kategorie-ID.<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>description<br type="_moz" /> </td>
-   <td>F</td>
-   <td>Kategoriebeschreibung.<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>parentOid<br type="_moz" /> </td>
-   <td>F</td>
-   <td>Enthält die OID der übergeordneten Kategorie.<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>startPointsList<br type="_moz" /> </td>
-   <td>T</td>
-   <td>Enthält eine Liste aller Startpunkte, die in einer Kategorie vorhanden sind.</td>
-  </tr>
-  <tr>
-   <td>categoryList</td>
-   <td>T</td>
-   <td>Enthält eine Liste der direkt untergeordneten Kategorien einer Kategorie.<br type="_moz" /> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Eigenschaft</strong></td>
+      <td><strong>Nur Client</strong></td>
+      <td><strong>Kommentare</strong></td>
+   </tr>
+   <tr>
+      <td>name</td>
+      <td>F</td>
+      <td>Kategoriename.</td>
+   </tr>
+   <tr>
+      <td>id</td>
+      <td>F</td>
+      <td>Kategorie-ID.<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>description<br type="_moz" /> </td>
+      <td>F</td>
+      <td>Kategoriebeschreibung.<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>parentOid<br type="_moz" /> </td>
+      <td>F</td>
+      <td>Enthält die OID der übergeordneten Kategorie.<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>startPointsList<br type="_moz" /> </td>
+      <td>T</td>
+      <td>Enthält eine Liste aller Startpunkte, die in einer Kategorie vorhanden sind.</td>
+   </tr>
+   <tr>
+      <td>categoryList</td>
+      <td>T</td>
+      <td>Enthält eine Liste der direkt untergeordneten Kategorien einer Kategorie.<br type="_moz" /> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Alle Startpunkte und Favoriten sind Kategorien, die Client-seitig definiert werden. Die Kategorie „Favoriten“ enthält alle Startpunkte, die Benutzende als Favoriten markieren. Die Kategorie „Alle Startpunkte“ enthält alle Startpunkte.
+   >[!NOTE]
+   >
+   >Alle Startpunkte und Favoriten sind Kategorien, die Client-seitig definiert werden. Die Kategorie „Favoriten“ enthält alle Startpunkte, die Benutzende als Favoriten markieren. Die Kategorie „Alle Startpunkte“ enthält alle Startpunkte.
 
 1. Startpoint
 

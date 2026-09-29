@@ -19,7 +19,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '1587'
 ht-degree: 97%
@@ -32,11 +32,11 @@ ht-degree: 97%
 * Einen Proxy Worker zum Definieren und Verwalten einer bestimmten Aufgabe.
 Diese Aufgaben können unterschiedlichster Art sein, beispielsweise die Nutzung von [!DNL InDesign Server] zur Verarbeitung von Dateien.
 
-Um Dateien, die Sie mit [!DNL Adobe InDesign] erstellt haben, vollständig in [!DNL Experience Manager Assets] zu laden, wird ein Proxy verwendet. Dieser verwendet einen Proxy Worker für die Kommunikation mit dem [!DNL Adobe InDesign Server], auf dem [Skripte](https://helpx.adobe.com/de/indesign/using/scripting.html) ausgeführt werden, um Metadaten zu extrahieren und verschiedene Ausgabedarstellungen für [!DNL Experience Manager Assets] zu generieren. Der Proxy Worker ermöglicht die bidirektionale Kommunikation zwischen [!DNL InDesign Server]-Instanzen und den [!DNL Experience Manager]-Instanzen in einer Cloud-Konfiguration.
+Um Dateien, die Sie mit [!DNL Adobe InDesign] erstellt haben, vollständig in [!DNL Experience Manager Assets] zu laden, wird ein Proxy verwendet. Dieser verwendet einen Proxy Worker für die Kommunikation mit dem [!DNL Adobe InDesign Server], auf dem [Skripte](https://helpx.adobe.com/indesign/using/scripting.html) ausgeführt werden, um Metadaten zu extrahieren und verschiedene Ausgabedarstellungen für [!DNL Experience Manager Assets] zu generieren. Der Proxy Worker ermöglicht die bidirektionale Kommunikation zwischen [!DNL InDesign Server]-Instanzen und den [!DNL Experience Manager]-Instanzen in einer Cloud-Konfiguration.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] gibt es als zwei separate Angebote. Das [Adobe InDesign](https://www.adobe.com/de/products/indesign.html)-Desktop-Programm, das zum Entwerfen von Seiten-Layouts für den Druck und die digitale Distribution verwendet wird. [Adobe InDesign Server](https://www.adobe.com/de/products/indesignserver.html) ermöglicht die programmgesteuerte automatisierte Erstellung von Dokumenten, die auf denen basieren, die Sie mit [!DNL InDesign] entworfen haben. Es fungiert als Dienst, der eine Schnittstelle zu seiner [ExtendScript](https://helpx.adobe.com/de/indesign/using/scripting.html)-Engine bietet.Die Skripte werden in [!DNL ExtendScript] geschrieben, das Ähnlichkeiten mit [!DNL JavaScript] aufweist.
+>[!DNL Adobe InDesign] gibt es als zwei separate Angebote. Das [Adobe InDesign](https://www.adobe.com/de/products/indesign.html)-Desktop-Programm, das zum Entwerfen von Seiten-Layouts für den Druck und die digitale Distribution verwendet wird. [Adobe InDesign Server](https://www.adobe.com/de/products/indesignserver.html) ermöglicht die programmgesteuerte automatisierte Erstellung von Dokumenten, die auf denen basieren, die Sie mit [!DNL InDesign] entworfen haben. Es fungiert als Dienst, der eine Schnittstelle zu seiner [ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html)-Engine bietet.Die Skripte werden in [!DNL ExtendScript] geschrieben, das Ähnlichkeiten mit [!DNL JavaScript] aufweist.
 
 ## So funktioniert die Extraktion {#how-the-extraction-works}
 
@@ -215,19 +215,19 @@ So konfigurieren Sie die Anzahl der parallelen IDS-Aufträge:
 
    Wenn mehrere Computer [!DNL InDesign Server] ausführen, fügen Sie SOAP-Endpunkte (Anzahl der Prozessoren pro Computer -1) für jeden Computer hinzu.
 
+   >[!NOTE]
+   >
+   >Wenn Sie mit einem Pool von Workern arbeiten, können Sie die Blockierungsliste von IDS-Workern aktivieren.
+   >
+   >Aktivieren Sie dazu das Kontrollkästchen **[!UICONTROL enable.retry.name]** unter der Konfiguration `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, um Wiederholungen von IDS-Aufträgen zu ermöglichen.
+   >
+   >Legen Sie in der Konfiguration `com.day.cq.dam.ids.impl.IDSPoolImpl.name` außerdem einen positiven Wert für den Parameter `max.errors.to.blacklist` fest, der die Anzahl der Auftragswiederholungen steuert, bevor ein IDS aus der Auftrags-Handler-Liste ausgeschlossen wird.
+   >
+   >Standardmäßig wird der IDS-Worker nach einer konfigurierbaren Zeit (`retry.interval.to.whitelist.name`) in Minuten erneut validiert. Wenn der Worker online gefunden wird, wird er aus der Blockierungsliste entfernt.
+
 <!-- 
 TBD: Make updates to configurations for allow and block list after product updates are done.
 -->
-
->[!NOTE]
->
->Wenn Sie mit einem Pool von Workern arbeiten, können Sie die Blockierungsliste von IDS-Workern aktivieren.
->
->Aktivieren Sie dazu das Kontrollkästchen **[!UICONTROL enable.retry.name]** unter der Konfiguration `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, um Wiederholungen von IDS-Aufträgen zu ermöglichen.
->
->Legen Sie in der Konfiguration `com.day.cq.dam.ids.impl.IDSPoolImpl.name` außerdem einen positiven Wert für den Parameter `max.errors.to.blacklist` fest, der die Anzahl der Auftragswiederholungen steuert, bevor ein IDS aus der Auftrags-Handler-Liste ausgeschlossen wird.
->
->Standardmäßig wird der IDS-Worker nach einer konfigurierbaren Zeit (`retry.interval.to.whitelist.name`) in Minuten erneut validiert. Wenn der Worker online gefunden wird, wird er aus der Blockierungsliste entfernt.
 
 ## Aktivieren der Unterstützung für [!DNL InDesign Server] 10.0 oder höher {#enabling-support-for-indesign-server-or-later}
 
