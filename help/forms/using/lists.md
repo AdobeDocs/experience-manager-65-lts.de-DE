@@ -5,13 +5,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ece49f03-e711-439f-9c2d-6308fe2998ae
-source-git-commit: 4f2374a48687d39f7d365e09d9055edf583e2c20
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6828'
-ht-degree: 97%
-
+source-wordcount: '6929'
+ht-degree: 98%
 ---
-
 # Dokumentfragmente{#document-fragments}
 
 ## Dokumentfragmente {#document-fragments-1}
@@ -73,7 +86,7 @@ Die Lösung „Correspondence Management“ unterstützt zwei Arten von dynamisc
    ![Absatz-Symbolleiste](assets/fonteditingtoolbar.png)
 
    Absatz-Symbolleiste
-   [![&#x200B; Ausrichtungs-Symbolleiste](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)Ausrichtungs-Symbolleiste
+   [![ Ausrichtungs-Symbolleiste](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)Ausrichtungs-Symbolleiste
 
    ![Auflistungs-Symbolleiste](assets/bulleteditingtoolbar.png)
 
@@ -187,7 +200,7 @@ Mithilfe der Funktion „Suchen und Ersetzen“ können Sie nach einer beliebige
 
 1. Wenn Sie erneut auf „Suchen“ klicken, wird die Suche am Anfang der Seite fortgesetzt.
 
-   Verwenden Sie die Option „Alle ersetzen“, um alle Instanzen des Texts im Textmodul zu ersetzen. Wenn Sie &grave;&grave; verwenden, wird die Anzahl der Ersetzungen als Meldung im Dialogfeld „Suchen und Ersetzen“ angezeigt.
+   Verwenden Sie die Option „Alle ersetzen“, um alle Instanzen des Texts im Textmodul zu ersetzen. Wenn Sie `` verwenden, wird die Anzahl der Ersetzungen als Meldung im Dialogfeld „Suchen und Ersetzen“ angezeigt.
 
 #### Best Practices/Tipps und Tricks für Textmodule {#best-practices-tips-and-tricks-for-text-modules}
 
@@ -195,10 +208,10 @@ Mithilfe der Funktion „Suchen und Ersetzen“ können Sie nach einer beliebige
 * Verwenden Sie die entsprechende Datenwörterbuchbindung in Textmodulen.
 * Die folgenden Regeln gelten für die Verwendung des Texteditors beim Ändern eines Text-Assets:
 
-   * **Variablen hinzufügen:** Zulässig
-   * **Variablen entfernen:** Zulässig
-   * **Eigenschaften aktualisieren:** Zulässig
-   * **Datenwörterbuch ändern:** Zulässig, solange das Datenwörterbuchelement nicht verwendet wird. Das Datenwörterbuch kann bei einer Aktualisierung nicht geändert werden.
+  * **Variablen hinzufügen:** Zulässig
+  * **Variablen entfernen:** Zulässig
+  * **Eigenschaften aktualisieren:** Zulässig
+  * **Datenwörterbuch ändern:** Zulässig, solange das Datenwörterbuchelement nicht verwendet wird. Das Datenwörterbuch kann bei einer Aktualisierung nicht geändert werden.
 
 ## Liste {#list}
 
@@ -243,7 +256,7 @@ Eine Liste ist eine Gruppe von zusammenhängenden Inhalten, die in einer Briefvo
    ![Assets zum Hinzufügen zur Liste auswählen](assets/selectassets.png)
 
 1. Die Assets werden der Seite „Listenelemente“ hinzugefügt.
-Um die Reihenfolge der Assets innerhalb der Liste zu ändern, wählen Sie das Pfeilsymbol ( ![dragndrop) aus, halten Sie die &#x200B;](assets/dragndrop.png) gedrückt und verwenden Sie die Drag-and-Drop-Funktion. Wenn der/die Benutzende in der Benutzeroberfläche „Korrespondenz erstellen“ eine Briefvorlage öffnet, wird der Inhalt in der hier definierten Reihenfolge zusammengestellt.
+Um die Reihenfolge der Assets innerhalb der Liste zu ändern, wählen Sie das Pfeilsymbol (![dragndrop](assets/dragndrop.png)) aus, halten Sie es gedrückt und verwenden Sie die Drag-and-Drop-Funktion. Wenn der Benutzer auf der Benutzeroberfläche „Korrespondenz erstellen“ eine Briefvorlage öffnet, wird der Inhalt in der hier festgelegten Reihenfolge zusammengestellt.
 
    ![Assets in einer Liste neu anordnen und konfigurieren](assets/listitems.png)
 
@@ -276,8 +289,8 @@ Um die Reihenfolge der Assets innerhalb der Liste zu ändern, wählen Sie das Pf
 * Verwenden einer geeigneten Datenwörterbuchbindung
 * Die folgenden Regeln gelten für die Verwendung des Listeneditors zum Ändern einer Liste:
 
-   * Eigenschaften aktualisieren: Zulässig
-   * **Ändern des Datenwörterbuchs:** Zulässig, solange kein Element, das das Datenwörterbuch verwendet, damit verknüpft ist. Das Datenwörterbuch kann bei einer Aktualisierung nicht geändert werden.
+  * Eigenschaften aktualisieren: Zulässig
+  * **Ändern des Datenwörterbuchs:** Zulässig, solange kein Element, das das Datenwörterbuch verwendet, damit verknüpft ist. Das Datenwörterbuch kann bei einer Aktualisierung nicht geändert werden.
 
 ## Bedingungen {#conditions}
 
@@ -333,10 +346,10 @@ Mit dem Bedingungseditor können Sie eine Standardbedingung festlegen. Wenn der 
 * Verwenden einer geeigneten Datenwörterbuchbindung
 * Die folgenden Regeln gelten für die Verwendung des Bedingungseditors zum Bearbeiten einer Bedingung:
 
-   * **Variablen hinzufügen:** Zulässig
-   * **Variablen entfernen:** Zulässig
-   * **Eigenschaften aktualisieren:** Zulässig
-   * **Datenwörterbuch ändern:** Zulässig, solange das Datenwörterbuchelement nicht verwendet wird.
+  * **Variablen hinzufügen:** Zulässig
+  * **Variablen entfernen:** Zulässig
+  * **Eigenschaften aktualisieren:** Zulässig
+  * **Datenwörterbuch ändern:** Zulässig, solange das Datenwörterbuchelement nicht verwendet wird.
 
 ## Layout-Fragmente {#layoutfragments}
 
@@ -368,18 +381,18 @@ Beachten Sie beim Entwerfen von Tabellen die folgenden Punkte:
 
 * Für Platzhaltertabellen können Sie folgende Eigenschaften zum Zeitpunkt der Fragmenterstellung anpassen.
 
-   * Zeilenanzahl
-   * Spaltenanzahl
-   * Kopf- und Fußzeile für die einzelnen Spalten
-   * Typ (Zielbereich/-feld) der einzelnen Spalten
-   * Breitenverhältnis der einzelnen Spalten
+  * Zeilenanzahl
+  * Spaltenanzahl
+  * Kopf- und Fußzeile für die einzelnen Spalten
+  * Typ (Zielbereich/-feld) der einzelnen Spalten
+  * Breitenverhältnis der einzelnen Spalten
 
 * Für eine Nicht-Platzhaltertabelle können Sie die folgenden Eigenschaften anpassen:
 
-   * Zeilenanzahl
-   * Spaltenanzahl
-   * Kopf- und Fußzeile für zusätzliche Spalte
-   * Breitenverhältnis der einzelnen Spalten
+  * Zeilenanzahl
+  * Spaltenanzahl
+  * Kopf- und Fußzeile für zusätzliche Spalte
+  * Breitenverhältnis der einzelnen Spalten
 
 Sie können Fragmente in einem Brief verschachteln. Dies bedeutet, dass Sie ein Fragment innerhalb eines Fragments hinzufügen können. Die Correspondence Management-Lösung unterstützt bis zu vier Verschachtelungsebenen innerhalb eines Briefes: **Brief *>*Fragment *>*Fragment *>*Fragment *>*Fragment**.
 
@@ -477,8 +490,8 @@ Viele Briefvorlagen enthalten Tabellen. Tabellen können statisch sein, z. B. e
 * **Statische Tabellen**: Tabellen werden manchmal mit Zeilen erstellt, die eine andere Anzahl von Spalten aufweisen, wie etwa bei einer Tabelle mit Nutzungsbedingungen. Dort stellt jede Zeile eine Bedingung dar und jede Bedingung kann verschiedene Unterteile aufweisen. Jeder Teil wird in einer separaten Spalte angezeigt.
 * **Dynamische Tabellen**: Layout-Fragmente stellen die Möglichkeit bereit, die Felder einer dynamischen Tabelle an Sammlungs-DDEs zu binden. Zum Zeitpunkt der Brieferstellung werden Tabellenzeilen entsprechend der Größe der Sammlungs-DDEs generiert.
 
-Das DD hat ein Sammlungselement Nominee_details, das ein zusammengesetztes Element mit drei primitiven Elementen hat: Nominee_name, Nominee_address und Nominee_gender.
-Die dynamische XDP hat dieselben Kopfzeilen. So können Sie die dynamischen XDP-Felder den oben genannten Feldern von DD zuordnen.
+Das DD hat ein Sammlungselement Nominee_details, das Composite-Element mit drei primitiven Elementen enthält: Nominee_name, Nominee_address und Nominee_gender.
+Dynamische XDP verfügen außerdem über die gleichen Kopfzeilen. So können Sie die dynamischen XDP-Felder mit den oben genannten Felder von DD zuordnen.
 
 ### Beispiel mit Beispieldateien: Verwenden von statischen und dynamischen Tabellen in einem Brief {#examplewithsamplefiles}
 
@@ -502,7 +515,7 @@ Dieses Beispiels zeigt, wie Sie eine dynamische und eine statische Tabelle erste
    Oder verwenden Sie die hier angehängten statischen und dynamischen XDPs.
 
    Weitere Informationen zum Arbeiten mit Layout-Fragmenten finden Sie unter [Layout-Fragmente](#layoutfragments).
-Weitere Informationen zum Entwerfen von Layouts finden Sie unter [Designer-Hilfe](https://help.adobe.com/de_DE/AEMForms/6.1/DesignerHelp/).
+   Weitere Informationen zum Entwerfen von Layouts finden Sie unter [Designer-Hilfe](https://help.adobe.com/de_DE/AEMForms/6.1/DesignerHelp/).
 
    [Datei abrufen](assets/static.xdp.zip)
 
@@ -519,7 +532,7 @@ Weitere Informationen zum Entwerfen von Layouts finden Sie unter [Designer-Hilfe
 
 1. Erstellen Sie ein Layout-Fragment basierend auf der statischen XDP. Die Registerkarte „Tabelle“ der Eigenschaften zeigt an, dass die Tabelle statisch ist (Feld „Konfiguration für“). Die Anzahl der Zeilen (1) und Spalten (3) wird aus dem XDP-/Layout-Fragment abgeleitet.
 
-   Sie können die Anzahl der Spalten und Zeilen hier ändern. Je nach Auswahl auf diesem Bildschirm bleibt die Anzahl der Zeilen und Spalten einer statischen Tabelle in dem mit diesem Layout erstellten Brief unverändert.
+   Sie können die Anzahl der Spalten und Zeilen hier ändern. Je nach Ihrer Auswahl auf diesem Bildschirm bleibt die Anzahl von Zeilen und Spalten einer statischen Tabelle in einem mit diesem Layout erstellten Brief unverändert.
    [![Bildschirm zum Erstellen eines Layout-Fragments](assets/statictableproperties.png)](assets/statictableproperties-1.png)
 
 1. Erstellen Sie einen Brief unter Verwendung beider Layout-Fragmente darin. Wenn Sie eine dynamische XDP in den Brief einfügen, legen Sie die Bindung seiner Felder auf die Sammlungselemente des Datenwörterbuchs fest.

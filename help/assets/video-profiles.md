@@ -11,13 +11,27 @@ role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 exl-id: b7ee16db-fde2-4d06-b06c-945b6d876f8d
-source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d8ea7e82-d45e-442f-bb04-b3788a7abcb0
+    internal-label: Video profiles
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3711'
-ht-degree: 80%
-
+source-wordcount: '3747'
+ht-degree: 78%
 ---
-
 # Videoprofile {#video-profiles}
 
 Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Wenn Sie Ihre Primärvideos mit dem Profil Adaptive Videokodierung kodieren, optimiert der Video-Player die Wiedergabequalität. Der Video-Stream wird automatisch an die Internet-Verbindungsgeschwindigkeit Ihrer Kunden angepasst. Diese Funktionalität wird als Streaming mit adaptiver Bit-Rate bezeichnet.
@@ -79,7 +93,7 @@ In der folgenden Tabelle werden die Best Practice Codierungsprofile für das ada
    <td>auto</td>
    <td>540</td>
    <td>Ja</td>
-   <td>2.000<br /> </td>
+   <td>2000<br /> </td>
    <td>30</td>
    <td>Dolby HE-AAC</td>
    <td>128</td>
@@ -89,7 +103,7 @@ In der folgenden Tabelle werden die Best Practice Codierungsprofile für das ada
    <td>auto</td>
    <td>720<br /> </td>
    <td>Ja</td>
-   <td>3.000<br /> </td>
+   <td>3000<br /> </td>
    <td>30</td>
    <td>Dolby HE-AAC</td>
    <td>128</td>
@@ -109,7 +123,7 @@ Für die maximal unterstützte Videodateigröße beim intelligenten Zuschnitt ge
 * 30 Frames pro Sekunde (FPS).
 * Dateigröße 300 MB.
 
-Adobe AI ist auf 9.000 Frames beschränkt. Das heißt: fünf Minuten bei 30 FPS. Wenn Ihr Video eine höhere FPS-Rate aufweist, verringert sich die maximal unterstützte Videodauer entsprechend. Beispielsweise unterstützen Adobe-KI und smartes Zuschneiden nur dann ein 60-FPS-Video, wenn es mindestens zweieinhalb Minuten lang ist.
+Adobe AI ist auf 9000 Frames beschränkt. Das heißt: fünf Minuten bei 30 FPS. Wenn Ihr Video eine höhere FPS-Rate aufweist, verringert sich die maximal unterstützte Videodauer entsprechend. Beispielsweise unterstützen Adobe AI und smartes Zuschneiden nur dann ein 60-FPS-Video, wenn es mindestens zweieinhalb Minuten lang ist.
 
 ![Intelligenter Zuschnitt für Video](assets/smart-crop-video.png)
 
@@ -131,7 +145,7 @@ Siehe auch [Intelligenter Zuschnitt für Bilder](image-profiles.md).
 
 ## Erstellen eines Videoprofils für Streaming mit adaptiver Bit-Rate {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
-Dynamic Media umfasst standardmäßig das vordefinierte Profil „Adaptive Videoverschlüsselung“ (eine Gruppe mit Video-Upload-Einstellungen für MP4 H.264), das für das beste Anzeigeerlebnis optimiert ist. Sie können dieses Profil beim Hochladen von Videos verwenden.
+Dynamic Media verfügt bereits über ein vordefiniertes Profil für adaptive Videokodierung - eine Gruppe von Video-Upload-Einstellungen für MP4 H.264 -, die für ein optimales Anzeigeerlebnis optimiert ist. Sie können dieses Profil verwenden, wenn Sie Ihre Videos hochladen.
 
 Wenn dieses vordefinierte Profil jedoch nicht Ihren Anforderungen entspricht, können Sie Ihr eigenes Profil für adaptive Videokodierung erstellen. Wenn Sie die Einstellung **[!UICONTROL Für adaptives Streaming kodieren]** verwenden (eine empfohlene Vorgehensweise), werden alle dem Profil hinzugefügten Kodierungsvorgaben validiert, um sicherzustellen, dass alle Videos dasselbe Seitenverhältnis aufweisen. Darüber hinaus werden die kodierten Videos als Multi-Bitrate-Set für das Streaming behandelt.
 
@@ -221,13 +235,13 @@ Klicken Sie auf das Informationssymbol neben den einzelnen Optionen. Information
 1. Gehen Sie folgendermaßen vor:
    * Geben Sie im Feld **[!UICONTROL Breite]** die Option **[!UICONTROL auto]** ein.
    * Geben Sie im Feld **[!UICONTROL Höhe]** einen Wert in Pixel ein.
-Klicken Sie zur Visualisierung der Größe des Videos auf das Informationssymbol „Höhe“, um die Seite **[!UICONTROL Größenberechnung]** zu öffnen. Passen Sie die Größe des **[!UICONTROL auf]** Seite „Größenberechnung“ wunschgemäß weiter an (blaues Feld). Wenn Sie damit fertig sind, klicken Sie oben rechts im Dialogfeld auf **[!UICONTROL X]**.
+     Klicken Sie zur Visualisierung der Größe des Videos auf das Informationssymbol „Höhe“, um die Seite **[!UICONTROL Größenberechnung]** zu öffnen. Passen Sie die Größe des **[!UICONTROL auf]** Seite „Größenberechnung“ wunschgemäß weiter an (blaues Feld). Wenn Sie damit fertig sind, klicken Sie oben rechts im Dialogfeld auf **[!UICONTROL X]**.
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
    * Klicken Sie auf die Registerkarte **[!UICONTROL Erweitert]** und stellen Sie sicher, dass das Kontrollkästchen **[!UICONTROL Standardwerte verwenden]** ausgewählt ist (empfohlen).
 
    * Deaktivieren Sie das Kontrollkästchen **[!UICONTROL Standardwerte verwenden]** und geben Sie die gewünschten Video- und Audioeinstellungen an.
-Klicken Sie auf das Informationssymbol neben den einzelnen Optionen. Informationen zu zusätzlichen Beschreibungen oder empfohlenen Einstellungen können basierend auf dem ausgewählten Videoformat-Codec gelesen werden.
+     Klicken Sie auf das Informationssymbol neben den einzelnen Optionen. Informationen zu zusätzlichen Beschreibungen oder empfohlenen Einstellungen können basierend auf dem ausgewählten Videoformat-Codec gelesen werden.
 
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Speichern]**, um die Vorgabe zu speichern.
 1. Führen Sie einen der folgenden Schritte aus:
@@ -281,7 +295,7 @@ Sie können ein vorhandenes Videocodierungsprofil bearbeiten, um auf erweiterte 
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>Die Zielzahl der Frames zwischen Keyframes. Berechnen Sie diesen Wert, damit alle 2 bis 10 Sekunden ein Keyframe generiert werden kann. Bei 30 Frames pro Sekunde sollte das Keyframe-Intervall zwischen 60 und 300 liegen.<br /> <br /> Niedrigere Keyframe-Intervalle verbessern das Verhalten bei Stream-Suche und Stream-Wechsel für adaptive Videoverschlüsselung und können auch die Qualität bei Videos mit hoher Bewegung verbessern. Da Keyframes die Größe einer Datei erhöhen, bewirkt ein niedrigeres Keyframe-Intervall in der Regel eine niedrigere Videogesamtqualität bei einer bestimmten Bit-Rate.</td>
+   <td>Die Zielzahl der Frames zwischen Keyframes. Berechnen Sie diesen Wert, damit alle 2 bis 10 Sekunden ein Keyframe generiert werden kann. Bei 30 Frames pro Sekunde sollte das Keyframe-Intervall zwischen 60 und 300,<br /> <br /> liegen Niedrigere Keyframe-Intervalle verbessern das Verhalten bei Stream-Suche und Stream-Wechsel für adaptive Videoverschlüsselung und können auch die Qualität bei Videos mit hoher Bewegung verbessern. Da Keyframes die Größe einer Datei erhöhen, bewirkt ein niedrigeres Keyframe-Intervall in der Regel eine niedrigere Videogesamtqualität bei einer bestimmten Bit-Rate.</td>
    <td><code>String</code></td>
    <td><p>Positive Zahl.</p> <p>Der Standardwert lautet 300.</p> <p>Der empfohlene Wert für DASH oder HLS ist 60-90.</p> </td>
   </tr>
@@ -346,7 +360,7 @@ Klicken Sie auf das Informationssymbol, um eine Beschreibung von Streaming mit 
 1. Aktivieren Sie auf der Seite „Videoprofile“ einen Videoprofilnamen.
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Kopieren]**.
 1. Geben Sie auf der Seite „Videokodierungsprofil“ einen neuen Namen für das Profil ein.
-1. Als Best Practice hat es sich bewährt, das Kontrollkästchen **[!UICONTROL Für adaptives Streaming kodieren]** zu aktivieren. Klicken Sie auf das Informationssymbol, um eine Beschreibung von Streaming mit adaptiver Bit-Rate anzuzeigen. (Wenn Sie ein progressives Videoprofil kopieren, aktivieren Sie dieses Kontrollkästchen nicht.)
+1. Als Best Practice hat es sich bewährt, das Kontrollkästchen **[!UICONTROL Für adaptives Streaming kodieren]** zu aktivieren. Klicken Sie auf das Informationssymbol, um eine Beschreibung des adaptiven Bitrate-Streamings abzurufen. (Wenn Sie ein progressives Videoprofil kopieren, aktivieren Sie dieses Kontrollkästchen nicht.)
 
    Wenn im Hybridmodus von Dynamic Media eine WebM-Videovoreinstellung Teil des Videoprofils ist, ist die Option **[!UICONTROL Für adaptives Streaming kodieren]** nicht möglich, da alle Vorgaben das MP4-Format aufweisen müssen.
 1. Unter der Überschrift „Videokodierungsvorgaben“ können Sie die Videokodierungsvorgaben des Profils hinzufügen, bearbeiten oder löschen.
@@ -366,7 +380,7 @@ Klicken Sie auf das Informationssymbol, um eine Beschreibung von Streaming mit 
 
 Wenn Sie ein Videoprofil einem Ordner zuweisen, erben automatisch alle Unterordner das Profil vom übergeordneten Ordner. Diese Regel bedeutet, dass Sie einem Ordner nur ein Videoprofil zuweisen können. Daher sollten Sie die Ordnerstruktur sorgfältig planen, in der Sie Assets hochladen, speichern, verwenden und archivieren.
 
-Wenn Sie einem Ordner ein anderes Videoprofil zugewiesen haben, überschreibt das neue das vorherige Profil. Die zuvor vorhandenen Ordner-Assets verbleiben unverändert. Das neue Profil wird auf die Assets angewendet, die dem Ordner später hinzugefügt werden.
+Wenn Sie einem Ordner ein anderes Videoprofil zugewiesen haben, überschreibt das neue das vorherige Profil. Die zuvor vorhandenen Ordner-Assets bleiben unverändert. Das neue Profil wird auf die Assets angewendet, die dem Ordner später hinzugefügt werden.
 
 Auf der Benutzeroberfläche wird der Profilname im Kartennamen angezeigt, um Ordner mit einem zugewiesenen Profil anzugeben.
 
@@ -399,7 +413,7 @@ Siehe auch [Erneutes Verarbeiten von Assets in einem Ordner nach Bearbeitung se
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Videoprofile]** das Profil aus dem Dropdown-Menü aus und klicken Sie auf **[!UICONTROL Speichern und schließen]**. Auf der Benutzeroberfläche wird der Profilname im Kartennamen angezeigt, um Ordner mit einem zugewiesenen Profil anzugeben.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
-Sie können [den Fortschritt eines Videoprofil-Verarbeitungsauftrags überwachen](#monitoring-the-progress-of-an-encoding-job).
+   Sie können [den Fortschritt eines Videoprofil-Verarbeitungsauftrags überwachen](#monitoring-the-progress-of-an-encoding-job).
 
 ### Globales Anwenden eines Videoprofils {#applying-a-video-profile-globally}
 
@@ -418,11 +432,11 @@ Siehe auch [Erneutes Verarbeiten von Assets in einem Ordner nach Bearbeitung se
 
 Eine Verarbeitungsanzeige (oder Statusleiste) wird angezeigt, damit Sie den Fortschritt eines Videoprofil-Verarbeitungsauftrags visuell überwachen können.
 
-In der Datei `error.log` können Sie den Fortschritt des Kodierungsvorgangs ebenfalls anzeigen. Sie können prüfen, ob die Kodierung abgeschlossen ist oder ob Auftragsfehler angezeigt werden. Die Datei `error.log` befindet sich im `logs`-Protokollordner, in dem Ihre Instanz von Adobe Experience Manager installiert ist.
+In der Datei `error.log` können Sie den Fortschritt des Kodierungsvorgangs ebenfalls überwachen. Sie können prüfen, ob die Kodierung abgeschlossen ist oder ob Auftragsfehler angezeigt werden. Die Datei `error.log` befindet sich im `logs`-Protokollordner, in dem Ihre Instanz von Adobe Experience Manager installiert ist.
 
 ## Entfernen eines Videoprofils aus Ordnern {#removing-a-video-profile-from-folders}
 
-Wenn Sie ein Videoprofil aus einem Ordner entfernen, erben automatisch alle Unterordner das Entfernen des Profils aus dem übergeordneten Ordner. Die Verarbeitung der Dateien, die in den Ordnern stattgefunden hat, verbleibt jedoch intakt.
+Wenn Sie ein Videoprofil aus einem Ordner entfernen, erben automatisch alle Unterordner das Entfernen des Profils aus dem übergeordneten Ordner. Die Verarbeitung von Dateien, die in den Ordnern stattgefunden hat, bleibt jedoch intakt.
 
 Sie können ein Videoprofil über das Menü **[!UICONTROL Werkzeuge]** oder, falls Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften]** aus einem Ordner entfernen. In diesem Abschnitt wird beschrieben, wie Sie Videoprofile auf beide Arten aus Ordnern entfernen können.
 

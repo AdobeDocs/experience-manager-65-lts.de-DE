@@ -8,16 +8,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
 exl-id: 2cbbcbe8-be9e-4519-b224-07e99d06263d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '693'
 ht-degree: 100%
-
 ---
-
 # Auflisten von Formularen auf einer Webseite mithilfe von APIs {#listing-forms-on-a-web-page-using-apis}
 
-AEM Forms stellt eine REST-basierte Such-API bereit, die Web-Entwicklerinnen und -Entwickler verwenden können, um Abfragen in Formularsätzen durchzuführen und Formularsätze abzurufen, die die Suchkriterien erfüllen.  Sie können APIs zum Durchsuchen von Formularen auf Basis verschiedener Filter verwenden.  Das Antwortobjekt enthält Formularattribute sowie Eigenschaften und Render-Endpunkte der Formulare.
+AEM Forms stellt eine REST-basierte Such-API bereit, die Web-Entwicklerinnen und -Entwickler verwenden können, um Abfragen in Formularsätzen durchzuführen und Formularsätze abzurufen, die die Suchkriterien erfüllen. Sie können APIs zum Durchsuchen von Formularen auf Basis verschiedener Filter verwenden. Das Antwortobjekt enthält Formularattribute sowie Eigenschaften und Render-Endpunkte der Formulare.
 
 Um Formulare mit der REST API zu suchen, senden Sie an den Server unter `https://'[server]:[port]'/libs/fd/fm/content/manage.json` eine GET-Anfrage mit den unten beschriebenen Abfrageparametern.
 
@@ -31,17 +44,17 @@ Um Formulare mit der REST API zu suchen, senden Sie an den Server unter `https:/
   </tr>
   <tr>
    <td>func<br /> </td>
-   <td><p>Gibt die Funktion zum Aufrufen an.  Legen Sie zur Suche nach Formularen den Wert des <code>func </code>-Attributs auf <code>searchForms</code> fest.</p> <p>Beispiel: <code class="code">
+   <td><p>Gibt die Funktion zum Aufrufen an. Legen Sie zur Suche nach Formularen den Wert des <code>func </code>-Attributs auf <code>searchForms</code> fest.</p> <p>Beispiel: <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
        entityBuilder.add("func", "searchForms");</code></p> <p><strong>Hinweis:</strong> <em>Dieser Parameter ist obligatorisch.</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
-   <td><p>Gibt den Anwendungspfad für die Suche nach Formularen an.  Standardmäßig durchsucht das appPath-Attribut alle Anwendungen, die auf der Ebene des Stammknotens verfügbar sind.<br /> </p> <p>Sie können bei einer einzelnen Suchabfrage mehrere Anwendungspfade angeben.  Trennen Sie mehrere Pfade durch einen senkrechten Strich (|).  </p> </td>
+   <td><p>Gibt den Anwendungspfad für die Suche nach Formularen an. Standardmäßig durchsucht das appPath-Attribut alle Anwendungen, die auf der Ebene des Stammknotens verfügbar sind.<br /> </p> <p>Sie können bei einer einzelnen Suchabfrage mehrere Anwendungspfade angeben. Trennen Sie mehrere Pfade durch einen senkrechten Strich (|). </p> </td>
   </tr>
   <tr>
    <td>cutPoints<br /> </td>
-   <td><p>Gibt die Eigenschaften an, die mit den Elementen abgerufen werden sollen.  Sie können Sternchen (*) verwenden, um alle Eigenschaften gleichzeitig abzurufen.  Verwenden Sie den senkrechten Strich (|), um mehrere Eigenschaften anzugeben. </p> <p>Beispiel: <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Hinweis</strong>: </p>
+   <td><p>Gibt die Eigenschaften an, die mit den Elementen abgerufen werden sollen. Sie können Sternchen (*) verwenden, um alle Eigenschaften gleichzeitig abzurufen. Verwenden Sie den senkrechten Strich (|), um mehrere Eigenschaften anzugeben. </p> <p>Zum Beispiel: <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Hinweis</strong>: </p>
     <ul>
      <li><em>Eigenschaften wie ID, Pfad und Name werden immer abgerufen. </em></li>
      <li><em>Jedes Asset verfügt über einen anderen Satz an Eigenschaften. Eigenschaften wie formUrl, pdfUrl und guideUrl hängen nicht vom cutpoints-Attribut ab. Diese Eigenschaften sind vom Asset-Typ abhängig und werden entsprechend abgerufen. </em></li>
@@ -49,7 +62,7 @@ Um Formulare mit der REST API zu suchen, senden Sie an den Server unter `https:/
   </tr>
   <tr>
    <td>relation<br /> </td>
-   <td>Gibt die zugehörigen Assets an, die neben den Suchergebnissen abgerufen werden.  Sie können eine der folgenden Optionen auswählen, um zugehörige Assets abzurufen:
+   <td>Gibt die zugehörigen Assets an, die neben den Suchergebnissen abgerufen werden. Sie können eine der folgenden Optionen auswählen, um zugehörige Assets abzurufen:
     <ul>
      <li><strong>NO_RELATION</strong>: Zugehörige Assets nicht abrufen.</li>
      <li><strong>IMMEDIATE</strong>: Assets abrufen, die direkt mit den Suchergebnissen zusammenhängen.</li>
@@ -70,17 +83,17 @@ Um Formulare mit der REST API zu suchen, senden Sie an den Server unter `https:/
   </tr>
   <tr>
    <td>statements</td>
-   <td><p>Gibt die Liste der Anweisungen an.  Die Abfragen werden in der Liste der Anweisungen ausgeführt, die im JSON-Format angegeben sind. </p> <p>Beispiel:</p> <p><code class="code">JSONArray statementArray=new JSONArray();
+   <td><p>Gibt die Liste der Anweisungen an. Die Abfragen werden in der Liste der Anweisungen ausgeführt, die im JSON-Format angegeben sind. </p> <p>Zum Beispiel:</p> <p><code class="code">JSONArray statementArray=new JSONArray();
        JSONObject statement=new JSONObject();
        statement.put("name", "title");
        statement.put("value", "SimpleSurveyAF");
-       statement.put("operator", "EQ"); statementArray.put(statement);</code></p> <p>Im oben genannten Beispiel gilt Folgendes:  </p>
+       statement.put("operator", "EQ"); statementArray.put(statement);</code></p> <p>Im oben genannten Beispiel gilt Folgendes: </p>
     <ul>
      <li><strong>name</strong>: gibt den Namen der Eigenschaft an, nach der gesucht werden soll.</li>
      <li><strong>value</strong>: gibt den Wert der Eigenschaft an, nach der gesucht werden soll.</li>
      <li><strong>operator</strong>: Gibt den Operator an, der bei der Suche angewendet werden soll. Die folgende Operatoren werden unterstützt:
       <ul>
-       <li>EQ (equal to – gleich)  </li>
+       <li>EQ (equal to – gleich) </li>
        <li>NEQ (not equal to – ungleich)</li>
        <li>GT (greater than – größer als)</li>
        <li>LT (less than – kleiner als)</li>

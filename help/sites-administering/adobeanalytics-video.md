@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 420dc7d6-0e9e-47be-baef-4c79296eb69a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1817'
 ht-degree: 99%
-
 ---
-
 # Konfigurieren von Video-Tracking für Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
 Es gibt mehrere Methoden für das Tracking von Video-Ereignissen. Zwei von ihnen sind Legacy-Optionen für ältere Versionen von Adobe Analytics. Diese Legacy-Optionen sind: Legacy Milestones und Legacy Seconds.
@@ -227,7 +236,7 @@ Aufrufe an Adobe Analytics mit dem gezeigten Beispiel sollten wie folgt aussehen
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Dies ist der **erste Aufruf**&#x200B;an Adobe Analytics mit den folgenden Werten:*
+*Dies ist der **erste Aufruf**an Adobe Analytics mit den folgenden Werten:*
 
 * *prop1 und eVar1 für eventdata.a.media.name,*
 * *props2–4 zusammen mit eVar2 und eVar3, wobei contentType (video) und segment (1:O:1–4) enthalten sind*
@@ -235,7 +244,7 @@ Aufrufe an Adobe Analytics mit dem gezeigten Beispiel sollten wie folgt aussehen
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-*Dies ist der **dritte Aufruf**&#x200B;an Adobe Analytics:*
+*Dies ist der **dritte Aufruf**an Adobe Analytics:*
 
 * *prop1 und eVar1 enthalten a.media.name;*
 * *event1, da ein Segment angesehen wurde*
@@ -270,7 +279,7 @@ eventdata.events.milestoneXX
    10,25,50,75
    ```
 
-   Die Offset-Werte müssen ganzzahlig und größer 0 sein. 
+   Die Offset-Werte müssen ganzzahlig und größer 0 sein.
 
 1. Um die CQ-Variablen zu Adobe Analytics-Eigenschaften zuzuordnen, ziehen Sie die Adobe Analytics-Eigenschaften vom Content Finder neben der CQ-Variablen auf die Komponente.
 
@@ -379,7 +388,7 @@ Bei Nutzung der **Legacy Seconds**-Methode werden Adobe Analytics-Aufrufe alle N
 
    ![lseconds](assets/lseconds.png)
 
-   *Der Aufruf ähnelt dem o. g. Legacy Milestones-Aufruf.  Siehe die Informationen zu pev3 unter [Integrieren mit Adobe Analytics](/help/sites-administering/adobeanalytics.md).*
+   *Der Aufruf ähnelt dem o. g. Legacy Milestones-Aufruf. Siehe die Informationen zu pev3 unter [Integrieren mit Adobe Analytics](/help/sites-administering/adobeanalytics.md).*
 
 **In diesem Tutorial verwendete Referenzen:**
 

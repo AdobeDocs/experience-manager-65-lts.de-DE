@@ -7,13 +7,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 64d4ef01-ee33-4c8b-977f-0c9b31755820
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '899'
 ht-degree: 96%
-
 ---
-
 # Verwenden von Metadaten in einer E-Mail-Benachrichtigung {#use-metadata-in-an-email-notification}
 
 Mit dem Schritt „Aufgabe zuweisen“ können Sie Aufgaben erstellen und einer Person oder Gruppe zuweisen. Wenn eine Aufgabe einer Person oder einer Gruppe zugewiesen wird, erhält die definierte Person bzw. jedes Mitglied der definierten Gruppe eine E-Mail-Benachrichtigung. Eine typische [E-Mail-Benachrichtigung](../../forms/using/use-custom-email-template-assign-task-step.md) enthält einen Link zur zugewiesenen Aufgabe und dazugehörige Informationen.
@@ -150,7 +166,7 @@ Eine AEM Forms-Anwendung bietet verschiedene standardmäßige Metadatenvariablen
 
 ## Verwenden benutzerdefinierter Metadaten in einer E-Mail-Benachrichtigung {#using-custom-metadata-in-an-email-notification}
 
-Sie können auch benutzerdefinierte Metadaten in einer E-Mail-Benachrichtigung verwenden. Benutzerdefinierte Metadaten enthalten Informationen zusätzlich zu systemseitig generierten Metadaten. Dies können beispielsweise Richtliniendetails aus einer Datenbank sein. Sie können ein ECMAScript- oder OSGi-Bundle verwenden, um benutzerdefinierte Metadaten in crx-repository hinzuzufügen:
+Sie können auch benutzerdefinierte Metadaten in einer E-Mail-Benachrichtigung verwenden. Benutzerdefinierte Metadaten enthalten Informationen zusätzlich zu systemseitig generierten Metadaten. Dies können beispielsweise Richtliniendetails aus einer Datenbank sein. Sie können ein ECMAScript- oder OSGi-Paket verwenden, um benutzerdefinierte Metadaten in crx-repository hinzuzufügen:
 
 ### Verwenden von ECMAScript zum Hinzufügen benutzerdefinierter Metadaten  {#use-ecmascript-to-add-custom-metadata}
 
@@ -193,17 +209,17 @@ Sie können auch benutzerdefinierte Metadaten in einer E-Mail-Benachrichtigung v
       | Typ | Zeichenfolge |
       | Wert | Geben Sie den Titel des Skripts an, z. B. „Benutzerdefinierte Metadaten für den Versicherungsnehmer“. Der angegebene Wert wird im Schritt „Aufgabe zuweisen“ angezeigt. |
 
-### Hinzufügen benutzerdefinierter Metadaten mit einem OSGi-Bundle und einer Java-Schnittstelle {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
+### Hinzufügen benutzerdefinierter Metadaten mit einem OSGi-Paket und einer Java-Schnittstelle {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
 
-Sie können die Java-Schnittstelle „WorkitemUserMetadataService“ zum Hinzufügen benutzerdefinierter Metadaten für E-Mail-Vorlagen verwenden. Erstellen Sie ein OSGi-Bundle, das die Java-Schnittstelle „WorkitemUserMetadataService“ verwendet, und stellen Sie es auf dem AEM-Formular-Server bereit. Dadurch werden die Metadaten im Schritt „Aufgabe zuweisen“ auswählbar.
+Sie können die Java-Schnittstelle „WorkitemUserMetadataService“ zum Hinzufügen benutzerdefinierter Metadaten für E-Mail-Vorlagen verwenden. Erstellen Sie ein OSGi-Paket, das die Java-Schnittstelle „WorkitemUserMetadataService“ verwendet, und stellen Sie es auf dem AEM-Formular-Server bereit. Dadurch werden die Metadaten im Schritt „Aufgabe zuweisen“ auswählbar.
 
-Um ein OSGi-Bundle mit Java-Schnittstelle zu erstellen, fügen Sie dem OSGi-Bundle-Projekt [AEM Forms Client SDK](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html)- und [granite](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/)-jar-Dateien als externe Abhängigkeiten hinzu. Sie können eine beliebige Java-IDE verwenden, um ein OSGi-Bundle zu erstellen. Das folgende Beispiel zeigt die Erstellung eines OSGi-Bundles mithilfe von Eclipse:
+Um ein OSGi-Paket mit Java-Schnittstelle zu erstellen, fügen Sie dem OSGi-Paket-Projekt [AEM Forms Client SDK](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html)- und [granite](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/)-jar-Dateien als externe Abhängigkeiten hinzu. Sie können eine beliebige Java-IDE verwenden, um ein OSGi-Paket zu erstellen. Das folgende Beispiel zeigt die Erstellung eines OSGi-Pakets mithilfe von Eclipse:
 
 1. Öffnen Sie die Eclipse-IDE. Navigieren Sie zu Datei > Neues Projekt.
 
 1. Wählen Sie im Assistenten-Dialogfeld Maven-Projekt und klicken Sie auf Weiter.
 
-1. Behalten Sie unter „Neues Maven-Projekt“ die Standardeinstellungen bei und klicken Sie auf „Weiter“. Wählen Sie einen Archetyp aus und klicken Sie auf „Weiter“. Beispiel: maven-archetype-quickstart. Geben Sie Group Id, Artifact ID, Version und Paket für das Projekt an und klicken Sie auf Beenden. Das Projekt wird erstellt.
+1. Behalten Sie unter „Neues Maven-Projekt“ die Standardeinstellungen bei und klicken Sie auf „Weiter“. Wählen Sie einen Archetyp aus und klicken Sie auf „Weiter“. Beispiel: maven-archetype-quickstart. Geben Sie Gruppen-ID, Artefakt-ID, Version und Paket für das Projekt an und klicken Sie auf Beenden. Das Projekt wird erstellt.
 
 1. Öffnen Sie die Datei „pom.xml“ zur Bearbeitung und ersetzen Sie den gesamten Inhalt dieser Datei durch den folgenden Text:
 
@@ -243,10 +259,10 @@ Um ein OSGi-Bundle mit Java-Schnittstelle zu erstellen, fügen Sie dem OSGi-Bund
    }
    ```
 
-1. Öffnen Sie eine Eingabeaufforderung und navigieren Sie zum Ordner, der das OSGi-Bundle-Projekt enthält. Verwenden Sie den folgenden Befehl, um das OSGi-Bundle zu erstellen:
+1. Öffnen Sie eine Eingabeaufforderung und navigieren Sie zum Ordner, der das OSGi-Paket-Projekt enthält. Verwenden Sie den folgenden Befehl, um das OSGi-Paket zu erstellen:
 
    `mvn clean install`
 
-1. Laden Sie das Bundle auf einen AEM-Formular-Server hoch. Mit AEM Package Manager können Sie das Bundle auf einen AEM-Formular-Server importieren.
+1. Laden Sie das Paket auf einen AEM-Formular-Server hoch. Mit dem AEM-Paket-Manager können Sie das Bundle auf einen AEM-Formular-Server importieren.
 
-Nachdem das Bundle importiert wurde, können Sie die Metadaten im Schritt „Aufgabe zuweisen“ auswählen und als E-Mail-Vorlage verwenden.
+Nachdem das Paket importiert wurde, können Sie die Metadaten im Schritt „Aufgabe zuweisen“ auswählen und als E-Mail-Vorlage verwenden.

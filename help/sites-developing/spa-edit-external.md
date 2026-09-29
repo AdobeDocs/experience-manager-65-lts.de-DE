@@ -6,13 +6,27 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: cb5495f9-bc54-4515-ae15-55a5397500aa
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2387'
-ht-degree: 100%
-
+source-wordcount: '2476'
+ht-degree: 99%
 ---
-
 
 # Bearbeiten einer externen SPA in Adobe Experience Manager {#editing-external-spa-within-aem}
 
@@ -30,8 +44,8 @@ Die Voraussetzungen sind einfach.
 
 * Stellen Sie sicher, dass eine Instanz von AEM lokal ausgeführt wird.
 * Erstellen Sie ein AEM-SPA-Projekt mithilfe des [AEM-Projektarchetyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de#available-properties).
-   * Dies bildet die Grundlage des AEM-Projekts, das aktualisiert wird, um die externe SPA einzubeziehen.
-   * Die Beispiele in diesem Dokument verwenden als Ausgangspunkt [das WKND-SPA-Projekt](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=de#spa-editor).
+  * Dies bildet die Grundlage des AEM-Projekts, das aktualisiert wird, um die externe SPA einzubeziehen.
+  * Die Beispiele in diesem Dokument verwenden als Ausgangspunkt [das WKND-SPA-Projekt](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=de#spa-editor).
 * Halten Sie die funktionierende, externe React SPA bereit, die Sie integrieren möchten.
 
 ## Hochladen der SPA in das AEM-Projekt {#upload-spa-to-aem-project}
@@ -83,7 +97,7 @@ In diesem Beispiel wird `ModelManager` initialisiert und ein leerer `ModelStore`
 `initializationAsync` kann optional ein `options`-Objekt als Parameter akzeptieren:
 
 * `path` – Bei der Initialisierung wird das Modell vom definierten Pfad abgerufen und im `ModelStore` gespeichert. Auf diese Weise können Sie bei Bedarf das `rootModel` bei der Initialisierung abrufen.
-* `modelClient` - Ermöglicht die Bereitstellung eines benutzerdefinierten Clients, der für das Abrufen des Modells verantwortlich ist.
+* `modelClient` – Ermöglicht die Bereitstellung eines benutzerdefinierten Clients, der für das Abrufen des Modells verantwortlich ist.
 * `model` – Ein `model`-Objekt, das als Parameter übergeben und typischerweise bei der Verwendung von SSR befüllt wird.
 
 ### Bearbeitbare AEM-Blattkomponenten {#authorable-leaf-components}
@@ -166,7 +180,7 @@ Nehmen wir eine Beispielseite, auf der Text aus der WKND-SPA hinzugefügt werden
 
    * `pagePath`: Die Seite, die den Knoten enthält, in dem Beispiel `/content/wknd-spa-react/us/en/home`
    * `itemPath`: Pfad zum Knoten innerhalb der Seite, in dem Beispiel `root/responsivegrid/text`
-      * Dieser besteht aus den Namen der enthaltenen Elemente auf der Seite.
+     * Dieser besteht aus den Namen der enthaltenen Elemente auf der Seite.
 
    ![Pfad des Knotens](assets/external-spa-path.png)
 
@@ -260,9 +274,9 @@ Es gibt mehrere Anforderungen, um virtuelle Blattkomponenten hinzuzufügen, und 
 * Der im Pfad in `pagePath` angegebene Seitenknoten muss im AEM-Projekt vorhanden sein.
 * Der Name des zu erstellenden Knotens muss im `itemPath` angegeben werden.
 * Die Komponente kann auf jeder Ebene erstellt werden.
-   * Wenn wir im vorherigen Beispiel `itemPath='text_20'` angeben, wird der neue Knoten direkt unter der Seite `/content/wknd-spa-react/us/en/home/jcr:content/text_20` erstellt.
+  * Wenn wir im vorherigen Beispiel `itemPath='text_20'` angeben, wird der neue Knoten direkt unter der Seite `/content/wknd-spa-react/us/en/home/jcr:content/text_20` erstellt.
 * Der Pfad zum Knoten, in dem ein neuer Knoten erstellt wird, muss gültig sein, wenn er über `itemPath` bereitgestellt wird.
-   * In diesem Beispiel muss `root/responsivegrid` vorhanden sein, damit der neue Knoten `text_20` dort erstellt werden kann.
+  * In diesem Beispiel muss `root/responsivegrid` vorhanden sein, damit der neue Knoten `text_20` dort erstellt werden kann.
 * Es wird nur die Erstellung von Blattkomponenten unterstützt. Virtuelle Container und Seiten werden in zukünftigen Versionen unterstützt.
 
 ### Virtuelle Container {#virtual-containers}
@@ -297,8 +311,8 @@ Es gibt verschiedene Anforderungen, um virtuelle Container hinzuzufügen, und ei
 
 * Die Richtlinie, die bestimmt, welche Komponenten hinzugefügt werden können, wird vom übergeordneten Container übernommen.
 * Das unmittelbar übergeordnete Element des zu erstellenden Containers muss bereits in AEM vorhanden sein.
-   * Wenn der Container `root/responsivegrid` bereits im AEM-Container vorhanden ist, kann ein neuer Container durch Angabe des Pfads `root/responsivegrid/newContainer` erstellt werden.
-   * `root/responsivegrid/newContainer/secondNewContainer` ist jedoch nicht möglich.
+  * Wenn der Container `root/responsivegrid` bereits im AEM-Container vorhanden ist, kann ein neuer Container durch Angabe des Pfads `root/responsivegrid/newContainer` erstellt werden.
+  * `root/responsivegrid/newContainer/secondNewContainer` ist jedoch nicht möglich.
 * Es kann jeweils nur eine neue Komponentenebene virtuell erstellt werden.
 
 ## Zusätzliche Anpassungen {#additional-customizations}
@@ -355,9 +369,9 @@ Um die Bearbeitung in AEM für diese Beispiel-SPA zu aktivieren, sind die folgen
    ![Routing-Helfer](assets/external-spa-router-helper.png)
 
    * Hierfür kann der `toAEMPath`-Helfer verwendet werden, der von `@adobe/cq-spa-page-model-manager` bereitgestellt wird. Er wandelt den für das Routing bereitgestellten Pfad so um, dass er AEM-spezifische Teile enthält, wenn das Programm auf einer AEM-Instanz geöffnet ist. Es werden drei Parameter akzeptiert:
-      * Der für das Routing erforderliche Pfad
-      * Die ursprüngliche URL der AEM-Instanz, in der die SPA bearbeitet wird
-      * Das Projektstammverzeichnis in AEM, wie im ersten Schritt festgelegt
+     * Der für das Routing erforderliche Pfad
+     * Die ursprüngliche URL der AEM-Instanz, in der die SPA bearbeitet wird
+     * Das Projektstammverzeichnis in AEM, wie im ersten Schritt festgelegt
 
    * Diese Werte können für mehr Flexibilität als Umgebungsvariablen festgelegt werden.
 
@@ -373,8 +387,8 @@ Die RemotePage-Komponente erwartet, dass die Implementierung ein Asset-Manifest 
 
 Das folgende Referenzmaterial kann hilfreich sein, um SPAs im Kontext der AEM zu verstehen.
 
-* [AEM-Projekt-Archetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de)
-* [WKND-SPA-Projekt](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=de)
+* [Der AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de)
+* [Das WKND-SPA-Projekt](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=de)
 * [Erste Schritte mit SPAs in AEM unter Verwendung von React](spa-getting-started-react.md)
 * [SPA-Referenzmaterialien (API-Referenzen)](spa-reference-materials.md)
 * [SPA-Blueprint und PageModelManager](spa-blueprint.md#pagemodelmanager)

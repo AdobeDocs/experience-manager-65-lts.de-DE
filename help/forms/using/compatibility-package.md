@@ -5,20 +5,34 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 3a529a82-e2fd-423c-96c1-a5accc87775e
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 54%
-
+source-wordcount: '410'
+ht-degree: 59%
 ---
-
 # Kompatibilitätspaket{#compatibility-package}
 
 ## Übersicht {#overview}
 
-Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz zum Erstellen von Kundenkommunikation in AEM Forms 6.5 LTS. Um Briefe in AEM Forms 6.5 LTS weiterhin verwenden zu können, müssen Sie das neueste AEMFD[Kompatibilitätspaket &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz zum Erstellen von Kundenkommunikation in AEM Forms 6.5 LTS. Um Briefe in AEM Forms 6.5 LTS weiterhin verwenden zu können, müssen Sie das neueste AEMFD[Kompatibilitätspaket ](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
-Mit dem AEMFD-Kompatibilitätspaket können [&#x200B; auch die folgenden Assets aus AEM Forms 6.5.22.0, 6.4, 6.3 und 6.2 für AEM Forms 6.5 LTS verwenden](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+Mit dem AEMFD-Kompatibilitätspaket können [ auch die folgenden Assets aus AEM Forms 6.5.22.0, 6.4, 6.3 und 6.2 für AEM Forms 6.5 LTS verwenden](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
 * Dokumentfragmente
 * Briefe
@@ -52,24 +66,24 @@ Durch die Installation des Kompatibilitätspakets können Sie die folgenden Asse
 
 * Correspondence Management-Assets aus AEM 6.4 und früher:
 
-   * [Briefe](../../forms/using/create-letter.md)
-   * [Datenwörterbücher](/help/forms/using/data-dictionary.md)
-   * Dokumentfragmente
+  * [Briefe](../../forms/using/create-letter.md)
+  * [Datenwörterbücher](/help/forms/using/data-dictionary.md)
+  * Dokumentfragmente
 
 * Veraltete Vorlagen für adaptive Formulare:
 
-   * /libs/fd/af/templates/blankTemplate2
-   * /libs/fd/af/templates/simpleEnrollmentTemplate
-   * /libs/fd/af/templates/simpleEnrollmentTemplate2
-   * /libs/fd/af/templates/surveyTemplate
-   * /libs/fd/af/templates/surveyTemplate2
-   * /libs/fd/af/templates/tabbedEnrollmentTemplate
-   * /libs/fd/af/templates/tabbedEnrollmentTemplate2
-   * /libs/fd/afaddon/templates/advancedEnrollmentTemplate
-   * /libs/fd/afaddon/templates/advancedEnrollmentTemplate2
+  * /libs/fd/af/templates/blankTemplate2
+  * /libs/fd/af/templates/simpleEnrollmentTemplate
+  * /libs/fd/af/templates/simpleEnrollmentTemplate2
+  * /libs/fd/af/templates/surveyTemplate
+  * /libs/fd/af/templates/surveyTemplate2
+  * /libs/fd/af/templates/tabbedEnrollmentTemplate
+  * /libs/fd/af/templates/tabbedEnrollmentTemplate2
+  * /libs/fd/afaddon/templates/advancedEnrollmentTemplate
+  * /libs/fd/afaddon/templates/advancedEnrollmentTemplate2
 
 * Veraltete Seiten für adaptive Formulare:
 
-   * /libs/fd/af/components/page/survey
-   * /libs/fd/af/components/page/tabbedenrollment
-   * /libs/fd/afaddon/components/page/advancedenrollment
+  * /libs/fd/af/components/page/survey
+  * /libs/fd/af/components/page/tabbedenrollment
+  * /libs/fd/afaddon/components/page/advancedenrollment

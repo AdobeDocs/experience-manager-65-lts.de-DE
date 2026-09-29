@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
 exl-id: 558cf29b-34f4-4ead-b8d6-67ef8aaa5dc5
-source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1542'
 ht-degree: 98%
-
 ---
-
 # Personalisierung {#personalization}
 
 ## Was ist Personalisierung? {#what-is-personalization}
@@ -143,12 +154,12 @@ Mit AEM werden verschiedene Komponenten für die Personalisierung bereitgestellt
 | Kombinierte Anmeldung und Registrierung | Ermöglicht dem Benutzer, sich entweder bei einem vorhandenen Konto anzumelden oder sich für ein neues Konto zu registrieren. |
 | Formular-Adressfeld | Ein komplexes Feld, das die Eingabe einer internationalen Adresse ermöglicht. |
 | Formular-Beginn | Startet eine Formulardefinition |
-| Formular-Captcha | Ein Feld, das aus einem automatisch aktualisierten, alphanumerischen Wort besteht.  Die Captcha-Komponente schützt Websites vor Bots. |
+| Formular-Captcha | Ein Feld, das aus einem automatisch aktualisierten, alphanumerischen Wort besteht. Die Captcha-Komponente schützt Websites vor Bots. |
 | Formular-Kontrollkästchengruppe | Mehrere Elemente, die als Liste angeordnet sind und denen Kontrollkästchen vorangestellt sind. Benutzende können mehrere Kontrollkästchen auswählen. |
 | Formular-Dropdownliste | Mehrere Elemente, die als Dropdown-Liste angeordnet sind. Der Schalter für die Mehrfachauswahl gibt an, ob mehrere Elemente aus der Liste ausgewählt werden können. |
 | Formular-Ende | Beendet die Formulardefinition |
 | Formular-Datei-Upload | Ein Upload-Element, mit dem der Benutzer eine Datei zum Server hochladen kann. |
-| Ausgeblendetes Formular-Feld | Dieses Feld wird der Benutzerin bzw. dem Benutzer nicht angezeigt. Es wird verwendet, um einen Wert an den Client und zurück zum Server zu übermitteln.  Für dieses Feld gelten keine Beschränkungen. |
+| Ausgeblendetes Formular-Feld | Dieses Feld wird der Benutzerin bzw. dem Benutzer nicht angezeigt. Es wird verwendet, um einen Wert an den Client und zurück zum Server zu übermitteln. Für dieses Feld gelten keine Beschränkungen. |
 | Formular-Bildschaltfläche | Eine zusätzliche Senden-Schaltfläche für das Formular, die als Bild dargestellt wird. |
 | Formular-Kennwortfeld | Identisch mit einem Textfeld, doch nur eine Zeile ist zulässig und die Texteingabe des Benutzers ist im Feld nicht sichtbar. |
 | Formular-Optionsfeldgruppe | Mehrere Elemente, die als Liste angeordnet sind und denen Optionsschalter vorangestellt sind. Benutzende dürfen nur ein einziges Optionsfeld auswählen. |
@@ -159,8 +170,8 @@ Mit AEM werden verschiedene Komponenten für die Personalisierung bereitgestellt
 | Profil – Genauer Name | Eingabe von Namensdetails, darunter ggf. Elemente wie Titel, zweiter Vorname und Suffix. |
 | Profil – Anzeigename | Anzuzeigender Name. |
 | Profil – E-Mail-Adresse | Eingabe einer E-Mail-Adresse. |
-| Profil – Geschlecht | Ermöglicht die Eingabe des Geschlechts.  |
-| Profil – Primäre Telefonnummer | Ermöglicht die Eingabe einer Telefonnummer.  |
+| Profil – Geschlecht | Ermöglicht die Eingabe des Geschlechts. |
+| Profil – Primäre Telefonnummer | Ermöglicht die Eingabe einer Telefonnummer. |
 | Profil – Primäre URL | Ermöglicht die Eingabe einer URL. |
 | Profil – Allgemeine Texteigenschaft | Profil – Eigenschaften. |
 | Anmelden | Ermöglicht die Eingabe eines Benutzernamens und eines Kennworts bei der Anmeldung. |

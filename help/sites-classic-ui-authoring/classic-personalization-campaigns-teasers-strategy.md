@@ -10,20 +10,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 3232ccb0-dd4c-4457-9467-cdad788f977c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 100%
-
+source-wordcount: '1203'
+ht-degree: 93%
 ---
-
 # Teaser und Strategien{#teasers-and-strategies}
 
 In Kampagnen werden häufig Teaser verwendet, um ein bestimmtes Besuchersegment zu Inhalten zu leiten, die auf ihre Interessen ausgerichtet sind. Für eine bestimmte Kampagne werden ein oder mehrere Teaser definiert.
 
 >[!NOTE]
 >
->Die Teaser-Komponente wird in AEM 6.2 nicht mehr unterstützt. Verwenden Sie stattdessen die [Zielkomponente](/help/sites-authoring/content-targeting-touch.md).
+>Die Teaser-Komponente ist jetzt in AEM 6.2 veraltet. Verwenden Sie stattdessen die [Target-Komponente](/help/sites-authoring/content-targeting-touch.md).
 
 * **Markenseiten** werden innerhalb des Kampagnenbereichs der Website gespeichert. Eine Marke enthält die einzelnen Kampagnen.
 * **Kampagnenseiten** werden innerhalb des Kampagnenbereichs der Website gespeichert. Jede Kampagne weist eine individuelle Seite auf, unter der sich die Teaserdefinitionen befinden. Die Container- oder Übersichtsseite enthält auch bestimmte Informationen und Statistiken zu den einzelnen Teaser-Seiten.
@@ -31,7 +42,7 @@ In Kampagnen werden häufig Teaser verwendet, um ein bestimmtes Besuchersegment 
 Teaser in AEM bestehen aus mehreren Teilen:
 
 * **Teaser-Seiten** werden in der entsprechenden Kampagnenseite gespeichert und enthalten die Definitionen der Teaser-Absätze, die für die jeweilige Kampagne verfügbar sind. Diese Definitionen werden bei der Anzeige der Teaser-Absätze verwendet, einschließlich der Inhaltsvarianten, des Segments, das zur Auswahl einer Variante verwendet werden soll, und des Verstärkungsfaktors.
-* Die **Teaser-Komponente** ist bereits vorkonfiguriert, sodass Sie damit eine Instanz eines speziellen Teaser-Absatzes auf einer Inhaltsseite erstellen können. Sie können die Teaser-Komponente aus dem Sidekick ziehen und dann Ihre Teaser-Definition angeben, um einen eigenen Teaser-Absatz zu erstellen. **Hinweis:** Die Teaser-Komponente ist seit AEM 6.2 veraltet. Verwenden Sie stattdessen die [Zielkomponente](/help/sites-authoring/content-targeting-touch.md).
+* Die **Teaser-Komponente** ist bereits vorkonfiguriert, sodass Sie damit eine Instanz eines speziellen Teaser-Absatzes auf einer Inhaltsseite erstellen können. Sie können die Teaser-Komponente aus dem Sidekick ziehen und dann Ihre Teaser-Definition angeben, um einen eigenen Teaser-Absatz zu erstellen. **Hinweis:** Die Teaser-Komponente wird jetzt in AEM 6.2 nicht mehr unterstützt. Verwenden Sie stattdessen die [Target-Komponente](/help/sites-authoring/content-targeting-touch.md).
 * **Teaser-Absätze** sind tatsächliche Instanzen Ihres Teasers innerhalb einer Inhaltsseite. Dadurch wird ein Besuchersegment zu Inhalten geleitet, die auf ihre Interessen ausgerichtet sind.
 * Seiten, die den Kampagneninhalt für ein spezifisches Besuchersegment enthalten. Normalerweise führen Teaser-Absätze die Person zu solchen Seiten.
 
@@ -111,7 +122,7 @@ Und wir verwenden folgende Teaser-Definitionen:
 
 Wenn wir dies auf eine Besucherin bzw. einen Besucher anwenden, wo:
 
-* **S1**, **S2 und **S6** erfolgreich aufgelöst werden
+* **S1**, **S2 und** S6** erfolgreich aufgelöst werden
 
 * das Tag **Marketing** drei Treffer hat
 * das Tag **Business** sechs Treffer hat
@@ -235,7 +246,7 @@ Nachdem Sie Ihre Marke und Kampagne erstellt haben, können Sie Ihr Teaser-Erleb
 
 >[!NOTE]
 >
->Die Teaser-Komponente wird in AEM 6.2 nicht mehr unterstützt. Verwenden Sie stattdessen die [Zielkomponente](/help/sites-authoring/content-targeting-touch.md).
+>Die Teaser-Komponente ist jetzt in AEM 6.2 veraltet. Verwenden Sie stattdessen die [Target-Komponente](/help/sites-authoring/content-targeting-touch.md).
 
 1. Navigieren Sie zur Inhaltsseite, auf der Sie den Teaser-Absatz platzieren möchten, der zu Ihrer Kampagnenseite führt.
 1. Fügen Sie eine **Teaser**-Komponente (verfügbar im Abschnitt **Personalisierung** des Sidekicks) an der gewünschten Position ein. Bei der ersten Erstellung wird angezeigt, dass der Kampagnenpfad noch nicht konfiguriert ist:
@@ -245,10 +256,10 @@ Nachdem Sie Ihre Marke und Kampagne erstellt haben, können Sie Ihr Teaser-Erleb
 1. Fügen Sie Folgendes zur Teaser-Komponente hinzu:
 
    * **Kampagnenpfad**
-Pfad zur Kampagnenseite, auf der die einzelne Teaser-Seite enthalten ist. Die Segmente bestimmen genau, welcher Teaser angezeigt wird.
+     Pfad zur Kampagnenseite, auf der die einzelne Teaser-Seite enthalten ist; Segmente bestimmen genau, welcher Teaser angezeigt wird.
 
    * **[Strategie](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
-Methode, die zur Auswahl verwendet wird, wenn ein Besucher die Kriterien mehrerer Segmente erfüllt.
+     Methode zur Auswahl, wenn mehrere Segmente erfolgreich aufgelöst werden.
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 

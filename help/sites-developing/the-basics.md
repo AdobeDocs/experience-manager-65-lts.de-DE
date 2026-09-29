@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: fe3735ff-5c9b-4eb8-bf1d-f2189ec7e26f
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3366'
-ht-degree: 95%
-
+source-wordcount: '3373'
+ht-degree: 94%
 ---
-
 # Grundlegende AEM-Konzepte {#aem-core-concepts}
 
 >[!NOTE]
@@ -28,10 +37,10 @@ Sie benötigen die folgenden Fähigkeiten zur Entwicklung auf Basis von AEM:
 
 * Grundlegende Kenntnisse der Web-Anwendungstechniken, einschließlich:
 
-   * Anfrage-Antwort-Zyklus (XMLHttpRequest/XMLHttpResponse)
-   * HTML
-   * CSS
-   * JavaScript
+  * Anfrage-Antwort-Zyklus (XMLHttpRequest/XMLHttpResponse)
+  * HTML
+  * CSS
+  * JavaScript
 
 * Kenntnisse des Experience Servers (CRX) einschließlich des Content Explorers
 * Für die Entwicklung in der klassischen Benutzeroberfläche sind grundlegende Kenntnisse von JSP (JavaServer Pages) einschließlich der Fähigkeit, einfache JSP-Beispiele zu verstehen und zu modifizieren, erforderlich.
@@ -44,7 +53,7 @@ Der Java™ Content-Repository-Standard (JCR) [JSR 283](https://developer.adobe.
 
 Die Leitung der Spezifikation liegt bei Adobe Research (Schweiz) AG.
 
-Das [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)-Paket javax.jcr.&ast; wird für den direkten Zugriff auf und die Bearbeitung von Repository-Inhalten verwendet.
+Das [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)-Paket javax.jcr.&amp;ast; wird für den direkten Zugriff auf und die Bearbeitung von Repository-Inhalten verwendet.
 
 ## Experience Server (CRX) und Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -86,8 +95,8 @@ Aufgrund der inhaltsorientierten Philosophie implementiert Sling einen REST-orie
 * RESTful, nicht nur an der Oberfläche; Ressourcen und Darstellungen werden innerhalb des Servers korrekt modelliert
 * entfernt ein oder mehrere Datenmodelle
 
-   * zuvor war Folgendes erforderlich: URL-Struktur, Geschäftsobjekte, DB-Schema;
-   * dies wird jetzt reduziert auf: URL = Ressource = JCR-Struktur
+  * zuvor war Folgendes erforderlich: URL-Struktur, Geschäftsobjekte, DB-Schema;
+  * dies wird jetzt reduziert auf: URL = Ressource = JCR-Struktur
 
 ### URL-Zerlegung {#url-decomposition}
 
@@ -160,11 +169,11 @@ Einige andere zu beachtende Punkte sind:
 * Wenn die Methode (GET, POST) erforderlich ist, wird sie gemäß der HTTP-Spezifikation in Großbuchstaben angegeben, z. B. „jobs.POST.esp“ (siehe unten).
 * Es werden verschiedene Skript-Engines unterstützt:
 
-   * HTL (HTML-Vorlagensprache – das von Adobe Experience Manager bevorzugte und empfohlene Server-seitige Vorlagensystem für HTML): `.html`
-   * ECMAScript (JavaScript)-Seiten (Server-seitige Ausführung): `.esp, .ecma`
-   * Java™ Server-Seiten (Server-seitige Ausführung): `.jsp`
-   * Java™ Servlet-Compiler (Server-seitige Ausführung): `.java`
-   * JavaScript-Vorlagen (Client-seitige Ausführung): `.jst`
+  * HTL (HTML-Vorlagensprache – das von Adobe Experience Manager bevorzugte und empfohlene Server-seitige Vorlagensystem für HTML): `.html`
+  * ECMAScript (JavaScript)-Seiten (Server-seitige Ausführung): `.esp, .ecma`
+  * Java™ Server-Seiten (Server-seitige Ausführung): `.jsp`
+  * Java™ Servlet-Compiler (Server-seitige Ausführung): `.java`
+  * JavaScript-Vorlagen (Client-seitige Ausführung): `.jst`
 
 Die Liste der von der angegebenen Instanz von AEM unterstützten Skript-Engines wird in der Felix Management Console aufgeführt (`http://<host>:<port>/system/console/slingscripting`).
 
@@ -198,25 +207,25 @@ Unter Verwendung des obigen Beispiels, wenn der `sling:resourceType` `hr/jobs` l
 
 * Wenn kein :resourceType definiert ist, gilt Folgendes:
 
-   * Der Inhaltspfad wird für die Suche nach einem geeigneten Skript verwendet (wenn der pfadbasierte „ResourceTypeProvider“ aktiv ist).
+  * Der Inhaltspfad wird für die Suche nach einem geeigneten Skript verwendet (wenn der pfadbasierte „ResourceTypeProvider“ aktiv ist).
 
-     Zum Beispiel würde das Skript für `../content/corporate/jobs/developer.html` eine Suche in `/apps/content/corporate/jobs/` erzeugen.
+    Zum Beispiel würde das Skript für `../content/corporate/jobs/developer.html` eine Suche in `/apps/content/corporate/jobs/` erzeugen.
 
-   * Es wird der primäre Knotentyp verwendet.
+  * Es wird der primäre Knotentyp verwendet.
 
 * Wenn kein Skript gefunden wird, wird das Standardskript verwendet.
 
   Die Standard-Ausgabedarstellung wird als Klartext (.txt), HTML (.html) und JSON (.json) unterstützt, wobei alle die Eigenschaften des Knotens auflisten (passend formatiert). Das Standardverhalten für die Erweiterung „.res“ oder für Anfragen ohne Anfrageerweiterung besteht darin, die Ressource (sofern möglich) zu spoolen.
 * Für die HTTP-Fehlerbehandlung (Codes 403 oder 404) sucht Sling nach einem Skript, entweder:
 
-   * am Speicherort „/apps/sling/servlet/errorhandler“ für [angepasste Skripte](/help/sites-developing/customizing-errorhandler-pages.md)
-   * oder am Speicherort der Standardskripte „/libs/sling/servlet/errorhandler/403.esp“ bzw. „404.esp“.
+  * am Speicherort „/apps/sling/servlet/errorhandler“ für [angepasste Skripte](/help/sites-developing/customizing-errorhandler-pages.md)
+  * oder am Speicherort der Standardskripte „/libs/sling/servlet/errorhandler/403.esp“ bzw. „404.esp“.
 
 Wenn mehrere Skripte für eine bestimmte Anfrage gelten, wird das Skript mit der besten Übereinstimmung ausgewählt. Je genauer eine Übereinstimmung ist, desto besser ist sie. Mit anderen Worten: Je mehr Selektor-Treffer, desto besser, unabhängig von einer Übereinstimmung bei Anfrageerweiterung oder Methodenname.
 
 Beispiel: Eine Anfrage zum Zugriff auf die Ressource
 `/content/corporate/jobs/developer.print.a4.html`
-des Typs
+vom Typ
 `sling:resourceType="hr/jobs"`
 
 Angenommen, Sie haben die folgende Liste von Skripten am richtigen Speicherort:
@@ -243,30 +252,30 @@ Zum Beispiel:
 
 * /
 
-   * eine
-   * b
+  * eine
+  * b
 
-      * sling:resourceSuperType = a
+    * sling:resourceSuperType = a
 
-   * c
+  * c
 
-      * sling:resourceSuperType = b
+    * sling:resourceSuperType = b
 
-   * x
+  * x
 
-      * sling:resourceType = c
+    * sling:resourceType = c
 
-   * y
+  * y
 
-      * sling:resourceType = c
-      * sling:resourceSuperType = a
+    * sling:resourceType = c
+    * sling:resourceSuperType = a
 
 Die Typhierarchie von:
 
 * `/x`
-   * ist `[ c, b, a, <default>]`,
+  * ist `[ c, b, a, <default>]`,
 * während für `/y`
-   * die Hierarchie `[ c, a, <default>]` lautet.
+  * die Hierarchie `[ c, a, <default>]` lautet.
 
 Grund hierfür ist, dass `/y` die Eigenschaft `sling:resourceSuperType` aufweist, während `/x` sie nicht aufweist und daher der Obertyp vom Ressourcentyp übernommen wird.
 
@@ -278,8 +287,8 @@ Wenn Sie die Repräsentation (das Skript) direkt aufrufen, blenden Sie die Resso
 
 * automatische Handhabung von HTTP-Methoden außer GET, einschließlich:
 
-   * POST, PUT, DELETE, die mit einer Sling-Standardimplementierung behandelt werden
-   * Das `POST.jsp`-Skript in Ihrem Sling:resourceType-Speicherort
+  * POST, PUT, DELETE, die mit einer Sling-Standardimplementierung behandelt werden
+  * Das `POST.jsp`-Skript in Ihrem Sling:resourceType-Speicherort
 
 * Ihre Code-Architektur ist nicht mehr so sauber oder so klar strukturiert, wie sie es sein sollte. Dies ist besonders wichtig für die Entwicklung in großem Maßstab.
 
@@ -308,7 +317,7 @@ OSGi definiert eine Architektur für die Entwicklung und Bereitstellung modulare
 
 Diese Services und Verträge bieten eine Architektur, die es einzelnen Elementen ermöglicht, sich dynamisch gegenseitig zu entdecken und zusammenzuarbeiten.
 
-Ein OSGi-Framework bietet Ihnen dann dynamisches Laden/Entladen, Konfiguration und Steuerung dieser Bundles, ohne dass ein Neustart erforderlich ist.
+Ein OSGi-Framework bietet Ihnen dann dynamisches Laden/Entladen, Konfiguration und Steuerung dieser Pakete, ohne dass ein Neustart erforderlich ist.
 
 >[!NOTE]
 >
@@ -316,7 +325,7 @@ Ein OSGi-Framework bietet Ihnen dann dynamisches Laden/Entladen, Konfiguration u
 >
 >Speziell die Seite mit grundlegenden Informationen beinhaltet eine Sammlung von Präsentationen und Tutorials.
 
-Diese Architektur ermöglicht es Ihnen, Sling um anwendungsspezifische Module zu erweitern. Sling, und daher CQ5, verwendet die [Apache Felix](https://felix.apache.org/documentation/index.html)-Implementierung von OSGI (Open Services Gateway Initiative) und basiert auf der OSGi Service Platform Release 4 Version 4.2. Beides sind Sammlungen von OSGi-Bundles, die in einem OSGi-Framework ausgeführt werden.
+Diese Architektur ermöglicht es Ihnen, Sling um anwendungsspezifische Module zu erweitern. Sling, und daher CQ5, verwendet die [Apache Felix](https://felix.apache.org/documentation/index.html)-Implementierung von OSGI (Open Services Gateway Initiative) und basiert auf der OSGi Service Platform Release 4 Version 4.2. Beides sind Sammlungen von OSGi-Paketen, die in einem OSGi-Framework ausgeführt werden.
 
 Auf diese Weise können Sie die folgenden Aktionen für beliebige Pakete innerhalb Ihrer Installation durchführen:
 
@@ -326,7 +335,7 @@ Auf diese Weise können Sie die folgenden Aktionen für beliebige Pakete innerha
 * Aktualisieren
 * uninstall
 * Anzeigen des aktuellen Status
-* Zugreifen auf detailliertere Informationen (z. B. den symbolischen Namen, die Version, den Speicherort usw.) über die spezifischen Bundles
+* Zugreifen auf detailliertere Informationen (z. B. den symbolischen Namen, die Version, den Speicherort usw.) über die spezifischen Pakete
 
 Weitere Informationen finden Sie unter [Web-Konsole](/help/sites-deploying/web-console.md), [OSGI-Konfiguration](/help/sites-deploying/configuring-osgi.md) und [OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md).
 
@@ -470,9 +479,9 @@ Zum Beispiel werden Websites oft in mehreren Sprachen für internationale Zielgr
 * Effiziente Verwaltung verschiedener Sprachversionen einer Website.
 * So aktualisieren Sie automatisch eine oder mehrere Sites basierend auf einer Quell-Site:
 
-   * Erzwingen Sie eine gemeinsame Basisstruktur und verwenden Sie gemeinsame Inhalte auf mehreren Sites.
-   * Maximieren Sie den Einsatz der verfügbaren Ressourcen.
-   * Pflegen Sie ein gemeinsames Look-and-Feel.
-   * Konzentrieren Sie Ihre Anstrengungen auf die Verwaltung der Inhalte, die sich zwischen den Sites unterscheiden.
+  * Erzwingen Sie eine gemeinsame Basisstruktur und verwenden Sie gemeinsame Inhalte auf mehreren Sites.
+  * Maximieren Sie den Einsatz der verfügbaren Ressourcen.
+  * Pflegen Sie ein gemeinsames Look-and-Feel.
+  * Konzentrieren Sie Ihre Anstrengungen auf die Verwaltung der Inhalte, die sich zwischen den Sites unterscheiden.
 
 Weitere Informationen finden Sie unter [Multi-Site-Manager](/help/sites-administering/msm.md).

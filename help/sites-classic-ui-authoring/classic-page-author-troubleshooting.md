@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: be4397d1-0680-4b44-bdd2-825b521a44d6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 98%
-
 ---
-
 # Fehlerbehebung in AEM beim Authoring{#troubleshooting-aem-when-authoring}
 
 Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei der Arbeit mit AEM stoßen können, und liefert entsprechende Lösungsvorschläge.
@@ -32,56 +41,56 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 
 * **Problem**:
 
-   * Sie haben Änderungen an einer Seite vorgenommen und die Seite auf die Veröffentlichungs-Site repliziert, aber auf der Veröffentlichungs-Site wird immer noch die *alte* Version der Seite angezeigt.
+  * Sie haben Änderungen an einer Seite vorgenommen und die Seite auf die Veröffentlichungs-Site repliziert, aber auf der Veröffentlichungs-Site wird immer noch die *alte* Version der Seite angezeigt.
 
 * **Grund**:
 
-   * Dies kann verschiedene Gründe haben. Meist liegt es am Cache (entweder dem Ihres lokalen Browsers oder dem des Dispatchers), gelegentlich kann es sich jedoch auch um ein Problem mit der Replikations-Warteschlange handeln.
+  * Dies kann verschiedene Gründe haben. Meist liegt es am Cache (entweder dem Ihres lokalen Browsers oder dem des Dispatchers), gelegentlich kann es sich jedoch auch um ein Problem mit der Replikations-Warteschlange handeln.
 
 * **Lösungen**:
 
-   * Hier gibt es mehrere Möglichkeiten:
-   * Überprüfen Sie, ob die Seite korrekt repliziert wurde. Überprüfen Sie den Seitenstatus und ggf. den Status der Replikations-Warteschlange.
-   * Löschen Sie den Cache des lokalen Browsers und rufen Sie die Seite erneut auf.
-   * Fügen Sie am Ende der Seiten-URL `?` hinzu. Beispiel:
+  * Hier gibt es mehrere Möglichkeiten:
+  * Überprüfen Sie, ob die Seite korrekt repliziert wurde. Überprüfen Sie den Seitenstatus und ggf. den Status der Replikations-Warteschlange.
+  * Löschen Sie den Cache des lokalen Browsers und rufen Sie die Seite erneut auf.
+  * Fügen Sie am Ende der Seiten-URL `?` hinzu. Beispiel:
 
-     `http://localhost:4502/sites.html/content?`
+    `http://localhost:4502/sites.html/content?`
 
-     Dadurch wird die Seite direkt von AEM abgerufen und der Dispatcher wird umgangen. Wenn die aktualisierte Seite angezeigt wird, ist dies ein Hinweis darauf, dass Sie den Dispatcher-Cache löschen müssen.
+    Dadurch wird die Seite direkt von AEM abgerufen und der Dispatcher wird umgangen. Wenn die aktualisierte Seite angezeigt wird, ist dies ein Hinweis darauf, dass Sie den Dispatcher-Cache löschen müssen.
 
-   * Wenden Sie sich an den Systemadministrator, wenn Probleme mit den Replikationswarteschlangen vorliegen.
+  * Wenden Sie sich an den Systemadministrator, wenn Probleme mit den Replikationswarteschlangen vorliegen.
 
 ## Sidekick wird nicht angezeigt {#sidekick-not-visible}
 
 * **Problem**:
 
-   * Beim Bearbeiten einer Inhaltsseite in der Authoring-Umgebung wird der Sidekick nicht angezeigt.
+  * Beim Bearbeiten einer Inhaltsseite in der Authoring-Umgebung wird der Sidekick nicht angezeigt.
 
 * **Grund**:
 
-   * In seltenen Fällen kann es vorkommen, dass Sie die Kopfzeile des Sidekicks außerhalb des aktuellen Fensterbereichs platziert haben. Das bedeutet, dass Sie sie nicht neu platzieren können.
+  * In seltenen Fällen kann es vorkommen, dass Sie die Kopfzeile des Sidekicks außerhalb des aktuellen Fensterbereichs platziert haben. Das bedeutet, dass Sie sie nicht neu platzieren können.
 
 * **Lösung**:
 
-   * Melden Sie sich bei Ihrer aktuellen Sitzung ab und melden Sie sich erneut an. Der Sidekick wird wieder an der Standardposition angezeigt.
+  * Melden Sie sich bei Ihrer aktuellen Sitzung ab und melden Sie sich erneut an. Der Sidekick wird wieder an der Standardposition angezeigt.
 
 ## Suchen und Ersetzen: nicht alle Vorkommen werden ersetzt {#find-replace-not-all-instances-are-replaced}
 
 * **Problem:**
 
-   * Beim Verwenden der Option **Suchen und Ersetzen** kann es passieren, dass nicht alle Vorkommen des `find`-Begriffs auf einer Seite ersetzt werden.
+  * Beim Verwenden der Option **Suchen und Ersetzen** kann es passieren, dass nicht alle Vorkommen des `find`-Begriffs auf einer Seite ersetzt werden.
 
 * **Grund**:
 
-   * Die ordnungsgemäße Funktion von **Suchen und Ersetzen** ist davon abhängig, wie der Inhalt gespeichert wurde und ob er durchsucht werden kann. Beispiel: Ein Blog-Text wird in der Eigenschaft `jcr:text` gespeichert, die der Konfiguration entsprechend nicht durchsucht werden kann. Der Standardbereich für das Servlet „Suchen und Ersetzen“ deckt die folgenden Eigenschaften ab:
+  * Die ordnungsgemäße Funktion von **Suchen und Ersetzen** ist davon abhängig, wie der Inhalt gespeichert wurde und ob er durchsucht werden kann. Beispiel: Ein Blog-Text wird in der Eigenschaft `jcr:text` gespeichert, die der Konfiguration entsprechend nicht durchsucht werden kann. Der Standardbereich für das Servlet „Suchen und Ersetzen“ deckt die folgenden Eigenschaften ab:
 
-      * `jcr:title`
-      * `jcr:description`
-      * `jcr:text`
-      * `text`
+    * `jcr:title`
+    * `jcr:description`
+    * `jcr:text`
+    * `text`
 
 * **Lösung**:
 
-   * Diese Definitionen können mit der Konfiguration für **Day CQ WCM Find Replace Servlet** geändert werden, indem z. B. die **Web-Konsole** verwendet wird:
+  * Diese Definitionen können mit der Konfiguration für **Day CQ WCM Find Replace Servlet** geändert werden, indem z. B. die **Web-Konsole** verwendet wird:
 
-     `http://localhost:4502/system/console/configMgr`
+    `http://localhost:4502/system/console/configMgr`

@@ -1,17 +1,29 @@
 ---
-title: 'Assistent „Sprachkopie erstellen“ '
+title: Assistent „Sprachkopie erstellen“
 description: Erfahren Sie mehr über die Verwendung des Assistenten „Sprachkopie erstellen“ in Adobe Experience Manager.
 feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 218b4778-86be-4752-8cdf-37705563be13
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '220'
 ht-degree: 100%
-
 ---
-
 # Assistent „Sprachkopie erstellen“{#language-copy-wizard}
 
 Der Assistent „Sprachkopie erstellen“ führt Sie durch die Erstellung und Verwendung einer mehrsprachigen Inhaltsstruktur. Damit können Sie jetzt Sprachkopien viel schneller und einfacher erstellen.

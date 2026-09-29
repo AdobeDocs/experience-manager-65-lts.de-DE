@@ -1,18 +1,27 @@
 ---
 title: Erweitern der Suchfunktion
-description: Erweitern Sie die Suchfunktionen von  [!DNL Adobe Experience Manager Assets]  über die Standardwerte hinaus.
+description: Erweitern Sie die Suchfunktionen von [!DNL Adobe Experience Manager Assets] über die Standardwerte hinaus.
 contentOwner: AG
 role: Developer
 feature: Search
 solution: Experience Manager, Experience Manager Assets
 exl-id: 92efe52b-8fa5-4006-bd68-2472b4ba04f6
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 92%
-
+source-wordcount: '827'
+ht-degree: 91%
 ---
-
 # Erweitern der Asset-Suche {#extending-assets-search}
 
 Sie können die Suchfunktionen von [!DNL Adobe Experience Manager Assets] erweitern. Standardmäßig sucht [!DNL Experience Manager Assets] anhand von Zeichenfolgen nach Assets.
@@ -56,7 +65,7 @@ Um benutzerdefinierte Eigenschaften erstellen zu können, benötigen Sie Grundla
 
 Es sich als Best Practice erwiesen, eine vorhandene Eigenschaft zu kopieren und anzupassen. Beispieleigenschaften finden Sie unter **/libs/cq/search/components/predicates**.
 
-### Beispiel: Einfaches Eigenschaftsprädikat erstellen   {#example-build-a-simple-property-predicate}
+### Beispiel: Einfaches Eigenschaftsprädikat erstellen {#example-build-a-simple-property-predicate}
 
 So erstellen Sie ein Eigenschaftsprädikat:
 
@@ -252,7 +261,7 @@ So erstellen Sie eine Gruppeneigenschaft:
 
 Die folgenden Prädikate sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 
-### FulltextPredicate   {#fulltextpredicate}
+### FulltextPredicate {#fulltextpredicate}
 
 | Eigenschaft | Typ | Beschreibung |
 |---|---|---|
@@ -294,7 +303,7 @@ Die folgenden Prädikate sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 | collapse | Zeichenfolge | Ebene der Reduzierung. Standardwert ist `level1` |
 | triggerSearch | Boolesch | Markierung zum Auslösen der Suche nach Aktivierung. Standardwert ist „false“ |
 | searchCallback | Funktion | Callback zum Auslösen der Suche. Standardwert ist `CQ.wcm.SiteAdmin.doSearch` |
-| searchTimeoutTime | Nummer | Zeitlimit, nach dem searchCallback ausgelöst wird. Standardwert ist 800 ms. |
+| searchTimeoutTime | Nummer | Timeout, nach dem searchCallback ausgelöst wird. Standardwert ist 800 ms. |
 
 ## Anpassen der Suchergebnisse {#customizing-search-results}
 

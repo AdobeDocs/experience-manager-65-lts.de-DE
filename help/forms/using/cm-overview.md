@@ -8,18 +8,31 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 242a0157-5863-4f9a-8613-687078fcafb5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '226'
 ht-degree: 100%
-
 ---
-
 # Correspondence Management – Zusammenfassung {#correspondence-management-overview}
 
 ## Einführung {#introduction}
 
-Mit Correspondence Management lässt sich die Generierung, Zusammenstellung und Verteilung sicherer, personalisierter und interaktiver Korrespondenzen zentralisieren und verwalten. Es ermöglicht Ihnen, in einem optimierten Prozess von der Erstellung bis zur Archivierung schnell Korrespondenzen aus vorab genehmigten und individuell erstellten Inhalten zusammenzustellen. Dadurch erhält Ihre Kundschaft die richtige Kommunikation zur richtigen Zeit auf die richtige Art und Weise: zeitnah, präzise, bequem, sicher und relevant. Ihr Unternehmen maximiert den Wert von Kundeninteraktionen und minimiert Kosten und Risiken durch einen Prozess, der für Einfachheit, Geschwindigkeit und Produktivität optimiert ist. 
+Mit Correspondence Management lässt sich die Generierung, Zusammenstellung und Verteilung sicherer, personalisierter und interaktiver Korrespondenzen zentralisieren und verwalten. Es ermöglicht Ihnen, in einem optimierten Prozess von der Erstellung bis zur Archivierung schnell Korrespondenzen aus vorab genehmigten und individuell erstellten Inhalten zusammenzustellen. Dadurch erhält Ihre Kundschaft die richtige Kommunikation zur richtigen Zeit auf die richtige Art und Weise: zeitnah, präzise, bequem, sicher und relevant. Ihr Unternehmen maximiert den Wert von Kundeninteraktionen und minimiert Kosten und Risiken durch einen Prozess, der für Einfachheit, Geschwindigkeit und Produktivität optimiert ist.
 
 ## Vorteile {#benefits}
 

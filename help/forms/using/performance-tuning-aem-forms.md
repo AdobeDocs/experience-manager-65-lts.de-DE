@@ -9,13 +9,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 4009c85e-cb8a-4bed-a6ff-7c76fe78a47f
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 99%
-
+source-wordcount: '810'
+ht-degree: 100%
 ---
-
 # Leistungsoptimierung für AEM Forms-Server{#performance-tuning-of-aem-forms-server}
 
 In diesem Artikel werden Strategien und Best Practices beschrieben, die Sie implementieren können, um Engpässe zu reduzieren und die Leistung Ihrer AEM Forms-Bereitzustellung zu optimieren.
@@ -95,8 +109,8 @@ Apache kann mit CRX über das HTTP-Protokoll kommunizieren. Die Konfigurationen 
    >
    >Für Linux® lautet der Standard für `APACHE_HOME` `/etc/httpd/`.
 
-1. Konfigurieren Sie den Proxy auf Port 4502 von crx.
-Fügen Sie in `APACHE_HOME/conf/httpd.conf` Konfigurationsdatei folgende Konfiguration ein.
+1. Konfigurieren Sie das Proxys auf Port 4502 von crx.
+Fügen Sie in die `APACHE_HOME/conf/httpd.conf`-Konfigurationsdatei folgende Konfiguration ein.
 
    ```shell
    ProxyPass / https://<server>:4502/
@@ -149,9 +163,9 @@ Um die Leistung zu verbessern, können Sie die Antiviren-Software anweisen, die 
 
 * AEM-Installationsverzeichnis. Wenn es nicht möglich ist, das gesamte Verzeichnis auszuschließen, schließen Sie die folgenden Ordner aus:
 
-   * [AEM-Installationsverzeichnis]\crx-repository\temp
-   * [AEM-Installationsverzeichnis]\crx-repository\repository
-   * [AEM-Installationsverzeichnis]\crx-repository\launchpad
+  * [AEM-Installationsverzeichnis]\crx-repository\temp
+  * [AEM-Installationsverzeichnis]\crx-repository\repository
+  * [AEM-Installationsverzeichnis]\crx-repository\launchpad
 
 <!--
 

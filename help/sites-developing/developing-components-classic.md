@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d44e6ea8-b4e5-4ed7-a6d0-de1da2709e18
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2446'
 ht-degree: 99%
-
 ---
-
 # Entwickeln von Adobe Experience Manager(AEM)-Komponenten (klassische Benutzeroberfläche){#developing-aem-components-classic-ui}
 
 Die klassische Benutzeroberfläche nutzt ExtJS, um Widgets zu erstellen, die das Erscheinungsbild der Komponenten angeben. Aufgrund der Eigenschaften dieser Widgets gibt es einige Unterschiede zwischen der Interaktion von Komponenten mit der klassischen Benutzeroberfläche und der [Touch-optimierten Benutzeroberfläche](/help/sites-developing/developing-components.md).
@@ -63,20 +72,20 @@ Zusammenfassung:
 
 * `<cq:defineObjects />`
 
-   * `slingRequest` – das umschlossene Anfrageobjekt (`SlingHttpServletRequest`).
-   * `slingResponse` – das umschlossene Antwortobjekt (`SlingHttpServletResponse`).
-   * `resource` – das Sling-Ressourcen-Objekt (`slingRequest.getResource();`).
-   * `resourceResolver` – das Sling Resource Resolver-Objekt (`slingRequest.getResoucreResolver();`).
-   * `currentNode` – der aufgelöste JCR-Knoten für die Anfrage.
-   * `log` – der standardmäßige Logger ().
-   * `sling` – der Sling-Skript-Assistent.
-   * `properties` – die Eigenschaften der betreffenden Ressource (`resource.adaptTo(ValueMap.class);`).
-   * `pageProperties` – die Eigenschaften der Seite der betreffenden Ressource.
-   * `pageManager` – der Seitenmanager für den Zugriff auf AEM-Inhalts-Seiten (`resourceResolver.adaptTo(PageManager.class);`).
-   * `component` – das Komponentenobjekt der aktuellen AEM-Komponente.
-   * `designer` – das Designer-Objekt zum Abrufen von Design-Informationen (`resourceResolver.adaptTo(Designer.class);`).
-   * `currentDesign` – das Design der betreffenden Ressource.
-   * `currentStyle` – der Stil der betreffenden Ressource.
+  * `slingRequest` – das umschlossene Anfrageobjekt (`SlingHttpServletRequest`).
+  * `slingResponse` – das umschlossene Antwortobjekt (`SlingHttpServletResponse`).
+  * `resource` – das Sling-Ressourcen-Objekt (`slingRequest.getResource();`).
+  * `resourceResolver` – das Sling Resource Resolver-Objekt (`slingRequest.getResoucreResolver();`).
+  * `currentNode` – der aufgelöste JCR-Knoten für die Anfrage.
+  * `log` – der standardmäßige Logger ().
+  * `sling` – der Sling-Skript-Assistent.
+  * `properties` – die Eigenschaften der betreffenden Ressource (`resource.adaptTo(ValueMap.class);`).
+  * `pageProperties` – die Eigenschaften der Seite der betreffenden Ressource.
+  * `pageManager` – der Seitenmanager für den Zugriff auf AEM-Inhalts-Seiten (`resourceResolver.adaptTo(PageManager.class);`).
+  * `component` – das Komponentenobjekt der aktuellen AEM-Komponente.
+  * `designer` – das Designer-Objekt zum Abrufen von Design-Informationen (`resourceResolver.adaptTo(Designer.class);`).
+  * `currentDesign` – das Design der betreffenden Ressource.
+  * `currentStyle` – der Stil der betreffenden Ressource.
 
 ### Zugreifen auf Inhalte {#accessing-content}
 
@@ -164,8 +173,8 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
 
    * Hinzufügen eines Felds im Dialogfeld
 
-      * `cq:dialog` – Dialogfeld für die Touch-optimierte Benutzeroberfläche
-      * `dialog` – Dialogfeld für die klassische Benutzeroberfläche
+     * `cq:dialog` – Dialogfeld für die Touch-optimierte Benutzeroberfläche
+     * `dialog` – Dialogfeld für die klassische Benutzeroberfläche
 
    * Ersetzen der `.jsp`-Datei (Benennen Sie sie nach Ihrer neuen Komponente)
    * oder vollständiges Überarbeiten der gesamten Komponente, falls gewünscht
@@ -278,16 +287,16 @@ Zum Erstellen der Komponente verwenden Sie die standardmäßige textimage-Kompon
 
    * Komponentenname
 
-      * `jcr:description` wird auf `Text Image Component (Extended)` gesetzt
-      * `jcr:title` wird auf `Text Image (Extended)` gesetzt
+     * `jcr:description` wird auf `Text Image Component (Extended)` gesetzt
+     * `jcr:title` wird auf `Text Image (Extended)` gesetzt
 
    * Gruppe, in der die Komponente im Sidekick aufgelistet ist (unverändert lassen)
 
-      * `componentGroup` wird auf `General` belassen
+     * `componentGroup` wird auf `General` belassen
 
    * Übergeordnete Komponente für die neue Komponente (die standardmäßige textimage-Komponente)
 
-      * `sling:resourceSuperType` wird auf `foundation/components/textimage` gesetzt
+     * `sling:resourceSuperType` wird auf `foundation/components/textimage` gesetzt
 
    Nach diesem Schritt sieht der Komponentenknoten wie folgt aus:
 
@@ -305,24 +314,24 @@ Zum Erstellen der Komponente verwenden Sie die standardmäßige textimage-Kompon
 
    * Für die ersten beiden Registerkarten (tab1 und tab2):
 
-      * Ändern Sie „xtype“ in „cqinclude“ (um von der Standardkomponente zu erben).
-      * Fügen Sie eine Pfadeigenschaft mit Werten `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` bzw. `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json` hinzu.
-      * Entfernen Sie alle anderen Eigenschaften oder Unterknoten.
+     * Ändern Sie „xtype“ in „cqinclude“ (um von der Standardkomponente zu erben).
+     * Fügen Sie eine Pfadeigenschaft mit Werten `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` bzw. `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json` hinzu.
+     * Entfernen Sie alle anderen Eigenschaften oder Unterknoten.
 
    * Für tab3:
 
-      * Lassen Sie die Eigenschaften und Unterknoten unverändert.
-      * Fügen Sie zu `tab3/items`, der Knotenposition von Typ `cq:Widget`, eine Felddefinition hinzu.
-      * Legen Sie die folgenden Eigenschaften (vom Typ „String“) für den neuen Knoten `tab3/items/position` fest:
+     * Lassen Sie die Eigenschaften und Unterknoten unverändert.
+     * Fügen Sie zu `tab3/items`, der Knotenposition von Typ `cq:Widget`, eine Felddefinition hinzu.
+     * Legen Sie die folgenden Eigenschaften (vom Typ „String“) für den neuen Knoten `tab3/items/position` fest:
 
-         * `name`: `./imagePosition`
-         * `xtype`: `selection`
-         * `fieldLabel`: `Image Position`
-         * `type`: `select`
+       * `name`: `./imagePosition`
+       * `xtype`: `selection`
+       * `fieldLabel`: `Image Position`
+       * `type`: `select`
 
-      * Fügen Sie den Unterknoten `position/options` vom Typ `cq:WidgetCollection` hinzu, um die beiden Optionen für die Bildplatzierung darzustellen, und erstellen Sie darunter die beiden Knoten o1 und o2 vom Typ `nt:unstructured`.
-      * Legen Sie für den Knoten `position/options/o1` die Eigenschaften wie folgt fest: `text` auf `Left` und `value` auf `left.`
-      * Legen Sie für den Knoten `position/options/o2` die Eigenschaften wie folgt fest: `text` auf `Right` und `value` auf `right`.
+     * Fügen Sie den Unterknoten `position/options` vom Typ `cq:WidgetCollection` hinzu, um die beiden Optionen für die Bildplatzierung darzustellen, und erstellen Sie darunter die beiden Knoten o1 und o2 vom Typ `nt:unstructured`.
+     * Legen Sie für den Knoten `position/options/o1` die Eigenschaften wie folgt fest: `text` auf `Left` und `value` auf `left.`
+     * Legen Sie für den Knoten `position/options/o2` die Eigenschaften wie folgt fest: `text` auf `Right` und `value` auf `right`.
 
    * Löschen Sie tab4.
 

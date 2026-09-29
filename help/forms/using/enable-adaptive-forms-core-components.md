@@ -6,13 +6,27 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: a163598d-0a6e-45a8-b3b2-1f260007952b
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 96%
-
+source-wordcount: '1057'
+ht-degree: 92%
 ---
-
 # Aktivieren der Kernkomponenten für adaptive Formulare in AEM 6.5 Forms {#enable-adaptive-forms-core-components}
 
 ## Gilt für {#applies-to}
@@ -39,7 +53,7 @@ Vor der Aktivierung der Kernkomponenten von Adaptive Forms in einer AEM 6.5 LTS 
 
 ## Erstellen Sie ein auf dem neuesten AEM Archetyp basierendes Projekt und stellen Sie es bereit
 
-So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/aem-project-archetype) basierendes Projekt und stellen es für alle Authoring- und Publishing-Instanzen bereit:
+So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/aem-project-archetype) basierendes Projekt und stellen es für alle Authoring- und Veröffentlichungsinstanzen bereit:
 
 1. Melden Sie sich bei Ihrem Computer an, hosten Sie Ihre AEM 6.5 Forms-Instanz und führen Sie sie als Administrator aus.
 1. Öffnen Sie die Eingabeaufforderung oder das Terminal und führen Sie den folgenden Befehl aus, um ein AEM Archetyp-Projekt zu erstellen (mit aktivierten Formularoptionen):
@@ -106,7 +120,7 @@ So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/
 
       >[!WARNING]
       >
-      >* Wenn Sie ein Archetyp-Projekt mit Version 45 erstellen, setzt `[AEM Archetype Project Folder]/pom.xml` zunächst die Version der Formular-Kernkomponenten auf 1.1.28. Aktualisieren Sie vor dem Erstellen oder Bereitstellen des Archetyp-Projekts die Version der Formular-Kernkomponenten auf 1.1.26. Die neueste Version finden Sie im [Versionsverlauf von AEM 6.5 Forms](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/version#aem-as-form-version-history).
+      >* Beim Erstellen eines Archetypprojekts mit Version 45 setzt der `[AEM Archetype Project Folder]/pom.xml` zunächst die Version der Kernkomponenten für Formulare auf 1.1.28. Bevor Sie das Archetype-Projekt erstellen oder bereitstellen, aktualisieren Sie die Kernkomponentenversion für Formulare auf 1.1.26. Die neueste Version finden Sie im [AEM 6.5 Forms-Versionsverlauf](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/version#aem-as-form-version-history).
 
       >[!NOTE]
       >
@@ -130,7 +144,7 @@ So erstellen Sie ein auf AEM Archetyp 41 oder [höher](https://github.com/adobe/
 
    Nachdem das AEM-Archetyp-Projekt erfolgreich erstellt wurde, wird ein AEM-Paket generiert. Sie finden das Paket im [AEM-Archetyp-Projektordner]\all\target\[appid].all-[version].zip
 
-1. Verwenden Sie den [Paket-Manager](/help/sites-administering/package-manager.md) zur Bereitstellung des Pakets [AEM-Archetyp-Projektordner]\all\target\[appid].all-[version].zip auf allen Authoring- und Publishing-Instanzen.
+1. Verwenden Sie den [Paket-Manager](/help/sites-administering/package-manager.md) zur Bereitstellung des Pakets [AEM-Archetyp-Projektordner]\all\target\[appid].all-[version].zip auf allen Authoring- und Veröffentlichungsinstanzen.
 
 >[!NOTE]
 >
@@ -150,7 +164,7 @@ Die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager
 ### Welche Funktionen werden durch die Aktivierung der Kernkomponenten hinzugefügt?
 
 
-Wenn die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert sind, werden Ihrer Umgebung eine leere, auf Kernkomponenten basierende Vorlage für adaptive Formulare und ein Canvas 3.0-Design hinzugefügt. Nachdem Sie die Kernkomponenten der adaptiven Formulare für Ihre Umgebung aktiviert haben, können Sie Folgendes tun:
+Wenn die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert sind, werden Ihrer Umgebung eine leere, auf Kernkomponenten basierende Vorlage für adaptive Formulare und ein Canvas 3.0-Design hinzugefügt. Nachdem Sie die Kernkomponenten für adaptive Formulare für Ihre Umgebung aktiviert haben, können Sie Folgendes tun:
 
 * Erstellen Sie adaptive Formulare auf Grundlage der Kernkomponenten.
 * Erstellen Sie Vorlagen für adaptive Formulare auf Grundlage der Kernkomponenten.

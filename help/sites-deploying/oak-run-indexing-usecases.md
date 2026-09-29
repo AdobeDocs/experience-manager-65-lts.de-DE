@@ -9,13 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: a7a8a20a-e513-43df-80b7-1e6daf957f20
-source-git-commit: c714e51f0c0368988ce552969747ab5fce5c186f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1402'
 ht-degree: 47%
-
 ---
-
 # Oak-run.jar – Indizierungsanwendungsfälle{#oak-run-jar-indexing-use-cases}
 
 Oak-run unterstützt Indizierungs-Anwendungsfälle über die Befehlszeile, ohne dass die Ausführung dieser Anwendungsfälle über die JMX-Konsole von AEM orchestriert werden muss.
@@ -34,7 +46,7 @@ Die folgenden Abschnitte enthalten Beispielbefehle. Der Oak-run-Befehl „index�
 Dieser Anwendungsfall steht im Zusammenhang mit Indexbeschädigungen. In einigen Fällen ist es nicht möglich, festzustellen, welcher Index beschädigt wurde. Hierzu stellt Adobe Tools für folgende Aufgaben bereit:
 
 * Führt Konsistenzprüfungen aller Indizes durch und erstellt einen Bericht darüber, welche Indizes gültig und welche nicht gültig sind.
-* Das Tool kann auch verwendet werden, wenn kein Zugriff auf AEM möglich ist. 
+* Das Tool kann auch verwendet werden, wenn kein Zugriff auf AEM möglich ist.
 * Die Verwendung ist einfach.
 
 Verwenden Sie `--index-consistency-check`, um nach beschädigten Indizes zu suchen:
@@ -77,9 +89,9 @@ Zur Diagnose einiger Fälle im Zusammenhang mit der Abfrageleistung benötigte A
 
 1. Dump aller im System vorhandener Indexdefinitionen in einer einzigen JSON-Datei.
 
-1. Dump wichtiger Statistiken aus vorhandenen Indizes. 
+1. Dump wichtiger Statistiken aus vorhandenen Indizes.
 
-1. Dump von Indexinhalten für Offline-Analysen. 
+1. Dump von Indexinhalten für Offline-Analysen.
 
 1. Sie ist auch dann verwendbar, wenn kein Zugriff auf AEM möglich ist
 
@@ -113,7 +125,7 @@ Je nach [Szenario](https://jackrabbit.apache.org/oak/docs/query/indexing.html#re
 
 Einige wichtige Aspekte der Neuindizierung:
 
-* Die Neuindizierung verläuft in `DocumentNodeStore`-Setups weitaus langsamer als in `SegmentNodeStore`-Setups, in denen der gesamte Inhalt lokal gespeichert ist. 
+* Die Neuindizierung verläuft in `DocumentNodeStore`-Setups weitaus langsamer als in `SegmentNodeStore`-Setups, in denen der gesamte Inhalt lokal gespeichert ist.
 
 * Während der Neuindizierung wird beim derzeitigen Design der asynchrone Indexer blockiert, weshalb alle anderen asynchronen Indizes veralten, weil sie während der Indizierung nicht mehr aktualisiert werden. Wenn das System verwendet wird, können die Benutzer daher möglicherweise keine aktuellen Ergebnisse sehen.
 * Bei der Neuindizierung muss das gesamte Repository durchlaufen werden, was die AEM-Einrichtung stark belasten und sich negativ auf das Endbenutzererlebnis auswirken kann.
@@ -130,7 +142,7 @@ Um diese Ziele zu erreichen, unterstützt das Oak-run-Tool für Indizes verschie
 
 * **Vereinfachte Neuindizierung für DocumentNodeStore-Installationen** – Für `DocumentNodeStore`-Installationen kann die Neuindizierung mit einem einzigen Befehl ausgeführt werden, der sicherstellt, dass die Neuindizierung auf die optimalste Weise erfolgt.
 
-* **Unterstützt die Aktualisierung der Indexdefinitionen und das Erstellen neuer Indexdefinitionen** 
+* **Unterstützt die Aktualisierung der Indexdefinitionen und das Erstellen neuer Indexdefinitionen**
 
 ### Neuindizierung – DocumentNodeStore {#reindexdocumentnodestore}
 
@@ -142,7 +154,7 @@ java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-wr
 
 Dieser Vorgang bietet die folgenden Vorteile:
 
-* Minimale Auswirkung auf das Ausführen von AEM-Instanzen. Die meisten Lesevorgänge können von Sekundär-Servern ausgeführt werden, und ausgeführte AEM-Caches sind nicht von all den für die Neuindizierung erforderlichen Durchläufen betroffen. 
+* Minimale Auswirkung auf das Ausführen von AEM-Instanzen. Die meisten Lesevorgänge können von Sekundär-Servern ausgeführt werden, und ausgeführte AEM-Caches sind nicht von all den für die Neuindizierung erforderlichen Durchläufen betroffen.
 * Benutzende können über die Option `--index-definitions-file` auch eine JSON-Datei eines neuen oder aktualisierten Indexes bereitstellen.
 
 ### Neuindizierung – SegmentNodeStore {#reindexsegmentnodestore}

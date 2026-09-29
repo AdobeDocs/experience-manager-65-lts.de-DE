@@ -11,13 +11,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
-source-git-commit: c1935b95d4e9e8e3773f2ff9825c759f97738304
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 48%
-
+source-wordcount: '1104'
+ht-degree: 49%
 ---
-
 # Upgrades von Code und Anpassungen{#upgrading-code-and-customizations}
 
 Bei der Planung eines Upgrades müssen die folgenden Bereiche einer Implementierung untersucht und berücksichtigt werden.
@@ -27,7 +36,7 @@ Bei der Planung eines Upgrades müssen die folgenden Bereiche einer Implementier
 
 ## Übersicht {#overview}
 
-1. **AEM Analyzer** - Führen Sie AEM Analyzer aus, wie in der Upgrade-Planung und auf der Seite &quot;[&#x200B; der Upgrade-Komplexität mit AEM Analyzer“ &#x200B;](/help/sites-deploying/aem-analyzer.md) beschrieben. Sie erhalten einen AEM Analyzer-Bericht, der weitere Details zu Bereichen enthält, die zusätzlich zu den nicht verfügbaren APIs/Bundles in der Zielversion von AEM behandelt werden müssen. Der AEM Analyzer-Bericht liefert einen Hinweis auf alle Inkompatibilitäten in Ihrem Code. Wenn keine vorhanden ist, ist Ihre -Bereitstellung bereits mit 6.5 LTS kompatibel. Sie können für die Verwendung der 6.5 LTS-Funktionen weiterhin neue Entwicklungsschritte ausführen. Aus bloßen Kompatibilitätsgründen ist dies jedoch nicht erforderlich.
+1. **AEM Analyzer** - Führen Sie AEM Analyzer aus, wie in der Upgrade-Planung und auf der Seite &quot;[ der Upgrade-Komplexität mit AEM Analyzer“ ](/help/sites-deploying/aem-analyzer.md) beschrieben. Sie erhalten einen AEM Analyzer-Bericht, der weitere Details zu Bereichen enthält, die zusätzlich zu den nicht verfügbaren APIs/Bundles in der Zielversion von AEM behandelt werden müssen. Der AEM Analyzer-Bericht liefert einen Hinweis auf alle Inkompatibilitäten in Ihrem Code. Wenn keine vorhanden ist, ist Ihre -Bereitstellung bereits mit 6.5 LTS kompatibel. Sie können für die Verwendung der 6.5 LTS-Funktionen weiterhin neue Entwicklungsschritte ausführen. Aus bloßen Kompatibilitätsgründen ist dies jedoch nicht erforderlich.
 1. **Entwickeln einer Code-Basis für 6.5 LTS**- Erstellen Sie eine dedizierte Verzweigung oder ein dediziertes Repository für die Code-Basis der Zielversion. Nutzen Sie bei der Kompatibilitätsprüfung die vor dem Upgrade erfassten Daten, um die Code-Bereiche zu planen, die aktualisiert werden sollen.
 1. **Kompilieren mit 6.5 LTS Uber jar**- Aktualisieren Sie die POMs der Code-Basis, sodass sie auf 6.5 LTS uber jar verweisen, und kompilieren Sie Code dagegen.
 1. **Bereitstellung in der 6.5 LTS-Umgebung** - Eine neue Instanz von AEM 6.5 LTS (Autor und Veröffentlichung) sollte in einer Entwicklungs-/QS-Umgebung bereitgestellt werden. Stellen Sie die aktualisierte Code-Basis und ein repräsentatives Inhaltsbeispiel (aus der aktuellen Produktion) bereit.
@@ -43,7 +52,7 @@ Sämtlicher Code und alle Konfigurationen, die für Ihre AEM Implementierung erf
 
 ### Aktualisieren der UberJar-Version von AEM {#update-the-aem-uber-jar-version}
 
-AEM-UberJar beinhaltet alle AEM-APIs als einzelne Abhängigkeiten in der Datei `pom.xml` des Maven-Projekts. Es empfiehlt sich immer, das Uber Jar als einzelne Abhängigkeit einzubeziehen, anstatt einzelne AEM API-Abhängigkeiten einzubeziehen. Ändern Sie beim Upgrade der Code-Basis die Version von Uber Jar so, dass sie auf die Version 6.5 LTS von AEM verweist. Aktualisieren Sie alle veralteten APIs oder Methoden, damit sie mit der Zielversion von AEM kompatibel sind. Kompilieren Sie die Code-Basis neu mit der neuen Version von UberJar.
+AEM-UberJar beinhaltet alle AEM-APIs als einzelne Abhängigkeiten in der Datei `pom.xml` des Maven-Projekts. Es empfiehlt sich immer, das Uber Jar als einzelne Abhängigkeit einzubeziehen, anstatt einzelne AEM API-Abhängigkeiten einzubeziehen. Ändern Sie beim Upgrade der Code-Basis die Version von Uber Jar so, dass sie auf die Version 6.5 LTS von AEM verweist. Aktualisieren Sie alle veralteten APIs oder Methoden, damit sie mit der Zielversion von AEM kompatibel sind. Kompilieren Sie die Code-Basis erneut mit der neuen Version des Uber Jar.
 
 ```
 <dependency>
@@ -73,7 +82,7 @@ Für AEM 6.5 LTS gibt es wieder zwei Arten von Uber Jars:
 
 **Hauptunterschied: AEM 6.5 vs. AEM 6.5 LTS Uber Jars**
 
-* Wenn in AEM 6.5 sowohl öffentliche als auch veraltete APIs benötigt werden, können Sie eine einzige JAR-Datei zum Einschließen verwenden, die in Ihrer `uber-jar-6.5.x-apis-with-deprecations.jar`-Datei `pom.xml` wird.
+* Wenn in AEM 6.5 sowohl öffentliche als auch veraltete APIs benötigt werden, können Sie eine einzige JAR-Datei zum Einschließen verwenden, die in Ihrer `pom.xml`-Datei `uber-jar-6.5.x-apis-with-deprecations.jar` wird.
 * Wenn Sie in AEM 6.5 LTS sowohl öffentliche als auch veraltete APIs benötigen, müssen Sie zwei separate JARs einbeziehen, `uber-jar-6.6.x-apis.jar` für öffentliche APIs und `uber-jar-6.6.x-deprecated-apis.jar` für veraltete APIs.
 
 **Maven-Koordinaten für veraltete APIs in Jar**
@@ -130,7 +139,7 @@ Im Folgenden sind wichtige Bereiche einer AEM-Implementierung genannt, die vom T
   </tr>
   <tr>
    <td>Authentifizierung, Sicherheit und Berechtigungen</td>
-   <td>Alle Authentifizierungsmechanismen wie LDAP/SAML sollten überprüft werden.<br /> Berechtigungen und Gruppen sollten sowohl auf der Authoring- als auch auf der Publishing-Ebene<br /> getestet werden.</td>
+   <td>Alle Authentifizierungsmechanismen wie LDAP/SAML sollten validiert werden.<br /> Berechtigungen und Gruppen sollten sowohl auf der Autoren- als auch auf der <br /> getestet werden.</td>
   </tr>
   <tr>
    <td>Abfragen</td>

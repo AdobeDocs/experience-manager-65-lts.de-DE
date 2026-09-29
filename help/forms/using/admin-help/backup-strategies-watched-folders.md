@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 5955deb0-9d1c-4b61-a202-41ef03a23cf8
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 100%
-
 ---
-
 # Sicherungsstrategien für überwachte Ordner {#backup-strategies-for-watched-folders}
 
 In diesem Abschnitt werden überwachte Ordner unter dem Aspekt der Sicherung und Wiederherstellung beschrieben, wobei die Einschränkungen und Ergebnisse verschiedener Sicherungsszenarien erläutert und Vorschläge zur Minimierung möglicher Datenverluste gemacht werden.
@@ -68,7 +83,7 @@ In der folgenden Tabelle wird die Dateibearbeitung von fünf Beispieldateien (Da
    <td><p>leer</p></td>
   </tr>
   <tr>
-   <td><p>Phase</p></td>
+   <td><p>Staging</p></td>
    <td><p>leer</p></td>
    <td><p>Datei1</p></td>
    <td><p>Datei2</p></td>
@@ -160,11 +175,11 @@ Mithilfe der folgenden Strategien kann der Datenverlust bei Aus- und Eingabeordn
 * Ist die verfügbare Sicherung des überwachten Ordners älter als der Zeitraum, der zur Verarbeitung des Auftrags erforderlich ist, ist es besser, das System einen neuen überwachten Ordner erstellen und dann die Dateien automatisch im Eingabeordner ablegen zu lassen.
 * Wenn die letzte verfügbare Sicherung nicht neu genug ist, die Sicherungsdauer kürzer als die für die Verarbeitung der Dateien benötigte Zeit ist und der überwachte Ordner wiederhergestellt wurde, wurde die Datei in einer der folgenden Phasen verarbeitet:
 
-   * **Phase 1:** Im Eingabeordner
-   * **Phase 2:** Kopiert in den Bereitstellungsordner, aber der Prozess wurde noch nicht aufgerufen.
-   * **Phase 3:** Kopiert in den Bereitstellungsordner und der Prozess wurde aufgerufen.
-   * **Phase 4:** Verarbeitung ist im Gang.
-   * **Phase 5:** Ergebnisse wurden zurückgegeben.
+  * **Phase 1:** Im Eingabeordner
+  * **Phase 2:** Kopiert in den Bereitstellungsordner, aber der Prozess wurde noch nicht aufgerufen.
+  * **Phase 3:** Kopiert in den Bereitstellungsordner und der Prozess wurde aufgerufen.
+  * **Phase 4:** Verarbeitung ist im Gang.
+  * **Phase 5:** Ergebnisse wurden zurückgegeben.
 
   Sind Dateien in Phase 1, werden sie verarbeitet. Sind Dateien in Phase 2 oder 3, legen Sie sie im Eingabeordner ab, damit die Verarbeitung erneut erfolgt.
 

@@ -8,13 +8,22 @@ role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 88dc81aa-f8b2-403e-bd87-ea224ac2d0c2
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: fa7b95c2-9969-5924-a7c7-8cde1e7a2e26
+    internal-label: 3D Assets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 98%
-
+source-wordcount: '605'
+ht-degree: 99%
 ---
-
 # Vorschau von 3D-Assets in Adobe Experience Manager {#previewing-3d-assets-aem}
 
 | Version | Artikel-Link |
@@ -60,8 +69,8 @@ Wenn Sie die Kamera interaktiv handhaben, muss darüber hinaus die Kapazität de
 
 **So erstellen Sie eine Vorschau von 3D-Assets in Experience Manager:**
 
-1. Stellen Sie sicher, dass Sie 3D-Assets in Experience Manager hochgeladen haben.
-Siehe [Unterstützte Formate für die 3D-Vorschau](#supported-3d-previewing-assets) und [Assets hochladen](/help/assets/manage-assets.md#uploading-assets).
+1. Stellen Sie sicher, dass Sie 3D-Assets in Adobe Experience Manager hochgeladen haben.
+Siehe [Unterstützte Formate für die 3D-Vorschau](#supported-3d-previewing-assets) und [Hochladen von Assets](/help/assets/manage-assets.md#uploading-assets).
 1. Klicken Sie in Experience Manager auf der Seite **[!UICONTROL Navigation]** auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
 
    ![Navigationsseite](/help/assets/assets-dm/navigation-assets.png)

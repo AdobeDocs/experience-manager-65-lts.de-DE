@@ -10,13 +10,25 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 0c20efb1-9b01-41ef-b38d-261fb4b0ff91
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '6780'
 ht-degree: 97%
-
 ---
-
 # Geschlossene Benutzergruppen in AEM{#closed-user-groups-in-aem}
 
 ## Einführung {#introduction}
@@ -101,10 +113,10 @@ Die folgenden Best Practices sollten bei der Definition des eingeschränkten Les
 * Erstellen Sie ein Bedrohungsmodell für die Daten oder Inhalte, die geschützt werden müssen, um Bedrohungsgrenzen zu identifizieren und ein klares Bild der Vertraulichkeit der Daten und der Rollen zu erhalten, die mit dem autorisierten Zugriff verbunden sind
 * Modellieren Sie die Repository-Inhalte und CUGs unter Berücksichtigung allgemeiner Aspekte bezüglich der Autorisierung und Best Practices:
 
-   * Denken Sie daran, dass Leseberechtigungen nur gewährt werden, wenn eine bestimmte CUG und die Prüfung anderer in der Einrichtung bereitgestellter Module einem bestimmten Subjekt erlauben, ein bestimmtes Repository-Element zu lesen
-   * Vermeiden Sie die Erstellung überflüssiger CUGs, wenn der Lesezugriff bereits von anderen Autorisierungsmodulen eingeschränkt wird.
-   * Ein übermäßiger Bedarf an verschachtelten CUGs weist möglicherweise auf Fehler beim Content-Design hin.
-   * Ein übermäßiger Bedarf an CUGs (z. B. auf jeder Seite) weist möglicherweise darauf hin, dass ein benutzerdefiniertes Autorisierungsmodell besser geeignet wäre, um den Sicherheitsanforderungen der vorliegenden Anwendung und Inhalte gerecht zu werden.
+  * Denken Sie daran, dass Leseberechtigungen nur gewährt werden, wenn eine bestimmte CUG und die Prüfung anderer in der Einrichtung bereitgestellter Module einem bestimmten Subjekt erlauben, ein bestimmtes Repository-Element zu lesen
+  * Vermeiden Sie die Erstellung überflüssiger CUGs, wenn der Lesezugriff bereits von anderen Autorisierungsmodulen eingeschränkt wird.
+  * Ein übermäßiger Bedarf an verschachtelten CUGs weist möglicherweise auf Fehler beim Content-Design hin.
+  * Ein übermäßiger Bedarf an CUGs (z. B. auf jeder Seite) weist möglicherweise darauf hin, dass ein benutzerdefiniertes Autorisierungsmodell besser geeignet wäre, um den Sicherheitsanforderungen der vorliegenden Anwendung und Inhalte gerecht zu werden.
 
 * Beschränken Sie die Pfade mit Unterstützung für CUG-Richtlinien auf einige wenige Baumstrukturen im Repository, um eine optimale Leistung zu ermöglichen. Lassen Sie CUGs beispielsweise nur unterhalb des Knotens „/content“ zu, wie es seit Einführung von AEM 6.3 standardmäßig festgelegt ist.
 * CUG-Richtlinien sind darauf ausgelegt, einem kleinen Prinzipalsatz Lesezugriff zu gewähren. Ein Bedarf an einer sehr großen Anzahl an Prinzipalen deutet möglicherweise auf Fehler beim Content- bzw. Anwendungs-Design hin und sollte überdacht werden.
@@ -146,10 +158,10 @@ Nach dem Aufruf von `AuthenticationHandler.requestCredentials` versucht dieser H
 * Es wird unterschieden, ob der Grund für die Weiterleitung ein abgelaufenes Kennwort oder eine normale Anmeldeanfrage ist.
 * Bei einer regulären Anmeldung wird in der folgenden Reihenfolge überprüft, ob ein Anmeldepfad abgerufen werden kann:
 
-   * vom LoginPathProvider (entsprechend der Implementierung des neuen `com.adobe.granite.auth.requirement.impl.RequirementService`)
-   * von der veralteten CUG-Implementierung
-   * von den Anmeldeseitenzuordnungen (entsprechend der mit dem `LoginSelectorHandler` erstellten Definition)
-   * als Letztes ein Zurückgreifen auf die standardmäßige Anmeldeseite (entsprechend der mit dem `LoginSelectorHandler` erstellten Definition)
+  * vom LoginPathProvider (entsprechend der Implementierung des neuen `com.adobe.granite.auth.requirement.impl.RequirementService`)
+  * von der veralteten CUG-Implementierung
+  * von den Anmeldeseitenzuordnungen (entsprechend der mit dem `LoginSelectorHandler` erstellten Definition)
+  * als Letztes ein Zurückgreifen auf die standardmäßige Anmeldeseite (entsprechend der mit dem `LoginSelectorHandler` erstellten Definition)
 
 * Sobald anhand der oben genannten Aufrufe ein gültiger Anmeldepfad abgerufen wurde, wird die Anforderung der Benutzerin bzw. des Benutzers an diese Seite weitergeleitet.
 
@@ -158,10 +170,10 @@ Das Ziel dieser Dokumentation ist die Prüfung des Anmeldepfads, wie er von der 
 * Die Registrierung des Anmeldepfads hängt von der Unterscheidung ab, ob der Grund für die Weiterleitung ein abgelaufenes Kennwort oder eine normale Anmeldeanfrage ist.
 * Bei einer regulären Anmeldung wird in der folgenden Reihenfolge überprüft, ob ein Anmeldepfad abgerufen werden kann:
 
-   * vom `LoginPathProvider` (entsprechend der Implementierung des neuen `com.adobe.granite.auth.requirement.impl.RequirementService`)
-   * von der veralteten CUG-Implementierung
-   * von den Anmeldeseitenzuordnungen (entsprechend der mit dem `LoginSelectorHandler` erstellten Definition)
-   * als Letztes ein Zurückgreifen auf die standardmäßige Anmeldeseite (entsprechend der mit dem `LoginSelectorHandler` erstellten Definition)
+  * vom `LoginPathProvider` (entsprechend der Implementierung des neuen `com.adobe.granite.auth.requirement.impl.RequirementService`)
+  * von der veralteten CUG-Implementierung
+  * von den Anmeldeseitenzuordnungen (entsprechend der mit dem `LoginSelectorHandler` erstellten Definition)
+  * als Letztes ein Zurückgreifen auf die standardmäßige Anmeldeseite (entsprechend der mit dem `LoginSelectorHandler` erstellten Definition)
 
 * Sobald anhand der oben genannten Aufrufe ein gültiger Anmeldepfad abgerufen wurde, wird die Anforderung der Benutzerin bzw. des Benutzers an diese Seite weitergeleitet.
 
@@ -179,9 +191,9 @@ Die folgenden Best Practices sollten bei der Definition von Authentifizierungsan
 * Passen Sie Repository-Inhalte so an, dass die Authentifizierungsanforderungen für die gesamte Baumstruktur gelten, ohne verschachtelte Nebenbaumstrukturen wieder davon ausschließen zu müssen.
 * Zur Vermeidung genauer Angaben und der darauf folgenden Registrierung redundanter Anmeldepfade:
 
-   * Nutzen Sie die Vererbung und vermeiden Sie die Definition verschachtelter Anmeldepfade.
-   * Legen Sie für den optionalen Anmeldepfad keinen Wert fest, der dem Standardwert oder einem vererbten Wert entspricht.
-   * Anwendungsentwickler müssen identifizieren, welche Anmeldepfade in den globalen „login-path“-Konfigurationen (Standard und Zuordnungen) konfiguriert werden müssen, die mit dem `LoginSelectorHandler` verknüpft sind.
+  * Nutzen Sie die Vererbung und vermeiden Sie die Definition verschachtelter Anmeldepfade.
+  * Legen Sie für den optionalen Anmeldepfad keinen Wert fest, der dem Standardwert oder einem vererbten Wert entspricht.
+  * Anwendungsentwickler müssen identifizieren, welche Anmeldepfade in den globalen „login-path“-Konfigurationen (Standard und Zuordnungen) konfiguriert werden müssen, die mit dem `LoginSelectorHandler` verknüpft sind.
 
 ## Darstellung im Repository {#representation-in-the-repository}
 
@@ -488,7 +500,7 @@ In der CUG-Zuordnungsdokumentation finden Sie eine umfassende Aufstellung der Ko
 
 ### Autorisierung: Einrichtung und Konfiguration {#authorization-setup-and-configuration}
 
-Die neuen Teile für die Autorisierung gehören zum Bundle **Oak CUG Authorization** (`org.apache.jackrabbit.oak-authorization-cug`), das Teil der Standardinstallation von AEM ist. Das Bundle definiert ein separates Autorisierungsmodell, das als zusätzliche Option für die Verwaltung des Lesezugriffs vorgesehen ist.
+Die neuen Teile für die Autorisierung gehören zum Paket **Oak CUG Authorization** (`org.apache.jackrabbit.oak-authorization-cug`), das Teil der Standardinstallation von AEM ist. Das Paket definiert ein separates Autorisierungsmodell, das als zusätzliche Option für die Verwaltung des Lesezugriffs vorgesehen ist.
 
 #### Einrichten der CUG-Autorisierung {#setting-up-cug-authorization}
 
@@ -600,7 +612,7 @@ Es kann auch eine benutzerdefinierte Bereitstellung der CugExclude-Schnittstelle
 
 ### Authentifizierung: Einrichtung und Konfiguration {#authentication-setup-and-configuration}
 
-Die neuen Teile für die Authentifizierung gehören zum Bundle **Adobe Granite Authentication Handler** (`com.adobe.granite.auth.authhandler`, Version 5.6.48). Dieses Bundle ist Teil der Standardinstallation von AEM.
+Die neuen Teile für die Authentifizierung gehören zum Paket **Adobe Granite Authentication Handler** (`com.adobe.granite.auth.authhandler`, Version 5.6.48). Dieses Paket ist Teil der Standardinstallation von AEM.
 
 Um den Ersatz der Authentifizierungsanforderungen für die veraltete CUG-Unterstützung einzurichten, müssen einige OSGi-Komponenten in der jeweiligen AEM-Installation vorhanden und aktiv sein. Weitere Informationen finden Sie unten im Abschnitt **Eigenschaften von OSGi-Komponenten**.
 
@@ -753,7 +765,7 @@ Es gibt eine Einschränkung hinsichtlich der Replikation von CUG-Richtlinien. We
 
 ### Adobe Granite-Authentifizierungs-Handler {#adobe-granite-authentication-handler}
 
-Der Authentifizierungs-Handler **Adobe Granite HTTP Header Authentication Handler** im Bundle `com.adobe.granite.auth.authhandler` verweist auf die Schnittstelle `CugSupport`, die vom selben Modul definiert wird. Sie wird unter bestimmten Bedingungen zur Berechnung des Bereichs verwendet, wobei auf den mit dem Handler konfigurierten Bereich ausgewichen wird.
+Der Authentifizierungs-Handler **Adobe Granite HTTP Header Authentication Handler** im Paket `com.adobe.granite.auth.authhandler` verweist auf die Schnittstelle `CugSupport`, die vom selben Modul definiert wird. Sie wird unter bestimmten Bedingungen zur Berechnung des Bereichs verwendet, wobei auf den mit dem Handler konfigurierten Bereich ausgewichen wird.
 
 Dies wurde angepasst, um den Verweis auf `CugSupport` optional zu machen und so die größtmögliche Abwärtskompatibilität zu erreichen, falls bei einer Einrichtung die veraltete Implementierung erneut aktiviert werden soll. Für Installationen, welche die Implementierung verwenden, wird der Bereich nicht mehr aus der CUG-Implementierung extrahiert, sondern stattdessen wird der Bereich immer als mit **Adobe Granite HTTP Header Authentication Handler** definiert angezeigt.
 

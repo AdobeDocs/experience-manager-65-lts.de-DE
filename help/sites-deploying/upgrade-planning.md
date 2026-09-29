@@ -10,13 +10,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 3fe5421e-e97e-43c4-b34b-b84bf189a779
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 70%
-
 ---
-
 # Planung von Upgrades {#planning-your-upgrade}
 
 ## AEM-Upgrade - Übersicht {#aem-upgrade-overview}
@@ -119,7 +128,7 @@ Die Produktionsumgebung muss exakt dupliziert und nach dem Upgrade getestet werd
 
 Aufgrund der von Adobe-Kundinnen und -Kunden an ihren AEM-Umgebungen vorgenommenen Anpassungen, die sich hinsichtlich des Umfangs und der Art der Anpassung weitgehend unterscheiden, ist es wichtig, vor einem Upgrade den damit verbundenen Aufwand zu bestimmen. [AEM Analyzer für AEM 6.5 LTS](/help/sites-deploying/aem-analyzer.md) kann Ihnen bei der Bewertung der Komplexität des Upgrades helfen.
 
-Der [AEM Analyer für AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) liefert Ihnen eine recht genaue Schätzung dessen, was Sie während eines Upgrades in den meisten Fällen erwarten können. Für komplexere Anpassungen und Bereitstellungen, in denen inkompatible Änderungen vorhanden sind, können Sie jedoch eine Entwicklungsinstanz auf AEM 6.5 LTS upgraden. Eine Anleitung finden Sie unter [&#x200B; eines In-Place-Upgrades](/help/sites-deploying/in-place-upgrade.md). Führen Sie nach der Aktualisierung eine Reihe Feuerproben der hohen Stufe für die Umgebung durch. Ziel dieser Übung ist es nicht, den Testfallbestand vollständig abzuschließen und eine formelle Liste von Fehlern zu erstellen, sondern uns eine grobe Schätzung des Arbeitsaufwands für das Upgrade des Codes für die Kompatibilität mit AEM 6.5 LTS zu geben. In Kombination mit dem [AEM Analyzer](/help/sites-deploying/aem-analyzer.md) und den Architekturänderungen, die im vorherigen Abschnitt ermittelt wurden, kann das Projektmanagement-Team eine grobe Schätzung für die Planung des Upgrades erhalten.
+Der [AEM Analyer für AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) liefert Ihnen eine recht genaue Schätzung dessen, was Sie während eines Upgrades in den meisten Fällen erwarten können. Für komplexere Anpassungen und Bereitstellungen, in denen inkompatible Änderungen vorhanden sind, können Sie jedoch eine Entwicklungsinstanz auf AEM 6.5 LTS upgraden. Eine Anleitung finden Sie unter [ eines In-Place-Upgrades](/help/sites-deploying/in-place-upgrade.md). Führen Sie nach der Aktualisierung eine Reihe Feuerproben der hohen Stufe für die Umgebung durch. Ziel dieser Übung ist es nicht, den Testfallbestand vollständig abzuschließen und eine formelle Liste von Fehlern zu erstellen, sondern uns eine grobe Schätzung des Arbeitsaufwands für das Upgrade des Codes für die Kompatibilität mit AEM 6.5 LTS zu geben. In Kombination mit dem [AEM Analyzer](/help/sites-deploying/aem-analyzer.md) und den Architekturänderungen, die im vorherigen Abschnitt ermittelt wurden, kann das Projektmanagement-Team eine grobe Schätzung für die Planung des Upgrades erhalten.
 
 ### Erstellen des Runbooks für das Upgrade und das Rollback {#building-the-upgrade-and-rollback-runbook}
 
@@ -184,4 +193,4 @@ Sobald die endgültige Abnahme von allen Beteiligten eingegangen ist, ist es an 
 
 ![perform-upgrade](assets/perform-upgrade.png)
 
-Adobe hat in den Upgrade-Anweisungen eine Reihe von Schritten für die Validierung der Umgebung bereitgestellt. Hierzu gehören grundlegende Prüfungen wie das Überprüfen der Upgrade-Protokolle und die Verifizierung des ordnungsgemäßen Starts aller OSGi-Bundles. Adobe empfiehlt jedoch auch eine Validierung anhand eigener Nutzungsszenarien für Ihre Geschäftsprozesse. Darüber hinaus empfiehlt Adobe die Überprüfung des Zeitplans für die Online-Revisionsbereinigung von AEM sowie der zugehörigen Routinen, um sicherzustellen, dass diese nicht zu Stoßzeiten durchgeführt werden. Diese Routinen sind für die langfristige Leistungsfähigkeit von AEM von entscheidender Bedeutung.
+Adobe hat in den Upgrade-Anweisungen eine Reihe von Schritten für die Validierung der Umgebung bereitgestellt. Hierzu gehören grundlegende Prüfungen wie das Überprüfen der Upgrade-Protokolle und die Verifizierung des ordnungsgemäßen Starts aller OSGi-Pakete. Adobe empfiehlt jedoch auch eine Validierung anhand eigener Nutzungsszenarien für Ihre Geschäftsprozesse. Darüber hinaus empfiehlt Adobe die Überprüfung des Zeitplans für die Online-Revisionsbereinigung von AEM sowie der zugehörigen Routinen, um sicherzustellen, dass diese nicht zu Stoßzeiten durchgeführt werden. Diese Routinen sind für die langfristige Leistungsfähigkeit von AEM von entscheidender Bedeutung.

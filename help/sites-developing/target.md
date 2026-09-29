@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 722c8052-6b1e-4b52-a332-b549f4a6bc05
-source-git-commit: 6360a0573f3683ad491c5e9edad5d34840f98ebb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 54%
-
 ---
-
 
 # Entwicklung für zielgerichtete Inhalte {#developing-for-targeted-content}
 
@@ -205,7 +214,7 @@ Das JSP-Skript dieser Komponente generiert Aufrufe an die Target-JavaScript-API 
 
 Die standardmäßige `mbox.js`-Datei, die zum Erstellen von Mboxes verwendet wird, befindet sich unter `/etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js`. Um eine benutzerdefinierte `mbox.js`-Datei zu verwenden, fügen Sie die Datei zur Target-Cloud-Konfiguration hinzu. Um die Datei hinzuzufügen, muss die `mbox.js` Datei im Dateisystem verfügbar sein.
 
-Wenn Sie beispielsweise den Marketing Cloud ID-Service [&#128279;](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=de) verwenden möchten, müssen Sie `mbox.js` herunterladen, damit er den richtigen Wert für die `imsOrgID`-Variable enthält, die auf Ihrem Mandanten basiert. Diese Variable ist für die Integration mit dem Marketing Cloud-ID-Service erforderlich. Weitere Informationen finden Sie unter [Adobe Analytics as the Reporting Source for Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=de) und [Vor der Implementierung.](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html?lang=de)
+Wenn Sie beispielsweise den Marketing Cloud ID-Service [](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=de) verwenden möchten, müssen Sie `mbox.js` herunterladen, damit er den richtigen Wert für die `imsOrgID`-Variable enthält, die auf Ihrem Mandanten basiert. Diese Variable ist für die Integration mit dem Marketing Cloud-ID-Service erforderlich. Weitere Informationen finden Sie unter [Adobe Analytics as the Reporting Source for Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=de) und [Vor der Implementierung.](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html?lang=de)
 
 >[!NOTE]
 >
@@ -325,7 +334,7 @@ Wenn im vorherigen Beispiel die Komponente in der Kaufbestätigungsseite enthalt
 
 ## Grundlagen der Target-Komponente {#understanding-the-target-component}
 
-Die Target-Komponente ermöglicht es Autorinnen und Autoren, dynamische Mboxes aus CQ-Inhaltskomponenten zu erstellen. Weitere Informationen finden [&#x200B; unter &#x200B;](/help/sites-authoring/content-targeting-touch.md)Content-Targeting“. Die Target-Komponente befindet sich unter `/libs/cq/personalization/components/target`.
+Die Target-Komponente ermöglicht es Autorinnen und Autoren, dynamische Mboxes aus CQ-Inhaltskomponenten zu erstellen. Weitere Informationen finden [ unter ](/help/sites-authoring/content-targeting-touch.md)Content-Targeting“. Die Target-Komponente befindet sich unter `/libs/cq/personalization/components/target`.
 
 Das `target.jsp` Skript greift auf die Seiteneigenschaften zu, um die Targeting-Engine zu bestimmen, die für die Komponente verwendet werden soll, und führt dann das entsprechende Skript aus:
 

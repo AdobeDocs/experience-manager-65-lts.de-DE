@@ -9,14 +9,29 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 42c85231-9e65-4c3c-8b86-3efdaa577161
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5557'
 ht-degree: 99%
-
 ---
-
 # AEM Forms mit der JavaAPI aufrufen {#invoking-aem-forms-using-the-javaapi}
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
@@ -224,7 +239,7 @@ In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die vom Verbindungsmo
   <tr>
    <th><p>File</p> </th>
    <th><p>Beschreibung</p> </th>
-   <th><p>Ort</p> </th>
+   <th><p>Speicherort</p> </th>
   </tr>
  &lt;/thead align="left"&gt;
  <tbody>
@@ -423,21 +438,21 @@ Um einen AEM Forms-Dienst erfolgreich aufzurufen, legen Sie die folgenden Verbin
 
 * **DSC_DEFAULT_EJB_ENDPOINT:** Wenn Sie den EJB-Verbindungsmodus verwenden, stellt dieser Wert die URL des J2EE-Anwendungs-Servers dar, auf dem AEM Forms implementiert ist. Um AEM Forms remote aufzurufen, geben Sie den Namen des J2EE-Anwendungs-Servers an, auf dem AEM Forms implementiert ist. Wenn sich Ihre Client-Anwendung auf demselben J2EE-Anwendungsserver befindet, können Sie `localhost`angeben. Geben Sie abhängig davon, auf welchem J2EE-Anwendungs-Server AEM Forms bereitgestellt ist, einen der folgenden Werte an:
 
-   * JBoss: `https://<ServerName>:8080 (default port)`
-   * WebSphere: `iiop://<ServerName>:2809 (default port)`
-   * WebLogic: `t3://<ServerName>:7001 (default port)`
+  * JBoss: `https://<ServerName>:8080 (default port)`
+  * WebSphere: `iiop://<ServerName>:2809 (default port)`
+  * WebLogic: `t3://<ServerName>:7001 (default port)`
 
 * **DSC_DEFAULT_SOAP_ENDPOINT**: Wenn Sie den SOAP-Verbindungsmodus verwenden, stellt dieser Wert den Endpunkt dar, an den eine Aufrufanfrage gesendet wird. Um AEM Forms remote aufzurufen, geben Sie den Namen des J2EE-Anwendungs-Servers an, auf dem AEM Forms implementiert ist. Wenn sich Ihre Client-Anwendung auf demselben J2EE-Anwendungsserver befindet, können Sie `localhost`angeben (z. B. `http://localhost:8080`.)
 
-   * Der Portwert `8080` gilt, wenn die J2EE-Anwendung JBoss ist. Wenn der J2EE-Anwendungsserver IBM WebSphere ist, verwenden Sie Port `9080`. Wenn der J2EE-Anwendungsserver WebLogic ist, verwenden Sie Port `7001`. (Diese Werte sind standardmäßige Port-Werte. Wenn Sie den Port-Wert ändern, verwenden Sie die entsprechende Port-Nummer.)
+  * Der Portwert `8080` gilt, wenn die J2EE-Anwendung JBoss ist. Wenn der J2EE-Anwendungsserver IBM WebSphere ist, verwenden Sie Port `9080`. Wenn der J2EE-Anwendungsserver WebLogic ist, verwenden Sie Port `7001`. (Diese Werte sind standardmäßige Port-Werte. Wenn Sie den Port-Wert ändern, verwenden Sie die entsprechende Port-Nummer.)
 
 * **DSC_TRANSPORT_PROTOCOL**: Wenn Sie den EJB-Verbindungsmodus verwenden, geben Sie `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` für diesen Wert an. Wenn Sie den SOAP-Verbindungsmodus verwenden, geben Sie `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL` an.
 * **DSC_SERVER_TYPE**: Der J2EE-Anwendungsserver, auf dem AEM Forms bereitgestellt wird. Gültige Werte sind `JBoss`, `WebSphere`, `WebLogic`.
 
-   * Wenn Sie diese Verbindungseigenschaft auf `WebSphere` setzen, wird der Wert `java.naming.factory.initial` auf `com.ibm.ws.naming.util.WsnInitCtxFactory` gesetzt.
-   * Wenn Sie diese Verbindungseigenschaft auf `WebLogic` setzen, wird der Wert `java.naming.factory.initial` auf `weblogic.jndi.WLInitialContextFactory` gesetzt.
-   * Wenn Sie diese Verbindungseigenschaft auf `JBoss` setzen, wird der Wert `java.naming.factory.initial` ebenfalls auf `org.jnp.interfaces.NamingContextFactory` gesetzt.
-   * Sie können die Eigenschaft `java.naming.factory.initial` auf einen Wert setzen, der Ihren Anforderungen entspricht, wenn Sie die Standardwerte nicht verwenden möchten.
+  * Wenn Sie diese Verbindungseigenschaft auf `WebSphere` setzen, wird der Wert `java.naming.factory.initial` auf `com.ibm.ws.naming.util.WsnInitCtxFactory` gesetzt.
+  * Wenn Sie diese Verbindungseigenschaft auf `WebLogic` setzen, wird der Wert `java.naming.factory.initial` auf `weblogic.jndi.WLInitialContextFactory` gesetzt.
+  * Wenn Sie diese Verbindungseigenschaft auf `JBoss` setzen, wird der Wert `java.naming.factory.initial` ebenfalls auf `org.jnp.interfaces.NamingContextFactory` gesetzt.
+  * Sie können die Eigenschaft `java.naming.factory.initial` auf einen Wert setzen, der Ihren Anforderungen entspricht, wenn Sie die Standardwerte nicht verwenden möchten.
 
   >[!NOTE]
   >
@@ -475,12 +490,12 @@ Führen Sie die folgenden Aufgaben aus, um Verbindungseigenschaften festzulegen:
    * Der Aufzählungswert `ServiceClientFactoryProperties.DSC_SERVER_TYPE`
    * Ein string-Wert, der den J2EE-Anwendungs-Server angibt, auf dem AEM Forms gehostet wird. (wenn beispielsweise AEM Forms auf bereitgestellt wird, geben Sie `JBoss`JBoss an.)
 
-      1. Um die Verbindungseigenschaft `DSC_CREDENTIAL_USERNAME` festzulegen, rufen Sie die Methode `setProperty` des `java.util.Properties`-Objekts auf und übergeben die folgenden Werte:
+     1. Um die Verbindungseigenschaft `DSC_CREDENTIAL_USERNAME` festzulegen, rufen Sie die Methode `setProperty` des `java.util.Properties`-Objekts auf und übergeben die folgenden Werte:
 
    * Der Aufzählungswert `ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME`
    * Ein Zeichenfolgenwert, der den Benutzernamen angibt, der zum Aufrufen von AEM Forms erforderlich ist
 
-      1. Um die Verbindungseigenschaft `DSC_CREDENTIAL_PASSWORD` festzulegen, rufen Sie die Methode `setProperty` des `java.util.Properties`-Objekts auf und übergeben die folgenden Werte:
+     1. Um die Verbindungseigenschaft `DSC_CREDENTIAL_PASSWORD` festzulegen, rufen Sie die Methode `setProperty` des `java.util.Properties`-Objekts auf und übergeben die folgenden Werte:
 
    * Der Aufzählungswert `ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD`
    * Ein Zeichenfolgenwert, der den entsprechenden Kennwortwert angibt.

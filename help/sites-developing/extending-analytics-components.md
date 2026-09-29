@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Developer
 exl-id: 94bdf379-d10f-4dd3-b250-f2d1a3e4c251
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1279'
 ht-degree: 97%
-
 ---
-
 # Hinzufügen von Adobe Analytics-Tracking zu Komponenten{#adding-adobe-analytics-tracking-to-components}
 
 ## Einschließen des Adobe Analytics-Moduls in eine Seitenkomponente {#including-the-adobe-analytics-module-in-a-page-component}
@@ -39,7 +48,7 @@ Der ContextHub-Eintrag sollte direkt unter dem `<head>`-Tag erfolgen, während C
 
 Mit dem `contexthub`-Skript, das Sie nach dem `<head>`-Element einfügen, werden die ContextHub-Funktionen zur Seite hinzugefügt.
 
-Die `cloudservices`-Skripte, die Sie in den Abschnitten `<head>` und `<body>` hinzufügen, gelten für die Cloud Services-Konfigurationen, die der Seite hinzugefügt werden. (Falls die Seite mehr als eine Cloud-Services-Konfiguration verwendet, müssen Sie die ContextHub-JSP und Cloud-Services-JSP nur einmal einschließen.)
+Die `cloudservices`-Skripte, die Sie in den Abschnitten `<head>` und `<body>` hinzufügen, gelten für die Cloud-Services-Konfigurationen, die der Seite hinzugefügt werden. (Falls die Seite mehr als eine Cloud-Services-Konfiguration verwendet, müssen Sie die ContextHub-JSP und Cloud-Services-JSP nur einmal einschließen.)
 
 Wenn der Seite ein Adobe Analytics-Framework hinzugefügt wird, generieren die `cloudservices`-Skripte Adobe Analytics-bezogenes JavaScript und Verweise auf Client-seitige Bibliotheken, ähnlich wie im folgenden Beispiel:
 
@@ -174,25 +183,25 @@ Konfigurieren Sie die topnav-Komponente und bearbeiten Sie die JSP-Datei, um das
 1. Fügen Sie die folgende Eigenschaft zum Knoten „analytics“ hinzu, um das Tracking-Ereignis zu benennen:
 
    * Name: cq:trackevents
-   * Typ: String
+   * Typ: Zeichenfolge
    * Wert: topnavClick
 
 1. Fügen Sie die folgende Eigenschaft zum Knoten „analytics“ hinzu, um die Datenvariablen zu benennen:
 
    * Name: cq:trackvars
-   * Typ: String
+   * Typ: Zeichenfolge
    * Wert: topnavTarget,topnavLocation
 
 1. Fügen Sie die folgende Eigenschaft zum Knoten „analytics“ hinzu, um die Komponente für den Sidekick zu benennen:
 
    * Name: cq:componentName
-   * Typ: String
+   * Typ: Zeichenfolge
    * Wert: topnav (tracking)
 
 1. Fügen Sie die folgende Eigenschaft zum Knoten „analytics“ hinzu, um die Komponentengruppe für den Sidekick zu benennen:
 
    * Name: cq:componentGroup
-   * Typ: String
+   * Typ: Zeichenfolge
    * Wert: General
 
 1. Klicken Sie auf „Alle speichern“.

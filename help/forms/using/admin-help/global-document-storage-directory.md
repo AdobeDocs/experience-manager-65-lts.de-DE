@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 9a93b8f9-33cb-4aec-81e0-a1146bba955a
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 100%
-
 ---
-
 # Ordner des globalen Dokumentenspeichers{#global-document-storage-directory}
 
 Das Verzeichnis *Globaler Dokumentenspeicher (GDS)* ist ein Verzeichnis zum Speichern dauerhaft genutzter Dateien in einem Prozess. Zu diesen Dateien gehören PDFs, Richtlinien und Formularvorlagen. Dauerhaft genutzte Dateien bilden einen wichtigen Teil des Gesamtstatus zahlreicher AEM Forms-Bereitstellungen. Wenn einige oder alle dauerhaft genutzten Dokumente verloren gehen oder beschädigt werden, kann der Formular-Server instabil werden. Eingabedokumente für asynchrone Auftragsaufrufe werden ebenfalls im Verzeichnis des globalen Dokumentenspeichers gespeichert und müssen verfügbar sein, damit Anfragen verarbeitet werden können. Es ist wichtig, die Zuverlässigkeit des Dateisystems zu berücksichtigen, in dem sich das Verzeichnis des globalen Dokumentenspeichers befindet. Verwenden Sie ein Redundant Array of Independent Disks (RAID) oder eine andere Technologie, die Ihre Qualitäts- und Dienstanforderungen erfüllt.

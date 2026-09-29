@@ -6,13 +6,27 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 59b54622-55c4-4526-b584-c08bbd1d08bb
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1947'
-ht-degree: 98%
-
+source-wordcount: '2092'
+ht-degree: 95%
 ---
-
 # Erstellen oder Anpassen eines Designs für ein adaptives Formular {#introduction-to-theme}
 
 ## Gilt für {#applies-to}
@@ -31,12 +45,12 @@ In AEM Forms 6.5 ist ein Design eine AEM Client-Bibliothek, mit der Sie die Stil
 Die AEM 6.5-Umgebung bietet die folgenden aufgelisteten Designs für auf Kernkomponenten-basierte adaptive Formulare:
 
 * [Canvas-Design](https://github.com/adobe/aem-forms-theme-canvas)
-* [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
-* [Design „EASEL“](https://github.com/adobe/aem-forms-theme-easel)
+* [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
+* [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
 * [FSI-Design](https://github.com/adobe/aem-forms-theme-fsi)
-* [Design „Healthcare“](https://github.com/adobe/aem-forms-theme-healthcare)
-* [Design „Public“](https://github.com/adobe/aem-forms-theme-public)
-* [Design „Manufacturing“](https://github.com/adobe/aem-forms-theme-manufacturing)
+* [Healthcare-Design](https://github.com/adobe/aem-forms-theme-healthcare)
+* [Öffentliches Design](https://github.com/adobe/aem-forms-theme-public)
+* [Herstellungsthema](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 ## Grundlegendes zur Struktur der Designs {#understanding-structure-of-theme}
 
@@ -57,10 +71,10 @@ Ein Design ist ein Paket, das die CSS-Datei, JavaScript-Dateien und Ressourcen (
 AEM Forms 6.5 bietet die folgenden aufgelisteten Designs für Kernkomponenten-basierte adaptive Formulare.
 
 * [Canvas-Design](https://github.com/adobe/aem-forms-theme-canvas)
-* [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
-* [Design „EASEL“](https://github.com/adobe/aem-forms-theme-easel)
-* [Design „Public“](https://github.com/adobe/aem-forms-theme-public)
-* [Design „Manufacturing“](https://github.com/adobe/aem-forms-theme-manufacturing)
+* [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
+* [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
+* [Öffentliches Design](https://github.com/adobe/aem-forms-theme-public)
+* [Herstellungsthema](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 Sie können [jedes dieser Designs anpassen, um ein Design zu erstellen](#customize-a-theme-core-components).
 
@@ -111,11 +125,11 @@ Die Beispiele in diesem Dokument basieren auf dem **Canvas**-Design, aber Sie k�
 
 #### &#x200B;1. Klonen Sie das Git-Repository des Designs {#clone-git-repo-of-theme}
 
-Um ein Design für die auf Kernkomponenten-basierten adaptiven Formulare zu klonen, wählen Sie eines der folgenden Designs:
+Um ein Design für die auf Kernkomponenten basierenden adaptiven Formulare zu klonen, wählen Sie eines der folgenden Designs aus:
 
-* [Design „Canvas“](https://github.com/adobe/aem-forms-theme-canvas)
-* [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
-* [Design „EASEL“](https://github.com/adobe/aem-forms-theme-easel)
+* [Canvas-Design](https://github.com/adobe/aem-forms-theme-canvas)
+* [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
+* [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
 
 Führen Sie die folgenden Anweisungen aus, um ein Design zu klonen:
 
@@ -139,7 +153,7 @@ Führen Sie die folgenden Anweisungen aus, um ein Design zu klonen:
 
 Nach erfolgreicher Ausführung des Befehls haben Sie eine lokale Kopie des Designs auf Ihrem Rechner im Ordner `aem-forms-theme-canvas` zur Verfügung.
 
-#### &#x200B;2. Passen Sie das Design an {#customize-the-theme}
+#### &#x200B;2. Anpassen des Designs {#customize-the-theme}
 
 Sie haben die Möglichkeit, einzelne Komponenten anzupassen oder Änderungen auf Design-Ebene vorzunehmen, indem Sie die globalen Variablen eines Designs verwenden. Die Änderung globaler Variablen hat einen kaskadierenden Effekt auf alle einzelnen Komponenten. Sie können beispielsweise globale Variablen verwenden, um die Rahmenfarbe aller Komponenten in einem adaptiven Formular zu ändern, oder eine dynamische Füllfarbe auf Aktionsaufruf-Schaltflächen (CTA) anzuwenden. Sie haben folgende Möglichkeiten:
 
@@ -188,7 +202,7 @@ Sie können auch die Schriftart, Farbe, Größe und andere CSS-Eigenschaften bes
 >
 > Wenn ein Stil sowohl auf Design- als auch auf Komponentenebene definiert ist, hat der auf Komponentenebene definierte Stil Priorität.
 
-#### &#x200B;3. Bereiten Sie das Design für die Bereitstellung vor. {#generate-the-clientlib}
+#### &#x200B;3. Bereit für die Bereitstellung des Designs {#generate-the-clientlib}
 
 Um ein Design in einer AEM-Instanz bereitzustellen, muss es in eine Client-Bibliothek konvertiert werden. Führen Sie die folgenden Schritte aus, um das Design in eine Client-Bibliothek zu konvertieren:
 
@@ -342,4 +356,4 @@ Entfernen nicht verwendeter oder unerwünschter Designs
 * [Erstellen oder Anpassen von Designs für auf Kernkomponenten basierende adaptive Formulare](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Erstellen einer Vorlage für auf Kernkomponenten basierende adaptive Formulare](template-editor.md)
 * [Erstellen oder Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Beispielthemenvorlagen und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de)
+* [Beispielthemen und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de)

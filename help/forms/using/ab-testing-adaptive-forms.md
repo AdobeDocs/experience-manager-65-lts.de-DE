@@ -9,13 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 5e7165e5-b2bf-4716-82d3-de02f669cd6e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 100%
-
+source-wordcount: '1613'
+ht-degree: 98%
 ---
-
 # Erstellen und Verwalten von A/B-Test für adaptive Formulare{#create-and-manage-a-b-test-for-adaptive-forms}
 
 [!BADGE Eingestellt]{type=negative tooltip="Diese Funktion wurde jetzt eingestellt"}
@@ -109,7 +125,7 @@ Sie können die Zielgruppe auswählen, wenn Sie A/B-Tests für ein Formular konf
 1. Klicken Sie auf das **Auswählen**-Tool in der Symbolleiste und wählen Sie das adaptive Formular aus.
 1. Klicken Sie in der Symbolleiste auf **Mehr** und wählen Sie **A/B-Tests konfigurieren** aus. Die Seite „A/B-Test konfigurieren“ wird geöffnet.
 
-[](assets/ab-test-configure-1.png)
+[![A/B-Testkonfigurationsseite für adaptive Formulare](assets/ab-test-configure.png)](assets/ab-test-configure-1.png)
 
 1. Geben Sie für **Name der Aktivität** den Namen des A/B-Tests ein.
 
@@ -126,7 +142,7 @@ Sie können die Zielgruppe auswählen, wenn Sie A/B-Tests für ein Formular konf
    * Beschreibung, Kennzeichnung und Hilfetext für ein Feld
    * Skripte, die den Übermittlungsfluss nicht beeinflussen oder unterbrechen
    * Validierungen (Client- und Server-seitig)
-   * Design für Erlebnis B (Sie können ein alternatives Design für Erlebnis B auswählen)
+   * Design für Erlebnis B. (Sie können ein alternatives Design für Erlebnis B auswählen)
 
 1. Wechseln Sie zur Benutzeroberfläche „Formulare und Dokumente“, wählen Sie das adaptive Formular aus, klicken Sie auf **Mehr** und wählen Sie **A/B-Tests starten** aus.
 
@@ -153,10 +169,10 @@ Anzeigen und Analysieren des A/B-Testberichts:
 
 1. Wählen Sie das adaptive Formular aus, klicken Sie auf **Mehr** und klicken Sie anschließend auf **A/B-Testbericht**. Der Bericht wird angezeigt.
 
-[](assets/ab-test-report-3.png)
+[![A/B-Testbericht](assets/ab-test-report-2.png)](assets/ab-test-report-3.png)
 
 1. Analysieren Sie den Bericht und prüfen Sie, ob genügend Datenpunkte vorhanden sind, um eines der Erlebnisse mit besseren Werten als Gewinner zu wählen. Sie können denselben A/B-Test länger laufen lassen oder einen Gewinner wählen und den A/B-Test beenden.
 1. Um einen Gewinner zu bestimmen und den A/B-Test zu beenden, klicken Sie im Berichts-Dashboard auf die Schaltfläche **A/B-Test beenden**. Sie werden in einem Dialogfeld aufgefordert, eines der beiden Erlebnisse als Gewinner zu wählen. Wählen Sie einen Gewinner und bestätigen Sie, dass Sie den A/B-Test beenden möchten.
- Alternativ dazu können Sie zuerst den Gewinner bestimmen, indem für das gewünschte Erlebnis auf **Gewinner bekanntgeben** klicken. Sie werden aufgefordert, den Gewinner zu bestätigen. Klicken Sie auf **Ja**, um den A/B-Tests zu beenden.
+Alternativ dazu können Sie zuerst den Gewinner bestimmen, indem für das gewünschte Erlebnis auf **Gewinner bekanntgeben** klicken. Sie werden aufgefordert, den Gewinner zu bestätigen. Klicken Sie auf **Ja**, um den A/B-Tests zu beenden.
 
 Wenn Sie Erlebnis A als Gewinner auswählen, wird der A/B-Test beendet und in Zukunft wird nur Erlebnis A für alle Zielgruppen angezeigt.

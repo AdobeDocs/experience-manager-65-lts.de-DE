@@ -8,13 +8,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 25dba5c5-0f27-457a-935b-c451e0bf5241
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '504'
 ht-degree: 100%
-
 ---
-
 # Speichern einer Aufgabe oder eines Formulars als Entwurf {#saving-a-task-or-form-as-a-draft}
 
 Bei der Option „Als Entwurf speichern“ wird ein Schnappschuss einer Aufgabe oder eines Formulars zusammen mit den Daten im dazugehörigen Formular gespeichert. Sie können einen Entwurf auch aus einer Vorlage erstellen. Die Entwürfe werden auf dem Mobilgerät gespeichert und mit Adobe Experience Manager Forms-Server für den späteren Abruf synchronisiert.
@@ -41,6 +55,6 @@ Sie können Entwürfe sowohl im Online- als auch im Offline-Modus verwerfen. Bei
 Führen Sie die folgenden Schritte aus, um einen Entwurf zu löschen:
 
 1. Navigieren Sie in der AEM Forms-App zu **Formulare**.
-1. Wählen Sie **Entwürfe** aus der Dropdown-Liste neben „Suchen“. 
+1. Wählen Sie **Entwürfe** aus der Dropdown-Liste neben „Suchen“.
 1. Bei einem Formular mit dem Bearbeitungssymbol ![edit-draft-app](assets/edit-draft-app.png) handelt es sich um einen Entwurf. Wählen Sie die Auslassungspunkte neben dem Entwurf aus.
 1. Wählen Sie in den Optionen, die bei Auswahl der Auslassungspunkte angezeigt werden, die Option **Entwurf löschen** aus.

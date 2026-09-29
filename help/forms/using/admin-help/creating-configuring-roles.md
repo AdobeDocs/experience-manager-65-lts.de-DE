@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: c68c602f-fa93-4e3d-9a8c-b61c3ab53000
-source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2503'
 ht-degree: 99%
-
 ---
-
 # Erstellen und Konfigurieren von Rollen{#creating-and-configuring-roles}
 
 Auf den Web-Seiten zur Benutzerverwaltung können Sie Benutzenden und Gruppen Rollen zuweisen, die bereits Teil der Benutzerverwaltungsdatenbank sind. Sie können auch Rollen erstellen, bearbeiten und löschen.
@@ -79,7 +94,7 @@ Je nach installierten AEM Forms-Komponenten können die folgenden zusätzlichen 
 
 **AEM Forms-Workspace-Administrator**: Kann Einstellungen auf der Workspace-Seite in der Administration-Console anzeigen und ändern
 
-***Hinweis &#x200B;**: Die Flex Workspace wird für die AEM Forms-Version nicht mehr unterstützt.*
+***Hinweis **: Die Flex Workspace wird für die AEM Forms-Version nicht mehr unterstützt.*
 
 **Workspace-Benutzer**: Kann sich beim Workspace-Programm für Endbenutzer anmelden
 

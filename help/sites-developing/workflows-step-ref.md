@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e82d97c2-c26a-48df-9210-47dc017c68c8
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3268'
 ht-degree: 99%
-
 ---
-
 # Referenz für Workflow-Schritte {#workflow-step-reference}
 
 Workflow-Modelle beinhalten eine Reihe von Schritten unterschiedlichen Typs. Je nach Typ können diese Schritte konfiguriert und mit Parametern und Skripten erweitert werden, um die benötigten Funktionen und Steuerungsmöglichkeiten bereitzustellen.
@@ -51,7 +60,8 @@ Eine Beschreibung des Schritts.
 
 * **Zeitüberschreitung**
 
-  Der Zeitraum, nach dem für den Schritt eine Zeitüberschreitung auftritt.Folgende Optionen stehen zur Auswahl: **Aus**, **Unmittelbar**, **1 h**, **6 h**, **12 h**, **24 h**.
+  Der Zeitraum, nach dem für den Schritt eine Zeitüberschreitung auftritt.
+  Folgende Optionen stehen zur Auswahl: **Aus**, **Unmittelbar**, **1 h**, **6 h**, **12 h**, **24 h**.
 
 * **Zeitüberschreitungs-Handler**
 
@@ -67,15 +77,15 @@ Die folgenden Eigenschaften sind für viele Workflow-Schrittkomponenten auf der 
 
 * **Benachrichtigen Sie den Benutzer bzw. die Benutzerinn per E-Mail**
 
-   * Benachrichtigen Sie die Teilnehmenden, indem Sie ihnen eine E-Mail senden, wenn der Workflow den Schritt erreicht.
-   * Wenn diese Option aktiviert ist, wird eine E-Mail an den Benutzer bzw. die Benutzerin, die durch die Eigenschaft **Benutzer/Gruppe** definiert ist, oder an jedes Mitglied der Gruppe gesendet, wenn eine Gruppe definiert ist.
+  * Benachrichtigen Sie die Teilnehmenden, indem Sie ihnen eine E-Mail senden, wenn der Workflow den Schritt erreicht.
+  * Wenn diese Option aktiviert ist, wird eine E-Mail an den Benutzer bzw. die Benutzerin, die durch die Eigenschaft **Benutzer/Gruppe** definiert ist, oder an jedes Mitglied der Gruppe gesendet, wenn eine Gruppe definiert ist.
 
 * **Benutzer/Gruppe**
 
-   * Über eine Dropdown-Auswahl können Sie zu einem Benutzer bzw. einer Benutzerin oder einer Gruppe navigieren und diese auswählen.
-   * Falls Sie den Schritt einem bestimmten Benutzer bzw. Benutzerin zuweisen, kann nur diese Person Aktionen für den Schritt durchführen.
-   * Falls Sie den Schritt einer ganzen Gruppe zuweisen, erhalten alle Personen in dieser Gruppe die Aktion im **Workflow-Posteingang**, sobald der Workflow diesen Schritt erreicht.
-   * Weitere Informationen finden Sie unter [An Workflows teilnehmen](/help/sites-authoring/workflows-participating.md).
+  * Über eine Dropdown-Auswahl können Sie zu einem Benutzer bzw. einer Benutzerin oder einer Gruppe navigieren und diese auswählen.
+  * Falls Sie den Schritt einem bestimmten Benutzer bzw. Benutzerin zuweisen, kann nur diese Person Aktionen für den Schritt durchführen.
+  * Falls Sie den Schritt einer ganzen Gruppe zuweisen, erhalten alle Personen in dieser Gruppe die Aktion im **Workflow-Posteingang**, sobald der Workflow diesen Schritt erreicht.
+  * Weitere Informationen finden Sie unter [An Workflows teilnehmen](/help/sites-authoring/workflows-participating.md).
 
 ## UND-Teilung {#and-split}
 
@@ -89,8 +99,8 @@ So konfigurieren Sie die Aufspaltung:
 
 * Bearbeiten Sie die **UND-Teilungs-Eigenschaften**:
 
-   * **Name der Teilung**: Fügen Sie zur Erläuterung einen Namen ein.
-   * Wählen Sie die Anzahl der erforderlichen Verzweigungen aus. 2, 3, 4 oder 5.
+  * **Name der Teilung**: Fügen Sie zur Erläuterung einen Namen ein.
+  * Wählen Sie die Anzahl der erforderlichen Verzweigungen aus. 2, 3, 4 oder 5.
 
 * Fügen Sie den Verzweigungen Workflow-Schritte hinzu, falls erforderlich.
 
@@ -111,7 +121,7 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [Allgemein](#step-properties-common-tab)
 * **Container**
 
-   * **Unter-Workflow**: Wählen Sie den zu startenden Workflow aus.
+  * **Unter-Workflow**: Wählen Sie den zu startenden Workflow aus.
 
 ## Zum Schritt wechseln {#goto-step}
 
@@ -129,12 +139,12 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [Allgemein](#step-properties-common-tab)
 * **Prozess**
 
-   * **Target-Schritt**: Wählen Sie den auszuführenden Schritt aus, nachdem Sie die Bedingung für den Routing-Ausdruck bewertet haben.
-   * **Routing-Ausdruck**: Wählen Sie Regeldefinition, externes Skript oder ein ECMA-Skript aus, das bestimmt, ob der **Target-Schritt** ausgeführt wird.
+  * **Target-Schritt**: Wählen Sie den auszuführenden Schritt aus, nachdem Sie die Bedingung für den Routing-Ausdruck bewertet haben.
+  * **Routing-Ausdruck**: Wählen Sie Regeldefinition, externes Skript oder ein ECMA-Skript aus, das bestimmt, ob der **Target-Schritt** ausgeführt wird.
 
-      * **Regeldefinition:** Verwenden Sie den [Ausdruckseditor](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor), um die Regel zu definieren.
-      * **Externes Skript:** Der Pfad des externen Skripts.
-      * **ECMA Skript**: Das Skript, das bestimmt, ob **Zum Schritt wechseln** ausgeführt wird.
+    * **Regeldefinition:** Verwenden Sie den [Ausdruckseditor](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor), um die Regel zu definieren.
+    * **Externes Skript:** Der Pfad des externen Skripts.
+    * **ECMA Skript**: Das Skript, das bestimmt, ob **Zum Schritt wechseln** ausgeführt wird.
 
 #### Simulieren einer for-Schleife {#simulating-a-for-loop}
 
@@ -197,18 +207,18 @@ So konfigurieren Sie die Aufspaltung:
 
 * Bearbeiten Sie die **ODER-Teilungs-Eigenschaften**:
 
-   * **Allgemein**
+  * **Allgemein**
 
-      * Geben Sie den Namen der Teilung an.
+    * Geben Sie den Namen der Teilung an.
 
-   * **Verzweigungen (*x)***
+  * **Verzweigungen (*x)***
 
-      * **Verzweigung hinzufügen:** Fügen Sie dem Schritt weitere Verzweigungen hinzu.
-      * **Routing-Ausdruck auswählen**: Um die aktive Verzweigung auszuwerten, wählen Sie den Routing-Ausdruck aus. Mögliche Werte sind: Regeldefinition, externes Skript und ECMA-Skript.
-      * **Klicken, um Ausdruck hinzuzufügen**: Fügen Sie einen Ausdruck hinzu, um die aktive Verzweigung zu bewerten, wenn Sie **Regeldefinition** als Routing-Ausdruck auswählen.
-      * **Skriptpfad**: Der Pfad zu einer Datei, die das Skript zum Bewerten der aktiven Verzweigung enthält, wenn Sie **Externes Skript** als Routing-Ausdruck auswählen.
-      * **Skript**: Fügen Sie das Skript in das Feld ein, um die aktive Verzweigung zu bewerten, wenn Sie **ECMA-Skript** als Routing-Ausdruck auswählen.
-      * **Standardroute**: Im Falle mehrerer Verzweigungen wird die Standardverzweigung befolgt. Sie können nur eine Verzweigung als Standard festlegen.
+    * **Verzweigung hinzufügen:** Fügen Sie dem Schritt weitere Verzweigungen hinzu.
+    * **Routing-Ausdruck auswählen**: Um die aktive Verzweigung auszuwerten, wählen Sie den Routing-Ausdruck aus. Mögliche Werte sind: Regeldefinition, externes Skript und ECMA-Skript.
+    * **Klicken, um Ausdruck hinzuzufügen**: Fügen Sie einen Ausdruck hinzu, um die aktive Verzweigung zu bewerten, wenn Sie **Regeldefinition** als Routing-Ausdruck auswählen.
+    * **Skriptpfad**: Der Pfad zu einer Datei, die das Skript zum Bewerten der aktiven Verzweigung enthält, wenn Sie **Externes Skript** als Routing-Ausdruck auswählen.
+    * **Skript**: Fügen Sie das Skript in das Feld ein, um die aktive Verzweigung zu bewerten, wenn Sie **ECMA-Skript** als Routing-Ausdruck auswählen.
+    * **Standardroute**: Im Falle mehrerer Verzweigungen wird die Standardverzweigung befolgt. Sie können nur eine Verzweigung als Standard festlegen.
 
   >[!NOTE]
   >
@@ -268,7 +278,7 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [Benutzer/Gruppe](#step-properties-user-group-tab)
 * **Dialogfeld**
 
-   * **Dialogpfad**: Der Pfad zum Dialogfeldknoten des [von Ihnen erstellten Dialogfelds](#dialog-participant-step-creating-a-dialog).
+  * **Dialogpfad**: Der Pfad zum Dialogfeldknoten des [von Ihnen erstellten Dialogfelds](#dialog-participant-step-creating-a-dialog).
 
 #### Dialogfeld „Teilnehmerschritt“ – Erstellen eines Dialogfelds {#dialog-participant-step-creating-a-dialog}
 
@@ -283,18 +293,18 @@ Sie können Widget-Daten in der Workflow-Payload oder in den Metadaten des Arbei
 
 * **Daten mit der Payload speichern**
 
-   * Um Widget-Daten als Eigenschaft der Workflow-Payload zu speichern, verwenden Sie folgendes Format für den Wert der name-Eigenschaft des Widget-Knotens:
-     `./jcr:content/nodename`
+  * Um Widget-Daten als Eigenschaft der Workflow-Payload zu speichern, verwenden Sie folgendes Format für den Wert der name-Eigenschaft des Widget-Knotens:
+    `./jcr:content/nodename`
 
-   * Die Daten werden in der `nodename`-Eigenschaft des Payload-Knotens gespeichert. Wenn der Knoten diese Eigenschaft nicht enthält, wird die Eigenschaft erstellt.
-   * Wenn Daten bei der Payload gespeichert werden, wird der Wert der Eigenschaft bei nachfolgender Verwendung des Dialogfelds mit derselben Payload überschrieben.
+  * Die Daten werden in der `nodename`-Eigenschaft des Payload-Knotens gespeichert. Wenn der Knoten diese Eigenschaft nicht enthält, wird die Eigenschaft erstellt.
+  * Wenn Daten bei der Payload gespeichert werden, wird der Wert der Eigenschaft bei nachfolgender Verwendung des Dialogfelds mit derselben Payload überschrieben.
 
 * **Speichern von Daten mit dem Arbeitselement**
 
-   * Um Widget-Daten als Eigenschaft der Metadaten des Arbeitselements zu speichern, verwenden Sie das folgende Format für den Wert der name-Eigenschaft:
-     `nodename`
+  * Um Widget-Daten als Eigenschaft der Metadaten des Arbeitselements zu speichern, verwenden Sie das folgende Format für den Wert der name-Eigenschaft:
+    `nodename`
 
-   * Die Daten werden in der `nodename`-Eigenschaft der `metadata` des Arbeitselements gespeichert. Die Daten werden beibehalten, wenn das Dialogfeld anschließend mit derselben Payload verwendet wird.
+  * Die Daten werden in der `nodename`-Eigenschaft der `metadata` des Arbeitselements gespeichert. Die Daten werden beibehalten, wenn das Dialogfeld anschließend mit derselben Payload verwendet wird.
 
 #### Dialogfeld „Teilnehmerschritt“ – Dialogfelddefinition {#dialog-participant-step-dialog-definition}
 
@@ -384,13 +394,13 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [Allgemein](#step-properties-common-tab)
 * **Teilnehmerauswahl**
 
-   * **Teilnehmerauswahl**: Der Name der [Teilnehmerauswahl, die Sie erstellen](#developingtheparticipantchooser).
-   * **Argumente**: Alle erforderlichen Argumente.
-   * **E-Mail**: Ob eine E-Mail-Benachrichtigung an Benutzer bzw. Benutzerinnen gesendet werden soll.
+  * **Teilnehmerauswahl**: Der Name der [Teilnehmerauswahl, die Sie erstellen](#developingtheparticipantchooser).
+  * **Argumente**: Alle erforderlichen Argumente.
+  * **E-Mail**: Ob eine E-Mail-Benachrichtigung an Benutzer bzw. Benutzerinnen gesendet werden soll.
 
 * **Dialogfeld**
 
-   * **Dialogpfad**: Der Pfad zum Dialogknoten des [Dialogfelds, das Sie erstellen (wie mit dem **Dialogfeld „Teilnehmerschritt“**)](#dialog-participant-step-creating-a-dialog).
+  * **Dialogpfad**: Der Pfad zum Dialogknoten des [Dialogfelds, das Sie erstellen (wie mit dem **Dialogfeld „Teilnehmerschritt“**)](#dialog-participant-step-creating-a-dialog).
 
 #### Dynamischer Teilnehmerschritt – Schritt zur Entwicklung der Teilnehmerauswahl {#dynamic-participant-step-developing-the-participant-chooser}
 
@@ -429,9 +439,9 @@ Erstellen Sie einen OSGi-Dienst oder ein ECMAScript, das Benutzer bzw. Benutzeri
 
   Dienste müssen die Schnittstelle [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) implementieren. Die Schnittstelle definiert die folgenden Mitglieder:
 
-   * `SERVICE_PROPERTY_LABEL`-Feld: Geben Sie in diesem Feld den Namen der Teilnehmerauswahl an. Der Name wird in einer Liste der verfügbaren Teilnehmerauswahlen in den Eigenschaften **Dynamischer Teilnehmer – Schritt** angezeigt.
+  * `SERVICE_PROPERTY_LABEL`-Feld: Geben Sie in diesem Feld den Namen der Teilnehmerauswahl an. Der Name wird in einer Liste der verfügbaren Teilnehmerauswahlen in den Eigenschaften **Dynamischer Teilnehmer – Schritt** angezeigt.
 
-   * `getParticipant`-Methode: Gibt die dynamisch aufgelöste Prinzipal-ID als `String`-Wert zurück.
+  * `getParticipant`-Methode: Gibt die dynamisch aufgelöste Prinzipal-ID als `String`-Wert zurück.
 
   >[!CAUTION]
   >
@@ -440,7 +450,7 @@ Erstellen Sie einen OSGi-Dienst oder ein ECMAScript, das Benutzer bzw. Benutzeri
   >
   >Eine Gruppen-ID kann jedoch nur für einen **Teilnehmerschritt** verwendet werden, wenn eine Liste der Teilnehmenden zurückgegeben wird. Für einen **Dynamischen Teilnehmerschritt** wird eine leere Liste zurückgegeben und kann nicht für die Delegierung verwendet werden.
 
-  Um die Implementierung für **Dynamische Teilnehmerschritt**-Komponenten verfügbar zu machen, fügen Sie die Java™-Klasse zum OSGi-Bundle hinzu, das den Dienst exportiert, und stellen Sie das Bundle auf dem AEM-Server bereit.
+  Um die Implementierung für **Dynamische Teilnehmerschritt**-Komponenten verfügbar zu machen, fügen Sie die Java™-Klasse zum OSGi-Paket hinzu, das den Dienst exportiert, und stellen Sie das Paket auf dem AEM-Server bereit.
 
   >[!NOTE]
   >
@@ -513,7 +523,7 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [Benutzer/Gruppe](#step-properties-user-group-tab)
 * **Formular**
 
-   * **Formularpfad**: Der Pfad zum [Formular, das Sie erstellen](#form-participant-step-creating-the-form).
+  * **Formularpfad**: Der Pfad zum [Formular, das Sie erstellen](#form-participant-step-creating-the-form).
 
 #### Formular „Teilnehmerschritt“ – Erstellen des Formulars {#form-participant-step-creating-the-form}
 
@@ -552,7 +562,7 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [Allgemein](#step-properties-common-tab)
 * **Argumente**
 
-   * **Teilnehmer bzw. Teilnehmerin**: Gibt die Liste der zur Auswahl verfügbaren Benutzer bzw. Benutzerinnen an. Um einen Benutzer oder eine Benutzerin zur Liste hinzuzufügen, klicken Sie auf **Element hinzufügen** und geben Sie den Home-Pfad des Benutzerknotens oder die Benutzer-ID ein. Die Reihenfolge der Benutzer bzw. Benutzerinnen wirkt sich nicht auf die Wahrscheinlichkeit aus, ein Arbeitselement zugewiesen zu bekommen.
+  * **Teilnehmer bzw. Teilnehmerin**: Gibt die Liste der zur Auswahl verfügbaren Benutzer bzw. Benutzerinnen an. Um einen Benutzer oder eine Benutzerin zur Liste hinzuzufügen, klicken Sie auf **Element hinzufügen** und geben Sie den Home-Pfad des Benutzerknotens oder die Benutzer-ID ein. Die Reihenfolge der Benutzer bzw. Benutzerinnen wirkt sich nicht auf die Wahrscheinlichkeit aus, ein Arbeitselement zugewiesen zu bekommen.
 
 ### Workflow-Initiator-Teilnehmerauswahl {#workflow-initiator-participant-chooser}
 
@@ -577,14 +587,14 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [Allgemein](#step-properties-common-tab)
 * **Prozess**
 
-   * **Prozess**: Die auszuführende Prozessimplementierung. Wählen Sie das ECMA-Skript oder den OSGi-Dienst aus dem Dropdown-Menü aus. Informationen:
+  * **Prozess**: Die auszuführende Prozessimplementierung. Wählen Sie das ECMA-Skript oder den OSGi-Dienst aus dem Dropdown-Menü aus. Informationen:
 
-      * Die standardmäßigen ECMAScripts und OSGi-Dienste finden Sie unter [Integrierte Prozesse für Prozessschritte](/help/sites-developing/workflows-process-ref.md).
-      * Weitere Informationen zum Erstellen von ECMAScripts für einen Prozessschritt finden Sie unter [Implementieren eines Prozessschritts mit einem ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
-      * Weitere Informationen zum Erstellen von OSGi-Diensten für einen Prozessschritt finden Sie unter [Implementieren eines Prozessschritts mit einer Java™-Klasse](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
+    * Die standardmäßigen ECMAScripts und OSGi-Dienste finden Sie unter [Integrierte Prozesse für Prozessschritte](/help/sites-developing/workflows-process-ref.md).
+    * Weitere Informationen zum Erstellen von ECMAScripts für einen Prozessschritt finden Sie unter [Implementieren eines Prozessschritts mit einem ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
+    * Weitere Informationen zum Erstellen von OSGi-Diensten für einen Prozessschritt finden Sie unter [Implementieren eines Prozessschritts mit einer Java™-Klasse](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
 
-   * **Handler-Fortschritt**: Wählen Sie diese Option aus, um den Workflow nach der Ausführung automatisch mit dem nächsten Schritt fortzuführen. Wenn diese Option nicht ausgewählt ist, muss das Implementierungsskript den Workflow fortführen.
-   * **Argumente**: An den Prozess zu übergebende Argumente.
+  * **Handler-Fortschritt**: Wählen Sie diese Option aus, um den Workflow nach der Ausführung automatisch mit dem nächsten Schritt fortzuführen. Wenn diese Option nicht ausgewählt ist, muss das Implementierungsskript den Workflow fortführen.
+  * **Argumente**: An den Prozess zu übergebende Argumente.
 
 ## Variable festlegen {#set-variable}
 
@@ -599,15 +609,15 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 * [Allgemein](/help/sites-developing/workflows-step-ref.md#step-properties-common-tab)
 * **Zuordnung**
 
-   * **Variable auswählen:** Verwenden Sie diese Option, um eine Variable auszuwählen und ihren Wert festzulegen.
-   * **Zuordnungsmodus auswählen:** Wählen Sie einen Zuordnungsmodus aus, um den Wert für die Variable festzulegen. Je nach Datentyp der Variablen können Sie die folgenden Optionen verwenden, um den Wert einer Variablen festzulegen:
+  * **Variable auswählen:** Verwenden Sie diese Option, um eine Variable auszuwählen und ihren Wert festzulegen.
+  * **Zuordnungsmodus auswählen:** Wählen Sie einen Zuordnungsmodus aus, um den Wert für die Variable festzulegen. Je nach Datentyp der Variablen können Sie die folgenden Optionen verwenden, um den Wert einer Variablen festzulegen:
 
-      * **Literal:** Verwenden Sie die Option, wenn Sie den genauen Wert kennen, der angegeben werden soll.
-      * **Ausdruck:** Verwenden Sie die Option, wenn der zu verwendende Wert in einem Ausdruck berechnet wird. Der Ausdruck wird im bereitgestellten Ausdruckseditor erstellt.
-      * **JSON-Punktnotation:** Verwenden Sie die Option, um einen Wert aus einer Variablen vom Typ JSON oder FDM abzurufen.
-      * **XPATH:** Verwenden Sie die Option, um einen Wert aus einer Variablen vom Typ XML abzurufen.
-      * **Relativ zur Payload:** Verwenden Sie die Option, wenn der Wert, der in einer Variablen gespeichert werden soll, unter einem Pfad relativ zur Payload verfügbar ist.
-      * **Absoluter Pfad:** Verwenden Sie die Option, wenn der Wert, der in einer Variablen gespeichert werden soll, unter einem absoluten Pfad verfügbar ist.
+    * **Literal:** Verwenden Sie die Option, wenn Sie den genauen Wert kennen, der angegeben werden soll.
+    * **Ausdruck:** Verwenden Sie die Option, wenn der zu verwendende Wert in einem Ausdruck berechnet wird. Der Ausdruck wird im bereitgestellten Ausdruckseditor erstellt.
+    * **JSON-Punktnotation:** Verwenden Sie die Option, um einen Wert aus einer Variablen vom Typ JSON oder FDM abzurufen.
+    * **XPATH:** Verwenden Sie die Option, um einen Wert aus einer Variablen vom Typ XML abzurufen.
+    * **Relativ zur Payload:** Verwenden Sie die Option, wenn der Wert, der in einer Variablen gespeichert werden soll, unter einem Pfad relativ zur Payload verfügbar ist.
+    * **Absoluter Pfad:** Verwenden Sie die Option, wenn der Wert, der in einer Variablen gespeichert werden soll, unter einem absoluten Pfad verfügbar ist.
 
-   * **Wert angeben:** Um die Variable zuzuordnen, geben Sie einen Wert an. Der Wert, den Sie in diesem Feld angeben, hängt vom Zuordnungsmodus ab.
-   * **Zuordnung hinzufügen:** Verwenden Sie diese Option, um weitere Zuordnungen hinzuzufügen, um einen Wert für die Variable festzulegen.
+  * **Wert angeben:** Um die Variable zuzuordnen, geben Sie einen Wert an. Der Wert, den Sie in diesem Feld angeben, hängt vom Zuordnungsmodus ab.
+  * **Zuordnung hinzufügen:** Verwenden Sie diese Option, um weitere Zuordnungen hinzuzufügen, um einen Wert für die Variable festzulegen.

@@ -4,13 +4,23 @@ description: AEM Forms unterstützt benutzerdefinierte Funktionen, sodass Benutz
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
 exl-id: 40329e80-d794-4e43-8ed4-d88ce3c48751
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 100%
-
+source-wordcount: '1071'
+ht-degree: 95%
 ---
-
 # Benutzerdefinierte Funktionen in adaptiven Formularen
 
 ## Einführung
@@ -55,47 +65,48 @@ Stellen Sie sicher, dass die benutzerdefinierte Funktion, die Sie schreiben, mit
 
 Unterstützte `jsdoc`-Tags:
 
-* **Private** (Privat)
-Syntax: `@private` Eine Private-Funktion ist nicht als benutzerdefinierte Funktion enthalten.
+* **Privat**
+Syntax: `@private`
+Eine private Funktion ist nicht als benutzerdefinierte Funktion enthalten.
 
-* **Name**
+* **name**
 Syntax: `@name funcName <Function Name>`
-Alternativ dazu ist es möglich`,``@function funcName <Function Name>` **oder** `@func` `funcName <Function Name>` zu verwenden.
+Alternativ `,` Sie Folgendes verwenden: `@function funcName <Function Name>` **oder** `@func` `funcName <Function Name>`.
   `funcName` ist der Name der Funktion (Leerzeichen sind nicht zulässig).
   `<Function Name>` ist der Anzeigename der Funktion.
 
-* **Member** (Mitglied)
+* **Mitglied**
 Syntax: `@memberof namespace`
-Bindet einen Namespace an die Funktion.
+Fügt der Funktion einen Namespace an.
 
 * **Parameter**
 Syntax: `@param {type} name <Parameter Description>`
-Alternativ dazu ist es möglich, `@argument` `{type} name <Parameter Description>` **oder** `@arg` `{type}` `name <Parameter Description>` zu verwenden.
+Alternativ können Sie Folgendes verwenden: `@argument` `{type} name <Parameter Description>` **oder** `@arg` `{type}` `name <Parameter Description>`.
 Zeigt die von der Funktion verwendeten Parameter an. In einer Funktion können mehrere Parameter-Tags vorhanden sein (je ein Tag für jeden Parameter in der Reihenfolge ihres Auftretens).
   `{type}` gibt den Parametertyp an. Zulässige Parametertypen sind:
 
-   1. Zeichenfolge
-   2. Number (Zahl)
-   3. Boolesch
-   4. Scope (Umfang)
+  1. Zeichenfolge
+  2. Number (Zahl)
+  3. Boolesch
+  4. Scope (Umfang)
 
   Der Umfang wird für die Verweise auf Felder eines adaptiven Formulars verwendet. Wenn ein Formular verzögertes Laden (Lazy Loading) verwendet, können Sie `scope` verwenden, um auf dessen Felder zuzugreifen. Sie können auf Felder zugreifen, wenn die Felder geladen wurden oder wenn die Felder als „global“ gekennzeichnet sind.
 
-  Alle anderen Parametertypen fallen in eine der oben genannten Kategorien. Keine Angabe wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Bei den Typen wird nicht zwischen Groß- und Kleinschreibung unterschieden. Leerzeichen sind im Parameter `name` unzulässig. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
+  Alle anderen Parametertypen fallen in eine der oben genannten Kategorien. „None“ (Keiner) wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Bei den Typen wird nicht zwischen Groß- und Kleinschreibung unterschieden. Leerzeichen sind im Parameter `name` unzulässig. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
-* **Return Type** (Rückgabetyp)
+* **Return Type**
 Syntax: `@return {type}`
-Alternativ ist es möglich, `@returns {type}` zu verwenden.
+Alternativ können Sie `@returns {type}` verwenden.
 Fügt Informationen über die Funktion hinzu (z. B. ihren Zweck).
   {type} gibt den Rückgabetyp der Funktion an. Zulässige Rückgabetypen sind:
 
-   1. Zeichenfolge
-   1. Number (Zahl)
-   1. Boolesch
+  1. Zeichenfolge
+  1. Number (Zahl)
+  1. Boolesch
 
-  Alle anderen Rückgabetypen fallen in eine der oben genannten Kategorien. Keine Angabe wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Bei Rückgabetypen wird nicht zwischen Groß- und Kleinschreibung unterschieden.
+  Alle anderen Rückgabetypen fallen in eine der oben genannten Kategorien. „None“ (Keiner) wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Bei Rückgabetypen wird nicht zwischen Groß- und Kleinschreibung unterschieden.
 
-* **This** (Dieses)
+* **this**
 Syntax: `@this currentComponent`
 
   Verwenden Sie @this, um auf die Komponente des adaptiven Formulars zu verweisen, in der die Regel geschrieben wird.

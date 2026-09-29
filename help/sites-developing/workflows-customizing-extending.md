@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 9036e26c-74cd-4013-a63d-70ece0f80904
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3611'
 ht-degree: 94%
-
 ---
-
 # Erweitern der Workflow-Funktionen{#extending-workflow-functionality}
 
 In diesem Thema wird beschrieben, wie Sie benutzerdefinierte Schritt-Komponenten für Ihre Workflows entwickeln und wie Sie anschließend programmatisch mit Workflows interagieren können.
@@ -63,8 +72,8 @@ Die Komponente `/libs/cq/workflow/components/model/step` ist der nächste gemein
 
   Ein Dialogfeld mit den folgenden Registerkarten:
 
-   * **Allgemein**: zum Bearbeiten des Titels und der Beschreibung.
-   * **Erweitert**: zum Bearbeiten der Eigenschaften von E-Mail-Benachrichtigungen.
+  * **Allgemein**: zum Bearbeiten des Titels und der Beschreibung.
+  * **Erweitert**: zum Bearbeiten der Eigenschaften von E-Mail-Benachrichtigungen.
 
   ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
@@ -104,9 +113,9 @@ Für das Erben von einer der (vorhandenen) Basis-Schritt-Komponenten fügen Sie 
 * Typ: `String`
 * Wert: einer der folgenden Pfade, die zu einer Basiskomponente verweisen:
 
-   * `cq/workflow/components/model/process`
-   * `cq/workflow/components/model/participant`
-   * `cq/workflow/components/model/dynamic_participant`
+  * `cq/workflow/components/model/process`
+  * `cq/workflow/components/model/participant`
+  * `cq/workflow/components/model/dynamic_participant`
 
 ### Festlegen von Standardtitel und -Beschreibung für Schrittinstanzen {#specifying-the-default-title-and-description-for-step-instances}
 
@@ -240,16 +249,16 @@ Fügen Sie unter dem Knoten `cq:Component` den Knoten `cq:EditConfig` hinzu. Fü
 
 * Name: `PROCESS_AUTO_ADVANCE`
 
-   * Typ: `Boolean`
-   * Wert:
+  * Typ: `Boolean`
+  * Wert:
 
-      * Bei `true` führt der Workflow diesen Schritt aus und wird fortgesetzt. Dies ist die standardmäßige und empfohlene Einstellung.
-      * Bei `false` führt der Workflow den Schritt durch und wird dann angehalten. Hier ist ein zusätzlicher Eingriff erforderlich, weshalb der Wert `true` empfohlen wird.
+    * Bei `true` führt der Workflow diesen Schritt aus und wird fortgesetzt. Dies ist die standardmäßige und empfohlene Einstellung.
+    * Bei `false` führt der Workflow den Schritt durch und wird dann angehalten. Hier ist ein zusätzlicher Eingriff erforderlich, weshalb der Wert `true` empfohlen wird.
 
 * Name: `DO_NOTIFY`
 
-   * Typ: `Boolean`
-   * Wert: gibt an, ob E-Mail-Benachrichtigungen für Benutzerteilnahme-Schritte versendet werden sollen (wobei davon ausgegangen wird, dass der E-Mail-Server korrekt konfiguriert ist)
+  * Typ: `Boolean`
+  * Wert: gibt an, ob E-Mail-Benachrichtigungen für Benutzerteilnahme-Schritte versendet werden sollen (wobei davon ausgegangen wird, dass der E-Mail-Server korrekt konfiguriert ist)
 
 ## Aufbewahren von Daten und Zugreifen auf Daten {#persisting-and-accessing-data}
 
@@ -257,7 +266,7 @@ Fügen Sie unter dem Knoten `cq:Component` den Knoten `cq:EditConfig` hinzu. Fü
 
 Sie können Workflow-Metadaten verwenden, um Informationen aufzubewahren, die während der Lebensdauer des Workflows – und zwischen den Schritten – benötigt werden. Eine gängige Anforderung an Workflow-Schritte besteht darin, Daten für die zukünftige Verwendung beizubehalten oder die gespeicherten Daten aus vorherigen Schritten abzurufen.
 
-Workflow-Metadaten werden in einem [`MetaDataMap`](#metadatamaps)-Objekt gespeichert. Die Java-API stellt die Methode [`Workflow.getWorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html) bereit, die ein [`WorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html)-Objekt zurückgibt, das das entsprechende `MetaDataMap`-Objekt bereitstellt. Dieses `WorkflowData`&#x200B;`MetaDataMap`-Objekt ist für den OSGi-Dienst oder das ECMA-Skript einer Schritt-Komponente verfügbar.
+Workflow-Metadaten werden in einem [`MetaDataMap`](#metadatamaps)-Objekt gespeichert. Die Java-API stellt die Methode [`Workflow.getWorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html) bereit, die ein [`WorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html)-Objekt zurückgibt, das das entsprechende `MetaDataMap`-Objekt bereitstellt. Dieses `WorkflowData``MetaDataMap`-Objekt ist für den OSGi-Dienst oder das ECMA-Skript einer Schritt-Komponente verfügbar.
 
 #### Java {#java}
 
@@ -838,12 +847,12 @@ Eine einfache Möglichkeit, mit der Erstellung Ihres eigenen benutzerdefinierten
 
      Muss eine der folgenden sein:
 
-      * Zusammenarbeits-Workflow
-      * DAM-Workflow
-      * Formular-Workflow
-      * Projekte
-      * WCM-Workflow
-      * Workflow
+     * Zusammenarbeits-Workflow
+     * DAM-Workflow
+     * Formular-Workflow
+     * Projekte
+     * WCM-Workflow
+     * Workflow
 
    ![wf-35](assets/wf-35.png)
 

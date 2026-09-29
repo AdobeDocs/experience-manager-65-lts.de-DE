@@ -9,13 +9,28 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 1ab2fe5d-5fac-4a11-8d27-7c7607f98653
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 97%
-
+source-wordcount: '285'
+ht-degree: 96%
 ---
-
 # Optimieren von HTML5-Formularen {#optimizing-html-forms}
 
 HTML5-Formulare rendern Formulare im HTML5-Format. Die Ausgabe kann stark von Faktoren wie der Formulargröße und den Bildern im Formular abhängen. Die empfohlene Vorgehensweise zum Optimieren der Datenübertragung besteht darin, die HTML-Antwort unter Verwendung des Webservers zu komprimieren, über den die Anfrage gestellt wird. Auf diese Weise können die Antwortgröße, der Netzwerkverkehr und die für das Streaming der Daten zwischen dem Server und dem Clientcomputer erforderliche Zeit erheblich verringert werden.
@@ -83,4 +98,4 @@ Apache kann mithilfe des HTTP- oder AJP-Protokolls mit JBoss kommunizieren.
    </Location>
    ```
 
-1. Um auf den AEM-Server zuzugreifen, verwenden Sie https://[Apache_server]:80.
+1. https:// Um auf den AEM-Server zuzugreifen, verwenden Sie [Apache_server]:80.

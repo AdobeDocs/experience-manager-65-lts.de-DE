@@ -10,13 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 exl-id: a022067a-3bbe-4bce-9d49-b813fcbf0c6f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2113'
-ht-degree: 99%
-
+source-wordcount: '2116'
+ht-degree: 97%
 ---
-
 # Entwickeln mit CRXDE Lite{#developing-with-crxde-lite}
 
 In diesem Abschnitt wird beschrieben, wie Sie Ihre Adobe Experience Manager(AEM)-Anwendung mit CRXDE Lite entwickeln.
@@ -24,12 +35,12 @@ In diesem Abschnitt wird beschrieben, wie Sie Ihre Adobe Experience Manager(AEM)
 Weitere Informationen zu den verschiedenen verfügbaren Entwicklungsumgebungen finden Sie in der Übersichtsdokumentation.
 
 CRXDE Lite ist in AEM integriert und ermöglicht Ihnen die Durchführung von Standardentwicklungsaufgaben im Browser. Mit CRXDE Lite können Sie ein Projekt erstellen und Dateien (wie .jsp und .java), Ordner, Vorlagen, Komponenten, Dialogfelder, Knoten, Eigenschaften und Pakete erstellen und bearbeiten, während Sie protokollieren.
-CRXDE Lite wird empfohlen, wenn Sie keinen direkten Zugriff auf den AEM-Server haben. Oder, wenn Sie eine Anwendung entwickeln, indem Sie die im Lieferumfang enthaltenen Komponenten und Java™-Bundle erweitern oder modifizieren, oder wenn Sie keinen dedizierten Debugger, Code-Vervollständigung und Syntaxhervorhebung benötigen.
+CRXDE Lite wird empfohlen, wenn Sie keinen direkten Zugriff auf den AEM-Server haben. Oder, wenn Sie eine Anwendung entwickeln, indem Sie die im Lieferumfang enthaltenen Komponenten und Java™-Pakete erweitern oder modifizieren, oder wenn Sie keinen dedizierten Debugger, Code-Vervollständigung und Syntaxhervorhebung benötigen.
 
 >[!NOTE]
 >
 >Ab AEM 6.5.5.0 ist der anonyme Zugriff auf CRXDE Lite nicht mehr möglich.
->&#x200B;>Benutzer werden zum Anmeldebildschirm weitergeleitet.
+>Benutzer werden zum Anmeldebildschirm weitergeleitet.
 
 
 >[!NOTE]
@@ -60,7 +71,7 @@ CRXDE Lite bietet folgende Funktionen:
  <tbody>
   <tr>
    <td>Obere Wechselleiste</td>
-   <td>Schnelles Wechseln zwischen CRXDE Lite, Package Manager und Package Share.</td>
+   <td>Schnelles Wechseln zwischen CRXDE Lite, Paket-Manager und Package Share.</td>
   </tr>
   <tr>
    <td>Knotenpfad-Widget</td>
@@ -72,7 +83,7 @@ CRXDE Lite bietet folgende Funktionen:
   </tr>
   <tr>
    <td>Bearbeitungsbereich</td>
-   <td><p>Registerkarte <strong>Home</strong>: Ermöglicht die Suche nach Inhalten und/oder Dokumentation sowie den Zugang zu Entwicklerressourcen (Dokumentation, Entwickler-Blog, Knowledgebase) und Support (Adobe-Homepage und Support Center).<br /> </p> <p>Doppelklicken Sie auf eine Datei im <strong>Explorer</strong>-Bereich, um den zugehörigen Inhalt anzuzeigen. Beispielsweise eine .jsp- oder eine .java-Datei. Anschließend können Sie diesen ändern und die Änderungen speichern.</p> <p>Sobald eine Datei im <strong>Bearbeitungsbereich</strong> bearbeitet wurde, sind die folgenden Tools in der Symbolleiste verfügbar:<br /> </p> - <strong>In Struktur anzeigen</strong>: Zeigt die Datei in der Repository-Baumstruktur an.<br /> – <strong>Suchen/Ersetzen</strong>: Führt einen Suchen- oder Ersetzen-Vorgang durch.<br /> <br /> Durch einen Doppelklick auf die Statuszeile des <strong>Bearbeitungsfensters</strong> öffnen Sie das Dialogfeld <strong>Zu Zeile wechseln</strong>, in dem Sie eine bestimmte Zeilennummer eingeben können, um dorthin zu gelangen.<br /> </td>
+   <td><p>Registerkarte <strong>Home</strong>: Ermöglicht die Suche nach Inhalten und/oder Dokumentation sowie den Zugang zu Entwicklerressourcen (Dokumentation, Entwickler-Blog, Knowledgebase) und Support (Adobe-Homepage und Support Center).<br /> </p> <p>Doppelklicken Sie auf eine Datei im <strong>Explorer</strong>-Bereich, um den zugehörigen Inhalt anzuzeigen. Beispielsweise eine .jsp- oder eine .java-Datei. Anschließend können Sie diesen ändern und die Änderungen speichern.</p> <p>Sobald eine Datei im <strong>Bearbeitungsbereich</strong> bearbeitet wurde, sind die folgenden Tools in der Symbolleiste verfügbar:<br /> </p> - <strong>In Baumstruktur anzeigen: </strong>Zeigt die Datei in der Repository-Baumstruktur an.<br /> - <strong>Suchen/Ersetzen …</strong>: Suchen oder Ersetzen.<br /> <br /> Durch Doppelklicken auf die Statuszeile des <strong>Bearbeiten</strong>-Bereichs wird das Dialogfeld <strong>Zu Zeile wechseln</strong> geöffnet, in dem Sie eine bestimmte Zeilennummer eingeben können, um dorthin zu gelangen.<br /> </td>
   </tr>
   <tr>
    <td>Registerkarte „Eigenschaften“<br /> </td>
@@ -92,7 +103,7 @@ CRXDE Lite bietet folgende Funktionen:
   </tr>
   <tr>
    <td>Registerkarte „Build-Informationen“ <br /> </td>
-   <td>Zeigt Informationen an, wenn ein Bundle erstellt wird.<br /> </td>
+   <td>Zeigt Informationen an, wenn ein Paket erstellt wird.<br /> </td>
   </tr>
   <tr>
    <td>Aktualisieren<br /> </td>
@@ -234,9 +245,9 @@ Jetzt können Sie den Knoten an Ihre Anforderungen anpassen, indem Sie die Eigen
 
 >[!NOTE]
 >
->Die meisten Bearbeitungsvorgänge, einschließlich der Knotenerstellung, behalten alle Änderungen im Speicher und speichern sie erst beim Speichern (über die Schaltfläche „Alle speichern“) im Repository.  Einige Vorgänge wie das Verschieben werden jedoch automatisch beibehalten.
+>Die meisten Bearbeitungsvorgänge, einschließlich der Knotenerstellung, behalten alle Änderungen im Speicher und speichern sie erst beim Speichern (über die Schaltfläche „Alle speichern“) im Repository. Einige Vorgänge wie das Verschieben werden jedoch automatisch beibehalten.
 >
->Die Validierung, ob der neu erstellte Knoten vom Knotentyp des übergeordneten Knotens zugelassen ist, wird auch zuerst vom JCR-Repository ausgeführt, wenn Änderungen gespeichert werden sollen.  Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (z. B. können Sie keinen `nt:unstructured`-Knoten als untergeordneten Knoten eines `nt:folder`-Knotens erstellen).
+>Die Validierung, ob der neu erstellte Knoten vom Knotentyp des übergeordneten Knotens zugelassen ist, wird auch zuerst vom JCR-Repository ausgeführt, wenn Änderungen gespeichert werden sollen. Wenn Sie beim Speichern eines Knotens eine Fehlermeldung erhalten, überprüfen Sie, ob die Inhaltsstruktur gültig ist (z. B. können Sie keinen `nt:unstructured`-Knoten als untergeordneten Knoten eines `nt:folder`-Knotens erstellen).
 
 ## Erstellen einer Eigenschaft {#creating-a-property}
 

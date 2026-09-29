@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 743645c5-b4c9-45ff-a130-0bf72aa6e6f2
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4923'
-ht-degree: 95%
-
+source-wordcount: '5032'
+ht-degree: 94%
 ---
-
 # Erstellen von Websites mit vollem Funktionsumfang (JSP){#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
@@ -103,7 +112,7 @@ Beispieldatei static.css und Bilder
 
 1. Wenn das Element „mywebsite“ nicht in der Tabelle aufgeführt wird, aktualisieren Sie die Baumansicht bzw. die Tabelle.
 
-1. [WebDAV](/help/sites-administering/webdav-access.md) Zugriff auf die URL unter https://localhost:4502, kopieren Sie die `static.css`-Beispieldatei und `images` Ordner aus der heruntergeladenen Datei mywebsite.zip in den `/etc/designs/mywebsite` Ordner.
+1. [Verwenden von WebDAV](/help/sites-administering/webdav-access.md) Greifen Sie auf die URL unter https://localhost:4502 zu und kopieren Sie die Beispieldatei `static.css` und `images` Ordner aus der heruntergeladenen Datei mywebsite.zip in den Ordner `/etc/designs/mywebsite` .
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
@@ -493,7 +502,7 @@ Verbessern Sie das Rendering-Skript der topnav-Komponente, sodass für die Navig
 
 Diese Übung zeigt die [Verarbeitung von Sling-Anfragen](/help/sites-developing/the-basics.md#sling-request-processing). Das Skript topnav.jsp wird geändert, um ein Skript aufzurufen, das dynamisch Bilder generiert, die für die Seitennavigations-Links verwendet werden. In dieser Übung analysiert Sling die URL der Bildquelldateien, um das Skript zu bestimmen, das zum Rendern der Bilder verwendet werden soll.
 
-Die Quelle für den Bild-Link zur Seite „Produkte“ könnte beispielsweise https://localhost:4502/content/mywebsite/en/products.navimage.png sein. Sling analysiert diese URL, um den Ressourcentyp und das Skript zum Rendern der Ressource zu bestimmen:
+Die Quelle für den Bild-Link zur Seite „Produkte“ könnte beispielsweise https://localhost:4502/content/mywebsite/en/products.navimage.png lauten. Sling analysiert diese URL, um den Ressourcentyp und das Skript zum Rendern der Ressource zu bestimmen:
 
 1. Sling bestimmt `/content/mwebysite/en/products.png.` als Pfad der Ressource.
 1. Sling ordnet diesen Pfad dem Knoten `/content/mywebsite/en/products` zu.
@@ -1289,7 +1298,7 @@ Wenn Sie fertig sind, sollte Ihr Eingabefeld für die Suche auf der Seite **Eng
 1. Kopieren Sie die folgenden Knoten und fügen Sie sie in den Knoten „apps/mywebsite/components/search“ ein:
 
    * `/libs/foundation/components/search/dialog`
-   * &grave;&grave; `/libs/foundation/components/search/i18n`
+   * `` `/libs/foundation/components/search/i18n`
 
    * `/libs/foundation/components/search/icon.png`
 

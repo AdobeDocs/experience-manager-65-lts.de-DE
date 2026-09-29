@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 23fab14d-3658-4fd3-88c1-fc71f1ac0400
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1949'
 ht-degree: 89%
-
 ---
-
 # Konfigurieren von Geschäftskalendern {#configuring-business-calendars}
 
 *Geschäftskalender* definieren Geschäftstage und geschäftsfreie Tage (z. B. gesetzliche Feiertage, Wochenenden und Betriebsferien) für Ihre Organisation. Bei Verwendung von Geschäftskalendern überspringt AEM Forms geschäftsfreie Tage bei der Durchführung bestimmter Datumsberechnungen. In Workbench können Sie festlegen, ob Geschäftskalender für Ereignisse, die Benutzenden zugeordnet sind (wie Aufgabenerinnerungen, Termine und Eskalationen) oder für Aktionen, die Benutzenden nicht zugeordnet sind (wie z. B. Timer-Ereignisse und der Wait-Dienst), verwendet werden sollen.
@@ -25,7 +40,7 @@ Beispielsweise ist eine Aufgabenerinnerung so konfiguriert, dass sie drei Werkta
 
 >[!NOTE]
 >
->Bei der Berechnung von Daten und Uhrzeiten mithilfe von Geschäftskalendern verwendet AEM Forms das Datum und die Uhrzeit des Servers, auf dem es ausgeführt wird, und passt nicht den Unterschied zwischen Zeitzonen an. Wenn beispielsweise eine Aufgabenerinnerung um 10:00 :00 auf einem Server in London stattfinden soll, der Benutzer, der die Erinnerung erhält, sich jedoch in New York City befindet, würde der Benutzer die Erinnerung um 5:00 :00 Ortszeit erhalten.
+>Bei der Berechnung von Daten und Uhrzeiten mithilfe von Geschäftskalendern verwendet AEM Forms das Datum und die Uhrzeit des Servers, auf dem es ausgeführt wird, und passt nicht den Unterschied zwischen Zeitzonen an. Wenn beispielsweise eine Aufgabenerinnerung um 10:00 Uhr auf einem Server in London stattfinden soll, der Benutzer, der die Erinnerung erhält, sich jedoch in New York City befindet, würde der Benutzer die Erinnerung um 5:00 Uhr Ortszeit erhalten.
 
 ## Verwenden des Standardgeschäftskalenders {#using-the-default-business-calendar}
 
@@ -78,7 +93,7 @@ Wenn in Ihrer Organisation verschiedene Benutzergruppen mit unterschiedlichen ge
 
    Wenn Sie diese Option wählen, wird ein Ereignis, das vor dem angegebenen Zeitraum eintritt, an den Anfang des Zeitraums verschoben, und ein Ereignis, das nach dem Zeitraum eintritt, wird an die Anfangszeit des nächsten Geschäftstages verschoben.
 
-   Angenommen, einem Benutzer wird eine Aufgabe an einem Dienstag um 2 :00 Uhr zugewiesen und die Erinnerung für diese Aufgabe wird auf zwei Werktage festgelegt. Ohne Geschäftszeiten würde die Erinnerung am Donnerstag um :00 Uhr stattfinden. Wenn die Geschäftszeiten auf 8:00 :00 17:00 :00 eingestellt sind, wird die Erinnerung :00 Donnerstag auf 8:00 Uhr verschoben. Wenn ohne Geschäftszeiten am Dienstag um 18.00 :00 ein Erinnerungsereignis erstellt wurde, wird die Erinnerung am Donnerstag nach den Geschäftszeiten angezeigt. Wenn die Geschäftszeiten auf 8:00 :00 17:00 :00 eingestellt sind, wird die Erinnerung :00 Freitag um 8:00 Uhr angezeigt.
+   Angenommen, einem Benutzer wird eine Aufgabe an einem Dienstag um 2:00 Uhr zugewiesen und die Erinnerung für diese Aufgabe wird auf zwei Werktage festgelegt. Ohne Geschäftszeiten würde die Erinnerung am Donnerstag um 2:00 Uhr stattfinden. Wenn die Geschäftszeiten auf 8:00 bis 17:00 Uhr eingestellt sind, wird die Erinnerung auf 8:00 Uhr am Donnerstag verschoben. Wenn am Dienstag um 18:00 Uhr ein Erinnerungsereignis erstellt wurde, würde die Erinnerung ohne Geschäftszeiten am Donnerstag nach den Geschäftszeiten stattfinden. Wenn die Geschäftszeiten auf 8:00 bis 17:00 Uhr eingestellt sind, wird die Erinnerung am Freitag um 8:00 Uhr angezeigt.
 
 1. Doppelklicken Sie im Kalender auf der linken Seite auf alle weiteren geschäftsfreien Tage, wie z. B. Feiertage. Tage, die in der Vergangenheit liegen, können nicht ausgewählt werden. Die von Ihnen ausgewählten geschäftsfreien Tage werden in einer Liste auf der rechten Seite angezeigt, wobei das Datum zweimal pro Zeile angezeigt wird. Wählen Sie das linke Datum aus, um einen Namen oder eine Beschreibung für den geschäftsfreien Tag einzugeben.
 

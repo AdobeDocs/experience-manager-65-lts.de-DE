@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7fd478a6-ddc6-4c7f-b09b-e4de6ec0e897
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1091'
 ht-degree: 100%
-
 ---
-
 # AEM-Entwicklung – Richtlinien und Best Practices{#aem-development-guidelines-and-best-practices}
 
 ## Richtlinien für die Verwendung von Vorlagen und Komponenten {#guidelines-for-using-templates-and-components}
@@ -63,21 +72,21 @@ Beispiel:
 
   Dazu gehörte das Überlagern einer Komponentendefinition:
 
-   * Erstellen Sie durch Kopieren einer vorhandenen Komponente einen neuen Komponentenordner unter `/apps/<website-name>/components/<MyComponent>`:
+  * Erstellen Sie durch Kopieren einer vorhandenen Komponente einen neuen Komponentenordner unter `/apps/<website-name>/components/<MyComponent>`:
 
-      * Um beispielsweise die Textkomponente anzupassen, kopieren Sie diese
+    * Um beispielsweise die Textkomponente anzupassen, kopieren Sie diese
 
-         * von `/libs/foundation/components/text`
-         * nach `/apps/myProject/components/text`
+      * von `/libs/foundation/components/text`
+      * nach `/apps/myProject/components/text`
 
 * [Anpassen der vom Fehler-Handler angezeigten Seiten](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
   In diesem Fall wird ein Servlet überlagert:
 
-   * Kopieren Sie im Repository ein oder mehrere Standardskripte:
+  * Kopieren Sie im Repository ein oder mehrere Standardskripte:
 
-      * von `/libs/sling/servlet/errorhandler/`
-      * nach `/apps/sling/servlet/errorhandler/`
+    * von `/libs/sling/servlet/errorhandler/`
+    * nach `/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >

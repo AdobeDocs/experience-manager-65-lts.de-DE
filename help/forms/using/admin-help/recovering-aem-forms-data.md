@@ -6,13 +6,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 6345edda-cdc6-4e13-ade6-2dd6de9d9616
-source-git-commit: f7adcbe7700d0ea9cbd18eb0b59bcd76f56e8cc5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 95%
-
+source-wordcount: '1168'
+ht-degree: 94%
 ---
-
 # Wiederherstellen der AEM Forms-Daten {#recovering-the-aem-forms-data}
 
 In diesem Abschnitt werden die Schritte beschrieben, die zum Wiederherstellen der AEM Forms-Daten erforderlich sind. Siehe auch [Besondere Hinweise für Sicherung und Wiederherstellung](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md#special-considerations-for-backup-and-recovery).
@@ -51,11 +65,11 @@ Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten ausgefallen ist, di
 1. Erstellen Sie bei Bedarf das physische System aus einem Systembild neu. Zum Beispiel ist dieser Schritt möglicherweise nicht erforderlich, wenn der Grund für die Wiederherstellung ein fehlerhafter Datenbank-Server ist.
 1. Wenden Sie Patches oder Aktualisierungen auf AEM Forms an, die seit der Erstellung des Bildes angewendet wurden. Diese Informationen wurden im Sicherungsverfahren erfasst. Bei AEM Forms müssen Patches entsprechend dem Patch-Level zum Zeitpunkt der Systemsicherung angewendet werden.
 1. (WebSphere® Anwendungs-Server) Wenn Sie eine neue Instanz des WebSphere® Anwendungs-Servers wiederherstellen, führen Sie den Befehl „restoreConfig.bat/sh“ aus.
-1. Zum Wiederherstellen der AEM Forms-Datenbank müssen Sie zuerst einen Datenbankwiederherstellungsvorgang unter Verwendung der Datenbanksicherungsdateien ausführen und anschließend die Protokolle zum Wiederholen von Transaktionen auf die wiederhergestellte Datenbank anwenden. (Siehe [AEM Forms-](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Weitere Informationen finden Sie in einem der folgenden Knowledgebase-Artikel:
+1. Zum Wiederherstellen der AEM Forms-Datenbank müssen Sie zuerst einen Datenbankwiederherstellungsvorgang unter Verwendung der Datenbanksicherungsdateien ausführen und anschließend die Protokolle zum Wiederholen von Transaktionen auf die wiederhergestellte Datenbank anwenden. (Siehe [AEM Forms-](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Weitere Informationen finden Sie in einem dieser Knowledge Base-Artikel:
 
-   * [DB2](/help/forms/using/admin-help/files-back-recover.md#db2)
+   * [DB2®-Backup und Wiederherstellung für AEM Forms](/help/forms/using/admin-help/files-back-recover.md#db2)
    * [Oracle-Backup und Wiederherstellung für AEM Forms](/help/forms/using/admin-help/files-back-recover.md#oracle)
-   * [Microsoft](/help/forms/using/admin-help/files-back-recover.md#sql-server)
+   * [Microsoft® SQL Server-Backup und Wiederherstellung für AEM Forms](/help/forms/using/admin-help/files-back-recover.md#sql-server)
    * [MySQL-Backup und Wiederherstellung für AEM Forms](/help/forms/using/admin-help/files-back-recover.md#mysql)
 
 1. Stellen Sie das Verzeichnis des globalen Dokumentenspeichers (GDS) wieder her, indem Sie zunächst den Inhalt des GDS-Verzeichnisses auf der vorhandenen Installation von AEM Forms löschen und dann den Inhalt des GDS-Verzeichnisses aus dem gesicherten GDS kopieren. Falls Sie den Speicherort des GDS-Verzeichnisses geändert haben, lesen Sie [Ändern des GDS-Speicherorts während der Wiederherstellung](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
@@ -95,7 +109,7 @@ Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten ausgefallen ist, di
 
    * **Eigenständig**
 
-     *Autor- und Veröffentlichungsinstanzen wiederherstellen*: Bei einem Systemausfall können Sie das Repository im letzten gesicherten Zustand wiederherstellen, indem Sie die unter &quot;[&#x200B; und Wiederherstellen“ &#x200B;](/help/sites-administering/backup-and-restore.md).
+     *Autor- und Veröffentlichungsinstanzen wiederherstellen*: Bei einem Systemausfall können Sie das Repository im letzten gesicherten Zustand wiederherstellen, indem Sie die unter &quot;[ und Wiederherstellen“ ](/help/sites-administering/backup-and-restore.md).
 
      Bei der vollständigen Wiederherstellung des Authoring-Knotens werden auch die Daten von Forms Manager und AEM Forms Workspace wiederhergestellt.
 
@@ -124,7 +138,7 @@ Falls der globale Dokumentenspeicher an einem anderen als dem ursprünglichen Sp
 
 ## Wiederherstellen des globalen Dokumentenspeichers in einer Cluster-Umgebung {#recovering-the-gds-to-a-clustered-environment}
 
-Um den Speicherort des globalen Dokumentenspeichers in einer Cluster-Umgebung zu ändern, fahren Sie den gesamten Cluster herunter und führen Sie das Skript „LCSetGDS“ auf einem einzelnen Knoten des Clusters aus. (Siehe [Ändern des GDS-Speicherorts während der Wiederherstellung](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).) Starten Sie nur diesen Knoten. Sobald dieser Knoten vollständig gestartet ist, können andere Knoten im Cluster sicher gestartet werden. Die Knoten verweisen dann korrekt auf den neuen globalen Dokumentenspeicher.
+Um den Speicherort des globalen Dokumentenspeichers in einer Cluster-Umgebung zu ändern, fahren Sie den gesamten Cluster herunter und führen Sie das Skript „LCSetGDS“ auf einem einzelnen Knoten des Clusters aus. (Siehe [Ändern des GDS-Speicherorts während der Wiederherstellung](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).) Nur diesen Knoten starten. Sobald dieser Knoten vollständig gestartet ist, können andere Knoten im Cluster sicher gestartet werden. Die Knoten verweisen dann korrekt auf den neuen globalen Dokumentenspeicher.
 
 >[!NOTE]
 >

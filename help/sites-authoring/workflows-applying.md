@@ -10,13 +10,28 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
 exl-id: 8354eccd-4f71-45bb-9bab-8f756b9ce083
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '649'
 ht-degree: 100%
-
 ---
-
 # Anwenden von Workflows auf Seiten{#applying-workflows-to-pages}
 
 Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Maßnahmen zu ergreifen. Es ist auch möglich, mehrere Workflows anzuwenden.
@@ -95,14 +110,14 @@ Details können Sie angeben wie folgt:
    * **Workflow-Modell**
    * **Workflow-Titel**
 
-      * Sie können einen Titel für diese Instanz angeben, damit Sie sie später identifizieren können.
+     * Sie können einen Titel für diese Instanz angeben, damit Sie sie später identifizieren können.
 
    Je nach Workflow-Modell stehen auch die folgenden Optionen zur Verfügung. Dadurch kann das als Payload erstellte Paket nach Abschluss des Workflows beibehalten werden.
 
    * **Workflow-Paket beibehalten**
    * **Paketname**
 
-      * Sie können einen Titel für das Paket angeben, um die Identifizierung zu erleichtern.
+     * Sie können einen Titel für das Paket angeben, um die Identifizierung zu erleichtern.
 
    >[!NOTE]
    >
@@ -118,16 +133,16 @@ Details können Sie angeben wie folgt:
 
    * Eine vorhandene Ressource, um weitere Aktionen zu sehen:
 
-      * **Untergeordnete Elemente einbeziehen**, um anzugeben, dass untergeordnete Elemente der betreffenden Ressource im Workflow enthalten sind.
-Ein Dialogfeld wird geöffnet, in dem Sie die Auswahl wie folgt verfeinern können:
+     * **Untergeordnete Elemente einbeziehen**, um anzugeben, dass untergeordnete Elemente der betreffenden Ressource im Workflow enthalten sind.
+       Ein Dialogfeld wird geöffnet, in dem Sie die Auswahl wie folgt verfeinern können:
 
-         * Nur unmittelbar untergeordnete Elemente einbeziehen.
-         * Nur geänderte Seiten einbeziehen.
-         * Nur bereits veröffentlichte Seiten einbeziehen.
+       * Nur unmittelbar untergeordnete Elemente einbeziehen.
+       * Nur geänderte Seiten einbeziehen.
+       * Nur bereits veröffentlichte Seiten einbeziehen.
 
-        Alle angegebenen untergeordneten Elemente werden der Liste der Ressourcen hinzugefügt, auf die der Workflow angewendet werden soll.
+       Alle angegebenen untergeordneten Elemente werden der Liste der Ressourcen hinzugefügt, auf die der Workflow angewendet werden soll.
 
-      * **Auswahl entfernen**, um die betreffende Ressource aus dem Workflow zu entfernen.
+     * **Auswahl entfernen**, um die betreffende Ressource aus dem Workflow zu entfernen.
 
    ![wf-53](assets/wf-53.png)
 

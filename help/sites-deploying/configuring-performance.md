@@ -9,13 +9,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5215'
 ht-degree: 98%
-
 ---
-
 # Leistungsoptimierung {#performance-optimization}
 
 >[!NOTE]
@@ -151,11 +160,11 @@ Beachten Sie Folgendes, um die Leistung zu verbessern:
 
 * 80 % aller Bearbeitungen erfolgen in 20 % der Zeit. In Spitzenzeiten beträgt die Datenrate also viermal so viel wie im Durchschnitt. Eine solche Leistung ist Ihr Ziel.
 
-## Performance-Überwachung {#performance-monitoring}
+## Überwachen der Performance {#performance-monitoring}
 
 Die Leistung (oder das Fehlen der Leistung) ist eines der ersten Dinge, die Ihre Benutzerinnen und Benutzer bemerken. Wie bei jeder Anwendung mit einer Benutzeroberfläche ist die Leistung von entscheidender Bedeutung. Um die Leistung Ihrer AEM-Installation zu optimieren, müssen Sie verschiedene Attribute der Instanz und ihr Verhalten überwachen.
 
-Weitere Informationen zur Leistungsüberwachung finden Sie unter [Überwachen der Leistung](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance).
+Weitere Informationen zum Überwachen der Performance finden Sie unter [Überwachen der Performance](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance).
 
 Die Probleme, die zu Leistungseinbußen führen, sind oft schwer aufzuspüren, lassen sich oft nur schwer nachvollziehen, selbst wenn ihre Auswirkungen leicht erkennbar sind.
 
@@ -425,7 +434,7 @@ Bei der Konzeption dieser Tests sollte beachtet werden, dass nicht alle Szenarie
 
 | Fehlerszenario | Fehlertyp | Anzahl der Benutzer | Tx/Sek (erwartet) | Tx/Sek (getestet) | Beschreibung |
 |---|---|---|---|---|---|
-| Überlastung der Suchkomponente | Suche mit einem globalen Platzhalter (Sternchen) | 10 | 1 |  | Es wird nur nach &ast;&ast;&ast; gesucht. |
+| Überlastung der Suchkomponente | Suche mit einem globalen Platzhalter (Sternchen) | 10 | 1 |  | Es wird nur nach &amp;ast;&amp;ast;&amp;ast; gesucht. |
 |   | Stoppwort | 20 | 2 |  | Suchen nach einem Stoppwort. |
 |   | Leere Zeichenfolge | 10 | 1 |  | Suchen nach einer leeren Zeichenfolge. |
 |   | Sonderzeichen | 10 | 1 |  | Suchen nach Sonderzeichen. |
@@ -451,7 +460,7 @@ Alle vorgenommenen Optimierungen müssen auf folgende Bedingungen hin getestet w
 * Sie dürfen die Funktionalität nicht beeinträchtigen.
 * Sie wurden vor ihrer Veröffentlichung Belastungstests unterzogen.
 
-Für Lastgenerierung, Leistungsüberwachung und/oder Ergebnisanalyse stehen eine Reihe von Tools zur Verfügung. Einige dieser Tools umfassen Folgendes:
+Für Lastgenerierung, Überwachung der Performance und/oder Ergebnisanalyse stehen eine Reihe von Tools zur Verfügung. Einige dieser Tools umfassen Folgendes:
 
 * [JMeter](https://jmeter.apache.org/)
 * [OpenText Professional Performance Engineering](https://www.opentext.com/products/professional-performance-engineering).

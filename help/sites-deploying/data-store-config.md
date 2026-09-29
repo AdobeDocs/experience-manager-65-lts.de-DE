@@ -8,13 +8,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3508'
+source-wordcount: '3510'
 ht-degree: 89%
-
 ---
-
 # Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6.5 LTS{#configuring-node-stores-and-data-stores-in-aem}
 
 ## Einführung {#introduction}
@@ -318,7 +327,7 @@ Fehlgeschlagene Uploads (etwa aufgrund von Netzwerkstörungen) werden in eine Wa
 Die folgenden Schritte sind erforderlich, um nicht binäre Replikationen mit S3 zu konfigurieren:
 
 1. Installieren Sie die Authoring- und Veröffentlichungsinstanzen und stellen Sie sicher, dass diese ordnungsgemäß gestartet werden.
-1. Gehen Sie zu den Einstellungen für den Replikationsagenten, indem Sie eine Seite unter *https://localhost:4502/etc/replication/agents.author/publish.html* öffnen.
+1. Gehen Sie zu den Einstellungen für den Replikationsagenten, indem Sie eine Seite in *https://localhost:4502/etc/replication/agents.author/publish.html* öffnen.
 1. Wählen Sie im Abschnitt **Einstellungen** die Schaltfläche **Bearbeiten**.
 1. Ändern Sie die Option für den **Serialisierungs** typ in **Nicht binär**.
 
@@ -344,7 +353,7 @@ Die folgenden Schritte sind erforderlich, um nicht binäre Replikationen mit S3 
 
    Nachdem die Dateien erstellt wurden, fügen Sie nach Bedarf die Konfigurationsoptionen hinzu.
 
-1. Installieren Sie die beiden Bundles, die für den S3-Datenspeicher erforderlich sind, wie oben beschrieben.
+1. Installieren Sie die beiden Pakete, die für den S3-Datenspeicher erforderlich sind, wie oben beschrieben.
 1. Stellen Sie sicher, dass MongoDB installiert ist und eine `mongod`-Instanz ausgeführt wird.
 1. Starten Sie AEM mit dem folgenden Befehl:
 

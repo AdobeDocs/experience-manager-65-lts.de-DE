@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 281d8bd3-d6f2-42f8-8d77-b138f0ea5aae
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1418'
 ht-degree: 98%
-
 ---
-
 # Strukturvorlage{#scaffolding}
 
 Manchmal muss eine große Anzahl von Seiten erstellt werden, die zwar die gleiche Struktur, aber unterschiedliche Inhalte haben. Über die standardmäßige Adobe Experience Manager(AEM)-Benutzeroberfläche müssen Sie dann jede Seite erstellen, die entsprechenden Komponenten auf die Seite ziehen und sie einzeln auffüllen.
@@ -136,7 +145,7 @@ Der feste Wert für diese Eigenschaft lautet:
 
 `foundation/components/textimage`
 
- Dadurch wird festgelegt, dass die für das Rendern des Textinhalts verwendete Komponente vom Typ *Textbild* ist. Zusammen mit dem booleschen Wert `isRichText` in dem anderen ausgeblendeten Feld kann die Komponente die eigentliche unter `./jcr:content/par/text/text` gespeicherte Textzeichenfolgen wie gewünscht rendern.
+Dadurch wird festgelegt, dass die für das Rendern des Textinhalts verwendete Komponente vom Typ *Textbild* ist. Zusammen mit dem booleschen Wert `isRichText` in dem anderen ausgeblendeten Feld kann die Komponente die eigentliche unter `./jcr:content/par/text/text` gespeicherte Textzeichenfolgen wie gewünscht rendern.
 
 ### Strukturvorlagen mit MSM-Vererbung {#scaffolding-with-msm-inheritance}
 

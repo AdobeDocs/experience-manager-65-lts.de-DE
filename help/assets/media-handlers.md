@@ -7,13 +7,27 @@ role: User
 feature: Workflow,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: f96a2642-f923-481e-9735-14a62a80e6f1
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2159'
 ht-degree: 98%
-
 ---
-
 # Verarbeiten von Assets mithilfe von Medien-Handlern und Workflows {#processing-assets-using-media-handlers-and-workflows}
 
 [!DNL Adobe Experience Manager Assets] enthält einen Satz von standardmäßigen Workflows und Medien-Handlern zur Bearbeitung von Assets. Der Workflow definiert die Aufgaben, die an Assets durchgeführt werden, und delegiert dann spezielle Aufgaben an die Medien-Handler, z. B. Erstellung von Miniaturbildern oder Extraktion von Metadaten.
@@ -124,7 +138,7 @@ Die folgenden Methoden müssen implementiert werden:
 
 Hier eine Beispielvorlage:
 
-package my.own.Stuff; /&ast;&ast; &ast; @scr.component inherit=„true“ &ast; @scr.service &ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the relevant parts }
+package my.own.Stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=„true“ &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the relevant parts }
 
 Schnittstelle und Klassen:
 

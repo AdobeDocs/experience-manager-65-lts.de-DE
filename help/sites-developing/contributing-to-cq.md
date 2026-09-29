@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 1197dc8e-7fbe-4f74-942b-3aa9fafc07ac
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2738'
 ht-degree: 99%
-
 ---
-
 # Beitragen zu AEM{#contributing-to-aem}
 
 ## Entwicklungsmethodik {#development-methodology}
@@ -148,7 +157,7 @@ Bevor Sie versuchen, die JavaDoc- oder die JCR-Spezifikation selbst zu lesen, so
 
 **Multi-Site Manager (MSM)**: Die MSM-Funktion von AEM unterstützt Kunden bei der Bearbeitung mehrsprachiger und multinationaler Inhalte und ermöglicht es ihnen, zentralisiertes Branding mit lokalisierten Inhalten in Einklang zu bringen.
 
-**OSGi**: OSGi ist die Service-basierte Runtime-Technologie, die die Basis für die modularisierte Java™-Entwicklung in AEM bietet. Es ist ein Framework, das nicht nur eine hochdynamische (und sichere) Classloading- und Execution-Umgebung für Coderessourcen (bekannt als Bundle) bietet, sondern auch volle Kontrolle über die Sichtbarkeit und den Lebenszyklus der verschiedenen Services, die von Bundles bereitgestellt werden. Eine Service-Registrierung stellt ein Kooperationsmodell für Bundles bereit, das Lebenszyklusdynamik (und Versionsanforderungen) berücksichtigt. OSGi löst viele der Probleme, die von Anwendungs-Servern gelöst werden sollten, jedoch auf leichte und hochdynamische Weise. So können beispielsweise Dienste direkt bereitgestellt werden (der neue Code wird sofort verfügbar, ohne den Server neu zu starten).
+**OSGi**: OSGi ist die Service-basierte Runtime-Technologie, die die Basis für die modularisierte Java™-Entwicklung in AEM bietet. Es ist ein Framework, das nicht nur eine hochdynamische (und sichere) Classloading- und Execution-Umgebung für Coderessourcen (bekannt als Paket) bietet, sondern auch volle Kontrolle über die Sichtbarkeit und den Lebenszyklus der verschiedenen Services, die von Paketen bereitgestellt werden. Eine Service-Registrierung stellt ein Kooperationsmodell für Pakete bereit, das Lebenszyklusdynamik (und Versionsanforderungen) berücksichtigt. OSGi löst viele der Probleme, die von Anwendungs-Servern gelöst werden sollten, jedoch auf leichte und hochdynamische Weise. So können beispielsweise Dienste direkt bereitgestellt werden (der neue Code wird sofort verfügbar, ohne den Server neu zu starten).
 
 **Parsys, Absatzsystem**: Das Absatzsystem (parsys) ist eine zusammengesetzte Komponente, die es Autoren ermöglicht, einer Seite Komponenten verschiedener Typen hinzuzufügen, und die andere Absatzkomponenten enthält. Jeder Absatztyp wird als eine Komponente dargestellt. Das Absatzsystem selbst ist ebenfalls eine Komponente, die die anderen Absatzkomponenten enthält.
 

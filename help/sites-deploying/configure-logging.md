@@ -9,13 +9,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 86613671-dacd-487e-b6ff-88365289e591
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 100%
-
+source-wordcount: '640'
+ht-degree: 99%
 ---
-
 # Protokollierung{#logging}
 
 Mit AEM können Sie Folgendes konfigurieren:
@@ -85,19 +94,19 @@ Das erste Paar ist ein Sonderfall, da sowohl `request.log`- als auch `access.log
 
 * Der Logger:
 
-   * Apache Sling Customizable Request Data Logger
+  * Apache Sling Customizable Request Data Logger
 
-     (org.apache.sling.engine.impl.log.RequestLoggerService)
+    (org.apache.sling.engine.impl.log.RequestLoggerService)
 
-   * Schreibt Meldungen zum Anforderungsinhalt in die Datei `request.log`.
+  * Schreibt Meldungen zum Anforderungsinhalt in die Datei `request.log`.
 
 * Ist verknüpft mit:
 
-   * Apache Sling Request Logger
+  * Apache Sling Request Logger
 
-     (org.apache.sling.engine.impl.log.RequestLogger)
+    (org.apache.sling.engine.impl.log.RequestLogger)
 
-   * Schreibt Meldungen in `request.log` oder `access.log`.
+  * Schreibt Meldungen in `request.log` oder `access.log`.
 
 Eine Anpassung ist hier ggf. möglich, auch wenn die Standardkonfiguration für die meisten Installationen geeignet ist.
 
@@ -105,23 +114,24 @@ Die anderen Paare folgen der Standardkonfiguration:
 
 * Der Logger:
 
-   * Apache Sling Logging Logger-Konfiguration
+  * Apache Sling Logging Logger-Konfiguration
 
-     (org.apache.sling.commons.log.LogManager.factory.config)
+    (org.apache.sling.commons.log.LogManager.factory.config)
 
-   * Schreibt `Information`-Meldungen in `logs/error.log`.
+  * Schreibt `Information`-Meldungen in `logs/error.log`.
 
 * Ist mit dem folgenden Writer verknüpft:
 
-   * Apache Sling Logging Write-Konfiguration
+  * Apache Sling Logging Write-Konfiguration
 
-     (org.apache.sling.commons.log.LogManager.factory.writer)
+    (org.apache.sling.commons.log.LogManager.factory.writer)
 
 * Der Logger:
 
-   * Apache Sling Logging Logger-Konfiguration (org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
+  * Apache Sling Logging Logger-Konfiguration
+    (org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
 
-   * Schreibt `Warning`-Meldungen in `../logs/error.log` für den `org.apache.pdfbox`-Dienst.
+  * Schreibt `Warning`-Meldungen in `../logs/error.log` für den `org.apache.pdfbox`-Dienst.
 
 * Ist nicht mit einem bestimmten Writer verknüpft, sodass ein impliziter Writer mit Standardkonfiguration (tägliche Protokollrotation) verwendet wird.
 

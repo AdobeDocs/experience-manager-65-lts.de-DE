@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 4a78de53-33bf-4999-ba3c-7d0bc33196a4
-source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '6205'
 ht-degree: 73%
-
 ---
-
 # Verwenden von xtypes (klassische Benutzeroberfläche){#using-xtypes-classic-ui}
 
 Auf dieser Seite werden alle xtypes beschrieben, die in Adobe Experience Manager (AEM) verfügbar sind.
@@ -600,7 +609,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   Ein `panel` ist ein Container mit spezifischen Funktionen und Strukturkomponenten, die ihn zum perfekten Baustein für anwendungsorientierte Benutzeroberflächen machen.
 
-  Panels werden aufgrund ihrer Vererbung von &quot;[.Ext.Container“ &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html).
+  Panels werden aufgrund ihrer Vererbung von &quot;[.Ext.Container“ ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html).
 
 * `paragraphreference`
 
@@ -833,7 +842,7 @@ Im Folgenden sind die verfügbaren xtypes in Adobe Experience Manager aufgeführ
 
   [CQ.Ext.TabPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
-  Ein allgemeiner Container für Registerkarten. TabPanels kann zu Layout-Zwecken genauso wie ein standardmäßiges [CQ.Ext.Panel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) verwendet werden, verfügt aber auch über spezielle Unterstützung für darin enthaltene untergeordnete Komponenten ([`items` &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)).
+  Ein allgemeiner Container für Registerkarten. TabPanels kann zu Layout-Zwecken genauso wie ein standardmäßiges [CQ.Ext.Panel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html) verwendet werden, verfügt aber auch über spezielle Unterstützung für darin enthaltene untergeordnete Komponenten ([`items` ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)).
 
 * `tags`
 

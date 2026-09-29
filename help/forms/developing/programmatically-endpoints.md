@@ -9,14 +9,29 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 6a0c7dbf-02ae-4211-a5c7-941eb353a403
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '10888'
 ht-degree: 98%
-
 ---
-
 # Programmgesteuertes Verwalten von Endpunkten {#programmatically-managing-endpoints}
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
@@ -98,7 +113,7 @@ Um einen EJB-Endpunkt für einen Service zu erstellen, geben Sie die folgenden W
 * **Connector-ID**: Gibt den Typ des zu erstellenden Endpunkts an. Um einen EJB-Endpunkt zu erstellen, geben Sie `EJB` an.
 * **Beschreibung**: Gibt die Beschreibung des Endpunkts an.
 * **Name**: Gibt den Namen des Endpunkts an.
-* **Service-ID**: Gibt den Service an, zu dem der Endpunkt gehört.
+* **Dienstkennung**: Gibt den Service an, zu dem der Endpunkt gehört.
 * **Vorgangsname**: Gibt den Namen des Vorgangs an, der mithilfe des Endpunkts aufgerufen wird. Geben Sie beim Erstellen eines EJB-Endpunkts ein Platzhalterzeichen (`*`) an. Wenn Sie jedoch einen bestimmten Vorgang angeben möchten, anstatt alle Service-Vorgänge aufzurufen, geben Sie anstelle des Platzhalterzeichens (`*`) den Namen des Vorgangs an.
 
 **Erstellen eines EJB-Endpunkts**
@@ -270,7 +285,7 @@ Um einem Service programmgesteuert einen Endpunkt vom Typ „Überwachter Ordner
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
-Bei diesem Prozess wird ein ungesichertes PDF-Dokument als Eingabewert akzeptiert und das ungesicherte PDF-Dokument wird dann an den `EncryptPDFUsingPassword`-Vorgang des Verschlüsselungsdienstes übergeben. Das PDF-Dokument wird mit einem Passwort verschlüsselt und das passwortverschlüsselte PDF-Dokument ist der Ausgabewert dieses Vorgangs. Der Name des Eingabewerts (das ungesicherte PDF-Dokument) lautet `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Der Name des Ausgabewerts (das kennwortverschlüsselte PDF-Dokument) lautet `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`.
+Bei diesem Prozess wird ein ungesichertes PDF-Dokument als Eingabewert akzeptiert und das ungesicherte PDF-Dokument wird dann an den `EncryptPDFUsingPassword`-Vorgang des Verschlüsselungsdienstes übergeben. Das PDF-Dokument wird mit einem Passwort verschlüsselt und das passwortverschlüsselte PDF-Dokument ist der Ausgabewert dieses Vorgangs. Der Name des Eingabewerts (das ungesicherte PDF-Dokument) lautet `InDoc` und der Datentyp ist `com.adobe.idp.Document`. Der Name des Ausgabewerts (das passwortverschlüsselte PDF-Dokument) lautet `SecuredDoc` und der Datentyp ist `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -567,7 +582,7 @@ Beim programmgesteuerten Hinzufügen eines E-Mail-Endpunkts zu einem Service wer
 * **userName**: Der Benutzername, der beim Aufrufen eines Ziel-Service aus einer E-Mail verwendet wird. Der Standardwert ist `SuperAdmin`.
 * **domainName**: Ein obligatorischer Konfigurationswert. Der Standardwert ist `DefaultDom`.
 * **domainPattern**: Gibt die Domain-Muster für eingehende E-Mails an, die vom Anbieter akzeptiert werden. Wenn beispielsweise „`adobe.com`“ verwendet wird, werden nur E-Mails aus der Domain „adobe.com“ verarbeitet, während E-Mails aus anderen Domains ignoriert werden.
-* **filePattern**: Gibt die Muster für eingehende Dateianhänge an, die vom Anbieter akzeptiert werden. Dazu gehören Dateien mit bestimmten Dateinamenerweiterungen (&ast;.dat, &ast;.xml), Dateien mit bestimmten Namen (data) und Dateien mit zusammengesetzten Ausdrücken im Namen und in der Erweiterung (&ast;.`[dD][aA]`&#39;port&#39;). Der Standardwert ist `*`.
+* **filePattern**: Gibt die Muster für eingehende Dateianhänge an, die vom Anbieter akzeptiert werden. Dazu gehören Dateien mit bestimmten Dateinamenerweiterungen (&amp;ast;.dat, &amp;ast;.xml), Dateien mit bestimmten Namen (data) und Dateien mit zusammengesetzten Ausdrücken im Namen und in der Erweiterung (&amp;ast;.`[dD][aA]`&#39;port&#39;). Der Standardwert ist `*`.
 * **recipientSuccessfulJob**: Eine E-Mail-Adresse, an die Benachrichtigungen über erfolgreiche Aufträge gesendet werden. Standardmäßig wird eine Benachrichtigung über erfolgreiche Aufträge immer an den Absender gesendet. Wenn Sie `sender` eingeben, werden E-Mail-Ergebnisse an den Absender gesendet. Es werden bis zu 100 Empfänger unterstützt. Geben Sie zusätzliche Empfänger mit E-Mail-Adressen an, von denen jeder durch ein Komma getrennt ist. Zum Deaktivieren dieser Option lassen Sie das Feld unausgefüllt. Es kann Fälle geben, in denen Sie einen Prozess auslösen möchten, ohne ein Benachrichtigung per E-Mail zum Ergebnis erhalten zu wollen. Der Standardwert ist `sender`.
 * **recipientFailedJob**: Eine E-Mail-Adresse, an die Benachrichtigungen über fehlgeschlagene Aufträge gesendet werden. Standardmäßig wird eine Benachrichtigung über einen fehlgeschlagenen Auftrag immer an den Absender gesendet. Wenn Sie `sender` eingeben, werden E-Mail-Ergebnisse an den Absender gesendet. Es werden bis zu 100 Empfänger unterstützt. Geben Sie zusätzliche Empfänger mit E-Mail-Adressen an, von denen jeder durch ein Komma getrennt ist. Zum Deaktivieren dieser Option lassen Sie das Feld unausgefüllt. Der Standardwert ist `sender`.
 * **inboxHost**: Der Hostname oder die IP-Adresse für den Posteingang, der/die vom E-Mail-Anbieter überprüft werden soll.
@@ -948,8 +963,8 @@ So fügen Sie mithilfe der Java-API einen TaskManager-Endpunkt hinzu:
 
    * Erstellen Sie ein `CreateEndpointCategoryInfo`-Objekt, indem Sie seinen Konstruktor verwenden und die folgenden Werte übergeben:
 
-      * Einen Zeichenfolgenwert, der den ID-Wert der Kategorie angibt
-      * Einen Zeichenfolgenwert, der die Beschreibung der Kategorie angibt
+     * Einen Zeichenfolgenwert, der den ID-Wert der Kategorie angibt
+     * Einen Zeichenfolgenwert, der die Beschreibung der Kategorie angibt
 
    * Erstellen Sie die Kategorie, indem Sie die Methode `createEndpointCategory` des `EndpointRegistryClient`-Objekts aufrufen und das `CreateEndpointCategoryInfo`-Objekt übergeben. Diese Methode gibt ein `EndpointCategory`-Objekt zurück, das die neue Kategorie darstellt.
 
@@ -1068,8 +1083,8 @@ So ändern Sie einen Endpunkt mithilfe der Java-API:
    * Erstellen Sie ein `ModifyEndpointInfo`-Objekt, indem Sie seinen Konstruktor aufrufen.
    * Rufen Sie für jeden festzulegenden Konfigurationswert die Methode `setConfigParameterAsText` des `ModifyEndpointInfo`-Objekts auf. Um beispielsweise den URL-Konfigurationswert festzulegen, rufen Sie die Methode `setConfigParameterAsText` des `ModifyEndpointInfo`-Objekts auf und übergeben die folgenden Werte:
 
-      * Ein Zeichenfolgenwert, der den Namen des Konfigurationswerts angibt. Um beispielsweise den `url`-Konfigurationswert festzulegen, geben Sie `url` an.
-      * Ein Zeichenfolgenwert, der den Wert des Konfigurationswerts angibt. Um einen Wert für den `url`-Konfigurationswert zu definieren, geben Sie den Speicherort des überwachten Ordners an.
+     * Ein Zeichenfolgenwert, der den Namen des Konfigurationswerts angibt. Um beispielsweise den `url`-Konfigurationswert festzulegen, geben Sie `url` an.
+     * Ein Zeichenfolgenwert, der den Wert des Konfigurationswerts angibt. Um einen Wert für den `url`-Konfigurationswert zu definieren, geben Sie den Speicherort des überwachten Ordners an.
 
    * Rufen Sie die Methode `modifyEndpoint` des `EndpointRegistryClient`-Objekts auf und übergeben Sie das `ModifyEndpointInfo`-Objekt.
 

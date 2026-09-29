@@ -5,16 +5,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 2a5d3d80-2710-4bb0-ad24-9a86525c6aea
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 59%
-
+source-wordcount: '399'
+ht-degree: 61%
 ---
-
 # Komponenten{#components}
 
-Adobe Experience Manager (AEM) ist mit einer Vielzahl vorkonfigurierter Komponenten ausgestattet, die Website-Autorinnen und -Autoren umfangreiche Funktionen bieten. Sie sind beim [&#x200B; einer Seite &#x200B;](/help/sites-authoring/editing-content.md). Sie gruppieren sie nach einem Hauptfunktionsbereich, der als Komponentengruppe bezeichnet wird, um die Filterung zu erleichtern.
+Adobe Experience Manager (AEM) ist mit einer Vielzahl vorkonfigurierter Komponenten ausgestattet, die Website-Autorinnen und -Autoren umfangreiche Funktionen bieten. Sie sind beim [ einer Seite ](/help/sites-authoring/editing-content.md). Sie gruppieren sie nach einem Hauptfunktionsbereich, der als Komponentengruppe bezeichnet wird, um die Filterung zu erleichtern.
 
 Die Komponenten sind beim [Bearbeiten einer Seite](/help/sites-authoring/editing-content.md) verfügbar. Gruppieren Sie die Komponenten nach ihrem Hauptfunktionsbereich (der Komponentengruppe), um das Filtern zu erleichtern.
 
@@ -38,7 +51,7 @@ Sie können eine Komponente auswählen und an die gewünschte Stelle auf Ihrer S
 Weitere Informationen zum Hinzufügen von Komponenten zu einer Seite finden Sie unter [Bearbeiten von Seiteninhalten](/help/sites-authoring/editing-content.md).
 Die Komponenten sind nach verschiedenen Kategorien (Komponentengruppen) sortiert. Beispiele für solche Gruppen sind:
 
-* **WeRetail**: Enthält die Kernkomponenten, die für die Verwendung mit der „WeRetail[Referenzimplementierung zugänglich &#x200B;](/help/sites-developing/we-retail.md).
+* **WeRetail**: Enthält die Kernkomponenten, die für die Verwendung mit der „WeRetail[Referenzimplementierung zugänglich ](/help/sites-developing/we-retail.md).
 
 * **WeRetail Commerce**: Enthält Commerce-Komponenten wie Einkaufswagen und Produktraster
 

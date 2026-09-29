@@ -5,13 +5,21 @@ solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 exl-id: f6e29287-a558-43ad-8465-ebf167c79c63
-source-git-commit: b4abf61e0d30396e78ecebf228114ad2bde30633
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '844'
 ht-degree: 2%
-
 ---
-
 # Handbuch zum Einrichten des Speichers für Datenbankberechtigungen (eigenständiger Modus)
 
 ## Überblick
@@ -44,11 +52,11 @@ Bevor Sie diese Skripte ausführen, stellen Sie Folgendes sicher:
    - Die Skripte verwenden `embed-server` , wodurch der Server angehalten werden muss
    - Wenn JBoss ausgeführt wird, schlagen die Skripte fehl
    - Überprüfen, ob JBoss ausgeführt wird:
-      - Windows: Überprüfen des Task-Managers auf `java.exe` Prozess
-      - Linux: `ps aux | grep jboss` oder `ps aux | grep java`
+     - Windows: Überprüfen des Task-Managers auf `java.exe` Prozess
+     - Linux: `ps aux | grep jboss` oder `ps aux | grep java`
    - JBoss bei Ausführung stoppen:
-      - Drücken Sie `Ctrl+C` im Terminal, auf dem JBoss ausgeführt wird
-      - Oder beenden Sie den Prozess manuell
+     - Drücken Sie `Ctrl+C` im Terminal, auf dem JBoss ausgeführt wird
+     - Oder beenden Sie den Prozess manuell
 
 2. **Sie haben das Datenbankkennwort bereit**
 
@@ -82,10 +90,10 @@ Laden Sie das `create-elytron-cred-standalone.bat`-Skript vom [Software Distribu
 - Erstellt einen Berechtigungsspeicher unter: `JBOSS_HOME\standalone\configuration\cred-store.p12`
 - Ändert vorübergehend die Konfigurationsdatei, um die Erstellung des Berechtigungsspeichers zu aktivieren
 - Fügt die folgenden Aliase mit Ihrem Datenbankkennwort hinzu:
-   - `EncryptDBPassword`
-   - `EncryptDBPassword_IDP_DS`
-   - `EncryptDBPassword_EDC_DS`
-   - `EncryptDBPassword_AEM_DS`
+  - `EncryptDBPassword`
+  - `EncryptDBPassword_IDP_DS`
+  - `EncryptDBPassword_EDC_DS`
+  - `EncryptDBPassword_AEM_DS`
 - Stellt die Konfigurationsdatei im Originalzustand wieder her
 - Prüft, ob alle Aliase erfolgreich hinzugefügt wurden
 
@@ -107,10 +115,10 @@ Laden Sie das `create-elytron-cred-standalone.sh`-Skript vom [Software Distribut
 - Erstellt einen Berechtigungsspeicher unter: `JBOSS_HOME/standalone/configuration/cred-store.p12`
 - Ändert vorübergehend die Konfigurationsdatei, um die Erstellung des Berechtigungsspeichers zu aktivieren
 - Fügt die folgenden Aliase mit Ihrem Datenbankkennwort hinzu:
-   - `EncryptDBPassword`
-   - `EncryptDBPassword_IDP_DS`
-   - `EncryptDBPassword_EDC_DS`
-   - `EncryptDBPassword_AEM_DS`
+  - `EncryptDBPassword`
+  - `EncryptDBPassword_IDP_DS`
+  - `EncryptDBPassword_EDC_DS`
+  - `EncryptDBPassword_AEM_DS`
 - Stellt die Konfigurationsdatei im Originalzustand wieder her
 - Prüft, ob alle Aliase erfolgreich hinzugefügt wurden
 

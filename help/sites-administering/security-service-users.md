@@ -9,13 +9,22 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 893d04cb-3a71-4400-9ca4-62ad46aacfdd
-source-git-commit: 4c6423d295aa93f6f7048a5ac919b551f3f305d7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1942'
 ht-degree: 83%
-
 ---
-
 # Dienstbenutzende in Adobe Experience Manager (AEM) {#service-users-in-aem}
 
 ## Überblick {#overview}
@@ -40,31 +49,31 @@ Viele Probleme können durch eine Umstrukturierung des Inhalts gelöst werden. B
 
 * **Zugriffskontrolle ändern**
 
-   * Stellen Sie sicher, dass die Benutzenden oder Gruppen, die wirklich Zugriff benötigen, tatsächlich Zugriff haben.
+  * Stellen Sie sicher, dass die Benutzenden oder Gruppen, die wirklich Zugriff benötigen, tatsächlich Zugriff haben.
 
 * **Inhaltsstruktur verfeinern**
 
-   * An andere Stellen verschieben, wo z. B. die Zugriffssteuerung mit den verfügbaren Anfragesitzungen übereinstimmt;
-   * Die Inhaltsgranularität ändern;
+  * An andere Stellen verschieben, wo z. B. die Zugriffssteuerung mit den verfügbaren Anfragesitzungen übereinstimmt;
+  * Die Inhaltsgranularität ändern;
 
 * **Code zum korrekten Dienst refaktorieren**
 
-   * Verschieben Sie die Geschäftslogik vom JSP-Code in den Dienst. Dies ermöglicht eine unterschiedliche Inhaltsmodellierung.
+  * Verschieben Sie die Geschäftslogik vom JSP-Code in den Dienst. Dies ermöglicht eine unterschiedliche Inhaltsmodellierung.
 
 Stellen Sie außerdem sicher, dass alle neuen Funktionen, die Sie entwickeln, diesen Grundsätzen entsprechen:
 
 * **Sicherheitsanforderungen sollten die Inhaltsstruktur bestimmen**
 
-   * Die Zugriffskontrolle sollte sich selbstverständlich anfühlen
-   * Die Zugriffskontrolle muss vom Repository durchgesetzt werden, nicht von der Anwendung
+  * Die Zugriffskontrolle sollte sich selbstverständlich anfühlen
+  * Die Zugriffskontrolle muss vom Repository durchgesetzt werden, nicht von der Anwendung
 
 * **Knotentypen verwenden**
 
-   * Beschränken Sie die Menge der Eigenschaften, die festgelegt werden können
+  * Beschränken Sie die Menge der Eigenschaften, die festgelegt werden können
 
 * **Datenschutzeinstellungen respektieren**
 
-   * Im Falle privater Profile würden z. B. das Profilbild, die E-Mail-Adresse und der volle Name, die alle auf dem privaten `/profile`-Knoten zu finden sind, nicht angezeigt.
+  * Im Falle privater Profile würden z. B. das Profilbild, die E-Mail-Adresse und der volle Name, die alle auf dem privaten `/profile`-Knoten zu finden sind, nicht angezeigt.
 
 ## Strenge Zugriffssteuerung {#strict-access-control}
 
@@ -77,7 +86,7 @@ Unabhängig davon, ob Sie Zugriffssteuerung bei der Umstrukturierung von Inhalte
 * Anwenden von ACLs für Knotentypen
 * Begrenzen von Berechtigungen
 
-   * Wenn jemand beispielsweise nur Eigenschaften schreiben muss, vergeben Sie nicht die Berechtigung `jcr:write`, sondern die Berechtigung `jcr:modifyProperties`.
+  * Wenn jemand beispielsweise nur Eigenschaften schreiben muss, vergeben Sie nicht die Berechtigung `jcr:write`, sondern die Berechtigung `jcr:modifyProperties`.
 
 ## Dienstbenutzende und Zuordnungen {#service-users-and-mappings}
 
@@ -94,7 +103,7 @@ Die Methoden geben nur einen Sitzungs-/Ressourcen-Resolver mit den Berechtigunge
 * `service-id` = `service-name` [&quot;:&quot; subservice-name]
 
 * `service-id` wird einem Resource Resolver und/oder einer JCR-Repository-Benutzer-ID zur Authentifizierung zugewiesen.
-* `service-name` ist der symbolische Name des Bundles, das den Service zur Verfügung stellt.
+* `service-name` ist der symbolische Name des Pakets, das den Service zur Verfügung stellt.
 
 ## Andere Empfehlungen {#other-recommendations}
 
@@ -111,7 +120,7 @@ Ersetzen Sie eine Admin-Sitzung wie folgt durch eine Dienstbenutzerin oder einen
 1. Richten Sie für Ihre Benutzerin oder Ihren Benutzer ACEs ein und testen Sie sie.
 1. Fügen Sie eine `service-user`-Zuordnung für Ihren Dienst und für `user/sub-users` hinzu.
 
-1. Stellen Sie das Dienstbenutzer-Sling-Feature Ihrem Bundle zur Verfügung: Aktualisieren Sie auf die neueste Version von `org.apache.sling.api`.
+1. Stellen Sie das Dienstbenutzer-Sling-Feature Ihrem Paket zur Verfügung: Aktualisieren Sie auf die neueste Version von `org.apache.sling.api`.
 
 1. Ersetzen Sie die `admin-session` in Ihrem Code durch den `loginService` oder `getServiceResourceResolver`-APIs.
 
@@ -166,10 +175,10 @@ Sie können einen Service-Benutzer auch erstellen, indem Sie eine `.content.xml`
 
 Um eine Zuordnung vom Dienst zu den entsprechenden Systembenutzerinnen und -benutzern hinzuzufügen, müssen Sie eine Werkskonfiguration für den Dienst [`ServiceUserMapper`](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html) erstellen. Um die Modularität zu gewährleisten, können derartige Konfigurationen mithilfe des [Sling-Änderungsmechanismus](https://issues.apache.org/jira/browse/SLING-3578) bereitgestellt werden. Zum Installieren solcher Konfigurationen mit Ihrem Paket wird [Sling Initial Content Loading](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html) empfohlen:
 
-1. Erstellen Sie unterhalb des Ordners „src/main/resources“ des Bundles einen Unterordner „SLING-INF/content“.
+1. Erstellen Sie unterhalb des Ordners „src/main/resources“ des Pakets einen Unterordner „SLING-INF/content“.
 1. Erstellen Sie in diesem Ordner eine Datei mit der Benennung „org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-&lt;eindeutiger Name für Ihre Werkskonfiguration>.xml“ mit dem Inhalt Ihrer Werkskonfiguration (einschließlich aller Zuordnungen von Unterdienstbenutzerinnen oder Unterdienstbenutzern). Beispiel:
 
-1. Erstellen Sie unterhalb des Ordners `SLING-INF/content` des Bundles einen Ordner `src/main/resources`.
+1. Erstellen Sie unterhalb des Ordners `SLING-INF/content` des Pakets einen Ordner `src/main/resources`.
 1. Erstellen Sie in diesem Ordner eine Datei namens `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` mit dem Inhalt Ihrer Werkskonfiguration (einschließlich aller Zuordnungen von Unterdienstbenutzerinnen oder -benutzern).
 
    Wählen Sie zu Illustrationszwecken die Datei `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-com.adobe.granite.auth.saml.xml` aus:
@@ -191,7 +200,7 @@ Um eine Zuordnung vom Dienst zu den entsprechenden Systembenutzerinnen und -benu
    </node>
    ```
 
-1. Verweisen Sie auf den anfänglichen Sling-Inhalt in der Konfiguration des `maven-bundle-plugin` in der Datei `pom.xml` Ihres Bundles. Beispiel:
+1. Verweisen Sie auf den anfänglichen Sling-Inhalt in der Konfiguration des `maven-bundle-plugin` in der Datei `pom.xml` Ihres Pakets. Beispiel:
 
    ```xml
    <Sling-Initial-Content>

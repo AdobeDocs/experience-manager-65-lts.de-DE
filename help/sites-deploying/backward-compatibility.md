@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
 exl-id: 96e44da3-da89-4671-a4fb-19ce1b9a38c4
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 100%
-
 ---
-
 # Abwärtskompatibilität in AEM 6.5{#backward-compatibility-in-aem}
 
 ## Übersicht {#overview}
@@ -21,7 +30,7 @@ In Adobe Experience Manager (AEM) 6.5 wurden alle Funktionen im Hinblick auf di
 
 In der Regel sollten Kundinnen und Kunden, die mit AEM 6.3 arbeiten, weder ihren Code noch ihre Anpassungen ändern müssen, wenn sie das entsprechende Upgrade durchführen. Für Kundinnen und Kunden mit AEM 6.1 und 6.2 gibt es nicht wesentlich mehr zusätzliche Änderungen, als dies bei einem Upgrade auf 6.3 erforderlich wäre.
 
-In den Ausnahmefällen, in denen Funktionen nicht abwärtskompatibel realisiert werden konnten, können Abwärtskompatibilitätsprobleme bei Bundles und Inhalten reduziert werden. Installieren Sie dazu ein Kompatibilitätspaket für 6.4. (Weitere Informationen zum Herunterladen finden Sie nachstehend unter „Einrichtung“.) Dieses Kompatibilitätspaket wird normalerweise dazu beitragen, die Kompatibilität für Anwendungen, die mit AEM 6.4 kompatibel sind, wiederherzustellen.
+In den Ausnahmefällen, in denen Funktionen nicht abwärtskompatibel realisiert werden konnten, können Abwärtskompatibilitätsprobleme bei Paketen und Inhalten reduziert werden. Installieren Sie dazu ein Kompatibilitätspaket für 6.4. (Weitere Informationen zum Herunterladen finden Sie nachstehend unter „Einrichtung“.) Dieses Kompatibilitätspaket wird normalerweise dazu beitragen, die Kompatibilität für Anwendungen, die mit AEM 6.4 kompatibel sind, wiederherzustellen.
 
 Mit dem Kompatibilitätspaket können Sie AEM im Kompatibilitätsmodus ausführen und so die benutzerdefinierte Entwicklung für neue AEM-Funktionen zurückstellen:
 

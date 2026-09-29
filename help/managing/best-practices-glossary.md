@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Developer,Leader
 exl-id: e6542ba9-1182-4b81-b251-537747b89e4c
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6926'
-ht-degree: 100%
-
+source-wordcount: '7022'
+ht-degree: 99%
 ---
-
 # Glossar{#glossary}
 
 Dieses Glossar listet (alphabetisch) alle zu liefernden Dokumente aus der [Projekt-Checkliste](/help/managing/best-practices-checklist.md) auf.
@@ -104,7 +120,8 @@ Stellen Sie sicher, dass Ihr Team aus Mitarbeitenden mit entsprechender Qualifik
 
 * Mindestens ein AEM-zertifizierter Entwicklungsleiter
 * Mindestens ein AEM-zertifizierter Architekt
-* Mindestens 75 % der Entwickler mit AEM-Zertifizierung. Dies ermöglicht es den zertifizierten Entwicklern, Nachwuchsentwickler zu betreuen, und sorgt für Wissensaustausch und Transparenz.
+* Mindestens 75 % der Entwickler mit AEM-Zertifizierung
+Dies ermöglicht es den zertifizierten Entwicklern, Nachwuchsentwickler zu betreuen und sorgt für Wissensaustausch und Transparenz
 
 ### Architekturdiagramm {#architecture-diagram}
 
@@ -201,7 +218,7 @@ Geschäfts-KPIs definieren messbare Werte, die aufzeigen, wie effektiv ein Unter
 
 Ein Geschäftsanforderungsdokument (Business Requirements Document, BRD) beschreibt die Geschäftslösung für ein Projekt und liefert eine klare Präzisierung der Geschäftsanforderungen und -erwartungen auf Kundenseite. Es unterscheidet auch zwischen der geschäftlichen und der technischen Lösung.
 
-Bei der Prüfung der Unternehmenslösung sollte das Geschäftsanforderungsdokument (BRD) die Frage beantworten:
+Bei der Prüfung der Geschäftslösung sollte das Geschäftsanforderungsdokument (BRD) die Frage beantworten:
 „Was will das Unternehmen erreichen?“
 
 ### Genehmigung durch die Geschäftsführung bei allen erforderlichen Anpassungen der Lösung oder Architektur entsprechend den ermittelten ROI- und KPI-Erwartungen {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
@@ -216,7 +233,7 @@ Die Caching-Strategie beschreibt, was für Endbenutzende zwischengespeichert wir
 
 Beispielsweise können Elemente wie Bilder, JavaScript und andere Server-Dateien zwischengespeichert werden, um die Leistung einer Lösung zu verbessern.
 
-### Codierungsrichtlinien  {#coding-guidelines}
+### Codierungsrichtlinien {#coding-guidelines}
 
 Die Kodierungsrichtlinien definieren Grundprinzipien, an die sich die Entwickelnden bei der Entwicklung der Lösung halten müssen. Dazu zählen u. a.:
 
@@ -309,7 +326,7 @@ Richtlinien der Kundin bzw. des Kunden, die festlegen, wie und wann Bereitstellu
 
 Dazu gehören oft Timelines und Termin- und Abnahmeanforderungen.
 
-### Überwachungsrichtlinien oder -anforderungen der Kundin bzw. des Kunden {#customer-monitoring-policies-or-requirements}
+### Überwachungsrichtlinien oder -anforderungen des Kunden {#customer-monitoring-policies-or-requirements}
 
 Richtlinien und Anforderungen der Kundin bzw. des Kunden, was überwacht werden soll. Diese ergänzen die im Überwachungskonzept genannten Empfehlungen.
 
@@ -352,10 +369,10 @@ Anpassungen und/oder angewendete Hotfixes müssen dokumentiert werden, da sie si
 * AEM kann weitgehend an die jeweiligen Geschäftsanforderungen angepasst werden. Alle Anpassungen, die sich auf Upgrades auswirken können, müssen vollständig dokumentiert werden. Zum Beispiel alle wichtigen Änderungen an der Benutzeroberfläche (UI) von AEM.
 * Alle Aktualisierungen, die für die aktuelle Lösung erforderlich sind, müssen vollständig dokumentiert werden. Dazu zählen:
 
-   * Cumulative Fix Packs (CFP)
-   * Service Packs (SP)
-   * Hotfixes
-   * Upgrades
+  * Cumulative Fix Packs (CFP)
+  * Service Packs (SP)
+  * Hotfixes
+  * Upgrades
 
 ### Täglicher Bericht zum Benutzerakzeptanztest {#daily-user-acceptance-test-report}
 
@@ -1002,7 +1019,7 @@ In ihr werden die technischen und geschäftlichen Risiken des Projekts bewertet.
 
 ### Risikominimierungsplan {#risk-mitigation-plan}
 
-Der Risikominimierungsplan umfasst die Risikobewertung.  Gemeinsam decken sie Folgendes ab:
+Der Risikominimierungsplan umfasst die Risikobewertung. Gemeinsam decken sie Folgendes ab:
 
 * Ausgemachte Risiken
 * Mögliche Lösungen für diese Risiken, falls sie bei der Implementierung auftreten sollten
@@ -1269,7 +1286,7 @@ Beachten Sie Folgendes:
 
 ### Testsuite {#test-suite}
 
-Auswahl der Automatisierungssuite und -tools.  Diese werden zur Automatisierung von Tests, einschließlich für Anwendungsfälle, verwendet.
+Auswahl der Automatisierungssuite und -tools. Diese werden zur Automatisierung von Tests, einschließlich für Anwendungsfälle, verwendet.
 
 ### Auswahl einer Suite mit Test-Tools {#test-tooling-suite-selected}
 
@@ -1289,7 +1306,7 @@ Diese Anforderungen sind spezifisch für die technische Implementierung von Dien
 
 ### Teststrategie {#testing-strategy}
 
-Die Teststrategie skizziert die allgemeine Strategie für Qualitätssicherung und Benutzerakzeptanztests.  Dazu gehören Timelines, Berichterstellungsrhythmus und Ausführung.
+Die Teststrategie skizziert die allgemeine Strategie für Qualitätssicherung und Benutzerakzeptanztests. Dazu gehören Timelines, Berichterstellungsrhythmus und Ausführung.
 
 ### Konzept für die Integration von Systemen von Drittanbietern {#third-party-integration-concept}
 
@@ -1301,7 +1318,7 @@ Details zu den (sowohl funktionalen als auch nicht funktionalen) Anforderungen a
 
 ### Sicherheitskonzept für Integrationen von Drittanbietern {#third-party-security-concept}
 
-Konzept zur Gewährleistung der Sicherheit von Integrationen von Drittanbietern.  Muss mit den entsprechenden Sicherheitsrichtlinien konform sein.
+Konzept zur Gewährleistung der Sicherheit von Integrationen von Drittanbietern. Muss mit den entsprechenden Sicherheitsrichtlinien konform sein.
 
 ### Systeme von Drittanbietern für die Integration {#third-party-system-for-integration}
 

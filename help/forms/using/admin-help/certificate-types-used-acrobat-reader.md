@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: ca919915-c37b-4793-b5e2-21a464c5dcdf
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 65%
-
 ---
-
 # Von Acrobat Reader DC Extensions verwendete Zertifikatstypen {#certificate-types-used-by-acrobat-reader-dc-extensions}
 
 Die Zertifikatsanzeige enthält die folgenden Informationen zum Zertifikat:
@@ -61,7 +76,7 @@ In der folgenden Tabelle sind die Zertifikatprofile aufgeführt, die bei der Ana
   <tr>
    <td><p>P1</p></td>
    <td><p>SAP-Produktion</p></td>
-   <td><p>Max.</p></td>
+   <td><p>Maximal</p></td>
    <td><p>Produktion</p></td>
   </tr>
   <tr>
@@ -73,7 +88,7 @@ In der folgenden Tabelle sind die Zertifikatprofile aufgeführt, die bei der Ana
   <tr>
    <td><p>P3</p></td>
    <td><p>Acrobat Reader DC Extensions, Produktion</p></td>
-   <td><p>Max.</p></td>
+   <td><p>Maximal</p></td>
    <td><p>Produktion</p></td>
   </tr>
   <tr>
@@ -92,54 +107,54 @@ In der folgenden Tabelle sind die Zertifikatprofile aufgeführt, die bei der Ana
    <td><p>P6</p></td>
    <td><p>Acrobat Reader DC Extensions, Auswertung</p></td>
    <td><p>60 Tage</p></td>
-   <td><p>Auswertung</p></td>
+   <td><p>Test</p></td>
   </tr>
   <tr>
    <td><p>P8</p></td>
    <td><p>Forms, Produktion</p></td>
-   <td><p>Max.</p></td>
+   <td><p>Maximal</p></td>
    <td><p>Produktion</p></td>
   </tr>
   <tr>
    <td><p>P9</p></td>
    <td><p>Adobe Acrobat 7.x, Produktion</p></td>
-   <td><p>Max.</p></td>
+   <td><p>Maximal</p></td>
    <td><p>Produktion</p></td>
   </tr>
   <tr>
    <td><p>I10</p></td>
    <td><p>Forms; OEMs können Forms verwenden</p></td>
-   <td><p>Max.</p></td>
+   <td><p>Maximal</p></td>
    <td><p>Produktion und Auswertung</p></td>
   </tr>
   <tr>
    <td><p>I11</p></td>
    <td><p>Forms; OEMs können Forms verwenden.</p></td>
-   <td><p>Max.</p></td>
+   <td><p>Maximal</p></td>
    <td><p>Produktion und Auswertung</p></td>
   </tr>
   <tr>
    <td><p>I12</p></td>
    <td><p>Nur Signatur; OEMs dürfen nur Signaturen verwenden</p></td>
-   <td><p>Max.</p></td>
+   <td><p>Maximal</p></td>
    <td><p>Produktion und Auswertung</p></td>
   </tr>
   <tr>
    <td><p>I13</p></td>
    <td><p>Nur Offline-Kommentare; OEMs können Offline-Kommentare verwenden</p></td>
-   <td><p>Max.</p></td>
+   <td><p>Maximal</p></td>
    <td><p>Produktion und Auswertung</p></td>
   </tr>
   <tr>
    <td><p>I14</p></td>
    <td><p>Nur Kommentare; OEMs dürfen nur Kommentare verwenden</p></td>
-   <td><p>Max.</p></td>
+   <td><p>Maximal</p></td>
    <td><p>Produktion und Auswertung</p></td>
   </tr>
   <tr>
    <td><p>I15</p></td>
    <td><p>Vollständige Berechtigungen; OEMs können vollständige Berechtigungen verwenden</p></td>
-   <td><p>Max.</p></td>
+   <td><p>Maximal</p></td>
    <td><p>Produktion und Auswertung</p></td>
   </tr>
  </tbody>

@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 20aea30b-9cfe-45c1-aa8d-08085f8e3e7d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 100%
-
+source-wordcount: '1032'
+ht-degree: 90%
 ---
-
 # Veröffentlichen von Seiten{#publishing-pages}
 
 Nachdem Sie Ihren Inhalt in der Authoring-Umgebung erstellt und geprüft haben, muss dieser auf der öffentlichen Website (der Publishing-Umgebung) verfügbar gemacht werden.
@@ -29,14 +38,14 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten Datum/Zeitpunkt 
 >
 >Bestimmte Begriffe im Zusammenhang mit Publishing sind leicht zu verwechseln:
 >
->* **Veröffentlichen/Veröffentlichung rückgängig machen**
->  >  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
+>* **Veröffentlichen/Veröffentlichung aufheben**
+>  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
 >
 >* **Aktivieren/Deaktivieren**
->  >  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
+>  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
 >
 >* **Replizieren/Replikation**
->  >  Dies sind technische Begriffe, die für die Verschiebung von Daten (z. B. Seiteninhalten, Dateien, Code, Benutzerkommentaren) zwischen Umgebungen verwendet werden, etwa beim Veröffentlichen oder Zurückreplizieren von Benutzerkommentaren.
+>  Dies sind technische Begriffe, die für die Verschiebung von Daten (z. B. Seiteninhalten, Dateien, Code, Benutzerkommentaren) zwischen Umgebungen verwendet werden, etwa beim Veröffentlichen oder Zurückreplizieren von Benutzerkommentaren.
 >
 
 >[!NOTE]
@@ -159,7 +168,7 @@ Von der Registerkarte **Websites** aus können Sie die einzelnen Seiten aktivier
 
    ![screen_shot_2012-02-08at125033pm-1](assets/screen_shot_2012-02-08at125033pm-1.png)
 
-1. Geben Sie den **Startpfad** ein. Dies ist der Pfad zum Stammverzeichnis des Abschnitts, den Sie aktivieren (veröffentlichen) möchten. Diese Seite und alle darunter liegenden Seiten werden bei der Aktivierung (bzw. bei der Emulation, falls ein Probelauf ausgewählt wurde) berücksichtigt.
+1. Geben Sie den **Startpfad** ein. Dies gibt den Pfad zum Stammverzeichnis des Abschnitts an, den Sie aktivieren (veröffentlichen) möchten. Diese Seite und alle darunter liegenden Seiten werden für die Aktivierung (bzw. für die Emulation, wenn ein Probelauf ausgewählt wurde) berücksichtigt.
 1. Aktivieren Sie die Auswahlkriterien nach Bedarf:
 
    * **Nur geänderte**: nur Seiten aktivieren, die geändert wurden.
@@ -168,6 +177,6 @@ Von der Registerkarte **Websites** aus können Sie die einzelnen Seiten aktivier
 
 1. Wählen Sie die Aktion aus, die Sie durchführen möchten:
 
-   1. Wählen Sie **Probelauf** aus, wenn Sie überprüfen möchten, welche Seiten aktiviert *würden*. Dabei handelt es sich lediglich um eine Emulation, bei der keine Seiten tatsächlich aktiviert werden.
+   1. Wählen Sie **Probelauf** aus, wenn Sie überprüfen möchten, welche Seiten *aktiviert* würden. Dies ist nur eine Emulation, bei der keine Seiten aktiviert werden.
 
    1. Wählen Sie **Aktivieren** aus, wenn die Seiten aktiviert werden sollen.

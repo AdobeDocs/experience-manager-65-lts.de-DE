@@ -9,13 +9,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: fbe61ef4-1045-49f7-8280-4bc74288cbec
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 100%
-
+source-wordcount: '623'
+ht-degree: 98%
 ---
-
 # Texteditor anpassen{#customize-text-editor}
 
 ## Überblick {#overview}
@@ -31,7 +44,7 @@ In den Schrifteinstellungen können Sie folgende Änderungen vornehmen:
 
 Gehen Sie folgendermaßen vor:
 
-1. [Anpassen von Schriftarten, indem Sie die Datei „tbxeditor-config.xml“ in CRX bearbeiten ](#customizefonts)
+1. [Anpassen von Schriftarten, indem Sie die Datei „tbxeditor-config.xml“ in CRX bearbeiten](#customizefonts)
 1. [Fügen Sie dem Clientcomputer benutzerdefinierte Schriftarten hinzu](#addcustomfonts)
 
 ## Anpassen von Schriftarten durch Bearbeiten der Datei „tbxeditor-config.xml“ in CRX {#customizefonts}
@@ -178,8 +191,8 @@ Wenn Sie auf eine Schriftart im Correspondence Management-Texteditor zugreifen, 
 
 Weitere Informationen zum Installieren von Schriftarten finden Sie hier:
 
-* [Installieren oder Deinstallieren von Schriftarten unter Windows](https://windows.microsoft.com/de-de/windows-vista/install-or-uninstall-fonts) 
-* [Mac-Grundlagen: Schriftartenbuch](https://support.apple.com/de-de/HT201749) 
+* [Installieren oder Deinstallieren von Schriftarten unter Windows](https://windows.microsoft.com/de-de/windows-vista/install-or-uninstall-fonts)
+* [Mac-Grundlagen: Schriftartenbuch](https://support.apple.com/de-de/HT201749)
 
 ## Zugriff auf Schriftartanpassungen {#access-font-customizations}
 

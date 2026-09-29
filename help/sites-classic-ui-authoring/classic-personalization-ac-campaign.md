@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: df3c15e0-549b-449f-9f50-bb40e1740159
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1194'
 ht-degree: 100%
-
 ---
-
 # Arbeiten mit Adobe Campaign 6.1 und Adobe Campaign Standard{#working-with-adobe-campaign-and-adobe-campaign-standard}
 
 Sie können E-Mail-Inhalte in AEM erstellen und diese in Adobe Campaign-E-Mails verarbeiten. Gehen Sie dazu wie folgt vor:
@@ -60,7 +71,7 @@ Detaillierte Anweisungen finden Sie in diesem Dokument.
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
 1. Wählen Sie **Neu** > **Neue Seite** aus, um neue E-Mail-Inhalte zu erstellen.
-1. Wählen Sie eine der verfügbaren Adobe Campaign-spezifischen Vorlagen und füllen Sie dann die allgemeinen Eigenschaften der Seite aus.  Standardmäßig sind drei Vorlagen verfügbar:
+1. Wählen Sie eine der verfügbaren Adobe Campaign-spezifischen Vorlagen und füllen Sie dann die allgemeinen Eigenschaften der Seite aus. Standardmäßig sind drei Vorlagen verfügbar:
 
    * **Adobe Campaign-E-Mail (AC 6.1)**: Hiermit können Sie einer Vorlage eigene Inhalte hinzufügen, bevor sie zur Bereitstellung an Adobe Campaign 6.1 übermittelt wird.
    * **Adobe Campaign-E-Mail (ACS)**: Hiermit können Sie einer Vorlage eigene Inhalte hinzufügen, bevor sie zur Bereitstellung an Adobe Campaign Standard weitergeleitet wird.
@@ -100,7 +111,7 @@ Sie können E-Mail-Inhalte entweder in der klassischen Benutzeroberfläche oder 
 
    ![chlimage_1-175](assets/chlimage_1-175.png)
 
-1. Bearbeiten Sie die E-Mail-Inhalte, indem Sie die gewünschten Elemente durch die im Sidekick verfügbaren Optionen hinzufügen.  Hierzu ziehen Sie die Komponenten einfach per Drag-and-Drop in die E-Mail.  Doppelklicken Sie dann auf das Element, das Sie bearbeiten möchten.
+1. Bearbeiten Sie die E-Mail-Inhalte, indem Sie die gewünschten Elemente durch die im Sidekick verfügbaren Optionen hinzufügen. Hierzu ziehen Sie die Komponenten einfach per Drag-and-Drop in die E-Mail. Doppelklicken Sie dann auf das Element, das Sie bearbeiten möchten.
 
    Sie können beispielsweise Text hinzufügen, der Personalisierungsfelder enthält.
 
@@ -126,7 +137,7 @@ Eine ausführliche Beschreibung der Campaign-Komponenten finden Sie unter [Adobe
 >
 
 1. Fügen Sie eine neue Komponente aus **Newsletter** > **Text und Personalisierung (Kampagne)** ein.
-1. Öffnen Sie die Komponente, indem Sie darauf doppelklicken.  Das Fenster **Bearbeiten** verfügt über eine Funktion, mit der Sie die Personalisierungselemente einfügen können.
+1. Öffnen Sie die Komponente, indem Sie darauf doppelklicken. Das Fenster **Bearbeiten** verfügt über eine Funktion, mit der Sie die Personalisierungselemente einfügen können.
 
    >[!NOTE]
    >
@@ -140,7 +151,7 @@ Eine ausführliche Beschreibung der Campaign-Komponenten finden Sie unter [Adobe
 
    ![chlimage_1-179](assets/chlimage_1-179.png)
 
-1. Es öffnet sich ein Fenster, in dem das gewünschte Profil ausgewählt werden kann.  Die Personalisierungsfelder werden automatisch durch Daten aus dem ausgewählten Profil ersetzt.
+1. Es öffnet sich ein Fenster, in dem das gewünschte Profil ausgewählt werden kann. Die Personalisierungsfelder werden automatisch durch Daten aus dem ausgewählten Profil ersetzt.
 
    ![chlimage_1-180](assets/chlimage_1-180.png)
 

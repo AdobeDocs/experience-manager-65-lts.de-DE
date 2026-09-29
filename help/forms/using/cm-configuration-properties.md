@@ -8,13 +8,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 23be6248-1013-488e-91e6-ac1f6fb7da50
-source-git-commit: c714e51f0c0368988ce552969747ab5fce5c186f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 48%
-
+source-wordcount: '816'
+ht-degree: 42%
 ---
-
 # Eogenschaften der Correspondence Management-Konfiguration {#correspondence-management-configuration-properties}
 
 Öffnen Sie folgende URL einem Browser, um diese Eigenschaftenin zu konfigurieren: `https://<server>:<port>/<contextPath>/system/console/configMgr` und wählen Sie **Correspondence Management-Konfigurationen**.
@@ -152,13 +165,13 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
   <tr>
    <td><p>Datenanzeigeformate</p> </td>
    <td><p>Gibt ein Gebietsschema-spezifisches Anzeigeformat für Daten an.</p> </td>
-   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
+   <td><p>locale=de_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=, numberUseGroupSeparator=trueLocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator=, numberGroupSeparator=.; numberUseGroupSeparator=trueLocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=, numberGroupSeparator= ; numberGroupSeparator= ; numberUseGroupSeparator=trueLocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=, numberUseGroupSeparator=true</p> </td>
    <td><p>--</p> </td>
   </tr>
   <tr>
    <td><p>Datenbearbeitungsformat</p> </td>
    <td><p>Das Format für Daten bearbeiten. Wird beim Schreiben von Daten als Zeichenfolge oder beim Analysieren von Daten aus Zeichenfolge verwendet.</p> </td>
-   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
+   <td><p>locale=de_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=, numberUseGroupSeparator=true</p> </td>
    <td>--<p> </p> </td>
   </tr>
   <tr>
@@ -270,7 +283,7 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
    <td><p>true/false</p> <p> </p> </td>
   </tr>
   <tr>
-   <td>Temporärer Ordner </td>
+   <td>Temporärer Ordner</td>
    <td>Speicherort des temporären Ordners.</td>
    <td>acm.tpmFolder</td>
    <td> </td>

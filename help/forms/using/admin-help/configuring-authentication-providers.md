@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 14f006f8-8751-4713-ba5a-590ce479fbb4
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 98%
-
 ---
-
 # Konfigurieren von Authentifizierungsanbietern {#configuring-authentication-providers}
 
 >[!NOTE]
@@ -160,7 +175,7 @@ Ohne Just-in-time-Bereitstellung ist die Authentifizierung nicht erfolgreich, we
 1. Zum Erstellen einer neuen Domain klicken Sie auf „Neue Unternehmens-Domain“ oder „Neue Hybrid-Domain“. Um eine vorhandene Domain zu bearbeiten, klicken Sie auf den Namen der Domain.
 1. Wählen Sie „Just-in-time-Bereitstellung aktivieren“.
 
-   ***Hinweis &#x200B;**: Wenn das Kontrollkästchen „Just-in-time-Bereitstellung aktivieren“ fehlt, klicken auf „Startseite“ > „Einstellungen“ > „User Management“ „Konfiguration“ > „Erweiterte Systemattribute“ und klicken Sie anschließend auf „Neu laden“.*
+   ***Hinweis **: Wenn das Kontrollkästchen „Just-in-time-Bereitstellung aktivieren“ fehlt, klicken auf „Startseite“ > „Einstellungen“ > „User Management“ „Konfiguration“ > „Erweiterte Systemattribute“ und klicken Sie anschließend auf „Neu laden“.*
 
 1. Fügen Sie Authentifizierungsanbieter hinzu. Wählen Sie beim Hinzufügen von Authentifizierungsanbietern auf dem Bildschirm „Neue Authentifizierung“ einen registrierten Identitätsersteller und einen Zuweisungsanbieter aus. (Siehe [Konfigurieren der Authentifizierungsanbieter](configuring-authentication-providers.md#configuring-authentication-providers).)
 1. Speichern Sie die Domain.

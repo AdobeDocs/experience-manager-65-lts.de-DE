@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: bc621086-8128-4836-a580-dca99f61c439
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1779'
 ht-degree: 63%
-
 ---
-
 # Experience Fragments {#experience-fragments}
 
 ## Grundlagen {#the-basics}
@@ -64,11 +73,11 @@ Der Selektor für die einfache Ausgabedarstellung verwendet einen Transformator 
 Die HTML-Ausgabedarstellung wird mithilfe der `Sling Rewriter` Pipelines generiert. Die Pipeline ist unter `/libs/experience-fragments/config/rewriter/experiencefragments` definiert. Der HTML-Transformer unterstützt die folgenden Optionen:
 
 * `allowedCssClasses`
-   * Ein RegEx-Ausdruck, der den CSS-Klassen entspricht, die in der endgültigen Wiedergabe belassen werden sollen.
-   * Dies ist nützlich, wenn der Kunde bestimmte CSS-Klassen entfernen möchte
+  * Ein RegEx-Ausdruck, der den CSS-Klassen entspricht, die in der endgültigen Wiedergabe belassen werden sollen.
+  * Dies ist nützlich, wenn der Kunde bestimmte CSS-Klassen entfernen möchte
 * `allowedTags`
-   * Eine Liste der HTML-Tags, die in der endgültigen Ausgabedarstellung zulässig sein sollen.
-   * Standardmäßig lässt das System die folgenden Tags ohne Konfiguration zu: html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, `noscript`, div, link und script.
+  * Eine Liste der HTML-Tags, die in der endgültigen Ausgabedarstellung zulässig sein sollen.
+  * Standardmäßig lässt das System die folgenden Tags ohne Konfiguration zu: html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, `noscript`, div, link und script.
 
 Es wird empfohlen, den Rewriter mit einer Überlagerung zu konfigurieren. Siehe [Überlagerungen](/help/sites-developing/overlays.md)
 
@@ -86,12 +95,12 @@ Die folgenden Eigenschaften müssen verwendet werden:
 
 * Um das Bild zu extrahieren,
 
-   * `fileReference`
-   * `fileName`
+  * `fileReference`
+  * `fileName`
 
 * Zum Extrahieren des Textes
 
-   * `text`
+  * `text`
 
 Nur Komponenten, die diese Konvention verwenden, werden berücksichtigt.
 
@@ -114,7 +123,7 @@ Um eine Experience Fragment-Vorlage zu erstellen, die der **Experience Fragment 
 
    1. Der Name der Vorlage muss beginnen mit:
       `experience-fragments`
-Ermöglicht Benutzenden das Erstellen von Experience Fragments in `/content/experience-fragments`, da die `cq:allowedTemplates` Eigenschaft dieses Ordners alle Vorlagen umfasst, deren Namen mit `experience-fragment` beginnen. Kunden können diese Eigenschaft aktualisieren, um ihr eigenes Namensschema oder ihre eigenen Vorlagenspeicherorte einzuschließen.
+      Ermöglicht Benutzenden das Erstellen von Experience Fragments in `/content/experience-fragments`, da die `cq:allowedTemplates` Eigenschaft dieses Ordners alle Vorlagen umfasst, deren Namen mit `experience-fragment` beginnen. Kunden können diese Eigenschaft aktualisieren, um ihr eigenes Namensschema oder ihre eigenen Vorlagenspeicherorte einzuschließen.
 
 1. [Zulässige Vorlagen](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder) können in der Experience Fragments-Konsole konfiguriert werden.
 <!--
@@ -131,7 +140,7 @@ Ermöglicht Benutzenden das Erstellen von Experience Fragments in `/content/expe
 
 [Die Entwicklung von Komponenten für die Verwendung mit/in Experience Fragments erfolgt gemäß den üblichen Verfahren.](/help/sites-developing/components.md)
 
-Die einzige zusätzliche Konfiguration besteht darin sicherzustellen, dass die Komponenten in der Vorlage zulässig sind. Diese Funktion wird mit der [Inhaltsrichtlinie“ &#x200B;](/help/sites-developing/page-templates-editable.md#content-policies).
+Die einzige zusätzliche Konfiguration besteht darin sicherzustellen, dass die Komponenten in der Vorlage zulässig sind. Diese Funktion wird mit der [Inhaltsrichtlinie“ ](/help/sites-developing/page-templates-editable.md#content-policies).
 
 ## Der Experience Fragment Link Rewriter Provider – HTML {#the-experience-fragment-link-rewriter-provider-html}
 
@@ -254,7 +263,7 @@ Damit der Service funktioniert, müssen jetzt drei Methoden innerhalb des Servic
 * ` [shouldRewrite](#shouldrewrite)`
 * ` [rewriteLink](#rewritelink)`
 
-   * `rewriteLinkExample2`
+  * `rewriteLinkExample2`
 
 * ` [getPriority](#priorities-getpriority)`
 
@@ -322,7 +331,7 @@ Beispielsweise möchten Sie den `/etc.clientlibs` Teil der URL entfernen und die
 
 >[!NOTE]
 >
->Weitere Informationen zum Abrufen eines Ressource Resolver über einen Service-Benutzer finden Sie unter &quot;[&#x200B; in AEM](/help/sites-administering/security-service-users.md).
+>Weitere Informationen zum Abrufen eines Ressource Resolver über einen Service-Benutzer finden Sie unter &quot;[ in AEM](/help/sites-administering/security-service-users.md).
 
 ```java
 private ResourceResolver resolver;

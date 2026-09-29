@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7e14471e-8bb5-4cce-9175-3bbff9d803a9
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2035'
+source-wordcount: '2047'
 ht-degree: 80%
-
 ---
-
 # Programmgesteuerte Interaktion mit Workflows{#interacting-with-workflows-programmatically}
 
 Während Sie [Ihre Workflows anpassen und erweitern](/help/sites-developing/workflows-customizing-extending.md), können Sie auf Workflow-Objekte zugreifen:
@@ -409,8 +418,8 @@ Um den **Workflow-Titel** zu ändern, der auf der Registerkarte **Instanzen** de
 
 * mit den folgenden Parametern:
 
-   * `action`: Wert muss lauten: `UPDATE`
-   * `workflowTitle`: Titel des Workflows
+  * `action`: Wert muss lauten: `UPDATE`
+  * `workflowTitle`: Titel des Workflows
 
 #### Ändern des Workflow-Titels – REST mit curl {#how-to-change-the-workflow-title-rest-using-curl}
 
@@ -491,8 +500,8 @@ Wenn ein Modell erstellt wird:
 
 * Der Workflow-Modell-Editor erfordert, dass Modelle eine bestimmte Knotenstruktur unter `/var/workflow/models` verwenden. Der übergeordnete Knoten des Modells muss den Typ `cq:Page` und einen `jcr:content`-Knoten mit den folgenden Eigenschaftswerten aufweisen:
 
-   * `sling:resourceType`: `cq/workflow/components/pages/model`
-   * `cq:template`: `/libs/cq/workflow/templates/model`
+  * `sling:resourceType`: `cq/workflow/components/pages/model`
+  * `cq:template`: `/libs/cq/workflow/templates/model`
 
   Wenn Sie ein Modell erstellen, müssen Sie zunächst diesen `cq:Page`-Knoten erstellen und seinen `jcr:content`-Knoten als übergeordneten Knoten des Modellknotens verwenden.
 

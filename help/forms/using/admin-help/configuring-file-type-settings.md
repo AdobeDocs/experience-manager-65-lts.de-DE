@@ -8,14 +8,26 @@ feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6249'
+source-wordcount: '6255'
 ht-degree: 97%
-
 ---
-
 # Konfigurieren von Dateitypeinstellungen {#configuring-file-type-settings}
 
 >[!NOTE]
@@ -127,7 +139,7 @@ Die folgenden Optionen bestimmen, wie Bilddateien in PDF konvertiert werden. Anw
 
 **OCR verwenden:** Gibt an, ob die optische Zeichenerkennung (Optical Character Recognition, OCR) auf die PDF-Datei angewendet werden soll. Mit OCR-Software können Sie den Text in einer PDF-Datei durchsuchen, korrigieren und kopieren.
 
-***Hinweis &#x200B;**: Die OCR PDF-Funktion (durchsuchbare PDF) wird nur unter Microsoft Windows unterstützt.*
+***Hinweis **: Die OCR PDF-Funktion (durchsuchbare PDF) wird nur unter Microsoft Windows unterstützt.*
 
 **Primäre OCR-Sprache:** Die von der OCR-Engine zum Erkennen der Zeichen zu verwendende Sprache.
 
@@ -266,7 +278,7 @@ Anweisungen zum Zugriff auf diese Einstellung finden Sie unter [Erstellen oder B
 
    >[!NOTE]
    >
-   >*Wenn Sie diese Option in Kombination mit **Einbettung für einige Schriftarten aufheben**&#x200B;verwenden, ist die Einbettung für die Schriftarten in der Liste **Schriftarten für die Aufhebung der Einbettung hinzufügen**&#x200B;weiterhin vollständig aufgehoben.*
+   >*Wenn Sie diese Option in Kombination mit **Einbettung für einige Schriftarten aufheben**verwenden, ist die Einbettung für die Schriftarten in der Liste **Schriftarten für die Aufhebung der Einbettung hinzufügen**weiterhin vollständig aufgehoben.*
 
    >[!NOTE]
    >
@@ -417,7 +429,7 @@ Diese Optionen bestimmen, wie Microsoft Excel-Dateien konvertiert werden. Anweis
 
 **Dateinamenerweiterungen**: Legt die Dateinamenerweiterungen für Dateitypen fest (durch Kommas getrennt), die für diese Anwendung akzeptiert werden. Der Standardwert lautet `xls,xlsx`. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
 
-**PDF/A-1a-kompatible Datei erstellen**: Erzwingt die Verwendung der Einstellung &quot;PDF/A-1b:2005 RGB Adobe PDF&quot;.
+**PDF/A-1a-kompatible Datei erstellen**: Erzwingt die Verwendung der RGB Adobe PDF-Einstellung &quot;PDF/A-1b:2005“.
 
 **Lesezeichen zu Adobe PDF hinzufügen**: Konvertiert Namen von Excel-Arbeitsblättern in Lesezeichen. Standardmäßig ist diese Option aktiviert.
 
@@ -471,7 +483,7 @@ Diese Optionen bestimmen, wie Microsoft PowerPoint-Dateien konvertiert werden. A
 
 **[!UICONTROL Ausgeblendete Folien in PDF-Seiten konvertieren]**: Konvertiert ausgeblendete Folien.
 
-**[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt die Verwendung der Einstellung &quot;PDF/A-1b:2005 RGB Adobe PDF&quot;. Einige PowerPoint-Funktionen werden bei der Erstellung einer PDF-Datei nicht konvertiert. Wenn eine PowerPoint-Transition in Acrobat keine äquivalente Transition aufweist, wird eine ähnliche Transition ersetzt. Wenn sich mehrere Animationseffekte in derselben Folie befinden, wird ein einzelner Effekt verwendet. Seitenübergänge und Aufzählungszeichen werden konvertiert.
+**[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt die Verwendung der RGB Adobe PDF-Einstellung &quot;PDF/A-1b:2005“. Einige PowerPoint-Funktionen werden bei der Erstellung einer PDF-Datei nicht konvertiert. Wenn eine PowerPoint-Transition in Acrobat keine äquivalente Transition aufweist, wird eine ähnliche Transition ersetzt. Wenn sich mehrere Animationseffekte in derselben Folie befinden, wird ein einzelner Effekt verwendet. Seitenübergänge und Aufzählungszeichen werden konvertiert.
 
 ## Microsoft Project-Einstellungen (nur Windows) {#microsoft-project-settings-windows-only}
 
@@ -481,7 +493,7 @@ Diese Optionen bestimmen, wie Microsoft-Projektdateien konvertiert werden. Anwei
 
 1. **[!UICONTROL Dokumentinformationen konvertieren]**: Fügt Dokumentinformationen aus dem Dialogfeld „Eigenschaften“ der Quelldatei hinzu, einschließlich Titel, Thema, Autor, Schlüsselwörtern, Manager, Unternehmen, Kategorie und Kommentaren. Standardmäßig ist diese Option aktiviert.
 1. **[!UICONTROL Quelldatei an Adobe PDF anfügen]**: Fügt die Quelldatei der PDF-Datei als Anlage hinzu.
-1. **[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt die Verwendung der Einstellung &quot;PDF/A-1b:2005 RGB Adobe PDF&quot;.
+1. **[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt die Verwendung der RGB Adobe PDF-Einstellung &quot;PDF/A-1b:2005“.
 1. **[!UICONTROL Makros automatisch ausführen]**: Führt vor dem Konvertieren des Dokuments alle Makros im Microsoft Project-Dokument aus (z. B. ein Makro, das die aktuelle Uhrzeit einfügt).
 
 ## Microsoft Word-Einstellungen (nur Windows) {#microsoft-word-settings-windows-only}

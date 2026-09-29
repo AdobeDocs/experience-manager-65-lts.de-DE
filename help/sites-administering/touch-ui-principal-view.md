@@ -10,13 +10,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: 7f952e69-f219-4ade-a187-2a4cbc1600f3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 100%
-
+source-wordcount: '777'
+ht-degree: 97%
 ---
-
 # Prinzipalansicht für die Berechtigungsverwaltung{#principal-view-for-permissions-management}
 
 ## Übersicht {#overview}
@@ -73,7 +85,7 @@ Berechtigungen können hinzugefügt werden, indem Sie mithilfe des Textfelds suc
 >
 >Eine vollständige Liste der Berechtigungen und Beschreibungen finden Sie unter [Verwaltung von Benutzenden, Gruppen und Zugriffsrechten](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-![Suchberechtigung für einen bestimmten Pfad.](assets/image2019-3-21_0-5-47.png) ![Fügen Sie neuen Eintrag für „dam-users“ hinzu, wie durch einen in vertikalen Spalten ausgewählten Pfad gezeigt.](assets/image2019-3-21_0-6-53.png)
+![Suchberechtigung für einen bestimmten Pfad.](assets/image2019-3-21_0-5-47.png) ![Fügen Sie einen neuen Eintrag für „dam-users“ hinzu, wie durch einen in vertikalen Spalten ausgewählten Pfad angezeigt.](assets/image2019-3-21_0-6-53.png)
 
 Nachdem die Liste der Berechtigungen ausgewählt wurde, lässt sich der Berechtigungstyp auswählen: „Ablehnen“ oder „Zulassen“, wie unten dargestellt.
 
@@ -121,7 +133,7 @@ Zugriffssteuerungseinträge können gelöscht werden, um alle Berechtigungen zu 
 
 ![Löschen von ACEs](assets/image2019-3-21_0-53-19.png) ![Löschen von ACEs](assets/unspe.png)
 
-### Berechtigungskombinationen in der klassischen Benutzeroberfläche {#classic-ui-privilege-combinations}
+### Berechtigungskombinationen auf der klassischen Benutzeroberfläche {#classic-ui-privilege-combinations}
 
 In der neuen Benutzeroberfläche für Berechtigungen wird explizit der grundlegende Satz von Berechtigungen, anstelle vordefinierter Kombinationen verwendet, die nicht immer exakt die gewährten Berechtigungen wiedergegeben.
 
@@ -130,7 +142,7 @@ Das führte in der Vergangenheit zu Unklarheit, was genau konfiguriert wird. In 
 <table>
  <tbody>
   <tr>
-   <th>Berechtigungskombinationen in der klassischen Benutzeroberfläche</th>
+   <th>Berechtigungskombinationen auf der klassischen Benutzeroberfläche</th>
    <th>Berechtigungen der Berechtigungs-Benutzeroberfläche</th>
   </tr>
   <tr>

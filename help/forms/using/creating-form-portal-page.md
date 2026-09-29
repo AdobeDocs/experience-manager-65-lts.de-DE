@@ -9,13 +9,24 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 03430815-6459-469c-b3dd-4cd83b9eec5f
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1711'
 ht-degree: 98%
-
 ---
-
 # Anpassen einer Formularportal-Seite{#creating-a-forms-portal-page}
 
 ## Gilt für {#applies-to}
@@ -185,7 +196,7 @@ So konfigurieren Sie die Komponente „Datumseigenschaft“:
 
    * **Start Date Label (Startdatumsbeschriftung):** Beschriftung des Feldes „Startdatum“.
    * **End Date Label (Enddatumsbeschriftung):** Beschriftung des Feldes „Enddatum“.
-   * **Ausblenden:** Damit wird der Standarddatumsfilter für die Auflistung von Formularen erzwungen. 
+   * **Ausblenden:** Damit wird der Standarddatumsfilter für die Auflistung von Formularen erzwungen.
 
 1. Wählen Sie **OK** aus.
 
@@ -206,12 +217,12 @@ Die Komponente „Eigenschaftsprädikat“ implementiert die Suche nach Formular
 So konfigurieren Sie die Komponente „Eigenschaftsprädikat“:
 
 1. Wählen Sie die Komponente und dann ![settings_icon](assets/settings_icon.png) aus. Das Dialogfeld „Bearbeiten“ wird geöffnet.
-1. Geben Sie auf der Registerkarte „Allgemein“ die Suchbeschriftung an. Der Standardwert ist **Eigenschaften**. 
+1. Geben Sie auf der Registerkarte „Allgemein“ die Suchbeschriftung an. Der Standardwert ist **Eigenschaften**.
 
 1. Wählen Sie auf der Registerkarte „Optionen“ **Element hinzufügen** aus.
 1. Wählen Sie eine Eigenschaft in der Dropdownliste aus und geben Sie für die Eigenschaft eine Suchbeschriftung im Feld unter der Dropdown-Liste an.
 1. Wiederholen Sie Schritt 4, um weitere Eigenschaften hinzuzufügen. Sie können auch einen Standardfilterwert für die Auflistung von Formularen anhand der angegebenen Kriterien festlegen und die Eigenschaft für die Suche durch Endbenutzer ausblenden. Aktivieren Sie das Kontrollkästchen „Ausblenden“ für eine Eigenschaft und legen Sie den Standardfilterwert fest.
- Wenn Sie beispielsweise Formulare anzeigen möchten, die „Reise“ in ihrem Titel enthalten, wählen Sie „Ausblenden“ neben der Eigenschaft „Titel“. Geben Sie außerdem „Reise“ im Textfeld des Standardfilterwerts an.
+Wenn Sie beispielsweise Formulare anzeigen möchten, die „Reise“ in ihrem Titel enthalten, wählen Sie „Ausblenden“ neben der Eigenschaft „Titel“. Geben Sie außerdem „Reise“ im Textfeld des Standardfilterwerts an.
 
 1. Wählen Sie **OK** aus.
 
@@ -252,7 +263,7 @@ Sie können eine Forms Portal-Seite anpassen und ihr ein unverwechselbares Ersch
 
 In der AEM Forms-Benutzeroberfläche können Sie benutzerdefinierte Metadaten zu Formularen hinzufügen. Benutzerdefinierte Metadaten sind nützlich, wenn Sie den Endbenutzenden die Auflistung und Suche von Formularen ermöglichen möchten. Weitere Informationen zu benutzerdefinierten Metadaten finden Sie unter [Anpassen von Vorlagen für Formularportalkomponenten](../../forms/using/customizing-templates-forms-portal-components.md).
 
-Das Formularportal stellt vorkonfigurierte Render-Aktionen bereit. Sie können das Formularportal anpassen, um weitere Aktionen hinzuzufügen. Weitere Informationen finden Sie unter [&#x200B; Hinzufügen einer benutzerdefinierten Aktion zu Formularlistenelementen](../../forms/using/add-custom-action-form-lister.md).
+Das Formularportal stellt vorkonfigurierte Render-Aktionen bereit. Sie können das Formularportal anpassen, um weitere Aktionen hinzuzufügen. Weitere Informationen finden Sie unter [ Hinzufügen einer benutzerdefinierten Aktion zu Formularlistenelementen](../../forms/using/add-custom-action-form-lister.md).
 
 ## Ähnliche Artikel
 

@@ -5,13 +5,25 @@ feature: Multi Site Manager
 role: Admin
 solution: Experience Manager, Experience Manager Sites
 exl-id: eca28076-bc91-4a6f-aef8-979ad6f761f7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '767'
 ht-degree: 100%
-
 ---
-
 # Beheben von Problemen mit MSM und häufig gestellte Fragen {#troubleshooting-msm}
 
 ## Fehlerbehebung: erste Schritte {#first-steps}
@@ -43,17 +55,17 @@ Diese Servlets generieren DEBUG-Protokollmeldungen über den `com.day.cq.wcm.msm
 Die Servlets haben berechnete Informationen auf Grundlage MSM-spezifischer Knoten und Mixins zurückgegeben. Diese Informationen werden folgendermaßen im Repository gespeichert.
 
 * `cq:LiveSync`-Mixin-Typ
-   * Dieser wird auf `jcr:content`-Knoten festgelegt und definiert Live Copy-Stammseiten.
-   * Diese Seiten haben einen `cq:LiveSyncConfig` untergeordneten Knoten des Typs `cq:LiveCopy`, der grundlegende und obligatorische Informationen über die Live Copy in den folgenden Eigenschaften enthält:
-      * `cq:master` verweist auf die Blueprint-Seite der Live Copy.
-      * `cq:rolloutConfigs` zeigt aktive Rollout-Konfigurationen an, die auf die Live Copy angewendet werden.
-      * `cq:isDeep` ist „true“, wenn die untergeordneten Seiten dieses Live Copy-Stamms in der Live Copy enthalten sind.
+  * Dieser wird auf `jcr:content`-Knoten festgelegt und definiert Live Copy-Stammseiten.
+  * Diese Seiten haben einen `cq:LiveSyncConfig` untergeordneten Knoten des Typs `cq:LiveCopy`, der grundlegende und obligatorische Informationen über die Live Copy in den folgenden Eigenschaften enthält:
+    * `cq:master` verweist auf die Blueprint-Seite der Live Copy.
+    * `cq:rolloutConfigs` zeigt aktive Rollout-Konfigurationen an, die auf die Live Copy angewendet werden.
+    * `cq:isDeep` ist „true“, wenn die untergeordneten Seiten dieses Live Copy-Stamms in der Live Copy enthalten sind.
 * `cq:LiveRelationship`-Mixin-Typ
-   * Jede Live Copy-Seite verfügt über einen solchen Mixin-Typ auf ihrem `jcr:content`-Knoten.
-   * Ist dies nicht der Fall, wurde die Seite zu einem bestimmten Zeitpunkt getrennt oder manuell über die Autorenoberfläche außerhalb einer Live Copy-Aktion (Erstellen oder Rollout) erstellt.
+  * Jede Live Copy-Seite verfügt über einen solchen Mixin-Typ auf ihrem `jcr:content`-Knoten.
+  * Ist dies nicht der Fall, wurde die Seite zu einem bestimmten Zeitpunkt getrennt oder manuell über die Autorenoberfläche außerhalb einer Live Copy-Aktion (Erstellen oder Rollout) erstellt.
 * `cq:LiveSyncCancelled`-Mixin-Typ
-   * Wurde zu `jcr:content`-Knoten der Live Copy-Seiten hinzugefügt, die ausgesetzt wurden.
-   * Wenn die Aussetzung auch für untergeordnete Seiten gilt, wird eine `cq:isCancelledForChildren`-Eigenschaft auf demselben Knoten auf „true“ festgelegt.
+  * Wurde zu `jcr:content`-Knoten der Live Copy-Seiten hinzugefügt, die ausgesetzt wurden.
+  * Wenn die Aussetzung auch für untergeordnete Seiten gilt, wird eine `cq:isCancelledForChildren`-Eigenschaft auf demselben Knoten auf „true“ festgelegt.
 
 Die in diesen Eigenschaften enthaltenen Informationen sollten auf der Benutzeroberfläche angezeigt werden. Bei der Fehlerbehebung ist es jedoch hilfreich, das MSM-Verhalten direkt im Repository zu beobachten, wenn MSM-Aktionen auftreten.
 

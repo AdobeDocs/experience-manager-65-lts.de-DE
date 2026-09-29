@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
-source-git-commit: 4087a6f44bd87e3f841feb09220a9ea34ec1dc1c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 98%
-
 ---
-
 # Best Practices für Leistungstests{#best-practices-for-performance-testing}
 
 ## Einführung {#introduction}
@@ -59,18 +68,18 @@ Auf dem Markt ist eine Vielzahl von Tools für Leistungstests erhältlich. Stell
 * AEM bietet vorkonfigurierte Tools, um problematische Abfragen, Anforderungen und Fehlermeldungen schnell anzuzeigen. Weitere Informationen finden Sie im Abschnitt [Diagnose-Tools](/help/sites-administering/operations-dashboard.md#diagnosis-tools) der Dokumentation zum Vorgangs-Dashboard.
 * Apache bietet ein Produkt namens **JMeter** an, das Leistungs- und Belastungstests sowie eine Überprüfung des Funktionsverhaltens ermöglicht. Es handelt sich um eine Open-Source-Software, die kostenlos verwendet werden kann, aber eine kleinere Funktion hat als Unternehmensprodukte und eine stärkere Lernkurve aufweist. JMeter können Sie auf der Apache-Website unter [https://jmeter.apache.org/](https://jmeter.apache.org/) herunterladen.
 
-* **Load Runner** ist ein Enterprise-Produkt für Auslastungstests. Eine kostenlose Evaluierungsversion ist verfügbar. Weitere Informationen finden Sie unter &quot;[&#x200B; Professional Performance Engineering](https://www.opentext.com/products/professional-performance-engineering).
+* **Load Runner** ist ein Enterprise-Produkt für Auslastungstests. Eine kostenlose Evaluierungsversion ist verfügbar. Weitere Informationen finden Sie unter &quot;[ Professional Performance Engineering](https://www.opentext.com/products/professional-performance-engineering).
 
 * Beim Testen mobiler oder responsiver Websites muss ein separater Satz von Tools verwendet werden. Diese drosseln die Netzwerkbrandbreite, um langsamere mobile Verbindungen wie 3G oder EDGE zu simulieren. Zu den gängigeren Tools gehören:
 
-   * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** mit einer benutzerfreundlichen Oberfläche und einer relativ niedrigen Ebene im Netzwerk-Stack. Es sind OS X- und iOS-Versionen verfügbar.
-   * [**Charles**](https://www.charlesproxy.com/), eine Web-Debugging-Proxy-Anwendung, die u. a. eine Netzwerkdrosselung ermöglicht. Es sind Versionen für Windows, OS X und Linux® verfügbar.
+  * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** mit einer benutzerfreundlichen Oberfläche und einer relativ niedrigen Ebene im Netzwerk-Stack. Es sind OS X- und iOS-Versionen verfügbar.
+  * [**Charles**](https://www.charlesproxy.com/), eine Web-Debugging-Proxy-Anwendung, die u. a. eine Netzwerkdrosselung ermöglicht. Es sind Versionen für Windows, OS X und Linux® verfügbar.
 
 #### Optimierungs-Tools {#optimization-tools}
 
 **Überwachung**
 
-Die Dokumentation [Überwachung der Leistung](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) liefert zahlreiche Informationen zu Tools und Methoden für die Diagnose von Problemen und Erkennung von Optimierungsbereichen.
+Die Dokumentation [Überwachen der Performance](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) liefert zahlreiche Informationen zu Tools und Methoden für die Diagnose von Problemen und Erkennung von Optimierungsbereichen.
 
 **Entwicklermodus in der Touch-Benutzeroberfläche**
 
@@ -86,13 +95,14 @@ Mit dem [Tool „Abfrage erläutern“](/help/sites-administering/operations-das
 
 **PageSpeed-Tools**
 
-Die PageSpeed-Tools von Google bieten Website-Analysen zur Einhaltung der Best Practices in Bezug auf die seitenbezogene Leistung sowie ein Plug-in, das zur weiteren Optimierung neben dem Dispatcher in einer Apache-Instanz installiert werden kann.Siehe die [PageSpeed Tools-Website](https://developers.google.com/speed).
+Die PageSpeed-Tools von Google bieten Website-Analysen zur Einhaltung der Best Practices in Bezug auf die seitenbezogene Leistung sowie ein Plug-in, das zur weiteren Optimierung neben dem Dispatcher in einer Apache-Instanz installiert werden kann.
+Siehe die [PageSpeed Tools-Website](https://developers.google.com/speed).
 
 ## Autorenumgebung {#author-environment}
 
 ### Durchführen von Tests {#performing-tests}
 
-Um Leistungstests für die Authoring-Umgebung durchzuführen, müssen Sie das Erlebnis der Produktionsautoren simulieren. Die Authoring-Installationen müssen also alle Komponenten, OSGi-Bundles, Benutzeroberflächenanpassung, benutzerdefinierten Indizes und sonstigen Ergänzungen für die produktionsbezogenen Autoreninstanzen umfassen.
+Um Leistungstests für die Authoring-Umgebung durchzuführen, müssen Sie das Erlebnis der Produktionsautoren simulieren. Die Authoring-Installationen müssen also alle Komponenten, OSGi-Pakete, Benutzeroberflächenanpassung, benutzerdefinierten Indizes und sonstigen Ergänzungen für die produktionsbezogenen Autoreninstanzen umfassen.
 
 Es gibt viele Automatisierungs-Frameworks, die auf Leistungs- und Belastungstests ausgelegt sind. Benutzerdefinierte Skripte können in diesen Tools aufgezeichnet und dann wiedergegeben werden, um eine Spitzenanzahl von Autoren und Autorinnen zu simulieren, die gleichzeitig ähnlichen Inhalt erstellen und Aktivierungen durchführen. Es wird empfohlen, das Tough Day-Tool zu verwenden, um Aktivitäten wie das Hochladen Tausender Assets oder das Aktivieren einer großen Anzahl von Seiten zu simulieren.
 

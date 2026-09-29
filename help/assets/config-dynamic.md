@@ -6,25 +6,54 @@ role: User, Admin
 feature: Configuration,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 6252e61f-44b5-4931-80a0-426c6883092e
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: cf50b0d2-df62-495c-a741-4fa0284ca4fc
+    internal-label: Hybrid mode
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '8118'
+source-wordcount: '8126'
 ht-degree: 95%
-
 ---
-
 # Konfigurieren des Dynamic Media-Hybridmodus {#configuring-dynamic-media-hybrid-mode}
 
 >[!IMPORTANT]
 >
->Ende der Unterstützung für Secure Socket Layer 2.0 und 3.0 und Transport Layer Security 1.0 und 1.1.
+>Ende der Unterstützung für Secure Socket Layer 2.0 und 3.0 und Transport Layer Security 1.0 und 1.1
 >Ab dem 30. April 2024 wird Adobe Dynamic Media die Unterstützung für Folgendes einstellen:
 >
 >* SSL (Secure Socket Layer) 2.0
 >* SSL 3.0
 >* TLS (Transport Layer Security) 1.0 und 1.1
 >* Die folgenden schwachen Verschlüsselungsverfahren in TLS 1.2:
-> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`> `TLS_RSA_WITH_AES_256_GCM_SHA384`> `TLS_RSA_WITH_AES_256_CBC_SHA256`> `TLS_RSA_WITH_AES_256_CBC_SHA`> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`> `TLS_RSA_WITH_AES_128_GCM_SHA256`> `TLS_RSA_WITH_AES_128_CBC_SHA256`> `TLS_RSA_WITH_AES_128_CBC_SHA`> `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`> `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`> `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`> `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
+> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
+> `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
+> `TLS_RSA_WITH_AES_256_GCM_SHA384`
+> `TLS_RSA_WITH_AES_256_CBC_SHA256`
+> `TLS_RSA_WITH_AES_256_CBC_SHA`
+> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
+> `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
+> `TLS_RSA_WITH_AES_128_GCM_SHA256`
+> `TLS_RSA_WITH_AES_128_CBC_SHA256`
+> `TLS_RSA_WITH_AES_128_CBC_SHA`
+> `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
+> `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
+> `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
+> `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
 >
 > Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
 
@@ -152,7 +181,7 @@ Sie können Dynamic Media nur für Bilder, nur für Video oder sowohl für Bilde
 
 ## Aktivieren von Dynamic Media {#enabling-dynamic-media}
 
-[Dynamic Media ist standardmäßig deaktiviert. &#x200B;](https://business.adobe.com/de/products/experience-manager/assets/dynamic-media.html) Um die Funktionen von Dynamic Media nutzen zu können, müssen Sie Dynamic Media aktivieren, indem Sie den Ausführungsmodus `dynamicmedia` verwenden, wie Sie dies beispielsweise auch mit dem Ausführungsmodus `publish` durchführen. Prüfen Sie vor dem Aktivieren die [technischen Anforderungen](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
+[Dynamic Media ist standardmäßig deaktiviert. ](https://business.adobe.com/de/products/experience-manager/assets/dynamic-media.html) Um die Funktionen von Dynamic Media nutzen zu können, müssen Sie Dynamic Media aktivieren, indem Sie den Ausführungsmodus `dynamicmedia` verwenden, wie Sie dies beispielsweise auch mit dem Ausführungsmodus `publish` durchführen. Prüfen Sie vor dem Aktivieren die [technischen Anforderungen](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
 
 >[!NOTE]
 >
@@ -569,7 +598,7 @@ Stellen Sie sicher, dass der Zugriff auf das Vorgabenpaket für die Videoanalyse
 1. Führen Sie einen der folgenden Schritte aus, um die Paketinstallation zu überprüfen und bei Bedarf zu debuggen:
 
    * **Überprüfen der Vorgabe für Videoanalysen über das JCR**
-Um die Vorgabe für Videoanalysen über das JCR zu überprüfen, benötigen Sie Zugriff auf CRXDE Lite.
+     Um die Vorgabe für Videoanalysen über das JCR zu überprüfen, benötigen Sie Zugriff auf CRXDE Lite.
 
      Experience Manager: Navigieren Sie in CRXDE Lite zu `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
@@ -580,7 +609,7 @@ Um die Vorgabe für Videoanalysen über das JCR zu überprüfen, benötigen Sie 
    * **Überprüfen der Vorgabe für Videoanalysen über den Bildserver**
 
      Sie können die Vorgabe für Videoanalysen direkt überprüfen, indem Sie eine Bildserver-Anfrage „req=userdata“ erstellen.
-Um beispielsweise die Analytics-Vorgabe im Autorknoten anzuzeigen, können Sie die folgende Anfrage stellen:
+     Um beispielsweise die Analytics-Vorgabe im Autorknoten anzuzeigen, können Sie die folgende Anfrage stellen:
 
      `https://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`
 
@@ -594,7 +623,7 @@ Um beispielsweise die Analytics-Vorgabe im Autorknoten anzuzeigen, können Sie d
      ```
 
    * **Überprüfen der Vorgabe für Videoanalysen über das Tool für Videoberichte in Experience Manager**
-Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoberichte]**
+     Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoberichte]**
 
      `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -807,7 +836,7 @@ Mit diesen Schritten wird die Experience Manager-Veröffentlichungsinstanz so ei
 
 ## Konfigurieren der Einstellungen des Dynamic Media-Bild-Servers {#configuring-dynamic-media-image-server-settings}
 
-Das Konfigurieren des Dynamic Media-Bild-Servers umfasst die Bearbeitung des Adobe CQ Scene7 ImageServer-Bundles und des Adobe CQ Scene7 PlatformServer-Bundles.
+Das Konfigurieren des Dynamic Media-Bild-Servers umfasst die Bearbeitung des Adobe CQ Scene7 ImageServer-Pakets und des Adobe CQ Scene7 PlatformServer-Pakets.
 
 >[!NOTE]
 >
@@ -818,19 +847,19 @@ Das Konfigurieren des Dynamic Media-Bild-Servers umfasst die Bearbeitung des Ad
 So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
 
 1. Klicken Sie in der oberen linken Ecke in Experience Manager auf **[!UICONTROL Adobe Experience Manager]**, um auf die Konsole für die globale Navigation zuzugreifen, und gehen Sie dann zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
-1. Gehen Sie auf der Adobe Experience Manager-Seite für die Web-Konsolen-Konfiguration zu **[!UICONTROL OSGi]** > **[!UICONTROL Konfiguration]**, um alle Bundles aufzulisten, die in Experience Manager derzeit ausgeführt werden.
+1. Gehen Sie auf der Adobe Experience Manager-Seite für die Web-Konsolen-Konfiguration zu **[!UICONTROL OSGi]** > **[!UICONTROL Konfiguration]**, um alle Pakete aufzulisten, die in Experience Manager derzeit ausgeführt werden.
 
    Die Dynamic Media-Server für die Bereitstellung sind in der Liste unter den folgenden Namen angegeben:
 
    * `Adobe CQ Scene7 ImageServer`
    * `Adobe CQ Scene7 PlatformServer`
 
-1. Klicken Sie in der Liste mit den Bundles rechts von Adobe CQ Scene7 ImageServer auf das Symbol **[!UICONTROL Bearbeiten]**.
+1. Klicken Sie in der Liste mit den Paketen rechts von Adobe CQ Scene7 ImageServer auf das Symbol **[!UICONTROL Bearbeiten]**.
 1. Legen Sie im Dialogfeld für Adobe CQ Scene7 ImageServer die folgenden Konfigurationswerte fest:
 
    >[!NOTE]
    >
-   >Für gewöhnlich ist keine Änderung der Standardwerte erforderlich. Falls Sie jedoch die Standardeinstellungen ändern, müssen Sie das Bundle neu starten, damit die Änderungen wirksam werden.
+   >Für gewöhnlich ist keine Änderung der Standardwerte erforderlich. Falls Sie jedoch die Standardeinstellungen ändern, müssen Sie das Paket neu starten, damit die Änderungen wirksam werden.
 
    | Eigenschaft | Standardwert | Beschreibung |
    | --- | --- | --- |
@@ -842,7 +871,7 @@ So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
    | `WorkerThreads` | 10 | Anzahl der Workerthreads. |
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
-1. Klicken Sie in der Liste mit den Bundles rechts von Adobe CQ Scene7 PlatformServer auf das Symbol **[!UICONTROL Bearbeiten]**.
+1. Klicken Sie in der Liste mit den Paketen rechts von Adobe CQ Scene7 PlatformServer auf das Symbol **[!UICONTROL Bearbeiten]**.
 1. Legen Sie im Dialogfeld für Adobe CQ Scene7 PlatformServer die folgenden Standardwerte fest:
 
    >[!NOTE]
@@ -852,7 +881,7 @@ So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
    | Eigenschaft | Standardwert | Beschreibung |
    |---|---|---|
    | Cache enabled (Cache aktiviert) | Aktiviert | Gibt an, ob der Cache für Antworten aktiviert ist. |
-   | Cache roots (Cache-Stämme) | cache | Mindestens ein Pfad zu Ordnern des Caches für Antworten. Relative Pfade werden für den internen s7imaging-Bundle-Ordner aufgelöst. |
+   | Cache roots (Cache-Stämme) | cache | Mindestens ein Pfad zu Ordnern des Caches für Antworten. Relative Pfade werden für den internen s7imaging-Paket-Ordner aufgelöst. |
    | Cache Max Size (Maximale Cache-Größe) | 200000000 | Gibt die maximale Größe des Caches für Antworten in Byte an. |
    | Cache Max Entries (Maximale Cache-Einträge) | 100000 | Gibt die maximale Anzahl von Einträgen an, die im Cache zulässig ist. |
 
@@ -860,7 +889,7 @@ So konfigurieren Sie die Einstellungen für den Dynamic Media-Bildserver:
 
 Mit dem Standardmanifest können Sie die Standardwerte konfigurieren, die zum Generieren der Antworten für die Dynamic Media-Bereitstellung verwendet werden. Sie können eine Feinabstimmung der Qualität (JPEG-Qualität, Auflösung, Modus für Resampling) und des Cachings (Ablauf) vornehmen und das Rendern von Bildern verhindern, die zu groß sind (defaultpix, defaultthumbpix, maxpix).
 
-Der Speicherort der Standardmanifest-Konfiguration wird aus dem Standardwert für **[!UICONTROL Catalog root]** des **[!UICONTROL Adobe CQ Scene7 PlatformServer]**-Bundles übernommen. Standardmäßig befindet sich dieser Wert unter dem folgenden Pfad unter **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
+Der Speicherort der Standardmanifest-Konfiguration wird aus dem Standardwert für **[!UICONTROL Catalog root]** des **[!UICONTROL Adobe CQ Scene7 PlatformServer]**-Pakete übernommen. Standardmäßig befindet sich dieser Wert unter dem folgenden Pfad unter **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
 
 `/conf/global/settings/dam/dm/imageserver/`
 
@@ -1214,28 +1243,28 @@ Siehe [Bereitstellen von Assets mit Dynamic Media](/help/assets/delivering-dynam
   </tr>
   <tr>
    <td>Kopieren einer Viewer-URL</td>
-   <td><p>Das Dialogfeld zum Kopieren einer URL zeigt eine URL ähnlich der folgenden an (URL dient nur zur Veranschaulichung):</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&contentRoot=%2F</code></p> <p>Hier verweist <code>PUBLISHNODE</code> auf den regulären Veröffentlichungsknoten von Experience Manager und <code>IMAGESERVICEPUBLISHNODE</code> auf die Bilddienst-URL.</p> <p>Siehe auch <a href="/help/assets/delivering-dynamic-media-assets.md">Bereitstellen von Dynamic Media-Assets</a>.</p> </td>
+   <td><p>Das Dialogfeld zum Kopieren einer URL zeigt eine URL ähnlich der folgenden an (URL dient nur zur Veranschaulichung):</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>Hier verweist <code>PUBLISHNODE</code> auf den regulären Veröffentlichungsknoten von Experience Manager und <code>IMAGESERVICEPUBLISHNODE</code> auf die Bilddienst-URL.</p> <p>Siehe auch <a href="/help/assets/delivering-dynamic-media-assets.md">Bereitstellen von Dynamic Media-Assets</a>.</p> </td>
   </tr>
   <tr>
    <td>Kopieren von Einbettungs-Code eines Viewers</td>
    <td><p>Im Dialogfeld zum Einbetten von Code wird ein Code-Schnipsel wie der folgende angezeigt (Code-Schnipsel dient nur zur Veranschaulichung):</p> <p><code class="code">&lt;style type="text/css"&gt;
-       &#x200B;#s7basiczoom_div.s7basiczoomviewer&lbrace;
+       #s7basiczoom_div.s7basiczoomviewer{
        width:100%;
        height:auto;
-       &rbrace;
+       }
        &lt;/style&gt;
        &lt;script
        type="text/javascript" src="https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/js/BasicZoomViewer.js"&gt;&lt;/script&gt;
        &lt;div id="s7basiczoom_div"&gt;&lt;/div&gt;
        &lt;script type="text/javascript"&gt;
-       var s7basiczoomviewer = new s7viewers.BasicZoomViewer(&lbrace;
+       var s7basiczoomviewer = new s7viewers.BasicZoomViewer({
        "containerId" : "s7basiczoom_div",
-       "params" : &lbrace;
+       "params" : {
        "serverurl" : "https://IMAGESERVICEPUBLISHNODE/is/image/",
        "contenturl" : "https://PUBLISHNODE/",
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
-       "asset" : "/content/dam/path/to/Image.jpg" &rbrace;
-       &rbrace;).init();
+       "asset" : "/content/dam/path/to/Image.jpg" }
+       }).init();
        &lt;/script&gt;</code></p> <p>Hier verweist <code>PUBLISHNODE</code> auf den regulären Veröffentlichungsknoten von Experience Manager und <code>IMAGESERVICEPUBLISHNODE</code> auf die Bilddienst-URL.</p> <p>Siehe auch <a href="/help/assets/delivering-dynamic-media-assets.md">Bereitstellen von Dynamic Media-Assets</a>.</p> </td>
   </tr>
  </tbody>

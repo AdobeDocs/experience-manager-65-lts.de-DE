@@ -5,7 +5,18 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 156f245f-b185-4da4-b9c6-6d0a98405119
-source-git-commit: c89b742e24734fc67883b9dec966f59a01062a2a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1230'
 ht-degree: 65%
@@ -160,7 +171,7 @@ Die Verwendung des `--doc-traversal-mode`-Parameters ist bei MongoMK-Installatio
 
 Im Falle von MongoMK kann dieser Prozess beschleunigt werden, wenn dieser Schritt in einer Instanz ausgeführt wird, die näher an der MongoDB-Instanz liegt. Wenn er auf demselben Computer ausgeführt wird, kann ein zu großer Netzwerk-Overhead vermieden werden.
 
-Weitere technische Details finden Sie in der [Oak-run-Dokumentation zur Indizierung](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
+Weitere technische Details finden Sie in der [Oak-run-Dokumentation zur Indizierung](Https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
 
 ### Importieren von Indizes {#importing-indexes}
 

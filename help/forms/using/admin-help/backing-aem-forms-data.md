@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: cbcb9301-48c9-4394-b8c0-766eed76101d
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 98%
-
 ---
-
 # Sichern der Adobe Experience Manager (AEM) Forms-Daten {#backing-up-the-aem-forms-data}
 
 <!-- back up is two words when used as a verb; backup is one word when used as an adjective or noun. -->
@@ -56,10 +71,10 @@ Beachten Sie zusätzlich die folgenden Richtlinien für den Sicherungs-/Wiederhe
 
   Beachten Sie beim Sichern der Autoren- und Veröffentlichungsinstanzen die folgenden Punkte:
 
-   * Stellen Sie sicher, dass die Sicherung für Autoren- und Veröffentlichungsinstanzen so synchronisiert sind, dass sie gleichzeitig starten. Obwohl Sie Autoren- und Veröffentlichungsinstanzen während der Sicherung weiter verwenden können, wird empfohlen, dabei kein Medienelement zu veröffentlichen, um nicht gespeicherte Änderungen zu vermeiden. Warten Sie also, bis die Sicherung der Autoren- und Veröffentlichungsinstanzen beendet ist, bevor Sie neue Medienelemente veröffentlichen.
-   * Die vollständige Sicherung des Autorknotens umfasst die Sicherung von Forms Manager- und AEM Forms Workspace-Daten.
-   * Workbench-Entwicklerinnen und -Entwickler können ihre Prozesse weiterhin lokal bearbeiten. Sie sollten während der Sicherung jedoch keine neuen Prozesse bereitstellen.
-   * Die Entscheidung über die Dauer der einzelnen Sicherungssitzungen (für den kontinuierlichen Sicherungsmodus) sollte auf der Gesamtzeit basieren, die zum Sichern aller Daten in AEM Forms erforderlich ist (DB, GDS, AEM-Repository und alle anderen zusätzlichen benutzerdefinierten Daten).
+  * Stellen Sie sicher, dass die Sicherung für Autoren- und Veröffentlichungsinstanzen so synchronisiert sind, dass sie gleichzeitig starten. Obwohl Sie Autoren- und Veröffentlichungsinstanzen während der Sicherung weiter verwenden können, wird empfohlen, dabei kein Medienelement zu veröffentlichen, um nicht gespeicherte Änderungen zu vermeiden. Warten Sie also, bis die Sicherung der Autoren- und Veröffentlichungsinstanzen beendet ist, bevor Sie neue Medienelemente veröffentlichen.
+  * Die vollständige Sicherung des Autorknotens umfasst die Sicherung von Forms Manager- und AEM Forms Workspace-Daten.
+  * Workbench-Entwicklerinnen und -Entwickler können ihre Prozesse weiterhin lokal bearbeiten. Sie sollten während der Sicherung jedoch keine neuen Prozesse bereitstellen.
+  * Die Entscheidung über die Dauer der einzelnen Sicherungssitzungen (für den kontinuierlichen Sicherungsmodus) sollte auf der Gesamtzeit basieren, die zum Sichern aller Daten in AEM Forms erforderlich ist (DB, GDS, AEM-Repository und alle anderen zusätzlichen benutzerdefinierten Daten).
 
 Sichern Sie die AEM Forms-Datenbank, einschließlich aller Transaktionsprotokolle. Siehe [AEM Forms-Datenbank](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
 

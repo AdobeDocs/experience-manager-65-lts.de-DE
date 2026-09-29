@@ -10,7 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
 exl-id: 650ba9be-6546-46dc-b4ab-ea0b97abff40
-source-git-commit: d49de63985f537da3e6b92dac5233c104b1ccdfe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5374'
 ht-degree: 93%
@@ -77,7 +94,7 @@ Außerdem haben Sie die Möglichkeit, Adobe Target-Aktivitäten mit AEM zu erst
 
 Darüber hinaus können Sie Ziele und Metriken für alle Adobe Target-Aktivitäten verwalten und Ihre Adobe Target-Zielgruppen verwalten. Zu guter Letzt steht Ihnen auch das Aktivitäts-Reporting von Adobe Target zur Verfügung, die unter anderem auch die Konvertierung der im A/B-Test am besten abschneidenden Erlebnisse umfasst.
 
-Wenn Sie eine Aktivität hinzufügen, wird sie auch in der [Aktivitätskonsole“ &#x200B;](/help/sites-authoring/activitylib.md)
+Wenn Sie eine Aktivität hinzufügen, wird sie auch in der [Aktivitätskonsole“ ](/help/sites-authoring/activitylib.md)
 
 So fügen Sie eine Aktivität hinzu:
 
@@ -142,7 +159,7 @@ Im Erstellungsschritt des Inhalts-Targetings werden Erlebnisse geschaffen. n die
 
 ### Anzeigen von Erlebnisangeboten im Targeting-Modus {#seeing-experience-offers-in-targeting-mode}
 
-Nachdem Sie [&#x200B; Targeting-Prozess gestartet haben, &#x200B;](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) Sie ein Erlebnis aus, um die für dieses Erlebnis bereitgestellten Angebote anzuzeigen. Bei der Auswahl eines Erlebnisses ändern sich die auf der Seite angezeigten Targeting-Komponenten so, dass das Angebot dieses Erlebnisses angezeigt wird.
+Nachdem Sie [ Targeting-Prozess gestartet haben, ](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) Sie ein Erlebnis aus, um die für dieses Erlebnis bereitgestellten Angebote anzuzeigen. Bei der Auswahl eines Erlebnisses ändern sich die auf der Seite angezeigten Targeting-Komponenten so, dass das Angebot dieses Erlebnisses angezeigt wird.
 
 >[!CAUTION]
 >
@@ -180,7 +197,7 @@ Sie können benutzerdefinierte Angebote in einer Angebotsbibliothek speichern, w
 
 ### Hinzufügen und Entfernen von Erlebnissen im Targeting-Modus {#adding-and-removing-experiences-using-targeting-mode}
 
-Mit dem Schritt Erstellen [&#x200B; Zielgruppenbestimmungsprozesses &#x200B;](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) Sie Erlebnisse hinzufügen und entfernen. Darüber hinaus können Sie ein Erlebnis duplizieren und es auch umbenennen.
+Mit dem Schritt Erstellen [ Zielgruppenbestimmungsprozesses ](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) Sie Erlebnisse hinzufügen und entfernen. Darüber hinaus können Sie ein Erlebnis duplizieren und es auch umbenennen.
 
 #### Hinzufügen von Erlebnissen im Targeting-Modus {#adding-experiences-using-targeting-mode}
 
@@ -228,7 +245,7 @@ So duplizieren Sie Erlebnisse im Targeting-Modus:
 Erstellen Sie durch das Targeting einer Komponente Angebote für Ihre Erlebnisse. Targeting-Komponenten stellen die Inhalte bereit, die als Angebote für Erlebnisse verwendet werden.
 
 * [Targeting einer vorhandenen Komponente.](/help/sites-authoring/content-targeting-touch.md#creating-a-default-offer-by-targeting-an-existing-component) Der Inhalt wird zum Angebot des Standarderlebnisses.
-* [Fügen Sie eine Target-Komponente hinzu &#x200B;](/help/sites-authoring/content-targeting-touch.md#creating-an-offer-by-adding-a-target-component) fügen Sie dann der Komponente Inhalte hinzu.
+* [Fügen Sie eine Target-Komponente hinzu ](/help/sites-authoring/content-targeting-touch.md#creating-an-offer-by-adding-a-target-component) fügen Sie dann der Komponente Inhalte hinzu.
 
 Nach dem Targeting der Komponente können für jedes Erlebnis Angebote hinzugefügt werden:
 
@@ -247,7 +264,7 @@ Durch Targeting einer Komponente auf der Seite können Sie diese als Angebot fü
 
 Nach dem Targeting einer Komponente kann nur diese Komponente im Angebot verwendet werden. Sie können die Komponente nicht aus dem Angebot entfernen und dem Angebot auch keine anderen Komponenten hinzufügen.
 
-Gehen Sie wie folgt vor[&#x200B; nachdem Sie den Targeting-Prozess gestartet haben](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)
+Gehen Sie wie folgt vor[ nachdem Sie den Targeting-Prozess gestartet haben](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)
 
 1. Klicken Sie auf die Komponente für das Targeting. Die Symbolleiste für die Komponente wird angezeigt, ähnlich wie im folgenden Beispiel.
 

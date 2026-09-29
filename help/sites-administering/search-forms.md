@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 68a4d4b2-91a3-4545-a491-2a1ec08ceec5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2078'
-ht-degree: 94%
-
+source-wordcount: '2082'
+ht-degree: 95%
 ---
-
 # Konfigurieren von Suchformularen{#configuring-search-forms}
 
 Mit **Suchformularen** können Sie die Auswahl der Suchprädikate anpassen, die in den Suchbereichen der verschiedenen AEM-Konsolen und/oder in den Suchbereichen der Autorenumgebung verwendet werden. Auf diese Weise können Sie die Suchfunktion genau auf Ihre speziellen Anforderungen ausrichten.
@@ -26,9 +35,9 @@ Sie können [die in verschiedenen Konsolen und im Asset-Browser (beim Bearbeiten
 
 * **Tools**
 
-   * **Allgemein**
+  * **Allgemein**
 
-      * **Suchformulare**
+    * **Suchformulare**
 
 Wenn Sie zum ersten Mal auf diese Konsole zugreifen, weisen alle Konfigurationen ein Vorhängeschlosssymbol auf. Dieses Symbol bedeutet, dass die richtige Konfiguration die (vorkonfigurierte) Standardkonfiguration ist und nicht gelöscht werden kann. Nachdem Sie die Konfiguration angepasst haben, wird das Schloss ausgeblendet, es sei denn, Sie [löschen Ihre benutzerdefinierte Konfiguration](#deleting-a-configuration-to-reinstate-the-default). In diesem Fall wird die Standardeinstellung (und das Vorhängeschlosssymbol) wieder aktiviert.
 
@@ -331,10 +340,10 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
 
 >[!NOTE]
 >
->* Die allgemeinen Sucheigenschaften sind definiert in:
+>* Die allgemeinen Suchprädikate sind hier definiert:
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->* Sucheigenschaften, die sich nur auf siteadmin (klassische Benutzeroberfläche) beziehen, befinden sich unter:
+>* Sucheigenschaften, die nur mit siteadmin (klassische Benutzeroberfläche) verbunden sind, befinden sich unter:
 >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * Sie sind veraltet und nur aus Gründen der Abwärtskompatibilität verfügbar.
 >
@@ -393,7 +402,7 @@ Wenn diese Option aktiviert ist, werden die Optionen als Kontrollkästchen geren
 * **Eigenschaftsnamen der Veröffentlichung und Live Copy**
 Die Beschriftungen für die Kontrollkästchen „Veröffentlichen“ und „Live Copy“ für die Website-spezifischen Eigenschaften.
 
-* Der Asterisk (&ast;) bei den Feldbezeichnungen auf der Registerkarte **Einstellungen** bedeutet, dass die Felder Pflichtfelder sind. Wird er leer gelassen, wird eine Fehlermeldung angezeigt.
+* Der Asterisk (&amp;ast;) bei den Feldbezeichnungen auf der Registerkarte **Einstellungen** bedeutet, dass die Felder Pflichtfelder sind. Wird er leer gelassen, wird eine Fehlermeldung angezeigt.
 
 ## Konfigurieren Ihrer Suchformulare {#configuring-your-search-forms}
 
@@ -492,7 +501,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
    * `jcr:title` – die Feldbezeichnung, die in der Suchschiene angezeigt werden soll
    * `value` – der Eigenschaftswert, nach dem gesucht werden soll
 
-   ![&#x200B; Hinzufügen von Optionen in CRXDE](assets/chlimage_1-379.png)
+   ![ Hinzufügen von Optionen in CRXDE](assets/chlimage_1-379.png)
 
    >[!NOTE]
    >

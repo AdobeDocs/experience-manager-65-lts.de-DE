@@ -5,13 +5,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
 exl-id: 97736093-021a-4487-8818-c0e3f1e2b4e5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: f61d1313-5cf1-4533-b29c-ac9f75c4b270
+    internal-label: Experience Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1541'
 ht-degree: 99%
-
 ---
-
 # Experience Fragments{#experience-fragments}
 
 In Adobe Experience Manager (AEM) ist ein Experience Fragment eine Gruppe aus einer oder mehreren Komponenten (einschließlich Inhalt und Layout), die innerhalb von Seiten referenziert werden können. Sie können jede beliebige Komponente enthalten.
@@ -49,22 +63,22 @@ Experience Fragments sollten in folgenden Fällen verwendet werden:
 
 * Wann immer Sie Erlebnisse wiederverwenden möchten.
 
-   * Erlebnisse, die mit demselben oder ähnlichen Inhalten wiederverwendet werden
+  * Erlebnisse, die mit demselben oder ähnlichen Inhalten wiederverwendet werden
 
 * Wenn Sie AEM als Inhaltsbereitstellungs-Plattform für Dritte nutzen möchten.
 
-   * Nutzung durch beliebige Lösungen, bei denen AEM als Plattform zur Inhaltsbereitstellung fungieren soll
-   * Beim Einbetten von Inhalten in Touchpoints von Drittanbietern
+  * Nutzung durch beliebige Lösungen, bei denen AEM als Plattform zur Inhaltsbereitstellung fungieren soll
+  * Beim Einbetten von Inhalten in Touchpoints von Drittanbietern
 
 * Wenn Sie über ein Erlebnis mit unterschiedlichen Varianten oder Ausgabedarstellungen verfügen.
 
-   * Kanal- oder kontextspezifische Varianten
-   * Erlebnisse, die als Gruppe sinnvoll eingesetzt werden können (z. B. eine Kampagne, die je nach Kanal unterschiedliche Erlebnisse liefert)
+  * Kanal- oder kontextspezifische Varianten
+  * Erlebnisse, die als Gruppe sinnvoll eingesetzt werden können (z. B. eine Kampagne, die je nach Kanal unterschiedliche Erlebnisse liefert)
 
 * Wenn Sie Omni-Channel-Commerce betreiben.
 
-   * Skaliertes Teilen von Commerce-bezogenem Inhalt auf [Social-Media-Kanälen](/help/sites-developing/experience-fragments.md#social-variations)
-   * Ermöglichen von Transaktionen an Touchpoints
+  * Skaliertes Teilen von Commerce-bezogenem Inhalt auf [Social-Media-Kanälen](/help/sites-developing/experience-fragments.md#social-variations)
+  * Ermöglichen von Transaktionen an Touchpoints
 
 ## Organisieren von Experience Fragments {#organizing-your-experience-fragments}
 
@@ -336,31 +350,31 @@ Details zu Ihrem Fragment können wie folgt angezeigt werden:
 
    * **Allgemein**
 
-      * **Titel** – erforderlich
+     * **Titel** – erforderlich
 
-      * **Beschreibung**
-      * **Tags**
-      * **Gesamtanzahl der Varianten** – nur zur Information
+     * **Beschreibung**
+     * **Tags**
+     * **Gesamtanzahl der Varianten** – nur zur Information
 
-      * **Anzahl der Web-Varianten** – nur zur Information
-      * **Anzahl der Nicht-Webvarianten** – nur zur Information **&#x200B;**
+     * **Anzahl der Web-Varianten** – nur zur Information
+     * **Anzahl der Nicht-Webvarianten** – nur zur Information ****
 
-      * **Anzahl der Seiten, die dieses Fragment verwenden** – nur zur Information
+     * **Anzahl der Seiten, die dieses Fragment verwenden** – nur zur Information
 
    * **Cloud Services**
 
-      * **Cloud-Konfiguration**
-      * **Cloud Service-Konfigurationen**
-      * **Facebook-Seiten-ID**
-      * **Pinterest-Pinnwand**
+     * **Cloud-Konfiguration**
+     * **Cloud Service-Konfigurationen**
+     * **Facebook-Seiten-ID**
+     * **Pinterest-Pinnwand**
 
    * **Verweise**
 
-      * Eine Liste mit Verweisen.
+     * Eine Liste mit Verweisen.
 
    * **Social-Media-Status**
 
-      * Details zu Social Media-Varianten
+     * Details zu Social Media-Varianten
 
 ## Einfache HTML-Ausgabedarstellung {#the-plain-html-rendition}
 

@@ -10,14 +10,24 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: e3ef1435-d405-482f-9eb5-f9a64ff03322
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '732'
 ht-degree: 82%
-
 ---
-
 # Versionsbereinigung{#version-purging}
 
 In einer Standardinstallation erstellt Adobe Experience Manager (AEM) eine Version einer Seite oder eines Knotens, wenn Sie eine Seite aktivieren, nachdem der Inhalt aktualisiert wurde.
@@ -39,11 +49,11 @@ Dies kann so konfiguriert werden, dass alte Versionen gelöscht werden, wenn neu
 Dies wird im Rahmen der Überwachung und Wartung Ihres Repositorys verwendet.
 Hiermit können Sie alte Versionen eines Knotens oder eine Hierarchie von Knoten entsprechend den folgenden Parametern entfernen:
 
-   * Die maximale Anzahl der Versionen, die im Repository gespeichert werden sollen.
-Wird dieser Wert überschritten, wird die älteste Version entfernt.
+  * Die maximale Anzahl der Versionen, die im Repository gespeichert werden sollen.
+    Wird dieser Wert überschritten, wird die älteste Version entfernt.
 
-   * Das Höchstalter einer im Repository gespeicherten Version.
-Wenn das Alter einer Version diesen Wert überschreitet, wird sie aus dem Repository gelöscht.
+  * Das Höchstalter einer im Repository gespeicherten Version.
+    Wenn das Alter einer Version diesen Wert überschreitet, wird sie aus dem Repository gelöscht.
 
 * [Wartungsaufgabe zur Versionsbereinigung](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Sie können die Wartungsaufgabe zur Versionsbereinigung planen, um alte Versionen automatisch zu löschen. Das verringert die Notwendigkeit, die Tools zur Versionsbereinigung manuell zu verwenden.
 
@@ -96,34 +106,34 @@ Wenn Sie z. B. die maximale Anzahl der Versionen, die aufbewahrt werden, UND di
 
 * Einstellung:
 
-   * `maxNumberVersions` = 7
+  * `maxNumberVersions` = 7
 
-   * `maxAgeDays` = 30
+  * `maxAgeDays` = 30
 
 * Durch:
 
-   * Zehn Versionen wurden innerhalb der letzten 60 Tage erstellt
-   * Drei dieser Versionen wurden innerhalb der letzten 30 Tage erstellt
+  * Zehn Versionen wurden innerhalb der letzten 60 Tage erstellt
+  * Drei dieser Versionen wurden innerhalb der letzten 30 Tage erstellt
 
 * Das bedeutet:
 
-   * Die letzten drei Versionen werden aufbewahrt
+  * Die letzten drei Versionen werden aufbewahrt
 
 Wenn Sie z. B. die maximale UND die minimale Anzahl von Versionen, die aufbewahrt werden, UND die älteste beizubehaltende Version definieren:
 
 * Einstellung:
 
-   * `maxNumberVersions` = 3
-   * `maxAgeDays` = 30
-   * `minNumberVersions` = 3
+  * `maxNumberVersions` = 3
+  * `maxAgeDays` = 30
+  * `minNumberVersions` = 3
 
 * Durch:
 
-   * Fünf Versionen wurden vor 60 Tagen erstellt
+  * Fünf Versionen wurden vor 60 Tagen erstellt
 
 * Das bedeutet:
 
-   * Drei Versionen werden aufbewahrt
+  * Drei Versionen werden aufbewahrt
 
 ## Versionsbereinigungs-Werkzeug {#purge-versions-tool}
 

@@ -8,13 +8,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: be7493a9-1e3b-4918-8b3e-fb1a2000b453
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 100%
-
+source-wordcount: '846'
+ht-degree: 96%
 ---
-
 # Erstellen zielgerichteter Erlebnisse in AEM Forms {#create-targeted-experiences-in-aem-forms}
 
 ## Integrieren von Adobe Target in AEM Forms {#integrate-adobe-target-with-aem-forms}
@@ -25,7 +41,7 @@ Informationen zum Konfigurieren von Adobe Target in AEM für die Verwendung mit 
 
 >[!NOTE]
 >
->Targeting ist möglich, wenn das adaptive Formular oder die interaktive Kommunikation über einen Hostnamen oder eine IP-Adresse wiedergegeben wird. Es schlägt fehl, wenn das adaptive Formular über localhost wiedergegeben wird.
+>Targeting ist möglich, wenn das adaptive Formular oder die interaktive Kommunikation über einen Hostnamen oder eine IP-Adresse wiedergegeben wird. Es schlägt fehl, wenn das adaptive Formular oder die interaktive Kommunikation über localhost wiedergegeben wird.
 
 ## Erstellen einer Target- Aktivität {#creating-a-target-activity}
 
@@ -36,8 +52,8 @@ Informationen zum Konfigurieren von Adobe Target in AEM für die Verwendung mit 
 1. Wählen Sie auf der Seite „Aktivitäten“ die Optionen **Erstellen > Marke erstellen** aus.
 1. Sie werden aufgefordert, eine Vorlage auswählen und Eigenschaften einzugeben.
 
-   Wählen Sie eine Vorlage aus und dann **Weiter.** Geben Sie den Titel Ihrer Marke im Abschnitt „Eigenschaften“ ein und wählen Sie **Erstellen.**
-Ihre Marke wird jetzt auf der Seite „Aktivitäten“ aufgeführt. 
+   Wählen Sie eine Vorlage aus und klicken Sie auf **Weiter.** Geben Sie den Titel Ihrer Marke im Abschnitt Eigenschaften ein und wählen Sie **Erstellen.**
+   Ihre Marke wird jetzt auf der Seite „Aktivitäten“ aufgeführt.
 
 1. Wählen Sie Ihre Marke auf der Seite „Aktivitäten“ aus.
 1. Wählen Sie unter „Primäres Gebiet“ für Ihre Marke die Optionen **Erstellen** > **Aktivität erstellen** aus.
@@ -98,7 +114,7 @@ Ihre Marke wird jetzt auf der Seite „Aktivitäten“ aufgeführt. 
 
 ## Überprüfen Sie, ob die erstellte Aktivität mit dem Target-Server synchronisiert wird. {#check-if-the-created-activity-syncs-with-the-target-server}
 
-Aktivitäten, die für das Targeting verwendet werden, werden mit dem Target-Server synchronisiert.  Um zu überprüfen, ob Ihre Aktivität mit dem Target-Server synchron ist, überprüfen Sie den Status Ihrer Aktivität auf Ihrer Markenseite.
+Aktivitäten, die für das Targeting verwendet werden, werden mit dem Target-Server synchronisiert. Um zu überprüfen, ob Ihre Aktivität mit dem Target-Server synchron ist, überprüfen Sie den Status Ihrer Aktivität auf Ihrer Markenseite.
 
 Vergewissern Sie sich, dass die Aktivität den Status „Synchronisiert“ aufweist.
 

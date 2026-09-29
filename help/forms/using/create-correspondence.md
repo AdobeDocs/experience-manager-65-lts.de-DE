@@ -8,13 +8,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: cb6528fd-6761-412d-8413-c72049acf91d
-source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3848'
-ht-degree: 97%
-
+source-wordcount: '3906'
+ht-degree: 96%
 ---
-
 # Korrespondenz erstellen{#create-correspondence}
 
 ## Korrespondenz erstellen in der Benutzeroberfläche „Korrespondenz erstellen“ {#create-correspondence-in-the-create-correspondence-user-interface}
@@ -51,7 +64,7 @@ Wählen Sie den Brief für die Vorschau wie folgt aus:
 
 1. Die HTML-Vorschau des Briefs (Vorschau für Formulare auf Mobilgeräten) wird geöffnet, wobei die Registerkarte „Daten“ standardmäßig aktiv ist.
 
-   Weitere Informationen zu Formularen auf Mobilgeräten und den hierfür unterstützen Funktionen finden Sie unter[&#x200B; Funktionsunterschiede zwischen Mobile Forms und PDF-Formularen](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
+   Weitere Informationen zu Formularen auf Mobilgeräten und den hierfür unterstützen Funktionen finden Sie unter[ Funktionsunterschiede zwischen Mobile Forms und PDF-Formularen](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
    Es gibt drei Registerkarten: Daten, Inhalt und Anlagen. Wenn keine Datenelemente (Platzhaltervariablen und Layout-Felder) vorhanden sind, wird der Brief direkt in der Inhaltsansicht geöffnet. Die Registerkarte „Anlagen“ ist nur verfügbar, wenn Anlagen vorhanden sind oder der Bibliothekszugriff aktiviert ist.
 
@@ -271,7 +284,7 @@ Wenn ein Brief in der Benutzeroberfläche „Korrespondenz erstellen“ gerender
 
 Es gibt zwei Arten von Briefinstanzen, die gespeichert werden können: Entwurfsinstanz und Sendeinstanz.
 
-* **Entwurfsinstanz**: Die Entwurfsinstanz erfasst den aktuellen Status des Briefs, den Sie in der Vorschau anzeigen. Um eine Entwurfsinstanz zu speichern, stellen Sie zunächst sicher, dass der Brief und alle Assets, auf die der Brief verweist, den Status „Veröffentlicht“ aufweisen. Weitere Informationen zum Veröffentlichen eines Briefs finden Sie unter[&#x200B; Veröffentlichen von Assets](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Sie müssen einen Brief veröffentlichen, bevor Sie ihn als Entwurf speichern können, denn wenn Sie einen Brief veröffentlichen, erstellen Sie zu diesem Zeitpunkt eine Version des Briefes, seiner abhängigen Assets und seiner Daten. Die veröffentlichte Version eines Briefs kann nicht von Ihnen oder einer anderen Person bearbeitet werden und kann ohne unerwartete Abweichungen von der veröffentlichten Version zu einem späteren Zeitpunkt wiederhergestellt werden. Sie können zu einem späteren Zeitpunkt zu dieser Instanz zurückkehren und dort fortfahren, wo Sie sie verlassen haben.
+* **Entwurfsinstanz**: Die Entwurfsinstanz erfasst den aktuellen Status des Briefs, den Sie in der Vorschau anzeigen. Um eine Entwurfsinstanz zu speichern, stellen Sie zunächst sicher, dass der Brief und alle Assets, auf die der Brief verweist, den Status „Veröffentlicht“ aufweisen. Weitere Informationen zum Veröffentlichen eines Briefs finden Sie unter[ Veröffentlichen von Assets](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Sie müssen einen Brief veröffentlichen, bevor Sie ihn als Entwurf speichern können, denn wenn Sie einen Brief veröffentlichen, erstellen Sie zu diesem Zeitpunkt eine Version des Briefes, seiner abhängigen Assets und seiner Daten. Die veröffentlichte Version eines Briefs kann nicht von Ihnen oder einer anderen Person bearbeitet werden und kann ohne unerwartete Abweichungen von der veröffentlichten Version zu einem späteren Zeitpunkt wiederhergestellt werden. Sie können zu einem späteren Zeitpunkt zu dieser Instanz zurückkehren und dort fortfahren, wo Sie sie verlassen haben.
 
 * **Übermittlungsinstanz**: Übermittlungsinstanzen erfassen den Status des Briefs zum Sendezeitpunkt. Die Sendeinstanz speichert den PDF-Status der Briefinstanz, nachdem sie zusammen mit den vom Benutzer in der Benutzeroberfläche „Korrespondenz erstellen“ eingegebenen Daten nachbearbeitet wurde.
 
@@ -358,7 +371,7 @@ Die folgenden Vorteile und Funktionen stehen jeweils bei der HTML- und PDF-Vorsc
 * **Markieren bearbeitbarer Inhalte in einem Brief**: Auf der Benutzeroberfläche „Korrespondenz erstellen“ können Sie „Bearbeitbare Inhalte markieren“ auswählen, um den gesamten bearbeitbaren Inhalt des Briefes grau zu markieren. Weitere Informationen finden Sie unter [Verwalten von Inhalten](#managecontent).
 
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`
-`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`  **Vorteile der PDF-Vorschau**
+`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>` **Vorteile der PDF-Vorschau**
 
 * **Seitenumbruch**: In der PDF-Vorschau eine Vorschau können Sie genau erkennen, wie die Seitenumbrüche im Brief sich auf dessen Ausgabe auswirken.
 * **Abschließende Vorschau**: In der PDF-Vorschau können die genaue Formatierung und das Erscheinungsbild des Briefs für die Ausgabe angezeigt werden.

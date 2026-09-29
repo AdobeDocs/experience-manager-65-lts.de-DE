@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: aeb8e954-dd6c-4e18-bb78-6eaac86fa4b9
-source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 57%
-
+source-wordcount: '557'
+ht-degree: 55%
 ---
-
 # Aktivieren eines JSON-Exports für eine Komponente{#enabling-json-export-for-a-component}
 
 Komponenten können angepasst werden, um einen JSON-Export ihrer Inhalte basierend auf einem Modeler-Framework zu generieren.
@@ -35,7 +44,7 @@ Zunächst muss ein Sling-Modell für die Komponente definiert werden.
 
 >[!NOTE]
 >
->Ein Beispiel für die Verwendung von Sling-Modellen finden Sie unter [Entwickeln von Sling-Modell-Exportern in AEM](https://experienceleague.adobe.com/de/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter).
+>Ein Beispiel für die Verwendung von Sling-Modellen finden Sie unter [Entwickeln von Sling-Modell-Exportern in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter).
 
 Die Implementierungsklasse des Sling-Modells muss wie folgt kommentiert werden:
 
@@ -85,14 +94,14 @@ CODE AUF GITHUB
 
 Den Code dieser Seite finden Sie auf GitHub.
 
-* [Öffnen Sie das Projekt aem-core-wcm-components auf GitHub](https://github.com/adobe/aem-core-wcm-components)
-* Laden Sie das Projekt als [ZIP-Datei](https://codeload.github.com/adobe/aem-core-wcm-components/zip/main) herunter
+* [Öffnen Sie das Projekt aem-core-wcm-components in GitHub.](https://github.com/adobe/aem-core-wcm-components)
+* Laden Sie das Projekt als [ZIP-Datei](https://codeload.github.com/adobe/aem-core-wcm-components/zip/main) herunter.
 
 
 ## Verwandte Dokumentation {#related-documentation}
 
-* Das [Thema „Inhaltsfragmente“ im Assets-Benutzerhandbuch](https://experienceleague.adobe.com/de/docs/experience-manager-64/assets/home#)
+* Das [Thema „Inhaltsfragmente“ im Assets-Benutzerhandbuch](https://experienceleague.adobe.com/en/docs/experience-manager-64/assets/home#)
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
 * [Bearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md)
 * [JSON-Exporter für Content Services](/help/sites-developing/json-exporter.md)
-* [Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/introduction) und die [Inhaltsfragmentkomponente](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)
+* [Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/introduction) und die [Inhaltsfragmentkomponente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/content-fragment-component)

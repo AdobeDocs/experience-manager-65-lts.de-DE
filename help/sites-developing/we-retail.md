@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 71a49353-5273-46ee-a1ff-5bbfe5b6b0b4
-source-git-commit: c0bf6864bb344e582c4f88371c892d401ce2827c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 56%
-
+source-wordcount: '786'
+ht-degree: 60%
 ---
-
 # `We.Retail` Referenzimplementierung{#we-retail-reference-implementation}
 
 ## Einführung {#introduction}
@@ -54,7 +63,7 @@ Die `We.Retail`-Site wird als Beispielinhalt von AEM bereitgestellt. Um den Inha
 
 ### Neueste Version {#latest-version}
 
-Obwohl `We.Retail` mit der AEM-Version verteilt wird, können nach der Veröffentlichung Aktualisierungen am Inhalt und seinen Funktionen vorgenommen werden. Daher können Sie die [&#x200B; Version von GitHub herunterladen &#x200B;](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) sie dann [hochladen](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) und [als &#x200B;](/help/sites-administering/package-manager.md#installing-packages) auf Ihrer AEM-Instanz installieren.
+Obwohl `We.Retail` mit der AEM-Version verteilt wird, können nach der Veröffentlichung Aktualisierungen am Inhalt und seinen Funktionen vorgenommen werden. Daher können Sie die [ Version von GitHub herunterladen ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) sie dann [hochladen](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) und [als ](/help/sites-administering/package-manager.md#installing-packages) auf Ihrer AEM-Instanz installieren.
 
 ### Erste Schritte {#first-steps}
 
@@ -104,7 +113,7 @@ CODE AUF GITHUB
 
 Den Code dieser Seite finden Sie auf GitHub.
 
-* [Öffnen des Projekts aem-sample-we-retail auf GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
+* [Öffnen Sie das Projekt aem-sample-we-retail auf GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
 * Laden Sie das Projekt als [ZIP-Datei](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master) herunter.
 
 Die neueste Version kann auch [direkt als installierbares Paket heruntergeladen](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/tag/we.retail.reactor-4.0.0) werden.
