@@ -1,25 +1,39 @@
 ---
 title: Konfigurieren des Asset-Tagging mit dem Smart Content Service
-description: Erfahren Sie, wie Sie in  [!DNL Adobe Experience Manager] Smart-Tagging und optimierte Smart-Tags mit dem Smart Content Service konfigurieren.
+description: Erfahren Sie, wie Sie in [!DNL Adobe Experience Manager] Smart-Tagging und optimierte Smart-Tags mit dem Smart Content Service konfigurieren.
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: 26371d15-b0e1-4892-9c52-bc9829e462ca
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 100%
-
+source-wordcount: '1079'
+ht-degree: 97%
 ---
-
 # Fehlerbehebung für Smart-Tags hinsichtlich OAuth-Anmeldedaten {#oauth-config}
 
 Eine offene Autorisierungskonfiguration ist erforderlich, um die Zustimmung dafür zu erhalten, dass die Anwendung [!DNL Adobe Experience Manager] auf sichere Weise mit Smart Content Services interagiert.
 
 >[!NOTE]
 >
-> Sie können seit Juni 2024 keine neuen JWT-Anmeldedaten mehr erstellen. Von nun an werden nur noch OAuth-Anmeldedaten erstellt. 
-> > Die JWT-Integration bleibt nur für bestehende AMS- und On-Premise-Benutzende noch bis Januar 2025 im Betrieb.
+> Sie können seit Juni 2024 keine neuen JWT-Anmeldedaten mehr erstellen. Von nun an werden nur noch OAuth-Anmeldedaten erstellt.
+> Die JWT-Integration bleibt nur für bestehende AMS- und On-Premise-Benutzende noch bis Januar 2025 im Betrieb.
 
 ## OAuth-Konfiguration für die neuen AMS-Benutzenden {#oauth-config-existing-ams-users}
 
@@ -39,8 +53,8 @@ Eine OAuth-Konfiguration erfordert die folgenden Voraussetzungen:
 
 * Erstellen Sie in der [Developer Console](https://developer.adobe.com/console/user/servicesandapis) eine neue OAuth-Integration. Verwenden Sie die Eigenschaften `ClientID`, `ClientSecret`, `OrgID` und andere in den folgenden Schritten:
 * Die folgenden Dateien befinden sich unter diesem Pfad `/apps/system/config in crx/de`:
-   * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
-   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
+  * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+  * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
 ### OAuth-Konfiguration für die vorhandenen AMS- und On-Premise-Benutzenden {#steps-config-oauth-onprem}
 
@@ -101,7 +115,7 @@ Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profi
 
 1. Greifen Sie in der [!DNL Experience Manager]-Benutzeroberfläche auf **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Ältere Cloud Services]** zu.
 
-1. Klicken Sie auf der Seite „Cloud Services“ unter **[!UICONTROL Assets Smart Tags]** auf **[!UICONTROL Jetzt konfigurieren]**.
+1. Klicken Sie auf der Seite „Cloud Services“ unter **[!UICONTROL Smart-Tags für Assets]** auf **[!UICONTROL Jetzt konfigurieren]**.
 
 1. Geben Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen Titel und einen Namen für die Smart-Tags-Konfiguration ein. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
@@ -136,7 +150,7 @@ Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profi
 
 ## Erstellen einer Integration in der Adobe Developer Console {#create-adobe-i-o-integration}
 
-Um die Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration in der Adobe Developer Console, um den [!UICONTROL API-Schlüssel] (der im Feld [!UICONTROL CLIENT-ID] der Adobe Developer Console-Integration generiert wird), die [!UICONTROL ID DES TECHNISCHEN KONTOS], die [!UICONTROL ORGANISATIONS-ID] und das [!UICONTROL CLIENT-GEHEIMNIS] für die [!UICONTROL Smart Tagging Service-Einstellungen für Assets] der Cloud-Konfiguration in [!DNL Experience Manager].
+Um die Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration in der Adobe Developer Console, um den [!UICONTROL API-Schlüssel] (der im Feld [!UICONTROL CLIENT-ID] der Adobe Developer Console-Integration generiert wird), die [!UICONTROL ID DES TECHNISCHEN KONTOS], die [!UICONTROL ORGANISATIONS-ID] und das [!UICONTROL CLIENT-GEHEIMNIS] für die [!UICONTROL Smart-Tagging-Service-Einstellungen für Assets] der Cloud-Konfiguration in [!DNL Experience Manager].
 
 1. Rufen Sie [https://developer.adobe.com/console/](https://developer.adobe.com/console/) in einem Browser auf. Wählen Sie das entsprechende Konto aus und vergewissern Sie sich, dass die zugehörige Organisationsrolle „Systemadministrator“ ist.
 
@@ -160,8 +174,8 @@ Um die Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration i
    *Figure: Details of integration in Adobe Developer Console*
 -->
 
-![oauth config](assets/oauth-config.png)
-*Abbildung: OAuth-Server-zu-Server konfiguriert in Adobe Developer Console*
+![OAuth-Konfiguration](assets/oauth-config.png)
+*Abbildung: Konfigurierte OAuth-Server-zu-Server in Adobe Developer Console*
 
 ## Konfigurieren des Smart Content Service {#configure-smart-content-service}
 
@@ -178,7 +192,7 @@ Verwenden Sie zum Konfigurieren der Integration die Werte der Felder [!UICONTROL
    | [!UICONTROL Diensteinstellungen für Smart-Tagging in Assets] | [!DNL Adobe Developer Console] Integrationsfelder |
    |--- |--- |
    | [!UICONTROL API-Schlüssel] | [!UICONTROL CLIENT-ID] |
-   | [!UICONTROL ID des technischen Kontos] | [!UICONTROL  ID DES TECHNISCHEN KONTOS] |
+   | [!UICONTROL ID des technischen Kontos] | [!UICONTROL &#x200B; ID DES TECHNISCHEN KONTOS] |
    | [!UICONTROL Organisations-ID] | [!UICONTROL ORGANISATIONS-ID] |
    | [!UICONTROL Client-Geheimnis] | [!UICONTROL CLIENT-GEHEIMNIS] |
 

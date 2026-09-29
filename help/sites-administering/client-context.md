@@ -10,13 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
 exl-id: 976512a9-5edf-4d55-82c0-24fe97dc71a1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1964'
-ht-degree: 99%
-
+source-wordcount: '2007'
+ht-degree: 97%
 ---
-
 # ClientContext{#client-context}
 
 >[!NOTE]
@@ -40,13 +51,13 @@ In der Veröffentlichungs- und Autorenumgebung werden Informationen zu Folgendem
 ![ClientContext-Fenster mit den Symbolen zum Bearbeiten, Laden und Zurücksetzen](do-not-localize/clientcontext_icons.png)
 
 * **Bearbeiten**
-Eine neue Seite wird geöffnet. Dort können Sie [Profileigenschaften bearbeiten, hinzufügen oder entfernen](#editingprofiledetails).
+Eine neue Seite wird geöffnet. Dort können [&#x200B; (Profileigenschaften bearbeiten, hinzufügen oder entfernen](#editingprofiledetails).
 
-* **Laden**
-Sie können [aus einer Liste von Profilen auswählen und das Profil laden](#loading-a-new-user-profile), das getestet werden soll.
+* **laden**
+Sie können [aus einer Liste von Profilen auswählen und das Profil laden](#loading-a-new-user-profile) das Sie testen möchten.
 
 * **Zurücksetzen**
-Sie können [das Profil auf den aktuellen Benutzer zurücksetzen](#resetting-the-profile-to-the-current-user).
+Sie können [Profil zurücksetzen](#resetting-the-profile-to-the-current-user) auf den aktuellen Benutzer zurücksetzen.
 
 ## Verfügbare ClientContext-Komponenten {#available-client-context-components}
 

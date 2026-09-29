@@ -8,20 +8,36 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: dca7f612-f505-414b-9326-90624be9db39
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '697'
 ht-degree: 100%
-
 ---
-
 # Druckkanal und Web-Kanal{#print-channel-and-web-channel}
 
 Eine interaktive Kommunikation kann über zwei Kanäle bereitgestellt werden: den Druckkanal und den Web-Kanal. Der Druckkanal wird zum Erstellen von PDFs und Papierkommunikationen verwendet, z. B. für gedruckte Briefe, um an die Zahlung von Versicherungsprämien zu erinnern. Der Web-Kanal wird hingegen für Online-Erlebnisse verwendet, z. B. Kreditkartenabrechnungen auf einer Website.
 
 Autoren der Vorlage für die interaktive Kommunikation können Elemente wie Dokumentfragmente und Bilder verwenden, um die Druck- bzw. Netzversionen der Vorlage für die interaktive Kommunikation zu erstellen.
 
-Eine der Voraussetzungen für das [Erstellen einer interaktiver Kommunikation](../../forms/using/create-interactive-communication.md) ist, dass die Vorlagen für den Druck- und/oder Webkanal auf dem Server verfügbar sind. Während Vorlagenautoren die Webkanalvorlage in AEM selbst erstellen, wird die Druckkanalvorlage XDP in Adobe Forms Designer erstellt und auf den Server hochgeladen.
+Eine der Voraussetzungen für das [Erstellen einer interaktiver Kommunikation](../../forms/using/create-interactive-communication.md) ist, dass die Vorlagen für den Druck- und/oder Webkanal auf dem Server verfügbar sind. Während Vorlagenautoren die Web-Kanalvorlage in AEM selbst erstellen, wird die Druckkanalvorlage XDP in Adobe Forms Designer erstellt und auf den Server hochgeladen.
 
 ## Druckkanal {#printchannel}
 
@@ -45,7 +61,7 @@ Autorinnen und Autoren von Vorlagen sowie Admins können Web-Vorlagen erstellen,
 
 Um eine Web-Kanalvorlage zu erstellen, müssen Sie zuerst einen Vorlagenordner erstellen. Sobald Sie eine Webvorlage in einem Vorlagenordner erstellt haben, müssen Sie die Vorlage aktivieren, damit die Formularbenutzer den Webkanal einer interaktiven Kommunikation basierend auf der Vorlage erstellen können.
 
-Führen Sie die folgenden Schritte aus, um eine Webkanalvorlage zu erstellen:
+Führen Sie die folgenden Schritte aus, um eine Web-Kanalvorlage zu erstellen:
 
 1. Erstellen Sie einen Vorlagenordner, um Ihre Webvorlagen für interaktive Kommunikation zu speichern, falls noch kein entsprechender Ordner eingerichtet ist. Weitere Informationen finden Sie unter „Vorlagenordner“ in [Seitenvorlagen – Bearbeitbar](/help/sites-developing/page-templates-editable.md).
 
@@ -60,7 +76,7 @@ Führen Sie die folgenden Schritte aus, um eine Webkanalvorlage zu erstellen:
 
    1. Navigieren Sie zum entsprechenden Vorlagenordner, indem Sie **[!UICONTROL Werkzeuge]** > **[!UICONTROL Vorlagen]** > **`[Folder]`** wählen.
    1. Wählen Sie **[!UICONTROL Erstellen]** aus.
-   1. Wählen Sie **[!UICONTROL Webkanal für interaktive Kommunikationl]** und dann **[!UICONTROL Weiter]** aus.
+   1. Wählen Sie **[!UICONTROL Web-Kanal für interaktive Kommunikationl]** und dann **[!UICONTROL Weiter]** aus.
    1. Geben Sie einen Vorlagentitel sowie eine Beschreibung ein und wählen Sie anschließend **[!UICONTROL Erstellen]** aus.
 
       Die Vorlage wird erstellt und ein Dialogfeld wird angezeigt.

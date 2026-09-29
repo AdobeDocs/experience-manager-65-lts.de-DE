@@ -9,22 +9,34 @@ feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ddd50c64-0f17-4638-a57e-17ededaca27b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 100%
-
 ---
-
 # Konsole „Live Copy-Übersicht“{#live-copy-overview-console}
 
 Über die **Live Copy-Übersicht** können Sie folgende Vorgänge durchführen:
 
 * Anzeigen/Verwalten der Vererbung einer Site:
 
-   * Anzeigen der Blueprint-Struktur und der entsprechenden Live Copy-Struktur samt Vererbungsstatus
-   * Ändern des Vererbungsstatus, z. B. „Aussetzen“, „Fortsetzen“
-   * Anzeigen von Blueprint- und Live Copy-Eigenschaften
+  * Anzeigen der Blueprint-Struktur und der entsprechenden Live Copy-Struktur samt Vererbungsstatus
+  * Ändern des Vererbungsstatus, z. B. „Aussetzen“, „Fortsetzen“
+  * Anzeigen von Blueprint- und Live Copy-Eigenschaften
 
 * Durchführen von Rollout-Aktionen
 
@@ -79,11 +91,11 @@ Bei Auswahl einer Blueprint-Seite sind die folgenden Aktionen verfügbar:
 
 * Bearbeiten
 
-   * Öffnet die Blueprint-Seite zum Bearbeiten.
+  * Öffnet die Blueprint-Seite zum Bearbeiten.
 
 * [Rollout](/help/sites-administering/msm.md#rollout-and-synchronize)
 
-   * Führt einen Rollout durch, um Änderungen von der Quelle per Push auf die Live Copy zu übertragen.
+  * Führt einen Rollout durch, um Änderungen von der Quelle per Push auf die Live Copy zu übertragen.
 
 ### Aktionen für eine Live Copy-Seite {#actions-for-a-live-copy-page}
 
@@ -93,31 +105,31 @@ Bei Auswahl einer Live Copy-Seite sind die folgenden Aktionen verfügbar:
 
 * Bearbeiten
 
-   * Öffnet die Live Copy-Seite zum Bearbeiten.
+  * Öffnet die Live Copy-Seite zum Bearbeiten.
 
 * [Beziehungsstatus](#relationship-status)
 
-   * Zeigt Informationen zum Status und zur Vererbung an.
+  * Zeigt Informationen zum Status und zur Vererbung an.
 
 * [Synchronisieren](/help/sites-administering/msm.md#rollout-and-synchronize)
 
-   * Synchronisieren Sie eine Live Copy, um Änderungen von der Quelle per Pull auf die Live Copy zu übertragen.
+  * Synchronisieren Sie eine Live Copy, um Änderungen von der Quelle per Pull auf die Live Copy zu übertragen.
 
 * [Zurücksetzen](/help/sites-administering/msm-livecopy.md#resetting-a-live-copy-page)
 
-   * Setzt eine Live Copy-Seite zurück, um alle abgebrochenen Vererbungsvorgänge zu entfernen und die Seite wieder in denselben Status wie die Quellseite zu versetzen.
+  * Setzt eine Live Copy-Seite zurück, um alle abgebrochenen Vererbungsvorgänge zu entfernen und die Seite wieder in denselben Status wie die Quellseite zu versetzen.
 
 * [Aussetzen](/help/sites-administering/msm.md#suspending-and-cancelling-inheritance-and-synchronization)
 
-   * Deaktiviert vorübergehend die Live-Beziehung zwischen einer Live Copy und der zugehörigen Blueprint-Seite.
+  * Deaktiviert vorübergehend die Live-Beziehung zwischen einer Live Copy und der zugehörigen Blueprint-Seite.
 
-* [Fortsetzen ](/help/sites-administering/msm-livecopy.md#resuming-inheritance-for-a-page)
+* [Fortsetzen](/help/sites-administering/msm-livecopy.md#resuming-inheritance-for-a-page)
 
-   * Reaktiviert eine ausgesetzte Beziehung.
+  * Reaktiviert eine ausgesetzte Beziehung.
 
 * [Trennen](/help/sites-administering/msm.md#detaching-a-live-copy)
 
-   * Entfernt dauerhaft die Live-Beziehung zwischen einer Live Copy und der zugehörigen Blueprint-Seite.
+  * Entfernt dauerhaft die Live-Beziehung zwischen einer Live Copy und der zugehörigen Blueprint-Seite.
 
 ## Beziehungsstatus {#relationship-status}
 

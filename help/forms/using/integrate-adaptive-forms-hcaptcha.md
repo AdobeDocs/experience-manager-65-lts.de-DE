@@ -4,13 +4,21 @@ description: Mit dem hCaptcha&reg;-Dienst können Sie die Formularsicherheit ein
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: da0f8fc5-732e-41de-b73c-0355ec723d26
-source-git-commit: a5cfba70cedd1e0d1f8d5e5b447aa2941a23840f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 95%
-
+source-wordcount: '903'
+ht-degree: 96%
 ---
-
 # Verbinden Ihrer AEM Forms-Umgebung mit hCaptcha® {#connect-your-forms-environment-with-hcaptcha-service}
 
 
@@ -56,7 +64,7 @@ Um AEM Forms mit dem hCAPTCHA®-Service zu integrieren, führen Sie die folgende
 1. So konfigurieren Sie Ihre Cloud-Services:
    1. Navigieren Sie in Ihrer AEM-Autoreninstanz zu ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud-Services]** und klicken Sie auf **[!UICONTROL hCaptcha®]**.
       ![hCaptcha® in der Benutzeroberfläche](assets/hcaptcha-in-ui.png)
-   1. Wählen Sie einen erstellten oder aktualisierten Konfigurations-Container aus, wie im vorherigen Abschnitt beschrieben. Wählen Sie **[!UICONTROL Erstellen]** aus.
+   1. Wählen Sie einen Konfigurations-Container aus, der wie im vorherigen Abschnitt beschrieben erstellt oder aktualisiert wurde. Wählen Sie **[!UICONTROL Erstellen]** aus.
       ![Konfiguration hCAPTCHA®](assets/config-hcaptcha.png)
    1. Geben Sie einen **[!UICONTROL Titel]** an sowie den <!--**[!UICONTROL Name]**--> **[!UICONTROL Site-Schlüssel]** und den **[!UICONTROL geheimen Schlüssel]** für den hCaptcha®-Service [an, die Sie beide gemäß der obigen Voraussetzung abgerufen haben](#prerequisite).
    1. Klicken Sie auf **[!UICONTROL Erstellen]**.

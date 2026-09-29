@@ -9,13 +9,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 90a44cab-3ecf-4a71-95d4-e8ce2d996980
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '293'
 ht-degree: 100%
-
 ---
-
 # Protokollierung in AEM Forms-Workflows{#logging-in-aem-forms-workflows}
 
 Die Forms Workflow-Schritte enthalten detaillierte Protokolle, mit denen Sie Probleme im Zusammenhang mit Workflows bequem beheben können. Aktivieren Sie die Debug-Protokollierung für AEM Forms-Workflows, um die Protokolle anzuzeigen.
@@ -81,7 +95,7 @@ Gehen Sie folgt vor, um die Debugging-Protokollierung für AEM Forms-Workflows z
 
 1. Wechseln Sie zum Konfigurations-Manager der AEM-Web-Konsole unter:
 
-   https://&#39;[server]:[port]&#39;/system/console/configMgr
+   https://'[server]:[port]'/system/console/configMgr
 
 1. Wählen Sie **[!UICONTROL Sling]** > **[!UICONTROL Protokollunterstützung]**.
 1. Wählen Sie **[!UICONTROL Neue Protokollierung hinzufügen]**.

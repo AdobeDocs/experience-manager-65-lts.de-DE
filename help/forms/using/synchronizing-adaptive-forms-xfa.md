@@ -8,13 +8,29 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 24b7d3e5-7755-45f5-b4ea-fb61f25cf806
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1241'
 ht-degree: 100%
-
 ---
-
 # Synchronisieren von adaptiven Formularen mit XFA-Formularvorlagen{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
@@ -47,7 +63,7 @@ Der Artikel verwendet ein Beispiel, um zu veranschaulichen, wie Sie das adaptive
 
 Nachdem Sie das Paket hochgeladen haben, können Sie diese Assets in der Benutzeroberfläche von AEM Forms anzeigen.
 
-Installieren Sie das Paket mit dem Package Manager: `https://<server>:<port>/crx/packmgr/index.jsp`
+Installieren Sie das Paket mit dem Paket-Manager: `https://<server>:<port>/crx/packmgr/index.jsp`
 
 Das Paket enthält die folgenden Assets:
 
@@ -108,7 +124,7 @@ Um die Eigenschaften im adaptiven Formular des Beispiels zu aktualisieren, klick
 >
 >Die Beschriftung „AF Numeric Field“ wurde nicht geändert, da Sie diese Eigenschaft im Dialogfeld für die Komponenteneigenschaften überschrieben haben, wie in [Hinzufügen von Inhalten zu adaptiven Formularen](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p) beschrieben.
 
-### Hinzufügen neuer Felder aus einer XDP-Datei in ein adaptives Formular {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
+### Hinzufügen neuer Felder aus einer XDP-Datei in ein adaptives Formular   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 
 Felder, die später zur Original-XDP-Datei hinzugefügt werden, werden in der Registerkarte „Formularhierarchie“ angezeigt. Sie können diese neuen Felder in das adaptive Formular ziehen.
 
@@ -140,4 +156,4 @@ Das gelöschte Feld wird außerdem mit einem Symbol gekennzeichnet, um einen Feh
 
 Inhaltspaket für das Beispiel in diesem Artikel
 
-[Datei laden](assets/sample-xfa-af-sync-1.0.zip)
+[Datei abrufen](assets/sample-xfa-af-sync-1.0.zip)

@@ -9,13 +9,29 @@ feature: Adaptive Forms,Foundation Components
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 exl-id: 9c516c90-1b1d-406a-b42d-909aae8bb634
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 95%
-
+source-wordcount: '878'
+ht-degree: 93%
 ---
-
 # Unterstützung neuer Gebietsschemata zum Lokalisieren von adaptiven Formularen{#supporting-new-locales-for-adaptive-forms-localization}
 
 ## Gilt für {#applies-to}
@@ -40,18 +56,18 @@ Es gibt zwei Methoden, das Gebietsschema eines adaptiven Formulars zu identifizi
 
 * mit einer Überprüfung der folgenden Parameter in der angegebenen Reihenfolge:
 
-   * `afAcceptLang` für Anforderungsparameter
-Um das Browser-Gebietsschema von Benutzern zu überschreiben, können Sie den `afAcceptLang`-Anforderungsparameter übergeben, um das Gebietsschema zu erzwingen. Beispielsweise wird die folgende URL gezwungen, das Formular im japanischen Gebietsschema wiederzugeben:
-     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+  * Anforderungsparameter `afAcceptLang`
+Um das Browser-Gebietsschema von Benutzern zu überschreiben, können Sie den `afAcceptLang`-Anforderungsparameter übergeben, um das Gebietsschema zu erzwingen. So erzwingt beispielsweise die folgende URL das Rendering des Formulars im japanischen Gebietsschema:
+    `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-   * Das für den Benutzer festgelegte Browser-Gebietsschema, das in der Abfrage mit dem `Accept-Language`-Header angegeben ist.
+  * Das für den Benutzer festgelegte Browser-Gebietsschema, das in der Abfrage mit dem `Accept-Language`-Header angegeben ist.
 
-   * Die in AEM angegebene Spracheinstellung des Benutzers.
+  * Die in AEM angegebene Spracheinstellung des Benutzers.
 
-   * Das Browser-Gebietsschema ist standardmäßig aktiviert. Gehen Sie wie folgt vor, um das im Browser eingestellte Gebietsschema zu ändern:
-      * Öffnen Sie den Configuration Manager. Die URL lautet `http://[server]:[port]/system/console/configMgr`.
-      * Suchen und öffnen Sie die Konfiguration **[!UICONTROL Web-Kanal für adaptive Formulare und Interaktive Kommunikation]**.
-      * Ändern Sie den Status der Option **[!UICONTROL Browser-Gebietsschema verwenden]** und **[!UICONTROL speichern]** Sie die Konfiguration.
+  * Das Browser-Gebietsschema ist standardmäßig aktiviert. Gehen Sie wie folgt vor, um das im Browser eingestellte Gebietsschema zu ändern:
+    * Öffnen Sie den Configuration Manager. Die URL lautet `http://[server]:[port]/system/console/configMgr`.
+    * Suchen und öffnen Sie die Konfiguration **[!UICONTROL Web-Kanal für adaptive Formulare und Interaktive Kommunikation]**.
+    * Ändern Sie den Status der Option **[!UICONTROL Browser-Gebietsschema verwenden]** und **[!UICONTROL speichern]** Sie die Konfiguration.
 
 Sobald das Gebietsschema definiert ist, wählt das adaptive Formular das formularspezifische Wörterbuch aus. Wenn das formularspezifische Wörterbuch für das angeforderte Gebietsschema nicht gefunden wird, verwendet es das Wörterbuch für die Sprache, in der das adaptive Formular verfasst wurde.
 

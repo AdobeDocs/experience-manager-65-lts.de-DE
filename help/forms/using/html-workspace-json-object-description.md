@@ -8,13 +8,33 @@ solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 exl-id: 1b6c09f7-6f89-4fe9-8217-bf1a301bf9cb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 100%
-
+source-wordcount: '2168'
+ht-degree: 92%
 ---
-
 # AEM Forms Workspace – JSON-Objektbeschreibung {#aem-forms-workspace-json-object-description}
 
 JSON-Objekte, die in AEM Forms Workspace verwendet werden, werden unten beschrieben.
@@ -143,7 +163,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, werden unten beschrie
   <tr>
    <td>forwardGroupId<br /> </td>
    <td>F</td>
-   <td>Enthält die ID einer Gruppe, an die die Aufgabe weitergeleitet werden kann.  Wird während des Prozessentwurfs festgelegt.<br /> </td>
+   <td>Enthält die ID einer Gruppe, an die die Aufgabe weitergeleitet werden kann. Wird während des Prozessentwurfs festgelegt.<br /> </td>
   </tr>
   <tr>
    <td>instructions<br /> </td>
@@ -193,7 +213,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, werden unten beschrie
   <tr>
    <td>priority<br /> </td>
    <td>F</td>
-   <td>Enthält die Priorität der Aufgabe.<br /> 1 = höchste Priorität<br /> 2 = Hohe Priorität<br /> 3 = Mittlere Priorität<br /> 4 = Niedrige Priorität<br /> 5 = Niedrigste Priorität<br />  </td>
+   <td>Sie enthält die Priorität der Aufgabe.<br /> 1 = höchste Priorität<br /> 2 = Hohe Priorität<br /> 3 = Mittlere Priorität<br /> 4 = Niedrige Priorität<br /> 5 = Niedrigste Priorität<br /> </td>
   </tr>
   <tr>
    <td>processInstanceId</td>
@@ -213,7 +233,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, werden unten beschrie
   <tr>
    <td>routeList<br /> </td>
    <td>F</td>
-   <td>Enthält eine Liste der mit der Aufgabe verbundenen Routen.  Benutzende können die Aufgabe abschließen, indem sie eine Route aus der Liste der Routen auswählen.<br /> </td>
+   <td>Enthält eine Liste der mit der Aufgabe verbundenen Routen. Benutzende können die Aufgabe abschließen, indem sie eine Route aus der Liste der Routen auswählen.<br /> </td>
   </tr>
   <tr>
    <td>selectedRoute<br /> </td>
@@ -238,7 +258,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, werden unten beschrie
   <tr>
    <td>status<br /> </td>
    <td>F</td>
-   <td>1 = Erstellt (Aufgabe wird vom Startpunkt erstellt.)<br />2 = Erstellt und gespeichert (Aufgabe wird vom Startpunkt erstellt und gespeichert.)<br />3 = Zugewiesen (Aufgabe wird der Person zugewiesen, nachdem der Prozess gestartet wurde.)<br />4 = Zugewiesen und gespeichert (Aufgabe wird zugewiesen und gespeichert.)<br />100 = Abgeschlossen (Aufgabe wird abgeschlossen.)<br />101 = Termin erreicht (Aufgabe hat den Termin erreicht.)<br />102 = Beendet<br /> </td>
+   <td>1 = Erstellt (Aufgabe wird vom Startpunkt erstellt.)<br /> 2 = Erstellt und gespeichert (Aufgabe wird vom Startpunkt erstellt und gespeichert)<br /> 3 = Zugewiesen (Aufgabe wird dem Benutzer zugewiesen, nachdem der Prozess gestartet wurde.<br /> 4 = Zugewiesen und gespeichert (Aufgabe wird zugewiesen und gespeichert)<br /> 100 = Abgeschlossen (Aufgabe ist abgeschlossen.)<br /> 101= Fristablauf (Aufgabe hat Fristablauf erreicht.)<br /> 102= Beendet<br /> </td>
   </tr>
   <tr>
    <td>stepName<br /> </td>
@@ -412,12 +432,12 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, werden unten beschrie
   <tr>
    <td>Typ</td>
    <td>F</td>
-   <td>Enthält den Typ der Warteschlange.<br />0 – Benutzerwarteschlange.<br /> 1. Freigegebene Warteschlange.<br /> 2. Gruppenwarteschlange.<br type="_moz" /> </td>
+   <td>Sie enthält den Typ der Warteschlange.<br /> 0 - Benutzerwarteschlange.<br /> 1. Freigegebene Warteschlange.<br /> 2. Gruppenwarteschlange.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>query</td>
    <td>T</td>
-   <td>Enthält eine Abfrage, die einem Filter zugeordnet ist.  Diese Abfrage wird verwendet, um Aufgaben aus der vollständigen Aufgabenliste zu durchsuchen.<br type="_moz" /> </td>
+   <td>Enthält eine Abfrage, die einem Filter zugeordnet ist. Diese Abfrage wird verwendet, um Aufgaben aus der vollständigen Aufgabenliste zu durchsuchen.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>tasks</td>
@@ -461,7 +481,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, werden unten beschrie
   <tr>
    <td>processSpecificDesignates<br type="_moz" /> </td>
    <td>F</td>
-   <td>Enthält eine Reihe von Objekten für prozessspezifische Abwesenheitsnotizen.  In jedem prozessspezifischen designierten Objekt enthält processName den Namen des Prozesses; isNotDesignated hat den Wert „true“, wenn dem entsprechenden Prozess kein Benutzer zugeordnet ist; userDesignated hat den Wert Null, wenn kein Benutzer Details dem Benutzer zugeordnet hat, der für den entsprechenden Vorgang vorgesehen war.<br type="_moz" /> </td>
+   <td>Enthält eine Reihe von Objekten für prozessspezifische Abwesenheitsnotizen. In jedem prozessspezifischen designierten Objekt enthält processName den Namen des Prozesses; isNotDesignated hat den Wert „true“, wenn dem entsprechenden Prozess kein Benutzer zugeordnet ist; userDesignated hat den Wert Null, wenn kein Benutzer Details dem Benutzer zugeordnet hat, der für den entsprechenden Vorgang vorgesehen war.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processes<br type="_moz" /> </td>
@@ -606,7 +626,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, werden unten beschrie
   <tr>
    <td>assignmentType<br type="_moz" /> </td>
    <td>F</td>
-   <td>0 = Erste Zuweisung<br /> 1 = Weiterleiten (Aufgabe wurde an die aktuell für die Aufgabe verantwortliche Person weitergeleitet.)<br />2 = Zurückgegeben (Die zuvor für die Aufgabe verantwortliche Person hat die Aufgabe der aktuell für die Aufgabe verantwortlichen Person zurückgegeben.)<br />3 = Angefordert (Aufgabe wurde von der aktuell für die Aufgabe verantwortlichen Person angefordert.)<br />4 = Eskalation (Aufgabe wurde nach der Eskalation der aktuell für die Aufgabe verantwortlichen Person zugewiesen.)<br />5 = Administratorseitig zugewiesen (Admin hat die Aufgabe der aktuell für die Aufgabe verantwortlichen Person zugewiesen.)<br />6 = Besprechen (Aufgabe wurde der aktuell für die Aufgabe verantwortlichen Person zum Besprechen zugewiesen.)<br type="_moz" /> </td>
+   <td>0 = Anfangszuweisung<br /> 1 = Weiterleiten (Aufgabe wurde an den aktuellen Besitzer der Aufgabe weitergeleitet.)<br /> 2 = Zurückgegeben (Aufgabe wurde vom vorherigen Besitzer der Aufgabe an den aktuellen Besitzer der Aufgabe zurückgegeben.)<br /> 3 = Beansprucht (Aufgabe wurde vom aktuellen Besitzer der Aufgabe beansprucht.)<br /> 4 = Eskalation (Aufgabe wurde nach der Eskalation dem aktuellen Aufgabenbesitzer zugewiesen)<br /> 5 = Administrator zugewiesen (Aufgabe wurde vom Administrator dem aktuellen Besitzer der Aufgabe zugewiesen)<br /> 6 = Beraten ( Die Aufgabe wurde an den aktuellen Aufgabenbesitzer beraten.)<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>assignmentUpdateTime<br type="_moz" /> </td>
@@ -677,7 +697,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, werden unten beschrie
 
 1. Aufgabenanhang
 
-   Einer Aufgabe können Anhänge hinzugefügt werden.  Der Anhang kann vom Typ „Anhang“ und „Anmerkung“ sein. Im Folgenden sind die Eigenschaften des Anhangsobjekts aufgeführt.
+   Einer Aufgabe können Anhänge hinzugefügt werden. Der Anhang kann vom Typ „Anhang“ und „Anmerkung“ sein. Im Folgenden sind die Eigenschaften des Anhangsobjekts aufgeführt.
 
 <table>
  <tbody>

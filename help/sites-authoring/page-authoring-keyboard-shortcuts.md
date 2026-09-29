@@ -9,13 +9,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 33b531c0-8fda-4649-bad1-d28c58a160e0
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 100%
-
+ht-degree: 91%
 ---
-
 # Tastaturbefehle für die Seitenbearbeitung{#keyboard-shortcuts-when-editing-pages}
 
 In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für die Bearbeitung von Seiten, andere für die [Verwendung von Konsolen](/help/sites-authoring/keyboard-shortcuts.md).
@@ -42,7 +55,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 
 >[!NOTE]
 >
->&amp;ast; Sobald der Benutzer mit der Seite im Vorschaumodus interagiert, ist der Tastaturbefehl `Ctrl-Shift-m` nicht mehr verfügbar. Es muss auf die obere Editorleiste geklickt oder wieder in den Bearbeitungsmodus gewechselt werden, damit der Tastaturbefehl erneut verfügbar wird.
+>&ast; Sobald der Benutzer mit der Seite im Vorschaumodus interagiert, ist der `Ctrl-Shift-m`-Tastaturbefehl nicht mehr verfügbar. Es muss auf die obere Editorleiste geklickt oder wieder in den Bearbeitungsmodus gewechselt werden, damit der Tastaturbefehl erneut verfügbar wird.
 
 Desktop-Benutzern stehen bei der Verwendung von [Konsolen](/help/sites-authoring/keyboard-shortcuts.md) ebenfalls verschiedene Tastaturbefehle zur Verfügung.
 

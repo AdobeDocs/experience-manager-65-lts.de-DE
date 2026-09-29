@@ -9,13 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: b38cd444-80f2-4747-9a99-68f69bd87e34
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1010'
 ht-degree: 100%
-
 ---
-
 # Erste Schritte mit AEM Forms Workspace {#getting-started-with-aem-forms-workspace}
 
 Mit AEM Forms Workspace können Sie die folgenden Aufgaben durchführen:
@@ -78,4 +94,4 @@ Legen Sie die Benutzeroberflächeneinstellungen auf der Registerkarte „Voreins
 * **Zeitformat:** Gibt das Anzeigeformat für die Zeit an, das in AEM Forms Workspace verwendet wird.
 * **Über Aufgabenereignisse per E-Mail benachrichtigen:** Gibt an, ob Sie E-Mail-Benachrichtigungen für Aufgabenereignisse erhalten, einschließlich Aufgabenzuweisungen, Erinnerungen und Terminen in Ihrer persönlichen Aufgabenliste oder in Gruppenaufgabenlisten, denen Sie zugewiesen sind.
 * **Formulare in E-Mail anfügen:** Gibt an, ob eine Kopie des Formulars in E-Mail-Benachrichtigungen angefügt wird. Anlagen werden nur für PDF- und XDP-Formulare unterstützt.
-* **Entwurf regelmäßig speichern:** Gibt an, ob Ihre Formularentwürfe regelmäßig automatisch gespeichert werden. Aktivieren Sie diese Option, damit Ihre Entwürfe in regelmäßigen Abständen gespeichert werden, und legen Sie die Frequenz der automatischen Speicherung von 1 bis 30 Minuten fest.  Wenn die automatische Speicherung aktiviert ist und Sie an einem Entwurf arbeiten, wird der Entwurf regelmäßig nach der angegebenen Anzahl von Minuten gespeichert.  Der Entwurf wird nur dann automatisch gespeichert, wenn sich seit der letzten manuellen oder automatischen Speicherung etwas geändert hat.  Wenn der Entwurf gespeichert wurde, erscheint eine Warnmeldung auf dem Bildschirm.
+* **Entwurf regelmäßig speichern:** Gibt an, ob Ihre Formularentwürfe regelmäßig automatisch gespeichert werden. Aktivieren Sie diese Option, damit Ihre Entwürfe in regelmäßigen Abständen gespeichert werden, und legen Sie die Frequenz der automatischen Speicherung von 1 bis 30 Minuten fest. Wenn die automatische Speicherung aktiviert ist und Sie an einem Entwurf arbeiten, wird der Entwurf regelmäßig nach der angegebenen Anzahl von Minuten gespeichert. Der Entwurf wird nur dann automatisch gespeichert, wenn sich seit der letzten manuellen oder automatischen Speicherung etwas geändert hat. Wenn der Entwurf gespeichert wurde, erscheint eine Warnmeldung auf dem Bildschirm.

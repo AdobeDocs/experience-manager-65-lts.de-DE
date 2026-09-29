@@ -5,13 +5,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 3fafb5e6-f5ac-4c11-809f-6cb2c5269377
-source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '992'
 ht-degree: 97%
-
 ---
-
 # Der Link-Checker {#the-link-checker}
 
 Inhaltsautoren sollten sich nicht mit der Validierung aller Links befassen müssen, die sie in ihre Inhaltsseiten aufnehmen.
@@ -72,14 +81,14 @@ So verwenden Sie den Externer-Link-Checker:
 Daraufhin werden die folgenden Informationen angezeigt:
 
 * **Status**: Der Validierungsstatus des Links, der einer der folgenden sein kann:
-   * **Gültig**: Der externe Link ist über den Link-Checker erreichbar.
-   * **Ausstehend**: Der externe Link wurde zum Website-Inhalt hinzugefügt, wurde jedoch noch nicht vom Link-Checker validiert.
-   * **Ungültig**: Der externe Link kann vom Link-Checker nicht erreicht werden.
+  * **Gültig**: Der externe Link ist über den Link-Checker erreichbar.
+  * **Ausstehend**: Der externe Link wurde zum Website-Inhalt hinzugefügt, wurde jedoch noch nicht vom Link-Checker validiert.
+  * **Ungültig**: Der externe Link kann vom Link-Checker nicht erreicht werden.
 * **URL**: Der externe Link.
 * **Referrer**: Die Inhaltsseite, die den externen Link enthält.
-   * Dies wird nur ausgefüllt, [falls konfiguriert](#configuring).
+  * Dies wird nur ausgefüllt, [falls konfiguriert](#configuring).
 * **Zuletzt aktiviert**: Das letzte Mal, dass der Link-Checker den externen Link validiert hat.
-   * Wie oft Links überprüft werden, [ist konfigurierbar](#configuring).
+  * Wie oft Links überprüft werden, [ist konfigurierbar](#configuring).
 * **Letzter Status**: Der letzte HTML-Status-Code, der zurückgegeben wurde, als der Link-Checker den externen Link zuletzt überprüft hat.
 * **Zuletzt verfügbar**: Zeit, seit der Link zuletzt für den Link-Checker verfügbar war.
 * **Zuletzt aufgerufen**: Zeit seit dem letzten Zugriff auf die Seite mit dem externen Link in der Authoring-Oberfläche.
@@ -105,8 +114,8 @@ Der Checker für externe Links ist zwar einfach zu bedienen, ist aber auf eine R
 Der Link-Checker ist in AEM automatisch vorkonfiguriert verfügbar. Es gibt jedoch verschiedene OSGi-Konfigurationen, die geändert werden können, um sein Verhalten zu ändern:
 
 * **Day CQ Link Checker Info Storage Service**: Dieser Dienst definiert die Größe des Link-Checker-Cache im Repository.
-* **Day CQ Link Checker Service**: Dieser Dienst führt eine asynchrone Überprüfung der Syntax von externen Links durch. Sie können unter anderem den Prüfzeitraum festlegen und festlegen, welche Links vom Checker übersprungen werden.
-* **Day CQ Link Checker Task**: Dieser Dienst führt die GET-Validierung von externen Links durch. Er ermöglicht unter anderem separate Definitionen von Intervallen, um fehlerhafte und gute Links zu überprüfen.
+* **Day CQ Link Checker Service**: Dieser Dienst führt eine asynchrone Überprüfung der Syntax externer Links durch. Sie können unter anderem den Prüfzeitraum festlegen und festlegen, welche Links vom Checker übersprungen werden.
+* **Day CQ Link Checker Task**: Dieser Dienst führt die GET-Validierung externer Links durch. Er ermöglicht unter anderem separate Definitionen von Intervallen, um fehlerhafte und gute Links zu überprüfen.
 * **Day CQ Link Checker Transformer**: Ermöglicht das Konvertieren von Links basierend auf einem benutzerdefinierten Regelsatz.
 
 Weitere Informationen zum Ändern von OSGi-Einstellungen finden Sie im Dokument [OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md).

@@ -1,5 +1,5 @@
 ---
-title: Integrieren von Landing-Pages in Adobe Analytics
+title: Integrieren von Landingpages in Adobe Analytics
 description: Erfahren Sie, wie Sie Landingpages mit Adobe Analytics integrieren können.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,16 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 24ab494d-4a11-408e-8dc0-de16508edfac
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '380'
 ht-degree: 100%
-
 ---
+# Integrieren von Landingpages in Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-# Integrieren von Landing-Pages in Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
-
-AEM hat die Einstiegsseitenlösung mithilfe des folgenden Aktionsaufrufs in [Adobe Analytics](https://www.omniture.com/de/products/analytics/sitecatalyst) integriert:
+AEM hat die Landingpage-Lösung mithilfe des folgenden Aktionsaufrufs in [Adobe Analytics](https://www.omniture.com/de/products/analytics/sitecatalyst) integriert:
 
 1. Clickthrough-Komponente
 1. Grafische Link-Komponente
@@ -92,4 +101,4 @@ Sie können Landingpages wie folgt zu Adobe Analytics zuordnen:
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 
-1. Nach dem Konfigurieren des Frameworks für die Einstiegsseite können Sie nun die instrumentierten Komponenten verwenden. Sämtliche Klicks auf den Aktionsaufrufen werden dann in Adobe Analytics aufgezeichnet.
+1. Nach dem Konfigurieren des Frameworks für die Landingpage können Sie nun die instrumentierten Komponenten verwenden. Sämtliche Klicks auf den Aktionsaufrufen werden dann in Adobe Analytics aufgezeichnet.

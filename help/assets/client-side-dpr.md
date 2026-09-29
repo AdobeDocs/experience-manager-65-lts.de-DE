@@ -5,13 +5,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Assets
 feature: Smart Imaging
 exl-id: 3b4f3624-d76d-4835-834b-e8610c2c40bd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: b39a6d56-d787-413f-8024-351803c28d44
+    internal-label: Smart Imaging
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 94%
-
+source-wordcount: '328'
+ht-degree: 100%
 ---
-
 # Informationen zur intelligenten Bildbearbeitung mit Client-seitigem Gerätepixelverhältnis (Device Pixel Ratio, DPR). {#client-side-dpr}
 
 Die aktuelle Lösung für die intelligente Bildbearbeitung verwendet Benutzeragenten-Zeichenfolgen, um den verwendeten Gerätetyp (Desktop, Tablet, Mobilgerät usw.) zu bestimmen.
@@ -56,8 +70,8 @@ Client-seitiges DPR liefert 100 % genaue Werte und funktioniert für jedes Ger�
 
    Sie können die beiden DPR-Skripte zusammenfassen, um mehrere Netzwerkanforderungen zu vermeiden.
 
-   Adobe empfiehlt, diese Skripte (_) vor_ anderen Skripten auf der HTML-Seite zu laden.
-Adobe empfiehlt außerdem, die App unter dem HTML-Tag „diff“ und nicht unter einem Body-Element Bootstrap. Der Grund dafür ist, dass `dprImageInjection.js` das Bild-Tag dynamisch am Anfang des body-Abschnitts der HTML-Seite einfügt.
+   Adobe empfiehlt, diese Skripte _vor_ allen anderen Skripten auf der HTML-Seite zu laden.
+   Adobe empfiehlt auch, Ihre App unter dem HTML-Tag „diff“ und nicht unter einem Body-Element zu laden. Der Grund dafür ist, dass `dprImageInjection.js` das Bild-Tag dynamisch am Anfang des Body-Abschnitts auf der HTML-Seite einfügt.
 
 ## Herunterladen von JavaScript-Dateien. {#client-side-dpr-script}
 

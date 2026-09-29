@@ -5,14 +5,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 5e7fe85e-3c7f-4a37-8f65-5c0ad4bbd66c
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3286'
 ht-degree: 100%
-
 ---
-
 # Informationen zur Dokumentensicherheit {#about-document-security}
 
 Document Security stellt sicher, dass nur autorisierte Benutzerinnen und Benutzer Ihre Dokumente verwenden können. Mithilfe von Document Security können Sie Informationen, die Sie in einem unterstützten Format gespeichert haben, sicher verteilen. Unterstützte Dateiformate:
@@ -71,15 +83,15 @@ Verschiedene Typen von Benutzenden arbeiten mit Document Security, um verschiede
 
   Benutzende mit dieser Rolle haben Zugriff auf alle Document Security-Einstellungen in Administration-Console. Die folgenden Berechtigungen sind mit der Rolle verknüpft:
 
-   * Konfiguration verwalten
-   * Richtlinie verwalten
-   * Richtliniensätze verwalten
-   * Dokumente verwalten
-   * Dokumentherausgeber verwalten
-   * Eingeladene und lokale Benutzende verwalten
-   * Ereignisse anzeigen
-   * Delegieren
-   * Externe Benutzende einladen
+  * Konfiguration verwalten
+  * Richtlinie verwalten
+  * Richtliniensätze verwalten
+  * Dokumente verwalten
+  * Dokumentherausgeber verwalten
+  * Eingeladene und lokale Benutzende verwalten
+  * Ereignisse anzeigen
+  * Delegieren
+  * Externe Benutzende einladen
 
   **Document Security-Admin**
 
@@ -93,12 +105,12 @@ Verschiedene Typen von Benutzenden arbeiten mit Document Security, um verschiede
 
   Benutzende mit dieser Rolle können den Abschnitt „Document Security“ von Administration-Console verwenden, um die Richtlinien anderer Benutzender zu bearbeiten und Richtliniensätze zu erstellen, zu bearbeiten und zu löschen. Wenn Richtliniensatz-Admins einen Richtliniensatz erstellen, können sie diesem Richtliniensatz eine Richtliniensatz-Koordinatorin bzw. einen -Koordinator zuweisen. Die folgenden Berechtigungen sind mit der Rolle verknüpft:
 
-   * Richtlinie verwalten
-   * Richtliniensätze verwalten
-   * Dokumente verwalten
-   * Dokumentherausgeber verwalten
-   * Ereignisse anzeigen
-   * Delegieren
+  * Richtlinie verwalten
+  * Richtliniensätze verwalten
+  * Dokumente verwalten
+  * Dokumentherausgeber verwalten
+  * Ereignisse anzeigen
+  * Delegieren
 
   >[!NOTE]
   >
@@ -108,9 +120,9 @@ Verschiedene Typen von Benutzenden arbeiten mit Document Security, um verschiede
 
   Benutzende mit dieser Rolle können Aufgaben ausführen, die zur Verwaltung aller eingeladenen und lokalen Benutzenden auf den entsprechenden Document Security-Web-Seiten erforderlich sind. Die folgenden Berechtigungen sind mit der Rolle verknüpft:
 
-   * Eingeladene und lokale Benutzende verwalten
-   * Externe Benutzende einladen
-   * Zugriff auf Web-Seiten für Endbenutzende
+  * Eingeladene und lokale Benutzende verwalten
+  * Externe Benutzende einladen
+  * Zugriff auf Web-Seiten für Endbenutzende
 
   >[!NOTE]
   >
@@ -120,8 +132,8 @@ Verschiedene Typen von Benutzenden arbeiten mit Document Security, um verschiede
 
   Benutzende mit dieser Rolle können Benutzende einladen. Die folgenden Berechtigungen sind mit der Rolle verknüpft:
 
-   * Externe Benutzende einladen
-   * Zugriff auf Web-Seiten für Endbenutzende
+  * Externe Benutzende einladen
+  * Zugriff auf Web-Seiten für Endbenutzende
 
   **Document Security-Endbenutzer**
 
@@ -249,25 +261,25 @@ Fügen Sie zu Richtlinien Benutzergruppen anstelle einzelner Benutzer hinzu. Die
 
 * **Verwenden Sie einen externen Autorisierer, um Berechtigungen dynamisch anzuwenden**: Sie können [externe Autorisierer](https://help.adobe.com/de_DE/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) verwenden, um Berechtigungen basierend auf externen Bedingungen zu bewerten und dynamisch anzuwenden. Wenn die Berechtigungen dynamisch anhand externer Bedingungen ausgewertet werden, können Sie:
 
-   * Eine zentralisierte Zugriffskontrolle für Dokumente in Ihrer Organisation ermöglichen.
+  * Eine zentralisierte Zugriffskontrolle für Dokumente in Ihrer Organisation ermöglichen.
 
-   * Den Zugriff auf richtliniengeschützte Dokumente kontrollieren, indem dynamisch bestimmt wird, ob ein Benutzer auf ein richtliniengeschütztes Dokument zugreifen kann. Zum Beispiel kann dynamisch entschieden werden, ob ein Benutzer ein richtliniengeschütztes Dokument drucken darf.
+  * Den Zugriff auf richtliniengeschützte Dokumente kontrollieren, indem dynamisch bestimmt wird, ob ein Benutzer auf ein richtliniengeschütztes Dokument zugreifen kann. Zum Beispiel kann dynamisch entschieden werden, ob ein Benutzer ein richtliniengeschütztes Dokument drucken darf.
 
-   * Verwenden Sie zusätzlich zum standardmäßigen Prozess zur Richtlinienbewertung einen Zugriffskontrollmechanismus, den Ihr Content-Management-System verwendet. Wenn der Dienst beispielsweise bestimmt, ob eine Person ein richtliniengeschütztes Dokument drucken kann, kann er den standardmäßigen Prozess zur Richtlinienbewertung verwenden. Außerdem kann er den Zugriffskontrollmechanismus verwenden, den Ihr Content-Management-System verwendet.
+  * Verwenden Sie zusätzlich zum standardmäßigen Prozess zur Richtlinienbewertung einen Zugriffskontrollmechanismus, den Ihr Content-Management-System verwendet. Wenn der Dienst beispielsweise bestimmt, ob eine Person ein richtliniengeschütztes Dokument drucken kann, kann er den standardmäßigen Prozess zur Richtlinienbewertung verwenden. Außerdem kann er den Zugriffskontrollmechanismus verwenden, den Ihr Content-Management-System verwendet.
 
   Obwohl es möglich ist, den Richtlinienbewertungsprozess von Document Security vollständig durch einen externen Autorisierungs-Handler zu ersetzen, wird empfohlen, dass Sie einen externen Autorisierungs-Handler in Verbindung mit dem Richtlinienbewertungsprozess verwenden. Dann kann der Dokumentzugriff über denselben Kontrollmechanismus gesteuert werden, den Ihr Content-Management-System verwendet. Wenn beispielsweise der Document Security-Dienst bestimmt, ob eine Person ein richtliniengeschütztes Dokument drucken kann, wird der standardmäßige Prozess zur Richtlinienbewertung verwendet. Außerdem wird der Zugriffssteuerungsmechanismus verwendet, den Ihr Content-Management-System verwendet. Weitere Informationen finden Sie unter [Erstellen externer Autorisierungs-Handler](https://help.adobe.com/de_DE/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
 * **Beschränken Sie die Anzahl der Richtliniensätze auf ein Minimum**: Es gibt mehrere Faktoren, die zu einer ständigen Zunahme von Richtlinien und Richtliniensätzen führen. Einige häufige Faktoren sind:
 
-   * Zunahme der Benutzerrollen, Abteilungen und Dokumente innerhalb einer Organisation über einen bestimmten Zeitraum.
-   * Die Abteilungen einer Organisation arbeiten isoliert und halten die abteilungsspezifischen Richtlinien streng unter Kontrolle. Dies führt zu identischen Richtlinien innerhalb einer Organisation.
+  * Zunahme der Benutzerrollen, Abteilungen und Dokumente innerhalb einer Organisation über einen bestimmten Zeitraum.
+  * Die Abteilungen einer Organisation arbeiten isoliert und halten die abteilungsspezifischen Richtlinien streng unter Kontrolle. Dies führt zu identischen Richtlinien innerhalb einer Organisation.
 
   Adobe empfiehlt, die Anzahl der Richtlinien und Richtliniensätze auf ein Minimum zu beschränken. Dies erleichtert die einfache Verwaltung von Richtlinien und Richtliniensätzen und sorgt für eine bessere Leistung. So halten Sie die Anzahl auf ein Minimum beschränkt:
 
-   * Erstellen Sie wiederverwendbare Richtlinien. Diese Richtlinien können über mehrere Abteilungen hinweg gemeinsam genutzt werden.
-   * Erwägen Sie die Erstellung von unternehmensweiten Richtliniensätzen, wenn einige Richtlinien für mehrere Abteilungen gelten, und nicht für jeden Bereich einen individuellen Richtliniensatz.
-   * Gruppieren Sie zusammengehörige Richtlinien in einem Richtliniensatz. Erstellen Sie nicht für jede Richtlinie einen separaten Richtliniensatz.
-   * Verwenden Sie einen externen Autorisierer, um Benutzerberechtigungen dynamisch zu steuern.
+  * Erstellen Sie wiederverwendbare Richtlinien. Diese Richtlinien können über mehrere Abteilungen hinweg gemeinsam genutzt werden.
+  * Erwägen Sie die Erstellung von unternehmensweiten Richtliniensätzen, wenn einige Richtlinien für mehrere Abteilungen gelten, und nicht für jeden Bereich einen individuellen Richtliniensatz.
+  * Gruppieren Sie zusammengehörige Richtlinien in einem Richtliniensatz. Erstellen Sie nicht für jede Richtlinie einen separaten Richtliniensatz.
+  * Verwenden Sie einen externen Autorisierer, um Benutzerberechtigungen dynamisch zu steuern.
 
   >[!NOTE]
   >

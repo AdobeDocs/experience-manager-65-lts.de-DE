@@ -6,13 +6,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
-source-git-commit: 6b846e456466492f4be2c1e5a1f6b3913ae4dab4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2071'
+source-wordcount: '2098'
 ht-degree: 23%
-
 ---
-
 # Bewerten der Aktualisierungskomplexität mit dem AEM Analyzer {#assessing-the-upgrade-complexity-with-the-aem-analyzer}
 
 ## Überblick {#overview}
@@ -88,10 +97,10 @@ Das Format des Berichts lautet:
 
 * **Berichtsübersicht**: Informationen zum Bericht selbst, einschließlich der Folgenden:
 
-   * **Berichtszeit**: Zeitpunkt, zu dem die Berichtsinhalte generiert und erstmals bereitgestellt wurden
-   * **Ablaufzeit**: Wann der Zwischenspeicher für Berichtsinhalte abläuft
-   * **Generierungszeitraum**: Der Zeitraum, in dem der Bericht generiert wurde
-   * **Anzahl der Ergebnisse**: Die Gesamtzahl der im Bericht enthaltenen Ergebnisse
+  * **Berichtszeit**: Zeitpunkt, zu dem die Berichtsinhalte generiert und erstmals bereitgestellt wurden
+  * **Ablaufzeit**: Wann der Zwischenspeicher für Berichtsinhalte abläuft
+  * **Generierungszeitraum**: Der Zeitraum, in dem der Bericht generiert wurde
+  * **Anzahl der Ergebnisse**: Die Gesamtzahl der im Bericht enthaltenen Ergebnisse
 
 * **Systemübersicht**: Informationen zum AEM-System, auf dem der Analyzer ausgeführt wurde
 * **Suchen von Kategorien**: Mehrere Abschnitte, die jeweils eine oder mehrere Ergebnisse derselben Kategorie behandeln. Jeder Abschnitt enthält Folgendes: Name der Kategorie, Untertypen, Anzahl und Wichtigkeit der Ergebnisse, Zusammenfassung, Link zur Dokumentation der Kategorien und individuelle Suchinformationen.
@@ -232,5 +241,5 @@ Die für den AEM Analyzer-Bericht verbleibende Gültigkeitsdauer wird in der Sei
 
 ### Bekannte Probleme {#known-issues}
 
-* Manchmal wird beim Entfernen-Vorgang möglicherweise die Benachrichtigung angezeigt: *„Einige Pfade wurden nicht erfolgreich entfernt. Bitte die Protokolle überprüfen und erneut versuchen.*&quot;. Wenn die Pfade jedoch tatsächlich entfernt wurden, können Sie diese Nachricht ignorieren
-* Ebenso kann der Paketvorgang mit folgendem Fehler fehlschlagen: „Fehler *beim Ausführen des gewünschten Vorgangs, bitte die Protokolle überprüfen und erneut versuchen.*&quot;. Dies ist wahrscheinlich auf den Ablauf der Sitzung zurückzuführen. In solchen Fällen sollte das Problem durch Wiederholen des Vorgangs behoben werden.
+* Manchmal wird beim Entfernen-Vorgang möglicherweise die Benachrichtigung angezeigt: *Einige Pfade wurden nicht erfolgreich entfernt. Bitte die Protokolle überprüfen und erneut versuchen.*&quot;. Wenn die Pfade jedoch tatsächlich entfernt wurden, können Sie diese Nachricht ignorieren
+* Ebenso kann der Paketvorgang mit folgendem Fehler fehlschlagen: *„Fehler beim Ausführen des gewünschten Vorgangs, bitte die Protokolle überprüfen und erneut versuchen.*&quot;. Dies ist wahrscheinlich auf den Ablauf der Sitzung zurückzuführen. In solchen Fällen sollte das Problem durch Wiederholen des Vorgangs behoben werden.

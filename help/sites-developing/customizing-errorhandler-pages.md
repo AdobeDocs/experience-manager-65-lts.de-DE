@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 4f98853d-306f-4d11-a3d8-83122b372b2d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 100%
-
+source-wordcount: '545'
+ht-degree: 96%
 ---
-
 # Anpassen der vom Fehler-Handler angezeigten Seiten{#customizing-pages-shown-by-the-error-handler}
 
 Adobe Experience Manager (AEM) enthält einen Standard-Fehler-Handler für die Verarbeitung von HTTP-Fehlern. Beispielsweise wird Folgendes gezeigt:
@@ -69,15 +78,16 @@ Sie können Ihre eigenen Skripte erstellen, um die Seiten anzupassen, die der Fe
 
 HTTP 500-Fehler werden von Server-seitigen Ausnahmefehlern verursacht.
 
-* **[500 Interner Serverfehler](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)** Der Server hat einen unerwarteten Zustand entdeckt und kann daher die Anfrage nicht erfüllen.
+* Interner **[500-Server-Fehler](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
+Der Server ist auf eine unerwartete Bedingung gestoßen, die ihn daran hindert, die Anfrage zu erfüllen.
 
 Wenn die Bearbeitung einer Anfrage zu einem Ausnahmefehler führt, führt das Apache Sling-Framework (auf dem AEM basiert) folgende Schritte durch:
 
 * Protokollierung des Ausnahmefehlers
 * Rückgabe:
 
-   * der HTTP-Antwort-Code 500
-   * der Stacktrace des Ausnahmefehlers
+  * der HTTP-Antwort-Code 500
+  * der Stacktrace des Ausnahmefehlers
 
   im Hauptteil der Antwort.
 

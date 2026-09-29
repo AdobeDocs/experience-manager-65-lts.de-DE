@@ -5,13 +5,27 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader
 exl-id: bd80a4c5-4b65-43db-af4e-f43849c796be
-source-git-commit: db44ebd29ea80c3b95e385ace5156d028f4de122
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '988'
 ht-degree: 100%
-
 ---
-
 # DevOp-Strategien für Unternehmen{#enterprise-devops}
 
 DevOp-Strategien umfassen die notwendigen Prozesse, Methoden und Kommunikation für Folgendes:
@@ -31,7 +45,7 @@ Die Bereitstellung von Adobe Experience Manager (AEM) besteht gewöhnlich aus me
 
 * [Entwicklung](#development)
 * [Qualitätssicherung](#quality-assurance)
-* [Staging  ](#staging)
+* [Staging](#staging)
 * [Produktion](#production-author-and-publish)
 
 >[!NOTE]
@@ -59,7 +73,7 @@ Je nach Größe Ihres Systems kann die Entwicklungsumgebung sowohl über Autoren
 
 Diese Umgebung wird vom Qualitätssicherungs-Team zu umfassenden [Tests](/help/sites-developing/test-plan.md) des neuen Systems, sowohl in Bezug auf Design als auch Funktion, verwendet. Sie sollte über eine Autoren- und eine Veröffentlichungsumgebung mit geeignetem Inhalt verfügen und sämtliche notwendigen Dienste zur Durchführung einer Reihe von Tests bereitstellen.
 
-### Staging   {#staging}
+### Staging {#staging}
 
 Die Staging-Umgebung sollte ein Spiegelbild der Produktionsumgebung sein – Konfiguration, Code und Inhalte:
 
@@ -67,7 +81,7 @@ Die Staging-Umgebung sollte ein Spiegelbild der Produktionsumgebung sein – Kon
 * Sie kann für abschließende Tests (Design, Funktionalität und Schnittstellen) vor der Bereitstellung für die Produktionsumgebungen verwendet werden.
 * Obwohl es nicht immer möglich ist, die Staging-Umgebung völlig identisch mit der Produktionsumgebung zu gestalten, sollten die beiden so ähnlich wie möglich sein, um Leistungs- und Belastungstests zu ermöglichen.
 
-### Produktion - Autoren- und Veröffentlichungsumgebung   {#production-author-and-publish}
+### Produktion - Autoren- und Veröffentlichungsumgebung {#production-author-and-publish}
 
 Die Produktionsumgebung besteht aus den für das tatsächliche [Verfassen und Veröffentlichen](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) der Implementierung notwendigen Umgebungen.
 
@@ -102,7 +116,7 @@ Eine Veröffetlichungsumgebung befindet sich normalerweise in der „Demilitariz
 
 Die Veröffentlichungsumgebung erzeugt Ihren Inhalt dynamisch in Echtzeit und ermöglicht die Personalisierung des Inhalts für jeden einzelnen Benutzer.
 
-## Code-Verschiebung   {#code-movement}
+## Code-Verschiebung {#code-movement}
 
 Propagieren Sie den Code immer von unten nach oben:
 

@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin,Developer
 exl-id: 89d4b9ae-8237-4c85-9e68-626e7d9d3464
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '904'
 ht-degree: 95%
-
 ---
-
 # Lernen Sie die Grundlagen der Inhaltsmodellierung für Headless mit AEM kennen. {#content-modeling-headless-basics}
 
 ## Die bisherige Entwicklung {#story-so-far}
@@ -107,8 +123,8 @@ Sie können beispielsweise auf ein Bild an einer bestimmten Stelle verweisen.
 Dies bietet Verweise auf andere Inhaltsfragmente.
 Dieser Referenztyp wird verwendet, um verschachtelte Inhalte zu erstellen und die Beziehungen einzuführen, die zum Modellieren Ihres Inhalts erforderlich sind.
 Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:
-   * Direktes Bearbeiten des referenzierten Fragments
-   * Erstellen eines neuen Inhaltsfragments basierend auf dem entsprechenden Modell
+  * Direktes Bearbeiten des referenzierten Fragments
+  * Erstellen eines neuen Inhaltsfragments basierend auf dem entsprechenden Modell
 
 >[!NOTE]
 >
@@ -138,9 +154,9 @@ Es scheint ziemlich einfach zu sein, aber ein Unternehmen hat sowohl einen CEO a
 Und eine Person kann eine Auszeichnung bekommen (oder vielleicht zwei).
 
 * Meine Firma – Firma
-   * CEO – Person
-   * Mitarbeiter – Person
-      * Persönliche Auszeichnungen – Auszeichnung
+  * CEO – Person
+  * Mitarbeiter – Person
+    * Persönliche Auszeichnungen – Auszeichnung
 
 Und das ist nur für den Einstieg. Je nach Komplexität kann eine Auszeichnung firmenspezifisch sein oder eine Firma könnte ihre Hauptverwaltung in einer bestimmten Stadt haben.
 
@@ -154,7 +170,7 @@ Nachdem Sie nun die Grundlagen gelernt haben, lautet der nächste Schritt [Erfah
 
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
 
-   * [Inhaltsfragmentmodelle – Datentypen](/help/assets/content-fragments/content-fragments-models.md#data-types)
+  * [Inhaltsfragmentmodelle – Datentypen](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
 * [Authoring – Konzepte](/help/sites-authoring/author.md)
 

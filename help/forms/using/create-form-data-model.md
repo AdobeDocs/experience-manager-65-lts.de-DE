@@ -8,13 +8,26 @@ solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
 exl-id: 12f99159-d252-44a5-8daa-938640360445
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1547'
-ht-degree: 97%
-
+source-wordcount: '1629'
+ht-degree: 96%
 ---
-
 # Schulung: Formulardatenmodell erstellen {#tutorial-create-form-data-model}
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
@@ -54,14 +67,14 @@ Sie können verschiedene Arten von Datenquellen konfigurieren, um ein Formularda
 
 Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
 
-1. Installieren Sie den JDBC-Treiber für die [!DNL MySQL]-Datenbank als OSGi-Bundle:
+1. Installieren Sie den JDBC-Treiber für die [!DNL MySQL]-Datenbank als OSGi-Paket:
 
-   1. Laden Sie das [!DNL MySQL] JDBC-Treiber-OSGi-Bundle von `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html` herunter. <!-- This URL is an insecure link but using https is not possible -->
-   1. Melden Sie sich bei der AEM [!DNL Forms]-Autoreninstanz als Administrator an und wechseln Sie zu den AEM-Web-Konsole-Bundles. Die Standard-URL lautet [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
+   1. Laden Sie das [!DNL MySQL] JDBC-Treiber-OSGi-Paket von `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html` herunter. <!-- This URL is an insecure link but using https is not possible -->
+   1. Melden Sie sich bei der AEM [!DNL Forms]-Autoreninstanz als Administrator an und wechseln Sie zu den AEM-Web-Konsole-Paketen. Die Standard-URL lautet [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. Wählen Sie **[!UICONTROL Installieren/Aktualisieren]** aus. Ein Dialogfeld [!UICONTROL Bundles hochladen/installieren] wird angezeigt.
 
-   1. Wählen Sie **[!UICONTROL Datei auswählen]**, um das OSGi-Bundle für den [!DNL MySQL]-JDBC-Treiber zu suchen und auszuwählen. Wählen Sie **[!UICONTROL Bundle starten]** und **[!UICONTROL Pakete aktualisieren]** und dann **[!UICONTROL Installieren oder aktualisieren]** aus. Stellen Sie sicher, dass der JDBC-Treiber der [!DNL Oracle Corporation's] für [!DNL MySQL] aktiv ist. Der Treiber wird installiert.
+   1. Wählen Sie **[!UICONTROL Datei auswählen]**, um das OSGi-Paket für den [!DNL MySQL]-JDBC-Treiber zu suchen und auszuwählen. Wählen Sie **[!UICONTROL Bundle starten]** und **[!UICONTROL Pakete aktualisieren]** und dann **[!UICONTROL Installieren oder aktualisieren]** aus. Stellen Sie sicher, dass der JDBC-Treiber der [!DNL Oracle Corporation's] für [!DNL MySQL] aktiv ist. Der Treiber wird installiert.
 
 1. Konfigurieren Sie die [!DNL MySQL]-Datenbank als Datenquelle:
 
@@ -127,21 +140,21 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
 
    ![default-fdm](assets/default-fdm.png)
 
-1. Erweitern Sie den WeRailMySQL-Datenquellenbaum. Wählen Sie die folgenden Datenmodellobjekte und -dienste aus dem Schema **weretail** > **customerdetails** aus, um das Datenmodell zu bilden:
+1. Erweitern Sie den WeRailMySQL-Datenquellenbaum. Wählen Sie die folgenden Datenmodellobjekte und -dienste aus dem Schema **weretail** > **customerdetails** aus, um das Formulardatenmodell zu bilden:
 
    * **Datenmodellobjekte**:
 
-      * id
-      * name
-      * shippingAddress
-      * city
-      * state
-      * Postleitzahl
+     * id
+     * name
+     * shippingAddress
+     * city
+     * state
+     * Postleitzahl
 
    * **Dienste:**
 
-      * Abrufen
-      * Aktualisieren
+     * Abrufen
+     * Aktualisieren
 
    Wählen Sie **Ausgewählte hinzufügen**, um dem Formulardatenmodell ausgewählte Datenmodellobjekte und Dienste hinzuzufügen.
 

@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: bf4fa6e4-25c7-46a8-9bae-4af7bfc14426
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 100%
-
 ---
-
 # Konfigurieren von Abwesenheitseinstellungen {#configuring-out-of-office-settings}
 
 Die Abwesenheitsfunktion ermöglicht es Benutzern und Administratoren, Zeiträume anzugeben, in denen ein Benutzer nicht im Hause und deshalb nicht in der Lage ist, vom Arbeitsablauf für AEM Forms zugewiesene Aufgaben auszuführen. Wenn eine Benutzerin oder ein Benutzer als abwesend festgelegt ist, werden die zugehörigen Aufgaben einer oder mehreren anderen angegebenen Personen zugewiesen. Benutzende können ihre Abwesenheitseinstellungen in Workspace ändern, oder Admins können die Einstellungen im Namen einer Person in Forms Workflow ändern.
@@ -66,11 +81,11 @@ Wenn jemand abwesend ist, können Sie eine oder mehrere Personen zuweisen, die a
 * Eine Standardperson zuweisen, die die meisten Aufgaben der abwesenden Person erhält, aber festlegen, dass Aufgaben aus bestimmten Prozessen anderen Benutzenden neu zugewiesen werden oder der abwesenden Person zugewiesen bleiben.
 * Es wird keine Standardperson zugewiesen, aber bestimmte Aufgaben von speziellen Prozessen werden spezifischen Benutzenden zugewiesen.
 
-   1. Suchen Sie die Person, wie unter [Anzeigen der Abwesenheitsinformationen von Benutzenden](configuring-out-office-settings.md#view-a-user-s-out-of-office-information) beschrieben.
-   1. Klicken Sie auf den Namen der Person, für die Änderungen vorgenommen werden sollen.
-   1. Wählen Sie in der Liste „Standardbenutzer für Abwesenheitsaufgaben“ eine Person aus. Wenn keine Standardperson für die Annahme neu zugewiesener Elemente festgelegt werden soll, wählen Sie „Nicht zuweisen“ aus.
+  1. Suchen Sie die Person, wie unter [Anzeigen der Abwesenheitsinformationen von Benutzenden](configuring-out-office-settings.md#view-a-user-s-out-of-office-information) beschrieben.
+  1. Klicken Sie auf den Namen der Person, für die Änderungen vorgenommen werden sollen.
+  1. Wählen Sie in der Liste „Standardbenutzer für Abwesenheitsaufgaben“ eine Person aus. Wenn keine Standardperson für die Annahme neu zugewiesener Elemente festgelegt werden soll, wählen Sie „Nicht zuweisen“ aus.
 
-      Wenn der gewünschte Benutzername nicht in der Liste aufgeführt wird, klicken Sie auf „Benutzer suchen“ und führen Sie dann im Dialogfeld „Benutzer suchen“ eine Suche nach der Person durch. Wählen Sie die gewünschte Person aus der Liste aus und klicken Sie auf „Benutzer auswählen“. Sie können im Dialogfeld „Benutzer suchen“ auch auf „Zeitplan des Benutzers anzeigen“ klicken, um den Abwesenheitszeitplan der ausgewählten Person anzuzeigen.
+     Wenn der gewünschte Benutzername nicht in der Liste aufgeführt wird, klicken Sie auf „Benutzer suchen“ und führen Sie dann im Dialogfeld „Benutzer suchen“ eine Suche nach der Person durch. Wählen Sie die gewünschte Person aus der Liste aus und klicken Sie auf „Benutzer auswählen“. Sie können im Dialogfeld „Benutzer suchen“ auch auf „Zeitplan des Benutzers anzeigen“ klicken, um den Abwesenheitszeitplan der ausgewählten Person anzuzeigen.
 
-   1. Wenn Prozesse vorhanden sind, die nicht an die Standardperson gesendet werden sollen, klicken Sie auf „Ausnahme hinzufügen“, wählen Sie den Prozess und dann eine andere Person aus der Liste aus. Sie können auch „Nicht zuweisen“ auswählen, damit die Aufgabe der abwesenden Person zugewiesen bleibt.
-   1. Klicken Sie auf Speichern.
+  1. Wenn Prozesse vorhanden sind, die nicht an die Standardperson gesendet werden sollen, klicken Sie auf „Ausnahme hinzufügen“, wählen Sie den Prozess und dann eine andere Person aus der Liste aus. Sie können auch „Nicht zuweisen“ auswählen, damit die Aufgabe der abwesenden Person zugewiesen bleibt.
+  1. Klicken Sie auf Speichern.

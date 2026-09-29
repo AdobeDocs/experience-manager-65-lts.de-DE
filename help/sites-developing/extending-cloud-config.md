@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6b9b8d8c-8cd5-4c21-9b75-acd74d00354a
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 98%
-
+source-wordcount: '570'
+ht-degree: 85%
 ---
-
 # Cloud Service-Konfigurationen{#cloud-service-configurations}
 
 Konfigurationen sollen die Logik und Struktur für die Speicherung von Dienstkonfigurationen bereitstellen.
@@ -49,8 +58,8 @@ Gehen Sie wie folgt vor, um eine Konfiguration für neue Dienste bereitzustellen
 
 * Und darunter:
 
-   * eine Konfigurationsvorlage und
-   * eine Konfigurationskomponente
+  * eine Konfigurationsvorlage und
+  * eine Konfigurationskomponente
 
 Die Vorlage und die Komponente müssen `sling:resourceSuperType` von der Basisvorlage erben:
 
@@ -175,10 +184,10 @@ Diese Eigenschaft wird dann automatisch (mit dem `CryptoSupport`-Dienst) durch d
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Referenzpfad zu einer Komponente, die automatisch in die Seite aufgenommen werden soll.<br /> Dies wird für zusätzliche Funktionen und JS-Einschlüsse genutzt.<br /> Dazu gehört die Komponente auf der Seite, auf der <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> enthalten ist (normalerweise vor dem <code>body</code>-Tag).<br /> Bei Adobe Analytics und Adobe Target schließen wir damit zusätzliche Funktionen ein, z. B. JavaScript-Aufrufe, um das Verhalten der Besuchenden nachzuverfolgen.</td>
+   <td>Referenzpfad zu einer Komponente, die automatisch in die Seite aufgenommen werden soll.<br /> Dies wird für zusätzliche Funktionen und JS-Einschlüsse verwendet.<br /> Dazu gehört die Komponente auf der Seite, auf <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> enthalten ist (normalerweise vor dem <code>body</code>-Tag)<br /> Im Fall von Adobe Analytics und Adobe Target schließen wir damit zusätzliche Funktionen ein, z. B. JavaScript-Aufrufe, um das Besucherverhalten zu verfolgen.</td>
   </tr>
   <tr>
-   <td>description</td>
+   <td>Beschreibung</td>
    <td>Kurze Beschreibung des Dienstes.<br /> </td>
   </tr>
   <tr>

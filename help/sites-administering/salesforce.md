@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 68003650-76d7-40b3-860b-70454c13211e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1537'
-ht-degree: 97%
-
+source-wordcount: '1596'
+ht-degree: 96%
 ---
-
 # Integrieren von Salesforce {#integrating-with-salesforce}
 
 Eine Integration von Salesforce in Adobe Experience Manager (AEM) bietet Lead-Management-Funktionen und nutzt die von Salesforce direkt bereitgestellten, vorhandenen Funktionen. Sie können AEM so konfigurieren, dass Leads in Salesforce gepostet und Komponenten erstellt werden, die direkt von Salesforce aus auf die Daten zugreifen.
@@ -117,11 +126,11 @@ Exportieren von AEM-Benutzenden als Salesforce-Leads:
    >
    >Vor Beginn dieses Workflows gibt es bestimmte Pflichtfelder, die ein Lead-Knoten in AEM vor der Veröffentlichung bei Salesforce aufweisen muss. Diese sind **givenName**, **familyName**, **company** und **email**. Eine vollständige Liste der Zuordnungen zwischen AEM-Benutzenden und Salesforce-Leads finden Sie unter [Zuordnungskonfiguration zwischen AEM-Benutzer und Salesforce-Lead](#mapping-configuration-between-aem-user-and-salesforce-lead).
 
-1. Klicken Sie auf **OK**. Die Benutzerinformationen werden nach salesforce.com exportiert.  Sie können dies unter salesforce.com überprüfen.
+1. Klicken Sie auf **OK**. Die Benutzerinformationen werden nach salesforce.com exportiert. Sie können dies unter salesforce.com überprüfen.
 
    >[!NOTE]
    >
-   >Die Fehlerprotokolle zeigen Ihnen, ob ein Lead importiert wurde.  Überprüfen Sie das Fehlerprotokoll auf weitere Informationen.
+   >Die Fehlerprotokolle zeigen Ihnen, ob ein Lead importiert wurde. Überprüfen Sie das Fehlerprotokoll auf weitere Informationen.
 
 ### Konfigurieren des Workflows für den Export nach Salesforce.com {#configuring-the-salesforce-com-export-workflow}
 
@@ -164,7 +173,7 @@ Konfigurieren Sie hierzu Folgendes:
 
 ### Verknüpfen einer AEM-Benutzerin oder eines AEM-Benutzers mit einer Salesforce-ID {#linking-an-aem-user-with-a-salesforce-id}
 
-Ordnen Sie eine AEM-Benutzerin oder einen AEM-Benutzer einer Salesforce-ID zu, um diese in ClientContext zu laden.  In einem praxisnahen Szenario würden Sie die Verknüpfung basierend auf den bekannten Benutzerdaten mit einer Validierung erstellen.  Zur Veranschaulichung nutzen Sie in diesem Verfahren die **Salesforce Connect**-Komponente.
+Ordnen Sie eine AEM-Benutzerin oder einen AEM-Benutzer einer Salesforce-ID zu, um diese in ClientContext zu laden. In einem praxisnahen Szenario würden Sie die Verknüpfung basierend auf den bekannten Benutzerdaten mit einer Validierung erstellen. Zur Veranschaulichung nutzen Sie in diesem Verfahren die **Salesforce Connect**-Komponente.
 
 1. Navigieren Sie zu einer Website in AEM, melden Sie sich an und ziehen Sie die **Salesforce Connect-Komponente** per Drag-and-Drop aus dem Sidekick.
 
@@ -180,9 +189,9 @@ Ordnen Sie eine AEM-Benutzerin oder einen AEM-Benutzer einer Salesforce-ID zu, u
 
    >[!NOTE]
    >
-   >Diese Komponente dient nur der Veranschaulichung.  In praxisnahen Szenarien gäbe es einen weiteren Prozess zum Verknüpfen/Abgleichen von Benutzenden mit Leads.
+   >Diese Komponente dient nur der Veranschaulichung. In praxisnahen Szenarien gäbe es einen weiteren Prozess zum Verknüpfen/Abgleichen von Benutzenden mit Leads.
 
-1. Nachdem Sie die Komponente auf die Seite gezogen haben, öffnen Sie sie zum Konfigurieren.  Wählen Sie die Konfiguration, den Kontakttyp und den Salesforce-Lead oder -Kontakt. Klicken Sie dann auf **OK**.
+1. Nachdem Sie die Komponente auf die Seite gezogen haben, öffnen Sie sie zum Konfigurieren. Wählen Sie die Konfiguration, den Kontakttyp und den Salesforce-Lead oder -Kontakt. Klicken Sie dann auf **OK**.
 
    ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -202,7 +211,7 @@ Sie können Benutzerdaten aus Salesforce in ClientContext laden, um sie für die
 
    ![chlimage_1-19](assets/chlimage_1-19.jpeg)
 
-1. Öffnen Sie die Komponente, indem Sie darauf doppelklicken.  Wählen Sie **Element hinzufügen** und dann eine Eigenschaft aus der Dropdown-Liste aus. Fügen Sie beliebig viele Eigenschaften hinzu und wählen Sie **OK** aus.
+1. Öffnen Sie die Komponente, indem Sie darauf doppelklicken. Wählen Sie **Element hinzufügen** und dann eine Eigenschaft aus der Dropdown-Liste aus. Fügen Sie beliebig viele Eigenschaften hinzu und wählen Sie **OK** aus.
 
    ![chlimage_1-84](assets/chlimage_1-84.png)
 
@@ -212,14 +221,14 @@ Sie können Benutzerdaten aus Salesforce in ClientContext laden, um sie für die
 
 ### Erstellen eines Segments mithilfe der Daten aus dem Salesforce-ClientContext-Speicher {#building-a-segment-using-data-from-salesforce-client-context-store}
 
-Sie können ein Segment erstellen, das Daten aus dem Salesforce-ClientContext-Speicher verwendet.  Gehen Sie hierfür wie folgt vor:
+Sie können ein Segment erstellen, das Daten aus dem Salesforce-ClientContext-Speicher verwendet. Gehen Sie hierfür wie folgt vor:
 
-1. Navigieren Sie zur Segmentierung in AEM entweder über **Tools** > **Segmentation** oder über [http://localhost:4502/miscadmin#/etc/segmentation](http://localhost:4502/miscadmin#/etc/segmentation).
-1. Erstellen oder aktualisieren Sie ein Segment, um Daten aus Salesforce zu übernehmen.  Weitere Informationen erhalten Sie unter [Segmentierung](/help/sites-administering/campaign-segmentation.md).
+1. Navigieren Sie zur Segmentierung in AEM entweder über **Tools** > **Segmentierung** oder über [http://localhost:4502/miscadmin#/etc/segmentation](http://localhost:4502/miscadmin#/etc/segmentation).
+1. Erstellen oder aktualisieren Sie ein Segment, um Daten aus Salesforce zu übernehmen. Weitere Informationen erhalten Sie unter [Segmentierung](/help/sites-administering/campaign-segmentation.md).
 
 ## Suchen von Leads {#searching-leads}
 
-Im Lieferumfang von AEM ist eine Muster-Suchkomponente enthalten, die gemäß den angegebenen Kriterien in Salesforce nach Leads sucht.  Diese Komponente zeigt Ihnen, wie Sie die Salesforce-REST-API nutzen, um nach Salesforce-Objekten zu suchen.  Um einen Aufruf an salesforce.com auszulösen, verknüpfen Sie eine Seite mit einer Salesforce-Konfiguration.
+Im Lieferumfang von AEM ist eine Muster-Suchkomponente enthalten, die gemäß den angegebenen Kriterien in Salesforce nach Leads sucht. Diese Komponente zeigt Ihnen, wie Sie die Salesforce-REST-API nutzen, um nach Salesforce-Objekten zu suchen. Um einen Aufruf an salesforce.com auszulösen, verknüpfen Sie eine Seite mit einer Salesforce-Konfiguration.
 
 >[!NOTE]
 >
@@ -227,11 +236,11 @@ Im Lieferumfang von AEM ist eine Muster-Suchkomponente enthalten, die gemäß de
 
 So verwenden Sie diese Komponente:
 
-1. Navigieren Sie zu der Seite, auf der Sie diese Konfiguration verwenden möchten.  Öffnen Sie die Seiteneigenschaften und wählen Sie **Cloud-Services.** Klicken Sie auf **Services hinzufügen**. Wählen Sie dann **Salesforce** und die entsprechende Konfiguration aus und klicken Sie auf **OK**.
+1. Navigieren Sie zu der Seite, auf der Sie diese Konfiguration verwenden möchten. Öffnen Sie die Seiteneigenschaften und wählen Sie **Cloud Services.** Klicken Sie auf **Dienste hinzufügen** und wählen Sie **Salesforce** und die entsprechende Konfiguration aus. Klicken Sie dann auf **OK**.
 
    ![chlimage_1-20](assets/chlimage_1-20.jpeg)
 
-1. Ziehen Sie die Salesforce-Suchkomponente auf die Seite. (Voraussetzung ist, dass sie aktiviert wurde.  Um sie zu aktivieren, wechseln Sie zum Design-Modus und fügen Sie sie dem entsprechenden Bereich hinzu.)
+1. Ziehen Sie die Salesforce-Suchkomponente auf die Seite. (Voraussetzung ist, dass sie aktiviert wurde. Um sie zu aktivieren, wechseln Sie zum Design-Modus und fügen Sie sie dem entsprechenden Bereich hinzu.)
 
    ![chlimage_1-21](assets/chlimage_1-21.jpeg)
 

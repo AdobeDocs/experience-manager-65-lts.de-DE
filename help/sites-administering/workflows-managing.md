@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 084c59b1-1e72-475e-8ec9-2cbc6e695876
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 90%
-
+source-wordcount: '581'
+ht-degree: 89%
 ---
-
 # Verwalten des Zugriffs auf Workflows{#managing-access-to-workflows}
 
 Konfigurieren Sie ACLs entsprechend den Benutzerkonten, um den Start von und die Teilnahme an Workflows zu aktivieren (oder zu deaktivieren).
@@ -27,13 +36,13 @@ Aktionen für Workflows können durchgeführt werden, wenn:
 * Sie mit dem `admin`-Konto arbeiten;
 * das Konto der Standardgruppe `workflow-users` zugewiesen wurde:
 
-   * Diese Gruppe verfügt über alle Berechtigungen, die für die Benutzenden zur Ausführung von Workflow-Aktionen erforderlich sind.
-   * Wenn sich das Konto in dieser Gruppe befindet, hat es nur Zugriff auf von ihm initiierte Workflows.
+  * Diese Gruppe verfügt über alle Berechtigungen, die für die Benutzenden zur Ausführung von Workflow-Aktionen erforderlich sind.
+  * Wenn sich das Konto in dieser Gruppe befindet, hat es nur Zugriff auf von ihm initiierte Workflows.
 
 * das Konto der Standardgruppe `workflow-administrators` zugewiesen wurde:
 
-   * Diese Gruppe verfügt über alle Berechtigungen, die von den berechtigten Benutzenden zur Überwachung und Verwaltung von Workflows erforderlich sind.
-   * wenn sich das Konto in dieser Gruppe befindet, hat es Zugriff auf alle Workflows.
+  * Diese Gruppe verfügt über alle Berechtigungen, die von den berechtigten Benutzenden zur Überwachung und Verwaltung von Workflows erforderlich sind.
+  * wenn sich das Konto in dieser Gruppe befindet, hat es Zugriff auf alle Workflows.
 
 >[!NOTE]
 >

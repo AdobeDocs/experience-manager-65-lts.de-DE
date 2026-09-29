@@ -1,17 +1,28 @@
 ---
 title: Asset-Vorlagen
-description: Erfahren Sie mehr über Asset-Vorlagen in  [!DNL Adobe Experience Manager Assets]  und wie Sie die Vorlagen zur Erstellung von Marketingmaterialien verwenden können.
+description: Erfahren Sie mehr über Asset-Vorlagen in [!DNL Adobe Experience Manager Assets] und wie Sie die Vorlagen zur Erstellung von Marketingmaterialien verwenden können.
 role: User
 feature: Asset Management,Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: 8584d5ea-6ef2-4e81-8b18-5aa2d4226ea6
-source-git-commit: 9ed889c74a886e1b41c379dac77bb570ef5c2c39
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 100%
-
+source-wordcount: '1571'
+ht-degree: 99%
 ---
-
 # Asset-Vorlagen {#asset-templates}
 
 Bei Asset-Vorlagen handelt es sich um eine spezielle Klasse von Assets, die das schnelle Wiederverwenden von visuell reichhaltigen Inhalten für digitale Medien und Printmedien ermöglichen. Eine Asset-Vorlage enthält zwei Teile: den unveränderlichen Messaging-Abschnitt und den bearbeitbaren Abschnitt. Der unveränderliche Messaging-Abschnitt kann proprietären Inhalt enthalten, z. B. das Markenlogo und Copyright-Informationen, die nicht bearbeitet werden können. Der bearbeitbare Abschnitt kann visuelle Inhalte und Textinhalte in Feldern enthalten, die bearbeitet werden können, um das Messaging anzupassen.

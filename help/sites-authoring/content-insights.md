@@ -9,13 +9,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 10bf533d-c0a8-43ac-8dd5-d4fa501b8726
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 100%
-
 ---
-
 # Inhalterkenntnisse{#content-insight}
 
 Inhaltserkenntnisse bieten Informationen über die Leistung der Seite mithilfe von Web-Analyse und SEO-Empfehlungen. Verwenden Sie Inhaltserkenntnisse, um Entscheidungen darüber zu treffen, wie Sie Seiten ändern, oder um zu erfahren, wie frühere Entscheidungen die Leistung geändert haben. Für jede Seite, die Sie bearbeiten, können Sie Inhaltserkenntnisse öffnen, um die Seite zu analysieren.
@@ -30,9 +43,9 @@ Die Seite „Inhaltserkenntnisse“ enthält Berichte, die Adobe SiteCatalyst-, 
 
 * SiteCatalyst: Berichte für die folgenden Metriken sind verfügbar:
 
-   * Seitenansichten
-   * Durchschnittliche Besuchszeit pro Seite
-   * Quellen
+  * Seitenansichten
+  * Durchschnittliche Besuchszeit pro Seite
+  * Quellen
 
 * Target: Berichte über Kampagnenaktivität, für die Ihre Seite Angebote enthält.
 * BrightEdge: Berichte über die Seitenfunktionen, die die Sichtbarkeit der Seite für Suchmaschinen verbessern, mit Empfehlungen für Funktionen, die implementiert werden sollten.
@@ -62,8 +75,8 @@ Der Ansichtsbericht umfasst die folgenden Funktionen für die Bewertung des Traf
 * Die Gesamtzahl der Ansichten für eine Seite während des Berichtszeitraums.
 * Ein Diagramm der Anzahl der Ansichten während des Berichtszeitraums:
 
-   * Gesamtzahl der Ansichten
-   * Unique Visitors.
+  * Gesamtzahl der Ansichten
+  * Unique Visitors.
 
 ![chlimage_1-312](assets/chlimage_1-312.png)
 

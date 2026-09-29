@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: fc60d6a3-b2fd-4991-931f-22924ba8003d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 100%
-
 ---
-
 # Fehlerbehebung bei der Adobe Campaign Classic-Integration{#troubleshooting-your-adobe-campaign-classic-integration}
 
 Erfahren Sie, wie Sie Probleme mit der Integration von Adobe Campaign Classic (ACC) beheben können.
@@ -27,8 +36,8 @@ Die folgenden Tipps zur Fehlerbehebung helfen bei der Lösung der häufigsten Pr
 Überprüfen Sie, ob HTTP-Aufrufe von beiden Lösungen gesendet und empfangen werden (AEM > Adobe Campaign Classic, Adobe Campaign Classic > AEM). Dieser Tipp hilft Ihnen, Firewall-/SSL-Probleme zu vermeiden.
 
 * Bei AEM Funktionen können Sie sehen, dass JSON-Aufrufe über die AEM-Authoring-Oberfläche angefordert werden
-   * Diese Aufrufe sollten nicht zu einem HTTP-500-Fehler führen.
-   * Wenn HTTP-500-Fehler auftreten, finden Sie in der Datei `error.log` weitere Informationen.
+  * Diese Aufrufe sollten nicht zu einem HTTP-500-Fehler führen.
+  * Wenn HTTP-500-Fehler auftreten, finden Sie in der Datei `error.log` weitere Informationen.
 * Auch die Anhebung der Debugging-Stufe für Kampagnenklassen in AEM kann zur Fehlerbehebung beitragen.
 
 ## Wenn die Verbindung fehlschlägt {#when-the-connection-fails}
@@ -130,8 +139,8 @@ Gehen Sie wie folgt vor, um dieses Problem zu beheben:
 
 * Der AEM-Dispatcher oder Reverse-Proxy muss so konfiguriert werden, dass das Originalprotokoll als Header übergeben wird.
 * Der **Apache Felix HTTP Service SSL-Filter** in der OSGi-Konfiguration von AEM muss mit den erforderlichen Header-Einstellungen konfiguriert werden.
-   * `https://<host>:<port>/system/console/configMgr`
-   * Siehe [https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter)
+  * `https://<host>:<port>/system/console/configMgr`
+  * Siehe [https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter)
 
 ## Eine benutzerdefinierte Vorlage kann nicht in den Seiteneigenschaften ausgewählt werden {#if-the-custom-template-i-created-cannot-be-selected-in-page-properties}
 

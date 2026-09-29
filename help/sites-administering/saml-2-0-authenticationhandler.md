@@ -9,14 +9,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: ee438c55-88cd-4f55-873e-16376b36fa7b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '864'
 ht-degree: 94%
-
 ---
-
-# SAML 2.0-Authentifizierungs-Handler {#saml-authentication-handler}
+# SAML 2.0-Authentifizierungs-Handler{#saml-authentication-handler}
 
 AEM umfasst einen [SAML](https://saml.xml.org/saml-specifications)-Authentifizierungs-Handler. Dieser Handler unterstützt das [SAML](https://saml.xml.org/saml-specifications) 2.0-Authentifizierungsanforderungsprotokoll (Web-SSO-Profil), das die `HTTP POST`-Bindung verwendet.
 
@@ -68,7 +80,7 @@ Die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf 
 >[!NOTE]
 >
 >Dieser Ort wird nur verwendet, wenn das Cookie `request-path` nicht festgelegt ist. Wenn Sie eine Seite unterhalb des konfigurierten Pfads ohne gültiges Anmelde-Token anfordern, wird der angeforderte Pfad in einem Cookie gespeichert
->&#x200B;>und der Browser wird nach erfolgreicher Authentifizierung erneut an diesen Ort weitergeleitet.
+>und der Browser wird nach erfolgreicher Authentifizierung erneut an diesen Ort weitergeleitet.
 
 **Benutzer-ID-Attribut** Der Name des Attributs, das die Benutzer-ID enthält, die zur Authentifizierung und Erstellung des Benutzers im CRX-Repository verwendet wird.
 
@@ -113,7 +125,7 @@ SAML-Assertionen werden signiert und können optional verschlüsselt sein. Damit
 
 >[!NOTE]
 >
->Die folgenden Schritte sind nur erforderlich, wenn der Handler in der Lage sein muss, Nachrichten zu signieren oder zu verschlüsseln.
+>Die folgenden Schritte sind nur erforderlich, wenn der Handler in der Lage sein muss, Nachrichten zu signieren oder zu entschlüsseln.
 
 1. Erstellen Sie das Zertifikat/Schlüsselpaar für AEM. Der Befehl zur Erzeugung über OpenSSL sollte dem folgenden Beispiel ähneln:
 

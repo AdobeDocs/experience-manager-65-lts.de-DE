@@ -5,14 +5,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: c04e0716-2aa2-420b-bbf5-74ffd1c28794
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 100%
-
 ---
-
 # E-Mail mit Anhängen für AEM Forms kann auf JEE-Plattformen nicht abgerufen werden{#unable-to-get-email-with-attachments}
 
 Das Problem betrifft die folgende Version:
@@ -38,9 +53,9 @@ Benutzenden sind nicht in der Lage, Vorgänge wie „PDF per E-Mail versenden“
 
 1. Laden Sie [javax.mail-1.5.6.redhat-1.jar](https://mvnrepository.com/artifact/com.sun.mail/javax.mail/1.5.6.redhat-1) herunter.
 
-1. Navigieren Sie zu `http://<server name>:<port>/lc/system/console/bundles` und löschen Sie das Bundle mit dem Namen `JavaMail API (com.sun.mail.javax.mail) version 1.6.2`.
+1. Navigieren Sie zu `http://<server name>:<port>/lc/system/console/bundles` und löschen Sie das Paket mit dem Namen `JavaMail API (com.sun.mail.javax.mail) version 1.6.2`.
 
-1. Installieren Sie `java.mail-1.5.jar` aus Schritt 3. Dieser Schritt startet die Sling-Eigenschaften der JEE-Bereitstellung neu. Warten Sie, bis die installierten Bundles unter `http://<server name>:<port>/lc/system/console/bundles` den Status **Aktiv** anzeigen.
+1. Installieren Sie `java.mail-1.5.jar` aus Schritt 3. Dieser Schritt startet die Sling-Eigenschaften der JEE-Bereitstellung neu. Warten Sie, bis die installierten Pakete unter `http://<server name>:<port>/lc/system/console/bundles` den Status **Aktiv** anzeigen.
 
    >Falls der Status immer noch **InActive** ist, starten Sie **JBoss®** über die **Dienste-Konsole** neu.
 
@@ -55,4 +70,4 @@ Benutzenden sind nicht in der Lage, Vorgänge wie „PDF per E-Mail versenden“
 
 >[!NOTE]
 >
-> Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+> Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.

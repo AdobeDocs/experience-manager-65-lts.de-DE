@@ -10,13 +10,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 6653649a-5076-48e3-a7ed-5b74d4d2e8e1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1253'
 ht-degree: 100%
-
 ---
-
 # Document Security-Angebote{#document-security-offerings}
 
 Adobe Experience Manager Forms Document Security stellt sicher, dass nur autorisierte Personen Ihre Dokumente verwenden können. Mithilfe von Document Security können Sie Informationen, die Sie in einem unterstützten Format gespeichert haben, sicher verteilen. Zu den unterstützten Dateiformaten gehören Adobe Portable Document Format (PDF) sowie Microsoft® Word-, Excel- und PowerPoint-Dateien.
@@ -33,7 +46,7 @@ Die folgende Abbildung zeigt die typische Architektur für die Dokumentensicherh
 
 Document Security stellt verschiedene Clients bereit, um Dokumente zu schützen, geschützte Dokumente und Indexer anzuzeigen und zu bearbeiten, um die Volltextsuche in geschützten Dokumenten zu aktivieren. Sie können je nach Ihren Anforderungen und den benötigten Funktionen einen Client auswählen.
 
-Der Document Security-Server ist die zentrale Komponente, über die Document Security Transaktionen wie z. B. die Authentifizierung von Benutzenden, die Richtlinienverwaltung in Echtzeit und das Anwenden von Vertraulichkeit ausführt. Der Server stellt außerdem ein zentrales Repository für Richtlinien, Auditdatensätze und andere zugehörige Informationen bereit.
+Der Document Security-Server ist die zentrale Komponente, über die Document Security Transaktionen wie z. B. die Authentifizierung von Benutzenden, die Richtlinienverwaltung in Echtzeit und das Anwenden von Vertraulichkeit ausführt. Der Server stellt außerdem ein zentrales Repository für Richtlinien, Auditeinträge und andere zugehörige Informationen bereit.
 
 Der Document Security-Server bietet eine Web-basierte Oberfläche (Web-Seite) zum Erstellen von Richtlinien, zum Verwalten richtliniengeschützter Dokumente und zum Überwachen von Ereignissen, die mit richtliniengeschützten Dokumenten verknüpft sind. Admins können auch globale Optionen wie Benutzerauthentifizierung, Auditing und Messaging für eingeladene Personen konfigurieren und Konten eingeladener Personen verwalten.
 
@@ -63,7 +76,7 @@ Sie können Document Security SDK, Adobe Acrobat, Document Security Extension f�
 
   Darüber hinaus verfügt das PPL über alle Funktionen des Document Security SDK. Sie können das Document Security SDK verwenden, um auf Document Server-Funktionen zuzugreifen, richtliniengeschützte Dokumente zu öffnen und benutzerdefinierte Erweiterungen, Plug-ins oder Anwendungen zu entwickeln. Die PPL kann den Schutz der mit dem AEM Forms Document Security Client SDK (CSDK) geschützten Dokumente nicht aufheben und umgekehrt.
 
-  Die PPL ist für die Sprachen Java und C++ in 32-Bit- und 64-Bit-Versionen verfügbar.  Sie ist auch als OSGi-Bundle für AEM Forms unter OSGi verfügbar. Die C++-PPL kann mit Microsoft® Visual Studio 2013 kompiliert werden. Wenn Sie das AEM Forms Document Security-Add-on lizenziert haben, können Sie sich an das Support-Team für [AEM Forms Document Security](https://experienceleague.adobe.com/de?lang=de&support-solution=General&support-tab=home#support) wenden, um die PPL zu beschaffen. Später können Sie die PPL-Hilfe (im Lieferumfang der Bibliothek enthalten) verwenden, um die PPL einzurichten und zu verwenden.
+  Die PPL ist für die Sprachen Java und C++ in 32-Bit- und 64-Bit-Versionen verfügbar. Sie ist auch als OSGi-Paket für AEM Forms unter OSGi verfügbar. Die C++-PPL kann mit Microsoft® Visual Studio 2013 kompiliert werden. Wenn Sie das AEM Forms Document Security-Add-on lizenziert haben, können Sie sich an das Support-Team für [AEM Forms Document Security](https://experienceleague.adobe.com/de?lang=de&support-solution=General&support-tab=home#support) wenden, um die PPL zu beschaffen. Später können Sie die PPL-Hilfe (im Lieferumfang der Bibliothek enthalten) verwenden, um die PPL einzurichten und zu verwenden.
 
 ### Anzeigen oder Bearbeiten von geschützten Dokumenten {#view-or-edit-protected-documents}
 

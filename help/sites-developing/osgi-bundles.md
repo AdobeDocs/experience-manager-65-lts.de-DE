@@ -1,6 +1,6 @@
 ---
-title: OSGi-Bundles
-description: Hier finden Sie Tipps für die Verwaltung Ihrer OSGi-Bundles in Adobe Experience Manager.
+title: OSGi-Pakete
+description: Hier finden Sie Tipps für die Verwaltung Ihrer OSGi-Pakete in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,24 +9,33 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 1688ac19-b7fb-4c52-b04f-9126a3f72ac7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '359'
 ht-degree: 100%
-
 ---
-
-# OSGi-Bundles{#osgi-bundles}
+# OSGi-Pakete{#osgi-bundles}
 
 ## Verwenden der semantischen Versionierung {#use-semantic-versioning}
 
 Die vereinbarten Best Practices für die semantische Versionsnummeriierung finden Sie unter [https://semver.org/](https://semver.org/).
 
-## Bedarfsbeschränktes Einbetten von Klassen und JAR-Dateien in OSGi-Bundles {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
+## Bedarfsbeschränktes Einbetten von Klassen und JAR-Dateien in OSGi-Pakete {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
-Allgemeine Bibliotheken sollten in separate Bundles ausgelagert werden. So können Sie sie für alle Bundles wiederverwenden. Wenn Sie einen *JAR*-Wrapper für ein OSGi-Bundle erstellen möchten, überprüfen Sie zuerst online, ob dieser Vorgang bereits von jemand anderem vor Ihnen ausgeführt wurde. Bereits vorhandene Bundle-Wrapper finden Sie unter anderem in: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes und dem SpringSource Enterprise Bundle Repository.
+Allgemeine Bibliotheken sollten in separate Pakete ausgelagert werden. So können Sie sie für alle Pakete wiederverwenden. Wenn Sie einen *JAR*-Wrapper für ein OSGi-Paket erstellen möchten, überprüfen Sie zuerst online, ob dieser Vorgang bereits von jemand anderem vor Ihnen ausgeführt wurde. Bereits vorhandene Paket-Wrapper finden Sie unter anderem in: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes und dem SpringSource Enterprise Bundle Repository.
 
-## Verwenden Sie die niedrigsten erforderlichen Bundle-Versionen {#depend-on-the-lowest-needed-bundle-versions}
+## Verwenden Sie die niedrigsten erforderlichen Paketversionen {#depend-on-the-lowest-needed-bundle-versions}
 
 Verwenden Sie für Kompilierungszeit-Abhängigkeiten in POM-Dateien immer die niedrigste erforderliche Version, die die benötigte API verfügbar macht. Dies ermöglicht eine höhere Abwärtskompatibilität und erleichtert die Backport-Fehlerbehebung bei älteren Versionen.
 

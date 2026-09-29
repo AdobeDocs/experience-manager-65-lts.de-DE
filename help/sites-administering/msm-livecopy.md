@@ -5,13 +5,25 @@ feature: Multi Site Manager
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 47128d86-ee8d-4a15-ba3e-4cf2e2ec6191
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4174'
-ht-degree: 99%
-
+source-wordcount: '4204'
+ht-degree: 98%
 ---
-
 # Erstellen und Synchronisieren von Live Copies{#creating-and-synchronizing-live-copies}
 
 Sie können eine Live Copy von einer Seite oder Blueprint-Konfiguration erstellen und dann die Vererbung und Synchronisierung verwalten.
@@ -181,9 +193,9 @@ Die Eigenschaften einer Live Copy-Seite zeigen die folgenden Informationen zur 
 * **Status**: Synchronisierungsstatus der Live Copy. Der Status beinhaltet, ob die Live Copy dem aktuellen Stand der Quelle entspricht sowie wann und von wem die letzte Synchronisierung durchgeführt wurde.
 * **Konfiguration**:
 
-   * Angabe, ob die Seite nach wie vor einer Live Copy-Vererbung unterliegt.
-   * Angabe, ob die Konfiguration von der übergeordneten Seite vererbt wurde.
-   * Angabe etwaiger Rollout-Konfigurationen, die von der Live Copy verwendet werden.
+  * Angabe, ob die Seite nach wie vor einer Live Copy-Vererbung unterliegt.
+  * Angabe, ob die Konfiguration von der übergeordneten Seite vererbt wurde.
+  * Angabe etwaiger Rollout-Konfigurationen, die von der Live Copy verwendet werden.
 
 So zeigen Sie die Eigenschaften an:
 
@@ -225,7 +237,7 @@ Führen Sie den Rollout für eine Blueprint-Seite durch, um Inhaltsänderungen a
 
    ![Angeben von Seiten und Unterseiten](assets/chlimage_1-221.png)
 
-1. Geben Sie an, ob der Rollout-Vorgang sofort (**Jetzt**) oder zu einem anderen Datum/einer anderen Uhrzeit (**Später**) ausgeführt werden soll.
+1. Geben Sie an, ob der Rollout-Auftrag sofort (**Jetzt**) oder zu einem anderen Datum/einer anderen Uhrzeit (**Später**) ausgeführt werden soll.
 
    ![Rollout einer Blueprint](assets/rollout-blueprint.png)
 
@@ -249,7 +261,7 @@ Rollouts werden als asynchrone Aufträge verarbeitet und können im Dashboard [*
 
    * **Zeitplan**:
 
-     Geben Sie an, ob der Rollout-Vorgang sofort (**Jetzt**) oder zu einem späteren Zeitpunkt (**Später**) ausgeführt werden soll.
+     Geben Sie an, ob der Rollout-Auftrag sofort (**Jetzt**) oder zu einem späteren Zeitpunkt (**Später**) ausgeführt werden soll.
 
      ![Angeben des Zeitplans](assets/rollout-live-copy.png)
 
@@ -271,7 +283,7 @@ Die [Rollout-Aktion ist auch über die Live Copy-Übersicht verfügbar](/help/s
 
    ![Auswählen der Seiten und Unterseiten](assets/chlimage_1-223.png)
 
-1. Geben Sie an, ob der Rollout-Vorgang sofort (**Jetzt**) oder zu einem anderen Datum/einer anderen Uhrzeit (**Später**) ausgeführt werden soll.
+1. Geben Sie an, ob der Rollout-Auftrag sofort (**Jetzt**) oder zu einem anderen Datum/einer anderen Uhrzeit (**Später**) ausgeführt werden soll.
 
    ![Rollout einer Blueprint](assets/rollout-blueprint.png)
 
@@ -426,20 +438,20 @@ Sie können bei einer vorhandenen Live Copy die Tiefe für eine Seite ändern, 
 
 * Wechseln zu einer flachen Live Copy:
 
-   * Dieser Vorgang wirkt sich sofort aus und kann nicht rückgängig gemacht werden.
+  * Dieser Vorgang wirkt sich sofort aus und kann nicht rückgängig gemacht werden.
 
-      * Untergeordnete Seiten werden explizit von der Live Copy getrennt. Weitere Änderungen bei untergeordneten Elementen können bei einer Rückgängigmachung nicht beibehalten werden.
+    * Untergeordnete Seiten werden explizit von der Live Copy getrennt. Weitere Änderungen bei untergeordneten Elementen können bei einer Rückgängigmachung nicht beibehalten werden.
 
-      * Alle untergeordneten `LiveRelationships` werden entfernt, selbst wenn es sich um verschachtelte `LiveCopies` handelt.
+    * Alle untergeordneten `LiveRelationships` werden entfernt, selbst wenn es sich um verschachtelte `LiveCopies` handelt.
 
 * Wechseln zu einer tiefen Live Copy:
 
-   * Untergeordnete Seiten bleiben hiervon unberührt.
-   * Um sich ein Bild von der Wirkung des Wechsels zu machen, können Sie einen Rollout durchführen. Sämtliche Inhaltsänderungen werden gemäß der Rollout-Konfiguration angewendet.
+  * Untergeordnete Seiten bleiben hiervon unberührt.
+  * Um sich ein Bild von der Wirkung des Wechsels zu machen, können Sie einen Rollout durchführen. Sämtliche Inhaltsänderungen werden gemäß der Rollout-Konfiguration angewendet.
 
 * So wechseln Sie zu einer flachen und dann wieder zu einer tiefen Live Copy:
 
-   * Alle untergeordneten Elemente der (ehemals) flachen Live Copy werden so behandelt, als wären sie manuell erstellt worden und werden daher mit `[oldname]_msm_moved name` entfernt.
+  * Alle untergeordneten Elemente der (ehemals) flachen Live Copy werden so behandelt, als wären sie manuell erstellt worden und werden daher mit `[oldname]_msm_moved name` entfernt.
 
 So geben Sie die Tiefe an oder ändern diese:
 
@@ -476,7 +488,7 @@ Vererbung abbrechen, um den Komponenteninhalt zu ändern oder die Komponente zu 
 
    ![Komponente zum Abbrechen der Vererbung auswählen](assets/chlimage_1-230.png)
 
-1. Klicken Sie in der Komponenten-Symbolleiste auf das Symbol **Vererbung abbrechen**. 
+1. Klicken Sie in der Komponenten-Symbolleiste auf das Symbol **Vererbung abbrechen**.
 
    ![Vererbung abbrechen](do-not-localize/chlimage_1-8.png)
 
@@ -613,16 +625,16 @@ Je nachdem, wo innerhalb der Struktur die Option **Trennen** verwendet wird, ist
 
   Wenn dieser Vorgang auf einer Unterseite (oder in einer Verzweigung) einer Live Copy durchgeführt wird, geschieht Folgendes:
 
-   * Die Live-Beziehung für diese Unterseite (oder Verzweigung) wird entfernt.
-   * Die (Unter-)Seiten in der Live Copy-Verzweigung werden so behandelt, als wären sie manuell erstellt worden.
+  * Die Live-Beziehung für diese Unterseite (oder Verzweigung) wird entfernt.
+  * Die (Unter-)Seiten in der Live Copy-Verzweigung werden so behandelt, als wären sie manuell erstellt worden.
 
   *Allerdings* sind die Unterseiten weiterhin der Live-Beziehung der übergeordneten Verzweigung unterworfen, sodass bei einem weiteren Rollout der Blueprint-Seite(n) Folgendes geschieht:
 
-   1. Die getrennten Seite(n) werden umbenannt:
+  1. Die getrennten Seite(n) werden umbenannt:
 
-      * Der Grund: MSM betrachtet die Seiten als manuell erstellte Seiten, die einen Konflikt verursachen, da sie denselben Namen aufweisen wie die zu erstellenden Live Copy-Seiten.
+     * Der Grund: MSM betrachtet die Seiten als manuell erstellte Seiten, die einen Konflikt verursachen, da sie denselben Namen aufweisen wie die zu erstellenden Live Copy-Seiten.
 
-   1. Es wird eine (Live Copy-)Seite mit dem ursprünglichen Namen und den Änderungen vom Rollout erstellt.
+  1. Es wird eine (Live Copy-)Seite mit dem ursprünglichen Namen und den Änderungen vom Rollout erstellt.
 
   >[!NOTE]
   >

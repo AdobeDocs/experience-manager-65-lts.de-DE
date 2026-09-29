@@ -8,13 +8,29 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7192ee1d-dc3f-4d90-919f-6329b434e18b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2779'
-ht-degree: 98%
-
+source-wordcount: '2866'
+ht-degree: 97%
 ---
-
 # Adaptive Formularausdrücke{#adaptive-form-expressions}
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
@@ -39,10 +55,10 @@ Wiederholungsbereiche sind Instanzen eines Bereichs, die mithilfe einer Skripter
 * Um Berechnungen für wiederholbare Panels zu vereinfachen, bieten adaptive Formulare einige spezielle Funktionen wie „sum“, „count“, „min“, „max“, „filter“ usw. Eine vollständige Liste der Funktionen finden Sie in der [JavaScript Library-API-Referenz für adaptive Formulare](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html).
 * Es gibt folgende APIs zum Manipulieren von Instanzen von Wiederholungsfeldern:
 
-   * Zum Hinzufügen einer Bereichsinstanz: `panel1.instanceManager.addInstance()`
-   * Zum Abrufen eines Bereichswiederholungsindexes: `panel1.instanceIndex`
-   * Zum Abrufen des „instanceManager“ eines Bereichs: `_panel1 or panel1.instanceManager`
-   * Zum Entfernen einer Instanz eines Bereichs: `_panel1.removeInstance(panel1.instanceIndex)`
+  * Zum Hinzufügen einer Bereichsinstanz: `panel1.instanceManager.addInstance()`
+  * Zum Abrufen eines Bereichswiederholungsindexes: `panel1.instanceIndex`
+  * Zum Abrufen des „instanceManager“ eines Bereichs: `_panel1 or panel1.instanceManager`
+  * Zum Entfernen einer Instanz eines Bereichs: `_panel1.removeInstance(panel1.instanceIndex)`
 
 ## Ausdruckstypen {#expression-types}
 
@@ -77,7 +93,7 @@ Der Ausdruck für Berechnungen wird verwendet, um den Wert eines Felds unter Ver
 
 **Rückgabetyp**: Der Ausdruck gibt einen Wert zurück, der mit dem Feld kompatibel ist, in dem das Ausdrucksergebnis angezeigt wird (z. B. eine Dezimalzahl).
 
-**Beispiel**: Zum Anzeigen der Summe zweier Felder in **field1** lautet der Berechnungsausdruck wie folgt:
+**Beispiel**: Zum Anzeigen der Summe zweier Felder in &quot;**1“** der Berechnungsausdruck:
 `field2.value + field3.value`
 
 ### Ausdruck für ein Klickereignis {#click-expression}
@@ -102,7 +118,7 @@ Das Initialisierungsskript wird ausgelöst, wenn ein adaptives Formular initiali
 
 **Rückgabetyp**: Der Ausdruck für das Initialisierungsskript gibt keinen Wert zurück. Wenn ein Ausdruck einen Wert zurückgibt, wird dieser Wert ignoriert.
 
-**Beispiel**: Damit in einem Szenario mit vorausgefüllten Daten Felder, deren Wert als null gespeichert ist, mit dem Standardwert `'Adaptive Forms'` aufgefüllt werden, lautet der Ausdruck für das Initialisierungsskript wie folgt:
+**Beispiel** Um in einem Szenario mit vorausgefüllten Daten Felder mit Standardwerten zu füllen, `'Adaptive Forms'` wenn ihr Wert als null gespeichert wird, lautet der Ausdruck für das Initialisierungsskript wie folgt:
 `if(this.value==null) this.value='Adaptive Forms';`
 
 ### Ausdruck für Optionen {#options-expression}
@@ -137,7 +153,7 @@ Der Ausdruck für die Überprüfung wird zur Überprüfung der Felder unter Verw
 
 **Gilt für**: Felder.
 
-**Rückgabetyp**: Der Ausdruck gibt einen booleschen Wert zurück, der den Überprüfungsstatus des Felds darstellt. Der Wert **false** bedeutet, dass das Feld ungültig ist, und **true** bedeutet, dass das Feld gültig ist.
+**Rückgabetyp**: Der Ausdruck gibt einen booleschen Wert zurück, der den Überprüfungsstatus des Felds wiedergibt. Der Wert **false** bedeutet, dass das Feld ungültig ist, und **true** bedeutet, dass das Feld gültig ist.
 **Beispiel**: Für ein Feld, das eine britische Postleitzahl enthalten soll, lautet der Ausdruck für die Überprüfung wie folgt:
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -159,7 +175,7 @@ Das Skript zum Bestätigen von Werten wird in folgenden Fällen ausgelöst:
 
 **Rückgabetyp**: Der Ausdruck für das Skript zum Bestätigen von Werten gibt keinen Wert zurück. Wenn ein Ausdruck einen Wert zurückgibt, wird dieser Wert ignoriert.
 
-**Beispiel**: Um kleingeschriebene Buchstaben nach Eingabe in das Feld zu Großbuchstaben zu ändern, sieht der Ausdruck für das Bestätigen von Werten wie folgt aus:
+**Beispiel** Um kleingeschriebene Buchstaben nach Eingabe in das Feld zu Großbuchstaben zu ändern, sieht der Ausdruck für das Bestätigen von Werten wie folgt aus:
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
@@ -184,7 +200,7 @@ Der Ausdruck zum Abschluss von Schritten wird verwendet, um zu verhindern, dass 
 
 **Rückgabetyp**: Der Ausdruck gibt einen booleschen Wert zurück, der den Gültigkeitsstatus des aktuellen Panels wiedergibt. **True** bedeutet, dass der aktuelle Bereich gültig ist und der Benutzer zum nächsten Fenster navigieren kann.
 
-**Beispiel**: In einem Formular, das in verschiedenen Bereichen angeordnet ist, wird vor dem Navigieren zum nächsten Bereich der aktuelle Bereich validiert. In solchen Fällen werden die Ausdrücke zum Abschluss von Schritten verwendet. Im Allgemeinen verwenden diese Ausdrücke die GuideBridge-Validierungs-API. Beispiel für einen Ausdruck zum Abschluss von Schritten:
+**Beispiel**: In einem Formular mit verschiedenen Panels wird das aktuelle Panel vor der Navigation zum nächsten Panel validiert. In solchen Fällen werden die Ausdrücke zum Abschluss von Schritten verwendet. Im Allgemeinen verwenden diese Ausdrücke die GuideBridge-Validierungs-API. Beispiel für einen Ausdruck zum Abschluss von Schritten:
 `window.guideBridge.validate([],this.panel.navigationContext.currentItem.somExpression)`
 
 ## Überprüfungen in adaptiven Formularen {#validations-in-adaptive-form}
@@ -281,8 +297,8 @@ Führen Sie die folgenden Schritte durch, um ein benutzerspezifisches Muster fü
 1. Erstellen Sie einen Ordner, um Ihre benutzerdefinierten Muster zu speichern. Erstellen Sie im /apps-Verzeichnis einen Knoten vom Typ sling:folder. Beispiel: Erstellen Sie einen Knoten mit dem Namen `customPatterns`. Erstellen Sie unter diesem Knoten einen weiteren Knoten des Typs `nt:unstructed` und geben Sie ihm den Namen `textboxpatterns`. Dieser Knoten enthält verschiedene benutzerdefinierte Muster, die Sie hinzufügen möchten.
 1. Öffnen Sie die Registerkarte „Eigenschaften“ des erstellten Knotens. Beispiel: Öffnen Sie die Registerkarte „Eigenschaften“ von `textboxpatterns`. Fügen Sie diesem Knoten die Eigenschaft `guideComponentType` hinzu und legen Sie ihren Wert auf *fd/af/components/formatter/guideTextBox* fest.
 
-1. Der Wert dieser Eigenschaft variiert je nach dem Feld, für das Sie die Muster definieren möchten. Bei numerischen Feldern lautet der Wert der `guideComponentType`-Eigenschaft *fd/af/components/formatter/guideNumericBox*. Der Wert für das Feld „Datepicker“ lautet *fd/af/components/formatter/guideDatepicker*.
-&quot;
+1. Der Wert dieser Eigenschaft variiert je nach dem Feld, für das Sie die Muster definieren möchten. Bei numerischen Feldern lautet der Wert der Eigenschaft `guideComponentType`*fd/af/components/formatter/guideNumericBox*. Der Wert für das Feld „Datepicker“ lautet *fd/af/components/formatter/guideDatepicker*.
+&grave;&grave;
 1. Sie können ein benutzerspezifisches Muster hinzufügen, indem Sie dem Knoten `textboxpatterns` eine Eigenschaft zuweisen. Fügen Sie eine Eigenschaft mit einem Namen (z. B. `pattern1`) hinzu und legen Sie ihren Wert auf das Muster fest, das Sie hinzufügen möchten. Beispiel: Fügen Sie eine Eigenschaft `pattern1` mit dem Wert „Fax=text{99-999-9999999}“ hinzu. Das Muster ist für alle Textfelder verfügbar, die Sie in adaptiven Formularen verwenden.
 
    ![Erstellen benutzerspezifischer Muster für Felder in CrxDe](assets/creating-custom-patterns.png)

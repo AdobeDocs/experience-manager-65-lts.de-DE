@@ -8,13 +8,31 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: a5aff5dd-912d-49ee-94e8-38cdbc396e5b
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2602'
-ht-degree: 98%
-
+source-wordcount: '2700'
+ht-degree: 97%
 ---
-
 # Konfigurieren der Sendeaktion {#configuring-the-submit-action}
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
@@ -54,7 +72,7 @@ Dies sind die standardmäßigen Übermittlungsaktionen, die für adaptive Formul
 >[!NOTE]
 >
 >Stellen Sie sicher, dass der Ordner „[AEM-Installationsverzeichnis]\crx-quickstart\temp\datamanager\ASM“ vorhanden ist.
->&#x200B;>vorhanden. Das Verzeichnis wird benötigt, um Anhänge vorübergehend zu speichern. Wenn das Verzeichnis nicht vorhanden ist, erstellen Sie es.
+>vorhanden. Das Verzeichnis wird benötigt, um Anhänge vorübergehend zu speichern. Wenn das Verzeichnis nicht vorhanden ist, erstellen Sie es.
 
 >[!CAUTION]
 >
@@ -70,7 +88,7 @@ Die Übermittlungsoption **An REST-Endpunkt übermitteln** wird verwendet, wenn 
 
 Wie in der Abbildung unten gezeigt, werden `param1` und `param2` als Parameter mit Werten übergeben, die aus den Feldern **textbox** und **numeric box** für die nächste Aktion kopiert werden.
 
-Sie können auch **POST-Anforderungen aktivieren** und eine URL eingeben, um die Anforderung zu veröffentlichen. Um Daten an den Experience Manager-Server zu übermitteln, der das Formular hostet, verwenden Sie einen relativen Pfad, der dem Stammpfad des Experience Manager-Servers entspricht. Zum Beispiel /content/forms/af/SampleForm.html.  Wenn Sie Daten an irgendeinen anderen Server senden, verwenden Sie den absoluten Pfad.
+Sie können auch **POST-Anforderungen aktivieren** und eine URL eingeben, um die Anforderung zu veröffentlichen. Um Daten an den Experience Manager-Server zu übermitteln, der das Formular hostet, verwenden Sie einen relativen Pfad, der dem Stammpfad des Experience Manager-Servers entspricht. Zum Beispiel /content/forms/af/SampleForm.html. Wenn Sie Daten an irgendeinen anderen Server senden, verwenden Sie den absoluten Pfad.
 
 ![Konfigurieren der Übermittlungsaktion „An REST-Endpunkt übermitteln“](assets/action-config.png)
 
@@ -176,7 +194,7 @@ Verwenden Sie nach der erfolgreichen Konfiguration die Übermittlungsaktion [Mi
 >
 > Die Funktion „An Microsoft® SharePoint-Liste senden“ wurde mit AEM 6.5 Forms Service Pack 19 (6.5.19.0) eingeführt.
 
-Die Sendeaktion **[!UICONTROL An SharePoint senden]** verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint-Speicher senden. 
+Die Sendeaktion **[!UICONTROL An SharePoint senden]** verbindet ein adaptives Formular mit einem Microsoft® SharePoint-Speicher. Sie können die Formulardatendatei, die Anlagen oder das Datensatzdokument an den verbundenen Microsoft® Sharepoint-Speicher senden.
 
 ### Verbinden eines adaptiven Formulars mit der Microsoft® SharePoint-Liste {#connect-af-sharepoint-list}
 
@@ -210,7 +228,7 @@ So verbinden Sie AEM Forms mit Ihrer Microsoft® SharePoint-Liste:
 
 Sie können die erstellte SharePoint-Listenkonfiguration in einem adaptiven Formular verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einer SharePoint-Liste zu speichern. Führen Sie die folgenden Schritte aus, um eine SharePoint-Listenspeicherkonfiguration in einem adaptiven Formular zu verwenden:
 
-1. [Erstellen eines Formulardatenmodells mithilfe von Microsoft](/help/forms/using/create-form-data-model.md)
+1. [Erstellen eines Formulardatenmodells mithilfe einer Microsoft® SharePoint-Listenkonfiguration](/help/forms/using/create-form-data-model.md)
 1. [Konfigurieren des Formulardatenmodells zum Abrufen und Senden von Daten](/help/forms/using/work-with-form-data-model.md#configure-services)
 1. [Erstellen eines adaptiven Formulars](/help/forms/using/create-adaptive-form.md)
 1. [Konfigurieren einer Übermittlungsaktion mit einem Formulardatenmodell](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)

@@ -9,13 +9,29 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 674e6e03-0c34-4dbb-b0b2-d8f1e65547d7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '672'
 ht-degree: 100%
-
 ---
-
 # Übernehmen von XDP- und PDF-Dokumenten in AEM Forms{#getting-xdp-and-pdf-documents-in-aem-forms}
 
 ## Übersicht {#overview}
@@ -76,13 +92,13 @@ In AEM Forms kann eine XFA-Formularvorlage durch ein adaptives Formular oder ein
 
 Die Felder eines adaptiven Formulars, das auf eine XFA verweist, sind mit den Feldern verbunden, die in der XFA verfügbar sind. Nach dem Aktualisieren einer Formularvorlage versucht das zugehörige adaptive Formular, sich mit der XFA zu synchronisieren. Weitere Informationen finden Sie unter[ Synchronisieren von adaptiven Formularen mit der zugehörigen XFA](../../forms/using/synchronizing-adaptive-forms-xfa.md).
 
-Durch das Entfernen einer Formularvorlage wird das abhängige adaptive Formular bzw. die Formularvorlage beschädigt.  Ein solches adaptives Formular wird manchmal auch als schmutziges Formular bezeichnet.  In der AEM Forms-Benutzeroberfläche stehen Ihnen zwei Möglichkeiten zur Verfügung, die nachfolgend beschrieben werden, um die schmutzigen Formulare zu finden.
+Durch das Entfernen einer Formularvorlage wird das abhängige adaptive Formular bzw. die Formularvorlage beschädigt. Ein solches adaptives Formular wird manchmal auch als schmutziges Formular bezeichnet. In der AEM Forms-Benutzeroberfläche stehen Ihnen zwei Möglichkeiten zur Verfügung, die nachfolgend beschrieben werden, um die schmutzigen Formulare zu finden.
 
 * In der Asset-Auflistung wird ein Warnsymbol auf der Miniaturansicht des adaptiven Formulars angezeigt. Außerdem wird die folgende Nachricht angezeigt, wenn Sie den Mauszeiger über das Warnsymbol bewegen.\
   `Schema/Form Template for this adaptive form has been updated so go to Authoring mode and rebase it with new version.`
 
 ![Warnung für ein unsynchronisiertes adaptives Formular nach dem Aktualisieren der zugehörigen XFA](assets/dirtyaf.png)
 
-Die Kennzeichnung bleibt bestehen, damit schmutzige adaptive Formulare erkannt werden.  Diese Informationen befinden sich auf der Seite mit den Formulareigenschaften neben den Metadaten.  Lediglich für unsaubere adaptive Formulare zeigt eine Metadateneigenschaft `Model Refresh` den Wert `Recommended` an.
+Die Kennzeichnung bleibt bestehen, damit schmutzige adaptive Formulare erkannt werden. Diese Informationen befinden sich auf der Seite mit den Formulareigenschaften neben den Metadaten. Lediglich für unsaubere adaptive Formulare zeigt eine Metadateneigenschaft `Model Refresh` den Wert `Recommended` an.
 
 ![Kennzeichnung eines adaptiven Formular, das mit dem XFA-Modell nicht synchronisiert ist](assets/model-refresh.png)

@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 802130c3-9cb8-46b7-98c2-fd9e83d18ec3
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '497'
 ht-degree: 100%
-
 ---
-
 # Fehlerbehebung bei Adobe Experience Manager {#troubleshooting-aem}
 
 Der folgende Abschnitt behandelt einige Probleme, die bei der Verwendung von AEM (Adobe Experience Manager) auftreten können, sowie Vorschläge zur Fehlerbehebung.

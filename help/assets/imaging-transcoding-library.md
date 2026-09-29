@@ -5,13 +5,29 @@ role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 solution: Experience Manager, Experience Manager Assets
 exl-id: fb24c331-55c3-4166-bd4f-c26cece902fc
-source-git-commit: 1dd093acdfa571dad9659270ddc6912ab3d5dba5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ee4c2482-9595-5bc0-b9be-c0c6f02eba50
+    internal-label: Asset Processing
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '1016'
 ht-degree: 99%
-
 ---
-
 # Imaging Transcoding Library {#imaging-transcoding-library}
 
 Die Adobe Imaging Transcoding Library ist eine proprietäre Bildverarbeitungslösung, die zentrale Bildbearbeitungsfunktionen durchführen kann, darunter:
@@ -71,15 +87,15 @@ Für den Parameter `-resize` können folgende Optionen konfiguriert werden:
 
 Erstellen Sie zum Konfigurieren der ITL-Verarbeitung eine Konfigurationsdatei und aktualisieren Sie den Workflow, um sie auszuführen.
 
-### Erstellen einer Konfigurationsdatei für das extrahierte Bundle {#create-conf-file}
+### Erstellen einer Konfigurationsdatei für das extrahierte Paket {#create-conf-file}
 
 Um die Bibliothek zu konfigurieren, erstellen Sie eine CONF-Datei und geben Sie die Bibliotheken mithilfe der folgenden Schritte an. Sie benötigen Admin- oder Root-Berechtigungen.
 
 1. Laden Sie das Paket mit der [Imaging Transcoding Library von Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) herunter und installieren Sie es mit dem Paket-Manager. Das Paket ist kompatibel mit [!DNL Experience Manager] 6.5 LTS.
 
-1. Die Bundle-ID für `com.day.cq.dam.cq-dam-switchengine` finden Sie, indem Sie sich bei der Web-Konsole anmelden und auf **[!UICONTROL OSGi]** > **[!UICONTROL Bundles]** klicken. Alternativ können Sie zum Öffnen der Bundles-Konsole die URL `https://[aem_server:[port]/system/console/bundles/` aufrufen. Suchen Sie das Bundle `com.day.cq.dam.cq-dam-switchengine` und seine ID.
+1. Die Paket-ID für `com.day.cq.dam.cq-dam-switchengine` finden Sie, indem Sie sich bei der Web-Konsole anmelden und auf **[!UICONTROL OSGi]** > **[!UICONTROL Pakete]** klicken. Alternativ können Sie zum Öffnen der Pakete-Konsole die URL `https://[aem_server:[port]/system/console/bundles/` aufrufen. Suchen Sie das Paket `com.day.cq.dam.cq-dam-switchengine` und seine ID.
 
-1. Stellen Sie sicher, dass alle erforderlichen Bibliotheken extrahiert werden, indem Sie den Ordner mit dem Befehl `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/` überprüfen, wobei der Ordnername die Bundle-ID enthält. Beispielsweise lautet der Befehl `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/`, wenn die Bundle-ID `588` ist.
+1. Stellen Sie sicher, dass alle erforderlichen Bibliotheken extrahiert werden, indem Sie den Ordner mit dem Befehl `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/` überprüfen, wobei der Ordnername die Paket-ID enthält. Beispielsweise lautet der Befehl `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/`, wenn die Paket-ID `588` ist.
 
 1. Erstellen Sie eine Datei `SWitchEngineLibs.conf`, die mit der Bibliothek verknüpft wird.
 

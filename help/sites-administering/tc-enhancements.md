@@ -7,13 +7,25 @@ feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 59b4d716-37a2-4f67-88eb-68c93359242c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '687'
 ht-degree: 95%
-
 ---
-
 # Verbesserungen an der Übersetzung{#translation-enhancements}
 
 Diese Seite enthält inkrementelle Verbesserungen und Anpassungen für die Funktionen der AEM-Übersetzungsverwaltung.
@@ -73,15 +85,15 @@ Für manuelle Bearbeitungen von übersetzten Inhalten kann eine Synchronisierung
 AEM aktualisiert die Übersetzung der vorhandenen Zeichenfolgen im Translation Memory des konfigurierten TMS.
 
 * Die Aktion aktualisiert die Übersetzung vorhandener Zeichenfolgen im Translation Memory des konfigurierten TMS.
-* Es werden keine neuen Übersetzungsvorgänge erstellt.
+* Es werden keine neuen Übersetzungsaufträge erstellt.
 * Die Übersetzungen werden über die AEM-Übersetzungs-API an das TMS zurückgesendet (siehe unten).
 
 So verwenden Sie diese Funktion:
 
 * Ein TMS muss für die Verwendung mit AEM konfiguriert werden.
 * Der Connector muss die Methode [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html) implementieren.
-   * Der Code innerhalb dieser Methode bestimmt, was mit der Aktualisierungsanfrage für das Translation Memory geschieht.
-   * Das AEM-Übersetzungs-Framework sendet die Zeichenfolgenwertpaare (ursprüngliche und aktualisierte Übersetzung) über diese Methodenimplementierung zurück an das TMS.
+  * Der Code innerhalb dieser Methode bestimmt, was mit der Aktualisierungsanfrage für das Translation Memory geschieht.
+  * Das AEM-Übersetzungs-Framework sendet die Zeichenfolgenwertpaare (ursprüngliche und aktualisierte Übersetzung) über diese Methodenimplementierung zurück an das TMS.
 
 Die Aktualisierungen des Translation Memory können auch umgeleitet und an ein benutzerdefiniertes Ziel gesendet werden, wenn ein proprietäres Translation Memory verwendet wird.
 

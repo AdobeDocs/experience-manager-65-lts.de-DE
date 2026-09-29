@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 exl-id: 103b6fde-e001-4332-9927-5cdf2acbc40c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '987'
 ht-degree: 100%
-
 ---
-
 # AEM Brackets-Erweiterung{#aem-brackets-extension}
 
 ## Überblick {#overview}
@@ -76,7 +87,7 @@ Wählen Sie im Menü **Datei** von Brackets **Ordner öffnen…** und wählen Si
 
 >[!NOTE]
 >
->Wenn Sie kein eigenes Projekt mit einem content-package haben, können Sie das [HTL TodoMVC-Beispiel](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc) ausprobieren. Klicken Sie auf GitHub auf **Zip-Datei herunterladen**, extrahieren Sie die Dateien lokal und öffnen Sie wie oben beschrieben den Ordner `jcr_root` in Brackets. Führen Sie dann die folgenden Schritte aus, um die **Projekteinstellungen** einzurichten, und laden Sie schließlich das gesamte Paket in Ihre AEM-Entwicklungsinstanz hoch, indem Sie **das Content-Package exportieren**, wie weiter unten im Abschnitt „Vollständige Content-Package-Synchronisierung“ beschrieben.
+>Wenn Sie kein eigenes Projekt mit einem content-package haben, können Sie das [HTL TodoMVC-Beispiel](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc) ausprobieren. Klicken Sie auf GitHub auf **Zip-Datei herunterladen**, extrahieren Sie die Dateien lokal und öffnen Sie wie oben beschrieben den Ordner `jcr_root` in Brackets. Führen Sie dann die folgenden Schritte aus, um die **Projekteinstellungen** einzurichten, und laden Sie schließlich das gesamte Paket in Ihre AEM-Entwicklungsinstanz hoch, indem Sie **das Inhaltspaket exportieren**, wie weiter unten im Abschnitt „Vollständige Content-Package-Synchronisierung“ beschrieben.
 >
 >Nach diesen Schritten sollten Sie in der Lage sein, auf die URL `/content/todo.html` in Ihrer AEM-Entwicklungsinstanz zuzugreifen, und Sie können Änderungen am Code in Brackets vornehmen und sehen, wie nach einer Aktualisierung im Webbrowser die Änderungen sofort mit dem AEM-Server synchronisiert wurden.
 
@@ -113,7 +124,7 @@ Dadurch werden nur Änderungen von Brackets mit der AEM-Instanz synchronisiert, 
 
 ### Vollständige Content-Package-Synchronisierung {#full-content-package-synchronization}
 
-Im Menü **AEM** können Sie mit den Optionen **Content-Package exportieren** oder **Content-Package importieren** das gesamte Projekt mit dem Server synchronisieren.
+Im Menü **AEM** können Sie mit den Optionen **Inhaltspaket exportieren** oder **Inhaltspaket importieren** das gesamte Projekt mit dem Server synchronisieren.
 
 ![chlimage_1-57](assets/chlimage_1-57a.png)
 

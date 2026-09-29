@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Developer,Leader,User
 exl-id: 3df5379b-a66f-4d74-bbb1-75440324ef98
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 100%
-
+source-wordcount: '419'
+ht-degree: 89%
 ---
-
 # AEM und Richtlinien für barrierefreies Webdesign{#aem-and-the-web-accessibility-guidelines}
 
 Es gibt eine Reihe sozialer, ökonomischer und rechtlicher Gründe dafür, sicherzustellen, dass Web-Inhalte für das Zielpublikum so barrierefrei wie möglich gestaltet werden, ungeachtet möglicher Behinderungen oder Einschränkungen des Zielpublikums. Barrierefreiheit mit Adobe Experience Manager (AEM) ist daher ein zunehmend wichtiger Aspekt eines guten Webdesigns.
@@ -50,10 +66,11 @@ Mit Adobe Experience Manager können Inhaltsautoren und/oder Website-Betreiber W
 
 * In [Erstellen barrierefreier Inhalte](/help/sites-authoring/creating-accessible-content.md) wird beschrieben, wie diese mit AEM zusammenhängen.
 
-* [Konfigurieren des Rich-Text-Editors für die Erstellung barrierefreier Websites](/help/sites-administering/rte-accessible-content.md) Richtlinien für Admins zur Konfiguration von AEM zur Produktion barrierefreier Inhalte.
+* [Konfigurieren des Rich-Text-Editors für die Erstellung barrierefreier Websites](/help/sites-administering/rte-accessible-content.md)
+Richtlinien für Admins zur Konfiguration von AEM für die Erstellung barrierefreier Inhalte.
 
-* [Erstellung zugänglicher, anpassbarer Strukturen](/help/forms/using/creating-accessible-adaptive-forms.md)
-Adobe Experience Manager (AEM) umfasst eine Reihe von Funktionen und Möglichkeiten zur verbesserten Nutzung anpassbarer Strukturen für Benutzende mit unterschiedlichen Fähigkeiten. Die Lösung unterstützt außerdem Verfasser von Strukturen bei der Erstellung anpassbarer Formulare.
+* [Erstellen barrierefreier adaptiver Forms](/help/forms/using/creating-accessible-adaptive-forms.md)
+Adobe Experience Manager (AEM) umfasst mehrere Funktionen und Möglichkeiten, die die Benutzerfreundlichkeit adaptiver Formulare für Benutzende mit unterschiedlichen Fähigkeiten verbessern. Die Lösung unterstützt außerdem Verfasser von Strukturen bei der Erstellung anpassbarer Formulare.
 
 >[!NOTE]
 >

@@ -9,13 +9,24 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 3eb9c0e3-950e-4dd5-a4c9-2d8f486ea3cf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 89%
-
+source-wordcount: '1257'
+ht-degree: 91%
 ---
-
 # Anpassen von Vorlagen für Formularportal-Komponenten{#customizing-templates-for-forms-portal-components}
 
 ## Voraussetzungen {#prerequisites}
@@ -41,8 +52,8 @@ Gehen Sie wie folgt vor, damit Sie eine benutzerdefinierte Vorlage für verschie
    * Komponente „Search &amp; Lister“: „/libs/fd/fp/formTemplate“
    * Komponente „Drafts &amp; Submissions“:
 
-      * Bereich „Entwürfe“: /libs/fd/fp/draftsTemplate
-      * Bereich „Sendungen“: /libs/fd/fp/submissionsTemplate
+     * Bereich „Entwürfe“: /libs/fd/fp/draftsTemplate
+     * Bereich „Sendungen“: /libs/fd/fp/submissionsTemplate
 
    * Komponente „Link“: /libs/fd/fp/linkTemplate
 
@@ -120,8 +131,8 @@ Unterstützung für Lokalisierung, Sortierung und Verwendung von Konfigurationse
 1. **Lokalisierungsunterstützung**: Zur Lokalisierung von beliebigem statischem Text verwenden Sie das Attribut `${localize-YOUR_TEXT}` und stellen Sie den lokalisierten Wert bereit, sofern er nicht bereits vorhanden ist.
    *Im genannten Beispiel werden die Attribute `${localize-Apply}` und `${localize-Download}` verwendet, um den Text „Apply“ und „Download“ zu lokalisieren.*
 
-1. **Unterstützung für die Sortierung**: Klicken Sie auf das HTML-Element, um die Suchergebnisse zu sortieren. Um eine Sortierung in einem Tabellenlayout zu implementieren, fügen Sie dem jeweiligen Tabellenkopf das Attribut „data-sortKey“ hinzu. Fügen Sie außerdem seinen Wert als die Metadaten hinzu, nach denen Sie sortieren möchten.
-Beispielsweise lautet für die Kopfzeile „Title“ in der Rasteransicht der Wert der Kopfzeile „data-sortKey“ „title“. Klicken Sie auf die Überschrift, um die Werte in einer bestimmten Spalte zu sortieren.
+1. **Unterstützung für die Sortierung**: Klicken Sie auf das HTML-Element, um die Suchergebnisse zu sortieren. Um eine Sortierung in ein Tabellen-Layout einzufügen, fügen Sie der jeweiligen Tabellenkopfzeile das Attribut „data-sortKey“ hinzu. Fügen Sie außerdem seinen Wert als die Metadaten hinzu, nach denen Sie sortieren möchten.
+So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header „data-sortKey“ „title“. Klicken Sie auf die Überschrift, um die Werte in einer bestimmten Spalte zu sortieren.
 
 1. **Verwenden von Konfigurationseigenschaften**: Die Komponente „Search &amp; Lister“ verfügt über mehrere Konfigurationen, die Sie in der Benutzeroberfläche verwenden können. Verwenden Sie z. B. das Attribut `${config-htmlLinkText}`, um im Bearbeitungsdialogfeld gespeicherten HTML-QuickInfo-Text anzuzeigen. **Verwenden Sie analog dazu für PDF-QuickInfo-Text das Attribut** `${config-pdfLinkText}`.
 

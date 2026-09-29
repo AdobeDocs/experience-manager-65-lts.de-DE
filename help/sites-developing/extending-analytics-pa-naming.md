@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d7c33a37-a675-490d-b28d-1a367ffa33e9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '866'
 ht-degree: 100%
-
 ---
-
 # Implementieren Server-seitiger Seitennamen für Analytics{#implementing-server-side-page-naming-for-analytics}
 
 Adobe Analytics verwendet die Eigenschaft `s.pageName`, um Seiten eindeutig zu identifizieren und die Daten, die für die Seiten erfasst werden, zu verknüpfen. Normalerweise führen Sie in AEM die folgenden Aufgaben aus, um dieser Eigenschaft, die AEM an Analytics übermittelt, einen Wert zuzuordnen:
@@ -52,7 +61,7 @@ Wenn Sie der Eigenschaft `s.pageName` im Framework keine CQ-Variable zuordnen, w
 
 ## Wahren der Kontinuität beim Analytics-Reporting {#maintaining-continuity-in-analytics-reporting}
 
-Ein vollständiger Verlauf der Analysedaten für eine Seite erfordert, dass sich der Wert der Eigenschaft „s.pageName“, die für eine Seite verwendet wird, nicht ändert. Die Analyseeigenschaften, die die Foundation-Seitenkomponente definiert, können jedoch problemlos geändert werden.  Beispielsweise ändert das Verschieben einer Seite den Wert von `pagedata.path`. Damit ist die Kontinuität des Berichtsverlaufs nicht mehr gewahrt:
+Ein vollständiger Verlauf der Analysedaten für eine Seite erfordert, dass sich der Wert der Eigenschaft „s.pageName“, die für eine Seite verwendet wird, nicht ändert. Die Analyseeigenschaften, die die Foundation-Seitenkomponente definiert, können jedoch problemlos geändert werden. Beispielsweise ändert das Verschieben einer Seite den Wert von `pagedata.path`. Damit ist die Kontinuität des Berichtsverlaufs nicht mehr gewahrt:
 
 * Daten, die für den vorherigen Pfad erfasst wurden, sind nicht mehr mit der Seite verknüpft.
 * Wenn eine andere Seite den Pfad verwendet, den zuvor eine weitere Seite verwendet hat, erbt die andere Seite die Daten für diesen Pfad.
@@ -153,7 +162,7 @@ Die folgende Implementierung der Methode „getResource“ gibt das Resource-Obj
     }
 ```
 
-Der folgende Code repräsentiert die gesamte Klasse, einschließlich der SCR-Anmerkungen, die den Dienst konfigurieren.  Der Rang des Dienstes lautet 200, wodurch der Standarddienst außer Kraft gesetzt wird.
+Der folgende Code repräsentiert die gesamte Klasse, einschließlich der SCR-Anmerkungen, die den Dienst konfigurieren. Der Rang des Dienstes lautet 200, wodurch der Standarddienst außer Kraft gesetzt wird.
 
 ```java
 /*************************************************************************

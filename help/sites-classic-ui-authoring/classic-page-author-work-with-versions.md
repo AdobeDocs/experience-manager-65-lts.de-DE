@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 7ea1b7d4-6e07-4ad4-9bac-ff2214b8f47e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 96%
-
 ---
-
 # Arbeiten mit Seitenversionen{#working-with-page-versions}
 
 Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem bestimmten Zeitpunkt festgehalten. Bei der Versionierung können Sie die folgenden Aktionen durchführen:
@@ -169,7 +178,9 @@ Wenn Sie die Timeline im Dokument anzeigen möchten:
 
 1. Wählen Sie (durch Gedrückthalten und Ziehen) die Timeline aus und verschieben Sie sie, um sich durch die Timeline des Dokuments zu bewegen.
 
-   * Jede Linie steht für eine veröffentlichte Version.Wenn eine Seite aktiviert wird, beginnt eine neue Linie. Jedes Mal, wenn das Dokument bearbeitet wird, wird eine neue Farbe angezeigt.Im folgenden Beispiel zeigt die rote Linie an, dass die Seite während des Zeitrahmens der ursprünglichen grünen Version bearbeitet wurde. Die gelbe Linie zeigt an, dass die Seite während der roten Version bearbeitet wurde usw.
+   * Jede Linie steht für eine veröffentlichte Version.
+     Wenn eine Seite aktiviert wird, beginnt eine neue Linie. Jedes Mal, wenn das Dokument bearbeitet wird, wird eine neue Farbe angezeigt.
+     Im folgenden Beispiel zeigt die rote Linie an, dass die Seite während des Zeitrahmens der ursprünglichen grünen Version bearbeitet wurde. Die gelbe Linie zeigt an, dass die Seite während der roten Version bearbeitet wurde usw.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 

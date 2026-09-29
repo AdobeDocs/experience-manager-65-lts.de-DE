@@ -7,13 +7,27 @@ feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, Developer
 exl-id: 708a4ab2-ca66-445d-8d69-bcf12fd5158a
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1940'
 ht-degree: 98%
-
 ---
-
 # Erstellen und Verwenden adaptiver Formularfragmente in einem adaptiven Formular basierend auf Kernkomponenten {#adaptive-form-fragments}
 
 ## Gilt für {#applies-to}
@@ -41,8 +55,8 @@ Sie können adaptive Formularfragmente von Grund auf neu erstellen oder ein Pane
 
 1. Melden Sie sich bei Ihrer AEM Forms-Instanz unter https://[*hostname*]:[*port*]/aem/forms.html an.
 1. Klicken Sie auf **Erstellen > Adaptives Formularfragment**.
-1. Geben Sie Titel, Namen, Beschreibung und Tags für das Fragment an. Stellen Sie sicher, dass Sie einen eindeutigen Namen für das Fragment angeben. Wenn bereits ein anderes Fragment mit demselben Namen vorhanden ist, kann das Fragment nicht erstellt werden.
-1. Wählen Sie eine Formularvorlage aus. Sie können ein Formularfragment für Kernkomponenten-basierte adaptive Formular- oder Foundation-Komponenten-basierte adaptive Formulare erstellen.
+1. Geben Sie Titel, Name, Beschreibung und Tags für das Fragment an. Stellen Sie sicher, dass Sie einen eindeutigen Namen für das Fragment angeben. Wenn bereits ein anderes Fragment mit demselben Namen vorhanden ist, kann das Fragment nicht erstellt werden.
+1. Wählen Sie eine Formularvorlage aus. Sie können ein Formularfragment für auf Kernkomponenten basierende adaptive Formulare oder auf Foundation-Komponenten basierende adaptive Formulare erstellen.
    * Um Formularfragmente für auf Kernkomponenten basierende Formulare zu erstellen, wählen Sie eine auf Kernkomponenten basierende Vorlage aus.
    * Um Formularfragmente für auf Foundation-Komponenten basierende Formulare zu erstellen, wählen Sie eine Vorlage für Foundation-Komponenten aus. Beispiel: /libs/fd/af/templateForFragment/defaultFragmentTemplate.
 
@@ -155,7 +169,7 @@ Sie können über die Benutzeroberfläche von AEM Forms mehrere Vorgänge mit ad
    <td><p>Kopiert das ausgewählte Fragment. Die Schaltfläche „Einfügen“ wird in der Symbolleiste angezeigt.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Download</p> </td>
+   <td><p>Herunterladen</p> </td>
    <td><p>Lädt das ausgewählte Fragment herunter.<br /> <br /> </p> </td>
   </tr>
   <tr>
@@ -163,7 +177,7 @@ Sie können über die Benutzeroberfläche von AEM Forms mehrere Vorgänge mit ad
    <td><p>Enthält Optionen zum Anzeigen einer HTML- oder benutzerdefinierten Vorschau des Fragments durch Zusammenführen von Daten aus einer XML-Datei und dem Fragment. Weitere Informationen finden Sie unter <a>Erstellen einer Vorschau für ein Formular</a>. <br /><br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Review starten/verwalten</p> </td>
+   <td><p>Überprüfung starten/Überprüfung verwalten</p> </td>
    <td><p>Initiieren und Verwalten einer Review des ausgewählten Fragments. Weitere Informationen finden Sie unter <a>Erstellen und Verwalten von Reviews</a>. <br /><br /> </p> </td>
   </tr>
   <tr>
@@ -208,4 +222,4 @@ Es sind Referenzfragmente für adaptive Formulare vorhanden, die Sie zum Erstell
 * [Erstellen oder Anpassen von Designs für auf Kernkomponenten basierende adaptive Formulare](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Erstellen einer Vorlage für auf Kernkomponenten basierende adaptive Formulare](template-editor.md)
 * [Erstellen oder Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Beispielthemenvorlagen und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de)
+* [Beispielthemen und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de)

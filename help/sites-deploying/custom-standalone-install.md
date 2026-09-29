@@ -7,13 +7,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 45178816afbda13ee9117a0b13dcb8a9218992da
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1563'
-ht-degree: 94%
-
+source-wordcount: '1586'
+ht-degree: 93%
 ---
-
 # Benutzerdefinierte eigenständige Installation{#custom-standalone-install}
 
 In diesem Abschnitt wird beschrieben, welche Optionen bei der Installation einer AEM-Standalone-Instanz verfügbar sind. Weitere Informationen zur Auswahl des Backend-Speichertyps nach einer AEM 6-Neuinstallation finden Sie unter [Speicherelemente](/help/sites-deploying/storage-elements-in-aem-6.md).
@@ -77,7 +89,7 @@ Dies stellt eine andere Möglichkeit dar, Bundles, Inhaltspakete oder Konfigurat
 Dies kann für viele Anwendungsfälle besonders interessant sein:
 
 * Während der Entwicklung kann es einfacher sein, etwas in das Dateisystem zu integrieren.
-* Wenn etwas schiefgeht, sind die Web-Konsole und das Repository nicht erreichbar. Hiermit können Sie zusätzliche Bundles in diesem Verzeichnis ablegen, die dann installiert werden sollten.
+* Wenn etwas schiefgeht, sind die Web-Konsole und das Repository nicht erreichbar. Hiermit können Sie zusätzliche Pakete in diesem Verzeichnis ablegen, die dann installiert werden sollten.
 * Der Ordner `crx-quickstart/install` kann erstellt werden, bevor der Schnellstart gestartet wird, und es können zusätzliche Pakete darin abgelegt werden.
 
 ## Installieren und Starten von Adobe Experience Manager als Windows-Dienst {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
@@ -114,7 +126,7 @@ Installieren und Starten von AEM als Windows-Dienst:
 
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
-1. Windows gibt an, dass der Dienst ausgeführt wird.  AEM wird gestartet und die ausführbare Datei „prunsrv“ wird im Task-Manager angezeigt. Navigieren Sie in Ihrem Webbrowser zu AEM, beispielsweise `https://localhost:4502`, um mit der Nutzung von AEM zu beginnen.
+1. Windows gibt an, dass der Dienst ausgeführt wird. AEM wird gestartet und die ausführbare Datei „prunsrv“ wird im Task-Manager angezeigt. Navigieren Sie in Ihrem Webbrowser zu AEM, beispielsweise `https://localhost:4502`, um mit der Nutzung von AEM zu beginnen.
 
    ![chlimage_1-13](assets/chlimage_1-13.png)
 
@@ -330,7 +342,7 @@ Obwohl es viele Möglichkeiten gibt, AEM WCM zu konfigurieren, sollten bestimmte
 Nachdem AEM WCM gestartet wurde, können Sie auch auf Folgendes zugreifen:
 
 * [CRXDE Lite](#accessing-crxde-lite) – für den Zugriff auf das Repository und seine Verwaltung
-* [Web-Konsole](#accessing-the-web-console) – zum Verwalten oder Konfigurieren der OSGi-Bundles (auch als OSGi-Konsole bezeichnet)
+* [Web-Konsole](#accessing-the-web-console) – zum Verwalten oder Konfigurieren der OSGi-Pakete (auch als OSGi-Konsole bezeichnet)
 
 ### Zugreifen auf CRXDE Lite {#accessing-crxde-lite}
 

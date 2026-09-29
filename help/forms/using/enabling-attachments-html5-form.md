@@ -9,13 +9,28 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: dcc82582-0637-44ce-a2b4-68077cbc2200
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 100%
-
+ht-degree: 94%
 ---
-
 # Aktivieren von Anlagen für ein HTML5-Formular {#enabling-attachments-for-an-html-form}
 
 Sie können Anlagen mit HTML5-Formularen hochladen, in einer Vorschau anzeigen und übermitteln. Standardmäßig ist die Anlagenunterstützung deaktiviert. Gehen Sie wie folgt vor, um die Unterstützung der Anlage zu aktivieren:
@@ -27,7 +42,7 @@ Sie können Anlagen mit HTML5-Formularen hochladen, in einer Vorschau anzeigen u
    | multiSelect | „true“ oder „false“ (true standardmäßig ausgewählt) |
    | fileSizeLimit | Zahl in MB (standardmäßig 2 MB). Zum Beispiel 5. |
    | buttonText | Schaltflächentext für Popupfenster (standardmäßig „Anhängen“) |
-   | Akzeptieren der Bedingungen | durch Kommas getrennte Liste der zu akzeptierenden Dateitypen („audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf“ standardmäßig) |
+   | Akzeptieren der Bedingungen | Durch Kommas getrennte Liste der zu akzeptierenden Dateitypen („audio/&ast;, video/&ast;, image/&ast;, text/&ast;, .pdf“ standardmäßig) |
 
    Beispiel:
 

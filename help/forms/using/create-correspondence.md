@@ -8,13 +8,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: cb6528fd-6761-412d-8413-c72049acf91d
-source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3848'
-ht-degree: 97%
-
+source-wordcount: '3906'
+ht-degree: 96%
 ---
-
 # Korrespondenz erstellen{#create-correspondence}
 
 ## Korrespondenz erstellen in der Benutzeroberfläche „Korrespondenz erstellen“ {#create-correspondence-in-the-create-correspondence-user-interface}
@@ -358,7 +371,7 @@ Die folgenden Vorteile und Funktionen stehen jeweils bei der HTML- und PDF-Vorsc
 * **Markieren bearbeitbarer Inhalte in einem Brief**: Auf der Benutzeroberfläche „Korrespondenz erstellen“ können Sie „Bearbeitbare Inhalte markieren“ auswählen, um den gesamten bearbeitbaren Inhalt des Briefes grau zu markieren. Weitere Informationen finden Sie unter [Verwalten von Inhalten](#managecontent).
 
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`
-`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`  **Vorteile der PDF-Vorschau**
+`<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>` **Vorteile der PDF-Vorschau**
 
 * **Seitenumbruch**: In der PDF-Vorschau eine Vorschau können Sie genau erkennen, wie die Seitenumbrüche im Brief sich auf dessen Ausgabe auswirken.
 * **Abschließende Vorschau**: In der PDF-Vorschau können die genaue Formatierung und das Erscheinungsbild des Briefs für die Ausgabe angezeigt werden.

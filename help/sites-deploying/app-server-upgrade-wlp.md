@@ -5,13 +5,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 2a5d9026-49bc-4766-bcbe-38d834c14f72
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 17%
-
+source-wordcount: '511'
+ht-degree: 18%
 ---
-
 # Schritte zum Upgrade von Installationen auf Anwendungs-Servern (WLP) {#upgrade-steps-for-application-server-installations-wlp}
 
 >[!NOTE]
@@ -75,7 +84,7 @@ Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführe
      ```
 
 1. Erstellen Sie eine Sicherung der `sling.properties`-Datei (normalerweise in `crx-quickstart/conf/` vorhanden) und löschen Sie sie
-1. **Ändern Sie in der**-Datei die Version des Servlets `server.xml`6.0).
+1. **Ändern Sie in der `server.xml`-Datei die Version des Servlets** 6.0).
 1. Installieren Sie Java 17/Java 21 und stellen Sie sicher, dass es korrekt installiert ist, indem Sie Folgendes ausführen:
 
    ```shell
@@ -94,7 +103,7 @@ Bevor Sie die Aktualisierung durchführen, müssen Sie einige Schritte ausführe
 
    1. Beenden Sie die AEM-Instanz, indem Sie `<path-to-wlp-directory>/bin/server stop server_name` ausführen
    1. Wenden Sie Ihre benutzerdefinierten `sling.properties` auf die neu generierte `sling.properties` an (indem Sie auf die in Schritt 5 erstellte Sicherungsdatei verweisen)
-   1. AEM-Instanz starten. Dies kann in der Regel durch Ausführen von Folgendem geschehen: `<path-to-wlp-directory>/bin/server start server_name`
+   1. Starten Sie die AEM-Instanz. Dies kann in der Regel durch Ausführen von Folgendem geschehen: `<path-to-wlp-directory>/bin/server start server_name`
 
 ## Bereitstellen einer aktualisierten Code-Basis {#deploy-upgraded-codebase}
 

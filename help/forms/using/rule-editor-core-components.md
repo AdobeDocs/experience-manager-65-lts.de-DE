@@ -5,13 +5,24 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 01fa9744-775e-4185-aba5-e132011b1b89
-source-git-commit: 15ab0f87fc3ae9a0e2116bb837a8cb60a6f984a1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '5734'
+source-wordcount: '5748'
 ht-degree: 98%
-
 ---
-
 # Hinzufügen von Regeln zu Kernkomponenten eines adaptiven Formulars {#adaptive-forms-rule-editor}
 
 Dieser Artikel enthält die neuesten Funktionen des Regeleditors für die Kernkomponenten von adaptiven Formularen. Diese sind:
@@ -192,7 +203,7 @@ Wenn bei Feldern mit Mehrfachauswahl in der Wenn-Bedingung Probleme auftreten, f
 
 1. Öffnen Sie das Formular im Bearbeitungsmodus.
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars.
-1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/using/assets/configure-icon.svg). Das Dialogfeld „Container für adaptive Formulare“ wird geöffnet.
+1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/using/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
 1. Klicken Sie auf „Fertig“ und speichern Sie das Dialogfeld erneut.
 
 **[!UICONTROL Ausblenden]**: Blendet das angegebene Objekt aus.

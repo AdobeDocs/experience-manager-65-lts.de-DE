@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 4d4c96ea-b7dd-49b9-86b5-2507e7518ba4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 99%
-
+source-wordcount: '905'
+ht-degree: 94%
 ---
-
 # Tagging-Konsole der klassischen Benutzeroberfläche{#classic-ui-tagging-console}
 
 Dieser Abschnitt bezieht sich auf die Tagging-Konsole der klassischen Benutzeroberfläche.
@@ -48,19 +57,20 @@ Beispiel: [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
 1. Geben Sie in beiden Fällen Folgendes ein:
 
-   * **Titel**
-(*Erforderlich*) Der Anzeigetitel für das Tag. Auch wenn es bei der Eingabe keine verbotenen Zeichen gibt, wird empfohlen, keines dieser Sonderzeichen zu verwenden:
+   * **title**
+     (*Erforderlich*) Der Anzeigetitel für das Tag. Während ein beliebiges Zeichen eingegeben werden kann,
+     Es wird empfohlen, diese Sonderzeichen nicht zu verwenden:
 
-      * `colon (:)` – Namespace-Trennzeichen
-      * `forward slash (/)` – Trennzeichen für untergeordnete Tags
+     * `colon (:)` – Namespace-Trennzeichen
+     * `forward slash (/)` – Trennzeichen für untergeordnete Tags
 
      Diese Zeichen werden möglicherweise nicht angezeigt, wenn sie eingegeben werden.
 
-   * **Name**
-(*Erforderlich*) Der Knotenname für das Tag.
+   * **name**
+     (*Erforderlich*) Der Knotenname für das Tag.
 
    * **Beschreibung**
-(*Optional*) Eine Beschreibung für das Tag.
+     (*Optional*) Eine Beschreibung für das Tag.
 
    * Wählen Sie **Erstellen** aus.
 

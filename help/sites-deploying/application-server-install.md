@@ -9,13 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 41%
-
 ---
-
 # Installation des Anwendungs-Servers{#application-server-install}
 
 >[!NOTE]
@@ -76,7 +88,7 @@ Um eine Veröffentlichungsinstanz bereitzustellen, müssen Sie den Ausführungsm
 Um zu überprüfen, ob alles installiert ist, können Sie:
 
 * Untersuchen der Datei `error.log`, um anzuzeigen, ob der gesamte Inhalt installiert ist.
-* Überprüfen in `/system/console`, ob alle Bundles installiert sind
+* Überprüfen in `/system/console`, ob alle Pakete installiert sind
 
 #### Zwei Instanzen auf demselben Anwendungs-Server {#two-instances-on-the-same-application-server}
 
@@ -104,7 +116,7 @@ Lesen Sie oben „Allgemeine [&quot; vor &#x200B;](#general-description) Bereits
 
 * So lassen Sie Standard-Authentifizierungs-Header durchlaufen:
 
-   * Eine Möglichkeit, AEM die Authentifizierung eines Benutzers zu ermöglichen, besteht darin, die globale administrative Sicherheit des WebSphere®-Servers zu deaktivieren. Wechseln Sie dazu zu **Sicherheit > Globale Sicherheit** und deaktivieren Sie das Kontrollkästchen **Enable administrative security**, speichern Sie den Server und starten Sie ihn neu.
+  * Eine Möglichkeit, AEM die Authentifizierung eines Benutzers zu ermöglichen, besteht darin, die globale administrative Sicherheit des WebSphere®-Servers zu deaktivieren. Wechseln Sie dazu zu **Sicherheit > Globale Sicherheit** und deaktivieren Sie das Kontrollkästchen **Enable administrative security**, speichern Sie den Server und starten Sie ihn neu.
 
 * `"JAVA_OPTS= -Xmx2048m"`
 * Wenn Sie AEM mithilfe des Kontextstamms = / installieren möchten, ändern Sie den Kontextstamm der vorhandenen standardmäßigen Web-Anwendung.
@@ -114,14 +126,14 @@ Lesen Sie oben „Allgemeine [&quot; vor &#x200B;](#general-description) Bereits
 * Herunterladen der AEM-WAR-Datei
 * Nehmen Sie bei Bedarf Konfigurationen in der `web.xml` vor. Weitere Informationen finden Sie oben unter [Allgemeine Beschreibung](#general-description).
 
-   * Entpacken Sie die `WEB-INF/web.xml`
-   * Ändern Sie den `sling.run.modes` Parameter in `publish`
-   * Entfernen Sie den Kommentar für den anfänglichen `sling.home` und legen Sie diesen Pfad nach Bedarf fest
-   * Packen Sie die `web.xml` erneut.
+  * Entpacken Sie die `WEB-INF/web.xml`
+  * Ändern Sie den `sling.run.modes` Parameter in `publish`
+  * Entfernen Sie den Kommentar für den anfänglichen `sling.home` und legen Sie diesen Pfad nach Bedarf fest
+  * Packen Sie die `web.xml` erneut.
 
 * Bereitstellen der AEM-WAR-Datei
 
-   * Wählen Sie einen Kontextstamm aus. Wenn Sie die Sling-Ausführungsmodi festlegen möchten, müssen Sie die detaillierten Schritte des Bereitstellungsassistenten auswählen und sie dann in Schritt 6 des Assistenten angeben.
+  * Wählen Sie einen Kontextstamm aus. Wenn Sie die Sling-Ausführungsmodi festlegen möchten, müssen Sie die detaillierten Schritte des Bereitstellungsassistenten auswählen und sie dann in Schritt 6 des Assistenten angeben.
 
 * Starten der AEM-Webanwendung
 
@@ -131,64 +143,64 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
 
 * **Tomcat-Servervorbereitung**
 
-   * Erhöhen Sie den für die virtuelle Maschine eingestellten Arbeitsspeicherwert:
+  * Erhöhen Sie den für die virtuelle Maschine eingestellten Arbeitsspeicherwert:
 
-      * Fügen Sie in `bin/catalina.bat` (bzw. `catalina.sh` unter UNIX®) die folgende Einstellung hinzu:
+    * Fügen Sie in `bin/catalina.bat` (bzw. `catalina.sh` unter UNIX®) die folgende Einstellung hinzu:
 
-        ```
-        set "JAVA_OPTS= -Xmx2048m`
-        ```
+      ```
+      set "JAVA_OPTS= -Xmx2048m`
+      ```
 
-   * Tomcat aktiviert bei der Installation keinen Admin- oder Managerzugriff. Daher müssen Sie `tomcat-users.xml` manuell bearbeiten, um den Zugriff für diese Konten zuzulassen:
+  * Tomcat aktiviert bei der Installation keinen Admin- oder Managerzugriff. Daher müssen Sie `tomcat-users.xml` manuell bearbeiten, um den Zugriff für diese Konten zuzulassen:
 
-      * Bearbeiten Sie `tomcat-users.xml`, um den Zugriff für Admin und Managerin bzw. Manager einzuschließen. Die Konfiguration sollte dem folgenden Beispiel ähneln:
+    * Bearbeiten Sie `tomcat-users.xml`, um den Zugriff für Admin und Managerin bzw. Manager einzuschließen. Die Konfiguration sollte dem folgenden Beispiel ähneln:
 
-        ```xml
-        <?xml version='1.0' encoding='utf-8'?>
-        <tomcat-users>
-          <role rolename="manager"/>
-          <role rolename="tomcat"/>
-          <role rolename="admin"/>
-          <role rolename="role1"/>
-          <role rolename="manager-gui"/>
-          <user username="both" password="tomcat" roles="tomcat,role1"/>
-          <user username="tomcat" password="tomcat" roles="tomcat"/>
-          <user username="admin" password="admin" roles="admin,manager-gui"/>
-          <user username="role1" password="tomcat" roles="role1"/>
-        </tomcat-users>
-        ```
+      ```xml
+      <?xml version='1.0' encoding='utf-8'?>
+      <tomcat-users>
+        <role rolename="manager"/>
+        <role rolename="tomcat"/>
+        <role rolename="admin"/>
+        <role rolename="role1"/>
+        <role rolename="manager-gui"/>
+        <user username="both" password="tomcat" roles="tomcat,role1"/>
+        <user username="tomcat" password="tomcat" roles="tomcat"/>
+        <user username="admin" password="admin" roles="admin,manager-gui"/>
+        <user username="role1" password="tomcat" roles="role1"/>
+      </tomcat-users>
+      ```
 
-   * Wenn Sie AEM mit dem Kontextstamm „/“ bereitstellen möchten, müssen Sie den Kontextstamm der vorhandenen „ROOT webapp“ (Stamm-Web-Anwendung) ändern:
+  * Wenn Sie AEM mit dem Kontextstamm „/“ bereitstellen möchten, müssen Sie den Kontextstamm der vorhandenen „ROOT webapp“ (Stamm-Web-Anwendung) ändern:
 
-      * Beenden und Aufheben der Bereitstellung der ROOT-Web-App
-      * Benennen Sie den `ROOT.war` Ordner im Ordner „webapps“ von Tomcat um.
-      * Starten Sie die Web-App erneut
+    * Beenden und Aufheben der Bereitstellung der ROOT-Web-App
+    * Benennen Sie den `ROOT.war` Ordner im Ordner „webapps“ von Tomcat um.
+    * Starten Sie die Web-App erneut
 
-   * Wenn Sie die AEM-Web-Anwendung über die manager-gui installieren, müssen Sie die maximale Größe einer hochgeladenen Datei erhöhen, da die Standardeinstellung nur eine Upload-Größe von 50 MB zulässt. Öffnen Sie dazu die `web.xml` der Manager-Web-Anwendung:
+  * Wenn Sie die AEM-Web-Anwendung über die manager-gui installieren, müssen Sie die maximale Größe einer hochgeladenen Datei erhöhen, da die Standardeinstellung nur eine Upload-Größe von 50 MB zulässt. Öffnen Sie dazu die `web.xml` der Manager-Web-Anwendung:
 
-     `webapps/manager/WEB-INF/web.xml`
+    `webapps/manager/WEB-INF/web.xml`
 
-     und erhöhen Sie die `max-file-size` und `max-request-size` auf mindestens 500 MB. Siehe die folgenden `multipart-config` in einer `web.xml`-Beispieldatei unten:
+    und erhöhen Sie die `max-file-size` und `max-request-size` auf mindestens 500 MB. Siehe die folgenden `multipart-config` in einer `web.xml`-Beispieldatei unten:
 
-     ```xml
-     <multipart-config>
-     <!-- 500MB max -->
-     <max-file-size>524288000</max-file-size>
-     <max-request-size>524288000</max-request-size>
-     <file-size-threshold>0</file-size-threshold>
-     </multipart-config>
-     ```
+    ```xml
+    <multipart-config>
+    <!-- 500MB max -->
+    <max-file-size>524288000</max-file-size>
+    <max-request-size>524288000</max-request-size>
+    <file-size-threshold>0</file-size-threshold>
+    </multipart-config>
+    ```
 
 * **Bereitstellen der AEM-Web-Anwendung**
 
-   * Laden Sie die AEM-WAR-Datei herunter.
-   * Nehmen Sie bei Bedarf Konfigurationen in der `web.xml` vor.
+  * Laden Sie die AEM-WAR-Datei herunter.
+  * Nehmen Sie bei Bedarf Konfigurationen in der `web.xml` vor.
 
-      * Entpacken Sie die `WEB-INF/web.xml`
-      * Ändern Sie den `sling.run.modes` Parameter in `publish`
-      * Entfernen Sie den Kommentar für den anfänglichen `sling.home` und legen Sie diesen Pfad nach Bedarf fest
-      * Packen Sie die `web.xml` erneut.
+    * Entpacken Sie die `WEB-INF/web.xml`
+    * Ändern Sie den `sling.run.modes` Parameter in `publish`
+    * Entfernen Sie den Kommentar für den anfänglichen `sling.home` und legen Sie diesen Pfad nach Bedarf fest
+    * Packen Sie die `web.xml` erneut.
 
-   * Benennen Sie die AEM-WAR-Datei in `ROOT.war` um, wenn Sie sie als Root-Web-App bereitstellen möchten. Benennen Sie ihn in `aemauthor.war` um, wenn Sie `aemauthor` als Kontextstamm haben möchten.
-   * Kopieren Sie es in den Ordner „webapps“ von Tomcat
-   * Warten Sie, bis AEM installiert ist.
+  * Benennen Sie die AEM-WAR-Datei in `ROOT.war` um, wenn Sie sie als Root-Web-App bereitstellen möchten. Benennen Sie ihn in `aemauthor.war` um, wenn Sie `aemauthor` als Kontextstamm haben möchten.
+  * Kopieren Sie es in den Ordner „webapps“ von Tomcat
+  * Warten Sie, bis AEM installiert ist.

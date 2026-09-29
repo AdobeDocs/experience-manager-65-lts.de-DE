@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
-source-git-commit: c033a676eb746befd43803d1ae00c564890cb945
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2605'
+source-wordcount: '2654'
 ht-degree: 92%
-
 ---
-
 # Erweitern des Multi-Site-Managers{#extending-the-multi-site-manager}
 
 Auf dieser Seite erfahren Sie, wie Sie die Funktionen von Multi Site Manager erweitern können:
@@ -52,28 +61,28 @@ Die wichtigsten MSM-API-Objekte interagieren wie folgt (siehe auch [Verwendete B
 
   ![Blueprint](assets/chlimage_1-74.png)
 
-   * Die Verwendung einer Blueprint-Konfiguration (`Blueprint`) ist optional, aber:
+  * Die Verwendung einer Blueprint-Konfiguration (`Blueprint`) ist optional, aber:
 
-      * ermöglicht es dem Autor, die **Rollout**-Option auf der Quelle zu nutzen (um Änderungen (explizit) an Live Copies zu pushen, die Inhalte von dieser Quelle erben)
-      * Ermöglicht dem Autor oder der Autorin die Verwendung von **Site erstellen**. Dies ermöglicht Benutzenden die einfache Auswahl von Sprachen und die Konfiguration der Struktur der Live Copy.
-      * Definiert die standardmäßige Rollout-Konfiguration für alle resultierenden Live Copies.
+    * ermöglicht es dem Autor, die **Rollout**-Option auf der Quelle zu nutzen (um Änderungen (explizit) an Live Copies zu pushen, die Inhalte von dieser Quelle erben)
+    * Ermöglicht dem Autor oder der Autorin die Verwendung von **Site erstellen**. Dies ermöglicht Benutzenden die einfache Auswahl von Sprachen und die Konfiguration der Struktur der Live Copy.
+    * Definiert die standardmäßige Rollout-Konfiguration für alle resultierenden Live Copies.
 
 * **`LiveRelationship`**
 
   Die `LiveRelationship` legt die Verbindung (Beziehung) zwischen einer Ressource im Live Copy-Zweig und der entsprechenden Quelle/Blueprint-Ressource fest.
 
-   * Die Beziehungen werden bei der Umsetzung der Vererbung und des Rollouts genutzt.
-   * `LiveRelationship`-Objekte bieten Zugriff (Verweise) auf die Rollout-Konfigurationen (`RolloutConfig`), `LiveCopy` und `LiveStatus`-Objekte, die mit der Beziehung zusammenhängen.
+  * Die Beziehungen werden bei der Umsetzung der Vererbung und des Rollouts genutzt.
+  * `LiveRelationship`-Objekte bieten Zugriff (Verweise) auf die Rollout-Konfigurationen (`RolloutConfig`), `LiveCopy` und `LiveStatus`-Objekte, die mit der Beziehung zusammenhängen.
 
-   * Beispiel: Eine Live Copy wird unter `/content/copy/us` von der Quelle / dem Blueprint unter `/content/we-retail/language-masters` erstellt. Die Ressourcen `/content/we.retail/language-masters/en/jcr:content` und `/content/copy/us/en/jcr:content` bilden eine Beziehung.
+  * Beispiel: Eine Live Copy wird unter `/content/copy/us` von der Quelle / dem Blueprint unter `/content/we-retail/language-masters` erstellt. Die Ressourcen `/content/we.retail/language-masters/en/jcr:content` und `/content/copy/us/en/jcr:content` bilden eine Beziehung.
 
 * **`LiveCopy`**
 
   `LiveCopy` speichert die Konfigurationsdaten für die Beziehungen (`LiveRelationship`) zwischen den Live Copy-Ressourcen und ihren Quell-/Blueprint-Ressourcen.
 
-   * Über die Klasse `LiveCopy` können Sie auf den Pfad der Seite, den Pfad der Quell-/Blueprint-Seite und die Rollout-Konfigurationen zugreifen und festlegen, ob die untergeordneten Seiten ebenfalls in der `LiveCopy` enthalten sind.
+  * Über die Klasse `LiveCopy` können Sie auf den Pfad der Seite, den Pfad der Quell-/Blueprint-Seite und die Rollout-Konfigurationen zugreifen und festlegen, ob die untergeordneten Seiten ebenfalls in der `LiveCopy` enthalten sind.
 
-   * Ein `LiveCopy`-Knoten wird immer erstellt, wenn **Website erstellen** oder **Live Copy erstellen** genutzt wird.
+  * Ein `LiveCopy`-Knoten wird immer erstellt, wenn **Website erstellen** oder **Live Copy erstellen** genutzt wird.
 
 * **`LiveStatus`**
 
@@ -83,7 +92,7 @@ Die wichtigsten MSM-API-Objekte interagieren wie folgt (siehe auch [Verwendete B
 
   Eine `LiveAction` ist eine Aktion, die auf jeder Ressource, die am Rollout beteiligt ist, ausgeführt wird.
 
-   * LiveActions werden nur von RolloutConfigs erzeugt.
+  * LiveActions werden nur von RolloutConfigs erzeugt.
 
 * **`LiveActionFactory`**
 
@@ -93,7 +102,7 @@ Die wichtigsten MSM-API-Objekte interagieren wie folgt (siehe auch [Verwendete B
 
   Die `RolloutConfig` enthält eine Liste der `LiveActions`, die nach der Auslösung zum Einsatz kommen sollen. Die `LiveCopy` erbt die `RolloutConfig` und das Ergebnis befindet sich in der `LiveRelationship`.
 
-   * Beim erstmaligen Einrichten einer Live Copy wird auch eine „RolloutConfig“ verwendet (die die LiveActions auslöst).
+  * Beim erstmaligen Einrichten einer Live Copy wird auch eine „RolloutConfig“ verwendet (die die LiveActions auslöst).
 
 ## Erstellen einer neuen Synchronisierungsaktion {#creating-a-new-synchronization-action}
 
@@ -106,16 +115,16 @@ Erstellen Sie benutzerdefinierte Synchronisierungsaktionen zur Verwendung mit Ih
 
 * `LiveAction`-Klassen umfassen die folgenden Methoden:
 
-   * `getName`: Gibt den Namen der Aktion zurück. Der Name wird verwendet, um auf die Aktion zu verweisen, z. B. in Rollout-Konfigurationen.
-   * `execute`: Führt die Aufgabe der Aktion aus.
+  * `getName`: Gibt den Namen der Aktion zurück. Der Name wird verwendet, um auf die Aktion zu verweisen, z. B. in Rollout-Konfigurationen.
+  * `execute`: Führt die Aufgabe der Aktion aus.
 
 * `LiveActionFactory`-Klassen umfassen die folgenden Mitglieder:
 
-   * `LIVE_ACTION_NAME`: Ein Feld, das den Namen der zugehörigen `LiveAction` enthält. Dieser Name muss mit dem Wert übereinstimmen, der von der Methode `getName` der Klasse `LiveAction` zurückgegeben wird.
+  * `LIVE_ACTION_NAME`: Ein Feld, das den Namen der zugehörigen `LiveAction` enthält. Dieser Name muss mit dem Wert übereinstimmen, der von der Methode `getName` der Klasse `LiveAction` zurückgegeben wird.
 
-   * `createAction`: Erstellt eine Instanz der `LiveAction`. Der optionale Parameter `Resource` kann verwendet werden, um Konfigurationsdaten bereitzustellen.
+  * `createAction`: Erstellt eine Instanz der `LiveAction`. Der optionale Parameter `Resource` kann verwendet werden, um Konfigurationsdaten bereitzustellen.
 
-   * `createsAction`: Gibt den Namen der zugehörigen `LiveAction` zurück.
+  * `createsAction`: Gibt den Namen der zugehörigen `LiveAction` zurück.
 
 ### Zugreifen auf den LiveAction-Konfigurationsknoten {#accessing-the-liveaction-configuration-node}
 
@@ -212,10 +221,10 @@ Die neue Rollout-Konfiguration steht dann zur Verfügung, wenn Sie die Rollout-K
    * **Name**: `cq:trigger`
      **Typ**: `String`
      **Wert**: Der zu verwendende [Rollout-Trigger](/help/sites-administering/msm-sync.md#rollout-triggers). Die folgenden Optionen stehen zur Auswahl:
-      * `rollout`
-      * `modification`
-      * `publish`
-      * `deactivate`
+     * `rollout`
+     * `modification`
+     * `publish`
+     * `deactivate`
 
 1. Klicken Sie auf **Alle speichern**.
 
@@ -233,7 +242,7 @@ Fügen Sie untergeordnete Knoten des Typs `cq:LiveSyncAction` hinzu, um Synchron
 1. **Erstellen** Sie einen Knoten mit den folgenden Knoteneigenschaften:
 
    * **Name**: Der Knotenname der Synchronisierungsaktion.
-Der Name muss mit dem **Aktionsnamen“ in** Tabelle unter „Synchronisierungsaktionen[&#x200B; übereinstimmen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) z. B. `contentCopy` oder `workflow`.
+     Der Name muss dem **Aktionsnamen** in der Tabelle unter [Synchronisierungsaktionen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) entsprechen, z. B. `contentCopy` oder `workflow`.
    * **Typ**: `cq:LiveSyncAction`
 
 1. Fügen Sie so viele Synchronisierungsaktionsknoten hinzu wie erforderlich und konfigurieren Sie sie. Ordnen Sie die Aktionsknoten so an, dass sie die Reihenfolge aufweisen, in der sie ausgeführt werden sollen. Der oberste Aktionsknoten wird zuerst ausgeführt.
@@ -244,7 +253,7 @@ Mit den Verfahren, die in diesem Abschnitt erläutert werden, können Sie eine `
 
 1. [Erstellen Sie das Maven-Projekt](#create-the-maven-project) und importieren Sie es in Eclipse.
 1. [Fügen Sie Abhängigkeiten](#add-dependencies-to-the-pom-file) zur POM-Datei hinzu.
-1. [Implementieren Sie die `LiveActionFactory`-Schnittstelle](#implement-liveactionfactory) und stellen Sie das OSGi-Bundle bereit.
+1. [Implementieren Sie die `LiveActionFactory`-Schnittstelle](#implement-liveactionfactory) und stellen Sie das OSGi-Paket bereit.
 1. [Erstellen Sie die Rollout-Konfiguration](#create-the-example-rollout-configuration).
 1. [Erstellen Sie die Live Copy](#create-the-live-copy).
 
@@ -339,7 +348,7 @@ Fügen Sie Abhängigkeiten hinzu, damit der Eclipse-Compiler auf die Klassen ver
     </dependency>
    ```
 
-1. Öffnen Sie im **Projekt-Explorer** unter `MyLiveActionFactory-bundle/pom.xml` die POM-Datei für das Bundle.
+1. Öffnen Sie im **Projekt-Explorer** unter `MyLiveActionFactory-bundle/pom.xml` die POM-Datei für das Paket.
 1. Klicken Sie im Editor auf die Registerkarte `pom.xml` und suchen Sie den Abschnitt project/dependencies. Fügen Sie den folgenden XML-Code zum Element „dependencies“ hinzu und speichern Sie dann die Datei:
 
    ```xml
@@ -528,7 +537,7 @@ Die folgende `LiveActionFactory`-Klasse implementiert eine `LiveAction`, die Nac
    mvn -PautoInstallPackage clean install
    ```
 
-   Die AEM-Datei `error.log` sollte angeben, dass das Bundle gestartet wurde.
+   Die AEM-Datei `error.log` sollte angeben, dass das Paket gestartet wurde.
 
    Beispiel: [https://localhost:4502/system/console/status-slinglogs](https://localhost:4502/system/console/status-slinglogs).
 
@@ -554,7 +563,7 @@ Erstellen Sie die MSM-Rollout-Konfiguration, die die von Ihnen erstellte `LiveAc
 
 Konfigurieren Sie die beim vorhergehenden Verfahren erstellte Rollout-Konfiguration so, dass sie die Klasse `ExampleLiveActionFactory` verwendet.
 
-1. Öffnen Sie CRXDE Lite. Beispiel: [https://localhost:4502/crx/de](https://localhost:4502/crx/de).
+1. Öffnen Sie CRXDE Lite, z. B. [https://localhost:4502/crx/de](https://localhost:4502/crx/de).
 1. Erstellen Sie den entsprechenden Knoten unter `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
    * **Name**: `exampleLiveAction`
@@ -632,7 +641,7 @@ Die Sprachliste ist unter dem Knoten `/libs/wcm/core/resources/languages` gespei
 
 So bearbeiten Sie die Sprachen:
 
-1. Öffnen Sie CRXDE Lite in Ihrem Webbrowser, z. B. [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
+1. Öffnen Sie CRXDE Lite in Ihrem Webbrowser; z. B. [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
 1. Wählen Sie den Ordner `/apps` aus und klicken Sie auf **Erstellen** und dann auf **Ordner erstellen**.
 
    Geben Sie dem neuen Ordner den Namen `wcm`.
@@ -655,11 +664,11 @@ Beispiel: Zwei neue Seiteneigenschaften werden hinzugefügt:
 
 * Kontakt-E-Mail:
 
-   * Diese Eigenschaft muss nicht ausgerollt werden, da sie in jedem Land (oder bei jeder Marke usw.) anders ausfällt.
+  * Diese Eigenschaft muss nicht ausgerollt werden, da sie in jedem Land (oder bei jeder Marke usw.) anders ausfällt.
 
 * Wichtigster visueller Stil:
 
-   * Die Projektanforderung gibt das Ausrollen dieser Eigenschaft vor, da sie (in der Regel) in allen Ländern (oder bei allen Marken usw.) gleich ist.
+  * Die Projektanforderung gibt das Ausrollen dieser Eigenschaft vor, da sie (in der Regel) in allen Ländern (oder bei allen Marken usw.) gleich ist.
 
 Dann müssen Sie Folgendes sicherstellen:
 
@@ -675,28 +684,28 @@ Ob für eine Seiteneigenschaft ein Rollout durchgeführt werden muss und daher b
 
 * `cq-msm-lockable`
 
-   * gilt für Elemente in einem Dialogfeld der Touch-optimierten Benutzeroberfläche
-   * erstellt das Ketten-Linksymbol im Dialogfeld
-   * lässt die Bearbeitung nur zu, wenn die Vererbung abgebrochen wird (also der Ketten-Link gebrochen ist)
-   * gilt nur für die erste untergeordnete Ebene der Ressource
-      * **Typ**: `String`
+  * gilt für Elemente in einem Dialogfeld der Touch-optimierten Benutzeroberfläche
+  * erstellt das Ketten-Linksymbol im Dialogfeld
+  * lässt die Bearbeitung nur zu, wenn die Vererbung abgebrochen wird (also der Ketten-Link gebrochen ist)
+  * gilt nur für die erste untergeordnete Ebene der Ressource
+    * **Typ**: `String`
 
-      * **Wert**: speichert den Namen der betroffenen Eigenschaft (und ist vergleichbar mit dem Wert der Eigenschaft `name`; z. B.
-        `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
+    * **Wert**: speichert den Namen der betroffenen Eigenschaft (und ist vergleichbar mit dem Wert der Eigenschaft `name`; z. B.
+      `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Wenn `cq-msm-lockable` definiert wurde, interagiert das Öffnen oder Schließen der Kettenverbindung mit MSM wie folgt:
 
 * wenn der Wert von `cq-msm-lockable` folgendermaßen ist:
 
-   * **Relativ** (beispielsweise `myProperty` oder `./myProperty`)
+  * **Relativ** (beispielsweise `myProperty` oder `./myProperty`)
 
-      * dann fügt er die Eigenschaft von `cq:propertyInheritanceCancelled` hinzu und entfernt sie.
+    * dann fügt er die Eigenschaft von `cq:propertyInheritanceCancelled` hinzu und entfernt sie.
 
-   * **Absolut** (beispielsweise `/image`)
+  * **Absolut** (beispielsweise `/image`)
 
-      * dann führt das Unterbrechen der Kette zu einem Abbruch der Vererbung, indem das Mixin `cq:LiveSyncCancelled` zu `./image` hinzugefügt und `cq:isCancelledForChildren` auf `true` gesetzt wird.
+    * dann führt das Unterbrechen der Kette zu einem Abbruch der Vererbung, indem das Mixin `cq:LiveSyncCancelled` zu `./image` hinzugefügt und `cq:isCancelledForChildren` auf `true` gesetzt wird.
 
-      * führt das Schließen der Kette zu einer erneuten Aktivierung der Vererbung
+    * führt das Schließen der Kette zu einer erneuten Aktivierung der Vererbung
 
 >[!NOTE]
 >

@@ -10,16 +10,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 5beeae99-7ef4-49a0-aaad-3ab07429ebc2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 99%
-
+source-wordcount: '504'
+ht-degree: 94%
 ---
-
 # Externalisieren von URLs{#externalizing-urls}
 
-In Adobe Experience Manager (AEM) ist der **Externalizer** ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad (z. B. `/path/to/my/page`) programmgesteuert in eine externe und absolute URL (z. B. `https://www.mycompany.com/path/to/my/page`) umwandeln können, indem der Pfad mit einem vorkonfigurierten DNS-Präfix versehen wird. 
+In Adobe Experience Manager (AEM) ist der **Externalizer** ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad (z. B. `/path/to/my/page`) programmgesteuert in eine externe und absolute URL (z. B. `https://www.mycompany.com/path/to/my/page`) umwandeln können, indem der Pfad mit einem vorkonfigurierten DNS-Präfix versehen wird.
 
 Dieser Dienst bietet einen zentralen Ort für die Konfiguration und Erstellung von externen URLs, weil eine Instanz ihre extern sichtbare URL nicht kennen kann, wenn sie hinter einer Web-Layer läuft, und weil manchmal ein Link außerhalb des Anfrageumfangs erstellt werden muss.
 
@@ -51,8 +60,8 @@ Definieren Sie eine Domain-Zuordnung für den **Externalizer**-Service wie folgt
 
    * **Schema** ist normalerweise „http“ oder „https“, kann aber auch z. B. „ftp“ sein.
 
-      * Verwenden Sie bei Bedarf HTTPS, um HTTPS-Links zu erzwingen.
-      * Es wird verwendet, wenn der Clientcode das Schema nicht überschreibt, wenn er die Externalisierung einer URL anfordert.
+     * Verwenden Sie bei Bedarf HTTPS, um HTTPS-Links zu erzwingen.
+     * Es wird verwendet, wenn der Clientcode das Schema nicht überschreibt, wenn er die Externalisierung einer URL anfordert.
 
    * **Server** ist der Host-Name (kann ein Domain-Name oder eine IP-Adresse sein).
    * **Port** (optional) ist die Portnummer.

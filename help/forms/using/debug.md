@@ -10,16 +10,31 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 1b38cc53-027c-4b3b-bda1-24c0049113aa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 100%
-
+source-wordcount: '844'
+ht-degree: 94%
 ---
-
 # Debugging von HTML5-Formularen {#debugging-html-forms}
 
-Dieses Dokument umfasst mehrere Fehlerbehebungsszenarien.  Für jedes Szenario werden einige Schritte beschrieben, um das Problem zu beheben.  Führen Sie diese Schritte aus und, falls das Problem weiterhin besteht, konfigurieren Sie die Protokollfunktion, um Protokolle zu erhalten und auf Fehler/Warnungen zu überprüfen.  Weitere Informationen zu Protokollen für HTML5 finden Sie unter [Generieren von Protokollen für HTML5-Formulare](/help/forms/using/enable-logs.md).
+Dieses Dokument umfasst mehrere Fehlerbehebungsszenarien. Für jedes Szenario werden einige Schritte beschrieben, um das Problem zu beheben. Führen Sie diese Schritte aus und, falls das Problem weiterhin besteht, konfigurieren Sie die Protokollfunktion, um Protokolle zu erhalten und auf Fehler/Warnungen zu überprüfen. Weitere Informationen zu Protokollen für HTML5 finden Sie unter [Generieren von Protokollen für HTML5-Formulare](/help/forms/using/enable-logs.md).
 
 ## Problem: Wenn ich das Formular rendere, erscheint die Ausnahmeseite „org.apache.sling.api.SlingException“. {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
 
@@ -28,7 +43,6 @@ Suchen Sie in den Ausnahmedetails nach dem Begriff **„caused by“**.
 Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch ist.
 
 Überprüfen Sie die folgenden Parameter:
-
 
 <table>
  <tbody>
@@ -46,7 +60,7 @@ Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>Absoluter Pfad der Datendatei, die mit der Vorlage zusammengeführt werden soll.<br /> Hinweis: Pfad definiert den absoluten Pfad der Datendatei.</td>
+   <td>Absoluter Pfad der Datendatei, die mit der Vorlage zusammengeführt wird.<br /> Hinweis: Der Pfad definiert den absoluten Pfad der Datendatei.</td>
   </tr>
   <tr>
    <td>data</td>
@@ -57,13 +71,13 @@ Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch
 
 ## Problem: Ein Formular kann nicht gerendert werden (eine Fehlermeldung wird angezeigt). {#problem-unable-to-render-form}
 
-1. Stellen Sie sicher, dass die angegebenen Parameter korrekt sind.  Detaillierte Informationen zu Parametern finden Sie unter [Render-Parameter](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page).
-1. Melden Sie sich bei CRX Package Manager an (unter http://&lt;server>:&lt;port>/crx/packmgr/index.jsp) und überprüfen Sie, ob die folgenden Pakete ordnungsgemäß installiert sind:
+1. Stellen Sie sicher, dass die angegebenen Parameter korrekt sind. Detaillierte Informationen zu Parametern finden Sie unter [Render-Parameter](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page).
+1. Melden Sie sich beim CRX-Paket-Manager an (unter http://&lt;server>:&lt;port>/crx/packmgr/index.jsp) und überprüfen Sie, ob die folgenden Pakete ordnungsgemäß installiert sind:
 
    * adobe-lc-forms-content-pkg-&lt;version>.zip
    * adobe-lc-forms-runtime-pkg-&lt;version>.zip
 
-1. Melden Sie sich bei CQ Web Console (Felix Console) an unter http://&lt;server>:&lt;port>/system/console/bundles.
+1. Melden Sie sich bei CQ-Web-Konsole (Felix Console) an unter http://&lt;server>:&lt;port>/system/console/bundles.
 
    Stellen Sie sicher, dass der Status der folgenden Pakete „active“ lautet:
 
@@ -108,8 +122,8 @@ Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch
 
 1. Fügen Sie in die Formular-URL den Abfrageparameter „debugClientLibs“ ein und legen Sie seinen Wert auf „true“ fest (z. B. http://&lt;Server>:&lt;Port>/content/xfaforms/profiles/test.html?contentRoot=&lt;eine Pfadangabe>&amp;template=&lt;Name der xdp-Datei>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
 1. Navigieren Sie im Desktop-Browser, z. B. Chrome, zu „Entwickler-Tools“ > „Konsole“.
-1. Öffnen Sie die Protokolle, um den Fehlertyp zu identifizieren.  Detaillierte Informationen zu Protokollen finden Sie unter [Protokolle für HTML5-Formulare](/help/forms/using/enable-logs.md).
-1. Wechseln Sie zu „Entwickler-Tools“ > „Konsole“.  Verwenden Sie die Stapelablaufverfolgung, um den Code zu finden, der den Fehler verursacht hat.  Debuggen Sie den Fehler, um das Problem zu lösen.
+1. Öffnen Sie die Protokolle, um den Fehlertyp zu identifizieren. Detaillierte Informationen zu Protokollen finden Sie unter [Protokolle für HTML5-Formulare](/help/forms/using/enable-logs.md).
+1. Wechseln Sie zu „Entwickler-Tools“ > „Konsole“. Verwenden Sie die Stapelablaufverfolgung, um den Code zu finden, der den Fehler verursacht hat. Debuggen Sie den Fehler, um das Problem zu lösen.
 
    >[!NOTE]
    >
@@ -133,7 +147,7 @@ Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch
    * Ordner für Sprachen
 
 1. Wenn eine der oben aufgeführten Dateien oder ein Ordner nicht vorhanden ist, installieren Sie das Paket **adobe-lc-forms-runtime-pkg-&lt;Version>.zip** erneut.
-1. Navigieren Sie zu dem Ordner, der denselben Namen wie das Gebietsschema hat, und überprüfen Sie seinen Inhalt.  Der Ordner muss die folgenden Dateien enthalten:
+1. Navigieren Sie zu dem Ordner, der denselben Namen wie das Gebietsschema hat, und überprüfen Sie seinen Inhalt. Der Ordner muss die folgenden Dateien enthalten:
 
    * I18N.js
    * js.txt
@@ -155,7 +169,7 @@ Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch
    Die wahrscheinliche Ursache ist, dass mindestens ein Parameter in der URL falsch ist.
 
    Überprüfen Sie die folgenden Parameter:
-Schritttext
+   Schritttext
 
 <table>
  <tbody>
@@ -173,7 +187,7 @@ Schritttext
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>Absoluter Pfad der Datendatei, die mit der Vorlage zusammengeführt werden soll.<br /> Hinweis: Pfad definiert den absoluten Pfad der Datendatei.</td>
+   <td>Absoluter Pfad der Datendatei, die mit der Vorlage zusammengeführt wird.<br /> Hinweis: Der Pfad definiert den absoluten Pfad der Datendatei.</td>
   </tr>
   <tr>
    <td>data</td>

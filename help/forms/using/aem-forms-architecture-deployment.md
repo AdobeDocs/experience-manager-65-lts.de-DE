@@ -9,13 +9,27 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 23ffbaa6-1bd9-48c3-afa3-19737bb15de0
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1547'
 ht-degree: 94%
-
 ---
-
 # Architektur und Bereitstellungstopologien für AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
 
 ## Gilt für {#applies-to}
@@ -36,9 +50,9 @@ Die Architektur für AEM Forms beinhaltet die folgenden Komponenten:
 * **Formular-Services:** Stellen formularbezogene Funktionen bereit, z. B. das Erstellen, Zusammenführen, Verteilen und Archivieren von PDF-Dokumenten, das Hinzufügen digitaler Signaturen zum Beschränken des Zugriffs auf Dokumente und das Dekodieren von Barcode-Formularen. Viele dieser Services sind öffentlich für die Nutzung durch benutzerdefinierten Code verfügbar, der in AEM bereitgestellt wird.
 * **Weblayer:** JSPs oder Servlets, die auf allgemeine Services oder Formular-Services aufgesetzt wurden und folgende Funktionalität bieten:
 
-   * **Authoring-Frontend**: Eine Benutzeroberfläche zum Erstellen und Verwalten von Formularen.
-   * **Formularwiedergabe und -übermittlungs-Frontend**: Eine Benutzeroberfläche für Endbenutzende von AEM Forms (z. B. Bürgerinnen und Bürger, die auf eine Behördenseite zugreifen). Dadurch werden Formularwiedergabe (Formular in einem Webbrowser anzeigen) und Sendefunktionen bereitgestellt.
-   * **REST APIs**: JSPs und Servlets exportieren eine Teilmenge der Formula-Services zur Nutzung durch HTTP-basierte Clients wie das SDK für mobile Formulare.
+  * **Authoring-Frontend**: Eine Benutzeroberfläche zum Erstellen und Verwalten von Formularen.
+  * **Formularwiedergabe und -übermittlungs-Frontend**: Eine Benutzeroberfläche für Endbenutzende von AEM Forms (z. B. Bürgerinnen und Bürger, die auf eine Behördenseite zugreifen). Dadurch werden Formularwiedergabe (Formular in einem Webbrowser anzeigen) und Sendefunktionen bereitgestellt.
+  * **REST APIs**: JSPs und Servlets exportieren eine Teilmenge der Formula-Services zur Nutzung durch HTTP-basierte Clients wie das SDK für mobile Formulare.
 
 **AEM Forms on OSGi:** Bei einer AEM Forms on OSGi-Umgebung handelt es sich um ein standardmäßiges AEM-Autor- oder AEM-Veröffentlichungspaket, auf dem das AEM Forms-Paket bereitgestellt ist. Sie können AEM Forms on OSGi in [Einzel-Server-Umgebungen, Farm- und Cluster-Setups ausführen](/help/sites-deploying/recommended-deploys.md). Die Cluster-Setup ist nur für AEM Autoreninstanzen verfügbar.
 

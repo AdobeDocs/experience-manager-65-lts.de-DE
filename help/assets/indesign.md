@@ -1,17 +1,29 @@
 ---
-title: Integration von  [!DNL Assets]  mit  [!DNL InDesign Server]
-description: Erfahren Sie mehr über die Integration von  [!DNL Adobe Experience Manager Assets]  mit  [!DNL Adobe InDesign Server].
+title: Integration von [!DNL Assets] mit [!DNL InDesign Server]
+description: Erfahren Sie, wie Sie [!DNL Adobe Experience Manager Assets] mit [!DNL Adobe InDesign Server] integrieren.
 role: Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: f0db5ec6-45ea-418e-ae5f-e6e307a40a38
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1587'
 ht-degree: 97%
-
 ---
-
 # Integration von [!DNL Adobe Experience Manager Assets] mit [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] verwendet:
@@ -41,9 +53,9 @@ Dieses Befehlsskript führt folgende Aktionen aus:
    * Ruft die INDD-Datei ab.
    * Führt [!DNL InDesign Server]-Befehle aus:
 
-      * Struktur, Text und alle Mediendateien werden extrahiert.
-      * PDF- und JPG-Ausgabeformate werden generiert.
-      * HTML- und IDML-Ausgabeformate werden generiert.
+     * Struktur, Text und alle Mediendateien werden extrahiert.
+     * PDF- und JPG-Ausgabeformate werden generiert.
+     * HTML- und IDML-Ausgabeformate werden generiert.
 
    * Veröffentlicht die resultierenden Dateien wieder in [!DNL Experience Manager Assets].
 
@@ -136,7 +148,7 @@ Anpassungen können Sie im Schritt **[!UICONTROL Extraktion von Seiten]** auf de
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
 * **Handler zur Extraktion von Seite**: Wählen Sie in der Dropdown-Liste den zu verwendenden Handler aus. Ein Extraktions-Handler arbeitet mit einem bestimmten Ausgabeformat, das mit einem entsprechenden `RenditionPicker` ausgewählt wird (siehe `ExtractionHandler`-API). Bei einer standardmäßigen [!DNL Experience Manager]-Installation sind folgende Optionen verfügbar:
-   * IDML-Export-Extraktions-Handler: Bearbeitet die `IDML`-Ausgabedarstellung, die im Schritt „MediaExtract“ generiert wurde.
+  * IDML-Export-Extraktions-Handler: Bearbeitet die `IDML`-Ausgabedarstellung, die im Schritt „MediaExtract“ generiert wurde.
 
 * **Seitenname**: Geben Sie den Namen an, den Sie der resultierenden Datei zuweisen möchten. Wenn Sie das Feld leer lassen, wird als Name „Seite“ gewählt (oder eine Ableitung, falls „Seite“ bereits vorhanden ist).
 
@@ -163,7 +175,7 @@ Anpassungen können Sie im Schritt **[!UICONTROL Extraktion von Seiten]** auf de
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
    * **IDS-Pool**
-Die SOAP-Endpunkte, die für die Kommunikation mit dem [!DNL InDesign Server] verwendet werden sollen. Sie können Elemente nach Bedarf hinzufügen, entfernen und ordnen.
+     Die SOAP-Endpunkte, die für die Kommunikation mit dem [!DNL InDesign Server] verwendet werden sollen. Sie können Elemente nach Bedarf hinzufügen, entfernen und ordnen.
 
 1. Klicken Sie zum Speichern auf „OK“.
 

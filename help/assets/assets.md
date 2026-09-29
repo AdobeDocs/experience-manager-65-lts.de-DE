@@ -1,18 +1,31 @@
 ---
-title: Einführung in  [!DNL Adobe Experience Manager Assets]
+title: Einführung in [!DNL Adobe Experience Manager Assets]
 description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets in Experience Manager. In diesen Handbüchern werden Best Practices, Barrierefreiheitsfunktionen und die Verwendung von AEM 6.5 LTS-Assets beschrieben.
 hide: true
 feature: Asset Management
 role: Leader,Developer,User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 2f2eb576-4924-4314-b348-c4b290a57fe3
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 100%
-
 ---
-
 # Über [!DNL Adobe Experience Manager Assets] als DAM-Lösung {#administering-assets}
 
 | Version | Artikel-Link |
@@ -66,9 +79,9 @@ Bei der Arbeit mit digitalen Assets in [!DNL Experience Manager] ist es hilfreic
 
 * **Metadaten**: [!DNL Assets] verfügen über Metadaten, darunter Autorin oder Autor, Ablaufdatum, Digital Rights Management(DRM)-Informationen usw. Metadaten sind unter der Zugangssteuerung zu finden. [!DNL Assets] unterstützt standardmäßig die folgenden allgemeinen Metadatenschemata:
 
-   * Dublin Core: einschließlich Autorin oder Autor, Beschreibung, Datum, Thema usw.
-   * IPTC: einschließlich Ereignis, Modell, Ort usw.
-   * WCM: einschließlich Seiteneigenschaften, [!UICONTROL Einschaltzeit] und [!UICONTROL Ausschaltzeit] usw.
+  * Dublin Core: einschließlich Autorin oder Autor, Beschreibung, Datum, Thema usw.
+  * IPTC: einschließlich Ereignis, Modell, Ort usw.
+  * WCM: einschließlich Seiteneigenschaften, [!UICONTROL Einschaltzeit] und [!UICONTROL Ausschaltzeit] usw.
 
 * **Tagging**: [!DNL Assets] können mit Tags versehen und klassifiziert werden. Siehe [Organisieren von Assets](/help/assets/organize-assets.md).
 

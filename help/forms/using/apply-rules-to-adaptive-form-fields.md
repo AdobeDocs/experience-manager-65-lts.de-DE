@@ -7,13 +7,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: cb00bc09-580a-4c73-b202-d4110fa2f645
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 96%
-
+source-wordcount: '1176'
+ht-degree: 99%
 ---
-
 # Schulung: Wenden Sie Regeln auf adaptive Formularfelder an {#tutorial-apply-rules-to-adaptive-form-fields}
 
 ![06-apply-rules-to-adaptive-form_main](assets/06-apply-rules-to-adaptive-form_main.png)
@@ -22,23 +38,23 @@ Dieses Tutorial ist ein Teil der Serie [Erstellen Ihres ersten adaptiven Formula
 
 ## Über das Tutorial {#about-the-tutorial}
 
-Sie können Regeln verwenden, um einem adaptiven Formular Interaktivität, Geschäftslogik und intelligente Validierungen hinzuzufügen. Adaptive Formulare verfügen über einen integrierten Regeleditor. Der Regeleditor bietet eine Drag-and-Drop-Funktionalität, ähnlich wie bei Einführungen.  Die Drag-and-Drop-Methode ist die schnellste und einfachste Methode zum Erstellen von Regeln.  Der Regeleditor bietet außerdem ein Code-Fenster für Benutzende, die ihre Programmierfähigkeiten testen oder die Regeln weiterentwickeln möchten.
+Sie können Regeln verwenden, um einem adaptiven Formular Interaktivität, Geschäftslogik und intelligente Validierungen hinzuzufügen. Adaptive Formulare verfügen über einen integrierten Regeleditor. Der Regeleditor bietet eine Drag-and-Drop-Funktionalität, ähnlich wie bei Einführungen. Die Drag-and-Drop-Methode ist die schnellste und einfachste Methode zum Erstellen von Regeln. Der Regeleditor bietet außerdem ein Code-Fenster für Benutzende, die ihre Programmierfähigkeiten testen oder die Regeln weiterentwickeln möchten.
 
 Unter [Regeleditor für adaptive Formulare](/help/forms/using/rule-editor.md) erfahren Sie mehr über den Regeleditor.
 
-Am Ende der Schulung lernen Sie Regeln zu erstellen, um Folgendes zu tun: 
+Am Ende der Schulung lernen Sie Regeln zu erstellen, um Folgendes zu tun:
 
 * Aufrufen eines Formulardatenmodell-Dienstes zum Abrufen von Daten aus der Datenbank
 * Aufrufen eines Formulardatenmodell-Dienstes zum Hinzufügen von Daten zur Datenbank
 * Ausführen einer Validierungsprüfung und Anzeigen von Fehlermeldungen
 
-Interaktive GIF-Bilder am Ende jedes Abschnitts der Schulung helfen Ihnen dabei, die Funktionalität des Formulars, das Sie gerade erstellen, schnell zu lernen und zu validieren. 
+Interaktive GIF-Bilder am Ende jedes Abschnitts der Schulung helfen Ihnen dabei, die Funktionalität des Formulars, das Sie gerade erstellen, schnell zu lernen und zu validieren.
 
 ## Schritt 1: Abrufen eines benutzerdefinierten Eintrags aus der Datenbank {#retrieve-customer-record}
 
 Sie haben ein Formulardatenmodell erstellt, wie im Artikel [Formulardatenmodell erstellen](/help/forms/using/create-form-data-model.md) beschrieben. Jetzt können Sie den Regeleditor verwenden, um die Formulardatenmodelldienste aufzurufen, um Informationen aus der Datenbank abzurufen und ihr hinzuzufügen.
 
-Jeder Kundin und jedem Kunden ist eine eindeutige Kunden-ID-Nummer zugeordnet, anhand derer sich relevante Kundendaten in einer Datenbank identifizieren lassen.  Das folgende Verfahren verwendet die Kunden-ID, um Informationen aus der Datenbank abzurufen:
+Jeder Kundin und jedem Kunden ist eine eindeutige Kunden-ID-Nummer zugeordnet, anhand derer sich relevante Kundendaten in einer Datenbank identifizieren lassen. Das folgende Verfahren verwendet die Kunden-ID, um Informationen aus der Datenbank abzurufen:
 
 1. Öffnen Sie Ihr adaptives Formular zum Bearbeiten.
 
@@ -53,7 +69,7 @@ Jeder Kundin und jedem Kunden ist eine eindeutige Kunden-ID-Nummer zugeordnet, a
 
    ![whencustomeridischanged](assets/whencustomeridischanged.png)
 
-1. Wählen Sie im Abschnitt **[!UICONTROL DANN]** die Option **[!UICONTROL Dienst aufrufen]** aus der Dropdown-Liste **[!UICONTROL Aktion auswählen]** aus. 
+1. Wählen Sie im Abschnitt **[!UICONTROL DANN]** die Option **[!UICONTROL Dienst aufrufen]** aus der Dropdown-Liste **[!UICONTROL Aktion auswählen]** aus.
 1. Wählen Sie den Dienst **[!UICONTROL Versandadresse abrufen]** aus der Dropdown-Liste **[!UICONTROL Auswählen]** aus.
 1. Ziehen Sie das Feld **[!UICONTROL Kunden-ID]** per Drag-and-Drop von der Registerkarte „Formularobjekte“ in das Feld **[!UICONTROL Objekt hier einfügen oder auswählen]** im **[!UICONTROL INPUT]**-Bereich.
 
@@ -95,7 +111,7 @@ Nachdem die Kundendaten aus der Datenbank abgerufen wurden, können Sie die Vers
    >
    >Ziehen Sie die Felder **[!UICONTROL Name]** und **[!UICONTROL Kunden-ID]** nicht auf die entsprechende tablename.property (z. B. customerdetails.name). Der Name und die ID des Kunden sollten nicht versehentlich aktualisiert werden.
 
-1. Ziehen Sie das Feld **[!UICONTROL Kunden-ID]** per Drag-and-Drop von der Registerkarte [!UICONTROL Formularobjekte] in das Feld „ID“ im Feld **[!UICONTROL INPUT]**. Felder ohne vorangestellten Tabellennamen (in diesem Anwendungsbeispiel das Feld „customerdetails„) dienen als Suchparameter für den Aktualisierungsdienst. Das Feld **[!UICONTROL id]** in diesem Anwendungsfall identifiziert einen Datensatz in der Tabelle **customerdetails**.
+1. Ziehen Sie das Feld **[!UICONTROL Kunden-ID]** per Drag-and-Drop von der Registerkarte [!UICONTROL Formularobjekte] in das Feld „ID“ im Feld **[!UICONTROL INPUT]**. Felder ohne vorangestellten Tabellennamen (in diesem Anwendungsbeispiel das Feld „customerdetails“) dienen als Suchparameter für den Aktualisierungsservice. Das Feld **[!UICONTROL ID]** in diesem Anwendungsfall identifiziert einen Eintrag in der Tabelle **customerdetails**.
 1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Regel zu speichern. Wählen Sie im Regeleditor-Fenster die Option **[!UICONTROL Schließen]** aus.
 1. Zeigen Sie das adaptive Formular in der Vorschau an. Rufen Sie Details einer Kundin oder eines Kunden ab, aktualisieren Sie die Versandadresse und senden Sie das Formular ab. Wenn Sie Details derselben Person erneut abrufen, wird die aktualisierte Versandadresse angezeigt.
 
@@ -103,7 +119,7 @@ Nachdem die Kundendaten aus der Datenbank abgerufen wurden, können Sie die Vers
 
 Sie sollten eine Validierung des Formulars durchführen, um sicherzustellen, dass die im Formular eingegebenen Daten korrekt sind und im Falle fehlerhafter Daten eine Fehlermeldung angezeigt wird. Wenn beispielsweise eine nicht vorhandene Kunden-ID in das Formular eingegeben wird, sollte eine Fehlermeldung angezeigt werden.
 
-Adaptive Formulare bieten mehrere Komponenten mit integrierten Validierungen, z. B. E-Mail, sowie numerische Felder, die Sie für häufige Anwendungsfälle verwenden können. Verwenden Sie den Regeleditor für erweiterte Anwendungsfälle, um z. B. eine Fehlermeldung anzuzeigen, wenn die Datenbank null (0) Einträge (keine Einträge) zurückgibt. 
+Adaptive Formulare bieten mehrere Komponenten mit integrierten Validierungen, z. B. E-Mail, sowie numerische Felder, die Sie für häufige Anwendungsfälle verwenden können. Verwenden Sie den Regeleditor für erweiterte Anwendungsfälle, um z. B. eine Fehlermeldung anzuzeigen, wenn die Datenbank null (0) Einträge (keine Einträge) zurückgibt.
 
 Das folgende Verfahren zeigt, wie eine Regel erstellt wird, um eine Fehlermeldung anzuzeigen, wenn die im Formular eingegebene Kunden-ID nicht in der Datenbank vorhanden ist. Die Regel bringt auch den Fokus auf das Feld **[!UICONTROL Kunden-ID]** und setzt es zurück. Die Regel verwendet [die dataIntegrationUtils-API des Formulardatenmodell-Services](/help/forms/using/invoke-form-data-model-services.md), um zu überprüfen, ob die Kunden-ID in der Datenbank vorhanden ist.
 

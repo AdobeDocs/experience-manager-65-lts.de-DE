@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 8d53072b-826d-4ff4-843b-09204fb5a455
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1468'
 ht-degree: 94%
-
 ---
-
 # Anpassung des Seiten-Authorings{#customizing-page-authoring}
 
 >[!CAUTION]
@@ -28,12 +37,12 @@ Adobe Experience Manager (AEM) bietet verschiedene Mechanismen, mit denen Sie di
 
   Mit Client-Bibliotheken können Sie die Standardimplementierung um neue Funktionen erweitern und gleichzeitig Standardfunktionen, -objekte und -methoden wiederverwenden. Bei der Anpassung können Sie unter `/apps.` Ihre eigene Clientbibliothek erstellen. Die neue Clientbibliothek muss:
 
-   * die Authoring-clientlib `cq.authoring.editor.sites.page` als Abhängigkeit aufweisen
-   * der entsprechenden `cq.authoring.editor.sites.page.hook`-Kategorie angehören
+  * die Authoring-clientlib `cq.authoring.editor.sites.page` als Abhängigkeit aufweisen
+  * der entsprechenden `cq.authoring.editor.sites.page.hook`-Kategorie angehören
 
 * Überlagerungen
 
-  Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, Standardfunktionen (in `/libs`) mit Ihren eigenen benutzerdefinierten Funktionen (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen:1 ist keine 1:1-Kopie des Originals erforderlich, da der [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) das Vererben zulässt.
+  Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, Standardfunktionen (in `/libs`) mit Ihren eigenen benutzerdefinierten Funktionen (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da der [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) das Vererben zulässt.
 
 >[!NOTE]
 >
@@ -151,12 +160,12 @@ Bei der Standardinstallation von AEM:
 
      Beispiel:
 
-      * `/libs/foundation/components/text/cq:editConfig`
-      * `/libs/foundation/components/image/cq:editConfig`
+     * `/libs/foundation/components/text/cq:editConfig`
+     * `/libs/foundation/components/image/cq:editConfig`
 
-         * property: `editorType`
+       * property: `editorType`
 
-           Definiert die Art des Inline-Editors, der verwendet wird, wenn die Bearbeitung im Kontext für diese Komponente ausgelöst wird, z. B., `text`, `textimage`, `image` und `title`.
+         Definiert die Art des Inline-Editors, der verwendet wird, wenn die Bearbeitung im Kontext für diese Komponente ausgelöst wird, z. B., `text`, `textimage`, `image` und `title`.
 
 1. Weitere Einstellungen des Editors können mit einem `config`-Knoten, der Konfigurationen enthält, sowie einem weiteren `plugin`-Knoten mit notwendigen Plug-in-Konfigurationsdetails konfiguriert werden.
 

@@ -11,13 +11,25 @@ role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9eba1e3f-9251-445e-b791-2be0a92aebd1
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: e00c7c12-7035-41fe-ad76-1ec82c8c3f01
+    internal-label: Brand Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 100%
-
 ---
-
 # Veröffentlichen von Assets in Brand Portal {#publish-assets-to-brand-portal}
 
 | Version | Artikel-Link |
@@ -51,9 +63,9 @@ Um die ausgewählten Assets in Brand Portal zu veröffentlichen, führen Sie ein
 
 * Wählen Sie in der Symbolleiste **[!UICONTROL Veröffentlichung verwalten]** aus.
 
-   1. Wählen Sie dann unter **[!UICONTROL Aktion]** die Option **[!UICONTROL In Brand Portal veröffentlichen]** und unter **[!UICONTROL Zeitplan]** die Option **[!UICONTROL Jetzt]** aus. Klicken Sie auf **[!UICONTROL Weiter]**.
+  1. Wählen Sie dann unter **[!UICONTROL Aktion]** die Option **[!UICONTROL In Brand Portal veröffentlichen]** und unter **[!UICONTROL Zeitplan]** die Option **[!UICONTROL Jetzt]** aus. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-   2. Bestätigen Sie Ihre Auswahl unter **[!UICONTROL Bereich]** und klicken Sie auf **[!UICONTROL In Brand Portal veröffentlichen]**.
+  2. Bestätigen Sie Ihre Auswahl unter **[!UICONTROL Bereich]** und klicken Sie auf **[!UICONTROL In Brand Portal veröffentlichen]**.
 
 Eine Meldung erscheint, die besagt, dass die Assets zur Veröffentlichung in Brand Portal in die Warteschlange gestellt wurden. Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um die veröffentlichten Assets zu sehen.
 

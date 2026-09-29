@@ -5,13 +5,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 338ea82e-c248-4118-9d42-e268d6396e65
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2116'
 ht-degree: 100%
-
 ---
-
 # Grundlegende Konfigurationskonzepte{#basic-configuration-concepts}
 
 Alle Parameter von Adobe Experience Manager (AEM) weisen bei der Installation Standardeinstellungen auf. Dadurch ist die Software sofort einsatzbereit. Sie können AEM jedoch für Ihre eigenen spezifischen Anforderungen konfigurieren.
@@ -26,7 +35,7 @@ Abhängig von der spezifischen Konfiguration können diese Änderungen mithilfe 
 
 * **Adobe CQ Web-Konsole**
 
-  Dies ist ein Standardspeicherort für die Konfiguration von OSGi-Bundles und -Services.
+  Dies ist ein Standardspeicherort für die Konfiguration von OSGi-Paketen und -Services.
 
   Weitere Informationen und empfohlene Vorgehensweisen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
@@ -158,9 +167,9 @@ Weitere Informationen finden Sie unter [Replikation](/help/sites-deploying/repli
 
 ### OSGi-Konfigurationseinstellungen {#osgi-configuration-settings}
 
-[OSGi](https://www.osgi.org/) ist ein wesentlicher Bestandteil der Technologien von AEM. Es wird zur Steuerung der zusammengesetzten AEM-Bundles und ihrer Konfiguration verwendet.
+[OSGi](https://www.osgi.org/) ist ein wesentlicher Bestandteil der Technologien von AEM. Es wird zur Steuerung der zusammengesetzten AEM-Pakete und ihrer Konfiguration verwendet.
 
-Unter [OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md) finden Sie eine Liste der verschiedenen Bundles, die für die Projektimplementierung relevant sind (aufgelistet nach Bundle). Nicht alle aufgeführten Einstellungen müssen angepasst werden. Einige werden hier nur zum besseren Verständnis von AEM erwähnt.
+Unter [OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md) finden Sie eine Liste der verschiedenen Pakete, die für die Projektimplementierung relevant sind (aufgelistet nach Paket). Nicht alle aufgeführten Einstellungen müssen angepasst werden. Einige werden hier nur zum besseren Verständnis von AEM erwähnt.
 
 Bei der Verwendung von AEM gibt es mehrere Methoden zur Verwaltung der Konfigurationseinstellungen für solche Dienste. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
@@ -299,11 +308,11 @@ Page-Impressions werden in der Spalte **Impressions** der SiteAdmin-Konsole der 
 
 * In der Veröffentlichungsinstanz:
 
-   * [Day CQ WCM-Seitenstatistiken](/help/sites-deploying/osgi-configuration-settings.md)
+  * [Day CQ WCM-Seitenstatistiken](/help/sites-deploying/osgi-configuration-settings.md)
 
 * In der Autoreninstanz:
 
-   * [Adobe Page Impressions Tracker](/help/sites-deploying/osgi-configuration-settings.md)
+  * [Adobe Page Impressions Tracker](/help/sites-deploying/osgi-configuration-settings.md)
 
 >[!CAUTION]
 >

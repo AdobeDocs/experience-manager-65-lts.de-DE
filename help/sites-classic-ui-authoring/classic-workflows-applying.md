@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: d2c16908-18c2-4ab9-a1da-6fc072c94bf9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 99%
-
+source-wordcount: '255'
+ht-degree: 98%
 ---
-
 # Anwenden von Workflows auf Seiten{#applying-workflows-to-pages}
 
 Wenn Sie den Workflow anwenden, geben Sie die folgenden Informationen an:
@@ -25,8 +34,8 @@ Wenn Sie den Workflow anwenden, geben Sie die folgenden Informationen an:
   Sie können jeden beliebigen Workflow anwenden (auf den Sie Zugriff haben, wie von Ihrem AEM-Administrator zugewiesen).
 * Optional:
 
-   * Ein Kommentar, der Auskunft darüber gibt, warum Sie den Workflow gestartet haben.
-   * Ein Titel, der dabei hilft, die Workflow-Instanz im Posteingang eines Benutzers zu identifizieren.
+  * Ein Kommentar, der Auskunft darüber gibt, warum Sie den Workflow gestartet haben.
+  * Ein Titel, der dabei hilft, die Workflow-Instanz im Posteingang eines Benutzers zu identifizieren.
 
 >[!NOTE]
 >
@@ -42,7 +51,7 @@ Die Spalte **Status** in der **Websites**-Konsole gibt an, ob ein Workflow auf e
 
 ### Starten eines Workflows aus der Websites-Konsole {#starting-a-workflow-from-the-websites-console}
 
-1. Öffnen Sie die Websites-Konsole. ([http://localhost:4502/SiteAdmin](http://localhost:4502/siteadmin))
+1. Öffnen Sie die Websites-Konsole. ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin))
 1. Wählen Sie in der Website-Struktur das übergeordnete Element der Seite aus, auf die Sie den Workflow anwenden möchten.
 1. Wählen Sie in der Seitenliste die Seite aus und klicken Sie dann auf „Workflow“.
 1. Wählen Sie im Dialogfeld „Workflow starten“ den Workflow aus, der angewendet werden soll. Geben Sie optional einen Kommentar und einen Titel ein. Klicken Sie dann auf „Starten“.

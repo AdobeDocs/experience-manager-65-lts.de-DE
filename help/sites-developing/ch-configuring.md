@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
 exl-id: 00dfc10f-6cdf-4c79-b11e-85c801425858
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1751'
 ht-degree: 100%
-
 ---
-
 # Konfigurieren von ContextHub {#configuring-contexthub}
 
 ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextdaten. Ausführlichere Informationen zu ContextHub finden Sie in der [Entwicklerdokumentation](/help/sites-developing/contexthub.md). In der Touch-optimierten Benutzeroberfläche wird [Client Context](/help/sites-administering/client-context.md) durch ContextHub ersetzt.
@@ -50,7 +61,7 @@ Der Service kann entweder mithilfe der [Web-Konsole](/help/sites-deploying/confi
 * **Web-Konsole:** Um die Benutzeroberfläche anzuzeigen, wählen Sie die Eigenschaft „Benutzeroberfläche anzeigen“ aus. Um die Benutzeroberfläche auszublenden, heben Sie die Auswahl dieser Eigenschaft aus.
 * **JCR-Knoten:** Legen Sie die boolesche Eigenschaft `com.adobe.granite.contexthub.show_ui` auf `true` fest, um die Benutzeroberfläche anzuzeigen. Legen Sie die Eigenschaft auf `false` fest, um die Benutzeroberfläche auszublenden.
 
-Wenn die ContextHub-Benutzeroberfläche angezeigt wird, erscheint sie nur auf den Seiten von AEM-Authoring-Instanzen. Auf Seiten von Publishing-Instanzen wird die Benutzeroberfläche nicht angezeigt.
+Wenn die ContextHub-Benutzeroberfläche angezeigt wird, erscheint sie nur auf den Seiten von AEM-Autoreninstanzen. Auf Seiten von Veröffentlichungsinstanzen wird die Benutzeroberfläche nicht angezeigt.
 
 ## Hinzufügen von ContextHub-UI-Modi und -Modulen {#adding-contexthub-ui-modes-and-modules}
 
@@ -256,7 +267,7 @@ Verwenden Sie CRXDE Lite, um die Eigenschaft `debug` unter auf **true** festzule
 
 Im unbeaufsichtigten Modus werden alle Debug-Informationen unterdrückt. Im Gegensatz zur normalen Debug-Option, die für jede ContextHub-Konfiguration einzeln festgelegt werden kann, ist der unbeaufsichtigte Modus eine globale Einstellung, die Vorrang vor allen Debug-Einstellungen auf der Ebene der ContextHub-Konfiguration hat.
 
-Dies ist für Ihre Publishing-Instanz hilfreich, für die Sie keine Debug-Informationen benötigen. Da es sich um eine globale Einstellung handelt, wird sie per OSGi aktiviert.
+Dies ist für Ihre Veröffentlichungsinstanz hilfreich, für die Sie keine Debug-Informationen benötigen. Da es sich um eine globale Einstellung handelt, wird sie per OSGi aktiviert.
 
 1. Öffnen Sie die **Konfiguration der Adobe Experience Manager-Web-Konsole** unter `http://<host>:<port>/system/console/configMgr`.
 1. Suchen Sie nach **Adobe Granite ContextHub**.

@@ -9,13 +9,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 1e3c4724-9dbd-4e39-a0fc-efe7fd8906cd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '690'
 ht-degree: 100%
-
 ---
-
 # Suchen nach Formularen und Assets{#searching-for-forms-and-assets}
 
 Sie können mithilfe einer Textzeichenfolge mit oder ohne Platzhalter nach Formularen oder Formular-Assets suchen. Sie können Ihre Suche auch mithilfe der Kriterien einschränken, die in verschiedenen Kategorien im Suchbereich verfügbar sind.
@@ -28,7 +42,7 @@ Klicken Sie auf ![aem6forms_search](assets/aem6forms_search.png), um das Suchfel
 
 Bei einer einfachen Suche handelt es sich um die Standardsuche, die ohne Angabe von Filtern ausgeführt wird. Eine Volltextsuche in Metadateneigenschaften wird von AEM Forms durchgeführt.
 
-Um eine einfache Suche durchzuführen, geben Sie in das Textfeld die Suchanfrage ein und drücken Sie die Enter-Taste. Sie können auch das Platzhalterzeichen (&#42;) eingeben, um eine beliebige Anzahl von Zeichen zu ersetzen.
+Um eine einfache Suche durchzuführen, geben Sie in das Textfeld die Suchabfrage ein und drücken Sie die Enter-Taste. Sie können auch das Platzhalterzeichen (&#42;) eingeben, um eine beliebige Anzahl von Zeichen zu ersetzen.
 
 Adobe Experience Manager sucht in den Metadateneigenschaften nach dem eingegebenen Text und gibt die entsprechenden Ergebnisse wieder. Wenn Sie mehr als ein Wort eingeben, wird beim Suchvorgang für den gesamten Text nach Übereinstimmungen gesucht.
 
@@ -38,14 +52,14 @@ Beachten Sie bei der einfachen Suche die folgenden Punkte:
 * Wenn Sie mehr als ein Wort eingeben, wird beim Suchvorgang für den gesamten Text nach Übereinstimmungen gesucht.
 * Bei der Suche wird die Groß-/Kleinschreibung nicht beachtet. Wenn Sie z. B. `geometrixx` eingeben, werden Assets mit den Titeln `Geometrixx`, `GEOMETRIXX` und `GeoMetRixx` in den Suchergebnissen angezeigt.
 
-* Unvollständige Übereinstimmungen mit einem Wort werden nicht unterstützt. Um mit unvollständigen Zeichenfolgen zu suchen, verwenden Sie den Platzhalter &#42;. Wenn bei der Suchanfrage jedoch eine Übereinstimmung mit einem vollständigen Wort vorliegt, wird das entsprechende Formular bzw. Asset angezeigt.
-* Zusätzliche Leerzeichen werden berücksichtigt und während der Suche nicht entfernt. Zum Beispiel ist `My form` nicht die gleiche Suchanfrage wie `My form`.
+* Unvollständige Übereinstimmungen mit einem Wort werden nicht unterstützt. Um mit unvollständigen Zeichenfolgen zu suchen, verwenden Sie den Platzhalter &#42;. Wenn bei der Suchabfrage jedoch eine Übereinstimmung mit einem vollständigen Wort vorliegt, wird das entsprechende Formular bzw. Asset angezeigt.
+* Zusätzliche Leerzeichen werden berücksichtigt und während der Suche nicht entfernt. Zum Beispiel ist `My form` nicht die gleiche Suchabfrage wie `My form`.
 
 * Wenn sich die Daten von den Anzeigewerten der Felder in den Metadateneigenschaften abweichen, können Sie Anzeigewerte als Suchparameter nicht verwenden. Beispielsweise können Sie keine Suche auf Basis eines Status, z. B. „geändert“ oder „veröffentlicht“, durchführen, da diese Eigenschaften in einem anderen Format gespeichert werden.
 
 ## Erweiterte Suche {#advanced-search}
 
-In den Suchkriterien können Sie neben der Suchanfrage einige Suchparameter angeben, um die einfache Suche effizienter und fokussierter zu gestalten.
+In den Suchkriterien können Sie neben der Suchabfrage einige Suchparameter angeben, um die einfache Suche effizienter und fokussierter zu gestalten.
 
 ![Suchfeld und Parameter bzw. Filter für die AEM-Formular- und die AEM-Asset-Suche](assets/search_forms_assets.png)
 

@@ -1,18 +1,32 @@
 ---
 title: '[!DNL Assets]-Proxy-Entwicklung'
-description: Ein Proxy ist eine [!DNL Experience Manager] -Instanz, die Proxy-Worker verwendet, um Aufträge zu verarbeiten. Erfahren Sie, wie Sie einen  [!DNL Experience Manager] -Proxy konfigurieren und einen benutzerdefinierten Proxy-Worker entwickeln können, und erhalten Sie Informationen zu unterstützten Vorgängen und Proxy-Komponenten.
+description: Ein Proxy ist eine [!DNL Experience Manager], die Proxy-Worker verwendet, um Aufträge zu verarbeiten. Erfahren Sie, wie Sie einen [!DNL Experience Manager]-Proxy konfigurieren und einen benutzerdefinierten Proxy-Worker entwickeln können, und lernen Sie unterstützte Vorgänge und Proxy-Komponenten kennen.
 contentOwner: AG
 role: Admin,Developer
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
 exl-id: 8de16e9d-40b6-49d2-9e6b-1aba13137d78
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+subfeature_v2:
+  - id: cf4d26de-6586-4a7a-8ccb-6e8a29ee21ea
+    internal-label: Proxy workers
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 98%
-
+source-wordcount: '856'
+ht-degree: 95%
 ---
-
 # [!DNL Assets]-Proxy-Entwicklung {#assets-proxy-development}
 
 [!DNL Adobe Experience Manager Assets] verwendet einen Proxy, um die Verarbeitung bestimmter Aufgaben zu verteilen.
@@ -145,13 +159,13 @@ Für die Einrichtung eines eigenen benutzerdefinierten Proxy-Workers müssen Sie
 
 * Einrichten und Implementieren (mit Sling Eventing):
 
-   * ein Thema für den benutzerdefinierten Auftrag
-   * einen Ereignis-Handler für benutzerdefinierte Aufträge
+  * ein Thema für den benutzerdefinierten Auftrag
+  * einen Ereignis-Handler für benutzerdefinierte Aufträge
 
 * Verwenden Sie dann die JobService-API, um:
 
-   * benutzerdefinierten Auftrag an Proxy senden
-   * Ihren Auftrag zu verwalten
+  * benutzerdefinierten Auftrag an Proxy senden
+  * Ihren Auftrag zu verwalten
 
 * Wenn Sie den Proxy aus einem Workflow verwenden möchten, müssen Sie einen benutzerdefinierten, externen Schritt mithilfe der WorkflowExternalProcess-API und der JobService-API implementieren.
 

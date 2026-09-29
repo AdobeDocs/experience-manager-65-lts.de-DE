@@ -5,14 +5,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 98%
-
 ---
-
 # Strategie für Sicherung und Wiederherstellung in einer Cluster-Umgebung {#strategy-for-backup-and-restore-in-a-clustered-environment}
 
 >[!NOTE]
@@ -138,7 +153,7 @@ Führen Sie die folgenden Schritte aus, wenn der gesamte Cluster aufgrund von Fe
 >Bedenken Sie die folgenden Punkte:
 
 * Wenn der fehlgeschlagene Knoten ein AEM-Primärknoten war, kopieren Sie den gesamten Inhalt des sekundären Repository-Ordners („crx-repository\crx.0000“, wobei „0000“ eine beliebige Zahl sein kann) in den Repository-Ordner „crx-repository\“ und löschen Sie den sekundären Repository-Ordner.
-* Bevor Sie einen Clusterknoten neu starten, stellen Sie sicher, dass Sie das Repository „/clustered.txt“ auf dem Primärknoten löschen.
+* Bevor Sie einen Cluster-Knoten neu starten, achten Sie darauf, dass Sie das Repository „/clustered.txt“ vom primären Knoten löschen.
 * Stellen Sie sicher, dass der primäre Knoten zuerst gestartet wird, und starten Sie die anderen Knoten erst, wenn er vollständig hochgefahren ist.
 
 ### Wiederherstellen des gesamten Clusters {#restoring-the-entire-cluster}

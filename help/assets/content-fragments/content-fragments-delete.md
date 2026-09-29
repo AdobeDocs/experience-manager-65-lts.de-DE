@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 1460872b-415f-4392-a480-c442790fd0d9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '518'
 ht-degree: 100%
-
 ---
-
 # Inhaltsfragmente – Überlegungen zum Löschen {#content-fragments-delete-considerations}
 
 Lesen Sie diese wichtigen Überlegungen, bevor Sie Ihre Richtlinien zum Löschen von Inhaltsfragmenten in AEM definieren. Inhaltsfragmente sind ein leistungsstarkes Tool für die Bereitstellung von Headless-Inhalten. Die Auswirkungen des Löschens müssen sorgfältig berücksichtigt werden.
@@ -52,7 +64,7 @@ Beispielsweise wenn Varianten bearbeitet oder Metadaten oder verknüpfte Inhalte
 >
 >Die zum Bearbeiten oder Aktualisieren eines Inhaltsfragments benötigten Rechte zum Löschen erhalten sie mit der Löschberechtigung, die [über die Benutzer- und/oder Gruppenverwaltung zugewiesen wird](/help/sites-administering/security.md#managing-permissions).
 
-Die zum Bearbeiten oder Aktualisieren eines Fragments benötigten Rechte müssen auf den Knoten, der das Fragment enthält, oder einen entsprechenden übergeordneten Knoten angewendet werden (auf allen Ebenen unter `/content/dam`). Wenn die Zuweisung an einen übergeordneten Knoten erfolgt, werden die Berechtigungen auf alle Knoten in dieser Verzweigung angewendet.
+Die zum Bearbeiten oder Aktualisieren eines Fragments benötigten Rechte müssen auf den Knoten, der das Inhaltsfragment enthält, oder einen entsprechenden übergeordneten Knoten angewendet werden (auf allen Ebenen unter `/content/dam`). Wenn die Zuweisung an einen übergeordneten Knoten erfolgt, werden die Berechtigungen auf alle Knoten in dieser Verzweigung angewendet.
 
 Beispiel: Ein Ordner, der alle Inhaltsfragmente enthält, z. B.:
 
@@ -72,15 +84,15 @@ Die Berechtigungsvoraussetzungen, die es bestimmten Benutzenden und/oder einer b
 
 * Für die Inhaltsfragmentknoten oder -ordner:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties`
+  * `jcr:addChildNodes`, `jcr:modifyProperties`
 
 * Für den `jcr:content`-Knoten aller Inhaltsfragmente:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` und `jcr:removeChildNodes`
+  * `jcr:addChildNodes`, `jcr:modifyProperties` und `jcr:removeChildNodes`
 
 * Für alle Knoten unter `jcr:content` aller Inhaltsfragmente:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` und `jcr:removeChildNodes`, `jcr:removeNode`
+  * `jcr:addChildNodes`, `jcr:modifyProperties` und `jcr:removeChildNodes`, `jcr:removeNode`
 
 Diese Berechtigungen zum `remove` müssen [mit Zugriffssteuerungslisten in CRXDE Lite verwaltet werden](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 

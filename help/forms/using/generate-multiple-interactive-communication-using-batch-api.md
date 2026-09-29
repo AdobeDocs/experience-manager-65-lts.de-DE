@@ -9,13 +9,27 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 92bb4045-ed22-4cc3-9365-65cb39b3c82d
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 99%
-
+source-wordcount: '2267'
+ht-degree: 95%
 ---
-
 # Generieren mehrerer interaktiver Kommunikationen mithilfe der Batch-API {#use-batch-api-to-generate-multiple-ic}
 
 Sie können die Batch-API verwenden, um mehrere interaktive Kommunikationen aus einer Vorlage zu erstellen. Die Vorlage ist eine interaktive Kommunikation ohne Daten. Die Batch-API kombiniert Daten mit einer Vorlage, um eine interaktive Kommunikation zu erzeugen. Die API ist bei der Massenproduktion interaktiver Kommunikationen nützlich. Zum Beispiel Telefonrechnungen, Kreditkartenauszüge für mehrere Kunden.
@@ -101,7 +115,7 @@ So erstellen Sie eine interaktive Kommunikation aus Einträgen, die in einer JSO
 
    1. Wählen Sie **[!UICONTROL Erstellen]** aus.
 1. Verwenden Sie den erstellten überwachten Ordner, um interaktive Kommunikation zu generieren:
-   1. Öffnen Sie den überwachten Ordner. Navigieren Sie zum Eingabeordner. 
+   1. Öffnen Sie den überwachten Ordner. Navigieren Sie zum Eingabeordner.
    1. Erstellen Sie einen Ordner im Eingabeordner und legen Sie die JSON-Datei im neu erstellten Ordner ab.
    1. Warten Sie, bis der überwachte Ordner die Datei verarbeitet hat. Wenn die Verarbeitung beginnt, werden die Eingabedatei und der Unterordner, die die Datei enthält, in den Staging-Ordner verschoben.
    1. Öffnen Sie den Ausgabeordner, um die Ausgabe anzuzeigen:
@@ -161,7 +175,7 @@ Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Einträge) mit
 
    1. Wählen Sie **[!UICONTROL Erstellen]** aus.
 1. Verwenden Sie den erstellten überwachten Ordner, um interaktive Kommunikation zu generieren:
-   1. Öffnen Sie den überwachten Ordner. Navigieren Sie zum Eingabeordner. 
+   1. Öffnen Sie den überwachten Ordner. Navigieren Sie zum Eingabeordner.
    1. Erstellen Sie einen Ordner im Eingabeordner. Platzieren Sie die in Schritt 2 erstellte JSON-Datei im neu erstellten Ordner.
    1. Warten Sie, bis der überwachte Ordner die Datei verarbeitet hat. Wenn die Verarbeitung beginnt, werden die Eingabedatei und der Unterordner, die die Datei enthält, in den Staging-Ordner verschoben.
    1. Öffnen Sie den Ausgabeordner, um die Ausgabe anzuzeigen:
@@ -328,7 +342,7 @@ Stellen Sie vor der Bereitstellung des Java™-Servlets sicher, dass Sie über e
    * Wenn Sie sowohl die PRINT- als auch die WEB-Option angeben, werden sowohl PDF-Dokumente als auch eine JSON-Datei pro Eintrag generiert.
 
 1. [Verwenden Sie Maven, um den aktualisierten Code für Ihre AEM-Instanz bereitzustellen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=de).
-1. Rufen Sie zum Generieren der interaktiven Kommunikationen die Batch-API auf.  Die Batch-API druckt und gibt einen Stream von PDF- und JSON-Dateien abhängig von der Anzahl der Einträge zurück. Sie können die JSON-Datei zum [Vorausfüllen einer Web-Vorlage](#web-template) verwenden. Wenn Sie den oben genannten Code verwenden, wird die API unter `http://localhost:4502/bin/batchServlet` bereitgestellt. Der Code druckt und gibt einen Stream von PDF- und JSON-Dateien zurück.
+1. Rufen Sie zum Generieren der interaktiven Kommunikationen die Batch-API auf. Die Batch-API druckt und gibt einen Stream von PDF- und JSON-Dateien abhängig von der Anzahl der Einträge zurück. Sie können die JSON-Datei zum [Vorausfüllen einer Web-Vorlage](#web-template) verwenden. Wenn Sie den oben genannten Code verwenden, wird die API unter `http://localhost:4502/bin/batchServlet` bereitgestellt. Der Code druckt und gibt einen Stream von PDF- und JSON-Dateien zurück.
 
 ### Vorausfüllen einer Web-Vorlage {#web-template}
 
@@ -340,7 +354,7 @@ Wenn Sie den batchType so einstellen, dass der Web-Kanal gerendert wird, generie
 **Beispiel**
 Wenn sich Ihre JSON-Datei unter `C:\batch\mergedJsonPath.json` befindet und Sie die folgende interaktive Kommunikationsvorlage verwenden: `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
 
-Anschließend zeigt die folgende URL auf dem Veröffentlichungsknoten den Web-Kanal der interaktiven Kommunikation an
+Anschließend zeigt die folgende URL auf dem Veröffentlichungsknoten den Webkanal der interaktiven Kommunikation an
 `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
 
 Sie speichern nicht nur die Daten im Dateisystem, sondern auch JSON-Dateien im CRX-Repository, Dateisystem oder Webserver oder können über den OSGi-Vorbefüllungs-Service auf Daten zugreifen. Syntax zum Zusammenführen von Daten mithilfe verschiedener Protokolle:
@@ -351,14 +365,14 @@ Sie speichern nicht nur die Daten im Dateisystem, sondern auch JSON-Dateien im C
 * **Dateiprotokoll**
   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`
 
-* **Vorbefüllungs-Service-Protokoll**
+* **Vorbefüllungsdienstprotokoll**
   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
 
   SERVICE_NAME verweist auf den Namen des OSGI-Vorbefüllungs-Service. Lesen Sie Erstellen und Ausführen eines Vorbefüllungs-Service.
 
   IDENTIFIER bezieht sich auf alle Metadaten, die vom OSGI-Vorbefüllungs-Service erforderlich sind, um die Daten zum Vorbefüllen aufzurufen. Eine Kennung für die angemeldete Benutzerin bzw. den angemeldeten Benutzer ist ein Beispiel für Metadaten, die verwendet werden können.
 
-* **HTTP-Protokoll**
+* **-Protokoll**
   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: bc424dcd-f3a7-48f5-848d-1b14b8e26862
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 100%
-
+source-wordcount: '1188'
+ht-degree: 94%
 ---
-
 # Grundlegende Handhabung{#basic-handling}
 
 >[!NOTE]
@@ -36,7 +45,7 @@ Nach der Anmeldung wird der Begrüßungsbildschirm angezeigt. Er enthält eine L
 
 ## Konsolen {#consoles}
 
-Die Hauptkonsolen sind: 
+Die Hauptkonsolen sind:
 
 <table>
  <tbody>
@@ -54,7 +63,7 @@ Die Hauptkonsolen sind:
   </tr>
   <tr>
    <td><strong>Launches</strong></td>
-   <td>Hier können Sie Ihre <a href="/help/sites-classic-ui-authoring/classic-launches.md">Launches</a> verwalten. Damit können Sie Inhalte für eine künftige Version einer oder mehrerer aktivierter Webseiten entwickeln.<br /> <i>Hinweis: In der Touch-optimierten Benutzeroberfläche sind die meisten der Funktionen in der Sites-Konsole verfügbar ebenso wie die Leiste „Verweise“.</i> <i>Bei Bedarf ist diese Konsole über die Tools-Konsole verfügbar. Wählen Sie dazu „Vorgänge“ und dann „Launches“ aus.</i></td>
+   <td>Hier können Sie Ihre <a href="/help/sites-classic-ui-authoring/classic-launches.md">Launches</a> verwalten. Damit können Sie Inhalte für eine künftige Version einer oder mehrerer aktivierter Web-Seiten entwickeln.<br /> <i>Hinweis: In der Touch-optimierten Benutzeroberfläche sind die meisten der Funktionen in der Sites-Konsole verfügbar ebenso wie die Leiste „Verweise“.</i> <i>Bei Bedarf ist diese Konsole über die Konsole „Tools“ verfügbar. Wählen Sie „Vorgänge“ gefolgt von „Launches“.</i></td>
   </tr>
   <tr>
    <td><strong>Posteingang </strong></td>
@@ -117,10 +126,10 @@ Die Konsole **Websites** listet Ihre Inhaltsseiten in einer Baumstruktur auf (li
 
 * Durch Klicken auf den Seitennamen im linken Bereich wird Folgendes ausgeführt:
 
-   * Die untergeordneten Seiten werden im rechten Bereich angezeigt.
-   * Die Struktur wird im linken Bereich erweitert.
+  * Die untergeordneten Seiten werden im rechten Bereich angezeigt.
+  * Die Struktur wird im linken Bereich erweitert.
 
-     Aus Leistungsgründen hängt diese Aktion von der Anzahl der untergeordneten Knoten ab. Bei einer Standardinstallation wird die Baumstruktur eingeblendet, wenn höchstens `30` untergeordnete Knoten vorhanden sind.
+    Aus Leistungsgründen hängt diese Aktion von der Anzahl der untergeordneten Knoten ab. Bei einer Standardinstallation wird die Baumstruktur eingeblendet, wenn höchstens `30` untergeordnete Knoten vorhanden sind.
 
 * Durch Doppelklicken auf den Seitennamen (linker Bereich) wird die Baumstruktur eingeblendet, wobei dieser Effekt durch das gleichzeitige Öffnen der Seite nicht so offensichtlich ist.
 
@@ -131,15 +140,15 @@ Die Konsole **Websites** listet Ihre Inhaltsseiten in einer Baumstruktur auf (li
 >Führen Sie im SiteAdmin-Knoten folgende Aktionen durch:
 >
 >Ändern Sie den Wert der Eigenschaft:
->>`treeAutoExpandMax`
->>in:
->>`/apps/wcm/core/content/siteadmin`
+>`treeAutoExpandMax`
+>in:
+>`/apps/wcm/core/content/siteadmin`
 >
 >Sie können die Einstellung auch global im Thema ändern:
->>Ändern Sie den Wert von:
->>`TREE_AUTOEXPAND_MAX`
->>in:
->>`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
+>Ändern Sie den Wert von:
+>`TREE_AUTOEXPAND_MAX`
+>in:
+>`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
 >Weitere Details finden Sie unter [SiteAdmin in der CQ Widget-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin).
 
@@ -218,7 +227,7 @@ Die Farben neben den Seiten in den Spalten **Veröffentlicht** und **Geändert**
 |---|---|---|
 | Veröffentlicht | Grün | Die Veröffentlichung war erfolgreich. Der Inhalt wird veröffentlicht. |
 | Veröffentlicht | Gelb | Die Veröffentlichung steht aus. Die Bestätigung der Veröffentlichung ist noch nicht im System eingegangen. |
-| Veröffentlicht | Rot | Veröffentlichung fehlgeschlagen. Es besteht keine Verbindung zur Publishing-Instanz. Dies kann auch bedeuten, dass der Inhalt deaktiviert wurde. |
+| Veröffentlicht | Rot | Veröffentlichung fehlgeschlagen. Es besteht keine Verbindung zur Veröffentlichungsinstanz. Dies kann auch bedeuten, dass der Inhalt deaktiviert wurde. |
 | Veröffentlicht | *blank* | Diese Seite wurde noch nie veröffentlicht. |
 | Geändert | Blau | Die Seite wurde seit der letzten Veröffentlichung geändert. |
 | Geändert | *blank* | Diese Seite wurde noch nie geändert, auch nicht seit der letzten Veröffentlichung. |

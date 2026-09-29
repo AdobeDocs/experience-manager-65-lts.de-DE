@@ -6,13 +6,29 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 exl-id: 06d05a33-82bd-420c-89b4-3d93dbcd4589
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 1af3c3d4-88d7-5e0f-813c-eb70824bfcdd
+    internal-label: Forms Designer
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '350'
 ht-degree: 100%
-
 ---
-
 # Techniken zum Testen der Barrierefreiheit von Formularen
 
 Um sicherzustellen, dass Ihre Formulare für vielerlei Benutzende zugänglich sind, sollten Sie sie mit verschiedenen Hilfstechnologien testen. Sie können Ihre Formulare mithilfe der in diesem Abschnitt beschriebenen Techniken einfach und kostengünstig testen.
@@ -23,7 +39,7 @@ Stellen Sie sicher, dass es möglich ist, das Formular nur mit der Tastatur ausz
 * Sind die Tastaturmechanismen gut dokumentiert?
 * Haben alle Steuerelemente und Menüelemente unterstrichene Zugriffsschlüssel?
 
-Demoversionen von Bildschirmlesehilfen können kostenlos über das Internet heruntergeladen werden. Um die Ergebnisse der Bildschirmlesehilfe zu testen, deaktivieren Sie den Monitor und verwenden Sie nur die Bildschirmlesehilfe, um das Formular zu navigieren und auszufüllen. Wenn Sie die Verfasserin bzw. der Verfasser des Formulars sind, ist es aufgrund Ihrer Vertrautheit mit dem Formular möglicherweise schwierig festzustellen, ob die von der Bildschirmlesehilfe gelesenen Informationen ausreichend und sinnvoll sind. Wenn möglich, lassen Sie es jemand anderen auf diese Weise testen.
+Demoversionen von Bildschirmlesehilfen können kostenlos über das Internet heruntergeladen werden. Um die Ergebnisse der Bildschirmlesehilfe zu testen, schalten Sie Ihren Monitor aus und verwenden Sie nur die Bildschirmlesehilfe, um das Formular zu navigieren und auszufüllen. Wenn Sie die Verfasserin bzw. der Verfasser des Formulars sind, ist es aufgrund Ihrer Vertrautheit mit dem Formular möglicherweise schwierig festzustellen, ob die von der Bildschirmlesehilfe gelesenen Informationen ausreichend und sinnvoll sind. Wenn möglich, lassen Sie es jemand anderen auf diese Weise testen.
 
 Demoversionen von Software zur Vergrößerung von Bildschirmen stehen auch über das Internet zum Testen zur Verfügung.
 

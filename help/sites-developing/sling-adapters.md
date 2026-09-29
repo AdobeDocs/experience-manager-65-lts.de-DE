@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7eae83bd-7982-4051-821f-b43f65c5af2b
-source-git-commit: cf22b13e0f7c8e66b598f85aab81b022480e60bc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 50%
-
+source-wordcount: '2529'
+ht-degree: 36%
 ---
-
 # Verwenden von Sling-Adaptern{#using-sling-adapters}
 
 [Sling](https://sling.apache.org) bietet ein [Adaptermuster](https://sling.apache.org/documentation/the-sling-engine/adapters.html) um Objekte bequem zu übersetzen, die die [adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29)-Schnittstelle implementieren. Diese Schnittstelle stellt eine generische [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29)-Methode bereit, mit der das Objekt in den Klassentyp übersetzt wird, der als Argument übergeben wird.
@@ -128,7 +137,7 @@ Adaption von [**Resource**](https://developer.adobe.com/experience-manager/refer
   </tr>
   <tr>
    <td><a href="https://sling.apache.org/apidocs/sling5/org/apache/sling/api/scripting/SlingScript.html">SlingScript</a></td>
-   <td>Wenn diese Ressource ein Skript ist (z. B. eine JSP-Datei), für das eine Scripting-Engine bei Sling registriert ist.</td>
+   <td>Wenn diese Ressource ein Skript ist (z. B. eine JSP-Datei), für das eine Skript-Engine bei Sling registriert ist.</td>
   </tr>
   <tr>
    <td><a href="https://www.oracle.com/java/technologies/servlet-technology.html">Servlet</a></td>
@@ -155,7 +164,7 @@ Adaption von [**Resource**](https://developer.adobe.com/experience-manager/refer
    <td>Wenn es sich um einen Design-Knoten handelt (<code>cq:Page</code>)</td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Template.html">Vorlage  </a></td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Template.html">Vorlage</a></td>
    <td>Wenn es sich um eine <code>cq:Template</code>-Knotenressource handelt</td>
   </tr>  
   <tr>
@@ -180,7 +189,7 @@ Adaption von [**Resource**](https://developer.adobe.com/experience-manager/refer
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/api/security/user/Authorizable.html">Authorizable</a></td>
-   <td>Die Authorizable-Funktion ist die allgemeine Basisschnittstelle für Benutzer und Gruppe.</td>
+   <td>Authorizable ist die allgemeine Basisschnittstelle für Benutzer und Gruppen.</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/jackrabbit/api/security/user/User.html">User</a></td>
@@ -338,7 +347,7 @@ Adaptierung von [**SlingHttpServletResponse**](https://developer.adobe.com/exper
 
 #### Sicherheit {#security}
 
-Adaption von **Authorizable**, **User und &#x200B;** Group** für:
+Adaption von **Authorizable**, **User und** Group** für:
 
 | [Node](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | Gibt den Hauptknoten des Benutzers/der Gruppe zurück. |
 | --- | --- |

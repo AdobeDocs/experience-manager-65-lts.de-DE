@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 88%
-
+source-wordcount: '1501'
+ht-degree: 87%
 ---
-
 # Fehlerbehebung bei Oak-Indizes{#troubleshooting-oak-indexes}
 
 ## Langsame Neuindizierung  {#slow-re-indexing}
@@ -36,7 +45,7 @@ Um eine langsame Indizierung anfänglich zu erkennen, müssen die `IndexStats`-J
 
 1. Überprüfen Sie für beide MBeans, ob die Zeitstempel **Done** und **LastIndexTime** weniger als 45 Minuten zurückliegen.
 
-1. Falls für eines der MBeans der Zeitstempel (**Done** oder **LastIndexedTime**) mehr als 45 Minuten zurückliegt, dauert der Indizierungsvorgang zu lange oder ist fehlgeschlagen. Dies Problem führt dazu, dass die asynchronen Indizes veraltet sind.
+1. Falls für eines der MBeans der Zeitstempel (**Done** oder **LastIndexedTime**) mehr als 45 Minuten zurückliegt, dauert der Indizierungsauftrag zu lange oder ist fehlgeschlagen. Dies Problem führt dazu, dass die asynchronen Indizes veraltet sind.
 
 ## Die Indizierung wird nach einem erzwungenen Herunterfahren angehalten {#indexing-is-paused-after-a-forced-shutdown}
 
@@ -55,7 +64,7 @@ In Ausnahmefällen kann der Thread-Pool, der zur Verwaltung der asynchronen Indi
 
 1. Definieren Sie einen neuen, isolierten Thread-Pool für den Apache Sling Scheduler, um ihn für die asynchrone Indizierung zu verwenden:
 
-   * Navigieren Sie auf der betroffenen AEM-Instanz zu &quot;AEM-OSGi-Web-Konsole“ > „OSGi“ > „Konfiguration“ > „Apache Sling Scheduler“ oder zu https://&lt;Host>:&lt;Port>/system/console/configMgr (beispielsweise [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr))
+   * Navigieren Sie auf der betroffenen AEM-Instanz zu &quot;AEM-OSGi-Web-Konsole“ > „OSGi“ > „Konfiguration“ > „Apache Sling Scheduler“ oder zu https://&lt;Host>:&lt;Port>/system/console/configMgr (beispielsweise [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)).
    * Fügen Sie dem Feld „Zulässige Thread-Pools“ einen Eintrag mit dem Wert „oak“ hinzu.
    * Um die Änderungen zu speichern, klicken Sie unten rechts auf **Speichern**.
 
@@ -63,11 +72,11 @@ In Ausnahmefällen kann der Thread-Pool, der zur Verwaltung der asynchronen Indi
 
 1. Überprüfen Sie, dass der neue Thread-Pool in Apache Sling Scheduler registriert ist und in der Statusanzeige der Web-Konsole von Apache Sling Scheduler angezeigt wird.
 
-   * Navigieren Sie zu &quot;AEM-OSGi-Web-Konsole“ > „Status“ > „Sling Scheduler“ oder zu https://&lt;Host>:&lt;Port>/system/console/status-slingscheduler (beispielsweise [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler))
+   * Navigieren Sie zu &quot;AEM-OSGi-Web-Konsole“ > „Status“ > „Sling Scheduler“ oder zu https://&lt;Host>:&lt;Port>/system/console/status-slingscheduler (beispielsweise [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler)).
    * Stellen Sie sicher, dass die folgenden Pool-Einträge vorhanden sind:
 
-      * ApacheSlingoak
-      * ApacheSlingdefault
+     * ApacheSlingoak
+     * ApacheSlingdefault
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
 
@@ -94,7 +103,7 @@ Die Neuindizierung kann unter zwei Bedingungen als „völlig stecken geblieben�
 
 * Die Neuindizierung verläuft langsam bis zu dem Punkt, an dem in den Protokolldateien kein signifikanter Fortschritt mehr bezüglich der Anzahl der durchlaufenen Knoten gemeldet wird.
 
-   * Wenn beispielsweise im Laufe einer Stunde keine Nachrichten vorhanden sind oder der Fortschritt so langsam ist, dass die Fertigstellung mindestens eine Woche dauert.
+  * Wenn beispielsweise im Laufe einer Stunde keine Nachrichten vorhanden sind oder der Fortschritt so langsam ist, dass die Fertigstellung mindestens eine Woche dauert.
 
 * Die Neuindizierung bleibt in einer Endlosschleife stecken, wenn im Indizierungs-Thread wiederholt Ausnahmen in den Protokolldateien erscheinen (z. B. `OutOfMemoryException`). Die Wiederholung einer oder mehrerer gleicher Ausnahmen im Protokoll deutet darauf hin, dass Oak wiederholt versucht, dieselbe Sache zu indizieren, aber jedes Mal an demselben Problem scheitert.
 
@@ -105,21 +114,21 @@ Gehen Sie wie folgt vor, um einen blockierten Neuindizierungsprozess zu identifi
    * Sammeln Sie für 5 Minuten Thread-Speicherauszüge, alle zwei Sekunden einen.
    * [Legen Sie die DEBUG-Ebene und die Protokolle für die Appender fest](/help/sites-deploying/configure-logging.md).
 
-      * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
-      * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
+     * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
+     * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
 
    * Erfassen Sie die Daten aus dem asynchronen `IndexStats`-MBean:
 
-      * Navigieren Sie zu AEM OSGi-Web-Konsole > Hauptfenster > JMX > IndexStat > async
+     * Navigieren Sie zu AEM OSGi-Web-Konsole > Hauptfenster > JMX > IndexStat > async
 
-        oder gehen Sie zu [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
+       oder gehen Sie zu [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
 
    * Verwenden Sie den Befehl [oak-run.jar&#39;s console mode](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), um Details zum *`/:async`*-Knoten abzurufen.
    * Erfassen Sie anhand des `CheckpointManager`-MBean eine Liste der Repository-Checkpoints:
 
-      * AEM OSGi-Web-Konsole > Hauptfenster > JMX > CheckpointManager > listCheckpoints()
+     * AEM OSGi-Web-Konsole > Hauptfenster > JMX > CheckpointManager > listCheckpoints()
 
-        oder gehen Sie zu [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
+       oder gehen Sie zu [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
 
 1. Wenn Sie alle in Schritt 1 genannten Informationen erfasst haben, starten Sie AEM neu.
 
@@ -140,8 +149,8 @@ Gehen Sie wie folgt vor, um die Neuindizierung sicher abzubrechen:
    * Navigieren Sie über die JMX-Konsole zum gewünschten IndexStats-MBean. Wechseln Sie dazu entweder zu &quot;AEM-OSGi-Web-Konsole“ > „Haupt“ > „JMX“ oder zu https://&lt;Host>:&lt;Port>/system/console/jmx (beispielsweise [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
    * Öffnen Sie das IndexStats-MBean auf der Grundlage der Neuindizierungsspur, die Sie stoppen möchten (`async`, `async-reindex` oder `fulltext-async`)
 
-      * Um die richtige Spur und die zugehörige Instanz des IndexStats-MBeans zu ermitteln, durchsuchen Sie die Oak-Indexeigenschaft „async“. Die Eigenschaft „async“ enthält den Spurnamen: `async`, `async-reindex`, oder `fulltext-async`.
-      * Die Spur ist auch durch Zugriff auf den Index-Manager von AEM in der Spalte „Async“ verfügbar. Um auf den Index-Manager zuzugreifen, navigieren Sie zu „Vorgänge“ > „Diagnose“ > „Index-Manager“.
+     * Um die richtige Spur und die zugehörige Instanz des IndexStats-MBeans zu ermitteln, durchsuchen Sie die Oak-Indexeigenschaft „async“. Die Eigenschaft „async“ enthält den Spurnamen: `async`, `async-reindex`, oder `fulltext-async`.
+     * Die Spur ist auch durch Zugriff auf den Index-Manager von AEM in der Spalte „Async“ verfügbar. Um auf den Index-Manager zuzugreifen, navigieren Sie zu „Vorgänge“ > „Diagnose“ > „Index-Manager“.
 
    ![chlimage_1-121](assets/chlimage_1-121.png)
 
@@ -150,15 +159,15 @@ Gehen Sie wie folgt vor, um die Neuindizierung sicher abzubrechen:
 
    * Wenn Sie einen **vorhandenen** Index neu indizieren, setzen Sie die Eigenschaft für die Neuindizierung auf „false“.
 
-      * `/oak:index/someExistingIndex@reindex=false`
+     * `/oak:index/someExistingIndex@reindex=false`
 
    * Oder tun Sie andernfalls für einen **neuen** Index Folgendes:
 
-      * Setzen Sie entweder die Eigenschaft „Typ“ auf „deaktiviert“
+     * Setzen Sie entweder die Eigenschaft „Typ“ auf „deaktiviert“
 
-         * `/oak:index/someNewIndex@type=disabled`
+       * `/oak:index/someNewIndex@type=disabled`
 
-      * oder entfernen Sie die Indexdefinition ganz
+     * oder entfernen Sie die Indexdefinition ganz
 
    Übertragen Sie die Änderungen nach Abschluss in das Repository.
 

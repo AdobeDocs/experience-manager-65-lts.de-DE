@@ -9,14 +9,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: b3a0eb20-5b85-45a3-a416-a16a9f44acc5
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 100%
-
 ---
-
 # Arbeiten mit Berechtigungen {#working-with-credentials}
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
@@ -72,7 +89,7 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 
 Weitere Informationen über den Speicherort dieser JAR-Dateien finden Sie unter [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Erstellen eines Berechtigungs-Service-Clients**
+**Erstellen eines Service-Clients für die Berechtigung**
 
 Bevor Sie eine Berechtigung programmgesteuert in AEM Forms importieren können, müssen Sie einen Client für den Berechtigungs-Service erstellen. Weitere Informationen finden Sie unter [Festlegen von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
@@ -119,10 +136,10 @@ So importieren Sie eine Berechtigung mithilfe der Trust Manager-API (Java) in AE
    * Erstellen Sie ein Zeichenfolgen-Array, das ein Element enthält. Weisen Sie den Wert `truststore.usage.type.sign` dem Element zu.
    * Rufen Sie die `importCredential`-Methode des `CredentialServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
-      * Ein Zeichenfolgenwert, der den Alias für die Berechtigung angibt.
-      * Die `com.adobe.idp.Document`-Instanz, in der die Berechtigung gespeichert ist.
-      * Ein Zeichenfolgenwert, der das Passwort enthält, das mit der Berechtigung verknüpft ist.
-      * Das Zeichenfolgen-Array, das den Wert enthält, der die Verwendung bezeichnet. Sie können beispielsweise den Wert `truststore.usage.type.sign` angeben. Um eine Reader Extension-Berechtigung zu importieren, geben Sie `truststore.usage.type.lcre` an.
+     * Ein Zeichenfolgenwert, der den Alias für die Berechtigung angibt.
+     * Die `com.adobe.idp.Document`-Instanz, in der die Berechtigung gespeichert ist.
+     * Ein Zeichenfolgenwert, der das Passwort enthält, das mit der Berechtigung verknüpft ist.
+     * Das Zeichenfolgen-Array, das den Wert enthält, der die Verwendung bezeichnet. Sie können beispielsweise den Wert `truststore.usage.type.sign` angeben. Um eine Reader Extension-Berechtigung zu importieren, geben Sie `truststore.usage.type.lcre` an.
 
 **Siehe auch**
 

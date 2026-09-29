@@ -10,13 +10,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 07048aa7-5f38-4810-9ef2-ce6892f9b9b6
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3015'
+source-wordcount: '3030'
 ht-degree: 100%
-
 ---
-
 # Bearbeiten des Seiteninhalts{#editing-page-content}
 
 Sobald Ihre Seite erstellt ist (neu oder im Rahmen eines Launches oder einer Live Copy), können Sie den Inhalt bearbeiten und die erforderlichen Aktualisierungen vornehmen.
@@ -189,7 +202,7 @@ Dies gilt für folgende Asset-Typen (einige sind von der Seite/dem Absatzsystem 
    <td>Produkt</td>
   </tr>
   <tr>
-   <td>Video </td>
+   <td>Video</td>
    <td>Flash</td>
   </tr>
   <tr>
@@ -269,9 +282,9 @@ Die tatsächlich für die Benutzenden verfügbaren Aktionen werden abhängig von
 
   Fügt die Komponente aus der Zwischenablage in die Seite ein. Ob das Original erhalten bleibt, hängt davon ab, ob Sie „Kopieren“ oder „Ausschneiden“ verwendet haben.
 
-   * Sie können Komponenten auf derselben oder einer anderen Seite einfügen.
-   * Das eingefügte Element wird über dem Element eingefügt, das bei der Einfügeaktion aktiv ist.
-   * Die Option zum Einfügen wird nur angezeigt, wenn sich ein Inhalt in der Zwischenablage befindet.
+  * Sie können Komponenten auf derselben oder einer anderen Seite einfügen.
+  * Das eingefügte Element wird über dem Element eingefügt, das bei der Einfügeaktion aktiv ist.
+  * Die Option zum Einfügen wird nur angezeigt, wenn sich ein Inhalt in der Zwischenablage befindet.
 
   ![Einfügen](assets/screen_shot_2018-03-22at113553.png)
 
@@ -350,7 +363,7 @@ Bei bestimmten Komponententypen (z. B. Bildern) können Sie Assets aus dem Asse
 | Bild | Bild |
 | Dokument | Download |
 | Produkt | Produkt |
-| Video  | Flash |
+| Video | Flash |
 | Inhaltsfragment | Inhaltsfragment |
 
 ## Bearbeiten (Inhalt) – Vollbildmodus {#edit-content-full-screen-mode}
@@ -514,15 +527,15 @@ Eine Seite kann wie folgt gesperrt werden:
 
 * **Sites**-Konsole
 
-   1. Wählen Sie die Seite mit dem [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) aus.
-   1. Wählen Sie das Sperrsymbol aus.
+  1. Wählen Sie die Seite mit dem [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) aus.
+  1. Wählen Sie das Sperrsymbol aus.
 
   ![Sperrsymbol](assets/screen_shot_2018-03-22at134928.png)
 
 * **Seiteneditor**
 
-   1. Wählen Sie das Symbol für die **Seiteninformationen** aus, um das Menü zu öffnen.
-   1. Wählen Sie die Option **Seite sperren** aus.
+  1. Wählen Sie das Symbol für die **Seiteninformationen** aus, um das Menü zu öffnen.
+  1. Wählen Sie die Option **Seite sperren** aus.
 
 Nach der Sperrung werden die Informationen der Konsolenansicht aktualisiert und beim Bearbeiten wird in der Symbolleiste ein Vorhängeschlosssymbol angezeigt.
 

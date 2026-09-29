@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: e452c343-3bba-4774-b153-c5ba05f24362
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3545'
+source-wordcount: '3578'
 ht-degree: 100%
-
 ---
-
 # Hinzufügen von Dynamic Media Classic (Scene7)-Funktionen zu Ihrer Seite{#adding-scene-features-to-your-page}
 
 [Adobe Dynamic Media Classic (Scene7)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=de) eine gehostete Lösung für die Verwaltung, Optimierung, Veröffentlichung und Bereitstellung von Rich-Media-Assets für Web-, Mobil-, E-Mail- und Internet-verbundene Anzeigen und Ausdrucke.
@@ -237,7 +246,7 @@ Mit der Dynamic Media Classic (Scene7)-Bildkomponente können Sie Ihren Bildern 
 
 **Dynamic Media Classic (Scene7)-Konfiguration**: Wählen Sie die Dynamic Media Classic (Scene7)-Konfiguration aus, die Sie verwenden möchten, um aktive Bildvorgaben aus dem SPS abzurufen.
 
-**Bildvorgabe**: Wählen Sie im Dropdown-Menü eine vorhandene Bildvorgabe aus. Wenn die gewünschte Bildvorgabe nicht sichtbar ist, müssen Sie sie sichtbar machen. Siehe „Verwalten von Bildvorgaben“. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
+**Bildvorgabe**: Wählen Sie im Dropdown-Menü eine vorhandene Bildvorgabe aus. Wenn die gewünschte Bildvorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Bildvorgaben“. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
 **Ausgabeformat**: Wählen Sie das Ausgabeformat des Bildes aus, beispielsweise JPEG. In Abhängigkeit des von Ihnen ausgewählten Ausgabeformats stehen Ihnen möglicherweise zusätzliche Konfigurationsoptionen zur Verfügung. Siehe Best Practices für Bildvorgaben.
 
@@ -317,7 +326,7 @@ Weitere Informationen darüber, wie Videos mit Dynamic Media Classic (Scene7)-In
 Adobe DAM und WCM zeigen, ob ein primäres Quellvideo hochgeladen wurde. Sie zeigen diese Proxy-Assets nicht an:
 
 * Dynamic Media Classic (Scene7)-kodierte Ausgabedarstellungen
-* Adaptive Dynamic Media Classic (Scene7)-Videosets 
+* Adaptive Dynamic Media Classic (Scene7)-Videosets
 
 Bei Verwendung eines adaptiven Videosets mit der Dynamic Media Classic (Scene7)-Videokomponente muss die Größe der Komponente an die Abmessungen des Videos angepasst werden.
 

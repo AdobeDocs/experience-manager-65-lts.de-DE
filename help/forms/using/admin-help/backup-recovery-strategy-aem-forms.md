@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 2f34b48a-0b95-4994-ac4f-616620a5b211
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 93%
-
 ---
-
 # Sicherungs- und Wiederherstellungsstrategie für AEM Forms{#backup-and-recovery-strategy-for-aem-forms}
 
 Wenn in Ihrer AEM Forms-Implementierung zusätzliche benutzerdefinierte Daten in einer anderen Datenbank gespeichert werden, sind Sie dafür verantwortlich, eine Strategie zum Sichern dieser Daten zu implementieren und sicherzustellen, dass diese mit den AEM Forms-Daten synchronisiert bleiben. Außerdem muss die Anwendung so konzipiert sein, dass sie robust genug ist, um ein Szenario zu handhaben, in dem die zusätzlichen Datenbanken nicht mehr synchronisiert werden. Es wird dringend empfohlen, alle Datenbankoperationen im Kontext einer Transaktion durchzuführen, um einen konsistenten Zustand zu gewährleisten.
@@ -45,9 +60,9 @@ In der Datenbank werden Formularartefakte, Dienstkonfigurationen, Prozesszustän
 
 * **Snapshot-Sicherungsmodus** gibt an, dass sich das AEM Forms-System entweder für unbegrenzte Zeit oder für eine angegebene Anzahl von Minuten im Sicherungsmodus befindet, nach deren Ablauf der Sicherungsmodus nicht mehr aktiv ist. Sie können anhand der folgenden Optionen den Snapshot-Sicherungsmodus starten bzw. beenden. Nach einem Wiederherstellungsszenario darf der Snapshot-Sicherungsmodus nicht aktiviert werden.
 
-   * Verwenden Sie die Seite „Sicherungseinstellungen“ in der Administrationskonsole. Um in den Snapshot-Modus zu wechseln, wählen Sie das Kontrollkästchen „Im abgesicherten Sicherungsmodus arbeiten“ aus. Deaktivieren Sie das Kontrollkästchen, um den Snapshot-Modus zu beenden.
-   * Verwenden Sie das LCBackupMode-Skript (siehe [Sichern der Stammordner für Datenbank, globalen Dokumentenspeicher und Inhalte](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Zum Beenden des Snapshot-Sicherungsmodus legen Sie im Skriptargument den `continuousCoverage`-Parameter auf `false` fest oder verwenden Sie die Option `leaveContinuousCoverage`.
-   * Verwenden Sie die bereitgestellte Backup-/Wiederherstellungs-API. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
+  * Verwenden Sie die Seite „Sicherungseinstellungen“ in der Administrationskonsole. Um in den Snapshot-Modus zu wechseln, wählen Sie das Kontrollkästchen „Im abgesicherten Sicherungsmodus arbeiten“ aus. Deaktivieren Sie das Kontrollkästchen, um den Snapshot-Modus zu beenden.
+  * Verwenden Sie das LCBackupMode-Skript (siehe [Sichern der Stammordner für Datenbank, globalen Dokumentenspeicher und Inhalte](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Zum Beenden des Snapshot-Sicherungsmodus legen Sie im Skriptargument den `continuousCoverage`-Parameter auf `false` fest oder verwenden Sie die Option `leaveContinuousCoverage`.
+  * Verwenden Sie die bereitgestellte Backup-/Wiederherstellungs-API. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
 
 * Der **kontinuierliche Sicherungsmodus** gibt an, dass das System stets im Sicherungsmodus ist, wobei eine neue Sicherungsmodussitzung ausgelöst wird, sobald die vorherige Sitzung freigegeben wurde. Beim kontinuierlichen Sicherungsmodus gibt es keinen Timeout. Wenn das bereitgestellte LCBackupMode-Skript oder APIs aufgerufen werden, um den kontinuierlichen Sicherungsmodus zu beenden, wird eine neue kontinuierliche Sicherungsmodussitzung gestartet. Dieser Modus eignet sich zur Unterstützung kontinuierlicher Sicherungen und ermöglicht zugleich das Entfernen alter und nicht benötigter Dokumente aus dem Verzeichnis des globalen Dokumentenspeichers. Der kontinuierliche Sicherungsmodus wird nicht über die Seite „Sicherung und Wiederherstellung“ unterstützt. Nach einem Wiederherstellungsszenario ist der kontinuierliche Sicherungsmodus weiter aktiv. Sie können den kontinuierlichen Sicherungsmodus mithilfe des bereitgestellten LCBackupMode-Skripts mit der Option `leaveContinuousCoverage` deaktivieren.
 
@@ -94,7 +109,7 @@ Wenn die AEM Forms-Hauptdatenbank verschoben oder geändert wird, lesen Sie die 
 
 >[!NOTE]
 > 
-> Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+> Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 ### Ändern des AEM Forms-Host-Namen oder der IP-Adresse {#changing-the-aem-forms-hostname-or-ip-address}
 

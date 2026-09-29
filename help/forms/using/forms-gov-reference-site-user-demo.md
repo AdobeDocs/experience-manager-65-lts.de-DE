@@ -7,13 +7,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: a9cbab12-62a6-4779-955f-2858166945e6
-source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2522'
 ht-degree: 95%
-
 ---
-
 # Schrittweise Anleitung zur We.Gov- und We.Finance-Referenz-Website {#we-gov-reference-site-walkthrough}
 
 ## Voraussetzungen {#pre-requisites}
@@ -24,22 +42,22 @@ Richten Sie die Referenz-Website ein, wie unter [Einrichten und Konfigurieren de
 
 * AEM Forms
 
-   * Automatisierte Formularkonvertierung
-   * Authoring –
-   * Formulardatenmodelle/Datenquellen
+  * Automatisierte Formularkonvertierung
+  * Authoring –
+  * Formulardatenmodelle/Datenquellen
 
 * AEM Forms
 
-   * Datenerfassung
-   * (Optional) Datenintegration (MS® Dynamics)
-   * (Optional) Adobe Sign
+  * Datenerfassung
+  * (Optional) Datenintegration (MS® Dynamics)
+  * (Optional) Adobe Sign
 
 * Workflow
 * E-Mail-Benachrichtigungen
 * (Optional) Kundenkommunikation
 
-   * Druckkanal
-   * Web-Kanal
+  * Druckkanal
+  * Web-Kanal
 
 * Adobe Analytics
 * Datenquellenintegrationen
@@ -64,14 +82,14 @@ Die folgenden Gruppen sind ebenfalls enthalten:
 
 * **We.Gov Forms-Benutzer**
 
-   * George Lang (Mitglied)
-   * Camila Santos (Mitglied)
+  * George Lang (Mitglied)
+  * Camila Santos (Mitglied)
 
 * **We.Gov-Benutzer**
 
-   * George Lang (Mitglied)
-   * Camila Santos (Mitglied)
-   * Aya Tan (Mitglied)
+  * George Lang (Mitglied)
+  * Camila Santos (Mitglied)
+  * Aya Tan (Mitglied)
 
 ### Legende zu Demoübersichtsbegriffen {#demo-overview-terms-legend}
 
@@ -227,7 +245,7 @@ Aya muss einige Dokumente zu Hause überprüfen, bevor sie den Antrag für die S
    1. **Verheiratet**: Bedienfeld für ehelich abhängige Personen anzeigen
    1. **Geschieden**: Bedienfeld für nächste Angehörige anzeigen
    1. **Verwitwet**: Bedienfeld für nächste Angehörige anzeigen
-   1. **Haben Sie Kinder?**: (Ja/Nein) Optionsfeld für die Anzeige des Bedienfelds für untergeordnete Elemente.
+   1. **Haben Sie untergeordnete Elemente?**: (Ja/Nein) Optionsfeld für die Anzeige des Bedienfelds für unterhaltsberechtigte Kinder.
 
       1. (Hinzufügen/Entfernen)-Schaltfläche zum Hinzufügen/Entfernen mehrerer unterhaltsberechtigter Bedienfelder.
 

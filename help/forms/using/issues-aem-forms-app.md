@@ -8,13 +8,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: e63c1dc2-9843-47ca-8f3c-c49720659aa0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 100%
-
+source-wordcount: '683'
+ht-degree: 96%
 ---
-
 # Fehlerbehebung der AEM Forms-App {#troubleshoot-aem-forms-app}
 
 In diesem Artikel werden die Fehlermeldungen beschrieben, die beim Erstellen der AEM Forms-App möglicherweise angezeigt werden, sowie die Schritte zu ihrer Behebung.
@@ -32,9 +46,9 @@ Die Abschnitte in diesem Artikel beinhalten:
 
 Die AEM Forms-App für iOS, die für die Synchronisierung mit AEM Forms unter OSGi konfiguriert ist, unterstützt nur Anlagen auf Feldebene. Alle Anlagen müssen eindeutige Namen haben. Wenn mehrere Anlagen denselben Namen haben, wird nur eine Anlage beibehalten und alle anderen mit identischem Namen gehen verloren. Führen Sie die folgenden Schritte aus, um Benutzer auf iOS-Geräten vor Datenverlust zu bewahren:
 
-1. Auf dem verbundenen Server navigieren Sie zu: **Adobe Experience Manager > Werkzeuge > Vorgänge > Webkonsole**.
+1. Auf dem verbundenen Server navigieren Sie zu: **Adobe Experience Manager > Werkzeuge > Vorgänge > Web-Konsole**.
 1. Suchen Sie nach **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** und klicken Sie darauf.
-1. Aktivieren Sie im Dialog [!UICONTROL Adaptives Formular und interaktive Kommunikation Webkanal-Konfiguration] die Option **Dateinamen individualisieren**.
+1. Aktivieren Sie im Dialog [!UICONTROL Adaptives Formular und interaktive Kommunikation Web-Kanal-Konfiguration] die Option **Dateinamen individualisieren**.
 
    Wenn die Einstellung **Dateinamen individualisieren** deaktiviert ist, können die Benutzer Daten verlieren, wenn sie versuchen, adaptive Formulare mit mehreren Anlagen zu versenden.
 
@@ -50,11 +64,11 @@ Bei HTML5-Formularen, die in der AEM Forms-Anwendung mit dem HTML-Renderprofil *
 
 1. Im Stammpfad von CRXDE, in der Zugriffssteuerungsliste unter Zugriffssteuerung klicken Sie auf **+**.
 1. Klicken Sie im Dialogfeld **Neuen Eintrag hinzufügen** auf die Schaltfläche für die Gruppensuche im Feld „Prinzipal“.
-1. Geben Sie im Feld „Name“ des Dialogfelds „Prinzipal auswählen“ `PERM_WORKSPACE_USER` ein und klicken Sie auf **„Suchen“**. 
+1. Geben Sie im Feld „Name“ des Dialogfelds „Prinzipal auswählen“ `PERM_WORKSPACE_USER` ein und klicken Sie auf **„Suchen“**.
 1. Wählen Sie `PERM_WORKSPACE_USER`-Gruppe im Dialogfeld „Prinzipal wählen“ und klicken Sie auf **OK**.
 1. Im Dialogfeld „Neuen Eintrag hinzufügen“ wird `PERM_WORKSPACE_USER`-Gruppe im Feld „Prinzipal“ ausgewählt.
 
-    Aktivieren Sie `jcr:read`-Berechtigungen für die Benutzergruppe.
+   Aktivieren Sie `jcr:read`-Berechtigungen für die Benutzergruppe.
 
 1. Klicken Sie auf **OK**.
 
@@ -99,7 +113,7 @@ Die Fehlermeldung wird angezeigt, wenn Sie die Option **APK erstellen** aus dem 
 
 **Lösung:** Öffnen Sie die Datei **Gradle Scripts** > **gradle-wrapper.properties** und bearbeiten Sie die Eigenschaft **distributionUrl**.
 
-Beispielsweise empfiehlt die Android Studio-Konsole ein Downgrade der Gradle-Version auf 3.5. Bearbeiten Sie die Version in **distributionUrl** der **gradle-wrapper.properties**-Datei.
+Beispielsweise empfiehlt die Android Studio-Konsole ein Downgrade der Gradle-Version auf 3.5. Bearbeiten Sie die Version in **Datei** distributionUrl **ofGradle-wrapper.properties**.
 
 Wählen Sie erneut **Erstellen** > **APK erstellen**, um den Fehler zu beheben und die .apk-Datei zu generieren.
 

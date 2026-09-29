@@ -1,19 +1,35 @@
 ---
 title: Unterstützte Dateiformate und MIME-Typen
-description: Von  [!DNL Assets] und [!DNL Dynamic Media] unterstützte Dateiformate und MIME-Typen und die für die jeweiligen Formate unterstützten Funktionen.
+description: Von [!DNL Assets] und [!DNL Dynamic Media] unterstützte Dateiformate und MIME-Typen und die für die einzelnen Formate unterstützten Funktionen.
 mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e48f7950-1b6e-4896-8abc-523552e42ed9
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2014'
-ht-degree: 98%
-
+source-wordcount: '2016'
+ht-degree: 97%
 ---
-
 # Unterstützte Formate in [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
 [!DNL Experience Manager Assets] unterstützt eine breite Palette von Dateiformaten und jede Funktionalität bietet unterschiedliche Unterstützung für verschiedene MIME-Typen. Um [!DNL Assets] mit anderen standardkonformen DAM-Lösungen (Digital Asset Management) und Desktop-Software-Anwendungen zu integrieren, verwenden Sie die [!DNL Extensible Metadata Platform] (XMP) von Adobe.
@@ -280,9 +296,9 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | HEIC | − | − | − | ✓ | − | − |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Spin](/help/assets/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Drehung](/help/assets/spin-sets.md) |
 | PICT | ✓ | − | − | − | − | − |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Spin](/help/assets/spin-sets.md) |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Drehung](/help/assets/spin-sets.md) |
 | PSD ‡ | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Bild](/help/assets/image-sets.md), [Gemischte Medien](/help/assets/mixed-media-sets.md) und [Spin](/help/assets/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |

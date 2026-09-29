@@ -1,17 +1,31 @@
 ---
 title: Konfigurieren des Asset-Tagging mit dem Smart Content Service
-description: Erfahren Sie, wie Sie in  [!DNL Adobe Experience Manager] Smart-Tagging und optimierte Smart-Tags mit dem Smart Content Service konfigurieren.
+description: Erfahren Sie, wie Sie in [!DNL Adobe Experience Manager] Smart-Tagging und optimierte Smart-Tags mit dem Smart Content Service konfigurieren.
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: be7c294c-149b-4825-8376-573f9e2987e2
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 97%
-
+source-wordcount: '1992'
+ht-degree: 96%
 ---
-
 # Vorbereiten von [!DNL Assets] für Smart-Tagging {#configure-asset-tagging-using-the-smart-content-service}
 
 Bevor Sie mit dem Tagging Ihrer Assets per Smart Content Services beginnen können, integrieren Sie [!DNL Experience Manager Assets] in die Adobe Developer Console, um den Smart-Service von [!DNL Adobe AI] zu nutzen. Nach der Konfiguration trainieren Sie den Service mit einigen Bildern und einem Tag.
@@ -61,13 +75,13 @@ Um die Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration i
 Weitere Informationen zu dieser Konfiguration finden Sie in der Dokumentation zur Developer Console, abhängig von Ihren Anforderungen:
 
    * Übersicht:
-      * [Server-zu-Server-Authentifizierung](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
+     * [Server-zu-Server-Authentifizierung](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
 
    * Erstellen von neuen OAuth-Anmeldedaten:
-      * [Implementierungshandbuch für OAuth Server-zu-Server-Anmeldeinformationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
+     * [Implementierungshandbuch für OAuth Server-zu-Server-Anmeldeinformationen](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
    * Migration von vorhandenen JWT-Anmeldedaten zu OAuth-Anmeldedaten:
-      * [Migration von JWT-Anmeldedaten (Service Account) zu OAuth-Server-zu-Server-Anmeldedaten](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
+     * [Migration von JWT-Anmeldedaten (Service Account) zu OAuth-Server-zu-Server-Anmeldedaten](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
 
 
 1. Wählen Sie auf der Seite **[!UICONTROL Produktprofile auswählen]** die Option **[!UICONTROL Smart Content Services]** aus. Klicken Sie auf **[!UICONTROL Konfigurierte API speichern]**.
@@ -223,7 +237,7 @@ Sie können festlegen, dass der Smart Content Service regelmäßig mit den Asset
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Wenn Sie diese Option für einen Ordner auswählt haben, führt [!DNL Experience Manager] automatisch einen Trainings-Workflow aus, um den Smart Content Service mit den Assets im Ordner und deren Tags zu trainieren. Standardmäßig wird der Trainings-Workflow wöchentlich samstags um 12 :30 ausgeführt.
+Wenn Sie diese Option für einen Ordner auswählt haben, führt [!DNL Experience Manager] automatisch einen Trainings-Workflow aus, um den Smart Content Service mit den Assets im Ordner und deren Tags zu trainieren. Standardmäßig wird der Trainings-Workflow wöchentlich samstags um 0:30 Uhr ausgeführt.
 
 ### Training bei Bedarf {#on-demand-training}
 
@@ -261,9 +275,9 @@ Um sicherzustellen, dass der Smart Content Service auf Ihre Tags im Asset-Traini
 
 * Optimiertes Smart-Tagging basiert auf Lernmodellen von Bildern und den zugehörigen Tags. Diese Modelle können Tags nicht immer perfekt identifizieren. Bei der aktuellen Version des Smart Content Service bestehen folgende Einschränkungen:
 
-   * Subtile Unterschiede in Bildern können nicht erkannt werden. Beispiel: T-Shirts mit schmalem oder normalem Schnitt.
-   * Tags können nicht anhand von winzigen Mustern oder Teilen eines Bildes identifiziert werden. Beispiel: Logos auf T-Shirts.
-   * Tagging wird in den Gebietsschemata unterstützt, in denen [!DNL Experience Manager] unterstützt wird.
+  * Subtile Unterschiede in Bildern können nicht erkannt werden. Beispiel: T-Shirts mit schmalem oder normalem Schnitt.
+  * Tags können nicht anhand von winzigen Mustern oder Teilen eines Bildes identifiziert werden. Beispiel: Logos auf T-Shirts.
+  * Tagging wird in den Gebietsschemata unterstützt, in denen [!DNL Experience Manager] unterstützt wird.
 
 * Verwenden Sie [!DNL Assets]-OmniSearch (Volltextsuche), um nach Assets mit Smart-Tags (normal oder erweitert) zu suchen. Es gibt kein separates Suchprädikat für Smart-Tags.
 

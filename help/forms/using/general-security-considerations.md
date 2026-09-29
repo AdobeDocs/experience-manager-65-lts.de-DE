@@ -6,17 +6,34 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 docset: aem65
 hide: true
+removedfrom6.5.2025: 'yes'
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 5d0ba475-06be-47fd-8ea2-9160c2d86b07
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 97%
-
 ---
-
 # Allgemeine Überlegungen zur Sicherheit von AEM Forms on JEE{#general-security-considerations-for-aem-forms-on-jee}
 
 Dieser Artikel bietet einleitende Informationen, die Sie bei der Vorbereitung auf die Härtung Ihrer AEM Forms-Umgebung unterstützen. Er enthält voraussetzungsvolle Informationen über AEM Forms on JEE, Betriebssystem, Anwendungs-Server und Datenbanksicherheit. Sie sollten diese Informationen lesen, bevor Sie Ihre Umgebung sperren.
@@ -224,7 +241,7 @@ Der Anwendungs-Server von JBoss® verwendet 8080 als standardmäßigen HTTP-Port
 
 >[!NOTE]
 >
-> Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
+> Es wird empfohlen, den Befehl „Strg + C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
 ## Sicherheitsüberlegungen zu AEM Forms on JEE {#aem-forms-on-jee-security-considerations}
 

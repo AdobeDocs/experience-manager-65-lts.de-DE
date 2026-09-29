@@ -6,13 +6,25 @@ feature: Language Copy
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ab876224-22bd-4fd7-b609-bd5703715932
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 97%
-
+source-wordcount: '1136'
+ht-degree: 98%
 ---
-
 # Identifizieren zu übersetzender Inhalte{#identifying-content-to-translate}
 
 Die Übersetzungsregeln identifizieren die zu übersetzenden Inhalte für Seiten, Komponenten und Assets, die in die Übersetzungsprojekte integriert oder von diesen ausgeschlossen sind. Wenn eine Seite oder ein Asset übersetzt wird, extrahiert AEM diese Inhalte, sodass sie an den Übersetzungsdienstleister gesendet werden können.
@@ -59,13 +71,13 @@ Jedes dieser `node`-Elemente hat die folgenden Eigenschaften:
 * Das `path`-Attribut enthält den Pfad zum Stammknoten des Zweigs, für den die Regeln gelten.
 * Die untergeordneten `property`-Elemente identifizieren die Knoteneigenschaften, die für alle Ressourcentypen zu übersetzen sind:
 
-   * Das Attribut `name` enthält den Eigenschaftsnamen.
-   * Das optionale Attribut `translate` ist gleich `false`, wenn die Eigenschaft nicht übersetzt ist. Standardmäßig lautet der Wert `true`. Dieses Attribut ist nützlich für die Außerkraftsetzung vorheriger Regeln.
+  * Das Attribut `name` enthält den Eigenschaftsnamen.
+  * Das optionale Attribut `translate` ist gleich `false`, wenn die Eigenschaft nicht übersetzt ist. Standardmäßig lautet der Wert `true`. Dieses Attribut ist nützlich für die Außerkraftsetzung vorheriger Regeln.
 
 * Die untergeordneten `node`-Elemente identifizieren die Knoteneigenschaften, die für bestimmte Ressourcentypen zu übersetzen sind:
 
-   * Das Attribut `resourceType` enthält den Pfad, der zu der für die Implementierung des Ressourcentyps verantwortlichen Komponente führt.
-   * Die untergeordneten `property`-Elemente identifizieren die zu übersetzende Knoteneigenschaft. Verwenden Sie diesen Knoten auf dieselbe Art und Weise wie die untergeordneten `property`-Elemente zu den Knotenregeln.
+  * Das Attribut `resourceType` enthält den Pfad, der zu der für die Implementierung des Ressourcentyps verantwortlichen Komponente führt.
+  * Die untergeordneten `property`-Elemente identifizieren die zu übersetzende Knoteneigenschaft. Verwenden Sie diesen Knoten auf dieselbe Art und Weise wie die untergeordneten `property`-Elemente zu den Knotenregeln.
 
 Die folgende Beispielregel veranlasst, dass alle `text`-Eigenschaften für alle Seiten unter dem Knoten `/content` übersetzt werden. Die Regel gilt für jede Komponente, die Inhalt in einer `text`-Eigenschaft speichert, so zum Beispiel die Foundation-Textkomponente und die Foundation-Bildkomponente.
 

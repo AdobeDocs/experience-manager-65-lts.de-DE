@@ -10,13 +10,22 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: e95f382b-ae89-46d5-b109-ea3257b6b046
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 92%
-
 ---
-
 # Zuordnung benutzerdefinierter Benutzergruppen in AEM 6.5 {#custom-user-group-mapping-in-aem}
 
 ## Vergleich von JCR-Inhalten im Zusammenhang mit CUG (benutzerdefinierte Benutzergruppe) {#comparison-of-jcr-content-related-to-cug}
@@ -31,7 +40,7 @@ ht-degree: 92%
   <tr>
    <td><p>Eigenschaft: cq:cugEnabled</p> <p>Deklarierender Knotentyp: nicht zutreffend, Resteigenschaft</p> </td>
    <td><p>Autorisierung:</p> <p>Knoten: rep:cugPolicy des Knotentyps rep:CugPolicy</p> <p>Deklarierender Knotentyp: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Authentifizierung:</p> <p>Mixin-Typ: granite:AuthenticationRequired</p> </td>
-   <td><p>Um den Lesezugriff zu beschränken, wird eine dedizierte CUG-Richtlinie auf den Zielknoten angewendet.</p> <p>HINWEIS: Richtlinien können nur auf die konfigurierten unterstützten Pfade angewendet werden.</p> <p>Knoten mit dem Namen rep:cugPolicy und Typ rep:CugPolicy sind geschützt und können nicht mit regulären JCR-API-Aufrufen geschrieben werden. Verwenden Sie stattdessen die Verwaltung der JCR-Zugriffssteuerung.</p> <p>Weitere Informationen finden Sie auf <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">dieser Seite</a>.</p> <p>Um die Authentifizierungspflicht auf einem Knoten durchzusetzen, genügt es, den Mixin-Typ granite:AuthenticationRequired hinzuzufügen.</p> <p>HINWEIS: Wird nur unter den konfigurierten unterstützten Pfaden berücksichtigt.</p> </td>
+   <td><p>Um den Lesezugriff zu beschränken, wird eine dedizierte CUG-Richtlinie auf den Zielknoten angewendet.</p> <p>HINWEIS: Richtlinien können nur auf die konfigurierten unterstützten Pfade angewendet werden.</p> <p>Knoten mit dem Namen rep:cugPolicy und Typ rep:CugPolicy sind geschützt und können nicht mit regulären JCR-API-Aufrufen geschrieben werden. Verwenden Sie stattdessen die Verwaltung der JCR-Zugriffssteuerung.</p> <p>Weitere Informationen finden Sie auf <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">dieser Seite</a>.</p> <p>Um die Authentifizierungspflicht auf einem Knoten durchzusetzen, genügt es, den Mixin-Typ granite:AuthenticationRequired hinzuzufügen.</p> <p>HINWEIS: Wird nur unterhalb der konfigurierten unterstützten Pfade berücksichtigt.</p> </td>
   </tr>
   <tr>
    <td><p>Eigenschaft: cq:cugPrincipals</p> <p>Deklarierender Knotentyp: nicht zutreffend, Resteigentum</p> </td>

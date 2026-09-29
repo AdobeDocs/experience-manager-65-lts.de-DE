@@ -8,18 +8,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
 exl-id: b9b989e3-f204-4929-a03a-857cbb786185
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1501'
-ht-degree: 99%
-
+source-wordcount: '1537'
+ht-degree: 97%
 ---
-
 # Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank {#sample-for-integrating-drafts-submissions-component-with-database}
 
 ## Überblick zum Beispiel {#sample-overview}
 
-Mit der Komponente „Entwürfe und Sendungen“ des AEM Forms-Portals können Benutzende ihre Formulare als Entwürfe speichern und zu einem späteren Zeitpunkt von jedem beliebigen Gerät senden. Zudem können die Benutzenden ihre übermittelten Formulare im Portal anzeigen. Um diese Funktion zu aktivieren, bietet AEM Forms Daten- und Metadatendienste an, um die von Benutzenden im Formular eingegebenen Daten sowie die mit Entwürfen und gesendeten Formularen verknüpften Metadaten zu speichern. Diese Daten werden standardmäßig im CRX-Repository gespeichert. Da die Benutzenden mit den Formularen jedoch über eine AEM-Veröffentlichunginstanz interagieren, die in der Regel außerhalb der Unternehmens-Firewall liegt, sollten Sie die Datenspeicherung so anpassen, dass sie sicherer und zuverlässiger ist.
+Mit der Komponente „Entwürfe und Sendungen“ des AEM Forms-Portals können Benutzende ihre Formulare als Entwürfe speichern und zu einem späteren Zeitpunkt von jedem beliebigen Gerät senden. Zudem können die Benutzenden ihre übermittelten Formulare im Portal anzeigen. Um diese Funktion zu aktivieren, bietet AEM Forms Daten- und Metadatendienste an, um die von Benutzenden im Formular eingegebenen Daten sowie die mit Entwürfen und gesendeten Formularen verknüpften Metadaten zu speichern. Diese Daten werden standardmäßig im CRX-Repository gespeichert. Da die Benutzenden mit den Formularen jedoch über eine AEM-Veröffentlichungsinstanz interagieren, die in der Regel außerhalb der Unternehmens-Firewall liegt, sollten Sie die Datenspeicherung so anpassen, dass sie sicherer und zuverlässiger ist.
 
 Bei dem in diesem Dokument gezeigten Beispiel handelt es sich um eine Referenzimplementierung benutzerdefinierter Daten- und Metadatendienste zur Integration der Komponente „Entwürfe und Sendungen“ in eine Datenbank. In der Beispielimplementierung wird die Datenbank **MySQL 5.6.24** verwendet. Sie können die Komponente „Entwürfe und Sendungen“ jedoch in eine Datenbank Ihrer Wahl integrieren.
 
@@ -37,15 +50,15 @@ Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinst
 
    Beispielpaket zur Datenbankintegration:
 
-[Datei laden](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+   [Datei laden](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Gehen Sie zu AEM Package Manager unter https://[*host*]:[*port*]/crx/packmgr/.
+1. Gehen Sie zum AEM-Paket-Manager unter https://[*host*]:[*port*]/crx/packmgr/.
 1. Klicken Sie auf **[!UICONTROL Paket hochladen]**.
 
 1. Navigieren Sie zum Paket **aem-fp-db-integration-sample-pkg-6.1.2.zip**, wählen Sie es aus und klicken Sie auf **[!UICONTROL OK]**.
 1. Klicken Sie neben dem Paket auf **[!UICONTROL Installieren]**, um das Paket zu installieren.
-1. Gehen Sie zur Seite **[!UICONTROL Konfiguration der AEM-Webkonsole]**
-unter https://[*host*]:[*port*]/system/console/configMgr.
+1. Zur Konfiguration der **[!UICONTROL AEM Web Console]**
+Seite unter https://[*host*]:[*port*]/system/console/configMgr.
 1. Klicken Sie, um die **[!UICONTROL Konfiguration des Forms Portals für Entwurf und Übermittlung]** im Bearbeitungsmodus zu öffnen.
 
 1. Geben Sie die Werte für die Eigenschaften an, wie in der folgenden Tabelle beschrieben:
@@ -152,7 +165,7 @@ unter https://[*host*]:[*port*]/system/console/configMgr.
    <td>Beispielwerte sind SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</td>
   </tr>
   <tr>
-   <td>Maximale Wartezeit der Validierungsabfrage</td>
+   <td>Timeout der Validierungsabfrage</td>
    <td>10000</td>
   </tr>
  </tbody>
@@ -160,8 +173,8 @@ unter https://[*host*]:[*port*]/system/console/configMgr.
 
 >[!NOTE]
 >
->* Der JDBC-Treiber für MySQL wird nicht mit dem Beispiel geliefert.  Stellen Sie sicher, dass Sie ihn bereitgestellt haben, und geben Sie die erforderlichen Informationen ein, um den JDBC-Verbindungs-Pool zu konfigurieren.
->* Lassen Sie Ihre Autoren- und Veröffentlichungsinstanzen auf dieselbe Datenbank verweisen.  Der Wert des URI-Feldes für die JDBC-Verbindung muss für alle Autoren- und Veröffentlichungsinstanzen gleich sein.
+>* Der JDBC-Treiber für MySQL wird nicht mit dem Beispiel geliefert. Stellen Sie sicher, dass Sie ihn bereitgestellt haben, und geben Sie die erforderlichen Informationen ein, um den JDBC-Verbindungs-Pool zu konfigurieren.
+>* Lassen Sie Ihre Autoren- und Veröffentlichungsinstanzen auf dieselbe Datenbank verweisen. Der Wert des URI-Feldes für die JDBC-Verbindung muss für alle Autoren- und Veröffentlichungsinstanzen gleich sein.
 
 1. Belassen Sie die anderen Konfigurationen und klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -171,7 +184,7 @@ unter https://[*host*]:[*port*]/system/console/configMgr.
 
    >[!NOTE]
    >
-   >Sie benötigen nicht verschiedene Datenbanken für Autoren- und Veröffentlichungsinstanzen. Verwenden Sie dieselbe Datenbank für alle Autor- und Veröffentlichungsinstanzen. 
+   >Sie benötigen nicht verschiedene Datenbanken für Autoren- und Veröffentlichungsinstanzen. Verwenden Sie dieselbe Datenbank für alle Autor- und Veröffentlichungsinstanzen.
 
    **SQL-Anweisung für Datentabelle**
 
@@ -264,7 +277,7 @@ unter https://[*host*]:[*port*]/system/console/configMgr.
 
    >[!NOTE]
    >
-   >Die Metadatenanfrage „Tabelle ändern“ schlägt fehl, wenn Sie diese bereits ausführen und die Spalte „markedfordeletion“ ist in der Tabelle vorhanden.
+   >Die Metadatenabfrage „Tabelle ändern“ schlägt fehl, wenn Sie diese bereits ausführen und die Spalte „markedfordeletion“ ist in der Tabelle vorhanden.
 
    ```sql
    ALTER TABLE metadata add agreementId varchar(255) DEFAULT NULL,
@@ -325,7 +338,7 @@ Die folgende Zip enthält`FormsPortalSampleDataServiceImpl` und`FormsPortalSampl
 
 ## Überprüfen der Länge des Dateinamens  {#verify-length-of-the-file-name}
 
-Die Datenbankimplementierung des Formularportals verwendet eine zusätzliche Metadatentabelle. Die Tabelle hat einen zusammengesetzten Primärschlüssel, der auf den Schlüssel- und ID-Spalten der Tabelle basiert. MySQL ermöglicht Primärschlüssel bis zu einer Länge von 255 Zeichen. Sie können das folgende Client-seitige Validierungsskript verwenden, um die Länge des Dateinamens zu überprüfen, der an das Datei-Widget angehängt ist. Die Überprüfung wird ausgeführt, wenn eine Datei angehängt ist. Das Skript, das im folgenden Verfahren bereitgestellt wird, zeigt eine Meldung an, wenn der Dateiname (einschließlich Erweiterung) mehr als 150 Zeichen hat. Sie können das Skript modifizieren, um es auf eine andere Anzahl von Zeichen zu überprüfen. 
+Die Datenbankimplementierung des Formularportals verwendet eine zusätzliche Metadatentabelle. Die Tabelle hat einen zusammengesetzten Primärschlüssel, der auf den Schlüssel- und ID-Spalten der Tabelle basiert. MySQL ermöglicht Primärschlüssel bis zu einer Länge von 255 Zeichen. Sie können das folgende Client-seitige Validierungsskript verwenden, um die Länge des Dateinamens zu überprüfen, der an das Datei-Widget angehängt ist. Die Überprüfung wird ausgeführt, wenn eine Datei angehängt ist. Das Skript, das im folgenden Verfahren bereitgestellt wird, zeigt eine Meldung an, wenn der Dateiname (einschließlich Erweiterung) mehr als 150 Zeichen hat. Sie können das Skript modifizieren, um es auf eine andere Anzahl von Zeichen zu überprüfen.
 
 Führen Sie die folgenden Schritte aus, um eine [Client-Bibliothek](/help/sites-developing/clientlibs.md) zu erstellen und das Skript zu verwenden:
 
@@ -420,4 +433,4 @@ Führen Sie die folgenden Schritte aus, um eine [Client-Bibliothek](/help/sites-
    >
    >Wenn Sie anstelle der Client-Bibliotheken guideRuntime und guideRuntimeWithXfa benutzerdefinierte Client-Bibliotheken verwenden, verwenden Sie den Kategorienamen, um die in diesem Verfahren erstellte Client-Bibliothek in Ihre zur Laufzeit geladenen benutzerdefinierten Bibliotheken einzubetten.
 
-1. Klicken Sie auf **[!UICONTROL Alle speichern.]** Wenn der Dateiname größer als 150 (einschließlich Erweiterung) Zeichen ist, wird eine Meldung angezeigt. 
+1. Klicken Sie auf **[!UICONTROL Alle speichern.]** Wenn der Dateiname größer als 150 (einschließlich Erweiterung) Zeichen ist, wird eine Meldung angezeigt.

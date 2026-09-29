@@ -7,13 +7,27 @@ role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7a0d5502-8e1a-4396-a517-ea3767e228c2
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1612'
 ht-degree: 97%
-
 ---
-
 # Smart-Tags verstehen, anwenden und kuratieren {#enhanced-smart-tags}
 
 | Version | Artikel-Link |
@@ -117,7 +131,7 @@ Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden 
 
 >[!CAUTION]
 >
->Wenn die Lucene-Indizierung über [!DNL Adobe Experience Manager] durchgeführt wird, dann funktioniert die Suche basierend auf Smart-Tags nicht wie erwartet.
+>Wenn die Lucene-Indizierung außerhalb von [!DNL Adobe Experience Manager] durchgeführt wird, funktioniert die Suche auf der Grundlage von Smart-Tags nicht wie erwartet.
 
 ## Automatisches Taggen von Assets {#tagging-assets-automatically}
 
@@ -133,7 +147,7 @@ Sie können den Tagging-Workflow periodisch oder nur bei Bedarf ausführen.
 
 Sie können den Smart Content Service aktivieren, um Assets in einem Ordner regelmäßig mit Tags zu versehen. Öffnen Sie die Eigenschaftsseite Ihres Asset-Ordners, wählen Sie **[!UICONTROL Smart-Tags aktivieren]** in der Registerkarte **[!UICONTROL Details]** aus und speichern Sie die Änderungen.
 
-Wenn diese Option für einen Ordner ausgewählt ist, versieht der Smart Content Service die Assets innerhalb des Ordners automatisch mit Tags. Standardmäßig wird der Tagging-Workflow täglich um 12:00 :00 ausgeführt.
+Wenn diese Option für einen Ordner ausgewählt ist, versieht der Smart Content Service die Assets innerhalb des Ordners automatisch mit Tags. Standardmäßig wird der Tagging-Workflow täglich um 0:00 Uhr ausgeführt.
 
 ### Tagging bei Bedarf {#on-demand-tagging}
 

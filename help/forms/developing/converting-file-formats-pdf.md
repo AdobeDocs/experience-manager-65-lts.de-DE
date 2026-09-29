@@ -9,14 +9,29 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: c6e007e9-6050-4d86-a32e-0bd942d48f27
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '7942'
 ht-degree: 98%
-
 ---
-
 # Zwischen Dateiformaten und PDF konvertieren {#converting-between-file-formatsand-pdf}
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
@@ -85,7 +100,7 @@ Mithilfe des Generate PDF-Dienstes können Sie diese Aufgaben ausführen:
 
 >[!NOTE]
 >
->Weitere Informationen zum Generate PDF-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Generate PDF-Dienst finden Sie in der [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Konvertieren von Word-Dokumenten in PDF-Dokumente {#converting-word-documents-to-pdf-documents}
 
@@ -215,10 +230,10 @@ So konvertieren Sie ein Microsoft Word-Dokument mithilfe der Generate PDF-API (W
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
+     * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+     * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+     * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+     * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Rufen Sie die in ein PDF-Dokument zu konvertierende Datei ab.
 
@@ -263,7 +278,7 @@ In diesem Abschnitt wird beschrieben, wie Sie mit Generate PDF-API HTML-Dokument
 
 >[!NOTE]
 >
->Weitere Informationen zum Generate PDF-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Generate PDF-Dienst finden Sie in der [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Zusammenfassung der Schritte {#summary_of_steps-1}
 
@@ -372,10 +387,10 @@ So konvertieren Sie HTML-Inhalte mithilfe der Generate PDF-API (Webservice) in e
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
+     * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+     * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+     * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+     * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Rufen Sie den HTML-Inhalt ab, der in ein PDF-Dokument konvertiert werden soll.
 
@@ -523,10 +538,10 @@ Konvertieren Sie ein PDF-Dokument mithilfe der Generate PDF API (Webservice) in 
    * Stellen Sie das Feld `MessageEncoding` des Objekts `System.ServiceModel.BasicHttpBinding` auf `WSMessageEncoding.Mtom` ein. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
-      * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
-      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-      * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
+     * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+     * Weisen Sie dem Feld `GeneratePDFServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+     * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+     * Weisen Sie den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` dem Feld `BasicHttpBindingSecurity.Security.Mode` zu.
 
 1. Rufen Sie das zu konvertierende PDF-Dokument ab.
 
@@ -616,7 +631,7 @@ In dieser Tabelle sind die Informationstypen aufgeführt, die beim Drucken nativ
    <td><p>Um Einstellungen für eine bereits unterstützte native Anwendung zu ändern, legt der Systemadministrator die „Dateitypeinstellungen“ in der Administration-Console fest. </p><p>Um die Unterstützung bei einem neuen nativen Dateiformat hinzuzufügen, müssen Sie die Datei manuell bearbeiten. (Siehe <a href="converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format">Hinzufügen oder Ändern der Unterstützung bei einem nativen Dateiformat</a>.) </p></td>
   </tr>
   <tr>
-   <td><p>Skript </p></td>
+   <td><p>Script </p></td>
    <td><p>Gibt Interaktionen zwischen dem Generate PDF-Service und einem nativen Programm an. Durch diese Interaktionen wird normalerweise das Programm zum Drucken einer Datei an den Adobe PDF-Treiber weitergeleitet. </p><p>Das Skript enthält Anweisungen, die das native Programm anweisen, bestimmte Dialogfelder zu öffnen, und die bestimmte Antworten auf Felder und Schaltflächen in diesen Dialogfeldern bereitstellen. </p></td>
    <td><p>Der Generate PDF-Service schließt Skriptdateien für alle unterstützten nativen Programme ein. Diese Dateien lassen sich mithilfe eines Programms zur Bearbeitung von XML modifizieren.</p><p>Um Unterstützung für eine neue native Anwendung hinzuzufügen, müssen Sie eine neue Skriptdatei erstellen. (Siehe <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Erstellen oder Modifizieren einer zusätzlichen XML-Dialogfelddatei für ein natives Programm</a>.) </p></td>
   </tr>

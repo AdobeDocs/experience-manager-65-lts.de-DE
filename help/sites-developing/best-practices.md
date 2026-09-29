@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: fc2aa62a-3fc4-491d-aff5-74896998d7d6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 100%
-
+source-wordcount: '441'
+ht-degree: 93%
 ---
-
 # Best Practices{#best-practices}
 
 ## Best Practices für Entwicklerinnen und -Entwickler – Erste Schritte {#best-practices-for-developers-getting-started}
@@ -30,7 +39,7 @@ Bevor Sie mit Ihrem AEM-Entwicklungsprojekt beginnen, machen Sie sich zunächst 
 * [Tipps zum Programmieren](/help/sites-developing/coding-tips.md)
 * [Fallstricke beim Programmieren](/help/sites-developing/code-pitfalls.md)
 * [JCR-Interaktion](/help/sites-developing/jcr-integration.md)
-* [OSGi-Bundles](/help/sites-developing/osgi-bundles.md)
+* [OSGi-Pakete](/help/sites-developing/osgi-bundles.md)
 * [Best Practices für die Java-API](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=de)
 
 ### Weitere Informationen zu Best Practices {#additional-best-practices-information}
@@ -44,9 +53,9 @@ Spezifische Dokumente werden in den folgenden Tabellen beschrieben und verlinkt.
 
 Best Practices für die Verwaltung, Bereitstellung und Pflege oder Inhaltserstellung finden Sie unter folgenden Themen:
 
-* [Best Practices für die Verwaltung ](/help/sites-administering/administer-best-practices.md)
+* [Best Practices für die Verwaltung](/help/sites-administering/administer-best-practices.md)
 * [Best Practices für die Inhaltserstellung](/help/sites-authoring/best-practices.md)
-* [Best Practices für die Bereitstellung ](/help/sites-deploying/best-practices.md)
+* [Best Practices für die Bereitstellung](/help/sites-deploying/best-practices.md)
 
 ## Sites {#sites}
 
@@ -89,4 +98,4 @@ HTML Template Language (HTL) ist ein neues HTML-Vorlagensystem, das mit AEM 6.0 
 >[!NOTE]
 >
 >Das mehrteilige Tutorial kann im Hinblick auf Best Practices für die Einrichtung eines neuen AEM-Projekts hilfreich sein. Es bietet umfassende Informationen zu den Kernkomponenten, bearbeitbaren Vorlagen, Client-Bibliotheken und zur Komponentenentwicklung:
->>[Erste Schritte mit AEM Sites - WKND-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de)
+>[Erste Schritte mit AEM Sites - WKND-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de)

@@ -8,13 +8,29 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ecbfe24e-7662-48a7-9b46-37949f59050e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2688'
-ht-degree: 95%
-
+source-wordcount: '2796'
+ht-degree: 94%
 ---
-
 # Tutorial: Erstellen eines Formulardatenmodells in AEM Forms{#tutorial-create-form-data-model}
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
@@ -50,7 +66,7 @@ Bevor Sie beginnen, stellen Sie Folgendes sicher:
 
 ## Schritt 1: Einrichten der Datenbank {#step-set-up-the-database}
 
-Eine Datenbank ist für die Erstellung einer interaktiven Kommunikation unerlässlich. In diesem Tutorial wird eine Datenbank zur Demonstration der Formulardatenmodell- und Persistenzfunktionen von AEM Forms verwendet. Richten Sie eine Datenbank ein, die Kunden-, Rechnungs- und Anruftabellen enthält.
+Eine Datenbank ist für die Erstellung einer interaktiven Kommunikation unerlässlich. In diesem Tutorial wird eine Datenbank zur Demonstration der Formulardatenmodell- und Persistenzfunktionen von interaktiven Kommunikationen verwendet. Richten Sie eine Datenbank ein, die Kunden-, Rechnungs- und Anruftabellen enthält.
 Die folgende Abbildung zeigt Beispieldaten für die Kundentabelle:
 
 ![sample_data_cust](assets/sample_data_cust.png)
@@ -107,7 +123,7 @@ CREATE TABLE `calls` (
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ```
 
-Die Tabelle **calls** enthält die Anrufdetails wie Anrufdatum, Anrufzeit, Anrufnummer, Anrufdauer und Anrufkosten. Die Tabelle **customer** ist mit der Anruftabelle über das Feld „Mobilfunknummer (mobilenum)“ verknüpft. Für jede in der Tabelle **customer** aufgeführte Mobilfunknummer gibt es mehrere Datensätze in der Tabelle **calls**. Sie können beispielsweise die Anrufdetails für die Mobilfunknummer **1457892541** abrufen, indem Sie sich auf die **Anruftabelle** beziehen.
+Die Tabelle **calls** enthält die Anrufdetails wie Anrufdatum, Anrufzeit, Anrufnummer, Anrufdauer und Anrufkosten. Die Tabelle **customer** ist mit der Anruftabelle über das Feld „Mobilfunknummer (mobilenum)“ verknüpft. Für jede in der Tabelle **customer** aufgeführte Mobilfunknummer gibt es mehrere Einträge in der Tabelle **calls**. Sie können beispielsweise die Anrufdetails für die Mobilfunknummer **1457892541** abrufen, indem Sie sich auf die **Anruftabelle** beziehen.
 
 Die Tabelle **bills** enthält die Rechnungsdetails wie Rechnungsdatum, Rechnungszeitraum, monatliche Gebühren und Gesprächsgebühren. Die Tabelle **customer** ist mit der Tabelle **bills** über das Feld „Rechnungsplan“ verknüpft. Jedem Kunden ist in der Tabelle **customer** ein Plan zugeordnet. Die Tabelle **bills** enthält die Preisangaben für alle vorhandenen Pläne. Sie können beispielsweise die Plandetails für **Sarah** aus der **Kundentabelle** abrufen und diese Details verwenden, um Preisdetails aus der Rec **hnungstabelle** abzurufen.
 
@@ -117,9 +133,9 @@ Sie können verschiedene Arten von Datenquellen konfigurieren, um ein Formularda
 
 Gehen Sie folgendermaßen vor, um Ihre MySQL-Datenbank zu konfigurieren:
 
-1. Installieren Sie den JDBC-Treiber für die MySQL-Datenbank als OSGi-Bundle:
+1. Installieren Sie den JDBC-Treiber für die MySQL-Datenbank als OSGi-Paket:
 
-   1. Melden Sie sich bei der AEM Forms-Autoreninstanz als Administrator an und wechseln Sie zu den AEM-Webkonsolen-Paketen. Die Standard-URL lautet [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
+   1. Melden Sie sich bei der AEM Forms-Autoreninstanz als Administrator an und wechseln Sie zu den AEM-Web-Konsolen-Paketen. Die Standard-URL lautet [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
    1. Wählen Sie **Installieren/Aktualisieren** aus. Ein Dialogfeld **Pakete hochladen/installieren** wird angezeigt.
 
    1. Wählen Sie **Datei auswählen** aus, um das OSGi-Paket für den MySQL-JDBC-Treiber zu suchen, und wählen Sie es aus. Wählen Sie **Bundle starten** und **Pakete aktualisieren** und dann **Installieren** oder **Aktualisieren** aus. Stellen Sie sicher, dass der JDBC-Treiber der Oracle Corporation für MySQL aktiv ist. Der Treiber wird installiert.
@@ -191,14 +207,14 @@ Die Konfiguration des Formulardatenmodells umfasst Folgendes:
 
    * **Datenmodellobjekte**:
 
-      * Rechnungen
-      * Anrufe
-      * Kunde
+     * Rechnungen
+     * Anrufe
+     * Kunde
 
    * **Dienste:**
 
-      * Abrufen
-      * Aktualisieren
+     * Abrufen
+     * Aktualisieren
 
    Wählen Sie **Ausgewählte hinzufügen**, um ausgewählte Datenmodellobjekte und -dienste zum Formulardatenmodell hinzuzufügen.
 
@@ -214,8 +230,8 @@ Eine berechnete Eigenschaft ist diejenige, deren Wert anhand einer Regel oder ei
 
 Basierend auf dem Anwendungsfall erstellen Sie die untergeordnete berechnete Eigenschaft **usagecharges** im Datenmodellobjekt **Rechnungen** mit folgendem mathematischem Ausdruck:
 
-* Nutzungsgebühren = Gesprächsgebühren + Gebühren für Telefonkonferenzen + SMS-Gebühren + mobile Internet-Gebühren + Nationale und internationale Roaming-Gebühren + VAS (all diese Eigenschaften existieren im Datenmodellobjekt „Rechnungen“) 
-Weitere Informationen über die untergeordnete berechnete Eigenschaft **usagecharges** finden Sie unter [Planen der interaktiven Kommunikation](/help/forms/using/planning-interactive-communications.md).
+* Nutzungsgebühren = Gesprächsgebühren + Gebühren für Telefonkonferenzen + SMS-Gebühren + mobile Internet-Gebühren + Nationale und internationale Roaming-Gebühren + VAS (all diese Eigenschaften existieren im Datenmodellobjekt „Rechnungen„)
+Weitere Informationen zur untergeordneten berechneten Eigenschaft **usagecharges** finden Sie unter [Planen der interaktiven Kommunikation](/help/forms/using/planning-interactive-communications.md).
 
 Führen Sie die folgenden Schritte durch, um untergeordnete berechnete Eigenschaften für das Datenmodellobjekt „Rechnungen“ zu erstellen:
 
@@ -253,8 +269,8 @@ Erstellen Sie basierend auf dem Anwendungsfall die folgenden Verknüpfungen zwis
 
 | Verknüpfung | Datenmodellobjekte |
 |---|---|
-| 1 :n | Kunde:calls (Mehrere Anrufe können einem Kunden in einer monatlichen Rechnung zugeordnet werden) |
-| 1 :1 | Kunde:bills (eine Rechnung ist einem Kunden für einen bestimmten Monat zugeordnet) |
+| 1:n | Kunde:calls (Mehrere Anrufe können einem Kunden in einer monatlichen Rechnung zugeordnet werden) |
+| 1:1 | Kunde:bills (eine Rechnung ist einem Kunden für einen bestimmten Monat zugeordnet) |
 
 Führen Sie die folgenden Schritte aus, um Verknüpfungen zwischen Datenmodellobjekten zu erstellen:
 
@@ -275,7 +291,7 @@ Führen Sie die folgenden Schritte aus, um Verknüpfungen zwischen Datenmodellob
 1. Im Dialogfeld **Argument hinzufügen**:
 
    * Wählen Sie **mobilenum** aus der Dropdown-Liste **Name** aus. Die Mobilfunknummer ist eine allgemeine Eigenschaft, die in Datenmodellobjekten „customer“ und „calls“ verfügbar ist. Infolgedessen wird eine Verbindung zwischen Datenmodellobjekten „customer“ und „calls“ erstellt.
-Für jede im Datenmodellobjekt „customer“ verfügbare Mobilfunknummer stehen mehrere „call“-Datensätze in der Anruftabelle zur Verfügung.
+     Für jede im Datenmodellobjekt „customer“ verfügbare Mobilfunknummer stehen mehrere „call“-Einträge in der Anruftabelle zur Verfügung.
 
    * Geben Sie einen optionalen Titel und eine Beschreibung für das Argument an.
    * Wählen Sie **Kunde** aus der Dropdown-Liste **Bindung an**.
@@ -303,7 +319,7 @@ Für jede im Datenmodellobjekt „customer“ verfügbare Mobilfunknummer stehen
    * Wählen Sie **bills** aus der Dropdown-Liste **Modellobjekt** aus.
 
    * Wählen Sie **get** aus der Dropdown-Liste **Service.** Die Eigenschaft **billplan**, die den Primärschlüssel für die Rechnungstabelle darstellt, ist bereits im Abschnitt **Argumente** verfügbar.
-Die Datenmodellobjekte „bills“ und „customer“ werden jeweils mit den Eigenschaften „billplan“ Rechnungen und „customerplan“ (Kunde) verknüpft. Erstellen Sie eine Bindung zwischen diesen Eigenschaften, um die Planungsdetails für jeden in der MySQL-Datenbank verfügbaren Kunden abzurufen.
+     Die Datenmodellobjekte „bills“ und „customer“ werden jeweils mit den Eigenschaften „billplan“ Rechnungen und „customerplan“ (Kunde) verknüpft. Erstellen Sie eine Bindung zwischen diesen Eigenschaften, um die Planungsdetails für jeden in der MySQL-Datenbank verfügbaren Kunden abzurufen.
 
    * Wählen Sie **Kunde** aus der Dropdown-Liste **Bindung an**.
 
@@ -371,7 +387,7 @@ Nachdem Sie Verknüpfungen zwischen dem Kunden- und anderen Datenmodellobjekten 
 
    ![Service-Eigenschaften aktualisieren](assets/update_service_properties_new.png)
 
-## Schritt 5: Testen von Formulardatenmodellen und Services  {#step-test-form-data-model-and-services}
+## Schritt 5: Testen von Formulardatenmodellen und Services {#step-test-form-data-model-and-services}
 
 Sie können das Datenmodellobjekt und die Services testen, um zu überprüfen, ob das Formulardatenmodell ordnungsgemäß konfiguriert ist.
 

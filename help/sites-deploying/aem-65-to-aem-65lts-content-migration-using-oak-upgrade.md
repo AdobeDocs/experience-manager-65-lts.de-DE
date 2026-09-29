@@ -5,13 +5,22 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8c4ffb0e-b4dc-4a81-ac43-723754cbc0de
-source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 0%
-
+source-wordcount: '580'
+ht-degree: 2%
 ---
-
 # Migration von AEM 6.5 zu AEM 6.5 LTS-Inhalten mit Oak-Upgrade {#aem-65-to-aem-65lts-content-migration-using-oak-upgrade}
 
 In diesem Dokument wird erläutert, wie Sie Adobe Experience Manager von **6.5** auf **6.5 LTS** aktualisieren, wobei der Schwerpunkt auf der Migration des Inhalts-Repositorys liegt. Es behandelt die Verwendung des Oak-Upgrade-Tools zur präzisen und kontrollierten Übertragung von Inhalten zwischen Repositorys.

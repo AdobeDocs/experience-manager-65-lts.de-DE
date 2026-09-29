@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 3606e945-7f97-482f-9010-75314c23f6ac
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1631'
 ht-degree: 100%
-
 ---
-
 # Konfigurieren der Zwischenspeicherung für Forms{#configuring-caching-for-forms}
 
 >[!NOTE]
@@ -95,7 +110,7 @@ Klicken Sie zum Zugreifen auf diese Einstellungen in der Administrationskonsole 
 
 ### Festlegen von globalen Cache-Einstellungen {#specifying-global-cache-settings}
 
-Die Einstellungen im Bereich **Globale Cache-Einstellungen** wirken sich auf alle Cache-Typen aus. Wenn Sie eine dieser Einstellungen ändern, starten Sie den Forms-Dienst neu, damit die Änderung wirksam wird. Verwenden Sie zum Neustart dieses Dienstes entweder Workbench oder folgen Sie den Anweisungen unter [Dienste starten oder beenden, die AEM Forms-Modulen zugeordnet sind](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules).
+Die Einstellungen im Bereich **Globale Cache-Einstellungen** wirken sich auf alle Cache-Typen aus. Wenn Sie eine dieser Einstellungen ändern, starten Sie den Forms-Dienst neu, damit die Änderung wirksam wird. Verwenden Sie zum Neustart dieses Dienstes entweder Workbench oder folgen Sie den Anweisungen unter [Starten oder Beenden von Diensten, die AEM Forms-Modulen zugeordnet sind](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules).
 
 **Max. Größe des Dokuments im Cache (KB):** Die maximale Größe (in Kilobyte) eines Formularentwurfs oder einer anderen Ressource, die in einem Arbeitsspeicher-Cache gespeichert werden kann. Dies ist eine globale Einstellung, die für alle Arbeitsspeicher-Caches gilt. Wenn eine Ressource größer als dieser Wert ist, wird sie nicht im Arbeitsspeicher zwischengespeichert. Der Standardwert ist 1024 KB. Diese Einstellung hat keine Auswirkungen auf den Datenträgercache.
 

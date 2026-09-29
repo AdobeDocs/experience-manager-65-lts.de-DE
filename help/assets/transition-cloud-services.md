@@ -5,13 +5,25 @@ role: Admin
 feature: Translation
 solution: Experience Manager, Experience Manager Assets
 exl-id: cbe4f479-a287-412e-ab8b-98c310bb49b5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ee8e0f18-03e5-48ca-a013-04a577cd9a60
+    internal-label: Translation
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 100%
-
+source-wordcount: '398'
+ht-degree: 94%
 ---
-
 # Anwenden von Übersetzungs-Cloud-Services auf Ordner {#applying-translation-cloud-services-to-folders}
 
 Mit [!DNL Adobe Experience Manager] können Sie von Cloud-basierten Übersetzungs-Services von Ihrem bevorzugten Übersetzungsanbieter Gebrauch machen, um sicherzustellen, dass Ihre Assets basierend auf Ihren Anforderungen übersetzt werden.
@@ -36,13 +48,13 @@ Durch die direkte Anwendung der Übersetzungs-Cloud-Services auf Ihren Assets-Or
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Speichern]** und anschließend auf **[!UICONTROL OK]**, um das Dialogfeld zu schließen. Der Übersetzungs-Service wird auf den Ordner angewendet.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Speichern]** und anschließend auf **[!UICONTROL OK]**, um das Dialogfeld zu schließen.Der Übersetzungs-Service wird auf den Ordner angewendet.
 
 ## Anwenden eines benutzerdefinierten Übersetzungs-Connectors  {#applying-custom-translation-connector}
 
-Wenn Sie einen benutzerdefinierten Connector für die Übersetzungs-Services anwenden möchten, die in Übersetzungs-Workflows verwendet werden sollen. Um einen benutzerdefinierten Connector anzuwenden, installieren Sie zunächst den Connector aus Package Manager. Konfigurieren Sie dann den Connector über die Cloud Services Console. Nachdem Sie den Connector konfiguriert haben, ist er in der Liste der Connectoren auf der Registerkarte „Cloud Services“ verfügbar, wie unter [Anwenden der Übersetzungsservices](transition-cloud-services.md#applying-the-translation-services) beschrieben. Nachdem Sie den benutzerdefinierten Connector angewendet und Übersetzungsworkflows ausgeführt haben, werden in der Kachel **[!UICONTROL Übersetzungszusammenfassung]** des Übersetzungsprojekts die Details zum Connector unter den Überschriften **[!UICONTROL Anbieter]** und **[!UICONTROL Methode]** angezeigt.
+Wenn Sie einen benutzerdefinierten Connector für die Übersetzungs-Services anwenden möchten, die in Übersetzungs-Workflows verwendet werden sollen. Um einen benutzerdefinierten Connector anzuwenden, installieren Sie zunächst den Connector aus dem Paket-Manager. Konfigurieren Sie dann den Connector über die Cloud Services Console. Nachdem Sie den Connector konfiguriert haben, ist er in der Liste der Connectoren auf der Registerkarte „Cloud Services“ verfügbar, wie unter [Anwenden der Übersetzungsservices](transition-cloud-services.md#applying-the-translation-services) beschrieben. Nachdem Sie den benutzerdefinierten Connector angewendet und Übersetzungsworkflows ausgeführt haben, werden in der Kachel **[!UICONTROL Übersetzungszusammenfassung]** des Übersetzungsprojekts die Details zum Connector unter den Überschriften **[!UICONTROL Anbieter]** und **[!UICONTROL Methode]** angezeigt.
 
-1. Installieren Sie den Connector über Package Manager.
+1. Installieren Sie den Connector über den Paket-Manager.
 1. Klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud-Services]**.
 1. Suchen Sie den installierten Connector unter **[!UICONTROL Services von Dritten]** auf der Seite **[!UICONTROL Cloud Services]**.
 

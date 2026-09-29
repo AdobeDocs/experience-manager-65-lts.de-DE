@@ -4,13 +4,19 @@ description: Erfahren Sie mehr über die Flexibilität des universellen Editors 
 feature: Developing
 role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
-source-git-commit: 49922325d3cc993d551683fac1effe9fc9590880
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1320'
 ht-degree: 46%
-
 ---
-
 # Über den universellen Editor {#universal-editor}
 
 Erfahren Sie mehr über die Flexibilität des universellen Editors und wie er Ihre Headless-Erlebnisse mit AEM 6.5 LTS unterstützen kann.
@@ -39,9 +45,9 @@ Der universelle Editor ist ein Service, der mit AEM zusammenarbeitet, um Inhalte
 Folgendes unterstützt den universellen Editor:
 
 * AEM 6.5 LTS GA
-   * Sowohl On-Premise- als auch Adobe Managed Services (AMS)*-Hosting werden unterstützt.
+  * Sowohl On-Premise- als auch Adobe Managed Services (AMS)*-Hosting werden unterstützt.
 * [AEM 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
-   * Sowohl On-Premise- als auch AMS*-Hosting werden unterstützt.
+  * Sowohl On-Premise- als auch AMS*-Hosting werden unterstützt.
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (Version `2023.8.13099` oder höher)
 
 Dieses Dokument konzentriert sich auf die Unterstützung von AEM 6.5 LTS für den universellen Editor. Um den universellen Editor mit AEM 6.5 LTS zu verwenden, benötigen Sie Folgendes:
@@ -53,7 +59,7 @@ Dieses Dokument konzentriert sich auf die Unterstützung von AEM 6.5 LTS für de
 >
 >*Wenn Sie Adobe Managed Services (AMS) verwenden, wenden Sie sich an Ihren Customer Success Engineer (CSE), wenn Sie den universellen Editor verwenden möchten.
 
-## Setup {#setup}
+## Einrichtung {#setup}
 
 Gehen Sie wie folgt vor, um den universellen Editor zu verwenden:
 
@@ -129,11 +135,11 @@ Die folgenden Variablen stehen zur Definition Ihrer Zuordnungen unter `Universal
 Beispielzuordnungen
 
 * Öffnen Sie alle Seiten unter `/content/foo` in der AEM-Autoreninstanz:
-   * `/content/foo:${author}${path}.html?login-token=${token}`
-   * Ergebnisse im `https://localhost:4502/content/foo/x.html?login-token=<token>`
+  * `/content/foo:${author}${path}.html?login-token=${token}`
+  * Ergebnisse im `https://localhost:4502/content/foo/x.html?login-token=<token>`
 * Öffnen Sie alle Seiten unter `/content/bar` auf einem NextJS-Remote-Server und geben Sie alle Variablen als Informationen an
-   * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
-   * Ergebnisse im `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
+  * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+  * Ergebnisse im `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
 
 ### Einrichten des universellen Editor-Dienstes {#set-up-ue}
 

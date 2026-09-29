@@ -8,13 +8,26 @@ feature: Transaction Reports
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 761c9946-bf8e-468e-b8f5-36c958d68e90
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '890'
 ht-degree: 100%
-
 ---
-
 # Anzeigen und Verstehen von Transaktionsberichten für AEM Forms auf OSGi{#viewing-and-understanding-transaction-reports}
 
 Mit Transaktionsberichten können Sie die Anzahl der übermittelten Formulare, verarbeiteten Dokumente und gerenderten Dokumente erfassen und nachverfolgen. Das Ziel bei der Verfolgung dieser Transaktionen ist es, eine fundierte Entscheidung über die Produktnutzung und die Neugewichtung der Investitionen in Hardware und Software treffen zu können. Weitere Informationen finden Sie unter [Übersicht über AEM Forms-Transaktionsberichte](../../forms/using/transaction-reports-overview.md).
@@ -80,13 +93,13 @@ AEM Forms zeigt Transaktionsberichte seit dem konfigurierten Datum an, wie in ei
 
 ![sample-transaction-report-author](assets/sample-transaction-report-author.png)
 
-* Verwenden Sie die Optionen **Datum auf heute zurücksetzen** zum Zurücksetzen von Transaktionsdatensätzen. Wenn Sie das Datum auf heute zurücksetzen, gehen alle vorherigen Transaktionsdatensätze verloren. Wenn Sie das Datum auf einer Autoreninstanz zurücksetzen, wirkt sich die Änderung nicht auf die Transaktionsberichte auf den Veröffentlichungsinstanzen aus und umgekehrt.
+* Verwenden Sie die Optionen **Datum auf heute zurücksetzen** zum Zurücksetzen von Transaktionseinträgen. Wenn Sie das Datum auf heute zurücksetzen, gehen alle vorherigen Transaktionseinträge verloren. Wenn Sie das Datum auf einer Autoreninstanz zurücksetzen, wirkt sich die Änderung nicht auf die Transaktionsberichte auf den Veröffentlichungsinstanzen aus und umgekehrt.
 * Verwenden Sie die **Anzeigen von Transaktionen nur von Veröffentlichungsinstanzen** um alle Transaktionen anzuzeigen, die nur in der konfigurierten Veröffentlichungsinstanz oder Veröffentlichungsfarm aufgetreten sind.
 * Verwenden Sie diese Kategorien: **Dokument verarbeitet**, **Dokumente gesendet** und **Formulare eingereicht**, um die entsprechenden Transaktionen anzuzeigen. Für die Art der Transaktionen, die in diesen Kategorien berücksichtigt werden, siehe [Abrechnungsfähige Transaktionsberichte APIs](../../forms/using/transaction-reports-billable-apis.md).
 
 ## Protokolle der Transaktionsberichte ansehen {#view-transaction-reporting-logs}
 
-Bei der Transaktionsberichterstattung werden alle im Bericht angezeigten Informationen und einige zusätzliche Informationen in den Protokollen gespeichert. Die in den Protokollen enthaltenen Informationen sind für fortgeschrittene Benutzer hilfreich. Zum Beispiel unterteilen Protokolle Transaktionen in mehrere granulare Kategorien im Vergleich zu drei konsolidierten Kategorien, die im Bericht angezeigt werden. Die Protokolle sind in der Datei `error.log` im Verzeichnis `/crx-repository/logs/` verfügbar. Die Protokolle sind auch dann verfügbar, wenn Sie die Transaktionsberichte in der AEM Web Console nicht aktivieren.
+Bei der Transaktionsberichterstattung werden alle im Bericht angezeigten Informationen und einige zusätzliche Informationen in den Protokollen gespeichert. Die in den Protokollen enthaltenen Informationen sind für fortgeschrittene Benutzer hilfreich. Zum Beispiel unterteilen Protokolle Transaktionen in mehrere granulare Kategorien im Vergleich zu drei konsolidierten Kategorien, die im Bericht angezeigt werden. Die Protokolle sind in der Datei `error.log` im Verzeichnis `/crx-repository/logs/` verfügbar. Die Protokolle sind auch dann verfügbar, wenn Sie die Transaktionsberichte in der AEM-Web-Konsole nicht aktivieren.
 
 ## Ähnliche Artikel {#related-articles}
 

@@ -9,13 +9,25 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: a1f4823f-4861-4e99-88cd-4a686abe3f64
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3107'
 ht-degree: 100%
-
 ---
-
 # Verwaltung von Benutzenden, Gruppen und Zugriffsrechten{#user-group-and-access-rights-administration}
 
 Die Aktivierung des Zugriffs auf ein CRX-Repository umfasst verschiedene Themen:
@@ -70,22 +82,22 @@ CRX verwendet zwei Hauptkonzepte zur Bewertung der Zugriffsrechte:
 
 * Ein **Prinzipal** ist eine Entität, die Zugriffsrechte besitzt. Zu den Prinzipalen gehören:
 
-   * Ein Benutzerkonto
-   * Ein Gruppenkonto
+  * Ein Benutzerkonto
+  * Ein Gruppenkonto
 
-     Wenn ein Benutzerkonto zu einer oder mehreren Gruppen gehört, ist es auch mit jedem dieser Gruppenprinzipale verknüpft.
+    Wenn ein Benutzerkonto zu einer oder mehreren Gruppen gehört, ist es auch mit jedem dieser Gruppenprinzipale verknüpft.
 
 * Ein **Objekt** repräsentiert die Quelle einer Anfrage.
 
   Es dient zur Konsolidierung der für diese Anfrage relevanten Zugriffsrechte. Diese stammen von:
 
-   * dem Benutzerprinzipal
+  * dem Benutzerprinzipal
 
-     den Rechten, die Sie dem Benutzerkonto direkt zuweisen
+    den Rechten, die Sie dem Benutzerkonto direkt zuweisen
 
-   * allen mit diesem Benutzer verknüpften Gruppenprinzipalen
+  * allen mit diesem Benutzer verknüpften Gruppenprinzipalen
 
-     sowie allen Rechten, die Sie jeder der Gruppen zugewiesen haben, zu denen die bzw. der Benutzende gehört
+    sowie allen Rechten, die Sie jeder der Gruppen zugewiesen haben, zu denen die bzw. der Benutzende gehört
 
   Das Ergebnis wird dann verwendet, um den Zugriff auf die angeforderte Ressource zu erlauben oder zu verweigern.
 
@@ -124,8 +136,8 @@ Zugriffsberechtigungen in CRX werden wie folgt bewertet:
 
 * Benutzerprinzipale haben immer Vorrang vor Gruppenprinzipalen, unabhängig von:
 
-   * ihrer Reihenfolge in der Zugriffsteuerungsliste
-   * ihrer Position in der Knotenhierarchie
+  * ihrer Reihenfolge in der Zugriffsteuerungsliste
+  * ihrer Position in der Knotenhierarchie
 
 * Bei einem gegebenen Prinzipal ist (maximal) 1 Ablehnungs- und 1 Zulassungseintrag in einem gegebenen Knoten vorhanden. Die Implementierung löscht immer redundante Einträge und stellt sicher, dass dieselbe Berechtigung nicht sowohl in den Zulassungs- als auch in den Ablehnungseinträgen aufgeführt wird.
 

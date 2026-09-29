@@ -6,13 +6,22 @@ role: Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 21771c11-ecce-4eff-be5b-f55835a5644e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '423'
 ht-degree: 100%
-
 ---
-
 # Best Practices für das Übersetzen von Assets {#best-practices-for-translating-assets-efficiently}
 
 [!DNL Adobe Experience Manager Assets] unterstützt mehrsprachige Workflows, um Binärdateien, Metadaten und Tags für digitale Assets in verschiedene Gebietsschemata zu übertragen und die übersetzten Assets zu verwalten. Details finden Sie unter [Mehrsprachige Assets](multilingual-assets.md).
@@ -48,5 +57,5 @@ Sie können auch einige Konfigurationsänderungen an einigen Workflows und dem F
 
    Mit dem Workflow [!UICONTROL DAM-Metadaten-Writeback] können Sie das Datum der letzten Änderung für ein Asset konfigurieren. Da dieser Workflow in Schritt 2 deaktiviert wird, kann [!DNL Assets] das Datum der letzten Asset-Änderung nicht länger auf dem neuesten Stand halten. Aktivieren Sie daher den Workflow *Datum der letzten Änderung festlegen*, um sicherzustellen, dass das Datum der letzten Änderung der Assets aktuell sind. Assets mit veralteten Daten der letzten Änderung können Fehler verursachen.
 
-1. [Konfigurieren Sie das Framework für die Übersetzungsintegration](/help/sites-administering/tc-tic.md) so, dass die Übersetzung von Asset-Binärdateien gestoppt wird. Deaktivieren Sie auf der Registerkarte **[!UICONTROL Assets]** die Option [!UICONTROL Assets übersetzen], um eine Übersetzung von Asset-Binärdateien auszuschließen. 
+1. [Konfigurieren Sie das Framework für die Übersetzungsintegration](/help/sites-administering/tc-tic.md) so, dass die Übersetzung von Asset-Binärdateien gestoppt wird. Deaktivieren Sie auf der Registerkarte **[!UICONTROL Assets]** die Option [!UICONTROL Assets übersetzen], um eine Übersetzung von Asset-Binärdateien auszuschließen.
 1. Übersetzen Sie Asset-Metadaten/-Tags mithilfe von [mehrsprachigen Asset-Workflows](multilingual-assets.md).

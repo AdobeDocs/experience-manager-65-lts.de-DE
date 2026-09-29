@@ -9,13 +9,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 55d4f34c-6766-48b7-86a1-689901e8871f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 100%
-
+source-wordcount: '718'
+ht-degree: 97%
 ---
-
 # Web-Konsole{#web-console}
 
 Die Web-Konsole in Adobe Experience Manager (AEM) basiert auf der [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix ist ein Gemeinschaftsprojekt zur Implementierung der OSGi R4-Dienstplattform, die das OSGi-Framework und Standarddienste umfasst.
@@ -26,10 +35,10 @@ Die Web-Konsole in Adobe Experience Manager (AEM) basiert auf der [Apache Felix 
 >
 >Für AEM gelten eigene Standardeinstellungen, sodass sich die festgelegten Standardeinstellungen möglicherweise von denen der Konsole unterscheiden.
 
-Die Web-Konsole bietet eine Auswahl von Registerkarten zur Verwaltung der OSGi-Bundles, darunter:
+Die Web-Konsole bietet eine Auswahl von Registerkarten zur Verwaltung der OSGi-Pakete, darunter:
 
-* [Konfiguration](#configuration): wird zum Konfigurieren der OSGi-Bundles verwendet und ist daher der zugrunde liegende Mechanismus zum Konfigurieren der AEM-Systemparameter.
-* [Bundles](#bundles): wird für die Installation von Bundles verwendet
+* [Konfiguration](#configuration): wird zum Konfigurieren der OSGi-Pakete verwendet und ist daher der zugrunde liegende Mechanismus zum Konfigurieren der AEM-Systemparameter.
+* [Pakete](#bundles): wird für die Installation von Paketen verwendet
 * [Komponenten](#components): dient zur Kontrolle der Status der für AEM erforderlichen Komponenten
 
 Alle vorgenommenen Änderungen werden sofort auf das laufende System angewendet. Es ist kein Neustart erforderlich.
@@ -40,7 +49,7 @@ Der Zugriff auf die Konsole ist über `../system/console` möglich, z. B.:
 
 ## Konfiguration {#configuration}
 
-Die Registerkarte **Konfiguration** wird zur Konfiguration der OSGi-Bundles verwendet und ist daher der zugrunde liegende Mechanismus zur Konfiguration der AEM-Systemparameter.
+Die Registerkarte **Konfiguration** wird zur Konfiguration der OSGi-Pakete verwendet und ist daher der zugrunde liegende Mechanismus zur Konfiguration der AEM-Systemparameter.
 
 >[!NOTE]
 >
@@ -63,13 +72,13 @@ Eine Liste der Konfigurationen wird angezeigt:
 Es gibt zwei Arten von Konfigurationen, die in den Dropdown-Listen auf diesem Bildschirm verfügbar sind:
 
 * **Konfigurationen**
-Hier können Sie die vorhandenen Konfigurationen aktualisieren. Diese weisen eine persistente Identität (PID) auf und können Folgendes sein:
+Ermöglicht die Aktualisierung der vorhandenen Konfigurationen. Diese weisen eine persistente Identität (PID) auf und können Folgendes sein:
 
-   * Standard und integraler Bestandteil von AEM – diese sind erforderlich. Durch Löschen werden die Werte auf die Standardeinstellungen zurückgesetzt.
-   * Instanzen, die von Werkskonfigurationen erstellt wurden – diese Instanzen werden von Benutzenden erstellt. Durch Löschen wird die Instanz entfernt.
+  * Standard und integraler Bestandteil von AEM – diese sind erforderlich. Durch Löschen werden die Werte auf die Standardeinstellungen zurückgesetzt.
+  * Instanzen, die von Werkskonfigurationen erstellt wurden – diese Instanzen werden von Benutzenden erstellt. Durch Löschen wird die Instanz entfernt.
 
 * **Werkskonfigurationen**
-Hier können Sie eine Instanz des erforderlichen Funktionsobjekts erstellen.
+Ermöglicht die Erstellung einer Instanz des erforderlichen Funktionsobjekts.
 
   Diese wird einer persistenten Identität zugewiesen und dann in der Dropdown-Liste mit den Konfigurationen aufgeführt.
 
@@ -95,13 +104,13 @@ Die Parameter können dann ggf. aktualisiert werden und Sie können unter folgen
 
 * **Bindung aufheben**
 
-  Hebt die Bindung zwischen der aktuellen Konfiguration und dem Bundle auf.
+  Hebt die Bindung zwischen der aktuellen Konfiguration und dem Paket auf.
 
 * **Abbrechen**
 
   Verwirft alle aktuellen Änderungen.
 
-## Bundles {#bundles}
+## Pakete {#bundles}
 
 Die Registerkarte **Bundles** stellt den Mechanismus zum Installieren der für AEM erforderlichen OSGi-Pakete dar. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
 
@@ -121,7 +130,7 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
 * **Installieren oder aktualisieren**
 
-  Hiermit können Sie nach der Datei mit Ihrem Bundle **suchen** und festlegen, ob dieses sofort **gestartet** werden soll, und mit welcher **Startebene**.
+  Hiermit können Sie nach der Datei mit Ihrem Paket **suchen** und festlegen, ob dieses sofort **gestartet** werden soll, und mit welcher **Startebene**.
 
 * **Neu laden**
 
@@ -131,19 +140,19 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
   Diese Option prüft die Verweise aller Pakete und aktualisiert sie ggf.
 
-  So werden möglicherweise nach einer Aktualisierung sowohl die alte als auch die neue Version aufgrund vorheriger Verweise weiter ausgeführt. Diese Option prüft und transferiert alle Verweise auf die neue Version, sodass die alte Version beendet werden kann.
+  So werden möglicherweise nach einer Aktualisierung sowohl die alte als auch die neue Version aufgrund vorheriger Verweise weiter ausgeführt. Diese Option prüft und transferiert alle Verweise auf die neue Version, sodass die alte Version gestoppt werden kann.
 
 * **Starten**
 
-  Startet ein Bundle gemäß der angegebenen Startebene.
+  Startet ein Paket gemäß der angegebenen Startebene.
 
 * **Anhalten**
 
-  Stoppt das Bundle.
+  Stoppt das Paket.
 
 * **Deinstallieren**
 
-  Deinstalliert das Bundle vom System.
+  Deinstalliert das Paket vom System.
 
 * **Status anzeigen**
 

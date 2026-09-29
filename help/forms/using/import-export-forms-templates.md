@@ -1,6 +1,6 @@
 ---
 title: Importieren und Exportieren von Assets in AEM Forms
-description: Sie können adaptive Formulare und Vorlagen aus und in AEM-Instanzen kopieren. Dies erleichtert das Integrieren von Formularen oder das Verschieben von Formularen zwischen Systemen.
+description: Sie können adaptive Formulare und Vorlagen aus und in AEM-Instanzen exportieren und importieren. Dies erleichtert das Integrieren von Formularen oder das Verschieben von Formularen zwischen Systemen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
@@ -9,16 +9,32 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 98304115-1c27-4261-9c34-70a9d7e7cd53
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2481'
 ht-degree: 100%
-
 ---
-
 # Importieren und Exportieren von Assets in AEM Forms{#importing-and-exporting-assets-to-aem-forms}
 
-Sie können Formulare und verwandte Assets, Designs, Datenwörterbücher, Dokumentfragmente und Briefe zwischen verschiedenen AEM Forms-Instanzen verschieben. Ein solches Verschieben ist bei der Migration von Systemen oder beim Verschieben von Formularen von einem Staging Server auf einen Produktionsserver erforderlich. Für diejenigen Assets, für die das Hochladen und Importieren über die AEM Forms-Benutzeroberfläche unterstützt wird, wird die Forms-Benutzeroberfläche zum Export oder Import empfohlen. Die Verwendung von AEM Package Manager zum Exportieren oder Importieren solcher Assets wird nicht empfohlen.
+Sie können Formulare und verwandte Assets, Designs, Datenwörterbücher, Dokumentfragmente und Briefe zwischen verschiedenen AEM Forms-Instanzen verschieben. Ein solches Verschieben ist bei der Migration von Systemen oder beim Verschieben von Formularen von einem Staging Server auf einen Produktionsserver erforderlich. Für diejenigen Assets, für die das Hochladen und Importieren über die AEM Forms-Benutzeroberfläche unterstützt wird, wird die Forms-Benutzeroberfläche zum Export oder Import empfohlen. Die Verwendung des AEM-Paket-Managers zum Exportieren oder Importieren solcher Assets wird nicht empfohlen.
 
 ## Download und Upload von Assets für Formulare und Dokumente {#download-or-upload-forms-amp-documents-assets}
 
@@ -26,7 +42,7 @@ Mithilfe der AEM Forms-Benutzeroberfläche können Sie Assets aus einer AEM-Inst
 
 Export und Import über die Benutzeroberfläche von AEM Forms wird für alle Assets mit Ausnahme von adaptiven Formularvorlagen und adaptiven Formularinhaltsrichtlinien unterstützt. Darum werden beim Exportieren eines adaptiven Formulars über die AEM Forms-Benutzeroberfläche die verknüpfte adaptive Formularvorlage und Inhaltsrichtlinien nicht wie andere verknüpfte Assets automatisch exportiert.
 
-Sie müssen AEM Package Manager verwenden, um ein CRX-Paket dieser Elemente auf dem AEM-Quellserver zu erstellen und das Paket auf dem Zielserver zu installieren. Weitere Informationen zum Erstellen und Installieren von Paketen finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
+Sie müssen den AEM-Paket-Manager verwenden, um ein CRX-Paket dieser Elemente auf dem AEM-Quell-Server zu erstellen und das Paket auf dem Ziel-Server zu installieren. Weitere Informationen zum Erstellen und Installieren von Paketen finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
 
 ### Download von Assets für Formulare und Dokumente {#download-forms-amp-documents-assets}
 
@@ -38,10 +54,10 @@ Download von Assets für Formulare und Dokumente
 1. Wählen Sie unter „Asset(s) herunterladen“ eine der folgenden Optionen und dann **Herunterladen** aus.
 
    * **Als CRX-Paket herunterladen:** Verwenden Sie diese Option zum Herunterladen und Verschieben aller ausgewählten Assets und der zugehörigen Abhängigkeiten von einer AEM Forms-Instanz in eine andere. Dadurch werden alle Assets und Ordner als CRX-Paket heruntergeladen. Alle Formular-Assets, einschließlich in AEM erstellter Formulare (adaptive Formulare, interaktive Kommunikation und adaptive Formularfragmente), Formularsätze, Formularvorlagen, PDF-Dokumente und Ressourcen (XSDs, XFS, Bilder), können über die AEM Forms-Benutzeroberfläche als Paket heruntergeladen werden.
-Der Vorteil des Herunterladens von Assets als Paket besteht darin, dass dabei auch Assets enthalten sind, die von den ausgewählten Assets verwendet wurden. Beispiel: Sie verfügen über ein adaptives Formular, das eine Formularvorlage, XSD und ein Bild verwendet. Wenn Sie dieses adaptive Formular auswählen und es als Paket herunterladen, enthält das heruntergeladene Paket ebenfalls die Formularvorlage, XSD und das Bild. Alle mit dem Asset verknüpften Metadateneigenschaften (einschließlich benutzerdefinierter Eigenschaften) werden ebenfalls heruntergeladen.
+     Der Vorteil des Herunterladens von Assets als Paket besteht darin, dass dabei auch Assets enthalten sind, die von den ausgewählten Assets verwendet wurden. Beispiel: Sie verfügen über ein adaptives Formular, das eine Formularvorlage, XSD und ein Bild verwendet. Wenn Sie dieses adaptive Formular auswählen und es als Paket herunterladen, enthält das heruntergeladene Paket ebenfalls die Formularvorlage, XSD und das Bild. Alle mit dem Asset verknüpften Metadateneigenschaften (einschließlich benutzerdefinierter Eigenschaften) werden ebenfalls heruntergeladen.
 
    * **Asset(s) als Binärdateien herunterladen:** Verwenden Sie die Option nur zum Herunterladen von Formularvorlagen (XDP), PDF-Formularen (PDF), Dokumenten (PDF) und Ressourcen (Bilder, Schemas, Stylesheets). Sie können diese Assets mit externen Anwendungen bearbeiten. Es werden die Forms-Assets, die Binärdaten enthalten, wie XSDs, XDPs, Bilder, PDFs, und XDPs, als .zip-Datei heruntergeladen.
-Sie können keine adaptiven Formulare, interaktive Kommunikation, adaptiven Formularfragmente, Designs und Formularsätze mit der Option **Asset(s) als binäre Dateien herunterladen** herunterladen. Um diese Assets herunterzuladen, sollten Sie die Option **Als CRX-Paket herunterladen** verwenden.
+     Sie können keine adaptiven Formulare, interaktive Kommunikation, adaptiven Formularfragmente, Designs und Formularsätze mit der Option **Asset(s) als binäre Dateien herunterladen** herunterladen. Um diese Assets herunterzuladen, sollten Sie die Option **Als CRX-Paket herunterladen** verwenden.
 
    Die ausgewählten Assets werden als Archiv (.zip-Datei) heruntergeladen.
 
@@ -171,7 +187,7 @@ Sie können in eine .cmp-Datei exportierte Assets importieren. Eine .cmp-Datei k
 
 Sie können den AEM-Paket-Manager verwenden, um Workflow-Programme zu exportieren. Das Verfahren wird im Folgenden erläutert:
 
-1. Öffnen Sie AEM Forms Package Manager. Die URL des Paketmanagers lautet „https://&lt;server>:&lt;port>/crx/packmgr“.
+1. Öffnen Sie den AEM Forms-Paket-Manager. Die URL des Paket-Managers lautet „https://&lt;server>:&lt;port>/crx/packmgr“.
 1. Klicken Sie auf **[!UICONTROL Paket erstellen]**. Das Dialogfeld **[!UICONTROL Neues Paket]** wird angezeigt.
 1. Geben Sie den Namen, die Version und die Gruppe für das Paket an. Klicken Sie auf **[!UICONTROL OK]**.
 1. Klicken Sie auf **[!UICONTROL Bearbeiten]** und öffnen Sie die Registerkarte **[!UICONTROL Filter]**. Klicken Sie auf **[!UICONTROL Filter hinzufügen]**. Geben Sie den Pfad der Workflow-Anwendung an. Beispiel: /etc/fd/dashboard/startpoints/homemortgage. Klicken Sie auf **[!UICONTROL Regel hinzufügen]**.

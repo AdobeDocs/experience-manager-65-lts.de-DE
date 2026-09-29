@@ -11,13 +11,30 @@ feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
 exl-id: 20de763d-dd07-4ba6-a54d-a2b3b9b7e1ec
 index: false
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2857'
-ht-degree: 100%
-
+source-wordcount: '2879'
+ht-degree: 86%
 ---
-
 
 # Adobe Campaign-Komponenten{#adobe-campaign-components}
 
@@ -62,11 +79,11 @@ Sie bearbeiten die Komponente **Überschrift (Campaign)** direkt. Frei lassen, u
 
 Sie können Folgendes konfigurieren:
 
-* **Titel**
+* **title**
 Wenn Sie einen anderen Namen als den Seitentitel verwenden möchten, geben Sie ihn hier ein.
 
 * **Überschriftenebene (1, 2, 3, 4)**
-Die Überschriftenebene basierend auf der HTML-Überschriftgröße (1–4).
+Die Überschriftenebene basierend auf der HTML-Überschriftgröße 1-4.
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Überschrift (Kampagne)“ dargestellt wird.
 
@@ -102,33 +119,33 @@ Im Vollbildbearbeitungsmodus stehen verschiedene zusätzliche Optionen zur Verf�
 
 Wenn ein Bild geladen wird, können folgende Konfigurationen durchgeführt werden:
 
-* **Zuweisen**
-Wählen Sie „Zuweisen“ aus, um ein Bild zuzuweisen. Sie legen fest, wie die Imagemap (Rechteck, Polygon usw.) erstellt werden soll, und geben an, worauf der Bereich verweisen soll.
+* **Map**
+Um ein Bild zuzuordnen, wählen Sie Zuordnen aus. Sie legen fest, wie die Imagemap (Rechteck, Polygon usw.) erstellt werden soll, und geben an, worauf der Bereich verweisen soll.
 
 * **Zuschneiden**
-Wählen Sie „Zuschneiden“ aus, um ein Bild zuzuschneiden. Verwenden Sie die Maus, um das Bild zuzuschneiden.
+Wählen Sie Zuschneiden aus, um ein Bild zuzuschneiden. Verwenden Sie die Maus, um das Bild zuzuschneiden.
 
 * **Drehen**
 Wählen Sie „Drehen“ aus, um ein Bild zu drehen. Wiederholen Sie das Drehen so lange, bis das Bild die gewünschte Ausrichtung hat.
 
-* **Entfernen**
-Damit entfernen Sie das aktuelle Bild.
+* **Löschen**
+Entfernt das aktuelle Bild.
 
 * Zoom-Leiste (nur klassische Benutzeroberfläche)
 Verwenden Sie den Regler unter dem Bild (und über den Schaltflächen „OK“ und „Abbrechen“), um das Bild ein- und auszuzoomen.
-* **Titel**
+* **title**
 Der Titel des Bildes.
 
-* **Alt-Text**
-Ein alternativer Text, der für barrierefreie Inhalte verwendet wird.
+* **ALT-Text**
+Ein alternativer Text, der beim Erstellen barrierefreier Inhalte verwendet wird.
 
-* **Verknüpfen mit**
+* **Verknüpfung zu**
 Erstellen Sie einen Link zu Assets oder anderen Seiten innerhalb Ihrer Website.
 
 * **Beschreibung**
 Eine Beschreibung des Bildes.
 
-* **Größe**
+* **size**
 Legt die Höhe und Breite des Bildes fest.
 
 >[!NOTE]
@@ -149,16 +166,16 @@ Mithilfe der Komponente „Link (Campaign)“ können Sie Ihrem Newsletter einen
 Folgendes können Sie in den Registerkarten **Anzeige**, **URL-Info** oder **Erweitert** konfigurieren:
 
 * **Verknüpfungsbeschriftung**
-Die Beschriftung des Links. Dies ist der Text, der den Benutzern angezeigt wird.
+Die Beschriftung für den Link. Dies ist der Text, der den Benutzern angezeigt wird.
 
 * **Link-QuickInfo**
-Mit dieser Option werden weitere Informationen zur Verwendung des Links hinzugefügt.
+Fügt zusätzliche Informationen zur Verwendung des Links hinzu.
 
-* **Verknüpfungstyp**
-Wählen Sie in der Dropdown-Liste zwischen einer **benutzerdefinierten URL** und einem **adaptiven Dokument** aus. Dieses Feld ist obligatorisch. Wenn Sie „Benutzerdefinierte URL“ auswählen, können Sie die URL des Links angeben. Entscheiden Sie sich für ein adaptives Dokument, können Sie den Dokumentenpfad festlegen.
+* **LinkType**
+Wählen Sie in der Dropdown-Liste zwischen einer **benutzerdefinierten URL** und einem **adaptiven Dokument**. Dieses Feld ist obligatorisch. Wenn Sie „Benutzerdefinierte URL“ auswählen, können Sie die URL des Links angeben. Entscheiden Sie sich für ein adaptives Dokument, können Sie den Dokumentenpfad festlegen.
 
 * **Zusätzlicher URL-Parameter**
-Fügen Sie weitere URL-Parameter hinzu. Klicken Sie auf „Element hinzufügen“, um mehrere Elemente hinzuzufügen.
+Fügen Sie alle zusätzlichen URL-Parameter hinzu. Klicken Sie auf „Element hinzufügen“, um mehrere Elemente hinzuzufügen.
 
 >[!NOTE]
 >
@@ -212,28 +229,28 @@ Siehe [Komponente „Bild (Campaign)“](#image-campaign) für weitere Informati
 Wie bei den Komponenten „Text und Personalisierung (Kampagne)“ und „Bild (Kampagne)“ können Sie Folgendes konfigurieren:
 
 * **Text**
-Geben Sie einen Text ein. Verwenden Sie die Symbolleiste, um die Formatierung zu ändern, Listen zu erstellen und Links hinzuzufügen.
+Text eingeben. Verwenden Sie die Symbolleiste, um die Formatierung zu ändern, Listen zu erstellen und Links hinzuzufügen.
 
-* **Bild**
-Ziehen Sie ein Bild aus dem Content Finder oder klicken Sie, um zu einem Bild zu navigieren. Schneiden Sie es gegebenenfalls zu oder drehen Sie es.
+* **image**
+Ziehen Sie ein Bild aus dem Content Finder oder klicken Sie, um zu einem Bild zu navigieren. Schneiden Sie nach Bedarf zu oder drehen Sie sie.
 
 * **Bildeigenschaften** (**Erweiterte Bildeigenschaften**)
-Damit können Sie Folgendes festlegen:
+Hiermit können Sie Folgendes festlegen:
 
-   * **Titel**
-Der Titel des Blocks, der angezeigt wird, wenn Sie mit der Maus darauf zeigen.
+  * **title**
+    Der Titel des Blocks, der angezeigt wird, wenn Sie mit der Maus darauf zeigen.
 
-   * **ALT-Text**
-Alternativer Text, der angezeigt wird, wenn das Bild nicht dargestellt werden kann.
+  * **ALT-Text**
+    Alternativtext, der angezeigt wird, wenn das Bild nicht dargestellt werden kann.
 
-   * **Verknüpfen mit**
-Erstellen Sie einen Link zu Assets oder anderen Seiten innerhalb Ihrer Website.
+  * **Verknüpfung zu**
+    Erstellen Sie einen Link zu Assets oder anderen Seiten innerhalb Ihrer Website.
 
-   * **Beschreibung**
-Eine Beschreibung des Bildes.
+  * **Beschreibung**
+    Eine Beschreibung des Bildes.
 
-   * **Größe**
-Legt die Höhe und Breite des Bildes fest.
+  * **size**
+    Legt die Höhe und Breite des Bildes fest.
 
 >[!NOTE]
 >
@@ -342,11 +359,11 @@ In den meisten Komponenten können Sie Folgendes konfigurieren:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
-* **Titel**
+* **title**
 Wenn Sie einen anderen Namen als Elementnamen verwenden möchten, geben Sie ihn hier ein.
 
 * **Titel ausblenden**
-Aktivieren Sie diese Option, wenn der Titel nicht angezeigt werden soll.
+Aktivieren Sie dieses Kontrollkästchen, wenn der Titel nicht angezeigt werden soll.
 
 * **Beschreibung**
 Fügen Sie eine Beschreibung des Felds hinzu, um Benutzern weitere Informationen zur Verfügung zu stellen.
@@ -359,10 +376,10 @@ Zeigt nur den Wert an, falls dieser vorhanden ist.
 Sie können Folgendes konfigurieren:
 
 * **Zuordnung**
-Wählen Sie ein Adobe Campaign-Personalisierungsfeld aus, falls gewünscht.
+Wählen Sie ggf. ein Adobe Campaign-Personalisierungsfeld aus.
 
 * **Abstimmschlüssel**
-Aktivieren Sie diese Option, wenn das Feld Teil des Abstimmschlüssels ist.
+Aktivieren Sie dieses Kontrollkästchen, wenn dieses Feld Teil des Abstimmschlüssels ist.
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
@@ -396,7 +413,8 @@ Verwenden Sie das Datumsfeld, um den Empfängerinnen und Empfängern eine Datums
 
 Neben den [von den meisten Adobe Campaign-Komponenten genutzten Einstellungen](#settings-common-to-most-components) können Sie auch Folgendes konfigurieren:
 
-* **Beschränkungen**: Im Dropdown-Menü für Beschränkungen können Sie aus Folgendem wählen: **Keine** oder **Datum**, um ein Datum oder keine Beschränkung festzulegen. Wählen Sie „Datum“ aus, müssen Benutzende ihre Angaben im Datumsformat machen.
+* **Beschränkungen - Dropdown** „Beschränkung“
+Sie können **Keine** oder **Datum -** auswählen, um ein Datum oder keine Beschränkung hinzuzufügen. Wählen Sie „Datum“ aus, müssen Benutzende ihre Angaben im Datumsformat machen.
 
 * **Beschränkungsmeldung** Außerdem können Sie eine Beschränkungsmeldung hinzufügen, die Benutzern mitteilt, wie Antworten richtig formatiert werden.
 * **Stile – Breite** Passen Sie die Breite des Felds an, indem Sie auf **+** oder **-** tippen oder eine Zahl eingeben.
@@ -414,7 +432,7 @@ Jedes Formular, mit dem Adobe Campaign-Profildaten angezeigt und bearbeitet wer
 In der Komponente „Verschlüsselter Primärschlüssel (Campaign)“ können Sie Folgendes konfigurieren:
 
 * **Titel und Text – Elementname** Standardeinstellung: encryptedPK. Sie müssen den Elementnamen nur ändern, wenn er mit dem Namen eines anderen Elements im Formular in Konflikt steht. Zwei Formularfelder dürfen nicht denselben Elementnamen haben.
-* **Adobe Campaign – URL-Parameter** Fügen Sie den URL-Parameter des EPK hinzu. Hierfür können Sie beispielsweise den Wert **epk** verwenden.
+* **Adobe Campaign – URL-Parameter** Fügen Sie den URL-Parameter des EPK hinzu. Sie können beispielsweise den Wert **epk** verwenden.
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Verschlüsselter Primärschlüssel (Campaign)“ dargestellt wird.
 
@@ -447,8 +465,8 @@ Verwenden Sie das numerische Feld, um Empfängerinnen und Empfängern die Eingab
 
 Neben den [von den meisten Adobe Campaign-Komponenten genutzten Einstellungen](#settings-common-to-most-components) können Sie auch Folgendes konfigurieren:
 
-* **Beschränkungen – Dropdown „Beschränkung“**
-Sie können **Keine** oder **Numerisch** auswählen, um eine Zahlenbeschränkung oder keine Beschränkung hinzuzufügen. Wählen Sie die numerische Beschränkung, können Benutzende ausschließlich Zahlen in das Feld eingeben.
+* **Beschränkungen - Dropdown** „Beschränkung“
+Sie können - **Keine** oder **Numerisch -** auswählen, um eine Zahlenbeschränkung oder keine Beschränkung hinzuzufügen. Wählen Sie die numerische Beschränkung, können Benutzende ausschließlich Zahlen in das Feld eingeben.
 
 * **Beschränkungsmeldung** Außerdem können Sie eine Beschränkungsmeldung hinzufügen, die Benutzern mitteilt, wie Antworten richtig formatiert werden.
 * **Stile – Breite** Passen Sie die Breite des Felds an, indem Sie auf **+** oder **-** tippen oder eine Zahl eingeben.
@@ -491,8 +509,8 @@ Die Komponente „Textfeld (Campaign)“ ermöglicht Ihnen die Eingabe von Daten
 
 Neben den [von den meisten Adobe Campaign-Komponenten genutzten Einstellungen](#settings-common-to-most-components) können Sie auch Folgendes konfigurieren:
 
-* **Beschränkungen**: Im Dropdown-Menü
-für Beschränkungen können Sie **Keine**, **E-Mail** oder **Name** (keine Umlaute) auswählen, um keine Beschränkung festzulegen oder die Eingabe auf E-Mail-Adressen und Namen einzugrenzen. Entscheiden Sie sich für „E-Mail“, können Benutzende ausschließlich E-Mail-Adressen in das Feld eingeben. Entscheiden Sie sich für „Name“, muss ein Name eingegeben werden (hierbei sind jedoch keine Umlaute gestattet).
+* **Beschränkungen - Dropdown** „Beschränkung“
+Sie können - **Keine** **E-Mail** oder **Name** (keine Umlaute) auswählen, um keine Beschränkung festzulegen oder die Eingabe auf E-Mail-Adressen und Namen einzugrenzen. Entscheiden Sie sich für „E-Mail“, können Benutzer ausschließlich E-Mail-Adressen in das Feld eingeben. Entscheiden Sie sich für „Name“, muss ein Name eingegeben werden (hierbei sind jedoch keine Umlaute gestattet).
 
 * **Beschränkungsmeldung** Außerdem können Sie eine Beschränkungsmeldung hinzufügen, die Benutzern mitteilt, wie Antworten richtig formatiert werden.
 * **Stile – Breite** Passen Sie die Breite des Felds an, indem Sie auf **+** oder **-** tippen oder eine Zahl eingeben.

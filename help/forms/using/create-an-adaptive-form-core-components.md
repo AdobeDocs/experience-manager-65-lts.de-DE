@@ -1,18 +1,32 @@
 ---
 title: Erstellen eines adaptiven Formulars
-description: Erfahren Sie, wie Sie ein adaptives Formular mit [!DNL Experience Manager Forms] erstellen können. Adaptive Formulare sind responsive HTML5-Formulare, mit denen die Informationserfassung und -verarbeitung optimiert wird. Vertiefen Sie Ihre Kenntnisse über die Erstellung adaptiver Formulare auf der Grundlage eines Formulardatenmodells und eines XML- oder JSON-Schemas.
+description: Erfahren Sie, wie Sie ein adaptives Formular mit [!DNL Experience Manager Forms] erstellen. Adaptive Formulare sind responsive HTML5-Formulare, mit denen die Informationserfassung und -verarbeitung optimiert wird. Vertiefen Sie Ihre Kenntnisse über die Erstellung adaptiver Formulare auf der Grundlage eines Formulardatenmodells und eines XML- oder JSON-Schemas.
 Keywords: create adaptive form core component, create core component based adaptive form, creare adaptive form
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: eb857ab1-ab1b-4c77-af3b-4507f53a8241
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1802'
+source-wordcount: '1922'
 ht-degree: 98%
-
 ---
-
 # Erstellen von adaptiven Formularen auf Grundlage der Kernkomponenten {#creating-an-adaptive-form-core-components}
 
 
@@ -26,7 +40,7 @@ Die Dokumentation zu AEM as a Cloud Service finden Sie unter [AEM Forms auf Clou
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
 
-Mit adaptiven Formularen können Sie Formulare erstellen, die ansprechend, reaktionsfähig, dynamisch und anpassungsfähig sind. AEM Forms bietet eine benutzerfreundliche Benutzeroberfläche für Unternehmen zur schnellen Erstellung adaptiver Formulare.  Die Benutzeroberfläche bietet eine schnelle Registerkartennavigation, mit der Sie vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen einfach auswählen können, um ein adaptives Formular zu erstellen.
+Mit adaptiven Formularen können Sie Formulare erstellen, die ansprechend, reaktionsfähig, dynamisch und anpassungsfähig sind. AEM Forms bietet eine benutzerfreundliche Benutzeroberfläche für Unternehmen zur schnellen Erstellung adaptiver Formulare. Die Benutzeroberfläche bietet eine schnelle Registerkartennavigation, mit der Sie vorkonfigurierte Vorlagen, Stile, Felder und Übermittlungsoptionen einfach auswählen können, um ein adaptives Formular zu erstellen.
 
 Bevor Sie beginnen, erfahren Sie mehr über die Arten der Formular-Komponenten, die Ihnen zur Verfügung stehen:
 
@@ -54,7 +68,7 @@ Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## Erstellen eines adaptiven Formulars {#create-an-adaptive-form}
@@ -75,7 +89,7 @@ Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
    * **[!UICONTROL Design-Client-Bibliothek]:** Gibt das Design für ein adaptives Formular an. Standardmäßig wird das Design `adaptiveform.theme.canvas3` ausgewählt. Sie können auch ein anderes Design im Dropdown-Menü **[!UICONTROL Design-Client-Bibliothek]** auswählen.
    * **[!UICONTROL Konfigurations-Container:]** Definiert einen Speicherort, an dem Konfigurationsdateien für adaptive Formulare gespeichert werden. Diese Konfigurationsdateien enthalten Einstellungen und Eigenschaften, die sich auf das Verhalten und das Erscheinungsbild von adaptiven Formularen beziehen.
    * **[!UICONTROL Tags:]** Gibt Tags an, die eine eindeutige Identifizierung des adaptiven Formulars ermöglichen. Tags erleichtern die Suche nach dem Formular. Um die Tags zu erstellen, geben Sie neue Tag-Namen in das Feld **[!UICONTROL Tags]** ein.
-1. Wählen Sie **[!UICONTROL Erstellen]**. Es wird ein adaptives Formular erstellt und ein Dialogfeld zum Öffnen der Formularbearbeitung angezeigt. 
+1. Wählen Sie **[!UICONTROL Erstellen]**. Es wird ein adaptives Formular erstellt und ein Dialogfeld zum Öffnen der Formularbearbeitung angezeigt.
 
 
 1. Wählen Sie **[!UICONTROL Bearbeiten]** aus, um das neu erstellte Formular auf einer neuen Registerkarte zu öffnen. Das Formular wird zur Bearbeitung geöffnet und zeigt den Inhalt an, der in der Vorlage verfügbar ist. Außerdem wird die Seitenleiste angezeigt, um das neu erstellte Formular anzupassen.
@@ -90,7 +104,7 @@ Nachdem Sie das Formular zur Bearbeitung geöffnet haben, können Sie verfügbar
 Mit einer Übermittlungsaktion können Sie das Ziel der Daten auswählen, die über ein adaptives Formular erfasst werden. Eine Übermittlungsaktion wird ausgelöst, wenn eine Benutzerin bzw. ein Benutzer in einem adaptiven Formular auf die Schaltfläche „Senden“ klickt. Adaptive Formulare enthalten einige vordefinierte Sendeaktionen. Sie können außerdem die standardmäßigen Sendeaktionen erweitern, um Ihre eigene benutzerdefinierte Sendeaktion zu erstellen. So konfigurieren Sie eine Sendeaktion für Ihr Formular:
 
 1. Öffnen Sie den Inhalts-Browser und wählen Sie die **[!UICONTROL Guide-Container]**-Komponente Ihres adaptiven Formulars aus.
-1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/using/assets/configure-icon.svg). Das Dialogfeld „Container für ein adaptives Formular“ wird geöffnet.
+1. Klicken Sie auf das Symbol für die Guide-Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/using/assets/configure-icon.svg). Das Dialogfeld „Container für adaptive Formulare“ wird geöffnet.
 
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Übermittlung]**.
 
@@ -199,4 +213,4 @@ Führen Sie zum Umbenennen eines adaptiven Formulars die folgenden Schritte aus:
 
 * [Erstellen eines auf Kernkomponenten basierenden adaptiven Formulars](create-an-adaptive-form-core-components.md)
 * [Erstellen oder Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Beispielthemenvorlagen und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de)
+* [Beispielthemen und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=de)

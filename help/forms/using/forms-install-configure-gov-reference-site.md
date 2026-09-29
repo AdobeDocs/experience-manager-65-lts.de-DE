@@ -7,13 +7,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: 9c05a71b-70fa-4470-afdf-823fd5da5ad1
-source-git-commit: 51342861dd01e659999c19fbe0274e8d3cbcf8c4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4746'
+source-wordcount: '4751'
 ht-degree: 61%
-
 ---
-
 # Einrichten und Konfigurieren der Referenz-Sites We.Gov und We-Finance {#set-up-and-configure-we-gov-reference-site}
 
 ## Details zum Demopaket {#demo-package-details}
@@ -47,21 +65,21 @@ Das [AEM Forms-We.Gov-Demopaket](https://experience.adobe.com/#/downloads/conten
 
 * **we-gov-forms.pkg.all-&lt;version>.zip** – *Vollständiges Demopaket*
 
-   * **we-gov-forms.ui.apps-&lt;version>.zip** *: Enthält alle Komponenten, Client-Bibliotheken, Beispielbenutzende, Workflow-Modelle usw.*
+  * **we-gov-forms.ui.apps-&lt;version>.zip** *: Enthält alle Komponenten, Client-Bibliotheken, Beispielbenutzende, Workflow-Modelle usw.*
 
-      * **we-gov-forms.core-&lt;version>.jar**: *Enthält alle OSGi-Services, die Implementierung benutzerdefinierter Workflow-Schritte usw.*
+    * **we-gov-forms.core-&lt;version>.jar**: *Enthält alle OSGi-Services, die Implementierung benutzerdefinierter Workflow-Schritte usw.*
 
-      * **we-gov-forms.derby&lt;version>.jar**: *Enthält alle OSGi-Services, Datenbankschemas usw.*
+    * **we-gov-forms.derby&lt;version>.jar**: *Enthält alle OSGi-Services, Datenbankschemas usw.*
 
-      * **core.wcm.components.all-2.0.4.zip** – *Sammlung von WCM-Beispielkomponenten*
+    * **core.wcm.components.all-2.0.4.zip** – *Sammlung von WCM-Beispielkomponenten*
 
-      * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** – *AEM Sites Grid-Layout-Paket für die Seitenspaltensteuerung in Sites*
+    * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** – *AEM Sites Grid-Layout-Paket für die Seitenspaltensteuerung in Sites*
 
-   * **we-gov-forms.ui.content-&lt;version>.zip**: *Enthält alle Inhalte, Seiten, Bilder, Formulare, Assets der interaktiven Kommunikation usw.*
+  * **we-gov-forms.ui.content-&lt;version>.zip**: *Enthält alle Inhalte, Seiten, Bilder, Formulare, Assets der interaktiven Kommunikation usw.*
 
-   * **we-gov-forms.ui.analytics-&lt;version>.zip**: *Enthält alle Forms-Analysedaten zu We.Gov, die im Repository gespeichert werden sollen.*
+  * **we-gov-forms.ui.analytics-&lt;version>.zip**: *Enthält alle Forms-Analysedaten zu We.Gov, die im Repository gespeichert werden sollen.*
 
-   * **we-gov-forms.config.public-&lt;version>.zip**: *Enthält alle standardmäßigen Konfigurationsknoten, einschließlich Platzhalter-Cloud-Konfigurationen, damit Probleme mit Formulardatenmodellen und der Dienstbindung vermieden werden.*
+  * **we-gov-forms.config.public-&lt;version>.zip**: *Enthält alle standardmäßigen Konfigurationsknoten, einschließlich Platzhalter-Cloud-Konfigurationen, damit Probleme mit Formulardatenmodellen und der Dienstbindung vermieden werden.*
 
 Zu den in diesem Paket enthaltenen Assets gehören:
 
@@ -234,7 +252,7 @@ Dieser Abschnitt enthält Details und Anweisungen zur MS® Dynamics-Cloud-Konfig
 
 1. Gehen Sie zu:
 
-   https://&lt;aemserver>:&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
+   https://<aemserver>:<port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
    1. Stellen Sie sicher, dass Sie auf den Server zugreifen, indem Sie dieselbe Umleitungs-URL verwenden, die in der Registrierung des MS® Dynamics-Programms konfiguriert wurde.
 
@@ -383,7 +401,7 @@ Dieses Paket ist für die Verbindung mit Adobe Analytics vorkonfiguriert. Die fo
 Suchen Sie die Benutzeranmeldeinformationen für ein Adobe Analytics-Konto, das der Kontoadministrator ausführen muss, indem Sie die folgenden Aufgaben ausführen.
 
 1. Navigieren Sie zum Adobe Experience Cloud-Portal.
-Melden Sie sich mit Ihren Administrator-Anmeldeinformationen an
+Melden Sie sich mit Ihren Administrator-Anmeldeinformationen an.
 1. Wählen Sie im Haupt-Dashboard das Adobe Analytics-Symbol aus.
    ![Schnellzugriff](assets/aftia-quick-access.jpg)
 1. Navigieren Sie zur Registerkarte „Admin“ und wählen Sie das Element „User Management (Legacy)“ aus.
