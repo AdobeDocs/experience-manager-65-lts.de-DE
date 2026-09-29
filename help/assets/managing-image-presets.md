@@ -418,7 +418,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
     </ul>
     <div>
       Das Scharfzeichnen wird beschrieben unter
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/sharpening_images.pdf">Scharfzeichnen von </a>.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/sharpening_images.pdf?lang=de">Scharfzeichnen von </a>.
     </div> </td>
   </tr>
   <tr>
