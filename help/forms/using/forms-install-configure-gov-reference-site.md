@@ -730,7 +730,7 @@ Die in diesem Paket enthaltenen Seiten unterstützen auch das Stilsystem:
 
 [Stilsystem](../../sites-authoring/style-system.md)
 
-Informationen zu [ Stilen finden Sie unter ](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) von Vorlagenanpassungen .
+Informationen zu [&#x200B; Stilen finden Sie unter &#x200B;](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) von Vorlagenanpassungen .
 
 ### Anpassung adaptiver Formulare {#adaptive-forms-customization}
 

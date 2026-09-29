@@ -221,7 +221,7 @@ Mit der Standardfunktion können Sie in diesen Anwendungsfällen Folgendes tun:
      * Typ: `String[]`
      * Wert: eine Liste der auszublendenden/zu ignorierenden untergeordneten Knoten (wie in `/libs` definiert)
 
-     Mit dem Platzhalter &amp;ast; können Sie alle untergeordneten Knoten ausblenden oder ignorieren.
+     Mit dem Platzhalter &ast; können Sie alle untergeordneten Knoten ausblenden oder ignorieren.
 
 * **Knoten neu anordnen**
 
