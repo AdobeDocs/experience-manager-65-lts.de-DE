@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 94%
+source-wordcount: '1472'
+ht-degree: 90%
 ---
 # Anpassung des Seiten-Authorings{#customizing-page-authoring}
 
@@ -46,7 +46,7 @@ Adobe Experience Manager (AEM) bietet verschiedene Mechanismen, mit denen Sie di
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [JS-Dokumentationssatz](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html?lang=de).
+>Weitere Informationen finden Sie unter [JS-Dokumentationssatz](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html).
 
 Diese können auf viele Arten verwendet werden, um die Seitenbearbeitungsfunktionen in Ihrer AEM-Instanz zu erweitern. Einige davon sind im Folgenden (allgemein) beschrieben.
 
@@ -56,14 +56,14 @@ Diese können auf viele Arten verwendet werden, um die Seitenbearbeitungsfunktio
 >
 >* Verwenden und Erstellen von [Client-Bibliotheken](/help/sites-developing/clientlibs.md).
 >* Verwenden und Erstellen von [Überlagerungen](/help/sites-developing/overlays.md).
->* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Struktur der Touch-optimierten Benutzeroberfläche von AEM](/help/sites-developing/touch-ui-structure.md) für Details zu den strukturellen Bereichen, die beim Seiten-Authoring verwendet werden.
 >
 
 
 >[!CAUTION]
 >
->**&#x200B;**&#x200B;** Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen.
+>****** Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen.
 >
 >Der Grund dafür ist, dass der Inhalt von `/libs` überschrieben wird, wenn Sie Ihre Instanz das nächste Mal aktualisieren (und möglicherweise überschrieben wird, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
 >
@@ -116,9 +116,9 @@ Den Code dieser Seite finden Sie auf GitHub.
 
 Beim Erstellen von Seiten müssen Benutzende häufig aus Ressourcen auswählen (z. B. Seiten, Komponenten und Assets). Dies kann in Form einer Liste erfolgen, aus der die Autorin bzw. der Autor beispielsweise ein Element auswählen muss.
 
-Um die Liste in einer angemessenen Größe und auch für den Anwendungsfall relevant zu halten, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Wenn z. B. der Benutzer durch die [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)-[Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui)-Komponente den Pfad zu einer bestimmten Ressource auswählen kann, können die gezeigten Pfade auf folgende Art gefiltert werden:
+Um die Liste in einer angemessenen Größe und auch für den Anwendungsfall relevant zu halten, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Wenn z. B. der Benutzer durch die [`pathbrowser`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)-[Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui)-Komponente den Pfad zu einer bestimmten Ressource auswählen kann, können die gezeigten Pfade auf folgende Art gefiltert werden:
 
-* Implementieren Sie das benutzerdefinierte Prädikat, indem Sie die Schnittstelle [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/predicate/package-summary.html) implementieren.
+* Implementieren Sie das benutzerdefinierte Prädikat, indem Sie die Schnittstelle [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/predicate/package-summary.html) implementieren.
 * Geben Sie einen Namen für die Eigenschaft an und verwenden Sie diesen Namen, wenn Sie `pathbrowser` verwenden.
 
 Weitere Informationen zum Erstellen eines benutzerdefinierten Prädikats finden Sie unter [Implementieren eines benutzerdefinierten Prädikat-Auswerters für den Query Builder](/help/sites-developing/implementing-custom-predicate-evaluator.md).

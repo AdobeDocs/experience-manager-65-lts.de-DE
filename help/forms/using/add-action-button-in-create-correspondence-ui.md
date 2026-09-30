@@ -24,9 +24,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1903'
 ht-degree: 97%
 ---
 # Hinzufügen einer benutzerdefinierten Aktionsschaltfläche in der Benutzeroberfläche „Korrespondenz erstellen“ {#add-custom-action-button-in-create-correspondence-ui}
@@ -185,7 +185,7 @@ Nachdem Sie Server-seitige Änderungen vorgenommen haben, starten Sie das Bauste
 
 1. Suchen Sie das Asset Composer-Bausteinpaket von Adobe. Starten Sie das Paket neu: Klicken Sie auf „Anhalten“ und klicken Sie dann auf „Start“.
 
-   ![Asset Composer-Baustein von Adobe &#x200B;](assets/6_assetcomposerbuildingblockbundle.png)
+   ![Asset Composer-Baustein von Adobe ](assets/6_assetcomposerbuildingblockbundle.png)
 
 Nach dem Neustart des Adobe Asset Composer-Bausteinpakets wird die benutzerdefinierte Schaltfläche auf der Benutzeroberfläche „Korrespondenz erstellen“ angezeigt. Sie können einen Brief in der Benutzeroberfläche „Korrespondenz erstellen“ öffnen, um eine Vorschau der benutzerdefinierten Schaltfläche anzuzeigen.
 
@@ -437,11 +437,11 @@ Weitere Informationen finden Sie unter [Verbinden von AEM Forms mit Adobe LiveCy
    >
    >Jedes Mal, wenn Sie Änderungen auf Server-Seite vornehmen, müssen Sie den LiveCycle-Server neu starten.
 
-   Die Datei „DSCSample.jar“ verwendet die renderLetter-API. Weitere Informationen zur renderLetter-API finden Sie unter [Benutzeroberfläche „LetterRenderService“](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
+   Die Datei „DSCSample.jar“ verwendet die renderLetter-API. Weitere Informationen zur renderLetter-API finden Sie unter [Benutzeroberfläche „LetterRenderService“](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### Importieren von DSC in LiveCycle {#import-dsc-to-livecyle}
 
-Die Datei „DSCSample.jar“ verwendet die renderLetter-API, um ein Schreiben als PDF-Bytes aus XML-Daten zu generieren, die von DSC als Eingabe gegeben werden. Weitere Informationen zur renderLetter- und anderen APIs finden Sie unter [Brief-Render-Dienst](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
+Die Datei „DSCSample.jar“ verwendet die renderLetter-API, um ein Schreiben als PDF-Bytes aus XML-Daten zu generieren, die von DSC als Eingabe gegeben werden. Weitere Informationen zur renderLetter- und anderen APIs finden Sie unter [Brief-Render-Dienst](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Starten Sie Workbench und melden Sie sich an.
 1. Wählen Sie **Fenster > Ansicht anzeigen > Komponenten**. Die Komponentenansicht wird in Workbench ES2 hinzugefügt.

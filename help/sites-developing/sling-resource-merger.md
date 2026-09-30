@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1262'
 ht-degree: 39%
 ---
 # Verwenden des Sling Resource Merger in AEM{#using-the-sling-resource-merger-in-aem}
@@ -43,7 +43,7 @@ Sling Resource Merger kombiniert Überlagerungsressourcen und Überschreibungsre
 
 >[!CAUTION]
 >
->Der Sling Resource Merger und zugehörige Methoden können nur mit [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html) verwendet werden. Dies bedeutet auch, dass es nur für die standardmäßige Touch-optimierte Benutzeroberfläche geeignet ist. Insbesondere auf diese Weise definierte Überschreibungen sind nur für das Touch-fähige Dialogfeld einer Komponente anwendbar.
+>Der Sling Resource Merger und zugehörige Methoden können nur mit [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/index.html) verwendet werden. Dies bedeutet auch, dass es nur für die standardmäßige Touch-optimierte Benutzeroberfläche geeignet ist. Insbesondere auf diese Weise definierte Überschreibungen sind nur für das Touch-fähige Dialogfeld einer Komponente anwendbar.
 >
 >Um andere Bereiche (einschließlich anderer Teile einer Touch-optimierten Komponente oder der klassischen Benutzeroberfläche) zu überlagern oder zu überschreiben, kopieren Sie den entsprechenden Knoten und die entsprechende Struktur aus dem Original. Platzieren Sie die Kopie an der Stelle, an der Sie die Anpassung definieren.
 
@@ -221,7 +221,7 @@ Mit der Standardfunktion können Sie in diesen Anwendungsfällen Folgendes tun:
      * Typ: `String[]`
      * Wert: eine Liste der auszublendenden/zu ignorierenden untergeordneten Knoten (wie in `/libs` definiert)
 
-     Mit dem Platzhalter &ast; können Sie alle untergeordneten Knoten ausblenden oder ignorieren.
+     Mit dem Platzhalter &amp;ast; können Sie alle untergeordneten Knoten ausblenden oder ignorieren.
 
 * **Knoten neu anordnen**
 

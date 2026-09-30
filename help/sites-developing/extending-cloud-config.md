@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '571'
 ht-degree: 85%
 ---
 # Cloud Service-Konfigurationen{#cloud-service-configurations}
@@ -39,7 +39,7 @@ Die Prinzipien, die bei der Entwicklung von Konfigurationen zum Einsatz kommen, 
 * Konfigurationen (z. B. Eigenschaften/Absätze) werden von den übergeordneten Elementen geerbt.
 * Die Verweise erfolgen von Analyseknoten nach Pfad.
 * Sie sind einfach erweiterbar.
-* Sie können auch komplexere Konfigurationen unterstützen, z. B. [Adobe Analytics &#x200B;](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
+* Sie können auch komplexere Konfigurationen unterstützen, z. B. [Adobe Analytics ](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
 * Abhängigkeiten werden unterstützt (z. B. benötigen [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)-Plug-ins eine [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)-Konfiguration).
 
 ## Struktur {#structure}
@@ -145,7 +145,7 @@ propertyname
 
 ### API {#api}
 
-Die Referenzdokumentation zur API finden Sie unter [com.day.cq.wcm.webservicesupport](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+Die Referenzdokumentation zur API finden Sie unter [com.day.cq.wcm.webservicesupport](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
 ### AEM-Integration {#aem-integration}
 

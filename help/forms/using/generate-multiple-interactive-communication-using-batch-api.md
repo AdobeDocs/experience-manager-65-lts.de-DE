@@ -25,9 +25,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2268'
 ht-degree: 95%
 ---
 # Generieren mehrerer interaktiver Kommunikationen mithilfe der Batch-API {#use-batch-api-to-generate-multiple-ic}
@@ -185,7 +185,7 @@ Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Einträge) mit
 
 ## Rufen Sie die Batch-API mithilfe von REST-Anfragen auf.
 
-Sie können [die Batch-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html) durch REST-Anfragen (Representational State Transfer) aufrufen. Damit können Sie anderen Benutzenden einen REST-Endpunkt bereitstellen, um auf die API zuzugreifen und Ihre eigenen Methoden zur Verarbeitung, Speicherung und Anpassung der interaktiven Kommunikation zu konfigurieren. Sie können Ihr eigenes benutzerdefiniertes Java™-Servlet entwickeln, um die API auf Ihrer AEM-Instanz bereitzustellen.
+Sie können [die Batch-API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html) durch REST-Anfragen (Representational State Transfer) aufrufen. Damit können Sie anderen Benutzenden einen REST-Endpunkt bereitstellen, um auf die API zuzugreifen und Ihre eigenen Methoden zur Verarbeitung, Speicherung und Anpassung der interaktiven Kommunikation zu konfigurieren. Sie können Ihr eigenes benutzerdefiniertes Java™-Servlet entwickeln, um die API auf Ihrer AEM-Instanz bereitzustellen.
 
 Stellen Sie vor der Bereitstellung des Java™-Servlets sicher, dass Sie über eine interaktive Kommunikation und entsprechende Datendateien verfügen. Führen Sie die folgenden Schritte aus, um das Java™-Servlet zu erstellen und bereitzustellen:
 
@@ -377,4 +377,4 @@ Sie speichern nicht nur die Daten im Dateisystem, sondern auch JSON-Dateien im C
 
 >[!NOTE]
 >
->Standardmäßig ist nur das CRX-Protokoll aktiviert. Informationen zum Aktivieren anderer unterstützter Protokolle finden Sie unter [Konfigurieren des Vorbefüllungs-Services mit Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=de).
+>Standardmäßig ist nur das CRX-Protokoll aktiviert. Informationen zum Aktivieren anderer unterstützter Protokolle finden Sie unter [Konfigurieren des Vorbefüllungs-Services mit Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).

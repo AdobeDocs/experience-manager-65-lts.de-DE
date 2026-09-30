@@ -16,9 +16,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1084'
 ht-degree: 90%
 ---
 # Häufig gestellte Fragen (FAQ) zu AEM {#aem-faqs}
@@ -81,7 +81,7 @@ Wenn Entwicklerinnen und Entwickler eine Komponentenstruktur exportieren möchte
 
 #### Deaktivieren des AEM 6.4-Umfrage-Popups {#how-to-disable-aem-survey-pop-up}
 
-Sie können sich für die Erfassung von Nutzungsstatistiken entscheiden, indem Sie entweder die Touch-Benutzeroberfläche oder die Web-Konsole verwenden. Ausführliche Anweisungen finden Sie unter[&#x200B; Entscheidung für die aggregierte Erfassung von Nutzungsstatistiken](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
+Sie können sich für die Erfassung von Nutzungsstatistiken entscheiden, indem Sie entweder die Touch-Benutzeroberfläche oder die Web-Konsole verwenden. Ausführliche Anweisungen finden Sie unter[ Entscheidung für die aggregierte Erfassung von Nutzungsstatistiken](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 
 #### Gibt es eine gute Ressource, die die wichtigsten Funktionen für ein Upgrade auf AEM 6.4 hervorhebt? {#is-there-a-good-resource-that-highlights-the-key-features-for-upgrading-to-aem}
 
@@ -110,13 +110,13 @@ Als Problemumgehung können Sie die Komponente auch manuell deaktivieren und zwa
 
 #### Wie lassen sich Admin-Konsolen anpassen? {#how-to-customize-admin-consoles}
 
-AEM bietet verschiedene Methoden zum Anpassen von Konsolen und der Seitenbearbeitungsfunktionen Ihrer Autoreninstanz. Informationen zum Erstellen einer benutzerdefinierten Konsole und zum Anpassen einer Standardansicht für eine Konsole finden Sie unter [&#x200B; Anpassen der Konsolen](/help/sites-developing/customizing-consoles-touch.md).
+AEM bietet verschiedene Methoden zum Anpassen von Konsolen und der Seitenbearbeitungsfunktionen Ihrer Autoreninstanz. Informationen zum Erstellen einer benutzerdefinierten Konsole und zum Anpassen einer Standardansicht für eine Konsole finden Sie unter [ Anpassen der Konsolen](/help/sites-developing/customizing-consoles-touch.md).
 
 #### Was ist der Unterschied zwischen CoralUI 2- und CoralUI 3-basierten Komponenten? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
-Für Coral3 wurde ein neuer Satz Sling-Komponenten der Granite-Benutzeroberflächen-Foundation erstellt, die sich unter [/libs/granite/ui/components/coral/foundation.](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) Es gibt ein Set für CoralUI 2-basierte Komponenten und ein Set für CoralUI 3-basierte Komponenten. Bei dem neuen Satz handelt es sich nicht nur um eine eingefügte Kopie des alten Satzes, sondern dieser wird vielmehr bereinigt (z. B. Optimierung, Entfernung veralteter Funktionen). Daher wird empfohlen, dass eine Seite entweder nur CoralUI 3-basierte oder nur CoralUI 2-basierte Sätze verwendet.
+Für Coral3 wurde ein neuer Satz Sling-Komponenten der Granite-Benutzeroberflächen-Foundation erstellt, die sich unter [/libs/granite/ui/components/coral/foundation.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) Es gibt ein Set für CoralUI 2-basierte Komponenten und ein Set für CoralUI 3-basierte Komponenten. Bei dem neuen Satz handelt es sich nicht nur um eine eingefügte Kopie des alten Satzes, sondern dieser wird vielmehr bereinigt (z. B. Optimierung, Entfernung veralteter Funktionen). Daher wird empfohlen, dass eine Seite entweder nur CoralUI 3-basierte oder nur CoralUI 2-basierte Sätze verwendet.
 
-Ausführliche Informationen finden Sie im [Migrationsleitfaden für CoralUI 3-basierte Komponenten](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
+Ausführliche Informationen finden Sie im [Migrationsleitfaden für CoralUI 3-basierte Komponenten](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
 
 #### Anpassen der Suchkomponente in AEM Assets {#how-to-customize-the-search-component-in-aem-assets}
 

@@ -26,10 +26,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2866'
-ht-degree: 97%
+source-wordcount: '2871'
+ht-degree: 95%
 ---
 # Adaptive Formularausdrücke{#adaptive-form-expressions}
 
@@ -37,7 +37,7 @@ ht-degree: 97%
 
 Adaptive Formulare ermöglichen Endbenutzenden, die sich mit dynamischem Scripting auskennen, ein optimiertes und vereinfachtes Ausfüllen von Formularen. Sie können so Ausdrücke zum Hinzufügen verschiedener Verhaltensweisen schreiben, wie etwa für dynamisch ein-/ausgeblendete Felder und Panels. Außerdem können Sie auch berechnete Felder oder Überprüfungslogik hinzufügen, Felder als schreibgeschützt festlegen und vieles mehr. Das dynamische Verhalten basiert auf den vom Benutzer eingegebenen oder vorab eingetragenen Daten.
 
-JavaScript ist die Ausdruckssprache, die sogenannte Expression Language von adaptiven Formularen. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und nutzen Scripting-Modell-APIs für adaptive Formulare. Diese Ausdrücke geben Werte bestimmter Typen zurück. Eine vollständige Liste der Klassen, Ereignisse, Objekte und öffentlichen APIs für adaptive Formulare finden Sie unter [API-Referenz der JavaScript-Bibliothek für adaptive Formulare](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html).
+JavaScript ist die Ausdruckssprache, die sogenannte Expression Language von adaptiven Formularen. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und nutzen Scripting-Modell-APIs für adaptive Formulare. Diese Ausdrücke geben Werte bestimmter Typen zurück. Eine vollständige Liste der Klassen, Ereignisse, Objekte und öffentlichen APIs für adaptive Formulare finden Sie unter [API-Referenz der JavaScript-Bibliothek für adaptive Formulare](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html).
 
 ## Best Practices für das Schreiben von Ausdrücken {#best-practices-for-writing-expressions}
 
@@ -52,7 +52,7 @@ Wiederholungsbereiche sind Instanzen eines Bereichs, die mithilfe einer Skripter
 * Öffnen Sie zum Erstellen eines Wiederholungsbereichs im Bereichsdialogfeld die Einstellungen und legen Sie den Wert des Felds für die maximale Anzahl auf einen Wert größer als 1 fest.
 * Der Wert für die minimale Anzahl der Panel-Wiederholungen kann eins oder höher sein. Er darf jedoch nicht über dem Wert für die maximale Anzahl liegen.
 * Wenn ein Ausdruck sich auf ein Feld eines sich wiederholenden Panels bezieht, werden die Feldnamen im Ausdruck im nächstgelegenen Wiederholungselement aufgelöst.
-* Um Berechnungen für wiederholbare Panels zu vereinfachen, bieten adaptive Formulare einige spezielle Funktionen wie „sum“, „count“, „min“, „max“, „filter“ usw. Eine vollständige Liste der Funktionen finden Sie in der [JavaScript Library-API-Referenz für adaptive Formulare](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html).
+* Um Berechnungen für wiederholbare Panels zu vereinfachen, bieten adaptive Formulare einige spezielle Funktionen wie „sum“, „count“, „min“, „max“, „filter“ usw. Eine vollständige Liste der Funktionen finden Sie in der [JavaScript Library-API-Referenz für adaptive Formulare](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html).
 * Es gibt folgende APIs zum Manipulieren von Instanzen von Wiederholungsfeldern:
 
   * Zum Hinzufügen einer Bereichsinstanz: `panel1.instanceManager.addInstance()`
@@ -98,7 +98,7 @@ Der Ausdruck für Berechnungen wird verwendet, um den Wert eines Felds unter Ver
 
 ### Ausdruck für ein Klickereignis {#click-expression}
 
-Der Ausdruck für ein Klickereignis verarbeitet die Aktionen, die beim Klicken auf eine Schaltfläche durchgeführt werden. GuideBridge bietet standardmäßig APIs zum Ausführen verschiedener Funktionen wie Senden und Validieren, die zusammen mit dem Ausdruck für ein Klickereignis verwendet werden. Eine vollständige Liste der APIs finden Sie unter [GuideBridge-APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html).
+Der Ausdruck für ein Klickereignis verarbeitet die Aktionen, die beim Klicken auf eine Schaltfläche durchgeführt werden. GuideBridge bietet standardmäßig APIs zum Ausführen verschiedener Funktionen wie Senden und Validieren, die zusammen mit dem Ausdruck für ein Klickereignis verwendet werden. Eine vollständige Liste der APIs finden Sie unter [GuideBridge-APIs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html).
 
 **Gilt für**: Felder mit Schaltfläche
 
@@ -229,7 +229,7 @@ Das Anzeigeformat kann verwendet werden, um die Daten in verschiedenen Formaten 
 
 ### GuideBridge – APIs und Ereignisse {#guidebridge-apis-and-events}
 
-GuideBridge ist eine Sammlung von APIs, die für die Interaktion mit adaptiven Formularen im Speichermodell in einem Browser verwendet werden können. Eine ausführliche Einführung in die API, die Klassenmethoden und die bereitgestellten Ereignisse in GuideBridge finden Sie in der [API-Referenz der JavaScript-Bibliothek für adaptive Formulare](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html).
+GuideBridge ist eine Sammlung von APIs, die für die Interaktion mit adaptiven Formularen im Speichermodell in einem Browser verwendet werden können. Eine ausführliche Einführung in die API, die Klassenmethoden und die bereitgestellten Ereignisse in GuideBridge finden Sie in der [API-Referenz der JavaScript-Bibliothek für adaptive Formulare](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html).
 
 >[!NOTE]
 >
@@ -275,7 +275,7 @@ Um GuideBridge nach Initialisierung des Formulars zu verwenden (das `bridgeIniti
 
 #### GuideBridge-Ereignisse {#guidebridge-events}
 
-GuideBridge stellt auch bestimmte Ereignisse für externe Skripte auf der Hosting-Seite bereit. Externe Skripte können diese Ereignisse überwachen und verschiedene Vorgänge ausführen. Wenn sich beispielsweise der Benutzername in einem Formular ändert, ändert sich auch der in der Kopfzeile der Seite angezeigte Name. Ausführliche Informationen zu solchen Ereignissen finden Sie in der [API-Referenz der JavaScript-Bibliothek für adaptive Formulare](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html).
+GuideBridge stellt auch bestimmte Ereignisse für externe Skripte auf der Hosting-Seite bereit. Externe Skripte können diese Ereignisse überwachen und verschiedene Vorgänge ausführen. Wenn sich beispielsweise der Benutzername in einem Formular ändert, ändert sich auch der in der Kopfzeile der Seite angezeigte Name. Ausführliche Informationen zu solchen Ereignissen finden Sie in der [API-Referenz der JavaScript-Bibliothek für adaptive Formulare](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html).
 
 Verwenden Sie folgenden Code zur Handler-Registrierung:
 
@@ -298,7 +298,7 @@ Führen Sie die folgenden Schritte durch, um ein benutzerspezifisches Muster fü
 1. Öffnen Sie die Registerkarte „Eigenschaften“ des erstellten Knotens. Beispiel: Öffnen Sie die Registerkarte „Eigenschaften“ von `textboxpatterns`. Fügen Sie diesem Knoten die Eigenschaft `guideComponentType` hinzu und legen Sie ihren Wert auf *fd/af/components/formatter/guideTextBox* fest.
 
 1. Der Wert dieser Eigenschaft variiert je nach dem Feld, für das Sie die Muster definieren möchten. Bei numerischen Feldern lautet der Wert der Eigenschaft `guideComponentType`*fd/af/components/formatter/guideNumericBox*. Der Wert für das Feld „Datepicker“ lautet *fd/af/components/formatter/guideDatepicker*.
-&grave;&grave;
+``
 1. Sie können ein benutzerspezifisches Muster hinzufügen, indem Sie dem Knoten `textboxpatterns` eine Eigenschaft zuweisen. Fügen Sie eine Eigenschaft mit einem Namen (z. B. `pattern1`) hinzu und legen Sie ihren Wert auf das Muster fest, das Sie hinzufügen möchten. Beispiel: Fügen Sie eine Eigenschaft `pattern1` mit dem Wert „Fax=text{99-999-9999999}“ hinzu. Das Muster ist für alle Textfelder verfügbar, die Sie in adaptiven Formularen verwenden.
 
    ![Erstellen benutzerspezifischer Muster für Felder in CrxDe](assets/creating-custom-patterns.png)

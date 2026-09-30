@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 98%
+source-wordcount: '821'
+ht-degree: 95%
 ---
 # Starten von Workflows{#starting-workflows}
 
@@ -182,8 +182,8 @@ Ein Workflow-Paket:
 
      Bei dieser Starter-Eigenschaft handelt es sich um eine Reihe von kommagetrennten Elementen:
 
-     * `property-name` ignoriert alle `jcr`, die beim angegebenen Eigenschaftsnamen ausgelöst werden. &grave;&grave;
-     * `event-user-data:<*someValue*>` ignoriert jedes Ereignis, das die über die [`ObservationManager`-API] festgelegten `*<someValue*`> `user-data` enthält (https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+     * `property-name` ignoriert alle `jcr`, die beim angegebenen Eigenschaftsnamen ausgelöst werden. ``
+     * `event-user-data:<*someValue*>` ignoriert jedes Ereignis, das die über die [`ObservationManager`-API festgelegten `*<someValue*`>-`user-data` enthält](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Beispiel:
 

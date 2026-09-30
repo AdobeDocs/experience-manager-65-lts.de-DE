@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 98%
+source-wordcount: '952'
+ht-degree: 97%
 ---
 # Ermitteln von Seiteninformationen im JSON-Format{#obtaining-page-information-in-json-format}
 
@@ -507,7 +507,7 @@ Der Dienst wendet das kumulierte Ergebnis aller Filter an. Beispielsweise werden
 
 Gehen Sie beispielsweise zum Konfigurieren des Diensts mithilfe von CRXDE Lite wie folgt vor:
 
-1. http://localhost:4502/crx/de Öffnen Sie CRXDE Lite ([&#128279;](http://localhost:4502/crx/de)).
+1. http://localhost:4502/crx/de Öffnen Sie CRXDE Lite ([](http://localhost:4502/crx/de)).
 1. Erstellen Sie im Ordner „config“ Ihrer Anwendung einen Knoten:
 
    * Name: `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`
@@ -563,7 +563,7 @@ Für Ressourcen, die Ihre Anwendungsseitenkomponente als `sling:resourceType` ve
 
 ### PageInfoProvider-Beispielimplementierung {#example-pageinfoprovider-implementation}
 
-Die folgende Java-Klasse implementiert [PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html) und gibt die veröffentlichte URL der aktuellen Seitenressource zurück.
+Die folgende Java-Klasse implementiert [PageInfoProvider](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/index.html) und gibt die veröffentlichte URL der aktuellen Seitenressource zurück.
 
 ```java
 package com.adobe.example;

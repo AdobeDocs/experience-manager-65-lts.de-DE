@@ -20,15 +20,15 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 66%
+source-wordcount: '225'
+ht-degree: 61%
 ---
 
 # Benutzerdefinierte Namespaces{#custom-namespaces}
 
-Erfahren Sie, wie Sie benutzerdefinierte [&#x200B; (Namespaces) definieren und &#x200B;](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/4.5_Namespaces.html) AEM 6.5 LTS bereitstellen.
+Erfahren Sie, wie Sie benutzerdefinierte [ (Namespaces) definieren und ](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/1.0/4.5_Namespaces.html) AEM 6.5 LTS bereitstellen.
 
 Benutzerdefinierte Namespaces sind der optionale Teil einer JCR-Eigenschaft vor einem Doppelpunkt (`:`). AEM verwendet verschiedene Namespaces, z. B.:
 

@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2739'
 ht-degree: 99%
 ---
 # Beitragen zu AEM{#contributing-to-aem}
@@ -53,7 +53,7 @@ Auf der höchsten Ebene sollten Sie über ein solides Verständnis folgender The
 * Browser-Cookies
 * und andere moderne Web-Entwicklungskonzepte
 
-Der Technologie-Stack von Adobe Experience Manager basiert auf dem [Apache Felix](https://felix.apache.org/documentation/index.html)-OSGI-Container mit dem [Apache Sling](https://sling.apache.org/index.html)-Web-Framework und bettet ein Java™ Content-Repository ([JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)) basierend auf [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html) ein. Machen Sie sich mit diesen einzelnen Projekten sowie mit anderen Open Source-Komponenten (zum Beispiel Apache Lucene) vertraut, die in dem Bereich verwendet werden, in dem Sie Beiträge leisten möchten.
+Der Technologie-Stack von Adobe Experience Manager basiert auf dem [Apache Felix](https://felix.apache.org/documentation/index.html)-OSGI-Container mit dem [Apache Sling](https://sling.apache.org/index.html)-Web-Framework und bettet ein Java™ Content-Repository ([JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html)) basierend auf [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html) ein. Machen Sie sich mit diesen einzelnen Projekten sowie mit anderen Open Source-Komponenten (zum Beispiel Apache Lucene) vertraut, die in dem Bereich verwendet werden, in dem Sie Beiträge leisten möchten.
 
 ## Tribal-Kenntnisse {#tribal-knowledge}
 
