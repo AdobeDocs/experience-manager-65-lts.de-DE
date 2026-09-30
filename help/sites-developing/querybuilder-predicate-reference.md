@@ -9,13 +9,11 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
-source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '2358'
 ht-degree: 63%
-
 ---
-
 # Query Builder-Prädikatsreferenz{#query-builder-predicate-reference}
 
 >[!CAUTION]
@@ -229,7 +227,7 @@ Konzeptionell `fulltext AND ( (path AND type) OR (path AND type) )`. Solche ODER
 
 ### hasPermission {#haspermission}
 
-Beschränkt das Ergebnis auf Elemente, bei denen die aktuelle Sitzung die angegebenen [JCR-Privilegien](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) aufweist.
+Beschränkt das Ergebnis auf Elemente, bei denen die aktuelle Sitzung die angegebenen [JCR-Privilegien](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) aufweist.
 
 Ein reines Filterprädikat, das keinen Suchindex verwenden kann. Facettenextraktion wird nicht unterstützt.
 
@@ -269,7 +267,7 @@ Es unterstützt die Facettenextraktion und bietet zwei Buckets für Haupt- und U
 
 ### memberOf {#memberof}
 
-Sucht Objekte, die Mitglieder einer bestimmten [Sling-Ressourcensammlung](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) sind.
+Sucht Objekte, die Mitglieder einer bestimmten [Sling-Ressourcensammlung](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) sind.
 
 Ein reines Filterprädikat, das keinen Suchindex verwenden kann. Facettenextraktion wird nicht unterstützt.
 
@@ -475,18 +473,18 @@ Der Name „root“ wird in Abfragen nie verwendet, er ist implizit.
 
   (nur für das JSON-Servlet) Legt fest, wie Treffer als JSON geschrieben werden. Folgende Standardmethoden stehen zur Auswahl (erweiterbar über den Dienst „ResultHitWriter“):
 
-   * **einfach**:
+  * **einfach**:
 
-     Minimale Elemente wie `path`, `title`, `lastmodified`, `excerpt` (falls festgelegt).
+    Minimale Elemente wie `path`, `title`, `lastmodified`, `excerpt` (falls festgelegt).
 
-   * **vollständig**:
+  * **vollständig**:
 
-     Die Ergebnisse werden für jeden Knoten als Sling-JSON gerendert, wobei `jcr:path` den Trefferpfad anzeigt. Standardmäßig umfasst die Antwort nur die direkten Eigenschaften des Knotens. Verwenden Sie `p.nodedepth=N`, um tiefere Inhalte einzuschließen, wobei `0` die gesamte Unterstruktur zurückgibt. Legen Sie `p.acls=true` fest, um die JCR-Berechtigungen der aktuellen Sitzung für jedes Element einzuschließen (`create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+    Die Ergebnisse werden für jeden Knoten als Sling-JSON gerendert, wobei `jcr:path` den Trefferpfad anzeigt. Standardmäßig umfasst die Antwort nur die direkten Eigenschaften des Knotens. Verwenden Sie `p.nodedepth=N`, um tiefere Inhalte einzuschließen, wobei `0` die gesamte Unterstruktur zurückgibt. Legen Sie `p.acls=true` fest, um die JCR-Berechtigungen der aktuellen Sitzung für jedes Element einzuschließen (`create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
 
 
-   * **selective**:
+  * **selective**:
 
-     Die Antwort enthält nur die in `p.properties` aufgelisteten Eigenschaften. Dabei handelt es sich um eine durch Leerzeichen getrennte Liste relativer Pfade (`+` in URLs). Wenn ein relativer Pfad eine Tiefe größer als 1 hat, wird er von der Ausgabe als untergeordnete Objekte verschachtelt. Die `jcr:path`-Eigenschaft enthält immer den Trefferpfad.
+    Die Antwort enthält nur die in `p.properties` aufgelisteten Eigenschaften. Dabei handelt es sich um eine durch Leerzeichen getrennte Liste relativer Pfade (`+` in URLs). Wenn ein relativer Pfad eine Tiefe größer als 1 hat, wird er von der Ausgabe als untergeordnete Objekte verschachtelt. Die `jcr:path`-Eigenschaft enthält immer den Trefferpfad.
 
 
 ### `savedquery` {#savedquery}

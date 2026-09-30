@@ -27,10 +27,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
 workflow-type: tm+mt
-source-wordcount: '2949'
-ht-degree: 88%
+source-wordcount: '2982'
+ht-degree: 87%
 ---
 
 # Unterstützte Plattformen für AEM Forms on JEE {#supported-platforms-for-aem-forms-on-jee}
@@ -425,6 +425,7 @@ Die AEM Forms-App unterstützt jetzt Apache Cordova. Im Folgenden finden Sie die
 >- Wenn eine Microsoft® Office-Installation aus irgendeinem Grund deaktiviert oder unlizenziert wird, z. B. bei einer Installation mit Volumenlizenz, die einen KMS-Host innerhalb eines bestimmten Zeitraums nicht finden kann, können Konvertierungen fehlschlagen, bis die Installation erneut lizenziert und reaktiviert wird.
 >- PDF Generator unterstützt nicht Microsoft® Office 365.
 >- PDF Generator-Konvertierungen für OpenOffice werden unter Windows und Linux® unterstützt.
+>- Unter Red Hat® Enterprise Linux® 9 erfordert der 32-Bit OpenOffice-Build `libcrypt.so.1`, der nicht standardmäßig installiert ist. Wenn OpenOffice fehlt, beginnt es nicht mit dem `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`, und die Konvertierung von OpenOffice in PDF schlägt fehl. Installieren Sie das `libxcrypt-compat`-Paket (32-Bit), um die Bibliothek `sudo dnf install -y libxcrypt-compat.i686` bereitzustellen.
 >- Die Funktionen von OCR PDF, PDF optimieren und PDF exportieren werden nur unter Windows unterstützt.
 >- PDF Generator unterstützt Microsoft® Windows 11 nicht.
 >- Die Unterstützung für Microsoft® Office 2021 Professional Plus wird nicht mehr unterstützt.

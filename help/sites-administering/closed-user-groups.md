@@ -24,10 +24,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '6780'
-ht-degree: 97%
+source-wordcount: '6781'
+ht-degree: 96%
 ---
 # Geschlossene Benutzergruppen in AEM{#closed-user-groups-in-aem}
 
@@ -217,7 +217,7 @@ Die mit dem Anmeldepfad verknüpfte Seite kann sich innerhalb oder außerhalb di
 
 ### Verwalten von CUG-Richtlinien {#managing-cug-policies}
 
-Der neue Richtlinientyp für die Zugriffssteuerung, mit dem der Lesezugriff für eine CUG eingeschränkt wird, wird mithilfe der JCR-Zugriffssteuerungsverwaltungs-API verwaltet und folgt den Mechanismen, die in der [Beschreibung von JCR 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) aufgeführt werden.
+Der neue Richtlinientyp für die Zugriffssteuerung, mit dem der Lesezugriff für eine CUG eingeschränkt wird, wird mithilfe der JCR-Zugriffssteuerungsverwaltungs-API verwaltet und folgt den Mechanismen, die in der [Beschreibung von JCR 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html) aufgeführt werden.
 
 #### Erstellen einer neuen CUG-Richtlinie {#set-a-new-cug-policy}
 

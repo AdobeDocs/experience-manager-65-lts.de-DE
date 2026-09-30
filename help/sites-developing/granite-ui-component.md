@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 100%
+source-wordcount: '550'
+ht-degree: 93%
 ---
 # Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche{#creating-a-new-granite-ui-field-component}
 
@@ -37,7 +37,7 @@ Die Granite-Benutzeroberfläche bietet eine Reihe von Komponenten für die Verwe
 
 >[!NOTE]
 >
->Vollständige Informationen zu Feldern finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>Vollständige Informationen zu Feldern finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Verwenden Sie das Foundation-Framework der Granite-Benutzeroberfläche zum Entwickeln und/oder Erweitern von Granite-Komponenten. Dieses umfasst zwei Elemente:
 
@@ -59,7 +59,7 @@ Die generische Komponente `field` der Granite-Benutzeroberfläche beinhaltet zwe
 * `init.jsp`: Übernimmt die generische Verarbeitung sowie Beschriftung und Beschreibung und liefert den für das Rendern des Felds erforderlichen Formularwert.
 * `render.jsp`: Übernimmt das tatsächliche Rendern des Felds und muss für das benutzerdefinierte Feld überschrieben werden; ist in `init.jsp` enthalten.
 
-Weitere Informationen finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche – Feld](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html).
+Weitere Informationen finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche – Feld](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html).
 
 Beispiele finden Sie hier:
 

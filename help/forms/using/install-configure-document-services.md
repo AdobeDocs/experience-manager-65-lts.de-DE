@@ -24,10 +24,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
 workflow-type: tm+mt
-source-wordcount: '10681'
-ht-degree: 98%
+source-wordcount: '10769'
+ht-degree: 97%
 ---
 # Installieren und Konfiguration von Dokumentendiensten {#installing-and-configuring-document-services}
 
@@ -200,6 +200,10 @@ Wenn Sie ein UNIX-basiertes Betriebssystem verwenden, installieren Sie die folge
   * libc.so.6
   * ld-linux.so.2
   * libexpat.so.1
+
+* Unter Red Hat® Enterprise Linux® 9 erfordert der 32-Bit OpenOffice-Build `libcrypt.so.1`, der nicht standardmäßig installiert ist. Wenn OpenOffice fehlt, beginnt es nicht mit dem `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`, und die Konvertierung von OpenOffice in PDF schlägt fehl. Installieren Sie das `libxcrypt-compat`-Paket (32-Bit-Version), um die Bibliothek bereitzustellen:
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 ## Vorinstallationskonfigurationen {#preinstallationconfigurations}
 
@@ -1377,6 +1381,10 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
 
 * Erstellen Sie eine Umgebungsvariable `OpenOffice_PATH` und legen Sie sie so fest, dass sie auf die OpenOffice-Installation verweist, die in der [Konsole](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) oder dem dt-Profil (Device Tree, Gerätestrukturprofil) festgelegt ist.
 * Sollten bei der Installation von OpenOffice Probleme auftreten, stellen Sie sicher, dass die für die OpenOffice-Installation erforderlichen [32-Bit-Bibliotheken](#extrarequirements) zur Verfügung stehen.
+
+* Unter Red Hat® Enterprise Linux® 9 erfordert der 32-Bit OpenOffice-Build `libcrypt.so.1`, der nicht standardmäßig installiert ist. Wenn OpenOffice fehlt, beginnt es nicht mit dem `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`, und die Konvertierung von OpenOffice in PDF schlägt fehl. Installieren Sie das `libxcrypt-compat`-Paket (32-Bit-Version), um die Bibliothek bereitzustellen:
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 +++
 

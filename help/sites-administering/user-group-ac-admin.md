@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3107'
-ht-degree: 100%
+source-wordcount: '3109'
+ht-degree: 99%
 ---
 # Verwaltung von Benutzenden, Gruppen und Zugriffsrechten{#user-group-and-access-rights-administration}
 
@@ -72,7 +72,7 @@ CRX ermöglicht es Ihnen, die Zugriffsrechte für Benutzer- und Gruppenkonten zu
 
 >[!NOTE]
 >
->In CRX wird die [Zugriffssteuerung gemäß der Definition in JSR-283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) implementiert.
+>In CRX wird die [Zugriffssteuerung gemäß der Definition in JSR-283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html) implementiert.
 >
 >Die Standardinstallation eines CRX-Repositorys ist so konfiguriert, dass sie die ressourcenbasierten Zugriffssteuerungslisten verwendet. Dies ist eine mögliche Implementierung der Zugriffssteuerung nach JSR-283 und einer der Implementierungen, die mit Jackrabbit vorhanden sind.
 
@@ -503,7 +503,7 @@ Sie können Richtlinien für Folgendes auswählen:
 
 ### Berechtigungen {#privileges}
 
-Die folgenden Berechtigungen können beim Hinzufügen eines Zugangssteuerungseintrags ausgewählt werden (umfassende Details finden Sie in [Sicherheits-API](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html)).
+Die folgenden Berechtigungen können beim Hinzufügen eines Zugangssteuerungseintrags ausgewählt werden (umfassende Details finden Sie in [Sicherheits-API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html)).
 
 <table>
  <tbody>

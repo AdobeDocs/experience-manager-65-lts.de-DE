@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 92%
+source-wordcount: '520'
+ht-degree: 90%
 ---
 # OWASP – Top 10{#owasp-top}
 
@@ -74,7 +74,7 @@ Sensible Daten wie Drittanbieter-Ameldedaten sind in verschlüsselter Form mithi
 
 ## &#x200B;8. URL-Zugriff kann nicht eingeschränkt werden {#failure-to-restrict-url-access}
 
-Das Repository ermöglicht die Einstellung von [feinabgestimmten Rechten (wie durch JCR angegeben)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) für jede Person bzw. Gruppe unter jedem beliebigen Pfad über Zugriffssteuerungseinträge. Zugriffbeschränkungen werden durch das Repository durchgesetzt.
+Das Repository ermöglicht die Einstellung von [feinabgestimmten Rechten (wie durch JCR angegeben)](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html) für jede Person bzw. Gruppe unter jedem beliebigen Pfad über Zugriffssteuerungseinträge. Zugriffbeschränkungen werden durch das Repository durchgesetzt.
 
 ## &#x200B;9. Unzureichender Schutz der Transportschicht {#insufficient-transport-layer-protection}
 

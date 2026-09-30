@@ -21,10 +21,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2446'
-ht-degree: 99%
+source-wordcount: '2449'
+ht-degree: 97%
 ---
 # Entwickeln von Adobe Experience Manager(AEM)-Komponenten (klassische Benutzeroberfläche){#developing-aem-components-classic-ui}
 
@@ -101,7 +101,7 @@ Es gibt drei Methoden für den Zugriff auf Inhalte in AEM WCM:
 
 * Über das in `global.jsp` eingeführte `currentPage`-Objekt:
 
-  Das `currentPage`-Objekt ist eine Instanz einer Seite (siehe [AEM-API](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)). Die Seitenklasse bietet verschiedene Methoden, um auf Inhalte zuzugreifen.
+  Das `currentPage`-Objekt ist eine Instanz einer Seite (siehe [AEM-API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)). Die Seitenklasse bietet verschiedene Methoden, um auf Inhalte zuzugreifen.
 
   Beispiel: `String pageTitle = currentPage.getTitle();`
 
@@ -185,8 +185,8 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
    >
    >Eine Komponente für:
    >
-   >* Die Touch-optimierte Benutzeroberfläche verwendet [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)-Komponenten
-   >* Die klassische Benutzeroberfläche verwendet [ExtJS-Widgets](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+   >* Die Touch-optimierte Benutzeroberfläche verwendet [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)-Komponenten
+   >* Die klassische Benutzeroberfläche verwendet [ExtJS-Widgets](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)
 
    >[!NOTE]
    >

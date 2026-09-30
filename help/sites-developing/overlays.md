@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 90%
+source-wordcount: '627'
+ht-degree: 84%
 ---
 # Überlagerungen{#overlays}
 
@@ -35,7 +35,7 @@ In einer Standardinstanz befinden sich die vordefinierten Funktionen unter `/lib
 
 Seit Einführung von AEM 6.0 wurden Änderungen an der Implementierung und Verwendung von Überlagerungen vorgenommen:
 
-* Ab AEM 6.0 – für [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)-bezogene Überlagerungen (d. h. die Touch-optimierte Benutzeroberfläche)
+* Ab AEM 6.0 – für [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)-bezogene Überlagerungen (d. h. die Touch-optimierte Benutzeroberfläche)
 
   * Methode
 
@@ -66,7 +66,7 @@ Seit Einführung von AEM 6.0 wurden Änderungen an der Implementierung und Verwe
 
 >[!CAUTION]
 >
->Der [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) und die zugehörigen Methoden können nur mit [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) verwendet werden. Das bedeutet, dass die Erstellung einer Überlagerung mit einem Strukturgerüst nur für die standardmäßige Touch-optimierte Benutzeroberfläche geeignet ist.
+>Der [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) und die zugehörigen Methoden können nur mit [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) verwendet werden. Das bedeutet, dass die Erstellung einer Überlagerung mit einem Strukturgerüst nur für die standardmäßige Touch-optimierte Benutzeroberfläche geeignet ist.
 >
 >Bei Überlagerungen für andere Bereiche (einschließlich der klassischen Benutzeroberfläche) werden der entsprechende Knoten sowie die gesamte Unterstruktur kopiert und die erforderlichen Änderungen vorgenommen.
 

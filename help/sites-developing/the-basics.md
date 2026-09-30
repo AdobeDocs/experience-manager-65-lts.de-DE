@@ -20,10 +20,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3373'
-ht-degree: 94%
+source-wordcount: '3379'
+ht-degree: 93%
 ---
 # Grundlegende AEM-Konzepte {#aem-core-concepts}
 
@@ -49,11 +49,11 @@ Es wird außerdem empfohlen, dass Sie die [Richtlinien und Best Practices](/help
 
 ## Java™ Content-Repository {#java-content-repository}
 
-Der Java™ Content-Repository-Standard (JCR) [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html) legt eine hersteller- und implementierungsunabhängige Methode für den bidirektionalen Zugriff auf Inhalte auf einer granularen Ebene in einem Content-Repository fest.
+Der Java™ Content-Repository-Standard (JCR) [JSR 283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html) legt eine hersteller- und implementierungsunabhängige Methode für den bidirektionalen Zugriff auf Inhalte auf einer granularen Ebene in einem Content-Repository fest.
 
 Die Leitung der Spezifikation liegt bei Adobe Research (Schweiz) AG.
 
-Das [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)-Paket javax.jcr.&ast; wird für den direkten Zugriff auf und die Bearbeitung von Repository-Inhalten verwendet.
+Das [JCR API 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/index.html)-Paket javax.jcr.&ast; wird für den direkten Zugriff auf und die Bearbeitung von Repository-Inhalten verwendet.
 
 ## Experience Server (CRX) und Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -345,7 +345,7 @@ Folgendes ist für die Entwicklung von Interesse:
 
 **Element** Ein Element ist entweder ein Knoten oder eine Eigenschaft.
 
-Weitere Informationen zum Bearbeiten von Elementobjekten finden Sie in den [Java™-Docs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) der Schnittstelle javax.jcr.Item.
+Weitere Informationen zum Bearbeiten von Elementobjekten finden Sie in den [Java™-Docs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) der Schnittstelle javax.jcr.Item.
 
 **Knoten (und ihre Eigenschaften)** Knoten und ihre Eigenschaften sind in der JCR API 2.0-Spezifikation (JSR 283) definiert. Sie speichern Inhalte, Objektdefinitionen, Rendering-Skripte und andere Daten.
 
@@ -361,7 +361,7 @@ Um beispielsweise die Eigenschaften des aktuellen Knotens abzurufen, können Sie
 
 Dabei entspricht „currentNode“ dem aktuellen Knotenobjekt.
 
-Weitere Informationen zum Bearbeiten von Knotenobjekten finden Sie in den [Java™-Docs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
+Weitere Informationen zum Bearbeiten von Knotenobjekten finden Sie in den [Java™-Docs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 **Widget** In AEM werden sämtliche Benutzereingaben von Widgets verwaltet. Diese werden häufig verwendet, um die Bearbeitung eines Inhaltselements zu steuern.
 
@@ -400,7 +400,7 @@ Um beispielsweise den Namen der aktuellen Seite abzurufen, können Sie in Ihrem 
 
 S`tring pageName = currentPage.getName();`
 
-Dabei ist „currentPage“ das aktuelle Seitenobjekt. Weitere Informationen zum Bearbeiten von Seitenobjekten finden Sie in den [Java™-Docs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html).
+Dabei ist „currentPage“ das aktuelle Seitenobjekt. Weitere Informationen zum Bearbeiten von Seitenobjekten finden Sie in den [Java™-Docs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Seiten-Manager** Der Seiten-Manager ist eine Schnittstelle, die Methoden für Vorgänge auf Seitenebene bereitstellt.
 
@@ -408,7 +408,7 @@ Um beispielsweise die Seite abzurufen, in der eine Ressource enthalten ist, kön
 
 Page myPage = pageManager.getContainingPage(myResource);
 
-Dabei ist „pageManager“ das Seiten-Manager-Objekt und „myResource“ ein Ressourcenobjekt. Weitere Informationen zu den vom Seiten-Manager bereitgestellten Methoden finden Sie in den [Java™-Docs](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html).
+Dabei ist „pageManager“ das Seiten-Manager-Objekt und „myResource“ ein Ressourcenobjekt. Weitere Informationen zu den vom Seiten-Manager bereitgestellten Methoden finden Sie in den [Java™-Docs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Struktur innerhalb des Repositorys {#structure-within-the-repository}
 
