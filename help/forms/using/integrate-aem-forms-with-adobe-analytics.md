@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '1911'
 ht-degree: 98%
@@ -254,8 +254,8 @@ Verwenden der [!DNL Adobe Launch]-Konfiguration in einem vorhandenen adaptiven F
 Nachdem Sie [!DNL Adobe Analytics] für ein adaptives Formular aktiviert haben, können Sie [überprüfen](https://experienceleague.adobe.com/de/docs/platform-learn/implement-in-websites/implement-solutions/analytics#validate-the-page-view-beacon), ob ein geeigneter Datenereignisfluss zwischen AEM Forms und [!DNL Adobe Analytics] vorhanden ist. Die Integration von AEM Forms mit Adobe Analytics ist nun abgeschlossen. Sie können jetzt [Berichte in Adobe Analytics konfigurieren und anzeigen](#view-reports-adobe-analytics).
 
 >[!NOTE]
+>
 >Wenn beide Funktionen [Analytics mit Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md) und **Analytics mit Adobe Launch** gleichzeitig aktiviert sind, hat **Analytics mit Adobe Launch** Vorrang.
-> 
 
 ### Erstellen von Regeln zur Erfassung benutzerdefinierter Ereignisse (optional) {#capture-custom-events}
 

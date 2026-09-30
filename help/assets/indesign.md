@@ -19,7 +19,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '1587'
 ht-degree: 97%
@@ -215,19 +215,19 @@ So konfigurieren Sie die Anzahl der parallelen IDS-Aufträge:
 
    Wenn mehrere Computer [!DNL InDesign Server] ausführen, fügen Sie SOAP-Endpunkte (Anzahl der Prozessoren pro Computer -1) für jeden Computer hinzu.
 
+   >[!NOTE]
+   >
+   >Wenn Sie mit einem Pool von Workern arbeiten, können Sie die Blockierungsliste von IDS-Workern aktivieren.
+   >
+   >Aktivieren Sie dazu das Kontrollkästchen **[!UICONTROL enable.retry.name]** unter der Konfiguration `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, um Wiederholungen von IDS-Aufträgen zu ermöglichen.
+   >
+   >Legen Sie in der Konfiguration `com.day.cq.dam.ids.impl.IDSPoolImpl.name` außerdem einen positiven Wert für den Parameter `max.errors.to.blacklist` fest, der die Anzahl der Auftragswiederholungen steuert, bevor ein IDS aus der Auftrags-Handler-Liste ausgeschlossen wird.
+   >
+   >Standardmäßig wird der IDS-Worker nach einer konfigurierbaren Zeit (`retry.interval.to.whitelist.name`) in Minuten erneut validiert. Wenn der Worker online gefunden wird, wird er aus der Blockierungsliste entfernt.
+
 <!-- 
 TBD: Make updates to configurations for allow and block list after product updates are done.
 -->
-
->[!NOTE]
->
->Wenn Sie mit einem Pool von Workern arbeiten, können Sie die Blockierungsliste von IDS-Workern aktivieren.
->
->Aktivieren Sie dazu das Kontrollkästchen **[!UICONTROL enable.retry.name]** unter der Konfiguration `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, um Wiederholungen von IDS-Aufträgen zu ermöglichen.
->
->Legen Sie in der Konfiguration `com.day.cq.dam.ids.impl.IDSPoolImpl.name` außerdem einen positiven Wert für den Parameter `max.errors.to.blacklist` fest, der die Anzahl der Auftragswiederholungen steuert, bevor ein IDS aus der Auftrags-Handler-Liste ausgeschlossen wird.
->
->Standardmäßig wird der IDS-Worker nach einer konfigurierbaren Zeit (`retry.interval.to.whitelist.name`) in Minuten erneut validiert. Wenn der Worker online gefunden wird, wird er aus der Blockierungsliste entfernt.
 
 ## Aktivieren der Unterstützung für [!DNL InDesign Server] 10.0 oder höher {#enabling-support-for-indesign-server-or-later}
 

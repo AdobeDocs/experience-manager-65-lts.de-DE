@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '1537'
 ht-degree: 97%
@@ -102,79 +102,79 @@ Seite unter https://[*host*]:[*port*]/system/console/configMgr.
 1. Die Datenbankverbindung kann über die Apache Sling Connection Pooled Datenquelle erfolgen.
 1. Klicken Sie für die Apache Sling-Verbindung in der Konfiguration der Web-Konsole im Bearbeitungsmodus auf **[!UICONTROL Apache Sling Connection Pooled DataSource]**. Geben Sie die Werte für die Eigenschaften an, wie in der folgenden Tabelle beschrieben:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Eigenschaft</strong></td>
-   <td><strong>Wert</strong></td>
-  </tr>
-  <tr>
-   <td>Datenquellenname</td>
-   <td><p>Ein Datenquellenname für das Filtern der Treiber aus dem Datenquellen-Pool</p> <p><strong>Hinweis: </strong><em>In der Beispielimplementierung wird „FormsPortal“ als Datenquellenname verwendet.</em></p> </td>
-  </tr>
-  <tr>
-   <td>JDBC-Treiberklasse</td>
-   <td>com.mysql.jdbc.Driver</td>
-  </tr>
-  <tr>
-   <td>JDBC-Verbindungs-URI<br /> </td>
-   <td>jdbc:mysql://[<em>host</em>]:[<em>port</em>]/[<em>schema_name</em>]</td>
-  </tr>
-  <tr>
-   <td>Benutzername</td>
-   <td>Benutzername zur Authentifizierung und Durchführung von Aktionen für Datenbanktabellen</td>
-  </tr>
-  <tr>
-   <td>Kennwort</td>
-   <td>Passwort für den Benutzernamen</td>
-  </tr>
-  <tr>
-   <td>Transaktions-Isolierung</td>
-   <td>READ_COMMITTED</td>
-  </tr>
-  <tr>
-   <td>Max. aktive Verbindungen</td>
-   <td>1.000</td>
-  </tr>
-  <tr>
-   <td>Max. inaktive Verbindungen</td>
-   <td>100</td>
-  </tr>
-  <tr>
-   <td>Min. inaktive Verbindungen</td>
-   <td>10</td>
-  </tr>
-  <tr>
-   <td>Anfangsgröße</td>
-   <td>10</td>
-  </tr>
-  <tr>
-   <td>Max. Wartezeit</td>
-   <td>100000</td>
-  </tr>
-  <tr>
-   <td>Test zu Leihung</td>
-   <td>Aktiviert</td>
-  </tr>
-  <tr>
-   <td>Test bei Inaktivität</td>
-   <td>Aktiviert</td>
-  </tr>
-  <tr>
-   <td>Validierungsabfrage</td>
-   <td>Beispielwerte sind SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</td>
-  </tr>
-  <tr>
-   <td>Timeout der Validierungsabfrage</td>
-   <td>10000</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+    <tbody>
+    <tr>
+    <td><strong>Eigenschaft</strong></td>
+    <td><strong>Wert</strong></td>
+    </tr>
+    <tr>
+    <td>Datenquellenname</td>
+    <td><p>Ein Datenquellenname für das Filtern der Treiber aus dem Datenquellen-Pool</p> <p><strong>Hinweis: </strong><em>In der Beispielimplementierung wird „FormsPortal“ als Datenquellenname verwendet.</em></p> </td>
+    </tr>
+    <tr>
+    <td>JDBC-Treiberklasse</td>
+    <td>com.mysql.jdbc.Driver</td>
+    </tr>
+    <tr>
+    <td>JDBC-Verbindungs-URI<br /> </td>
+    <td>jdbc:mysql://[<em>host</em>]:[<em>port</em>]/[<em>schema_name</em>]</td>
+    </tr>
+    <tr>
+    <td>Benutzername</td>
+    <td>Benutzername zur Authentifizierung und Durchführung von Aktionen für Datenbanktabellen</td>
+    </tr>
+    <tr>
+    <td>Kennwort</td>
+    <td>Passwort für den Benutzernamen</td>
+    </tr>
+    <tr>
+    <td>Transaktions-Isolierung</td>
+    <td>READ_COMMITTED</td>
+    </tr>
+    <tr>
+    <td>Max. aktive Verbindungen</td>
+    <td>1.000</td>
+    </tr>
+    <tr>
+    <td>Max. inaktive Verbindungen</td>
+    <td>100</td>
+    </tr>
+    <tr>
+    <td>Min. inaktive Verbindungen</td>
+    <td>10</td>
+    </tr>
+    <tr>
+    <td>Anfangsgröße</td>
+    <td>10</td>
+    </tr>
+    <tr>
+    <td>Max. Wartezeit</td>
+    <td>100000</td>
+    </tr>
+    <tr>
+    <td>Test zu Leihung</td>
+    <td>Aktiviert</td>
+    </tr>
+    <tr>
+    <td>Test bei Inaktivität</td>
+    <td>Aktiviert</td>
+    </tr>
+    <tr>
+    <td>Validierungsabfrage</td>
+    <td>Beispielwerte sind SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</td>
+    </tr>
+    <tr>
+    <td>Timeout der Validierungsabfrage</td>
+    <td>10000</td>
+    </tr>
+    </tbody>
+    </table>
 
->[!NOTE]
->
->* Der JDBC-Treiber für MySQL wird nicht mit dem Beispiel geliefert. Stellen Sie sicher, dass Sie ihn bereitgestellt haben, und geben Sie die erforderlichen Informationen ein, um den JDBC-Verbindungs-Pool zu konfigurieren.
->* Lassen Sie Ihre Autoren- und Veröffentlichungsinstanzen auf dieselbe Datenbank verweisen. Der Wert des URI-Feldes für die JDBC-Verbindung muss für alle Autoren- und Veröffentlichungsinstanzen gleich sein.
+   >[!NOTE]
+   >
+   >* Der JDBC-Treiber für MySQL wird nicht mit dem Beispiel geliefert. Stellen Sie sicher, dass Sie ihn bereitgestellt haben, und geben Sie die erforderlichen Informationen ein, um den JDBC-Verbindungs-Pool zu konfigurieren.
+   >* Lassen Sie Ihre Autoren- und Veröffentlichungsinstanzen auf dieselbe Datenbank verweisen. Der Wert des URI-Feldes für die JDBC-Verbindung muss für alle Autoren- und Veröffentlichungsinstanzen gleich sein.
 
 1. Belassen Sie die anderen Konfigurationen und klicken Sie auf **[!UICONTROL Speichern]**.
 

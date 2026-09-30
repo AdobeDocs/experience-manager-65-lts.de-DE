@@ -18,7 +18,7 @@ level_v2:
     internal-label: Beginner
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '5748'
 ht-degree: 98%
@@ -546,17 +546,11 @@ Gehen Sie wie folgt vor, um Regeln zu erstellen:
 
 1. Wählen Sie **[!UICONTROL Fertig]** aus, um die Regel zu speichern.
 
-<!--
-1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
+   >[!NOTE]
+   >
+   > Alternativ zu diesem Verfahren können Sie dieses Verhalten auch implementieren, indem Sie für das Feld „Partnergehalt“ lediglich eine Regel vom Typ „Anzeigen“ anstelle zweier Wenn-Regeln für das Feld „Familienstand“ erstellen.
 
-   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png)
--->
-
->[!NOTE]
->
-> Alternativ zu diesem Verfahren können Sie dieses Verhalten auch implementieren, indem Sie für das Feld „Partnergehalt“ lediglich eine Regel vom Typ „Anzeigen“ anstelle zweier Wenn-Regeln für das Feld „Familienstand“ erstellen.
-
-![write-rules-visual-editor-9](assets/write-rules-visual-editor-9-cc.png)
+   ![write-rules-visual-editor-9](assets/write-rules-visual-editor-9-cc.png)
 
 1. Als Nächstes erstellen Sie eine Regel für die Berechnung des Kreditanspruchsbetrags (50 % des Gesamtgehalts) und zur Anzeige des Betrags im Feld für den Kreditanspruch. Dies erreichen Sie, indem Sie für das Feld „Kreditanspruch“ Regeln vom Typ **[!UICONTROL Wert festlegen]** erstellen.
 
@@ -621,6 +615,12 @@ Sie können auch die Regel „Wert einstellen von“ verwenden, um den Kreditans
 Sie können eine kombinierte Regel erstellen, die die Sichtbarkeit des Felds für das Gehalt der Partnerin bzw. des Partners steuert, und mit der Sonst-Bedingung den Kreditanspruch für den Familienstand „Verheiratet“ berechnet.
 
 ![write-rules-visual-editor-19](assets/write-rules-visual-editor-19-cc.png)
+
+<!--
+1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
+
+   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png)
+-->
 
 
 <!--

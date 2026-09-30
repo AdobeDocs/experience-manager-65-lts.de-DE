@@ -22,7 +22,7 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 100%
@@ -74,42 +74,42 @@ Mit der Komponente **E-Mail-Tools** für ExactTarget können Sie Ihrer E-Mail/Ih
 
 1. Wählen Sie im Menü **Optionen** eine Option aus:
 
-<table>
- <tbody>
-  <tr>
-   <td>Postanschrift (Erforderlich)</td>
-   <td>Mit dieser Komponente wird die Postanschrift Ihres Unternehmens in die E-Mail eingefügt.</td>
-  </tr>
-  <tr>
-   <td>Profilzentrum (Erforderlich)</td>
-   <td>Das Profilzentrum ist eine Web-Seite, auf der Abonnentinnen und Abonnenten die persönlichen Daten, die Sie über sie speichern, eingeben und verwalten können.</td>
-  </tr>
-  <tr>
-   <td>E-Mail als Webseite anzeigen</td>
-   <td>Mit dieser Komponente können Benutzende die E-Mail als Web-Seite anzeigen.</td>
-  </tr>
-  <tr>
-   <td>Datenschutzrichtlinie</td>
-   <td>Mit dieser Komponente wird ein Link zu Ihren Datenschutzrichtlinien in die E-Mail eingefügt.<br /> </td>
-  </tr>
-  <tr>
-   <td>Abmeldungszentrum</td>
-   <td>Mit dieser Komponenten wird es Benutzenden ermöglicht, sich von Ihrer Mailing-Liste abzumelden.</td>
-  </tr>
-  <tr>
-   <td>Abonnementzentrum</td>
-   <td>Ein Abonnementzentrum ist eine Web-Seite, auf der ein Abonnent festlegen kann, welche Mitteilungen er von Ihrem Unternehmen erhalten möchte.</td>
-  </tr>
-  <tr>
-   <td>Öffnen der E-Mail verfolgen</td>
-   <td>Hierbei handelt es sich um eine verborgene Komponente, mit der Sie die ExactTarget-Tracking-Funktion verwenden können.<br /> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>Postanschrift (Erforderlich)</td>
+      <td>Mit dieser Komponente wird die Postanschrift Ihres Unternehmens in die E-Mail eingefügt.</td>
+   </tr>
+   <tr>
+      <td>Profilzentrum (Erforderlich)</td>
+      <td>Das Profilzentrum ist eine Web-Seite, auf der Abonnentinnen und Abonnenten die persönlichen Daten, die Sie über sie speichern, eingeben und verwalten können.</td>
+   </tr>
+   <tr>
+      <td>E-Mail als Webseite anzeigen</td>
+      <td>Mit dieser Komponente können Benutzende die E-Mail als Web-Seite anzeigen.</td>
+   </tr>
+   <tr>
+      <td>Datenschutzrichtlinie</td>
+      <td>Mit dieser Komponente wird ein Link zu Ihren Datenschutzrichtlinien in die E-Mail eingefügt.<br /> </td>
+   </tr>
+   <tr>
+      <td>Abmeldungszentrum</td>
+      <td>Mit dieser Komponenten wird es Benutzenden ermöglicht, sich von Ihrer Mailing-Liste abzumelden.</td>
+   </tr>
+   <tr>
+      <td>Abonnementzentrum</td>
+      <td>Ein Abonnementzentrum ist eine Web-Seite, auf der ein Abonnent festlegen kann, welche Mitteilungen er von Ihrem Unternehmen erhalten möchte.</td>
+   </tr>
+   <tr>
+      <td>Öffnen der E-Mail verfolgen</td>
+      <td>Hierbei handelt es sich um eine verborgene Komponente, mit der Sie die ExactTarget-Tracking-Funktion verwenden können.<br /> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Das Dropdown-Menü **Optionen** enthält nur dann Einträge, wenn eine ExactTarget-Konfiguration auf die E-Mail angewendet wurde. Weitere Informationen finden Sie unter [Anwenden von E-Mail-Dienstkonfigurationen auf E-Mail-Einstellungen](#applying-e-mail-service-configuration-to-e-mail-settings).
+   >[!NOTE]
+   >
+   >Das Dropdown-Menü **Optionen** enthält nur dann Einträge, wenn eine ExactTarget-Konfiguration auf die E-Mail angewendet wurde. Weitere Informationen finden Sie unter [Anwenden von E-Mail-Dienstkonfigurationen auf E-Mail-Einstellungen](#applying-e-mail-service-configuration-to-e-mail-settings).
 
 1. Veröffentlichen Sie die E-Mail in ExactTarget.
 

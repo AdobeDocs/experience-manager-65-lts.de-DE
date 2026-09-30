@@ -16,7 +16,7 @@ role_v2:
     internal-label: Developer
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 93%
@@ -69,8 +69,8 @@ Formularautorinnen und -autoren können zwei verschiedene Versionen eines Formul
 Bei einer Überprüfung handelt es sich um einen Mechanismus, mit dem ein oder mehrere Überprüfungspersonen zu Formularen Kommentare abgeben können. Alle Formularbenutzenden können ein Formular kommentieren oder anhand von Kommentaren einer Überprüfung unterziehen. Um ein Formular zu kommentieren, wählen Sie ein **[!UICONTROL Formular]** aus und fügen Sie dem Formular einen **[!UICONTROL Kommentar]** hinzu.
 
 >[!NOTE]
-> Wenn Sie, wie oben beschrieben, Kommentare in Kernkomponenten adaptiver Formulare verwenden, ist die Formularfunktion zum [Hinzufügen von Prüferinnen und Prüfern zu Formularen](/help/forms/using/create-reviews-forms.md) deaktiviert.
-
+>
+>Wenn Sie, wie oben beschrieben, Kommentare in Kernkomponenten adaptiver Formulare verwenden, ist die Formularfunktion zum [Hinzufügen von Prüferinnen und Prüfern zu Formularen](/help/forms/using/create-reviews-forms.md) deaktiviert.
 
 ![Hinzufügen von Kommentaren zu einem Formular](assets/form-comments.png)
 
