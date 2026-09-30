@@ -27,10 +27,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
 workflow-type: tm+mt
-source-wordcount: '2949'
-ht-degree: 88%
+source-wordcount: '2982'
+ht-degree: 87%
 ---
 
 # Unterstützte Plattformen für AEM Forms on JEE {#supported-platforms-for-aem-forms-on-jee}
@@ -425,6 +425,7 @@ Die AEM Forms-App unterstützt jetzt Apache Cordova. Im Folgenden finden Sie die
 >- Wenn eine Microsoft® Office-Installation aus irgendeinem Grund deaktiviert oder unlizenziert wird, z. B. bei einer Installation mit Volumenlizenz, die einen KMS-Host innerhalb eines bestimmten Zeitraums nicht finden kann, können Konvertierungen fehlschlagen, bis die Installation erneut lizenziert und reaktiviert wird.
 >- PDF Generator unterstützt nicht Microsoft® Office 365.
 >- PDF Generator-Konvertierungen für OpenOffice werden unter Windows und Linux® unterstützt.
+>- Unter Red Hat® Enterprise Linux® 9 erfordert der 32-Bit OpenOffice-Build `libcrypt.so.1`, der nicht standardmäßig installiert ist. Wenn OpenOffice fehlt, beginnt es nicht mit dem `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`, und die Konvertierung von OpenOffice in PDF schlägt fehl. Installieren Sie das `libxcrypt-compat`-Paket (32-Bit), um die Bibliothek `sudo dnf install -y libxcrypt-compat.i686` bereitzustellen.
 >- Die Funktionen von OCR PDF, PDF optimieren und PDF exportieren werden nur unter Windows unterstützt.
 >- PDF Generator unterstützt Microsoft® Windows 11 nicht.
 >- Die Unterstützung für Microsoft® Office 2021 Professional Plus wird nicht mehr unterstützt.
@@ -648,7 +649,7 @@ AEM Forms on JEE unterstützt Updates, Patches und Fix Packs zusätzlich zu der 
 
 ## Richtlinie zur Unterstützung für Patches von Drittanbietern {#third-party-patch-support-policy}
 
-Die Anforderungen an Drittpartei-Software für AEM Forms on JEE werden im Abschnitt „Systemanforderungen“ der jeweiligen Produktdokumente erläutert. Zugriff auf die gesamte Dokumentation von [AEM Forms 65 LTS](https://experienceleague.adobe.com/de/docs/experience-manager-65-lts/content/forms/getting-started/introduction-aem-forms) .
+Die Anforderungen an Drittpartei-Software für AEM Forms on JEE werden im Abschnitt „Systemanforderungen“ der jeweiligen Produktdokumente erläutert. Zugriff auf die gesamte Dokumentation von [AEM Forms 65 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/getting-started/introduction-aem-forms) .
 
 Die Referenzplattformen von AEM Forms on JEE von Drittanbietern geben den spezifischen Patch-Level der Infrastruktur von Drittanbietern an, der während der Entwicklung und Veröffentlichung von AEM Forms on JEE aktuell war, sowie den minimalen Patch-/Service Pack-Level der Infrastruktur, die von dieser Version von AEM Forms on JEE unterstützt wird.
 
@@ -678,7 +679,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -764,7 +765,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -833,7 +834,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/de/support/programs/eol-matrix.html)|
+| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html)|
 |  | Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)| |
 |  | | Microsoft&reg; Windows Server 2016 (64-bit)|
 |  | | Microsoft&reg; Office 2016 |

@@ -24,10 +24,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
 workflow-type: tm+mt
-source-wordcount: '10681'
-ht-degree: 98%
+source-wordcount: '10769'
+ht-degree: 97%
 ---
 # Installieren und Konfiguration von Dokumentendiensten {#installing-and-configuring-document-services}
 
@@ -201,6 +201,10 @@ Wenn Sie ein UNIX-basiertes Betriebssystem verwenden, installieren Sie die folge
   * ld-linux.so.2
   * libexpat.so.1
 
+* Unter Red Hat® Enterprise Linux® 9 erfordert der 32-Bit OpenOffice-Build `libcrypt.so.1`, der nicht standardmäßig installiert ist. Wenn OpenOffice fehlt, beginnt es nicht mit dem `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`, und die Konvertierung von OpenOffice in PDF schlägt fehl. Installieren Sie das `libxcrypt-compat`-Paket (32-Bit-Version), um die Bibliothek bereitzustellen:
+
+  `sudo dnf install -y libxcrypt-compat.i686`
+
 ## Vorinstallationskonfigurationen {#preinstallationconfigurations}
 
 Konfigurationen, die im Abschnitt „Vorinstallationskonfigurationen“ aufgeführt sind, gelten nur für den PDF Generator-Dienst. Wenn Sie den PDF Generator-Dienst nicht konfigurieren, können Sie den Abschnitt „Vorinstallationskonfigurationen“ überspringen.
@@ -300,7 +304,7 @@ Diese Schritte sind mit *Systemadministrator*-Zugriff auf die Adobe Admin Consol
    | Plattform konfigurieren | Windows 64-Bit | Apple macOS wird zurzeit nicht unterstützt |
    | Lokal aktivieren | Sprache des Betriebssystems verwenden | Standardeinstellung |
    | Sprache | Ihre bevorzugte Sprache | Für die Benutzeroberfläche von Acrobat |
-   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat &#x200B;](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
+   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat ](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
    | Applikationen auswählen – Ausgewählte Programme | Nur Lizenzdatei in ausgewählten Programmen beibehalten | Standardeinstellung für die FRL-Bereitstellung |
    | Plug-ins | Keine Änderungen auf diesem Bildschirm vornehmen | |
    | Optionen | Keine Änderungen auf diesem Bildschirm vornehmen | |
@@ -450,7 +454,7 @@ Diese Schritte sind mit *Systemadministrator*-Zugriff auf die Adobe Admin Consol
    | Plattform konfigurieren | Windows 64-Bit | Apple macOS wird zurzeit nicht unterstützt |
    | Lokal aktivieren | Sprache des Betriebssystems verwenden | Standardeinstellung |
    | Sprache | Ihre bevorzugte Sprache | Für die Benutzeroberfläche von Acrobat |
-   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat &#x200B;](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
+   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat ](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
    | Applikationen auswählen – Ausgewählte Programme | Nur Lizenzdatei in ausgewählten Programmen beibehalten | Standardeinstellung für die FRL-Bereitstellung |
    | Plug-ins | Keine Änderungen auf diesem Bildschirm vornehmen | |
    | Optionen | Keine Änderungen auf diesem Bildschirm vornehmen | |
@@ -606,7 +610,7 @@ Diese Schritte sind mit *Systemadministrator*-Zugriff auf die Adobe Admin Consol
    | Plattform konfigurieren | Windows 64-Bit | Apple macOS wird zurzeit nicht unterstützt |
    | Lokal aktivieren | Sprache des Betriebssystems verwenden | Standardeinstellung |
    | Sprache | Ihre bevorzugte Sprache | Für die Benutzeroberfläche von Acrobat |
-   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat &#x200B;](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
+   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat ](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
    | Applikationen auswählen – Ausgewählte Programme | Nur Lizenzdatei in ausgewählten Programmen beibehalten | Standardeinstellung für die FRL-Bereitstellung |
    | Plug-ins | Keine Änderungen auf diesem Bildschirm vornehmen | |
    | Optionen | Keine Änderungen auf diesem Bildschirm vornehmen | |
@@ -763,7 +767,7 @@ Diese Schritte sind mit *Systemadministrator*-Zugriff auf die Adobe Admin Consol
    | Plattform konfigurieren | Windows 64-Bit | Apple macOS wird zurzeit nicht unterstützt |
    | Lokal aktivieren | Sprache des Betriebssystems verwenden | Standardeinstellung |
    | Sprache | Ihre bevorzugte Sprache | Für die Benutzeroberfläche von Acrobat |
-   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat &#x200B;](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
+   | Applikationen auswählen – Verfügbare Programme | Belassen Sie Adobe Acrobat in verfügbaren Programmen. Nicht zum ausgewählten Programm verschieben | In Schritt 6 würden Sie [Adobe Acrobat ](#step-6-download-and-install-adobe-acrobat-pro) von der Adobe Experience League-Seite herunterladen. |
    | Applikationen auswählen – Ausgewählte Programme | Nur Lizenzdatei in ausgewählten Programmen beibehalten | Standardeinstellung für die FRL-Bereitstellung |
    | Plug-ins | Keine Änderungen auf diesem Bildschirm vornehmen | |
    | Optionen | Keine Änderungen auf diesem Bildschirm vornehmen | |
@@ -1378,6 +1382,10 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
 * Erstellen Sie eine Umgebungsvariable `OpenOffice_PATH` und legen Sie sie so fest, dass sie auf die OpenOffice-Installation verweist, die in der [Konsole](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) oder dem dt-Profil (Device Tree, Gerätestrukturprofil) festgelegt ist.
 * Sollten bei der Installation von OpenOffice Probleme auftreten, stellen Sie sicher, dass die für die OpenOffice-Installation erforderlichen [32-Bit-Bibliotheken](#extrarequirements) zur Verfügung stehen.
 
+* Unter Red Hat® Enterprise Linux® 9 erfordert der 32-Bit OpenOffice-Build `libcrypt.so.1`, der nicht standardmäßig installiert ist. Wenn OpenOffice fehlt, beginnt es nicht mit dem `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`, und die Konvertierung von OpenOffice in PDF schlägt fehl. Installieren Sie das `libxcrypt-compat`-Paket (32-Bit-Version), um die Bibliothek bereitzustellen:
+
+  `sudo dnf install -y libxcrypt-compat.i686`
+
 +++
 
 +++Konvertierungsprobleme von HTML zu PDF
@@ -1474,7 +1482,6 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
         adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=&lt;Absolute path to prov.xml>]
         
         ```
-
     
   * Serialisieren Sie das Paket nach Volumen (serialisieren Sie die vorhandene Installation mit der Datei „prov.xml“ und der neuen Seriennummer erneut): Führen Sie den folgenden Befehl aus dem PRTK-Installationsordner als Administrator aus, um die bereitgestellten Pakete auf Client-Computern zu serialisieren und zu aktivieren:
 
@@ -1482,8 +1489,8 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
         adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
         
         ```
-
-    * Verwenden Sie für Großinstallationen den [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html), um frühere Versionen von Reader und Acrobat zu entfernen. Passen Sie das Installationsprogramm an und stellen Sie es auf allen Computern in Ihrem Unternehmen bereit.
+    
+* Verwenden Sie für Großinstallationen den [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html), um frühere Versionen von Reader und Acrobat zu entfernen. Passen Sie das Installationsprogramm an und stellen Sie es auf allen Computern in Ihrem Unternehmen bereit.
 
 +++
 
