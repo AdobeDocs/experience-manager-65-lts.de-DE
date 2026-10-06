@@ -8,14 +8,17 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 425c6194-0b87-4b01-a013-f620755072b3
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 92%
-
+source-wordcount: '646'
+ht-degree: 84%
 ---
-
 # Richten Sie das Android™-Studioprojekt ein und erstellen Sie eine Android™-App {#set-up-the-android-studio-project-and-build-the-android-app}
+
+>[!NOTE]
+>
+>Die Android- und iOS-Versionen der AEM Forms-App wurden eingestellt. Die Veröffentlichung der Android-App in Google Play wurde im September 2026 aufgehoben und die iOS-App wurde aus Apple App Store entfernt.
+>Diese Apps stehen nicht mehr zur Installation zur Verfügung. Um Hilfe bei der Android-App zu erhalten, wenden Sie sich an [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Dieser Artikel dient zum Erstellen der AEM Forms-App 6.3.1.1 und neueren Versionen. Zum Erstellen einer App aus dem Quell-Code der AEM Forms App 6.3 siehe [Einrichten des Eclipse-Projekts und Erstellen der Android™-App](/help/forms/using/setup-eclipse-project-build-installer.md).
 
@@ -52,9 +55,9 @@ Die folgende Abbildung zeigt die Verzeichnisstruktur des Ordners `android` im Or
 
    **Für Windows®-Benutzende**: `%HOMEPATH%\Projects`
 
-   >[!NOTE]
-   >
-   >Für Windows® wird empfohlen, das Android™-Projekt auf dem Systemlaufwerk zu belassen.
+>[!NOTE]
+>
+>Für Windows® wird empfohlen, das Android™-Projekt auf dem Systemlaufwerk zu belassen.
 
 1. Extrahieren Sie das Archiv im folgenden Verzeichnis:
 
@@ -62,9 +65,9 @@ Die folgende Abbildung zeigt die Verzeichnisstruktur des Ordners `android` im Or
 
    **Für Windows®-Benutzende**: `%HOMEPATH%\Projects\[your-project]`
 
-   >[!NOTE]
-   >
-   >Es wird empfohlen, das extrahierte Android-Projekt auf dem Systemlaufwerk zu belassen, bevor Sie das Projekt in Android™ Studio importieren.
+>[!NOTE]
+>
+>Es wird empfohlen, das extrahierte Android-Projekt auf dem Systemlaufwerk zu belassen, bevor Sie das Projekt in Android™ Studio importieren.
 
 1. Starten Sie Android™ Studio.
 
