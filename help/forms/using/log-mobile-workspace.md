@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 100%
+source-wordcount: '214'
+ht-degree: 73%
 ---
 # Anmelden bei der Adobe Experience Manager Forms-App{#logging-in-to-aem-forms-app}
+
+>[!NOTE]
+>
+>Die Android- und iOS-Versionen der AEM Forms-App wurden eingestellt. Die Veröffentlichung der Android-App in Google Play wurde im September 2026 aufgehoben und die iOS-App wurde aus Apple App Store entfernt.
+>Diese Apps stehen nicht mehr zur Installation zur Verfügung. Um Hilfe bei der Android-App zu erhalten, wenden Sie sich an [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Wenn Sie Ihre Adobe Experience Manager (AEM) Forms-App starten, müssen Sie zunächst Ihre Anmeldedaten und eine URL eines AEM-Formular-Servers angeben.
 
@@ -39,12 +44,12 @@ Wenn Sie Ihre Adobe Experience Manager (AEM) Forms-App starten, müssen Sie zun�
 1. Wählen Sie das Symbol der AEM Forms-App auf Ihrem mobilen Gerät.
 1. Um sich bei der App anzumelden, geben Sie einen Benutzernamen, ein Kennwort und die URL eines AEM-Formular-Servers ein.
 
-   >[!NOTE]
-   >
-   >Die Mobile App speichert alle von Ihnen eingegebenen AEM-Formular-Server-URLs zwischen.
-   >
-   >    * Um die Liste der Server-URLs anzuzeigen, klicken Sie auf den Pfeil in der rechten Ecke des Textfelds „Server-URL“.
-   >    * Wählen Sie eine AEM-Formular-Server-URL aus, um sich über die App anzumelden.
+>[!NOTE]
+>
+>Die Mobile App speichert alle von Ihnen eingegebenen AEM-Formular-Server-URLs zwischen.
+>
+>    * Um die Liste der Server-URLs anzuzeigen, klicken Sie auf den Pfeil in der rechten Ecke des Textfelds „Server-URL“.
+>    * Wählen Sie eine AEM-Formular-Server-URL aus, um sich über die App anzumelden.
 
 Wenn Sie sich bei der App anmelden, werden Sie zum [**Startbildschirm** weitergeleitet](../../forms/using/home-screen.md).
 

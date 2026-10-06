@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 100%
+source-wordcount: '371'
+ht-degree: 84%
 ---
 # Gestenanpassung {#gesture-customization}
+
+>[!NOTE]
+>
+>Die Android- und iOS-Versionen der AEM Forms-App wurden eingestellt. Die Veröffentlichung der Android-App in Google Play wurde im September 2026 aufgehoben und die iOS-App wurde aus Apple App Store entfernt.
+>Diese Apps stehen nicht mehr zur Installation zur Verfügung. Um Hilfe bei der Android-App zu erhalten, wenden Sie sich an [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Sie können die Gesten der AEM Forms-App anpassen, um eine individuelle Methode der Interaktion mit der App bereitzustellen. Beispielsweise können Sie neue Gesten zum Öffnen oder Schließen einer Aufgabe bzw. eines Startpunkts hinzufügen.
 
@@ -50,9 +55,9 @@ In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ei
    * In Eclipse navigieren Sie zum Ordner **assets > www > wsmobile > js > runtime > views**.
    * In Visual Studio navigieren Sie zum Ordner **MWSWindows > www > wsmobile > js > runtime > views**.
 
-   >[!NOTE]
-   >
-   >Die Datei „task.js“ enthält die Backbone-Ansicht, die mit allen Aufgaben oder Startpunkten in der Aufgaben- oder Startpunktliste verknüpft ist.
+>[!NOTE]
+>
+>Die Datei „task.js“ enthält die Backbone-Ansicht, die mit allen Aufgaben oder Startpunkten in der Aufgaben- oder Startpunktliste verknüpft ist.
 
 1. Suchen Sie in der Datei `task.js` nach der Ereigniseigenschaft der Ansicht.
 

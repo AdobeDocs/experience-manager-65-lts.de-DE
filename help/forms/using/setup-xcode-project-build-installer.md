@@ -9,14 +9,17 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: c5092e61-c3f9-4770-91be-247e6a02cdb4
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 98%
-
+source-wordcount: '838'
+ht-degree: 97%
 ---
-
 # Einrichten des Xcode-Projekts und Erstellen der iOS-App{#set-up-the-xcode-project-and-build-the-ios-app}
+
+>[!NOTE]
+>
+>Die AEM Forms-App für iOS wurde eingestellt und aus Apple App Store entfernt.
+>Es ist nicht mehr für die Installation verfügbar.
 
 In AEM Forms wird der vollständige Quellcode der AEM Forms-App bereitgestellt. Die Quelle enthält alle Komponenten, die für eine benutzerdefinierte AEM Forms-App erforderlich sind. Das Quell-Code-Archiv `adobe-lc-mobileworkspace-src-<version>.zip` ist Bestandteil des `adobe-aemfd-forms-app-src-pkg-<version>.zip`-Pakets auf Software Distribution.
 
@@ -31,7 +34,7 @@ Um die AEM Forms App-Quelle zu erhalten, führen Sie die folgenden Schritte aus:
 1. Öffnen Sie den [Paket-Manager](/help/sites-administering/package-manager.md) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
-1. Um das Quell-Code-Archiv herunterzuladen, öffnen Sie `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in Ihrem Browser.
+1. Öffnen Sie `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in Ihrem Browser, um das Quell-Code-Archiv herunterzuladen.
 Das Quellpaket wird auf Ihr Gerät heruntergeladen.
 
 Die folgende Abbildung zeigt den extrahierten Inhalt von `adobe-lc-mobileworkspace-src-<version>.zip`.
@@ -122,9 +125,9 @@ Weitere Informationen zu Codesignaturen und zum Hinzufügen von Geräten im iOS 
    </dict>
    ```
 
-   >[!NOTE]
-   >
-   >Dieser Schritt ist nur erforderlich, wenn das AEM Forms-Programm eine Verbindung zu einem Server herstellen muss, der nicht den App Transport Security-Anforderungen entspricht.
+>[!NOTE]
+>
+>Dieser Schritt ist nur erforderlich, wenn das AEM Forms-Programm eine Verbindung zu einem Server herstellen muss, der nicht den App Transport Security-Anforderungen entspricht.
 
 1. Wählen Sie unter **PROJEKT** die Option **AEM Forms** aus und vergewissern Sie sich, dass die entsprechende Signatur für **Code Signing Identity**, **Debugging**, **Freigabe** und **Alle iOS-SDKs** ausgewählt ist.
 1. Verbinden Sie ein provisioniertes iPad mit einem Mac-Computer.

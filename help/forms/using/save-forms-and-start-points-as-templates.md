@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 2b710c6ef8d291a42b4a7658bf84f5e764422d5c
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 100%
+source-wordcount: '383'
+ht-degree: 85%
 ---
 # Speichern von Formularen als Vorlagen {#save-forms-as-templates}
+
+>[!NOTE]
+>
+>Die Android- und iOS-Versionen der AEM Forms-App wurden eingestellt. Die Veröffentlichung der Android-App in Google Play wurde im September 2026 aufgehoben und die iOS-App wurde aus Apple App Store entfernt.
+>Diese Apps stehen nicht mehr zur Installation zur Verfügung. Um Hilfe bei der Android-App zu erhalten, wenden Sie sich an [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Wenn Benutzende ein Formular ausfüllen, müssen Eingaben in bestimmten Feldern manchmal unbedingt übereinstimmen. In solchen Fällen können Sie die Felder ausfüllen, für die in allen Instanzen dieselben Werte benötigt werden, und das Formular bzw. den Entwurf als Vorlage speichern. Danach sind die angegebenen Felder jedes Mal, wenn Sie eine Instanz der Vorlage erstellen, bereits mit den Werten aus der Vorlage ausgefüllt. Dies spart Zeit und Mühe beim Ausfüllen des Formulars.
 

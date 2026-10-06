@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 100%
+source-wordcount: '449'
+ht-degree: 87%
 ---
 # Aktualisieren von allgemeinen Einstellungen{#updating-general-settings}
+
+>[!NOTE]
+>
+>Die Android- und iOS-Versionen der AEM Forms-App wurden eingestellt. Die Veröffentlichung der Android-App in Google Play wurde im September 2026 aufgehoben und die iOS-App wurde aus Apple App Store entfernt.
+>Diese Apps stehen nicht mehr zur Installation zur Verfügung. Um Hilfe bei der Android-App zu erhalten, wenden Sie sich an [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 In den allgemeinen Einstellungen der AEM Forms-App können Sie Einstellungen wie das Abrufen von Anlagen, den Offline-Modus, den Landingscreen, die Standardkategorie und die Häufigkeit der automatischen Speicherung festlegen.
 
@@ -51,9 +56,9 @@ Die sofort einsatzbereite Mobile App von AEM Forms lädt die mit den einzelnen F
 
    Bildschirm mit den allgemeinen Einstellungen
 
-   >[!NOTE]
-   >
-   >Die Optionen werden auf verschiedenen Mobilgeräten möglicherweise unterschiedlich angezeigt.
+>[!NOTE]
+>
+>Die Optionen werden auf verschiedenen Mobilgeräten möglicherweise unterschiedlich angezeigt.
 
 ### Allgemeine Einstellungen {#general-settings}
 

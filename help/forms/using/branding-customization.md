@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 100%
+source-wordcount: '953'
+ht-degree: 94%
 ---
 # Branding-Anpassung {#branding-customization}
+
+>[!NOTE]
+>
+>Die Android- und iOS-Versionen der AEM Forms-App wurden eingestellt. Die Veröffentlichung der Android-App in Google Play wurde im September 2026 aufgehoben und die iOS-App wurde aus Apple App Store entfernt.
+>Diese Apps stehen nicht mehr zur Installation zur Verfügung. Um Hilfe bei der Android-App zu erhalten, wenden Sie sich an [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Sie können das Symbol und den Namen der Anwendung, Startbilder und die Anmeldeseite anpassen und dadurch ein auf Ihr Unternehmen zugeschnittenes Erscheinungsbild für Ihre Organisation in der AEM Forms-App gestalten. Sie können beispielsweise die Bilder ändern und stattdessen Logos Ihrer Organisation verwenden. Die AEM Forms-App unterstützt die folgenden Anpassungen:
 
@@ -60,9 +65,9 @@ Führen Sie die folgenden Schritte durch, um das Standardsymbol der App und das 
 
    Laden Sie die Dateien in das Capture-Projekt hoch, um vorhandene Dateien im Projekt zu ersetzen.
 
-   >[!NOTE]
-   >
-   >Stellen Sie sicher, dass der Name und die Auflösung des Bildes mit dem Bild übereinstimmen, das im Projekt ersetzt werden soll.
+>[!NOTE]
+>
+>Stellen Sie sicher, dass der Name und die Auflösung des Bildes mit dem Bild übereinstimmen, das im Projekt ersetzt werden soll.
 
 1. Erstellen Sie die AEM Forms-App auf einem iOS-Gerät oder einem iOS-Simulator.
 
@@ -80,9 +85,9 @@ Führen Sie die folgenden Schritte durch, um das Standardsymbol der App und das 
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxhdpi`
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxxhdpi`
 
-   >[!NOTE]
-   >
-   >Stellen Sie sicher, dass der Name und die Auflösung des Bildes mit dem Bild übereinstimmen, das im Projekt ersetzt werden soll.
+>[!NOTE]
+>
+>Stellen Sie sicher, dass der Name und die Auflösung des Bildes mit dem Bild übereinstimmen, das im Projekt ersetzt werden soll.
 
 1. Erstellen Sie die AEM Forms-App neu.
 
@@ -96,9 +101,9 @@ Führen Sie die folgenden Schritte durch, um das Standardsymbol der App und das 
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\res\screens\windows`
 
-   >[!NOTE]
-   >
-   >Stellen Sie sicher, dass der Name und die Auflösung des Bildes mit dem Bild übereinstimmen, das im Projekt ersetzt werden soll.
+>[!NOTE]
+>
+>Stellen Sie sicher, dass der Name und die Auflösung des Bildes mit dem Bild übereinstimmen, das im Projekt ersetzt werden soll.
 
 1. Erstellen Sie die AEM Forms-App neu.
 
