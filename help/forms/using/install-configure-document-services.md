@@ -24,10 +24,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
+source-git-commit: 1b62d0d980c9916d03ed6a14d7e42a4923967243
 workflow-type: tm+mt
-source-wordcount: '10769'
-ht-degree: 97%
+source-wordcount: '10979'
+ht-degree: 96%
 ---
 # Installieren und Konfiguration von Dokumentendiensten {#installing-and-configuring-document-services}
 
@@ -1122,6 +1122,27 @@ Zum Ausführen des PDF Generator-Dienstes ist ein lokales Benutzerkonto erforder
 1. Öffnen Sie die Seite [Konfiguration von AEM Forms PDF Generator](http://localhost:4502/libs/fd/pdfg/config/ui.html).
 
 1. Geben Sie auf der Registerkarte **[!UICONTROL Benutzerkonten]** die Anmeldeinformationen für ein lokales Benutzerkonto ein und klicken Sie auf **[!UICONTROL Senden]**. Wenn Microsoft® Windows Sie dazu auffordert, erlauben Sie dem Benutzer den Zugriff. Nach erfolgreichem Hinzufügen wird der konfigurierte Benutzer unter dem Abschnitt **[!UICONTROL Ihre Benutzerkonten]** auf der Registerkarte **[!UICONTROL Benutzerkonten]** angezeigt.
+
+### (Nur Windows) Aktivieren von PDF Generator-Konvertierungen mit mehreren Threads
+
+Um Dokumentkonvertierungen mit mehreren Threads auszuführen, während AEM Forms als Windows-Dienst ausgeführt wird, verarbeitet PDF Generator Konvertierungen unter einem einzigen konfigurierten Benutzerkonto.
+
+>[!NOTE]
+>
+> In diesem Modus werden mehrere Instanzen von **Microsoft® Word** (doc/docx) und **Excel** (xls/xlsx) unter demselben Benutzer ausgeführt und verarbeiten Konversionen gleichzeitig. **Microsoft® PowerPoint** (ppt/pptx) unterstützt diesen Modus nicht. PDF Generator startet jeweils nur eine PowerPoint-Instanz. Daher werden für PowerPoint keine Multithread-Konvertierungen unterstützt.
+
+So aktivieren Sie Multithreadkonvertierungen für Word und Excel:
+
+1. Konfigurieren Sie ein [lokales Benutzerkonto](#configure-a-local-user-account-to-run-the-pdf-generator-service) für PDF Generator.
+1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** >>**[!UICONTROL Werkzeuge]** > **[!UICONTROL Formulare]** > **[!UICONTROL PDF Generator konfigurieren]**. Die Standard-URL ist <http://localhost:4502/libs/fd/pdfg/config/ui.html>.
+1. Legen Sie auf **[!UICONTROL Registerkarte]** Allgemeine Konfiguration“ die folgenden Optionen fest (Konfigurieren von PDFMaker für Word und Native2PDF für Excel):
+
+   * **Einzelbenutzermodus für PDFMaker aktivieren:** **true**
+   * **PDFMaker Single User Process Pool-Größe:** Sie nach Bedarf ein. Dieser Wert ist die maximale Anzahl von Word-Instanzen, die Konvertierungen gleichzeitig ausführen können.
+   * **Aktivieren des Einzelbenutzermodus für nativ2PDF:** **true**
+   * **native2PDF-Single-User-Process-Pool-Größe** Nach Bedarf festlegen. Dieser Wert ist die maximale Anzahl von Excel-Instanzen, die Konversionen gleichzeitig ausführen können.
+
+1. Starten Sie den AEM Forms-Server neu.
 
 ### Zeitlimiteinstellungen konfigurieren {#configure-the-time-out-settings}
 
