@@ -21,10 +21,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 606310b2214bc33ede4f2d99f7947fe05d668f64
+source-git-commit: 75901153628ecb69c0a30c28b1e0834f5fc27da5
 workflow-type: tm+mt
-source-wordcount: '7622'
-ht-degree: 21%
+source-wordcount: '7505'
+ht-degree: 20%
 ---
 
 # Aktuelle Versionshinweise für Adobe Experience Manager 6.5 LTS, SP3 {#release-notes}
@@ -342,14 +342,14 @@ Der Launch-Promotion-Verlauf zeigt jetzt lokalisierten Text in der Sites-Zeitlei
 * FORMS-25045: Nach einem Upgrade werden Übersetzungen aus dem traditionellen Chinesisch (Hongkong) nicht mehr gerendert, sodass Formulare wieder in der Standardsprache vorliegen. Lokalisierter Text wird jetzt korrekt gerendert.
 * FORMS-25170: Beim Aufrufen von `addInstance()` wurden keine dynamisch hinzugefügten Bereiche angezeigt, wenn die Anzahl der Ausgangsinstanzen 0 war. Hinzugefügte Bedienfelder werden jetzt sofort angezeigt.
 * FORMS-25225: Durch die Server-seitige erneute Überprüfung wurden Feldübersetzungen entfernt, die sich außerhalb von Fragmenten in adaptivem Forms befanden. Dadurch wurden Kennzeichnungen auf die Basissprache zurückgesetzt. Diese Übersetzungen werden jetzt beibehalten.
-* FORMS-25233: Bei Bereitstellungen der Open Services Gateway Initiative (OSGi) hat der Assembler-Service eine primäre XDP mit dem zugehörigen sofortigen Fragment zugeordnet, jedoch verschachtelte Fragmentverweise wie Kopfzeilen, Fußzeilen und wiederverwendbare Unterformulare nicht aufgelöst, sodass sie in der zusammengestellten Ausgabe fehlten. Verschachtelte Fragmente werden jetzt aufgelöst.
+* FORMS-25233: Bei OSGi-Bereitstellungen konnte der Assembler-Service verschachtelte Fragmentverweise in XDP-Dateien nicht auflösen, sodass sie in der zusammengestellten Ausgabe fehlten. Verschachtelte Fragmente werden jetzt aufgelöst.
 * FORMS-25289: Der Forms-Rendering-Service hat unterschiedliche Ausgaben für dieselbe Eingabe in allen Service Packs zurückgegeben, was sich auf Correspondence Management-Briefe auswirkte. Die Rendering-Ausgabe ist jetzt konsistent.
 * FORMS-25290: Correspondence Management-Briefe wurden gespeichert, verloren Leerzeichen und zeigten an einigen Stellen ein verirrtes „x“, wenn sie wieder geöffnet wurden. Gespeicherter Briefinhalt bleibt jetzt intakt.
 * FORMS-25346: Nach einem Service Pack-Upgrade wurden Briefe für interaktive Kommunikation (IC) auf einem Ladeschleuderrad eingefroren, und Briefe, die geladen wurden, verloren in der Vorschau Leerzeichen. Laden und Abstände funktionieren jetzt korrekt.
 * FORMS-25431: Der Assistent „Formularfragment erstellen“ hat bei jedem Tastenanschlag im Titelfeld eine Netzwerkanfrage gesendet. Die redundanten Aufrufe wurden entfernt.
 * FORMS-25645: Das Erstellen eines auf Kernkomponenten basierenden adaptiven Formularfragments aus einem inline hochgeladenen JSON-Schema ist fehlgeschlagen mit „ALC-FMG-700-009 Es wurde ein ungültiges Formularmodell angegeben.“ Inline-JSON-Schemata werden jetzt akzeptiert.
 * FORMS-25646: Ein auf Kernkomponenten basierendes adaptives Formularfragment, das aus einem JSON-Schema erstellt wurde, hat im Editor ein leeres Datenquellenbedienfeld angezeigt. Im Bedienfeld werden nun die Schemadatenquellen aufgelistet.
-* FORMS-25674: Die Benutzeroberfläche des Interactive Communications (IC) Agent wurde auf einer leeren Seite geöffnet, sodass Agenten keine IC-Inhalte anzeigen konnten. Die Benutzeroberfläche für Agenten wird jetzt dargestellt.
+* FORMS-25674: Die Benutzeroberfläche für den Agenten für interaktive Kommunikation (IC) wurde auf einer leeren Seite geöffnet, sodass Agenten keine IC-Inhalte anzeigen können. Die Benutzeroberfläche für Agenten wird jetzt dargestellt.
 * FORMS-25686: Beim Umschalten der Option für den Schematyp im Assistenten zum Erstellen eines adaptiven Formularfragments wurde der Status der vorherigen Option nicht gelöscht, was zu einer Schemakonfliktübereinstimmung führte. Der Assistent setzt nun die Option Inaktiv zurück.
 * FORMS-25757: Beim Anwenden eines Designs wurde die Basis-Client-Bibliothek nicht aktualisiert, sodass Design-Änderungen anscheinend keine Auswirkungen hatten. Designs aktualisieren jetzt die Client-Basisbibliothek.
 * FORMS-25825: Das mobile Hamburger-Menü reagierte nicht auf Tips, sodass die Navigation auf Mobilgeräten unbrauchbar blieb. Das Menü wird nun erwartungsgemäß geöffnet.
@@ -361,7 +361,7 @@ Der Launch-Promotion-Verlauf zeigt jetzt lokalisierten Text in der Sites-Zeitlei
 
 Die folgenden Probleme wurden für AEM Forms on JEE in 6.5 LTS Service Pack 3 behoben:
 
-* FORMS-27585: Bei AEM Forms on JEE zeigte die XFA-basierte PDF forms, die `submitForm()` aufrief, das Ergebnis der Übermittlung nicht in Adobe Reader (und in Acrobat, wenn das Skript `closeDoc()` aufrief) an. Das Ergebnis der Übermittlung wird jetzt korrekt angezeigt.
+* FORMS-27585: Bei AEM Forms on JEE konnte bei XFA-basierten PDF forms-Aufrufen `submitForm()` Übermittlungsergebnis nicht in Adobe Reader oder Acrobat angezeigt werden, wenn das Skript `closeDoc()` aufrief. Das Ergebnis der Übermittlung wird jetzt korrekt angezeigt.
 * FORMS-25998: Bei AEM Forms on JEE ist beim Registrieren von HSM-Zertifikaten (Hardware Security Module) mit privatem Schlüssel ein `IllegalAccessError` unter Java 21 fehlgeschlagen, wenn die HSM-Konnektivität in der Administration-Console getestet wurde. Die Registrierung des Zertifikats mit privatem HSM-Schlüssel funktioniert jetzt.
 * FORMS-24993: Beim Laden einer WSDL im Schritt „Webservice aufrufen“ auf AEM Forms auf JEE ist ein `SAXException` („Vorzeitiges Dateiende„) fehlgeschlagen. WSDLs werden jetzt korrekt geladen.
 * FORMS-24518: Unter AEM Forms on JEE (JBoss) gab die Web-Anwendung der Reader-Erweiterungen nach einer Neuinstallation aufgrund eines veralteten JSTL-Tag-Lib-URI „Error processing request“ zurück. Die Reader Extensions-Webanwendung wird jetzt geladen.
@@ -373,17 +373,17 @@ Die folgenden Probleme wurden für AEM Forms on JEE in 6.5 LTS Service Pack 3 be
 
 Um AEM Forms 6.5 LTS SP3 auf JEE zu installieren, führen Sie die folgenden Schritte in der richtigen Reihenfolge aus:
 
-1. Installieren Sie das Service Pack mit dem AEM Forms 6.5 LTS SP3 JEE-Installationsprogramm für Ihren Anwendungsserver (laden Sie es von [AEM Forms-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) herunter), indem Sie dem standardmäßigen Installationsverfahren für AEM Forms on JEE folgen.
+1. Installieren Sie das Service Pack mit dem AEM Forms 6.5 LTS SP3 JEE-Installationsprogramm für Ihren Anwendungsserver (laden Sie es von [AEM Forms-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) herunter) und befolgen Sie die standardmäßigen Installationsverfahren für AEM Forms on JEE.
 1. Aktualisieren Sie auf das neueste AEM Forms Workbench-Installationsprogramm (verfügbar auf derselben Seite mit [AEM Forms-Versionen](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)).
 1. Wenn Ihr Projekt die `adobe-livecycle-client.jar` SDK-Client-Bibliothek verwendet, aktualisieren Sie sie im Klassenpfad Ihres Projekts. Die neueste Version ist unter `<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar` verfügbar.
 
 #### Bekannte Probleme {#forms-known-issues-65-lts-sp3}
 
-* Auf **AEM Forms on JEE 6.5 LTS SP3** kann das Konvertieren von **PostScript (PS)-, EPS- und PRN-Dateien in PDF** fehlschlagen. Der `PsToPdfSvc` native Prozess kann unerwartet beendet werden, was dazu führt, dass der Konvertierungsauftrag mit Fehlern wie `ALC-PDG-003-011` und `ALC-PDG-001-028` fehlschlägt. Wenden Sie sich an den Kunden-Support von Adobe. (FORMS-28152)
+* Auf **AEM Forms on JEE 6.5 LTS SP3** schlägt das Konvertieren von **PostScript (PS)-, EPS- und PRN-Dateien in PDF**. Der `PsToPdfSvc` native Prozess kann unerwartet beendet werden, was dazu führt, dass der Konvertierungsauftrag mit Fehlern wie `ALC-PDG-003-011` und `ALC-PDG-001-028` fehlschlägt. Wenden Sie sich an den Kunden-Support von Adobe. (FORMS-28152)
 
 #### Sicherheitskorrekturen {#forms-security-fixes-65-lts-sp3}
 
-Diese Version behebt Sicherheitslücken in AEM Forms, einschließlich mehrerer Cross-Site-Scripting (XSS)-Fehlerbehebungen, einer Server-seitigen Request Forgery-Fehlerbehebung (SSRF), einer Fehlerbehebung bei XML External Entity (XE) und Aktualisierungen bei Drittanbieterbibliotheken.
+Diese Version behebt Sicherheitslücken in AEM Forms, einschließlich XSS, SSRF und XE, und aktualisiert Bibliotheken.
 
 
 
@@ -486,7 +486,7 @@ Eclipse Jetty 11.0.x wird als Servlet-Engine für den Schnellstart verwendet.
 ### Java™-Unterstützung  {#java-support}
 
 * Unterstützung für Java™ 17 und Java™ 21.
-* Um eine optimale Leistung zu erzielen, überschreiben Sie die GC-Standardwerte mit anderen Werten. Weitere Informationen finden Sie im Abschnitt [Installieren und Aktualisieren](/help/sites-deploying/custom-standalone-install.md).
+* Um eine optimale Leistung zu erzielen, überschreiben Sie die standardmäßigen GC-Werte mit verschiedenen Werten. Weitere Informationen finden Sie im Abschnitt [Installieren und Aktualisieren](/help/sites-deploying/custom-standalone-install.md).
 * Adobe verteilt Wartungs-Updates für Java™ 17 und Java™ 21 für die Verwendung durch Kunden in AEM-bezogenen Projekten, sofern diese nicht über Oracle öffentlich verfügbar sind.
 
 ### Uber-JAR-Verpackung {#uber-jar-packaging}
@@ -531,7 +531,7 @@ Siehe auch [Aktualisieren der UberJar-Version von AEM](/help/sites-deploying/upg
 Gilt für: AEM 6.5 LTS (On-Premise)-Kunden, die Service Pack 3 (SP3) installieren. SP3 wird als Schnellstart-JAR-Datei bereitgestellt.
 
 **Darum ist dieses Upgrade-Verfahren wichtig**
-SP2 für AEM 6.5 LTS wird als Schnellstart-JAR-Datei und nicht als ZIP-Datei zur Installation über den Paket-Manager bereitgestellt. On-Premise-Kunden führen ein Upgrade durch, indem sie die Schnellstart-JAR-Datei ersetzen, entpacken und neu starten. Diese Methode entspricht dem standardmäßigen Upgrade-Verfahren von Adobe.
+SP2 für AEM 6.5 LTS wird als Schnellstart-JAR-Datei und nicht als ZIP-Datei zur Installation über den Paket-Manager bereitgestellt. On-Premise-Kunden führen ein Upgrade durch, indem sie die Schnellstart-JAR-Datei ersetzen, extrahieren und neu starten. Diese Methode entspricht dem standardmäßigen Upgrade-Verfahren von Adobe.
 
 
 **Empfohlener Upgrade-Ablauf (Autoren- oder Veröffentlichungsinstanz)**
@@ -662,29 +662,44 @@ Der Ausfall erfolgt still: Inhaltsknoten werden bei der Paket-Aktivierung nicht 
 >
 > Um Fehler beim Laden von Inhalten nach dem Upgrade auf AEM 6.5 LTS SP2 zu vermeiden, entfernen Sie alle Kommentare aus JSON-Dateien in Ihren `Sling-Initial-Content`.
 
+
 ### Die Aktualisierung des Jackson-Bundles wirkt sich auf den GlobalLink-Connector aus {#jackson-upgrade-globallink-connector}
 
-AEM 6.5 LTS SP3 aktualisiert das `jackson`. Diese Änderung betrifft Bereitstellungen, die den GlobalLink-Übersetzungs-Connector verwenden.
+AEM 6.5 LTS SP3 aktualisiert das Jackson-Bundle. Diese Änderung betrifft Bereitstellungen, die den GlobalLink-Übersetzungs-Connector verwenden.
 
-Wenn Sie das `gs4tr-globallink-adaptors-aem.core`-Bundle mit einer älteren Version als 3.4.0 verwenden, aktualisieren Sie das Bundle auf eine kompatible Version. Version 3.4.0 oder höher funktioniert mit dem aktualisierten `jackson`-Bundle in SP3.
+Wenn Sie das `gs4tr-globallink-adaptors-aem.core`-Bundle mit einer älteren Version als 3.4.4.7 verwenden, aktualisieren Sie das Bundle auf eine kompatible Version. Die Version 3.4.4.7 oder höher funktioniert mit dem aktualisierten Jackson-Bundle in SP3.
 
 >[!NOTE]
 >
-> Aktualisieren Sie das `gs4tr-globallink-adaptors-aem.core`-Bundle vor oder während des SP3-Updates auf 3.4.0 oder höher, um Kompatibilitätsprobleme mit dem GlobalLink-Connector zu vermeiden.
+>Aktualisieren Sie das `gs4tr-globallink-adaptors-aem.core`-Bundle vor oder während des SP3-Updates auf 3.4.4.7 oder höher, um Kompatibilitätsprobleme mit dem GlobalLink-Connector zu vermeiden.
+
+<!--
+
+AEM 6.5 LTS SP3 upgrades the `jackson` bundle. This change affects deployments that use the GlobalLink translation connector.
+
+If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.0, upgrade the bundle to a compatible version. Version 3.4.0 or later works with the upgraded `jackson` bundle in SP3.
+
+>[!NOTE]
+>
+> Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.0 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
 
 
-### Installieren erforderlicher Oak-Indizes für Sites Headless-APIs{#site-headless-api}
+### Install required Oak indexes for Sites Headless APIs{#site-headless-api}
 
-Einige APIs, die zu Sites Headless verschoben wurden, erfordern zusätzliche Oak-Indizes, damit die volle Funktionalität genutzt werden kann.
+Some APIs that moved to Sites Headless require additional Oak indexes for full functionality. 
 
-Installieren Sie das `cq-dam-cfm-indices`-Paket, um die folgenden Funktionen zu verwenden:
+To use the following features, install the `cq-dam-cfm-indices` package:
 
-* Auflisten von Inhaltsfragmentmodellen
-* Auflisten von Inhaltsfragmenten
-* Such-API
+* List Content Fragment Models
+* List Content Fragments
+* Search API
 * Workflows
 
-Laden Sie das Indexpaket [cq-dam-cfm-](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) im Adobe Software Distribution-Portal herunter.
+Download the index package [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) from the Adobe Software Distribution portal. 
+
+-->
+
+###
 
 ### Dispatcher-Verbindungsfehler mit der Funktion „Nur SSL“ (behoben in AEM 6.5 LTS SP1 und später){#ssl-only-feature}
 
