@@ -7,9 +7,9 @@ user-guide-description: In der Dokumentation zu Adobe Experience Manager 6.5 LTS
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: 4df5a9888532afd86562678a76c35841ac5634b8
+source-git-commit: 8781bd3762ec04424802d899d3517754e0c81fc5
 workflow-type: tm+mt
-source-wordcount: '7804'
+source-wordcount: '7799'
 ht-degree: 67%
 ---
 # Dokumentation zu Adobe Experience Manager 6.5 LTS {#content}
@@ -1111,7 +1111,6 @@ ht-degree: 67%
 + KI in AEM {#ai-in-aem}
   + [Überblick](/help/ai-in-aem/overview.md)
   + KI-Assistent {#ai-assistant}
-    + [Konfigurieren des KI-Assistenten in AEM](/help/ai-assistant-in-aem-admin.md)
     + [Info zum KI-Assistenten in AEM](/help/ai-assistant-in-aem.md)
 + Content and Commerce {#commerce}
   + [Einführung und Überblick](/help/commerce/cif/introduction.md)
