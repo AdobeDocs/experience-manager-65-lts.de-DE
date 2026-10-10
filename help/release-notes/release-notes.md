@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 60fd1764a1b2a6440d306d21a8a84a8f9d879811
+source-git-commit: 7fb04d7017fa8f6183508cf4f880077eb533c057
 workflow-type: tm+mt
-source-wordcount: '7432'
+source-wordcount: '7577'
 ht-degree: 21%
 ---
 
@@ -674,30 +674,27 @@ If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier 
 >Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.4.7 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
 -->
 
+AEM 6.5 LTS SP3 aktualisiert das `jackson`. Diese Änderung betrifft Bereitstellungen, die den GlobalLink-Übersetzungs-Connector verwenden.
 
-
-<!--
-AEM 6.5 LTS SP3 upgrades the `jackson` bundle. This change affects deployments that use the GlobalLink translation connector.
-
-If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.0, upgrade the bundle to a compatible version. Version 3.4.0 or later works with the upgraded `jackson` bundle in SP3.
+Wenn Sie das `gs4tr-globallink-adaptors-aem.core`-Bundle mit einer älteren Version als 3.4.0 verwenden, aktualisieren Sie das Bundle auf eine kompatible Version. Version 3.4.0 oder höher funktioniert mit dem aktualisierten `jackson`-Bundle in SP3.
 
 >[!NOTE]
 >
-> Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.0 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
+> Aktualisieren Sie das `gs4tr-globallink-adaptors-aem.core`-Bundle vor oder während des SP3-Updates auf 3.4.0 oder höher, um Kompatibilitätsprobleme mit dem GlobalLink-Connector zu vermeiden.
 
 
-### Install required Oak indexes for Sites Headless APIs{#site-headless-api}
+### Installieren erforderlicher Oak-Indizes für Sites Headless-APIs{#site-headless-api}
 
-Some APIs that moved to Sites Headless require additional Oak indexes for full functionality. 
+Einige APIs, die zu Sites Headless verschoben wurden, erfordern zusätzliche Oak-Indizes, damit die volle Funktionalität genutzt werden kann.
 
-To use the following features, install the `cq-dam-cfm-indices` package:
+Installieren Sie das `cq-dam-cfm-indices`-Paket, um die folgenden Funktionen zu verwenden:
 
-* List Content Fragment Models
-* List Content Fragments
-* Search API
+* Auflisten von Inhaltsfragmentmodellen
+* Auflisten von Inhaltsfragmenten
+* Such-API
 * Workflows
 
-Download the index package [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) from the Adobe Software Distribution portal. 
+Laden Sie das Indexpaket [cq-dam-cfm-](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) im Adobe Software Distribution-Portal herunter.
 
 -->
 
