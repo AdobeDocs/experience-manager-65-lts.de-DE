@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 168e33d380dcef163d43d6d10dc21c840c55e96c
+source-git-commit: 0eb20f3494bb75de7adf27745ddfb13d024af59c
 workflow-type: tm+mt
-source-wordcount: '7799'
+source-wordcount: '7882'
 ht-degree: 21%
 ---
 
@@ -382,6 +382,23 @@ Um AEM Forms 6.5 LTS SP3 auf JEE zu installieren, führen Sie die folgenden Schr
 #### Bekannte Probleme {#forms-known-issues-65-lts-sp3}
 
 * Auf **AEM Forms on JEE 6.5 LTS SP3** schlägt das Konvertieren von **PostScript (PS)-, EPS- und PRN-Dateien in PDF**. Der `PsToPdfSvc` native Prozess kann unerwartet beendet werden, was dazu führt, dass der Konvertierungsauftrag mit Fehlern wie `ALC-PDG-003-011` und `ALC-PDG-001-028` fehlschlägt. Wenden Sie sich an den Kunden-Support von Adobe. (FORMS-28152)
+
+Unter AEM Forms on JEE funktionieren Reader-Erweiterungen nicht auf der WebSphere® Liberty Profile-Plattform (WLP). In der in LTS SP3 enthaltenen EAR-Datei fehlen die erforderlichen Bouncy Castle-Bibliotheken auf dem Klassenpfad.
+
+**Problemumgehung**
+
+1. Rufen Sie `<AEM Forms JEE installation>\Adobe_Experience_Manager_Forms\configurationManager\export` auf.
+1. Öffnen Sie `adobe-livecycle-websphere.ear\adobe-dscf.jar\META-INF\MANIFEST.MF` und hängen Sie diese Einträge an das `Class-Path` an:
+
+   ```
+   bcmail-jdk18on-1.84.jar bcprov-jdk18on-1.84.jar bcpkix-jdk18on-1.84.jar bcutil-jdk18on-1.84.jar
+   ```
+
+1. Stellen Sie die geänderte EAR-Datei erneut im Ordner WebSphere® Liberty Profile `dropins` bereit:
+   1. Beenden Sie den WebSphere® Liberty-Profil-Server und löschen Sie `adobe-livecycle-websphere.ear` aus `<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`.
+   1. Löschen Sie das `adobe-livecycle-websphere.ear` aus `<WebSphere Liberty Profile install location>\usr\servers\<server-name>\apps\expanded\`.
+   1. Kopieren Sie die geänderte EAR-Datei aus Schritt 2 nach `<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`.
+   1. Starten Sie den WebSphere® Liberty-Profil-Server.
 
 #### Sicherheitskorrekturen {#forms-security-fixes-65-lts-sp3}
 
