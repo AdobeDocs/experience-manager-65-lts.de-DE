@@ -21,7 +21,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: ea816eea4c8594f6f186e7e92540e536243b6a05
+source-git-commit: a09b87b0103e007d357b8901233ae890998a307d
 workflow-type: tm+mt
 source-wordcount: '7815'
 ht-degree: 21%
@@ -43,7 +43,7 @@ ht-degree: 21%
 
 >[!IMPORTANT]
 >
-> **Obligatorischer Hotfix** - Um Probleme mit SNFE (SegmentNotFoundException) während der Online-Komprimierung auf Standby zu vermeiden, installieren Sie den Hotfix unter &quot;[&#x200B; Probleme - Repository-Beschädigung während der Online-Komprimierung](#repository-corruption-during-online-compaction-granite-73045).
+> **Obligatorischer Hotfix** - Um Probleme mit SNFE (SegmentNotFoundException) während der Online-Komprimierung auf Standby zu vermeiden, installieren Sie den Hotfix unter &quot;[ Probleme - Repository-Beschädigung während der Online-Komprimierung](#repository-corruption-during-online-compaction-granite-73045).
 
 ## Was in [!DNL Adobe Experience Manager] 6.5 LTS, SP3 enthalten ist {#what-is-new}
 
@@ -710,7 +710,7 @@ Laden Sie das Indexpaket [cq-dam-cfm-](https://experience.adobe.com/#/downloads/
 
 -->
 
-&#x200B;###
+###
 
 ### Dispatcher-Verbindungsfehler mit der Funktion „Nur SSL“ (behoben in AEM 6.5 LTS SP1 und später){#ssl-only-feature}
 
