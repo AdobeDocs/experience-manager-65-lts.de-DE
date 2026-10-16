@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1629'
 ht-degree: 96%
@@ -256,4 +256,4 @@ Führen Sie folgende Schritte aus, um den Test durchzuführen:
 
 >[!NOTE]
 >
-> Sie können die SharePoint-Listenkonfiguration in einem adaptiven Formular mit einem Formulardatenmodell erstellen und verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einer SharePoint-Liste zu speichern. Detaillierte Schritte dazu finden Sie unter [Verbinden eines adaptiven Formulars mit einer Microsoft® SharePoint-Liste](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration).
+> Sie können die SharePoint-Listenkonfiguration in einem adaptiven Formular mit einem Formulardatenmodell erstellen und verwenden, um Daten zu speichern oder das generierte Datensatzdokument in einer SharePoint-Liste zu speichern. Detaillierte Schritte dazu finden Sie unter [Verbinden eines adaptiven Formulars mit einer Microsoft® SharePoint-Liste](/help/forms/using/configuring-submit-actions.md#connect-af-sharepoint-list).

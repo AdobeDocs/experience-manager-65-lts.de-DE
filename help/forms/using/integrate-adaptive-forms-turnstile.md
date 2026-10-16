@@ -14,7 +14,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 96%
@@ -39,7 +39,7 @@ AEM Forms unterstützt die folgenden CAPTCHA-Lösungen:
 
 Turnstile Captcha von Cloudflare bietet eine Sicherheitsmaßnahme zum Schutz von Formularen vor automatisierten Bots, bösartigen Angriffen, Spams und unerwünschtem automatisierten Traffic. Bei der Formularübermittlung wird ein Kontrollkästchen angezeigt, mit dem überprüft wird, ob es sich um menschliche Benutzende handelt, bevor das Formular übermittelt werden kann.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440949?captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3440940/)
 
 ### Voraussetzungen für die Integration der AEM Forms-Umgebung mit Turnstile Captcha {#prerequisite}
 
@@ -86,7 +86,7 @@ So integrieren Sie AEM Forms mit dem Turnstile-Service:
 1. Wählen Sie ein adaptives Formular aus und klicken Sie auf **[!UICONTROL Eigenschaften]**. Wählen Sie unter **[!UICONTROL Konfigurations-Container]** den Konfigurations-Container aus, der die Cloud-Konfiguration enthält, die AEM Forms mit Turnstile verbindet.
 1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
-   Wenn Sie keinen Konfigurations-Container für den CAPTCHA-Service haben, erfahren Sie im Abschnitt [Konfigurieren von Turnstile](#configure-turnstile-steps-to-configure-hcaptcha), wie Sie einen Konfigurations-Container erstellen.
+   Wenn Sie keinen Konfigurations-Container für den CAPTCHA-Service haben, erfahren Sie im Abschnitt [Konfigurieren von Turnstile](#steps-to-configure-hcaptcha), wie Sie einen Konfigurations-Container erstellen.
 
    ![Auswählen eines Konfigurations-Containers](assets/captcha-properties.png)
 

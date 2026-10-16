@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 95%
@@ -84,7 +84,7 @@ Im Formularportal können Sie Formulare aus dem Formular-Repository auf Ihrer Po
 1. **Aktivieren von Formularportal-Komponenten:** Standardmäßig sind Formularportal-Komponenten nicht verfügbar. [Aktivieren der Komponenten aus AEM Sidekick](/help/forms/using/enabling-forms-portal-components.md) für eine AEM Sites-Seite.
 1. **Auflisten von Formularen auf einer Seite (Erstellen der Formularportal-Seite):** Sie können Formulare auf AEM Sites- und AEM Sites-fremden Seiten auflisten. Die Liste enthält Formulare, die in der Veröffentlichungsinstanz verfügbar sind. Benutzer können Formulare öffnen und ausfüllen. Wenn ein Benutzer ein Formular öffnet, wird eine neue Instanz des Formulars erstellt:
 
-   1. **Auflisten von Formularen auf einer AEM Sites-Seite**: Fügen Sie der Seite die Komponente **[Search &amp; Lister](../../forms/using/creating-form-portal-page.md)** hinzu und konfigurieren Sie den darin enthaltenen **[Listenbereich](../../forms/using/creating-form-portal-page.md#p-list-pane-p)**, sodass Formulare auf einer Seite aufgelistet werden. Fügen Sie der Komponente **Search &amp; Lister** auch die Komponente **Suchbereich** hinzu und konfigurieren Sie diese, um der Seite Suchfunktionen hinzuzufügen. Die Seite mit der Formularportal-Komponente wird als [Formularportal-Seite](../../forms/using/creating-form-portal-page.md) bezeichnet.
+   1. **Auflisten von Formularen auf einer AEM Sites-Seite**: Fügen Sie der Seite die Komponente **[Search &amp; Lister](../../forms/using/creating-form-portal-page.md)** hinzu und konfigurieren Sie den darin enthaltenen **[Listenbereich](../../forms/using/creating-form-portal-page.md#list-pane)**, sodass Formulare auf einer Seite aufgelistet werden. Fügen Sie der Komponente **Search &amp; Lister** auch die Komponente **Suchbereich** hinzu und konfigurieren Sie diese, um der Seite Suchfunktionen hinzuzufügen. Die Seite mit der Formularportal-Komponente wird als [Formularportal-Seite](../../forms/using/creating-form-portal-page.md) bezeichnet.
 
    1. **Auflisten von Formularen auf einer AEM Sites-fremden Seite:** Verwenden Sie die [APIs für die Formularportal-Suche](/help/forms/using/listing-forms-webpage-using-apis.md), um Formulare auf AEM Sites-fremden Seiten abzufragen, abzurufen und aufzulisten.
 

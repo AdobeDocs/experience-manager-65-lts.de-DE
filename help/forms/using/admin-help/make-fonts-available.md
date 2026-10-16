@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 100%
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 Stellen Sie sicher, dass die in einem Formular verwendeten Schriften für den J2EE-Anwendungs-Server zur Verfügung stehen, der als Host für AEM Forms dient. Betrachten Sie beispielsweise das folgende Szenario. Eine Formularentwicklerin oder ein Formularentwickler fügt dem Schriftartenverzeichnis, das von Designer verwendet wird, eine Schrift hinzu und erstellt ein Formular, das diese Schrift verwendet, auf einem separaten Computer. Damit der Ausgabe-Service diese Schrift verwenden kann, legen Sie sie im Verzeichnis für Kundenschriftarten ab. Wenn das Verzeichnis für Kundenschriftarten nicht vorhanden ist, erstellen Sie ein entsprechendes Verzeichnis auf dem J2EE-Anwendungs-Server, der als Host für AEM Forms dient.
 
-Weitere Informationen zu Schrifteinstellungen finden Sie unter [Konfigurieren allgemeiner AEM Forms-Einstellungen](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).
+Weitere Informationen zu Schrifteinstellungen finden Sie unter [Konfigurieren allgemeiner AEM Forms-Einstellungen](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#general-aem-forms-settings).
 
 **Angeben des Speicherorts des Verzeichnisses für Kundenschriftarten**
 

@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 93%
@@ -81,13 +81,13 @@ AEM Forms unterstützt die Lokalisierung von Forms-Inhalten adaptiver Formulare 
 
 So fügen Sie Unterstützung für ein neues Gebietsschema während der Laufzeit adaptiver Formulare hinzu:
 
-1. [Hinzufügen eines Gebietsschemas zum GuideLocalizationService-Service](../../forms/using/supporting-new-language-localization.md#p-add-a-locale-to-the-guide-localization-service-br-p)
+1. [Hinzufügen eines Gebietsschemas zum GuideLocalizationService-Service](../../forms/using/supporting-new-language-localization.md#add-a-locale-to-the-guide-localization-service-br)
 
-1. [Hinzufügen der XFA-Client-Bibliothek für ein Gebietsschema](../../forms/using/supporting-new-language-localization.md#p-add-xfa-client-library-for-a-locale-br-p)
+1. [Hinzufügen der XFA-Client-Bibliothek für ein Gebietsschema](../../forms/using/supporting-new-language-localization.md#add-xfa-client-library-for-a-locale-br)
 
-1. [Clientbibliothek für adaptive Formulare für ein Gebietsschema hinzufügen](../../forms/using/supporting-new-language-localization.md#p-add-adaptive-form-client-library-for-a-locale-br-p)
-1. [Hinzufügen von Gebietsschema-Unterstützung für das Wörterbuch](../../forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
-1. [Starten Sie den Server neu](../../forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
+1. [Clientbibliothek für adaptive Formulare für ein Gebietsschema hinzufügen](../../forms/using/supporting-new-language-localization.md#add-adaptive-form-client-library-for-a-locale-br)
+1. [Hinzufügen von Gebietsschema-Unterstützung für das Wörterbuch](../../forms/using/supporting-new-language-localization.md#add-locale-support-for-the-dictionary-br)
+1. [Starten Sie den Server neu](../../forms/using/supporting-new-language-localization.md#restart-the-server)
 
 ### Hinzufügen eines Gebietsschemas zum Guide-Localization-Service {#add-a-locale-to-the-guide-localization-service-br}
 
@@ -113,7 +113,7 @@ I18N.js
 
 ### Clientbibliothek für adaptive Formulare für ein Gebietsschema hinzufügen {#add-adaptive-form-client-library-for-a-locale-br}
 
-Erstellen Sie einen Knoten des Typs `cq:ClientLibraryFolder` unter `etc/<folderHierarchy>` mit der Kategorie `guides.I18N.<locale>` und den Abhängigkeiten `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` und `guide.common`. &grave;&grave;
+Erstellen Sie einen Knoten des Typs `cq:ClientLibraryFolder` unter `etc/<folderHierarchy>` mit der Kategorie `guides.I18N.<locale>` und den Abhängigkeiten `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` und `guide.common`. ``
 
 Fügen Sie die folgenden Dateien der Client-Bibliothek hinzu:
 

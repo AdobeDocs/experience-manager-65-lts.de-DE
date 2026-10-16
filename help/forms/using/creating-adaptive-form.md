@@ -1,6 +1,6 @@
 ---
 title: Erstellen eines adaptiven Formulars
-description: Erfahren Sie, wie Sie ein adaptives Formular mit [!DNL Experience Manager Forms] erstellen. Adaptive Formulare sind Responsive-HTML5-Formulare, mit denen die Informationserfassung und -verarbeitung optimiert wird. Vertiefen Sie Ihre Kenntnisse über die Erstellung adaptiver Formulare auf der Grundlage eines Formulardatenmodells, einer XFA-Formularvorlage und eines XML- oder JSON-Schemas.
+description: Erfahren Sie, wie Sie ein adaptives Formular mit [!DNL Experience Manager Forms] erstellen. Adaptive Formulare sind responsive HTML5-Formulare, mit denen die Informationserfassung und -verarbeitung optimiert wird. Vertiefen Sie Ihre Kenntnisse über die Erstellung adaptiver Formulare auf der Grundlage eines Formulardatenmodells, einer XFA-Formularvorlage und eines XML- oder JSON-Schemas.
 role: User, Developer
 level: Beginner
 feature: Adaptive Forms,Foundation Components
@@ -27,7 +27,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2057'
 ht-degree: 98%
@@ -57,7 +57,7 @@ Gehen Sie wie folgt vor, um ein adaptives Formular zu erstellen.
    >Bei einer Standardinstallation lautet der Benutzername `admin` und das Kennwort `admin`.
 
 1. Wählen Sie **[!UICONTROL Erstellen]** und dann **[!UICONTROL Adaptives Formular]** aus.
-1. Eine Option zum Auswählen einer Vorlage wird angezeigt. Weitere Informationen zu Vorlagen finden Sie unter [Adaptive Formularvorlagen](creating-adaptive-form.md#p-adaptive-form-templates-p). Wählen Sie eine Vorlage und dann „Weiter“ aus.
+1. Eine Option zum Auswählen einer Vorlage wird angezeigt. Weitere Informationen zu Vorlagen finden Sie unter [Adaptive Formularvorlagen](creating-adaptive-form.md#adaptive-form-templates). Wählen Sie eine Vorlage und dann „Weiter“ aus.
 1. Die Option „Eigenschaften hinzufügen“ wird angezeigt. Geben Sie die Werte für die folgenden Eigenschaftenfelder an. Die Felder „Titel“ und „Name“ sind obligatorisch.
 
    * **[!UICONTROL Titel:]** Gibt den Anzeigenamen des Formulars an. Der Titel erleichtert Ihnen die Identifizierung des Formulars in der Benutzeroberfläche von [!DNL Experience Manager Forms].
@@ -78,7 +78,7 @@ Gehen Sie wie folgt vor, um ein adaptives Formular zu erstellen.
 
    Sobald Sie alle Eigenschaften angegeben haben, klicken Sie auf **[!UICONTROL Erstellen]**. Es wird ein adaptives Formular erstellt und ein Dialogfeld zum Öffnen der Formularbearbeitung angezeigt.
 
-   Sobald Sie alle Eigenschaften angegeben haben, klicken Sie auf **[!UICONTROL Erstellen]**. Es wird ein adaptives Formular erstellt und ein Dialogfeld zum Öffnen der Formularbearbeitung angezeigt.
+   Sobald Sie alle Eigenschaften angegeben haben, klicken Sie auf **[!UICONTROL Erstellen]**. Es wird ein adaptives Formular erstellt, und ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung wird angezeigt.
 
 1. Wählen Sie **[!UICONTROL Öffnen]** aus, um das neu erstellte Formular in einer neuen Registerkarte zu öffnen. Das Formular wird zur Bearbeitung geöffnet und zeigt den Inhalt an, der in der Vorlage verfügbar ist. Er zeigt auch die Seitenleiste an, um das neu erstellte Formular entsprechend den Anforderungen anzupassen.
 
@@ -88,7 +88,7 @@ Gehen Sie wie folgt vor, um ein adaptives Formular zu erstellen.
 
    >[!NOTE]
    >
-   >Lassen Sie Popup-Fenster in Ihrem Browser zu, um das neu erstellte Formular in einer neuen Registerkarte zu öffnen.
+   >Lassen Sie Pop-up-Fenster in Ihrem Browser zu, um das neu erstellte Formular in einer neuen Registerkarte zu öffnen.
 
 ## Erstellen eines adaptiven Formulars basierend auf einem Formulardatenmodell {#fdm}
 
@@ -134,7 +134,7 @@ Do the following to use an XFA form template as form model for your adaptive for
 
 ## Erstellen eines adaptiven Formulars basierend auf einem XML- oder JSON-Schema {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
-XML- und JSON-Schemas stellen die Struktur dar, in der Daten vom Back-End-System in Ihrer Organisation produziert oder genutzt werden. Sie können ein Schema mit einem adaptiven Formular verknüpfen und dem adaptiven Formular mithilfe der Elemente aus dem Schema dynamische Inhalte hinzufügen. Die Elemente des Schemas stehen auf der Registerkarte „Datenmodellobjekt“ des Inhalts-Browsers für das Erstellen von adaptiven Formularen zur Verfügung. Sie können die Schemaelemente zum Erstellen des Formulars ziehen und ablegen.
+XML- und JSON-Schemas stellen die Struktur dar, in der Daten vom Back-End-System in Ihrer Organisation produziert oder genutzt werden. Sie können ein Schema mit einem adaptiven Formular verknüpfen und dem adaptiven Formular mithilfe der Elemente aus dem Schema dynamische Inhalte hinzufügen. Die Elemente des Schemas stehen auf der Registerkarte „Datenmodellobjekt“ des Content-Browsers für das Erstellen von adaptiven Formularen zur Verfügung. Sie können die Schemaelemente zum Erstellen des Formulars ziehen und ablegen.
 
 In den folgenden Dokumenten erfahren Sie, wie Sie ein XML- oder JSON-Schema für die Erstellung adaptiver Formulare entwickeln.
 
@@ -148,7 +148,7 @@ Führen Sie folgende Schritte aus, um ein XML- oder JSON-Schema als Formularmode
 
 1. Wählen Sie **[!UICONTROL Schema auswählen]** und führen Sie einen der folgenden Schritte aus:
 
-   * **[!UICONTROL Von Datenträger hochladen]** – Wählen Sie diese Option und dann „Schemadefinition hochladen“ aus, um ein XML- oder JSON-Schema in Ihrem Dateisystem zu suchen und hochzuladen. Die hochgeladene Schemadatei befindet sich innerhalb des Formulars und ist für andere adaptive Formulare nicht zugänglich.
+   * **[!UICONTROL Von Datenträger hochladen]** – Wählen Sie diese Option und dann „Schemadefinition hochladen“ aus, um ein XML- oder JSON-Schema in Ihrem Dateisystem zu suchen und hochzuladen. Die hochgeladene Schemadatei wird zusammen mit dem Formular gespeichert und ist für andere adaptive Formulare nicht zugänglich.
    * **[!UICONTROL Im Repository suchen]** – Wählen Sie diese Option, um eine Auswahl aus der Liste der im Repository verfügbaren Schemadefinitionsdateien zu treffen. Wählen Sie die XML- oder JSON-Schemadatei als Formularmodell aus. Das ausgewählte Schema wird dem Formular per Verweis zugeordnet und kann für andere adaptive Formulare verwendet werden.
 
    >[!CAUTION]
@@ -169,13 +169,13 @@ Führen Sie folgende Schritte aus, um ein XML- oder JSON-Schema als Formularmode
 
 ## Adaptive Formularvorlagen {#adaptive-form-templates}
 
-Eine Vorlage bietet eine Grundstruktur für adaptive Formulare und definiert deren Erscheinungsbild (Layouts und Stile). Es enthält vorformatierte Komponenten, einschließlich bestimmter Eigenschaften und einer Struktur für Inhalte. <!-- Out of the box, AEM Forms provides some adaptive form templates. To get the complete template package including advanced templates, you need to install the AEM Forms add-on package. For more information, see [Installing AEM Forms add-on package](installing-configuring-aem-forms-osgi.md).-->
+Eine Vorlage bietet eine Grundstruktur für ein adaptives Formular und definiert dessen Erscheinungsbild (Layouts und Stile). Es enthält vorformatierte Komponenten, einschließlich bestimmter Eigenschaften und einer Struktur für Inhalte. <!-- Out of the box, AEM Forms provides some adaptive form templates. To get the complete template package including advanced templates, you need to install the AEM Forms add-on package. For more information, see [Installing AEM Forms add-on package](installing-configuring-aem-forms-osgi.md).-->
 
 Darüber hinaus können Sie den Vorlageneditor verwenden, um eigene Vorlagen zu erstellen. Weitere Informationen zum Verwenden von Vorlagen finden Sie unter [Adaptive Formularvorlagen](template-editor.md).
 
 >[!NOTE]
 >
->Wenn Sie ein mit einer erweiterten Vorlage erstelltes adaptives Formular zur Bearbeitung öffnen, wird eine Fehlermeldung angezeigt. Die erweiterte Vorlage verfügt über eine Komponente für den Unterschriftsschritt, für die Adobe Sign standardmäßig aktiviert ist. Um den Fehler zu beheben, erstellen Sie eine [Adobe Sign-Cloud-Konfiguration](adobe-sign-integration-adaptive-forms.md), wählen Sie diese aus und [konfigurieren Sie eine unterschreibende Person](working-with-adobe-sign.md#addsignerstoanadaptiveform).
+>Wenn Sie ein mit einer erweiterten Vorlage erstelltes adaptives Formular zur Bearbeitung öffnen, wird eine Fehlermeldung angezeigt. Die erweiterte Vorlage verfügt über eine Komponente „Signaturschritt“, für die Adobe Sign standardmäßig aktiviert ist. Um den Fehler zu beheben, erstellen Sie eine [Adobe Sign-Cloud-Konfiguration](adobe-sign-integration-adaptive-forms.md), wählen Sie diese aus und [konfigurieren Sie eine unterschreibende Person](working-with-adobe-sign.md#addsignerstoanadaptiveform).
 
 ## Bearbeiten von Formularmodelleigenschaften eines adaptiven Formulars {#edit-form-model}
 
@@ -184,7 +184,7 @@ Adaptive Formulare werden entweder ohne Formularmodell erstellt (mithilfe der Op
 1. Wählen Sie das adaptive Formular und dann das Symbol **Eigenschaften** aus.
 1. Öffnen Sie die Registerkarte **[!UICONTROL Formularmodell]** und wählen Sie eine der folgenden Vorgehensweisen.
 
-   * Wenn das adaptive Formular nicht auf einem Formularmodell basiert, können Sie ein Formularmodell und eine entsprechende Formularvorlage, ein XML- oder JSON-Schema oder ein Formulardatenmodell auswählen.
+   * Wenn das adaptive Formular nicht auf einem Formularmodell basiert, können Sie ein anderes Formularmodell und entsprechend eine Formularvorlage, ein XML- oder JSON-Schema oder ein Formulardatenmodell auswählen.
    * Wenn das adaptive Formular auf einem Formularmodell basiert, können Sie eine andere Formularvorlage bzw. ein anderes XML-Schema, JSON-Schema oder Formulardatenmodell für dasselbe Formularmodell wählen.
 
 1. Wählen Sie **[!UICONTROL Speichern]** aus, um die Eigenschaften zu speichern.
@@ -229,7 +229,7 @@ Die Option „Automatisches Speichern“ ist standardmäßig nicht aktiviert. Si
 
    >[!NOTE]
    >
-   >Damit die Option zum automatischen Speichern für anonyme Benutzer funktioniert, stellen Sie sicher, dass Sie den allgemeinen Forms-Konfigurationsdienst so konfiguriert ist, dass alle Benutzer Formulare in der Vorschau anzeigen, überprüfen und zu signieren können.
+   >Damit die Option zum automatischen Speichern für anonyme Benutzer funktioniert, stellen Sie sicher, dass Sie den allgemeinen Forms-Konfigurationsdienst so konfigurieren, dass alle Benutzer Formulare in der Vorschau anzeigen, überprüfen und signieren können.
    >
    >Um den Service zu konfigurieren, navigieren Sie zur Konfiguration der Adobe Experience Manager-Web-Konsole unter `https://'[server]:[port]'system/console/configMgr` und bearbeiten Sie den **[!UICONTROL allgemeinen Forms-Konfigurations-Service]**, um die Option **[!UICONTROL Alle Benutzer]** im Feld **[!UICONTROL Zulassen]** auszuwählen und die Konfiguration zu speichern.
 

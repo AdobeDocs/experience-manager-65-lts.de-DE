@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 92%
@@ -59,7 +59,7 @@ Sie können nur adaptive Formularfragmente für verzögertes Laden konfigurieren
 * **Identifizieren und Markieren globaler Werte**
 Forms-basierte Transaktionen beinhalten dynamische Elemente, um relevante Daten von Benutzenden zu erfassen und zu verarbeiten und so das Ausfüllen des Formulars zu vereinfachen. Beispiel: Ihr Formular enthält Feld A in Fragment X, dessen Wert die Gültigkeit von Feld B in einem anderen Fragment bestimmt. Wenn in diesem Fall Fragment X für verzögertes Laden markiert ist, muss der Wert von Feld A verfügbar sein, um Feld B zu validieren, selbst wenn Fragment X nicht geladen wird. Um dies zu erreichen, können Sie Feld A als global markieren, wodurch sichergestellt wird, dass der zugehörige Wert für die Validierung von Feld B verfügbar ist, selbst wenn Fragment X noch nicht geladen ist.
 
-  Weitere Informationen dazu, wie Sie einen Feldwert als „global“ kennzeichnen, finden Sie unter [Konfigurieren von verzögertem Laden](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
+  Weitere Informationen dazu, wie Sie einen Feldwert als „global“ kennzeichnen, finden Sie unter [Konfigurieren von verzögertem Laden](../../forms/using/lazy-loading-adaptive-forms.md#configuring-lazy-loading).
 
 * **Regeln schreiben, um die Sichtbarkeit von Feldern zu steuern**
 Forms enthält einige Felder und Abschnitte, die nicht für alle Benutzenden und Bedingungen gelten. Menschen, die Formulare verfassen und entwickeln, verwenden Regeln für Sichtbarkeit oder Ein- und Ausblenden, um die Sichtbarkeit der Formulare anhand von Benutzereingaben zu steuern. Beispielsweise wird das Feld „Büroadresse“ nicht den Benutzenden angezeigt, die im Feld „Beschäftigungsstatus“ in einem Formular die Option „Arbeitslos“ auswählen. Weitere Informationen zum Erstellen von Regeln finden Sie unter [Verwenden des Regeleditors](../../forms/using/rule-editor.md).

@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2481'
 ht-degree: 100%
@@ -136,7 +136,7 @@ Um Assets wie Datenwörterbücher, Briefe und Dokumentfragmente für zwei versch
 
 Nutzen Sie diese Möglichkeit, um alle Correspondence Management-Assets und die zugehörigen Abhängigkeiten als Paket aus einer AEM Forms-Instanz herunterzuladen.
 
-Beispiel: Wenn Correspondence Management ein Schreiben verwendet, das ein Bild und Text enthält, dann enthält auch das heruntergeladene Paket das Bild und den Text des Schreibens. Alle mit dem Asset verknüpften Metadateneigenschaften (einschließlich benutzerdefinierter Eigenschaften) werden ebenfalls heruntergeladen. Sobald Sie das Paket (.cmp) heruntergeladen haben, können Sie [das Paket in eine andere AEM Forms-Instanz importieren](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
+Beispiel: Wenn Correspondence Management ein Schreiben verwendet, das ein Bild und Text enthält, dann enthält auch das heruntergeladene Paket das Bild und den Text des Schreibens. Alle mit dem Asset verknüpften Metadateneigenschaften (einschließlich benutzerdefinierter Eigenschaften) werden ebenfalls heruntergeladen. Sobald Sie das Paket (.cmp) heruntergeladen haben, können Sie [das Paket in eine andere AEM Forms-Instanz importieren](../../forms/using/import-export-forms-templates.md#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management).
 
 Um alle Correspondence Management-Assets und die zugehörigen Abhängigkeiten als Paket herunterzuladen, führen Sie die folgenden Schritte aus:
 
@@ -161,7 +161,7 @@ Um alle Correspondence Management-Assets und die zugehörigen Abhängigkeiten al
 
 1. Wählen Sie den Link **Exportiertes Paket herunterladen** aus, um die Paketdatei herunterzuladen.
 
-   Um die Assets im Paket einer anderen Instanz von Correspondence Management hinzuzufügen, [importieren Sie das Paket in eine Instanz von AEM Forms](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
+   Um die Assets im Paket einer anderen Instanz von Correspondence Management hinzuzufügen, [importieren Sie das Paket in eine Instanz von AEM Forms](../../forms/using/import-export-forms-templates.md#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management).
 
 ### Importieren von Dokumentfragmenten, Briefen und/oder Datenwörterbüchern in Correspondence Management {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 

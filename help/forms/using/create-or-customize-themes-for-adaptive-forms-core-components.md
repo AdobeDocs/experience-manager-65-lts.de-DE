@@ -22,7 +22,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2092'
 ht-degree: 95%
@@ -38,7 +38,7 @@ Die Dokumentation zu AEM as a Cloud Service finden Sie unter [AEM Forms auf Clou
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
 
-In AEM Forms 6.5 ist ein Design eine AEM Client-Bibliothek, mit der Sie die Stile (Look-and-Feel) für ein adaptives Formular definieren. Zu einem Design gehören Stildetails für die Komponenten und Bedienfelder. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, spiegeln die entsprechenden Komponenten den angegebenen Stil wider. Ein Design wird ohne Verweis auf ein adaptives Formular unabhängig verwaltet und kann über mehrere adaptive Formulare hinweg wiederverwendet werden.
+In AEM Forms 6.5 ist ein Design eine AEM Client-Bibliothek, mit der Sie die Stile (Look-and-Feel) für ein adaptives Formular definieren. Zu einem Design gehören Stildetails für die Komponenten und Bedienfelder. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, wird der angegebene Stil auf die entsprechenden Komponenten angewendet. Ein Design wird ohne Verweis auf ein adaptives Formular unabhängig verwaltet und kann über mehrere adaptive Formulare hinweg wiederverwendet werden.
 
 ## Verfügbare Designs {#available-theme}
 
@@ -56,7 +56,7 @@ Die AEM 6.5-Umgebung bietet die folgenden aufgelisteten Designs für auf Kernkom
 
 Ein Design ist ein Paket, das die CSS-Datei, JavaScript-Dateien und Ressourcen (wie etwa Symbole) umfasst, die den Stil Ihrer adaptiven Formulare definieren. Ein Design für ein adaptives Formular folgt einer bestimmten Organisation, die aus den folgenden Komponenten besteht:
 
-* `src/theme.scss`: Dieser Ordner enthält die CSS-Datei, die einen großen Einfluss auf das gesamte Design hat. Sie dient als zentralisierter Speicherort zur Definition und Verwaltung des Stils und Verhaltens Ihres Designs. Durch Bearbeitung dieser Datei können Sie Änderungen vornehmen, die im gesamten Design allgemein angewendet werden und das Erscheinungsbild und die Funktionalität Ihrer adaptiven Formular- und AEM Sites-Seiten beeinflussen.
+* `src/theme.scss`: Dieser Ordner enthält die CSS-Datei, die einen großen Einfluss auf das gesamte Design hat. Sie dient als zentralisierter Speicherort zur Definition und Verwaltung des Stils und Verhaltens Ihres Designs. Durch Bearbeitung dieser Datei können Sie Änderungen vornehmen, die im gesamten Theme allgemein angewendet werden und das Erscheinungsbild und die Funktionalität Ihrer adaptiven Formulare und AEM Sites-Seiten beeinflussen.
 
 * `src/site`: Dieser Ordner enthält CSS-Dateien, die auf die gesamte Seite einer AEM-Site angewendet werden. Diese Dateien bestehen aus Code und Stilen, die die Gesamtfunktionalität und das Layout der Seite Ihrer AEM-Site beeinflussen. Alle hier vorgenommenen Änderungen werden auf sämtlichen Seiten Ihrer Site übernommen.
 
@@ -64,7 +64,7 @@ Ein Design ist ein Paket, das die CSS-Datei, JavaScript-Dateien und Ressourcen (
 
   ![Struktur des Canvas-Designs](/help/forms/using/assets/component-based-theme-folder-structure.png)
 
-* `src/resources`: Dieser Ordner enthält statische Dateien wie Symbole, Logos und Schriftarten. Diese Ressourcen werden verwendet, um die visuellen Elemente und das gesamte Erscheinungsbild Ihres Designs zu verbessern.
+* `src/resources`: Dieser Ordner enthält statische Dateien wie Symbole, Logos und Schriftarten. Diese Ressourcen werden verwendet, um die visuellen Elemente und das gesamte Erscheinungsbild Ihres Themes zu verbessern.
 
 ## Erstellen eines Designs
 
@@ -115,7 +115,7 @@ Das Erstellen oder Anpassen eines Designs ist ein mehrstufiger Prozess. Führen 
 1. [Anpassen der Darstellung des Designs](#customize-the-theme)
 1. [Bereitstellen des Designs für die lokale Bereitstellung](#generate-the-clientlib)
 1. [Bereitstellen des Designs in einer lokalen Umgebung](#deploy-the-theme-on-a-local-environment)
-1. [Bereitstellen des Designs in der Produktionsumgebung](#5-deploy-a-theme-on-your-production-environment)
+1. [Bereitstellen des Designs in der Produktionsumgebung](#deploy-theme)
 
 <!--
  ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)

@@ -22,7 +22,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 92%
@@ -181,7 +181,7 @@ Nachdem Sie das Migrationsdienstprogramm ausgeführt haben, führen Sie folgende
 
 1. Stellen Sie sicher, dass XFA-Version 3.3 oder eine spätere Version von Layouts und Fragment-Layouts verwendet wird. Wenn Sie Layouts und Fragment-Layouts einer älteren Version benutzen, könnte es Probleme beim Rendern des Briefs geben. Um älteres XFA auf die neueste Version zu aktualisieren, führen Sie folgende Schritte aus:
 
-   1. [Herunterladen von XFA- als ZIP-Datei](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) aus der Forms-Benutzeroberfläche.
+   1. [Herunterladen von XFA- als ZIP-Datei](../../forms/using/import-export-forms-templates.md#import-and-export-assets-in-correspondence-management) aus der Forms-Benutzeroberfläche.
    1. Extrahieren Sie die Datei.
    1. Öffnen Sie die XFA-Datei im neuesten Designer und speichern Sie sie. Die Version der XFA wird auf die neueste Version aktualisiert.
    1. Laden Sie die XFA in der Forms-Benutzeroberfläche hoch.

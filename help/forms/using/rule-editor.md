@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6814'
 ht-degree: 98%
@@ -59,7 +59,7 @@ Some of the key actions that you can perform on adaptive form objects using rule
 * Set property of an object
 -->
 
-Der Regeleditor ersetzt die Skipterstellungs-Funktionen aus AEM 6.1 Forms und früheren Versionen. Ihre bereits vorhandenen Skripte werden allerdings im neuen Regeleditor beibehalten. Weitere Informationen zum Arbeiten mit vorhandenen Skripten im Regeleditor finden Sie unter [Einfluss des Regeleditors auf bereits vorhandene Skripte](#impact-of-rule-editor-on-existing-scripts).
+Der Regeleditor ersetzt die Skriptfunktionen in AEM 6.1 Forms und früheren Versionen. Ihre bereits vorhandenen Skripte werden allerdings im neuen Regeleditor beibehalten. Weitere Informationen zum Arbeiten mit vorhandenen Skripten im Regeleditor finden Sie unter [Einfluss des Regeleditors auf bereits vorhandene Skripte](#impact-of-rule-editor-on-existing-scripts).
 
 Benutzende, die zur Gruppe der Formular-Hauptbenutzenden hinzugefügt wurden, können neue Skripte erstellen und bestehende Skripte bearbeiten. Benutzende in der Gruppe „forms-users“ können die Skripte verwenden, aber keine Skripte erstellen oder bearbeiten.
 
@@ -67,7 +67,7 @@ Benutzende, die zur Gruppe der Formular-Hauptbenutzenden hinzugefügt wurden, k�
 
 Eine Regel ist eine Kombination aus Aktionen und Bedingungen. Im Regeleditor umfassen Aktionen Aktivitäten wie das Ausblenden, Anzeigen, Aktivieren, Deaktivieren oder Berechnen des Werts eines Objekts in einem Formular. Bedingungen sind boolesche Ausdrücke, die durch Prüfungen und Vorgänge für den Status, den Wert oder die Eigenschaft eines Formularobjekts ausgewertet werden. Aktionen werden basierend auf dem bei der Auswertung einer Bedingung zurückgegebenen Wert (`True` oder `False`) ausgeführt.
 
-Der Regeleditor bietet eine Reihe vordefinierter Regeltypen, z. B. „Wenn“, „Anzeigen“, „Ausblenden“, „Aktivieren“, „Deaktivieren“, „Wert einstellen von“ und „Validieren“, um Ihnen beim Schreiben von Regeln zu helfen. Mit jedem Regeltyp können Sie Bedingungen und Aktionen in einer Regel definieren. In diesem Dokument sind die einzelnen Regeltypen im Detail beschrieben.
+Der Regeleditor bietet eine Reihe vordefinierter Regeltypen, z. B. „Wenn“, „Anzeigen“, „Ausblenden“, „Aktivieren“, „Deaktivieren“, „Wert festlegen für“ und „Validieren“, um Ihnen beim Schreiben von Regeln zu helfen. Mit jedem Regeltyp können Sie Bedingungen und Aktionen in einer Regel definieren. In diesem Dokument sind die einzelnen Regeltypen im Detail beschrieben.
 
 Eine Regel folgt normalerweise einem der folgenden Konstrukte:
 
@@ -81,7 +81,7 @@ Die Regeltypen „Anzeigen“, „Ausblenden“, „Aktivieren“, „Deaktivier
 
 >[!NOTE]
 >
->Die verfügbaren Regeltypen, einschließlich der Bedingungen und Aktionen, die Sie im Regeleditor definieren, hängen auch vom Typ des Formularobjekts ab, für das Sie eine Regel erstellen. Der Regeleditor zeigt nur gültige Regeltypen und Optionen zum Schreiben von Bedingungs- und Aktionsanweisungen für einen bestimmten Formularobjekttyp an. So werden für ein Bereichsobjekt beispielsweise keine Regeln vom Typ „Validieren“, „Wert festlegen“ oder „Deaktivieren“ angezeigt.
+>Die verfügbaren Regeltypen, einschließlich der Bedingungen und Aktionen, die Sie im Regeleditor definieren, hängen auch vom Typ des Formularobjekts ab, für das Sie eine Regel erstellen. Der Regeleditor zeigt nur gültige Regeltypen und Optionen zum Schreiben von Bedingungs- und Aktionsanweisungen für einen bestimmten Formularobjekttyp an. So werden für ein Panel-Objekt beispielsweise die Regeltypen „Validieren“, „Wert festlegen für“, „Aktivieren“ und „Deaktivieren“ nicht angezeigt.
 
 Weitere Informationen über die im Regeleditor verfügbaren Regeltypen finden Sie unter [Verfügbare Regeltypen im Regeleditor](#available-rule-types-in-rule-editor).
 
@@ -95,7 +95,7 @@ Für die meisten Anwendungsfälle können Sie ein beliebiges Regelkonstrukt verw
 
 * In manchen Fällen müssen Sie mehrere Aktionen für dieselbe Bedingung ausführen. In solchen Fällen empfiehlt es sich, das Konstrukt „Bedingung-Aktion“ zu verwenden. In diesem Konstrukt können Sie eine Bedingung einmal auswerten und mehrere Aktionsanweisungen angeben.
 
-  Um beispielsweise die Felder B, C und D basierend auf einer Bedingung auszublenden, durch die der von einer Benutzerin oder einem Benutzer in Feld A angegebenen Wert geprüft wird, genügt eine Regel mit dem Konstrukt „Bedingung-Aktion“ oder dem Regeltyp „Wenn“ für Feld A, wobei Aktionen für die Sichtbarkeit der Felder B, C und D angegeben werden. Andernfalls benötigen Sie drei separate Regeln für die Felder B, C und D, wobei jede Regel die Bedingung prüft und das jeweilige Feld angezeigt oder ausgeblendet wird. In diesem Beispiel ist das Schreiben einer Wenn-Regel für ein Objekt effizienter als die Erstellung von Regeln zum Anzeigen und Ausblenden für drei Objekte.
+  Um beispielsweise die Felder B, C und D basierend auf einer Bedingung auszublenden, die den von Benutzenden in Feld A angegebenen Wert prüft, genügt eine Regel mit dem Konstrukt „Bedingung-Aktion“ oder dem Regeltyp „Wenn“ für Feld A, wobei Aktionen zur Steuerung der Sichtbarkeit der Felder B, C und D angegeben werden. Andernfalls benötigen Sie drei separate Regeln für die Felder B, C und D, wobei jede Regel die Bedingung prüft und das jeweilige Feld ein- oder ausblendet. In diesem Beispiel ist es effizienter, den Regeltyp „Wenn“ für ein Objekt zu schreiben, als den Regeltyp „Anzeigen“ oder „Ausblenden“ für drei Objekte.
 
 * Um eine Aktion in Abhängigkeit von mehreren Bedingungen auszulösen, empfiehlt es sich, das Konstrukt „Aktion-Bedingung“ zu verwenden. Um beispielsweise Feld A nach Auswertung der Bedingungen für die Felder B, C und D anzuzeigen oder auszublenden, verwenden Sie Regeln des Typs „Anzeigen“ oder „Ausblenden“ für Feld A.
 * Für Regeln, die genau eine Aktion für eine Bedingung enthalten, können Sie sowohl Bedingung-Aktion- als auch Aktion-Bedingung-Konstrukte verwenden.
@@ -160,17 +160,17 @@ Beim Schreiben der Wenn-Regel können Sie die Aktion „Wert löschen von“ aus
 
 **Deaktivieren**: Deaktiviert das angegebene Objekt.
 
-**Service aufrufen** Ruft einen Service auf, der in einem Formulardatenmodell konfiguriert ist. Wenn Sie den Vorgang „Service aufrufen“ wählen, wird ein Feld angezeigt. Beim Klicken auf das Feld werden alle in sämtlichen Formulardatenmodellen konfigurierten Dienste in Ihrer AEM-Instanz angezeigt. Bei der Auswahl eines Formulardatenmodell-Services erscheinen zusätzliche Felder, in denen Sie Formularobjekte mit Ein- und Ausgabeparametern für den angegebenen Service zuordnen können. Siehe Beispielregel für den Aufruf von Formulardatenmodell-Services.
+**Service aufrufen** Ruft einen Service auf, der in einem Formulardatenmodell konfiguriert ist. Wenn Sie den Vorgang „Service aufrufen“ wählen, wird ein Feld angezeigt. Beim Klicken auf das Feld werden alle in sämtlichen Formulardatenmodellen konfigurierten Dienste in Ihrer AEM-Instanz angezeigt. Bei der Auswahl eines Formulardatenmodell-Dienstes erscheinen zusätzliche Felder, in denen Sie Formularobjekte den Ein- und Ausgabeparametern für den angegebenen Dienst zuordnen können. Siehe Beispielregel für den Aufruf von Formulardatenmodell-Services.
 
-Zusätzlich zum Formulardatenmodelldienst können Sie eine direkte WSDL-URL angeben, um einen Web-Dienst aufzurufen. Ein Formulardatenmodelldienst hat jedoch viele Vorteile und verfolgt den empfohlenen Ansatz, einen Dienst aufzurufen.
-
-Weitere Informationen zum Konfigurieren von Services im Formulardatenmodell finden Sie unter [Datenintegration für AEM Forms](/help/forms/using/data-integration.md).
-
-**Wert festlegen**: Berechnet den Wert des angegebenen Objekts und legt ihn fest. Als Objektwert können Sie eine Zeichenfolge, den Wert eines anderen Objekts, den mithilfe eines mathematischem Ausdrucks oder einer Funktion berechneten Wert oder den Wert einer Eigenschaft eines Objekts oder den Ausgabewert von einem konfigurierten Formulardatenmodell-Service festlegen. Wenn Sie die Option „Webservice“ wählen, werden alle in allen Formulardatenmodellen konfigurierten Services auf Ihrer AEM-Instanz angezeigt. Bei der Auswahl eines Formulardatenmodell-Service erscheinen zusätzliche Felder, in denen Sie Formularobjekte mit Ein- und Ausgabeparametern für den angegebenen Service zuordnen können.
+Zusätzlich zum Formulardatenmodelldienst können Sie eine direkte WSDL-URL angeben, um einen Web-Dienst aufzurufen. Ein Formulardatenmodell-Dienst bietet jedoch viele Vorteile und ist der empfohlene Ansatz zum Aufrufen eines Dienstes.
 
 Weitere Informationen zum Konfigurieren von Services im Formulardatenmodell finden Sie unter [Datenintegration für AEM Forms](/help/forms/using/data-integration.md).
 
-Mit dem Regeltyp **[!UICONTROL Eigenschaft festlegen]** können Sie den Wert einer Eigenschaft des angegebenen Objekts basierend auf einer Bedingungsaktion festlegen. Sie können die Eigenschaft für eines der folgenden Elemente festlegen:
+**Wert festlegen**: Berechnet den Wert des angegebenen Objekts und legt ihn fest. Als Objektwert können Sie eine Zeichenfolge, den Wert eines anderen Objekts, einen mithilfe eines mathematischen Ausdrucks oder einer Funktion berechneten Wert, den Wert einer Eigenschaft eines Objekts oder den Ausgabewert eines konfigurierten Formulardatenmodell-Dienstes festlegen. Wenn Sie die Option „Webservice“ wählen, werden alle in allen Formulardatenmodellen konfigurierten Services auf Ihrer AEM-Instanz angezeigt. Bei der Auswahl eines Formulardatenmodell-Service erscheinen zusätzliche Felder, in denen Sie Formularobjekte mit Ein- und Ausgabeparametern für den angegebenen Service zuordnen können.
+
+Weitere Informationen zum Konfigurieren von Services im Formulardatenmodell finden Sie unter [Datenintegration für AEM Forms](/help/forms/using/data-integration.md).
+
+Mit dem Regeltyp **[!UICONTROL Eigenschaft festlegen]** können Sie den Wert einer Eigenschaft des angegebenen Objekts basierend auf einer Bedingungsaktion festlegen. Sie können die Eigenschaft auf einen der folgenden Werte festlegen:
 
 * visible (Boolescher Wert)
 * dorExclusion (Boolescher Wert)
@@ -215,11 +215,11 @@ Die folgende Abbildung zeigt ein Beispiel für das dynamische Hinzufügen von Ko
 
 **Instanz entfernen**: Entfernt eine Instanz des angegebenen wiederholbaren Bereichs oder der Tabellenzeile.
 
-**Navigieren zu**: Navigiert zu anderen adaptiven Formularen für die interaktive Kommunikation, anderen Assets (wie Bildern oder Dokument-Fragmenten) oder zu einer externen URL. Weitere Informationen finden Sie unter [Hinzufügen einer Schaltfläche zur interaktiven Kommunikation](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel).
+**Navigieren zu**: Navigiert zu anderen adaptiven Formularen für die interaktive Kommunikation, anderen Assets (wie Bildern oder Dokument-Fragmenten) oder zu einer externen URL. Weitere Informationen finden Sie unter [Hinzufügen einer Schaltfläche zur interaktiven Kommunikation](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel).
 
 ### Wert festlegen {#set-value-of}
 
-Regeln vom Typ **[!UICONTROL Wert einstellen von]** ermöglichen es, den Wert eines Formularobjekts abhängig davon festzulegen, ob die angegebene Bedingung erfüllt ist oder nicht. Als Wert kann der Wert eines anderen Objekts, ein Literal-String, ein aus einem mathematischen Ausdruck oder einer Funktion abgeleiteter Wert oder der Wert einer Eigenschaft eines anderen Objekts oder die Ausgabe eines Formulardatenmodelldiensts sein. In ähnlicher Weise können Sie auf eine Bedingung bei Komponenten, Zeichenfolgen, Eigenschaften oder Werten prüfen, die von Funktionen oder mathematischen Ausdrücken abgeleitet wurden.
+Regeln vom Typ **[!UICONTROL Wert einstellen von]** ermöglichen es, den Wert eines Formularobjekts abhängig davon festzulegen, ob die angegebene Bedingung erfüllt ist oder nicht. Der Wert kann auf den Wert eines anderen Objekts, eine Literalzeichenfolge, einen aus einem mathematischen Ausdruck oder einer Funktion abgeleiteten Wert, den Wert einer Eigenschaft eines anderen Objekts oder die Ausgabe eines Formulardatenmodell-Dienstes festgelegt werden. In ähnlicher Weise können Sie auf eine Bedingung bei Komponenten, Zeichenfolgen, Eigenschaften oder Werten prüfen, die von Funktionen oder mathematischen Ausdrücken abgeleitet wurden.
 
 Der Regeltyp „Wert festlegen“ steht für manche Formularobjekte nicht zur Verfügung (z. B. nicht für Bereiche und Schaltflächen von Symbolleisten). Eine standardmäßige Regel vom Typ „Wert festlegen“ hat die folgende Struktur:
 
@@ -247,7 +247,7 @@ Beispiel für die Regel „Wert einstellen von“ unter Verwendung des Formulard
 
 >[!NOTE]
 >
->Darüber hinaus können Sie die Regel „Wert einstellen von“ verwenden, um alle Werte in einer Dropdown-Listenkomponente mit der Ausgabe eines Formulardatenmodelldienstes oder eines Web-Dienstes aufzufüllen. Stellen Sie jedoch sicher, dass das von Ihnen ausgewählte Ausgabeargument ein Array-Typ ist. Alle Werte, die in einem Array zurückgegeben werden, stehen in der angegebenen Dropdown-Liste zur Verfügung.
+>Darüber hinaus können Sie die Regel „Wert einstellen von“ verwenden, um alle Werte in einer Dropdown-Listenkomponente mit der Ausgabe eines Formulardatenmodelldienstes oder eines Web-Dienstes aufzufüllen. Stellen Sie jedoch sicher, dass das von Ihnen ausgewählte Ausgabeargument vom Typ Array ist. Alle Werte, die in einem Array zurückgegeben werden, stehen in der angegebenen Dropdown-Liste zur Verfügung.
 
 ### Anzeigen {#show}
 
@@ -385,7 +385,7 @@ Nachfolgend werden die einzelnen Komponenten der Benutzeroberfläche des Regeled
 
 ### A. Ansicht „Komponente und Regel“ {#a-component-rule-display}
 
-Hier werden der Titel des adaptiven Formularobjekts, über das Sie den Regeleditor aufgerufen haben, sowie der derzeit ausgewählte Regeltyp angezeigt. Im oben gezeigten Beispiel wurde der Regeleditor über ein adaptives Formularobjekt namens „Salary“ gestartet und der Wenn-Regeltyp ist ausgewählt.
+Hier werden der Titel des adaptiven Formularobjekts, über das Sie den Regeleditor aufgerufen haben, sowie der derzeit ausgewählte Regeltyp angezeigt. Im oben gezeigten Beispiel wird der Regeleditor über ein adaptives Formularobjekt namens „Salary“ gestartet und als Regeltyp ist „Wenn“ ausgewählt.
 
 ### B. Formularobjekte und Funktionen {#b-form-objects-and-functions-br}
 
@@ -419,7 +419,7 @@ Weitere Informationen zur Verwendung des visuellen Regeleditors finden Sie unter
 
 Benutzende in der Gruppe „forms-power-users“ können auf den Code-Editor zugreifen. Für andere Benutzende ist der Code-Editor nicht verfügbar. Mit dem direkt über dem Regeleditor befindlichen Umschalter können Sie zwischen den Modi „Visual Editor“ und „Code-Editor“ wechseln, sofern Sie dazu berechtigt sind. Wenn Sie den Regeleditor zum ersten Mal starten, wird er im Modus „Visual Editor“ geöffnet. Sie können Regeln im Modus „Visual Editor“ erstellen oder in den Modus „Code-Editor“ wechseln, um ein Regelskript zu schreiben. Wenn Sie eine Regel im Code-Editor ändern oder schreiben, ist es jedoch nicht möglich, für diese Regel in den Visual Editor zurückzuwechseln, es sei denn, Sie löschen den Inhalt des Code-Editors.
 
-AEM Forms zeichnet den zuletzt von Ihnen zum Schreiben einer Regel verwendeten Regeleditor-Modus auf. Wenn Sie den Regeleditor das nächste Mal starten, wird er in diesem Modus geöffnet. Sie können jedoch auch einen Standardmodus konfigurieren, sodass der Regeleditor immer in diesem Modus geöffnet wird. Gehen Sie dazu wie folgt vor:
+AEM Forms zeichnet den zuletzt von Ihnen zum Schreiben einer Regel verwendeten Regeleditor-Modus auf. Wenn Sie den Regeleditor das nächste Mal starten, wird er in diesem Modus geöffnet. Sie können jedoch auch einen Standardmodus konfigurieren, sodass der Regeleditor im angegebenen Modus geöffnet wird. Gehen Sie dazu wie folgt vor:
 
 1. Wechseln Sie zur AEM-Web-Konsole unter `https://[host]:[port]/system/console/configMgr`.
 1. Zum Bearbeiten klicken Sie auf **[!UICONTROL Konfiguration von adaptiven Formularen und Web-Kanälen für interaktive Kommunikation]**.
@@ -460,7 +460,7 @@ Führen Sie die folgenden Schritte aus, um die Regeln zu schreiben:
 
    Wenn Sie den Regeleditor starten, ist standardmäßig die Wenn-Regel ausgewählt. Darüber hinaus wird das Formularobjekt (in diesem Fall „Familienstand“), von dem aus Sie den Regeleditor gestartet haben, in der Wenn-Anweisung angegeben.
 
-   Sie können zwar das ausgewählte Objekt nicht bearbeiten oder ändern, es ist jedoch möglich, über die Dropdown-Liste für Regeln einen anderen Regeltyp wählen (siehe unten). Wenn Sie eine Regel für ein anderes Objekt erstellen möchten, wählen Sie „Abbrechen“ aus, um den Regeleditor zu beenden, und starten Sie ihn erneut über das gewünschte Formularobjekt.
+   Sie können zwar das ausgewählte Objekt nicht bearbeiten oder ändern, es ist jedoch möglich, über die Dropdown-Liste für Regeln einen anderen Regeltyp zu wählen (siehe unten). Wenn Sie eine Regel für ein anderes Objekt erstellen möchten, wählen Sie „Abbrechen“ aus, um den Regeleditor zu beenden, und starten Sie ihn erneut über das gewünschte Formularobjekt.
 
 1. Wählen Sie die Dropdown-Liste **[!UICONTROL Status auswählen]** und **[!UICONTROL Ist gleich]** aus. Das Feld **[!UICONTROL Eine Zeichenfolge eingeben]** wird angezeigt.
 
@@ -474,7 +474,7 @@ Führen Sie die folgenden Schritte aus, um die Regeln zu schreiben:
 
    ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4.png)
 
-   Sie haben die Bedingung als `When Marital Status is equal to Married` definiert. Definieren Sie anschließend die Aktion, die ausgeführt werden soll, wenn diese Bedingung „True“ lautet.
+   Sie haben die Bedingung als `When Marital Status is equal to Married` definiert. Definieren Sie anschließend die Aktion, die ausgeführt werden soll, wenn diese Bedingung wahr ist.
 
 1. Wählen Sie für die Dann-Anweisung die Option **[!UICONTROL Anzeigen]** aus der Dropdown-Liste **[!UICONTROL Aktion auswählen]**.
 
@@ -508,7 +508,7 @@ Führen Sie die folgenden Schritte aus, um die Regeln zu schreiben:
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. Wählen Sie **[!UICONTROL Option auswählen]** und dann **[!UICONTROL Mathematischer Ausdruck]** aus. Ein Feld, in das Sie mathematische Ausdrücke schreiben können, wird geöffnet.
+1. Wählen Sie **[!UICONTROL Option auswählen]** und dann **[!UICONTROL Mathematischer Ausdruck]** aus. Ein Feld, in das Sie einen mathematischen Ausdruck schreiben können, wird geöffnet.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -552,13 +552,13 @@ Führen Sie die folgenden Schritte aus, um die Regeln zu schreiben:
 
    Wählen Sie **Fertig** aus, um die Regel zu speichern.
 
-1. Folgen Sie wiederum Schritt 7 bis 12, um eine andere Regel zu definieren, mit deren Hilfe der Kreditanspruch berechnet wird, sofern der Familienstand „Ledig“ ist. Die Regel wird im Regeleditor wie folgt angezeigt.
+1. Wiederholen Sie die Schritte 7 bis 12, um eine weitere Regel zu definieren, mit deren Hilfe der Kreditanspruch berechnet wird, sofern der Familienstand „Ledig“ ist. Die Regel wird im Regeleditor wie folgt angezeigt.
 
    ![write-rules-visual-editor-17](assets/write-rules-visual-editor-17.png)
 
 >[!NOTE]
 >
->Sie können auch die Regel „Wert einstellen von“ verwenden, um den Kreditanspruch über die Wenn-Regel zu berechnen, die Sie erstellt haben, um das Feld für das Gehalt der Partnerin bzw. des Partners ein- bzw. auszublenden. Die resultierende kombinierte Regel (für den Familienstand „Ledig“) wird wie folgt im Regeleditor angezeigt.
+>Sie können auch die Regel „Wert festlegen für“ verwenden, um die Krediteignung in der Wenn-Regel zu berechnen, die Sie erstellt haben, um das Feld für das Gehalt der Partnerin bzw. des Partners ein- bzw. auszublenden. Die resultierende kombinierte Regel (für den Familienstand „Ledig“) wird wie folgt im Regeleditor angezeigt.
 >
 >Auf ähnliche Weise können Sie eine kombinierte Regel erstellen, die die Sichtbarkeit des Felds für das Gehalt der Partnerin bzw. des Partners steuert und den Kreditanspruch berechnet, wenn unter Familienstand „Verheiratet“ angegeben ist.
 
@@ -577,7 +577,7 @@ Beim Schreiben von JavaScript-Code in den Regeleditor helfen Ihnen die folgenden
 * Syntaxhervorhebungen
 * automatischer Einzug
 * Hinweise und Vorschläge für Formularobjekte, Funktionen und deren Eigenschaften
-* automatisches Ausfüllen von Formularkomponentennamen und Fertigstellen gängiger JavaScript-Funktionen
+* Automatische Vervollständigung von Formularkomponentennamen und gängigen JavaScript-Funktionen
 
 ![javascriptruleeditor](assets/javascriptruleeditor.png)
 
@@ -659,7 +659,7 @@ Syntax: `@this currentComponent`
 
 >[!NOTE]
 >
->Kommentare vor benutzerdefinierten Funktionen werden für die Zusammenfassung verwendet. Die Zusammenfassung kann sich über mehrere Zeilen bis zum nächsten Tag erstrecken. Beschränken Sie ihre Länge auf eine einzelne Zeile, um eine kurze Beschreibung im Regel-Builder zu erhalten.
+>Kommentare vor einer benutzerdefinierten Funktion werden für die Zusammenfassung verwendet. Die Zusammenfassung kann sich über mehrere Zeilen bis zum nächsten Tag erstrecken. Beschränken Sie ihre Länge auf eine einzelne Zeile, um eine kurze Beschreibung im Regel-Builder zu erhalten.
 
 <!--
 **Adding a custom function**
@@ -777,7 +777,7 @@ Sie können die Position einer Regel in der Reihenfolge ändern, indem Sie auf !
 
 ## Kopieren und Einfügen von Regeln {#copy-paste-rules}
 
-Es ist möglich, Regeln aus einem Feld zu kopieren und in andere, ähnliche Felder einzufügen, um Zeit zu sparen.
+Es ist möglich, eine Regel aus einem Feld zu kopieren und in andere, ähnliche Felder einzufügen, um Zeit zu sparen.
 
 Gehen Sie wie folgt vor, um Regeln zu kopieren und einzufügen:
 
@@ -853,7 +853,7 @@ Die folgende Regel zeigt, wie Sie die Aktion „Dienst aufrufen“ konfigurieren
 
 ![example-invoke-services](assets/example-invoke-services.png)
 
-Aufrufen des Formulardatenmodelldienstes mithilfe einer Regel für adaptive Formulare
+Aufrufen eines Formulardatenmodell-Dienstes mithilfe einer Regel für ein adaptives Formular
 
 >[!NOTE]
 >

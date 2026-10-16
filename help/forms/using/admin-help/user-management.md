@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 100%
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 Mit der Benutzerverwaltung können Sie für AEM Forms-Module und Anwendungen, die durch Netegrity SiteMinder geschützt sind, mithilfe von Security Assertion Markup Language (SAML) die Single Sign-on(SSO)-Funktion aktivieren. Wenn SSO implementiert ist, sind die AEM Forms-Anmeldeseiten nicht erforderlich und werden nicht angezeigt, wenn Benutzende bereits durch das Firmenportal authentifiziert wurden.
 
-Weitere Informationen zum Verbessern der Leistung bei der Datenbank- und Verzeichnissynchronisierung für DB2 finden Sie unter [IBM DB2-Datenbank: Ausführen von Befehlen zur regelmäßigen Wartung](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
+Weitere Informationen zum Verbessern der Leistung bei der Datenbank- und Verzeichnissynchronisierung für DB2 finden Sie unter [IBM DB2-Datenbank: Ausführen von Befehlen zur regelmäßigen Wartung](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db-database-running-commands-for-regular-maintenance).
 
 ## Konfigurieren der Benutzerverwaltung für einen SSL-aktivierten LDAP-Server {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 

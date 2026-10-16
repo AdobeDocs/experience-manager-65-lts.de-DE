@@ -24,7 +24,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 100%
@@ -66,7 +66,7 @@ Client-Anwendungen können LiveCycle-Dienste programmgesteuert über eine Java�
 
 AEM LiveCycle Connector vereinfacht den Ablauf, indem diese Client-Instanzen als OSGi-Dienste bereitgestellt werden, auf die über standardmäßige OSGi-Methoden zugegriffen werden kann. LiveCycle Connector umfasst die folgenden Funktionen:
 
-* Client-Instanzen als OSGi-Dienst: Die als OSGI-Pakete zusammengestellten Clients sind im Abschnitt [Liste der Acrobat-Dienste](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) aufgeführt. Jede Client-JAR-Datei registriert die Client-Instanz als OSGi-Dienst in der Registrierung des OSGi-Dienstes.
+* Client-Instanzen als OSGi-Dienst: Die als OSGI-Pakete zusammengestellten Clients sind im Abschnitt [Liste der Acrobat-Dienste](/help/forms/using/aem-livecycle-connector.md#document-services-list) aufgeführt. Jede Client-JAR-Datei registriert die Client-Instanz als OSGi-Dienst in der Registrierung des OSGi-Dienstes.
 * Weitergabe von Benutzeranmeldeinformationen: Die erforderlichen Verbindungsdetails für die Verbindung mit dem LiveCycle-Server werden an einem zentralen Speicherort verwaltet.
 * ServiceClientFactory-Dienst: Zum Starten der Prozesse kann die Client-Anwendung auf die ServiceClientFactory-Instanz zugreifen.
 
@@ -94,7 +94,7 @@ Um einen bereitgestellten Dienst in AEM zu starten, führen Sie folgende Schritt
    </dependency>
    ```
 
-   Um einen Dienst zu starten, fügen Sie für den Dienst die entsprechende Maven-Abhängigkeit hinzu. Eine Liste der Abhängigkeiten finden Sie in der [Liste der Acrobat-Dienste](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Fügen Sie beispielsweise zum Dienst für das Generieren von PDF-Dokumenten die folgende Abhängigkeit hinzu:
+   Um einen Dienst zu starten, fügen Sie für den Dienst die entsprechende Maven-Abhängigkeit hinzu. Eine Liste der Abhängigkeiten finden Sie in der [Liste der Acrobat-Dienste](/help/forms/using/aem-livecycle-connector.md#document-services-list). Fügen Sie beispielsweise zum Dienst für das Generieren von PDF-Dokumenten die folgende Abhängigkeit hinzu:
 
    ```xml
    <dependency>

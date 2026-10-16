@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2871'
 ht-degree: 95%
@@ -35,7 +35,7 @@ ht-degree: 95%
 
 <span class="preview"> Adobe empfiehlt, die modernen und erweiterbaren [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) zur Datenerfassung zu verwenden, um [neue adaptive Formulare zu erstellen](/help/forms/using/create-an-adaptive-form-core-components.md) oder [adaptive Formulare zu AEM Sites-Seiten hinzuzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Formulare dar und sorgen für beeindruckende Anwendererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen adaptiver Formulare mithilfe von Foundation-Komponenten beschrieben. </span>
 
-Adaptive Formulare ermöglichen Endbenutzenden, die sich mit dynamischem Scripting auskennen, ein optimiertes und vereinfachtes Ausfüllen von Formularen. Sie können so Ausdrücke zum Hinzufügen verschiedener Verhaltensweisen schreiben, wie etwa für dynamisch ein-/ausgeblendete Felder und Panels. Außerdem können Sie auch berechnete Felder oder Überprüfungslogik hinzufügen, Felder als schreibgeschützt festlegen und vieles mehr. Das dynamische Verhalten basiert auf den vom Benutzer eingegebenen oder vorab eingetragenen Daten.
+Adaptive Formulare ermöglichen Endbenutzenden, die sich mit dynamischem Scripting auskennen, ein optimiertes und vereinfachtes Ausfüllen von Formularen. Sie können so Ausdrücke zum Hinzufügen verschiedener Verhaltensweisen schreiben, wie etwa für dynamisch ein-/ausgeblendete Felder und Panels. Außerdem können Sie auch berechnete Felder oder Validierungslogik hinzufügen, Felder als schreibgeschützt festlegen und vieles mehr. Das dynamische Verhalten basiert auf den vom Benutzer eingegebenen oder vorab eingetragenen Daten.
 
 JavaScript ist die Ausdruckssprache, die sogenannte Expression Language von adaptiven Formularen. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und nutzen Scripting-Modell-APIs für adaptive Formulare. Diese Ausdrücke geben Werte bestimmter Typen zurück. Eine vollständige Liste der Klassen, Ereignisse, Objekte und öffentlichen APIs für adaptive Formulare finden Sie unter [API-Referenz der JavaScript-Bibliothek für adaptive Formulare](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html).
 
@@ -43,7 +43,7 @@ JavaScript ist die Ausdruckssprache, die sogenannte Expression Language von adap
 
 * Beim Schreiben von Ausdrücken können Sie den Namen des Felds oder Bereichs verwenden, um auf Felder bzw. Bereiche zuzugreifen. Für den Zugriff auf den Wert eines Felds verwenden Sie die Werteigenschaft. Beispiel: `field1.value`
 * Verwenden Sie im gesamten Formular eindeutige Namen für Felder und Panels. Auf diese Weise können Sie mögliche Konflikte mit beim Schreiben von Ausdrücken verwendeten Feldnamen vermeiden.
-* Beim Schreiben von mehrzeiligen Ausdrücken, müssen Sie ein Semikolon verwenden, um eine Anweisung zu beenden.
+* Beim Schreiben von mehrzeiligen Ausdrücken müssen Sie ein Semikolon verwenden, um eine Anweisung zu beenden.
 
 ## Empfohlene Vorgehensweisen für Ausdrücke in Verbindung mit Wiederholungsbereichen {#best-practices-for-expressions-involving-repeating-panel}
 
@@ -139,7 +139,7 @@ Sobald sich der Wert des Felds **marital_status** ändert, wird der Ausdruck ern
 
 Der Zusammenfassungsausdruck berechnet dynamisch den Titel eines untergeordneten Panels eines Panels mit Akkordeon-Layout. Sie können den Zusammenfassungsausdruck in einer Regel angeben, die ein Formularfeld oder eine benutzerdefinierte Logik zum Auswerten des Titels verwendet. Der Ausdruck wird ausgeführt, wenn das Formular initialisiert wird. Wenn Sie ein Formular vorausfüllen, wird der Ausdruck ausgeführt, nachdem die Daten vorab ausgefüllt wurden oder wenn sich der Wert von abhängigen Feldern ändert, die in dem Ausdruck verwendet werden.
 
-Der Zusammenfassungsausdruck wird in der Regel für das Wiederholen von untergeordneten Elementen eines Akkordeon-Layout-Bedienfelds verwendet, um einen aussagekräftigen Titel für jedes untergeordnete Bedienfeld zur Verfügung zu stellen.
+Der Zusammenfassungsausdruck wird in der Regel für das Wiederholen von untergeordneten Elementen eines Akkordeon-Layout-Panels verwendet, um einen aussagekräftigen Titel für jedes untergeordnete Panel zur Verfügung zu stellen.
 
 **Gilt für**: Bedienfelder, die direkt untergeordnete Elemente eines Bedienfelds sind, deren Layout als Akkordeon konfiguriert ist.
 
@@ -149,7 +149,7 @@ Der Zusammenfassungsausdruck wird in der Regel für das Wiederholen von untergeo
 
 ### Ausdruck für die Überprüfung {#validate-expression}
 
-Der Ausdruck für die Überprüfung wird zur Überprüfung der Felder unter Verwendung des entsprechenden Ausdrucks verwendet. Normalerweise verwenden solche Ausdrücke reguläre Ausdrücke zusammen mit dem Feldwert, um ein Feld zu überprüfen. Bei jeder Änderung am Wert des Felds wird der Ausdruck erneut ausgelöst und der Überprüfungsstatus des Felds erneut berechnet.
+Der Validierungsausdruck wird verwendet, um die Felder mithilfe des angegebenen Ausdrucks zu validieren. Normalerweise verwenden solche Ausdrücke reguläre Ausdrücke zusammen mit dem Feldwert, um ein Feld zu validieren. Bei jeder Änderung am Wert des Felds wird der Ausdruck erneut ausgelöst und der Validierungsstatus des Felds erneut berechnet.
 
 **Gilt für**: Felder.
 
@@ -162,7 +162,7 @@ Wenn im vorstehenden Beispiel der nicht leere Wert mit dem Muster nicht überein
 
 >[!NOTE]
 >
->Wenn Sie einen Überprüfungsausdruck für ein nicht obligatorisches oder ein obligatorisches Feld eingeben, wird der Ausdruck unabhängig vom Sichtbarkeitsstatus des Felds bewertet. Um die Validierung für die ausgeblendeten Felder zu stoppen, setzen Sie die Eigenschaft „validationsDisabled“ im Initialisierungsskript oder im Skript zum Bestätigen von Werten auf „true“. Beispiel: `this.validationsDisabled=true`
+>Wenn Sie einen Validierungsausdruck für ein nicht obligatorisches oder ein obligatorisches Feld eingeben, wird der Ausdruck unabhängig vom Sichtbarkeitsstatus des Felds bewertet. Um die Validierung für die ausgeblendeten Felder zu stoppen, setzen Sie die Eigenschaft validationsDisabled im Initialisierungsskript oder im Skript zum Bestätigen von Werten auf true. Beispiel: `this.validationsDisabled=true`
 
 ### Skript zum Bestätigen von Werten {#value-commit-script}
 
@@ -194,7 +194,7 @@ Der Ausdruck für die Sichtbarkeit wird verwendet, um die Sichtbarkeit des Felds
 
 ### Ausdruck zum Abschluss von Schritten {#step-completion-expression}
 
-Der Ausdruck zum Abschluss von Schritten wird verwendet, um zu verhindern, dass Benutzende zum nächsten Schritt in einem Assistenten-Layout gehen. Diese Ausdrücke werden verwendet, wenn Bedienfelder über ein Assistenten-Layout verfügen (Formulare mit mehreren Schritten, die jeweils einen Schritt zeigen). Der Benutzer kann nur dann in den nächsten Schritt, Bereich oder Unterabschnitt wechseln, wenn im aktuellen Abschnitt alle erforderlichen Werte eingetragen wurden und gültig sind.
+Der Ausdruck zum Abschluss von Schritten wird verwendet, um zu verhindern, dass Benutzende zum nächsten Schritt in einem Assistenten-Layout gehen. Diese Ausdrücke werden verwendet, wenn Bedienfelder über ein Assistenten-Layout verfügen (Formulare mit mehreren Schritten, die jeweils einen Schritt zeigen). Der Benutzer kann nur dann in den nächsten Schritt, das nächste Panel oder den nächsten Unterabschnitt wechseln, wenn im aktuellen Abschnitt alle erforderlichen Werte eingetragen wurden und gültig sind.
 
 **Gilt für**: Panels mit Layout der Elemente im Stil eines Assistenten.
 
@@ -207,7 +207,7 @@ Der Ausdruck zum Abschluss von Schritten wird verwendet, um zu verhindern, dass 
 
 Es gibt mehrere Methoden zum Hinzufügen einer Feldvalidierung zu einem adaptiven Formular. Wenn einem Feld eine Überprüfung hinzugefügt wird, bedeutet **True**, dass der in das Feld eingegebene Wert gültig ist. **False** bedeutet, dass der Wert ungültig ist. Wenn Sie durch Drücken der Tabulatortaste in ein Feld springen oder ein Feld verlassen, wird die Fehlermeldung nicht generiert.
 
-Es gibt folgende Methoden zum Hinzufügen von Validierungen zu Feldern:
+Es gibt folgende Methoden zum Hinzufügen von Validierungen zu einem Feld:
 
 ### Erforderlich {#required}
 
@@ -215,17 +215,17 @@ Um eine Komponente als obligatorisch festzulegen, können Sie im Dialogfeld **Be
 
 ### Überprüfungsmuster {#validation-patterns}
 
-Für ein Feld stehen mehrere Überprüfungsmuster für den sofortigen Einsatz zur Verfügung. Suchen Sie zum Auswählen eines Überprüfungsmusters im Dialogfeld **Bearbeiten** der Komponente den Abschnitt **Muster** und wählen Sie **Muster** aus. Sie können im Textfeld **Muster** ein eigenes benutzerspezifisches Überprüfungsmuster erstellen. Als Überprüfungsstatus wird nur dann **True** zurückgegeben, wenn die eingegebenen Daten mit dem Überprüfungsmuster übereinstimmen. Andernfalls wird **False** zurückgegeben. Informationen zum Schreiben eines eigenen benutzerdefinierten Validierungsmusters finden Sie unter [Picture-Klausel-Unterstützung für HTML5-Formulare](/help/forms/using/picture-clause-support.md).
+Für ein Feld stehen mehrere Validierungsmuster für den sofortigen Einsatz zur Verfügung. Suchen Sie zum Auswählen eines Überprüfungsmusters im Dialogfeld **Bearbeiten** der Komponente den Abschnitt **Muster** und wählen Sie **Muster** aus. Sie können im Textfeld **Muster** ein eigenes benutzerspezifisches Überprüfungsmuster erstellen. Als Überprüfungsstatus wird nur dann **True** zurückgegeben, wenn die eingegebenen Daten mit dem Überprüfungsmuster übereinstimmen. Andernfalls wird **False** zurückgegeben. Informationen zum Schreiben eines eigenen benutzerdefinierten Validierungsmusters finden Sie unter [Picture-Klausel-Unterstützung für HTML5-Formulare](/help/forms/using/picture-clause-support.md).
 
 ### Ausdrücke für die Überprüfung {#validation-expressions}
 
-Die Validierung eines Felds kann auch mithilfe von Ausdrücken für verschiedene Felder berechnet werden. Diese Ausdrücke werden in das Feld **Überprüfungsskript** der Registerkarte **Skript** des Dialogfelds **Bearbeiten** der Komponente geschrieben. Der Überprüfungsstatus eines Felds hängt davon ab, welchen Wert der Ausdruck zurückgibt. Informationen darüber, wie solche Ausdrücke geschrieben werden, finden Sie unter [Ausdruck für die Überprüfung](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p).
+Die Validierung eines Felds kann auch mithilfe von Ausdrücken für verschiedene Felder berechnet werden. Diese Ausdrücke werden in das Feld **Überprüfungsskript** der Registerkarte **Skript** des Dialogfelds **Bearbeiten** der Komponente geschrieben. Der Überprüfungsstatus eines Felds hängt davon ab, welchen Wert der Ausdruck zurückgibt. Informationen darüber, wie solche Ausdrücke geschrieben werden, finden Sie unter [Ausdruck für die Überprüfung](../../forms/using/adaptive-form-expressions.md#validate-expression).
 
 ## Zusätzliche Informationen {#additional-information}
 
 ### Verwendung des Anzeigeformats für Felder {#using-field-display-format}
 
-Das Anzeigeformat kann verwendet werden, um die Daten in verschiedenen Formaten anzuzeigen. Beispielsweise können Sie das Anzeigeformat verwenden, um eine Telefonnummer mit Bindestrichen darzustellen, eine Postleitzahl zu formatieren oder eine Datumsauswahl anzuzeigen. Diese Anzeigemuster können im Abschnitt **Muster** des Dialogfelds „Bearbeiten“ einer Komponente ausgewählt werden. Ähnlich wie bei den oben erwähnten Überprüfungsmustern können Sie benutzerspezifische Darstellungsmuster schreiben.
+Das Anzeigeformat kann verwendet werden, um die Daten in verschiedenen Formaten anzuzeigen. Beispielsweise können Sie das Anzeigeformat verwenden, um eine Telefonnummer mit Bindestrichen darzustellen, eine Postleitzahl zu formatieren oder eine Datumsauswahl anzuzeigen. Diese Anzeigemuster können im Abschnitt **Muster** des Dialogfelds „Bearbeiten“ einer Komponente ausgewählt werden. Ähnlich wie bei den oben erwähnten Validierungsmustern können Sie benutzerspezifische Darstellungsmuster schreiben.
 
 ### GuideBridge – APIs und Ereignisse {#guidebridge-apis-and-events}
 
@@ -298,7 +298,7 @@ Führen Sie die folgenden Schritte durch, um ein benutzerspezifisches Muster fü
 1. Öffnen Sie die Registerkarte „Eigenschaften“ des erstellten Knotens. Beispiel: Öffnen Sie die Registerkarte „Eigenschaften“ von `textboxpatterns`. Fügen Sie diesem Knoten die Eigenschaft `guideComponentType` hinzu und legen Sie ihren Wert auf *fd/af/components/formatter/guideTextBox* fest.
 
 1. Der Wert dieser Eigenschaft variiert je nach dem Feld, für das Sie die Muster definieren möchten. Bei numerischen Feldern lautet der Wert der Eigenschaft `guideComponentType`*fd/af/components/formatter/guideNumericBox*. Der Wert für das Feld „Datepicker“ lautet *fd/af/components/formatter/guideDatepicker*.
-&grave;&grave;
+``
 1. Sie können ein benutzerspezifisches Muster hinzufügen, indem Sie dem Knoten `textboxpatterns` eine Eigenschaft zuweisen. Fügen Sie eine Eigenschaft mit einem Namen (z. B. `pattern1`) hinzu und legen Sie ihren Wert auf das Muster fest, das Sie hinzufügen möchten. Beispiel: Fügen Sie eine Eigenschaft `pattern1` mit dem Wert „Fax=text{99-999-9999999}“ hinzu. Das Muster ist für alle Textfelder verfügbar, die Sie in adaptiven Formularen verwenden.
 
    ![Erstellen benutzerspezifischer Muster für Felder in CrxDe](assets/creating-custom-patterns.png)

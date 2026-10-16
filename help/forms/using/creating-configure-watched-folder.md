@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 94%
@@ -47,13 +47,13 @@ Bevor Sie einen überwachten Ordner konfigurieren, stellen Sie Folgendes sicher:
 
 * „Überwachte Ordner“ ist eine erweiterte Funktion von AEM Forms. Dafür wird ein funktionierendes Add-On-Paket für AEM Forms benötigt. Stellen Sie sicher, dass das entsprechende Add-On-Paket für AEM Forms installiert und konfiguriert ist.
 * Sie können den überwachten Ordner in einem freigegebenen oder lokalen Speicher erstellen. Sorgen Sie dafür, dass AEM Forms-Benutzende, die den überwachten Ordner ausführen dürfen, über Lese- und Schreibberechtigungen für den überwachten Ordner verfügen.
-* Sie können einen Dienst, einen Workflow oder ein Skript verwenden, um einen Prozess mithilfe überwachter Ordner zu automatisieren. Stellen Sie sicher, dass der entsprechende Service oder Workflow oder ein Skript erstellt wurde und ausgeführt werden kann. Weitere Informationen zur Erstellung von Services, Workflows und Skripts finden Sie unter [Verschiedene Methoden zur Verarbeitung von Dateien](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files).
+* Sie können einen Dienst, einen Workflow oder ein Skript verwenden, um einen Prozess mithilfe überwachter Ordner zu automatisieren. Stellen Sie sicher, dass der entsprechende Service oder Workflow oder ein Skript erstellt wurde und ausgeführt werden kann. Weitere Informationen zur Erstellung von Services, Workflows und Skripts finden Sie unter [Verschiedene Methoden zur Verarbeitung von Dateien](/help/forms/using/watched-folder-in-aem-forms.md#variousmethodsforprocessingfiles).
 * Ein überwachter Ordner besitzt verschiedene Eigenschaften, siehe [Eigenschaften überwachter Ordner](watched-folder-in-aem-forms.md#watchedfolderproperties).
 
 Führen Sie die folgenden Schritte aus, um einen überwachten Ordner zu erstellen:
 
 1. Wählen Sie das **Adobe Experience Manager**-Symbol in der oberen linken Ecke des Bildschirms aus.
-1. Wählen Sie **Tools** > **Forms** > **Überwachten Ordner konfigurieren.** . Eine Liste der bereits konfigurierten überwachten Ordner wird angezeigt.
+1. Wählen Sie **Tools** > **Forms** > **Überwachten Ordner konfigurieren.** Eine Liste der bereits konfigurierten überwachten Ordner wird angezeigt.
 1. Wählen Sie **Neu** aus. Eine Liste mit den Feldern, die erforderlich sind, um den überwachten Ordner zu erstellen, wird angezeigt:
 
    * **Name**: Gibt den überwachten Ordner an. Verwenden Sie nur alphanumerische Zeichen für den Namen.
@@ -80,7 +80,7 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner zu erstelle
 
 1. Wählen Sie **Erweitert** aus. Die Registerkarte „Erweitert“ enthält weitere Felder. Die meisten dieser Felder enthalten einen Standardwert.
 
-   * **Payload Mapper-Filter:** Wenn Sie einen überwachten Ordner erstellen, wird eine Ordnerstruktur innerhalb des überwachten Ordners erstellt. Die Ordnerstruktur enthält Ordner für Phasen, Ergebnisse, Aufbewahrung, Eingabe und Fehler. Die Ordnerstruktur kann als Eingabe-Payload für den Workflow dienen und die Ausgabe von einem Workflow akzeptieren. Sie kann gegebenenfalls auch Fehlerquellen auflisten. Die Struktur der Nutzdaten unterscheidet sich von der Struktur eines überwachten Ordners anders. Sie können benutzerdefinierte Skripte schreiben, um der Payload die Struktur eines überwachten Ordners zuzuordnen. Ein solches Skript wird als Payload Mapper-Filter bezeichnet. Zwei standardmäßige Payload-Mapper-Implementierungen sind verfügbar. Wenn Sie keine [benutzerdefinierte Implementierung &#x200B;](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)haben, verwenden Sie eine Standard-Implementierung:
+   * **Payload Mapper-Filter:** Wenn Sie einen überwachten Ordner erstellen, wird eine Ordnerstruktur innerhalb des überwachten Ordners erstellt. Die Ordnerstruktur enthält Ordner für Phasen, Ergebnisse, Aufbewahrung, Eingabe und Fehler. Die Ordnerstruktur kann als Eingabe-Payload für den Workflow dienen und die Ausgabe von einem Workflow akzeptieren. Sie kann gegebenenfalls auch Fehlerquellen auflisten. Die Struktur der Nutzdaten unterscheidet sich von der Struktur eines überwachten Ordners anders. Sie können benutzerdefinierte Skripte schreiben, um der Payload die Struktur eines überwachten Ordners zuzuordnen. Ein solches Skript wird als Payload Mapper-Filter bezeichnet. Zwei standardmäßige Payload-Mapper-Implementierungen sind verfügbar. Wenn Sie keine [benutzerdefinierte Implementierung ](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)haben, verwenden Sie eine Standard-Implementierung:
 
      * **Standard-Mapper:** Verwenden Sie den Standard-Payload-Mapper, um den Eingabe- und Ausgabe-Inhalt der überwachten Ordner in separaten Eingabe- und Ausgabeordnern in der Payload zu belassen.
      * **Einfacher dateibasierter Payload-Mapper:** Verwenden Sie den einfachen dateibasierten Payload-Mapper, um Eingabe- und Ausgabe-Inhalte direkt im Nutzdatenordner zu beizubehalten. Es wird keine zusätzliche Hierarchie erstellt, wie z. B. ein Standard-Mapper.
@@ -99,7 +99,7 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner zu erstelle
    * **Ergebnis-Ordnername:** Geben Sie den Namen des Ordners ein, um die Ergebnisse zu speichern. Wenn die Ergebnisse nicht in diesem Ordner angezeigt werden, überprüfen Sie den Fehlerordner. Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeichert. Sie können einen absoluten oder relativen Pfad mit den folgenden Dateimustern verwenden:
 
      * %F = Dateinamenspräfix
-     * %E = Dateinamenerweiterung
+     * %E = Dateierweiterung
      * %Y = Jahr (vollständig)
      * %y = Jahr (letzte zwei Stellen)
      * %M = Monat
@@ -133,6 +133,6 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner zu erstelle
 Zusätzlich zum Namen des überwachten Ordners können Sie alle Eigenschaften eines vorhandenen überwachten Ordners ändern. Führen Sie die folgenden Schritte aus, um die Eigenschaften eines vorhandenen überwachten Ordners zu ändern:
 
 1. Wählen Sie das Symbol **Adobe Experience Manager** in der oberen linken Ecke des Bildschirms aus.
-1. Wählen Sie **Tools** > **Forms** > **Überwachten Ordner konfigurieren.** . Eine Liste der bereits konfigurierten überwachten Ordner wird angezeigt.
+1. Wählen Sie **Tools** > **Forms** > **Überwachten Ordner konfigurieren.** Eine Liste der bereits konfigurierten überwachten Ordner wird angezeigt.
 1. Wählen Sie auf der linken Seite des Bildschirms des überwachten Ordners den überwachten Ordner aus und klicken Sie auf **Bearbeiten.** Eine Liste mit den Feldern, die erforderlich sind, um den überwachten Ordner zu erstellen, wird angezeigt. Die Felder, die auf der Registerkarte **Grundeinstellungen** aufgeführt sind, sind Pflichtfelder. Die Registerkarte „Erweitert“ enthält weitere Felder. Die meisten dieser Felder enthalten einen Standardwert. Sie können diese Eigenschaften entsprechend Ihren Anforderungen ändern.
 1. Wenn Sie die Eigenschaften geändert haben, wählen Sie **Aktualisieren** aus. Die geänderten Eigenschaften werden gespeichert.

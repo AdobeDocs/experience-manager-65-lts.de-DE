@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2970'
 ht-degree: 99%
@@ -57,7 +57,7 @@ Mit dem Container für adaptive Formulare im AEM-Seiteneditor können Sie nahtlo
 * **Multi-Site-Management und Live Copy:** AEM Sites bietet robuste [Multi-Site-Management- und Live Copy-Funktionen](/help/sites-administering/msm.md), mit denen Sie mehrere Websites in einer einzigen Umgebung erstellen und verwalten können. Mit dieser Funktion können Sie nun Formulare über verschiedene Sites hinweg wiederverwenden, was Konsistenz gewährleistet und doppelte Arbeit vermeidet. Mit zentralisierter Kontrolle und Verwaltung können Sie Formulare effizient über mehrere Websites hinweg verwalten und aktualisieren.
 * **Themen:** AEM Sites-Seiten bieten ein Framework für das Entwerfen und Verwalten konsistenter visueller Stile auf mehreren Web-Seiten. Diese definieren Farben, Schriftarten, Stylesheets und andere visuelle Elemente, die zum allgemeinen Look-and-Feel der Website beitragen. [Sie können die Designs verwenden, die für ein adaptives Formular einer AEM Sites-Seite entwickelt wurden, was Zeit und Mühe spart.](/help/sites-authoring/style-system.md).
 * **Tagging:** Mit AEM Sites-Seiten können Sie [Tags oder Beschriftungen zu einer Seite, einem Asset oder anderen Inhalten zuweisen](/help/sites-authoring/tags.md). Tags sind Keywords oder Metadatenbeschriftungen, die eine Möglichkeit bieten, Inhalte basierend auf bestimmten Kriterien zu kategorisieren und zu organisieren. Sie können Seiten, Assets oder anderen Inhaltselementen in AEM ein oder mehrere Tags zuweisen, um die Suche zu verbessern und die Assets zu kategorisieren.
-* **Sperren und Entsperren von Inhalten:** Mit AEM Sites können Benutzerinnen und Benutzer in der AEM Sites-Umgebung [Zugriff und Änderungen auf Seiten steuern](/help/sites-authoring/editing-content.md#locking-a-page-locking-a-page). Wenn eine Seite gesperrt ist, bedeutet dies, dass sie von anderen Benutzenden vor unbefugten Änderungen oder Bearbeitungen geschützt ist. Nur Benutzende, die den Inhalt gesperrt haben, oder Admins können ihn entsperren, um Änderungen zuzulassen.
+* **Sperren und Entsperren von Inhalten:** Mit AEM Sites können Benutzerinnen und Benutzer in der AEM Sites-Umgebung [Zugriff und Änderungen auf Seiten steuern](/help/sites-authoring/editing-content.md#locking-a-page). Wenn eine Seite gesperrt ist, bedeutet dies, dass sie von anderen Benutzenden vor unbefugten Änderungen oder Bearbeitungen geschützt ist. Nur Benutzende, die den Inhalt gesperrt haben, oder Admins können ihn entsperren, um Änderungen zuzulassen.
 
 
 ## Verschiedene Optionen zum Hinzufügen eines adaptiven Formulars im AEM-Seiteneditor

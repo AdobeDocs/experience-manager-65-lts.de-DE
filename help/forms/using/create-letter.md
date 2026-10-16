@@ -22,7 +22,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 99%
@@ -173,7 +173,7 @@ Analysieren Sie jeden Brief, um die verschiedenen Teile freizulegen, die den Bri
 * Die Bedingungen, unter denen Business-Anwenderinnen und -Anwender, etwa bei der Schadensregulierung oder der Sachbearbeitung, Inhalte oder Teile davon im Brief ändern.
 * Szenarien beschreiben das Benutzererlebnis, die Anforderungen und die Vorteile der Brieflösung.
 * Szenarien bieten auch :The erforderlichen Fertigkeiten und Tools, die Sie für Ihr Projekt benötigen.
-* Empfohlene Vorgehensweisen für die Planung Ihrer Implementierung. &grave;&grave;Allgemeine Übersicht über die Implementierung.
+* Empfohlene Vorgehensweisen für die Planung Ihrer Implementierung. ``Allgemeine Übersicht über die Implementierung.
 
 ## Vorteile der Analyse {#benefits-of-performing-the-analysis}
 
@@ -244,7 +244,7 @@ Zur Erstellung einer Korrespondenz müssen Sie zunächst Folgendes einrichten:
 * Andere XDP-Dateien ([Layoutfragmente](document-fragments.md#document-fragments)), die Bestandteile des Briefs bilden. Die XDP-Dateien/Layouts werden in [Designer](https://www.adobe.com/go/learn_aemforms_designer_65_de) erstellt.
 * Das relevante [Datenwörterbuch](/help/forms/using/data-dictionary.md) (optional).
 * Die [Datenmodule](/help/forms/using/document-fragments.md), die Sie in der Korrespondenz verwenden möchten.
-* [Test-Daten](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) bestehen aus der XML-Datei, in die die Testdaten portiert wurden. Testdaten sind erforderlich, wenn Sie ein Datenwörterbuch verwenden.
+* [Test-Daten](/help/forms/using/data-dictionary.md#working-with-test-data) bestehen aus der XML-Datei, in die die Testdaten portiert wurden. Testdaten sind erforderlich, wenn Sie ein Datenwörterbuch verwenden.
 
 ## Erstellen einer Briefvorlage {#create-a-letter-template}
 
@@ -275,7 +275,7 @@ Zur Erstellung einer Korrespondenz müssen Sie zunächst Folgendes einrichten:
 
    ![Warnmeldung: Brief erfolgreich erstellt](assets/createcorrespondencecreated.png)
 
-   **Weiter**: Wenn Sie **Öffnen** auswählen, zeigt das Correspondence Management eine Darstellung des Layouts an, in der alle Komponenten des Layouts (XDP) aufgeführt sind. Fahren Sie mit dem Einfügen und [Konfigurieren von Datenmodulen und Layout-Fragmenten](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p) fort.
+   **Weiter**: Wenn Sie **Öffnen** auswählen, zeigt das Correspondence Management eine Darstellung des Layouts an, in der alle Komponenten des Layouts (XDP) aufgeführt sind. Fahren Sie mit dem Einfügen und [Konfigurieren von Datenmodulen und Layout-Fragmenten](/help/forms/using/create-letter.md#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them) fort.
 
 ### Einfügen von Datenmodulen und Layout-Fragmenten in einen Brief mit anschließender Konfiguration {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 

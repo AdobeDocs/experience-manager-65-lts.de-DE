@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2193'
 ht-degree: 96%
@@ -112,9 +112,9 @@ Das oben angezeigte Design erfordert Änderungen am Platzhaltertext und Logo des
 
 Sie können den [Design-Editor](/help/forms/using/themes.md) verwenden, um benutzerdefinierte Designs zu erstellen. Der Design-Editor ist ein leistungsstarker WYSIWYG-Editor. Er bietet eine visuelle Methode, um CSS auf verschiedene Komponenten eines adaptiven Formulars anzuwenden. Der Editor stellt genauere Steuerelemente zum Gestalten von Komponenten und Panels eines adaptiven Formulars bereit.
 
-Ein Design ist eine separate Entität, so wie adaptive Formulare. Es enthält Stile (CSS) für die Komponenten und Panels eines adaptiven Formulars. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, wird der angegebene Stil auf die entsprechenden Komponenten eines adaptiven Formulars angewendet.
+Ein Design ist eine separate Entität, so wie adaptive Formulare. Es enthält Stile (CSS) für die Komponenten und Panels eines adaptiven Formulars. Die Stile umfassen CSS-Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, wird der angegebene Stil auf die entsprechenden Komponenten eines adaptiven Formulars angewendet.
 
-Im Rahmen dieses Tutorials gestalten Sie Kopf- und Fußzeilen, Text- und numerische Komponenten, Anhangskomponenten sowie Schaltflächen. Erstellen wir zunächst ein Design.
+Im Rahmen dieses Tutorials gestalten Sie Kopf- und Fußzeilen, Text- und numerische Komponenten, Anhangskomponente sowie Schaltflächen. Erstellen wir zunächst ein Design.
 
 ### Erstellen von Designs {#create-a-theme}
 
@@ -126,7 +126,7 @@ Im Rahmen dieses Tutorials gestalten Sie Kopf- und Fußzeilen, Text- und numeris
 
 1. Wählen Sie **[!UICONTROL Erstellen]**. Ein Design wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Wählen Sie **[!UICONTROL Öffnen]** aus, um das neu erstellte Design in einer neuen Registerkarte zu öffnen. Das Design wird im Design-Editor geöffnet. Zum Festlegen des Designs verwendet der Design-Editor ein sofort einsatzbereites adaptives Formular, das mit AEM [!DNL Forms] mitgeliefert wird.
 
-   Informationen zur Verwendung der Benutzeroberfläche des Design-Editors finden Sie unter [Informationen zum Design-Editor](/help/forms/using/themes.md#aboutthethemeeditor).
+   Informationen zur Verwendung der Benutzeroberfläche des Design-Editors finden Sie unter [Informationen zum Design-Editor](/help/forms/using/themes.md#about-the-theme-editor).
 
 1. Wählen Sie **[!UICONTROL Design-Optionen]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Konfigurieren]** aus. Wählen Sie im Feld **[!UICONTROL Vorschauformular]** das adaptive Formular **shipping-address-add-update-form**, ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) und dann **[!UICONTROL Speichern]** aus. Jetzt ist der Design-Editor konfiguriert, sodass Sie Ihr eigenes adaptives Formular anstelle des adaptiven Standardformulars benutzen können. Wählen Sie **[!UICONTROL Abbrechen]** aus, um zum Design-Editor zurückzukehren.
 
@@ -191,7 +191,7 @@ Kopf- und Fußzeile bieten ein konsistentes und unverwechselbares Erscheinungsbi
 
 ### Gestalten der Datenerfassungskomponente und Anwenden eines Hintergrunds auf das adaptive Formular {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
-Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten zu erfassen, zum Beispiel ein Textfeld und ein numerisches Feld. Sie können für alle Datenerfassungskomponenten einen identischen Stil bereitstellen oder jeder Komponente einen eigenen Stil zuweisen. In diesem Lernprogramm wird ein identischer Stil auf numerische Felder (Kunden-ID, Postleitzahl) und Textfelder (Kunden-ID, Name, Versandadresse, Status, E-Mail) angewendet. So gestalten Sie die Datenerfassungskomponenten:
+Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten zu erfassen. zum Beispiel ein Textfeld und ein numerisches Feld. Sie können für alle Datenerfassungskomponenten einen identischen Stil bereitstellen oder jeder Komponente einen eigenen Stil zuweisen. In diesem Lernprogramm wird ein identischer Stil auf numerische Felder (Kunden-ID, Postleitzahl) und Textfelder (Kunden-ID, Name, Versandadresse, Status, E-Mail) angewendet. So gestalten Sie die Datenerfassungskomponenten:
 
 1. Wählen Sie das Feld **[!UICONTROL Kunden-ID]** und dann die Option **[!UICONTROL Feld-Widget]**. Legen Sie die folgenden Eigenschaften fest und wählen Sie ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -455,7 +455,7 @@ Einige Stile gelten nur für eine bestimmte Komponente. Diese Komponenten werden
 
    ![styled-adaptive-form-1](assets/styled-adaptive-form-1.png)
 
-## Schritt 5: Bonusabschnitt: Verwenden von Web Fonts in einem benutzerdefinierten Design {#step-bonus-section-using-web-fonts-in-a-custom-theme}
+## Schritt 5: Bonusabschnitt: Verwendung von Web Fonts in einem benutzerdefinierten Design {#step-bonus-section-using-web-fonts-in-a-custom-theme}
 
 Sie können verschiedene Schriftarten verwenden, um ein adaptives Formular zu entwerfen. Möglicherweise sind die Schriftarten, die zum Entwerfen des adaptiven Formulars verwendet werden, nicht auf allen Geräten vorhanden, auf denen das adaptive Formular angezeigt wird. Sie können einen Webfont-Dienst verwenden, um die benötigten Schriftarten auf dem Zielgerät bereitzustellen.
 
@@ -483,7 +483,7 @@ Sie können verschiedene Schriftarten verwenden, um ein adaptives Formular zu en
    ![Hinzufügen einer Schriftartbibliothek](assets/add-a-font-window.png)
 
 1. Wählen Sie **Klicken** aus, um das Projekt zu erstellen.
-1. Kopieren Sie den Einbettungs-Code und die URL vom Bildschirm.
+1. Kopieren Sie den Einbettungscode und die URL vom Bildschirm.
 
    ![Einbettungs-Code und URL](assets/font-add-url.png)
 

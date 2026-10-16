@@ -27,16 +27,16 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 99%
 ---
 # Erste Schritte mit dem Prozess-Reporting{#getting-started-with-process-reporting}
 
-Process Reporting gibt AEM Forms-Benutzern die Möglichkeit, Informationen über AEM Forms-Prozesse abzufragen, die derzeit in der AEM Forms-Implementierung definiert sind. Process Reporting greift jedoch nicht direkt auf Daten aus dem AEM Forms-Repository zu. Die Daten werden zunächst auf geplanter Basis im Process Reporting-Repository veröffentlicht (*vom ProcessDataPublisher &amp; ProcessDataStorage-Service* s). Die Berichte und Abfragen in Process Reporting werden dann aus den im Repository veröffentlichten Process Reporting-Daten generiert. Process Reporting wird als Bestandteil des Forms Workflow-Moduls installiert.
+Prozess-Reporting gibt AEM Forms-Benutzern die Möglichkeit, Informationen über AEM Forms-Prozesse abzufragen, die derzeit in der AEM Forms-Implementierung definiert sind. Prozess-Reporting greift jedoch nicht direkt auf Daten aus dem AEM Forms-Repository zu. Die Daten werden zunächst auf geplanter Basis im Process Reporting-Repository veröffentlicht (*vom ProcessDataPublisher &amp; ProcessDataStorage-Service* s). Die Berichte und Abfragen in Prozess-Reporting werden dann aus den im Repository veröffentlichten Prozess-Reporting-Daten generiert. Prozess-Reporting wird als Bestandteil des Forms Workflow-Moduls installiert.
 
-In diesem Artikel werden die Schritte zum Aktivieren der Veröffentlichung von AEM Forms-Daten in das Process Reporting-Repository beschrieben. Danach können Sie Process Reporting verwenden, um Berichte und Abfragen auszuführen. Der Artikel behandelt auch die verfügbaren Optionen zum Konfigurieren der Process Reporting-Services.
+In diesem Artikel werden die Schritte zum Aktivieren der Veröffentlichung von AEM Forms-Daten in das Prozess-Reporting-Repository beschrieben. Danach können Sie Prozess-Reporting verwenden, um Berichte und Abfragen auszuführen. Der Artikel behandelt auch die verfügbaren Optionen zum Konfigurieren der Prozess-Reporting-Services.
 
 ## Voraussetzungen für Process Reporting {#process-reporting-pre-requisites}
 
@@ -56,7 +56,7 @@ Weitere Informationen zum Bereinigen von AEM Forms-Prozessdaten finden Sie unter
 
 ### Planen der Veröffentlichung von Prozessdaten {#schedule-process-data-publishing}
 
-Die Process Reporting-Services veröffentlichen auf geplanter Basis Daten aus der AEM Forms-Datenbank in das Process Reporting-Repository.
+Die Prozess-Reporting-Services veröffentlichen auf geplanter Basis Daten aus der AEM Forms-Datenbank in das Prozess-Reporting-Repository.
 
 Dieser Vorgang kann viele Ressourcen in Anspruch nehmen und die Leistung der AEM Forms-Server beeinträchtigen. Es wird empfohlen, dies außerhalb der Zeitfenster zu planen, in denen der AEM Forms-Servers ausgelastet ist.
 
@@ -100,7 +100,7 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungszeitplan zu än
 1. Klicken Sie erst auf **Apply**, dann auf „OK“ und schließlich auf **Save directly to the master configuration**.
 1. Starten Sie den AEM Forms-Server neu.
 1. Stoppen Sie die AEM Forms-Server-Instanz.
-1. Melden Sie sich bei Administration Console an. Die Standardadresse von WebLogic Administration Console lautet `https://[hostname]:[port]/console`.
+1. Melden Sie sich bei der WebLogic-Administrationskonsole an. Die Standardadresse von WebLogic Administration Console lautet `https://[hostname]:[port]/console`.
 1. Klicken Sie im Change Center auf **Sperren und bearbeiten**.
 1. Klicken Sie unter „Domain Structure“ auf **Environment** > **Servers** und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarten **Configuration** > **Server Start**.
@@ -121,13 +121,13 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungszeitplan zu än
 
 ### ProcessDataStorage-Service {#processdatastorage-service}
 
-Der ProcessDataStorageProvider-Service empfängt Prozessdaten vom ProcessDataPublisher-Service und speichert diese Daten im Repository für die Prozessberichterstellung.
+Der ProcessDataStorageProvider-Service empfängt Prozessdaten vom ProcessDataPublisher-Service und speichert diese Daten im Prozess-Reporting-Repository.
 
 Bei jedem Publishing-Zyklus werden die Daten in Unterordnern eines vordefinierten Stammordners gespeichert.
 
 Sie können die Administration-Console verwenden, um den Stammspeicherort (**Standard**: `/content/reporting/pm`) und das Hierarchieformat der Unterordner (**Standard**: `/yyyy/mm/dd/hh/mi/ss`) zu konfigurieren, in denen die Prozessdaten gespeichert werden sollen.
 
-#### So konfigurieren Sie die Repository-Speicherorte für das Prozess-Reporting {#to-configure-the-process-reporting-repository-locations}
+#### Konfigurieren der Repository-Speicherorte für das Prozess-Reporting {#to-configure-the-process-reporting-repository-locations}
 
 1. Melden Sie sich mit Administrator-Berechtigungen bei der **Administration-Console** an. Die Standard-URL der Administration-Console lautet `https://'[server]:[port]'/adminui`
 1. Navigieren Sie zu **Startseite** > **Services** > **Anwendungen und Services** > **Service-Management** und öffnen Sie den **ProcessDataStorageProvider**-Service.
@@ -150,9 +150,9 @@ Sie können die Administration-Console verwenden, um den Stammspeicherort (**Sta
 
 ### ReportConfiguration-Service {#reportconfiguration-service}
 
-Der ReportConfiguration-Service wird vom Prozess-Reporting zum Konfigurieren seines Abfrage-Service verwendet.
+Der ReportConfiguration-Service wird vom Prozess-Reporting zum Konfigurieren des Abfrage-Service für das Prozess-Reporting verwendet.
 
-#### So konfigurieren Sie den ReportingConfiguration-Service {#to-configure-the-reportingconfiguration-service}
+#### Konfigurieren des ReportingConfiguration-Service {#to-configure-the-reportingconfiguration-service}
 
 1. Anmelden bei **Configuration Manager** mit CRX-Administratorberechtigungen. Die Standard-URL von Configuration Manager lautet `https://'[server]:[port]'/lc/system/console/configMgr`
 1. Öffnen Sie den **ReportingConfiguration**-Service.
@@ -160,13 +160,13 @@ Der ReportConfiguration-Service wird vom Prozess-Reporting zum Konfigurieren sei
 
    Beim Ausführen einer Abfrage im Repository kann ein Ergebnis möglicherweise eine große Anzahl von Einträgen enthalten. Wenn die Ergebnismenge groß ist, kann die Ausführung der Abfrage Server-Ressourcen beanspruchen.
 
-   Um große Ergebnismengen zu verarbeiten, teilt der ReportConfiguration-Service die Abfrageverarbeitung in Eintrags-Batches auf. Dadurch wird die Systemlast reduziert.
+   Um große Ergebnismengen zu verarbeiten, teilt der ReportConfiguration-Service die Abfrageverarbeitung in Batches von Datensätzen auf. Dadurch wird die Systemlast reduziert.
 
    `Default`: `1000`
 
    **CRX-Speicherpfad**
 
-   Der CRX-Speicherort, in dem die Prozessdaten für die Berichterstellung gespeichert werden sollen.
+   Der CRX-Speicherort, in dem die Prozessdaten für das Reporting gespeichert werden sollen.
 
    `Default`: `/content/reporting/pm`
 
@@ -181,7 +181,7 @@ Der ReportConfiguration-Service wird vom Prozess-Reporting zum Konfigurieren sei
 
 ### ProcessDataPublisher-Service {#processdatapublisher-service}
 
-Der ProcessDataPublisher-Service importiert Prozessdaten aus der AEM Forms-Datenbank und veröffentlicht die Daten zur Speicherung in den ProcessDataStorageProvider-Service.
+Der ProcessDataPublisher-Service importiert Prozessdaten aus der AEM Forms-Datenbank und veröffentlicht die Daten zur Speicherung an den ProcessDataStorageProvider-Service.
 
 #### Konfigurieren des ProcessDataPublisher-Services   {#to-configure-processdatapublisher-service-nbsp}
 
@@ -197,7 +197,7 @@ Der ProcessDataPublisher-Service importiert Prozessdaten aus der AEM Forms-Daten
 
 Aktivieren Sie diese Option, um mit der Veröffentlichung von Prozessdaten zu beginnen. Standardmäßig ist die Option deaktiviert.
 
-Aktivieren Sie die Process Reporting nur, wenn alle Konfigurationen im Zusammenhang mit Process Reporting-Komponenten ordnungsgemäß eingerichtet sind.
+Aktivieren Sie Prozess-Reporting nur, wenn alle Konfigurationen im Zusammenhang mit Prozess-Reporting-Komponenten ordnungsgemäß eingerichtet sind.
 
 Alternativ können Sie diese Option verwenden, um die Veröffentlichung von Prozessdaten zu deaktivieren, wenn sie nicht mehr erforderlich ist.
 
@@ -205,7 +205,7 @@ Alternativ können Sie diese Option verwenden, um die Veröffentlichung von Proz
 
 **Batch-Intervall (Sek.)**
 
-Bei jeder Ausführung des ProcessDataPublisher-Services teilt der Dienst zunächst die Zeit seit der letzten Ausführung des Services durch das Batch-Intervall auf. Der Service verarbeitet dann jedes Intervall mit AEM Forms-Daten separat, um die Datengröße zu steuern, die der Publisher bei jeder Ausführung (Batch) innerhalb eines Zyklus durchgängig verarbeitet.
+Bei jeder Ausführung des ProcessDataPublisher-Services teilt der Dienst zunächst die seit der letzten Ausführung des Services verstrichene Zeit in Batch-Intervalle auf. Der Service verarbeitet dann jedes Intervall mit AEM Forms-Daten separat, um die Datengröße zu steuern, die der Publisher bei jeder Ausführung (Batch) innerhalb eines Zyklus durchgängig verarbeitet.
 
 Wenn der Publisher beispielsweise täglich ausgeführt wird, teilt er die Verarbeitung standardmäßig in 24 Batches mit jeweils einer Stunde auf, anstatt die gesamten Daten für einen Tag in einer einzigen Ausführung zu verarbeiten.
 
@@ -217,7 +217,7 @@ Wenn der Publisher beispielsweise täglich ausgeführt wird, teilt er die Verarb
 
 Der Publisher-Service erhält eine Sperre, wenn er mit der Verarbeitung von Daten beginnt, sodass mehrere Instanzen des Publishers nicht gleichzeitig mit der Ausführung und Verarbeitung von Daten beginnen.
 
-Wenn ein Publisher-Dienst, der eine Sperre erworben hat, für die vom Wert „Timeout sperren“ definierte Anzahl von Sekunden inaktiv ist, wird die Sperre aufgehoben, damit andere Publisher-Dienstinstanzen die Verarbeitung fortsetzen können.
+Wenn ein Publisher-Dienst, der eine Sperre erworben hat, für die vom Wert „Lock Timeout“ definierte Anzahl von Sekunden inaktiv ist, wird die Sperre aufgehoben, damit andere Publisher-Dienstinstanzen die Verarbeitung fortsetzen können.
 
 `Default`: `3600`
 
@@ -251,7 +251,7 @@ Geben Sie Ihre Anmeldeinformationen an, um sich beim Modul „Prozess-Reporting�
 
 >[!NOTE]
 >
->Zum Anmelden bei der Benutzeroberfläche Prozess-Reporting benötigen Sie die folgende AEM Forms-Berechtigung:
+>Zum Anmelden bei der Prozess-Reporting-Benutzeroberfläche benötigen Sie die folgende AEM Forms-Berechtigung:
 >
 >`PERM_PROCESS_REPORTING_USER`
 
@@ -287,9 +287,9 @@ Klicken Sie jederzeit auf den Titel, um zum Startbildschirm zurückzukehren.
 
 **Letzte Aktualisierungszeit:** Die Prozessdaten werden auf geplanter Basis aus der AEM Forms-Datenbank in das Reporting-Repository veröffentlicht.
 
-Die Zeit der letzten Aktualisierung zeigt das letzte Datum und die letzte Uhrzeit an, zu der die Datenaktualisierungen an das Reporting-Repository gesendet wurden.
+Die Zeit der letzten Aktualisierung zeigt das letzte Datum und die letzte Uhrzeit an, zu der die Datenaktualisierungen an das Prozess-Reporting-Repository gesendet wurden.
 
-Weitere Informationen zum Datenveröffentlichungsdienst und zur Planung dieses Dienstes finden Sie unter [Veröffentlichung von Prozessdaten planen](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) im Artikel Erste Schritte mit Prozessberichten.
+Weitere Informationen zum Datenveröffentlichungsdienst und zur Planung dieses Dienstes finden Sie unter [Veröffentlichung von Prozessdaten planen](/help/forms/using/process-reporting/install-start-process-reporting.md#schedule-process-data-publishing) im Artikel Erste Schritte mit Prozessberichten.
 
 **Prozess-Reporting-Benutzer:** Der angemeldete Benutzername wird rechts neben der Zeit der letzten Aktualisierung angezeigt.
 

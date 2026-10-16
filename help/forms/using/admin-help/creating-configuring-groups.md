@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1590'
 ht-degree: 97%
@@ -42,7 +42,7 @@ Durch das Erstellen von Benutzergruppen können Sie der Gruppe statt einzelnen B
 
 Es stehen zwei verschiedene Arten von Gruppen zur Verfügung. Sie können eine Gruppe manuell erstellen und ihr Benutzende und andere Gruppen hinzufügen. Sie können auch dynamische Gruppen erstellen, die automatisch alle Benutzenden einschließen, die einen bestimmten Regelsatz erfüllen.
 
-Bei Benutzenden kann es zu einer langsameren Reaktionszeit kommen, wenn sie vielen Gruppen angehören (z. B. 500 oder mehr) oder wenn die Gruppen tief verschachtelt sind (z. B. 30 Ebenen). Wenn dieses Problem auftritt, können Sie AEM Forms so konfigurieren, dass Informationen aus bestimmten Domains vorher abgerufen werden. (Siehe [AEM Forms zum vorherigen Abrufen von Domain-Informationen konfigurieren](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information).)
+Bei Benutzenden kann es zu einer langsameren Reaktionszeit kommen, wenn sie vielen Gruppen angehören (z. B. 500 oder mehr) oder wenn die Gruppen tief verschachtelt sind (z. B. 30 Ebenen). Wenn dieses Problem auftritt, können Sie AEM Forms so konfigurieren, dass Informationen aus bestimmten Domains vorher abgerufen werden. (Siehe [AEM Forms zum vorherigen Abrufen von Domain-Informationen konfigurieren](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetchdomain-information).)
 
 ## Manuelles Erstellen einer Gruppe {#create-a-group-manually}
 
@@ -87,7 +87,7 @@ Verwenden Sie eine dieser beiden Methoden, um dynamische Gruppen zu erstellen:
 
 Eine dynamische Gruppe enthält nur Benutzende. Sie kann nicht andere Gruppen enthalten. Eine dynamische Gruppe kann jedoch zu einer übergeordneten Gruppe gehören.
 
-### Dynamische Gruppen auf Basis von E-Mail-Domains automatisch erstellen {#automatically-create-dynamic-groups-based-on-email-domains}
+### Automatisches Erstellen dynamischer Gruppen auf Basis von E-Mail-Domains {#automatically-create-dynamic-groups-based-on-email-domains}
 
 1. Klicken Sie auf „Einstellungen“ > „Benutzerverwaltung“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
 1. Aktivieren Sie das Kontrollkästchen unter „Automatische Erstellung einer dynamischen Gruppe“.
@@ -133,9 +133,9 @@ Eine dynamische Gruppe enthält nur Benutzende. Sie kann nicht andere Gruppen en
 
 ## Anzeigen von Details zu einer Gruppe {#view-details-about-a-group}
 
-1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Benutzerverwaltung“ > „Benutzer und Gruppen“.
-1. Wählen Sie in der Liste „Gruppe“ aus und klicken Sie dann auf „Suchen“. Die Suchergebnisse werden unten auf der Seite aufgelistet. Sie können die Liste sortieren, indem Sie auf eine der Spaltenüberschriften klicken.
-1. Klicken Sie auf den Namen der Gruppe, zu der Details angezeigt werden sollen. Die Seite „Gruppendetails“ wird angezeigt.
+1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Benutzerverwaltung“ > „Benutzer und Gruppen“.
+1. Wählen Sie in der Liste „In“ die Option „Gruppe“ aus und klicken Sie dann auf „Suchen“. Die Suchergebnisse werden unten auf der Seite aufgelistet. Sie können die Liste sortieren, indem Sie auf eine der Spaltenüberschriften klicken.
+1. Klicken Sie auf den Namen der Gruppe, um Details dazu anzuzeigen. Die Seite „Gruppendetails“ wird angezeigt.
 1. Um direkte Mitglieder der Gruppe anzuzeigen, klicken Sie auf „Untergeordnete Prinzipale“.
 
 ## Bearbeiten einer Gruppe {#edit-a-group}

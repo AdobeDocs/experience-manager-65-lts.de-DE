@@ -32,7 +32,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 100%
@@ -148,11 +148,11 @@ Die wesentlichen Schritte für die CSS-Anpassung sind:
 * Fügen Sie der CSS-Datei Stilelemente hinzu. Weitere Informationen finden Sie im entsprechenden Artikel zum Thema CSS-Stile.
 * Aktualisieren Sie die betreffenden Verweise in der Datei `html.jsp`.
 
-Die ausführlichen Schritte zur Umsetzung dieser Anpassungen finden Sie unter [Generische Schritte zur Anpassung von AEM Forms Workspace](../../forms/using/generic-steps-html-workspace-customization.md). Die mit AEM Forms Workspace bereitgestellte CSS-Datei ist unter /libs/ws/css/ zu finden. Verwenden Sie für diese CSS-Anpassungen das [Ship-Paket](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Einzelne Beispiele für CSS-Anpassungen finden Sie in den jeweiligen Hilfethemen am Ende des Artikels.
+Die ausführlichen Schritte zur Umsetzung dieser Anpassungen finden Sie unter [Generische Schritte zur Anpassung von AEM Forms Workspace](../../forms/using/generic-steps-html-workspace-customization.md). Die mit AEM Forms Workspace bereitgestellte CSS-Datei ist unter /libs/ws/css/ zu finden. Verwenden Sie für diese CSS-Anpassungen das [Ship-Paket](../../forms/using/introduction-customizing-html-workspace.md#crx-package). Einzelne Beispiele für CSS-Anpassungen finden Sie in den jeweiligen Hilfethemen am Ende des Artikels.
 
 #### Bild {#image}
 
-Sie können AEM Forms Workspace anpassen, um Avatare von Benutzern oder das Logo Ihres Unternehmens hinzuzufügen. Verwenden Sie für diese Anpassungen das [Ship-Paket](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
+Sie können AEM Forms Workspace anpassen, um Avatare von Benutzern oder das Logo Ihres Unternehmens hinzuzufügen. Verwenden Sie für diese Anpassungen das [Ship-Paket](../../forms/using/introduction-customizing-html-workspace.md#crx-package).
 
 Die wesentlichen Schritte für die Anpassungen der Bilder sind:
 
@@ -173,7 +173,7 @@ Die wesentlichen Schritte für die Anpassungen der HTML-Vorlagen sind:
 * Fügen Sie dem benutzerdefinierten Ordner neue Vorlagen hinzu.
 * Nehmen Sie an den kopierten Dateien die entsprechenden Aktualisierungen vor, z. B. die Aktualisierung des Pfads der neuen Vorlage.
 
-Einzelne Beispiele für diese Anpassungen finden Sie in den jeweiligen Hilfethemen am Ende des Artikels. Wählen Sie je nach der anzupassenden Vorlage das [Ship-Paket](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) oder das [Dev-Paket](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
+Einzelne Beispiele für diese Anpassungen finden Sie in den jeweiligen Hilfethemen am Ende des Artikels. Wählen Sie je nach der anzupassenden Vorlage das [Ship-Paket](../../forms/using/introduction-customizing-html-workspace.md#crx-package) oder das [Dev-Paket](../../forms/using/introduction-customizing-html-workspace.md#crx-package).
 
 ### Semantikänderungen {#semantic-changes}
 
@@ -202,7 +202,7 @@ Das Paket enthält den Quellcode von AEM Forms Workspace. Das Paket ist verfügb
 
 Es dient vor allem der Anpassung, denn es bietet Funktionen, um Folgendes zu generieren:
 
-* CRX-Pakete für Ship-, Debug- und Dev-Profile (siehe unten unter [CRX-Pakete](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)).
+* CRX-Pakete für Ship-, Debug- und Dev-Profile (siehe unten unter [CRX-Pakete](../../forms/using/introduction-customizing-html-workspace.md#crx-package)).
 * Minimierte Version des benutzerspezifischen Codes (für Semantikänderungen).
 
 #### WS-Inhalt {#ws-content}

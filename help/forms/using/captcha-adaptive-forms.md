@@ -1,6 +1,6 @@
 ---
 title: Verwenden von CAPTCHA in adaptiven Formularen
-description: Erfahren Sie, wie Sie AEM CAPTCHA oder Google reCAPTCHA-Service in adaptiven Formularen konfigurieren.
+description: Erfahren Sie, wie Sie AEM CAPTCHA oder den Google reCAPTCHA-Service in adaptiven Formularen konfigurieren.
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: adaptive_forms, author
@@ -29,7 +29,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1968'
 ht-degree: 98%
@@ -51,12 +51,12 @@ AEM Forms unterstützt CAPTCHA in adaptiven Formularen. Sie können den reCAPTCH
 
 >[!NOTE]
 >
->* AEM Forms unterstützt reCAPTCHA v2 und Enterprise. Es werden keine anderen Versionen unterstützt.
+>* AEM Forms unterstützt reCAPTCHA v2 und reCAPTCHA Enterprise. Es werden keine anderen Versionen unterstützt.
 >* Im Offline-Modus wird CAPTCHA in adaptiven Formularen in der AEM Forms-App nicht unterstützt.
 
 ## Konfigurieren des reCAPTCHA-Services von Google für adaptive Formulare {#google-reCAPTCHA}
 
-AEM Forms-Benutzende können den reCAPTCHA-Service von Google verwenden, um CAPTCHA in adaptive Formulare zu implementieren. Er bietet erweiterte CAPTCHA-Funktionen zum Schutz Ihrer Site. Weitere Informationen zur Funktionsweise von reCAPTCHA finden Sie unter [Google reCAPTCHA](https://developers.google.com/recaptcha/). Der reCAPTCHA-Service einschließlich reCAPTCHA v2 und reCAPTCHA Enterprise ist in AEM Forms integriert. Je nach Ihren Anforderungen können Sie den reCAPTCHA-Service konfigurieren, um Folgendes zu aktivieren:
+AEM Forms-Benutzende können den reCAPTCHA-Service von Google verwenden, um CAPTCHA in adaptiven Formularen zu implementieren. Er bietet erweiterte CAPTCHA-Funktionen zum Schutz Ihrer Site. Weitere Informationen zur Funktionsweise von reCAPTCHA finden Sie unter [Google reCAPTCHA](https://developers.google.com/recaptcha/). Der reCAPTCHA-Service einschließlich reCAPTCHA v2 und reCAPTCHA Enterprise ist in AEM Forms integriert. Je nach Ihren Anforderungen können Sie den reCAPTCHA-Service konfigurieren, um Folgendes zu aktivieren:
 
 * [reCAPTCHA Enterprise in AEM Forms](#steps-to-implement-reCAPTCHA-enterprise-in-forms)
 * [reCAPTCHA v2 in AEM Forms](#steps-to-implement-reCAPTCHA-v2-in-forms)
@@ -85,11 +85,11 @@ AEM Forms-Benutzende können den reCAPTCHA-Service von Google verwenden, um CAPT
    1. Wählen Sie **[!UICONTROL reCAPTCHA]** aus. Die Konfigurationsseite öffnet sich. Wählen Sie den im vorherigen Schritt erstellten Konfigurations-Container und dann **[!UICONTROL Erstellen]** aus.
    1. Wählen Sie die Version „reCAPTCHA Enterprise“ und geben Sie den Namen, die Projekt-ID, den Site-Schlüssel und den API-Schlüssel (erhalten in Schritt 2 und 3) für den reCAPTCHA Enterprise-Dienst an.
    1. Wählen Sie den Schlüsseltyp aus. Der Schlüsseltyp sollte mit dem im Google Cloud-Projekt konfigurierten Site-Schlüssel übereinstimmen, z. B. **Checkbox site key** oder **Score-based site key**.
-   1. Geben Sie einen Schwellenwert im Bereich von 0 bis 1 an. ([Klicken Sie hier, um mehr über den Wert zu erfahren](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores).) Werte, die größer oder gleich den Schwellenwerten sind, kennzeichnen menschliche Interaktionen, die ansonsten als Bot-Interaktion betrachtet werden.
+   1. Geben Sie einen Schwellenwert im Bereich von 0 bis 1 an. ([Klicken Sie hier, um mehr über den Wert zu erfahren](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores).) Werte, die größer oder gleich den Schwellenwerten sind, kennzeichnen menschliche Interaktionen; andernfalls werden sie als Bot-Interaktionen betrachtet.
 
       > Hinweis:
       >
-      > * Formularautorinnen und -autoren können eine Punktzahl im Bereich angeben, der für die unterbrechungsfreie Formularübermittlung geeignet ist.
+      > * Formularautorinnen und -autoren können eine Punktzahl in einem Bereich angeben, der für eine unterbrechungsfreie Formularübermittlung geeignet ist.
 
    1. Wählen Sie **[!UICONTROL Erstellen]** aus, um die Cloud-Service-Konfiguration zu erstellen.
 
@@ -123,7 +123,7 @@ Sobald der reCAPTCHA Enterprise-Dienst aktiviert ist, kann er in adaptiven Formu
    1. Wählen Sie die Version „reCAPTCHA v2“ aus, geben Sie den Namen, den Site-Schlüssel und den geheimen Schlüssel für den reCAPTCHA-Service an (aus Schritt 1) und wählen Sie **[!UICONTROL Erstellen]** aus, um die Cloud-Service-Konfiguration zu erstellen.
    1. Geben Sie im Dialogfeld „Komponente bearbeiten“ die Site- und Geheimschlüssel an, die Sie in Schritt 1 erhalten haben. Wählen Sie **[!UICONTROL Einstellungen speichern]** und dann **OK** aus, um die Konfiguration abzuschließen.
 
-   Sobald der reCAPTCHA-Service konfiguriert ist, kann er in adaptiven Formularen verwendet werden. Weitere Informationen finden Sie unter [Verwenden von CAPTCHA in adaptiven Formularen](#using-captcha).
+   Sobald der reCAPTCHA-Service konfiguriert ist, kann er in adaptiven Formularen verwendet werden. Weitere Informationen finden Sie unter [Verwenden von CAPTCHA in adaptiven Formularen](#using-captcha-in-adaptive-forms).
 
 ![reCAPTCHA v2](/help/forms/using/assets/recaptcha-v2.png)
 
@@ -273,7 +273,7 @@ So validieren Sie ein CAPTCHA beim Übermitteln eines adaptiven Formulars automa
 
 #### Validieren von CAPTCHA mit Benutzeraktionen und -bedingungen {#validate-captcha-user-action}
 
-So walidieren Sie ein CAPTCHA basierend auf Bedingungen und Benutzeraktionen:
+So validieren Sie ein CAPTCHA basierend auf Bedingungen und Benutzeraktionen:
 
 1. Wählen Sie die CAPTCHA-Komponente und dann ![cmppr](assets/configure-icon.svg) aus, um die Komponenteneigenschaften anzuzeigen.
 1. Wählen Sie im Abschnitt **[!UICONTROL CAPTCHA validieren]** die Option **[!UICONTROL CAPTCHA mit Benutzeraktion validieren]**.

@@ -22,7 +22,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1168'
 ht-degree: 94%
@@ -109,7 +109,7 @@ Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten ausgefallen ist, di
 
    * **Eigenständig**
 
-     *Autor- und Veröffentlichungsinstanzen wiederherstellen*: Bei einem Systemausfall können Sie das Repository im letzten gesicherten Zustand wiederherstellen, indem Sie die unter &quot;[&#x200B; und Wiederherstellen“ &#x200B;](/help/sites-administering/backup-and-restore.md).
+     *Autor- und Veröffentlichungsinstanzen wiederherstellen*: Bei einem Systemausfall können Sie das Repository im letzten gesicherten Zustand wiederherstellen, indem Sie die unter &quot;[ und Wiederherstellen“ ](/help/sites-administering/backup-and-restore.md).
 
      Bei der vollständigen Wiederherstellung des Authoring-Knotens werden auch die Daten von Forms Manager und AEM Forms Workspace wiederhergestellt.
 
@@ -130,7 +130,7 @@ Falls der globale Dokumentenspeicher an einem anderen als dem ursprünglichen Sp
 
 >[!NOTE]
 >
->Dies ist der einzige Umstand, unter dem dieses Skript zum Ändern des Speicherorts für den Ordner des globalen Dokumentenspeichers verwendet werden sollte. Um den Speicherorts für den Ordner des globalen Dokumentenspeichers zu ändern, während AEM Forms ausgeführt wird, verwenden Sie Administration Console. (Siehe [Allgemeine AEM Forms-Einstellungen konfigurieren](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).)
+>Dies ist der einzige Umstand, unter dem dieses Skript zum Ändern des Speicherorts für den Ordner des globalen Dokumentenspeichers verwendet werden sollte. Um den Speicherorts für den Ordner des globalen Dokumentenspeichers zu ändern, während AEM Forms ausgeführt wird, verwenden Sie Administration Console. (Siehe [Allgemeine AEM Forms-Einstellungen konfigurieren](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#general-aem-forms-settings).)
 
 >[!NOTE]
 >

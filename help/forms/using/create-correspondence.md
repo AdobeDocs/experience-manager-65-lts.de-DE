@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3906'
 ht-degree: 96%
@@ -49,7 +49,7 @@ Wählen Sie den Brief für die Vorschau wie folgt aus:
 
    >[!NOTE]
    >
-   >Wenn dem Brief kein Datenwörterbuch zugeordnet ist, wird die Briefvorschau geöffnet. Wenn der Brief jedoch auf einem Datenwörterbuch basiert, zeigt Correspondence Management im Menü „Vorschau“ die Optionen „Vorschau“ und „Benutzerdefiniert“ an, zwischen denen Sie wählen können. Sie können auch Testdaten mit einem Datenwörterbuch verknüpfen. Wenn [Testdaten mit dem Datenwörterbuch verbunden sind](../../forms/using/data-dictionary.md#p-working-with-test-data-p), wird bei Auswahl der Option „Vorschau“ die normale Vorschau, ausgefüllt mit den Testdaten, angezeigt.
+   >Wenn dem Brief kein Datenwörterbuch zugeordnet ist, wird die Briefvorschau geöffnet. Wenn der Brief jedoch auf einem Datenwörterbuch basiert, zeigt Correspondence Management im Menü „Vorschau“ die Optionen „Vorschau“ und „Benutzerdefiniert“ an, zwischen denen Sie wählen können. Sie können auch Testdaten mit einem Datenwörterbuch verknüpfen. Wenn [Testdaten mit dem Datenwörterbuch verbunden sind](../../forms/using/data-dictionary.md#working-with-test-data), wird bei Auswahl der Option „Vorschau“ die normale Vorschau, ausgefüllt mit den Testdaten, angezeigt.
 
 1. Damit Sie eine Korrespondenz während der Vorschau rendern können, sollten Sie entweder ein Administrator oder Teil einer der folgenden Gruppen sein:
 
@@ -58,13 +58,13 @@ Wählen Sie den Brief für die Vorschau wie folgt aus:
 
    Wenn Sie nicht über die erforderlichen Berechtigungen verfügen, bitten Sie den Administrator um den entsprechenden Zugriff. Weitere Informationen zum Erstellen und Hinzufügen von Benutzern zu Gruppen finden Sie unter [Hinzufügen von Benutzern oder Gruppen zu einer Gruppe](/help/sites-administering/security.md). Wenn Sie versuchen, ohne die entsprechende Berechtigung eine Korrespondenz zu rendern, wird die Fehlerseite 404 angezeigt.
 
-1. Wenn Sie **Vorschau** > **Benutzerdefiniert** wählen, wird ein Dialogfeld geöffnet. Wählen Sie in diesem Dialogfeld eine dem Datenwörterbuch entsprechende Dateidatei für die Vorschau des Briefs und dann **Vorschau**. Eine Datendatei wird basierend auf einem Datenwörterbuch für einen bestimmten Brief erstellt: Weitere Informationen zur Datendatei finden Sie unter [Datenwörterbuch](../../forms/using/data-dictionary.md#p-working-with-test-data-p).
+1. Wenn Sie **Vorschau** > **Benutzerdefiniert** wählen, wird ein Dialogfeld geöffnet. Wählen Sie in diesem Dialogfeld eine dem Datenwörterbuch entsprechende Dateidatei für die Vorschau des Briefs und dann **Vorschau**. Eine Datendatei wird basierend auf einem Datenwörterbuch für einen bestimmten Brief erstellt: Weitere Informationen zur Datendatei finden Sie unter [Datenwörterbuch](../../forms/using/data-dictionary.md#working-with-test-data).
 
    ![Brief in der Vorschau anzeigen](assets/8_previewcustomdatafile.png)
 
 1. Die HTML-Vorschau des Briefs (Vorschau für Formulare auf Mobilgeräten) wird geöffnet, wobei die Registerkarte „Daten“ standardmäßig aktiv ist.
 
-   Weitere Informationen zu Formularen auf Mobilgeräten und den hierfür unterstützen Funktionen finden Sie unter[&#x200B; Funktionsunterschiede zwischen Mobile Forms und PDF-Formularen](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
+   Weitere Informationen zu Formularen auf Mobilgeräten und den hierfür unterstützen Funktionen finden Sie unter[ Funktionsunterschiede zwischen Mobile Forms und PDF-Formularen](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
    Es gibt drei Registerkarten: Daten, Inhalt und Anlagen. Wenn keine Datenelemente (Platzhaltervariablen und Layout-Felder) vorhanden sind, wird der Brief direkt in der Inhaltsansicht geöffnet. Die Registerkarte „Anlagen“ ist nur verfügbar, wenn Anlagen vorhanden sind oder der Bibliothekszugriff aktiviert ist.
 
@@ -254,7 +254,7 @@ Sie können Änderungen an Layout und Inhalt des Briefs vornehmen, um sicherzust
 
    ![Expliziter Seitenumbruch](assets/8_pagebreak.png)
 
-1. Um den Brief als Entwurf zu speichern, an dem Sie später weiter arbeiten können, wählen Sie „Als Entwurf speichern“ aus. Um diese Option verwenden zu können, muss Ihr Brief [veröffentlicht](../../forms/using/publishing-unpublishing-forms.md#publishanasset) sein. Weitere Informationen finden Sie unter „Entwurfsinstanz“ unter [Speichern von Entwürfen und Senden von Briefinstanzen](#savingdrafts).
+1. Um den Brief als Entwurf zu speichern, an dem Sie später weiter arbeiten können, wählen Sie „Als Entwurf speichern“ aus. Um diese Option verwenden zu können, muss Ihr Brief [veröffentlicht](../../forms/using/publishing-unpublishing-forms.md#publish-an-asset) sein. Weitere Informationen finden Sie unter „Entwurfsinstanz“ unter [Speichern von Entwürfen und Senden von Briefinstanzen](#savingdrafts).
 
    ![saveasdraft](assets/saveasdraft.png)
 
@@ -284,7 +284,7 @@ Wenn ein Brief in der Benutzeroberfläche „Korrespondenz erstellen“ gerender
 
 Es gibt zwei Arten von Briefinstanzen, die gespeichert werden können: Entwurfsinstanz und Sendeinstanz.
 
-* **Entwurfsinstanz**: Die Entwurfsinstanz erfasst den aktuellen Status des Briefs, den Sie in der Vorschau anzeigen. Um eine Entwurfsinstanz zu speichern, stellen Sie zunächst sicher, dass der Brief und alle Assets, auf die der Brief verweist, den Status „Veröffentlicht“ aufweisen. Weitere Informationen zum Veröffentlichen eines Briefs finden Sie unter[&#x200B; Veröffentlichen von Assets](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Sie müssen einen Brief veröffentlichen, bevor Sie ihn als Entwurf speichern können, denn wenn Sie einen Brief veröffentlichen, erstellen Sie zu diesem Zeitpunkt eine Version des Briefes, seiner abhängigen Assets und seiner Daten. Die veröffentlichte Version eines Briefs kann nicht von Ihnen oder einer anderen Person bearbeitet werden und kann ohne unerwartete Abweichungen von der veröffentlichten Version zu einem späteren Zeitpunkt wiederhergestellt werden. Sie können zu einem späteren Zeitpunkt zu dieser Instanz zurückkehren und dort fortfahren, wo Sie sie verlassen haben.
+* **Entwurfsinstanz**: Die Entwurfsinstanz erfasst den aktuellen Status des Briefs, den Sie in der Vorschau anzeigen. Um eine Entwurfsinstanz zu speichern, stellen Sie zunächst sicher, dass der Brief und alle Assets, auf die der Brief verweist, den Status „Veröffentlicht“ aufweisen. Weitere Informationen zum Veröffentlichen eines Briefs finden Sie unter[ Veröffentlichen von Assets](../../forms/using/publishing-unpublishing-forms.md#publish-an-asset). Sie müssen einen Brief veröffentlichen, bevor Sie ihn als Entwurf speichern können, denn wenn Sie einen Brief veröffentlichen, erstellen Sie zu diesem Zeitpunkt eine Version des Briefes, seiner abhängigen Assets und seiner Daten. Die veröffentlichte Version eines Briefs kann nicht von Ihnen oder einer anderen Person bearbeitet werden und kann ohne unerwartete Abweichungen von der veröffentlichten Version zu einem späteren Zeitpunkt wiederhergestellt werden. Sie können zu einem späteren Zeitpunkt zu dieser Instanz zurückkehren und dort fortfahren, wo Sie sie verlassen haben.
 
 * **Übermittlungsinstanz**: Übermittlungsinstanzen erfassen den Status des Briefs zum Sendezeitpunkt. Die Sendeinstanz speichert den PDF-Status der Briefinstanz, nachdem sie zusammen mit den vom Benutzer in der Benutzeroberfläche „Korrespondenz erstellen“ eingegebenen Daten nachbearbeitet wurde.
 

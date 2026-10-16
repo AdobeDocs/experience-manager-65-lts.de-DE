@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3826'
 ht-degree: 97%
@@ -47,7 +47,7 @@ In der Regel müssen Geschäftsbenutzer keine Kenntnisse über Metadatendarstell
 1. Eine Autorin oder ein Autor [erstellt das Datenwörterbuch](#createdatadictionary) entweder durch Hochladen eines Schemas oder von Grund auf.
 1. Der Verfasser erstellt Briefe und interaktive Kommunikation auf Grundlage des Datenwörterbuchs und verknüpft gegebenenfalls Datenwörterbuchelemente in Briefen und adaptiven Dokumenten.
 1. Ein Verfasser kann Beispieldaten-XML-Dateien herunterladen, die auf einem Datenwörterbuchschema basieren. Der Verfasser kann die Beispieldaten-XML-Dateien ändern, welche als Testdaten mit dem Datenwörterbuch verknüpft werden können. Diese wird während der Briefvorschau verwendet.
-1. Bei der [Vorschau eines Briefs](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p) wählt ein Verfasser den Brief mit den Daten (benutzerdefinierte Vorschau). Der Brief wird mit den vom Verfasser vorbefüllten Daten geöffnet. Er wird in „Korrespondenz erstellen“ geöffnet. Der Agent, der diesen Brief in der Vorschau anzeigt, kann den Inhalt, die Daten und die Anlagen in diesem Brief ändern und den fertigen Brief übermitteln. Weitere Informationen zum Erstellen von Briefen finden Sie unter [Korrespondenz erstellen](../../forms/using/create-letter.md).
+1. Bei der [Vorschau eines Briefs](../../forms/using/create-letter.md#types-of-linkage-available-for-each-of-the-fields) wählt ein Verfasser den Brief mit den Daten (benutzerdefinierte Vorschau). Der Brief wird mit den vom Verfasser vorbefüllten Daten geöffnet. Er wird in „Korrespondenz erstellen“ geöffnet. Der Agent, der diesen Brief in der Vorschau anzeigt, kann den Inhalt, die Daten und die Anlagen in diesem Brief ändern und den fertigen Brief übermitteln. Weitere Informationen zum Erstellen von Briefen finden Sie unter [Korrespondenz erstellen](../../forms/using/create-letter.md).
 
 ## Voraussetzung {#prerequisite}
 
