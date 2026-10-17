@@ -21,7 +21,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 59%
@@ -32,7 +32,7 @@ ht-degree: 59%
 
 Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz zum Erstellen von Kundenkommunikation in AEM Forms 6.5 LTS. Um Briefe in AEM Forms 6.5 LTS weiterhin verwenden zu können, müssen Sie das neueste AEMFD[Kompatibilitätspaket &#x200B;](https://experienceleague.adobe.com/de/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
-Mit dem AEMFD-Kompatibilitätspaket können [&#x200B; auch die folgenden Assets aus AEM Forms 6.5.22.0, 6.4, 6.3 und 6.2 für AEM Forms 6.5 LTS verwenden](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+Mit dem AEMFD-Kompatibilitätspaket können [&#x200B; auch die folgenden Assets aus AEM Forms 6.5.22.0, 6.4, 6.3 und 6.2 für AEM Forms 6.5 LTS verwenden](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms-6.5.lts)
 
 * Dokumentfragmente
 * Briefe

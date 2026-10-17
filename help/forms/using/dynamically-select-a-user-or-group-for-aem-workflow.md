@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 60%
@@ -40,7 +40,7 @@ Die Schritte „Aufgabe zuweisen“ und „Adobe Sign“ in [Forms-zentrierten W
 
 ## Verwenden von ECMAScript zur dynamischen Auswahl eines Benutzers oder einer Gruppe {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
-ECMAScript ist eine Skriptsprache. Sie wird für die Client-seitige Skripterstellung und Server-Anwendungen verwendet. Führen Sie die folgenden Schritte aus, um einen Benutzer oder eine Gruppe mithilfe von ECMAScript dynamisch auszuwählen:
+ECMAScript ist eine Skriptsprache. Sie wird für die clientseitige Skripterstellung und Serveranwendungen verwendet. Führen Sie die folgenden Schritte aus, um einen Benutzer oder eine Gruppe mithilfe von ECMAScript dynamisch auszuwählen:
 
 1. Öffnen Sie CRXDE Lite. Die URL lautet `https://'[server]:[port]'/crx/de/index.jsp`.
 1. Erstellen Sie eine Datei mit der Erweiterung „.ecma“ unter folgendem Pfad. Wenn der Pfad (Knotenstruktur) nicht vorhanden ist, erstellen Sie ihn:
@@ -240,7 +240,7 @@ Sie benötigen die Dateien [AEM Forms Client SDK](https://experienceleague.adobe
    </project>
    ```
 
-1. Fügen Sie Quell-Code hinzu, der die [RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html)-Java-Schnittstelle verwendet, um einen Benutzer oder eine Gruppe für den Schritt „Aufgabe zuweisen“ dynamisch auszuwählen. Beispielcode finden Sie unter [Beispiel für die dynamische Auswahl eines Benutzers oder einer Gruppe mithilfe einer Java-Schnittstelle](#-sample-scripts-for).
+1. Fügen Sie Quell-Code hinzu, der die [RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html)-Java-Schnittstelle verwendet, um einen Benutzer oder eine Gruppe für den Schritt „Aufgabe zuweisen“ dynamisch auszuwählen. Beispielcode finden Sie unter [Beispiel für die dynamische Auswahl eines Benutzers oder einer Gruppe mithilfe einer Java-Schnittstelle](#sample-java-code-to-dynamically-choose-a-user-or-a-group).
 1. Öffnen Sie eine Eingabeaufforderung und navigieren Sie zum Ordner, der das OSGi-Paket-Projekt enthält. Verwenden Sie den folgenden Befehl, um das OSGi-Paket zu erstellen:
 
    `mvn clean install`
@@ -251,7 +251,7 @@ Nachdem das Paket importiert wurde, ist die Option für die Auswahl der Java-Sch
 
 ### Beispiele für Java-Code zum dynamischen Auswählen eines Benutzers oder einer Gruppe {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
 
-Der Beispiel-Code im folgenden Beispiel wählt dynamisch einen Verantwortlichen für den Schritt „Adobe Sign“ aus. Sie verwenden den Code in einem OSGi-Paket. Vor der Verwendung der unten aufgeführten Codes müssen Sie sicherstellen, dass die Benutzerinformationen (E-Mail-Adressen und Telefonnummern), die im Code genannt werden, richtig sind. Wenn die im Code enthaltenen Benutzerdaten nicht korrekt sind, schlägt der entsprechende Prozess möglicherweise fehl.
+Der folgende Beispiel-Code wählt dynamisch einen Verantwortlichen für den Schritt „Adobe Sign“ aus. Sie verwenden den Code in einem OSGi-Paket. Vor der Verwendung des unten aufgeführten Codes müssen Sie sicherstellen, dass die Benutzerinformationen (E-Mail-Adressen und Telefonnummern), die im Code genannt werden, richtig sind. Wenn die im Code enthaltenen Benutzerdaten nicht korrekt sind, schlägt der entsprechende Prozess möglicherweise fehl.
 
 ```java
 /*************************************************************************

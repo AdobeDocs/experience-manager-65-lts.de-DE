@@ -28,7 +28,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 100%
@@ -135,7 +135,7 @@ Wiederholbare Teilformulare ähneln den wiederholbaren Bedienfeldern in adaptive
 1. Um die maximale Anzahl von Teilformularwiederholungen festzulegen, wählen Sie „Max.“ aus und geben Sie im entsprechenden Feld eine Zahl ein. Wenn Sie im Feld „Max.“ keinen Wert eingeben, ist die Anzahl von Teilformularwiederholungen unbeschränkt.
 1. Wenn Sie unabhängig von der Datenmenge eine bestimmte Anzahl an Teilformularwiederholungen festlegen möchten, wählen Sie „Anfangszahl“ aus und geben Sie im entsprechenden Feld eine Zahl ein. Wenn Sie diese Option aktivieren und keine oder weniger Daten zur Verfügung stehen als unter „Anfangszahl“ angegeben, werden leere Instanzen des Teilformulars in das Formular eingefügt.
 1. Fügen Sie im übergeordneten Teilformular zwei Schaltflächen hinzu: eine zum Hinzufügen der Instanz und eine andere zum Löschen der Instanz des wiederholbaren Teilformulars. Ausführliche Anweisungen finden Sie unter [Erstellen einer Aktion](https://help.adobe.com/de_DE/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
-1. Verknüpfen Sie nun die Formularvorlage mit dem adaptiven Formular. Ausführliche Anweisungen finden Sie unter [Erstellen eines adaptiven Formulars basierend auf einer Vorlage](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
+1. Verknüpfen Sie nun die Formularvorlage mit dem adaptiven Formular. Ausführliche Anweisungen finden Sie unter [Erstellen eines adaptiven Formulars basierend auf einer Vorlage](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template).
 1. Verwenden Sie die in Schritt 9 erstellten Schaltflächen, um Teilformulare hinzuzufügen und zu entfernen.
 
 Die angehängte ZIP-Datei enthält ein Beispiel für ein wiederholbares Teilformular.

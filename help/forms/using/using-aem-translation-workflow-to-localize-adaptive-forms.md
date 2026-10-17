@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 100%
@@ -62,9 +62,9 @@ Der Dienst für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adaptiv
 
    Weitere Informationen zu Einstellungen und Konfigurationen für Datensatzdokumente finden Sie unter:
 
-   [Konfiguration von Vorlagen für Datensatzdokumente](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
+   [Konfiguration von Vorlagen für Datensatzdokumente](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-template-configuration)
 
-   [Einstellungen für Datensatzdokumente](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
+   [Einstellungen für Datensatzdokumente](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-settings)
 
 1. [Passen Sie die Branding-Informationen des Datensatzdokuments an](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) und stellen Sie sicher, dass für das Browser-Gebietsschema die Sprache eingestellt ist, für die Sie das adaptive Formular mithilfe maschineller Übersetzung lokalisiert haben. Das Browser-Gebietsschema hilft beim Lokalisieren der Branding-Informationen im Datensatzdokument.
 1. Um das lokalisierte Datensatzdokument anzuzeigen, wählen Sie „Vorschau generieren“ aus. Die PDF-Datei des Datensatzdokuments wird erstellt und in einer neuen Registerkarte im Browser geöffnet.

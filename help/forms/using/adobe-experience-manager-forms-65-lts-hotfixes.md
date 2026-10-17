@@ -21,7 +21,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 13%
@@ -125,7 +125,7 @@ Dieser Artikel gilt für AEM Forms 6.5 LTS. Informationen zu AEM 6.5-Bereitstell
 
 Führen Sie die folgenden Schritte aus, um das Hotfix herunterzuladen und zu installieren:
 
-1. Laden Sie das [Hotfix](#hotfix-for-adaptive-forms) über den Software Distribution-Link herunter.
+1. Laden Sie das [Hotfix](#hotfix-for-aem-forms) über den Software Distribution-Link herunter.
 1. Extrahieren Sie die Hotfix-Archivdatei, damit Sie ein Experience Manager-Paket (.zip) und Bundle-Dateien (.jar) abrufen können.
 1. Laden Sie das Paket (.zip) über den [Paket-Manager](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=de#accessing) hoch und installieren Sie es.
 1. Öffnen Sie die Pakete des Konfigurations-Managers `https://server:host/system/console/bundles`, laden Sie sie hoch und installieren Sie das Paket (.jar). Das Hotfix wird installiert.

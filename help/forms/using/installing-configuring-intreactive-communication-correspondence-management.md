@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 97%
@@ -57,10 +57,10 @@ Bevor Sie mit der Installation und Konfiguration interaktiver Kommunikations- un
 * Hardware- und Software-Infrastruktur ist eingerichtet. Eine detaillierte Liste der unterstützten Hardware und Software finden Sie unter [Technische Anforderungen](/help/sites-deploying/technical-requirements.md).
 
 * Der Installationspfad der AEM-Instanz enthält keine Leerzeichen.
-* Eine AEM Instanz läuft. In der AEM-Terminologie entspricht eine „Instanz“ einer Kopie von AEM, die auf einem Server im Autor- oder Veröffentlichungsmodus ausgeführt wird. Sie benötigen mindestens eine AEM-Instanz (Autor oder Verarbeitung), um die interaktiven Kommunikations- und Korrespondenzverwaltungsfunktionen von AEM Forms ausführen zu können:
+* Eine AEM-Instanz läuft. In der AEM-Terminologie entspricht eine „Instanz“ einer Kopie von AEM, die auf einem Server im Autor- oder Veröffentlichungsmodus ausgeführt wird. Sie benötigen mindestens eine AEM-Instanz (Autor oder Verarbeitung), um die interaktiven Kommunikations- und Korrespondenzverwaltungsfunktionen von AEM Forms ausführen zu können:
 
   * **Autor**: Eine zum Erstellen, Hochladen und Bearbeiten von Inhalten sowie zum Verwalten der Website verwendete AEM-Instanz. Sobald der Inhalt für die Veröffentlichung bereit ist, wird er an die Veröffentlichungsinstanz repliziert.
-  * **Verarbeitung:** Eine Verarbeitungsinstanz ist eine [extrasichere AEM-Authoring-Instanz](/help/forms/using/hardening-securing-aem-forms-environment.md). Nach der Installation können Sie eine Autoreninstanz festlegen und absichern.
+  * **Verarbeitung:** Eine Verarbeitungsinstanz ist eine [extrasichere AEM-Authoring-Instanz](/help/forms/using/hardening-securing-aem-forms-environment.md). Nach der Installation können Sie eine Autoreninstanz einrichten und absichern.
 
   * **Veröffentlichung**: Eine AEM-Instanz, die die veröffentlichten Inhalte über das Internet oder ein internes Netzwerk öffentlich zugänglich macht.
 
@@ -121,7 +121,7 @@ Das AEM Forms Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. 
    >
    > Es wird empfohlen, den Tastaturbefehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
-1. Wiederholen Sie Schritten 1-7 für alle Autor- und Veröffentlichungsinstanzen.
+1. Wiederholen Sie die Schritte 1-7 für alle Autor- und Veröffentlichungsinstanzen.
 
 ## Auf die Installation folgende Konfigurationen {#post-installation-configurations}
 
@@ -145,16 +145,16 @@ Führen Sie sowohl auf der Autor- als auch auf der Veröffentlichungsinstanz fol
    ```
 
 1. Speichern und schließen Sie die Datei und starten Sie die AEM-Instanz.
-1. Wiederholen Sie Schritten 1-4 für alle Autor- und Veröffentlichungsinstanzen.
+1. Wiederholen Sie die Schritte 1-4 für alle Autor- und Veröffentlichungsinstanzen.
 
 #### Konfigurieren Sie den Serialisierungsagenten {#configure-the-serialization-agent}
 
 Führen Sie auf allen Autoren- und Veröffentlichungsinstanzen folgende Schritte aus, um das Paket zur Zulassungsliste hinzuzufügen:
 
-1. Öffnen Sie AEM Configuration Manager in einem Browserfenster. Die Standard-URL lautet https://&#39;[server]:[port]&#39;/system/console/configMgr.
+1. Öffnen Sie AEM Configuration Manager in einem Browser-Fenster. Die Standard-URL lautet https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Suchen und öffnen Sie die **Deserialisierungs-Firewallkonfiguration**.
 1. Fügen Sie das Paket **sun.util.calendar** zum Feld **Zulassungsliste** hinzu. Klicken Sie auf Speichern.
-1. Wiederholen Sie Schritten 1-3 für alle Autor- und Veröffentlichungsinstanzen.
+1. Wiederholen Sie die Schritte 1-3 für alle Autor- und Veröffentlichungsinstanzen.
 
 ### Optionale Konfigurationen nach der Installation {#optional-post-installation-configurations}
 
@@ -189,7 +189,7 @@ Der Dispatcher ist das Werkzeug für das Caching und/oder den Lastenausgleich vo
 
 Ihre Kunden werden interaktive Kommunikation wahrscheinlich verlassen, wenn sie nicht davon angesprochen fühlen. Für die Kundschaft ist dies ein frustrierendes Erlebnis, und für Ihr Unternehmen kann es zusätzlichen Support-Aufwand und Mehrkosten bedeuten. Das Kundenerlebnis optimal zu gestalten und dadurch eine höhere Konvertierungsrate zu erzielen, ist absolut unverzichtbar und stellt zugleich eine große Herausforderung dar. AEM Forms ist der Schlüssel zu diesem Problem.
 
-AEM Forms kann mit Adobe Target, einer Adobe Experience Cloud-Lösung, integriert werden, um Kundinnen und Kunden ein personalisiertes und ansprechendes Erlebnis über verschiedene digitale Kanäle zu bieten. Um Adobe Target zur Personalisierung einer interaktiven Kommunikation zu verwenden, [integrieren Sie Adobe Target in AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
+AEM Forms kann mit Adobe Target, einer Adobe Experience Cloud-Lösung, integriert werden, um Kundinnen und Kunden ein personalisiertes und ansprechendes Erlebnis über verschiedene digitale Kanäle zu bieten. Um Adobe Target zur Personalisierung einer interaktiven Kommunikation zu verwenden, [integrieren Sie Adobe Target in AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#set-up-and-integrate-target-in-aem-forms).
 
 #### Konfigurieren der SSL-Kommunikation für das Formulardatenmodell  {#configure-ssl-communcation-for-form-data-model}
 

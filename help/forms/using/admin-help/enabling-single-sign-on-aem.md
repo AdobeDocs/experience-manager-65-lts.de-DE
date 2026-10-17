@@ -1,5 +1,5 @@
 ---
-title: Aktivieren der einmaligen Anmeldung in AEM Forms
+title: Aktivieren von Single Sign-on in AEM Forms
 description: Erfahren Sie, wie Sie Single Sign-on (SSO) mithilfe von HTTP-Headern und SPNEGO aktivieren.
 contentOwner: admin
 content-type: reference
@@ -29,12 +29,12 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 94%
 ---
-# Aktivieren der einmaligen Anmeldung in AEM Forms{#enabling-single-sign-on-in-aem-forms}
+# Aktivieren von Single Sign-on in AEM Forms{#enabling-single-sign-on-in-aem-forms}
 
 >[!NOTE]
 > 
@@ -61,12 +61,12 @@ Sie können SSO auch über SPNEGO aktivieren. (Siehe [Aktivieren von SSO mit SPN
 1. Legen Sie die restlichen Einstellungen auf der Seite wie erforderlich fest und klicken Sie auf „OK“.
 
    * **SSO-Typ:**(Obligatorisch) Wählen Sie „HTTP-Kopfzeile“, um die einmalige Anmeldung mithilfe von HTTP-Kopfzeilen zu aktivieren.
-   * **HTTP-Header für Benutzer-Bezeichner:** (Obligatorisch) Name der Kopfzeile, deren Wert den eindeutigen Bezeichner des angemeldeten Benutzers enthält. Die Benutzerverwaltung verwendet diesen Wert, um die Person in der Benutzerverwaltungsdatenbank zu suchen. Der aus diesem Header extrahierte Wert muss mit der eindeutigen Kennung der Person übereinstimmen, die mit dem LDAP-Verzeichnis synchronisiert wurde. (Siehe [Benutzereinstellungen](/help/forms/using/admin-help/adding-configuring-users.md#user-settings).)
-   * **Bezeichnerwert wird der Benutzer-ID des Benutzers anstelle des eindeutigen Bezeichners des Benutzers zugeordnet:** Ordnet den eindeutigen Bezeichnerwert des Benutzers der Benutzer-ID zu. Wählen Sie diese Option, wenn der eindeutige Bezeichner des Benutzers ein binärer Wert ist, der nicht einfach über HTTP-Kopfzeilen (z. B. „objectGUID“, wenn Sie Benutzer aus Active Directory synchronisieren) weitergeleitet werden kann.
+   * **HTTP-Header für Benutzer-Bezeichner:** (Obligatorisch) Name der Kopfzeile, deren Wert den eindeutigen Bezeichner des angemeldeten Benutzers enthält. Die Benutzerverwaltung verwendet diesen Wert, um den Benutzer in der Benutzerverwaltungsdatenbank zu suchen. Der aus diesem Header extrahierte Wert muss mit der eindeutigen Kennung der Person übereinstimmen, die mit dem LDAP-Verzeichnis synchronisiert wurde. (Siehe [Benutzereinstellungen](/help/forms/using/admin-help/adding-configuring-users.md#user-settings).)
+   * **Bezeichnerwert wird der Benutzer-ID des Benutzers anstelle des eindeutigen Bezeichners des Benutzers zugeordnet:** Ordnet den eindeutigen Bezeichnerwert des Benutzers der Benutzer-ID zu. Wählen Sie diese Option, wenn die eindeutige Kennung des Benutzers ein binärer Wert ist, der nicht einfach über HTTP-Kopfzeilen (z. B. „objectGUID“, wenn Sie Benutzer aus Active Directory synchronisieren) weitergeleitet werden kann.
    * **HTTP-Kopfzeile für die Domain:**(Nicht obligatorisch) Name der Kopfzeile, deren Wert den Domain-Namen enthält. Verwenden Sie diese Einstellung nur, wenn die Person nicht mithilfe eines einzelnen HTTP-Headers eindeutig identifiziert werden kann. Verwenden Sie diese Einstellung, wenn mehrere Domains vorhanden sind und der eindeutige Bezeichner nur innerhalb der angegebenen Domain eindeutig ist. Geben Sie in diesem Fall den Kopfzeilennamen in dieses Textfeld ein und legen Sie die Domain-Zuordnung für die verschiedenen Domains im Feld „Domain-Zuordnung“ fest. (Siehe [Bearbeiten und Konvertieren bestehender Domains](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).)
    * **Domain-Zuordnung:**(Obligatorisch) Hier können Sie die Zuordnung für mehrere Domains im Format *Kopfzeilenwert=Domain-Name* angeben.
 
-     Betrachten wir als Beispiel einen Fall, in dem die HTTP-Kopfzeile für eine Domain „domainName“ lautet und die Werte „Domain1“, „Domain2“ oder „Domain3“ haben kann. In diesem Fall ordnen Sie die domainName-Werte mithilfe der Domain-Zuordnung User Management-Domain-Namen zu. Jede Zuordnung muss in einer eigenen Zeile stehen:
+     Betrachten wir als Beispiel einen Fall, in dem die HTTP-Kopfzeile für eine Domain „domainName“ lautet und die Werte „domain1“, „domain2“ oder „domain3“ haben kann. In diesem Fall ordnen Sie die domainName-Werte mithilfe der Domain-Zuordnung User Management-Domain-Namen zu. Jede Zuordnung muss in einer eigenen Zeile stehen:
 
      Domain1=UMdomain1
 
@@ -80,7 +80,7 @@ Die Schritte für die Konfiguration zulässiger Referrer finden Sie unter [Konfi
 
 ### Zuweisen von Rollen an Benutzende und Gruppen
 
-Klicken Sie, um die Schritte zum [Zuweisen von Rollen zu Benutzenden und Gruppen](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups) zu erfahren.
+Klicken Sie, um die Schritte zum [Zuweisen von Rollen zu Benutzenden und Gruppen](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-groups) zu erfahren.
 
 ## Aktivieren von SSO über SPNEGO {#enable-sso-using-spnego}
 
@@ -92,8 +92,8 @@ Sie können SSO auch über HTTP-Header aktivieren. (Siehe [Aktivieren von SSO mi
 >
 >AEM Forms auf JEE unterstützt nicht die Konfiguration von SSO mithilfe von Kerberos/SPNEGO in einer Umgebung mit mehreren untergeordneten Domains.
 
-1. Legen Sie die Domain fest, in der SSO aktiviert werden soll. Der AEM-Formular-Server und die Benutzenden müssen alle zur selben Windows-Domain bzw. vertrauenswürdigen Domain gehören.
-1. Erstellen Sie in Active Directory eine Benutzerin oder einen Benutzer, die bzw. der den AEM-Formular-Server repräsentiert. (Siehe [Benutzerkonto erstellen](enabling-single-sign-on-aem.md#create-a-user-account).) Wenn Sie mehr als eine Domain für die Verwendung von SPNEGO konfigurieren, stellen Sie sicher, dass die Kennwörter für jeden dieser Benutzer unterschiedlich sind. Wenn die Kennwörter nicht verschieden sind, kann SPNEGO-SSO nicht verwendet werden.
+1. Legen Sie fest, welche Domain zum Aktivieren von SSO verwendet werden soll. Der Formular-Server und die Benutzenden müssen alle zur selben Windows-Domain bzw. vertrauenswürdigen Domain gehören.
+1. Erstellen Sie in Active Directory eine Benutzerin oder einen Benutzer, die bzw. der den Formular-Server repräsentiert. (Siehe [Benutzerkonto erstellen](enabling-single-sign-on-aem.md#create-a-user-account).) Wenn Sie mehr als eine Domain für die Verwendung von SPNEGO konfigurieren, stellen Sie sicher, dass die Kennwörter für jeden dieser Benutzer unterschiedlich sind. Wenn die Kennwörter nicht verschieden sind, funktioniert SPNEGO-SSO nicht.
 1. Weisen Sie den Dienstprinzipalnamen zu. (Siehe [Zuweisen eines Dienstprinzipalnamen (SPN)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
 1. Konfigurieren Sie den Domain-Controller. (Siehe [Verhindern von Fehlern bei der Kerberos-Integritätsprüfung](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
 1. Anschließend müssen Sie eine Unternehmens-Domain hinzufügen oder bearbeiten (siehe [Domains hinzufügen](/help/forms/using/admin-help/adding-domains.md#adding-domains) oder [Bestehende Domains bearbeiten oder umwandeln](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)). Führen Sie beim Erstellen oder Bearbeiten der Unternehmens-Domain die folgenden Aufgaben aus:
@@ -125,7 +125,7 @@ Sie können SSO auch über HTTP-Header aktivieren. (Siehe [Aktivieren von SSO mi
 1. Geben Sie ein Kennwort ein. Legen Sie es beispielsweise auf *password* fest. Stellen Sie sicher, dass nur „Kennwort läuft nie ab“ ausgewählt ist und keine anderen Optionen ausgewählt sind.
 1. Klicken Sie auf „Weiter“ und dann auf „Beenden“.
 
-### Zuweisen eines Dienstprinzipalnamen (SPN) {#map-a-service-principal-name-spn}
+### Zuweisen eines Dienstprinzipalnamens (SPN) {#map-a-service-principal-name-spn}
 
 1. Beziehen Sie das Dienstprogramm „KtPass“. Dieses Dienstprogramm wird verwendet, um ein SPN einem REALM zuzuweisen. Sie können das Dienstprogramm „KtPass“ als Teil des Windows Server Tool Packs oder Resource Kits erhalten. (Siehe [Windows Server 2003 Service Pack 1 Support Tools](https://support.microsoft.com/kb/892777).)
 1. Führen Sie an einer Eingabeaufforderung den Befehl `ktpass` mit folgenden Argumenten aus:
@@ -140,7 +140,7 @@ Sie können SSO auch über HTTP-Header aktivieren. (Siehe [Aktivieren von SSO mi
 
    **Host:** Vollqualifizierter Name des Formular-Servers oder eine eindeutige URL. In diesem Beispiel ist er auf „lcserver.um.lc.com“ festgelegt.
 
-   **BEREICH:** Der Active Directory-Bereich für den Domain-Controller. In diesem Beispiel ist er auf „UM.LC.COM“ festgelegt. Stellen Sie sicher, dass Sie den Bereich in Großbuchstaben eingeben. Führen Sie die folgenden Schritte aus, um den Bereich für Windows 2003 zu bestimmen:
+   **BEREICH:** Der Active Directory-Bereich für den Domain-Controller. In diesem Beispiel ist er auf „UM.LC.COM“ festgelegt. Stellen Sie sicher, dass Sie den Realm in Großbuchstaben eingeben. Führen Sie die folgenden Schritte aus, um den Bereich für Windows 2003 zu bestimmen:
 
    * Klicken Sie mit der rechten Maustaste auf „Arbeitsplatz“ und wählen Sie „Eigenschaften“ aus.
    * Klicken Sie auf die Registerkarte „Computer-Name“. Der Wert von „Domain-Name“ ist der Bereichsname.
@@ -154,7 +154,7 @@ DsCrackNames returned 0x2 in the name entry for spnegodemo.
 ktpass:failed getting target domain for specified user.
 ```
 
-Versuchen Sie, „spnegodemo@um.lc.com“ als Benutzerangabe festzulegen:
+Versuchen Sie, den Benutzer als „spnegodemo@um.lc.com“ anzugeben:
 
 ```shell
 ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
@@ -178,7 +178,7 @@ Wenn der Zugriff auf den Server über den Computernamen erfolgt, z. B. https://l
 **Konfigurieren von Internet Explorer 6.x**
 
 1. Wechseln Sie zu „Extras“ > „Internetoptionen“ und klicken Sie auf die Registerkarte „Sicherheit“.
-1. Klicken Sie auf das Symbol „Lokales Intranet“ und dann auf „Websites“.
+1. Klicken Sie auf das Symbol „Lokales Intranet“ und dann auf „Sites“.
 1. Klicken Sie auf „Erweitert“ und geben Sie in das Feld „Diese Website zur Zone hinzufügen“ die URL Ihres Formular-Servers ein. Geben Sie beispielsweise `https://lcserver.um.lc.com`
 1. Klicken Sie wiederholt auf „OK“, bis alle Dialogfelder geschlossen sind.
 1. Testen Sie die Konfiguration durch Zugriff auf die URL Ihres AEM-Formular-Servers. Geben Sie zum Beispiel in das URL-Feld des Browsers `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true` ein
@@ -190,7 +190,7 @@ Wenn der Zugriff auf den Server über den Computernamen erfolgt, z. B. https://l
    Das Mozilla Firefox-:config „about1“ wird angezeigt.
 
 1. Geben Sie in das Feld „Filter“ den Wert `negotiate` ein.
-1. Klicken Sie in der angezeigten Liste auf „network.negotiate-auth.trusted-uris“ und geben Sie einen der folgenden Befehle Ihrer Umgebung entsprechend ein:
+1. Klicken Sie in der angezeigten Liste auf „network.negotiate-auth.trusted-uri“ und geben Sie einen der folgenden Befehle Ihrer Umgebung entsprechend ein:
 
    `.um.lc.com`- Konfiguriert Firefox so, dass SPNEGO für jede URL zugelassen wird, die auf um.lc.com endet. Stellen Sie sicher, dass Sie den Punkt („.“) am Anfang mit einschließen.
 
@@ -198,7 +198,7 @@ Wenn der Zugriff auf den Server über den Computernamen erfolgt, z. B. https://l
 
 1. Testen Sie die Konfiguration, indem Sie auf die Anwendung zugreifen. Die Startseite für die Zielanwendung sollte angezeigt werden.
 
-Klicken Sie, um die Schritte zum [Zuweisen von Rollen zu Benutzenden und Gruppen](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups) zu erfahren.
+Klicken Sie, um die Schritte zum [Zuweisen von Rollen zu Benutzenden und Gruppen](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-groups) zu erfahren.
 
 ## Zuweisen von Rollen an Benutzende und Gruppen {#assign-roles-to-users-groups}
 

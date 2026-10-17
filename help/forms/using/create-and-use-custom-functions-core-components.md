@@ -18,12 +18,12 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3533'
 ht-degree: 98%
 ---
-# Benutzerdefinierte Funktionen in Kernkomponenten für adaptive Formulare
+# Benutzerdefinierte Funktionen in Adaptive Forms Core Components
 
 In diesem Artikel wird das Erstellen benutzerdefinierter Funktionen mit der neuesten Kernkomponente für adaptive Formulare beschrieben, die die aktuellsten Funktionen aufweist, z. B.:
 
@@ -42,7 +42,7 @@ Die Dokumentation zu AEM as a Cloud Service finden Sie unter [AEM Forms auf Clou
 
 ## Einführung
 
-AEM Forms 6.5 umfasst JavaScript-Funktionen, mit denen Sie mithilfe des Regeleditors komplexe Geschäftsregeln definieren können. AEM Forms bietet verschiedene vordefinierte Funktionen, für die jedoch in vielen Fällen benutzerdefinierte Funktionen definiert werden müssen, damit sie in mehreren Formularen verwendet werden können. Diese benutzerdefinierten Funktionen erweitern die Möglichkeiten von Formularen, indem sie die Be- und Verarbeitung von eingegebenen Daten ermöglichen, wenn spezifische Anforderungen erfüllt werden sollen. Darüber hinaus ermöglichen sie dynamische Veränderungen des Formularverhaltens basierend auf den vordefinierten Kriterien.
+AEM Forms 6.5 umfasst JavaScript-Funktionen, mit denen Sie mithilfe des Regeleditors komplexe Geschäftsregeln definieren können. AEM Forms bietet verschiedene vordefinierte Funktionen, in vielen Anwendungsfällen müssen jedoch eigene benutzerdefinierte Funktionen definiert werden, damit sie in mehreren Formularen verwendet werden können. Diese benutzerdefinierten Funktionen erweitern die Möglichkeiten von Formularen, indem sie die Be- und Verarbeitung eingegebener Daten ermöglichen, um spezifische Anforderungen zu erfüllen. Darüber hinaus ermöglichen sie dynamische Veränderungen des Formularverhaltens basierend auf den vordefinierten Kriterien.
 
 ### Vorteile benutzerdefinierter Funktionen {#uses-of-custom-function}
 
@@ -53,7 +53,7 @@ Vorteile der Verwendung benutzerdefinierter Funktionen in Kernkomponenten für a
 * **Datenverarbeitung**: Benutzerdefinierte Funktionen helfen bei der Verarbeitung der in die Formularfelder eingegebenen Daten.
 * **Datenvalidierung**: Benutzerdefinierte Funktionen ermöglichen Ihnen benutzerdefinierte Überprüfungen von Formulareingaben und das Anzeigen bestimmter Fehlermeldungen.
 * **Dynamisches Verhalten**: Mit benutzerdefinierten Funktionen können Sie das dynamische Verhalten Ihrer Formulare anhand bestimmter Bedingungen steuern. Beispielsweise können Sie Felder ein-/ausblenden, Feldwerte ändern oder die Formularlogik dynamisch anpassen.
-* **Integration**: Sie können benutzerdefinierte Funktionen zur Integration mit externen APIs oder Diensten verwenden. Dies ist hilfreich beim Abrufen von Daten aus externen Quellen, beim Senden von Daten an externe REST-Endpunkte oder beim Ausführen benutzerdefinierter Aktionen entsprechend externer Ereignisse.
+* **Integration**: Sie können benutzerdefinierte Funktionen zur Integration mit externen APIs oder Diensten verwenden. Dies ist hilfreich beim Abrufen von Daten aus externen Quellen, beim Senden von Daten an externe REST-Endpunkte oder beim Ausführen benutzerdefinierter Aktionen auf der Grundlage externer Ereignisse.
 
 Benutzerdefinierte Funktionen sind im Wesentlichen Client-Bibliotheken, die in der JavaScript-Datei hinzugefügt werden. Nachdem Sie eine benutzerdefinierte Funktion erstellt haben, steht sie im Regeleditor zur Auswahl durch Benutzende in einem adaptiven Formular zur Verfügung. Die benutzerdefinierten Funktionen sind im Regeleditor anhand der JavaScript-Anmerkungen zu erkennen.
 
@@ -94,7 +94,7 @@ Der **Parameter** ist eine Liste von Argumenten, die von benutzerdefinierten Fun
   * date[]: Stellt ein Array von Datumswerten dar.
   * array: Stellt ein generisches Array dar, das Werte verschiedener Typen enthält.
   * object: Stellt ein an eine benutzerdefinierte Funktion übergebenes Formularobjekt dar, anstatt dessen Wert direkt weiterzugeben.
-  * scope: Stellt das globals-Objekt dar, das schreibgeschützte Variablen wie Formularinstanzen, Zielfeldinstanzen und Methoden zum Ausführen von Formularänderungen innerhalb der benutzerdefinierten Funktionen enthält. Es wird als letzter Parameter in den JavaScript-Anmerkungen deklariert und ist für den Regeleditor eines adaptiven Formulars nicht sichtbar. Der Parameter „scope“ greift auf das Objekt des Formulars oder der Komponente zu, um die für die Formularverarbeitung erforderliche Regel oder das Ereignis auszulösen. Um weitere Informationen zum globals-Objekt und dessen Verwendung zu erhalten, [klicken Sie hier](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects).
+  * scope: Stellt das globals-Objekt dar, das schreibgeschützte Variablen wie Formularinstanzen, Zielfeldinstanzen und Methoden zum Ausführen von Formularänderungen innerhalb der benutzerdefinierten Funktionen enthält. Es wird als letzter Parameter in den JavaScript-Anmerkungen deklariert und ist für den Regeleditor eines adaptiven Formulars nicht sichtbar. Der Parameter „scope“ greift auf das Objekt des Formulars oder der Komponente zu, um die für die Formularverarbeitung erforderliche Regel oder das Ereignis auszulösen. Um weitere Informationen zum globals-Objekt und dessen Verwendung zu erhalten, [klicken Sie hier](/help/forms/using/create-and-use-custom-functions-core-components.md#support-field-and-global-objects).
 
 Beim Parametertyp **wird nicht zwischen Groß- und Kleinschreibung unterschieden** und Leerzeichen sind im Parameternamen nicht zulässig.
 
@@ -488,7 +488,7 @@ Die erstellte Ordnerstruktur sieht wie folgt aus:
 
    ![Erstellte Ordnerstruktur der Client-Bibliothek](/help/forms/using/assets/clientlibrary_folderstructure.png)
 1. Doppelklicken Sie auf die Datei `functions.js`, um den Editor zu öffnen. Die Datei enthält den Code für die benutzerdefinierte Funktion.
-Fügen wir der JavaScript-Datei den folgenden Code hinzu, um das Alter basierend auf dem Geburtsdatum (JJJJ-MM-TT) zu berechnen.
+Fügen wir der JavaScript-Datei den folgenden Code hinzu, um das Alter basierend auf dem Geburtsdatum (YYYY-MM-DD) zu berechnen.
 
    ```javascript
        /**
@@ -543,9 +543,9 @@ Jetzt können Sie eine Regel erstellen, um benutzerdefinierte Funktionen im Rege
 
 ![Hinzufügen der benutzerdefinierten Funktion zur Client-Bibliothek](/help/forms/using//assets/calculateage-customfunction.png)
 
-Im Folgenden erfahren Sie, wie Sie einen benutzerdefinierten Fehler-Handler mit dem [Aufrufdienst des Regeleditors in AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke) konfigurieren und verwenden.
+Im Folgenden erfahren Sie, wie Sie einen benutzerdefinierten Fehler-Handler mit dem [Aufrufdienst des Regeleditors in AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke) konfigurieren und verwenden.
 
-## Verwenden von benutzerdefinierten Funktionen in einem adaptiven Formular. {#use-custom-functions}
+## Verwenden von benutzerdefinierten Funktionen in einem adaptiven Formular {#use-custom-functions}
 
 In einem adaptiven Formular können Sie [benutzerdefinierte Funktionen im Regeleditor](/help/forms/using/rule-editor-core-components.md) verwenden.
 Fügen Sie der JavaScript-Datei (`Function.js`) den folgenden Code hinzu, um das Alter basierend auf dem Geburtsdatum (JJJJ-MM-TT) zu berechnen. Erstellen Sie eine benutzerdefinierte Funktion als `calculateAge()`, die das Geburtsdatum als Eingabe annimmt und das Alter zurückgibt:

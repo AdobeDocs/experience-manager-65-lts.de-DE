@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 94%
@@ -50,4 +50,4 @@ Verwenden Sie einfache Variablentypen (z. B. String oder Int) und vermeiden Sie
 
 Verwenden Sie den globalen Dokumentenspeicher (GDS) effizient. Das GDS-Verzeichnis auf dem Formular-Server wird unter anderem zum Speichern von Dateien verwendet, die an Dienste übergeben werden, die Teil von AEM Forms in Prozessen sind. Zum Verbessern der Leistung werden kleinere Dokumente stattdessen im Arbeitsspeicher gespeichert und bleiben in der Datenbank erhalten.
 
-Die Administrationskonsole stellt die Eigenschaft „Standardmäßige Maximalgröße für Inline-Dokumente“ zum Konfigurieren der Maximalgröße von Dokumenten bereit, die im Arbeitsspeicher gespeichert werden und in der Datenbank erhalten bleiben. (Siehe [Allgemeine AEM Forms-Einstellungen konfigurieren](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) Wenn Sie diese Eigenschaft auf einen niedrigen Wert festlegen, werden die meisten Dokumente im Ordner des globalen Dokumentenspeichers und nicht in der Datenbank gespeichert. Der Vorteil besteht darin, dass Sie nicht mehr benötigte Dateien leichter löschen können, wenn sie im GDS-Verzeichnis gespeichert sind.
+Die Administrationskonsole stellt die Eigenschaft „Standardmäßige Maximalgröße für Inline-Dokumente“ zum Konfigurieren der Maximalgröße von Dokumenten bereit, die im Arbeitsspeicher gespeichert werden und in der Datenbank erhalten bleiben. (Siehe [Allgemeine AEM Forms-Einstellungen konfigurieren](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#general-aem-forms-settings).) Wenn Sie diese Eigenschaft auf einen niedrigen Wert festlegen, werden die meisten Dokumente im Ordner des globalen Dokumentenspeichers und nicht in der Datenbank gespeichert. Der Vorteil besteht darin, dass Sie nicht mehr benötigte Dateien leichter löschen können, wenn sie im GDS-Verzeichnis gespeichert sind.

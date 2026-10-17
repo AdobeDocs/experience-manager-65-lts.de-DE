@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 100%
@@ -41,7 +41,7 @@ Standardmäßig speichert AEM Forms die mit dem Entwurf und der Übermittlung ve
 
 Komponenten des AEM-Formularportals bieten jedoch Datendienste, mit denen Sie die Implementierung der Speicherung von Benutzerdaten für Entwürfe und Übermittlungen anpassen können. Beispiel: Sie können die Daten in einem Datenspeicher speichern, der derzeit in Ihrem Unternehmen implementiert ist.
 
-Um die Speicherung von Benutzerdaten anzupassen, müssen Sie die Dienste [Entwurfsdaten](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) und [Übermittlungsdaten](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p) implementieren.
+Um die Speicherung von Benutzerdaten anzupassen, müssen Sie die Dienste [Entwurfsdaten](/help/forms/using/custom-draft-submission-data-services.md#draft-data-service) und [Übermittlungsdaten](/help/forms/using/custom-draft-submission-data-services.md#submission-data-service) implementieren.
 
 ## Voraussetzungen {#prerequisites}
 

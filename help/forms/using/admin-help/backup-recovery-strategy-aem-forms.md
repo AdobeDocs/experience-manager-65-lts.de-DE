@@ -1,6 +1,6 @@
 ---
-title: Sicherungs- und Wiederherstellungsstrategie für AEM Forms
-description: Erfahren Sie, wie Sie eine Strategie implementieren, um Daten zu sichern und sicherzustellen, dass diese mit den AEM Forms-daten verbleiben.
+title: Backup- und Wiederherstellungsstrategie für AEM Forms
+description: Erfahren Sie, wie Sie eine Strategie implementieren, um Daten zu sichern und sicherzustellen, dass sie mit den AEM Forms-Daten synchron bleiben.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
@@ -27,12 +27,12 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 93%
 ---
-# Sicherungs- und Wiederherstellungsstrategie für AEM Forms{#backup-and-recovery-strategy-for-aem-forms}
+# Backup- und Wiederherstellungsstrategie für AEM Forms{#backup-and-recovery-strategy-for-aem-forms}
 
 Wenn in Ihrer AEM Forms-Implementierung zusätzliche benutzerdefinierte Daten in einer anderen Datenbank gespeichert werden, sind Sie dafür verantwortlich, eine Strategie zum Sichern dieser Daten zu implementieren und sicherzustellen, dass diese mit den AEM Forms-Daten synchronisiert bleiben. Außerdem muss die Anwendung so konzipiert sein, dass sie robust genug ist, um ein Szenario zu handhaben, in dem die zusätzlichen Datenbanken nicht mehr synchronisiert werden. Es wird dringend empfohlen, alle Datenbankoperationen im Kontext einer Transaktion durchzuführen, um einen konsistenten Zustand zu gewährleisten.
 
@@ -40,9 +40,9 @@ Nachdem Sie ermittelt haben, wie AEM Forms verwendet wird, bestimmen Sie, welche
 
 >[!NOTE]
 >
->Wie auch bei allen anderen Aspekten einer AEM Forms-Implementierung gilt, dass die Sicherungs- und Wiederherstellungsstrategie in einer Entwicklungs- oder Staging-Umgebung entwickelt und getestet werden muss, bevor sie in der Produktion zum Einsatz kommt. So wird sichergestellt, dass die gesamte Lösung wie erwartet und ohne Datenverlust funktioniert.
+>Wie auch bei allen anderen Aspekten einer AEM Forms-Implementierung gilt, dass die Backup- und Wiederherstellungsstrategie in einer Entwicklungs- oder Staging-Umgebung entwickelt und getestet werden muss, bevor sie in der Produktion zum Einsatz kommt. So wird sichergestellt, dass die gesamte Lösung wie erwartet und ohne Datenverlust funktioniert.
 
-Adobe Experience Manager (AEM) ist ein wichtiger Bestandteil von AEM Forms. Daher müssen Sie AEM auch synchron mit dem AEM Forms-Backup sichern, da Correspondence Management-Lösungen und -Services wie Forms Manager auf Daten basieren, die in AEM als Teil von AEM Forms gespeichert sind.Um Datenverluste zu vermeiden, müssen die für AEM Forms spezifischen Daten so gesichert werden, dass der globale Dokumentenspeicher und AEM (Repository) mit den Datenbankverweisen korrelieren.Die Stammordner für Datenbank, globalen Dokumentenspeicher, AEM und Inhaltsspeicher müssen auf einem Computer mit demselben DNS-Namen wie der ursprüngliche wiederhergestellt werden.
+Adobe Experience Manager (AEM) ist ein integraler Bestandteil von AEM Forms. Daher müssen Sie AEM auch synchron mit dem AEM Forms-Backup sichern, da Correspondence Management-Lösungen und -Services wie Forms Manager auf Daten basieren, die in AEM als Teil von AEM Forms gespeichert sind.Um Datenverluste zu vermeiden, müssen die für AEM Forms spezifischen Daten so gesichert werden, dass der globale Dokumentenspeicher und AEM (Repository) mit den Datenbankverweisen korrelieren.Die Stammordner für Datenbank, globalen Dokumentenspeicher, AEM und Inhaltsspeicher müssen auf einem Computer mit demselben DNS-Namen wie der ursprüngliche wiederhergestellt werden.
 
 ## Sicherungsarten {#types-of-backups}
 
@@ -56,7 +56,7 @@ Die AEM Forms-Sicherungsstrategie umfasst zwei Sicherungsarten:
 >
 >Wenn Content Services (nicht mehr unterstützt) installiert ist, sichern Sie auch das Stammverzeichnis für den Content-Speicher. Siehe [Stammordner für Inhalte (nur Content Services)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only).
 
-In der Datenbank werden Formularartefakte, Dienstkonfigurationen, Prozesszustände und Datenbankverweise auf Dateien im globalen Dokumentenspeicher gespeichert. Wenn Sie die Dokumentenspeicherung in der Datenbank aktiviert haben, werden permanente Daten und Dokumente im globalen Dokumentenspeicher ebenfalls in der Datenbank gespeichert. Die Datenbank kann mithilfe der folgenden Methoden gesichert und wiederhergestellt werden:
+In der Datenbank werden Formularartefakte, Dienstkonfigurationen, Prozesszustände und Datenbankverweise auf GDS-Dateien gespeichert. Wenn Sie die Dokumentenspeicherung in der Datenbank aktiviert haben, werden permanente Daten und Dokumente im globalen Dokumentenspeicher ebenfalls in der Datenbank gespeichert. Die Datenbank kann mithilfe der folgenden Methoden gesichert und wiederhergestellt werden:
 
 * **Snapshot-Sicherungsmodus** gibt an, dass sich das AEM Forms-System entweder für unbegrenzte Zeit oder für eine angegebene Anzahl von Minuten im Sicherungsmodus befindet, nach deren Ablauf der Sicherungsmodus nicht mehr aktiv ist. Sie können anhand der folgenden Optionen den Snapshot-Sicherungsmodus starten bzw. beenden. Nach einem Wiederherstellungsszenario darf der Snapshot-Sicherungsmodus nicht aktiviert werden.
 
@@ -64,11 +64,11 @@ In der Datenbank werden Formularartefakte, Dienstkonfigurationen, Prozesszustän
   * Verwenden Sie das LCBackupMode-Skript (siehe [Sichern der Stammordner für Datenbank, globalen Dokumentenspeicher und Inhalte](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Zum Beenden des Snapshot-Sicherungsmodus legen Sie im Skriptargument den `continuousCoverage`-Parameter auf `false` fest oder verwenden Sie die Option `leaveContinuousCoverage`.
   * Verwenden Sie die bereitgestellte Backup-/Wiederherstellungs-API. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
 
-* Der **kontinuierliche Sicherungsmodus** gibt an, dass das System stets im Sicherungsmodus ist, wobei eine neue Sicherungsmodussitzung ausgelöst wird, sobald die vorherige Sitzung freigegeben wurde. Beim kontinuierlichen Sicherungsmodus gibt es keinen Timeout. Wenn das bereitgestellte LCBackupMode-Skript oder APIs aufgerufen werden, um den kontinuierlichen Sicherungsmodus zu beenden, wird eine neue kontinuierliche Sicherungsmodussitzung gestartet. Dieser Modus eignet sich zur Unterstützung kontinuierlicher Sicherungen und ermöglicht zugleich das Entfernen alter und nicht benötigter Dokumente aus dem Verzeichnis des globalen Dokumentenspeichers. Der kontinuierliche Sicherungsmodus wird nicht über die Seite „Sicherung und Wiederherstellung“ unterstützt. Nach einem Wiederherstellungsszenario ist der kontinuierliche Sicherungsmodus weiter aktiv. Sie können den kontinuierlichen Sicherungsmodus mithilfe des bereitgestellten LCBackupMode-Skripts mit der Option `leaveContinuousCoverage` deaktivieren.
+* Der **kontinuierliche Sicherungsmodus** gibt an, dass das System stets im Sicherungsmodus ist, wobei eine neue Sicherungsmodussitzung ausgelöst wird, sobald die vorherige Sitzung freigegeben wurde. Beim Rolling-Backup-Modus gibt es keinen Timeout. Wenn das bereitgestellte LCBackupMode-Skript oder APIs aufgerufen werden, um den kontinuierlichen Sicherungsmodus zu beenden, wird eine neue kontinuierliche Sicherungsmodussitzung gestartet. Dieser Modus eignet sich zur Unterstützung kontinuierlicher Sicherungen und ermöglicht zugleich das Entfernen alter und nicht benötigter Dokumente aus dem GDS-Verzeichnis. Der kontinuierliche Sicherungsmodus wird nicht über die Seite „Sicherung und Wiederherstellung“ unterstützt. Nach einem Wiederherstellungsszenario ist der kontinuierliche Sicherungsmodus weiter aktiv. Sie können den kontinuierlichen Sicherungsmodus mithilfe des bereitgestellten LCBackupMode-Skripts mit der Option `leaveContinuousCoverage` deaktivieren.
 
 >[!NOTE]
 >
->Durch Beenden des kontinuierlichen Sicherungsmodus wird unmittelbar eine neue Sicherungsmodussitzung ausgelöst. Wenn Sie den kontinuierlichen Sicherungsmodus vollständig deaktivieren möchten, verwenden Sie die Option `leaveContinuousCoverage` im Skript. Damit wird die vorhandene Sicherungssitzung überschrieben. Im Snapshot-Sicherungsmodus können Sie den Sicherungsmodus wie gewohnt beenden.
+>Durch Beenden des rollierenden Sicherungsmodus wird unmittelbar eine neue Sicherungsmodussitzung ausgelöst. Wenn Sie den kontinuierlichen Sicherungsmodus vollständig deaktivieren möchten, verwenden Sie die Option `leaveContinuousCoverage` im Skript. Damit wird die vorhandene Sicherungssitzung überschrieben. Im Snapshot-Sicherungsmodus können Sie den Sicherungsmodus wie gewohnt beenden.
 
 Zum Vermeiden von Datenverlusten müssen die spezifischen AEM Forms-Daten so gesichert werden, dass Dokumente im Stammordner für Inhalte und globalen Dokumentenspeicher in Korrelation zu Datenbankverweisen stehen.
 
@@ -76,7 +76,7 @@ Zum Vermeiden von Datenverlusten müssen die spezifischen AEM Forms-Daten so ges
 >
 >Wenn der globale Dokumentspeicher im Dateisystem und nicht in der Datenbank gespeichert wird, führen Sie die Datenbanksicherung vor der Sicherung des globalen Dokumentspeichers durch.
 
-## Weitere Informationen zur Sicherung und Wiederherstellung {#special-considerations-for-backup-and-recovery}
+## Besondere Überlegungen zu Backup und Wiederherstellung {#special-considerations-for-backup-and-recovery}
 
 Nutzen Sie die folgenden Richtlinien, wenn Sie AEM Forms aufgrund der folgenden Änderungen in einer anderen Umgebung wiederherstellen müssen:
 
@@ -95,7 +95,7 @@ Sie können zwar den Datenbank-Server und viele andere Parameter ändern, nicht 
 Bevor Sie den Formular-Server nach einer Wiederherstellung neu starten, führen Sie folgende Schritte aus:
 
 1. Starten Sie das System im Wartungsmodus.
-1. Führen Sie folgende Schritte aus, um sicherzustellen, dass Forms Manager im Wartungsmodus mit AEM Forms synchronisiert wird:
+1. Führen Sie folgende Schritte aus, um sicherzustellen, dass Form Manager im Wartungsmodus mit AEM Forms synchronisiert wird:
 
    1. Gehen Sie zu https://&lt;*server*>:&lt;*port*>/lc/fm und melden Sie sich mit Ihren Administrator-/Passwort-Anmeldeinformationen an.
    1. Klicken Sie rechts oben auf den Namen der Person (in diesem Fall „Super Administrator“).
@@ -111,7 +111,7 @@ Wenn die AEM Forms-Hauptdatenbank verschoben oder geändert wird, lesen Sie die 
 > 
 > Es wird empfohlen, den Befehl „Strg+C“ zu verwenden, um das SDK neu zu starten. Das Neustarten des AEM SDK mit anderen Methoden, z. B. dem Beenden von Java-Prozessen, kann zu Inkonsistenzen in der AEM-Entwicklungsumgebung führen.
 
-### Ändern des AEM Forms-Host-Namen oder der IP-Adresse {#changing-the-aem-forms-hostname-or-ip-address}
+### Ändern des AEM Forms-Hostname oder der IP-Adresse {#changing-the-aem-forms-hostname-or-ip-address}
 
 In einem Cluster müssen Sie die Cache-Locator-Konfiguration aktualisieren, wenn Sie TCP-Caching anstelle von UDP verwenden. Siehe „Konfigurieren des Caching-Locators (nur Caching unter Verwendung von TCP)“ im Konfigurationshandbuch für Ihren Anwendungs-Server.
 
@@ -125,6 +125,6 @@ Verwenden Sie das `LCSetGDS`-Skript im Ordner `[*aem-forms root]*\sdk\misc\Found
 
 >[!NOTE]
 >
->Dies ist der einzige Umstand, unter dem dieses Skript zum Ändern des Speicherorts für den Ordner des globalen Dokumentenspeichers verwendet werden sollte. Um den Speicherorts für den Ordner des globalen Dokumentenspeichers zu ändern, während AEM Forms ausgeführt wird, verwenden Sie Administration Console. (Siehe [Konfigurieren allgemeiner AEM Forms-Einstellungen](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
+>Dies ist der einzige Umstand, unter dem dieses Skript zum Ändern des GDS-Speicherorts verwendet werden sollte. Um den Speicherorts für den Ordner des globalen Dokumentenspeichers zu ändern, während AEM Forms ausgeführt wird, verwenden Sie Administration Console. (Siehe [Konfigurieren allgemeiner AEM Forms-Einstellungen](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#general-aem-forms-settings)*.) *
 
 Starten Sie den Formular-Server nach dem Festlegen des GDS-Pfades im Wartungsmodus und verwenden Sie die Administrationskonsole, um die verbleibenden Dateisystempfade für den neuen Knoten zu aktualisieren. Wenn Sie sich vergewissert haben, dass alle notwendigen Konfigurationen aktualisiert sind, starten Sie AEM Forms neu und testen Sie die Anwendung.

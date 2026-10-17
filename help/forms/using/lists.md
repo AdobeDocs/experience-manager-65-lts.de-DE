@@ -20,7 +20,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6929'
 ht-degree: 98%
@@ -65,7 +65,7 @@ Die Lösung „Correspondence Management“ unterstützt zwei Arten von dynamisc
 
    Die Standard-Rechtschreibprüfung in Ihrem Browser überprüft die Rechtschreibung im Texteditor. Um die Rechtschreib- und Grammatikprüfung zu verwalten, können Sie die Rechtschreibprüfungseinstellungen Ihres Browsers bearbeiten oder Plug-ins bzw. Add-ons für den Browser installieren, um Rechtschreibung und Grammatik zu überprüfen.
 
-   Sie können die verschiedenen Tastaturbefehle im Texteditor verwenden, um Text zu verwalten, zu bearbeiten und zu formatieren. Weitere Informationen zu Tastaturbefehlen des [Texteditors](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) finden Sie unter „Correspondence Management-Tastaturbefehle“.
+   Sie können die verschiedenen Tastaturbefehle im Texteditor verwenden, um Text zu verwalten, zu bearbeiten und zu formatieren. Weitere Informationen zu Tastaturbefehlen des [Texteditors](/help/forms/using/keyboard-shortcuts.md#formatting) finden Sie unter „Correspondence Management-Tastaturbefehle“.
 
 1. Ein Texteditor wird geöffnet. Geben Sie hier den gewünschten Text ein. Verwenden Sie die Symbolleiste oben auf der Seite, um den Text zu formatieren, Bedingungen, Links und Seitenumbrüche einzufügen.
 
@@ -501,7 +501,7 @@ Dieses Beispiels zeigt, wie Sie eine dynamische und eine statische Tabelle erste
 
    Wählen Sie dann das Datenwörterbuch aus und exportieren Sie Beispieldaten. Die XML-Datei, die Sie erhalten, enthält Mitarbeiterdaten und drei Instanzen für „Nominee_details“ (standardmäßig werden 3 Instanzen heruntergeladen. Sie können Instanzen je nach Bedarf hinzufügen oder löschen. Aktualisieren Sie die Werte und importieren Sie dann Testdaten in das Datenwörterbuch. Die CMP-Datei ist das Paket und enthält das Datenwörterbuch. Importieren Sie also das Datenwörterbuch in Correspondence Management.
 
-   Weitere Informationen zum Arbeiten mit Datenwörterbüchern und Testdaten finden Sie unter [Datenwörterbuch](/help/forms/using/data-dictionary.md#p-working-with-test-data-p).
+   Weitere Informationen zum Arbeiten mit Datenwörterbüchern und Testdaten finden Sie unter [Datenwörterbuch](/help/forms/using/data-dictionary.md#working-with-test-data).
 
    ![Datenwörterbuchstruktur](assets/dd.jpeg)
 

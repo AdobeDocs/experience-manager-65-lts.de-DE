@@ -1,6 +1,6 @@
 ---
 title: Ad-hoc-Abfragen beim Prozess-Reporting
-description: Erstellen von benutzerdefinierten Abfragen für die Suche nach Prozess- und Aufgabendetails in Process Reporting von AEM Forms auf JEE
+description: Erstellen von benutzerdefinierten Abfragen für die Suche nach Prozess- und Aufgabendetails in Prozess-Reporting von AEM Forms auf JEE
 content-type: reference
 topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -27,22 +27,22 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1650'
 ht-degree: 100%
 ---
 # Ad-hoc-Abfragen beim Prozess-Reporting{#ad-hoc-queries-in-process-reporting}
 
-## Ad-hoc-Abfragen in Process Reporting {#ad-hoc-queries-in-process-reporting-1}
+## Ad-hoc-Abfragen in Prozess-Reporting {#ad-hoc-queries-in-process-reporting-1}
 
-Mit Ad-hoc-Abfragen in Process Reporting können Sie benutzerdefinierte Abfragen erstellen, mit denen Sie nach Prozess- und Aufgabendetails der in Ihrer AEM Forms-Umgebung definierten AEM Forms-Prozessinstanzen suchen können.
+Mit Ad-hoc-Abfragen in Prozess-Reporting können Sie benutzerdefinierte Abfragen erstellen, mit denen Sie nach Prozess- und Aufgabendetails der in Ihrer AEM Forms-Umgebung definierten AEM Forms-Prozessinstanzen suchen können.
 
 Ad-hoc-Abfragen können auch mithilfe von Prozess- und Aufgabeneigenschaftsfiltern definiert werden. Diese Filter können dann gespeichert und zur späteren Ausführung der Berichte verwendet werden.
 
-[**Prozesssuche**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-search-p): Suchen nach Prozessinstanzen mit einem benutzerdefinierten Suchfilter basierend auf Prozessattributen.
+[**Prozesssuche**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#process-task-search): Suchen nach Prozessinstanzen mit einem benutzerdefinierten Suchfilter basierend auf Prozessattributen.
 
-[**Prozessdetails**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-details-p): Anzeigen von Details zu einer Prozessinstanz durch Angabe der Prozess-ID.
+[**Prozessdetails**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#process-task-details): Anzeigen von Details zu einer Prozessinstanz durch Angabe der Prozess-ID.
 
 **Aufgabensuche**: Suchen nach Aufgabeninstanzen mit einem benutzerdefinierten Suchfilter anhand von Aufgabenattributen.
 
@@ -54,7 +54,7 @@ Die Schritte zum Erstellen von Filtern und Ausführen von Abfragen für Prozessd
 
 Das bedeutet, dass sich die Benutzeroberflächen für die Prozesssuche und Aufgabensuche nur in den Feldern unterscheiden, nach denen Sie suchen können, und in den Feldern, die in den Suchergebnissen zurückgegeben werden. Dies liegt einfach daran, dass zwar viele der Felder identisch sind, bestimmte Felder jedoch für Prozesse spezifisch sind und andere für Aufgaben.
 
-In diesem Artikel werden die Beschreibungen der Abschnitte Prozess-/Aufgabensuche und Prozess-/Aufgabendetails detailliert. An den geeigneten Stellen werden alle spezifischen Unterschiede speziell ausgewiesen.
+In diesem Artikel werden die Abschnitte „Prozess-/Aufgabensuche“ und „Prozess-/Aufgabendetails“ beschrieben. An den geeigneten Stellen werden alle spezifischen Unterschiede speziell ausgewiesen.
 
 ## Prozess-/Aufgabensuche {#process-task-search}
 
@@ -121,7 +121,7 @@ Verwenden Sie die Optionen im Bedienfeld **Meine Filter** zum **Hinzufügen** ![
 
 ![my_filters_options](assets/my_filters_options.png)
 
-### So führen Sie eine Suchabfrage aus {#to-execute-a-search-query}
+### Ausführen einer Suchanfrage {#to-execute-a-search-query}
 
 1. Um eine Abfrage auszuführen, klicken Sie auf den Filter im Bedienfeld **Meine Filter**, oder klicken Sie auf die Schaltfläche **Ausführen**, wenn Sie gerade einen Filter erstellen oder bearbeiten.
 1. Die Ergebnisse der Abfrage werden im Bedienfeld **Bericht** des Fensters **Process Reporting** angezeigt.
@@ -149,7 +149,7 @@ Verwenden Sie die Optionen im Bedienfeld **Meine Filter** zum **Hinzufügen** ![
 
    Da die Sortierung ein Umschaltvorgang ist, können Sie durch Anklicken einer Spaltenüberschrift die Ergebnisse in aufsteigender Reihenfolge und durch erneutes Anklicken in absteigender Reihenfolge sortieren.
 
-   Analog dazu werden die folgenden Felder in den Ergebnissen einer Aufgabensuche angezeigt:
+   Analog dazu werden die folgenden Felder in einem Suchergebnis der Aufgabensuche angezeigt:
 
    * **Aufgaben-ID**: Die ID der Aufgabe. Das Feld ist mit einem Hyperlink versehen. Wenn Sie auf eine Aufgaben-ID in diesem Feld klicken, werden Sie zum Bedienfeld **[!UICONTROL Aufgabendetails]** für die Aufgabe weitergeleitet.
    * **Initiator**: Der AEM Forms-Benutzer, der die Prozessinstanz gestartet hat
@@ -173,7 +173,7 @@ Verwenden Sie die Optionen im Bedienfeld **Meine Filter** zum **Hinzufügen** ![
 
    >[!NOTE]
    >
-   >Wenn Sie einen Bericht exportieren, wird das gesamte Suchergebnis in eine CSV-Datei exportiert, nicht nur in die aktuelle Seite
+   >Wenn Sie einen Bericht exportieren, wird das gesamte Suchergebnis in eine CSV-Datei exportiert, nicht nur die aktuelle Seite
 
 ## Prozess-/Aufgabendetails {#process-task-details}
 
@@ -183,7 +183,7 @@ Analog dazu verwenden Sie das Bedienfeld **Aufgabendetails**, um die Details ein
 
 ### So zeigen Sie Prozess-/Aufgabendetails an {#to-view-process-task-details}
 
-Sie können die Details eines bestimmten AEM Forms-Prozesses oder einer bestimmten Aufgabe auf verschiedene Weisen anzeigen:
+Sie können die Details eines bestimmten AEM Forms-Prozesses oder einer bestimmten Aufgabe anzeigen:
 
 * **Aus einem Prozess-/Aufgabensuchergebnis**
 * **Durch Eingabe der Prozess-/Aufgaben-ID im Bedienfeld „Prozess-/Aufgabendetails“**

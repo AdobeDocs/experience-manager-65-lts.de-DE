@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6510'
 ht-degree: 99%
@@ -34,11 +34,11 @@ ht-degree: 99%
 
 Die Beispiele in diesem Dokument sind hilfreich für das Verständnis und die Verwendung von AEM Document Services in einer AEM Forms on OSGi-Umgebung. Beispiele für die AEM Forms on JEE-Umgebung finden Sie unter
 
-* [Schnellstart für die Signature-Dienst-Java-API](/help/forms/developing/signature-service-java-api-quick.md#programming-aem-forms-jee)
+* [Schnellstart für die Signature-Dienst-Java-API](/help/forms/developing/signature-service-java-api-quick.md#signature-service-java-api-quickstart-soap)
 
-* [Java-API-Schnellstart für den Verschlüsselungs-Service](/help/forms/developing/encryption-service-java-api-quick.md#developer-reference)
+* [Java-API-Schnellstart für den Verschlüsselungs-Service](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quickstart-soap)
 
-* [Schnellstart für die Acrobat Reader Extensions-Service-Java-API](/help/forms/developing/acrobat-reader-dc-extensions-service.md#developer-reference)
+* [Schnellstart für die Acrobat Reader Extensions-Service-Java-API](/help/forms/developing/acrobat-reader-dc-extensions-service.md#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap)
 
 ## Voraussetzung {#prerequisite}
 
@@ -58,31 +58,31 @@ Der DocAssurance-Dienst umfasst die folgenden Dienste:
 
 Sie können mithilfe des DocAssurance-Dienstes folgende Vorgänge durchführen:
 
-* [Unsichtbare Signatur hinzufügen](/help/forms/using/aem-document-services-programmatically.md#p-adding-an-invisible-signature-field-p)
+* [Unsichtbare Signatur hinzufügen](/help/forms/using/aem-document-services-programmatically.md#adding-an-invisible-signature-field)
 
-* [Signaturfeld hinzufügen](/help/forms/using/aem-document-services-programmatically.md#p-adding-a-signature-field-nbsp-p)
+* [Signaturfeld hinzufügen](/help/forms/using/aem-document-services-programmatically.md#adding-a-signature-field-nbsp)
 * [Dokumenten-Zeitstempel anwenden](/help/forms/using/aem-document-services-programmatically.md#apply-document-timestamp)
 
-* [Signatur abrufen](/help/forms/using/aem-document-services-programmatically.md#p-getting-signature-p)
-* [Signaturfeldliste abrufen](/help/forms/using/aem-document-services-programmatically.md#p-getting-signature-field-list-nbsp-p)
-* [Signaturfelder ändern](/help/forms/using/aem-document-services-programmatically.md#p-modifying-signature-fields-nbsp-p)
+* [Signatur abrufen](/help/forms/using/aem-document-services-programmatically.md#getting-signature)
+* [Signaturfeldliste abrufen](/help/forms/using/aem-document-services-programmatically.md#getting-signature-field-list-nbsp)
+* [Signaturfelder ändern](/help/forms/using/aem-document-services-programmatically.md#modifying-signature-fields-nbsp)
 
-* [Dokument absichern](/help/forms/using/aem-document-services-programmatically.md#p-securing-documents-p)
+* [Dokument absichern](/help/forms/using/aem-document-services-programmatically.md#securing-documents)
 
-* [Verwendungsrechte für Berechtigung abrufen](/help/forms/using/aem-document-services-programmatically.md#p-getting-credential-usage-rights-p)
+* [Verwendungsrechte für Berechtigung abrufen](/help/forms/using/aem-document-services-programmatically.md#getting-credential-usage-rights)
 
-* [Verwendungsrechte für Dokument abrufen](/help/forms/using/aem-document-services-programmatically.md#p-getting-document-usage-rights-p)
+* [Verwendungsrechte für Dokument abrufen](/help/forms/using/aem-document-services-programmatically.md#getting-document-usage-rights)
 
-* [Verwendungsrechte entfernen](/help/forms/using/aem-document-services-programmatically.md#p-removing-usage-rights-p)
-* [Digitale Signaturen überprüfen](/help/forms/using/aem-document-services-programmatically.md#p-verifying-digital-signatures-p)
-* [Mehrere digitale Signaturen überprüfen](/help/forms/using/aem-document-services-programmatically.md#p-verifying-multiple-digital-signatures-p)
-* [Digitale Signaturen entfernen](/help/forms/using/aem-document-services-programmatically.md#p-removing-digital-signatures-p)
+* [Verwendungsrechte entfernen](/help/forms/using/aem-document-services-programmatically.md#removing-usage-rights)
+* [Digitale Signaturen überprüfen](/help/forms/using/aem-document-services-programmatically.md#verifying-digital-signatures)
+* [Mehrere digitale Signaturen überprüfen](/help/forms/using/aem-document-services-programmatically.md#verifying-multiple-digital-signatures)
+* [Digitale Signaturen entfernen](/help/forms/using/aem-document-services-programmatically.md#removing-digital-signatures)
 
-* [Zertifizierungssignaturfeld abrufen](/help/forms/using/aem-document-services-programmatically.md#p-getting-certifying-signature-field-p)
-* [PDF-Verschlüsselungstyp abrufen](/help/forms/using/aem-document-services-programmatically.md#p-getting-pdf-encryption-type-p)
-* [Kennwortverschlüsselung entfernen](/help/forms/using/aem-document-services-programmatically.md#p-removing-password-encryption-from-pdf-p)
+* [Zertifizierungssignaturfeld abrufen](/help/forms/using/aem-document-services-programmatically.md#getting-certifying-signature-field)
+* [PDF-Verschlüsselungstyp abrufen](/help/forms/using/aem-document-services-programmatically.md#getting-pdf-encryption-type)
+* [Kennwortverschlüsselung entfernen](/help/forms/using/aem-document-services-programmatically.md#removing-password-encryption-from-pdf)
 
-* [Zertifikatverschlüsselung entfernen](/help/forms/using/aem-document-services-programmatically.md#p-removing-certificate-encryption-p)
+* [Zertifikatverschlüsselung entfernen](/help/forms/using/aem-document-services-programmatically.md#removing-certificate-encryption)
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ Sie können mithilfe des DocAssurance-Dienstes folgende Vorgänge durchführen:
 
 ### Hinzufügen eines unsichtbaren Signaturfeldes {#adding-an-invisible-signature-field}
 
-Digitale Signaturen werden in Signaturfeldern angezeigt, die eine grafische Darstellung der Signatur enthaltende Formularfelder sind. Signaturfelder können sichtbar oder unsichtbar sein. Unterzeichnende können ein bereits vorhandenes Signaturfeld verwenden, oder ein Signaturfeld kann programmgesteuert hinzugefügt werden. In beiden Fällen muss das Signaturfeld vorhanden sein, bevor ein PDF-Dokument signiert werden kann. Sie können ein Signaturfeld programmgesteuert hinzufügen, indem Sie die Java-API des Signatur-Dienstes oder die Signatur-Webservice-API verwenden. Sie können mehr als ein Signaturfeld zu einem PDF-Dokument hinzufügen. Jeder der Signaturfeldnamen muss jedoch eindeutig sein.
+Digitale Signaturen werden in Signaturfeldern angezeigt, also in Formularfeldern, die eine grafische Darstellung der Signatur enthalten. Signaturfelder können sichtbar oder unsichtbar sein. Unterzeichnende können ein bereits vorhandenes Signaturfeld verwenden, oder ein Signaturfeld kann programmgesteuert hinzugefügt werden. In beiden Fällen muss das Signaturfeld vorhanden sein, bevor ein PDF-Dokument signiert werden kann. Sie können ein Signaturfeld programmgesteuert hinzufügen, indem Sie die Java-API des Signatur-Dienstes oder die Signatur-Webservice-API verwenden. Sie können mehr als ein Signaturfeld zu einem PDF-Dokument hinzufügen. Jeder der Signaturfeldnamen muss jedoch eindeutig sein.
 
 **Syntax**: `addInvisibleSignatureField(Document inDoc, String signatureFieldName, FieldMDPOptionSpec fieldMDPOptionsSpec, PDFSeedValueOptionSpec seedValueOptionsSpec, UnlockOptions unlockOptions)`
 
@@ -297,7 +297,7 @@ public Document addSignatureField(Document inDoc,
   </tr>
   <tr>
    <td><code>positionRectangle</code></td>
-   <td>Ein <code>PositionRectangle object</code>, das die Position für das Signaturfeld angibt. Dieser Parameter ist obligatorisch und darf keinen Nullwert akzeptieren. Wenn das angegebene Rechteck nicht mindestens teilweise innerhalb des Zuschnittrandes der angegebenen Seite liegt, wird eine Ausnahme des Typs <code>InvalidArgumentException</code> ausgegeben. Außerdem dürfen weder Höhe noch Breite des angegebenen Rechtecks den Wert 0 oder einen negativen Wert haben. Der X-Koordinatenwert unten links und der Y-Koordinatenwert unten links dürfen 0 oder größer, jedoch nicht negativ sein und sind relativ zum Feld „Zuschneiden“ der Seite.</td>
+   <td>Ein <code>PositionRectangle object</code>, das die Position für das Signaturfeld angibt. Dieser Parameter ist obligatorisch und darf keinen Nullwert haben. Wenn das angegebene Rechteck nicht mindestens teilweise innerhalb des Zuschnittrandes der angegebenen Seite liegt, wird eine Ausnahme des Typs <code>InvalidArgumentException</code> ausgegeben. Außerdem dürfen weder Höhe noch Breite des angegebenen Rechtecks den Wert 0 oder einen negativen Wert haben. Der X-Koordinatenwert unten links und der Y-Koordinatenwert unten links dürfen 0 oder größer, jedoch nicht negativ sein und sind relativ zum Feld „Zuschneiden“ der Seite.</td>
   </tr>
   <tr>
    <td><code>fieldMDPOptionsSpec</code></td>
@@ -464,11 +464,11 @@ Sie können ein Dokument programmatisch mit einem Zeitstempel gemäß [PAdES 4](
   </tr>
   <tr>
    <td><code>ValidationPreferences</code> </td>
-   <td>Präferenzen zum Steuern von Überprüfungskonfigurationen.</td>
+   <td>Präferenzen zum Steuern von Validierungskonfigurationen.</td>
   </tr>
   <tr>
    <td><code>ResourceResolver</code></td>
-   <td>Ressourcen-Konfliktlöser zum Granite Trust Store.</td>
+   <td>Ressourcen-Resolver für den Granite Trust Store.</td>
   </tr>
   <tr>
    <td><code>UnlockOptions</code></td>
@@ -888,11 +888,11 @@ public class GetSignatureFields {
 
 ### Ändern von Signaturfeldern  {#modifying-signature-fields-nbsp}
 
-Sie können Signaturfelder in einem PDF-Dokument ändern. Das Ändern eines Signaturfelds umfasst das Manipulieren seiner Signaturfeldsperre- oder Seed-Wert-Lexikonwerte.
+Sie können Signaturfelder in einem PDF-Dokument ändern. Das Ändern eines Signaturfelds umfasst das Bearbeiten seiner Werte im Sperrwörterbuch des Signaturfelds oder im Seed-Value-Wörterbuch.
 
 Ein Feldsperre-Wörterbuch gibt eine Liste von Feldern an, die gesperrt werden, wenn das Signaturfeld signiert wird. Ein gesperrtes Feld verhindert, dass Benutzer das Feld bearbeiten. Ein Seed-Wert-Wörterbuch enthält Einschränkungsinformationen, die zum Zeitpunkt der Anwendung der Signatur verwendet werden. Beispiel: Sie können die Berechtigungen ändern, welche die Aktionen steuern, die auftreten können, ohne dass eine Signatur ungültig wird.
 
-Durch Ändern eines vorhandenen Signaturfelds können Sie das PDF-Dokument so bearbeiten, dass es die sich ändernden Geschäftsanforderungen anzeigt. Beispiel: Eine neue Geschäftsanforderung erfordert das Sperren aller Felder eines Dokuments nach dem es signiert wurde.
+Durch Ändern eines vorhandenen Signaturfelds können Sie das PDF-Dokument so bearbeiten, dass es den sich ändernden Geschäftsanforderungen entspricht. Beispiel: Eine neue Geschäftsanforderung erfordert das Sperren aller Felder eines Dokuments, nachdem es signiert wurde.
 
 **Syntax**: `public Document modifySignatureField(Document inDoc, String signatureFieldName, PDFSignatureFieldProperties pdfSignatureFieldProperties, UnlockOptions unlockOptions)`
 
@@ -1057,8 +1057,8 @@ public class ModifySignatureField {
 
 Sie können ein PDF-Dokument absichern, indem Sie es mit einem bestimmten Signaturtyp (nämlich einer zertifizierten Signatur) zertifizieren. Eine zertifizierte Signatur unterscheidet sich wie folgt von einer digitalen Signatur:
 
-* Es muss die erste Signatur sein, die auf das PDF-Dokument angewendet wird. Das heißt, wenn die zertifizierte Signatur angewendet wird, müssen die anderen Signaturfelder im Dokument unsigniert sein. In einem PDF-Dokument ist nur eine einzige zertifizierte Signatur zulässig. Wenn Sie ein PDF-Dokument signieren und zertifizieren möchten, zertifizieren Sie es, bevor Sie es signieren. Nach dem Zertifizieren eines PDF-Dokuments können Sie weitere Signaturfelder digital signieren.
-* Beim Signieren wird das Dokument auf bestimmte Arten von Inhalten geprüft, die den Inhalt des Dokuments missverständlich oder irreführend machen könnten. Beispiel: Das Ausfüllen von Formularen oder Einfügen von Kommentaren im Dokument kann zulässig sein. Wenn der Autor festlegt, dass eine bestimmte Änderung nicht zulässig ist, verhindert Acrobat, dass Benutzer das Dokument auf diese Weise ändern. Wenn solche Änderungen durchgeführt werden, wird die zertifizierte Signatur ungültig. Außerdem gibt Acrobat eine Warnung aus, wenn ein Benutzer das Dokument öffnet. (Bei nicht zertifizierten Signaturen werden Änderungen nicht verhindert und normale Bearbeitungsvorgänge führen nicht dazu, dass die ursprüngliche Signatur ungültig wird.)
+* Es muss die erste Signatur sein, die auf das PDF-Dokument angewendet wird. Das heißt, wenn die zertifizierte Signatur angewendet wird, dürfen die anderen Signaturfelder im Dokument noch nicht signiert sein. In einem PDF-Dokument ist nur eine einzige zertifizierte Signatur zulässig. Wenn Sie ein PDF-Dokument signieren und zertifizieren möchten, zertifizieren Sie es, bevor Sie es signieren. Nach dem Zertifizieren eines PDF-Dokuments können Sie weitere Signaturfelder digital signieren.
+* Die Person, die das Dokument erstellt hat, kann festlegen, dass das Dokument auf bestimmte Weise geändert werden darf, ohne dass die zertifizierte Signatur ungültig wird. Beispiel: Das Ausfüllen von Formularen oder Einfügen von Kommentaren im Dokument kann zulässig sein. Wenn der Autor festlegt, dass eine bestimmte Änderung nicht zulässig ist, verhindert Acrobat, dass Benutzer das Dokument auf diese Weise ändern. Wenn solche Änderungen durchgeführt werden, wird die zertifizierte Signatur ungültig. Außerdem gibt Acrobat eine Warnung aus, wenn ein Benutzer das Dokument öffnet. (Bei nicht zertifizierten Signaturen werden Änderungen nicht verhindert und normale Bearbeitungsvorgänge führen nicht dazu, dass die ursprüngliche Signatur ungültig wird.)
 * Beim Signieren wird das Dokument auf bestimmte Arten von Inhalten geprüft, die den Inhalt des Dokuments missverständlich oder irreführend machen könnten. Beispiel: Eine Anmerkung kann Text auf einer Seite verdecken, der für das Verständnis dessen, was zertifiziert wird, wichtig ist. Eine Erläuterung (gültige Beglaubigung) zu solchen Inhalten kann bereitgestellt werden.
 
 **Syntax**:
@@ -1090,7 +1090,7 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
   </tr>
   <tr>
    <td><code>readerExtensionOptions</code></td>
-   <td>Umfasst für Reader Extending eines PDF-Dokuments erforderliche Optionen</td>
+   <td>Umfasst die für Reader Extending eines PDF-Dokuments erforderlichen Optionen</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
@@ -1360,7 +1360,7 @@ public class Certify {
 
 ### Dokumente absichern {#securing-documents}
 
-secureDocument ermöglicht Ihnen, ein PDF-Dokument zu verschlüsseln, signieren/zertifizieren und Reader Extending dafür durchzuführen. Dies ist entweder einzeln oder in einer beliebigen Kombination in einer bestimmten Reihenfolge möglich. Übergeben Sie das entsprechende Argument, um auf diese Funktion zuzugreifen. Wenn der Wert null ist, wird angenommen, dass die spezielle Verarbeitung nicht erforderlich ist.
+secureDocument ermöglicht Ihnen, ein PDF-Dokument zu verschlüsseln, signieren/zertifizieren und Reader Extending dafür durchzuführen. Dies ist entweder einzeln oder in einer beliebigen Kombination in einer bestimmten Reihenfolge möglich. Übergeben Sie das entsprechende Argument, um auf diese Funktion zuzugreifen. Wenn der Wert null ist, wird angenommen, dass die betreffende Verarbeitung nicht erforderlich ist.
 
 **Verschlüsseln von PDF-Dokumenten mit einem Kennwort**
 
@@ -1372,7 +1372,7 @@ Mit der zertifikatbasierten Verschlüsselung können Sie ein Dokument mithilfe d
 
 Verschiedene Empfänger können unterschiedliche Berechtigungen für das Dokument erhalten. Viele Aspekte der Verschlüsselung werden durch die Technologie öffentlicher Schlüssel möglich gemacht.
 
-Ein Algorithmus wird zum Generieren zweier großer Nummern verwendet, die als Schlüssel bezeichnet werden und die folgenden Eigenschaften haben:
+Ein Algorithmus wird zum Generieren zweier großer Zahlen verwendet, die als Schlüssel bezeichnet werden und die folgenden Eigenschaften haben:
 
 * Einer der Schlüssel wird zum Verschlüsseln eines Satzes von Daten verwendet. Danach kann nur der andere Schlüssel zum Entschlüsseln der Daten verwendet werden.
 * Es ist unmöglich, einen Schlüssel vom anderen zu unterscheiden.
@@ -1399,13 +1399,13 @@ Digitale Signaturen können zu Sicherheitszwecken auf PDF-Dokumente angewendet w
 
 Die zum digitalen Signieren von Dokumenten verwendete Technologie stellt sicher, dass sowohl die Person, die es unterzeichnet, als auch die Empfängerinnen und Empfänger genau wissen, was signiert wurde, und dass das Dokument seit der Unterzeichnung nicht mehr geändert wurde.
 
-PDF-Dokumente werden mithilfe von Public-Key-Technologie signiert. Unterzeichnende haben zwei Schlüssel: einen öffentlichen und einen privaten Schlüssel. Der private Schlüssel wird in den Benutzeranmeldedaten gespeichert, die zum Zeitpunkt des Signierens verfügbar sein müssen.
+PDF-Dokumente werden mithilfe von Public-Key-Technologie signiert. Unterzeichnende haben zwei Schlüssel: einen öffentlichen und einen privaten Schlüssel. Der private Schlüssel wird in den Anmeldedaten von Benutzenden gespeichert, die zum Zeitpunkt des Signierens verfügbar sein müssen.
 
 Der öffentliche Schlüssel ist im Zertifikat der Benutzenden gespeichert, das den Empfängerinnen und Empfängern zur Validierung der Signatur zur Verfügung stehen muss. Informationen zu widerrufenen Zertifikaten finden Sie in den von Zertifizierungsstellen (CAs) verteilten Antworten auf Zertifikatwiderrufslisten (CRLs) und dem Online Certificate Status Protocol (OCSP). Der Zeitpunkt des Signierens kann von einer vertrauenswürdigen Quelle erhalten werden, die als Zeitstempelstelle bezeichnet wird.
 
 >[!NOTE]
 >
->Bevor ein PDF-Dokument digital signiert werden kann, müssen Sie sicherstellen, dass die Anmeldedaten zu AEM Keystore hinzugefügt werden. Die Anmeldedaten bestehen aus dem zum Signieren verwendeten privaten Schlüssel.
+>Bevor ein PDF-Dokument digital signiert werden kann, müssen Sie sicherstellen, dass die Anmeldedaten zu AEM Keystore hinzugefügt werden. Die Anmeldedaten sind der zum Signieren verwendete private Schlüssel.
 
 >[!NOTE]
 >
@@ -1421,7 +1421,7 @@ In einem PDF-Dokument ist nur eine einzige zertifizierte Signatur zulässig. Wen
 
 Nach dem Zertifizieren eines PDF-Dokuments können Sie weitere Signaturfelder digital signieren.
 
-Beim Signieren wird das Dokument auf bestimmte Arten von Inhalten geprüft, die den Inhalt des Dokuments missverständlich oder irreführend machen könnten.
+Die Person, die das Dokument erstellt hat, kann festlegen, dass das Dokument auf bestimmte Weise geändert werden darf, ohne dass die zertifizierte Signatur ungültig wird.
 
 Beispiel: Das Ausfüllen von Formularen oder Einfügen von Kommentaren kann in dem Dokument zulässig sein. Wenn der Autor festlegt, dass eine bestimmte Änderung nicht zulässig ist,
 
@@ -1429,7 +1429,7 @@ Acrobat verhindert auf diese Weise, dass Benutzende das Dokument ändern. Wenn s
 
 Beim Signieren wird das Dokument auf bestimmte Arten von Inhalten geprüft, die den Inhalt des Dokuments missverständlich oder irreführend machen könnten.
 
-Beispiel: Eine Anmerkung kann Text auf einer Seite verdecken, der für das Verständnis dessen, was zertifiziert wird, wichtig ist. Eine Erläuterung (gültige Beglaubigung) zu solchen Inhalten kann bereitgestellt werden.
+Beispiel: Eine Anmerkung kann Text auf einer Seite verdecken, der für das Verständnis dessen, was zertifiziert wird, wichtig ist. Eine Erläuterung (rechtliche Bestätigung) zu solchen Inhalten kann bereitgestellt werden.
 
 >[!NOTE]
 >
@@ -1467,7 +1467,7 @@ secureDocument(Document inDoc,
   </tr>
   <tr>
    <td><code>readerExtensionOptions</code></td>
-   <td>Umfasst für Reader Extending eines PDF-Dokuments erforderliche Optionen</td>
+   <td>Umfasst die für Reader Extending eines PDF-Dokuments erforderlichen Optionen</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
@@ -2479,7 +2479,7 @@ Digitale Signaturen können überprüft werden, um sicherzustellen, dass ein sig
   </tr>
   <tr>
    <td><code>revocationCheckStyle</code></td>
-   <td>Die Option, die die Prüfung von Sperren der während der Überprüfung gefundenen Zertifikate steuert</td>
+   <td>Die Option zum Steuern der Sperrprüfung für die bei der Validierung gefundenen Zertifikate.</td>
   </tr>
   <tr>
    <td><code>verificationTime</code></td>
@@ -2487,11 +2487,11 @@ Digitale Signaturen können überprüft werden, um sicherzustellen, dass ein sig
   </tr>
   <tr>
    <td><code>dssPrefs</code></td>
-   <td>Präferenzen zum Steuern verschiedener Überprüfungskonfigurationen. Legen Sie für ein verschlüsseltes Dokument die Entsperroptionen mithilfe von () fest. <code>setUnlockOptions()</code></td>
+   <td>Präferenzen zum Steuern verschiedener Validierungskonfigurationen. Legen Sie für ein verschlüsseltes Dokument die Entsperroptionen mithilfe von () fest. <code>setUnlockOptions()</code></td>
   </tr>
   <tr>
    <td><code>resourceResolver</code></td>
-   <td>Ressourcen-Konfliktlöser zum Granite Trust Store</td>
+   <td>Ressourcen-Resolver für den Granite Trust Store</td>
   </tr>
  </tbody>
 </table>
@@ -2792,7 +2792,7 @@ Mit AEM können Sie digitale Signaturen in PDF-Dokumenten überprüfen. Ein PDF-
   </tr>
   <tr>
    <td><code>revocationCheckStyle</code></td>
-   <td>Die Option, die die Prüfung von Sperren der während der Überprüfung gefundenen Zertifikate steuert</td>
+   <td>Die Option zum Steuern der Sperrprüfung für die bei der Validierung gefundenen Zertifikate.</td>
   </tr>
   <tr>
    <td><code>verificationTime</code></td>
@@ -2800,11 +2800,11 @@ Mit AEM können Sie digitale Signaturen in PDF-Dokumenten überprüfen. Ein PDF-
   </tr>
   <tr>
    <td><code>dssPrefs</code></td>
-   <td>Präferenzen zum Steuern verschiedener Überprüfungskonfigurationen. Legen Sie für ein verschlüsseltes Dokument die Entsperroptionen mithilfe von () fest. <code>setUnlockOptions()</code></td>
+   <td>Präferenzen zum Steuern verschiedener Validierungskonfigurationen. Legen Sie für ein verschlüsseltes Dokument die Entsperroptionen mithilfe von () fest. <code>setUnlockOptions()</code></td>
   </tr>
   <tr>
    <td><code>resourceResolver</code></td>
-   <td>Ressourcen-Konfliktlöser zum Granite Trust Store</td>
+   <td>Ressourcen-Resolver für den Granite Trust Store</td>
   </tr>
  </tbody>
 </table>
@@ -3527,7 +3527,7 @@ Im folgenden Code-Beispiel wird eine kennwortbasierte Verschlüsselung aus einem
 
 ### Entfernen der Zertifikatverschlüsselung {#removing-certificate-encryption}
 
-Sie können die zertifikatbasierte Verschlüsselung aus einem PDF-Dokument entfernen, sodass Benutzende das PDF-Dokument in Adobe Reader oder Acrobat öffnen können. Zum Entfernen der Verschlüsselung aus einem PDF-Dokument, das mit einem Zertifikat verschlüsselt ist, referenzieren Sie einen privaten Schlüssel. Nachdem Sie die Verschlüsselung aus einem PDF-Dokument entfernt haben, ist es nicht mehr geschützt.
+Sie können die zertifikatbasierte Verschlüsselung aus einem PDF-Dokument entfernen, sodass Benutzende das PDF-Dokument in Adobe Reader oder Acrobat öffnen können. Zum Entfernen der Verschlüsselung aus einem PDF-Dokument, das mit einem Zertifikat verschlüsselt ist, verwenden Sie einen privaten Schlüssel. Nachdem Sie die Verschlüsselung aus einem PDF-Dokument entfernt haben, ist es nicht mehr geschützt.
 
 **Syntax**: `removePDFCertificateSecurity(Document inDoc, String alias, ResourceResolver resourceResolver)`
 
@@ -3649,19 +3649,19 @@ Im folgenden Java-Code-Beispiel wird eine zertifikatbasierte Verschlüsselung au
 
 ## Ausgabe-Service {#output-service}
 
-Der Ausgabedienst stellt APIs zum Rendern einer XDP-Datei in den Formaten .pdf, .pcl, .zpl und .ps bereit. Der Dienst unterstützt folgende APIs:
+Der Output-Service stellt APIs zum Rendern einer XDP-Datei in den Formaten .pdf, .pcl, .zpl und .ps bereit. Der Dienst unterstützt folgende APIs:
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** Generiert ein PDF-Dokument, indem ein Formularentwurf mit auf einem Netzwerkspeicherort, lokalen Dateisystem oder HTTP-Speicherort als Literalwerte gespeicherten Daten zusammengeführt wird.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput):** Generiert ein PDF-Dokument, indem ein Formularentwurf mit auf einem Netzwerkspeicherort, lokalen Dateisystem oder HTTP-Speicherort als Literalwerte gespeicherten Daten zusammengeführt wird.
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** Generiert ein PDF-Dokument, indem ein Formularentwurf mit in einer Anwendung gespeicherten Daten zusammengeführt wird.
-* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):** Führt einen Formularentwurf mit Daten zusammen, um ein PDF-Dokument zu erstellen. Optional wird für jeden Eintrag eine Metadatendatei generiert, oder die Ausgabe wird in einer PDF-Datei gespeichert.
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** Generiert eine PCL-, PostScript- oder ZPL-Ausgabe aus einem Formularentwurf und einer Datendatei, die auf einem Netzwerkspeicherort, lokalen Dateisystem oder einem HTTP-Speicherort als Literalwerte gespeichert sind.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput):** Generiert ein PDF-Dokument, indem ein Formularentwurf mit in einer Anwendung gespeicherten Daten zusammengeführt wird.
+* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutputbatch):** Führt einen Formularentwurf mit Daten zusammen, um ein PDF-Dokument zu erstellen. Optional wird für jeden Eintrag eine Metadatendatei generiert, oder die Ausgabe wird in einer PDF-Datei gespeichert.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#generateprintedoutput):** Generiert eine PCL-, PostScript- oder ZPL-Ausgabe aus einem Formularentwurf und einer Datendatei, die auf einem Netzwerkspeicherort, lokalen Dateisystem oder einem HTTP-Speicherort als Literalwerte gespeichert sind.
 
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** Generiert eine PCL-, PostScript- und ZPL-Ausgabe aus einem Formularentwurf und einer Datendatei, die in einer Anwendung gespeichert sind.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#generateprintedoutput):** Generiert eine PCL-, PostScript- und ZPL-Ausgabe aus einem Formularentwurf und einer Datendatei, die in einer Anwendung gespeichert sind.
 
 ### generatePDFOutput {#generatepdfoutput}
 
-Die generatePDFOutput-API generiert ein PDF-Dokument, indem ein Formularentwurf mit Daten zusammengeführt wird. Optional wird für jeden Eintrag eine Metadatendatei generiert, oder die Ausgabe wird in einer PDF-Datei gespeichert. Verwenden Sie die generatePDFOutput-API für die Formularentwürfe oder Daten, die auf einem Netzwerkspeicherort, einem lokalen Dateisystem oder HTTP-Speicherort als Literalwerte gespeichert sind. Wenn der Formularentwurf und die XML-Daten in einer Anwendung gespeichert werden, verwenden Sie die [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)-API.
+Die generatePDFOutput-API generiert ein PDF-Dokument, indem ein Formularentwurf mit Daten zusammengeführt wird. Optional wird für jeden Eintrag eine Metadatendatei generiert, oder die Ausgabe wird in einer PDF-Datei gespeichert. Verwenden Sie die generatePDFOutput-API für die Formularentwürfe oder Daten, die auf einem Netzwerkspeicherort, einem lokalen Dateisystem oder HTTP-Speicherort als Literalwerte gespeichert sind. Wenn der Formularentwurf und die XML-Daten in einer Anwendung gespeichert werden, verwenden Sie die [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput)-API.
 
 **Syntax:** `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
 
@@ -3675,7 +3675,7 @@ Die generatePDFOutput-API generiert ein PDF-Dokument, indem ein Formularentwurf 
   </tr>
   <tr>
    <td>uriOrFileName</td>
-   <td>Gibt den Pfad und den Namen der Eingabedatei an. Die Datei kann vom Typ „PDF“ oder „XDP“ sein. Wird nur der Dateiname angegeben, wird die Datei im Verhältnis zu contentRoot gelesen, das in den Optionen angegeben wird.</td>
+   <td>Gibt den Pfad und den Namen der Eingabedatei an. Die Datei kann vom Typ „PDF“ oder „XDP“ sein. Wird nur der Dateiname angegeben, wird die Datei relativ zum in den Optionen angegebenen contentRoot gelesen.</td>
   </tr>
   <tr>
    <td>data</td>
@@ -3768,7 +3768,7 @@ Im folgenden Java-Code-Beispiel wird ein PDF-Dokument generiert, indem ein Formu
 
 ### generatePDFOutput {#generatepdfoutput-1}
 
-Die generatePDFOutput-API generiert ein PDF-Dokument, indem ein Formularentwurf mit Daten zusammengeführt wird. Generieren Sie optional eine Metadatendatei für jeden Eintrag oder speichern Sie die Ausgabe in einer PDF-Datei. Verwenden Sie die generatePrintedOutput-API für die Formularentwürfe oder Daten, die in einer Anwendung gespeichert sind. Wenn der Formularentwurf und die XML-Daten auf einem Netzwerk-, lokalen oder auf einem HTTP-Speicherort als Literalwerte gespeichert sind, verwenden Sie die [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)-API.
+Die generatePDFOutput-API generiert ein PDF-Dokument, indem ein Formularentwurf mit Daten zusammengeführt wird. Generieren Sie optional eine Metadatendatei für jeden Eintrag oder speichern Sie die Ausgabe in einer PDF-Datei. Verwenden Sie die generatePrintedOutput-API für die Formularentwürfe oder Daten, die in einer Anwendung gespeichert sind. Wenn der Formularentwurf und die XML-Daten auf einem Netzwerk-, lokalen oder auf einem HTTP-Speicherort als Literalwerte gespeichert sind, verwenden Sie die [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput)-API.
 
 **Syntax:** `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
@@ -3904,7 +3904,7 @@ Führt einen Formularentwurf mit Daten zusammen, um ein PDF-Dokument zu erstelle
   </tr>
   <tr>
    <td>batchOptions</td>
-   <td>Gibt den Wert der Variablen <code>generateManyFiles</code> an. Setzen Sie das Flag „generateManyFiles“, um mehrere Dateien zu generieren. Der „options“-Parameter akzeptiert ein Objekt vom Typ „BatchOptions“.</td>
+   <td>Gibt den Wert der Variablen <code>generateManyFiles</code> an. Setzen Sie das Flag „generateManyFiles“, um mehrere Dateien zu generieren. Der Parameter „options“ akzeptiert ein Objekt vom Typ BatchOptions.</td>
   </tr>
  </tbody>
 </table>
@@ -3995,7 +3995,7 @@ String outputFolder="C:/Output";
 
 ### generatePrintedOutput {#generateprintedoutput}
 
-Generiert eine PCL-, PostScript- und ZPL-Ausgabe aus einem Formularentwurf und einer Datendatei. Die Datendatei wird mit dem Formularentwurf zusammengeführt und für den Druck formatiert. Sie können die Ausgabe direkt an einen Drucker senden oder als Datei speichern. Verwenden Sie die generatePrintedOutput-API für die Formularentwürfe oder Daten, die in einer Anwendung gespeichert sind.
+Generiert eine PCL-, PostScript- und ZPL-Ausgabe aus einem Formularentwurf und einer Datendatei. Die Datendatei wird mit dem Formularentwurf zusammengeführt und für den Druck formatiert. Sie können den Output direkt an einen Drucker senden oder als Datei speichern. Verwenden Sie die generatePrintedOutput-API für die Formularentwürfe oder Daten, die in einer Anwendung gespeichert sind.
 
 **Syntax:** `Document generatePrintedOutput(String uriOrFileName, Document data, PrintedOutputOptions);`
 
@@ -4308,10 +4308,10 @@ String outputFolder="C:/Output";
 
 ## Formularservice {#forms-service}
 
-Der Forms-Dienst stellt APIs zur Verfügung, die den Import und Export von Daten in ein interaktives PDF-Formular bzw. aus diesem ermöglichen. Ein interaktives PDF-Formular ist ein PDF-Dokument, das ein oder mehrere Felder enthält, mit denen Informationen der Benutzenden angezeigt und gesammelt werden. Der Dienst unterstützt folgende APIs:
+Der Forms-Dienst stellt APIs zur Verfügung, die den Import und Export von Daten in ein interaktives PDF-Formular bzw. aus diesem ermöglichen. Ein interaktives PDF-Formular ist ein PDF-Dokument, das ein oder mehrere Felder enthält, die zum Anzeigen und Erfassen von Informationen von den Benutzenden verwendet werden. Der Dienst unterstützt folgende APIs:
 
-* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):** exportiert Daten aus einem PDF-Formular.
-* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):** importiert Daten in ein interaktives PDF-Formular.
+* **[exportData](/help/forms/using/aem-document-services-programmatically.md#exportdata):** exportiert Daten aus einem PDF-Formular.
+* **[importData](/help/forms/using/aem-document-services-programmatically.md#importdata):** importiert Daten in ein interaktives PDF-Formular.
 
 ### exportData {#exportdata}
 
@@ -4532,9 +4532,9 @@ Die createPDF-API konvertiert einen unterstützten Dateityp in ein PDF-Dokument.
 
 Für die Konvertierung sind nur wenige Parameter obligatorisch. Das Eingabedokument ist ein obligatorischer Parameter. Sie können die Sicherheitsberechtigungen, die Einstellungen für die PDF-Ausgabe sowie die Metadateninformationen später auf das ausgegebene PDF-Dokument anwenden.
 
-Der createPDF-Dienst gibt ein java.util.Map mit Ergebnissen zurück. Die Schlüssel der Zuordnung sind:
+Der createPDF-Dienst gibt eine java.util.Map mit Ergebnissen zurück. Die Schlüssel der Zuordnung sind:
 
-* ConvertedDoc - Enthält das neu erstellte PDF-Dokument.
+* ConvertedDoc: Enthält das neu erstellte PDF-Dokument.
 * LogDoc - Enthält die Protokolldatei.
 
 Der createPDF-Dienst gibt die folgenden Ausnahmen aus:
@@ -4555,7 +4555,7 @@ Der createPDF-Dienst gibt die folgenden Ausnahmen aus:
   </tr>
   <tr>
    <td>inputDoc<br /> </td>
-   <td>Gibt ein Dokumentobjekt an. Das Dokumentobjekt enthält die Eingabedatei. Erstellt ein com.adobe.aemfd.docmanager.Document-Objekt für das Eingabedokument. Dieser Parameter ist erforderlich.</td>
+   <td>Gibt ein Dokumentobjekt an. Das Dokumentobjekt enthält die Eingabedatei. Erstellen Sie ein com.adobe.aemfd.docmanager.Document-Objekt für das Eingabedokument. Dieser Parameter ist erforderlich.</td>
   </tr>
   <tr>
    <td>inputFileName<br /> </td>
@@ -4667,7 +4667,7 @@ Konvertiert ein PDF-Dokument in einen unterstützten Dateityp. Die Methode akzep
 
 Der createPDF-Dienst gibt ein java.util.Map mit Ergebnissen zurück. Die Schlüssel der Zuordnung sind:
 
-* ConvertedDoc - Enthält das Ausgabedokument.
+* ConvertedDoc: Enthält das Ausgabedokument.
 
 Der createPDF-Dienst gibt die folgenden Ausnahmen aus:
 
@@ -4848,9 +4848,9 @@ File optimizePDF(File inputFile, String fileTypeSettings, File settingsFile) thr
 
 #### htmlToPdf2 {#htmltopdf}
 
-Konvertiert eine HTML-Seite in ein PDF-Dokument. Als Eingabe wird die URL der HTML-Seite akzeptiert.
+Konvertiert eine HTML-Seite in ein PDF-Dokument. Als Eingabe dient die URL der HTML-Seite.
 
-Der htmlToPdf2-Dienst gibt ein HtmlToPdfResult-Objekt zurück. Sie können die konvertierte PDF-Datei über „result.getConvertedDocument()“ abrufen.
+Der htmlToPdf2-Dienst gibt ein HtmlToPdfResult-Objekt zurück. Sie können die konvertierte PDF-Datei über result.getConvertedDocument() abrufen.
 
 Der htmlToPdf2-Dienst gibt die folgenden Ausnahmen aus:
 
@@ -4939,11 +4939,11 @@ File htmlToPdf(String inputUrl, String fileTypeSettingsName, String securitySett
 
 ### DistillerService {#distillerservice}
 
-Der Distiller-Dienst konvertiert PostScript-, Encapsulated PostScript (EPS)- und PRN (Printer Text Files)-Dateien in PDF-Dateien. Der Distiller-Dienst dient häufig zum Konvertieren großen Mengen gedruckter Dokumente in elektronische Dokumente, z. B. Rechnungen und Belege. Das Konvertieren von Dokumenten in PDF ermöglicht Unternehmen auch, ihren Kunden eine Papier- und eine elektronische Version eines Dokuments zu senden. Die unterstützten Dateiformate sind .ps, .eps und .prn. Der Dienst unterstützt die folgende API:
+Der Distiller-Dienst konvertiert PostScript-, Encapsulated-PostScript (EPS)- und Druckertextdateien (PRN) in PDF-Dateien. Der Distiller-Dienst dient häufig zum Konvertieren großer Mengen gedruckter Dokumente in elektronische Dokumente, z. B. Rechnungen und Belege. Das Konvertieren von Dokumenten in PDF ermöglicht Unternehmen auch, ihren Kunden eine Papier- und eine elektronische Version eines Dokuments zu senden. Die unterstützten Dateiformate sind .ps, .eps und .prn. Der Dienst unterstützt die folgende API:
 
 Der createPDF-Dienst gibt ein java.util.Map mit Ergebnissen zurück. Die Schlüssel der Zuordnung sind:
 
-* ConvertedDoc - Enthält das neu erstellte PDF-Dokument.
+* ConvertedDoc: Enthält das neu erstellte PDF-Dokument.
 * LogDoc - Enthält die Protokolldatei.
 
 Der createPDF-Dienst gibt die folgenden Ausnahmen aus:
@@ -4954,7 +4954,7 @@ Der createPDF-Dienst gibt die folgenden Ausnahmen aus:
 
 #### createPDF {#createpdf-1}
 
-Konvertiert die unterstützten Formate in PDF-Dokumente. Diese Methode akzeptiert die Dateiformate .ps, .eps, und .prn als Eingabe. Sie können spezifische Sicherheitsberechtigungen, Ausgabeeinstellungen und Metadateninformationen auf das PDF-Ausgabedokument anwenden.
+Konvertiert die unterstützten Formate in PDF-Dokumente. Diese Methode akzeptiert Dateien in den Formaten .ps, .eps und .prn als Eingabe. Sie können spezifische Sicherheitsberechtigungen, Ausgabeeinstellungen und Metadateninformationen auf das PDF-Ausgabedokument anwenden.
 
 **Syntax:**
 
@@ -5012,7 +5012,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
  </tbody>
 </table>
 
-Im folgenden Java-Codebeispiel werden Eingabedateien der Typen PostScript (PS), Encapsulated PostScript (EPS) und Printer Text Files (PRN) in PDF-Dateien.
+Im folgenden Java-Codebeispiel werden Eingabedateien der Typen PostScript (PS), Encapsulated PostScript (EPS) und Printer Text (PRN) in PDF-Dateien konvertiert.
 
 ```java
 @Reference DistillerService distillerService;
@@ -5084,7 +5084,7 @@ Die API zum automatischen Taggen von PDF-Dokumenten optimiert die Barrierefreihe
 
 * Textblöcke (Absätze)
 * Aufzählungslisten in einem Operator
-* Inhaltsverzeichnisse
+* Inhaltsverzeichnis (TOC)
 
 ![PDF-Dokument mit automatischem Tagging](assets/auto-tag-api.png)
 

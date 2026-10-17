@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 98%
@@ -96,7 +96,7 @@ Zusätzlich zum JBoss®-Server können Sie das JVM-Argument „-Dabtesting.enabl
 
 >[!NOTE]
 >
->Wenn Sie die konfigurierten Target-URLs später aktualisieren, achten Sie darauf, etwaige laufende A/B-Tests ebenfalls zu aktualisieren, sodass sie auf die aktuellen URLs verweisen. Informationen zum Aktualisieren von A/B-Tests finden Sie unter [Aktualisieren von A/B-Tests](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p).
+>Wenn Sie die konfigurierten Target-URLs später aktualisieren, achten Sie darauf, etwaige laufende A/B-Tests ebenfalls zu aktualisieren, sodass sie auf die aktuellen URLs verweisen. Informationen zum Aktualisieren von A/B-Tests finden Sie unter [Aktualisieren von A/B-Tests](/help/forms/using/ab-testing-adaptive-forms.md#update-a-b-test).
 >
 
 ## Erstellen von Zielgruppen in AEM {#create-audiences-within-aem}

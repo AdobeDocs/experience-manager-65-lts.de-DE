@@ -1,6 +1,6 @@
 ---
 title: Integrieren von Adobe Sign mit AEM Forms
-description: Erfahren Sie, wie Sie Adobe Sign für adaptive AEM-Formulare konfigurieren. Adobe Sign verbessert die Workflows und verarbeitet Dokumente in den Bereichen Recht, Vertrieb, Gehaltsabrechnung, Personalverwaltung usw.
+description: Erfahren Sie, wie Sie Adobe Sign für adaptive AEM-Formulare konfigurieren. Adobe Sign verbessert die Workflows und verarbeitet Dokumente in den Bereichen Recht, Vertrieb, Gehaltsabrechnung, Personalverwaltung und vielen weiteren Bereichen.
 feature: Adaptive Forms,Foundation Components,Acrobat Sign
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2207'
 ht-degree: 94%
@@ -44,7 +44,7 @@ Die Dokumentation zu AEM as a Cloud Service finden Sie unter [AEM Forms auf Clou
 
 [!DNL Adobe Sign] aktiviert Workflows für E-Signaturen für adaptive Formulare. E-Signaturen verbessern die Workflows bei der Verarbeitung von Dokumenten in den Bereichen Recht, Vertrieb, Gehaltsabrechnung, Personalverwaltung u. v. a..
 
-In einem typischen Szenario mit [!DNL Adobe Acrobat Sign] und adaptiven Formularen füllt der Benutzer ein adaptives Formular aus, um eine Dienstleistung zu beantragen. Dies könnte beispielsweise ein Antrag für eine Kreditkarte oder ein Formular für Dienstleistungen für Bürger sein. Wenn ein Benutzer das Antragsformular ausfüllt und signiert, wird dieses zur Bearbeitung an den Dienstleister gesendet. Der Dienstleister prüft den Antrag und markiert ihn mit [!DNL Adobe Acrobat Sign] als genehmigt. AEM Forms unterstützt sowohl Adobe Acrobat Sign als auch Adobe Acrobat Sign Solutions für Behörden. Je nach Ihrer Lizenz und Ihren Anforderungen können Sie AEM Forms mit einer der folgenden Lösungen integrieren oder verbinden:
+In einem typischen Szenario mit [!DNL Adobe Acrobat Sign] und adaptiven Formularen füllt der Benutzer ein adaptives Formular aus, um eine Dienstleistung zu beantragen. Zum Beispiel ein Kreditkartenantrag und ein Formular für Bürgerleistungen. Wenn ein Benutzer das Antragsformular ausfüllt und signiert, wird dieses zur Bearbeitung an den Dienstleister gesendet. Der Dienstleister prüft den Antrag und markiert ihn mit [!DNL Adobe Acrobat Sign] als genehmigt. AEM Forms unterstützt sowohl Adobe Acrobat Sign als auch Adobe Acrobat Sign Solutions für Behörden. Je nach Ihrer Lizenz und Ihren Anforderungen können Sie AEM Forms mit einer der folgenden Lösungen integrieren oder verbinden:
 
 * [Verbinden von AEM Forms mit Adobe Acrobat Sign](#adobe-sign)
 * [Verbinden von AEM Forms mit Adobe Acrobat Sign Solutions für Behörden](#adobe-acrobat-sign-for-government)
@@ -60,7 +60,7 @@ Für die Integration von [!DNL Adobe Sign] in AEM [!DNL Forms] benötigen Sie Fo
 * Ein gültiges [Adobe Sign-Entwicklerkonto.](https://www.adobe.com/acrobat/business/developer-form.html)
 * Einen AEM [!DNL Forms]-Server, auf dem [SSL aktiviert](/help/sites-administering/ssl-by-default.md) ist.
 * Eine [Adobe Sign API-Anwendung](https://opensource.adobe.com/acrobat-sign/developer_guide/index.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
-* Anmeldeinformationen (Client-ID und Client Secret) der [!DNL Adobe Sign]-API-Anwendung.
+* Anmeldedaten (Client-ID und Client Secret) der [!DNL Adobe Sign]-API-Anwendung.
 * Entfernen Sie bei der Neukonfiguration die vorhandene [!DNL Adobe Sign]-Konfiguration sowohl aus der Autoren- als auch aus der Veröffentlichungsinstanz.
 * Verwenden Sie [identische Schlüssel](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed) für Autoren- und Veröffentlichungsinstanzen.
 
@@ -178,7 +178,7 @@ Jetzt ist [!DNL Adobe Sign] mit AEM [!DNL Forms] integriert und kann in adaptive
 Das Verbinden von AEM Forms mit Adobe Acrobat Sign Solutions für Behörden ist ein mehrstufiger Prozess. Er umfasst:
 
 * Erstellen einer Umleitungs-URL für Ihre AEM-Instanzen
-* Weitergeben der Umleitungs-URL und des Umfangs an das Team von Adobe Sign Solutions für Behörden
+* Weitergeben der Umleitungs-URL und der Bereiche an das Team von Adobe Sign Solutions for Government
 * Erhalten von Anmeldedaten vom Adobe Sign-Team
 * Verwenden der erhaltenen Anmeldeinformationen, um AEM Forms mit Adobe Acrobat Sign Solutions für Behörden zu verbinden
 
@@ -229,9 +229,9 @@ Geben Sie die `scopes` (unten aufgelistet) und die `re-direct URL`, die Sie im l
 
 Die Kontaktperson generiert Anmeldeinformationen und teilt Ihnen diese mit. Im nächsten Abschnitt verwenden Sie die Anmeldeinformationen (Client-ID und Client-Geheimnis), um AEM Forms mit Adobe Acrobat Sign Solutions für Behörden zu verbinden.
 
-#### Verwenden Sie die erhaltenen Anmeldeinformationen, um AEM Forms mit Adobe Acrobat Sign Solutions für Behörden zu verbinden.
+#### Verwenden der erhaltenen Anmeldedaten zum Verbinden von AEM Forms mit Adobe Acrobat Sign Solutions for Government
 
-1. Öffnen Sie die `re-direct URL` in Ihrem Browser. Sie haben die `re-direct URL` im letzten Schritt des Abschnitts [Erstellen einer Umleitungs-URL in Ihrer AEM-Instanz](#create-redirect-url) erstellt und notiert.
+1. Öffnen Sie die `re-direct URL` in Ihrem Browser. Sie haben die `re-direct URL` im letzten Schritt des Abschnitts [Erstellen einer Umleitungs-URL in Ihrer AEM-Instanz](#create-a-redirect-url-for-your-aem-instance) erstellt und notiert.
 
 1. Geben Sie auf der Registerkarte **[!UICONTROL Allgemein]** der Seite **[!UICONTROL Erstellen einer Adobe Sign-Konfiguration]** einen **[!UICONTROL Namen]** für die Konfiguration an und wählen Sie **[!UICONTROL Weiter]** aus. Sie können optional einen **[!UICONTROL Titel]** angeben und eine **[!UICONTROL Miniaturansicht]** für die Konfiguration suchen. Klicken Sie auf **[!UICONTROL Weiter]**.
 
@@ -282,7 +282,7 @@ Die Kontaktperson generiert Anmeldeinformationen und teilt Ihnen diese mit. Im n
 1. Veröffentlichen Sie die Konfiguration.
 1. Verwenden Sie [Replikation](/help/sites-deploying/replication.md), um eine identische Konfiguration für die entsprechenden Veröffentlichungsinstanzen zu erstellen.
 
-Sie können jetzt Adobe Acrobat Sign-Felder [in einem adaptiven Formular](working-with-adobe-sign.md) oder einem [AEM-Workflow](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step) hinzufügen. Stellen Sie sicher, dass Sie den für die Cloud-Service-Konfiguration verwendeten Konfigurations-Container zu allen adaptiven Formularen hinzufügen, die für [!DNL Adobe Acrobat Sign] aktiviert sind. Sie können einen Konfigurations-Container in den Eigenschaften eines adaptiven Formulars angeben.
+Sie können jetzt Adobe Acrobat Sign-Felder [in einem adaptiven Formular](working-with-adobe-sign.md) oder einem [AEM-Workflow](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step) hinzufügen. Stellen Sie sicher, dass Sie den für die Cloud-Service-Konfiguration verwendeten Konfigurations-Container zu allen adaptiven Formularen hinzufügen, die für [!DNL Adobe Acrobat Sign] aktiviert sind. Sie können einen Konfigurations-Container in den Eigenschaften eines adaptiven Formulars angeben.
 
 
 ## Konfigurieren des [!DNL Adobe Sign]-Scheduler-Service, um den Signaturstatus zu synchronisieren {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
@@ -301,5 +301,5 @@ Das Standardintervall für den Synchronisationsstatus von [!DNL Adobe Sign] wurd
 ## Ähnliche Artikel {#related-articles}
 
 * [Verwenden von Adobe Sign in einem adaptiven Formular](../../forms/using/working-with-adobe-sign.md)
-* [Adobe Sign mit formularorientierten Workflows](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)
+* [Adobe Sign mit formularorientierten Workflows](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step)
 * [Verwenden von Adobe Sign mit AEM Forms (Video)](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/forms-and-sign/introduction.html?lang=de)

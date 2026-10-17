@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 100%
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 ## Einführung {#introduction}
 
-Sie können adaptive Formulare basierend auf einer XFA-Formularvorlage (`*.XDP`-Datei) erstellen. Diese Wiederverwendung ermöglicht es Ihnen, das, was Sie in bestehende XFA-Formulare investiert haben, zu erhalten. Informationen dazu, wie Sie eine XFA-Formularvorlage zum Erstellen eines adaptiven Formulars verwenden, finden Sie unter [Erstellen eines adaptiven Formulars basierend auf einer Vorlage](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
+Sie können adaptive Formulare basierend auf einer XFA-Formularvorlage (`*.XDP`-Datei) erstellen. Diese Wiederverwendung ermöglicht es Ihnen, das, was Sie in bestehende XFA-Formulare investiert haben, zu erhalten. Informationen dazu, wie Sie eine XFA-Formularvorlage zum Erstellen eines adaptiven Formulars verwenden, finden Sie unter [Erstellen eines adaptiven Formulars basierend auf einer Vorlage](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template).
 
 Sie können Felder aus der XDP-Datei in Ihrem adaptiven Formular wiederverwenden. Diese Felder werden als gebundene Felder bezeichnet. Die Eigenschaften der gebundenen Felder (wie Skripte, Beschriftungen und Anzeigeformat) werden aus der XDP-Datei kopiert. Sie können sich auch dafür entscheiden, die Werte einiger dieser Eigenschaften zu überschreiben.
 
@@ -55,11 +55,11 @@ Um die Informationen in diesem Artikel nutzen zu können, sollten Sie mit den fo
 
 * XFA (XML Forms Architecture)
 
-Um die Assets für das Beispiel im Artikel zu verwenden, laden Sie das Beispielpaket wie im nächsten Abschnitt ([Beispielpaket](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-sample-package-p)) beschrieben herunter.
+Um die Assets für das Beispiel im Artikel zu verwenden, laden Sie das Beispielpaket wie im nächsten Abschnitt ([Beispielpaket](../../forms/using/synchronizing-adaptive-forms-xfa.md#sample-package)) beschrieben herunter.
 
 ## Beispielpaket {#sample-package}
 
-Der Artikel verwendet ein Beispiel, um zu veranschaulichen, wie Sie das adaptive Formular mit einer aktualisierten XFA-Formularvorlage synchronisieren. Die im Beispiel verwendeten Assets sind in einem Paket verfügbar, das aus dem Abschnitt [Downloads](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-downloads-p) in diesem Artikel heruntergeladen werden kann.
+Der Artikel verwendet ein Beispiel, um zu veranschaulichen, wie Sie das adaptive Formular mit einer aktualisierten XFA-Formularvorlage synchronisieren. Die im Beispiel verwendeten Assets sind in einem Paket verfügbar, das aus dem Abschnitt [Downloads](../../forms/using/synchronizing-adaptive-forms-xfa.md#downloads) in diesem Artikel heruntergeladen werden kann.
 
 Nachdem Sie das Paket hochgeladen haben, können Sie diese Assets in der Benutzeroberfläche von AEM Forms anzeigen.
 
@@ -122,7 +122,7 @@ Um die Eigenschaften im adaptiven Formular des Beispiels zu aktualisieren, klick
 
 >[!NOTE]
 >
->Die Beschriftung „AF Numeric Field“ wurde nicht geändert, da Sie diese Eigenschaft im Dialogfeld für die Komponenteneigenschaften überschrieben haben, wie in [Hinzufügen von Inhalten zu adaptiven Formularen](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p) beschrieben.
+>Die Beschriftung „AF Numeric Field“ wurde nicht geändert, da Sie diese Eigenschaft im Dialogfeld für die Komponenteneigenschaften überschrieben haben, wie in [Hinzufügen von Inhalten zu adaptiven Formularen](../../forms/using/synchronizing-adaptive-forms-xfa.md#add-content-to-adaptive-form-br) beschrieben.
 
 ### Hinzufügen neuer Felder aus einer XDP-Datei in ein adaptives Formular   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 

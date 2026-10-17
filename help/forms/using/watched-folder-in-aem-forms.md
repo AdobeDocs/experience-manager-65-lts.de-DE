@@ -27,9 +27,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
-source-wordcount: '7272'
+source-wordcount: '7270'
 ht-degree: 96%
 ---
 # Überwachter Ordner in AEM Forms{#watched-folder-in-aem-forms}
@@ -100,7 +100,7 @@ Sie können die folgenden Eigenschaften für einen überwachten Ordner konfiguri
 >
 >Ist auf dem Server, der den überwachten Ordner hostet, keiner der angegebenen Ausführungsmodi verfügbar, wird der überwachte Ordner immer aktiviert, egal, welche Ausführungsmodi auf dem Server laufen.
 
-* **outputFilePattern (Zeichenfolge)**: Das Muster der Ausgabedatei. Sie können ein Ordner- oder Dateimuster angeben. Wenn Sie ein Ordnermuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben in den Workflows. Wenn Sie ein Dateimuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben im Dateimuster. [In Datei- und Ordnermustern können Sie außerdem eine Ordnerstruktur für die Ausgabedateien angeben. &#x200B;](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) Dies ist eine obligatorische Eigenschaft.
+* **outputFilePattern (Zeichenfolge)**: Das Muster der Ausgabedatei. Sie können ein Ordner- oder Dateimuster angeben. Wenn Sie ein Ordnermuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben in den Workflows. Wenn Sie ein Dateimuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben im Dateimuster. [In Datei- und Ordnermustern können Sie außerdem eine Ordnerstruktur für die Ausgabedateien angeben. &#x200B;](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns) Dies ist eine obligatorische Eigenschaft.
 
 * **stageFileExpirationDuration (lang, Standard -1)**: Geben Sie die Anzahl Sekunden an, nach denen für eine Eingabedatei/einen Ordner, die/der bereits zur Verarbeitung abgerufen wurde, eine Zeitüberschreitung eintritt und ein Fehler gemeldet wird. Dieser Ablaufmechanismus wird nur aktiviert, wenn der Wert für diese Eigenschaft eine positive Zahl ist.
 
@@ -112,7 +112,7 @@ Sie können die folgenden Eigenschaften für einen überwachten Ordner konfiguri
 
 * **pollInterval (Lang)**: Das Intervall in Sekunden, in dem der überwachte Ordner auf Eingaben überprüft wird. Außer wenn die Einstellung „Einschränken“ aktiviert ist, muss das Abfrageintervall länger sein als die Verarbeitungsdauer für einen durchschnittlichen Auftrag. Andernfalls kann es zu einer Überlastung des Systems kommen. Der Standardwert ist 5. Weitere Informationen finden Sie in der Beschreibung für „Stapelgröße“. Der Wert für „pollInterval“ muss größer als oder gleich eins sein.
 * **excludeFilePattern (Zeichenfolge)**: Eine durch Semikolon (;) getrennte Liste von Mustern, mit deren Hilfe in einem überwachten Ordner ermittelt wird, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner, die diesem Muster entsprechen, werden nicht für die Verarbeitung überprüft. Diese Einstellung ist hilfreich, wenn die Eingabe aus einem Ordner mit mehreren Dateien besteht. Der Inhalt des Ordners kann in einen Ordner mit einem Namen kopiert werden, der vom überwachten Ordner aufgenommen wird. Dies verhindert, dass der überwachte Ordner einen Ordner für die Verarbeitung aufnimmt, bevor dieser vollständig in den Eingabeordner kopiert ist. Der Standardwert ist Null.
-Sie können [Dateimuster](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) verwenden, um Folgendes auszuschließen:
+Sie können [Dateimuster](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns) verwenden, um Folgendes auszuschließen:
 
   * Dateien mit bestimmten Dateinamenerweiterungen, z. B. &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
   * Dateien mit bestimmten Namen; durch „data&#42;“ würden beispielsweise Dateien und Ordner mit den Namen „data1“, „data2“ usw. ausgeschlossen.
@@ -122,7 +122,7 @@ Sie können [Dateimuster](../../forms/using/watched-folder-in-aem-forms.md#p-fil
     * &#42;.`[dD][Aa]`&#39;port&#39;
     * &#42;.`[Xx][Mm][Ll]`
 
-Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
+Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns).
 
 * **includeFilePattern (Zeichenfolge)**: Eine durch Semikolon (;) getrennte Liste von Mustern, mit deren Hilfe in einem überwachten Ordner ermittelt wird, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Wenn zum Beispiel für IncludeFilePattern „input&#42;“ festgelegt wird, werden alle Dateien und Ordner aufgenommen, die „input&#42;“ enthalten Hierzu gehören auch Dateien und Ordner namens „input1“, „input2“ usw. Der Standardwert ist &#42; und bezieht sich auf alle Dateien und Ordner. Sie können Dateimuster verwenden, um Folgendes einzuschließen:
 
@@ -136,14 +136,14 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](.
     * &#42;.`[dD][Aa]`&#39;port&#39;
     * &#42;.`[Xx][Mm][Ll]`
 
-Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
+Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns)
 
 * **waitTime (Long)**: Die Zeit in Millisekunden, die gewartet wird, bevor ein Ordner oder eine Datei nach der Erstellung überprüft wird. Wenn die Wartezeit beispielsweise 3.600.000 Millisekunden (eine Stunde) beträgt und die Datei vor einer Minute erstellt wurde, wird diese Datei frühestens in 59 Minuten abgerufen. Der Standardwert ist 0. Diese Einstellung ist nützlich, um sicherzustellen, dass eine Datei oder ein Ordner vollständig in den Eingabeordner kopiert wurde. Wenn Sie beispielsweise eine große Datei verarbeiten müssen und das Herunterladen der Datei 10 Minuten dauert, legen Sie die Wartezeit auf 10&#42;60 &#42;1000 Millisekunden fest. Dies verhindert, dass der überwachte Ordner die Datei bereits vor Ablauf der zehn Minuten überprüft.
 * **purgeDuration (Lang)**: Dateien und Ordner im Ergebnisordner werden bereinigt, wenn sie älter als dieser Wert sind. Dieser Wert wird in Tagen gemessen. Diese Einstellung trägt dazu bei, dass der Ergebnisordner nicht voll wird. Ein Wert von „-1“ Tagen bedeutet, dass der Ergebnisordner nie gelöscht wird. Der Standardwert ist -1.
 * **resultFolderName (Zeichenfolge)**: Der Ordner, in dem die Ergebnisse gespeichert werden. Wenn die Ergebnisse nicht in diesem Ordner angezeigt werden, überprüfen Sie den Fehlerordner. Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeichert. Dieser Wert kann ein absoluter oder relativer Pfad mit folgenden Dateimustern sein:
 
   * %F = Dateinamenspräfix
-  * %E = Dateinamenerweiterung
+  * %E = Dateierweiterung
   * %Y = Jahr (vollständig)
   * %y = Jahr (letzte zwei Stellen)
   * %M = Monat
@@ -159,7 +159,7 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](.
 
   Wenn es beispielsweise 20 Uhr am 17. Juli 2009 ist und Sie „C:/Test/WF0/failure/%Y/%M/%D/%H/“ angeben, lautet der Ergebnisordner „C:/Test/WF0/failure/2009/07/17/20“.
 
-  Wenn der Pfad nicht absolut, sondern relativ ist, wird der Ordner im überwachten Ordner erstellt. Der Standardwert ist „result/%Y/%M/%D/“, d. h. der Ergebnisordner im überwachten Ordner. Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
+  Wenn der Pfad nicht absolut, sondern relativ ist, wird der Ordner im überwachten Ordner erstellt. Der Standardwert ist „result/%Y/%M/%D/“, d. h. der Ergebnisordner im überwachten Ordner. Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns).
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](.
 
   Wenn Dateien im überwachten Ordner abgelegt werden, werden die Dateien in der Eingabe aufgelistet. Dadurch kann die Leistung reduziert werden, wenn jede Sekunde eine Überprüfung stattfindet. Ein Verlängern des Überprüfungsintervalls kann die Leistung verbessern. Wenn das Volumen der abgelegten Dateien gering ist, passen Sie die Stapelgröße und das Abrufintervall entsprechend an. Wenn beispielsweise pro Sekunde 10 Dateien abgelegt werden, probieren Sie ein pollInterval von 1 Sekunde und eine Stapelgröße von 10 aus.
 
-* **throttleOn (Boolescher Wert)**: Wenn diese Option ausgewählt ist, wird die Anzahl der Aufträge für den überwachten Ordner begrenzt, die AEM Forms zu jeder Zeit verarbeiten kann. Die maximale Anzahl von Aufträgen wird durch den Wert von „Stapelgröße“ bestimmt. Der Standardwert ist „true“. (Siehe [Informationen zu Einschränkungen](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
+* **throttleOn (Boolescher Wert)**: Wenn diese Option ausgewählt ist, wird die Anzahl der Aufträge für den überwachten Ordner begrenzt, die AEM Forms zu jeder Zeit verarbeiten kann. Die maximale Anzahl von Aufträgen wird durch den Wert von „Stapelgröße“ bestimmt. Der Standardwert ist „true“. (Siehe [Informationen zu Einschränkungen](../../forms/using/watched-folder-in-aem-forms.md#about-throttling).)
 
 * **overwriteDuplicateFilename (Boolescher Wert)**: Bei Festlegung auf „True“ werden Dateien im Ergebnisordner und im Aufbewahrungsordner überschrieben. Bei Festlegung auf „False“ wird an die Namen von Dateien und Ordnern ein numerisches Indexsuffix angehängt. Der Standardwert ist „False“.
 * **preserveOnFailure (Boolescher Wert)**: Bewahrt die Eingabedateien auf, wenn es zu einem Fehler bei der Ausführung des Vorgangs für einen Dienst kommt. Der Standardwert lautet true.
@@ -260,9 +260,9 @@ Zum Beispiel ist der folgende Code eine benutzerdefinierte Implementierung der C
 public class OutputWriter implements ContentProcessor {
 ```
 
-Wenn Sie beim [Konfigurieren eines Überwachungsordners](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p) für die inputProcessorId-Eigenschaft „(foo=bar)“ und für die inputProcessorType-Eigenschaft die Option „Dienst“ festlegen, werden die Eingabedateien im Überwachungsordner mithilfe des oben genannten Dienstes (der benutzerdefinierten Implementierung) verarbeitet.
+Wenn Sie beim [Konfigurieren eines Überwachungsordners](../../forms/using/watched-folder-in-aem-forms.md#create-watched-folder-configuration-node) für die inputProcessorId-Eigenschaft „(foo=bar)“ und für die inputProcessorType-Eigenschaft die Option „Dienst“ festlegen, werden die Eingabedateien im Überwachungsordner mithilfe des oben genannten Dienstes (der benutzerdefinierten Implementierung) verarbeitet.
 
-Auch das folgenden Beispiel zeigt eine benutzerdefinierte Implementierung der ContentProcessor-Schnittstelle. In diesem Beispiel übernimmt der Dienst Eingabedateien, kopiert sie an einen temporären Speicherort und gibt ein Dokumentobjekt mit dem Inhalt der Datei zurück. Der Inhalt des Dokumentobjekts wird im Ergebnisordner gespeichert. Der physische Pfad des Ergebnisordners wird im [Konfigurationsknoten für den überwachten Ordner](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p) konfiguriert.
+Auch das folgenden Beispiel zeigt eine benutzerdefinierte Implementierung der ContentProcessor-Schnittstelle. In diesem Beispiel übernimmt der Dienst Eingabedateien, kopiert sie an einen temporären Speicherort und gibt ein Dokumentobjekt mit dem Inhalt der Datei zurück. Der Inhalt des Dokumentobjekts wird im Ergebnisordner gespeichert. Der physische Pfad des Ergebnisordners wird im [Konfigurationsknoten für den überwachten Ordner](../../forms/using/watched-folder-in-aem-forms.md#create-watched-folder-configuration-node) konfiguriert.
 
 ```java
 @Component(immediate = true)
@@ -289,7 +289,7 @@ Skripts sind der ECMAScript-kompatible benutzerdefinierter Code, der in die im �
 * **getConfigParameters**: Gibt eine unveränderliche Zuordnung des Typs „Map“ zurück. Die Zuordnung enthält die Konfigurationsparameter eines überwachten Ordners.
 * **setResult**: Die ContentProcessor-Implementierung verwendet diese API zum Schreiben des Ausgabedokuments in den Ergebnisordner. Sie können den Namen für die Ausgabedatei an die setResult-API übergeben. Die API kann die übergebene Datei abhängig vom angegebenen Ausgabeordner/Dateimuster entweder verwenden oder ignorieren. Wenn Sie ein Ordnermuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben in den Workflows. Wenn Sie ein Dateimuster angeben, erhalten die Ausgabedateien Namen gemäß den Angaben im Dateimuster.
 
-Der folgende Code ist ein Beispiel für ECMAScript. Er übernimmt Eingabedateien, kopiert sie an einen temporären Speicherort und gibt ein Dokumentobjekt mit dem Inhalt der Datei zurück. Der Inhalt des Dokumentobjekts wird im Ergebnisordner gespeichert. Der physische Pfad des Ergebnisordners wird im [Konfigurationsknoten für den überwachten Ordner](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p) konfiguriert.
+Der folgende Code ist ein Beispiel für ECMAScript. Er übernimmt Eingabedateien, kopiert sie an einen temporären Speicherort und gibt ein Dokumentobjekt mit dem Inhalt der Datei zurück. Der Inhalt des Dokumentobjekts wird im Ergebnisordner gespeichert. Der physische Pfad des Ergebnisordners wird im [Konfigurationsknoten für den überwachten Ordner](../../forms/using/watched-folder-in-aem-forms.md#create-watched-folder-configuration-node) konfiguriert.
 
 >[!NOTE]
 >
@@ -352,7 +352,7 @@ Das Argument für „processWorkflowContext()“ ist ein Objekt des Typs „com.
 * getMetadata: Gibt den Wert der Metadatenvariablen zurück. Die Variablen werden an die WorkflowContextService.execute()-Methode übergeben.
 * getCommittedVariables: Gibt eine schreibgeschützte Objektzuordnung mit den in vorhergehenden Schritten festgelegten Variablen zurück. Wurde eine Variable nicht in einem der vorhergehenden Schritte geändert, wird der bei der Konfiguration des überwachten Ordners angegebene Standardwert zurückgegeben.
 * getCommittedResults: Gibt eine schreibgeschützte Dokumentzuordnung zurück. Die Zuordnung stellt die in den vorhergehenden Schritten generierten Ausgabedateien dar.
-* setVariable: Die Implementierung von „WorkflowContextProcessor“ nutzt diese Variable zur Steuerung der Variablen für die benutzerdefinierten dynamischen Daten, die zwischen den Schritten übertragen werden. Name und Typ der Variablen stimmen mit den bei der [Konfiguration des überwachten Ordners](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p) angegebenen Namen der Variablen überein. Um den Wert einer Variablen zu ändern, rufen Sie die setVariable-API mit einem Wert ungleich Null auf. Um eine Variable zu entfernen, rufen Sie setVariable() mit einem Nullwert auf.
+* setVariable: Die Implementierung von „WorkflowContextProcessor“ nutzt diese Variable zur Steuerung der Variablen für die benutzerdefinierten dynamischen Daten, die zwischen den Schritten übertragen werden. Name und Typ der Variablen stimmen mit den bei der [Konfiguration des überwachten Ordners](../../forms/using/watched-folder-in-aem-forms.md#configure-the-watched-folder) angegebenen Namen der Variablen überein. Um den Wert einer Variablen zu ändern, rufen Sie die setVariable-API mit einem Wert ungleich Null auf. Um eine Variable zu entfernen, rufen Sie setVariable() mit einem Nullwert auf.
 
 Die folgenden ProcessorContext-APIs sind ebenfalls verfügbar:
 
@@ -522,7 +522,7 @@ Wenn Einschränkungen für einen Endpunkt des Typs „überwachter Ordner“ akt
 
 >[!NOTE]
 >
->Die Drosselung wird bei einem Cluster nicht skaliert. Wenn die Drosselung aktiviert ist, verarbeitet der Cluster insgesamt zu keinem Zeitpunkt mehr als die Anzahl der Aufträge, die in der Batch-Größe angegeben sind. Diese Beschränkung ist Cluster-weit und nicht für jeden Knoten im Cluster spezifisch. Bei einer Batch-Größe von 2 könnte beispielsweise das Einschränkungslimit mit einem einzigen Knoten erreicht werden, der zwei Aufträge verarbeitet, und keine anderen Knoten würden den Eingabeordner abrufen, bis einer der Aufträge abgeschlossen ist.
+>Die Drosselung wird bei einem Cluster nicht skaliert. Wenn die Drosselung aktiviert ist, verarbeitet der Cluster insgesamt zu keinem Zeitpunkt mehr als die Anzahl der Aufträge, die in der Batch-Größe angegeben sind. Diese Beschränkung ist clusterweit und nicht für jeden Knoten im Cluster spezifisch. Bei einer Batch-Größe von 2 könnte beispielsweise das Einschränkungslimit erreicht werden, wenn ein einzelner Knoten zwei Aufträge verarbeitet. Andere Knoten würden den Eingabeordner erst abfragen, wenn einer der Aufträge abgeschlossen ist.
 
 #### Wie die Drosselung funktioniert {#how-throttling-works}
 
@@ -531,8 +531,8 @@ Der Eingabeordner des überwachten Ordners wird jeweils nach Ablauf des pollInte
 Die Drosselung verhindert, dass der Dienst für überwachte Ordner neue Aufträge aufruft, wenn die vorherigen Aufträge noch nicht abgeschlossen sind. Der Dienst für überwachte Ordner erkennt in der Bearbeitung befindliche Aufträge und verarbeitet neue Aufträge auf Grundlage der Stapelgröße abzüglich der in Bearbeitung befindlichen Aufträge. Wenn im zweiten Aufruf beispielsweise nur drei Aufträge abgeschlossen sind und ein Auftrag noch ausgeführt wird, ruft der Dienst für überwachte Ordner nur drei weitere Aufträge auf.
 
 * Der Dienst für überwachte Ordner verlässt sich bei der Ermittlung der Anzahl der laufenden Aufträge auf die Anzahl der im Bereitstellungsordner vorhandenen Dateien. Verbleiben Dateien unverarbeitet im Bereitstellungsordner, werden keine weiteren Aufträge vom Dienst für überwachte Ordner aufgerufen. Wenn die Stapelgröße beispielsweise 4 beträgt und drei Aufträge angehalten sind, ruft der Dienst für überwachte Ordner bei Folgeaufrufen nur einen weiteren Auftrag auf. Es gibt mehrere Szenarien, in denen Dateien im Bereitstellungsordner unverarbeitet bleiben können. Wenn Aufträge angehalten werden, können Admins den Prozess auf der Prozessverwaltungsseite beenden, sodass die Dateien vom Dienst für überwachte Ordner aus dem Bereitstellungsordner verschoben werden.
-* Wenn der AEM Forms-Server heruntergefahren wird, bevor der Dienst für überwachte Ordner die Aufträge aufruft, kann der Administrator die Dateien aus dem Bereitstellungsordner verschieben. Weitere Informationen finden Sie unter [Fehlerquellen und Wiederherstellung](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
-* Wenn zwar der AEM Forms-Server, nicht aber der Dienst für überwachte Ordner ausgeführt wird, während der Job Manager-Dienst zurückruft (wozu es kommt, wenn Dienste nicht in der richtigen Reihenfolge starten), dann kann der Administrator die Dateien aus dem Bereitstellungsordner verschieben. Weitere Informationen finden Sie unter [Fehlerquellen und Wiederherstellung](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* Wenn der AEM Forms-Server heruntergefahren wird, bevor der Dienst für überwachte Ordner die Aufträge aufruft, kann der Administrator die Dateien aus dem Bereitstellungsordner verschieben. Weitere Informationen finden Sie unter [Fehlerquellen und Wiederherstellung](../../forms/using/watched-folder-in-aem-forms.md#failure-points-and-recoveryfailure-points-and-recovery).
+* Wenn zwar der AEM Forms-Server, nicht aber der Dienst für überwachte Ordner ausgeführt wird, während der Job Manager-Dienst zurückruft (wozu es kommt, wenn Dienste nicht in der richtigen Reihenfolge starten), dann kann der Administrator die Dateien aus dem Bereitstellungsordner verschieben. Weitere Informationen finden Sie unter [Fehlerquellen und Wiederherstellung](../../forms/using/watched-folder-in-aem-forms.md#failure-points-and-recoveryfailure-points-and-recovery).
 
 ### Fehlerquellen und Wiederherstellung {#failure-points-and-recoveryfailure-points-and-recovery}
 
@@ -566,7 +566,7 @@ Wenn der Dienst für überwachte Ordner die Quelldateien im Bereitstellungsordne
    >
    >Sie können den Datums- und Zeitstempel der Dateien im Bereitstellungsverzeichnis anzeigen. Je nach Anzahl der Dateien und der normalen Verarbeitungsdauer können Sie ermitteln, welche Dateien so alt sind, dass sie als blockiert betrachtet werden können.
 
-1. Kopieren Sie die nicht verarbeiteten Dateien aus dem Bereitstellungsordner in den Eingabeordner.
+1. Kopieren Sie die nicht verarbeiteten Dateien aus dem Staging-Verzeichnis in den Eingabeordner.
 
 1. Wenn der Dienst für überwachte Ordner in Schritt 2 an der Verarbeitung neuer Eingabedateien gehindert wurde, ändern Sie den Parameter „Muster für einzuschließende Dateien“ in den vorherigen Wert zurück oder aktivieren Sie den zuvor deaktivierten Prozess erneut.
 
@@ -590,7 +590,7 @@ Admins können den Dateityp angeben, von dem ein Dienst aufgerufen werden kann. 
 
 * Admins können das Dateimuster des Ausgabeordners definieren, in dem die Ergebnisse gespeichert werden sollen. Für die Ausgabeordner (Ergebnis, Beibehaltung und Fehler) können Admins eines der folgenden Dateimuster angeben:
 * %Y = Jahr (vollständig)
-* %y = Jahr (letzte zwei Stellen)
+* %y = Jahr (letzte zwei Ziffern)
 * %M = Monat
 * %D = Tag des Monats
 * %d = Tag des Jahres
@@ -605,7 +605,7 @@ Der Pfad zum Ergebnisordner kann beispielsweise „C:\Adobe\Adobe LiveCycle ES4\
 Über Zuordnungen von Ausgabeparametern können außerdem zusätzliche Muster angegeben werden, wie z. B.:
 
 * %F = Quelldateiname
-* %E = Quelldateinamenerweiterung
+* %E = Erweiterung des Quelldateinamens
 
 Wenn das Muster der Zuordnung von Ausgabeparametern mit „File.separator“ (dem Pfadtrennzeichen) endet, wird ein Ordner erstellt und der Inhalt in diesen Ordner kopiert. Endet das Muster nicht mit „File.separator“, wird der Inhalt (Ergebnisdatei oder -ordner) mit diesem Namen erstellt.
 
@@ -615,9 +615,9 @@ Sie können einen überwachten Ordner so konfigurieren, dass ein Workflow, ein D
 
 Führen Sie die folgenden Schritte aus, um einen überwachten Ordner mit PDF Generator zu konfigurieren:
 
-1. [ECMAScript erstellen](../../forms/using/watched-folder-in-aem-forms.md#p-create-an-ecmascript-p)
-1. [Workflow erstellen](../../forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
-1. [Überwachten Ordner konfigurieren](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)
+1. [ECMAScript erstellen](../../forms/using/watched-folder-in-aem-forms.md#create-an-ecmascript)
+1. [Workflow erstellen](../../forms/using/watched-folder-in-aem-forms.md#create-a-workflow)
+1. [Überwachten Ordner konfigurieren](../../forms/using/watched-folder-in-aem-forms.md#configure-the-watched-folder)
 
 ### Erstellen eines ECMAScript {#create-an-ecmascript}
 
@@ -671,7 +671,7 @@ Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsof
 
 1. Klicken Sie mit der rechten Maustaste auf den Prozessschritt und wählen Sie **Bearbeiten**. Das Fenster „Schritteigenschaften“ wird angezeigt.
 
-1. Wählen Sie auf der Registerkarte „Prozess“ das ECMAScript aus. Zum Beispiel das Skript „pdfg-openOffice-sample.ecma“, das in [Erstellen eines ECMAScripts](#p-create-an-ecmascript-p) erstellt wurde. Aktivieren Sie die Option **Handler-Modus** und klicken Sie auf **OK**.
+1. Wählen Sie auf der Registerkarte „Prozess“ das ECMAScript aus. Zum Beispiel das Skript „pdfg-openOffice-sample.ecma“, das in [Erstellen eines ECMAScripts](#create-an-ecmascript) erstellt wurde. Aktivieren Sie die Option **Handler-Modus** und klicken Sie auf **OK**.
 
    ![create-a-workflow3-pdf](assets/create-a-workflow3-pdf.png)
 

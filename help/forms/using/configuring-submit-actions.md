@@ -28,7 +28,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2700'
 ht-degree: 97%
@@ -186,7 +186,7 @@ Sie können ein adaptives Formular so konfigurieren, dass bei der Übermittlung 
 
 Der Editor für adaptive Formulare verfügt über die Übermittlungsaktion **Aufrufen eines Microsoft® Power Automate-Flusses** zum Senden von Daten, Anhängen und Datensatzdokumenten für adaptive Formulare an den Cloud-Fluss von Power Automate. Um mithilfe der Übermittlungsaktion erfasste Daten an Microsoft® Power Automate zu senden, [verbinden Sie Ihre Instanz von AEM Forms mit Microsoft® Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md).
 
-Verwenden Sie nach der erfolgreichen Konfiguration die Übermittlungsaktion [Microsoft® Power Automate-Fluss aufrufen](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action), um Daten an einen Power Automate-Fluss zu senden.
+Verwenden Sie nach der erfolgreichen Konfiguration die Übermittlungsaktion [Microsoft® Power Automate-Fluss aufrufen](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-microsoft-power-automate-flow-submit-action), um Daten an einen Power Automate-Fluss zu senden.
 
 ## Übermitteln an eine Microsoft® SharePoint-Liste{#submit-to-sharedrive}
 

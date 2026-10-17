@@ -24,7 +24,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 100%
@@ -58,6 +58,6 @@ Wenn Sie ein Asset aus der Autoreninstanz löschen, wird das Asset auch aus der 
 
 In AEM Forms kann eine XFA-Formularvorlage durch ein adaptives Formular oder eine andere XFA-Formularvorlage referenziert werden. Des Weiteren kann eine Vorlage auf eine Ressource oder eine andere XFA-Vorlage verweisen.
 
-Es wird davon abgeraten, ein XFA-Formular zu löschen, das von einem adaptiven Formular referenziert wird, da das adaptive Formular dadurch beschädigt werden kann. Wenn ein adaptives Formular auf ein XFA-Formular verweist, sind seine Felder gebunden. Nach dem Löschen des XFA-Formulars kann das adaptive Formular seine Felder nicht mit den XFA-Feldern synchronisieren. Für diese Felder wird eine Fehlermeldung angezeigt. Weitere Informationen zur Auswirkung beim Löschen referenzierter XFA-Formulare und zu beschädigten adaptiven Formularen finden Sie unter [Aktualisieren referenzierter XFA-Formulare](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p).
+Es wird davon abgeraten, ein XFA-Formular zu löschen, das von einem adaptiven Formular referenziert wird, da das adaptive Formular dadurch beschädigt werden kann. Wenn ein adaptives Formular auf ein XFA-Formular verweist, sind seine Felder gebunden. Nach dem Löschen des XFA-Formulars kann das adaptive Formular seine Felder nicht mit den XFA-Feldern synchronisieren. Für diese Felder wird eine Fehlermeldung angezeigt. Weitere Informationen zur Auswirkung beim Löschen referenzierter XFA-Formulare und zu beschädigten adaptiven Formularen finden Sie unter [Aktualisieren referenzierter XFA-Formulare](/help/forms/using/get-xdp-pdf-documents-aem.md#updating-referenced-xfa-forms).
 
 Um ein solches XFA-Formular zu löschen, aktualisieren Sie das adaptive Formular und entfernen Sie die Bindungen mit den XFA-Feldern.

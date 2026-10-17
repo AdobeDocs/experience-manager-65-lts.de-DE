@@ -25,7 +25,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 97%
@@ -42,7 +42,7 @@ Es wird auf einem Portal-Server für Endbenutzer angezeigt. Sie können die Benu
 >
 >Ausführliche Informationen zu anderen AEM-Tools und Optionen finden Sie unter [Authoring](/help/sites-authoring/author.md).
 
-## Zugreifen auf AEM Forms-Komponenten {#access-aem-forms-components}
+## Zugriff auf AEM Forms-Komponenten {#access-aem-forms-components}
 
 Neben anderen Optionen zum Erstellen von Formularen, Dokumenten und verknüpften Asstes bietet AEM Optionen zum Erstellen von Sites, Assets, zum Verwalten einer AEM-Instanz und mehr. Sie können auf das Experience Manager-Logo ![adobeexperiencemanager](assets/adobeexperiencemanager.png) klicken, um zu allen verfügbaren Tools zu navigieren. Zusätzlich zu Konsolen von anderen Komponenten enthält es auch Links zu AEM [!DNL Forms]. Um zu AEM [!DNL Forms] zu navigieren, klicken Sie auf das Experience Manager-Logo ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Navigation ![compass](assets/compass.png) > **[!UICONTROL Forms]**. Links der folgenden Konsolen werden angezeigt:
 
@@ -62,7 +62,7 @@ Die Schaltfläche zum Erstellen ist der Startpunkt des Prozesses zur Erstellung 
 
 * **Interaktive Kommunikation**: Eine interaktive Kommunikation ist ein personalisiertes, interaktives und gerätefreundliches HTML-basiertes digitales Schriftstück, ein Bericht oder ein Dokument. Interaktive Kommunikationen sind responsiv, d. h., ihr Layout und Design passt sich automatisch an das Gerät und die Einstellungen des Benutzers an. Detaillierte Informationen finden Sie unter [Interaktive Kommunikation - Übersicht](/help/forms/using/interactive-communications-overview.md)
 
-* **Adaptives Formular:** Ein adaptives Formular ist ein ansprechendes und interaktives Formular. Sie können adaptive Formulare erstellen, die sich dynamisch an Benutzereingaben anpassen, indem Felder oder Abschnitte je nach Antwort, Gerät oder Arbeitsumgebung des Benutzers hinzugefügt oder entfernt werden. Weitere Informationen zu adaptiven Formularen finden Sie unter [Einführung zum Erstellen adaptiver Formulare](../../forms/using/introduction-forms-authoring.md).
+* **Adaptives Formular:** Ein adaptives Formular ist ein ansprechendes und interaktives Formular. Sie können ein adaptives Formular erstellen, das sich dynamisch an Benutzereingaben anpasst, indem Felder oder Abschnitte je nach Antwort, Gerät oder Arbeitsumgebung des Benutzers hinzugefügt oder entfernt werden. Weitere Informationen zu adaptiven Formularen finden Sie unter [Einführung zum Erstellen adaptiver Formulare](../../forms/using/introduction-forms-authoring.md).
 
 * **Adaptive Formularfragmente:** Zwar wurde jedes Formular für einen bestimmten Zweck entwickelt, aber es gibt gängige Segmente in den meisten Formularen (z. B. für persönliche Angaben wie Name und Anschrift, Familienmitglieder, Einkommen usw.). Sie können ein individuelles Asset für derartige Abschnitte erstellen. Diese wiederverwendbaren, eigenständigen Segmente werden als „adaptive Formularfragmente“ bezeichnet. Weitere Informationen finden Sie unter [Adaptive Formularfragmente](../../forms/using/adaptive-form-fragments.md).
 
@@ -84,7 +84,7 @@ Der Bereich „Formulare und Dokumente“ bietet auch Optionen für Folgendes:
 
 ### Designs  {#themes}
 
-Zu einem Design gehören Details der Formatierung von Komponenten und Bereichen. Designs haben eine unabhängige Identität. Daher können Sie ein Design für mehrere adaptive Formulare wiederverwenden. Sie können die Stile für eine Komponente festlegen oder CSS-Eigenschaften für die verschiedenen Komponenten in Ihrem Formular ändern. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz und Größe. Sie können Anpassungen in einem Design speichern und diese als Voreinstellung auf Komponenten des Formulars übertragen. Wenn Sie das Design zu einem Formular hinzufügen, bestimmt der festgelegte Stil die entsprechenden Komponenten des Formulars. Mit AEM [!DNL Forms] 6.2 können Sie Designs erstellen und sie auf Ihre Formulare anwenden.
+Zu einem Design gehören Details der Formatierung von Komponenten und Bereichen. Themen haben eine unabhängige Identität. Daher können Sie ein Design für mehrere adaptive Formulare wiederverwenden. Sie können die Stile für eine Komponente festlegen oder CSS-Eigenschaften für die verschiedenen Komponenten in Ihren Formularen ändern. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz und Größe. Sie können Anpassungen in einem Design speichern und diese als Voreinstellung auf Komponenten des Formulars übertragen. Wenn Sie das Design zu einem Formular hinzufügen, bestimmt der festgelegte Stil die entsprechenden Komponenten des Formulars. Mit AEM [!DNL Forms] 6.2 können Sie Designs erstellen und sie auf Ihre Formulare anwenden.
 
 Weitere Informationen zum Erstellen und Verwenden von Designs finden Sie unter [Designs in AEM Forms](../../forms/using/themes.md).
 
@@ -96,7 +96,7 @@ Weitere Informationen zum Erstellen und Verwenden von Briefen finden Sie unter [
 
 ### Dokumentfragmente {#document-fragments}
 
-Dokumentfragmente sind wiederverwendbare Teile/Komponenten einer Korrespondenz, mit der Sie Briefe/Korrespondenz erstellen können. Die Dokumentfragmente sind vom Typ Texte, Listen, Bedingungen und Layoutfragmente. Informationen zum Erstellen und Verwenden von Dokumentfragmenten finden Sie unter [Erstellen von Dokumentfragmenten](/help/forms/using/document-fragments.md).
+Dokumentfragmente sind wiederverwendbare Teile/Komponenten einer Korrespondenz, mit der Sie Briefe/Korrespondenz erstellen können. Die Dokumentfragmente sind vom Typ Text, Liste, Bedingung und Layoutfragment. Informationen zum Erstellen und Verwenden von Dokumentfragmenten finden Sie unter [Erstellen von Dokumentfragmenten](/help/forms/using/document-fragments.md).
 
 ### Datenwörterbücher {#data-dictionaries}
 
@@ -114,8 +114,8 @@ AEM Tools-Bereich enthält Tools für verschiedene Komponenten. Um zu den spezif
   ![AEM Forms-Tools](assets/aem_forms_tools_new.png)
 
 * **Konfigurieren von PDF Generator:** Ein Administrator kann AEM [!DNL Forms] PDF Generator-Einstellungen konfigurieren, Benutzerkonten hinzufügen und Konfiguration in PDF Generator importieren oder exportieren.
-* **Correspondence Management-Assets veröffentlichen:** Mit AEM [!DNL Forms] können Sie sofort alle Briefe, Dokumentfragmente, und Datenwörterbücher und verknüpfte Abhängigkeiten von einer Autoreninstanz veröffentlichen. Die veröffentlichten Assets umfassen sämtliche Correspondence Management-Assets und ihre zugehörigen Abhängigkeiten. Ausführliche Informationen finden Sie unter [Veröffentlichen und Aufheben des Veröffentlichens von Formularen und Dokumenten](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
-* **Exportieren von Correspondence Management-Assets**: Verwenden Sie diese Option, um alle Correspondence Management-Assets und die zugehörigen Abhängigkeiten als Paket aus einer AEM [!DNL Forms]-Instanz herunterzuladen. Detaillierte Informationen finden Sie unter [Importieren und Exportieren von Assets in AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
+* **Correspondence Management-Assets veröffentlichen:** Mit AEM [!DNL Forms] können Sie sofort alle Briefe, Dokumentfragmente, und Datenwörterbücher und verknüpfte Abhängigkeiten von einer Autoreninstanz veröffentlichen. Die veröffentlichten Assets umfassen sämtliche Correspondence Management-Assets und ihre zugehörigen Abhängigkeiten. Ausführliche Informationen finden Sie unter [Veröffentlichen und Aufheben des Veröffentlichens von Formularen und Dokumenten](../../forms/using/publishing-unpublishing-forms.md#publish-all-the-correspondence-management-assets).
+* **Exportieren von Correspondence Management-Assets**: Verwenden Sie diese Option, um alle Correspondence Management-Assets und die zugehörigen Abhängigkeiten als Paket aus einer AEM [!DNL Forms]-Instanz herunterzuladen. Detaillierte Informationen finden Sie unter [Importieren und Exportieren von Assets in AEM Forms](../../forms/using/import-export-forms-templates.md#import-and-export-assets-in-correspondence-management)
 
 ## Häufige Elemente der Benutzeroberfläche {#commonelements}
 
