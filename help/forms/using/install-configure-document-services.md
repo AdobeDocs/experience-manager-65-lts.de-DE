@@ -219,7 +219,7 @@ Wenn Sie den PDF Generator-Service verwenden, um native Dateiformate wie Microso
 >* Adobe Acrobat, Microsoft® Word, Excel und PowerPoint sind nur für Microsoft® Windows verfügbar. Wenn Sie das UNIX-basierte Betriebssystem verwenden, installieren Sie OpenOffice, um Rich-Text-Dateien und unterstützte Microsoft® Office-Dateien in PDF-Dokumente zu konvertieren.
 >* Schließen Sie alle Dialogfelder, die nach der Installation von Adobe Acrobat und Software von Drittanbietern für alle diejenigen Benutzer angezeigt werden, die für die Verwendung des PDF Generator-Dienstes konfiguriert wurden.
 >* Starten Sie die installierte Software mindestens einmal. Schließen Sie alle Dialogfelder für alle Benutzer, die für die Verwendung des PDF Generator-Dienstes konfiguriert wurden.
->* [Überprüfen Sie das Ablaufdatum der Adobe Acrobat-Seriennummern](https://helpx.adobe.com/de/enterprise/kb/volume-license-expiration-check.html) und legen Sie ein Datum für das Aktualisieren der Lizenz fest oder [migrieren Sie die Seriennummer](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) auf der Grundlage des Ablaufdatums.
+>* [Überprüfen Sie das Ablaufdatum der Adobe Acrobat-Seriennummern](https://helpx.adobe.com/de/enterprise/kb/volume-license-expiration-check.html) und legen Sie ein Datum für das Aktualisieren der Lizenz fest oder [migrieren Sie die Seriennummer](https://www.adobe.com/de/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) auf der Grundlage des Ablaufdatums.
 
 Öffnen Sie Microsoft® Word, nachdem Sie Acrobat installiert haben. Klicken Sie auf der Registerkarte **Acrobat** auf **PDF erstellen** und konvertieren Sie eine auf dem Computer verfügbare .doc- oder .docx-Datei in ein PDF-Dokument. Wenn die Konvertierung erfolgreich war, ist AEM Forms für die Verwendung von Acrobat mit PDF Generator-Dienst bereit.
 
@@ -1494,9 +1494,9 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
 
 +++Die Lizenz für auf dem AEM Forms-Server installierte Adobe Acrobat läuft ab
 
-* Wenn Sie bereits über eine Adobe-Acrobat-Lizenz verfügen und diese abgelaufen ist, [laden Sie die neueste Version von Adobe Application Manager herunter](https://helpx.adobe.com/de/creative-suite/kb/aam-troubleshoot-download-install.html) und migrieren Sie Ihre Seriennummer. Bevor Sie [Ihre Seriennummer migrieren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
+* Wenn Sie bereits über eine Adobe-Acrobat-Lizenz verfügen und diese abgelaufen ist, [laden Sie die neueste Version von Adobe Application Manager herunter](https://helpx.adobe.com/de/creative-suite/kb/aam-troubleshoot-download-install.html) und migrieren Sie Ihre Seriennummer. Bevor Sie [Ihre Seriennummer migrieren](https://www.adobe.com/de/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
-  * Verwenden Sie die folgenden Befehle, um die Datei „prov.xml“ zu generieren und die vorhandene Installation mit deren Hilfe erneut zu serialisieren, anstatt der im Artikel [Seriennummer migrieren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) vorgeschlagenen Befehle.
+  * Verwenden Sie die folgenden Befehle, um die Datei „prov.xml“ zu generieren und die vorhandene Installation mit deren Hilfe erneut zu serialisieren, anstatt der im Artikel [Seriennummer migrieren](https://www.adobe.com/de/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) vorgeschlagenen Befehle.
 
         ```
         
@@ -1512,7 +1512,7 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
         
         ```
 
-    * Verwenden Sie für Großinstallationen den [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html), um frühere Versionen von Reader und Acrobat zu entfernen. Passen Sie das Installationsprogramm an und stellen Sie es auf allen Computern in Ihrem Unternehmen bereit.
+    * Verwenden Sie für Großinstallationen den [Acrobat Customization Wizard](https://www.adobe.com/de/devnet-docs/acrobatetk/tools/Wizard/index.html), um frühere Versionen von Reader und Acrobat zu entfernen. Passen Sie das Installationsprogramm an und stellen Sie es auf allen Computern in Ihrem Unternehmen bereit.
 
 +++
 
