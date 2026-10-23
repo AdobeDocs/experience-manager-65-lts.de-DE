@@ -7,10 +7,10 @@ user-guide-description: In der Dokumentation zu Adobe Experience Manager 6.5 LTS
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: a895c5e5cb2a4e21d7460d598bd260a5292ed2ad
+source-git-commit: 82ad777feafc14635e26f445a1be6001a2b82672
 workflow-type: tm+mt
-source-wordcount: '7801'
-ht-degree: 67%
+source-wordcount: '7809'
+ht-degree: 66%
 ---
 # Dokumentation zu Adobe Experience Manager 6.5 LTS {#content}
 
@@ -462,6 +462,7 @@ ht-degree: 67%
     + [Installieren und Konfigurieren von Designer](/help/forms/using/installing-configuring-designer.md)
     + Konfigurieren von AEM Forms {#configure-aem-forms}
       + [Leistungsoptimierung für AEM Forms-Server](/help/forms/using/performance-tuning-aem-forms.md)
+      + [Erstellen eines benutzerdefinierten Index für Verweise auf adaptive Formulare](/help/forms/using/create-custom-index-for-adaptive-forms-references.md)
       + [Cache für adaptive Formulare konfigurieren](/help/forms/using/configure-adaptive-forms-cache.md)
       + [AEM DS-Einstellungen konfigurieren](/help/forms/using/configuring-the-processing-server-url.md)
       + [Konfigurieren des Synchronisierungs-Scheduler](/help/forms/using/configure-synchronization-scheduler.md)
