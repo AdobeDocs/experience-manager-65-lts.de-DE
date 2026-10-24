@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a09b87b0103e007d357b8901233ae890998a307d
+source-git-commit: 7c3cc17781a4f5ca68ed738e76063a75c18beaeb
 workflow-type: tm+mt
-source-wordcount: '7815'
+source-wordcount: '7886'
 ht-degree: 21%
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 21%
 
 >[!IMPORTANT]
 >
-> **Obligatorischer Hotfix** - Um Probleme mit SNFE (SegmentNotFoundException) während der Online-Komprimierung auf Standby zu vermeiden, installieren Sie den Hotfix unter &quot;[&#x200B; Probleme - Repository-Beschädigung während der Online-Komprimierung](#repository-corruption-during-online-compaction-granite-73045).
+> **Obligatorischer Hotfix** - Um Probleme mit SNFE (SegmentNotFoundException) während der Online-Komprimierung auf Standby zu vermeiden, installieren Sie den Hotfix unter &quot;[ Probleme - Repository-Beschädigung während der Online-Komprimierung](#repository-corruption-during-online-compaction-granite-73045).
 
 ## Was in [!DNL Adobe Experience Manager] 6.5 LTS, SP3 enthalten ist {#what-is-new}
 
@@ -383,6 +383,8 @@ Um AEM Forms 6.5 LTS SP3 auf JEE zu installieren, führen Sie die folgenden Schr
 
 * Auf **AEM Forms on JEE 6.5 LTS SP3** schlägt das Konvertieren von **PostScript (PS)-, EPS- und PRN-Dateien in PDF**. Der `PsToPdfSvc` native Prozess kann unerwartet beendet werden, was dazu führt, dass der Konvertierungsauftrag mit Fehlern wie `ALC-PDG-003-011` und `ALC-PDG-001-028` fehlschlägt. Wenden Sie sich an den Kunden-Support von Adobe. (FORMS-28152)
 
+* Wenn auf **AEM Forms on JEE 6.5 LTS SP3** eine digital signierte PDF an eine Aufgabe in AEM Forms JEE Workspace angehängt wird, bleibt der Upload im Upload-Status stecken oder schlägt mit der Fehlermeldung „Ungültige Datei“ fehl. Daher können der Aufgabe keine größeren signierten PDF-Anhänge hinzugefügt werden. Dieses Problem wurde in einer späteren Version behoben. Wenden Sie sich für einen Hotfix auf der aktuellen Version an den Adobe-Support. (FORMS-28517)
+
 Unter AEM Forms on JEE funktionieren Reader-Erweiterungen nicht auf der WebSphere® Liberty Profile-Plattform (WLP). In der in LTS SP3 enthaltenen EAR-Datei fehlen die erforderlichen Bouncy Castle-Bibliotheken auf dem Klassenpfad.
 
 **Problemumgehung**
@@ -619,11 +621,11 @@ Um Transparenz zu gewährleisten und eine angemessene Planung zu ermöglichen, f
 
 * Die Einstellung wird zuerst angekündigt. Veraltete Funktionen bleiben weiterhin verfügbar, werden aber nicht mehr weiterentwickelt.
 * Die Entfernung erfolgt frühestens mit Einführung der nächsten Hauptversion. Der vorgesehene Zeitplan für die Entfernung wird separat mitgeteilt.
-* Kundinnen und Kunden, die auf unterstützte Alternativen umstellen möchten, erhalten mindestens einen Versionszyklus, bevor eine Funktion entfernt wird.
+* Kundschaften erhalten mindestens einen Versionszyklus, um auf unterstützte Alternativen umzustellen, bevor eine Funktion entfernt wird.
 
 ### Veraltete Funktionen {#deprecated-features}
 
-In diesem Abschnitt werden Funktionen aufgeführt, die Adobe in AEM 6.5 LTS nicht mehr unterstützt werden. In der Regel kennzeichnet Adobe Funktionen als veraltet, bevor sie in einer zukünftigen Version entfernt werden, und stellt eine Alternative bereit.
+In diesem Abschnitt werden Funktionen aufgeführt, die Adobe in AEM 6.5 LTS als veraltet eingestuft hat. In der Regel kennzeichnet Adobe Funktionen als veraltet, bevor sie in einer zukünftigen Version entfernt werden, und stellt eine Alternative bereit.
 
 Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Bereitstellung verwenden. Planen Sie Änderungen an Ihrer Implementierung, um die bereitgestellte Alternative zu verwenden.
 
@@ -710,7 +712,7 @@ Laden Sie das Indexpaket [cq-dam-cfm-](https://experience.adobe.com/#/downloads/
 
 -->
 
-&#x200B;###
+###
 
 ### Dispatcher-Verbindungsfehler mit der Funktion „Nur SSL“ (behoben in AEM 6.5 LTS SP1 und später){#ssl-only-feature}
 
@@ -749,6 +751,6 @@ Die folgenden ZIP-Dateien enthalten die Textdokumente, die die in dieser Experie
 
 Diese Websites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe Account Manager.
 
-* [Produkt-Download unter „licensing.adobe.com“](https://licensing.adobe.com/)
+* [Produkt-Download unter licensing.adobe.com](https://licensing.adobe.com/)
 * [Wenden Sie sich an den Adobe-Kundendienst](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
