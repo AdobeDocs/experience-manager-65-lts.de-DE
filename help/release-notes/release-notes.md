@@ -44,7 +44,7 @@ ht-degree: 20%
 
 >[!IMPORTANT]
 >
-> **Obligatorischer Hotfix** - Um Probleme mit SNFE (SegmentNotFoundException) während der Online-Komprimierung auf Standby zu vermeiden, installieren Sie den Hotfix unter &quot;[ Probleme - Repository-Beschädigung während der Online-Komprimierung](#repository-corruption-during-online-compaction-on-standby).
+> **Obligatorischer Hotfix** - Um Probleme mit SNFE (SegmentNotFoundException) während der Online-Komprimierung auf Standby zu vermeiden, installieren Sie den Hotfix unter &quot;[&#x200B; Probleme - Repository-Beschädigung während der Online-Komprimierung](#repository-corruption-during-online-compaction-on-standby).
 
 ## Was in [!DNL Adobe Experience Manager] 6.5 LTS, SP3 enthalten ist {#what-is-new}
 
@@ -674,7 +674,7 @@ Die Online-Komprimierung kann das JCR-Repository mit einem `SegmentNotFoundExcep
 
 1. Installieren Sie den [Hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip) über Software Distribution. Es enthält ein `oak-segment-tar`-Bundle auf niedriger Ebene, sodass die Instanz nach der Installation neu gestartet wird - Planen Sie Ausfallzeiten ein.
 1. Legen Sie beim Starten von AEM die Systemeigenschaft `oak.segment.cleanup.skipDanglingFutureReclaim=true` fest. Dieses Flag ist beim Start von AEM erforderlich, nicht während der Offline-Komprimierung.
-1. Verwenden Sie für alle `oak-run` Vorgänge die entsprechende [`oak-run` 2.4.1-B002 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar)JAR) von Software Distribution.
+1. Verwenden Sie für alle `oak-run` Vorgänge die entsprechende [`oak-run` 2.4.1-B002 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar)JAR) von Software Distribution.
 
 ### AEM Forms
 
@@ -706,7 +706,7 @@ Installieren Sie das `cq-dam-cfm-indices`-Paket, um die folgenden Funktionen zu 
 Laden Sie das Indexpaket [cq-dam-cfm-](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) im Adobe Software Distribution-Portal herunter.
 
 
-###
+&#x200B;###
 
 ### Dispatcher-Verbindungsfehler mit der Funktion „Nur SSL“ (behoben in AEM 6.5 LTS SP1 und später){#ssl-only-feature}
 
