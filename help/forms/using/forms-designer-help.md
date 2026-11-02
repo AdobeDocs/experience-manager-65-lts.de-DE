@@ -1,10 +1,10 @@
 ---
 title: Hilfe zu Forms Designer
-description: Forms Designer hilft Benutzenden beim Senden des Formulars.
+description: Erfahren Sie, wie Sie auf Forms Designer-Hilferessourcen zugreifen können, einschließlich Schnellstart-Tutorials, Beispielen, Skriptgrundlagen und FormCalc- und Skriptverweisen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-feature: Forms Designer,Designer
+feature: Forms Designer, Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 9eaf253f-628b-4d80-bb83-388c5afcc457
@@ -23,16 +23,18 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 2c3302cb43c45d2ff83409c31347406720dfccde
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 69%
+source-wordcount: '164'
+ht-degree: 3%
 ---
 # Hilfe zu Forms Designer {#form-designer-help}
 
-[Verwenden von Designer](https://www.adobe.com/go/learn_aemforms_designer_65_de)
-[Schnellstart-Tutorials für Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_de)
-[Designer-Beispiele](https://www.adobe.com/go/learn_aemforms_designer_samples_65_de)
-[Grundlagen zur Designer-Skripterstellung](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_de)
-[Skriptreferenz für Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_de)
-[Designer FormCalc-Referenz](https://www.adobe.com/go/learn_aemforms_formCalc_65_de)
+AEM Forms Designer ist ein Desktop-Programm zum Erstellen und Verwalten von PDF- und XFA-basierten adaptiven Formularen in Adobe Experience Manager Forms. Verwenden Sie die folgenden Ressourcen, um zu beginnen, Beispiele zu entdecken und auf die Skriptfunktionen von Designer für diese Version 6.5 LTS zu verweisen.
+
+* [Verwenden von Designer](https://www.adobe.com/go/learn_aemforms_designer_65_lts) - ein Überblick über den Designer Workspace und die wichtigsten Authoring-Konzepte.
+* [Schnellstart-Tutorials für Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_lts) - Schritt-für-Schritt-Tutorials für die ersten Schritte mit Designer.
+* [Designer-](https://www.adobe.com/go/learn_aemforms_designer_samples_65_lts): Herunterladbare Beispielformulare, die Sie in Designer öffnen und anpassen können.
+* [Grundlagen zur Designer-Skripterstellung](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_lts) - eine Einführung in die Skripterstellung in Designer Forms.
+* [Designer-Skriptreferenz](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_lts) - die vollständige Referenz für Skriptobjekte und -methoden in Designer.
+* [Designer FormCalc-Referenz](https://www.adobe.com/go/learn_aemforms_formCalc_65_lts) - die vollständige Referenz für FormCalc, Designers integrierte Berechnungssprache.
