@@ -7,10 +7,10 @@ user-guide-description: In der Dokumentation zu Adobe Experience Manager 6.5 LTS
 breadcrumb-title: Benutzerhandbuch
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: 82ad777feafc14635e26f445a1be6001a2b82672
+source-git-commit: bac5d173f2b6c822f2aa59a6647b5cb127788d2d
 workflow-type: tm+mt
-source-wordcount: '7809'
-ht-degree: 66%
+source-wordcount: '7768'
+ht-degree: 67%
 ---
 # Dokumentation zu Adobe Experience Manager 6.5 LTS {#content}
 
@@ -773,12 +773,6 @@ ht-degree: 66%
     + [Schützen von Dokumenten im Auftrag eines anderen Benutzers](/help/forms/using/protect-document-on-behalf-of-another-user.md)
   + Forms Designer {#use-forms-designer}
     + [Forms Designer-Hilfe](/help/forms/using/forms-designer-help.md)
-    + [Verwenden von Designer](https://www.adobe.com/go/learn_aemforms_designer_65_de)
-    + [Schnellstart-Tutorials für Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_de)
-    + [Designer-Beispiele](https://www.adobe.com/go/learn_aemforms_designer_samples_65_de)
-    + [Skriptgrundlagen für Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_de)
-    + [Skriptreferenz für Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_de)
-    + [Designer FormCalc-Referenz](https://www.adobe.com/go/learn_aemforms_formCalc_65_de)
     + [Verwenden der Freihand-Signatur in HTML5-Formularen](/help/forms/using/scribble-signature.md)
     + [Ändern des Inhalts auf Seite Null in Designer](/help/forms/using/changing-page-zero-content-designer.md)
     + Best Practices für die Barrierefreiheit {#accessibility-best-practices}
