@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: dc085d8f240ae633d82c0b03e8e30ccb82a92008
+source-git-commit: 5bc7e1ae18a7ee667241c2c82b55d3f32e71ce41
 workflow-type: tm+mt
-source-wordcount: '7820'
+source-wordcount: '7863'
 ht-degree: 20%
 ---
 
@@ -382,6 +382,8 @@ Um AEM Forms 6.5 LTS SP3 auf JEE zu installieren, führen Sie die folgenden Schr
 
 #### Bekannte Probleme {#forms-known-issues-65-lts-sp3}
 
+* Auf **AEM Forms 6.5 LTS SP3 auf JEE und OSGi unter Windows** bleibt PDF Generator (PDFG) beim Exportieren eines vorhandenen PDF-Dokuments in ein anderes unterstütztes Dateiformat hängen. Der Exportvorgang wird nicht abgeschlossen und die konvertierte Ausgabedatei wird nicht zurückgegeben. (FORMS-29849)
+
 * Auf **AEM Forms on JEE 6.5 LTS SP3** schlägt das Konvertieren von **PostScript (PS)-, EPS- und PRN-Dateien in PDF**. Der `PsToPdfSvc` native Prozess kann unerwartet beendet werden, was dazu führt, dass der Konvertierungsauftrag mit Fehlern wie `ALC-PDG-003-011` und `ALC-PDG-001-028` fehlschlägt. Wenden Sie sich an den Kunden-Support von Adobe. (FORMS-28152)
 
 * Auf **AEM Forms on JEE 6.5 LTS SP3** schlägt das Hochladen eines digital signierten PDFS zu einer Aufgabe in AEM Forms JEE Workspace fehl oder bleibt hängen. Daher können der Aufgabe keine größeren signierten PDF-Anhänge hinzugefügt werden. Dieses Problem wurde in einer späteren Version behoben. Wenden Sie sich für einen Hotfix auf der aktuellen Version an den Adobe-Support. (FORMS-28517)
@@ -408,7 +410,7 @@ Unter AEM Forms on JEE funktionieren Reader-Erweiterungen nicht auf der WebSpher
 Diese Version behebt Sicherheitslücken in AEM Forms, einschließlich XSS, SSRF und XE, und aktualisiert Bibliotheken.
 
 
-### Foundation {#foundation-65-lts-sp3}
+### Fundament {#foundation-65-lts-sp3}
 
 #### AEM Context Service {#foundation-aem-context-service-65-lts-sp3}
 
