@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: dc085d8f240ae633d82c0b03e8e30ccb82a92008
+source-git-commit: 5bc7e1ae18a7ee667241c2c82b55d3f32e71ce41
 workflow-type: tm+mt
-source-wordcount: '7820'
+source-wordcount: '7863'
 ht-degree: 20%
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 20%
 
 >[!IMPORTANT]
 >
-> **Obligatorischer Hotfix** - Um Probleme mit SNFE (SegmentNotFoundException) während der Online-Komprimierung auf Standby zu vermeiden, installieren Sie den Hotfix unter &quot;[&#x200B; Probleme - Repository-Beschädigung während der Online-Komprimierung](#repository-corruption-during-online-compaction-on-standby).
+> **Obligatorischer Hotfix** - Um Probleme mit SNFE (SegmentNotFoundException) während der Online-Komprimierung auf Standby zu vermeiden, installieren Sie den Hotfix unter &quot;[ Probleme - Repository-Beschädigung während der Online-Komprimierung](#repository-corruption-during-online-compaction-on-standby).
 
 ## Was in [!DNL Adobe Experience Manager] 6.5 LTS, SP3 enthalten ist {#what-is-new}
 
@@ -382,6 +382,8 @@ Um AEM Forms 6.5 LTS SP3 auf JEE zu installieren, führen Sie die folgenden Schr
 
 #### Bekannte Probleme {#forms-known-issues-65-lts-sp3}
 
+* Auf **AEM Forms 6.5 LTS SP3 auf JEE und OSGi unter Windows** bleibt PDF Generator (PDFG) beim Exportieren eines vorhandenen PDF-Dokuments in ein anderes unterstütztes Dateiformat hängen. Der Exportvorgang wird nicht abgeschlossen und die konvertierte Ausgabedatei wird nicht zurückgegeben. (FORMS-29849)
+
 * Auf **AEM Forms on JEE 6.5 LTS SP3** schlägt das Konvertieren von **PostScript (PS)-, EPS- und PRN-Dateien in PDF**. Der `PsToPdfSvc` native Prozess kann unerwartet beendet werden, was dazu führt, dass der Konvertierungsauftrag mit Fehlern wie `ALC-PDG-003-011` und `ALC-PDG-001-028` fehlschlägt. Wenden Sie sich an den Kunden-Support von Adobe. (FORMS-28152)
 
 * Auf **AEM Forms on JEE 6.5 LTS SP3** schlägt das Hochladen eines digital signierten PDFS zu einer Aufgabe in AEM Forms JEE Workspace fehl oder bleibt hängen. Daher können der Aufgabe keine größeren signierten PDF-Anhänge hinzugefügt werden. Dieses Problem wurde in einer späteren Version behoben. Wenden Sie sich für einen Hotfix auf der aktuellen Version an den Adobe-Support. (FORMS-28517)
@@ -408,7 +410,7 @@ Unter AEM Forms on JEE funktionieren Reader-Erweiterungen nicht auf der WebSpher
 Diese Version behebt Sicherheitslücken in AEM Forms, einschließlich XSS, SSRF und XE, und aktualisiert Bibliotheken.
 
 
-### Foundation {#foundation-65-lts-sp3}
+### Fundament {#foundation-65-lts-sp3}
 
 #### AEM Context Service {#foundation-aem-context-service-65-lts-sp3}
 
@@ -674,7 +676,7 @@ Die Online-Komprimierung kann das JCR-Repository mit einem `SegmentNotFoundExcep
 
 1. Installieren Sie den [Hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip) über Software Distribution. Es enthält ein `oak-segment-tar`-Bundle auf niedriger Ebene, sodass die Instanz nach der Installation neu gestartet wird - Planen Sie Ausfallzeiten ein.
 1. Legen Sie beim Starten von AEM die Systemeigenschaft `oak.segment.cleanup.skipDanglingFutureReclaim=true` fest. Dieses Flag ist beim Start von AEM erforderlich, nicht während der Offline-Komprimierung.
-1. Verwenden Sie für alle `oak-run` Vorgänge die entsprechende [`oak-run` 2.4.1-B002 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar)JAR) von Software Distribution.
+1. Verwenden Sie für alle `oak-run` Vorgänge die entsprechende [`oak-run` 2.4.1-B002 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar)JAR) von Software Distribution.
 
 ### AEM Forms
 
@@ -706,7 +708,7 @@ Installieren Sie das `cq-dam-cfm-indices`-Paket, um die folgenden Funktionen zu 
 Laden Sie das Indexpaket [cq-dam-cfm-](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) im Adobe Software Distribution-Portal herunter.
 
 
-&#x200B;###
+###
 
 ### Dispatcher-Verbindungsfehler mit der Funktion „Nur SSL“ (behoben in AEM 6.5 LTS SP1 und später){#ssl-only-feature}
 
